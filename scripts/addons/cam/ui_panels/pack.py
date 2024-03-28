@@ -8,11 +8,19 @@ class CAM_PACK_Panel(CAMButtonsPanel, bpy.types.Panel):
     bl_label = "Pack curves on sheet"
     bl_idname = "WORLD_PT_CAM_PACK"
     panel_interface_level = 2
+    bl_space_type = 'PROPERTIES'
+    bl_region_type = 'WINDOW'
+    bl_context = "render"
+    bl_options = {'DEFAULT_CLOSED'}
 
     COMPAT_ENGINES = {'BLENDERCAM_RENDER'}
 
     def draw(self, context):
         layout = self.layout
+
+        self.layout.use_property_split = True
+        self.layout.use_property_decorate = False
+
         scene = bpy.context.scene
         settings = scene.cam_pack
         layout.label(text='warning - algorithm is slow.')

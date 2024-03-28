@@ -49,6 +49,11 @@ class CAM_INFO_Panel(CAMButtonsPanel, bpy.types.Panel):
     bl_idname = "WORLD_PT_CAM_INFO"
     panel_interface_level = 0
     always_show_panel = True
+    bl_space_type = 'VIEW_3D'
+    bl_region_type = 'TOOLS'
+    # bl_context = "render"
+    bl_order = 2
+    bl_options = {'HIDE_HEADER'}
 
     prop_level = {
         'draw_blendercam_version': 0,
@@ -63,13 +68,13 @@ class CAM_INFO_Panel(CAMButtonsPanel, bpy.types.Panel):
     def draw_blendercam_version(self):
         if not self.has_correct_level():
             return
-        self.layout.label(
-            text=f'Blendercam version: {".".join([str(x) for x in cam_version])}')
+        self.column.label(
+            text=f'BlenderCAM v{".".join([str(x) for x in cam_version])}')
         if len(bpy.context.preferences.addons['cam'].preferences.new_version_available) > 0:
-            self.layout.label(text=f"New version available:")
-            self.layout.label(
-                text=f"  {bpy.context.preferences.addons['cam'].preferences.new_version_available}")
-            self.layout.operator("render.cam_update_now")
+            # self.box.label(text=f"New version available:")
+            self.column.label(
+                text=f"New version available:  {bpy.context.preferences.addons['cam'].preferences.new_version_available}")
+            self.column.operator("render.cam_update_now")
 
     # Display the OpenCamLib version
     def draw_opencamlib_version(self):
@@ -77,10 +82,10 @@ class CAM_INFO_Panel(CAMButtonsPanel, bpy.types.Panel):
             return
         ocl_version = opencamlib_version()
         if ocl_version is None:
-            self.layout.label(text="Opencamlib is not installed")
+            self.column.label(text="OpenCAMLib is not installed")
         else:
-            self.layout.label(
-                text=f"Opencamlib v{ocl_version} installed")
+            self.column.label(
+                text=f"OpenCAMLib v{ocl_version}")
 
     # Display warnings related to the current operation
     def draw_op_warnings(self):
@@ -88,7 +93,10 @@ class CAM_INFO_Panel(CAMButtonsPanel, bpy.types.Panel):
             return
         for line in self.op.info.warnings.rstrip("\n").split("\n"):
             if len(line) > 0:
-                self.layout.label(text=line, icon='ERROR')
+                box = self.column.box()
+                box.alert = True
+                box.label(text=line, icon='ERROR')
+                box.alert = False
 
     # Display the time estimation for the current operation
     def draw_op_time(self):
@@ -104,7 +112,7 @@ class CAM_INFO_Panel(CAMButtonsPanel, bpy.types.Panel):
         elif self.op.info.duration > 1:
             time_estimate += f" ({round(self.op.info.duration % 60)}min)"
 
-        self.layout.label(text=time_estimate)
+        self.column.label(text=time_estimate)
 
     # Display the chipload (does this work ?)
     def draw_op_chipload(self):
@@ -114,7 +122,7 @@ class CAM_INFO_Panel(CAMButtonsPanel, bpy.types.Panel):
             return
 
         chipload = f"Chipload: {strInUnits(self.op.info.chipload, 4)}/tooth"
-        self.layout.label(text=chipload)
+        self.column.label(text=chipload)
 
     # Display the current operation money cost
     def draw_op_money_cost(self):
@@ -123,9 +131,9 @@ class CAM_INFO_Panel(CAMButtonsPanel, bpy.types.Panel):
         if not int(self.op.info.duration * 60) > 0:
             return
 
-        row = self.layout.row()
-        row.label(text='Hourly Rate')
-        row.prop(bpy.context.scene.cam_machine, 'hourly_rate', text='')
+        # row = self.layout.row()
+        # row.label(text='Hourly Rate')
+        self.column.prop(bpy.context.scene.cam_machine, 'hourly_rate', text='Hourly Rate')
 
         if float(bpy.context.scene.cam_machine.hourly_rate) < 0.01:
             return
@@ -133,14 +141,25 @@ class CAM_INFO_Panel(CAMButtonsPanel, bpy.types.Panel):
         cost_per_second = bpy.context.scene.cam_machine.hourly_rate / 3600
         total_cost = self.op.info.duration * 60 * cost_per_second
         op_cost = f"Operation cost: ${total_cost:.2f} (${cost_per_second:.2f}/s)"
-        self.layout.label(text=op_cost)
+        self.column.label(text=op_cost)
 
     # Display the Info Panel
     def draw(self, context):
+        # context.area.tag_redraw()
         self.context = context
+
+        self.layout.use_property_split = True
+        self.layout.use_property_decorate = False
+        self.box = self.layout.box()
+        self.column = self.box.column(align=True)
+        self.column.label(text='Info & Warnings', icon='INFO')
         self.draw_blendercam_version()
         self.draw_opencamlib_version()
+        if context.window_manager.progress > 0:
+            self.column.progress(factor=context.window_manager.progress,
+                                 text='Processing... (ESC to Cancel)')
         if self.op:
+            self.layout.separator()
             self.draw_op_warnings()
             self.draw_op_time()
             self.draw_op_money_cost()

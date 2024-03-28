@@ -68,12 +68,12 @@ def slicing3d(ob, start, end):  # April 2020 Alain Pelletier
     bpy.ops.object.select_all(action='DESELECT')  # deselect everything
 
 
-def sliceObject(ob):  # April 2020 Alain Pelletier
+def sliceObject(ob, self):  # April 2020 Alain Pelletier
     # get variables from menu
-    thickness = bpy.context.scene.cam_slice.slice_distance
-    slice3d = bpy.context.scene.cam_slice.slice_3d
-    indexes = bpy.context.scene.cam_slice.indexes
-    above0 = bpy.context.scene.cam_slice.slice_above0
+    thickness = self.slice_distance
+    slice3d = self.slice_3d
+    indexes = self.indexes
+    above0 = self.slice_above0
     # setup the collections
     scollection = bpy.data.collections.new("Slices")
     bpy.context.scene.collection.children.link(scollection)

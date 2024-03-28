@@ -26,7 +26,8 @@ import bpy
 from bpy.props import (
     EnumProperty,
     StringProperty,
-
+    FloatProperty,
+    BoolProperty,
 )
 from bpy_extras.io_utils import ImportHelper
 
@@ -41,6 +42,7 @@ from . import (
     gcodepath,
     bridges,
     simulation,
+    constants,
 )
 from .utils import (
     was_hidden_dict,
@@ -293,15 +295,85 @@ class CamPackObjects(bpy.types.Operator):
     bl_label = "Pack curves on sheet"
     bl_options = {'REGISTER', 'UNDO'}
 
+    sheet_fill_direction: EnumProperty(
+        name='Fill direction',
+        items=(
+            ('X', 'X', 'Fills sheet in X axis direction'),
+            ('Y', 'Y', 'Fills sheet in Y axis direction')
+        ),
+        description='Fill direction of the packer algorithm',
+        default='Y',
+    )
+    sheet_x: FloatProperty(
+        name="X size",
+        description="Sheet size",
+        min=0.001,
+        max=10,
+        default=0.5,
+        precision=constants.PRECISION,
+        unit="LENGTH",
+    )
+    sheet_y: FloatProperty(
+        name="Y size",
+        description="Sheet size",
+        min=0.001,
+        max=10,
+        default=0.5,
+        precision=constants.PRECISION,
+        unit="LENGTH",
+    )
+    distance: FloatProperty(
+        name="Minimum distance",
+        description="minimum distance between objects(should be "
+        "at least cutter diameter!)",
+        min=0.001,
+        max=10,
+        default=0.01,
+        precision=constants.PRECISION,
+        unit="LENGTH",
+    )
+    tolerance: FloatProperty(
+        name="Placement Tolerance",
+        description="Tolerance for placement: smaller value slower placemant",
+        min=0.001,
+        max=0.02,
+        default=0.005,
+        precision=constants.PRECISION,
+        unit="LENGTH",
+    )
+    rotate: BoolProperty(
+        name="enable rotation",
+        description="Enable rotation of elements",
+        default=True,
+    )
+    rotate_angle: FloatProperty(
+        name="Placement Angle rotation step",
+        description="bigger rotation angle,faster placemant",
+        default=0.19635 * 4,
+        min=math.pi/180,
+        max=math.pi,
+        precision=5,
+        subtype="ANGLE",
+        unit="ROTATION",
+    )
+
+    @classmethod
+    def poll(cls, context):
+        return (context.object.type == 'CURVE' if context.object is not None else 'CANCELLED')
+
+    def invoke(self, context, event):
+        wm = context.window_manager
+        return wm.invoke_props_dialog(self)
+
     def execute(self, context):
         bpy.ops.object.mode_set(mode='OBJECT')	    # force object mode
         obs = bpy.context.selected_objects
-        pack.packCurves()
+        pack.packCurves(self)
         # layout.
         return {'FINISHED'}
 
-    def draw(self, context):
-        layout = self.layout
+    # def draw(self, context):
+    #     layout = self.layout
 
 
 class CamSliceObjects(bpy.types.Operator):
@@ -311,14 +383,44 @@ class CamSliceObjects(bpy.types.Operator):
     bl_label = "Slice object - usefull for lasercut puzzles e.t.c."
     bl_options = {'REGISTER', 'UNDO'}
 
+    slice_distance: FloatProperty(
+        name="Slicing distance",
+        description="slices distance in z, should be most often "
+        "thickness of plywood sheet.",
+        min=0.001,
+        max=10,
+        default=0.005,
+        precision=constants.PRECISION,
+        unit="LENGTH",
+    )
+    slice_above0: BoolProperty(
+        name="Slice above 0",
+        description="only slice model above 0",
+        default=False,
+    )
+    slice_3d: BoolProperty(
+        name="3d slice",
+        description="for 3d carving",
+        default=False,
+    )
+    indexes: BoolProperty(
+        name="add indexes",
+        description="adds index text of layer + index",
+        default=True,
+    )
+
+    def invoke(self, context, event):
+        wm = context.window_manager
+        return wm.invoke_props_dialog(self)
+
     def execute(self, context):
         from cam import slice
         ob = bpy.context.active_object
-        slice.sliceObject(ob)
+        slice.sliceObject(ob, self)
         return {'FINISHED'}
 
-    def draw(self, context):
-        layout = self.layout
+    # def draw(self, context):
+    #     layout = self.layout
 
 
 def getChainOperations(chain):

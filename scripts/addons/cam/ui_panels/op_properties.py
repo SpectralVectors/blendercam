@@ -5,9 +5,13 @@ from .buttons_panel import CAMButtonsPanel
 
 class CAM_OPERATION_PROPERTIES_Panel(CAMButtonsPanel, bpy.types.Panel):
     """CAM operation properties panel"""
-    bl_label = "CAM operation setup"
+    bl_label = "Setup"
     bl_idname = "WORLD_PT_CAM_OPERATION"
     panel_interface_level = 0
+    bl_space_type = 'VIEW_3D'
+    bl_region_type = 'UI'
+    bl_category = 'CAM'
+    bl_parent_id = "WORLD_PT_CAM_PARENT"
 
     prop_level = {
         'draw_cutter_engagement': 0,
@@ -37,15 +41,19 @@ class CAM_OPERATION_PROPERTIES_Panel(CAMButtonsPanel, bpy.types.Panel):
         if not self.has_correct_level():
             return
 
+        # self.layout.alignment = 'RIGHT'
+
         if self.op.cutter_type in ['BALLCONE']:
             engagement = round(100 * self.op.dist_between_paths / self.op.ball_radius, 1)
         else:
             engagement = round(100 * self.op.dist_between_paths / self.op.cutter_diameter, 1)
 
         if engagement > 50:
-            self.layout.label(text="Warning: High cutter engagement")
+            self.layout.alert = True
+            self.layout.label(text="Warning: High cutter engagement", icon='ERROR')
 
         self.layout.label(text=f"Cutter engagement: {engagement}%")
+        self.layout.alert = False
 
     def draw_machine_axis(self):
         if not self.has_correct_level():
@@ -72,18 +80,21 @@ class CAM_OPERATION_PROPERTIES_Panel(CAMButtonsPanel, bpy.types.Panel):
     def draw_enable_A_B_axis(self):
         if not self.has_correct_level():
             return
-        self.layout.prop(self.op, 'enable_A')
+        box = self.layout.box()
+        column = box.column(align=True)
+        column.label(text='A & B Axes')
+        column.prop(self.op, 'enable_A')
         if self.op.enable_A:
-            self.layout.prop(self.op, 'rotation_A')
-            self.layout.prop(self.op, 'A_along_x')
+            column.prop(self.op, 'rotation_A')
+            column.prop(self.op, 'A_along_x')
             if self.op.A_along_x:
-                self.layout.label(text='A || X - B || Y')
+                column.label(text='A || X - B || Y')
             else:
-                self.layout.label(text='A || Y - B ||X')
+                column.label(text='A || Y - B ||X')
 
-        self.layout.prop(self.op, 'enable_B')
+        column.prop(self.op, 'enable_B')
         if self.op.enable_B:
-            self.layout.prop(self.op, 'rotation_B')
+            column.prop(self.op, 'rotation_B')
 
     def draw_cutout_type(self):
         if not self.has_correct_level():
@@ -109,16 +120,19 @@ class CAM_OPERATION_PROPERTIES_Panel(CAMButtonsPanel, bpy.types.Panel):
     def draw_outlines(self):
         if not self.has_correct_level():
             return
-        self.layout.prop(self.op, 'outlines_count')
+        box = self.layout.box()
+        column = box.column(align=True)
+        column.label(text='Outlines:')
+        column.prop(self.op, 'outlines_count', text='Count')
         if self.op.outlines_count > 1:
-            self.layout.prop(self.op, 'dist_between_paths')
+            column.prop(self.op, 'dist_between_paths')
             self.draw_cutter_engagement()
-            self.layout.prop(self.op.movement, 'insideout')
+            column.prop(self.op.movement, 'insideout')
 
     def draw_merge(self):
         if not self.has_correct_level():
             return
-        self.layout.prop(self.op, 'dont_merge')
+        self.layout.prop(self.op, 'dont_merge', text="Don't Merge Outlines")
 
     def draw_cutout_options(self):
         if not self.has_correct_level():
@@ -184,25 +198,31 @@ class CAM_OPERATION_PROPERTIES_Panel(CAMButtonsPanel, bpy.types.Panel):
         if not self.has_correct_level():
             return
         if self.op.strategy not in ['CUTOUT', 'CURVE', 'WATERLINE', 'CARVE', 'MEDIAL_AXIS', 'DRILL', 'POCKET']:
-            self.layout.prop(self.op, 'dist_between_paths')
+            box = self.layout.box()
+            column = box.column(align=True)
+            column.label(text='Toolpath Distance:')
+            column.prop(self.op, 'dist_between_paths', text='Between')
             self.draw_cutter_engagement()
-            self.layout.prop(self.op, 'dist_along_paths')
+            column.prop(self.op, 'dist_along_paths', text='Along')
             if self.op.strategy in ['PARALLEL', 'CROSS']:
-                self.layout.prop(self.op, 'parallel_angle')
+                self.layout.prop(self.op, 'parallel_angle', text='Path Angle')
                 self.draw_enable_A_B_axis()
             self.layout.prop(self.op, 'inverse')
 
     def draw_bridges_options(self):
         if not self.has_correct_level():
             return
+        box = self.layout.box()
+        column = box.column(align=True)
+        column.label(text='Bridges:')
         if self.op.strategy not in ['POCKET', 'DRILL', 'CURVE', 'MEDIAL_AXIS']:
-            self.layout.prop(self.op, 'use_bridges')
+            column.prop(self.op, 'use_bridges')
             if self.op.use_bridges:
-                self.layout.prop(self.op, 'bridges_width')
-                self.layout.prop(self.op, 'bridges_height')
-                self.layout.prop_search(self.op, "bridges_collection_name", bpy.data, "collections")
-                self.layout.prop(self.op, 'use_bridge_modifiers')
-            self.layout.operator("scene.cam_bridges_add", text="Autogenerate bridges")
+                column.prop(self.op, 'bridges_width')
+                column.prop(self.op, 'bridges_height')
+                column.prop_search(self.op, "bridges_collection_name", bpy.data, "collections")
+                column.prop(self.op, 'use_bridge_modifiers')
+            column.operator("scene.cam_bridges_add", text="Autogenerate bridges")
 
     def draw_skin(self):
         if not self.has_correct_level():
@@ -222,6 +242,9 @@ class CAM_OPERATION_PROPERTIES_Panel(CAMButtonsPanel, bpy.types.Panel):
 
     def draw(self, context):
         self.context = context
+
+        self.layout.use_property_split = True
+        self.layout.use_property_decorate = False
 
         self.draw_machine_axis()
         self.draw_strategy()

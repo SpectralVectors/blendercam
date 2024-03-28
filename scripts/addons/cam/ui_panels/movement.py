@@ -210,9 +210,13 @@ class CAM_MOVEMENT_Properties(bpy.types.PropertyGroup):
 
 class CAM_MOVEMENT_Panel(CAMButtonsPanel, bpy.types.Panel):
     """CAM movement panel"""
-    bl_label = "CAM movement"
+    bl_label = "Movement"
     bl_idname = "WORLD_PT_CAM_MOVEMENT"
     panel_interface_level = 0
+    bl_space_type = 'VIEW_3D'
+    bl_region_type = 'UI'
+    bl_category = 'CAM'
+    bl_parent_id = "WORLD_PT_CAM_PARENT"
 
     prop_level = {
         'draw_cut_type': 1,
@@ -307,6 +311,9 @@ class CAM_MOVEMENT_Panel(CAMButtonsPanel, bpy.types.Panel):
 
     def draw(self, context):
         self.context = context
+
+        self.layout.use_property_split = True
+        self.layout.use_property_decorate = False
 
         self.draw_cut_type()
         self.draw_spindle_rotation()

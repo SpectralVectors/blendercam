@@ -5,9 +5,13 @@ from .buttons_panel import CAMButtonsPanel
 
 class CAM_CUTTER_Panel(CAMButtonsPanel, bpy.types.Panel):
     """CAM cutter panel"""
-    bl_label = "CAM Cutter"
+    bl_label = "Cutter"
     bl_idname = "WORLD_PT_CAM_CUTTER"
     panel_interface_level = 0
+    bl_space_type = 'VIEW_3D'
+    bl_region_type = 'UI'
+    bl_category = 'CAM'
+    bl_parent_id = "WORLD_PT_CAM_PARENT"
 
     prop_level = {
         'draw_cutter_preset_menu': 1,
@@ -102,13 +106,13 @@ class CAM_CUTTER_Panel(CAMButtonsPanel, bpy.types.Panel):
     def draw_cutter_diameter(self):
         if not self.has_correct_level():
             return
-        self.layout.prop(self.op, 'cutter_diameter')
+        self.layout.prop(self.op, 'cutter_diameter', text='Diameter')
 
     def draw_cutter_flutes(self):
         if not self.has_correct_level():
             return
         if self.op.cutter_type not in ['LASER', 'PLASMA']:
-            self.layout.prop(self.op, 'cutter_flutes')
+            self.layout.prop(self.op, 'cutter_flutes', text='Flutes')
 
     def draw_cutter_description(self):
         if not self.has_correct_level():
@@ -135,6 +139,9 @@ class CAM_CUTTER_Panel(CAMButtonsPanel, bpy.types.Panel):
 
     def draw(self, context):
         self.context = context
+
+        self.layout.use_property_split = True
+        self.layout.use_property_decorate = False
 
         self.draw_cutter_preset_menu()
         self.draw_cutter_id()

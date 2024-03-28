@@ -73,18 +73,73 @@ class VIEW3D_PT_tools_curvetools(bpy.types.Panel):
     bl_region_type = 'TOOLS'
     bl_context = "objectmode"
     bl_label = "Curve CAM Tools"
+    bl_options = {'HIDE_HEADER'}
+    bl_order = 0
+
+    @classmethod
+    def poll(cls, context):
+        return context.scene.render.engine == 'BLENDERCAM_RENDER'
 
     def draw(self, context):
         layout = self.layout
-        layout.operator("object.curve_boolean")
-        layout.operator("object.convex_hull")
-        layout.operator("object.curve_intarsion")
-        layout.operator("object.curve_overcuts")
-        layout.operator("object.curve_overcuts_b")
-        layout.operator("object.silhouete")
-        layout.operator("object.silhouete_offset")
-        layout.operator("object.curve_remove_doubles")
-        layout.operator("object.mesh_get_pockets")
+        layout.scale_y = 1.6
+        layout.operator("object.curve_boolean", icon='MOD_BOOLEAN')
+        layout.operator("object.convex_hull", icon='MOD_SOLIDIFY')
+        layout.operator("object.curve_intarsion", icon='OUTLINER_DATA_META')
+        column = layout.column(align=True)
+        column.operator("object.curve_overcuts", icon='CON_SIZELIKE')
+        column.operator("object.curve_overcuts_b", icon='CON_SIZELIKE')
+        column = layout.column(align=True)
+        column.operator("object.silhouete", icon='USER', text='Object Silhouette')
+        column.operator("object.silhouete_offset", icon='COMMUNITY', text='Silhouette Offset')
+        layout.operator("object.curve_remove_doubles",
+                        icon='FORCE_CHARGE', text='Remove Curve Doubles')
+        layout.operator("object.mesh_get_pockets", icon='HOLDOUT_ON', text='Get Pocket Surfaces')
+
+        column = layout.column(align=True)
+        column.operator("object.cam_pack_objects", icon='STICKY_UVS_LOC',
+                        text='Pack Curves on Sheet')
+        column.operator("object.cam_slice_objects", icon='ALIGN_FLUSH', text='Slice Model to Sheet')
+
+        layout.operator("scene.calculate_bas_relief", icon='MOD_OCEAN', text='Bas Relief')
+
+
+class TOPBAR_MT_import_gcode(bpy.types.Menu):
+    bl_idname = 'TOPBAR_MT_import_gcode'
+    bl_label = "Import G-Code"
+
+    def draw(self, context):
+        layout = self.layout
+        layout.operator('wm.gcode_import', text='Import G-Code (.gcode)')
+
+
+class VIEW3D_MT_tools_add(bpy.types.Menu):
+    bl_idname = 'VIEW3D_MT_tools_add'
+    bl_label = "Curve CAM Creators"
+
+    def draw(self, context):
+        layout = self.layout
+        layout.menu("VIEW3D_MT_tools_create", icon='FCURVE')
+
+
+class VIEW3D_MT_tools_create(bpy.types.Menu):
+    bl_idname = 'VIEW3D_MT_tools_create'
+    bl_label = "Curve CAM Creators"
+
+    def draw(self, context):
+        layout = self.layout
+        layout.operator("object.curve_plate")
+        layout.operator("object.curve_drawer")
+        layout.operator("object.curve_mortise")
+        layout.operator("object.curve_interlock")
+        layout.operator("object.curve_puzzle")
+        layout.operator("object.sine")
+        layout.operator("object.lissajous")
+        layout.operator("object.hypotrochoid")
+        layout.operator("object.customcurve")
+        layout.operator("object.curve_hatch")
+        layout.operator("object.curve_gear")
+        layout.operator("object.curve_flat_cone")
 
 
 class VIEW3D_PT_tools_create(bpy.types.Panel):
@@ -92,7 +147,7 @@ class VIEW3D_PT_tools_create(bpy.types.Panel):
     bl_region_type = 'TOOLS'
     bl_context = "objectmode"
     bl_label = "Curve CAM Creators"
-    bl_option = 'DEFAULT_CLOSED'
+    bl_option = {'DEFAULT_CLOSED'}
 
     def draw(self, context):
         layout = self.layout
@@ -132,19 +187,19 @@ class CustomPanel(bpy.types.Panel):
     def draw(self, context):
         layout = self.layout
         scene = context.scene
-        isettings = scene.cam_import_gcode
-        layout.prop(isettings, 'output')
-        layout.prop(isettings, "split_layers")
-
-        layout.prop(isettings, "subdivide")
-        col = layout.column(align=True)
-        col = col.row(align=True)
-        col.split()
-        col.label(text="Segment length")
-
-        col.prop(isettings, "max_segment_size")
-        col.enabled = isettings.subdivide
-        col.separator()
+        # isettings = scene.cam_import_gcode
+        # layout.prop(isettings, 'output')
+        # layout.prop(isettings, "split_layers")
+        #
+        # layout.prop(isettings, "subdivide")
+        # col = layout.column(align=True)
+        # col = col.row(align=True)
+        # col.split()
+        # col.label(text="Segment length")
+        #
+        # col.prop(isettings, "max_segment_size")
+        # col.enabled = isettings.subdivide
+        # col.separator()
 
         col = layout.column()
         col.scale_y = 2.0
@@ -165,6 +220,41 @@ class WM_OT_gcode_import(Operator, ImportHelper):
         maxlen=255,  # Max internal buffer length, longer would be clamped.
     )
 
+    split_layers: BoolProperty(
+        name="Split Layers",
+        description="Save every layer as single Objects in Collection",
+        default=False,
+    )
+    subdivide: BoolProperty(
+        name="Subdivide",
+        description="Only Subdivide gcode segments that are "
+        "bigger than 'Segment length' ",
+        default=False,
+    )
+    output: EnumProperty(
+        name="Output Type",
+        items=(
+            ('mesh', 'Mesh', 'Make a mesh output'),
+            ('curve', 'Curve', 'Make curve output')
+        ),
+        default='curve',
+    )
+    max_segment_size: FloatProperty(
+        name="Max Segment Size",
+        description="Only Segments bigger then this value get subdivided",
+        default=0.001,
+        min=0.0001,
+        max=1.0,
+        unit="LENGTH",
+    )
+
     def execute(self, context):
         print(self.filepath)
-        return gcodeimportparser.import_gcode(context, self.filepath)
+        return gcodeimportparser.import_gcode(
+            context,
+            self.filepath,
+            self.output,
+            self.split_layers,
+            self.subdivide,
+            self.max_segment_size,
+        )

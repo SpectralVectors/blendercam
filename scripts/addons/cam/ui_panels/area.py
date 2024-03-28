@@ -5,9 +5,13 @@ from .buttons_panel import CAMButtonsPanel
 
 class CAM_AREA_Panel(CAMButtonsPanel, bpy.types.Panel):
     """CAM operation area panel"""
-    bl_label = "CAM operation area "
+    bl_label = "Area"
     bl_idname = "WORLD_PT_CAM_OPERATION_AREA"
+    bl_space_type = 'VIEW_3D'
+    bl_region_type = 'UI'
+    bl_category = 'CAM'
     panel_interface_level = 0
+    bl_parent_id = "WORLD_PT_CAM_PARENT"
 
     prop_level = {
         'draw_use_layers': 0,
@@ -97,6 +101,9 @@ class CAM_AREA_Panel(CAMButtonsPanel, bpy.types.Panel):
 
     def draw(self, context):
         self.context = context
+
+        self.layout.use_property_split = True
+        self.layout.use_property_decorate = False
 
         self.draw_use_layers()
         self.draw_maxz()

@@ -98,17 +98,24 @@ class CAM_OPTIMISATION_Properties(bpy.types.PropertyGroup):
 
 class CAM_OPTIMISATION_Panel(CAMButtonsPanel, bpy.types.Panel):
     """CAM optimisation panel"""
-    bl_label = "CAM optimisation"
+    bl_label = "Optimisation"
     bl_idname = "WORLD_PT_CAM_OPTIMISATION"
     panel_interface_level = 2
+    bl_space_type = 'VIEW_3D'
+    bl_region_type = 'UI'
+    bl_category = 'CAM'
+    bl_parent_id = "WORLD_PT_CAM_PARENT"
 
     def draw_optimize(self):
         if not self.has_correct_level():
             return
 
-        self.layout.prop(self.op.optimisation, 'optimize')
+        box = self.layout.box()
+        column = box.column(align=True)
+        column.label(text='Reduction')
+        column.prop(self.op.optimisation, 'optimize', text='Reduce Path Points')
         if self.op.optimisation.optimize:
-            self.layout.prop(self.op.optimisation, 'optimize_threshold')
+            column.prop(self.op.optimisation, 'optimize_threshold', text='Threshold')
 
     def draw_exact_mode(self):
         if not self.has_correct_level():
@@ -124,8 +131,11 @@ class CAM_OPTIMISATION_Panel(CAMButtonsPanel, bpy.types.Panel):
             self.layout.prop(self.op.optimisation, 'use_exact')
 
         if not self.exact_possible or not self.op.optimisation.use_exact:
-            self.layout.prop(self.op.optimisation, 'pixsize')
-            self.layout.prop(self.op.optimisation, 'imgres_limit')
+            box = self.layout.box()
+            column = box.column(align=True)
+            column.label(text='Sampling Raster')
+            column.prop(self.op.optimisation, 'pixsize', text='Detail')
+            column.prop(self.op.optimisation, 'imgres_limit', text='Max Res (MP)')
 
             sx = self.op.max.x - self.op.min.x
             sy = self.op.max.y - self.op.min.y
@@ -154,16 +164,18 @@ class CAM_OPTIMISATION_Panel(CAMButtonsPanel, bpy.types.Panel):
     def draw_simulation_detail(self):
         if not self.has_correct_level():
             return
-
-        self.layout.prop(self.op.optimisation, 'simulation_detail')
-        self.layout.prop(self.op.optimisation, 'circle_detail')
+        box = self.layout.box()
+        column = box.column(align=True)
+        column.label(text='Simulation Raster')
+        column.prop(self.op.optimisation, 'simulation_detail', text='Detail')
+        column.prop(self.op.optimisation, 'circle_detail', text='Offset Circle Detail')
 
     def draw_simplify_gcode(self):
         if not self.has_correct_level():
             return
 
         if self.op.strategy not in ['DRILL']:
-            self.layout.prop(self.op, 'remove_redundant_points')
+            self.layout.prop(self.op, 'remove_redundant_points', text='Simplify G-Code')
 
         if self.op.remove_redundant_points:
             self.layout.prop(self.op, 'simplify_tol')
@@ -172,26 +184,29 @@ class CAM_OPTIMISATION_Panel(CAMButtonsPanel, bpy.types.Panel):
         if not self.has_correct_level():
             return
         if self.op.geometry_source in ['OBJECT', 'COLLECTION']:
-            self.layout.prop(self.op, 'use_modifiers')
+            self.layout.prop(self.op, 'use_modifiers', text='Use Mesh Modifiers')
 
     def draw_hide_all_others(self):
         if not self.has_correct_level():
             return
-        self.layout.prop(self.op, 'hide_all_others')
+        self.layout.prop(self.op, 'hide_all_others', text='Hide Other Toolpaths')
 
     def draw_parent_path_to_object(self):
         if not self.has_correct_level():
             return
-        self.layout.prop(self.op, 'parent_path_to_object')
+        self.layout.prop(self.op, 'parent_path_to_object', text='Parent Path to Object')
 
     def draw(self, context):
         self.context = context
 
+        self.layout.use_property_split = True
+        self.layout.use_property_decorate = False
+
         self.draw_optimize()
-        self.layout.separator()
+        # self.layout.separator()
         self.draw_exact_mode()
         self.draw_use_opencamlib()
-        self.layout.separator()
+        # self.layout.separator()
         self.draw_simulation_detail()
         self.draw_simplify_gcode()
         self.draw_use_modifiers()

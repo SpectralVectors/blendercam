@@ -5,9 +5,9 @@ import inspect
 
 
 class CAMButtonsPanel:
-    bl_space_type = 'PROPERTIES'
-    bl_region_type = 'WINDOW'
-    bl_context = "render"
+    # bl_space_type = 'PROPERTIES'
+    # bl_region_type = 'WINDOW'
+    # bl_context = "render"
     always_show_panel = False
     COMPAT_ENGINES = {'BLENDERCAM_RENDER'}
 

@@ -89,7 +89,7 @@ class CAM_MATERIAL_PositionObject(bpy.types.Operator):
     bl_idname = "object.material_cam_position"
     bl_label = "position object for CAM operation"
     bl_options = {'REGISTER', 'UNDO'}
-    interface_level = 0
+    interface_level = 1
 
     def execute(self, context):
         s = bpy.context.scene
@@ -111,6 +111,11 @@ class CAM_MATERIAL_Panel(CAMButtonsPanel, bpy.types.Panel):
     bl_label = "CAM Material size and position"
     bl_idname = "WORLD_PT_CAM_MATERIAL"
     panel_interface_level = 0
+    bl_space_type = 'VIEW_3D'
+    bl_region_type = 'TOOLS'
+    # bl_context = "render"
+    bl_order = 2
+    bl_options = {'HIDE_HEADER'}
 
     prop_level = {
         'draw_estimate_from_image': 0,
@@ -122,32 +127,41 @@ class CAM_MATERIAL_Panel(CAMButtonsPanel, bpy.types.Panel):
         if not self.has_correct_level():
             return
         if self.op.geometry_source not in ['OBJECT', 'COLLECTION']:
-            self.layout.label(text='Estimated from image')
+            self.box.label(text='Estimated from image')
 
     def draw_estimate_from_object(self):
         if not self.has_correct_level():
             return
         if self.op.geometry_source in ['OBJECT', 'COLLECTION']:
-            self.layout.prop(self.op.material, 'estimate_from_model')
+            box = self.box.box()
+            column = box.column(align=True)
+            column.label(text='Size')
+            column.prop(self.op.material, 'estimate_from_model', text='From Model')
             if self.op.material.estimate_from_model:
-                row_radius = self.layout.row()
-                row_radius.label(text="Additional radius")
-                row_radius.prop(self.op.material,
-                                'radius_around_model', text='')
+                #row_radius = self.layout.row()
+                #row_radius.label(text="Additional radius")
+                column.prop(self.op.material,
+                            'radius_around_model', text='Additional Radius')
             else:
-                self.layout.prop(self.op.material, 'origin')
-                self.layout.prop(self.op.material, 'size')
+                column = box.column(align=True)
+                column.prop(self.op.material, 'origin')
+                column = box.column(align=True)
+                column.prop(self.op.material, 'size')
 
     # Display Axis alignment section
     def draw_axis_alignment(self):
         if not self.has_correct_level():
             return
         if self.op.geometry_source in ['OBJECT', 'COLLECTION']:
-            row_axis = self.layout.row()
-            row_axis.prop(self.op.material, 'center_x')
-            row_axis.prop(self.op.material, 'center_y')
-            self.layout.prop(self.op.material, 'z_position')
-            self.layout.operator(
+            box = self.box.box()
+            column = box.column(align=True)
+            column.label(text='Position')
+            #row_axis = self.layout.row()
+            column.prop(self.op.material, 'center_x')
+            column.prop(self.op.material, 'center_y')
+            column.prop(self.op.material, 'z_position')
+            column = box.column(align=True)
+            column.operator(
                 "object.material_cam_position", text="Position object")
 
     def draw(self, context):
@@ -158,6 +172,11 @@ class CAM_MATERIAL_Panel(CAMButtonsPanel, bpy.types.Panel):
         # Consider removing it entirely
         # self.layout.template_running_jobs()
 
+        self.layout.use_property_split = True
+        self.layout.use_property_decorate = False
+
+        self.box = self.layout.box()
+        self.box.label(text='Material', icon='FILE_3D')
         self.draw_estimate_from_image()
         self.draw_estimate_from_object()
         self.draw_axis_alignment()

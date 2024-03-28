@@ -30,6 +30,10 @@ class CAM_INTERFACE_Panel(CAMButtonsPanel, bpy.types.Panel):
     bl_label = "Interface"
     bl_idname = "WORLD_PT_CAM_INTERFACE"
     always_show_panel = True
+    bl_space_type = 'PROPERTIES'
+    bl_region_type = 'WINDOW'
+    bl_context = "render"
+    bl_order = 0
 
     def draw_interface_level(self):
         self.layout.prop(self.context.scene.interface, 'level', text='')

@@ -18,21 +18,6 @@
 # Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
 #
 # ***** END GPL LICENCE BLOCK ****
-import subprocess
-import sys
-try:
-    import shapely
-except ModuleNotFoundError:
-    # pip install required python stuff
-    subprocess.check_call([sys.executable, "-m", "ensurepip"])
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "--upgrade", " pip"])
-    subprocess.check_call([sys.executable, "-m", "pip", "install",
-                           "shapely", "Equation", "opencamlib"])
-    # install numba if available for this platform, ignore failure
-    subprocess.run([sys.executable, "-m", "pip", "install", "numba"])
-
-from shapely import geometry as sgeometry  # noqa
-
 from .ui import *
 from .version import __version__
 from . import (
@@ -92,15 +77,30 @@ import numpy
 import os
 import pickle
 import shutil
+import subprocess
+import sys
 import threading
 import time
 
 from pathlib import Path
 
+try:
+    import shapely
+except ImportError:
+    # pip install required python stuff
+    subprocess.check_call([sys.executable, "-m", "ensurepip"])
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "--upgrade", " pip"])
+    subprocess.check_call([sys.executable, "-m", "pip", "install",
+                           "shapely", "Equation", "opencamlib"])
+    # install numba if available for this platform, ignore failure
+    subprocess.run([sys.executable, "-m", "pip", "install", "numba"])
+
+from shapely import geometry as sgeometry  # noqa
+
 bl_info = {
     "name": "CAM - gcode generation tools",
     "author": "Vilem Novak & Contributors",
-    "version":(1,0,12),
+    "version": (1, 0, 7),
     "blender": (3, 6, 0),
     "location": "Properties > render",
     "description": "Generate machining paths for CNC",
@@ -225,7 +225,7 @@ class machineSettings(bpy.types.PropertyGroup):
     # units = EnumProperty(name='Units', items = (('IMPERIAL', ''))
     # position definitions:
     use_position_definitions: BoolProperty(
-        name="Use position definitions",
+        name="Use Position Definitions",
         description="Define own positions for op start, "
         "toolchange, ending position",
         default=False,
@@ -339,7 +339,7 @@ class machineSettings(bpy.types.PropertyGroup):
     )
 
     eval_splitting: BoolProperty(
-        name="Split files",
+        name="Split Files",
         description="split gcode file with large number of operations",
         default=True,
     )  # split large files
@@ -373,7 +373,7 @@ class machineSettings(bpy.types.PropertyGroup):
     # post processor options
 
     output_block_numbers: BoolProperty(
-        name="output block numbers",
+        name="Output Block Numbers",
         description="output block numbers ie N10 at start of line",
         default=False,
     )
@@ -392,146 +392,146 @@ class machineSettings(bpy.types.PropertyGroup):
     )
 
     output_tool_definitions: BoolProperty(
-        name="output tool definitions",
+        name="Output Tool Definitions",
         description="output tool definitions",
         default=True,
     )
 
     output_tool_change: BoolProperty(
-        name="output tool change commands",
+        name="Output Tool Change Commands",
         description="output tool change commands ie: Tn M06",
         default=True,
     )
 
     output_g43_on_tool_change: BoolProperty(
-        name="output G43 on tool change",
+        name="Output G43 on Tool Change",
         description="output G43 on tool change line",
         default=False,
     )
 
 
-class PackObjectsSettings(bpy.types.PropertyGroup):
-    """stores all data for machines"""
-    sheet_fill_direction: EnumProperty(
-        name='Fill direction',
-        items=(
-            ('X', 'X', 'Fills sheet in X axis direction'),
-            ('Y', 'Y', 'Fills sheet in Y axis direction')
-        ),
-        description='Fill direction of the packer algorithm',
-        default='Y',
-    )
-    sheet_x: FloatProperty(
-        name="X size",
-        description="Sheet size",
-        min=0.001,
-        max=10,
-        default=0.5,
-        precision=constants.PRECISION,
-        unit="LENGTH",
-    )
-    sheet_y: FloatProperty(
-        name="Y size",
-        description="Sheet size",
-        min=0.001,
-        max=10,
-        default=0.5,
-        precision=constants.PRECISION,
-        unit="LENGTH",
-    )
-    distance: FloatProperty(
-        name="Minimum distance",
-        description="minimum distance between objects(should be "
-        "at least cutter diameter!)",
-        min=0.001,
-        max=10,
-        default=0.01,
-        precision=constants.PRECISION,
-        unit="LENGTH",
-    )
-    tolerance: FloatProperty(
-        name="Placement Tolerance",
-        description="Tolerance for placement: smaller value slower placemant",
-        min=0.001,
-        max=0.02,
-        default=0.005,
-        precision=constants.PRECISION,
-        unit="LENGTH",
-    )
-    rotate: BoolProperty(
-        name="enable rotation",
-        description="Enable rotation of elements",
-        default=True,
-    )
-    rotate_angle: FloatProperty(
-        name="Placement Angle rotation step",
-        description="bigger rotation angle,faster placemant",
-        default=0.19635 * 4,
-        min=math.pi/180,
-        max=math.pi,
-        precision=5,
-        subtype="ANGLE",
-        unit="ROTATION",
-    )
+# class PackObjectsSettings(bpy.types.PropertyGroup):
+#     """stores all data for machines"""
+#     sheet_fill_direction: EnumProperty(
+#         name='Fill direction',
+#         items=(
+#             ('X', 'X', 'Fills sheet in X axis direction'),
+#             ('Y', 'Y', 'Fills sheet in Y axis direction')
+#         ),
+#         description='Fill direction of the packer algorithm',
+#         default='Y',
+#     )
+#     sheet_x: FloatProperty(
+#         name="X size",
+#         description="Sheet size",
+#         min=0.001,
+#         max=10,
+#         default=0.5,
+#         precision=constants.PRECISION,
+#         unit="LENGTH",
+#     )
+#     sheet_y: FloatProperty(
+#         name="Y size",
+#         description="Sheet size",
+#         min=0.001,
+#         max=10,
+#         default=0.5,
+#         precision=constants.PRECISION,
+#         unit="LENGTH",
+#     )
+#     distance: FloatProperty(
+#         name="Minimum distance",
+#         description="minimum distance between objects(should be "
+#         "at least cutter diameter!)",
+#         min=0.001,
+#         max=10,
+#         default=0.01,
+#         precision=constants.PRECISION,
+#         unit="LENGTH",
+#     )
+#     tolerance: FloatProperty(
+#         name="Placement Tolerance",
+#         description="Tolerance for placement: smaller value slower placemant",
+#         min=0.001,
+#         max=0.02,
+#         default=0.005,
+#         precision=constants.PRECISION,
+#         unit="LENGTH",
+#     )
+#     rotate: BoolProperty(
+#         name="enable rotation",
+#         description="Enable rotation of elements",
+#         default=True,
+#     )
+#     rotate_angle: FloatProperty(
+#         name="Placement Angle rotation step",
+#         description="bigger rotation angle,faster placemant",
+#         default=0.19635 * 4,
+#         min=math.pi/180,
+#         max=math.pi,
+#         precision=5,
+#         subtype="ANGLE",
+#         unit="ROTATION",
+#     )
 
 
-class SliceObjectsSettings(bpy.types.PropertyGroup):
-    """stores all data for machines"""
-    slice_distance: FloatProperty(
-        name="Slicing distance",
-        description="slices distance in z, should be most often "
-        "thickness of plywood sheet.",
-        min=0.001,
-        max=10,
-        default=0.005,
-        precision=constants.PRECISION,
-        unit="LENGTH",
-    )
-    slice_above0: BoolProperty(
-        name="Slice above 0",
-        description="only slice model above 0",
-        default=False,
-    )
-    slice_3d: BoolProperty(
-        name="3d slice",
-        description="for 3d carving",
-        default=False,
-    )
-    indexes: BoolProperty(
-        name="add indexes",
-        description="adds index text of layer + index",
-        default=True,
-    )
+# class SliceObjectsSettings(bpy.types.PropertyGroup):
+#     """stores all data for machines"""
+#     slice_distance: FloatProperty(
+#         name="Slicing distance",
+#         description="slices distance in z, should be most often "
+#         "thickness of plywood sheet.",
+#         min=0.001,
+#         max=10,
+#         default=0.005,
+#         precision=constants.PRECISION,
+#         unit="LENGTH",
+#     )
+#     slice_above0: BoolProperty(
+#         name="Slice above 0",
+#         description="only slice model above 0",
+#         default=False,
+#     )
+#     slice_3d: BoolProperty(
+#         name="3d slice",
+#         description="for 3d carving",
+#         default=False,
+#     )
+#     indexes: BoolProperty(
+#         name="add indexes",
+#         description="adds index text of layer + index",
+#         default=True,
+#     )
 
 
-class import_settings(bpy.types.PropertyGroup):
-    split_layers: BoolProperty(
-        name="Split Layers",
-        description="Save every layer as single Objects in Collection",
-        default=False,
-    )
-    subdivide: BoolProperty(
-        name="Subdivide",
-        description="Only Subdivide gcode segments that are "
-        "bigger than 'Segment length' ",
-        default=False,
-    )
-    output: EnumProperty(
-        name="output type",
-        items=(
-            ('mesh', 'Mesh', 'Make a mesh output'),
-            ('curve', 'Curve', 'Make curve output')
-        ),
-        default='curve',
-    )
-    max_segment_size: FloatProperty(
-        name="",
-        description="Only Segments bigger then this value get subdivided",
-        default=0.001,
-        min=0.0001,
-        max=1.0,
-        unit="LENGTH",
-    )
+# class import_settings(bpy.types.PropertyGroup):
+#     split_layers: BoolProperty(
+#         name="Split Layers",
+#         description="Save every layer as single Objects in Collection",
+#         default=False,
+#     )
+#     subdivide: BoolProperty(
+#         name="Subdivide",
+#         description="Only Subdivide gcode segments that are "
+#         "bigger than 'Segment length' ",
+#         default=False,
+#     )
+#     output: EnumProperty(
+#         name="output type",
+#         items=(
+#             ('mesh', 'Mesh', 'Make a mesh output'),
+#             ('curve', 'Curve', 'Make curve output')
+#         ),
+#         default='curve',
+#     )
+#     max_segment_size: FloatProperty(
+#         name="",
+#         description="Only Segments bigger then this value get subdivided",
+#         default=0.001,
+#         min=0.0001,
+#         max=1.0,
+#         unit="LENGTH",
+#     )
 
 
 class camOperation(bpy.types.PropertyGroup):
@@ -1912,12 +1912,12 @@ def get_panels():  # convenience function for bot register and unregister functi
         camChain,
         machineSettings,
         CamAddonPreferences,
-
         ui.CAM_INTERFACE_Panel,
+        ui.CAM_Parent_Panel,
         ui.CAM_CHAINS_Panel,
         ui.CAM_OPERATIONS_Panel,
-        ui.CAM_INFO_Panel,
         ui.CAM_MATERIAL_Panel,
+        ui.CAM_INFO_Panel,
         ui.CAM_OPERATION_PROPERTIES_Panel,
         ui.CAM_OPTIMISATION_Panel,
         ui.CAM_AREA_Panel,
@@ -1926,8 +1926,8 @@ def get_panels():  # convenience function for bot register and unregister functi
         ui.CAM_CUTTER_Panel,
         ui.CAM_GCODE_Panel,
         ui.CAM_MACHINE_Panel,
-        ui.CAM_PACK_Panel,
-        ui.CAM_SLICE_Panel,
+        # ui.CAM_PACK_Panel,
+        # ui.CAM_SLICE_Panel,
         ui.VIEW3D_PT_tools_curvetools,
         ui.CustomPanel,
 
@@ -2118,16 +2118,17 @@ classes = [
     camChain,
     machineSettings,
     CamAddonPreferences,
-    import_settings,
+    # import_settings,
     ui.CAM_INTERFACE_Panel,
     ui.CAM_INTERFACE_Properties,
+    ui.CAM_Parent_Panel,
     ui.CAM_CHAINS_Panel,
     ui.CAM_OPERATIONS_Panel,
-    ui.CAM_INFO_Properties,
-    ui.CAM_INFO_Panel,
     ui.CAM_MATERIAL_Panel,
     ui.CAM_MATERIAL_Properties,
     ui.CAM_MATERIAL_PositionObject,
+    ui.CAM_INFO_Panel,
+    ui.CAM_INFO_Properties,
     ui.CAM_OPERATION_PROPERTIES_Panel,
     ui.CAM_OPTIMISATION_Panel,
     ui.CAM_OPTIMISATION_Properties,
@@ -2138,11 +2139,16 @@ classes = [
     ui.CAM_CUTTER_Panel,
     ui.CAM_GCODE_Panel,
     ui.CAM_MACHINE_Panel,
-    ui.CAM_PACK_Panel,
-    ui.CAM_SLICE_Panel,
+    # ui.CAM_PACK_Panel,
+    # ui.CAM_SLICE_Panel,
     ui.VIEW3D_PT_tools_curvetools,
-    ui.VIEW3D_PT_tools_create,
-    ui.CustomPanel,
+    # ui.VIEW3D_PT_tools_create,
+    #######
+    ui.VIEW3D_MT_tools_create,
+    ui.VIEW3D_MT_tools_add,
+    ui.TOPBAR_MT_import_gcode,
+    #######
+    # ui.CustomPanel,
     ui.WM_OT_gcode_import,
 
     ops.PathsBackground,
@@ -2206,8 +2212,8 @@ classes = [
     BLENDERCAM_ENGINE,
     # CamBackgroundMonitor
     # pack module:
-    PackObjectsSettings,
-    SliceObjectsSettings,
+    # PackObjectsSettings,
+    # SliceObjectsSettings,
     camOperation,
 
 ]
@@ -2240,28 +2246,35 @@ def register():
         type=machineSettings,
     )
 
-    s.cam_import_gcode = PointerProperty(
-        type=import_settings,
-    )
+    # s.cam_import_gcode = PointerProperty(
+    #     type=import_settings,
+    # )
 
     s.cam_text = StringProperty()
     bpy.app.handlers.frame_change_pre.append(ops.timer_update)
     bpy.app.handlers.load_post.append(check_operations_on_load)
     # bpy.types.INFO_HT_header.append(header_info)
 
-    s.cam_pack = PointerProperty(
-        type=PackObjectsSettings,
-    )
-
-    s.cam_slice = PointerProperty(
-        type=SliceObjectsSettings,
-    )
+    # s.cam_pack = PointerProperty(
+    #     type=PackObjectsSettings,
+    # )
+    #
+    # s.cam_slice = PointerProperty(
+    #     type=SliceObjectsSettings,
+    # )
 
     bpy.types.Scene.interface = PointerProperty(
         type=CAM_INTERFACE_Properties,
     )
 
+    bpy.types.WindowManager.progress = FloatProperty(
+        default=0,
+    )
+
     basrelief.register()
+
+    bpy.types.VIEW3D_MT_curve_add.prepend(VIEW3D_MT_tools_add.draw)
+    bpy.types.TOPBAR_MT_file_import.append(TOPBAR_MT_import_gcode.draw)
 
 
 def unregister():
@@ -2275,8 +2288,11 @@ def unregister():
     del s.cam_operations
     del s.cam_active_operation
     del s.cam_machine
-    del s.cam_import_gcode
+    # del s.cam_import_gcode
     del s.cam_text
-    del s.cam_pack
-    del s.cam_slice
+    # del s.cam_pack
+    # del s.cam_slice
     basrelief.unregister()
+
+    bpy.types.VIEW3D_MT_curve_add.remove(VIEW3D_MT_tools_add.draw)
+    bpy.types.TOPBAR_MT_file_import.remove(TOPBAR_MT_import_gcode.draw)

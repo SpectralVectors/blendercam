@@ -57,11 +57,11 @@ def srotate(s, r, x, y):
     return sgeometry.Polygon(ncoords)
 
 
-def packCurves():
+def packCurves(self):
     if speedups.available:
         speedups.enable()
     t = time.time()
-    packsettings = bpy.context.scene.cam_pack
+    packsettings = self  # bpy.context.scene.cam_pack
 
     sheetsizex = packsettings.sheet_x
     sheetsizey = packsettings.sheet_y

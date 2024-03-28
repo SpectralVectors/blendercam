@@ -14,10 +14,15 @@ from .buttons_panel import CAMButtonsPanel
 
 class CAM_OPERATIONS_Panel(CAMButtonsPanel, bpy.types.Panel):
     """CAM operations panel"""
-    bl_label = "CAM operations"
+    bl_label = "Operations"
     bl_idname = "WORLD_PT_CAM_OPERATIONS"
     always_show_panel = True
     panel_interface_level = 0
+    bl_space_type = 'VIEW_3D'
+    bl_region_type = 'UI'
+    bl_category = 'CAM'
+    bl_order = 0
+    bl_parent_id = "WORLD_PT_CAM_PARENT"
 
     prop_level = {
         'draw_presets': 1,
@@ -66,7 +71,7 @@ class CAM_OPERATIONS_Panel(CAMButtonsPanel, bpy.types.Panel):
         if not self.op.valid:
             self.layout.label(text="Select a valid object to calculate the path.")
         # will be disable if not valid
-        self.layout.operator("object.calculate_cam_path", text="Calculate path & export Gcode")
+        self.layout.operator("object.calculate_cam_path", text="Calculate Path")
 
     def draw_export_gcode(self):
         if not self.has_correct_level():
@@ -81,7 +86,7 @@ class CAM_OPERATIONS_Panel(CAMButtonsPanel, bpy.types.Panel):
         if not self.has_correct_level():
             return
         if self.op.valid:
-            self.layout.operator("object.cam_simulate", text="Simulate this operation")
+            self.layout.operator("object.cam_simulate", text="Simulate Operation")
 
     def draw_op_name(self):
         if not self.has_correct_level():
@@ -100,7 +105,7 @@ class CAM_OPERATIONS_Panel(CAMButtonsPanel, bpy.types.Panel):
     def draw_operation_source(self):
         if not self.has_correct_level():
             return
-        self.layout.prop(self.op, 'geometry_source')
+        self.layout.prop(self.op, 'geometry_source', text='Data Source')
 
         if self.op.strategy == 'CURVE':
             if self.op.geometry_source == 'OBJECT':
@@ -127,6 +132,9 @@ class CAM_OPERATIONS_Panel(CAMButtonsPanel, bpy.types.Panel):
 
     def draw(self, context):
         self.context = context
+
+        self.layout.use_property_split = True
+        self.layout.use_property_decorate = False
 
         self.draw_presets()
         self.draw_operations_list()

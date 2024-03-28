@@ -34,12 +34,33 @@ class CAM_UL_chains(UIList):
             layout.label(text="", icon_value=icon)
 
 
+class CAM_Parent_Panel(CAMButtonsPanel, bpy.types.Panel):
+    """CAM chains panel"""
+    bl_label = "Chains & Operations"
+    bl_idname = "WORLD_PT_CAM_PARENT"
+    panel_interface_level = 0
+    always_show_panel = True
+    bl_space_type = 'VIEW_3D'
+    bl_region_type = 'UI'
+    bl_category = 'CAM'
+    bl_options = {'HIDE_HEADER'}
+
+    def draw(self, context):
+        layout = self.layout
+        # self.layout.label(text="Chains & Operations", icon='LINKED')
+
+
 class CAM_CHAINS_Panel(CAMButtonsPanel, bpy.types.Panel):
     """CAM chains panel"""
-    bl_label = "CAM chains"
+    bl_label = "Chains"
     bl_idname = "WORLD_PT_CAM_CHAINS"
     panel_interface_level = 1
     always_show_panel = True
+    bl_space_type = 'VIEW_3D'
+    bl_region_type = 'UI'
+    bl_category = 'CAM'
+    bl_options = {'DEFAULT_CLOSED'}
+    bl_parent_id = "WORLD_PT_CAM_PARENT"
 
     def draw(self, context):
         layout = self.layout
