@@ -8,19 +8,24 @@ import subprocess
 import sys
 
 # pip Packages
-try:
-    import shapely
-except ModuleNotFoundError:
-    # pip install required python stuff
-    subprocess.check_call([sys.executable, "-m", "ensurepip"])
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "--upgrade", " pip"])
-    subprocess.check_call(
-        [sys.executable, "-m", "pip", "install", "shapely", "Equation", "opencamlib"]
-    )
+# try:
+#     import shapely
+# except ModuleNotFoundError:
+#     # pip install required python stuff
+#     subprocess.check_call([sys.executable, "-m", "ensurepip"])
+#     subprocess.check_call([sys.executable, "-m", "pip", "install", "--upgrade", " pip"])
+#     subprocess.check_call(
+#         [sys.executable, "-m", "pip", "install", "shapely", "Equation", "opencamlib"]
+#     )
 
-    # Numba Install temporarily disabled after crash report
-    # install numba if available for this platform, ignore failure
-    # subprocess.run([sys.executable, "-m", "pip", "install", "numba"])
+import numpy
+import shapely
+import Equation
+import opencamlib
+
+# Numba Install temporarily disabled after crash report
+# install numba if available for this platform, ignore failure
+# subprocess.run([sys.executable, "-m", "pip", "install", "numba"])
 
 # Blender Library
 import bpy
@@ -180,18 +185,18 @@ from .utils import (
 )
 
 
-bl_info = {
-    "name": "BlenderCAM - G-code Generation Tools",
-    "author": "Vilem Novak & Contributors",
-    "version":(1,0,24),
-    "blender": (3, 6, 0),
-    "location": "Properties > render",
-    "description": "Generate Machining Paths for CNC",
-    "warning": "",
-    "doc_url": "https://blendercam.com/",
-    "tracker_url": "",
-    "category": "Scene",
-}
+# bl_info = {
+#     "name": "BlenderCAM - G-code Generation Tools",
+#     "author": "Vilem Novak & Contributors",
+#     "version":(1,0,24),
+#     "blender": (3, 6, 0),
+#     "location": "Properties > render",
+#     "description": "Generate Machining Paths for CNC",
+#     "warning": "",
+#     "doc_url": "https://blendercam.com/",
+#     "tracker_url": "",
+#     "category": "Scene",
+# }
 
 
 classes = [

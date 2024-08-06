@@ -1190,7 +1190,7 @@ def makeVisible(o):
     if not o.visible_get():
         storage[0] = False
 
-    cam_collection = bpy.data.collections.new("cam")
+    cam_collection = bpy.data.collections.new('bl_ext.user_default.cam')
     bpy.context.scene.collection.children.link(cam_collection)
     cam_collection.objects.link(bpy.context.object)
 

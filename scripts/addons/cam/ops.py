@@ -113,7 +113,7 @@ class PathsBackground(Operator):
         fpath = bpy.data.filepath
 
         for p in bpy.utils.script_paths():
-            scriptpath = p + os.sep + 'addons' + os.sep + 'cam' + os.sep + 'backgroundop.py'
+            scriptpath = p + os.sep + 'addons' + os.sep + 'bl_ext.user_default.cam' + os.sep + 'backgroundop.py'
             print(scriptpath)
             if os.path.isfile(scriptpath):
                 break

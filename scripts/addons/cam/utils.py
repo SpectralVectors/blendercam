@@ -2021,7 +2021,7 @@ def updateRest(o, context):
 
 
 def getStrategyList(scene, context):
-    use_experimental = bpy.context.preferences.addons['cam'].preferences.experimental
+    use_experimental = bpy.context.preferences.addons['bl_ext.user_default.cam'].preferences.experimental
     items = [
         ('CUTOUT', 'Profile(Cutout)', 'Cut the silhouete with offset'),
         ('POCKET', 'Pocket', 'Pocket operation'),
@@ -2105,9 +2105,9 @@ def check_operations_on_load(context):
     # set interface level to previously used level for a new file
     if not bpy.data.filepath:
         _IS_LOADING_DEFAULTS = True
-        s.interface.level = bpy.context.preferences.addons["cam"].preferences.default_interface_level
+        s.interface.level = bpy.context.preferences.addons['bl_ext.user_default.cam'].preferences.default_interface_level
         machine_preset = bpy.context.preferences.addons[
-            "cam"].preferences.machine_preset = bpy.context.preferences.addons["cam"].preferences.default_machine_preset
+            'bl_ext.user_default.cam'].preferences.machine_preset = bpy.context.preferences.addons['bl_ext.user_default.cam'].preferences.default_machine_preset
         if len(machine_preset) > 0:
             print("Loading Preset:", machine_preset)
             # load last used machine preset
@@ -2118,7 +2118,7 @@ def check_operations_on_load(context):
     # check for updated version of the plugin
     bpy.ops.render.cam_check_updates()
     # copy presets if not there yet
-    if bpy.context.preferences.addons["cam"].preferences.just_updated:
+    if bpy.context.preferences.addons['bl_ext.user_default.cam'].preferences.just_updated:
         preset_source_path = Path(__file__).parent / "presets"
         preset_target_path = Path(bpy.utils.script_path_user()) / "presets"
 
@@ -2133,15 +2133,15 @@ def check_operations_on_load(context):
             dirs_exist_ok=True,
         )
 
-        bpy.context.preferences.addons["cam"].preferences.just_updated = False
+        bpy.context.preferences.addons['bl_ext.user_default.cam'].preferences.just_updated = False
         bpy.ops.wm.save_userpref()
 
-    if not bpy.context.preferences.addons["cam"].preferences.op_preset_update:
+    if not bpy.context.preferences.addons['bl_ext.user_default.cam'].preferences.op_preset_update:
         # Update the Operation presets
         op_presets_source = Path(__file__).parent / "presets" / "cam_operations"
         op_presets_target = Path(bpy.utils.script_path_user()) / "presets" / "cam_operations"
         shutil.copytree(op_presets_source, op_presets_target, dirs_exist_ok=True)
-        bpy.context.preferences.addons["cam"].preferences.op_preset_update = True
+        bpy.context.preferences.addons['bl_ext.user_default.cam'].preferences.op_preset_update = True
 
 
 # add pocket op for medial axis and profile cut inside to clean unremoved material

@@ -31,7 +31,7 @@ class CAM_MACHINE_MT_presets(Menu):
                                          cls.preset_subdir,
                                          display_name=True,
                                          ext=".py")
-        context.preferences.addons['cam'].preferences.default_machine_preset = filepath
+        context.preferences.addons['bl_ext.user_default.cam'].preferences.default_machine_preset = filepath
         bpy.ops.wm.save_userpref()
 
 
