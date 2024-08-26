@@ -24,6 +24,25 @@ DT = 1.025
 
 
 def finger(diameter, stem=2):
+    """Create a joint tool shape based on the specified diameter and stem.
+
+    This function generates a 3D joint tool shape using Blender's
+    operations. It calculates the dimensions of the tool based on the
+    provided diameter and stem parameters. The function creates a
+    rectangular base and circular features, duplicates and mirrors them, and
+    performs union and difference operations to form the final shape. The
+    resulting object is named and cleaned up to ensure a proper mesh.
+
+    Args:
+        diameter (float): The diameter of the tool for joint creation.
+        stem (float?): The amount of radius the stem or neck
+            of the joint will have. Defaults to 2.
+
+    Returns:
+        None: This function does not return a value but modifies
+        the Blender scene by creating and manipulating objects.
+    """
+
     # diameter = diameter of the tool for joint creation
     # DT = Bit diameter tolerance
     # stem = amount of radius the stem or neck of the joint will have
@@ -77,6 +96,22 @@ def finger(diameter, stem=2):
 
 
 def fingers(diameter, inside, amount=1, stem=1):
+    """Create a specified number of fingers for a joint tool.
+
+    This function generates a set of fingers based on the provided diameter
+    and tolerance values. It calculates the necessary translations and
+    duplicates the fingers if more than one is required. Additionally, it
+    creates a receptacle using the silhouette offset from the fingers, if
+    specified.
+
+    Args:
+        diameter (float): The diameter of the tool for joint creation.
+        inside (float): The tolerance in the joint receptacle.
+        amount (int?): The number of fingers to create. Defaults to 1.
+        stem (int?): The amount of radius the stem or neck of the joint will have. Defaults
+            to 1.
+    """
+
     # diameter = diameter of the tool for joint creation
     # inside = Tolerance in the joint receptacle
     global DT  # Bit diameter tolerance
@@ -107,6 +142,31 @@ def fingers(diameter, inside, amount=1, stem=1):
 
 
 def twistf(name, length, diameter, tolerance, twist, tneck, tthick, twist_keep=False):
+    """Add a twist lock to a receptacle.
+
+    This function modifies the receptacle by adding a twist lock feature if
+    the 'twist' parameter is set to True. It performs a series of operations
+    including interlocking, rotating, and moving the components based on the
+    provided parameters. If 'twist_keep' is True, it duplicates the twist
+    lock feature for further use. The function ensures that the active name
+    is set correctly throughout the process.
+
+    Args:
+        name (str): The name to assign to the active component.
+        length (float): The length of the receptacle.
+        diameter (float): The diameter of the receptacle.
+        tolerance (float): The tolerance value for the dimensions.
+        twist (bool): A flag indicating whether to add a twist lock.
+        tneck (float): The neck thickness for the twist lock.
+        tthick (float): The thickness of the twist lock.
+        twist_keep (bool?): A flag indicating whether to keep the twist lock duplicate. Defaults to
+            False.
+
+    Returns:
+        None: This function does not return a value but modifies the active component
+            in place.
+    """
+
     # add twist lock to receptacle
     if twist:
         joinery.interlock_twist(length, tthick, tolerance, cx=0, cy=0, rotation=0, percentage=tneck)
@@ -123,6 +183,32 @@ def twistf(name, length, diameter, tolerance, twist, tneck, tthick, twist_keep=F
 
 
 def twistm(name, length, diameter, tolerance, twist, tneck, tthick, angle, twist_keep=False, x=0, y=0):
+    """Add a twist lock to a male connector.
+
+    This function creates a twist lock feature on a male connector based on
+    the provided parameters. It utilizes global variables and functions from
+    the `joinery` and `simple` modules to perform operations such as
+    interlocking, rotating, and moving components. The function also allows
+    for duplication of the twist feature if specified.
+
+    Args:
+        name (str): The name to assign to the active component.
+        length (float): The length of the connector.
+        diameter (float): The diameter of the connector.
+        tolerance (float): The tolerance for the connector dimensions.
+        twist (bool): A flag indicating whether to add a twist feature.
+        tneck (float): The neck thickness for the twist feature.
+        tthick (float): The thickness of the twist feature.
+        angle (float): The angle to rotate the twist feature.
+        twist_keep (bool?): A flag indicating whether to keep the twist feature. Defaults to False.
+        x (float?): The x-coordinate for movement. Defaults to 0.
+        y (float?): The y-coordinate for movement. Defaults to 0.
+
+    Returns:
+        None: This function does not return a value but modifies the active component
+            in place.
+    """
+
     # add twist lock to male connector
     global DT
     if twist:
@@ -143,6 +229,36 @@ def twistm(name, length, diameter, tolerance, twist, tneck, tthick, angle, twist
 
 def bar(width, thick, diameter, tolerance, amount=0, stem=1, twist=False, tneck=0.5, tthick=0.01, twist_keep=False,
         twist_line=False, twist_line_amount=2, which='MF'):
+    """Create a puzzle bar with specified dimensions and features.
+
+    This function generates a puzzle bar based on the provided parameters,
+    including width, thickness, and joint characteristics. It allows for
+    customization of the number of fingers in the joint, the presence of a
+    twist lock, and other attributes. The function utilizes Blender's
+    operations to create and manipulate 3D objects, including rectangles and
+    joints, and performs various transformations such as rotation and
+    movement to achieve the desired shape.
+
+    Args:
+        width (float): The length of the bar.
+        thick (float): The thickness of the bar.
+        diameter (float): The diameter of the tool used for joint creation.
+        tolerance (float): The tolerance in the joint.
+        amount (int?): The number of fingers in the joint; 0 means auto-generate. Defaults to
+            0.
+        stem (float?): The amount of radius the stem or neck of the joint will have. Defaults
+            to 1.
+        twist (bool?): Indicates whether to add a twist lock. Defaults to False.
+        tneck (float?): The percentage the twist neck will have compared to thickness. Defaults
+            to 0.5.
+        tthick (float?): The thickness of the twist material. Defaults to 0.01.
+        twist_keep (bool?): Indicates whether to keep the twist feature. Defaults to False.
+        twist_line (bool?): Indicates whether to add a twist line feature. Defaults to False.
+        twist_line_amount (int?): The amount of twist line to create. Defaults to 2.
+        which (str?): Specifies the type of joint; options are 'M', 'F', 'MF', 'MM', 'FF'.
+            Defaults to 'MF'.
+    """
+
 
     # width = length of the bar
     # thick = thickness of the bar
@@ -203,6 +319,36 @@ def bar(width, thick, diameter, tolerance, amount=0, stem=1, twist=False, tneck=
 
 def arc(radius, thick, angle, diameter, tolerance, amount=0, stem=1, twist=False, tneck=0.5, tthick=0.01,
         twist_keep=False, which='MF'):
+    """Generate an arc with specified parameters.
+
+    This function creates a 3D arc based on the provided radius, thickness,
+    angle, and other parameters. It calculates the necessary components for
+    the arc and generates it using Blender's operations. The function also
+    handles the creation of fingers and twist locks if specified. The
+    generated arc can be either male, female, or a combination of both based
+    on the 'which' parameter.
+
+    Args:
+        radius (float): The radius of the curve.
+        thick (float): The thickness of the bar.
+        angle (float): The angle of the arc. Must be greater than 0.
+        diameter (float): The diameter of the tool for joint creation.
+        tolerance (float): Tolerance in the joint.
+        amount (int?): The number of fingers in the joint. Defaults to 0 for auto generation.
+        stem (float?): The amount of radius the stem or neck of the joint will have. Defaults
+            to 1.
+        twist (bool?): Whether to add a twist lock. Defaults to False.
+        tneck (float?): Percentage the twist neck will have compared to thickness. Defaults to
+            0.5.
+        tthick (float?): Thickness of the twist material. Defaults to 0.01.
+        twist_keep (bool?): Whether to keep the twist. Defaults to False.
+        which (str?): Specifies which joint to generate ('M', 'F', 'MF'). Defaults to 'MF'.
+
+    Returns:
+        None: This function does not return a value but modifies the Blender scene
+            directly.
+    """
+
     # radius = radius of the curve
     # thick = thickness of the bar
     # angle = angle of the arc
@@ -289,6 +435,44 @@ def arc(radius, thick, angle, diameter, tolerance, amount=0, stem=1, twist=False
 
 def arcbararc(length, radius, thick, angle, angleb, diameter, tolerance, amount=0, stem=1, twist=False,
               tneck=0.5, tthick=0.01, which='MF', twist_keep=False, twist_line=False, twist_line_amount=2):
+    """Generate an arc bar joint with specified parameters.
+
+    This function creates a 3D arc bar joint in Blender using the provided
+    dimensions and characteristics. It generates a base rectangle and then
+    adds male and/or female sections based on the specified joint type. The
+    function also supports optional twisting features for the joint.
+
+    Args:
+        length (float): The total width of the segments including 2 * radius and thickness.
+        radius (float): The radius of the curve.
+        thick (float): The thickness of the bar.
+        angle (float): The angle of the female part.
+        angleb (float): The angle of the male part.
+        diameter (float): The diameter of the tool for joint creation.
+        tolerance (float): The tolerance in the joint.
+        amount (int?): The number of fingers in the joint; 0 means auto-generate. Defaults to
+            0.
+        stem (float?): The amount of radius the stem or neck of the joint will have. Defaults
+            to 1.
+        twist (bool?): Whether to add a twist lock. Defaults to False.
+        tneck (float?): The percentage the twist neck will have compared to thickness. Defaults
+            to 0.5.
+        tthick (float?): The thickness of the twist material. Defaults to 0.01.
+        which (str?): Specifies which joint to generate ('M', 'F', 'MF'). Defaults to 'MF'.
+        twist_keep (bool?): Whether to keep the twist after creation. Defaults to False.
+        twist_line (bool?): Whether to add a twist line. Defaults to False.
+        twist_line_amount (int?): The amount for the twist line. Defaults to 2.
+
+    Returns:
+        None: This function does not return any value but modifies the Blender scene
+            directly.
+
+    Note:
+        This function relies on Blender's bpy module and assumes that the
+        necessary context is set up for
+        executing operations within Blender's environment.
+    """
+
     # length is the total width of the segments including 2 * radius and thick
     # radius = radius of the curve
     # thick = thickness of the bar
@@ -345,6 +529,41 @@ def arcbararc(length, radius, thick, angle, angleb, diameter, tolerance, amount=
 
 def arcbar(length, radius, thick, angle, diameter, tolerance, amount=0, stem=1, twist=False,
            tneck=0.5, tthick=0.01, twist_keep=False, which='MF', twist_line=False, twist_line_amount=2):
+    """Generate an arc bar joint based on specified parameters.
+
+    This function creates an arc bar joint by generating male and female
+    sections based on the provided dimensions and characteristics. The
+    function takes into account various parameters such as length, radius,
+    thickness, angle, and tolerance to accurately model the joint. The joint
+    can be customized with options for twisting and the number of fingers in
+    the joint. The generated components are then combined to form the final
+    arc bar.
+
+    Args:
+        length (float): The total width of the segments including 2 * radius and thickness.
+        radius (float): The radius of the curve.
+        thick (float): The thickness of the bar.
+        angle (float): The angle of the female part.
+        diameter (float): The diameter of the tool for joint creation.
+        tolerance (float): Tolerance in the joint.
+        amount (int?): The number of fingers in the joint; 0 means auto-generate. Defaults to
+            0.
+        stem (float?): The amount of radius the stem or neck of the joint will have. Defaults
+            to 1.
+        twist (bool?): Indicates if a twist lock addition is required. Defaults to False.
+        tneck (float?): Percentage the twist neck will have compared to thickness. Defaults to
+            0.5.
+        tthick (float?): Thickness of the twist material. Defaults to 0.01.
+        twist_keep (bool?): Indicates if the twist should be retained. Defaults to False.
+        which (str?): Specifies which joint to generate ('M', 'F', 'MF'). Defaults to 'MF'.
+        twist_line (bool?): Indicates if a twist line should be included. Defaults to False.
+        twist_line_amount (int?): Amount of twist line to generate. Defaults to 2.
+
+    Returns:
+        None: This function does not return a value but modifies the active scene in
+            Blender.
+    """
+
     # length is the total width of the segments including 2 * radius and thick
     # radius = radius of the curve
     # thick = thickness of the bar
@@ -403,6 +622,37 @@ def arcbar(length, radius, thick, angle, diameter, tolerance, amount=0, stem=1, 
 
 def multiangle(radius, thick, angle, diameter, tolerance, amount=0, stem=1, twist=False,
                tneck=0.5, tthick=0.01, combination='MFF'):
+    """Generate a multi-angle joint based on specified parameters.
+
+    This function creates a multi-angle joint by generating curves and arcs
+    using the provided parameters such as radius, thickness, angle,
+    diameter, tolerance, and other optional settings. It utilizes the
+    Blender Python API to create and manipulate 3D shapes, allowing for the
+    customization of the joint's geometry. The function supports different
+    combinations of male and female parts, and can automatically generate
+    the number of fingers in the joint if specified.
+
+    Args:
+        radius (float): The radius of the curve.
+        thick (float): The thickness of the bar.
+        angle (float): The angle of the female part.
+        diameter (float): The diameter of the tool for joint creation.
+        tolerance (float): The tolerance in the joint.
+        amount (int?): The amount of fingers in the joint; 0 means auto-generate. Defaults to
+            0.
+        stem (float?): The amount of radius the stem or neck of the joint will have. Defaults
+            to 1.
+        twist (bool?): Whether to add a twist lock. Defaults to False.
+        tneck (float?): The percentage the twist neck will have compared to thickness. Defaults
+            to 0.5.
+        tthick (float?): The thickness of the twist material. Defaults to 0.01.
+        combination (str?): Which joint to generate ('M', 'F', 'MF', 'MFF', 'MMF'). Defaults to
+            'MFF'.
+
+    Returns:
+        None: This function does not return a value but modifies the Blender scene.
+    """
+
     # length is the total width of the segments including 2 * radius and thick
     # radius = radius of the curve
     # thick = thickness of the bar
@@ -452,6 +702,35 @@ def multiangle(radius, thick, angle, diameter, tolerance, amount=0, stem=1, twis
 
 def t(length, thick, diameter, tolerance, amount=0, stem=1, twist=False, tneck=0.5, tthick=0.01, combination='MF',
       base_gender='M', corner=False):
+    """Generate a 3D model based on specified parameters.
+
+    This function creates a 3D model by manipulating geometric shapes based
+    on the provided parameters. It considers various combinations of shapes
+    and orientations to produce the final model. The function handles
+    different configurations based on the `combination` and `corner`
+    arguments, allowing for flexibility in the design process. The resulting
+    model is constructed using a series of operations such as moving,
+    duplicating, and uniting shapes.
+
+    Args:
+        length (float): The length of the main shape.
+        thick (float): The thickness of the shape.
+        diameter (float): The diameter of the shape.
+        tolerance (float): The tolerance level for the dimensions.
+        amount (int?): The amount of material to use. Defaults to 0.
+        stem (int?): The stem configuration. Defaults to 1.
+        twist (bool?): Whether to apply a twist to the shape. Defaults to False.
+        tneck (float?): The neck thickness. Defaults to 0.5.
+        tthick (float?): The thickness for the neck. Defaults to 0.01.
+        combination (str?): The combination type ('MF', 'F', 'M'). Defaults to 'MF'.
+        base_gender (str?): The base gender for the model ('M' or 'F'). Defaults to 'M'.
+        corner (bool?): Whether to apply corner adjustments. Defaults to False.
+
+    Returns:
+        None: This function does not return a value but modifies the 3D model
+            directly.
+    """
+
     if corner:
         if combination == 'MF':
             base_gender = 'M'
@@ -502,6 +781,35 @@ def t(length, thick, diameter, tolerance, amount=0, stem=1, twist=False, tneck=0
 
 def curved_t(length, thick, radius, diameter, tolerance, amount=0, stem=1, twist=False, tneck=0.5, tthick=0.01,
              combination='MF', base_gender='M'):
+    """Create a curved shape based on specified parameters.
+
+    This function generates a 3D curved shape using the provided dimensions
+    and characteristics. It utilizes various helper functions to create bars
+    and arcs, applying transformations such as mirroring and union
+    operations to achieve the desired geometry. The function supports
+    different configurations based on the `base_gender` parameter, allowing
+    for the creation of male, female, or combined shapes.
+
+    Args:
+        length (float): The length of the bar.
+        thick (float): The thickness of the bar.
+        radius (float): The radius of the arcs.
+        diameter (float): The diameter used in arc creation.
+        tolerance (float): The tolerance level for the operations.
+        amount (int?): The amount parameter for the bar creation. Defaults to 0.
+        stem (int?): The stem parameter for the bar creation. Defaults to 1.
+        twist (bool?): Indicates whether to apply a twist to the shape. Defaults to False.
+        tneck (float?): The neck thickness parameter. Defaults to 0.5.
+        tthick (float?): The thickness parameter for the arcs. Defaults to 0.01.
+        combination (str?): Specifies the combination type for the arcs. Defaults to 'MF'.
+        base_gender (str?): Specifies the base gender for the shape ('M', 'F', or 'MF'). Defaults to
+            'M'.
+
+    Returns:
+        None: This function does not return a value but modifies the 3D scene
+            directly.
+    """
+
     bar(length, thick, diameter, tolerance, amount=amount, stem=stem, twist=twist, tneck=tneck,
         tthick=tthick, which=combination)
     simple.active_name('tmpbar')
@@ -543,6 +851,32 @@ def curved_t(length, thick, radius, diameter, tolerance, amount=0, stem=1, twist
 
 def mitre(length, thick, angle, angleb, diameter, tolerance, amount=0, stem=1, twist=False,
           tneck=0.5, tthick=0.01, which='MF'):
+    """Generate a mitre joint with specified parameters.
+
+    This function creates a 3D mitre joint based on the provided dimensions
+    and characteristics. It generates a base rectangle and cutout shapes for
+    the joint, then constructs either a male, female, or both sections
+    depending on the specified type. The function utilizes Blender's
+    operations to create and manipulate the geometry of the joint.
+
+    Args:
+        length (float): The total width of the segments including 2 * radius and thickness.
+        thick (float): The thickness of the bar.
+        angle (float): The angle of the female part.
+        angleb (float): The angle of the male part.
+        diameter (float): The diameter of the tool for joint creation.
+        tolerance (float): The tolerance in the joint.
+        amount (int?): The number of fingers in the joint; 0 means auto-generate. Defaults to
+            0.
+        stem (float?): The amount of radius the stem or neck of the joint will have. Defaults
+            to 1.
+        twist (bool?): Indicates whether to add a twist lock. Defaults to False.
+        tneck (float?): The percentage the twist neck will have compared to thickness. Defaults
+            to 0.5.
+        tthick (float?): The thickness of the twist material. Defaults to 0.01.
+        which (str?): Specifies which joint to generate ('M', 'F', 'MF'). Defaults to 'MF'.
+    """
+
     # length is the total width of the segments including 2 * radius and thick
     # radius = radius of the curve
     # thick = thickness of the bar
@@ -632,6 +966,39 @@ def mitre(length, thick, angle, angleb, diameter, tolerance, amount=0, stem=1, t
 
 def open_curve(line, thick, diameter, tolerance, amount=0, stem=1, twist=False, t_neck=0.5, t_thick=0.01,
                twist_amount=1, which='MF', twist_keep=False):
+    """Open a curve with optional puzzle connectors and twist locks.
+
+    This function generates an open curve based on the provided parameters.
+    It creates a shape using the specified thickness and diameter, applies
+    tolerances, and optionally adds puzzle connectors at the ends of the
+    curve. Additionally, it can incorporate twist lock connectors either at
+    the puzzle connection or distributed along the curve. The function
+    utilizes various geometric transformations to position and modify the
+    shapes as needed.
+
+    Args:
+        line (shapely.geometry.LineString): The shapely LineString object representing the curve.
+        thick (float): The thickness of the bar used in the construction.
+        diameter (float): The diameter of the tool for joint creation.
+        tolerance (float): The tolerance applied in the joint.
+        amount (int?): The number of fingers in the joint; 0 means auto-generate. Defaults to
+            0.
+        stem (float?): The radius of the stem or neck of the joint. Defaults to 1.
+        twist (bool?): Whether to add twist lock connectors. Defaults to False.
+        t_neck (float?): The percentage of thickness for the twist neck compared to thick.
+            Defaults to 0.5.
+        t_thick (float?): The thickness of the twist material. Defaults to 0.01.
+        twist_amount (int?): The amount of twist distributed along the curve, not counting joint
+            twists. Defaults to 1.
+        which (str?): Specifies the type of joint; options include 'M', 'F', 'MF', 'MM', 'FF'.
+            Defaults to 'MF'.
+        twist_keep (bool?): Whether to keep the twist locks after creation. Defaults to False.
+
+    Returns:
+        None: This function does not return a value but modifies the 3D scene
+            directly.
+    """
+
     # puts puzzle connectors at the end of an open curve
     # optionally puts twist lock connectors at the puzzle connection
     # optionally puts twist lock connectors along the open curve
@@ -710,6 +1077,23 @@ def open_curve(line, thick, diameter, tolerance, amount=0, stem=1, twist=False, 
 
 
 def tile(diameter, tolerance, tile_x_amount, tile_y_amount, stem=1):
+    """Create a tile shape based on specified dimensions and parameters.
+
+    This function calculates the dimensions of a tile based on the provided
+    diameter, tolerance, and the number of tiles in the x and y directions.
+    It uses these dimensions to create a rectangular shape and performs
+    various geometric operations to generate the final tile design. The
+    function also interacts with a global drawing context to manage the
+    shapes created during the process.
+
+    Args:
+        diameter (float): The base diameter of the tile.
+        tolerance (float): The tolerance value for the tile design.
+        tile_x_amount (int): The number of tiles along the x-axis.
+        tile_y_amount (int): The number of tiles along the y-axis.
+        stem (int?): A parameter that affects the tile dimensions. Defaults to 1.
+    """
+
     global DT
     diameter = diameter * DT
     width = ((tile_x_amount) * (4 + 2 * (stem-1)) + 1) * diameter

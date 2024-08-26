@@ -35,6 +35,21 @@ class CNCCAM_ENGINE(RenderEngine):
 
 
 def get_panels():
+    """Retrieve a list of panels for the Blender interface.
+
+    This function collects and returns a list of panel classes that are
+    compatible with the 'BLENDER_RENDER' engine, excluding certain
+    predefined panels. It first defines a set of panels to exclude and then
+    iterates through all subclasses of `bpy.types.Panel`. If a panel has the
+    attribute `COMPAT_ENGINES` and includes 'BLENDER_RENDER', it is added to
+    the list unless it is in the exclusion set.
+
+    Returns:
+        list: A list of panel classes that are compatible with the 'BLENDER_RENDER'
+            engine,
+        excluding specified panels.
+    """
+
     exclude_panels = {
         'RENDER_PT_eevee_performance',
         'RENDER_PT_opengl_sampling',

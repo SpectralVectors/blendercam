@@ -17,7 +17,25 @@ from . import (
 )
 
 
-def slicing2d(ob, height):  # April 2020 Alain Pelletier
+def slicing2d(ob, height):
+    """Slice a 3D object at a specified height and convert it to a curve.
+
+    This function applies transformations to the given object, switches to
+    edit mode, selects all vertices, and performs a bisect operation to
+    slice the object at the specified height. After slicing, it resets the
+    object's location and applies transformations again before converting
+    the object to a curve. If the conversion fails (e.g., if the mesh was
+    empty), the function deletes the mesh and returns False. Otherwise, it
+    returns True.
+
+    Args:
+        ob (bpy.types.Object): The Blender object to be sliced and converted.
+        height (float): The height at which to slice the object.
+
+    Returns:
+        bool: True if the conversion to curve was successful, False otherwise.
+    """
+  # April 2020 Alain Pelletier
     # let's slice things
     bpy.ops.object.transform_apply(location=True, rotation=False, scale=False)
     bpy.ops.object.mode_set(mode='EDIT')  # force edit mode
@@ -38,7 +56,26 @@ def slicing2d(ob, height):  # April 2020 Alain Pelletier
     return True
 
 
-def slicing3d(ob, start, end):  # April 2020 Alain Pelletier
+def slicing3d(ob, start, end):
+    """Slice a 3D object along a specified range in the Z-axis.
+
+    This function applies transformations to the provided 3D object by
+    slicing it between the specified start and end points along the Z-axis.
+    It first applies the current transformations to the object, switches to
+    edit mode, and selects all vertices. The function then performs two
+    bisect operations to create slices at the specified start and end
+    points. After slicing, it returns to object mode and resets the object's
+    location to align with the start point.
+
+    Args:
+        ob (bpy.types.Object): The Blender object to be sliced.
+        start (float): The Z-coordinate where the slicing starts.
+        end (float): The Z-coordinate where the slicing ends.
+
+    Returns:
+        None: This function modifies the object in place and does not return a value.
+    """
+  # April 2020 Alain Pelletier
     # let's slice things
     bpy.ops.object.transform_apply(location=True, rotation=False, scale=False)
     bpy.ops.object.mode_set(mode='EDIT')  # force edit mode
@@ -58,7 +95,19 @@ def slicing3d(ob, start, end):  # April 2020 Alain Pelletier
     bpy.ops.object.select_all(action='DESELECT')  # deselect everything
 
 
-def sliceObject(ob):  # April 2020 Alain Pelletier
+def sliceObject(ob):
+    """Slice a 3D object into layers based on specified thickness.
+
+    This function takes a 3D object and slices it into multiple layers
+    according to the defined thickness. It creates a new collection for the
+    slices and optionally adds text labels for each slice if specified. The
+    function also handles the positioning of the slices based on the
+    object's dimensions and location in the 3D space.
+
+    Args:
+        ob (bpy.types.Object): The Blender object to be sliced.
+    """
+  # April 2020 Alain Pelletier
     # get variables from menu
     thickness = bpy.context.scene.cam_slice.slice_distance
     slice3d = bpy.context.scene.cam_slice.slice_3d

@@ -52,7 +52,24 @@ class threadCom:  # object passed to threads to read background process stdout i
 
 
 def threadread(tcom):
-    """Reads Stdout of Background Process, Done This Way to Have It Non-blocking"""
+    """Reads the standard output of a background process in a non-blocking
+    manner.
+
+    This function reads a line from the standard output of a background
+    process associated with the provided `tcom` object. It looks for a
+    specific pattern in the output, specifically the substring
+    'progress{...}', and extracts the content within the braces. This allows
+    for real-time monitoring of progress information from the background
+    process without blocking its execution.
+
+    Args:
+        tcom (object): An object representing the background process, which
+            must have a `proc` attribute with a `stdout` stream.
+
+    Returns:
+        None: This function modifies the `outtext` attribute of the `tcom`
+            object directly and does not return a value.
+    """
     inline = tcom.proc.stdout.readline()
     inline = str(inline)
     s = inline.find('progress{')
@@ -63,7 +80,23 @@ def threadread(tcom):
 
 @bpy.app.handlers.persistent
 def timer_update(context):
-    """Monitoring of Background Processes"""
+    """Monitor and update background processes for camera operations.
+
+    This function checks the status of background processes related to
+    camera path calculations. It retrieves the current scene and iterates
+    through the active processes. If a process is no longer alive, it joins
+    the thread and updates the output text. If the process has finished, it
+    removes it from the list of processes and updates the corresponding
+    camera operation status. If the process is still running, it restarts
+    the thread to continue monitoring.
+
+    Args:
+        context: The context in which the function is called, typically containing scene
+            and operations data.
+
+    Returns:
+        None: This function does not return a value.
+    """
     text = ''
     s = bpy.context.scene
     if hasattr(bpy.ops.object.calculate_cam_paths_background.__class__, 'cam_processes'):
@@ -104,6 +137,22 @@ class PathsBackground(Operator):
     bl_options = {'REGISTER', 'UNDO'}
 
     def execute(self, context):
+        """Execute the camera operation in the background.
+
+        This method initiates a background process to perform camera operations
+        based on the current scene and active camera operation. It sets up the
+        necessary paths for the script and starts a subprocess to handle the
+        camera calculations. Additionally, it manages threading to read the
+        output from the subprocess while ensuring that the camera processes are
+        tracked.
+
+        Args:
+            context (bpy.context): The context in which the operation is executed.
+
+        Returns:
+            dict: A dictionary indicating the completion status of the operation.
+        """
+
         s = bpy.context.scene
         o = s.cam_operations[s.cam_active_operation]
         self.operation = o
@@ -139,6 +188,21 @@ class KillPathsBackground(Operator):
     bl_options = {'REGISTER', 'UNDO'}
 
     def execute(self, context):
+        """Execute the camera operation in the given context.
+
+        This method retrieves the active camera operation from the current scene
+        and checks if there are any ongoing camera path calculations. If there
+        are, it terminates those processes that match the active operation's
+        name and updates the operation's computing status.
+
+        Args:
+            context: The context in which the operation is executed.
+
+        Returns:
+            dict: A dictionary indicating the result of the execution, typically
+                {'FINISHED'}.
+        """
+
         s = bpy.context.scene
         o = s.cam_operations[s.cam_active_operation]
         self.operation = o
@@ -156,6 +220,24 @@ class KillPathsBackground(Operator):
 
 
 async def _calc_path(operator, context):
+    """Calculate the path for a given operator and context.
+
+    This function performs various operations based on the geometry source
+    and strategy defined in the active camera operation. It handles
+    visibility settings for objects and collections, checks for valid input
+    parameters, and attempts to compute a path using the provided context
+    and operator. If any errors occur during the process, appropriate error
+    messages are reported to the operator.
+
+    Args:
+        operator (bpy.types.Operator): The operator that initiated the path calculation.
+        context (bpy.types.Context): The context in which the operation is executed.
+
+    Returns:
+        tuple: A tuple containing a status string and a boolean indicating success or
+            failure.
+    """
+
     s = bpy.context.scene
     o = s.cam_operations[s.cam_active_operation]
     if o.geometry_source == 'OBJECT':
@@ -226,6 +308,20 @@ class CalculatePath(Operator, AsyncOperatorMixin):
 
     @classmethod
     def poll(cls, context):
+        """Check if the current camera operation is valid.
+
+        This method checks the active camera operation in the given context's
+        scene. If there is an active operation, it verifies its validity using
+        the `isValid` function. The function returns True if the operation is
+        valid; otherwise, it returns False.
+
+        Args:
+            context (object): The context containing the scene and camera operations.
+
+        Returns:
+            bool: True if the active camera operation is valid, False otherwise.
+        """
+
         s = context.scene
         o = s.cam_operations[s.cam_active_operation]
         if o is not None:
@@ -234,6 +330,20 @@ class CalculatePath(Operator, AsyncOperatorMixin):
         return False
 
     async def execute_async(self, context):
+        """Execute an asynchronous calculation of a path.
+
+        This method performs an asynchronous operation to calculate a path based
+        on the provided context. It awaits the result of the calculation and
+        prints the success status along with the return value. The return value
+        can be used for further processing or analysis.
+
+        Args:
+            context (Any): The context in which the path calculation is to be performed.
+
+        Returns:
+            Any: The result of the path calculation.
+        """
+
         (retval, success) = await _calc_path(self, context)
         print(f"CALCULATED PATH (success={success},retval={retval}")
         return retval
@@ -246,6 +356,22 @@ class PathsAll(Operator):
     bl_options = {'REGISTER', 'UNDO'}
 
     def execute(self, context):
+        """Execute camera operations in the Blender context.
+
+        This function iterates through the camera operations defined in the
+        current Blender scene and executes the path calculation for each
+        operation. It sets the active camera operation before invoking the
+        background calculation for each operation, providing feedback in the
+        console during the process.
+
+        Args:
+            context: The Blender context in which the operations are executed.
+
+        Returns:
+            dict: A dictionary indicating the completion status of the operation,
+            specifically returning {'FINISHED'} upon successful execution.
+        """
+
         i = 0
         for o in bpy.context.scene.cam_operations:
             bpy.context.scene.cam_active_operation = i
@@ -257,6 +383,17 @@ class PathsAll(Operator):
         return {'FINISHED'}
 
     def draw(self, context):
+        """Draws the user interface for selecting camera operations.
+
+        This method utilizes the Blender layout system to create a property
+        search UI element that allows users to select an operation from a
+        predefined list of camera operations. The available operations are
+        sourced from the current scene's camera operations.
+
+        Args:
+            context (bpy.context): The context in which the drawing occurs, typically
+        """
+
         layout = self.layout
         layout.prop_search(self, "operation",
                            bpy.context.scene, "cam_operations")
@@ -269,6 +406,22 @@ class CamPackObjects(Operator):
     bl_options = {'REGISTER', 'UNDO'}
 
     def execute(self, context):
+        """Execute the operation in the given context.
+
+        This function sets the Blender object mode to 'OBJECT' and retrieves the
+        currently selected objects. It also calls the `packCurves` function from
+        the `pack` module to perform additional operations on the curves.
+        Finally, it returns a dictionary indicating that the operation has
+        finished.
+
+        Args:
+            context: The context in which the operation is executed.
+
+        Returns:
+            dict: A dictionary with a key 'FINISHED' indicating the completion of the
+                operation.
+        """
+
         bpy.ops.object.mode_set(mode='OBJECT')	    # force object mode
         obs = bpy.context.selected_objects
         pack.packCurves()
@@ -287,6 +440,23 @@ class CamSliceObjects(Operator):
     bl_options = {'REGISTER', 'UNDO'}
 
     def execute(self, context):
+        """Execute the slicing operation on the active object in the Blender
+        context.
+
+        This function retrieves the currently active object in the Blender
+        context and performs a slicing operation on it using the `sliceObject`
+        function from the `cam` module. After executing the slicing operation,
+        it returns a dictionary indicating that the operation has been completed
+        successfully.
+
+        Args:
+            context: The context in which the operation is executed.
+
+        Returns:
+            dict: A dictionary with a key 'FINISHED' indicating the successful
+            completion of the operation.
+        """
+
         from cam import slice
         ob = bpy.context.active_object
         slice.sliceObject(ob)
@@ -297,7 +467,21 @@ class CamSliceObjects(Operator):
 
 
 def getChainOperations(chain):
-    """Return Chain Operations, Currently Chain Object Can't Store Operations Directly Due to Blender Limitations"""
+    """Return Chain Operations based on the provided chain object.
+
+    This function retrieves the operations associated with a given chain
+    object. Due to limitations in Blender, the chain object cannot store
+    operations directly. The function iterates through the operations of the
+    chain and matches them with the camera operations in the current scene,
+    appending the matching operations to a list which is then returned.
+
+    Args:
+        chain (object): The chain object containing operations to be retrieved.
+
+    Returns:
+        list: A list of operations that match the names of the operations in the
+            chain.
+    """
     chop = []
     for cho in chain.operations:
         for so in bpy.context.scene.cam_operations:
@@ -314,11 +498,39 @@ class PathsChain(Operator, AsyncOperatorMixin):
 
     @classmethod
     def poll(cls, context):
+        """Check the validity of the active camera chain in the given context.
+
+        This method retrieves the currently active camera chain from the scene
+        and checks its validity using the `isChainValid` function. It returns a
+        boolean indicating whether the chain is valid or not.
+
+        Args:
+            context (Context): The context containing the scene and camera chains.
+
+        Returns:
+            bool: True if the active camera chain is valid, False otherwise.
+        """
+
         s = context.scene
         chain = s.cam_chains[s.cam_active_chain]
         return isChainValid(chain, context)[0]
 
     async def execute_async(self, context):
+        """Execute asynchronous operations for camera path calculations.
+
+        This method sets the object mode and processes a series of camera
+        operations defined in the active camera chain. It reports the progress
+        of each operation and handles any exceptions that may occur during the
+        path calculation. After processing, it exports the calculated G-code
+        path based on the resulting meshes.
+
+        Args:
+            context (bpy.context): The Blender context containing scene and object data.
+
+        Returns:
+            dict: A dictionary indicating the finish status of the operation.
+        """
+
         s = context.scene
         bpy.ops.object.mode_set(mode='OBJECT')	    # force object mode
         chain = s.cam_chains[s.cam_active_chain]
@@ -353,11 +565,40 @@ class PathExportChain(Operator):
 
     @classmethod
     def poll(cls, context):
+        """Check the validity of the active camera chain in the given context.
+
+        This method retrieves the active camera chain from the scene and checks
+        its validity using the `isChainValid` function. It returns a boolean
+        indicating whether the chain is valid or not.
+
+        Args:
+            context (Context): The context containing the scene and camera chains.
+
+        Returns:
+            bool: True if the active camera chain is valid, False otherwise.
+        """
+
         s = context.scene
         chain = s.cam_chains[s.cam_active_chain]
         return isChainValid(chain, context)[0]
 
     def execute(self, context):
+        """Execute the camera path export operation.
+
+        This function retrieves the active camera chain from the current scene
+        and collects the mesh data associated with the operations in that chain.
+        It then exports the collected mesh data to a specified G-code path. The
+        function assumes that the necessary objects are present in the Blender
+        context and that the camera chain operations have been defined.
+
+        Args:
+            context: The context in which the operation is executed.
+
+        Returns:
+            dict: A dictionary indicating the completion status of the operation,
+                typically {'FINISHED'}.
+        """
+
         s = bpy.context.scene
 
         chain = s.cam_chains[s.cam_active_chain]
@@ -380,6 +621,22 @@ class PathExport(Operator):
     bl_options = {'REGISTER', 'UNDO'}
 
     def execute(self, context):
+        """Execute the camera operation and export the G-code path.
+
+        This method retrieves the active camera operation from the current scene
+        and exports the corresponding G-code path to a specified filename. It
+        prints the operation details to the console for debugging purposes. The
+        function assumes that the necessary data structures and objects are
+        correctly set up in Blender's context.
+
+        Args:
+            context: The context in which the operation is executed.
+
+        Returns:
+            dict: A dictionary indicating the completion status of the operation,
+                specifically {'FINISHED'}.
+        """
+
 
         s = bpy.context.scene
         operation = s.cam_operations[s.cam_active_operation]
@@ -407,6 +664,22 @@ class CAMSimulate(Operator, AsyncOperatorMixin):
     )
 
     async def execute_async(self, context):
+        """Execute an asynchronous simulation operation for the active camera.
+
+        This method retrieves the current camera operation from the Blender
+        scene and attempts to execute a simulation based on the operation's
+        name. If the operation name corresponds to an existing object in the
+        Blender data, it will call the `doSimulation` method. If the simulation
+        is cancelled, it will return a cancellation status. If the operation
+        name does not exist, it will report an error.
+
+        Args:
+            context: The context in which the operation is executed.
+
+        Returns:
+            dict: A dictionary indicating the status of the operation, either
+        """
+
         s = bpy.context.scene
         operation = s.cam_operations[s.cam_active_operation]
 
@@ -423,6 +696,17 @@ class CAMSimulate(Operator, AsyncOperatorMixin):
         return {'FINISHED'}
 
     def draw(self, context):
+        """Draws the user interface elements for the operation selection.
+
+        This method is responsible for creating a search property in the layout
+        that allows users to select an operation from a predefined list of
+        camera operations. It utilizes Blender's UI layout system to integrate
+        the property search into the current context.
+
+        Args:
+            context (bpy.types.Context): The context in which the UI elements
+        """
+
         layout = self.layout
         layout.prop_search(self, "operation",
                            bpy.context.scene, "cam_operations")
@@ -437,6 +721,19 @@ class CAMSimulateChain(Operator, AsyncOperatorMixin):
 
     @classmethod
     def poll(cls, context):
+        """Check the validity of the active camera chain in the given context.
+
+        This method retrieves the active camera chain from the scene and checks
+        its validity using the `isChainValid` function. It returns a boolean
+        value indicating whether the active camera chain is valid or not.
+
+        Args:
+            context (Context): The context containing the scene and camera chain information.
+
+        Returns:
+            bool: True if the active camera chain is valid, False otherwise.
+        """
+
         s = context.scene
         chain = s.cam_chains[s.cam_active_chain]
         return isChainValid(chain, context)[0]
@@ -448,6 +745,23 @@ class CAMSimulateChain(Operator, AsyncOperatorMixin):
     )
 
     async def execute_async(self, context):
+        """Execute an asynchronous simulation based on the active camera chain.
+
+        This method retrieves the current scene and the active camera chain,
+        then checks if all operations in the chain are valid. If all operations
+        are present, it proceeds to execute the simulation asynchronously. If
+        any operation is missing, it prints a message indicating that there is
+        no computed path to simulate. The function handles cancellation of the
+        simulation gracefully.
+
+        Args:
+            context: The context in which the function is executed.
+
+        Returns:
+            dict: A dictionary indicating the result of the operation, either
+            the operation completed successfully.
+        """
+
         s = bpy.context.scene
         chain = s.cam_chains[s.cam_active_chain]
         chainops = getChainOperations(chain)
@@ -468,6 +782,17 @@ class CAMSimulateChain(Operator, AsyncOperatorMixin):
         return {'FINISHED'}
 
     def draw(self, context):
+        """Draw the user interface elements for the operation selection.
+
+        This method is responsible for creating a search property in the layout
+        that allows users to select an operation from the available camera
+        operations defined in the current scene. It utilizes Blender's UI layout
+        system to integrate seamlessly with the existing interface.
+
+        Args:
+            context (bpy.types.Context): The context in which the draw operation is executed.
+        """
+
         layout = self.layout
         layout.prop_search(self, "operation",
                            bpy.context.scene, "cam_operations")
@@ -484,6 +809,22 @@ class CamChainAdd(Operator):
         return context.scene is not None
 
     def execute(self, context):
+        """Execute the camera chain creation process.
+
+        This function adds a new camera chain to the current scene in Blender.
+        It updates the active camera chain index and assigns a name and filename
+        to the newly created chain based on its index. The function ensures that
+        the camera chain is properly initialized and ready for further
+        operations.
+
+        Args:
+            context: The context in which the operation is executed.
+
+        Returns:
+            dict: A dictionary indicating the operation's completion status,
+                specifically returning {'FINISHED'} upon successful execution.
+        """
+
         # main(context)
         s = bpy.context.scene
         s.cam_chains.add()
@@ -507,6 +848,19 @@ class CamChainRemove(Operator):
         return context.scene is not None
 
     def execute(self, context):
+        """Execute the camera chain removal process.
+
+        This function removes the currently active camera chain from the scene
+        and decrements the active camera chain index if there are remaining
+        chains. It modifies the Blender context to reflect these changes.
+
+        Args:
+            context: The context in which the operation is executed.
+
+        Returns:
+            dict: A dictionary indicating the operation status, specifically
+        """
+
         bpy.context.scene.cam_chains.remove(bpy.context.scene.cam_active_chain)
         if bpy.context.scene.cam_active_chain > 0:
             bpy.context.scene.cam_active_chain -= 1
@@ -525,6 +879,20 @@ class CamChainOperationAdd(Operator):
         return context.scene is not None
 
     def execute(self, context):
+        """Execute an operation in the active camera chain.
+
+        This function retrieves the current scene and the active camera chain,
+        adds a new operation to the chain, and sets the name of the new
+        operation based on the currently active camera operation. It increments
+        the active operation index to reflect the addition of the new operation.
+
+        Args:
+            context: The context in which the function is executed.
+
+        Returns:
+            dict: A dictionary indicating the execution status, typically
+        """
+
         s = bpy.context.scene
         chain = s.cam_chains[s.cam_active_chain]
         s = bpy.context.scene
@@ -545,6 +913,21 @@ class CamChainOperationUp(Operator):
         return context.scene is not None
 
     def execute(self, context):
+        """Execute the operation to move the active camera operation in the chain.
+
+        This function retrieves the current scene and the active camera chain.
+        If there is an active operation (i.e., its index is greater than 0), it
+        moves the operation one position up in the chain and updates the index
+        of the active operation accordingly.
+
+        Args:
+            context: The context in which the function is executed.
+
+        Returns:
+            dict: A dictionary indicating the result of the operation,
+                specifically {'FINISHED'} when the operation is completed.
+        """
+
         s = bpy.context.scene
         chain = s.cam_chains[s.cam_active_chain]
         a = chain.active_operation
@@ -565,6 +948,21 @@ class CamChainOperationDown(Operator):
         return context.scene is not None
 
     def execute(self, context):
+        """Execute the operation to move the active camera operation in the chain.
+
+        This function retrieves the current scene and the active camera chain.
+        If the active operation is not the last one in the chain, it moves the
+        active operation one position forward and updates the active operation
+        index.
+
+        Args:
+            context: The context in which the operation is executed.
+
+        Returns:
+            dict: A dictionary indicating the result of the operation,
+                specifically {'FINISHED'} if the operation was successful.
+        """
+
         s = bpy.context.scene
         chain = s.cam_chains[s.cam_active_chain]
         a = chain.active_operation
@@ -585,6 +983,22 @@ class CamChainOperationRemove(Operator):
         return context.scene is not None
 
     def execute(self, context):
+        """Execute the operation to remove the active operation from the camera
+        chain.
+
+        This method retrieves the current camera chain from the scene context
+        and removes the active operation from that chain. It also ensures that
+        the index of the active operation is updated accordingly, preventing it
+        from going below zero.
+
+        Args:
+            context (bpy.context): The context in which the operation is executed.
+
+        Returns:
+            dict: A dictionary indicating the status of the execution, typically
+                {'FINISHED'}.
+        """
+
         s = bpy.context.scene
         chain = s.cam_chains[s.cam_active_chain]
         chain.operations.remove(chain.active_operation)
@@ -595,7 +1009,13 @@ class CamChainOperationRemove(Operator):
 
 
 def fixUnits():
-    """Sets up Units for BlenderCAM"""
+    """Sets up Units for BlenderCAM.
+
+    This function configures the unit settings for the current Blender
+    scene. It sets the rotation system to degrees and the scale length to
+    1.0, ensuring that the units are appropriately configured for use within
+    BlenderCAM.
+    """
     s = bpy.context.scene
 
     s.unit_settings.system_rotation = 'DEGREES'
@@ -615,6 +1035,24 @@ class CamOperationAdd(Operator):
         return context.scene is not None
 
     def execute(self, context):
+        """Execute the camera operation based on the active object in the scene.
+
+        This function retrieves the currently active object in the Blender
+        context and performs operations related to camera settings. It checks if
+        an object is selected, calculates its bounding box, and adds a new
+        camera operation to the scene. If no object is found, it reports an
+        error and cancels the operation. Additionally, it ensures that a machine
+        area object is present in the scene.
+
+        Args:
+            context (bpy.types.Context): The context in which the operation is executed.
+
+        Returns:
+            dict: A dictionary indicating the result of the operation, either {'FINISHED'}
+                or
+                {'CANCELLED'}.
+        """
+
         s = bpy.context.scene
         fixUnits()
 
@@ -652,6 +1090,24 @@ class CamOperationCopy(Operator):
         return context.scene is not None
 
     def execute(self, context):
+        """Execute the camera operation in the given context.
+
+        This method performs the necessary steps to execute a camera operation
+        within the Blender scene. It first checks if there are any camera
+        operations available to execute. If there are, it copies the active
+        camera operation, increments the active operation index, and updates the
+        new operation's name and filename. The method also ensures that the new
+        operation's name is unique by appending a number if necessary.
+
+        Args:
+            context: The context in which the operation is executed.
+
+        Returns:
+            dict: A dictionary indicating the result of the execution, which can be
+            either {'CANCELLED'} if no operations are available or {'FINISHED'}
+            if the operation was successfully executed.
+        """
+
         # main(context)
         scene = bpy.context.scene
 
@@ -703,6 +1159,24 @@ class CamOperationRemove(Operator):
         return context.scene is not None
 
     def execute(self, context):
+        """Execute the camera operation in the given context.
+
+        This function performs the active camera operation by deleting the
+        corresponding object from the scene. It first checks if there are any
+        camera operations available. If there are none, it returns a
+        cancellation status. If an operation is found, it sets the active object
+        in the scene and attempts to delete it. The function also manages the
+        list of camera operations by removing the completed operation and
+        adjusting the active operation index accordingly.
+
+        Args:
+            context (bpy.types.Context): The Blender context containing the scene and operations.
+
+        Returns:
+            dict: A dictionary indicating the status of the operation, either
+                {'CANCELLED'} or {'FINISHED'}.
+        """
+
         scene = context.scene
         try:
             if len(scene.cam_operations) == 0:
@@ -748,6 +1222,22 @@ class CamOperationMove(Operator):
         return context.scene is not None
 
     def execute(self, context):
+        """Execute a camera operation based on the specified direction.
+
+        This method modifies the active camera operation in the Blender context
+        based on the direction specified. If the direction is 'UP', it moves the
+        active operation up in the list, provided it is not already at the top.
+        Conversely, if the direction is not 'UP', it moves the operation down,
+        ensuring it does not exceed the bounds of the list.
+
+        Args:
+            context: The context in which the operation is executed.
+
+        Returns:
+            dict: A dictionary indicating that the operation has finished,
+                typically containing {'FINISHED'}.
+        """
+
         # main(context)
         a = bpy.context.scene.cam_active_operation
         cops = bpy.context.scene.cam_operations
@@ -775,6 +1265,22 @@ class CamOrientationAdd(Operator):
         return context.scene is not None
 
     def execute(self, context):
+        """Execute the camera orientation operation in Blender.
+
+        This function retrieves the active camera operation from the current
+        scene, creates an empty object with arrow indicators to represent the
+        orientation, and adds it to a specified group. The empty object's name
+        is generated based on the operation name and the current count of
+        objects in the group.
+
+        Args:
+            context: The context in which the operation is executed.
+
+        Returns:
+            dict: A dictionary indicating the operation's completion status,
+                typically {'FINISHED'}.
+        """
+
         s = bpy.context.scene
         a = s.cam_active_operation
         o = s.cam_operations[a]
@@ -802,6 +1308,21 @@ class CamBridgesAdd(Operator):
         return context.scene is not None
 
     def execute(self, context):
+        """Execute the camera operation in the given context.
+
+        This function retrieves the active camera operation from the current
+        scene and adds automatic bridges to it. It utilizes the Blender Python
+        API to access the scene and perform the operation. The function is
+        designed to be called within a Blender operator context.
+
+        Args:
+            context (bpy.types.Context): The context in which the operation is executed.
+
+        Returns:
+            dict: A dictionary indicating the result of the operation, typically
+                containing {'FINISHED'} upon successful execution.
+        """
+
         s = bpy.context.scene
         a = s.cam_active_operation
         o = s.cam_operations[a]
