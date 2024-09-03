@@ -1,0 +1,14 @@
+[tool.black]
+force-exclude = '''
+/(
+\.git
+| \.mypy_cache
+| \.venv
+| _build
+| build
+| dist
+| /scripts/addons/cam/nc
+| /scripts/addons/cam/presets
+| /scripts/addons/cam/tests
+)/
+'''
