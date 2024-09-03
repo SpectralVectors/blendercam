@@ -36,24 +36,23 @@ class CNCCAM_ENGINE(RenderEngine):
 
 def get_panels():
     exclude_panels = {
-        'RENDER_PT_eevee_performance',
-        'RENDER_PT_opengl_sampling',
-        'RENDER_PT_opengl_lighting',
-        'RENDER_PT_opengl_color',
-        'RENDER_PT_opengl_options',
-        'RENDER_PT_simplify',
-        'RENDER_PT_gpencil',
-        'RENDER_PT_freestyle',
-        'RENDER_PT_color_management',
-        'MATERIAL_PT_viewport',
-        'MATERIAL_PT_lineart',
+        "RENDER_PT_eevee_performance",
+        "RENDER_PT_opengl_sampling",
+        "RENDER_PT_opengl_lighting",
+        "RENDER_PT_opengl_color",
+        "RENDER_PT_opengl_options",
+        "RENDER_PT_simplify",
+        "RENDER_PT_gpencil",
+        "RENDER_PT_freestyle",
+        "RENDER_PT_color_management",
+        "MATERIAL_PT_viewport",
+        "MATERIAL_PT_lineart",
     }
 
     panels = [
         EEVEE_MATERIAL_PT_context_material,
         EEVEE_MATERIAL_PT_surface,
         EEVEE_MATERIAL_PT_settings,
-
         CAM_INTERFACE_Panel,
         CAM_CHAINS_Panel,
         CAM_OPERATIONS_Panel,
@@ -72,7 +71,10 @@ def get_panels():
     ]
 
     for panel in bpy.types.Panel.__subclasses__():
-        if hasattr(panel, 'COMPAT_ENGINES') and 'BLENDER_RENDER' in panel.COMPAT_ENGINES:
+        if (
+            hasattr(panel, "COMPAT_ENGINES")
+            and "BLENDER_RENDER" in panel.COMPAT_ENGINES
+        ):
             if panel.__name__ not in exclude_panels:
                 panels.append(panel)
 

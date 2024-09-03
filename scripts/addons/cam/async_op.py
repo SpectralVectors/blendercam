@@ -11,9 +11,12 @@ import bpy
 
 
 @types.coroutine
-def progress_async(text, n=None, value_type='%'):
+def progress_async(text, n=None, value_type="%"):
     """Function for Reporting During the Script, Works for Background Operations in the Header."""
-    throw_exception = yield ('progress', {'text': text, 'n': n, "value_type": value_type})
+    throw_exception = yield (
+        "progress",
+        {"text": text, "n": n, "value_type": value_type},
+    )
     if throw_exception is not None:
         raise throw_exception
 
@@ -31,31 +34,31 @@ class AsyncOperatorMixin:
 
     def modal(self, context, event):
         if bpy.app.background:
-            return {'PASS_THROUGH'}
+            return {"PASS_THROUGH"}
 
-        if event.type == 'TIMER':
+        if event.type == "TIMER":
             try:
                 if self.tick(context):
-                    return {'RUNNING_MODAL'}
+                    return {"RUNNING_MODAL"}
                 else:
                     context.window_manager.event_timer_remove(self.timer)
                     bpy.context.workspace.status_text_set(None)
-                    return {'FINISHED'}
+                    return {"FINISHED"}
             except Exception as e:
                 context.window_manager.event_timer_remove(self.timer)
                 bpy.context.workspace.status_text_set(None)
-                self.report({'ERROR'}, str(e))
-                return {'FINISHED'}
-        elif event.type == 'ESC':
+                self.report({"ERROR"}, str(e))
+                return {"FINISHED"}
+        elif event.type == "ESC":
             self._is_cancelled = True
             self.tick(context)
             context.window_manager.event_timer_remove(self.timer)
             bpy.context.workspace.status_text_set(None)
-            return {'FINISHED'}
-        if 'BLOCKING' in self.bl_options:
-            return {'RUNNING_MODAL'}
+            return {"FINISHED"}
+        if "BLOCKING" in self.bl_options:
+            return {"RUNNING_MODAL"}
         else:
-            return {'PASS_THROUGH'}
+            return {"PASS_THROUGH"}
 
     def show_progress(self, context, text, n, value_type):
         if n is not None:
@@ -71,11 +74,13 @@ class AsyncOperatorMixin:
             self.coroutine = self.execute_async(context)
         try:
             if self._is_cancelled:
-                (msg, args) = self.coroutine.send(AsyncCancelledException("Cancelled with ESC Key"))
+                (msg, args) = self.coroutine.send(
+                    AsyncCancelledException("Cancelled with ESC Key")
+                )
                 raise StopIteration
             else:
                 (msg, args) = self.coroutine.send(None)
-            if msg == 'progress':
+            if msg == "progress":
                 self.show_progress(context, **args)
             else:
                 sys.stdout.write(f"{msg},{args}")
@@ -91,21 +96,25 @@ class AsyncOperatorMixin:
             # otherwise tests all fail
             while self.tick(context) == True:
                 pass
-            return {'FINISHED'}
+            return {"FINISHED"}
         else:
-            self.timer = context.window_manager.event_timer_add(.001, window=context.window)
+            self.timer = context.window_manager.event_timer_add(
+                0.001, window=context.window
+            )
             context.window_manager.modal_handler_add(self)
-            return {'RUNNING_MODAL'}
+            return {"RUNNING_MODAL"}
 
 
 class AsyncTestOperator(bpy.types.Operator, AsyncOperatorMixin):
     """Test Async Operator"""
+
     bl_idname = "object.cam_async_test_operator"
     bl_label = "Test Operator for Async Stuff"
-    bl_options = {'REGISTER', 'UNDO', 'BLOCKING'}
+    bl_options = {"REGISTER", "UNDO", "BLOCKING"}
 
     async def execute_async(self, context):
         for x in range(100):
             await progress_async("Async test:", x)
+
 
 # bpy.utils.register_class(AsyncTestOperator)

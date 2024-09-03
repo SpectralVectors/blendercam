@@ -4,12 +4,7 @@ Generate and Export G-Code based on scene, machine, chain, operation and path se
 """
 
 # G-code Generaton
-from math import (
-    ceil,
-    floor,
-    pi,
-    sqrt
-)
+from math import ceil, floor, pi, sqrt
 import time
 
 import numpy
@@ -37,15 +32,8 @@ from .image_utils import (
 )
 from .nc import iso
 from .opencamlib.opencamlib import oclGetWaterline
-from .pattern import (
-    getPathPattern,
-    getPathPattern4axis
-)
-from .simple import (
-    progress,
-    safeFileName,
-    strInUnits
-)
+from .pattern import getPathPattern, getPathPattern4axis
+from .simple import progress, safeFileName, strInUnits
 from .utils import (
     cleanupIndexed,
     connectChunksLow,
@@ -67,7 +55,7 @@ def pointonline(a, b, c, tolerence):
     dot_pr = b.dot(c)  # b dot c
     norms = numpy.linalg.norm(b) * numpy.linalg.norm(c)  # find norms
     # find angle between the two vectors
-    angle = (numpy.rad2deg(numpy.arccos(dot_pr / norms)))
+    angle = numpy.rad2deg(numpy.arccos(dot_pr / norms))
     if angle > tolerence:
         return False
     else:
@@ -77,7 +65,7 @@ def pointonline(a, b, c, tolerence):
 def exportGcodePath(filename, vertslist, operations):
     """Exports G-code with the Heeks NC Adopted Library."""
     print("EXPORT")
-    progress('Exporting G-code File')
+    progress("Exporting G-code File")
     t = time.time()
     s = bpy.context.scene
     m = s.cam_machine
@@ -97,69 +85,72 @@ def exportGcodePath(filename, vertslist, operations):
         if totops > m.split_limit:
             split = True
             filesnum = ceil(totops / m.split_limit)
-            print('File Will Be Separated Into %i Files' % filesnum)
-    print('1')
+            print("File Will Be Separated Into %i Files" % filesnum)
+    print("1")
 
-    basefilename = bpy.data.filepath[:-
-                                     len(bpy.path.basename(bpy.data.filepath))] + safeFileName(filename)
+    basefilename = bpy.data.filepath[
+        : -len(bpy.path.basename(bpy.data.filepath))
+    ] + safeFileName(filename)
 
-    extension = '.tap'
-    if m.post_processor == 'ISO':
+    extension = ".tap"
+    if m.post_processor == "ISO":
         from .nc import iso as postprocessor
-    if m.post_processor == 'MACH3':
+    if m.post_processor == "MACH3":
         from .nc import mach3 as postprocessor
-    elif m.post_processor == 'EMC':
-        extension = '.ngc'
+    elif m.post_processor == "EMC":
+        extension = ".ngc"
         from .nc import emc2b as postprocessor
-    elif m.post_processor == 'FADAL':
-        extension = '.tap'
+    elif m.post_processor == "FADAL":
+        extension = ".tap"
         from .nc import fadal as postprocessor
-    elif m.post_processor == 'GRBL':
-        extension = '.gcode'
+    elif m.post_processor == "GRBL":
+        extension = ".gcode"
         from .nc import grbl as postprocessor
-    elif m.post_processor == 'HM50':
+    elif m.post_processor == "HM50":
         from .nc import hm50 as postprocessor
-    elif m.post_processor == 'HEIDENHAIN':
-        extension = '.H'
+    elif m.post_processor == "HEIDENHAIN":
+        extension = ".H"
         from .nc import heiden as postprocessor
-    elif m.post_processor == 'HEIDENHAIN530':
-        extension = '.H'
+    elif m.post_processor == "HEIDENHAIN530":
+        extension = ".H"
         from .nc import heiden530 as postprocessor
-    elif m.post_processor == 'TNC151':
+    elif m.post_processor == "TNC151":
         from .nc import tnc151 as postprocessor
-    elif m.post_processor == 'SIEGKX1':
+    elif m.post_processor == "SIEGKX1":
         from .nc import siegkx1 as postprocessor
-    elif m.post_processor == 'CENTROID':
+    elif m.post_processor == "CENTROID":
         from .nc import centroid1 as postprocessor
-    elif m.post_processor == 'ANILAM':
+    elif m.post_processor == "ANILAM":
         from .nc import anilam_crusader_m as postprocessor
-    elif m.post_processor == 'GRAVOS':
-        extension = '.nc'
+    elif m.post_processor == "GRAVOS":
+        extension = ".nc"
         from .nc import gravos as postprocessor
-    elif m.post_processor == 'WIN-PC':
-        extension = '.din'
+    elif m.post_processor == "WIN-PC":
+        extension = ".din"
         from .nc import winpc as postprocessor
-    elif m.post_processor == 'SHOPBOT MTC':
-        extension = '.sbp'
+    elif m.post_processor == "SHOPBOT MTC":
+        extension = ".sbp"
         from .nc import shopbot_mtc as postprocessor
-    elif m.post_processor == 'LYNX_OTTER_O':
-        extension = '.nc'
+    elif m.post_processor == "LYNX_OTTER_O":
+        extension = ".nc"
         from .nc import lynx_otter_o as postprocessor
 
-    if s.unit_settings.system == 'METRIC':
+    if s.unit_settings.system == "METRIC":
         unitcorr = 1000.0
-    elif s.unit_settings.system == 'IMPERIAL':
+    elif s.unit_settings.system == "IMPERIAL":
         unitcorr = 1 / 0.0254
     else:
         unitcorr = 1
     rotcorr = 180.0 / pi
 
-    use_experimental = bpy.context.preferences.addons[__package__].preferences.experimental
+    use_experimental = bpy.context.preferences.addons[
+        __package__
+    ].preferences.experimental
 
     def startNewFile():
-        fileindex = ''
+        fileindex = ""
         if split:
-            fileindex = '_' + str(findex)
+            fileindex = "_" + str(findex)
         filename = basefilename + fileindex + extension
         print("writing: ", filename)
         c = postprocessor.Creator()
@@ -179,15 +170,15 @@ def exportGcodePath(filename, vertslist, operations):
 
         # unit system correction
         ###############
-        if s.unit_settings.system == 'METRIC':
+        if s.unit_settings.system == "METRIC":
             c.metric()
-        elif s.unit_settings.system == 'IMPERIAL':
+        elif s.unit_settings.system == "IMPERIAL":
             c.imperial()
 
         # start program
         c.program_begin(0, filename)
         c.flush_nc()
-        c.comment('G-code Generated with BlenderCAM and NC library')
+        c.comment("G-code Generated with BlenderCAM and NC library")
         # absolute coordinates
         c.absolute()
 
@@ -207,9 +198,9 @@ def exportGcodePath(filename, vertslist, operations):
     for i, o in enumerate(operations):
 
         if use_experimental and o.output_header:
-            lines = o.gcode_header.split(';')
+            lines = o.gcode_header.split(";")
             for aline in lines:
-                c.write(aline + '\n')
+                c.write(aline + "\n")
 
         free_height = o.movement.free_height  # o.max.z+
         if o.movement.useG64:
@@ -217,55 +208,62 @@ def exportGcodePath(filename, vertslist, operations):
 
         mesh = vertslist[i]
         verts = mesh.vertices[:]
-        if o.machine_axes != '3':
-            rots = mesh.shape_keys.key_blocks['rotations'].data
+        if o.machine_axes != "3":
+            rots = mesh.shape_keys.key_blocks["rotations"].data
 
         # spindle rpm and direction
         ###############
-        if o.movement.spindle_rotation == 'CW':
+        if o.movement.spindle_rotation == "CW":
             spdir_clockwise = True
         else:
             spdir_clockwise = False
 
         # write tool, not working yet probably
         # print (last_cutter)
-        if m.output_tool_change and last_cutter != [o.cutter_id, o.cutter_diameter, o.cutter_type, o.cutter_flutes]:
+        if m.output_tool_change and last_cutter != [
+            o.cutter_id,
+            o.cutter_diameter,
+            o.cutter_type,
+            o.cutter_flutes,
+        ]:
             if m.output_tool_change:
                 c.tool_change(o.cutter_id)
 
         if m.output_tool_definitions:
-            c.comment('Tool: D = %s type %s flutes %s' % (
-                strInUnits(o.cutter_diameter, 4), o.cutter_type, o.cutter_flutes))
+            c.comment(
+                "Tool: D = %s type %s flutes %s"
+                % (strInUnits(o.cutter_diameter, 4), o.cutter_type, o.cutter_flutes)
+            )
 
         c.flush_nc()
 
         last_cutter = [o.cutter_id, o.cutter_diameter, o.cutter_type, o.cutter_flutes]
-        if o.cutter_type not in ['LASER', 'PLASMA']:
+        if o.cutter_type not in ["LASER", "PLASMA"]:
             if o.enable_hold:
-                c.write('(Hold Down)\n')
-                lines = o.gcode_start_hold_cmd.split(';')
+                c.write("(Hold Down)\n")
+                lines = o.gcode_start_hold_cmd.split(";")
                 for aline in lines:
-                    c.write(aline + '\n')
+                    c.write(aline + "\n")
                 enable_hold = True
                 stop_hold = o.gcode_stop_hold_cmd
             if o.enable_mist:
-                c.write('(Mist)\n')
-                lines = o.gcode_start_mist_cmd.split(';')
+                c.write("(Mist)\n")
+                lines = o.gcode_start_mist_cmd.split(";")
                 for aline in lines:
-                    c.write(aline + '\n')
+                    c.write(aline + "\n")
                 enable_mist = True
                 stop_mist = o.gcode_stop_mist_cmd
 
             c.spindle(o.spindle_rpm, spdir_clockwise)  # start spindle
             c.write_spindle()
             c.flush_nc()
-            c.write('\n')
+            c.write("\n")
 
             if o.enable_dust:
-                c.write('(Dust collector)\n')
-                lines = o.gcode_start_dust_cmd.split(';')
+                c.write("(Dust collector)\n")
+                lines = o.gcode_start_dust_cmd.split(";")
                 for aline in lines:
-                    c.write(aline + '\n')
+                    c.write(aline + "\n")
                 enable_dust = True
                 stop_dust = o.gcode_stop_dust_cmd
 
@@ -274,8 +272,8 @@ def exportGcodePath(filename, vertslist, operations):
 
         #        c.rapid(z=free_height*1000)  #raise the spindle to safe height
         fmh = round(free_height * unitcorr, 2)
-        if o.cutter_type not in ['LASER', 'PLASMA']:
-            c.write('G00 Z' + str(fmh) + '\n')
+        if o.cutter_type not in ["LASER", "PLASMA"]:
+            c.write("G00 Z" + str(fmh) + "\n")
         if o.enable_A:
             if o.rotation_A == 0:
                 o.rotation_A = 0.0001
@@ -286,7 +284,7 @@ def exportGcodePath(filename, vertslist, operations):
                 o.rotation_B = 0.0001
             c.rapid(a=o.rotation_B * 180 / pi)
 
-        c.write('\n')
+        c.write("\n")
         c.flush_nc()
 
         # dhull c.feedrate(unitcorr*o.feedrate)
@@ -300,13 +298,18 @@ def exportGcodePath(filename, vertslist, operations):
         plungefeedrate = millfeedrate * o.plunge_feedrate / 100
         freefeedrate = m.feedrate_max * unitcorr
         fadjust = False
-        if o.do_simulation_feedrate and mesh.shape_keys is not None \
-                and mesh.shape_keys.key_blocks.find('feedrates') != -1:
-            shapek = mesh.shape_keys.key_blocks['feedrates']
+        if (
+            o.do_simulation_feedrate
+            and mesh.shape_keys is not None
+            and mesh.shape_keys.key_blocks.find("feedrates") != -1
+        ):
+            shapek = mesh.shape_keys.key_blocks["feedrates"]
             fadjust = True
 
         if m.use_position_definitions:  # dhull
-            last = Vector((m.starting_position.x, m.starting_position.y, m.starting_position.z))
+            last = Vector(
+                (m.starting_position.x, m.starting_position.y, m.starting_position.z)
+            )
 
         lastrot = Euler((0, 0, 0))
         duration = 0.0
@@ -314,7 +317,7 @@ def exportGcodePath(filename, vertslist, operations):
         fadjustval = 1  # if simulation load data is Not present
 
         downvector = Vector((0, 0, -1))
-        plungelimit = (pi / 2 - o.plunge_angle)
+        plungelimit = pi / 2 - o.plunge_angle
 
         scale_graph = 0.05  # warning this has to be same as in export in utils!!!!
 
@@ -332,7 +335,7 @@ def exportGcodePath(filename, vertslist, operations):
                 continue
             v = vert.co
             # redundant point on line detection
-            if o.remove_redundant_points and o.strategy != 'DRILL':
+            if o.remove_redundant_points and o.strategy != "DRILL":
                 nextv = v
                 if ii == 0:
                     firstv = v  # only happens once
@@ -349,7 +352,7 @@ def exportGcodePath(filename, vertslist, operations):
                         firstv = nextv
                 ii += 1
             # end of redundant point on line detection
-            if o.machine_axes != '3':
+            if o.machine_axes != "3":
                 v = v.copy()  # we rotate it so we need to copy the vector
                 r = Euler(rots[vi].co)
                 # conversion to N-axis coordinates
@@ -395,19 +398,19 @@ def exportGcodePath(filename, vertslist, operations):
                     f = plungefeedrate * fadjustval
                     c.feedrate(f)
 
-                if o.machine_axes == '3':
-                    if o.cutter_type in ['LASER', 'PLASMA']:
+                if o.machine_axes == "3":
+                    if o.cutter_type in ["LASER", "PLASMA"]:
                         if not cut:
-                            if o.cutter_type == 'LASER':
+                            if o.cutter_type == "LASER":
                                 c.write("(*************dwell->laser on)\n")
                                 c.write("G04 P" + str(round(o.Laser_delay, 2)) + "\n")
-                                c.write(o.Laser_on + '\n')
-                            elif o.cutter_type == 'PLASMA':
+                                c.write(o.Laser_on + "\n")
+                            elif o.cutter_type == "PLASMA":
                                 c.write("(*************dwell->PLASMA on)\n")
                                 plasma_delay = round(o.Plasma_delay, 5)
                                 if plasma_delay > 0:
                                     c.write("G04 P" + str(plasma_delay) + "\n")
-                                c.write(o.Plasma_on + '\n')
+                                c.write(o.Plasma_on + "\n")
                                 plasma_dwell = round(o.Plasma_dwell, 5)
                                 if plasma_dwell > 0:
                                     c.write("G04 P" + str(plasma_dwell) + "\n")
@@ -423,15 +426,15 @@ def exportGcodePath(filename, vertslist, operations):
                     f = freefeedrate
                     c.feedrate(f)
 
-                if o.machine_axes == '3':
-                    if o.cutter_type in ['LASER', 'PLASMA']:
+                if o.machine_axes == "3":
+                    if o.cutter_type in ["LASER", "PLASMA"]:
                         if cut:
-                            if o.cutter_type == 'LASER':
+                            if o.cutter_type == "LASER":
                                 c.write("(**************laser off)\n")
-                                c.write(o.Laser_off + '\n')
-                            elif o.cutter_type == 'PLASMA':
+                                c.write(o.Laser_off + "\n")
+                            elif o.cutter_type == "PLASMA":
                                 c.write("(**************Plasma off)\n")
-                                c.write(o.Plasma_off + '\n')
+                                c.write(o.Plasma_off + "\n")
 
                             cut = False
                         c.rapid(x=vx, y=vy)
@@ -442,7 +445,9 @@ def exportGcodePath(filename, vertslist, operations):
                             # compensate for multiple fast move accelerations
                             f = plungefeedrate * fadjustval * 0.35
                         if vx is not None or vy is not None:
-                            f = freefeedrate * 0.8  # compensate for free feedrate acceleration
+                            f = (
+                                freefeedrate * 0.8
+                            )  # compensate for free feedrate acceleration
                 else:
                     c.rapid(x=vx, y=vy, z=vz, a=ra, b=rb)
 
@@ -452,7 +457,7 @@ def exportGcodePath(filename, vertslist, operations):
                     f = millfeedrate * fadjustval
                     c.feedrate(f)
 
-                if o.machine_axes == '3':
+                if o.machine_axes == "3":
                     c.feed(x=vx, y=vy, z=vz)
                 else:
                     c.feed(x=vx, y=vy, z=vz, a=ra, b=rb)
@@ -460,20 +465,24 @@ def exportGcodePath(filename, vertslist, operations):
             vector_duration = vect.length / f
             duration += vector_duration
             last = v
-            if o.machine_axes != '3':
+            if o.machine_axes != "3":
                 lastrot = r
 
             processedops += 1
             if split and processedops > m.split_limit:
-                c.rapid(x=last.x * unitcorr, y=last.y * unitcorr, z=free_height * unitcorr)
+                c.rapid(
+                    x=last.x * unitcorr, y=last.y * unitcorr, z=free_height * unitcorr
+                )
                 # @v=(ch.points[-1][0],ch.points[-1][1],free_height)
                 c.program_end()
                 findex += 1
                 c.file_close()
                 c = startNewFile()
                 c.flush_nc()
-                c.comment('Tool change - D = %s type %s flutes %s' % (
-                    strInUnits(o.cutter_diameter, 4), o.cutter_type, o.cutter_flutes))
+                c.comment(
+                    "Tool change - D = %s type %s flutes %s"
+                    % (strInUnits(o.cutter_diameter, 4), o.cutter_type, o.cutter_flutes)
+                )
                 c.tool_change(o.cutter_id)
                 c.spindle(o.spindle_rpm, spdir_clockwise)
                 c.write_spindle()
@@ -484,36 +493,45 @@ def exportGcodePath(filename, vertslist, operations):
                     c.flush_nc()
 
                 c.feedrate(unitcorr * o.feedrate)
-                c.rapid(x=last.x * unitcorr, y=last.y * unitcorr, z=free_height * unitcorr)
+                c.rapid(
+                    x=last.x * unitcorr, y=last.y * unitcorr, z=free_height * unitcorr
+                )
                 c.rapid(x=last.x * unitcorr, y=last.y * unitcorr, z=last.z * unitcorr)
                 processedops = 0
 
         if o.remove_redundant_points and o.strategy != "DRILL":
-            print("online " + str(online) + " offline " + str(offline) + " " + str(
-                round(online / (offline + online) * 100, 1)) + "% removal")
+            print(
+                "online "
+                + str(online)
+                + " offline "
+                + str(offline)
+                + " "
+                + str(round(online / (offline + online) * 100, 1))
+                + "% removal"
+            )
         c.feedrate(unitcorr * o.feedrate)
 
         if o.output_trailer:
-            lines = o.gcode_trailer.split(';')
+            lines = o.gcode_trailer.split(";")
             for aline in lines:
-                c.write(aline + '\n')
+                c.write(aline + "\n")
 
     o.info.duration = duration * unitcorr
     print("total time:", round(o.info.duration * 60), "seconds")
-    if bpy.context.scene.unit_settings.system == 'METRIC':
-        unit_distance = 'm'
+    if bpy.context.scene.unit_settings.system == "METRIC":
+        unit_distance = "m"
         cut_distance /= 1000
     else:
-        unit_distance = 'feet'
+        unit_distance = "feet"
         cut_distance /= 12
 
     print("cut distance:", round(cut_distance, 3), unit_distance)
     if enable_dust:
-        c.write(stop_dust + '\n')
+        c.write(stop_dust + "\n")
     if enable_hold:
-        c.write(stop_hold + '\n')
+        c.write(stop_hold + "\n")
     if enable_mist:
-        c.write(stop_mist + '\n')
+        c.write(stop_mist + "\n")
 
     c.program_end()
     c.file_close()
@@ -541,16 +559,17 @@ async def getPath(context, operation):  # should do all path calculations.
 
     getOperationSources(operation)
 
-    operation.info.warnings = ''
+    operation.info.warnings = ""
     checkMemoryLimit(operation)
 
     print(operation.machine_axes)
 
-    if operation.machine_axes == '3':
+    if operation.machine_axes == "3":
         if USE_PROFILER == True:  # profiler
             import cProfile
             import pstats
             import io
+
             pr = cProfile.Profile()
             pr.enable()
             await getPath3axis(context, operation)
@@ -559,8 +578,9 @@ async def getPath(context, operation):  # should do all path calculations.
         else:
             await getPath3axis(context, operation)
 
-    elif (operation.machine_axes == '5' and operation.strategy5axis == 'INDEXED') or (
-            operation.machine_axes == '4' and operation.strategy4axis == 'INDEXED'):
+    elif (operation.machine_axes == "5" and operation.strategy5axis == "INDEXED") or (
+        operation.machine_axes == "4" and operation.strategy4axis == "INDEXED"
+    ):
         # 5 axis operations are now only 3 axis operations that get rotated...
         operation.orientation = prepareIndexed(operation)  # TODO RENAME THIS
 
@@ -568,7 +588,7 @@ async def getPath(context, operation):  # should do all path calculations.
 
         cleanupIndexed(operation)  # TODO RENAME THIS
     # transform5axisIndexed
-    elif operation.machine_axes == '4':
+    elif operation.machine_axes == "4":
         await getPath4axis(context, operation)
 
     # export gcode if automatic.
@@ -580,17 +600,17 @@ async def getPath(context, operation):  # should do all path calculations.
 
     operation.changed = False
     t1 = time.process_time() - t
-    progress('total time', t1)
+    progress("total time", t1)
 
 
 def getChangeData(o):
     """This Is a Function to Check if Object Props Have Changed,
     to See if Image Updates Are Needed in the Image Based Method"""
-    changedata = ''
+    changedata = ""
     obs = []
-    if o.geometry_source == 'OBJECT':
+    if o.geometry_source == "OBJECT":
         obs = [bpy.data.objects[o.object_name]]
-    elif o.geometry_source == 'COLLECTION':
+    elif o.geometry_source == "COLLECTION":
         obs = bpy.data.collections[o.collection_name].objects
     for ob in obs:
         changedata += str(ob.location)
@@ -610,10 +630,10 @@ def checkMemoryLimit(o):
     limit = o.optimisation.imgres_limit * 1000000
     # print('co se to deje')
     if res > limit:
-        ratio = (res / limit)
+        ratio = res / limit
         o.optimisation.pixsize = o.optimisation.pixsize * sqrt(ratio)
         o.info.warnings += f"Memory limit: Sampling Resolution Reduced to {o.optimisation.pixsize:.2e}\n"
-        print('Changing Sampling Resolution to %f' % o.optimisation.pixsize)
+        print("Changing Sampling Resolution to %f" % o.optimisation.pixsize)
 
 
 # this is the main function.
@@ -624,35 +644,45 @@ async def getPath3axis(context, operation):
     getBounds(o)
     tw = time.time()
 
-    if o.strategy == 'CUTOUT':
+    if o.strategy == "CUTOUT":
         await strategy.cutout(o)
 
-    elif o.strategy == 'CURVE':
+    elif o.strategy == "CURVE":
         await strategy.curve(o)
 
-    elif o.strategy == 'PROJECTED_CURVE':
+    elif o.strategy == "PROJECTED_CURVE":
         await strategy.proj_curve(s, o)
 
-    elif o.strategy == 'POCKET':
+    elif o.strategy == "POCKET":
         await strategy.pocket(o)
 
-    elif o.strategy in ['PARALLEL', 'CROSS', 'BLOCK', 'SPIRAL', 'CIRCLES', 'OUTLINEFILL', 'CARVE', 'PENCIL', 'CRAZY']:
+    elif o.strategy in [
+        "PARALLEL",
+        "CROSS",
+        "BLOCK",
+        "SPIRAL",
+        "CIRCLES",
+        "OUTLINEFILL",
+        "CARVE",
+        "PENCIL",
+        "CRAZY",
+    ]:
 
-        if o.strategy == 'CARVE':
+        if o.strategy == "CARVE":
             pathSamples = []
             ob = bpy.data.objects[o.curve_object]
             pathSamples.extend(curveToChunks(ob))
             # sort before sampling
             pathSamples = await sortChunks(pathSamples, o)
             pathSamples = chunksRefine(pathSamples, o)
-        elif o.strategy == 'PENCIL':
+        elif o.strategy == "PENCIL":
             await prepareArea(o)
             getAmbient(o)
             pathSamples = getOffsetImageCavities(o, o.offset_image)
             pathSamples = limitChunks(pathSamples, o)
             # sort before sampling
             pathSamples = await sortChunks(pathSamples, o)
-        elif o.strategy == 'CRAZY':
+        elif o.strategy == "CRAZY":
             await prepareArea(o)
             # pathSamples = crazyStrokeImage(o)
             # this kind of worked and should work:
@@ -665,16 +695,16 @@ async def getPath3axis(context, operation):
             pathSamples = chunksRefine(pathSamples, o)
 
         else:
-            if o.strategy == 'OUTLINEFILL':
+            if o.strategy == "OUTLINEFILL":
                 getOperationSilhouete(o)
 
             pathSamples = getPathPattern(o)
 
-            if o.strategy == 'OUTLINEFILL':
+            if o.strategy == "OUTLINEFILL":
                 pathSamples = await sortChunks(pathSamples, o)
                 # have to be sorted once before, because of the parenting inside of samplechunks
 
-            if o.strategy in ['BLOCK', 'SPIRAL', 'CIRCLES']:
+            if o.strategy in ["BLOCK", "SPIRAL", "CIRCLES"]:
                 pathSamples = await connectChunksLow(pathSamples, o)
 
         # print (minz)
@@ -685,25 +715,25 @@ async def getPath3axis(context, operation):
         print("SAMPLE", o.name)
         chunks.extend(await sampleChunks(o, pathSamples, layers))
         print("SAMPLE OK")
-        if o.strategy == 'PENCIL':  # and bpy.app.debug_value==-3:
+        if o.strategy == "PENCIL":  # and bpy.app.debug_value==-3:
             chunks = chunksCoherency(chunks)
-            print('coherency check')
+            print("coherency check")
 
         # and not o.movement.parallel_step_back:
-        if o.strategy in ['PARALLEL', 'CROSS', 'PENCIL', 'OUTLINEFILL']:
-            print('sorting')
+        if o.strategy in ["PARALLEL", "CROSS", "PENCIL", "OUTLINEFILL"]:
+            print("sorting")
             chunks = await sortChunks(chunks, o)
-            if o.strategy == 'OUTLINEFILL':
+            if o.strategy == "OUTLINEFILL":
                 chunks = await connectChunksLow(chunks, o)
         if o.movement.ramp:
             for ch in chunks:
                 ch.rampZigZag(ch.zstart, None, o)
         # print(chunks)
-        if o.strategy == 'CARVE':
+        if o.strategy == "CARVE":
             for ch in chunks:
                 ch.offsetZ(-o.carve_depth)
-#                for vi in range(0, len(ch.points)):
-#                    ch.points[vi] = (ch.points[vi][0], ch.points[vi][1], ch.points[vi][2] - o.carve_depth)
+        #                for vi in range(0, len(ch.points)):
+        #                    ch.points[vi] = (ch.points[vi][0], ch.points[vi][1], ch.points[vi][2] - o.carve_depth)
         if o.use_bridges:
             print(chunks)
             for bridge_chunk in chunks:
@@ -711,22 +741,23 @@ async def getPath3axis(context, operation):
 
         strategy.chunksToMesh(chunks, o)
 
-    elif o.strategy == 'WATERLINE' and o.optimisation.use_opencamlib:
+    elif o.strategy == "WATERLINE" and o.optimisation.use_opencamlib:
         getAmbient(o)
         chunks = []
         await oclGetWaterline(o, chunks)
         chunks = limitChunks(chunks, o)
-        if (o.movement.type == 'CLIMB' and o.movement.spindle_rotation == 'CW') or (
-                o.movement.type == 'CONVENTIONAL' and o.movement.spindle_rotation == 'CCW'):
+        if (o.movement.type == "CLIMB" and o.movement.spindle_rotation == "CW") or (
+            o.movement.type == "CONVENTIONAL" and o.movement.spindle_rotation == "CCW"
+        ):
             for ch in chunks:
                 ch.reverse()
 
         strategy.chunksToMesh(chunks, o)
 
-    elif o.strategy == 'WATERLINE' and not o.optimisation.use_opencamlib:
+    elif o.strategy == "WATERLINE" and not o.optimisation.use_opencamlib:
         topdown = True
         chunks = []
-        await progress_async('retrieving object slices')
+        await progress_async("retrieving object slices")
         await prepareArea(o)
         layerstep = 1000000000
         if o.use_layers:
@@ -739,7 +770,7 @@ async def getPath3axis(context, operation):
         layerend = o.min.z  #
         layers = [[layerstart, layerend]]
         #######################
-        nslices = ceil(abs((o.minz-o.maxz) / o.slice_detail))
+        nslices = ceil(abs((o.minz - o.maxz) / o.slice_detail))
         lastslice = spolygon.Polygon()  # polyversion
         layerstepinc = 0
 
@@ -777,7 +808,9 @@ async def getPath3axis(context, operation):
                 layers = [[layerstart, layerend]]
                 #####################################
                 # fill top slice for normal and first for inverse, fill between polys
-                if not lastslice.is_empty or (o.inverse and not poly.is_empty and slicesfilled == 1):
+                if not lastslice.is_empty or (
+                    o.inverse and not poly.is_empty and slicesfilled == 1
+                ):
                     restpoly = None
                     if not lastslice.is_empty:  # between polys
                         if o.inverse:
@@ -786,11 +819,13 @@ async def getPath3axis(context, operation):
                             restpoly = lastslice.difference(poly)
                     # print('filling between')
                     if (not o.inverse and poly.is_empty and slicesfilled > 0) or (
-                            o.inverse and not poly.is_empty and slicesfilled == 1):  # first slice fill
+                        o.inverse and not poly.is_empty and slicesfilled == 1
+                    ):  # first slice fill
                         restpoly = lastslice
 
-                    restpoly = restpoly.buffer(-o.dist_between_paths,
-                                               resolution=o.optimisation.circle_detail)
+                    restpoly = restpoly.buffer(
+                        -o.dist_between_paths, resolution=o.optimisation.circle_detail
+                    )
 
                     fillz = z
                     i = 0
@@ -807,17 +842,21 @@ async def getPath3axis(context, operation):
                         parentChildDist(lastchunks, nchunks, o)
                         lastchunks = nchunks
                         # slicechunks.extend(polyToChunks(restpoly,z))
-                        restpoly = restpoly.buffer(-o.dist_between_paths,
-                                                   resolution=o.optimisation.circle_detail)
+                        restpoly = restpoly.buffer(
+                            -o.dist_between_paths,
+                            resolution=o.optimisation.circle_detail,
+                        )
 
                         i += 1
                 # print(i)
                 i = 0
                 #  fill layers and last slice, last slice with inverse is not working yet
                 #  - inverse millings end now always on 0 so filling ambient does have no sense.
-                if (slicesfilled > 0 and layerstepinc == layerstep) or (
-                        not o.inverse and not poly.is_empty and slicesfilled == 1) or (
-                        o.inverse and poly.is_empty and slicesfilled > 0):
+                if (
+                    (slicesfilled > 0 and layerstepinc == layerstep)
+                    or (not o.inverse and not poly.is_empty and slicesfilled == 1)
+                    or (o.inverse and poly.is_empty and slicesfilled > 0)
+                ):
                     fillz = z
                     layerstepinc = 0
 
@@ -826,8 +865,9 @@ async def getPath3axis(context, operation):
                     if o.inverse and poly.is_empty and slicesfilled > 0:
                         restpoly = bound_rectangle.difference(lastslice)
 
-                    restpoly = restpoly.buffer(-o.dist_between_paths,
-                                               resolution=o.optimisation.circle_detail)
+                    restpoly = restpoly.buffer(
+                        -o.dist_between_paths, resolution=o.optimisation.circle_detail
+                    )
 
                     i = 0
                     # 'GeometryCollection':#len(restpoly.boundary.coords)>0:
@@ -839,16 +879,20 @@ async def getPath3axis(context, operation):
                         slicechunks.extend(nchunks)
                         parentChildDist(lastchunks, nchunks, o)
                         lastchunks = nchunks
-                        restpoly = restpoly.buffer(-o.dist_between_paths,
-                                                   resolution=o.optimisation.circle_detail)
+                        restpoly = restpoly.buffer(
+                            -o.dist_between_paths,
+                            resolution=o.optimisation.circle_detail,
+                        )
                         i += 1
 
                 percent = int(h / nslices * 100)
-                await progress_async('waterline layers ', percent)
+                await progress_async("waterline layers ", percent)
                 lastslice = poly
 
-            if (o.movement.type == 'CONVENTIONAL' and o.movement.spindle_rotation == 'CCW') or (
-                    o.movement.type == 'CLIMB' and o.movement.spindle_rotation == 'CW'):
+            if (
+                o.movement.type == "CONVENTIONAL"
+                and o.movement.spindle_rotation == "CCW"
+            ) or (o.movement.type == "CLIMB" and o.movement.spindle_rotation == "CW"):
                 for chunk in slicechunks:
                     chunk.reverse()
             slicechunks = await sortChunks(slicechunks, o)
@@ -861,10 +905,10 @@ async def getPath3axis(context, operation):
             chunks.reverse()
         strategy.chunksToMesh(chunks, o)
 
-    elif o.strategy == 'DRILL':
+    elif o.strategy == "DRILL":
         await strategy.drill(o)
 
-    elif o.strategy == 'MEDIAL_AXIS':
+    elif o.strategy == "MEDIAL_AXIS":
         await strategy.medial_axis(o)
     await progress_async(f"Done", time.time() - tw, "s")
 
@@ -872,7 +916,7 @@ async def getPath3axis(context, operation):
 async def getPath4axis(context, operation):
     o = operation
     getBounds(o)
-    if o.strategy4axis in ['PARALLELR', 'PARALLEL', 'HELIX', 'CROSS']:
+    if o.strategy4axis in ["PARALLELR", "PARALLEL", "HELIX", "CROSS"]:
         path_samples = getPathPattern4axis(o)
 
         depth = path_samples[0].depth

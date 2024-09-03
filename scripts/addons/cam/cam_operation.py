@@ -43,18 +43,10 @@ from .ui_panels.optimisation import CAM_OPTIMISATION_Properties
 
 class camOperation(PropertyGroup):
 
-    material: PointerProperty(
-        type=CAM_MATERIAL_Properties
-    )
-    info: PointerProperty(
-        type=CAM_INFO_Properties
-    )
-    optimisation: PointerProperty(
-        type=CAM_OPTIMISATION_Properties
-    )
-    movement: PointerProperty(
-        type=CAM_MOVEMENT_Properties
-    )
+    material: PointerProperty(type=CAM_MATERIAL_Properties)
+    info: PointerProperty(type=CAM_INFO_Properties)
+    optimisation: PointerProperty(type=CAM_OPTIMISATION_Properties)
+    movement: PointerProperty(type=CAM_MOVEMENT_Properties)
 
     name: StringProperty(
         name="Operation Name",
@@ -74,12 +66,12 @@ class camOperation(PropertyGroup):
     remove_redundant_points: BoolProperty(
         name="Simplify G-code",
         description="Remove redundant points sharing the same angle"
-                    " as the start vector",
+        " as the start vector",
         default=False,
     )
     simplify_tol: IntProperty(
         name="Tolerance",
-        description='lower number means more precise',
+        description="lower number means more precise",
         default=50,
         min=1,
         max=1000,
@@ -87,7 +79,7 @@ class camOperation(PropertyGroup):
     hide_all_others: BoolProperty(
         name="Hide All Others",
         description="Hide all other tool paths except toolpath"
-                    " associated with selected CAM operation",
+        " associated with selected CAM operation",
         default=False,
     )
     parent_path_to_object: BoolProperty(
@@ -96,133 +88,142 @@ class camOperation(PropertyGroup):
         default=False,
     )
     object_name: StringProperty(
-        name='Object',
-        description='Object handled by this operation',
+        name="Object",
+        description="Object handled by this operation",
         update=updateOperationValid,
     )
     collection_name: StringProperty(
-        name='Collection',
-        description='Object collection handled by this operation',
+        name="Collection",
+        description="Object collection handled by this operation",
         update=updateOperationValid,
     )
     curve_object: StringProperty(
-        name='Curve Source',
-        description='Curve which will be sampled along the 3D object',
+        name="Curve Source",
+        description="Curve which will be sampled along the 3D object",
         update=operationValid,
     )
     curve_object1: StringProperty(
-        name='Curve Target',
-        description='Curve which will serve as attractor for the '
-        'cutter when the cutter follows the curve',
+        name="Curve Target",
+        description="Curve which will serve as attractor for the "
+        "cutter when the cutter follows the curve",
         update=operationValid,
     )
     source_image_name: StringProperty(
-        name='Image Source',
-        description='image source',
+        name="Image Source",
+        description="image source",
         update=operationValid,
     )
     geometry_source: EnumProperty(
-        name='Data Source',
+        name="Data Source",
         items=(
-            ('OBJECT', 'Object', 'a'),
-            ('COLLECTION', 'Collection of Objects', 'a'),
-            ('IMAGE', 'Image', 'a')
+            ("OBJECT", "Object", "a"),
+            ("COLLECTION", "Collection of Objects", "a"),
+            ("IMAGE", "Image", "a"),
         ),
-        description='Geometry source',
-        default='OBJECT',
+        description="Geometry source",
+        default="OBJECT",
         update=updateOperationValid,
     )
     cutter_type: EnumProperty(
-        name='Cutter',
+        name="Cutter",
         items=(
-            ('END', 'End', 'End - Flat cutter'),
-            ('BALLNOSE', 'Ballnose', 'Ballnose cutter'),
-            ('BULLNOSE', 'Bullnose', 'Bullnose cutter ***placeholder **'),
-            ('VCARVE', 'V-carve', 'V-carve cutter'),
-            ('BALLCONE', 'Ballcone', 'Ball with a Cone for Parallel - X'),
-            ('CYLCONE', 'Cylinder cone',
-             'Cylinder End with a Cone for Parallel - X'),
-            ('LASER', 'Laser', 'Laser cutter'),
-            ('PLASMA', 'Plasma', 'Plasma cutter'),
-            ('CUSTOM', 'Custom-EXPERIMENTAL',
-             'Modelled cutter - not well tested yet.')
+            ("END", "End", "End - Flat cutter"),
+            ("BALLNOSE", "Ballnose", "Ballnose cutter"),
+            ("BULLNOSE", "Bullnose", "Bullnose cutter ***placeholder **"),
+            ("VCARVE", "V-carve", "V-carve cutter"),
+            ("BALLCONE", "Ballcone", "Ball with a Cone for Parallel - X"),
+            ("CYLCONE", "Cylinder cone", "Cylinder End with a Cone for Parallel - X"),
+            ("LASER", "Laser", "Laser cutter"),
+            ("PLASMA", "Plasma", "Plasma cutter"),
+            ("CUSTOM", "Custom-EXPERIMENTAL", "Modelled cutter - not well tested yet."),
         ),
-        description='Type of cutter used',
-        default='END',
+        description="Type of cutter used",
+        default="END",
         update=updateZbufferImage,
     )
     cutter_object_name: StringProperty(
-        name='Cutter Object',
-        description='Object used as custom cutter for this operation',
+        name="Cutter Object",
+        description="Object used as custom cutter for this operation",
         update=updateZbufferImage,
     )
 
     machine_axes: EnumProperty(
-        name='Number of Axes',
+        name="Number of Axes",
         items=(
-            ('3', '3 axis', 'a'),
-            ('4', '#4 axis - EXPERIMENTAL', 'a'),
-            ('5', '#5 axis - EXPERIMENTAL', 'a')
+            ("3", "3 axis", "a"),
+            ("4", "#4 axis - EXPERIMENTAL", "a"),
+            ("5", "#5 axis - EXPERIMENTAL", "a"),
         ),
-        description='How many axes will be used for the operation',
-        default='3',
+        description="How many axes will be used for the operation",
+        default="3",
         update=updateStrategy,
     )
     strategy: EnumProperty(
-        name='Strategy',
+        name="Strategy",
         items=getStrategyList,
-        description='Strategy',
+        description="Strategy",
         update=updateStrategy,
     )
 
     strategy4axis: EnumProperty(
-        name='4 Axis Strategy',
+        name="4 Axis Strategy",
         items=(
-            ('PARALLELR', 'Parallel around 1st rotary axis',
-             'Parallel lines around first rotary axis'),
-            ('PARALLEL', 'Parallel along 1st rotary axis',
-             'Parallel lines along first rotary axis'),
-            ('HELIX', 'Helix around 1st rotary axis',
-             'Helix around rotary axis'),
-            ('INDEXED', 'Indexed 3-axis',
-             'all 3 axis strategies, just applied to the 4th axis'),
-            ('CROSS', 'Cross', 'Cross paths')
+            (
+                "PARALLELR",
+                "Parallel around 1st rotary axis",
+                "Parallel lines around first rotary axis",
+            ),
+            (
+                "PARALLEL",
+                "Parallel along 1st rotary axis",
+                "Parallel lines along first rotary axis",
+            ),
+            ("HELIX", "Helix around 1st rotary axis", "Helix around rotary axis"),
+            (
+                "INDEXED",
+                "Indexed 3-axis",
+                "all 3 axis strategies, just applied to the 4th axis",
+            ),
+            ("CROSS", "Cross", "Cross paths"),
         ),
-        description='#Strategy',
-        default='PARALLEL',
+        description="#Strategy",
+        default="PARALLEL",
         update=updateStrategy,
     )
     strategy5axis: EnumProperty(
-        name='Strategy',
+        name="Strategy",
         items=(
-            ('INDEXED', 'Indexed 3-axis',
-             'All 3 axis strategies, just rotated by 4+5th axes'),
+            (
+                "INDEXED",
+                "Indexed 3-axis",
+                "All 3 axis strategies, just rotated by 4+5th axes",
+            ),
         ),
-        description='5 axis Strategy',
-        default='INDEXED',
+        description="5 axis Strategy",
+        default="INDEXED",
         update=updateStrategy,
     )
 
     rotary_axis_1: EnumProperty(
-        name='Rotary Axis',
+        name="Rotary Axis",
         items=(
-            ('X', 'X', ''),
-            ('Y', 'Y', ''),
-            ('Z', 'Z', ''),
+            ("X", "X", ""),
+            ("Y", "Y", ""),
+            ("Z", "Z", ""),
         ),
-        description='Around which axis rotates the first rotary axis',
-        default='X',
+        description="Around which axis rotates the first rotary axis",
+        default="X",
         update=updateStrategy,
     )
     rotary_axis_2: EnumProperty(
-        name='Rotary Axis 2',
+        name="Rotary Axis 2",
         items=(
-            ('X', 'X', ''),
-            ('Y', 'Y', ''),
-            ('Z', 'Z', ''),
+            ("X", "X", ""),
+            ("Y", "Y", ""),
+            ("Z", "Z", ""),
         ),
-        description='Around which axis rotates the second rotary axis',
-        default='Z',
+        description="Around which axis rotates the second rotary axis",
+        default="Z",
         update=updateStrategy,
     )
 
@@ -288,13 +289,10 @@ class camOperation(PropertyGroup):
 
     # pocket options
     pocket_option: EnumProperty(
-        name='Start Position',
-        items=(
-            ('INSIDE', 'Inside', 'a'),
-            ('OUTSIDE', 'Outside', 'a')
-        ),
-        description='Pocket starting position',
-        default='INSIDE',
+        name="Start Position",
+        items=(("INSIDE", "Inside", "a"), ("OUTSIDE", "Outside", "a")),
+        description="Pocket starting position",
+        default="INSIDE",
         update=updateRest,
     )
     pocketToCurve: BoolProperty(
@@ -305,14 +303,14 @@ class camOperation(PropertyGroup):
     )
     # Cutout
     cut_type: EnumProperty(
-        name='Cut',
+        name="Cut",
         items=(
-            ('OUTSIDE', 'Outside', 'a'),
-            ('INSIDE', 'Inside', 'a'),
-            ('ONLINE', 'On Line', 'a')
+            ("OUTSIDE", "Outside", "a"),
+            ("INSIDE", "Inside", "a"),
+            ("ONLINE", "On Line", "a"),
         ),
-        description='Type of cutter used',
-        default='OUTSIDE',
+        description="Type of cutter used",
+        default="OUTSIDE",
         update=updateRest,
     )
     outlines_count: IntProperty(
@@ -552,7 +550,7 @@ class camOperation(PropertyGroup):
     carve_depth: FloatProperty(
         name="Carve Depth",
         default=0.001,
-        min=-.100,
+        min=-0.100,
         max=32,
         precision=constants.PRECISION,
         unit="LENGTH",
@@ -561,14 +559,14 @@ class camOperation(PropertyGroup):
 
     # drill only
     drill_type: EnumProperty(
-        name='Holes On',
+        name="Holes On",
         items=(
-            ('MIDDLE_SYMETRIC', 'Middle of Symmetric Curves', 'a'),
-            ('MIDDLE_ALL', 'Middle of All Curve Parts', 'a'),
-            ('ALL_POINTS', 'All Points in Curve', 'a')
+            ("MIDDLE_SYMETRIC", "Middle of Symmetric Curves", "a"),
+            ("MIDDLE_ALL", "Middle of All Curve Parts", "a"),
+            ("ALL_POINTS", "All Points in Curve", "a"),
         ),
-        description='Strategy to detect holes to drill',
-        default='MIDDLE_SYMETRIC',
+        description="Strategy to detect holes to drill",
+        default="MIDDLE_SYMETRIC",
         update=updateRest,
     )
     # waterline only
@@ -650,33 +648,36 @@ class camOperation(PropertyGroup):
     )
 
     minz_from: EnumProperty(
-        name='Max Depth From',
-        description='Set maximum operation depth',
+        name="Max Depth From",
+        description="Set maximum operation depth",
         items=(
-            ('OBJECT', 'Object', 'Set max operation depth from Object'),
-            ('MATERIAL', 'Material', 'Set max operation depth from Material'),
-            ('CUSTOM', 'Custom', 'Custom max depth'),
+            ("OBJECT", "Object", "Set max operation depth from Object"),
+            ("MATERIAL", "Material", "Set max operation depth from Material"),
+            ("CUSTOM", "Custom", "Custom max depth"),
         ),
-        default='OBJECT',
+        default="OBJECT",
         update=updateRest,
     )
 
     start_type: EnumProperty(
-        name='Start Type',
+        name="Start Type",
         items=(
-            ('ZLEVEL', 'Z level', 'Starts on a given Z level'),
-            ('OPERATIONRESULT', 'Rest Milling',
-             'For rest milling, operations have to be '
-             'put in chain for this to work well.'),
+            ("ZLEVEL", "Z level", "Starts on a given Z level"),
+            (
+                "OPERATIONRESULT",
+                "Rest Milling",
+                "For rest milling, operations have to be "
+                "put in chain for this to work well.",
+            ),
         ),
-        description='Starting depth',
-        default='ZLEVEL',
+        description="Starting depth",
+        default="ZLEVEL",
         update=updateStrategy,
     )
 
     maxz: FloatProperty(
         name="Operation Depth Start",
-        description='operation starting depth',
+        description="operation starting depth",
         default=0,
         min=-3,
         max=10,
@@ -715,9 +716,9 @@ class camOperation(PropertyGroup):
         update=updateZbufferImage,
     )
     source_image_offset: FloatVectorProperty(
-        name='Image Offset',
+        name="Image Offset",
         default=(0, 0, 0),
-        unit='LENGTH',
+        unit="LENGTH",
         precision=constants.PRECISION,
         subtype="XYZ",
         update=updateZbufferImage,
@@ -732,39 +733,39 @@ class camOperation(PropertyGroup):
         update=updateZbufferImage,
     )
     source_image_crop_start_x: FloatProperty(
-        name='Crop Start X',
+        name="Crop Start X",
         default=0,
         min=0,
         max=100,
         precision=constants.PRECISION,
-        subtype='PERCENTAGE',
+        subtype="PERCENTAGE",
         update=updateZbufferImage,
     )
     source_image_crop_start_y: FloatProperty(
-        name='Crop Start Y',
+        name="Crop Start Y",
         default=0,
         min=0,
         max=100,
         precision=constants.PRECISION,
-        subtype='PERCENTAGE',
+        subtype="PERCENTAGE",
         update=updateZbufferImage,
     )
     source_image_crop_end_x: FloatProperty(
-        name='Crop End X',
+        name="Crop End X",
         default=100,
         min=0,
         max=100,
         precision=constants.PRECISION,
-        subtype='PERCENTAGE',
+        subtype="PERCENTAGE",
         update=updateZbufferImage,
     )
     source_image_crop_end_y: FloatProperty(
-        name='Crop End Y',
+        name="Crop End Y",
         default=100,
         min=0,
         max=100,
         precision=constants.PRECISION,
-        subtype='PERCENTAGE',
+        subtype="PERCENTAGE",
         update=updateZbufferImage,
     )
 
@@ -773,10 +774,10 @@ class camOperation(PropertyGroup):
     #####################################################
 
     ambient_behaviour: EnumProperty(
-        name='Ambient',
-        items=(('ALL', 'All', 'a'), ('AROUND', 'Around', 'a')),
-        description='Handling ambient surfaces',
-        default='ALL',
+        name="Ambient",
+        items=(("ALL", "All", "a"), ("AROUND", "Around", "a")),
+        description="Handling ambient surfaces",
+        default="ALL",
         update=updateZbufferImage,
     )
 
@@ -806,8 +807,8 @@ class camOperation(PropertyGroup):
         update=updateRest,
     )  # restricts cutter inside ambient only
     limit_curve: StringProperty(
-        name='Limit Curve',
-        description='Curve used to limit the area of the operation',
+        name="Limit Curve",
+        description="Curve used to limit the area of the operation",
         update=updateRest,
     )
 
@@ -829,7 +830,7 @@ class camOperation(PropertyGroup):
         max=100.0,
         default=50.0,
         precision=1,
-        subtype='PERCENTAGE',
+        subtype="PERCENTAGE",
         update=updateRest,
     )
     plunge_angle: FloatProperty(
@@ -962,23 +963,23 @@ class camOperation(PropertyGroup):
         update=updateBridges,
     )
     bridges_width: FloatProperty(
-        name='Bridge / Tab Width',
+        name="Bridge / Tab Width",
         default=0.002,
-        unit='LENGTH',
+        unit="LENGTH",
         precision=constants.PRECISION,
         update=updateBridges,
     )
     bridges_height: FloatProperty(
-        name='Bridge / Tab Height',
+        name="Bridge / Tab Height",
         description="Height from the bottom of the cutting operation",
         default=0.0005,
-        unit='LENGTH',
+        unit="LENGTH",
         precision=constants.PRECISION,
         update=updateBridges,
     )
     bridges_collection_name: StringProperty(
-        name='Bridges / Tabs Collection',
-        description='Collection of curves used as bridges',
+        name="Bridges / Tabs Collection",
+        description="Collection of curves used as bridges",
         update=operationValid,
     )
     use_bridge_modifiers: BoolProperty(
@@ -1013,21 +1014,20 @@ class camOperation(PropertyGroup):
 
     # material settings
 
-
-##############################################################################
+    ##############################################################################
     # MATERIAL SETTINGS
 
     min: FloatVectorProperty(
-        name='Operation Minimum',
+        name="Operation Minimum",
         default=(0, 0, 0),
-        unit='LENGTH',
+        unit="LENGTH",
         precision=constants.PRECISION,
         subtype="XYZ",
     )
     max: FloatVectorProperty(
-        name='Operation Maximum',
+        name="Operation Maximum",
         default=(0, 0, 0),
-        unit='LENGTH',
+        unit="LENGTH",
         precision=constants.PRECISION,
         subtype="XYZ",
     )
@@ -1042,8 +1042,7 @@ class camOperation(PropertyGroup):
 
     gcode_header: StringProperty(
         name="G-code Header",
-        description="G-code commands at start of operation."
-        " Use ; for line breaks",
+        description="G-code commands at start of operation." " Use ; for line breaks",
         default="G53 G0",
     )
 
@@ -1074,8 +1073,7 @@ class camOperation(PropertyGroup):
 
     gcode_start_hold_cmd: StringProperty(
         name="G-code Header",
-        description="G-code commands at start of operation."
-        " Use ; for line breaks",
+        description="G-code commands at start of operation." " Use ; for line breaks",
         default="M102",
     )
 
@@ -1105,15 +1103,13 @@ class camOperation(PropertyGroup):
 
     output_trailer: BoolProperty(
         name="Output G-code Trailer",
-        description="Output user defined g-code command trailer"
-        " at end of operation",
+        description="Output user defined g-code command trailer" " at end of operation",
         default=False,
     )
 
     gcode_trailer: StringProperty(
         name="G-code Trailer",
-        description="G-code commands at end of operation."
-        " Use ; for line breaks",
+        description="G-code commands at end of operation." " Use ; for line breaks",
         default="M02",
     )
 
@@ -1129,10 +1125,7 @@ class camOperation(PropertyGroup):
     operation_limit = sgeometry.Polygon()
     borderwidth = 50
     object = None
-    path_object_name: StringProperty(
-        name='Path Object',
-        description='Actual CNC path'
-    )
+    path_object_name: StringProperty(name="Path Object", description="Actual CNC path")
 
     # update and tags and related
 
@@ -1173,8 +1166,8 @@ class camOperation(PropertyGroup):
         default=True,
     )
     changedata: StringProperty(
-        name='Changedata',
-        description='change data for checking if stuff changed.',
+        name="Changedata",
+        description="change data for checking if stuff changed.",
     )
 
     # process related data
@@ -1190,7 +1183,7 @@ class camOperation(PropertyGroup):
         default=-1,
     )
     outtext: StringProperty(
-        name='Outtext',
-        description='outtext',
-        default='',
+        name="Outtext",
+        description="outtext",
+        default="",
     )

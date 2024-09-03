@@ -13,11 +13,7 @@ import time
 
 import shapely
 from shapely import geometry as sgeometry
-from shapely import (
-    affinity,
-    prepared,
-    speedups
-)
+from shapely import affinity, prepared, speedups
 
 import bpy
 from bpy.types import PropertyGroup
@@ -26,10 +22,7 @@ from bpy.props import (
     EnumProperty,
     FloatProperty,
 )
-from mathutils import (
-    Euler,
-    Vector
-)
+from mathutils import Euler, Vector
 
 from . import (
     constants,
@@ -70,8 +63,8 @@ def packCurves():
     polyfield = []
     for ob in bpy.context.selected_objects:
         simple.activate(ob)
-        bpy.ops.object.make_single_user(type='SELECTED_OBJECTS')
-        bpy.ops.object.origin_set(type='ORIGIN_GEOMETRY')
+        bpy.ops.object.make_single_user(type="SELECTED_OBJECTS")
+        bpy.ops.object.origin_set(type="ORIGIN_GEOMETRY")
         z = ob.location.z
         bpy.ops.object.location_clear()
         bpy.ops.object.rotation_clear()
@@ -92,7 +85,7 @@ def packCurves():
     rotchange = rotate_angle  # in radians
 
     xmin, ymin, xmax, ymax = polyfield[0][2].bounds
-    if direction == 'X':
+    if direction == "X":
         mindist = -xmin
     else:
         mindist = -ymin
@@ -106,10 +99,10 @@ def packCurves():
         porig = pf[2]
         placed = False
         xmin, ymin, xmax, ymax = p.bounds
-        if direction == 'X':
+        if direction == "X":
             x = mindist
             y = -ymin
-        if direction == 'Y':
+        if direction == "Y":
             x = -xmin
             y = mindist
 
@@ -130,15 +123,21 @@ def packCurves():
             xmin, ymin, xmax, ymax = ptrans.bounds
             # print(iter,p.bounds)
 
-            if xmin > 0 and ymin > 0 and (
-                    (direction == 'Y' and xmax < sheetsizex) or (direction == 'X' and ymax < sheetsizey)):
+            if (
+                xmin > 0
+                and ymin > 0
+                and (
+                    (direction == "Y" and xmax < sheetsizex)
+                    or (direction == "X" and ymax < sheetsizey)
+                )
+            ):
                 if not allpoly.intersects(ptrans):
                     # we do more good solutions, choose best out of them:
                     hits += 1
                     if best is None:
                         best = [x, y, rot, xmax, ymax]
                         besthit = hits
-                    if direction == 'X':
+                    if direction == "X":
                         if xmax < best[3]:
                             best = [x, y, rot, xmax, ymax]
                             besthit = hits
@@ -147,7 +146,8 @@ def packCurves():
                         besthit = hits
 
             if hits >= 15 or (
-                    itera > 20000 and hits > 0):  # here was originally more, but 90% of best solutions are still 1
+                itera > 20000 and hits > 0
+            ):  # here was originally more, but 90% of best solutions are still 1
                 placed = True
                 pf[3].location.x = best[0]
                 pf[3].location.y = best[1]
@@ -172,13 +172,13 @@ def packCurves():
                 # cleanup allpoly
                 print(itera, hits, besthit)
             if not placed:
-                if direction == 'Y':
+                if direction == "Y":
                     x += shift
                     mindist = y
                     if xmax + shift > sheetsizex:
                         x = x - xmin
                         y += shift
-                if direction == 'X':
+                if direction == "X":
                     y += shift
                     mindist = x
                     if ymax + shift > sheetsizey:
@@ -190,7 +190,7 @@ def packCurves():
         i += 1
     t = time.time() - t
 
-    polygon_utils_cam.shapelyToCurve('test', sgeometry.MultiPolygon(placedpolys), 0)
+    polygon_utils_cam.shapelyToCurve("test", sgeometry.MultiPolygon(placedpolys), 0)
     print(t)
 
 

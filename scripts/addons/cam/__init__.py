@@ -171,16 +171,13 @@ from .utils import (
 
 classes = [
     # CamBackgroundMonitor
-
     # .autoupdate
     UpdateSourceOperator,
     Updater,
     UpdateChecker,
-
     # .chain
     opReference,
     camChain,
-
     # .curvecamcreate
     CamCurveDrawer,
     CamCurveFlatCone,
@@ -190,13 +187,11 @@ classes = [
     CamCurveMortise,
     CamCurvePlate,
     CamCurvePuzzle,
-
     # .curvecamequation
     CamCustomCurve,
     CamHypotrochoidCurve,
     CamLissajousCurve,
     CamSineCurve,
-
     # .curvecamtools
     CamCurveBoolean,
     CamCurveConvexHull,
@@ -207,13 +202,10 @@ classes = [
     CamMeshGetPockets,
     CamOffsetSilhouete,
     # CamObjectSilhouete,
-
     # .engine
     CNCCAM_ENGINE,
-
     # .machine_settings
     machineSettings,
-
     # .ops
     CalculatePath,
     # bridges related
@@ -241,13 +233,10 @@ classes = [
     PathsChain,
     PathExport,
     PathExportChain,
-
     # .pack
     PackObjectsSettings,
-
     # .preferences
     CamAddonPreferences,
-
     # .preset_managers
     CAM_CUTTER_MT_presets,
     CAM_OPERATION_MT_presets,
@@ -255,10 +244,8 @@ classes = [
     AddPresetCamCutter,
     AddPresetCamOperation,
     AddPresetCamMachine,
-
     # .slice
     SliceObjectsSettings,
-
     # .ui and .ui_panels - the order will affect the layout
     import_settings,
     CAM_UL_operations,
@@ -288,7 +275,6 @@ classes = [
     VIEW3D_PT_tools_create,
     CustomPanel,
     WM_OT_gcode_import,
-
     # .pie_menu and .pie_menu.active_op - placed after .ui in case inheritance is possible
     VIEW3D_MT_PIE_CAM,
     VIEW3D_MT_PIE_Machine,
@@ -306,7 +292,6 @@ classes = [
     VIEW3D_MT_PIE_PackSliceRelief,
     VIEW3D_MT_PIE_CurveCreators,
     VIEW3D_MT_PIE_CurveTools,
-
     # .cam_operation - last to allow dependencies to register before it
     camOperation,
 ]
@@ -362,14 +347,14 @@ def register() -> None:
     wm = bpy.context.window_manager
     addon_kc = wm.keyconfigs.addon
 
-    km = addon_kc.keymaps.new(name='Object Mode')
+    km = addon_kc.keymaps.new(name="Object Mode")
     kmi = km.keymap_items.new(
         "wm.call_menu_pie",
-        'C',
-        'PRESS',
+        "C",
+        "PRESS",
         alt=True,
     )
-    kmi.properties.name = 'VIEW3D_MT_PIE_CAM'
+    kmi.properties.name = "VIEW3D_MT_PIE_CAM"
     kmi.active = True
 
 
@@ -393,12 +378,12 @@ def unregister() -> None:
     del scene.cam_slice
 
     for panel in get_panels():
-        if 'CNCCAM_RENDER' in panel.COMPAT_ENGINES:
-            panel.COMPAT_ENGINES.remove('CNCCAM_RENDER')
+        if "CNCCAM_RENDER" in panel.COMPAT_ENGINES:
+            panel.COMPAT_ENGINES.remove("CNCCAM_RENDER")
 
     wm = bpy.context.window_manager
     active_kc = wm.keyconfigs.active
 
-    for key in active_kc.keymaps['Object Mode'].keymap_items:
-        if (key.idname == 'wm.call_menu' and key.properties.name == 'VIEW3D_MT_PIE_CAM'):
-            active_kc.keymaps['Object Mode'].keymap_items.remove(key)
+    for key in active_kc.keymaps["Object Mode"].keymap_items:
+        if key.idname == "wm.call_menu" and key.properties.name == "VIEW3D_MT_PIE_CAM":
+            active_kc.keymaps["Object Mode"].keymap_items.remove(key)

@@ -11,11 +11,11 @@ import bpy
 
 # Panel definitions
 class CAMButtonsPanel:
-    bl_space_type = 'PROPERTIES'
-    bl_region_type = 'WINDOW'
+    bl_space_type = "PROPERTIES"
+    bl_region_type = "WINDOW"
     bl_context = "render"
     always_show_panel = False
-    COMPAT_ENGINES = {'BLENDERCAM_RENDER'}
+    COMPAT_ENGINES = {"BLENDERCAM_RENDER"}
 
     # COMPAT_ENGINES must be defined in each subclass, external engines can add themselves here
 
@@ -27,15 +27,17 @@ class CAMButtonsPanel:
                 return True
             op = cls.active_operation()
             if op and op.valid:
-                if hasattr(cls, 'panel_interface_level'):
-                    return cls.panel_interface_level <= int(context.scene.interface.level)
+                if hasattr(cls, "panel_interface_level"):
+                    return cls.panel_interface_level <= int(
+                        context.scene.interface.level
+                    )
                 else:
                     return True
         return False
 
     @classmethod
     def active_operation_index(cls):
-        return (bpy.context.scene.cam_active_operation)
+        return bpy.context.scene.cam_active_operation
 
     @classmethod
     def active_operation(cls):
@@ -44,21 +46,23 @@ class CAMButtonsPanel:
             active_op = bpy.context.scene.cam_operations[cls.active_operation_index()]
         except IndexError:
             pass
-        return (active_op)
+        return active_op
 
     def __init__(self):
         self.op = self.active_operation()
-        addon_prefs = bpy.context.preferences.addons["bl_ext.user_default.blendercam"].preferences
+        addon_prefs = bpy.context.preferences.addons[
+            "bl_ext.user_default.blendercam"
+        ].preferences
         self.use_experimental = addon_prefs.experimental
 
     def operations_count(self):
-        return (len(bpy.context.scene.cam_operations))
+        return len(bpy.context.scene.cam_operations)
 
     def has_operations(self):
-        return (self.operations_count() > 0)
+        return self.operations_count() > 0
 
     def has_correct_level(self):
-        if not hasattr(self, 'prop_level'):
+        if not hasattr(self, "prop_level"):
             return True
 
         caller_function = inspect.stack()[1][3]
@@ -66,4 +70,6 @@ class CAMButtonsPanel:
         if caller_function not in self.prop_level:
             return True
 
-        return self.prop_level[caller_function] <= int(self.context.scene.interface.level)
+        return self.prop_level[caller_function] <= int(
+            self.context.scene.interface.level
+        )

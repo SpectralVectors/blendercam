@@ -10,7 +10,7 @@ CHIPLOAD_PRECISION = 10
 
 MAX_OPERATION_TIME = 3200000000  # seconds
 
-G64_INCOMPATIBLE_MACHINES = ['GRBL']
+G64_INCOMPATIBLE_MACHINES = ["GRBL"]
 
 # Upscale factor for higher precision from Bullet library - (Rigidbody Collision World)
 BULLET_SCALE = 10000

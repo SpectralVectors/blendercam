@@ -24,7 +24,7 @@ from .utils import (
 
 
 def createSimulationObject(name, operations, i):
-    oname = 'csim_' + name
+    oname = "csim_" + name
 
     o = operations[0]
 
@@ -32,48 +32,49 @@ def createSimulationObject(name, operations, i):
         ob = bpy.data.objects[oname]
     else:
         bpy.ops.mesh.primitive_plane_add(
-            align='WORLD', enter_editmode=False, location=(0, 0, 0), rotation=(0, 0, 0))
+            align="WORLD", enter_editmode=False, location=(0, 0, 0), rotation=(0, 0, 0)
+        )
         ob = bpy.context.active_object
         ob.name = oname
 
-        bpy.ops.object.modifier_add(type='SUBSURF')
+        bpy.ops.object.modifier_add(type="SUBSURF")
         ss = ob.modifiers[-1]
-        ss.subdivision_type = 'SIMPLE'
+        ss.subdivision_type = "SIMPLE"
         ss.levels = 6
         ss.render_levels = 6
-        bpy.ops.object.modifier_add(type='SUBSURF')
+        bpy.ops.object.modifier_add(type="SUBSURF")
         ss = ob.modifiers[-1]
-        ss.subdivision_type = 'SIMPLE'
+        ss.subdivision_type = "SIMPLE"
         ss.levels = 4
         ss.render_levels = 3
-        bpy.ops.object.modifier_add(type='DISPLACE')
+        bpy.ops.object.modifier_add(type="DISPLACE")
 
     ob.location = ((o.max.x + o.min.x) / 2, (o.max.y + o.min.y) / 2, o.min.z)
     ob.scale.x = (o.max.x - o.min.x) / 2
     ob.scale.y = (o.max.y - o.min.y) / 2
     print(o.max.x, o.min.x)
     print(o.max.y, o.min.y)
-    print('bounds')
+    print("bounds")
     disp = ob.modifiers[-1]
-    disp.direction = 'Z'
-    disp.texture_coords = 'LOCAL'
+    disp.direction = "Z"
+    disp.texture_coords = "LOCAL"
     disp.mid_level = 0
 
     if oname in bpy.data.textures:
         t = bpy.data.textures[oname]
 
-        t.type = 'IMAGE'
+        t.type = "IMAGE"
         disp.texture = t
 
         t.image = i
     else:
         bpy.ops.texture.new()
         for t in bpy.data.textures:
-            if t.name == 'Texture':
-                t.type = 'IMAGE'
+            if t.name == "Texture":
+                t.type = "IMAGE"
                 t.name = oname
                 t = t.type_recast()
-                t.type = 'IMAGE'
+                t.type = "IMAGE"
                 t.image = i
                 disp.texture = t
     ob.hide_render = True
@@ -85,12 +86,13 @@ async def doSimulation(name, operations):
     for o in operations:
         getOperationSources(o)
     limits = getBoundsMultiple(
-        operations)  # this is here because some background computed operations still didn't have bounds data
+        operations
+    )  # this is here because some background computed operations still didn't have bounds data
     i = await generateSimulationImage(operations, limits)
-#    cp = getCachePath(operations[0])[:-len(operations[0].name)] + name
-    cp = getSimulationPath()+name
-    print('cp=', cp)
-    iname = cp + '_sim.exr'
+    #    cp = getCachePath(operations[0])[:-len(operations[0].name)] + name
+    cp = getSimulationPath() + name
+    print("cp=", cp)
+    iname = cp + "_sim.exr"
 
     numpysave(i, iname)
     i = bpy.data.images.load(iname)
@@ -122,7 +124,7 @@ async def generateSimulationImage(operations, limits):
         verts = m.vertices
 
         if o.do_simulation_feedrate:
-            kname = 'feedrates'
+            kname = "feedrates"
             m.use_customdata_edge_crease = True
 
             if m.shape_keys is None or m.shape_keys.key_blocks.find(kname) == -1:
@@ -150,8 +152,8 @@ async def generateSimulationImage(operations, limits):
         for i, vert in enumerate(verts):
             if perc != int(100 * i / vtotal):
                 perc = int(100 * i / vtotal)
-                total_perc = (perc + op_count*100) / num_operations
-                await progress_async(f'Simulation', int(total_perc))
+                total_perc = (perc + op_count * 100) / num_operations
+                await progress_async(f"Simulation", int(total_perc))
 
             if i > 0:
                 volume = 0
@@ -161,9 +163,9 @@ async def generateSimulationImage(operations, limits):
 
                 l = v.length
                 if (lasts.z < maxz or s.z < maxz) and not (
-                        v.x == 0 and v.y == 0 and v.z > 0):  # only simulate inside material, and exclude lift-ups
-                    if (
-                            v.x == 0 and v.y == 0 and v.z < 0):
+                    v.x == 0 and v.y == 0 and v.z > 0
+                ):  # only simulate inside material, and exclude lift-ups
+                    if v.x == 0 and v.y == 0 and v.z < 0:
                         # if the cutter goes straight down, we don't have to interpolate.
                         pass
 
@@ -173,17 +175,24 @@ async def generateSimulationImage(operations, limits):
                         lastxs = xs
                         lastys = ys
                         while v.length < l:
-                            xs = int((lasts.x + v.x - minx) / simulation_detail +
-                                     borderwidth + simulation_detail / 2)
+                            xs = int(
+                                (lasts.x + v.x - minx) / simulation_detail
+                                + borderwidth
+                                + simulation_detail / 2
+                            )
                             # -middle
-                            ys = int((lasts.y + v.y - miny) / simulation_detail +
-                                     borderwidth + simulation_detail / 2)
+                            ys = int(
+                                (lasts.y + v.y - miny) / simulation_detail
+                                + borderwidth
+                                + simulation_detail / 2
+                            )
                             # -middle
                             z = lasts.z + v.z
                             # print(z)
                             if lastxs != xs or lastys != ys:
                                 volume_partial = simCutterSpot(
-                                    xs, ys, z, cutterArray, si, o.do_simulation_feedrate)
+                                    xs, ys, z, cutterArray, si, o.do_simulation_feedrate
+                                )
                                 if o.do_simulation_feedrate:
                                     totalvolume += volume
                                     volume += volume_partial
@@ -193,13 +202,22 @@ async def generateSimulationImage(operations, limits):
                                 dropped += 1
                             v.length += simulation_detail
 
-                    xs = int((s.x - minx) / simulation_detail +
-                             borderwidth + simulation_detail / 2)  # -middle
-                    ys = int((s.y - miny) / simulation_detail +
-                             borderwidth + simulation_detail / 2)  # -middle
+                    xs = int(
+                        (s.x - minx) / simulation_detail
+                        + borderwidth
+                        + simulation_detail / 2
+                    )  # -middle
+                    ys = int(
+                        (s.y - miny) / simulation_detail
+                        + borderwidth
+                        + simulation_detail / 2
+                    )  # -middle
                     volume_partial = simCutterSpot(
-                        xs, ys, s.z, cutterArray, si, o.do_simulation_feedrate)
-                if o.do_simulation_feedrate:  # compute volumes and write data into shapekey.
+                        xs, ys, s.z, cutterArray, si, o.do_simulation_feedrate
+                    )
+                if (
+                    o.do_simulation_feedrate
+                ):  # compute volumes and write data into shapekey.
                     volume += volume_partial
                     totalvolume += volume
                     if l > 0:
@@ -274,23 +292,25 @@ async def generateSimulationImage(operations, limits):
     si = si[borderwidth:-borderwidth, borderwidth:-borderwidth]
     si += -minz
 
-    await progress_async("Simulated:", time.time()-start_time, 's')
+    await progress_async("Simulated:", time.time() - start_time, "s")
     return si
 
 
 def simCutterSpot(xs, ys, z, cutterArray, si, getvolume=False):
     """Simulates a Cutter Cutting Into Stock, Taking Away the Volume,
-    and Optionally Returning the Volume that Has Been Milled. This Is Now Used for Feedrate Tweaking."""
+    and Optionally Returning the Volume that Has Been Milled. This Is Now Used for Feedrate Tweaking.
+    """
     m = int(cutterArray.shape[0] / 2)
     size = cutterArray.shape[0]
     # whole cutter in image there
     if xs > m and xs < si.shape[0] - m and ys > m and ys < si.shape[1] - m:
         if getvolume:
-            volarray = si[xs - m:xs - m + size, ys - m:ys - m + size].copy()
-        si[xs - m:xs - m + size, ys - m:ys - m + size] = np.minimum(si[xs - m:xs - m + size, ys - m:ys - m + size],
-                                                                    cutterArray + z)
+            volarray = si[xs - m : xs - m + size, ys - m : ys - m + size].copy()
+        si[xs - m : xs - m + size, ys - m : ys - m + size] = np.minimum(
+            si[xs - m : xs - m + size, ys - m : ys - m + size], cutterArray + z
+        )
         if getvolume:
-            volarray = si[xs - m:xs - m + size, ys - m:ys - m + size] - volarray
+            volarray = si[xs - m : xs - m + size, ys - m : ys - m + size] - volarray
             vsum = abs(volarray.sum())
             # print(vsum)
             return vsum
@@ -309,8 +329,10 @@ def simCutterSpot(xs, ys, z, cutterArray, si, getvolume=False):
 
         if getvolume:
             volarray = si[startx:endx, starty:endy].copy()
-        si[startx:endx, starty:endy] = np.minimum(si[startx:endx, starty:endy],
-                                                  cutterArray[castartx:caendx, castarty:caendy] + z)
+        si[startx:endx, starty:endy] = np.minimum(
+            si[startx:endx, starty:endy],
+            cutterArray[castartx:caendx, castarty:caendy] + z,
+        )
         if getvolume:
             volarray = si[startx:endx, starty:endy] - volarray
             vsum = abs(volarray.sum())

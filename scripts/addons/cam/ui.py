@@ -21,20 +21,23 @@ from .gcodeimportparser import import_gcode
 
 
 class CAM_UL_orientations(UIList):
-    def draw_item(self, context, layout, data, item, icon, active_data, active_propname, index):
-        if self.layout_type in {'DEFAULT', 'COMPACT'}:
+    def draw_item(
+        self, context, layout, data, item, icon, active_data, active_propname, index
+    ):
+        if self.layout_type in {"DEFAULT", "COMPACT"}:
 
             layout.label(text=item.name, translate=False, icon_value=icon)
-        elif self.layout_type in {'GRID'}:
-            layout.alignment = 'CENTER'
+        elif self.layout_type in {"GRID"}:
+            layout.alignment = "CENTER"
             layout.label(text="", icon_value=icon)
 
 
 # panel containing all tools
 
+
 class VIEW3D_PT_tools_curvetools(Panel):
-    bl_space_type = 'VIEW_3D'
-    bl_region_type = 'TOOLS'
+    bl_space_type = "VIEW_3D"
+    bl_region_type = "TOOLS"
     bl_context = "objectmode"
     bl_label = "Curve CAM Tools"
 
@@ -45,18 +48,18 @@ class VIEW3D_PT_tools_curvetools(Panel):
         layout.operator("object.curve_intarsion")
         layout.operator("object.curve_overcuts")
         layout.operator("object.curve_overcuts_b")
-        #layout.operator("object.silhouete")
+        # layout.operator("object.silhouete")
         layout.operator("object.silhouete_offset")
         layout.operator("object.curve_remove_doubles")
         layout.operator("object.mesh_get_pockets")
 
 
 class VIEW3D_PT_tools_create(Panel):
-    bl_space_type = 'VIEW_3D'
-    bl_region_type = 'TOOLS'
+    bl_space_type = "VIEW_3D"
+    bl_region_type = "TOOLS"
     bl_context = "objectmode"
     bl_label = "Curve CAM Creators"
-    bl_option = 'DEFAULT_CLOSED'
+    bl_option = "DEFAULT_CLOSED"
 
     def draw(self, context):
         layout = self.layout
@@ -73,6 +76,7 @@ class VIEW3D_PT_tools_create(Panel):
         layout.operator("object.curve_gear")
         layout.operator("object.curve_flat_cone")
 
+
 # Gcode import panel---------------------------------------------------------------
 # ------------------------------------------------------------------------
 #    Panel in Object Mode
@@ -80,24 +84,26 @@ class VIEW3D_PT_tools_create(Panel):
 
 
 class CustomPanel(Panel):
-    bl_space_type = 'VIEW_3D'
-    bl_region_type = 'TOOLS'
+    bl_space_type = "VIEW_3D"
+    bl_region_type = "TOOLS"
     bl_context = "objectmode"
     bl_label = "Import G-code"
     bl_idname = "OBJECT_PT_importgcode"
 
-    bl_options = {'DEFAULT_CLOSED'}
+    bl_options = {"DEFAULT_CLOSED"}
 
     @classmethod
     def poll(cls, context):
-        return context.mode in {'OBJECT',
-                                'EDIT_MESH'}  # with this poll addon is visibly even when no object is selected
+        return context.mode in {
+            "OBJECT",
+            "EDIT_MESH",
+        }  # with this poll addon is visibly even when no object is selected
 
     def draw(self, context):
         layout = self.layout
         scene = context.scene
         isettings = scene.cam_import_gcode
-        layout.prop(isettings, 'output')
+        layout.prop(isettings, "output")
         layout.prop(isettings, "split_layers")
 
         layout.prop(isettings, "subdivide")
@@ -117,6 +123,7 @@ class CustomPanel(Panel):
 
 class WM_OT_gcode_import(Operator, ImportHelper):
     """Import G-code, Travel Lines Don't Get Drawn"""
+
     bl_idname = "wm.gcode_import"  # important since its how bpy.ops.import_test.some_data is constructed
     bl_label = "Import G-code"
 
@@ -125,7 +132,7 @@ class WM_OT_gcode_import(Operator, ImportHelper):
 
     filter_glob: StringProperty(
         default="*.*",
-        options={'HIDDEN'},
+        options={"HIDDEN"},
         maxlen=255,  # Max internal buffer length, longer would be clamped.
     )
 

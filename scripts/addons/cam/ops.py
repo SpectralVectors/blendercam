@@ -46,28 +46,32 @@ from .utils import (
 class threadCom:  # object passed to threads to read background process stdout info
     def __init__(self, o, proc):
         self.opname = o.name
-        self.outtext = ''
+        self.outtext = ""
         self.proc = proc
-        self.lasttext = ''
+        self.lasttext = ""
 
 
 def threadread(tcom):
     """Reads Stdout of Background Process, Done This Way to Have It Non-blocking"""
     inline = tcom.proc.stdout.readline()
     inline = str(inline)
-    s = inline.find('progress{')
+    s = inline.find("progress{")
     if s > -1:
-        e = inline.find('}')
-        tcom.outtext = inline[s + 9:e]
+        e = inline.find("}")
+        tcom.outtext = inline[s + 9 : e]
 
 
 @bpy.app.handlers.persistent
 def timer_update(context):
     """Monitoring of Background Processes"""
-    text = ''
+    text = ""
     s = bpy.context.scene
-    if hasattr(bpy.ops.object.calculate_cam_paths_background.__class__, 'cam_processes'):
-        processes = bpy.ops.object.calculate_cam_paths_background.__class__.cam_processes
+    if hasattr(
+        bpy.ops.object.calculate_cam_paths_background.__class__, "cam_processes"
+    ):
+        processes = (
+            bpy.ops.object.calculate_cam_paths_background.__class__.cam_processes
+        )
         for p in processes:
             # proc=p[1].proc
             readthread = p[0]
@@ -76,11 +80,11 @@ def timer_update(context):
                 readthread.join()
                 # readthread.
                 tcom.lasttext = tcom.outtext
-                if tcom.outtext != '':
+                if tcom.outtext != "":
                     print(tcom.opname, tcom.outtext)
-                    tcom.outtext = ''
+                    tcom.outtext = ""
 
-                if 'finished' in tcom.lasttext:
+                if "finished" in tcom.lasttext:
                     processes.remove(p)
 
                     o = s.cam_operations[tcom.opname]
@@ -90,7 +94,8 @@ def timer_update(context):
                     update_offsetimage_tag = False
                 else:
                     readthread = threading.Thread(
-                        target=threadread, args=([tcom]), daemon=True)
+                        target=threadread, args=([tcom]), daemon=True
+                    )
                     readthread.start()
                     p[0] = readthread
             o = s.cam_operations[tcom.opname]  # changes
@@ -99,9 +104,10 @@ def timer_update(context):
 
 class PathsBackground(Operator):
     """Calculate CAM Paths in Background. File Has to Be Saved Before."""
+
     bl_idname = "object.calculate_cam_paths_background"
     bl_label = "Calculate CAM Paths in Background"
-    bl_options = {'REGISTER', 'UNDO'}
+    bl_options = {"REGISTER", "UNDO"}
 
     def execute(self, context):
         s = bpy.context.scene
@@ -113,38 +119,59 @@ class PathsBackground(Operator):
         fpath = bpy.data.filepath
 
         for p in bpy.utils.script_paths():
-            scriptpath = p + os.sep + 'addons' + os.sep + 'cam' + os.sep + 'backgroundop.py'
+            scriptpath = (
+                p + os.sep + "addons" + os.sep + "cam" + os.sep + "backgroundop.py"
+            )
             print(scriptpath)
             if os.path.isfile(scriptpath):
                 break
-        proc = subprocess.Popen([bpath, '-b', fpath, '-P', scriptpath, '--', '-o=' + str(s.cam_active_operation)],
-                                bufsize=1, stdout=subprocess.PIPE, stdin=subprocess.PIPE)
+        proc = subprocess.Popen(
+            [
+                bpath,
+                "-b",
+                fpath,
+                "-P",
+                scriptpath,
+                "--",
+                "-o=" + str(s.cam_active_operation),
+            ],
+            bufsize=1,
+            stdout=subprocess.PIPE,
+            stdin=subprocess.PIPE,
+        )
 
         tcom = threadCom(o, proc)
-        readthread = threading.Thread(
-            target=threadread, args=([tcom]), daemon=True)
+        readthread = threading.Thread(target=threadread, args=([tcom]), daemon=True)
         readthread.start()
         # self.__class__.cam_processes=[]
-        if not hasattr(bpy.ops.object.calculate_cam_paths_background.__class__, 'cam_processes'):
+        if not hasattr(
+            bpy.ops.object.calculate_cam_paths_background.__class__, "cam_processes"
+        ):
             bpy.ops.object.calculate_cam_paths_background.__class__.cam_processes = []
-        bpy.ops.object.calculate_cam_paths_background.__class__.cam_processes.append([
-                                                                                     readthread, tcom])
-        return {'FINISHED'}
+        bpy.ops.object.calculate_cam_paths_background.__class__.cam_processes.append(
+            [readthread, tcom]
+        )
+        return {"FINISHED"}
 
 
 class KillPathsBackground(Operator):
     """Remove CAM Path Processes in Background."""
+
     bl_idname = "object.kill_calculate_cam_paths_background"
     bl_label = "Kill Background Computation of an Operation"
-    bl_options = {'REGISTER', 'UNDO'}
+    bl_options = {"REGISTER", "UNDO"}
 
     def execute(self, context):
         s = bpy.context.scene
         o = s.cam_operations[s.cam_active_operation]
         self.operation = o
 
-        if hasattr(bpy.ops.object.calculate_cam_paths_background.__class__, 'cam_processes'):
-            processes = bpy.ops.object.calculate_cam_paths_background.__class__.cam_processes
+        if hasattr(
+            bpy.ops.object.calculate_cam_paths_background.__class__, "cam_processes"
+        ):
+            processes = (
+                bpy.ops.object.calculate_cam_paths_background.__class__.cam_processes
+            )
             for p in processes:
                 tcom = p[1]
                 if tcom.opname == o.name:
@@ -152,45 +179,49 @@ class KillPathsBackground(Operator):
                     tcom.proc.kill()
                     o.computing = False
 
-        return {'FINISHED'}
+        return {"FINISHED"}
 
 
 async def _calc_path(operator, context):
     s = bpy.context.scene
     o = s.cam_operations[s.cam_active_operation]
-    if o.geometry_source == 'OBJECT':
+    if o.geometry_source == "OBJECT":
         ob = bpy.data.objects[o.object_name]
         ob.hide_set(False)
-    if o.geometry_source == 'COLLECTION':
+    if o.geometry_source == "COLLECTION":
         obc = bpy.data.collections[o.collection_name]
         for ob in obc.objects:
             ob.hide_set(False)
     if o.strategy == "CARVE":
         curvob = bpy.data.objects[o.curve_object]
         curvob.hide_set(False)
-    '''if o.strategy == 'WATERLINE':
+    """if o.strategy == 'WATERLINE':
         ob = bpy.data.objects[o.object_name]
         ob.select_set(True)
-        bpy.ops.object.transform_apply(location=True, rotation=True, scale=True)'''
-    mesh = bpy.data.meshes.get(f'cam_path_{o.name}')
+        bpy.ops.object.transform_apply(location=True, rotation=True, scale=True)"""
+    mesh = bpy.data.meshes.get(f"cam_path_{o.name}")
     if mesh:
         bpy.data.meshes.remove(mesh)
 
     if not o.valid:
-        operator.report({'ERROR_INVALID_INPUT'},
-                        "Operation can't be performed, see warnings for info")
+        operator.report(
+            {"ERROR_INVALID_INPUT"},
+            "Operation can't be performed, see warnings for info",
+        )
         progress_async("Operation can't be performed, see warnings for info")
-        return {'FINISHED', False}
+        return {"FINISHED", False}
 
     # check for free movement height < maxz and return with error
-    if(o.movement.free_height < o.maxz):
-        operator.report({'ERROR_INVALID_INPUT'},
-                        "Free Movement Height Is Less than Operation Depth Start \n Correct and Try Again.")
+    if o.movement.free_height < o.maxz:
+        operator.report(
+            {"ERROR_INVALID_INPUT"},
+            "Free Movement Height Is Less than Operation Depth Start \n Correct and Try Again.",
+        )
         progress_async("Operation Can't Be Performed, See Warnings for Info")
-        return {'FINISHED', False}
+        return {"FINISHED", False}
 
     if o.computing:
-        return {'FINISHED', False}
+        return {"FINISHED", False}
 
     o.operator = operator
 
@@ -202,27 +233,28 @@ async def _calc_path(operator, context):
     except CamException as e:
         traceback.print_tb(e.__traceback__)
         error_str = "\n".join(textwrap.wrap(str(e), width=80))
-        operator.report({'ERROR'}, error_str)
-        return {'FINISHED', False}
+        operator.report({"ERROR"}, error_str)
+        return {"FINISHED", False}
     except AsyncCancelledException as e:
-        return {'CANCELLED', False}
+        return {"CANCELLED", False}
     except Exception as e:
         print("FAIL", e)
         traceback.print_tb(e.__traceback__)
-        operator.report({'ERROR'}, str(e))
-        return {'FINISHED', False}
-    coll = bpy.data.collections.get('RigidBodyWorld')
+        operator.report({"ERROR"}, str(e))
+        return {"FINISHED", False}
+    coll = bpy.data.collections.get("RigidBodyWorld")
     if coll:
         bpy.data.collections.remove(coll)
 
-    return {'FINISHED', True}
+    return {"FINISHED", True}
 
 
 class CalculatePath(Operator, AsyncOperatorMixin):
     """Calculate CAM Paths"""
+
     bl_idname = "object.calculate_cam_path"
     bl_label = "Calculate CAM Paths"
-    bl_options = {'REGISTER', 'UNDO', 'BLOCKING'}
+    bl_options = {"REGISTER", "UNDO", "BLOCKING"}
 
     @classmethod
     def poll(cls, context):
@@ -241,39 +273,40 @@ class CalculatePath(Operator, AsyncOperatorMixin):
 
 class PathsAll(Operator):
     """Calculate All CAM Paths"""
+
     bl_idname = "object.calculate_cam_paths_all"
     bl_label = "Calculate All CAM Paths"
-    bl_options = {'REGISTER', 'UNDO'}
+    bl_options = {"REGISTER", "UNDO"}
 
     def execute(self, context):
         i = 0
         for o in bpy.context.scene.cam_operations:
             bpy.context.scene.cam_active_operation = i
-            print('\nCalculating Path :' + o.name)
-            print('\n')
+            print("\nCalculating Path :" + o.name)
+            print("\n")
             bpy.ops.object.calculate_cam_paths_background()
             i += 1
 
-        return {'FINISHED'}
+        return {"FINISHED"}
 
     def draw(self, context):
         layout = self.layout
-        layout.prop_search(self, "operation",
-                           bpy.context.scene, "cam_operations")
+        layout.prop_search(self, "operation", bpy.context.scene, "cam_operations")
 
 
 class CamPackObjects(Operator):
     """Calculate All CAM Paths"""
+
     bl_idname = "object.cam_pack_objects"
     bl_label = "Pack Curves on Sheet"
-    bl_options = {'REGISTER', 'UNDO'}
+    bl_options = {"REGISTER", "UNDO"}
 
     def execute(self, context):
-        bpy.ops.object.mode_set(mode='OBJECT')	    # force object mode
+        bpy.ops.object.mode_set(mode="OBJECT")  # force object mode
         obs = bpy.context.selected_objects
         pack.packCurves()
         # layout.
-        return {'FINISHED'}
+        return {"FINISHED"}
 
     def draw(self, context):
         layout = self.layout
@@ -281,16 +314,18 @@ class CamPackObjects(Operator):
 
 class CamSliceObjects(Operator):
     """Slice a Mesh Object Horizontally"""
+
     # warning, this is a separate and neglected feature, it's a mess - by now it just slices up the object.
     bl_idname = "object.cam_slice_objects"
     bl_label = "Slice Object - Useful for Lasercut Puzzles etc"
-    bl_options = {'REGISTER', 'UNDO'}
+    bl_options = {"REGISTER", "UNDO"}
 
     def execute(self, context):
         from cam import slice
+
         ob = bpy.context.active_object
         slice.sliceObject(ob)
-        return {'FINISHED'}
+        return {"FINISHED"}
 
     def draw(self, context):
         layout = self.layout
@@ -307,10 +342,11 @@ def getChainOperations(chain):
 
 
 class PathsChain(Operator, AsyncOperatorMixin):
-    """Calculate a Chain and Export the G-code Alltogether. """
+    """Calculate a Chain and Export the G-code Alltogether."""
+
     bl_idname = "object.calculate_cam_paths_chain"
     bl_label = "Calculate CAM Paths in Current Chain and Export Chain G-code"
-    bl_options = {'REGISTER', 'UNDO', 'BLOCKING'}
+    bl_options = {"REGISTER", "UNDO", "BLOCKING"}
 
     @classmethod
     def poll(cls, context):
@@ -320,36 +356,37 @@ class PathsChain(Operator, AsyncOperatorMixin):
 
     async def execute_async(self, context):
         s = context.scene
-        bpy.ops.object.mode_set(mode='OBJECT')	    # force object mode
+        bpy.ops.object.mode_set(mode="OBJECT")  # force object mode
         chain = s.cam_chains[s.cam_active_chain]
         chainops = getChainOperations(chain)
         meshes = []
         try:
             for i in range(0, len(chainops)):
-                s.cam_active_operation = s.cam_operations.find(
-                    chainops[i].name)
-                self.report({'INFO'}, f"Calculating Path: {chainops[i].name}")
+                s.cam_active_operation = s.cam_operations.find(chainops[i].name)
+                self.report({"INFO"}, f"Calculating Path: {chainops[i].name}")
                 result, success = await _calc_path(self, context)
-                if not success and 'FINISHED' in result:
+                if not success and "FINISHED" in result:
                     self.report(
-                        {'ERROR'}, f"Couldn't Calculate Path: {chainops[i].name}")
+                        {"ERROR"}, f"Couldn't Calculate Path: {chainops[i].name}"
+                    )
         except Exception as e:
             print("FAIL", e)
             traceback.print_tb(e.__traceback__)
-            self.report({'ERROR'}, str(e))
-            return {'FINISHED'}
+            self.report({"ERROR"}, str(e))
+            return {"FINISHED"}
 
         for o in chainops:
             meshes.append(bpy.data.objects["cam_path_{}".format(o.name)].data)
         gcodepath.exportGcodePath(chain.filename, meshes, chainops)
-        return {'FINISHED'}
+        return {"FINISHED"}
 
 
 class PathExportChain(Operator):
     """Calculate a Chain and Export the G-code Together."""
+
     bl_idname = "object.cam_export_paths_chain"
     bl_label = "Export CAM Paths in Current Chain as G-code"
-    bl_options = {'REGISTER', 'UNDO'}
+    bl_options = {"REGISTER", "UNDO"}
 
     @classmethod
     def poll(cls, context):
@@ -370,40 +407,49 @@ class PathExportChain(Operator):
             # bpy.ops.object.calculate_cam_paths_background()
             meshes.append(bpy.data.objects["cam_path_{}".format(o.name)].data)
         gcodepath.exportGcodePath(chain.filename, meshes, chainops)
-        return {'FINISHED'}
+        return {"FINISHED"}
 
 
 class PathExport(Operator):
     """Export G-code. Can Be Used only when the Path Object Is Present"""
+
     bl_idname = "object.cam_export"
     bl_label = "Export Operation G-code"
-    bl_options = {'REGISTER', 'UNDO'}
+    bl_options = {"REGISTER", "UNDO"}
 
     def execute(self, context):
 
         s = bpy.context.scene
         operation = s.cam_operations[s.cam_active_operation]
 
-        print("EXPORTING", operation.filename,
-              bpy.data.objects["cam_path_{}".format(operation.name)].data, operation)
+        print(
+            "EXPORTING",
+            operation.filename,
+            bpy.data.objects["cam_path_{}".format(operation.name)].data,
+            operation,
+        )
 
-        gcodepath.exportGcodePath(operation.filename, [bpy.data.objects["cam_path_{}".format(operation.name)].data],
-                                  [operation])
-        return {'FINISHED'}
+        gcodepath.exportGcodePath(
+            operation.filename,
+            [bpy.data.objects["cam_path_{}".format(operation.name)].data],
+            [operation],
+        )
+        return {"FINISHED"}
 
 
 class CAMSimulate(Operator, AsyncOperatorMixin):
     """Simulate CAM Operation
     This Is Performed by: Creating an Image, Painting Z Depth of the Brush Subtractively.
     Works only for Some Operations, Can Not Be Used for 4-5 Axis."""
+
     bl_idname = "object.cam_simulate"
     bl_label = "CAM Simulation"
-    bl_options = {'REGISTER', 'UNDO', 'BLOCKING'}
+    bl_options = {"REGISTER", "UNDO", "BLOCKING"}
 
     operation: StringProperty(
         name="Operation",
         description="Specify the operation to calculate",
-        default='Operation',
+        default="Operation",
     )
 
     async def execute_async(self, context):
@@ -416,24 +462,24 @@ class CAMSimulate(Operator, AsyncOperatorMixin):
             try:
                 await simulation.doSimulation(operation_name, [operation])
             except AsyncCancelledException as e:
-                return {'CANCELLED'}
+                return {"CANCELLED"}
         else:
-            self.report({'ERROR'}, 'No Computed Path to Simulate')
-            return {'FINISHED'}
-        return {'FINISHED'}
+            self.report({"ERROR"}, "No Computed Path to Simulate")
+            return {"FINISHED"}
+        return {"FINISHED"}
 
     def draw(self, context):
         layout = self.layout
-        layout.prop_search(self, "operation",
-                           bpy.context.scene, "cam_operations")
+        layout.prop_search(self, "operation", bpy.context.scene, "cam_operations")
 
 
 class CAMSimulateChain(Operator, AsyncOperatorMixin):
     """Simulate CAM Chain, Compared to Single Op Simulation Just Writes Into One Image and Thus Enables
     to See how Ops Work Together."""
+
     bl_idname = "object.cam_simulate_chain"
     bl_label = "CAM Simulation"
-    bl_options = {'REGISTER', 'UNDO', 'BLOCKING'}
+    bl_options = {"REGISTER", "UNDO", "BLOCKING"}
 
     @classmethod
     def poll(cls, context):
@@ -444,7 +490,7 @@ class CAMSimulateChain(Operator, AsyncOperatorMixin):
     operation: StringProperty(
         name="Operation",
         description="Specify the operation to calculate",
-        default='Operation',
+        default="Operation",
     )
 
     async def execute_async(self, context):
@@ -461,23 +507,23 @@ class CAMSimulateChain(Operator, AsyncOperatorMixin):
             try:
                 await simulation.doSimulation(chain.name, chainops)
             except AsyncCancelledException as e:
-                return {'CANCELLED'}
+                return {"CANCELLED"}
         else:
-            print('no computed path to simulate')
-            return {'FINISHED'}
-        return {'FINISHED'}
+            print("no computed path to simulate")
+            return {"FINISHED"}
+        return {"FINISHED"}
 
     def draw(self, context):
         layout = self.layout
-        layout.prop_search(self, "operation",
-                           bpy.context.scene, "cam_operations")
+        layout.prop_search(self, "operation", bpy.context.scene, "cam_operations")
 
 
 class CamChainAdd(Operator):
     """Add New CAM Chain"""
+
     bl_idname = "scene.cam_chain_add"
     bl_label = "Add New CAM Chain"
-    bl_options = {'REGISTER', 'UNDO'}
+    bl_options = {"REGISTER", "UNDO"}
 
     @classmethod
     def poll(cls, context):
@@ -489,18 +535,19 @@ class CamChainAdd(Operator):
         s.cam_chains.add()
         chain = s.cam_chains[-1]
         s.cam_active_chain = len(s.cam_chains) - 1
-        chain.name = 'Chain_' + str(s.cam_active_chain + 1)
+        chain.name = "Chain_" + str(s.cam_active_chain + 1)
         chain.filename = chain.name
         chain.index = s.cam_active_chain
 
-        return {'FINISHED'}
+        return {"FINISHED"}
 
 
 class CamChainRemove(Operator):
     """Remove CAM Chain"""
+
     bl_idname = "scene.cam_chain_remove"
     bl_label = "Remove CAM Chain"
-    bl_options = {'REGISTER', 'UNDO'}
+    bl_options = {"REGISTER", "UNDO"}
 
     @classmethod
     def poll(cls, context):
@@ -511,14 +558,15 @@ class CamChainRemove(Operator):
         if bpy.context.scene.cam_active_chain > 0:
             bpy.context.scene.cam_active_chain -= 1
 
-        return {'FINISHED'}
+        return {"FINISHED"}
 
 
 class CamChainOperationAdd(Operator):
     """Add Operation to Chain"""
+
     bl_idname = "scene.cam_chain_operation_add"
     bl_label = "Add Operation to Chain"
-    bl_options = {'REGISTER', 'UNDO'}
+    bl_options = {"REGISTER", "UNDO"}
 
     @classmethod
     def poll(cls, context):
@@ -531,14 +579,15 @@ class CamChainOperationAdd(Operator):
         chain.operations.add()
         chain.active_operation += 1
         chain.operations[-1].name = s.cam_operations[s.cam_active_operation].name
-        return {'FINISHED'}
+        return {"FINISHED"}
 
 
 class CamChainOperationUp(Operator):
     """Add Operation to Chain"""
+
     bl_idname = "scene.cam_chain_operation_up"
     bl_label = "Add Operation to Chain"
-    bl_options = {'REGISTER', 'UNDO'}
+    bl_options = {"REGISTER", "UNDO"}
 
     @classmethod
     def poll(cls, context):
@@ -551,14 +600,15 @@ class CamChainOperationUp(Operator):
         if a > 0:
             chain.operations.move(a, a - 1)
             chain.active_operation -= 1
-        return {'FINISHED'}
+        return {"FINISHED"}
 
 
 class CamChainOperationDown(Operator):
     """Add Operation to Chain"""
+
     bl_idname = "scene.cam_chain_operation_down"
     bl_label = "Add Operation to Chain"
-    bl_options = {'REGISTER', 'UNDO'}
+    bl_options = {"REGISTER", "UNDO"}
 
     @classmethod
     def poll(cls, context):
@@ -571,14 +621,15 @@ class CamChainOperationDown(Operator):
         if a < len(chain.operations) - 1:
             chain.operations.move(a, a + 1)
             chain.active_operation += 1
-        return {'FINISHED'}
+        return {"FINISHED"}
 
 
 class CamChainOperationRemove(Operator):
     """Remove Operation from Chain"""
+
     bl_idname = "scene.cam_chain_operation_remove"
     bl_label = "Remove Operation from Chain"
-    bl_options = {'REGISTER', 'UNDO'}
+    bl_options = {"REGISTER", "UNDO"}
 
     @classmethod
     def poll(cls, context):
@@ -591,14 +642,14 @@ class CamChainOperationRemove(Operator):
         chain.active_operation -= 1
         if chain.active_operation < 0:
             chain.active_operation = 0
-        return {'FINISHED'}
+        return {"FINISHED"}
 
 
 def fixUnits():
     """Sets up Units for BlenderCAM"""
     s = bpy.context.scene
 
-    s.unit_settings.system_rotation = 'DEGREES'
+    s.unit_settings.system_rotation = "DEGREES"
 
     s.unit_settings.scale_length = 1.0
     # Blender CAM doesn't respect this property and there were users reporting problems, not seeing this was changed.
@@ -606,9 +657,10 @@ def fixUnits():
 
 class CamOperationAdd(Operator):
     """Add New CAM Operation"""
+
     bl_idname = "scene.cam_operation_add"
     bl_label = "Add New CAM Operation"
-    bl_options = {'REGISTER', 'UNDO'}
+    bl_options = {"REGISTER", "UNDO"}
 
     @classmethod
     def poll(cls, context):
@@ -620,9 +672,11 @@ class CamOperationAdd(Operator):
 
         ob = bpy.context.active_object
         if ob is None:
-            self.report({'ERROR_INVALID_INPUT'},
-                        "Please Add an Object to Base the Operation on.")
-            return {'CANCELLED'}
+            self.report(
+                {"ERROR_INVALID_INPUT"},
+                "Please Add an Object to Base the Operation on.",
+            )
+            return {"CANCELLED"}
 
         minx, miny, minz, maxx, maxy, maxz = getBoundsWorldspace([ob])
         s.cam_operations.add()
@@ -635,17 +689,18 @@ class CamOperationAdd(Operator):
         o.name = f"Op_{ob.name}_{s.cam_active_operation + 1}"
         o.filename = o.name
 
-        if s.objects.get('CAM_machine') is None:
+        if s.objects.get("CAM_machine") is None:
             addMachineAreaObject()
 
-        return {'FINISHED'}
+        return {"FINISHED"}
 
 
 class CamOperationCopy(Operator):
     """Copy CAM Operation"""
+
     bl_idname = "scene.cam_operation_copy"
     bl_label = "Copy Active CAM Operation"
-    bl_options = {'REGISTER', 'UNDO'}
+    bl_options = {"REGISTER", "UNDO"}
 
     @classmethod
     def poll(cls, context):
@@ -659,7 +714,7 @@ class CamOperationCopy(Operator):
 
         scene = bpy.context.scene
         if len(scene.cam_operations) == 0:
-            return {'CANCELLED'}
+            return {"CANCELLED"}
         copyop = scene.cam_operations[scene.cam_active_operation]
         scene.cam_operations.add()
         scene.cam_active_operation += 1
@@ -682,21 +737,23 @@ class CamOperationCopy(Operator):
                 numdigits += 1
                 isdigit = o.name[-numdigits].isdigit()
             numdigits -= 1
-            o.name = o.name[:-numdigits] + \
-                str(int(o.name[-numdigits:]) + 1).zfill(numdigits)
+            o.name = o.name[:-numdigits] + str(int(o.name[-numdigits:]) + 1).zfill(
+                numdigits
+            )
             o.filename = o.name
         else:
-            o.name = o.name + '_copy'
-            o.filename = o.filename + '_copy'
+            o.name = o.name + "_copy"
+            o.filename = o.filename + "_copy"
 
-        return {'FINISHED'}
+        return {"FINISHED"}
 
 
 class CamOperationRemove(Operator):
     """Remove CAM Operation"""
+
     bl_idname = "scene.cam_operation_remove"
     bl_label = "Remove CAM Operation"
-    bl_options = {'REGISTER', 'UNDO'}
+    bl_options = {"REGISTER", "UNDO"}
 
     @classmethod
     def poll(cls, context):
@@ -706,7 +763,7 @@ class CamOperationRemove(Operator):
         scene = context.scene
         try:
             if len(scene.cam_operations) == 0:
-                return {'CANCELLED'}
+                return {"CANCELLED"}
             active_op = scene.cam_operations[scene.cam_active_operation]
             active_op_object = bpy.data.objects[active_op.name]
             scene.objects.active = active_op_object
@@ -723,24 +780,22 @@ class CamOperationRemove(Operator):
         if scene.cam_active_operation > 0:
             scene.cam_active_operation -= 1
 
-        return {'FINISHED'}
+        return {"FINISHED"}
 
 
 # move cam operation in the list up or down
 class CamOperationMove(Operator):
     """Move CAM Operation"""
+
     bl_idname = "scene.cam_operation_move"
     bl_label = "Move CAM Operation in List"
-    bl_options = {'REGISTER', 'UNDO'}
+    bl_options = {"REGISTER", "UNDO"}
 
     direction: EnumProperty(
-        name='Direction',
-        items=(
-            ('UP', 'Up', ''),
-            ('DOWN', 'Down', '')
-        ),
-        description='Direction',
-        default='DOWN',
+        name="Direction",
+        items=(("UP", "Up", ""), ("DOWN", "Down", "")),
+        description="Direction",
+        default="DOWN",
     )
 
     @classmethod
@@ -751,7 +806,7 @@ class CamOperationMove(Operator):
         # main(context)
         a = bpy.context.scene.cam_active_operation
         cops = bpy.context.scene.cam_operations
-        if self.direction == 'UP':
+        if self.direction == "UP":
             if a > 0:
                 cops.move(a, a - 1)
                 bpy.context.scene.cam_active_operation -= 1
@@ -761,14 +816,15 @@ class CamOperationMove(Operator):
                 cops.move(a, a + 1)
                 bpy.context.scene.cam_active_operation += 1
 
-        return {'FINISHED'}
+        return {"FINISHED"}
 
 
 class CamOrientationAdd(Operator):
     """Add Orientation to CAM Operation, for Multiaxis Operations"""
+
     bl_idname = "scene.cam_orientation_add"
     bl_label = "Add Orientation"
-    bl_options = {'REGISTER', 'UNDO'}
+    bl_options = {"REGISTER", "UNDO"}
 
     @classmethod
     def poll(cls, context):
@@ -778,24 +834,29 @@ class CamOrientationAdd(Operator):
         s = bpy.context.scene
         a = s.cam_active_operation
         o = s.cam_operations[a]
-        gname = o.name + '_orientations'
-        bpy.ops.object.empty_add(type='ARROWS')
+        gname = o.name + "_orientations"
+        bpy.ops.object.empty_add(type="ARROWS")
 
         oriob = bpy.context.active_object
         oriob.empty_draw_size = 0.02  # 2 cm
 
         simple.addToGroup(oriob, gname)
-        oriob.name = 'ori_' + o.name + '.' + \
-            str(len(bpy.data.collections[gname].objects)).zfill(3)
+        oriob.name = (
+            "ori_"
+            + o.name
+            + "."
+            + str(len(bpy.data.collections[gname].objects)).zfill(3)
+        )
 
-        return {'FINISHED'}
+        return {"FINISHED"}
 
 
 class CamBridgesAdd(Operator):
     """Add Bridge Objects to Curve"""
+
     bl_idname = "scene.cam_bridges_add"
     bl_label = "Add Bridges / Tabs"
-    bl_options = {'REGISTER', 'UNDO'}
+    bl_options = {"REGISTER", "UNDO"}
 
     @classmethod
     def poll(cls, context):
@@ -806,4 +867,4 @@ class CamBridgesAdd(Operator):
         a = s.cam_active_operation
         o = s.cam_operations[a]
         bridges.addAutoBridges(o)
-        return {'FINISHED'}
+        return {"FINISHED"}

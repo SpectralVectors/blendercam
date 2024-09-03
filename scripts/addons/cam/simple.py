@@ -52,24 +52,24 @@ def timingadd(tinf):
 
 
 def timingprint(tinf):
-    print('time ' + str(tinf[0]) + 'seconds')
+    print("time " + str(tinf[0]) + "seconds")
 
 
 def progress(text, n=None):
     """Function for Reporting During the Script, Works for Background Operations in the Header."""
     text = str(text)
     if n is None:
-        n = ''
+        n = ""
     else:
-        n = ' ' + str(int(n * 1000) / 1000) + '%'
-    sys.stdout.write('progress{%s%s}\n' % (text, n))
+        n = " " + str(int(n * 1000) / 1000) + "%"
+    sys.stdout.write("progress{%s%s}\n" % (text, n))
     sys.stdout.flush()
 
 
 def activate(o):
     """Makes an Object Active, Used Many Times in Blender"""
     s = bpy.context.scene
-    bpy.ops.object.select_all(action='DESELECT')
+    bpy.ops.object.select_all(action="DESELECT")
     o.select_set(state=True)
     s.objects[o.name].select_set(state=True)
     bpy.context.view_layer.objects.active = o
@@ -91,9 +91,15 @@ def dupliob(o, pos):
     activate(o)
     bpy.ops.object.duplicate()
     s = 1.0 / BULLET_SCALE
-    bpy.ops.transform.resize(value=(s, s, s), constraint_axis=(False, False, False), orient_type='GLOBAL',
-                             mirror=False, use_proportional_edit=False, proportional_edit_falloff='SMOOTH',
-                             proportional_size=1)
+    bpy.ops.transform.resize(
+        value=(s, s, s),
+        constraint_axis=(False, False, False),
+        orient_type="GLOBAL",
+        mirror=False,
+        use_proportional_edit=False,
+        proportional_edit_falloff="SMOOTH",
+        proportional_size=1,
+    )
     o = bpy.context.active_object
     bpy.ops.rigidbody.object_remove()
     o.location = pos
@@ -153,30 +159,30 @@ def getCachePath(o):
     fn = bpy.data.filepath
     l = len(bpy.path.basename(fn))
     bn = bpy.path.basename(fn)[:-6]
-    print('fn-l:', fn[:-l])
-    print('bn:', bn)
+    print("fn-l:", fn[:-l])
+    print("bn:", bn)
 
-    iname = fn[:-l] + 'temp_cam' + os.sep + bn + '_' + o.name
+    iname = fn[:-l] + "temp_cam" + os.sep + bn + "_" + o.name
     return iname
 
 
 def getSimulationPath():
     fn = bpy.data.filepath
     l = len(bpy.path.basename(fn))
-    iname = fn[:-l] + 'temp_cam' + os.sep
+    iname = fn[:-l] + "temp_cam" + os.sep
     return iname
 
 
 def safeFileName(name):  # for export gcode
     valid_chars = "-_.()%s%s" % (string.ascii_letters, string.digits)
-    filename = ''.join(c for c in name if c in valid_chars)
+    filename = "".join(c for c in name if c in valid_chars)
     return filename
 
 
 def strInUnits(x, precision=5):
-    if bpy.context.scene.unit_settings.system == 'METRIC':
-        return str(round(x * 1000, precision)) + ' mm '
-    elif bpy.context.scene.unit_settings.system == 'IMPERIAL':
+    if bpy.context.scene.unit_settings.system == "METRIC":
+        return str(round(x * 1000, precision)) + " mm "
+    elif bpy.context.scene.unit_settings.system == "IMPERIAL":
         return str(round(x * 1000 / 25.4, precision)) + "'' "
     else:
         return str(x)
@@ -185,7 +191,7 @@ def strInUnits(x, precision=5):
 # select multiple object starting with name
 def select_multiple(name):
     scene = bpy.context.scene
-    bpy.ops.object.select_all(action='DESELECT')
+    bpy.ops.object.select_all(action="DESELECT")
     for ob in scene.objects:  # join pocket curve calculations
         if ob.name.startswith(name):
             ob.select_set(True)
@@ -203,7 +209,7 @@ def join_multiple(name):
 # remove multiple objects starting with 'name'.... useful for fixed name operation
 def remove_multiple(name):
     scene = bpy.context.scene
-    bpy.ops.object.select_all(action='DESELECT')
+    bpy.ops.object.select_all(action="DESELECT")
     for ob in scene.objects:
         if ob.name.startswith(name):
             ob.select_set(True)
@@ -211,13 +217,13 @@ def remove_multiple(name):
 
 
 def deselect():
-    bpy.ops.object.select_all(action='DESELECT')
+    bpy.ops.object.select_all(action="DESELECT")
 
 
 # makes the object with the name active
 def make_active(name):
     ob = bpy.context.scene.objects[name]
-    bpy.ops.object.select_all(action='DESELECT')
+    bpy.ops.object.select_all(action="DESELECT")
     bpy.context.view_layer.objects.active = ob
     ob.select_set(True)
 
@@ -237,16 +243,17 @@ def rename(name, name2):
 # all objects starting with name will be deleted and the result will be name
 def union(name):
     select_multiple(name)
-    bpy.ops.object.curve_boolean(boolean_type='UNION')
-    active_name('unionboolean')
+    bpy.ops.object.curve_boolean(boolean_type="UNION")
+    active_name("unionboolean")
     remove_multiple(name)
-    rename('unionboolean', name)
+    rename("unionboolean", name)
 
 
 def intersect(name):
     select_multiple(name)
-    bpy.ops.object.curve_boolean(boolean_type='INTERSECT')
-    active_name('intersection')
+    bpy.ops.object.curve_boolean(boolean_type="INTERSECT")
+    active_name("intersection")
+
 
 # boolean difference of objects starting with name result is object from basename.
 # all objects starting with name will be deleted and the result will be basename
@@ -257,10 +264,10 @@ def difference(name, basename):
     #   basename is what the base you want to cut including name
     select_multiple(name)
     bpy.context.view_layer.objects.active = bpy.data.objects[basename]
-    bpy.ops.object.curve_boolean(boolean_type='DIFFERENCE')
-    active_name('booleandifference')
+    bpy.ops.object.curve_boolean(boolean_type="DIFFERENCE")
+    active_name("booleandifference")
     remove_multiple(name)
-    rename('booleandifference', basename)
+    rename("booleandifference", basename)
 
 
 # duplicate active object or duplicate move
@@ -269,20 +276,30 @@ def duplicate(x=0, y=0):
     if x == 0 and y == 0:
         bpy.ops.object.duplicate()
     else:
-        bpy.ops.object.duplicate_move(OBJECT_OT_duplicate={"linked": False, "mode": 'TRANSLATION'},
-                                      TRANSFORM_OT_translate={"value": (x, y, 0.0)})
+        bpy.ops.object.duplicate_move(
+            OBJECT_OT_duplicate={"linked": False, "mode": "TRANSLATION"},
+            TRANSFORM_OT_translate={"value": (x, y, 0.0)},
+        )
 
 
 # Mirror active object along the x axis
 def mirrorx():
-    bpy.ops.transform.mirror(orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)),
-                             orient_matrix_type='GLOBAL', constraint_axis=(True, False, False))
+    bpy.ops.transform.mirror(
+        orient_type="GLOBAL",
+        orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)),
+        orient_matrix_type="GLOBAL",
+        constraint_axis=(True, False, False),
+    )
 
 
 # mirror active object along y axis
 def mirrory():
-    bpy.ops.transform.mirror(orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)),
-                             orient_matrix_type='GLOBAL', constraint_axis=(False, True, False))
+    bpy.ops.transform.mirror(
+        orient_type="GLOBAL",
+        orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)),
+        orient_matrix_type="GLOBAL",
+        constraint_axis=(False, True, False),
+    )
 
 
 # move active object and apply translation
@@ -306,7 +323,7 @@ def remove_doubles():
 def add_overcut(diametre, overcut=True):
     if overcut:
         name = bpy.context.active_object.name
-        bpy.ops.object.curve_overcuts(diameter=diametre, threshold=pi/2.05)
+        bpy.ops.object.curve_overcuts(diameter=diametre, threshold=pi / 2.05)
         overcut_name = bpy.context.active_object.name
         make_active(name)
         bpy.ops.object.delete()
@@ -315,7 +332,7 @@ def add_overcut(diametre, overcut=True):
 
 
 # add bounding rectangtle to curve
-def add_bound_rectangle(xmin, ymin, xmax, ymax, name='bounds_rectangle'):
+def add_bound_rectangle(xmin, ymin, xmax, ymax, name="bounds_rectangle"):
     # xmin = minimum corner x value
     # ymin = minimum corner y value
     # xmax = maximum corner x value
@@ -324,9 +341,17 @@ def add_bound_rectangle(xmin, ymin, xmax, ymax, name='bounds_rectangle'):
     xsize = xmax - xmin
     ysize = ymax - ymin
 
-    bpy.ops.curve.simple(align='WORLD', location=(xmin + xsize/2, ymin + ysize/2, 0), rotation=(0, 0, 0),
-                         Simple_Type='Rectangle',
-                         Simple_width=xsize, Simple_length=ysize, use_cyclic_u=True, edit_mode=False, shape='3D')
+    bpy.ops.curve.simple(
+        align="WORLD",
+        location=(xmin + xsize / 2, ymin + ysize / 2, 0),
+        rotation=(0, 0, 0),
+        Simple_Type="Rectangle",
+        Simple_width=xsize,
+        Simple_length=ysize,
+        use_cyclic_u=True,
+        edit_mode=False,
+        shape="3D",
+    )
     bpy.ops.object.transform_apply(location=True)
     active_name(name)
 
@@ -340,24 +365,32 @@ def add_rectangle(width, height, center_x=True, center_y=True):
     if center_y:
         y_offset = 0
 
-    bpy.ops.curve.simple(align='WORLD', location=(x_offset, y_offset, 0), rotation=(0, 0, 0),
-                         Simple_Type='Rectangle',
-                         Simple_width=width, Simple_length=height, use_cyclic_u=True, edit_mode=False, shape='3D')
+    bpy.ops.curve.simple(
+        align="WORLD",
+        location=(x_offset, y_offset, 0),
+        rotation=(0, 0, 0),
+        Simple_Type="Rectangle",
+        Simple_width=width,
+        Simple_length=height,
+        use_cyclic_u=True,
+        edit_mode=False,
+        shape="3D",
+    )
     bpy.ops.object.transform_apply(location=True)
-    active_name('simple_rectangle')
+    active_name("simple_rectangle")
 
 
 #  Returns coords from active object
 def active_to_coords():
     bpy.ops.object.duplicate()
     obj = bpy.context.active_object
-    bpy.ops.object.convert(target='MESH')
+    bpy.ops.object.convert(target="MESH")
     active_name("_tmp_mesh")
 
     coords = []
     for v in obj.data.vertices:  # extract X,Y coordinates from the vertices data
         coords.append((v.co.x, v.co.y))
-    remove_multiple('_tmp_mesh')
+    remove_multiple("_tmp_mesh")
     return coords
 
 

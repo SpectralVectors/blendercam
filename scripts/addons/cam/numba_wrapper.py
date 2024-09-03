@@ -5,6 +5,7 @@ Patch to ensure functions will run if numba is unavailable.
 
 try:
     from numba import jit, prange
+
     print("numba: yes")
 except:
     print("numba: no")
@@ -17,4 +18,5 @@ except:
             return f
         else:
             return decorator
+
     prange = range

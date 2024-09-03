@@ -30,25 +30,26 @@ class VIEW3D_MT_PIE_Info(Menu):
             # Left
             box = pie.box()
             column = box.column(align=True)
-    #        column.label(text=f'BlenderCAM v{".".join([str(x) for x in cam_version])}')
+            #        column.label(text=f'BlenderCAM v{".".join([str(x) for x in cam_version])}')
             if len(preferences.new_version_available) > 0:
                 column.label(text=f"New Version Available:")
-                column.label(
-                    text=f"  {preferences.new_version_available}")
+                column.label(text=f"  {preferences.new_version_available}")
                 column.operator("render.cam_update_now")
 
-    #        ocl_version = opencamlib_version()
-    #        if ocl_version is None:
-    #            column.label(text="OpenCAMLib is not installed")
-    #        else:
-    #            column.label(text=f"OpenCAMLib v{ocl_version}")
+            #        ocl_version = opencamlib_version()
+            #        if ocl_version is None:
+            #            column.label(text="OpenCAMLib is not installed")
+            #        else:
+            #            column.label(text=f"OpenCAMLib v{ocl_version}")
 
             if int(operation.info.duration * 60) > 0:
                 # Right
                 box = pie.box()
                 column = box.column(align=True)
 
-                time_estimate = f"Operation Duration: {int(operation.info.duration*60)}s "
+                time_estimate = (
+                    f"Operation Duration: {int(operation.info.duration*60)}s "
+                )
                 if operation.info.duration > 60:
                     time_estimate += f" ({int(operation.info.duration / 60)}h"
                     time_estimate += f" {round(operation.info.duration % 60)}min)"
@@ -59,23 +60,25 @@ class VIEW3D_MT_PIE_Info(Menu):
             else:
                 pass
 
-    #        if not operation.info.chipload > 0:
-    #            return
+            #        if not operation.info.chipload > 0:
+            #            return
 
-    #        chipload = f"Chipload: {strInUnits(operation.info.chipload, 4)}/tooth"
-    #        column.label(text=chipload)
+            #        chipload = f"Chipload: {strInUnits(operation.info.chipload, 4)}/tooth"
+            #        column.label(text=chipload)
 
             if int(operation.info.duration * 60) > 0:
                 row = column.row()
-                row.label(text='Hourly Rate')
-                row.prop(scene.cam_machine, 'hourly_rate', text='')
+                row.label(text="Hourly Rate")
+                row.prop(scene.cam_machine, "hourly_rate", text="")
 
                 if float(scene.cam_machine.hourly_rate) < 0.01:
                     return
 
                 cost_per_second = context.scene.cam_machine.hourly_rate / 3600
                 total_cost = operation.info.duration * 60 * cost_per_second
-                op_cost = f"Operation Cost: ${total_cost:.2f} (${cost_per_second:.2f}/s)"
+                op_cost = (
+                    f"Operation Cost: ${total_cost:.2f} (${cost_per_second:.2f}/s)"
+                )
                 column.label(text=op_cost)
             else:
                 pie.separator()
@@ -86,10 +89,10 @@ class VIEW3D_MT_PIE_Info(Menu):
                 box.alert = True
                 column = box.column(align=True)
                 # column.alert = True
-                column.label(text='Errors')
+                column.label(text="Errors")
                 for line in operation.info.warnings.rstrip("\n").split("\n"):
                     if len(line) > 0:
-                        column.label(text=line, icon='ERROR')
+                        column.label(text=line, icon="ERROR")
             else:
                 pie.separator()
 
@@ -98,9 +101,7 @@ class VIEW3D_MT_PIE_Info(Menu):
         box = column.box()
         box.scale_y = 2
         box.scale_x = 2
-        box.emboss = 'NONE'
-        box.operator(
-            "wm.call_menu_pie",
-            text='',
-            icon='HOME'
-        ).name = 'VIEW3D_MT_PIE_CAM'
+        box.emboss = "NONE"
+        box.operator("wm.call_menu_pie", text="", icon="HOME").name = (
+            "VIEW3D_MT_PIE_CAM"
+        )

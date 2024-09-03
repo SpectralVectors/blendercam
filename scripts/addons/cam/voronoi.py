@@ -64,7 +64,7 @@ import sys
 TOLERANCE = 1e-9
 BIG_FLOAT = 1e38
 
-if sys.version > '3':
+if sys.version > "3":
     PY3 = True
 else:
     PY3 = False
@@ -128,7 +128,9 @@ class Context(object):
                     x1, y1 = self.vertices[edge[1]][0], self.vertices[edge[1]][1]
                     x2, y2 = self.vertices[edge[2]][0], self.vertices[edge[2]][1]
                     pt1, pt2 = (x1, y1), (x2, y2)
-                    inExtentP1, inExtentP2 = self.inExtent(x1, y1), self.inExtent(x2, y2)
+                    inExtentP1, inExtentP2 = self.inExtent(x1, y1), self.inExtent(
+                        x2, y2
+                    )
                     if inExtentP1 and inExtentP2:
                         clipEdges.append((pt1, pt2))
                     elif inExtentP1 and not inExtentP2:
@@ -158,19 +160,23 @@ class Context(object):
                     polyPts.append(polyPts[0])  # simple close
                 else:  # close at extent corner
                     if (startPt[0] == xmin and endPt[1] == ymax) or (
-                            endPt[0] == xmin and startPt[1] == ymax):  # upper left
+                        endPt[0] == xmin and startPt[1] == ymax
+                    ):  # upper left
                         polyPts.append((xmin, ymax))  # corner point
                         polyPts.append(polyPts[0])  # close polygon
                     if (startPt[0] == xmax and endPt[1] == ymax) or (
-                            endPt[0] == xmax and startPt[1] == ymax):  # upper right
+                        endPt[0] == xmax and startPt[1] == ymax
+                    ):  # upper right
                         polyPts.append((xmax, ymax))
                         polyPts.append(polyPts[0])
                     if (startPt[0] == xmax and endPt[1] == ymin) or (
-                            endPt[0] == xmax and startPt[1] == ymin):  # bottom right
+                        endPt[0] == xmax and startPt[1] == ymin
+                    ):  # bottom right
                         polyPts.append((xmax, ymin))
                         polyPts.append(polyPts[0])
                     if (startPt[0] == xmin and endPt[1] == ymin) or (
-                            endPt[0] == xmin and startPt[1] == ymin):  # bottom left
+                        endPt[0] == xmin and startPt[1] == ymin
+                    ):  # bottom left
                         polyPts.append((xmin, ymin))
                         polyPts.append(polyPts[0])
             if not closePoly:  # unclose polygon
@@ -290,16 +296,27 @@ class Context(object):
     def outTriple(self, s1, s2, s3):
         self.triangles.append((s1.sitenum, s2.sitenum, s3.sitenum))
         if self.debug:
-            print("circle through left=%d right=%d bottom=%d" %
-                  (s1.sitenum, s2.sitenum, s3.sitenum))
+            print(
+                "circle through left=%d right=%d bottom=%d"
+                % (s1.sitenum, s2.sitenum, s3.sitenum)
+            )
         elif self.triangulate and self.doPrint:
             print("%d %d %d" % (s1.sitenum, s2.sitenum, s3.sitenum))
 
     def outBisector(self, edge):
         self.lines.append((edge.a, edge.b, edge.c))
         if self.debug:
-            print("line(%d) %gx+%gy=%g, bisecting %d %d" % (
-                edge.edgenum, edge.a, edge.b, edge.c, edge.reg[0].sitenum, edge.reg[1].sitenum))
+            print(
+                "line(%d) %gx+%gy=%g, bisecting %d %d"
+                % (
+                    edge.edgenum,
+                    edge.a,
+                    edge.b,
+                    edge.c,
+                    edge.reg[0].sitenum,
+                    edge.reg[1].sitenum,
+                )
+            )
         elif self.doPrint:
             print("l %f %f %f" % (edge.a, edge.b, edge.c))
 
@@ -648,8 +665,9 @@ class Halfedge(object):
                     fast = 1
             if not fast:
                 dxs = topsite.x - (e.reg[0]).x
-                above = e.b * (dxp * dxp - dyp * dyp) < dxs * dyp * \
-                    (1.0 + 2.0 * dxp / dxs + e.b * e.b)
+                above = e.b * (dxp * dxp - dyp * dyp) < dxs * dyp * (
+                    1.0 + 2.0 * dxp / dxs + e.b * e.b
+                )
                 if e.b < 0.0:
                     above = not above
         else:  # e.b == 1.0
@@ -690,8 +708,7 @@ class Halfedge(object):
             e = e2
 
         rightOfSite = xint >= e.reg[1].x
-        if ((rightOfSite and he.pm == Edge.LE) or
-                (not rightOfSite and he.pm == Edge.RE)):
+        if (rightOfSite and he.pm == Edge.LE) or (not rightOfSite and he.pm == Edge.RE):
             return None
 
         # create a new site at the point of intersection - this is a new
@@ -730,7 +747,7 @@ class EdgeList(object):
 
     # Get entry from hash table, pruning any deleted nodes
     def gethash(self, b):
-        if (b < 0 or b >= self.hashsize):
+        if b < 0 or b >= self.hashsize:
             return None
         he = self.hash[b]
         if he is None or he.edge is not Edge.DELETED:
@@ -751,14 +768,14 @@ class EdgeList(object):
             bucket = self.hashsize - 1
 
         he = self.gethash(bucket)
-        if (he is None):
+        if he is None:
             i = 1
             while True:
                 he = self.gethash(bucket - i)
-                if (he is not None):
+                if he is not None:
                     break
                 he = self.gethash(bucket + i)
-                if (he is not None):
+                if he is not None:
                     break
                 i += 1
 
@@ -911,7 +928,9 @@ class SiteList(object):
 
 
 # ------------------------------------------------------------------
-def computeVoronoiDiagram(points, xBuff=0, yBuff=0, polygonsOutput=False, formatOutput=False, closePoly=True):
+def computeVoronoiDiagram(
+    points, xBuff=0, yBuff=0, polygonsOutput=False, formatOutput=False, closePoly=True
+):
     """
     Takes :
         - a list of point objects (which must have x and y fields).
@@ -988,15 +1007,16 @@ def formatPolygonsOutput(polygons):
 
 # ------------------------------------------------------------------
 def computeDelaunayTriangulation(points):
-    """ Takes a list of point objects (which must have x and y fields).
-        Returns a list of 3-tuples: the indices of the points that form a
-        Delaunay triangle.
+    """Takes a list of point objects (which must have x and y fields).
+    Returns a list of 3-tuples: the indices of the points that form a
+    Delaunay triangle.
     """
     siteList = SiteList(points)
     context = Context()
     context.triangulate = True
     voronoi(siteList, context)
     return context.triangles
+
 
 # -----------------------------------------------------------------------------
 # def shapely_voronoi(amount):

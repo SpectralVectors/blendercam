@@ -304,7 +304,7 @@ class camPathChunk:
     def pop(self, index):
         print("WARNING: Popping from Chunk Is Slow", self, index)
         self.points = np.concatenate(
-            (self.points[0:index], self.points[index + 1:]), axis=0
+            (self.points[0:index], self.points[index + 1 :]), axis=0
         )
         if len(self.startpoints) > 0:
             self.startpoints.pop(index)
@@ -672,7 +672,7 @@ class camPathChunk:
                         (
                             self.points[: i + 1],
                             np.array([[newpointx, newpointy, apoint[2]]]),
-                            self.points[i + 1:],
+                            self.points[i + 1 :],
                         )
                     )
 

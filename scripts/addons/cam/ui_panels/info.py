@@ -33,16 +33,17 @@ from ..simple import strInUnits
 class CAM_INFO_Properties(PropertyGroup):
 
     warnings: StringProperty(
-        name='Warnings',
-        description='Warnings',
-        default='',
+        name="Warnings",
+        description="Warnings",
+        default="",
         update=update_operation,
     )
 
     chipload: FloatProperty(
         name="Chipload",
         description="Calculated chipload",
-        default=0.0, unit='LENGTH',
+        default=0.0,
+        unit="LENGTH",
         precision=CHIPLOAD_PRECISION,
     )
 
@@ -63,25 +64,25 @@ class CAM_INFO_Panel(CAMButtonsPanel, Panel):
     always_show_panel = True
 
     prop_level = {
-        'draw_blendercam_version': 0,
-        'draw_opencamlib_version': 1,
-        'draw_op_warnings': 0,
-        'draw_op_time': 0,
-        'draw_op_chipload': 0,
-        'draw_op_money_cost': 1,
+        "draw_blendercam_version": 0,
+        "draw_opencamlib_version": 1,
+        "draw_op_warnings": 0,
+        "draw_op_time": 0,
+        "draw_op_chipload": 0,
+        "draw_op_money_cost": 1,
     }
 
     # Draw blendercam version (and whether there are updates available)
     def draw_blendercam_version(self):
-        addon_prefs = bpy.context.preferences.addons["bl_ext.user_default.blendercam"].preferences
+        addon_prefs = bpy.context.preferences.addons[
+            "bl_ext.user_default.blendercam"
+        ].preferences
         if not self.has_correct_level():
             return
-        self.layout.label(
-            text=f'BlenderCAM v{".".join([str(x) for x in cam_version])}')
+        self.layout.label(text=f'BlenderCAM v{".".join([str(x) for x in cam_version])}')
         if len(addon_prefs.new_version_available) > 0:
             self.layout.label(text=f"New Version Available:")
-            self.layout.label(
-                text=f"  {addon_prefs.new_version_available}")
+            self.layout.label(text=f"  {addon_prefs.new_version_available}")
             self.layout.operator("render.cam_update_now")
 
     # Display the OpenCamLib version
@@ -92,8 +93,7 @@ class CAM_INFO_Panel(CAMButtonsPanel, Panel):
         if ocl_version is None:
             self.layout.label(text="OpenCAMLib is not Installed")
         else:
-            self.layout.label(
-                text=f"OpenCAMLib v{ocl_version}")
+            self.layout.label(text=f"OpenCAMLib v{ocl_version}")
 
     # Display warnings related to the current operation
     def draw_op_warnings(self):
@@ -101,7 +101,7 @@ class CAM_INFO_Panel(CAMButtonsPanel, Panel):
             return
         for line in self.op.info.warnings.rstrip("\n").split("\n"):
             if len(line) > 0:
-                self.layout.label(text=line, icon='ERROR')
+                self.layout.label(text=line, icon="ERROR")
 
     # Display the time estimation for the current operation
     def draw_op_time(self):
@@ -137,8 +137,8 @@ class CAM_INFO_Panel(CAMButtonsPanel, Panel):
             return
 
         row = self.layout.row()
-        row.label(text='Hourly Rate')
-        row.prop(bpy.context.scene.cam_machine, 'hourly_rate', text='')
+        row.label(text="Hourly Rate")
+        row.prop(bpy.context.scene.cam_machine, "hourly_rate", text="")
 
         if float(bpy.context.scene.cam_machine.hourly_rate) < 0.01:
             return
