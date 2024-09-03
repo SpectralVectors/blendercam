@@ -10,7 +10,7 @@ jobs:
         uses: rickstaa/action-black@v1
         id: action_black
         with:
-          black_args: ". --extend-exclude '/nc' --extend-exclude '/tests' --extend-exclude '/presets'"
+          black_args: ". --extend-exclude '/github/workspace/scripts/addons/cam/nc' --extend-exclude '/github/workspace/scripts/addons/cam/tests' --extend-exclude '/github/workspace/scripts/addons/cam/presets/'"
       - name: Create Pull Request
         if: steps.action_black.outputs.is_formatted == 'true'
         uses: peter-evans/create-pull-request@v6
