@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1ops_1_1CamChainOperationDown" xml:lang="en-US">
+<title>cam.ops.CamChainOperationDown Class Reference</title>
+<indexterm><primary>cam.ops.CamChainOperationDown</primary></indexterm>
+Inheritance diagram for cam.ops.CamChainOperationDown:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ops_1_1CamChainOperationDown__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.ops.CamChainOperationDown:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ops_1_1CamChainOperationDown__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1ops_1_1CamChainOperationDown_1afbd4b707ab10c1e22fa403c2ad83149d">poll</link> (cls, context)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ops_1_1CamChainOperationDown_1a3bec925c051c8430aa6fad8b8e6939dd">execute</link> (self, context)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classcam_1_1ops_1_1CamChainOperationDown_1a2372ca82b3302a0235cf6c5a5888e9c3">bl_idname</link> = &quot;scene.cam_chain_operation_down&quot;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1ops_1_1CamChainOperationDown_1af0bb2de7295196edfba7730e4cb95db0">bl_label</link> = &quot;Add Operation to Chain&quot;</para>
+</listitem>
+            <listitem><para>dict <link linkend="_classcam_1_1ops_1_1CamChainOperationDown_1a5eb7d788a26d67c3bb01417eb8f8393c">bl_options</link> = {&apos;REGISTER&apos;, &apos;UNDO&apos;}</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Add Operation to Chain</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1ops_1_1CamChainOperationDown_1a3bec925c051c8430aa6fad8b8e6939dd"/><section>
+    <title>execute()</title>
+<indexterm><primary>execute</primary><secondary>cam.ops.CamChainOperationDown</secondary></indexterm>
+<indexterm><primary>cam.ops.CamChainOperationDown</primary><secondary>execute</secondary></indexterm>
+<para><computeroutput>cam.ops.CamChainOperationDown.execute ( self,  context)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ops_1_1CamChainOperationDown_1afbd4b707ab10c1e22fa403c2ad83149d"/><section>
+    <title>poll()</title>
+<indexterm><primary>poll</primary><secondary>cam.ops.CamChainOperationDown</secondary></indexterm>
+<indexterm><primary>cam.ops.CamChainOperationDown</primary><secondary>poll</secondary></indexterm>
+<para><computeroutput>cam.ops.CamChainOperationDown.poll ( cls,  context)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1ops_1_1CamChainOperationDown_1a2372ca82b3302a0235cf6c5a5888e9c3"/><section>
+    <title>bl_idname</title>
+<indexterm><primary>bl_idname</primary><secondary>cam.ops.CamChainOperationDown</secondary></indexterm>
+<indexterm><primary>cam.ops.CamChainOperationDown</primary><secondary>bl_idname</secondary></indexterm>
+<para><computeroutput>str cam.ops.CamChainOperationDown.bl_idname = &quot;scene.cam_chain_operation_down&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ops_1_1CamChainOperationDown_1af0bb2de7295196edfba7730e4cb95db0"/><section>
+    <title>bl_label</title>
+<indexterm><primary>bl_label</primary><secondary>cam.ops.CamChainOperationDown</secondary></indexterm>
+<indexterm><primary>cam.ops.CamChainOperationDown</primary><secondary>bl_label</secondary></indexterm>
+<para><computeroutput>str cam.ops.CamChainOperationDown.bl_label = &quot;Add Operation to Chain&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ops_1_1CamChainOperationDown_1a5eb7d788a26d67c3bb01417eb8f8393c"/><section>
+    <title>bl_options</title>
+<indexterm><primary>bl_options</primary><secondary>cam.ops.CamChainOperationDown</secondary></indexterm>
+<indexterm><primary>cam.ops.CamChainOperationDown</primary><secondary>bl_options</secondary></indexterm>
+<para><computeroutput>dict cam.ops.CamChainOperationDown.bl_options = {&apos;REGISTER&apos;, &apos;UNDO&apos;}<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/<link linkend="_ops_8py">ops.py</link></section>
+</section>

@@ -1,0 +1,434 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1curvecamcreate_1_1CamCurveInterlock" kind="class" language="Python" prot="public">
+    <compoundname>cam::curvecamcreate::CamCurveInterlock</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Operator</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a72f69fce7c4e29c3fe30861d02f1049a" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.curvecamcreate.CamCurveInterlock::bl_idname</definition>
+        <argsstring></argsstring>
+        <name>bl_idname</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveInterlock.bl_idname</qualifiedname>
+        <initializer>=  &quot;object.curve_interlock&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="721" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="721" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a333e503945596cc3577c29cb49e6f3ce" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.curvecamcreate.CamCurveInterlock::bl_label</definition>
+        <argsstring></argsstring>
+        <name>bl_label</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveInterlock.bl_label</qualifiedname>
+        <initializer>=  &quot;Interlock&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="722" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="722" bodyend="-1"/>
+        <referencedby refid="classcam_1_1preset__managers_1_1CAM__MACHINE__MT__presets_1af95f7812d2952b26a26809ab923dac09" compoundref="preset__managers_8py" startline="28" endline="38">cam.preset_managers.CAM_MACHINE_MT_presets.post_cb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveInterlock_1adb6880c56639b6a78baa3ff53caec923" prot="public" static="yes" mutable="no">
+        <type>dict</type>
+        <definition>dict cam.curvecamcreate.CamCurveInterlock::bl_options</definition>
+        <argsstring></argsstring>
+        <name>bl_options</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveInterlock.bl_options</qualifiedname>
+        <initializer>=  {&apos;REGISTER&apos;, &apos;UNDO&apos;, &apos;PRESET&apos;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="723" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="723" bodyend="-1"/>
+        <referencedby refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a9628cbca8e69ec75b2337171a02bf428" compoundref="async__op_8py" startline="32" endline="59">cam.async_op.AsyncOperatorMixin.modal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a5cc9734915fc4c5ca8da049b4dda4bca" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamcreate.CamCurveInterlock::finger_size</definition>
+        <argsstring></argsstring>
+        <name>finger_size</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveInterlock.finger_size</qualifiedname>
+        <initializer>(
+        name=&quot;Finger Size&quot;,
+        default=0.015,
+        min=0.005,
+        max=3.0,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="725" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="725" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a86d6cabae53b447a6515593561af29a1" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamcreate.CamCurveInterlock::finger_tolerance</definition>
+        <argsstring></argsstring>
+        <name>finger_tolerance</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveInterlock.finger_tolerance</qualifiedname>
+        <initializer>(
+        name=&quot;Finger Play Room&quot;,
+        default=0.000045,
+        min=0,
+        max=0.003,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="733" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="733" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveInterlock_1ac680ec6eda4616002d81718800407107" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamcreate.CamCurveInterlock::plate_thickness</definition>
+        <argsstring></argsstring>
+        <name>plate_thickness</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveInterlock.plate_thickness</qualifiedname>
+        <initializer>(
+        name=&quot;Plate Thickness&quot;,
+        default=0.00477,
+        min=0.001,
+        max=3.0,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="741" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="741" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveInterlock_1ad7013a32c3dd7e6df9efc0f170617f07" prot="public" static="yes" mutable="no">
+        <type>BoolProperty</type>
+        <definition>BoolProperty cam.curvecamcreate.CamCurveInterlock::opencurve</definition>
+        <argsstring></argsstring>
+        <name>opencurve</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveInterlock.opencurve</qualifiedname>
+        <initializer>(
+        name=&quot;OpenCurve&quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="748" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="748" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurveMortise_1a4dd7097899b49fc06e5fc62da4843873" compoundref="curvecamcreate_8py" startline="656" endline="718">cam.curvecamcreate.CamCurveMortise.execute</referencedby>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a62934ca74ef0c61a4be85404fffdb94b" compoundref="curvecamcreate_8py" startline="785" endline="838">cam.curvecamcreate.CamCurveInterlock.execute</referencedby>
+        <referencedby refid="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1a3a8340d39d68a758d65b7603f76062b2" compoundref="curvecamtools_8py" startline="800" endline="834">cam.curvecamtools.CamOffsetSilhouete.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveInterlock_1aa8081a77bcec6d5253812167165f0a51" prot="public" static="yes" mutable="no">
+        <type>EnumProperty</type>
+        <definition>EnumProperty cam.curvecamcreate.CamCurveInterlock::interlock_type</definition>
+        <argsstring></argsstring>
+        <name>interlock_type</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveInterlock.interlock_type</qualifiedname>
+        <initializer>(
+        name=&apos;Type of Interlock&apos;,
+        items=(
+            (&apos;TWIST&apos;, &apos;Twist&apos;, &apos;Interlock requires 1/4 turn twist&apos;),
+            (&apos;GROOVE&apos;, &apos;Groove&apos;, &apos;Simple sliding groove&apos;),
+            (&apos;PUZZLE&apos;, &apos;Puzzle Interlock&apos;, &apos;Puzzle good for flat joints&apos;)
+        ),
+        description=&apos;Type of interlock&apos;,
+        default=&apos;GROOVE&apos;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="752" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="752" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1ad03fe32ff0b283e31cc54a27177fa6b5" compoundref="curvecamcreate_8py" startline="1332" endline="1445">cam.curvecamcreate.CamCurvePuzzle.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a1fd0c342ea5e32ec4630a05816f20c1d" prot="public" static="yes" mutable="no">
+        <type>IntProperty</type>
+        <definition>IntProperty cam.curvecamcreate.CamCurveInterlock::finger_amount</definition>
+        <argsstring></argsstring>
+        <name>finger_amount</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveInterlock.finger_amount</qualifiedname>
+        <initializer>(
+        name=&quot;Finger Amount&quot;,
+        default=2,
+        min=1,
+        max=100,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="762" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="762" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveInterlock_1ab21f8ec56b2903d55c17746261767198" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamcreate.CamCurveInterlock::tangent_angle</definition>
+        <argsstring></argsstring>
+        <name>tangent_angle</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveInterlock.tangent_angle</qualifiedname>
+        <initializer>(
+        name=&quot;Tangent Deviation&quot;,
+        default=0.0,
+        min=0.000,
+        max=2,
+        subtype=&quot;ANGLE&quot;,
+        unit=&quot;ROTATION&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="768" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="768" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a202b510fa344e2e90584914d6d2f871a" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamcreate.CamCurveInterlock::fixed_angle</definition>
+        <argsstring></argsstring>
+        <name>fixed_angle</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveInterlock.fixed_angle</qualifiedname>
+        <initializer>(
+        name=&quot;Fixed Angle&quot;,
+        default=0.0,
+        min=0.000,
+        max=2,
+        subtype=&quot;ANGLE&quot;,
+        unit=&quot;ROTATION&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="776" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="776" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a07aa8d6020060cb6e5adb307a7c5a1ac" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamcreate.CamCurveInterlock::finger_size</definition>
+        <argsstring></argsstring>
+        <name>finger_size</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveInterlock.finger_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="825" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="825" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a34287f68e38577a71e75acda65f52f70" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamcreate.CamCurveInterlock::plate_thickness</definition>
+        <argsstring></argsstring>
+        <name>plate_thickness</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveInterlock.plate_thickness</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="825" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="825" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveInterlock_1aabf2fdda3161f93502f0aab58dd2c0df" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamcreate.CamCurveInterlock::finger_tolerance</definition>
+        <argsstring></argsstring>
+        <name>finger_tolerance</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveInterlock.finger_tolerance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="826" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="826" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a9c8ecb3aee0a46b74c991dff811ede76" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamcreate.CamCurveInterlock::finger_amount</definition>
+        <argsstring></argsstring>
+        <name>finger_amount</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveInterlock.finger_amount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="826" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="826" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a5ce56543cb58aeead50bef8c50b33a03" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamcreate.CamCurveInterlock::fixed_angle</definition>
+        <argsstring></argsstring>
+        <name>fixed_angle</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveInterlock.fixed_angle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="833" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="833" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a7cfcf3fa8abb15be5defd6af726d12d4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamcreate.CamCurveInterlock::interlock_type</definition>
+        <argsstring></argsstring>
+        <name>interlock_type</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveInterlock.interlock_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="833" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="833" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1ad03fe32ff0b283e31cc54a27177fa6b5" compoundref="curvecamcreate_8py" startline="1332" endline="1445">cam.curvecamcreate.CamCurvePuzzle.execute</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a62934ca74ef0c61a4be85404fffdb94b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.curvecamcreate.CamCurveInterlock.execute</definition>
+        <argsstring>(self, context)</argsstring>
+        <name>execute</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveInterlock.execute</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="785" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="785" bodyend="838"/>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurveMortise_1a5cb99031d4ba69aecb96564b71371903" compoundref="curvecamcreate_8py" startline="635">cam.curvecamcreate.CamCurveMortise.opencurve</references>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurveInterlock_1ad7013a32c3dd7e6df9efc0f170617f07" compoundref="curvecamcreate_8py" startline="748">cam.curvecamcreate.CamCurveInterlock.opencurve</references>
+        <references refid="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1abbed91fdd4538fb77506569985aa97e1" compoundref="curvecamtools_8py" startline="788">cam.curvecamtools.CamOffsetSilhouete.opencurve</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Generates Interlock Along a Curve</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.curvecamcreate.CamCurveInterlock</label>
+        <link refid="classcam_1_1curvecamcreate_1_1CamCurveInterlock"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6">
+        <label>BoolProperty</label>
+      </node>
+      <node id="7">
+        <label>EnumProperty</label>
+      </node>
+      <node id="5">
+        <label>FloatProperty</label>
+      </node>
+      <node id="8">
+        <label>IntProperty</label>
+      </node>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.curvecamcreate.CamCurveInterlock</label>
+        <link refid="classcam_1_1curvecamcreate_1_1CamCurveInterlock"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+bl_idname</edgelabel>
+          <edgelabel>+bl_label</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+bl_options</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+finger_size</edgelabel>
+          <edgelabel>+finger_tolerance</edgelabel>
+          <edgelabel>+fixed_angle</edgelabel>
+          <edgelabel>+plate_thickness</edgelabel>
+          <edgelabel>+tangent_angle</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>+opencurve</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>+interlock_type</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>+finger_amount</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dict</label>
+      </node>
+      <node id="3">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="719" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="719" bodyend="838"/>
+    <listofallmembers>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a72f69fce7c4e29c3fe30861d02f1049a" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveInterlock</scope><name>bl_idname</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a333e503945596cc3577c29cb49e6f3ce" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveInterlock</scope><name>bl_label</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveInterlock_1adb6880c56639b6a78baa3ff53caec923" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveInterlock</scope><name>bl_options</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a62934ca74ef0c61a4be85404fffdb94b" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveInterlock</scope><name>execute</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a1fd0c342ea5e32ec4630a05816f20c1d" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveInterlock</scope><name>finger_amount</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a9c8ecb3aee0a46b74c991dff811ede76" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveInterlock</scope><name>finger_amount</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a5cc9734915fc4c5ca8da049b4dda4bca" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveInterlock</scope><name>finger_size</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a07aa8d6020060cb6e5adb307a7c5a1ac" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveInterlock</scope><name>finger_size</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a86d6cabae53b447a6515593561af29a1" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveInterlock</scope><name>finger_tolerance</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveInterlock_1aabf2fdda3161f93502f0aab58dd2c0df" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveInterlock</scope><name>finger_tolerance</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a202b510fa344e2e90584914d6d2f871a" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveInterlock</scope><name>fixed_angle</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a5ce56543cb58aeead50bef8c50b33a03" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveInterlock</scope><name>fixed_angle</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveInterlock_1aa8081a77bcec6d5253812167165f0a51" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveInterlock</scope><name>interlock_type</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a7cfcf3fa8abb15be5defd6af726d12d4" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveInterlock</scope><name>interlock_type</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveInterlock_1ad7013a32c3dd7e6df9efc0f170617f07" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveInterlock</scope><name>opencurve</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveInterlock_1ac680ec6eda4616002d81718800407107" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveInterlock</scope><name>plate_thickness</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a34287f68e38577a71e75acda65f52f70" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveInterlock</scope><name>plate_thickness</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveInterlock_1ab21f8ec56b2903d55c17746261767198" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveInterlock</scope><name>tangent_angle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

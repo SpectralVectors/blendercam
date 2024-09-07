@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1ops_1_1CamChainOperationRemove" kind="class" language="Python" prot="public">
+    <compoundname>cam::ops::CamChainOperationRemove</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Operator</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1ops_1_1CamChainOperationRemove_1a6ff1df2d86c4c4fea62be7435d723fda" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.ops.CamChainOperationRemove::bl_idname</definition>
+        <argsstring></argsstring>
+        <name>bl_idname</name>
+        <qualifiedname>cam.ops.CamChainOperationRemove.bl_idname</qualifiedname>
+        <initializer>=  &quot;scene.cam_chain_operation_remove&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="579" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="579" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ops_1_1CamChainOperationRemove_1a5895de72dd225d32ddb0c584bb3430a0" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.ops.CamChainOperationRemove::bl_label</definition>
+        <argsstring></argsstring>
+        <name>bl_label</name>
+        <qualifiedname>cam.ops.CamChainOperationRemove.bl_label</qualifiedname>
+        <initializer>=  &quot;Remove Operation from Chain&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="580" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="580" bodyend="-1"/>
+        <referencedby refid="classcam_1_1preset__managers_1_1CAM__MACHINE__MT__presets_1af95f7812d2952b26a26809ab923dac09" compoundref="preset__managers_8py" startline="28" endline="38">cam.preset_managers.CAM_MACHINE_MT_presets.post_cb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ops_1_1CamChainOperationRemove_1afc0d52896e8f18d693fe6d1e25d11600" prot="public" static="yes" mutable="no">
+        <type>dict</type>
+        <definition>dict cam.ops.CamChainOperationRemove::bl_options</definition>
+        <argsstring></argsstring>
+        <name>bl_options</name>
+        <qualifiedname>cam.ops.CamChainOperationRemove.bl_options</qualifiedname>
+        <initializer>=  {&apos;REGISTER&apos;, &apos;UNDO&apos;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="581" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="581" bodyend="-1"/>
+        <referencedby refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a9628cbca8e69ec75b2337171a02bf428" compoundref="async__op_8py" startline="32" endline="59">cam.async_op.AsyncOperatorMixin.modal</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcam_1_1ops_1_1CamChainOperationRemove_1a85caa7ef3e7532fb2beb892890ae0161" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.ops.CamChainOperationRemove.poll</definition>
+        <argsstring>(cls, context)</argsstring>
+        <name>poll</name>
+        <qualifiedname>cam.ops.CamChainOperationRemove.poll</qualifiedname>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="584" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="584" bodyend="586"/>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1ops_1_1CamChainOperationRemove_1a71ca9641b08986504bf750720640e257" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.ops.CamChainOperationRemove.execute</definition>
+        <argsstring>(self, context)</argsstring>
+        <name>execute</name>
+        <qualifiedname>cam.ops.CamChainOperationRemove.execute</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="587" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="587" bodyend="596"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Remove Operation from Chain</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.ops.CamChainOperationRemove</label>
+        <link refid="classcam_1_1ops_1_1CamChainOperationRemove"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.ops.CamChainOperationRemove</label>
+        <link refid="classcam_1_1ops_1_1CamChainOperationRemove"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+bl_idname</edgelabel>
+          <edgelabel>+bl_label</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+bl_options</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dict</label>
+      </node>
+      <node id="3">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="577" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="577" bodyend="596"/>
+    <listofallmembers>
+      <member refid="classcam_1_1ops_1_1CamChainOperationRemove_1a6ff1df2d86c4c4fea62be7435d723fda" prot="public" virt="non-virtual"><scope>cam::ops::CamChainOperationRemove</scope><name>bl_idname</name></member>
+      <member refid="classcam_1_1ops_1_1CamChainOperationRemove_1a5895de72dd225d32ddb0c584bb3430a0" prot="public" virt="non-virtual"><scope>cam::ops::CamChainOperationRemove</scope><name>bl_label</name></member>
+      <member refid="classcam_1_1ops_1_1CamChainOperationRemove_1afc0d52896e8f18d693fe6d1e25d11600" prot="public" virt="non-virtual"><scope>cam::ops::CamChainOperationRemove</scope><name>bl_options</name></member>
+      <member refid="classcam_1_1ops_1_1CamChainOperationRemove_1a71ca9641b08986504bf750720640e257" prot="public" virt="non-virtual"><scope>cam::ops::CamChainOperationRemove</scope><name>execute</name></member>
+      <member refid="classcam_1_1ops_1_1CamChainOperationRemove_1a85caa7ef3e7532fb2beb892890ae0161" prot="public" virt="non-virtual"><scope>cam::ops::CamChainOperationRemove</scope><name>poll</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,249 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="machine__settings_8py" kind="file" language="Python">
+    <compoundname>machine_settings.py</compoundname>
+    <innerclass refid="classcam_1_1machine__settings_1_1machineSettings" prot="public">cam::machine_settings::machineSettings</innerclass>
+    <innernamespace refid="namespacecam">cam</innernamespace>
+    <innernamespace refid="namespacecam_1_1machine__settings">cam::machine_settings</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacecam_1_1machine__settings" refkind="compound"><highlight class="stringliteral">&quot;&quot;&quot;BlenderCAM<sp/>&apos;machine_settings.py&apos;</highlight></codeline>
+<codeline lineno="2"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="3"><highlight class="stringliteral">All<sp/>CAM<sp/>machine<sp/>properties.</highlight></codeline>
+<codeline lineno="4"><highlight class="stringliteral">&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>bpy.props<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>(</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>BoolProperty,</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>EnumProperty,</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>FloatProperty,</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>FloatVectorProperty,</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>IntProperty,</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacebpy_1_1types" kindref="compound">bpy.types</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>PropertyGroup</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>constants</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.utils<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>updateMachine</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="classcam_1_1machine__settings_1_1machineSettings" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classcam_1_1machine__settings_1_1machineSettings" kindref="compound">machineSettings</ref>(PropertyGroup):</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;stores<sp/>all<sp/>data<sp/>for<sp/>machines&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>name<sp/>=<sp/>StringProperty(name=&quot;Machine<sp/>Name&quot;,<sp/>default=&quot;Machine&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="classcam_1_1machine__settings_1_1machineSettings_1aae381b3109f1c01eda6e92b5741ab077" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>post_processor:<sp/>EnumProperty(</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&apos;Post<sp/>Processor&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>items=(</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="stringliteral">&apos;ISO&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;Iso&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;Exports<sp/>standardized<sp/>gcode<sp/>ISO<sp/>6983<sp/>(RS-274)&apos;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="stringliteral">&apos;MACH3&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;Mach3&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;Default<sp/>mach3&apos;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="stringliteral">&apos;EMC&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;LinuxCNC<sp/>-<sp/>EMC2&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;Linux<sp/>based<sp/>CNC<sp/>control<sp/>software<sp/>-<sp/>formally<sp/>EMC2&apos;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="stringliteral">&apos;FADAL&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;Fadal&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;Fadal<sp/>VMC&apos;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="stringliteral">&apos;GRBL&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;grbl&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;Optimized<sp/>gcode<sp/>for<sp/>grbl<sp/>firmware<sp/>on<sp/>Arduino<sp/>with<sp/>cnc<sp/>shield&apos;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="stringliteral">&apos;HEIDENHAIN&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;Heidenhain&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;Heidenhain&apos;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="stringliteral">&apos;HEIDENHAIN530&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;Heidenhain530&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;Heidenhain530&apos;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="stringliteral">&apos;TNC151&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;Heidenhain<sp/>TNC151&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;Post<sp/>Processor<sp/>for<sp/>the<sp/>Heidenhain<sp/>TNC151<sp/>machine&apos;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="stringliteral">&apos;SIEGKX1&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;Sieg<sp/>KX1&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;Sieg<sp/>KX1&apos;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="stringliteral">&apos;HM50&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;Hafco<sp/>HM-50&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;Hafco<sp/>HM-50&apos;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="stringliteral">&apos;CENTROID&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;Centroid<sp/>M40&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;Centroid<sp/>M40&apos;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="stringliteral">&apos;ANILAM&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;Anilam<sp/>Crusader<sp/>M&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;Anilam<sp/>Crusader<sp/>M&apos;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="stringliteral">&apos;GRAVOS&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;Gravos&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;Gravos&apos;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="stringliteral">&apos;WIN-PC&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;WinPC-NC&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;German<sp/>CNC<sp/>by<sp/>Burkhard<sp/>Lewetz&apos;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="stringliteral">&apos;SHOPBOT<sp/>MTC&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;ShopBot<sp/>MTC&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;ShopBot<sp/>MTC&apos;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="stringliteral">&apos;LYNX_OTTER_O&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;Lynx<sp/>Otter<sp/>o&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;Lynx<sp/>Otter<sp/>o&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>),</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>description=</highlight><highlight class="stringliteral">&apos;Post<sp/>Processor&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=</highlight><highlight class="stringliteral">&apos;MACH3&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>units<sp/>=<sp/>EnumProperty(name=&apos;Units&apos;,<sp/>items<sp/>=<sp/>((&apos;IMPERIAL&apos;,<sp/>&apos;&apos;))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>position<sp/>definitions:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="classcam_1_1machine__settings_1_1machineSettings_1a6fd14ff1d66acf3b0c4dd7cd021e55ed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>use_position_definitions:<sp/>BoolProperty(</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&quot;Use<sp/>Position<sp/>Definitions&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>description=</highlight><highlight class="stringliteral">&quot;Define<sp/>own<sp/>positions<sp/>for<sp/>op<sp/>start,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;toolchange,<sp/>ending<sp/>position&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=</highlight><highlight class="keyword">False</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="56" refid="classcam_1_1machine__settings_1_1machineSettings_1aacd374d5752cb5db59688a81dc0822f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>starting_position:<sp/>FloatVectorProperty(</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&apos;Start<sp/>Position&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=(0,<sp/>0,<sp/>0),</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unit=</highlight><highlight class="stringliteral">&apos;LENGTH&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>precision=constants.PRECISION,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>subtype=</highlight><highlight class="stringliteral">&quot;XYZ&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>update=updateMachine,</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="64" refid="classcam_1_1machine__settings_1_1machineSettings_1a9448ada8d15d3be465db263e03e82d7f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>mtc_position:<sp/>FloatVectorProperty(</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&apos;MTC<sp/>Position&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=(0,<sp/>0,<sp/>0),</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unit=</highlight><highlight class="stringliteral">&apos;LENGTH&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>precision=constants.PRECISION,</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>subtype=</highlight><highlight class="stringliteral">&quot;XYZ&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>update=updateMachine,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="72" refid="classcam_1_1machine__settings_1_1machineSettings_1abe27dd61be9fe185c4c31ecb40de25ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ending_position:<sp/>FloatVectorProperty(</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&apos;End<sp/>Position&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=(0,<sp/>0,<sp/>0),</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unit=</highlight><highlight class="stringliteral">&apos;LENGTH&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>precision=constants.PRECISION,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>subtype=</highlight><highlight class="stringliteral">&quot;XYZ&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>update=updateMachine,</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="classcam_1_1machine__settings_1_1machineSettings_1afb6e969a9ec5bfd29a8c62a489228156" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>working_area:<sp/>FloatVectorProperty(</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&apos;Work<sp/>Area&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=(0.500,<sp/>0.500,<sp/>0.100),</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unit=</highlight><highlight class="stringliteral">&apos;LENGTH&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>precision=constants.PRECISION,</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>subtype=</highlight><highlight class="stringliteral">&quot;XYZ&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>update=updateMachine,</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="89" refid="classcam_1_1machine__settings_1_1machineSettings_1a63cc6d9ee81e1d8c8270fa8d9d6da926" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>feedrate_min:<sp/>FloatProperty(</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&quot;Feedrate<sp/>Minimum<sp/>/min&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=0.0,</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>min=0.00001,</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>max=320000,</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>precision=constants.PRECISION,</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unit=</highlight><highlight class="stringliteral">&apos;LENGTH&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="97" refid="classcam_1_1machine__settings_1_1machineSettings_1aadc26d9e1fa640a8b1b4e95ff0717aa1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>feedrate_max:<sp/>FloatProperty(</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&quot;Feedrate<sp/>Maximum<sp/>/min&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=2,</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>min=0.00001,</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>max=320000,</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>precision=constants.PRECISION,</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unit=</highlight><highlight class="stringliteral">&apos;LENGTH&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="105" refid="classcam_1_1machine__settings_1_1machineSettings_1aaf801db64cb8324b1b79070b870e78ca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>feedrate_default:<sp/>FloatProperty(</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&quot;Feedrate<sp/>Default<sp/>/min&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=1.5,</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>min=0.00001,</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>max=320000,</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>precision=constants.PRECISION,</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unit=</highlight><highlight class="stringliteral">&apos;LENGTH&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="113" refid="classcam_1_1machine__settings_1_1machineSettings_1a7c8b0b6a273202e3dcd589febacd0041" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>hourly_rate:<sp/>FloatProperty(</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&quot;Price<sp/>per<sp/>Hour&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=100,</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>min=0.005,</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>precision=2,</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>UNSUPPORTED:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="classcam_1_1machine__settings_1_1machineSettings_1af71adb57e51de1a87fceb49686f8dead" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>spindle_min:<sp/>FloatProperty(</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&quot;Spindle<sp/>Speed<sp/>Minimum<sp/>RPM&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=5000,</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>min=0.00001,</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>max=320000,</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>precision=1,</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="129" refid="classcam_1_1machine__settings_1_1machineSettings_1a2adc72481d7b9863cb2352fbb83f02a4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>spindle_max:<sp/>FloatProperty(</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&quot;Spindle<sp/>Speed<sp/>Maximum<sp/>RPM&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=30000,</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>min=0.00001,</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>max=320000,</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>precision=1,</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="136" refid="classcam_1_1machine__settings_1_1machineSettings_1a230eef6552613b9175b6d7918ff54e64" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>spindle_default:<sp/>FloatProperty(</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&quot;Spindle<sp/>Speed<sp/>Default<sp/>RPM&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=15000,</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>min=0.00001,</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>max=320000,</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>precision=1,</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="143" refid="classcam_1_1machine__settings_1_1machineSettings_1a48bb92ab2c2017d1a6b0af0d095eea06" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>spindle_start_time:<sp/>FloatProperty(</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&quot;Spindle<sp/>Start<sp/>Delay<sp/>Seconds&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>description=</highlight><highlight class="stringliteral">&apos;Wait<sp/>for<sp/>the<sp/>spindle<sp/>to<sp/>start<sp/>spinning<sp/>before<sp/>starting<sp/>&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;the<sp/>feeds<sp/>,<sp/>in<sp/>seconds&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=0,</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>min=0.0000,</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>max=320000,</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>precision=1,</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153" refid="classcam_1_1machine__settings_1_1machineSettings_1a36c2e7607ed2ce3b4f03ab23faf8d6ed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>axis4:<sp/>BoolProperty(</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&quot;#4th<sp/>Axis&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>description=</highlight><highlight class="stringliteral">&quot;Machine<sp/>has<sp/>4th<sp/>axis&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=0,</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="158" refid="classcam_1_1machine__settings_1_1machineSettings_1aad65a9d10d1784e5c12af16a5dded36f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>axis5:<sp/>BoolProperty(</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&quot;#5th<sp/>Axis&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>description=</highlight><highlight class="stringliteral">&quot;Machine<sp/>has<sp/>5th<sp/>axis&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=0,</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164" refid="classcam_1_1machine__settings_1_1machineSettings_1ad2f99a9a3cae53b8d80dde4fef9a9a79" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>eval_splitting:<sp/>BoolProperty(</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&quot;Split<sp/>Files&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>description=</highlight><highlight class="stringliteral">&quot;Split<sp/>gcode<sp/>file<sp/>with<sp/>large<sp/>number<sp/>of<sp/>operations&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=</highlight><highlight class="keyword">True</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>)<sp/><sp/></highlight><highlight class="comment">#<sp/>split<sp/>large<sp/>files</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="classcam_1_1machine__settings_1_1machineSettings_1a9e1c5dd3d3c2e9675697e6fd14f07045" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>split_limit:<sp/>IntProperty(</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&quot;Operations<sp/>per<sp/>File&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>description=</highlight><highlight class="stringliteral">&quot;Split<sp/>files<sp/>with<sp/>larger<sp/>number<sp/>of<sp/>operations<sp/>than<sp/>this&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>min=1000,</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>max=20000000,</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=800000,</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>rotary_axis1<sp/>=<sp/>EnumProperty(name=&apos;Axis<sp/>1&apos;,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/>items=(</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(&apos;X&apos;,<sp/>&apos;X&apos;,<sp/>&apos;x&apos;),</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(&apos;Y&apos;,<sp/>&apos;Y&apos;,<sp/>&apos;y&apos;),</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(&apos;Z&apos;,<sp/>&apos;Z&apos;,<sp/>&apos;z&apos;)),</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/>description=&apos;Number<sp/>1<sp/>rotational<sp/>axis&apos;,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/>default=&apos;X&apos;,<sp/>update<sp/>=<sp/>updateOffsetImage)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185" refid="classcam_1_1machine__settings_1_1machineSettings_1addc35c984c12b0e35b1ddf4ee95298b8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>collet_size:<sp/>FloatProperty(</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&quot;#Collet<sp/>Size&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>description=</highlight><highlight class="stringliteral">&quot;Collet<sp/>size<sp/>for<sp/>collision<sp/>detection&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=33,</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>min=0.00001,</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>max=320000,</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>precision=constants.PRECISION,</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unit=</highlight><highlight class="stringliteral">&quot;LENGTH&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>exporter_start<sp/>=<sp/>StringProperty(name=&quot;exporter<sp/>start&quot;,<sp/>default=&quot;%&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>post<sp/>processor<sp/>options</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198" refid="classcam_1_1machine__settings_1_1machineSettings_1a97a7a04d12baa8de7bb5326ccb22f8fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>output_block_numbers:<sp/>BoolProperty(</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&quot;Output<sp/>Block<sp/>Numbers&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>description=</highlight><highlight class="stringliteral">&quot;Output<sp/>block<sp/>numbers<sp/>ie<sp/>N10<sp/>at<sp/>start<sp/>of<sp/>line&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=</highlight><highlight class="keyword">False</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204" refid="classcam_1_1machine__settings_1_1machineSettings_1af1c2ca84237a0945e29bf96af773c3c5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>start_block_number:<sp/>IntProperty(</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&quot;Start<sp/>Block<sp/>Number&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>description=</highlight><highlight class="stringliteral">&quot;The<sp/>starting<sp/>block<sp/>number<sp/>ie<sp/>10&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=10,</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210" refid="classcam_1_1machine__settings_1_1machineSettings_1ad131f77de75465a5826fe69e6cc61475" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>block_number_increment:<sp/>IntProperty(</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&quot;Block<sp/>Number<sp/>Increment&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>description=</highlight><highlight class="stringliteral">&quot;How<sp/>much<sp/>the<sp/>block<sp/>number<sp/>should<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;increment<sp/>for<sp/>the<sp/>next<sp/>line&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=10,</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217" refid="classcam_1_1machine__settings_1_1machineSettings_1a6fc2d3c06e832fdfdcdc3485e16df84d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>output_tool_definitions:<sp/>BoolProperty(</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&quot;Output<sp/>Tool<sp/>Definitions&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>description=</highlight><highlight class="stringliteral">&quot;Output<sp/>tool<sp/>definitions&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=</highlight><highlight class="keyword">True</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223" refid="classcam_1_1machine__settings_1_1machineSettings_1a7e6faf78f4d1eb00b598bc0b87591a5c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>output_tool_change:<sp/>BoolProperty(</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&quot;Output<sp/>Tool<sp/>Change<sp/>Commands&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>description=</highlight><highlight class="stringliteral">&quot;Output<sp/>tool<sp/>change<sp/>commands<sp/>ie:<sp/>Tn<sp/>M06&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=</highlight><highlight class="keyword">True</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229" refid="classcam_1_1machine__settings_1_1machineSettings_1ab20976d823d4c76faa1c7c4aec364133" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>output_g43_on_tool_change:<sp/>BoolProperty(</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&quot;Output<sp/>G43<sp/>on<sp/>Tool<sp/>Change&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>description=</highlight><highlight class="stringliteral">&quot;Output<sp/>G43<sp/>on<sp/>tool<sp/>change<sp/>line&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=</highlight><highlight class="keyword">False</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/machine_settings.py"/>
+  </compounddef>
+</doxygen>

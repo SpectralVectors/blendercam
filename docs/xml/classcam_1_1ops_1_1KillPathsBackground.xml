@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1ops_1_1KillPathsBackground" kind="class" language="Python" prot="public">
+    <compoundname>cam::ops::KillPathsBackground</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Operator</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1ops_1_1KillPathsBackground_1a61325a8aa8615b9e342abf21d6dce4f5" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.ops.KillPathsBackground::bl_idname</definition>
+        <argsstring></argsstring>
+        <name>bl_idname</name>
+        <qualifiedname>cam.ops.KillPathsBackground.bl_idname</qualifiedname>
+        <initializer>=  &quot;object.kill_calculate_cam_paths_background&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="137" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ops_1_1KillPathsBackground_1a07000804aafda44dcd21107fcd0f1e01" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.ops.KillPathsBackground::bl_label</definition>
+        <argsstring></argsstring>
+        <name>bl_label</name>
+        <qualifiedname>cam.ops.KillPathsBackground.bl_label</qualifiedname>
+        <initializer>=  &quot;Kill Background Computation of an Operation&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="138" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="138" bodyend="-1"/>
+        <referencedby refid="classcam_1_1preset__managers_1_1CAM__MACHINE__MT__presets_1af95f7812d2952b26a26809ab923dac09" compoundref="preset__managers_8py" startline="28" endline="38">cam.preset_managers.CAM_MACHINE_MT_presets.post_cb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ops_1_1KillPathsBackground_1ac831a0941412a876d3d94f48ad661d86" prot="public" static="yes" mutable="no">
+        <type>dict</type>
+        <definition>dict cam.ops.KillPathsBackground::bl_options</definition>
+        <argsstring></argsstring>
+        <name>bl_options</name>
+        <qualifiedname>cam.ops.KillPathsBackground.bl_options</qualifiedname>
+        <initializer>=  {&apos;REGISTER&apos;, &apos;UNDO&apos;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="139" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="139" bodyend="-1"/>
+        <referencedby refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a9628cbca8e69ec75b2337171a02bf428" compoundref="async__op_8py" startline="32" endline="59">cam.async_op.AsyncOperatorMixin.modal</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcam_1_1ops_1_1KillPathsBackground_1a16f7b6fb970b7fdd2ed5b83665539168" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.ops.KillPathsBackground::operation</definition>
+        <argsstring></argsstring>
+        <name>operation</name>
+        <qualifiedname>cam.ops.KillPathsBackground.operation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="144" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="144" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcam_1_1ops_1_1KillPathsBackground_1ab3a2cbd7dcb6caaf3d0c964821b518a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.ops.KillPathsBackground.execute</definition>
+        <argsstring>(self, context)</argsstring>
+        <name>execute</name>
+        <qualifiedname>cam.ops.KillPathsBackground.execute</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="141" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="141" bodyend="157"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Remove CAM Path Processes in Background.</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.ops.KillPathsBackground</label>
+        <link refid="classcam_1_1ops_1_1KillPathsBackground"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.ops.KillPathsBackground</label>
+        <link refid="classcam_1_1ops_1_1KillPathsBackground"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+bl_idname</edgelabel>
+          <edgelabel>+bl_label</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+bl_options</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dict</label>
+      </node>
+      <node id="3">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="135" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="135" bodyend="157"/>
+    <listofallmembers>
+      <member refid="classcam_1_1ops_1_1KillPathsBackground_1a61325a8aa8615b9e342abf21d6dce4f5" prot="public" virt="non-virtual"><scope>cam::ops::KillPathsBackground</scope><name>bl_idname</name></member>
+      <member refid="classcam_1_1ops_1_1KillPathsBackground_1a07000804aafda44dcd21107fcd0f1e01" prot="public" virt="non-virtual"><scope>cam::ops::KillPathsBackground</scope><name>bl_label</name></member>
+      <member refid="classcam_1_1ops_1_1KillPathsBackground_1ac831a0941412a876d3d94f48ad661d86" prot="public" virt="non-virtual"><scope>cam::ops::KillPathsBackground</scope><name>bl_options</name></member>
+      <member refid="classcam_1_1ops_1_1KillPathsBackground_1ab3a2cbd7dcb6caaf3d0c964821b518a5" prot="public" virt="non-virtual"><scope>cam::ops::KillPathsBackground</scope><name>execute</name></member>
+      <member refid="classcam_1_1ops_1_1KillPathsBackground_1a16f7b6fb970b7fdd2ed5b83665539168" prot="public" virt="non-virtual"><scope>cam::ops::KillPathsBackground</scope><name>operation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

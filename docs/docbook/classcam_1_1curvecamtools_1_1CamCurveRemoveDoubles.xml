@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1curvecamtools_1_1CamCurveRemoveDoubles" xml:lang="en-US">
+<title>cam.curvecamtools.CamCurveRemoveDoubles Class Reference</title>
+<indexterm><primary>cam.curvecamtools.CamCurveRemoveDoubles</primary></indexterm>
+Inheritance diagram for cam.curvecamtools.CamCurveRemoveDoubles:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1curvecamtools_1_1CamCurveRemoveDoubles__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.curvecamtools.CamCurveRemoveDoubles:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1curvecamtools_1_1CamCurveRemoveDoubles__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1curvecamtools_1_1CamCurveRemoveDoubles_1a8fe1fcebd1de6f340b551e19effbb47b">poll</link> (cls, context)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1curvecamtools_1_1CamCurveRemoveDoubles_1a74293880d3636576b99bd28482d5267d">execute</link> (self, context)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1curvecamtools_1_1CamCurveRemoveDoubles_1a9c66e9e9aac12b5296e0fd7a72b00b9b">draw</link> (self, context)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1curvecamtools_1_1CamCurveRemoveDoubles_1a72e441051132a13daa4c72bff5264664">invoke</link> (self, context, event)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classcam_1_1curvecamtools_1_1CamCurveRemoveDoubles_1af691bcadefe97c58964a5d388f2af334">bl_idname</link> = &quot;object.curve_remove_doubles&quot;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1curvecamtools_1_1CamCurveRemoveDoubles_1a3a0aa51b936dea66f14a8e6429b1502b">bl_label</link> = &quot;Remove Curve Doubles&quot;</para>
+</listitem>
+            <listitem><para>dict <link linkend="_classcam_1_1curvecamtools_1_1CamCurveRemoveDoubles_1abc88d3f6b1d907423bae12d5999f5c90">bl_options</link> = {&apos;REGISTER&apos;, &apos;UNDO&apos;}</para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamtools_1_1CamCurveRemoveDoubles_1ab92eac322df9df65560f9ab7ebca00a1">merg_distance</link></para>
+</listitem>
+            <listitem><para>BoolProperty <link linkend="_classcam_1_1curvecamtools_1_1CamCurveRemoveDoubles_1afff7b4ffb774d70a14790abb24f8901a">keep_bezier</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Curve Remove Doubles</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamCurveRemoveDoubles_1a9c66e9e9aac12b5296e0fd7a72b00b9b"/><section>
+    <title>draw()</title>
+<indexterm><primary>draw</primary><secondary>cam.curvecamtools.CamCurveRemoveDoubles</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamCurveRemoveDoubles</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput>cam.curvecamtools.CamCurveRemoveDoubles.draw ( self,  context)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamCurveRemoveDoubles_1a74293880d3636576b99bd28482d5267d"/><section>
+    <title>execute()</title>
+<indexterm><primary>execute</primary><secondary>cam.curvecamtools.CamCurveRemoveDoubles</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamCurveRemoveDoubles</primary><secondary>execute</secondary></indexterm>
+<para><computeroutput>cam.curvecamtools.CamCurveRemoveDoubles.execute ( self,  context)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamCurveRemoveDoubles_1a72e441051132a13daa4c72bff5264664"/><section>
+    <title>invoke()</title>
+<indexterm><primary>invoke</primary><secondary>cam.curvecamtools.CamCurveRemoveDoubles</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamCurveRemoveDoubles</primary><secondary>invoke</secondary></indexterm>
+<para><computeroutput>cam.curvecamtools.CamCurveRemoveDoubles.invoke ( self,  context,  event)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamCurveRemoveDoubles_1a8fe1fcebd1de6f340b551e19effbb47b"/><section>
+    <title>poll()</title>
+<indexterm><primary>poll</primary><secondary>cam.curvecamtools.CamCurveRemoveDoubles</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamCurveRemoveDoubles</primary><secondary>poll</secondary></indexterm>
+<para><computeroutput>cam.curvecamtools.CamCurveRemoveDoubles.poll ( cls,  context)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamCurveRemoveDoubles_1af691bcadefe97c58964a5d388f2af334"/><section>
+    <title>bl_idname</title>
+<indexterm><primary>bl_idname</primary><secondary>cam.curvecamtools.CamCurveRemoveDoubles</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamCurveRemoveDoubles</primary><secondary>bl_idname</secondary></indexterm>
+<para><computeroutput>str cam.curvecamtools.CamCurveRemoveDoubles.bl_idname = &quot;object.curve_remove_doubles&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamCurveRemoveDoubles_1a3a0aa51b936dea66f14a8e6429b1502b"/><section>
+    <title>bl_label</title>
+<indexterm><primary>bl_label</primary><secondary>cam.curvecamtools.CamCurveRemoveDoubles</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamCurveRemoveDoubles</primary><secondary>bl_label</secondary></indexterm>
+<para><computeroutput>str cam.curvecamtools.CamCurveRemoveDoubles.bl_label = &quot;Remove Curve Doubles&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamCurveRemoveDoubles_1abc88d3f6b1d907423bae12d5999f5c90"/><section>
+    <title>bl_options</title>
+<indexterm><primary>bl_options</primary><secondary>cam.curvecamtools.CamCurveRemoveDoubles</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamCurveRemoveDoubles</primary><secondary>bl_options</secondary></indexterm>
+<para><computeroutput>dict cam.curvecamtools.CamCurveRemoveDoubles.bl_options = {&apos;REGISTER&apos;, &apos;UNDO&apos;}<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamCurveRemoveDoubles_1afff7b4ffb774d70a14790abb24f8901a"/><section>
+    <title>keep_bezier</title>
+<indexterm><primary>keep_bezier</primary><secondary>cam.curvecamtools.CamCurveRemoveDoubles</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamCurveRemoveDoubles</primary><secondary>keep_bezier</secondary></indexterm>
+<para><computeroutput>BoolProperty cam.curvecamtools.CamCurveRemoveDoubles.keep_bezier<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Keep&#32;bezier&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="keyword">False</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamCurveRemoveDoubles_1ab92eac322df9df65560f9ab7ebca00a1"/><section>
+    <title>merg_distance</title>
+<indexterm><primary>merg_distance</primary><secondary>cam.curvecamtools.CamCurveRemoveDoubles</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamCurveRemoveDoubles</primary><secondary>merg_distance</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamtools.CamCurveRemoveDoubles.merg_distance<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Merge&#32;distance&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.0001,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0.0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=.01,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/<link linkend="_curvecamtools_8py">curvecamtools.py</link></section>
+</section>

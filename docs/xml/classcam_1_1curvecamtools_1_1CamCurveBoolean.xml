@@ -1,0 +1,225 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1curvecamtools_1_1CamCurveBoolean" kind="class" language="Python" prot="public">
+    <compoundname>cam::curvecamtools::CamCurveBoolean</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Operator</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1curvecamtools_1_1CamCurveBoolean_1a2ee3521b6f1da2f3bd8687503f202c66" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.curvecamtools.CamCurveBoolean::bl_idname</definition>
+        <argsstring></argsstring>
+        <name>bl_idname</name>
+        <qualifiedname>cam.curvecamtools.CamCurveBoolean.bl_idname</qualifiedname>
+        <initializer>=  &quot;object.curve_boolean&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="33" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamtools_1_1CamCurveBoolean_1a3f4b7fefbc2dd90b224f07bda144a3f1" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.curvecamtools.CamCurveBoolean::bl_label</definition>
+        <argsstring></argsstring>
+        <name>bl_label</name>
+        <qualifiedname>cam.curvecamtools.CamCurveBoolean.bl_label</qualifiedname>
+        <initializer>=  &quot;Curve Boolean&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="34" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="34" bodyend="-1"/>
+        <referencedby refid="classcam_1_1preset__managers_1_1CAM__MACHINE__MT__presets_1af95f7812d2952b26a26809ab923dac09" compoundref="preset__managers_8py" startline="28" endline="38">cam.preset_managers.CAM_MACHINE_MT_presets.post_cb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamtools_1_1CamCurveBoolean_1aadf565236027c58e15b56e8930b43840" prot="public" static="yes" mutable="no">
+        <type>dict</type>
+        <definition>dict cam.curvecamtools.CamCurveBoolean::bl_options</definition>
+        <argsstring></argsstring>
+        <name>bl_options</name>
+        <qualifiedname>cam.curvecamtools.CamCurveBoolean.bl_options</qualifiedname>
+        <initializer>=  {&apos;REGISTER&apos;, &apos;UNDO&apos;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="35" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="35" bodyend="-1"/>
+        <referencedby refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a9628cbca8e69ec75b2337171a02bf428" compoundref="async__op_8py" startline="32" endline="59">cam.async_op.AsyncOperatorMixin.modal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamtools_1_1CamCurveBoolean_1a00eed4e6e65b6c6bfc8baf3a9c152176" prot="public" static="yes" mutable="no">
+        <type>EnumProperty</type>
+        <definition>EnumProperty cam.curvecamtools.CamCurveBoolean::boolean_type</definition>
+        <argsstring></argsstring>
+        <name>boolean_type</name>
+        <qualifiedname>cam.curvecamtools.CamCurveBoolean.boolean_type</qualifiedname>
+        <initializer>(
+        name=&apos;Type&apos;,
+        items=(
+            (&apos;UNION&apos;, &apos;Union&apos;, &apos;&apos;),
+            (&apos;DIFFERENCE&apos;, &apos;Difference&apos;, &apos;&apos;),
+            (&apos;INTERSECT&apos;, &apos;Intersect&apos;, &apos;&apos;)
+        ),
+        description=&apos;Boolean type&apos;,
+        default=&apos;UNION&apos;
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="37" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="37" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcam_1_1curvecamtools_1_1CamCurveBoolean_1a0b532a3131eda7444518412dee1f08ef" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamtools.CamCurveBoolean::boolean_type</definition>
+        <argsstring></argsstring>
+        <name>boolean_type</name>
+        <qualifiedname>cam.curvecamtools.CamCurveBoolean.boolean_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="54" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="54" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcam_1_1curvecamtools_1_1CamCurveBoolean_1a9ec1cf5b12e52c3b7f1ad8aa3c5b1a3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.curvecamtools.CamCurveBoolean.poll</definition>
+        <argsstring>(cls, context)</argsstring>
+        <name>poll</name>
+        <qualifiedname>cam.curvecamtools.CamCurveBoolean.poll</qualifiedname>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="49" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="49" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1curvecamtools_1_1CamCurveBoolean_1a81bbe1398aea04182ba31f33f0ce240f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.curvecamtools.CamCurveBoolean.execute</definition>
+        <argsstring>(self, context)</argsstring>
+        <name>execute</name>
+        <qualifiedname>cam.curvecamtools.CamCurveBoolean.execute</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="52" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="52" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1curvecamtools_1_1CamCurveBoolean_1a0edf3deb2ed49bcc7da6ac2abd530517" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.curvecamtools.CamCurveBoolean.invoke</definition>
+        <argsstring>(self, context, event)</argsstring>
+        <name>invoke</name>
+        <qualifiedname>cam.curvecamtools.CamCurveBoolean.invoke</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <param>
+          <type>event</type>
+          <defname>event</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="59" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="59" bodyend="62"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Perform Boolean Operation on Two or More Curves</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.curvecamtools.CamCurveBoolean</label>
+        <link refid="classcam_1_1curvecamtools_1_1CamCurveBoolean"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>EnumProperty</label>
+      </node>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.curvecamtools.CamCurveBoolean</label>
+        <link refid="classcam_1_1curvecamtools_1_1CamCurveBoolean"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+bl_idname</edgelabel>
+          <edgelabel>+bl_label</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+bl_options</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+boolean_type</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dict</label>
+      </node>
+      <node id="3">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="31" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="31" bodyend="62"/>
+    <listofallmembers>
+      <member refid="classcam_1_1curvecamtools_1_1CamCurveBoolean_1a2ee3521b6f1da2f3bd8687503f202c66" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamCurveBoolean</scope><name>bl_idname</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamCurveBoolean_1a3f4b7fefbc2dd90b224f07bda144a3f1" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamCurveBoolean</scope><name>bl_label</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamCurveBoolean_1aadf565236027c58e15b56e8930b43840" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamCurveBoolean</scope><name>bl_options</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamCurveBoolean_1a00eed4e6e65b6c6bfc8baf3a9c152176" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamCurveBoolean</scope><name>boolean_type</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamCurveBoolean_1a0b532a3131eda7444518412dee1f08ef" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamCurveBoolean</scope><name>boolean_type</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamCurveBoolean_1a81bbe1398aea04182ba31f33f0ce240f" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamCurveBoolean</scope><name>execute</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamCurveBoolean_1a0edf3deb2ed49bcc7da6ac2abd530517" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamCurveBoolean</scope><name>invoke</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamCurveBoolean_1a9ec1cf5b12e52c3b7f1ad8aa3c5b1a3b" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamCurveBoolean</scope><name>poll</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

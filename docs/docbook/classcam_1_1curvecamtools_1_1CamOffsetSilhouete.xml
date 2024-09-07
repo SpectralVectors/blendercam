@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1curvecamtools_1_1CamOffsetSilhouete" xml:lang="en-US">
+<title>cam.curvecamtools.CamOffsetSilhouete Class Reference</title>
+<indexterm><primary>cam.curvecamtools.CamOffsetSilhouete</primary></indexterm>
+Inheritance diagram for cam.curvecamtools.CamOffsetSilhouete:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1curvecamtools_1_1CamOffsetSilhouete__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.curvecamtools.CamOffsetSilhouete:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1curvecamtools_1_1CamOffsetSilhouete__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1aab2a906cf3db744dd2b0fa385421b7e7">poll</link> (cls, context)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1a3a8340d39d68a758d65b7603f76062b2">execute</link> (self, context)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1a4dfcd205251305fae4df9fc87749e493">draw</link> (self, context)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1a2e495dce4a6ce4b0c7ceec81652593eb">invoke</link> (self, context, event)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1a02d46058465f8e99fa04cb64923d6ff3">offset</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1afe94eb505a170f678fc41c29a890632a">style</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1a310fbfc1fe080bb4966cf603c8586613">mitrelimit</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1aab6834f1d6ea35d8917ad43c3bff1441">bl_idname</link> = &quot;object.silhouete_offset&quot;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1a4b4d8072c674845813dd7144b7436aff">bl_label</link> = &quot;Silhouette Offset&quot;</para>
+</listitem>
+            <listitem><para>dict <link linkend="_classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1a556842b2b49fa0bc98ca9d9d6f39115a">bl_options</link> = {&apos;REGISTER&apos;, &apos;UNDO&apos;, &apos;PRESET&apos;}</para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1ac6a6b5730e85716b9b0b44fe261dd0c1">offset</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1a97ba50b93ad30b547f41e02f424ad38b">mitrelimit</link></para>
+</listitem>
+            <listitem><para>EnumProperty <link linkend="_classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1aa444d6edd0648c4a31980a6077c7744e">style</link></para>
+</listitem>
+            <listitem><para>BoolProperty <link linkend="_classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1abbed91fdd4538fb77506569985aa97e1">opencurve</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Curve Offset Operation </computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1a4dfcd205251305fae4df9fc87749e493"/><section>
+    <title>draw()</title>
+<indexterm><primary>draw</primary><secondary>cam.curvecamtools.CamOffsetSilhouete</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamOffsetSilhouete</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput>cam.curvecamtools.CamOffsetSilhouete.draw ( self,  context)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1a3a8340d39d68a758d65b7603f76062b2"/><section>
+    <title>execute()</title>
+<indexterm><primary>execute</primary><secondary>cam.curvecamtools.CamOffsetSilhouete</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamOffsetSilhouete</primary><secondary>execute</secondary></indexterm>
+<para><computeroutput>cam.curvecamtools.CamOffsetSilhouete.execute ( self,  context)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1a2e495dce4a6ce4b0c7ceec81652593eb"/><section>
+    <title>invoke()</title>
+<indexterm><primary>invoke</primary><secondary>cam.curvecamtools.CamOffsetSilhouete</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamOffsetSilhouete</primary><secondary>invoke</secondary></indexterm>
+<para><computeroutput>cam.curvecamtools.CamOffsetSilhouete.invoke ( self,  context,  event)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1aab2a906cf3db744dd2b0fa385421b7e7"/><section>
+    <title>poll()</title>
+<indexterm><primary>poll</primary><secondary>cam.curvecamtools.CamOffsetSilhouete</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamOffsetSilhouete</primary><secondary>poll</secondary></indexterm>
+<para><computeroutput>cam.curvecamtools.CamOffsetSilhouete.poll ( cls,  context)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1aab6834f1d6ea35d8917ad43c3bff1441"/><section>
+    <title>bl_idname</title>
+<indexterm><primary>bl_idname</primary><secondary>cam.curvecamtools.CamOffsetSilhouete</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamOffsetSilhouete</primary><secondary>bl_idname</secondary></indexterm>
+<para><computeroutput>str cam.curvecamtools.CamOffsetSilhouete.bl_idname = &quot;object.silhouete_offset&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1a4b4d8072c674845813dd7144b7436aff"/><section>
+    <title>bl_label</title>
+<indexterm><primary>bl_label</primary><secondary>cam.curvecamtools.CamOffsetSilhouete</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamOffsetSilhouete</primary><secondary>bl_label</secondary></indexterm>
+<para><computeroutput>str cam.curvecamtools.CamOffsetSilhouete.bl_label = &quot;Silhouette Offset&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1a556842b2b49fa0bc98ca9d9d6f39115a"/><section>
+    <title>bl_options</title>
+<indexterm><primary>bl_options</primary><secondary>cam.curvecamtools.CamOffsetSilhouete</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamOffsetSilhouete</primary><secondary>bl_options</secondary></indexterm>
+<para><computeroutput>dict cam.curvecamtools.CamOffsetSilhouete.bl_options = {&apos;REGISTER&apos;, &apos;UNDO&apos;, &apos;PRESET&apos;}<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1a97ba50b93ad30b547f41e02f424ad38b"/><section>
+    <title>mitrelimit<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>mitrelimit</primary><secondary>cam.curvecamtools.CamOffsetSilhouete</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamOffsetSilhouete</primary><secondary>mitrelimit</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamtools.CamOffsetSilhouete.mitrelimit<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Mitre&#32;Limit&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=2,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0.00000001,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=20,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=4,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1a310fbfc1fe080bb4966cf603c8586613"/><section>
+    <title>mitrelimit<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>mitrelimit</primary><secondary>cam.curvecamtools.CamOffsetSilhouete</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamOffsetSilhouete</primary><secondary>mitrelimit</secondary></indexterm>
+<para><computeroutput>cam.curvecamtools.CamOffsetSilhouete.mitrelimit</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1ac6a6b5730e85716b9b0b44fe261dd0c1"/><section>
+    <title>offset<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>offset</primary><secondary>cam.curvecamtools.CamOffsetSilhouete</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamOffsetSilhouete</primary><secondary>offset</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamtools.CamOffsetSilhouete.offset<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Offset&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=.003,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=-100,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=100,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=4,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1a02d46058465f8e99fa04cb64923d6ff3"/><section>
+    <title>offset<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>offset</primary><secondary>cam.curvecamtools.CamOffsetSilhouete</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamOffsetSilhouete</primary><secondary>offset</secondary></indexterm>
+<para><computeroutput>cam.curvecamtools.CamOffsetSilhouete.offset</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1abbed91fdd4538fb77506569985aa97e1"/><section>
+    <title>opencurve</title>
+<indexterm><primary>opencurve</primary><secondary>cam.curvecamtools.CamOffsetSilhouete</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamOffsetSilhouete</primary><secondary>opencurve</secondary></indexterm>
+<para><computeroutput>BoolProperty cam.curvecamtools.CamOffsetSilhouete.opencurve<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Dialate&#32;Open&#32;Curve&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="keyword">False</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1aa444d6edd0648c4a31980a6077c7744e"/><section>
+    <title>style<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>style</primary><secondary>cam.curvecamtools.CamOffsetSilhouete</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamOffsetSilhouete</primary><secondary>style</secondary></indexterm>
+<para><computeroutput>EnumProperty cam.curvecamtools.CamOffsetSilhouete.style<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Type&#32;of&#32;Curve&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;items=(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&apos;1&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Round&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;&apos;</emphasis>),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&apos;2&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Mitre&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;&apos;</emphasis>),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&apos;3&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Bevel&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;&apos;</emphasis>)
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;),
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1afe94eb505a170f678fc41c29a890632a"/><section>
+    <title>style<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>style</primary><secondary>cam.curvecamtools.CamOffsetSilhouete</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamOffsetSilhouete</primary><secondary>style</secondary></indexterm>
+<para><computeroutput>cam.curvecamtools.CamOffsetSilhouete.style</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/<link linkend="_curvecamtools_8py">curvecamtools.py</link></section>
+</section>

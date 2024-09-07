@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_utils_8py" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/utils.py File Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/utils.py</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classcam_1_1utils_1_1Point">cam.utils.Point</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacecam">cam</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacecam_1_1utils">cam.utils</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a18919ae557175a95fff88b53e5a3b1c0">cam.utils.opencamlib_version</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1aee109e0b5974b8e23a80ac76f616d8bc">cam.utils.positionObject</link> (operation)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a42945b53b548218ea12e9418f417ca20">cam.utils.getBoundsWorldspace</link> (obs, use_modifiers=False)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1aeeb8648e984e211788ae79507115cec9">cam.utils.getSplineBounds</link> (ob, curve)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1ad47b75642303c3c8941d63ba7b46fe3f">cam.utils.getOperationSources</link> (o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a23d9d89c3c47f486835580d46f4df47f">cam.utils.getBounds</link> (o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a44934b5138a8d4e5f75dd1f9b8511ab3">cam.utils.getBoundsMultiple</link> (operations)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1afec203931aa72411409e146b0e73f1ff">cam.utils.samplePathLow</link> (o, ch1, ch2, dosample)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a1b5e1fe704aba6c405af446c25d17faf">cam.utils.sampleChunks</link> (o, pathSamples, layers)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a51ddfd1df0512ecde6cc64184161050e">cam.utils.sampleChunksNAxis</link> (o, pathSamples, layers)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1aea87f7c02faf5e3cb6fd5fa0b644645e">cam.utils.extendChunks5axis</link> (chunks, o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a0a5db4824380f884b6e178a915ff3189">cam.utils.curveToShapely</link> (cob, use_modifiers=False)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a859b5b676c4de4eb2bd671ed8406311d">cam.utils.silhoueteOffset</link> (context, offset, style=1, mitrelimit=1.0)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a910819ad60efb7235a977ca706a44a74">cam.utils.polygonBoolean</link> (context, boolean_type)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1aa4330577e6b4139f49a42fee5904fbda">cam.utils.polygonConvexHull</link> (context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1afca9a0e1e1bb7a32de1c1a7eed5ec26f">cam.utils.Helix</link> (r, np, zstart, pend, rev)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a594a9ac04b6b117b91dca2b33b590ca3">cam.utils.comparezlevel</link> (x)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1af481efff070eae3ed307097a63fd5cfa">cam.utils.overlaps</link> (bb1, bb2)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a9ae3154ae77668a79b919ef35c27b9f3">cam.utils.connectChunksLow</link> (chunks, o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1aaac51386ee87ef045dc3e5c8d720c02f">cam.utils.getClosest</link> (o, pos, chunks)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1aa6f0d1bcff335cdff4ca60c1dfc6bf38">cam.utils.sortChunks</link> (chunks, o, last_pos=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1ae02a104e9e48d30dcb341cf054430d55">cam.utils.getVectorRight</link> (lastv, verts)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1ad23143360152f44586c2c5fd475dab5a">cam.utils.cleanUpDict</link> (ndict)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1ad145e7dfedf4b7c99360dcc04164aeb9">cam.utils.dictRemove</link> (dict, val)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a0daa9540602f1cac02fca5225e5098e2">cam.utils.addLoop</link> (parentloop, start, end)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1aa00f7ac04b8633821fc794ac9fec594e">cam.utils.cutloops</link> (csource, parentloop, loops)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1aa9de6b3628ecfc53788d0b39ae160b09">cam.utils.getOperationSilhouete</link> (operation)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a47d160ba2d06c46bc02d65a01962264c">cam.utils.getObjectSilhouete</link> (stype, objects=None, use_modifiers=False)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a1e00a4e51da1373a89fc0df800a6c942">cam.utils.getAmbient</link> (o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a1ab9ec76924101d005ca5b3bfb78bf74">cam.utils.getObjectOutline</link> (radius, o, Offset)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a28a65e4ea65ca0fa4c3dcbd744f16afd">cam.utils.addOrientationObject</link> (o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a975c3a3f885b39c99b87148fa0d0aa64">cam.utils.removeOrientationObject</link> (o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a3be3c5846a9fcf477c7fdbc8cb17b74f">cam.utils.addTranspMat</link> (ob, mname, color, alpha)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a84a4303144ba41c83854f9c1a1c419a1">cam.utils.addMachineAreaObject</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a619c0b7a8350fced480672a5f43aa19e">cam.utils.addMaterialAreaObject</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a3079115b9de5894e5d6f5a9953517420">cam.utils.getContainer</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1afb6ef4bc30df39f330934c69e805f5ac">cam.utils.unique</link> (L)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a50212ca99d40ea85344ce40bbdc2fac6">cam.utils.checkEqual</link> (lst)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a173e4fd2bc779fd7dc6325bef5632a8c">cam.utils.prepareIndexed</link> (o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1ad510033b188290751074a00603c2767d">cam.utils.cleanupIndexed</link> (operation)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a5f914fc55567d5a1146d3c4c7783ed7d">cam.utils.rotTo2axes</link> (e, axescombination)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a9c98fb17575e5bd74640e912e86fd3d6">cam.utils.reload_paths</link> (o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a516430a991c9ad9d80b3100b56fec518">cam.utils.updateMachine</link> (self, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a384a3656b07f19a6badb9e9f353cd798">cam.utils.updateMaterial</link> (self, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a5c4e7d2392e67c526aa55b471cada4fd">cam.utils.updateOperation</link> (self, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a17fd4c69ef8356e5048611351e72019d">cam.utils.isValid</link> (o, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a62f88dfc697b68eb1be1154638cc294a">cam.utils.operationValid</link> (self, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1aab37708a2d153c5937d45c31abc64ff6">cam.utils.isChainValid</link> (chain, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1aa893f233bfa661beb30a8f5ffefc8779">cam.utils.updateOperationValid</link> (self, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1add5ac02137d21a7da08df757480a8e72">cam.utils.updateChipload</link> (self, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1ab5d6bb813fd206109316ae0925ea1ff7">cam.utils.updateOffsetImage</link> (self, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1ae55715c8c41dd8b4ebf9dd42ea1c8901">cam.utils.updateZbufferImage</link> (self, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a51387d757073a27a853822f565c8f643">cam.utils.updateStrategy</link> (o, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1aa1501ac975b969ff6732d244dd9646e9">cam.utils.updateCutout</link> (o, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a9ff84a03af71e7b527c7e01a9baab6cb">cam.utils.updateExact</link> (o, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a37f367b47a9529121ea2967eff26f7b4">cam.utils.updateOpencamlib</link> (o, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a0e11b3766562708785bcfef4efbdd0ea">cam.utils.updateBridges</link> (o, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a06f8b4ae155619f84d40c7f3c4c25cdb">cam.utils.updateRotation</link> (o, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a2b7a2b2d5dd4324a117f5b55ea8720c9">cam.utils.updateRest</link> (o, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1aa2caf5536fe0be3026b2b19b4e8133c9">cam.utils.getStrategyList</link> (scene, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1abafb35abb7922a381596aecf8536a430">cam.utils.update_material</link> (self, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a5b64dfac7ecbc4532099561a82d224c0">cam.utils.update_operation</link> (self, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a974a8cdc152e4d144bf69f88c840fe6e">cam.utils.update_exact_mode</link> (self, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a7a4ba9e89d1f130e789c10b786882b58">cam.utils.update_opencamlib</link> (self, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1ac32b23363574ded306aedf743f70d8d1">cam.utils.update_zbuffer_image</link> (self, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a50fc43b6f5d57a19a21414e4d2beb5c5">cam.utils.check_operations_on_load</link> (context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a55c174100871df6f93454931497b92d8">cam.utils.Add_Pocket</link> (self, maxdepth, sname, new_cutter_diameter)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_namespacecam_1_1utils_1a8f0515b46d1fa277f26a8d3ebfcace8d">cam.utils.SHAPELY</link> = True</para>
+</listitem>
+            <listitem><para>bool <link linkend="_namespacecam_1_1utils_1a46b476e3124d1e325a75d0af4a9c93db">cam.utils.USE_PROFILER</link> = False</para>
+</listitem>
+            <listitem><para>dict <link linkend="_namespacecam_1_1utils_1ac926cdc3dfe9a36f652032fbb194d9c4">cam.utils.was_hidden_dict</link> = {}</para>
+</listitem>
+            <listitem><para>bool <link linkend="_namespacecam_1_1utils_1a4b0b5df083217b3ff34ccdba105a6adf">cam.utils._IS_LOADING_DEFAULTS</link> = False</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a4f8c26f81df10fc347a1ce0578e3c4fd">cam.utils.changed</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1aa83d7ca645c129031a9f5aff41b8cdbf">cam.utils.update_offsetimage_tag</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a6b43df4a1b68ab9c00667bb2f85b2bd5">cam.utils.update_zbufferimage_tag</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classpie__info_1_1VIEW3D__MT__PIE__Info" xml:lang="en-US">
+<title>pie_info.VIEW3D_MT_PIE_Info Class Reference</title>
+<indexterm><primary>pie_info.VIEW3D_MT_PIE_Info</primary></indexterm>
+Inheritance diagram for pie_info.VIEW3D_MT_PIE_Info:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classpie__info_1_1VIEW3D__MT__PIE__Info__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for pie_info.VIEW3D_MT_PIE_Info:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classpie__info_1_1VIEW3D__MT__PIE__Info__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classpie__info_1_1VIEW3D__MT__PIE__Info_1a1e6979569783df8c3103d0138e89b370">draw</link> (self, context)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classpie__info_1_1VIEW3D__MT__PIE__Info_1a9837a147129633228f5a72b4a63d7e42">bl_label</link> = &quot;∴ Info ∴&quot;</para>
+</listitem>
+            <listitem><para><link linkend="_classpie__info_1_1VIEW3D__MT__PIE__Info_1a4e8db855fb1e43b553bf43aed5a12550">text</link></para>
+</listitem>
+            <listitem><para><link linkend="_classpie__info_1_1VIEW3D__MT__PIE__Info_1a7e685c67c3ac7db23e33892d2f9cef22">box</link> = pie.box()</para>
+</listitem>
+            <listitem><para><link linkend="_classpie__info_1_1VIEW3D__MT__PIE__Info_1a69d23e82f95a7716238c347d4c568815">column</link> = box.column(align=True)</para>
+</listitem>
+            <listitem><para>str <link linkend="_classpie__info_1_1VIEW3D__MT__PIE__Info_1a66e0e2fd8294b3576f762fd08ef2ee8e">time_estimate</link> = f&quot;Operation Duration: {int(operation.info.duration*60)}s &quot;</para>
+</listitem>
+            <listitem><para><link linkend="_classpie__info_1_1VIEW3D__MT__PIE__Info_1acca0b557f45e87c1ce8c32f0a47480b5">row</link> = column.row()</para>
+</listitem>
+            <listitem><para>int <link linkend="_classpie__info_1_1VIEW3D__MT__PIE__Info_1a6828ab01854cebe88356929565d869ec">cost_per_second</link> = context.scene.cam_machine.hourly_rate / 3600</para>
+</listitem>
+            <listitem><para>int <link linkend="_classpie__info_1_1VIEW3D__MT__PIE__Info_1a1b8b3a9220e32983412f9b6ea5d651a6">total_cost</link> = operation.info.duration * 60 * <link linkend="_classpie__info_1_1VIEW3D__MT__PIE__Info_1a6828ab01854cebe88356929565d869ec">cost_per_second</link></para>
+</listitem>
+            <listitem><para>str <link linkend="_classpie__info_1_1VIEW3D__MT__PIE__Info_1a2908ce0b2204de7aedfbc0ec65ae72b4">op_cost</link> = f&quot;Operation Cost: ${total_cost:.2f} (${cost_per_second:.2f}/s)&quot;</para>
+</listitem>
+            <listitem><para><link linkend="_classpie__info_1_1VIEW3D__MT__PIE__Info_1a03929862285664fd434a06b587f4e723">alert</link></para>
+</listitem>
+            <listitem><para><link linkend="_classpie__info_1_1VIEW3D__MT__PIE__Info_1a904cfe2f28671048e075c7440415161b">line</link></para>
+</listitem>
+            <listitem><para><link linkend="_classpie__info_1_1VIEW3D__MT__PIE__Info_1a26f369a3aab16759fbacdb4c8e7b9248">icon</link></para>
+</listitem>
+            <listitem><para><link linkend="_classpie__info_1_1VIEW3D__MT__PIE__Info_1a2d7b80adeee76ceeffa39d717ca63299">scale_y</link></para>
+</listitem>
+            <listitem><para><link linkend="_classpie__info_1_1VIEW3D__MT__PIE__Info_1aa3db1ab8870439338b826436b069ebe7">scale_x</link></para>
+</listitem>
+            <listitem><para><link linkend="_classpie__info_1_1VIEW3D__MT__PIE__Info_1a219d94a64c19ae303bb50374aab62e1f">emboss</link></para>
+</listitem>
+            <listitem><para><link linkend="_classpie__info_1_1VIEW3D__MT__PIE__Info_1ac94e1c531529cf1aa83b95272ebf0379">name</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classpie__info_1_1VIEW3D__MT__PIE__Info_1a1e6979569783df8c3103d0138e89b370"/><section>
+    <title>draw()</title>
+<indexterm><primary>draw</primary><secondary>pie_info.VIEW3D_MT_PIE_Info</secondary></indexterm>
+<indexterm><primary>pie_info.VIEW3D_MT_PIE_Info</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput>pie_info.VIEW3D_MT_PIE_Info.draw ( self,  context)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classpie__info_1_1VIEW3D__MT__PIE__Info_1a03929862285664fd434a06b587f4e723"/><section>
+    <title>alert</title>
+<indexterm><primary>alert</primary><secondary>pie_info.VIEW3D_MT_PIE_Info</secondary></indexterm>
+<indexterm><primary>pie_info.VIEW3D_MT_PIE_Info</primary><secondary>alert</secondary></indexterm>
+<para><computeroutput>pie_info.VIEW3D_MT_PIE_Info.alert<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classpie__info_1_1VIEW3D__MT__PIE__Info_1a9837a147129633228f5a72b4a63d7e42"/><section>
+    <title>bl_label</title>
+<indexterm><primary>bl_label</primary><secondary>pie_info.VIEW3D_MT_PIE_Info</secondary></indexterm>
+<indexterm><primary>pie_info.VIEW3D_MT_PIE_Info</primary><secondary>bl_label</secondary></indexterm>
+<para><computeroutput>str pie_info.VIEW3D_MT_PIE_Info.bl_label = &quot;∴ Info ∴&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classpie__info_1_1VIEW3D__MT__PIE__Info_1a7e685c67c3ac7db23e33892d2f9cef22"/><section>
+    <title>box</title>
+<indexterm><primary>box</primary><secondary>pie_info.VIEW3D_MT_PIE_Info</secondary></indexterm>
+<indexterm><primary>pie_info.VIEW3D_MT_PIE_Info</primary><secondary>box</secondary></indexterm>
+<para><computeroutput>pie_info.VIEW3D_MT_PIE_Info.box = pie.box()<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classpie__info_1_1VIEW3D__MT__PIE__Info_1a69d23e82f95a7716238c347d4c568815"/><section>
+    <title>column</title>
+<indexterm><primary>column</primary><secondary>pie_info.VIEW3D_MT_PIE_Info</secondary></indexterm>
+<indexterm><primary>pie_info.VIEW3D_MT_PIE_Info</primary><secondary>column</secondary></indexterm>
+<para><computeroutput>pie_info.VIEW3D_MT_PIE_Info.column = box.column(align=True)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classpie__info_1_1VIEW3D__MT__PIE__Info_1a6828ab01854cebe88356929565d869ec"/><section>
+    <title>cost_per_second</title>
+<indexterm><primary>cost_per_second</primary><secondary>pie_info.VIEW3D_MT_PIE_Info</secondary></indexterm>
+<indexterm><primary>pie_info.VIEW3D_MT_PIE_Info</primary><secondary>cost_per_second</secondary></indexterm>
+<para><computeroutput>int pie_info.VIEW3D_MT_PIE_Info.cost_per_second = context.scene.cam_machine.hourly_rate / 3600<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classpie__info_1_1VIEW3D__MT__PIE__Info_1a219d94a64c19ae303bb50374aab62e1f"/><section>
+    <title>emboss</title>
+<indexterm><primary>emboss</primary><secondary>pie_info.VIEW3D_MT_PIE_Info</secondary></indexterm>
+<indexterm><primary>pie_info.VIEW3D_MT_PIE_Info</primary><secondary>emboss</secondary></indexterm>
+<para><computeroutput>pie_info.VIEW3D_MT_PIE_Info.emboss<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classpie__info_1_1VIEW3D__MT__PIE__Info_1a26f369a3aab16759fbacdb4c8e7b9248"/><section>
+    <title>icon</title>
+<indexterm><primary>icon</primary><secondary>pie_info.VIEW3D_MT_PIE_Info</secondary></indexterm>
+<indexterm><primary>pie_info.VIEW3D_MT_PIE_Info</primary><secondary>icon</secondary></indexterm>
+<para><computeroutput>pie_info.VIEW3D_MT_PIE_Info.icon<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classpie__info_1_1VIEW3D__MT__PIE__Info_1a904cfe2f28671048e075c7440415161b"/><section>
+    <title>line</title>
+<indexterm><primary>line</primary><secondary>pie_info.VIEW3D_MT_PIE_Info</secondary></indexterm>
+<indexterm><primary>pie_info.VIEW3D_MT_PIE_Info</primary><secondary>line</secondary></indexterm>
+<para><computeroutput>pie_info.VIEW3D_MT_PIE_Info.line<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classpie__info_1_1VIEW3D__MT__PIE__Info_1ac94e1c531529cf1aa83b95272ebf0379"/><section>
+    <title>name</title>
+<indexterm><primary>name</primary><secondary>pie_info.VIEW3D_MT_PIE_Info</secondary></indexterm>
+<indexterm><primary>pie_info.VIEW3D_MT_PIE_Info</primary><secondary>name</secondary></indexterm>
+<para><computeroutput>pie_info.VIEW3D_MT_PIE_Info.name<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classpie__info_1_1VIEW3D__MT__PIE__Info_1a2908ce0b2204de7aedfbc0ec65ae72b4"/><section>
+    <title>op_cost</title>
+<indexterm><primary>op_cost</primary><secondary>pie_info.VIEW3D_MT_PIE_Info</secondary></indexterm>
+<indexterm><primary>pie_info.VIEW3D_MT_PIE_Info</primary><secondary>op_cost</secondary></indexterm>
+<para><computeroutput>str pie_info.VIEW3D_MT_PIE_Info.op_cost = f&quot;Operation Cost: ${total_cost:.2f} (${cost_per_second:.2f}/s)&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classpie__info_1_1VIEW3D__MT__PIE__Info_1acca0b557f45e87c1ce8c32f0a47480b5"/><section>
+    <title>row</title>
+<indexterm><primary>row</primary><secondary>pie_info.VIEW3D_MT_PIE_Info</secondary></indexterm>
+<indexterm><primary>pie_info.VIEW3D_MT_PIE_Info</primary><secondary>row</secondary></indexterm>
+<para><computeroutput>pie_info.VIEW3D_MT_PIE_Info.row = column.row()<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classpie__info_1_1VIEW3D__MT__PIE__Info_1aa3db1ab8870439338b826436b069ebe7"/><section>
+    <title>scale_x</title>
+<indexterm><primary>scale_x</primary><secondary>pie_info.VIEW3D_MT_PIE_Info</secondary></indexterm>
+<indexterm><primary>pie_info.VIEW3D_MT_PIE_Info</primary><secondary>scale_x</secondary></indexterm>
+<para><computeroutput>pie_info.VIEW3D_MT_PIE_Info.scale_x<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classpie__info_1_1VIEW3D__MT__PIE__Info_1a2d7b80adeee76ceeffa39d717ca63299"/><section>
+    <title>scale_y</title>
+<indexterm><primary>scale_y</primary><secondary>pie_info.VIEW3D_MT_PIE_Info</secondary></indexterm>
+<indexterm><primary>pie_info.VIEW3D_MT_PIE_Info</primary><secondary>scale_y</secondary></indexterm>
+<para><computeroutput>pie_info.VIEW3D_MT_PIE_Info.scale_y<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classpie__info_1_1VIEW3D__MT__PIE__Info_1a4e8db855fb1e43b553bf43aed5a12550"/><section>
+    <title>text</title>
+<indexterm><primary>text</primary><secondary>pie_info.VIEW3D_MT_PIE_Info</secondary></indexterm>
+<indexterm><primary>pie_info.VIEW3D_MT_PIE_Info</primary><secondary>text</secondary></indexterm>
+<para><computeroutput>pie_info.VIEW3D_MT_PIE_Info.text<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classpie__info_1_1VIEW3D__MT__PIE__Info_1a66e0e2fd8294b3576f762fd08ef2ee8e"/><section>
+    <title>time_estimate</title>
+<indexterm><primary>time_estimate</primary><secondary>pie_info.VIEW3D_MT_PIE_Info</secondary></indexterm>
+<indexterm><primary>pie_info.VIEW3D_MT_PIE_Info</primary><secondary>time_estimate</secondary></indexterm>
+<para><computeroutput>str pie_info.VIEW3D_MT_PIE_Info.time_estimate = f&quot;Operation Duration: {int(operation.info.duration*60)}s &quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classpie__info_1_1VIEW3D__MT__PIE__Info_1a1b8b3a9220e32983412f9b6ea5d651a6"/><section>
+    <title>total_cost</title>
+<indexterm><primary>total_cost</primary><secondary>pie_info.VIEW3D_MT_PIE_Info</secondary></indexterm>
+<indexterm><primary>pie_info.VIEW3D_MT_PIE_Info</primary><secondary>total_cost</secondary></indexterm>
+<para><computeroutput>int pie_info.VIEW3D_MT_PIE_Info.total_cost = operation.info.duration * 60 * <link linkend="_classpie__info_1_1VIEW3D__MT__PIE__Info_1a6828ab01854cebe88356929565d869ec">cost_per_second</link><computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/<link linkend="_pie__info_8py">pie_info.py</link></section>
+</section>

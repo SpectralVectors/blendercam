@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['readme_2emd_0',['README.md',['../README_8md.html',1,'']]],
+  ['recreator_2epy_1',['recreator.py',['../recreator_8py.html',1,'']]],
+  ['rez2_2epy_2',['rez2.py',['../rez2_8py.html',1,'']]],
+  ['rez2_5fread_2epy_3',['rez2_read.py',['../rez2__read_8py.html',1,'']]],
+  ['rou_5fball_5f3_2c0_5fblock_5fall_2epy_4',['Rou_Ball_3,0_Block_All.py',['../Rou__Ball__3_000__Block__All_8py.html',1,'']]],
+  ['rou_5fball_5f3_2c0_5fblock_5faround_2epy_5',['Rou_Ball_3,0_Block_Around.py',['../Rou__Ball__3_000__Block__Around_8py.html',1,'']]],
+  ['rou_5fball_5f3_2c0_5fcircles_5fall_5fexperimental_2epy_6',['Rou_Ball_3,0_Circles_All_EXPERIMENTAL.py',['../Rou__Ball__3_000__Circles__All__EXPERIMENTAL_8py.html',1,'']]],
+  ['rou_5fball_5f3_2c0_5fcircles_5faround_5fexperimental_2epy_7',['Rou_Ball_3,0_Circles_Around_EXPERIMENTAL.py',['../Rou__Ball__3_000__Circles__Around__EXPERIMENTAL_8py.html',1,'']]],
+  ['rou_5fball_5f3_2c0_5fcross_5fall_2epy_8',['Rou_Ball_3,0_Cross_All.py',['../Rou__Ball__3_000__Cross__All_8py.html',1,'']]],
+  ['rou_5fball_5f3_2c0_5fcross_5faround_2epy_9',['Rou_Ball_3,0_Cross_Around.py',['../Rou__Ball__3_000__Cross__Around_8py.html',1,'']]],
+  ['rou_5fball_5f3_2c0_5fcutout_2epy_10',['Rou_Ball_3,0_Cutout.py',['../Rou__Ball__3_000__Cutout_8py.html',1,'']]],
+  ['rou_5fball_5f3_2c0_5foutline_5ffill_5fexperimental_2epy_11',['Rou_Ball_3,0_Outline_Fill_EXPERIMENTAL.py',['../Rou__Ball__3_000__Outline__Fill__EXPERIMENTAL_8py.html',1,'']]],
+  ['rou_5fball_5f3_2c0_5fparallel_5fall_2epy_12',['Rou_Ball_3,0_Parallel_All.py',['../Rou__Ball__3_000__Parallel__All_8py.html',1,'']]],
+  ['rou_5fball_5f3_2c0_5fparallel_5faround_2epy_13',['Rou_Ball_3,0_Parallel_Around.py',['../Rou__Ball__3_000__Parallel__Around_8py.html',1,'']]],
+  ['rou_5fball_5f3_2c0_5fpencil_5fexperimental_2epy_14',['Rou_Ball_3,0_Pencil_EXPERIMENTAL.py',['../Rou__Ball__3_000__Pencil__EXPERIMENTAL_8py.html',1,'']]],
+  ['rou_5fball_5f3_2c0_5fpocket_5fexperimental_2epy_15',['Rou_Ball_3,0_Pocket_EXPERIMENTAL.py',['../Rou__Ball__3_000__Pocket__EXPERIMENTAL_8py.html',1,'']]],
+  ['rou_5fball_5f3_2c0_5fspiral_5fall_2epy_16',['Rou_Ball_3,0_Spiral_All.py',['../Rou__Ball__3_000__Spiral__All_8py.html',1,'']]],
+  ['rou_5fball_5f3_2c0_5fspiral_5faround_2epy_17',['Rou_Ball_3,0_Spiral_Around.py',['../Rou__Ball__3_000__Spiral__Around_8py.html',1,'']]]
+];

@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam-Tools" xml:lang="en-US">
+<title>Blendercam-Tools</title>
+<indexterm><primary>Blendercam-Tools</primary></indexterm>
+
+<para>Blendercam has a number of curve operators that will modify selected curves to make them better suited to CAM operations. They can be found in the Tool Shelf Panel located on the left of the 3D view editor. The operators create new curves, in most cases, which can then be used in CAM operations.</para>
+
+<para><itemizedlist>
+<listitem>
+<para>View Tool Shelf</para>
+</listitem><listitem>
+<para>View Blendercam Tools</para>
+</listitem><listitem>
+<para>Curve Boolean</para>
+</listitem><listitem>
+<para>Intarsion</para>
+</listitem><listitem>
+<para>Add Overcuts</para>
+</listitem><listitem>
+<para>Add OvercutsB</para>
+</listitem><listitem>
+<para>Silhouette Offset</para>
+</listitem><listitem>
+<para>C-Remove Doubles</para>
+</listitem><listitem>
+<para>Get pocket surfaces</para>
+</listitem><listitem>
+<para>Create custom curves</para>
+</listitem></itemizedlist>
+</para>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam-Tools_1autotoc_md24">
+<title><title>View Tool Shelf</title></title>
+
+<para>If the Tool Shelf is not visible on the left of the 3D view then use the short cut <emphasis role="bold">T</emphasis> or use the mouse to left button select the small <emphasis role="bold">+</emphasis> near the top left border of the 3D view.</para>
+
+<para></para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam-Tools_1autotoc_md25">
+<title><title>View Blendercam Tools</title></title>
+
+<para></para>
+
+<para><orderedlist>
+<listitem>
+<para>The 3D view editor must be in object mode. In older version of blender, select the <emphasis role="bold">Blender CAM</emphasis> tab to view the <emphasis role="bold">Curve CAM Tools</emphasis> panel.</para>
+</listitem><listitem>
+<para>Select the expansion arrow to see the tool buttons available.</para>
+</listitem></orderedlist>
+</para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam-Tools_1autotoc_md26">
+<title><title>Curve Boolean</title></title>
+
+<para>  </para>
+
+<para>Perform a Boolean operation on two or more curves. A new curve is created. The Boolean operations that can be performed are:<itemizedlist>
+<listitem>
+<para>Union - The result is a curve that forms a perimeter around the union(merger) of all curves selected</para>
+</listitem><listitem>
+<para>Difference - subtract the first selected curve(s) from the last(active) selected curve.</para>
+</listitem><listitem>
+<para>Intersect - resulting curve is the curve portion common to all selected curves</para>
+</listitem></itemizedlist>
+</para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam-Tools_1autotoc_md27">
+<title><title>Intarsion</title></title>
+
+<para></para>
+
+<para>Makes a new curve that is cuttable from both the inside and outside. This is useful for <link xlink:href="https://en.wikipedia.org/wiki/Intarsia">intarsia</link>, inlays, and joints. All sharp edges are rounded over using the cutter diameter. Works on mesh, text, and curve objects.</para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam-Tools_1autotoc_md28">
+<title><title>Add Overcuts</title></title>
+
+<para></para>
+
+<para>Adds overcuts for slots/inserts and creates a new curve. Works on text and curve objects.</para>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam-Tools_1autotoc_md29">
+<title><title>Operator Options:</title></title>
+
+<para><itemizedlist>
+<listitem>
+<para><emphasis role="bold">diameter</emphasis> - tool diameter to use for the overcut</para>
+</listitem><listitem>
+<para><emphasis role="bold">threshold</emphasis> - the minimum angle that an overcut is applied.</para>
+</listitem><listitem>
+<para><emphasis role="bold">Outer polygons</emphasis> -</para>
+</listitem><listitem>
+<para><emphasis role="bold">Invert</emphasis> -</para>
+</listitem></itemizedlist>
+</para>
+</section>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam-Tools_1autotoc_md30">
+<title><title>Add OvercutsB</title></title>
+
+<para></para>
+
+<para>An enhanced version of Add Overcuts</para>
+
+<para>Add overcuts for slots/inserts/tabs and creates a new curve. Works on text and curve objects. Three types of overcuts can be used: T-bone, Dog-bone, and opposite edge.</para>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam-Tools_1autotoc_md31">
+<title><title>Operator Options:</title></title>
+
+<para><itemizedlist>
+<listitem>
+<para><emphasis role="bold">Tool Diameter</emphasis> - Diameter of the tool bit</para>
+</listitem><listitem>
+<para><emphasis role="bold">Style</emphasis>:<itemizedlist>
+<listitem>
+<para><emphasis>T-Bone</emphasis> - place overcuts so that a T shape is formed in a slot</para>
+</listitem><listitem>
+<para><emphasis>Dog-Bone/Corner Point</emphasis> - place overcuts so that a dog bone shape is formed in a slot</para>
+</listitem><listitem>
+<para><emphasis>Opposite Edge</emphasis> - when placing an overcut switch to the opposite edge from the last inside corner</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem>
+<para><emphasis role="bold">Max inside angle</emphasis> - if the angle of the corner is less than max inside angle then the corner is considered an inside corner and an overcut will be placed.</para>
+</listitem><listitem>
+<para><emphasis role="bold">Include outer curve</emphasis> - If there are curves within curves then include the most outer curve</para>
+</listitem><listitem>
+<para><emphasis role="bold">Invert</emphasis> - make inside cut an outside cut or vice versa</para>
+</listitem><listitem>
+<para><emphasis role="bold">other edge</emphasis> - move the overcut to the other edge</para>
+</listitem></itemizedlist>
+</para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam-Tools_1autotoc_md32">
+<title><title>Examples:</title></title>
+
+<para><anchor xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam-Tools_1autotoc_md33"/> <formalpara><title>T-Bone</title></formalpara>
+</para>
+
+<para></para>
+
+<para><anchor xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam-Tools_1autotoc_md34"/> <formalpara><title>T-Bone other edge</title></formalpara>
+</para>
+
+<para></para>
+
+<para><anchor xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam-Tools_1autotoc_md35"/> <formalpara><title>T-Bone other edge invert</title></formalpara>
+</para>
+
+<para></para>
+
+<para><anchor xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam-Tools_1autotoc_md36"/> <formalpara><title>T-Bone other edge</title></formalpara>
+</para>
+
+<para></para>
+</section>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam-Tools_1autotoc_md37">
+<title><title>Silhouette</title></title>
+
+<para>This operator finds and create the silhouette of objects(meshes, text, curves just get converted)</para>
+
+<para></para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam-Tools_1autotoc_md38">
+<title><title>Silhouette Offset</title></title>
+
+<para></para>
+
+<para></para>
+
+<para>This operator create offsets on a silhouette in a new curve.</para>
+
+<para>Operator Options:<itemizedlist>
+<listitem>
+<para><emphasis role="bold">offset</emphasis> - tool diameter to use for the offset</para>
+</listitem></itemizedlist>
+</para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam-Tools_1autotoc_md39">
+<title><title>C-Remove Doubles</title></title>
+
+<para>Curve remove doubles - warning, removes beziers! Does not create a new curve but modifies the original.</para>
+
+<para>This operator will convert the curve to a mesh, perform remove doubles on the mesh, and then convert it back to a curve. This can be used to fix curves that are imported into Blender from other applications i.e. stl, dxf, that may have overlapping control points in the curve which can be a problem when calculating an operation.</para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam-Tools_1autotoc_md40">
+<title><title>Get pocket surfaces</title></title>
+
+<para> </para>
+
+<para>This operator will detect pockets in a mesh and extract them as curves. The curves can then be used for pocket operations. Curves that are at the same z level will be in the same object. All generated curve objects will be placed into the same group.</para>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam-Tools_1autotoc_md41">
+<title><title>Operator Options:</title></title>
+
+<para><itemizedlist>
+<listitem>
+<para><emphasis role="bold">horizontal threshold</emphasis> - if 1.0 then perfectly flat surface, if &lt; 1.0 then allow surfaces not perfectly flat.</para>
+</listitem><listitem>
+<para><emphasis role="bold">z limit</emphasis> - flat surfaces that are below the z limit are considered a pocket.</para>
+</listitem></itemizedlist>
+</para>
+
+<para>The way the detection works is each face in the mesh is checked to see if it is horizontal and facing up by checking the face normal. There is an operator option called <emphasis role="bold">horizontal threshold</emphasis> that is used to determine if the face is horizontal. A value closer to 1.0 means that the face normal must be almost vertical ie the face must be almost perfectly flat. A value closer to 0.0 means that the face does not have to be perfectly horizontal ie part of a curved surface.</para>
+
+<para>Operator option <emphasis role="bold">z limit</emphasis> controls which horizontal surfaces are considered a pocket. If the horizontal surface z location is below the z limit then the surface is considered a pocket. Setting z limit to 0.0 (default setting) should work for most situations if mesh top is at z=0.0.</para>
+</section>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam-Tools_1autotoc_md42">
+<title><title>Create Curves Shapes</title></title>
+
+<para>This operators will create shapes directly from the panel.</para>
+
+<para></para>
+
+<para>*create sine</para>
+
+<para></para>
+
+<para>*create lissajous figure </para>
+
+<para>*create spirograph type figure </para>
+
+<para>*create custom curve  </para>
+</section>
+</section>

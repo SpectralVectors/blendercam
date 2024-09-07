@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1ui_1_1import__settings" kind="class" language="Python" prot="public">
+    <compoundname>cam::ui::import_settings</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PropertyGroup</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1ui_1_1import__settings_1aa43895fcf9c5b51da26fc44d5a887054" prot="public" static="yes" mutable="no">
+        <type>BoolProperty</type>
+        <definition>BoolProperty cam.ui.import_settings::split_layers</definition>
+        <argsstring></argsstring>
+        <name>split_layers</name>
+        <qualifiedname>cam.ui.import_settings.split_layers</qualifiedname>
+        <initializer>(
+        name=&quot;Split Layers&quot;,
+        description=&quot;Save every layer as single Objects in Collection&quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui.py" line="138" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui.py" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui_1_1import__settings_1a60fc4229ccfe16bb91aa00ed006cb351" prot="public" static="yes" mutable="no">
+        <type>BoolProperty</type>
+        <definition>BoolProperty cam.ui.import_settings::subdivide</definition>
+        <argsstring></argsstring>
+        <name>subdivide</name>
+        <qualifiedname>cam.ui.import_settings.subdivide</qualifiedname>
+        <initializer>(
+        name=&quot;Subdivide&quot;,
+        description=&quot;Only Subdivide gcode segments that are &quot;
+        &quot;bigger than &apos;Segment length&apos; &quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui.py" line="143" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui.py" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui_1_1import__settings_1a03d803547ed0e0eadfe554b7a1129558" prot="public" static="yes" mutable="no">
+        <type>EnumProperty</type>
+        <definition>EnumProperty cam.ui.import_settings::output</definition>
+        <argsstring></argsstring>
+        <name>output</name>
+        <qualifiedname>cam.ui.import_settings.output</qualifiedname>
+        <initializer>(
+        name=&quot;Output Type&quot;,
+        items=(
+            (&quot;mesh&quot;, &quot;Mesh&quot;, &quot;Make a mesh output&quot;),
+            (&quot;curve&quot;, &quot;Curve&quot;, &quot;Make curve output&quot;),
+        ),
+        default=&quot;curve&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui.py" line="149" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui.py" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui_1_1import__settings_1a5662408548302b9b5ea81f05cc8f07a9" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.ui.import_settings::max_segment_size</definition>
+        <argsstring></argsstring>
+        <name>max_segment_size</name>
+        <qualifiedname>cam.ui.import_settings.max_segment_size</qualifiedname>
+        <initializer>(
+        name=&quot;&quot;,
+        description=&quot;Only Segments bigger than this value get subdivided&quot;,
+        default=0.001,
+        min=0.0001,
+        max=1.0,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui.py" line="157" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui.py" bodystart="157" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PropertyGroup</label>
+      </node>
+      <node id="1">
+        <label>cam.ui.import_settings</label>
+        <link refid="classcam_1_1ui_1_1import__settings"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>BoolProperty</label>
+      </node>
+      <node id="4">
+        <label>EnumProperty</label>
+      </node>
+      <node id="5">
+        <label>FloatProperty</label>
+      </node>
+      <node id="2">
+        <label>PropertyGroup</label>
+      </node>
+      <node id="1">
+        <label>cam.ui.import_settings</label>
+        <link refid="classcam_1_1ui_1_1import__settings"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+split_layers</edgelabel>
+          <edgelabel>+subdivide</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+output</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+max_segment_size</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui.py" line="137" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui.py" bodystart="137" bodyend="165"/>
+    <listofallmembers>
+      <member refid="classcam_1_1ui_1_1import__settings_1a5662408548302b9b5ea81f05cc8f07a9" prot="public" virt="non-virtual"><scope>cam::ui::import_settings</scope><name>max_segment_size</name></member>
+      <member refid="classcam_1_1ui_1_1import__settings_1a03d803547ed0e0eadfe554b7a1129558" prot="public" virt="non-virtual"><scope>cam::ui::import_settings</scope><name>output</name></member>
+      <member refid="classcam_1_1ui_1_1import__settings_1aa43895fcf9c5b51da26fc44d5a887054" prot="public" virt="non-virtual"><scope>cam::ui::import_settings</scope><name>split_layers</name></member>
+      <member refid="classcam_1_1ui_1_1import__settings_1a60fc4229ccfe16bb91aa00ed006cb351" prot="public" virt="non-virtual"><scope>cam::ui::import_settings</scope><name>subdivide</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

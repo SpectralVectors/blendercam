@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Getting_01started" kind="page">
+    <compoundname>md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Getting_01started</compoundname>
+    <title>Getting started</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This is a step-by-step tutorial on generating a toolpath with Blender CAM. For detailed description of panel options go <ref refid="md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam-Panel-Descriptions" kindref="compound">here</ref>.</para>
+<sect2 id="md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Getting_01started_1autotoc_md43">
+<title>Change render engine</title><para>First of all, change render engine to CAM to use the blender cam tool.</para>
+<para><image type="html" name="images/cam_render.png" alt="Renderer selection" inline="yes"></image>
+</para>
+</sect2>
+<sect2 id="md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Getting_01started_1autotoc_md44">
+<title>Change units in Blender</title><para>Change units to metric or imperial in Scene properties. <image type="html" name="images/milim.png" alt="Renderer selection" inline="yes"></image>
+:</para>
+</sect2>
+<sect2 id="md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Getting_01started_1autotoc_md45">
+<title>Setup machine parameters</title><para>Setup machine parameters (postprocessor, maximum feed rate, work area, etc.) in &apos;CAM Machine&apos; options.</para>
+<para><image type="html" name="images/setup_machine.png" alt="Machine setup" inline="yes"></image>
+</para>
+</sect2>
+<sect2 id="md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Getting_01started_1autotoc_md46">
+<title>Add a new operation</title><para>Add new operation in the render properties. <image type="html" name="images/newop.png" alt="New operation" inline="yes"></image>
+</para>
+<para>Choose Parallel (or Outline Fill, Circles, Spiral, Block, Cross) in the Strategy dialog. Waterline option works best when OpenCAMLib is installed and other operations require curve data source. See how to generate curves from mesh model here.</para>
+<para><image type="html" name="images/selectOperation.png" alt="Select operation" inline="yes"></image>
+</para>
+<para>In Object dialog select object being source of geometry for toolpath generation.</para>
+</sect2>
+<sect2 id="md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Getting_01started_1autotoc_md47">
+<title>Configure Cam Material and position object</title><para>In CAM Material size and position, set radius around model option to reflect the amount of stock material to be machined.</para>
+<para><image type="html" name="images/beforePosition.png" alt="Before position" inline="yes"></image>
+</para>
+<para>Manually position object inside work area, or use &quot;Position object&quot; option to position it automatically.</para>
+<para><image type="html" name="images/positionObject.png" alt="Click position" inline="yes"></image>
+</para>
+<para><image type="html" name="images/afterPosition.png" alt="After position" inline="yes"></image>
+</para>
+<para>If the box representing material doesn&apos;t update, uncheck &quot;Estimate from model&quot; option and then check it again.</para>
+</sect2>
+<sect2 id="md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Getting_01started_1autotoc_md48">
+<title>Configuration of the active Operation</title><para>Set &quot;Distance between toolpaths&quot; to desired value.</para>
+<para>&quot;Distance along toolpaths&quot; option determines accuracy. Lower values result in more accurate toolpath, but make computation slower and increase amount of resulting G-code.</para>
+<para>Select &quot;Use exact mode&quot; - it improves accuracy. If you have OpenCAMLib installed, also select &quot;UseOpenCAMLib&quot; - it impoves accuracy and speeds up the computing time. OpenCAMLib also enables high quality algorithm from calculating waterline toolpaths.</para>
+<para>CAM Movement:</para>
+<para>Enter layer depth (in Step Down dialog), operation depth, start depth and optionally end depth (if &quot;Depth from object&quot; is disabled).</para>
+<para>CAM Feedrate:</para>
+<para>Set feedrate and spindle rpm. &quot;Plunge speed&quot; and &quot;Plunge angle&quot; allows slowing down feedrate when the cutter is moving down on steep areas.</para>
+<para>Cam Cutter:</para>
+<para>Set cutter tool number (used in G-code), type, number of flutes and diameter.</para>
+</sect2>
+<sect2 id="md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Getting_01started_1autotoc_md49">
+<title>Multiples operations in a chain</title><para>To join multiple operations into a single G-code file, use CAM chains dialog.</para>
+<para><image type="html" name="images/newChain.png" alt="New chain" inline="yes"></image>
+</para>
+</sect2>
+<sect2 id="md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Getting_01started_1autotoc_md50">
+<title>Calculate Path and Generate Gcode file</title><para>Click &quot;Calculate Path&quot; to generate toolpath. If &quot;Auto export&quot; option is selected, G-code file will also be created.</para>
+<para><image type="html" name="images/calculatePath.png" alt="Calculate path" inline="yes"></image>
+</para>
+<para><image type="html" name="images/calculatePath2.png" alt="Calculate path view" inline="yes"></image>
+</para>
+</sect2>
+<sect2 id="md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Getting_01started_1autotoc_md51">
+<title>Quick look of the final result</title><para>Next click &quot;Simulate operation&quot; to create model representing machined material.</para>
+<para><image type="html" name="images/simulateOp.png" alt="Simulate Operation" inline="yes"></image>
+ </para>
+</sect2>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/documentation/Getting started.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,631 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>blendercam: cam.nc.drag_knife.Creator Class Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">blendercam
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part --><!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('classcam_1_1nc_1_1drag__knife_1_1Creator.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="classcam_1_1nc_1_1drag__knife_1_1Creator-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">cam.nc.drag_knife.Creator Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Inheritance diagram for cam.nc.drag_knife.Creator:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1drag__knife_1_1Creator__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Collaboration diagram for cam.nc.drag_knife.Creator:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1drag__knife_1_1Creator__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a91d9a99a4ae9ff3454d78b6aa94ad3bb" id="r_a91d9a99a4ae9ff3454d78b6aa94ad3bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91d9a99a4ae9ff3454d78b6aa94ad3bb">__init__</a> (self, <a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a48c342d6f98dd1f0d4dd31892b830783">original</a>, <a class="el" href="#aefc0bc7a640dc33b3b1006dcc6520afd">drag_distance</a>)</td></tr>
+<tr class="separator:a91d9a99a4ae9ff3454d78b6aa94ad3bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5db2841a5c931c72702e9bb7752ea731" id="r_a5db2841a5c931c72702e9bb7752ea731"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5db2841a5c931c72702e9bb7752ea731">cut_path</a> (self)</td></tr>
+<tr class="separator:a5db2841a5c931c72702e9bb7752ea731"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eb0ca2c035bd29dbe35b4767d733c4c" id="r_a0eb0ca2c035bd29dbe35b4767d733c4c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0eb0ca2c035bd29dbe35b4767d733c4c">feed</a> (self, <a class="el" href="#a405ca2d3b37823caeb90e4feebb21a9c">x</a>=None, <a class="el" href="#a7ae150f9302faeb9b0632abea58432f5">y</a>=None, <a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#aa7ea397d8007b0c2f1193f2fcc173c88">z</a>=None, a=None, b=None, c=None)</td></tr>
+<tr class="separator:a0eb0ca2c035bd29dbe35b4767d733c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf27cef634bd0fd31db59b8be4fb6600" id="r_aaf27cef634bd0fd31db59b8be4fb6600"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf27cef634bd0fd31db59b8be4fb6600">arc</a> (self, <a class="el" href="#a405ca2d3b37823caeb90e4feebb21a9c">x</a>=None, <a class="el" href="#a7ae150f9302faeb9b0632abea58432f5">y</a>=None, <a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#aa7ea397d8007b0c2f1193f2fcc173c88">z</a>=None, i=None, j=None, k=None, r=None, ccw=True)</td></tr>
+<tr class="separator:aaf27cef634bd0fd31db59b8be4fb6600"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html">cam.nc.recreator.Redirector</a></td></tr>
+<tr class="memitem:a79cc974683588db3ef959189e7552c0d inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_a79cc974683588db3ef959189e7552c0d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a79cc974683588db3ef959189e7552c0d">write</a> (self, s)</td></tr>
+<tr class="memdesc:a79cc974683588db3ef959189e7552c0d inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="mdescLeft">&#160;</td><td class="mdescRight">Programs.  <br /></td></tr>
+<tr class="separator:a79cc974683588db3ef959189e7552c0d inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26ac73cc1712b8ebe697172fac126d0c inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_a26ac73cc1712b8ebe697172fac126d0c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a26ac73cc1712b8ebe697172fac126d0c">output_fixture</a> (self)</td></tr>
+<tr class="separator:a26ac73cc1712b8ebe697172fac126d0c inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4aabd2a0c5c24a0034dac0e884a9f6c inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_af4aabd2a0c5c24a0034dac0e884a9f6c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#af4aabd2a0c5c24a0034dac0e884a9f6c">increment_fixture</a> (self)</td></tr>
+<tr class="separator:af4aabd2a0c5c24a0034dac0e884a9f6c inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01973983f46b57c94613c110e612d445 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_a01973983f46b57c94613c110e612d445"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a01973983f46b57c94613c110e612d445">get_fixture</a> (self)</td></tr>
+<tr class="separator:a01973983f46b57c94613c110e612d445 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a878ffd14510673c8a0d5c5a86ece07f9 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_a878ffd14510673c8a0d5c5a86ece07f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a878ffd14510673c8a0d5c5a86ece07f9">set_fixture</a> (self, fixture)</td></tr>
+<tr class="separator:a878ffd14510673c8a0d5c5a86ece07f9 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a564620eb31917021f0a7e5674890594b inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_a564620eb31917021f0a7e5674890594b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a564620eb31917021f0a7e5674890594b">program_begin</a> (self, id, name='')</td></tr>
+<tr class="memdesc:a564620eb31917021f0a7e5674890594b inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="mdescLeft">&#160;</td><td class="mdescRight">Programs.  <br /></td></tr>
+<tr class="separator:a564620eb31917021f0a7e5674890594b inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4eb098a704c851967f9f6e30c048354 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_ac4eb098a704c851967f9f6e30c048354"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#ac4eb098a704c851967f9f6e30c048354">program_stop</a> (self, optional=False)</td></tr>
+<tr class="separator:ac4eb098a704c851967f9f6e30c048354 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26933c3149ce1e50aa7583df3cb84db2 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_a26933c3149ce1e50aa7583df3cb84db2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a26933c3149ce1e50aa7583df3cb84db2">program_end</a> (self)</td></tr>
+<tr class="separator:a26933c3149ce1e50aa7583df3cb84db2 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bd0c725ba24a846283ac3441a7aa650 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_a0bd0c725ba24a846283ac3441a7aa650"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a0bd0c725ba24a846283ac3441a7aa650">flush_nc</a> (self)</td></tr>
+<tr class="separator:a0bd0c725ba24a846283ac3441a7aa650 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94e6523c9d055e6c064c4d61ec4a15ed inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_a94e6523c9d055e6c064c4d61ec4a15ed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a94e6523c9d055e6c064c4d61ec4a15ed">sub_begin</a> (self, id, name=None)</td></tr>
+<tr class="memdesc:a94e6523c9d055e6c064c4d61ec4a15ed inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subprograms.  <br /></td></tr>
+<tr class="separator:a94e6523c9d055e6c064c4d61ec4a15ed inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d0f3ca149ddb205e8c6abcb1b12ecb1 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_a4d0f3ca149ddb205e8c6abcb1b12ecb1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a4d0f3ca149ddb205e8c6abcb1b12ecb1">sub_call</a> (self, id)</td></tr>
+<tr class="separator:a4d0f3ca149ddb205e8c6abcb1b12ecb1 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c020224175be10985e252d9feab8f4d inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_a9c020224175be10985e252d9feab8f4d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a9c020224175be10985e252d9feab8f4d">sub_end</a> (self)</td></tr>
+<tr class="separator:a9c020224175be10985e252d9feab8f4d inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b568f817dbc15a938912c12dc4771a4 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_a0b568f817dbc15a938912c12dc4771a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a0b568f817dbc15a938912c12dc4771a4">disable_output</a> (self)</td></tr>
+<tr class="separator:a0b568f817dbc15a938912c12dc4771a4 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5b4d632782772bfe16914f80318decd inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_ae5b4d632782772bfe16914f80318decd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#ae5b4d632782772bfe16914f80318decd">enable_output</a> (self)</td></tr>
+<tr class="separator:ae5b4d632782772bfe16914f80318decd inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac89af9940b239a0231eaf6d86be2c28 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_aac89af9940b239a0231eaf6d86be2c28"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#aac89af9940b239a0231eaf6d86be2c28">imperial</a> (self)</td></tr>
+<tr class="memdesc:aac89af9940b239a0231eaf6d86be2c28 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="mdescLeft">&#160;</td><td class="mdescRight">Settings.  <br /></td></tr>
+<tr class="separator:aac89af9940b239a0231eaf6d86be2c28 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee410c17347683460063abcb66be2b02 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_aee410c17347683460063abcb66be2b02"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#aee410c17347683460063abcb66be2b02">metric</a> (self)</td></tr>
+<tr class="separator:aee410c17347683460063abcb66be2b02 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e7ddfa7e4a42a7dd86b45941b77010d inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_a4e7ddfa7e4a42a7dd86b45941b77010d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a4e7ddfa7e4a42a7dd86b45941b77010d">absolute</a> (self)</td></tr>
+<tr class="separator:a4e7ddfa7e4a42a7dd86b45941b77010d inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7a39fe49913f723170f2e23c08797f1 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_af7a39fe49913f723170f2e23c08797f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#af7a39fe49913f723170f2e23c08797f1">incremental</a> (self)</td></tr>
+<tr class="separator:af7a39fe49913f723170f2e23c08797f1 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a654e77fc529e703bd2388dddc6e567c2 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_a654e77fc529e703bd2388dddc6e567c2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a654e77fc529e703bd2388dddc6e567c2">polar</a> (self, on=True)</td></tr>
+<tr class="separator:a654e77fc529e703bd2388dddc6e567c2 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b22e3642dd1519a7f0e72e1b02a108d inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_a9b22e3642dd1519a7f0e72e1b02a108d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a9b22e3642dd1519a7f0e72e1b02a108d">set_plane</a> (self, plane)</td></tr>
+<tr class="separator:a9b22e3642dd1519a7f0e72e1b02a108d inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeda7d10b72fa66ed4a0776ef6912fd12 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_aeda7d10b72fa66ed4a0776ef6912fd12"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#aeda7d10b72fa66ed4a0776ef6912fd12">set_temporary_origin</a> (self, <a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a6e9e90668470ba7f475f54c1fe2ed535">x</a>=None, <a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#abeb3e8facb39bd15835c435dcf60579b">y</a>=None, <a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#aa7ea397d8007b0c2f1193f2fcc173c88">z</a>=None, a=None, b=None, c=None)</td></tr>
+<tr class="separator:aeda7d10b72fa66ed4a0776ef6912fd12 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa024f5e008f3a07abf2af810e65fdcd2 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_aa024f5e008f3a07abf2af810e65fdcd2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#aa024f5e008f3a07abf2af810e65fdcd2">remove_temporary_origin</a> (self)</td></tr>
+<tr class="separator:aa024f5e008f3a07abf2af810e65fdcd2 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcbf2192525cad6520db6c456a997297 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_abcbf2192525cad6520db6c456a997297"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#abcbf2192525cad6520db6c456a997297">tool_change</a> (self, id)</td></tr>
+<tr class="memdesc:abcbf2192525cad6520db6c456a997297 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tools.  <br /></td></tr>
+<tr class="separator:abcbf2192525cad6520db6c456a997297 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c9838d6f4db71fadab107207f1a28b3 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_a2c9838d6f4db71fadab107207f1a28b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a2c9838d6f4db71fadab107207f1a28b3">tool_defn</a> (self, id, name='', params=None)</td></tr>
+<tr class="separator:a2c9838d6f4db71fadab107207f1a28b3 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f91e4c548bb938212f982646a8e3301 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_a7f91e4c548bb938212f982646a8e3301"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a7f91e4c548bb938212f982646a8e3301">offset_radius</a> (self, id, radius=None)</td></tr>
+<tr class="separator:a7f91e4c548bb938212f982646a8e3301 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37cba4aeea5d14990d07d94bb58b2622 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_a37cba4aeea5d14990d07d94bb58b2622"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a37cba4aeea5d14990d07d94bb58b2622">offset_length</a> (self, id, length=None)</td></tr>
+<tr class="separator:a37cba4aeea5d14990d07d94bb58b2622 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaadc783d8e3a83d8c98e7c164a08bca2 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_aaadc783d8e3a83d8c98e7c164a08bca2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#aaadc783d8e3a83d8c98e7c164a08bca2">datum_shift</a> (self, <a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a6e9e90668470ba7f475f54c1fe2ed535">x</a>=None, <a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#abeb3e8facb39bd15835c435dcf60579b">y</a>=None, <a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#aa7ea397d8007b0c2f1193f2fcc173c88">z</a>=None, a=None, b=None, c=None)</td></tr>
+<tr class="memdesc:aaadc783d8e3a83d8c98e7c164a08bca2 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="mdescLeft">&#160;</td><td class="mdescRight">Datums.  <br /></td></tr>
+<tr class="separator:aaadc783d8e3a83d8c98e7c164a08bca2 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19ef1dfea5ac20f2c8548d200e8b53ae inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_a19ef1dfea5ac20f2c8548d200e8b53ae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a19ef1dfea5ac20f2c8548d200e8b53ae">datum_set</a> (self, <a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a6e9e90668470ba7f475f54c1fe2ed535">x</a>=None, <a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#abeb3e8facb39bd15835c435dcf60579b">y</a>=None, <a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#aa7ea397d8007b0c2f1193f2fcc173c88">z</a>=None, a=None, b=None, c=None)</td></tr>
+<tr class="separator:a19ef1dfea5ac20f2c8548d200e8b53ae inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a937de250d3b12687d77600d0f7aab84f inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_a937de250d3b12687d77600d0f7aab84f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a937de250d3b12687d77600d0f7aab84f">workplane</a> (self, id)</td></tr>
+<tr class="separator:a937de250d3b12687d77600d0f7aab84f inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a401e1e9896e9bf0e099c2ad0b7021681 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_a401e1e9896e9bf0e099c2ad0b7021681"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a401e1e9896e9bf0e099c2ad0b7021681">feedrate</a> (self, f)</td></tr>
+<tr class="memdesc:a401e1e9896e9bf0e099c2ad0b7021681 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rates + Modes.  <br /></td></tr>
+<tr class="separator:a401e1e9896e9bf0e099c2ad0b7021681 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2534fefd841d1868d0a8b60a2a6e3402 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_a2534fefd841d1868d0a8b60a2a6e3402"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a2534fefd841d1868d0a8b60a2a6e3402">feedrate_hv</a> (self, fh, fv)</td></tr>
+<tr class="separator:a2534fefd841d1868d0a8b60a2a6e3402 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2720b2043abfe196dbc0a8a22571cf49 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_a2720b2043abfe196dbc0a8a22571cf49"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a2720b2043abfe196dbc0a8a22571cf49">spindle</a> (self, s, clockwise=True)</td></tr>
+<tr class="separator:a2720b2043abfe196dbc0a8a22571cf49 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51e70d5dd4ba568cf557af9b00747b3f inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_a51e70d5dd4ba568cf557af9b00747b3f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a51e70d5dd4ba568cf557af9b00747b3f">coolant</a> (self, mode=0)</td></tr>
+<tr class="separator:a51e70d5dd4ba568cf557af9b00747b3f inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c43d6fd7e3db0a490efb95127eb8994 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_a1c43d6fd7e3db0a490efb95127eb8994"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a1c43d6fd7e3db0a490efb95127eb8994">gearrange</a> (self, gear=0)</td></tr>
+<tr class="separator:a1c43d6fd7e3db0a490efb95127eb8994 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39c4e5620d31507b68f2742067f52c08 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_a39c4e5620d31507b68f2742067f52c08"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a39c4e5620d31507b68f2742067f52c08">rapid</a> (self, <a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a6e9e90668470ba7f475f54c1fe2ed535">x</a>=None, <a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#abeb3e8facb39bd15835c435dcf60579b">y</a>=None, <a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#aa7ea397d8007b0c2f1193f2fcc173c88">z</a>=None, a=None, b=None, c=None)</td></tr>
+<tr class="memdesc:a39c4e5620d31507b68f2742067f52c08 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves.  <br /></td></tr>
+<tr class="separator:a39c4e5620d31507b68f2742067f52c08 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41d6d316b606ac4c1594e1c259f929eb inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_a41d6d316b606ac4c1594e1c259f929eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a41d6d316b606ac4c1594e1c259f929eb">z2</a> (self, <a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#aa7ea397d8007b0c2f1193f2fcc173c88">z</a>)</td></tr>
+<tr class="separator:a41d6d316b606ac4c1594e1c259f929eb inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54adbf876611896e0d8d530766a18964 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_a54adbf876611896e0d8d530766a18964"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a54adbf876611896e0d8d530766a18964">arc_cw</a> (self, <a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a6e9e90668470ba7f475f54c1fe2ed535">x</a>=None, <a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#abeb3e8facb39bd15835c435dcf60579b">y</a>=None, <a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#aa7ea397d8007b0c2f1193f2fcc173c88">z</a>=None, i=None, j=None, k=None, r=None)</td></tr>
+<tr class="separator:a54adbf876611896e0d8d530766a18964 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50bb4fcb175a9c87e1cf45a79cd54ff1 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_a50bb4fcb175a9c87e1cf45a79cd54ff1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a50bb4fcb175a9c87e1cf45a79cd54ff1">arc_ccw</a> (self, <a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a6e9e90668470ba7f475f54c1fe2ed535">x</a>=None, <a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#abeb3e8facb39bd15835c435dcf60579b">y</a>=None, <a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#aa7ea397d8007b0c2f1193f2fcc173c88">z</a>=None, i=None, j=None, k=None, r=None)</td></tr>
+<tr class="separator:a50bb4fcb175a9c87e1cf45a79cd54ff1 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a766d66ea29b582f943c0f11a40ef9f73 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_a766d66ea29b582f943c0f11a40ef9f73"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a766d66ea29b582f943c0f11a40ef9f73">dwell</a> (self, t)</td></tr>
+<tr class="separator:a766d66ea29b582f943c0f11a40ef9f73 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6b4409715249b148414609d5b693f9d inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_ae6b4409715249b148414609d5b693f9d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#ae6b4409715249b148414609d5b693f9d">rapid_home</a> (self, <a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a6e9e90668470ba7f475f54c1fe2ed535">x</a>=None, <a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#abeb3e8facb39bd15835c435dcf60579b">y</a>=None, <a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#aa7ea397d8007b0c2f1193f2fcc173c88">z</a>=None, a=None, b=None, c=None)</td></tr>
+<tr class="separator:ae6b4409715249b148414609d5b693f9d inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a332a00cc5552a846b098b7df2f27f732 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_a332a00cc5552a846b098b7df2f27f732"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a332a00cc5552a846b098b7df2f27f732">rapid_unhome</a> (self)</td></tr>
+<tr class="separator:a332a00cc5552a846b098b7df2f27f732 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18dc60e7a063e2cdeaf81890990f73cb inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_a18dc60e7a063e2cdeaf81890990f73cb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a18dc60e7a063e2cdeaf81890990f73cb">use_CRC</a> (self)</td></tr>
+<tr class="memdesc:a18dc60e7a063e2cdeaf81890990f73cb inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cutter radius compensation.  <br /></td></tr>
+<tr class="separator:a18dc60e7a063e2cdeaf81890990f73cb inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6e0d45c6172f8c5d7771a79dad89adb inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_af6e0d45c6172f8c5d7771a79dad89adb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#af6e0d45c6172f8c5d7771a79dad89adb">start_CRC</a> (self, left=True, radius=0.0)</td></tr>
+<tr class="separator:af6e0d45c6172f8c5d7771a79dad89adb inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae29a05dcf721f3927501335ec1f5ad6c inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_ae29a05dcf721f3927501335ec1f5ad6c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#ae29a05dcf721f3927501335ec1f5ad6c">end_CRC</a> (self)</td></tr>
+<tr class="separator:ae29a05dcf721f3927501335ec1f5ad6c inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cdbbc06bb50639dee360d267dcc1ff3 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_a9cdbbc06bb50639dee360d267dcc1ff3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a9cdbbc06bb50639dee360d267dcc1ff3">pattern</a> (self)</td></tr>
+<tr class="memdesc:a9cdbbc06bb50639dee360d267dcc1ff3 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cycles.  <br /></td></tr>
+<tr class="separator:a9cdbbc06bb50639dee360d267dcc1ff3 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2071b670fe56ce33cb28b83a5ccd1036 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_a2071b670fe56ce33cb28b83a5ccd1036"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a2071b670fe56ce33cb28b83a5ccd1036">pattern_uses_subroutine</a> (self)</td></tr>
+<tr class="separator:a2071b670fe56ce33cb28b83a5ccd1036 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4535fda7ec0d3d5de7c676a8288c5fa inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_ae4535fda7ec0d3d5de7c676a8288c5fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#ae4535fda7ec0d3d5de7c676a8288c5fa">pocket</a> (self)</td></tr>
+<tr class="separator:ae4535fda7ec0d3d5de7c676a8288c5fa inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d59db319fe917d938fccbf7ce07385a inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_a5d59db319fe917d938fccbf7ce07385a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a5d59db319fe917d938fccbf7ce07385a">profile</a> (self)</td></tr>
+<tr class="separator:a5d59db319fe917d938fccbf7ce07385a inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af75f22d0aedb9c264ea3f3b06e0b5858 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_af75f22d0aedb9c264ea3f3b06e0b5858"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#af75f22d0aedb9c264ea3f3b06e0b5858">circular_pocket</a> (self, <a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a6e9e90668470ba7f475f54c1fe2ed535">x</a>=None, <a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#abeb3e8facb39bd15835c435dcf60579b">y</a>=None, ToolDiameter=None, HoleDiameter=None, ClearanceHeight=None, StartHeight=None, MaterialTop=None, FeedRate=None, SpindleRPM=None, HoleDepth=None, DepthOfCut=None, StepOver=None)</td></tr>
+<tr class="separator:af75f22d0aedb9c264ea3f3b06e0b5858 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe18e24a91dccffa11a58d219d139fdc inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_abe18e24a91dccffa11a58d219d139fdc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#abe18e24a91dccffa11a58d219d139fdc">drill</a> (self, <a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a6e9e90668470ba7f475f54c1fe2ed535">x</a>=None, <a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#abeb3e8facb39bd15835c435dcf60579b">y</a>=None, <a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a766d66ea29b582f943c0f11a40ef9f73">dwell</a>=None, depthparams=None, retract_mode=None, spindle_mode=None, internal_coolant_on=None, rapid_to_clearance=None)</td></tr>
+<tr class="separator:abe18e24a91dccffa11a58d219d139fdc inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45c10e625fb80347515fcbcb8b99f6f2 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_a45c10e625fb80347515fcbcb8b99f6f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a45c10e625fb80347515fcbcb8b99f6f2">tap</a> (self, <a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a6e9e90668470ba7f475f54c1fe2ed535">x</a>=None, <a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#abeb3e8facb39bd15835c435dcf60579b">y</a>=None, <a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#aa7ea397d8007b0c2f1193f2fcc173c88">z</a>=None, zretract=None, depth=None, standoff=None, dwell_bottom=None, pitch=None, stoppos=None, spin_in=None, spin_out=None, tap_mode=None, direction=None)</td></tr>
+<tr class="separator:a45c10e625fb80347515fcbcb8b99f6f2 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6eac2c5e34a9ff6fc5755a9dbbdda2a1 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_a6eac2c5e34a9ff6fc5755a9dbbdda2a1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a6eac2c5e34a9ff6fc5755a9dbbdda2a1">bore</a> (self, <a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a6e9e90668470ba7f475f54c1fe2ed535">x</a>=None, <a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#abeb3e8facb39bd15835c435dcf60579b">y</a>=None, <a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#aa7ea397d8007b0c2f1193f2fcc173c88">z</a>=None, zretract=None, depth=None, standoff=None, dwell_bottom=None, feed_in=None, feed_out=None, stoppos=None, shift_back=None, shift_right=None, backbore=False, stop=False)</td></tr>
+<tr class="separator:a6eac2c5e34a9ff6fc5755a9dbbdda2a1 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebd5b662ba9e1860536b96166fbc666c inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_aebd5b662ba9e1860536b96166fbc666c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#aebd5b662ba9e1860536b96166fbc666c">end_canned_cycle</a> (self)</td></tr>
+<tr class="separator:aebd5b662ba9e1860536b96166fbc666c inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9185d27e4b7b086f9254f1eeb44ba0c3 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_a9185d27e4b7b086f9254f1eeb44ba0c3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a9185d27e4b7b086f9254f1eeb44ba0c3">comment</a> (self, text)</td></tr>
+<tr class="memdesc:a9185d27e4b7b086f9254f1eeb44ba0c3 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="mdescLeft">&#160;</td><td class="mdescRight">Misc.  <br /></td></tr>
+<tr class="separator:a9185d27e4b7b086f9254f1eeb44ba0c3 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21f70f584c348c2cc14d1c5c4fd10f46 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_a21f70f584c348c2cc14d1c5c4fd10f46"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a21f70f584c348c2cc14d1c5c4fd10f46">variable</a> (self, id)</td></tr>
+<tr class="separator:a21f70f584c348c2cc14d1c5c4fd10f46 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8b6badc603710c4bfcf0a5c99e84fb9 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_af8b6badc603710c4bfcf0a5c99e84fb9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#af8b6badc603710c4bfcf0a5c99e84fb9">variable_set</a> (self, id, value)</td></tr>
+<tr class="separator:af8b6badc603710c4bfcf0a5c99e84fb9 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56b997b83505309d54f6537916b76bf4 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_a56b997b83505309d54f6537916b76bf4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a56b997b83505309d54f6537916b76bf4">set_ocl_cutter</a> (self, cutter)</td></tr>
+<tr class="separator:a56b997b83505309d54f6537916b76bf4 inherit pub_methods_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classcam_1_1nc_1_1nc_1_1Creator')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html">cam.nc.nc.Creator</a></td></tr>
+<tr class="memitem:ab3651c24840aa9b2a7a1bc828263eac9 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_ab3651c24840aa9b2a7a1bc828263eac9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#ab3651c24840aa9b2a7a1bc828263eac9">file_open</a> (self, name)</td></tr>
+<tr class="memdesc:ab3651c24840aa9b2a7a1bc828263eac9 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internals.  <br /></td></tr>
+<tr class="separator:ab3651c24840aa9b2a7a1bc828263eac9 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bf39bc81f3b3714060d74f1339ae06c inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a7bf39bc81f3b3714060d74f1339ae06c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a7bf39bc81f3b3714060d74f1339ae06c">file_close</a> (self)</td></tr>
+<tr class="separator:a7bf39bc81f3b3714060d74f1339ae06c inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b9b5f41f66c0a89ae69a7f21776025d inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a6b9b5f41f66c0a89ae69a7f21776025d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a6b9b5f41f66c0a89ae69a7f21776025d">writem</a> (self, a)</td></tr>
+<tr class="separator:a6b9b5f41f66c0a89ae69a7f21776025d inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4f10ffcf1ffb003aea0a8a008e65cd4 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_aa4f10ffcf1ffb003aea0a8a008e65cd4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#aa4f10ffcf1ffb003aea0a8a008e65cd4">add_stock</a> (self, type_name, params)</td></tr>
+<tr class="separator:aa4f10ffcf1ffb003aea0a8a008e65cd4 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb1d0f892dfa22f1fa591e0f32132ddd inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_abb1d0f892dfa22f1fa591e0f32132ddd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#abb1d0f892dfa22f1fa591e0f32132ddd">current_tool</a> (self)</td></tr>
+<tr class="separator:abb1d0f892dfa22f1fa591e0f32132ddd inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25dc579a777162a8825f4a80cdb49dd7 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a25dc579a777162a8825f4a80cdb49dd7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a25dc579a777162a8825f4a80cdb49dd7">clearanceplane</a> (self, z=None)</td></tr>
+<tr class="separator:a25dc579a777162a8825f4a80cdb49dd7 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa444813a0c811ccdf5c131ef200f61ad inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_aa444813a0c811ccdf5c131ef200f61ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#aa444813a0c811ccdf5c131ef200f61ad">matrix</a> (self, a1=None, b1=None, c1=None, a2=None, b2=None, c2=None, a3=None, b3=None, c3=None)</td></tr>
+<tr class="memdesc:aa444813a0c811ccdf5c131ef200f61ad inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="mdescLeft">&#160;</td><td class="mdescRight">APT360 like Transformation Definitions These definitions were created while looking at Irvin Kraal's book on APT.  <br /></td></tr>
+<tr class="separator:aa444813a0c811ccdf5c131ef200f61ad inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2916aeb745eb7bab7335e02638045f6 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_aa2916aeb745eb7bab7335e02638045f6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#aa2916aeb745eb7bab7335e02638045f6">translate</a> (self, x=None, y=None, z=None)</td></tr>
+<tr class="separator:aa2916aeb745eb7bab7335e02638045f6 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb91710cf1f26d4cf07f9da51e7798a5 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_adb91710cf1f26d4cf07f9da51e7798a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#adb91710cf1f26d4cf07f9da51e7798a5">rotate</a> (self, xyrot=None, yzrot=None, zxrot=None, angle=None)</td></tr>
+<tr class="separator:adb91710cf1f26d4cf07f9da51e7798a5 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7277c1e666c6dda2b8a997f3518f3f3e inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a7277c1e666c6dda2b8a997f3518f3f3e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a7277c1e666c6dda2b8a997f3518f3f3e">scale</a> (self, k=None)</td></tr>
+<tr class="separator:a7277c1e666c6dda2b8a997f3518f3f3e inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a016998404be15eef6dc192118c572e4a inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a016998404be15eef6dc192118c572e4a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a016998404be15eef6dc192118c572e4a">matrix_product</a> (self, matrix1=None, matrix2=None)</td></tr>
+<tr class="separator:a016998404be15eef6dc192118c572e4a inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a183c1585f1851d4573dadc6645f3b473 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a183c1585f1851d4573dadc6645f3b473"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a183c1585f1851d4573dadc6645f3b473">mirror_plane</a> (self, plane1=None, plane2=None, plane3=None)</td></tr>
+<tr class="separator:a183c1585f1851d4573dadc6645f3b473 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa777fc06dd6e476f08060e7cf4f88068 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_aa777fc06dd6e476f08060e7cf4f88068"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#aa777fc06dd6e476f08060e7cf4f88068">mirror_line</a> (self, line=None)</td></tr>
+<tr class="separator:aa777fc06dd6e476f08060e7cf4f88068 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adba071f67fa119dc47a3cbdbe5324cc4 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_adba071f67fa119dc47a3cbdbe5324cc4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#adba071f67fa119dc47a3cbdbe5324cc4">set_machine_coordinates</a> (self)</td></tr>
+<tr class="separator:adba071f67fa119dc47a3cbdbe5324cc4 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf1d934a3cd91810b1148e119887500c inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_adf1d934a3cd91810b1148e119887500c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#adf1d934a3cd91810b1148e119887500c">insert</a> (self, text)</td></tr>
+<tr class="separator:adf1d934a3cd91810b1148e119887500c inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2742a3c6e584e90c23d4abab5e44dcc inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_af2742a3c6e584e90c23d4abab5e44dcc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#af2742a3c6e584e90c23d4abab5e44dcc">block_delete</a> (self, on=False)</td></tr>
+<tr class="separator:af2742a3c6e584e90c23d4abab5e44dcc inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5943f76b586cd2d530dc0d305ef457bd inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a5943f76b586cd2d530dc0d305ef457bd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a5943f76b586cd2d530dc0d305ef457bd">probe_linear_centre_outside</a> (self, x1=None, y1=None, depth=None, x2=None, y2=None)</td></tr>
+<tr class="separator:a5943f76b586cd2d530dc0d305ef457bd inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2982bddb09ae7c6469a7b5e616566ab inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_ab2982bddb09ae7c6469a7b5e616566ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#ab2982bddb09ae7c6469a7b5e616566ab">probe_single_point</a> (self, point_along_edge_x=None, point_along_edge_y=None, depth=None, retracted_point_x=None, retracted_point_y=None, destination_point_x=None, destination_point_y=None, intersection_variable_x=None, intersection_variable_y=None, probe_offset_x_component=None, probe_offset_y_component=None)</td></tr>
+<tr class="separator:ab2982bddb09ae7c6469a7b5e616566ab inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a950f0b9dd784e5a706fb16bd4e356607 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a950f0b9dd784e5a706fb16bd4e356607"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a950f0b9dd784e5a706fb16bd4e356607">probe_downward_point</a> (self, x=None, y=None, depth=None, intersection_variable_z=None)</td></tr>
+<tr class="separator:a950f0b9dd784e5a706fb16bd4e356607 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ff98c29e67d4bb1e4d428e7a19ae0c9 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a7ff98c29e67d4bb1e4d428e7a19ae0c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a7ff98c29e67d4bb1e4d428e7a19ae0c9">report_probe_results</a> (self, x1=None, y1=None, z1=None, x2=None, y2=None, z2=None, x3=None, y3=None, z3=None, x4=None, y4=None, z4=None, x5=None, y5=None, z5=None, x6=None, y6=None, z6=None, xml_file_name=None)</td></tr>
+<tr class="separator:a7ff98c29e67d4bb1e4d428e7a19ae0c9 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae826db09c1b7c0fe1099f66f09f5758a inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_ae826db09c1b7c0fe1099f66f09f5758a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#ae826db09c1b7c0fe1099f66f09f5758a">open_log_file</a> (self, xml_file_name=None)</td></tr>
+<tr class="separator:ae826db09c1b7c0fe1099f66f09f5758a inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17e6de5013fe131ff946bd3e86be52dc inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a17e6de5013fe131ff946bd3e86be52dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a17e6de5013fe131ff946bd3e86be52dc">log_coordinate</a> (self, x=None, y=None, z=None)</td></tr>
+<tr class="separator:a17e6de5013fe131ff946bd3e86be52dc inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a41b57e7fbc95e765b4107d61f2b0fb inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a8a41b57e7fbc95e765b4107d61f2b0fb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a8a41b57e7fbc95e765b4107d61f2b0fb">log_message</a> (self, message=None)</td></tr>
+<tr class="separator:a8a41b57e7fbc95e765b4107d61f2b0fb inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae221051f5d050fe72024893d869c9e95 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_ae221051f5d050fe72024893d869c9e95"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#ae221051f5d050fe72024893d869c9e95">close_log_file</a> (self)</td></tr>
+<tr class="separator:ae221051f5d050fe72024893d869c9e95 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af58b38bf65ddba3bcef0cae39aac4a09 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_af58b38bf65ddba3bcef0cae39aac4a09"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#af58b38bf65ddba3bcef0cae39aac4a09">rapid_to_midpoint</a> (self, x1=None, y1=None, z1=None, x2=None, y2=None, z2=None)</td></tr>
+<tr class="separator:af58b38bf65ddba3bcef0cae39aac4a09 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab141de97e87759d48b8227e5738d056c inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_ab141de97e87759d48b8227e5738d056c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#ab141de97e87759d48b8227e5738d056c">rapid_to_intersection</a> (self, x1, y1, x2, y2, x3, y3, x4, y4, intersection_x, intersection_y, ua_numerator, ua_denominator, ua, ub_numerator, ub)</td></tr>
+<tr class="separator:ab141de97e87759d48b8227e5738d056c inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2f4b7454862bacf84d24d45d1702d1c inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_af2f4b7454862bacf84d24d45d1702d1c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#af2f4b7454862bacf84d24d45d1702d1c">rapid_to_rotated_coordinate</a> (self, x1, y1, x2, y2, ref_x, ref_y, x_current, y_current, x_final, y_final)</td></tr>
+<tr class="separator:af2f4b7454862bacf84d24d45d1702d1c inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36ddaf371b5dcf5cc53a8c6ed6a4e926 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a36ddaf371b5dcf5cc53a8c6ed6a4e926"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a36ddaf371b5dcf5cc53a8c6ed6a4e926">set_path_control_mode</a> (self, mode, motion_blending_tolerance, naive_cam_tolerance)</td></tr>
+<tr class="separator:a36ddaf371b5dcf5cc53a8c6ed6a4e926 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec98966fe45ff7d2973002311f38b841 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_aec98966fe45ff7d2973002311f38b841"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#aec98966fe45ff7d2973002311f38b841">wipe</a> (self)</td></tr>
+<tr class="memdesc:aec98966fe45ff7d2973002311f38b841 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="mdescLeft">&#160;</td><td class="mdescRight">NC code creator for additive machines like RepRap.  <br /></td></tr>
+<tr class="separator:aec98966fe45ff7d2973002311f38b841 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a227b7ab87099b672da953a0aad13eff6 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a227b7ab87099b672da953a0aad13eff6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a227b7ab87099b672da953a0aad13eff6">extruder_on</a> (self)</td></tr>
+<tr class="separator:a227b7ab87099b672da953a0aad13eff6 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1acc377f3f5c966fde33e8a22ae49dd2 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a1acc377f3f5c966fde33e8a22ae49dd2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a1acc377f3f5c966fde33e8a22ae49dd2">extruder_off</a> (self)</td></tr>
+<tr class="separator:a1acc377f3f5c966fde33e8a22ae49dd2 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55cd49b26a3b252e7c6f24fc6bd4fd25 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a55cd49b26a3b252e7c6f24fc6bd4fd25"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a55cd49b26a3b252e7c6f24fc6bd4fd25">set_extruder_flowrate</a> (self, flowrate)</td></tr>
+<tr class="separator:a55cd49b26a3b252e7c6f24fc6bd4fd25 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0911d697ca8205da25a327e638fd3620 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a0911d697ca8205da25a327e638fd3620"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a0911d697ca8205da25a327e638fd3620">extruder_temp</a> (self, temp)</td></tr>
+<tr class="separator:a0911d697ca8205da25a327e638fd3620 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f54ed36706db67ca412a8ff341526a3 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a2f54ed36706db67ca412a8ff341526a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a2f54ed36706db67ca412a8ff341526a3">fan_on</a> (self)</td></tr>
+<tr class="separator:a2f54ed36706db67ca412a8ff341526a3 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b9d618bf11b2c17a1bc5f69944bd3b7 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a5b9d618bf11b2c17a1bc5f69944bd3b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a5b9d618bf11b2c17a1bc5f69944bd3b7">fan_off</a> (self)</td></tr>
+<tr class="separator:a5b9d618bf11b2c17a1bc5f69944bd3b7 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52fa4c4b50e5f53df50ebee0319e9245 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a52fa4c4b50e5f53df50ebee0319e9245"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a52fa4c4b50e5f53df50ebee0319e9245">build_bed_temp</a> (self, temp)</td></tr>
+<tr class="separator:a52fa4c4b50e5f53df50ebee0319e9245 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9f33126ca1fff2b36e6ca3f4ac81cef inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_ab9f33126ca1fff2b36e6ca3f4ac81cef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#ab9f33126ca1fff2b36e6ca3f4ac81cef">chamber_temp</a> (self, temp)</td></tr>
+<tr class="separator:ab9f33126ca1fff2b36e6ca3f4ac81cef inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93388ba17e68b836b4eee5d907b7fb41 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a93388ba17e68b836b4eee5d907b7fb41"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a93388ba17e68b836b4eee5d907b7fb41">begin_ncblock</a> (self)</td></tr>
+<tr class="separator:a93388ba17e68b836b4eee5d907b7fb41 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a88ca7c016d69f6c5f8dd98f326868a inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a2a88ca7c016d69f6c5f8dd98f326868a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a2a88ca7c016d69f6c5f8dd98f326868a">end_ncblock</a> (self)</td></tr>
+<tr class="separator:a2a88ca7c016d69f6c5f8dd98f326868a inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7795ded7273e69a74d36614404fef0e inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_ab7795ded7273e69a74d36614404fef0e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#ab7795ded7273e69a74d36614404fef0e">add_text</a> (self, s, col, cdata)</td></tr>
+<tr class="separator:ab7795ded7273e69a74d36614404fef0e inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:aefc0bc7a640dc33b3b1006dcc6520afd" id="r_aefc0bc7a640dc33b3b1006dcc6520afd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aefc0bc7a640dc33b3b1006dcc6520afd">drag_distance</a></td></tr>
+<tr class="separator:aefc0bc7a640dc33b3b1006dcc6520afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa514651d2d60dcdb02c9cc79f143deab" id="r_aa514651d2d60dcdb02c9cc79f143deab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa514651d2d60dcdb02c9cc79f143deab">path</a></td></tr>
+<tr class="separator:aa514651d2d60dcdb02c9cc79f143deab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a405ca2d3b37823caeb90e4feebb21a9c" id="r_a405ca2d3b37823caeb90e4feebb21a9c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a405ca2d3b37823caeb90e4feebb21a9c">x</a></td></tr>
+<tr class="separator:a405ca2d3b37823caeb90e4feebb21a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ae150f9302faeb9b0632abea58432f5" id="r_a7ae150f9302faeb9b0632abea58432f5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ae150f9302faeb9b0632abea58432f5">y</a></td></tr>
+<tr class="separator:a7ae150f9302faeb9b0632abea58432f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classcam_1_1nc_1_1recreator_1_1Redirector"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_classcam_1_1nc_1_1recreator_1_1Redirector')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html">cam.nc.recreator.Redirector</a></td></tr>
+<tr class="memitem:a48c342d6f98dd1f0d4dd31892b830783 inherit pub_attribs_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_a48c342d6f98dd1f0d4dd31892b830783"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a48c342d6f98dd1f0d4dd31892b830783">original</a></td></tr>
+<tr class="separator:a48c342d6f98dd1f0d4dd31892b830783 inherit pub_attribs_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e9e90668470ba7f475f54c1fe2ed535 inherit pub_attribs_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_a6e9e90668470ba7f475f54c1fe2ed535"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a6e9e90668470ba7f475f54c1fe2ed535">x</a></td></tr>
+<tr class="separator:a6e9e90668470ba7f475f54c1fe2ed535 inherit pub_attribs_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abeb3e8facb39bd15835c435dcf60579b inherit pub_attribs_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_abeb3e8facb39bd15835c435dcf60579b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#abeb3e8facb39bd15835c435dcf60579b">y</a></td></tr>
+<tr class="separator:abeb3e8facb39bd15835c435dcf60579b inherit pub_attribs_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7ea397d8007b0c2f1193f2fcc173c88 inherit pub_attribs_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_aa7ea397d8007b0c2f1193f2fcc173c88"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#aa7ea397d8007b0c2f1193f2fcc173c88">z</a></td></tr>
+<tr class="separator:aa7ea397d8007b0c2f1193f2fcc173c88 inherit pub_attribs_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0954f5ccfcad49ca4ea88dd9b1403911 inherit pub_attribs_classcam_1_1nc_1_1recreator_1_1Redirector" id="r_a0954f5ccfcad49ca4ea88dd9b1403911"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a0954f5ccfcad49ca4ea88dd9b1403911">imperial</a></td></tr>
+<tr class="separator:a0954f5ccfcad49ca4ea88dd9b1403911 inherit pub_attribs_classcam_1_1nc_1_1recreator_1_1Redirector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classcam_1_1nc_1_1nc_1_1Creator"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_classcam_1_1nc_1_1nc_1_1Creator')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html">cam.nc.nc.Creator</a></td></tr>
+<tr class="memitem:a7b9f520b607a80af987b068cbd1d1d31 inherit pub_attribs_classcam_1_1nc_1_1nc_1_1Creator" id="r_a7b9f520b607a80af987b068cbd1d1d31"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a7b9f520b607a80af987b068cbd1d1d31">file</a></td></tr>
+<tr class="separator:a7b9f520b607a80af987b068cbd1d1d31 inherit pub_attribs_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a4389cab170edcaa81bf475fa97d463 inherit pub_attribs_classcam_1_1nc_1_1nc_1_1Creator" id="r_a6a4389cab170edcaa81bf475fa97d463"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a6a4389cab170edcaa81bf475fa97d463">filename</a></td></tr>
+<tr class="separator:a6a4389cab170edcaa81bf475fa97d463 inherit pub_attribs_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a91d9a99a4ae9ff3454d78b6aa94ad3bb" name="a91d9a99a4ae9ff3454d78b6aa94ad3bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91d9a99a4ae9ff3454d78b6aa94ad3bb">&#9670;&#160;</a></span>__init__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.drag_knife.Creator.__init__ </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>original</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>drag_distance</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#ae0e77e971a6de49acb93c14b78d04606">cam.nc.recreator.Redirector</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aaf27cef634bd0fd31db59b8be4fb6600" name="aaf27cef634bd0fd31db59b8be4fb6600"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf27cef634bd0fd31db59b8be4fb6600">&#9670;&#160;</a></span>arc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.drag_knife.Creator.arc </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>y</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>z</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>i</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>j</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>k</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>r</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>ccw</em><span class="paramdefsep"> = </span><span class="paramdefval">True</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#ac6b13c50b495805d701a065672fef1b3">cam.nc.recreator.Redirector</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1drag__knife_1_1Creator_aaf27cef634bd0fd31db59b8be4fb6600_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a5db2841a5c931c72702e9bb7752ea731" name="a5db2841a5c931c72702e9bb7752ea731"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5db2841a5c931c72702e9bb7752ea731">&#9670;&#160;</a></span>cut_path()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.drag_knife.Creator.cut_path </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#ace3039c310a7ee83dafe4fee4382f511">cam.nc.recreator.Redirector</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1drag__knife_1_1Creator_a5db2841a5c931c72702e9bb7752ea731_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a0eb0ca2c035bd29dbe35b4767d733c4c" name="a0eb0ca2c035bd29dbe35b4767d733c4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0eb0ca2c035bd29dbe35b4767d733c4c">&#9670;&#160;</a></span>feed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.drag_knife.Creator.feed </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>y</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>z</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>a</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>b</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>c</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Feed move</pre> 
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1recreator_1_1Redirector.html#a18a127cd30af49f796b825ded2771cf0">cam.nc.recreator.Redirector</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1drag__knife_1_1Creator_a0eb0ca2c035bd29dbe35b4767d733c4c_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aefc0bc7a640dc33b3b1006dcc6520afd" name="aefc0bc7a640dc33b3b1006dcc6520afd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefc0bc7a640dc33b3b1006dcc6520afd">&#9670;&#160;</a></span>drag_distance</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.drag_knife.Creator.drag_distance</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa514651d2d60dcdb02c9cc79f143deab" name="aa514651d2d60dcdb02c9cc79f143deab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa514651d2d60dcdb02c9cc79f143deab">&#9670;&#160;</a></span>path</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.drag_knife.Creator.path</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a405ca2d3b37823caeb90e4feebb21a9c" name="a405ca2d3b37823caeb90e4feebb21a9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a405ca2d3b37823caeb90e4feebb21a9c">&#9670;&#160;</a></span>x</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.drag_knife.Creator.x</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7ae150f9302faeb9b0632abea58432f5" name="a7ae150f9302faeb9b0632abea58432f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ae150f9302faeb9b0632abea58432f5">&#9670;&#160;</a></span>y</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.drag_knife.Creator.y</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/<a class="el" href="drag__knife_8py.html">drag_knife.py</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.10.0-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacecam.html">cam</a></li><li class="navelem"><a class="el" href="namespacecam_1_1nc.html">nc</a></li><li class="navelem"><a class="el" href="namespacecam_1_1nc_1_1drag__knife.html">drag_knife</a></li><li class="navelem"><a class="el" href="classcam_1_1nc_1_1drag__knife_1_1Creator.html">Creator</a></li>
+    <li class="footer">Generated by <a href="https://penify.dev/"><img class="footer" src="https://www.penify.dev/_next/static/media/snorkell-dark-logo.9fa414f5.svg" width="104" height="31" alt="doxygen"/></a> </li>
+  </ul>
+</div>
+</body>
+</html>

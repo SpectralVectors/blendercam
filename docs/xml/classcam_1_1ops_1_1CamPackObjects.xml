@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1ops_1_1CamPackObjects" kind="class" language="Python" prot="public">
+    <compoundname>cam::ops::CamPackObjects</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Operator</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1ops_1_1CamPackObjects_1a96bd47ec5cf16f72b1733dd9464b88c7" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.ops.CamPackObjects::bl_idname</definition>
+        <argsstring></argsstring>
+        <name>bl_idname</name>
+        <qualifiedname>cam.ops.CamPackObjects.bl_idname</qualifiedname>
+        <initializer>=  &quot;object.cam_pack_objects&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="267" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ops_1_1CamPackObjects_1a3fb467d977e0886f227c97b0648d2ceb" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.ops.CamPackObjects::bl_label</definition>
+        <argsstring></argsstring>
+        <name>bl_label</name>
+        <qualifiedname>cam.ops.CamPackObjects.bl_label</qualifiedname>
+        <initializer>=  &quot;Pack Curves on Sheet&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="268" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="268" bodyend="-1"/>
+        <referencedby refid="classcam_1_1preset__managers_1_1CAM__MACHINE__MT__presets_1af95f7812d2952b26a26809ab923dac09" compoundref="preset__managers_8py" startline="28" endline="38">cam.preset_managers.CAM_MACHINE_MT_presets.post_cb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ops_1_1CamPackObjects_1aca8b3c158de559a15dd84b90116160c9" prot="public" static="yes" mutable="no">
+        <type>dict</type>
+        <definition>dict cam.ops.CamPackObjects::bl_options</definition>
+        <argsstring></argsstring>
+        <name>bl_options</name>
+        <qualifiedname>cam.ops.CamPackObjects.bl_options</qualifiedname>
+        <initializer>=  {&apos;REGISTER&apos;, &apos;UNDO&apos;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="269" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="269" bodyend="-1"/>
+        <referencedby refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a9628cbca8e69ec75b2337171a02bf428" compoundref="async__op_8py" startline="32" endline="59">cam.async_op.AsyncOperatorMixin.modal</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcam_1_1ops_1_1CamPackObjects_1a169073dc342f9e6a5d1a222e67c3f8fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.ops.CamPackObjects.execute</definition>
+        <argsstring>(self, context)</argsstring>
+        <name>execute</name>
+        <qualifiedname>cam.ops.CamPackObjects.execute</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="271" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="271" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1ops_1_1CamPackObjects_1ab4d20578b55ce38cc38fd58334a627da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.ops.CamPackObjects.draw</definition>
+        <argsstring>(self, context)</argsstring>
+        <name>draw</name>
+        <qualifiedname>cam.ops.CamPackObjects.draw</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="278" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="278" bodyend="281"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Calculate All CAM Paths</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.ops.CamPackObjects</label>
+        <link refid="classcam_1_1ops_1_1CamPackObjects"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.ops.CamPackObjects</label>
+        <link refid="classcam_1_1ops_1_1CamPackObjects"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+bl_idname</edgelabel>
+          <edgelabel>+bl_label</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+bl_options</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dict</label>
+      </node>
+      <node id="3">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="265" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="265" bodyend="281"/>
+    <listofallmembers>
+      <member refid="classcam_1_1ops_1_1CamPackObjects_1a96bd47ec5cf16f72b1733dd9464b88c7" prot="public" virt="non-virtual"><scope>cam::ops::CamPackObjects</scope><name>bl_idname</name></member>
+      <member refid="classcam_1_1ops_1_1CamPackObjects_1a3fb467d977e0886f227c97b0648d2ceb" prot="public" virt="non-virtual"><scope>cam::ops::CamPackObjects</scope><name>bl_label</name></member>
+      <member refid="classcam_1_1ops_1_1CamPackObjects_1aca8b3c158de559a15dd84b90116160c9" prot="public" virt="non-virtual"><scope>cam::ops::CamPackObjects</scope><name>bl_options</name></member>
+      <member refid="classcam_1_1ops_1_1CamPackObjects_1ab4d20578b55ce38cc38fd58334a627da" prot="public" virt="non-virtual"><scope>cam::ops::CamPackObjects</scope><name>draw</name></member>
+      <member refid="classcam_1_1ops_1_1CamPackObjects_1a169073dc342f9e6a5d1a222e67c3f8fc" prot="public" virt="non-virtual"><scope>cam::ops::CamPackObjects</scope><name>execute</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

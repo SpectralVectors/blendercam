@@ -1,0 +1,262 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel" xml:lang="en-US">
+<title>cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel Class Reference</title>
+<indexterm><primary>cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel</primary></indexterm>
+Inheritance diagram for cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1aa1c76874b76a32c600f78d29cd50305b">draw_optimize</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1a575a4309a1c9f9764e9081a77190a8d4">draw_exact_mode</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1a2151614ea12a845f3fb1a2314be6ab6b">draw_use_opencamlib</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1a30579c18582052e2298f43a9f426f20a">draw_simulation_detail</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1af8ea8f357590b9bb0ed6f392a8216f10">draw_simplify_gcode</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1aaf4f6a8659f5e9c5d4eaa1c4e1afd8d0">draw_use_modifiers</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1ab5e95d9b1bc62010c4e5ca73b04bffc3">draw_hide_all_others</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1acde8e765f963d6225e59af781ee302cc">draw_parent_path_to_object</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1a839a51430d3b6f6980f0f0e809c50459">draw</link> (self, <link linkend="_classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1aaa7c9818d8ae45b9e01a4278c6ed6a45">context</link>)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel">cam.ui_panels.buttons_panel.CAMButtonsPanel</link>        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a03843f1fecc691952b696f4bc75a0156">poll</link> (cls, context)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1ae2df719a61472a3f8674e26fe501b1f7">active_operation_index</link> (cls)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a9fe8584ab332e9830dfa800ee4582575">active_operation</link> (cls)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1acbcf6bed1c104021565fc4a486d1101a">__init__</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1aae624325882f33dd8820cdf27df16e4e">operations_count</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a3e5e2105cb372d0ad7ee959fa38e10e2">has_operations</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a41c101f031fc5ecdb0097889cf452de0">has_correct_level</link> (self)</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1a6860a7da542548d5d5b58418e32f9e77">exact_possible</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1a2ea85fb190508405cb41495328f91a94">op</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1aaa7c9818d8ae45b9e01a4278c6ed6a45">context</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Attributes inherited from <link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel">cam.ui_panels.buttons_panel.CAMButtonsPanel</link>        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a62a27293a2c27a52a2f779e92312c9b6">op</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a3991296d0c3a293ee962391d01387868">use_experimental</link></para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1a14817085eff09d0b0bfc83a500cbe001">bl_label</link> = &quot;CAM Optimisation&quot;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1ad3d05a037436093fe4af0fb7f1d5bda7">bl_idname</link> = &quot;WORLD_PT_CAM_OPTIMISATION&quot;</para>
+</listitem>
+            <listitem><para>int <link linkend="_classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1a061ccb00f38f0c3eeb6f09770932f198">panel_interface_level</link> = 2</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Static Public Attributes inherited from <link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel">cam.ui_panels.buttons_panel.CAMButtonsPanel</link>        <itemizedlist>
+            <listitem><para>str <link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a875a6b4e703be8c259b1d750426c76ad">bl_space_type</link> = &apos;PROPERTIES&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a9763fc8e0e8a24f2f6f4ab050829c6a2">bl_region_type</link> = &apos;WINDOW&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a5da786aaf2c38c096f23a7f504866537">bl_context</link> = &quot;render&quot;</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a7c1ca8db6e75af2657e5658f7e3d7219">always_show_panel</link> = False</para>
+</listitem>
+            <listitem><para>dict <link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a0864a41721ef5200ecbbf340a1f7d678">COMPAT_ENGINES</link> = {&apos;CNCCAM_RENDER&apos;}</para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>CAM Optimisation Panel</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1a839a51430d3b6f6980f0f0e809c50459"/><section>
+    <title>draw()</title>
+<indexterm><primary>draw</primary><secondary>cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel.draw ( self,  context)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1a575a4309a1c9f9764e9081a77190a8d4"/><section>
+    <title>draw_exact_mode()</title>
+<indexterm><primary>draw_exact_mode</primary><secondary>cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel</primary><secondary>draw_exact_mode</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel.draw_exact_mode ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_a575a4309a1c9f9764e9081a77190a8d4_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1ab5e95d9b1bc62010c4e5ca73b04bffc3"/><section>
+    <title>draw_hide_all_others()</title>
+<indexterm><primary>draw_hide_all_others</primary><secondary>cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel</primary><secondary>draw_hide_all_others</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel.draw_hide_all_others ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_ab5e95d9b1bc62010c4e5ca73b04bffc3_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1aa1c76874b76a32c600f78d29cd50305b"/><section>
+    <title>draw_optimize()</title>
+<indexterm><primary>draw_optimize</primary><secondary>cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel</primary><secondary>draw_optimize</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel.draw_optimize ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_aa1c76874b76a32c600f78d29cd50305b_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1acde8e765f963d6225e59af781ee302cc"/><section>
+    <title>draw_parent_path_to_object()</title>
+<indexterm><primary>draw_parent_path_to_object</primary><secondary>cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel</primary><secondary>draw_parent_path_to_object</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel.draw_parent_path_to_object ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_acde8e765f963d6225e59af781ee302cc_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1af8ea8f357590b9bb0ed6f392a8216f10"/><section>
+    <title>draw_simplify_gcode()</title>
+<indexterm><primary>draw_simplify_gcode</primary><secondary>cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel</primary><secondary>draw_simplify_gcode</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel.draw_simplify_gcode ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_af8ea8f357590b9bb0ed6f392a8216f10_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1a30579c18582052e2298f43a9f426f20a"/><section>
+    <title>draw_simulation_detail()</title>
+<indexterm><primary>draw_simulation_detail</primary><secondary>cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel</primary><secondary>draw_simulation_detail</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel.draw_simulation_detail ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_a30579c18582052e2298f43a9f426f20a_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1aaf4f6a8659f5e9c5d4eaa1c4e1afd8d0"/><section>
+    <title>draw_use_modifiers()</title>
+<indexterm><primary>draw_use_modifiers</primary><secondary>cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel</primary><secondary>draw_use_modifiers</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel.draw_use_modifiers ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_aaf4f6a8659f5e9c5d4eaa1c4e1afd8d0_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1a2151614ea12a845f3fb1a2314be6ab6b"/><section>
+    <title>draw_use_opencamlib()</title>
+<indexterm><primary>draw_use_opencamlib</primary><secondary>cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel</primary><secondary>draw_use_opencamlib</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel.draw_use_opencamlib ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_a2151614ea12a845f3fb1a2314be6ab6b_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1ad3d05a037436093fe4af0fb7f1d5bda7"/><section>
+    <title>bl_idname</title>
+<indexterm><primary>bl_idname</primary><secondary>cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel</primary><secondary>bl_idname</secondary></indexterm>
+<para><computeroutput>str cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel.bl_idname = &quot;WORLD_PT_CAM_OPTIMISATION&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1a14817085eff09d0b0bfc83a500cbe001"/><section>
+    <title>bl_label</title>
+<indexterm><primary>bl_label</primary><secondary>cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel</primary><secondary>bl_label</secondary></indexterm>
+<para><computeroutput>str cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel.bl_label = &quot;CAM Optimisation&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1aaa7c9818d8ae45b9e01a4278c6ed6a45"/><section>
+    <title>context</title>
+<indexterm><primary>context</primary><secondary>cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel</primary><secondary>context</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel.context</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1a6860a7da542548d5d5b58418e32f9e77"/><section>
+    <title>exact_possible</title>
+<indexterm><primary>exact_possible</primary><secondary>cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel</primary><secondary>exact_possible</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel.exact_possible</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1a2ea85fb190508405cb41495328f91a94"/><section>
+    <title>op</title>
+<indexterm><primary>op</primary><secondary>cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel</primary><secondary>op</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel.op</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1a061ccb00f38f0c3eeb6f09770932f198"/><section>
+    <title>panel_interface_level</title>
+<indexterm><primary>panel_interface_level</primary><secondary>cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel</primary><secondary>panel_interface_level</secondary></indexterm>
+<para><computeroutput>int cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel.panel_interface_level = 2<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/<link linkend="_optimisation_8py">optimisation.py</link></section>
+</section>

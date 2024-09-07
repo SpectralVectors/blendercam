@@ -1,0 +1,249 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacecam_1_1opencamlib_1_1opencamlib" kind="namespace" language="Python">
+    <compoundname>cam::opencamlib::opencamlib</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacecam_1_1opencamlib_1_1opencamlib_1ad09d62da3544d7a95f78e2fa8d8aa169" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float cam::opencamlib::opencamlib.OCL_SCALE</definition>
+        <argsstring></argsstring>
+        <name>OCL_SCALE</name>
+        <qualifiedname>cam.opencamlib.opencamlib.OCL_SCALE</qualifiedname>
+        <initializer>=  1000.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/opencamlib/opencamlib.py" line="31" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/opencamlib/opencamlib.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecam_1_1opencamlib_1_1opencamlib_1abf6e04943d0d03f58964a5d967060793" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam::opencamlib::opencamlib.PYTHON_BIN</definition>
+        <argsstring></argsstring>
+        <name>PYTHON_BIN</name>
+        <qualifiedname>cam.opencamlib.opencamlib.PYTHON_BIN</qualifiedname>
+        <initializer>=  None</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/opencamlib/opencamlib.py" line="33" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/opencamlib/opencamlib.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacecam_1_1opencamlib_1_1opencamlib_1a7b3e34a8199762c851a56af0322bb990" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.opencamlib.opencamlib.pointSamplesFromOCL</definition>
+        <argsstring>(points, samples)</argsstring>
+        <name>pointSamplesFromOCL</name>
+        <qualifiedname>cam.opencamlib.opencamlib.pointSamplesFromOCL</qualifiedname>
+        <param>
+          <type>points</type>
+          <defname>points</defname>
+        </param>
+        <param>
+          <type>samples</type>
+          <defname>samples</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/opencamlib/opencamlib.py" line="36" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/opencamlib/opencamlib.py" bodystart="36" bodyend="40"/>
+        <referencedby refid="namespacecam_1_1opencamlib_1_1opencamlib_1a27597745a18583333c13a4bed4aff4d1" compoundref="opencamlib_8py" startline="105" endline="109">cam.opencamlib.opencamlib.oclSamplePoints</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1opencamlib_1_1opencamlib_1a42296e013a032a82b2e7f8d19e1daec9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.opencamlib.opencamlib.chunkPointSamplesFromOCL</definition>
+        <argsstring>(chunks, samples)</argsstring>
+        <name>chunkPointSamplesFromOCL</name>
+        <qualifiedname>cam.opencamlib.opencamlib.chunkPointSamplesFromOCL</qualifiedname>
+        <param>
+          <type>chunks</type>
+          <defname>chunks</defname>
+        </param>
+        <param>
+          <type>samples</type>
+          <defname>samples</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/opencamlib/opencamlib.py" line="41" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/opencamlib/opencamlib.py" bodystart="41" bodyend="60"/>
+        <referencedby refid="namespacecam_1_1opencamlib_1_1opencamlib_1ae3506537b9a397c9e043e6d872cb245c" compoundref="opencamlib_8py" startline="110" endline="114">cam.opencamlib.opencamlib.oclSample</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1opencamlib_1_1opencamlib_1ae67517f2e1f47edcc0e509e47340f877" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.opencamlib.opencamlib.chunkPointsResampleFromOCL</definition>
+        <argsstring>(chunks, samples)</argsstring>
+        <name>chunkPointsResampleFromOCL</name>
+        <qualifiedname>cam.opencamlib.opencamlib.chunkPointsResampleFromOCL</qualifiedname>
+        <param>
+          <type>chunks</type>
+          <defname>chunks</defname>
+        </param>
+        <param>
+          <type>samples</type>
+          <defname>samples</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/opencamlib/opencamlib.py" line="61" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/opencamlib/opencamlib.py" bodystart="61" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1opencamlib_1_1opencamlib_1a6be829fdfd769e5628967c7b2b9740c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.opencamlib.opencamlib.exportModelsToSTL</definition>
+        <argsstring>(operation)</argsstring>
+        <name>exportModelsToSTL</name>
+        <qualifiedname>cam.opencamlib.opencamlib.exportModelsToSTL</qualifiedname>
+        <param>
+          <type>operation</type>
+          <defname>operation</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/opencamlib/opencamlib.py" line="84" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/opencamlib/opencamlib.py" bodystart="84" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1opencamlib_1_1opencamlib_1a27597745a18583333c13a4bed4aff4d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.opencamlib.opencamlib.oclSamplePoints</definition>
+        <argsstring>(operation, points)</argsstring>
+        <name>oclSamplePoints</name>
+        <qualifiedname>cam.opencamlib.opencamlib.oclSamplePoints</qualifiedname>
+        <param>
+          <type>operation</type>
+          <defname>operation</defname>
+        </param>
+        <param>
+          <type>points</type>
+          <defname>points</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/opencamlib/opencamlib.py" line="105" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/opencamlib/opencamlib.py" bodystart="105" bodyend="109"/>
+        <references refid="namespacecam_1_1opencamlib_1_1opencamlib_1a7b3e34a8199762c851a56af0322bb990" compoundref="opencamlib_8py" startline="36" endline="40">cam.opencamlib.opencamlib.pointSamplesFromOCL</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1opencamlib_1_1opencamlib_1ae3506537b9a397c9e043e6d872cb245c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.opencamlib.opencamlib.oclSample</definition>
+        <argsstring>(operation, chunks)</argsstring>
+        <name>oclSample</name>
+        <qualifiedname>cam.opencamlib.opencamlib.oclSample</qualifiedname>
+        <param>
+          <type>operation</type>
+          <defname>operation</defname>
+        </param>
+        <param>
+          <type>chunks</type>
+          <defname>chunks</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/opencamlib/opencamlib.py" line="110" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/opencamlib/opencamlib.py" bodystart="110" bodyend="114"/>
+        <references refid="namespacecam_1_1opencamlib_1_1opencamlib_1a42296e013a032a82b2e7f8d19e1daec9" compoundref="opencamlib_8py" startline="41" endline="60">cam.opencamlib.opencamlib.chunkPointSamplesFromOCL</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1opencamlib_1_1opencamlib_1a508b47223f669b193f323c1e6e50c9be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.opencamlib.opencamlib.oclResampleChunks</definition>
+        <argsstring>(operation, chunks_to_resample, use_cached_mesh)</argsstring>
+        <name>oclResampleChunks</name>
+        <qualifiedname>cam.opencamlib.opencamlib.oclResampleChunks</qualifiedname>
+        <param>
+          <type>operation</type>
+          <defname>operation</defname>
+        </param>
+        <param>
+          <type>chunks_to_resample</type>
+          <defname>chunks_to_resample</defname>
+        </param>
+        <param>
+          <type>use_cached_mesh</type>
+          <defname>use_cached_mesh</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/opencamlib/opencamlib.py" line="115" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/opencamlib/opencamlib.py" bodystart="115" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1opencamlib_1_1opencamlib_1abb414af07e5ed249661f8de1dd522114" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.opencamlib.opencamlib.oclWaterlineLayerHeights</definition>
+        <argsstring>(operation)</argsstring>
+        <name>oclWaterlineLayerHeights</name>
+        <qualifiedname>cam.opencamlib.opencamlib.oclWaterlineLayerHeights</qualifiedname>
+        <param>
+          <type>operation</type>
+          <defname>operation</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/opencamlib/opencamlib.py" line="139" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/opencamlib/opencamlib.py" bodystart="139" bodyend="159"/>
+        <referencedby refid="namespacecam_1_1opencamlib_1_1opencamlib_1af66f8f08d2a6832de86a60a682e7d150" compoundref="opencamlib_8py" startline="160" endline="211">cam.opencamlib.opencamlib.oclGetWaterline</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1opencamlib_1_1opencamlib_1af66f8f08d2a6832de86a60a682e7d150" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.opencamlib.opencamlib.oclGetWaterline</definition>
+        <argsstring>(operation, chunks)</argsstring>
+        <name>oclGetWaterline</name>
+        <qualifiedname>cam.opencamlib.opencamlib.oclGetWaterline</qualifiedname>
+        <param>
+          <type>operation</type>
+          <defname>operation</defname>
+        </param>
+        <param>
+          <type>chunks</type>
+          <defname>chunks</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/opencamlib/opencamlib.py" line="160" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/opencamlib/opencamlib.py" bodystart="160" bodyend="211"/>
+        <references refid="namespacecam_1_1opencamlib_1_1opencamlib_1abb414af07e5ed249661f8de1dd522114" compoundref="opencamlib_8py" startline="139" endline="159">cam.opencamlib.opencamlib.oclWaterlineLayerHeights</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>BlenderCAM &apos;oclSample.py&apos;
+
+Functions used by OpenCAMLib sampling.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/opencamlib/opencamlib.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

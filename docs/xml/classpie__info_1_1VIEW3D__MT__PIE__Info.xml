@@ -1,0 +1,337 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classpie__info_1_1VIEW3D__MT__PIE__Info" kind="class" language="Python" prot="public">
+    <compoundname>pie_info::VIEW3D_MT_PIE_Info</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Menu</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classpie__info_1_1VIEW3D__MT__PIE__Info_1a9837a147129633228f5a72b4a63d7e42" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str pie_info.VIEW3D_MT_PIE_Info::bl_label</definition>
+        <argsstring></argsstring>
+        <name>bl_label</name>
+        <qualifiedname>pie_info.VIEW3D_MT_PIE_Info.bl_label</qualifiedname>
+        <initializer>=  &quot;∴    Info    ∴&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/pie_info.py" line="11" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/pie_info.py" bodystart="11" bodyend="-1"/>
+        <referencedby refid="classcam_1_1preset__managers_1_1CAM__MACHINE__MT__presets_1af95f7812d2952b26a26809ab923dac09" compoundref="preset__managers_8py" startline="28" endline="38">cam.preset_managers.CAM_MACHINE_MT_presets.post_cb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classpie__info_1_1VIEW3D__MT__PIE__Info_1a4e8db855fb1e43b553bf43aed5a12550" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>pie_info.VIEW3D_MT_PIE_Info::text</definition>
+        <argsstring></argsstring>
+        <name>text</name>
+        <qualifiedname>pie_info.VIEW3D_MT_PIE_Info.text</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/pie_info.py" line="35" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/pie_info.py" bodystart="35" bodyend="-1"/>
+        <referencedby refid="classcam_1_1nc_1_1format_1_1Address_1a298494880b0b8ef3a2297ce1051443eb" compoundref="format_8py" startline="75" endline="77">cam.nc.format.Address.set</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classpie__info_1_1VIEW3D__MT__PIE__Info_1a7e685c67c3ac7db23e33892d2f9cef22" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>pie_info.VIEW3D_MT_PIE_Info::box</definition>
+        <argsstring></argsstring>
+        <name>box</name>
+        <qualifiedname>pie_info.VIEW3D_MT_PIE_Info.box</qualifiedname>
+        <initializer>=  pie.box()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/pie_info.py" line="48" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/pie_info.py" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpie__info_1_1VIEW3D__MT__PIE__Info_1a69d23e82f95a7716238c347d4c568815" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>pie_info.VIEW3D_MT_PIE_Info::column</definition>
+        <argsstring></argsstring>
+        <name>column</name>
+        <qualifiedname>pie_info.VIEW3D_MT_PIE_Info.column</qualifiedname>
+        <initializer>=  box.column(align=True)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/pie_info.py" line="49" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/pie_info.py" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpie__info_1_1VIEW3D__MT__PIE__Info_1a66e0e2fd8294b3576f762fd08ef2ee8e" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str pie_info.VIEW3D_MT_PIE_Info::time_estimate</definition>
+        <argsstring></argsstring>
+        <name>time_estimate</name>
+        <qualifiedname>pie_info.VIEW3D_MT_PIE_Info.time_estimate</qualifiedname>
+        <initializer>=  f&quot;Operation Duration: {int(operation.info.duration*60)}s &quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/pie_info.py" line="51" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/pie_info.py" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpie__info_1_1VIEW3D__MT__PIE__Info_1acca0b557f45e87c1ce8c32f0a47480b5" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>pie_info.VIEW3D_MT_PIE_Info::row</definition>
+        <argsstring></argsstring>
+        <name>row</name>
+        <qualifiedname>pie_info.VIEW3D_MT_PIE_Info.row</qualifiedname>
+        <initializer>=  column.row()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/pie_info.py" line="69" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/pie_info.py" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpie__info_1_1VIEW3D__MT__PIE__Info_1a6828ab01854cebe88356929565d869ec" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pie_info.VIEW3D_MT_PIE_Info::cost_per_second</definition>
+        <argsstring></argsstring>
+        <name>cost_per_second</name>
+        <qualifiedname>pie_info.VIEW3D_MT_PIE_Info.cost_per_second</qualifiedname>
+        <initializer>=  context.scene.cam_machine.hourly_rate / 3600</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/pie_info.py" line="76" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/pie_info.py" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpie__info_1_1VIEW3D__MT__PIE__Info_1a1b8b3a9220e32983412f9b6ea5d651a6" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pie_info.VIEW3D_MT_PIE_Info::total_cost</definition>
+        <argsstring></argsstring>
+        <name>total_cost</name>
+        <qualifiedname>pie_info.VIEW3D_MT_PIE_Info.total_cost</qualifiedname>
+        <initializer>=  operation.info.duration * 60 * <ref refid="classpie__info_1_1VIEW3D__MT__PIE__Info_1a6828ab01854cebe88356929565d869ec" kindref="member">cost_per_second</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/pie_info.py" line="77" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/pie_info.py" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpie__info_1_1VIEW3D__MT__PIE__Info_1a2908ce0b2204de7aedfbc0ec65ae72b4" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str pie_info.VIEW3D_MT_PIE_Info::op_cost</definition>
+        <argsstring></argsstring>
+        <name>op_cost</name>
+        <qualifiedname>pie_info.VIEW3D_MT_PIE_Info.op_cost</qualifiedname>
+        <initializer>=  f&quot;Operation Cost: ${total_cost:.2f} (${cost_per_second:.2f}/s)&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/pie_info.py" line="78" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/pie_info.py" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpie__info_1_1VIEW3D__MT__PIE__Info_1a03929862285664fd434a06b587f4e723" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>pie_info.VIEW3D_MT_PIE_Info::alert</definition>
+        <argsstring></argsstring>
+        <name>alert</name>
+        <qualifiedname>pie_info.VIEW3D_MT_PIE_Info.alert</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/pie_info.py" line="86" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/pie_info.py" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpie__info_1_1VIEW3D__MT__PIE__Info_1a904cfe2f28671048e075c7440415161b" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>pie_info.VIEW3D_MT_PIE_Info::line</definition>
+        <argsstring></argsstring>
+        <name>line</name>
+        <qualifiedname>pie_info.VIEW3D_MT_PIE_Info.line</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/pie_info.py" line="92" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/pie_info.py" bodystart="92" bodyend="-1"/>
+        <referencedby refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1ab661d91daf66cd54c13ab9fe1193955b" compoundref="gcodeimportparser_8py" startline="210" endline="214">cam.gcodeimportparser.GcodeParser.error</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1cad__iso__read_1_1Parser_1abf885d019794a8bef1b69f446c8851e1" compoundref="cad__iso__read_8py" startline="164" endline="235">cam.nc.cad_iso_read.Parser.Parse</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1cad__read_1_1CAD__backplot_1afce7c30e482cfb88a36593d4020909d7" compoundref="cad__read_8py" startline="27" endline="286">cam.nc.cad_read.CAD_backplot.Parse</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1__read_1_1Parser_1a4046e981f4f946bed728de957d10365f" compoundref="lathe1__read_8py" startline="28" endline="240">cam.nc.lathe1_read.Parser.Parse</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1num__reader_1_1NumReader_1ae908a2956d1e0cfd474a47540bee9759" compoundref="num__reader_8py" startline="40" endline="63">cam.nc.num_reader.NumReader.Parse</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1rez2__read_1_1Parser_1a16b4685a6d0b45b32ad762794240dfc0" compoundref="rez2__read_8py" startline="70" endline="308">cam.nc.rez2_read.Parser.Parse</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1hpgl2d__read_1_1Parser_1a0b707cfa8f85f48082f4e827cd2e4de2" compoundref="hpgl2d__read_8py" startline="81" endline="98">cam.nc.hpgl2d_read.Parser.ParseFromFirstLetter</referencedby>
+        <referencedby refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1ac0dc820285278526c3d681fdb0382144" compoundref="gcodeimportparser_8py" startline="126" endline="173">cam.gcodeimportparser.GcodeParser.parseLine</referencedby>
+        <referencedby refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1ad1fcff07178ae82267e8f431946ae94c" compoundref="gcodeimportparser_8py" startline="207" endline="209">cam.gcodeimportparser.GcodeParser.warn</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classpie__info_1_1VIEW3D__MT__PIE__Info_1a26f369a3aab16759fbacdb4c8e7b9248" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>pie_info.VIEW3D_MT_PIE_Info::icon</definition>
+        <argsstring></argsstring>
+        <name>icon</name>
+        <qualifiedname>pie_info.VIEW3D_MT_PIE_Info.icon</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/pie_info.py" line="92" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/pie_info.py" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpie__info_1_1VIEW3D__MT__PIE__Info_1a2d7b80adeee76ceeffa39d717ca63299" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>pie_info.VIEW3D_MT_PIE_Info::scale_y</definition>
+        <argsstring></argsstring>
+        <name>scale_y</name>
+        <qualifiedname>pie_info.VIEW3D_MT_PIE_Info.scale_y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/pie_info.py" line="99" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/pie_info.py" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpie__info_1_1VIEW3D__MT__PIE__Info_1aa3db1ab8870439338b826436b069ebe7" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>pie_info.VIEW3D_MT_PIE_Info::scale_x</definition>
+        <argsstring></argsstring>
+        <name>scale_x</name>
+        <qualifiedname>pie_info.VIEW3D_MT_PIE_Info.scale_x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/pie_info.py" line="100" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/pie_info.py" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpie__info_1_1VIEW3D__MT__PIE__Info_1a219d94a64c19ae303bb50374aab62e1f" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>pie_info.VIEW3D_MT_PIE_Info::emboss</definition>
+        <argsstring></argsstring>
+        <name>emboss</name>
+        <qualifiedname>pie_info.VIEW3D_MT_PIE_Info.emboss</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/pie_info.py" line="101" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/pie_info.py" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpie__info_1_1VIEW3D__MT__PIE__Info_1ac94e1c531529cf1aa83b95272ebf0379" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>pie_info.VIEW3D_MT_PIE_Info::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>pie_info.VIEW3D_MT_PIE_Info.name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/pie_info.py" line="106" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/pie_info.py" bodystart="106" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpie__info_1_1VIEW3D__MT__PIE__Info_1a1e6979569783df8c3103d0138e89b370" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>pie_info.VIEW3D_MT_PIE_Info.draw</definition>
+        <argsstring>(self, context)</argsstring>
+        <name>draw</name>
+        <qualifiedname>pie_info.VIEW3D_MT_PIE_Info.draw</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/pie_info.py" line="13" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/pie_info.py" bodystart="13" bodyend="32"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Menu</label>
+      </node>
+      <node id="1">
+        <label>pie_info.VIEW3D_MT_PIE_Info</label>
+        <link refid="classpie__info_1_1VIEW3D__MT__PIE__Info"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Menu</label>
+      </node>
+      <node id="4">
+        <label>int</label>
+      </node>
+      <node id="1">
+        <label>pie_info.VIEW3D_MT_PIE_Info</label>
+        <link refid="classpie__info_1_1VIEW3D__MT__PIE__Info"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+bl_label</edgelabel>
+          <edgelabel>+op_cost</edgelabel>
+          <edgelabel>+time_estimate</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+cost_per_second</edgelabel>
+          <edgelabel>+total_cost</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/pie_info.py" line="10" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/pie_info.py" bodystart="10" bodyend="107"/>
+    <listofallmembers>
+      <member refid="classpie__info_1_1VIEW3D__MT__PIE__Info_1a03929862285664fd434a06b587f4e723" prot="public" virt="non-virtual"><scope>pie_info::VIEW3D_MT_PIE_Info</scope><name>alert</name></member>
+      <member refid="classpie__info_1_1VIEW3D__MT__PIE__Info_1a9837a147129633228f5a72b4a63d7e42" prot="public" virt="non-virtual"><scope>pie_info::VIEW3D_MT_PIE_Info</scope><name>bl_label</name></member>
+      <member refid="classpie__info_1_1VIEW3D__MT__PIE__Info_1a7e685c67c3ac7db23e33892d2f9cef22" prot="public" virt="non-virtual"><scope>pie_info::VIEW3D_MT_PIE_Info</scope><name>box</name></member>
+      <member refid="classpie__info_1_1VIEW3D__MT__PIE__Info_1a69d23e82f95a7716238c347d4c568815" prot="public" virt="non-virtual"><scope>pie_info::VIEW3D_MT_PIE_Info</scope><name>column</name></member>
+      <member refid="classpie__info_1_1VIEW3D__MT__PIE__Info_1a6828ab01854cebe88356929565d869ec" prot="public" virt="non-virtual"><scope>pie_info::VIEW3D_MT_PIE_Info</scope><name>cost_per_second</name></member>
+      <member refid="classpie__info_1_1VIEW3D__MT__PIE__Info_1a1e6979569783df8c3103d0138e89b370" prot="public" virt="non-virtual"><scope>pie_info::VIEW3D_MT_PIE_Info</scope><name>draw</name></member>
+      <member refid="classpie__info_1_1VIEW3D__MT__PIE__Info_1a219d94a64c19ae303bb50374aab62e1f" prot="public" virt="non-virtual"><scope>pie_info::VIEW3D_MT_PIE_Info</scope><name>emboss</name></member>
+      <member refid="classpie__info_1_1VIEW3D__MT__PIE__Info_1a26f369a3aab16759fbacdb4c8e7b9248" prot="public" virt="non-virtual"><scope>pie_info::VIEW3D_MT_PIE_Info</scope><name>icon</name></member>
+      <member refid="classpie__info_1_1VIEW3D__MT__PIE__Info_1a904cfe2f28671048e075c7440415161b" prot="public" virt="non-virtual"><scope>pie_info::VIEW3D_MT_PIE_Info</scope><name>line</name></member>
+      <member refid="classpie__info_1_1VIEW3D__MT__PIE__Info_1ac94e1c531529cf1aa83b95272ebf0379" prot="public" virt="non-virtual"><scope>pie_info::VIEW3D_MT_PIE_Info</scope><name>name</name></member>
+      <member refid="classpie__info_1_1VIEW3D__MT__PIE__Info_1a2908ce0b2204de7aedfbc0ec65ae72b4" prot="public" virt="non-virtual"><scope>pie_info::VIEW3D_MT_PIE_Info</scope><name>op_cost</name></member>
+      <member refid="classpie__info_1_1VIEW3D__MT__PIE__Info_1acca0b557f45e87c1ce8c32f0a47480b5" prot="public" virt="non-virtual"><scope>pie_info::VIEW3D_MT_PIE_Info</scope><name>row</name></member>
+      <member refid="classpie__info_1_1VIEW3D__MT__PIE__Info_1aa3db1ab8870439338b826436b069ebe7" prot="public" virt="non-virtual"><scope>pie_info::VIEW3D_MT_PIE_Info</scope><name>scale_x</name></member>
+      <member refid="classpie__info_1_1VIEW3D__MT__PIE__Info_1a2d7b80adeee76ceeffa39d717ca63299" prot="public" virt="non-virtual"><scope>pie_info::VIEW3D_MT_PIE_Info</scope><name>scale_y</name></member>
+      <member refid="classpie__info_1_1VIEW3D__MT__PIE__Info_1a4e8db855fb1e43b553bf43aed5a12550" prot="public" virt="non-virtual"><scope>pie_info::VIEW3D_MT_PIE_Info</scope><name>text</name></member>
+      <member refid="classpie__info_1_1VIEW3D__MT__PIE__Info_1a66e0e2fd8294b3576f762fd08ef2ee8e" prot="public" virt="non-virtual"><scope>pie_info::VIEW3D_MT_PIE_Info</scope><name>time_estimate</name></member>
+      <member refid="classpie__info_1_1VIEW3D__MT__PIE__Info_1a1b8b3a9220e32983412f9b6ea5d651a6" prot="public" virt="non-virtual"><scope>pie_info::VIEW3D_MT_PIE_Info</scope><name>total_cost</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

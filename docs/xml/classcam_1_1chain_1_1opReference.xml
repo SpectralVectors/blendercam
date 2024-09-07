@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1chain_1_1opReference" kind="class" language="Python" prot="public">
+    <compoundname>cam::chain::opReference</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PropertyGroup</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1chain_1_1opReference_1a552db0340077ea03d6d3c48c16f82fe1" prot="public" static="yes" mutable="no">
+        <type>StringProperty</type>
+        <definition>StringProperty cam.chain.opReference::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>cam.chain.opReference.name</qualifiedname>
+        <initializer>(
+        name=&quot;Operation Name&quot;,
+        default=&quot;Operation&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/chain.py" line="17" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/chain.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1chain_1_1opReference_1a25e8cd1f311fbeb1d02d406003d86812" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool cam.chain.opReference::computing</definition>
+        <argsstring></argsstring>
+        <name>computing</name>
+        <qualifiedname>cam.chain.opReference.computing</qualifiedname>
+        <initializer>=  False</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/chain.py" line="21" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/chain.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PropertyGroup</label>
+      </node>
+      <node id="1">
+        <label>cam.chain.opReference</label>
+        <link refid="classcam_1_1chain_1_1opReference"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>bool</label>
+      </node>
+      <node id="3">
+        <label>StringProperty</label>
+      </node>
+      <node id="2">
+        <label>PropertyGroup</label>
+      </node>
+      <node id="1">
+        <label>cam.chain.opReference</label>
+        <link refid="classcam_1_1chain_1_1opReference"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+name</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+computing</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/chain.py" line="16" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/chain.py" bodystart="16" bodyend="24"/>
+    <listofallmembers>
+      <member refid="classcam_1_1chain_1_1opReference_1a25e8cd1f311fbeb1d02d406003d86812" prot="public" virt="non-virtual"><scope>cam::chain::opReference</scope><name>computing</name></member>
+      <member refid="classcam_1_1chain_1_1opReference_1a552db0340077ea03d6d3c48c16f82fe1" prot="public" virt="non-virtual"><scope>cam::chain::opReference</scope><name>name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

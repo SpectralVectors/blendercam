@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespaceinstall__addon" xml:lang="en-US">
+<title>install_addon Namespace Reference</title>
+<indexterm><primary>install_addon</primary></indexterm>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_namespaceinstall__addon_1a236e313b438a8226a866e2e1edb238d9">INSTALL_CODE</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_namespaceinstall__addon_1a4d236307ed417fe6467d28c3d34744e3">NUM_RETRIES</link> = 10</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceinstall__addon_1acf9fc90c53e168459f7b3b9cc8f0755a">file</link> = pathlib.Path(td, &quot;install.py&quot;)</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceinstall__addon_1a1862b103b0ea7287535e61ed2067081b">shell</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespaceinstall__addon_1a878361957624bbe414dca92ab2d51d9d">check</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespaceinstall__addon_1af6edc3cedfaa18fec28d738467fdf466">True</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespaceinstall__addon_1ab562f8effc7a7236318a4e3506637b25">stdout</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespaceinstall__addon_1a753cd99f374b7fdb99ad5916f13d90f7">PIPE</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespaceinstall__addon_1acd28f0278ea8932170e397cc02548155">stderr</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespaceinstall__addon_1a8d2055c88de1fe1af4b2725979d6bfdc">STDOUT</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespaceinstall__addon_1aa5eb6bb69af1ed8c38a0bf92819d9fba">text</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespaceinstall__addon_1a6dccfd2c3db7c717df794f5b8a41c425">crash_file</link> = pathlib.Path(line[len(&quot;Writing: &quot;):])</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespaceinstall__addon_1a878361957624bbe414dca92ab2d51d9d"/><section>
+    <title>check</title>
+<indexterm><primary>check</primary><secondary>install_addon</secondary></indexterm>
+<indexterm><primary>install_addon</primary><secondary>check</secondary></indexterm>
+<para><computeroutput>install_addon.check</computeroutput></para></section>
+<anchor xml:id="_namespaceinstall__addon_1a6dccfd2c3db7c717df794f5b8a41c425"/><section>
+    <title>crash_file</title>
+<indexterm><primary>crash_file</primary><secondary>install_addon</secondary></indexterm>
+<indexterm><primary>install_addon</primary><secondary>crash_file</secondary></indexterm>
+<para><computeroutput>install_addon.crash_file = pathlib.Path(line[len(&quot;Writing: &quot;):])</computeroutput></para></section>
+<anchor xml:id="_namespaceinstall__addon_1acf9fc90c53e168459f7b3b9cc8f0755a"/><section>
+    <title>file</title>
+<indexterm><primary>file</primary><secondary>install_addon</secondary></indexterm>
+<indexterm><primary>install_addon</primary><secondary>file</secondary></indexterm>
+<para><computeroutput>install_addon.file = pathlib.Path(td, &quot;install.py&quot;)</computeroutput></para></section>
+<anchor xml:id="_namespaceinstall__addon_1a236e313b438a8226a866e2e1edb238d9"/><section>
+    <title>INSTALL_CODE</title>
+<indexterm><primary>INSTALL_CODE</primary><secondary>install_addon</secondary></indexterm>
+<indexterm><primary>install_addon</primary><secondary>INSTALL_CODE</secondary></indexterm>
+<para><computeroutput>str install_addon.INSTALL_CODE</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;f<emphasis role="stringliteral">&quot;&quot;&quot;</emphasis>
+2 <emphasis role="stringliteral">import&#32;bpy</emphasis>
+3 <emphasis role="stringliteral">bpy.context.preferences.system.use_online_access&#32;=&#32;True</emphasis>
+4 <emphasis role="stringliteral">bpy.ops.extensions.repo_sync_all(use_active_only=False)</emphasis>
+5 <emphasis role="stringliteral">bpy.ops.extensions.package_install_files(filepath=&apos;{sys.argv[1]}&apos;,&#32;repo=&apos;user_default&apos;)</emphasis>
+6 <emphasis role="stringliteral">bpy.ops.extensions.package_install(repo_index=0,&#32;pkg_id=&quot;stl_format_legacy&quot;)</emphasis>
+7 <emphasis role="stringliteral">bpy.ops.extensions.package_install(repo_index=0,&#32;pkg_id=&quot;simplify_curves_plus&quot;)</emphasis>
+8 <emphasis role="stringliteral">bpy.ops.extensions.package_install(repo_index=0,&#32;pkg_id=&quot;curve_tools&quot;)</emphasis>
+9 <emphasis role="stringliteral">bpy.ops.wm.save_userpref()</emphasis>
+10 <emphasis role="stringliteral">&quot;&quot;&quot;</emphasis>
+</programlisting></section>
+<anchor xml:id="_namespaceinstall__addon_1a4d236307ed417fe6467d28c3d34744e3"/><section>
+    <title>NUM_RETRIES</title>
+<indexterm><primary>NUM_RETRIES</primary><secondary>install_addon</secondary></indexterm>
+<indexterm><primary>install_addon</primary><secondary>NUM_RETRIES</secondary></indexterm>
+<para><computeroutput>int install_addon.NUM_RETRIES = 10</computeroutput></para></section>
+<anchor xml:id="_namespaceinstall__addon_1a753cd99f374b7fdb99ad5916f13d90f7"/><section>
+    <title>PIPE</title>
+<indexterm><primary>PIPE</primary><secondary>install_addon</secondary></indexterm>
+<indexterm><primary>install_addon</primary><secondary>PIPE</secondary></indexterm>
+<para><computeroutput>install_addon.PIPE</computeroutput></para></section>
+<anchor xml:id="_namespaceinstall__addon_1a1862b103b0ea7287535e61ed2067081b"/><section>
+    <title>shell</title>
+<indexterm><primary>shell</primary><secondary>install_addon</secondary></indexterm>
+<indexterm><primary>install_addon</primary><secondary>shell</secondary></indexterm>
+<para><computeroutput>install_addon.shell</computeroutput></para></section>
+<anchor xml:id="_namespaceinstall__addon_1acd28f0278ea8932170e397cc02548155"/><section>
+    <title>stderr</title>
+<indexterm><primary>stderr</primary><secondary>install_addon</secondary></indexterm>
+<indexterm><primary>install_addon</primary><secondary>stderr</secondary></indexterm>
+<para><computeroutput>install_addon.stderr</computeroutput></para></section>
+<anchor xml:id="_namespaceinstall__addon_1ab562f8effc7a7236318a4e3506637b25"/><section>
+    <title>stdout</title>
+<indexterm><primary>stdout</primary><secondary>install_addon</secondary></indexterm>
+<indexterm><primary>install_addon</primary><secondary>stdout</secondary></indexterm>
+<para><computeroutput>install_addon.stdout</computeroutput></para></section>
+<anchor xml:id="_namespaceinstall__addon_1a8d2055c88de1fe1af4b2725979d6bfdc"/><section>
+    <title>STDOUT</title>
+<indexterm><primary>STDOUT</primary><secondary>install_addon</secondary></indexterm>
+<indexterm><primary>install_addon</primary><secondary>STDOUT</secondary></indexterm>
+<para><computeroutput>install_addon.STDOUT</computeroutput></para></section>
+<anchor xml:id="_namespaceinstall__addon_1aa5eb6bb69af1ed8c38a0bf92819d9fba"/><section>
+    <title>text</title>
+<indexterm><primary>text</primary><secondary>install_addon</secondary></indexterm>
+<indexterm><primary>install_addon</primary><secondary>text</secondary></indexterm>
+<para><computeroutput>install_addon.text</computeroutput></para></section>
+<anchor xml:id="_namespaceinstall__addon_1af6edc3cedfaa18fec28d738467fdf466"/><section>
+    <title>True</title>
+<indexterm><primary>True</primary><secondary>install_addon</secondary></indexterm>
+<indexterm><primary>install_addon</primary><secondary>True</secondary></indexterm>
+<para><computeroutput>install_addon.True</computeroutput></para></section>
+</section>
+</section>

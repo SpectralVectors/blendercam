@@ -1,0 +1,521 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1curvecamequation_1_1CamSineCurve" kind="class" language="Python" prot="public">
+    <compoundname>cam::curvecamequation::CamSineCurve</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Operator</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamSineCurve_1abce231e125943a7f744fd23391b45435" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.curvecamequation.CamSineCurve::bl_idname</definition>
+        <argsstring></argsstring>
+        <name>bl_idname</name>
+        <qualifiedname>cam.curvecamequation.CamSineCurve.bl_idname</qualifiedname>
+        <initializer>=  &quot;object.sine&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="24" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamSineCurve_1a5b7126dee372f75fb8a2a85585415caa" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.curvecamequation.CamSineCurve::bl_label</definition>
+        <argsstring></argsstring>
+        <name>bl_label</name>
+        <qualifiedname>cam.curvecamequation.CamSineCurve.bl_label</qualifiedname>
+        <initializer>=  &quot;Periodic Wave&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="25" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="25" bodyend="-1"/>
+        <referencedby refid="classcam_1_1preset__managers_1_1CAM__MACHINE__MT__presets_1af95f7812d2952b26a26809ab923dac09" compoundref="preset__managers_8py" startline="28" endline="38">cam.preset_managers.CAM_MACHINE_MT_presets.post_cb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamSineCurve_1a2b45c86c7ee6c639efcaf3657cb6df7a" prot="public" static="yes" mutable="no">
+        <type>dict</type>
+        <definition>dict cam.curvecamequation.CamSineCurve::bl_options</definition>
+        <argsstring></argsstring>
+        <name>bl_options</name>
+        <qualifiedname>cam.curvecamequation.CamSineCurve.bl_options</qualifiedname>
+        <initializer>=  {&apos;REGISTER&apos;, &apos;UNDO&apos;, &apos;PRESET&apos;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="26" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="26" bodyend="-1"/>
+        <referencedby refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a9628cbca8e69ec75b2337171a02bf428" compoundref="async__op_8py" startline="32" endline="59">cam.async_op.AsyncOperatorMixin.modal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamSineCurve_1ad004a44f2f2c31719261f8e0bd2bb833" prot="public" static="yes" mutable="no">
+        <type>EnumProperty</type>
+        <definition>EnumProperty cam.curvecamequation.CamSineCurve::axis</definition>
+        <argsstring></argsstring>
+        <name>axis</name>
+        <qualifiedname>cam.curvecamequation.CamSineCurve.axis</qualifiedname>
+        <initializer>(
+        name=&quot;Displacement Axis&quot;,
+        items=(
+            (&apos;XY&apos;, &apos;Y to displace X axis&apos;, &apos;Y constant; X sine displacement&apos;),
+            (&apos;YX&apos;, &apos;X to displace Y axis&apos;, &apos;X constant; Y sine displacement&apos;),
+            (&apos;ZX&apos;, &apos;X to displace Z axis&apos;, &apos;X constant; Y sine displacement&apos;),
+            (&apos;ZY&apos;, &apos;Y to displace Z axis&apos;, &apos;X constant; Y sine displacement&apos;)
+        ),
+        default=&apos;ZX&apos;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="29" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamSineCurve_1a78f54c7e20b64ec883ebb7ff2522c958" prot="public" static="yes" mutable="no">
+        <type>EnumProperty</type>
+        <definition>EnumProperty cam.curvecamequation.CamSineCurve::wave</definition>
+        <argsstring></argsstring>
+        <name>wave</name>
+        <qualifiedname>cam.curvecamequation.CamSineCurve.wave</qualifiedname>
+        <initializer>(
+        name=&quot;Wave&quot;,
+        items=(
+            (&apos;sine&apos;, &apos;Sine Wave&apos;, &apos;Sine Wave&apos;),
+            (&apos;<ref refid="namespacecam_1_1curvecamequation_1a6b6956c5735e0173178e8b75bc6ed287" kindref="member">triangle</ref>&apos;, &apos;Triangle Wave&apos;, &apos;<ref refid="namespacecam_1_1curvecamequation_1a6b6956c5735e0173178e8b75bc6ed287" kindref="member">triangle</ref> wave&apos;),
+            (&apos;cycloid&apos;, &apos;Cycloid&apos;, &apos;Sine wave rectification&apos;),
+            (&apos;invcycloid&apos;, &apos;Inverse Cycloid&apos;, &apos;Sine wave rectification&apos;)
+        ),
+        default=&apos;sine&apos;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="39" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamSineCurve_1a88fbd9fbbf0ccfcbc08c81a446270395" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamequation.CamSineCurve::amplitude</definition>
+        <argsstring></argsstring>
+        <name>amplitude</name>
+        <qualifiedname>cam.curvecamequation.CamSineCurve.amplitude</qualifiedname>
+        <initializer>(
+        name=&quot;Amplitude&quot;,
+        default=.01,
+        min=0,
+        max=10,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="49" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="49" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamequation_1_1CamSineCurve_1ae92603301f7aaaac9db2eb82ca861783" compoundref="curvecamequation_8py" startline="135" endline="192">cam.curvecamequation.CamSineCurve.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamSineCurve_1a46b43d27fcd028f44956c8f8c61f7aff" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamequation.CamSineCurve::period</definition>
+        <argsstring></argsstring>
+        <name>period</name>
+        <qualifiedname>cam.curvecamequation.CamSineCurve.period</qualifiedname>
+        <initializer>(
+        name=&quot;Period&quot;,
+        default=.5,
+        min=0.001,
+        max=100,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="57" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="57" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamequation_1_1CamSineCurve_1ae92603301f7aaaac9db2eb82ca861783" compoundref="curvecamequation_8py" startline="135" endline="192">cam.curvecamequation.CamSineCurve.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamSineCurve_1ac73394cbc10e0e902c02fbb726eb67c5" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamequation.CamSineCurve::beatperiod</definition>
+        <argsstring></argsstring>
+        <name>beatperiod</name>
+        <qualifiedname>cam.curvecamequation.CamSineCurve.beatperiod</qualifiedname>
+        <initializer>(
+        name=&quot;Beat Period Offset&quot;,
+        default=0.0,
+        min=0.0,
+        max=100,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="65" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="65" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamequation_1_1CamSineCurve_1ae92603301f7aaaac9db2eb82ca861783" compoundref="curvecamequation_8py" startline="135" endline="192">cam.curvecamequation.CamSineCurve.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamSineCurve_1adf541d3754646fb5b384a36d9891e9aa" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamequation.CamSineCurve::shift</definition>
+        <argsstring></argsstring>
+        <name>shift</name>
+        <qualifiedname>cam.curvecamequation.CamSineCurve.shift</qualifiedname>
+        <initializer>(
+        name=&quot;Phase Shift&quot;,
+        default=0,
+        min=-360,
+        max=360,
+        precision=4,
+        unit=&quot;ROTATION&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="73" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="73" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamequation_1_1CamSineCurve_1ae92603301f7aaaac9db2eb82ca861783" compoundref="curvecamequation_8py" startline="135" endline="192">cam.curvecamequation.CamSineCurve.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamSineCurve_1a451f921ec6fd65a6dfa5b2cd5be3cfdd" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamequation.CamSineCurve::offset</definition>
+        <argsstring></argsstring>
+        <name>offset</name>
+        <qualifiedname>cam.curvecamequation.CamSineCurve.offset</qualifiedname>
+        <initializer>(
+        name=&quot;Offset&quot;,
+        default=0,
+        min=-
+        1.0,
+        max=1,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="81" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="81" bodyend="-1"/>
+        <referencedby refid="classcam_1_1gcodeimportparser_1_1GcodeModel_1a51ce8c24cd510056704e5287c4fbf71a" compoundref="gcodeimportparser_8py" startline="242" endline="290">cam.gcodeimportparser.GcodeModel.do_G1</referencedby>
+        <referencedby refid="classcam_1_1gcodeimportparser_1_1GcodeModel_1a8825aa0c0c4b676428a0a7b547e18a38" compoundref="gcodeimportparser_8py" startline="291" endline="306">cam.gcodeimportparser.GcodeModel.do_G92</referencedby>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurveHatch_1ad75191027148391d9c4d0ee0b81dbdd2" compoundref="curvecamcreate_8py" startline="125" endline="203">cam.curvecamcreate.CamCurveHatch.execute</referencedby>
+        <referencedby refid="classcam_1_1curvecamequation_1_1CamSineCurve_1ae92603301f7aaaac9db2eb82ca861783" compoundref="curvecamequation_8py" startline="135" endline="192">cam.curvecamequation.CamSineCurve.execute</referencedby>
+        <referencedby refid="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1a3a8340d39d68a758d65b7603f76062b2" compoundref="curvecamtools_8py" startline="800" endline="834">cam.curvecamtools.CamOffsetSilhouete.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamSineCurve_1a0a6f5f903aceec6f6c4f9287b729ee7c" prot="public" static="yes" mutable="no">
+        <type>IntProperty</type>
+        <definition>IntProperty cam.curvecamequation.CamSineCurve::iteration</definition>
+        <argsstring></argsstring>
+        <name>iteration</name>
+        <qualifiedname>cam.curvecamequation.CamSineCurve.iteration</qualifiedname>
+        <initializer>(
+        name=&quot;Iteration&quot;,
+        default=100,
+        min=50,
+        max=2000,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="90" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamSineCurve_1ad24c1c1fe072b88be766248fc3c39870" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamequation.CamSineCurve::maxt</definition>
+        <argsstring></argsstring>
+        <name>maxt</name>
+        <qualifiedname>cam.curvecamequation.CamSineCurve.maxt</qualifiedname>
+        <initializer>(
+        name=&quot;Wave Ends at X&quot;,
+        default=0.5,
+        min=-3.0,
+        max=3,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="96" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamSineCurve_1a3968bed30f277538a5f281fc08051e55" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamequation.CamSineCurve::mint</definition>
+        <argsstring></argsstring>
+        <name>mint</name>
+        <qualifiedname>cam.curvecamequation.CamSineCurve.mint</qualifiedname>
+        <initializer>(
+        name=&quot;Wave Starts at X&quot;,
+        default=0,
+        min=-3.0,
+        max=3,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="104" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamSineCurve_1ab9ac06b5bd6485e02b466e545d89721c" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamequation.CamSineCurve::wave_distance</definition>
+        <argsstring></argsstring>
+        <name>wave_distance</name>
+        <qualifiedname>cam.curvecamequation.CamSineCurve.wave_distance</qualifiedname>
+        <initializer>(
+        name=&quot;Distance Between Multiple Waves&quot;,
+        default=0.0,
+        min=0.0,
+        max=100,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="112" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamSineCurve_1aca5fe3decbd875e1907152a229e5ff3e" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamequation.CamSineCurve::wave_angle_offset</definition>
+        <argsstring></argsstring>
+        <name>wave_angle_offset</name>
+        <qualifiedname>cam.curvecamequation.CamSineCurve.wave_angle_offset</qualifiedname>
+        <initializer>(
+        name=&quot;Angle Offset for Multiple Waves&quot;,
+        default=pi/2,
+        min=-200*pi,
+        max=200*pi,
+        precision=4,
+        unit=&quot;ROTATION&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="120" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamSineCurve_1ab7a6bc74f77fb2cee8a74c114ae8c120" prot="public" static="yes" mutable="no">
+        <type>IntProperty</type>
+        <definition>IntProperty cam.curvecamequation.CamSineCurve::wave_amount</definition>
+        <argsstring></argsstring>
+        <name>wave_amount</name>
+        <qualifiedname>cam.curvecamequation.CamSineCurve.wave_amount</qualifiedname>
+        <initializer>(
+        name=&quot;Amount of Multiple Waves&quot;,
+        default=1,
+        min=1,
+        max=2000,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="128" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="128" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamSineCurve_1ab59570e8915630d4973beafe73c17d5a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamequation.CamSineCurve::wave</definition>
+        <argsstring></argsstring>
+        <name>wave</name>
+        <qualifiedname>cam.curvecamequation.CamSineCurve.wave</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="143" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamSineCurve_1accd651d39f0eb6e40122c7d7d66ffa71" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamequation.CamSineCurve::axis</definition>
+        <argsstring></argsstring>
+        <name>axis</name>
+        <qualifiedname>cam.curvecamequation.CamSineCurve.axis</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="168" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamSineCurve_1aab37f5088a137d512b40aad19b963375" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamequation.CamSineCurve::wave_amount</definition>
+        <argsstring></argsstring>
+        <name>wave_amount</name>
+        <qualifiedname>cam.curvecamequation.CamSineCurve.wave_amount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="178" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="178" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcam_1_1curvecamequation_1_1CamSineCurve_1ae92603301f7aaaac9db2eb82ca861783" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.curvecamequation.CamSineCurve.execute</definition>
+        <argsstring>(self, context)</argsstring>
+        <name>execute</name>
+        <qualifiedname>cam.curvecamequation.CamSineCurve.execute</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="135" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="135" bodyend="192"/>
+        <references refid="classcam_1_1curvecamequation_1_1CamSineCurve_1a88fbd9fbbf0ccfcbc08c81a446270395" compoundref="curvecamequation_8py" startline="49">cam.curvecamequation.CamSineCurve.amplitude</references>
+        <references refid="classcam_1_1curvecamequation_1_1CamSineCurve_1ac73394cbc10e0e902c02fbb726eb67c5" compoundref="curvecamequation_8py" startline="65">cam.curvecamequation.CamSineCurve.beatperiod</references>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurveHatch_1abe5c4da7b9b4fdd765a1b22895d54a65" compoundref="curvecamcreate_8py" startline="58">cam.curvecamcreate.CamCurveHatch.offset</references>
+        <references refid="classcam_1_1curvecamequation_1_1CamSineCurve_1a451f921ec6fd65a6dfa5b2cd5be3cfdd" compoundref="curvecamequation_8py" startline="81">cam.curvecamequation.CamSineCurve.offset</references>
+        <references refid="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1ac6a6b5730e85716b9b0b44fe261dd0c1" compoundref="curvecamtools_8py" startline="764">cam.curvecamtools.CamOffsetSilhouete.offset</references>
+        <references refid="classcam_1_1gcodeimportparser_1_1GcodeModel_1abe098ab5b00f9e2cadfebbf90b523247" compoundref="gcodeimportparser_8py" startline="228">cam.gcodeimportparser.GcodeModel.offset</references>
+        <references refid="classcam_1_1curvecamequation_1_1CamSineCurve_1a46b43d27fcd028f44956c8f8c61f7aff" compoundref="curvecamequation_8py" startline="57">cam.curvecamequation.CamSineCurve.period</references>
+        <references refid="classcam_1_1cam__chunk_1_1camPathChunk_1a14da98abe609abafa374ed52861879d6" compoundref="cam__chunk_8py" startline="162" endline="168">cam.cam_chunk.camPathChunk.shift</references>
+        <references refid="classcam_1_1curvecamequation_1_1CamSineCurve_1adf541d3754646fb5b384a36d9891e9aa" compoundref="curvecamequation_8py" startline="73">cam.curvecamequation.CamSineCurve.shift</references>
+        <references refid="classcam_1_1curvecamequation_1_1CamLissajousCurve_1a453905e9471db3917e8d4a7632152904" compoundref="curvecamequation_8py" startline="264">cam.curvecamequation.CamLissajousCurve.shift</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Object Sine </verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.curvecamequation.CamSineCurve</label>
+        <link refid="classcam_1_1curvecamequation_1_1CamSineCurve"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>EnumProperty</label>
+      </node>
+      <node id="6">
+        <label>FloatProperty</label>
+      </node>
+      <node id="7">
+        <label>IntProperty</label>
+      </node>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.curvecamequation.CamSineCurve</label>
+        <link refid="classcam_1_1curvecamequation_1_1CamSineCurve"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+bl_idname</edgelabel>
+          <edgelabel>+bl_label</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+bl_options</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+axis</edgelabel>
+          <edgelabel>+wave</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>+amplitude</edgelabel>
+          <edgelabel>+beatperiod</edgelabel>
+          <edgelabel>+maxt</edgelabel>
+          <edgelabel>+mint</edgelabel>
+          <edgelabel>+offset</edgelabel>
+          <edgelabel>+period</edgelabel>
+          <edgelabel>+shift</edgelabel>
+          <edgelabel>+wave_angle_offset</edgelabel>
+          <edgelabel>+wave_distance</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>+iteration</edgelabel>
+          <edgelabel>+wave_amount</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dict</label>
+      </node>
+      <node id="3">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="22" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="22" bodyend="192"/>
+    <listofallmembers>
+      <member refid="classcam_1_1curvecamequation_1_1CamSineCurve_1a88fbd9fbbf0ccfcbc08c81a446270395" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamSineCurve</scope><name>amplitude</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamSineCurve_1ad004a44f2f2c31719261f8e0bd2bb833" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamSineCurve</scope><name>axis</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamSineCurve_1accd651d39f0eb6e40122c7d7d66ffa71" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamSineCurve</scope><name>axis</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamSineCurve_1ac73394cbc10e0e902c02fbb726eb67c5" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamSineCurve</scope><name>beatperiod</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamSineCurve_1abce231e125943a7f744fd23391b45435" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamSineCurve</scope><name>bl_idname</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamSineCurve_1a5b7126dee372f75fb8a2a85585415caa" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamSineCurve</scope><name>bl_label</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamSineCurve_1a2b45c86c7ee6c639efcaf3657cb6df7a" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamSineCurve</scope><name>bl_options</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamSineCurve_1ae92603301f7aaaac9db2eb82ca861783" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamSineCurve</scope><name>execute</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamSineCurve_1a0a6f5f903aceec6f6c4f9287b729ee7c" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamSineCurve</scope><name>iteration</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamSineCurve_1ad24c1c1fe072b88be766248fc3c39870" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamSineCurve</scope><name>maxt</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamSineCurve_1a3968bed30f277538a5f281fc08051e55" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamSineCurve</scope><name>mint</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamSineCurve_1a451f921ec6fd65a6dfa5b2cd5be3cfdd" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamSineCurve</scope><name>offset</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamSineCurve_1a46b43d27fcd028f44956c8f8c61f7aff" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamSineCurve</scope><name>period</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamSineCurve_1adf541d3754646fb5b384a36d9891e9aa" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamSineCurve</scope><name>shift</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamSineCurve_1a78f54c7e20b64ec883ebb7ff2522c958" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamSineCurve</scope><name>wave</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamSineCurve_1ab59570e8915630d4973beafe73c17d5a" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamSineCurve</scope><name>wave</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamSineCurve_1ab7a6bc74f77fb2cee8a74c114ae8c120" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamSineCurve</scope><name>wave_amount</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamSineCurve_1aab37f5088a137d512b40aad19b963375" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamSineCurve</scope><name>wave_amount</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamSineCurve_1aca5fe3decbd875e1907152a229e5ff3e" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamSineCurve</scope><name>wave_angle_offset</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamSineCurve_1ab9ac06b5bd6485e02b466e545d89721c" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamSineCurve</scope><name>wave_distance</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

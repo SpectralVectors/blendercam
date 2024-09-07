@@ -1,0 +1,734 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>blendercam: cam.curvecamequation.CamSineCurve Class Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">blendercam
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part --><!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('classcam_1_1curvecamequation_1_1CamSineCurve.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="classcam_1_1curvecamequation_1_1CamSineCurve-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">cam.curvecamequation.CamSineCurve Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Inheritance diagram for cam.curvecamequation.CamSineCurve:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1curvecamequation_1_1CamSineCurve__inherit__graph.svg" width="212" height="464"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Collaboration diagram for cam.curvecamequation.CamSineCurve:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1curvecamequation_1_1CamSineCurve__coll__graph.svg" width="100%" height="563"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ae92603301f7aaaac9db2eb82ca861783" id="r_ae92603301f7aaaac9db2eb82ca861783"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae92603301f7aaaac9db2eb82ca861783">execute</a> (self, context)</td></tr>
+<tr class="separator:ae92603301f7aaaac9db2eb82ca861783"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ab59570e8915630d4973beafe73c17d5a" id="r_ab59570e8915630d4973beafe73c17d5a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab59570e8915630d4973beafe73c17d5a">wave</a></td></tr>
+<tr class="separator:ab59570e8915630d4973beafe73c17d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accd651d39f0eb6e40122c7d7d66ffa71" id="r_accd651d39f0eb6e40122c7d7d66ffa71"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#accd651d39f0eb6e40122c7d7d66ffa71">axis</a></td></tr>
+<tr class="separator:accd651d39f0eb6e40122c7d7d66ffa71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab37f5088a137d512b40aad19b963375" id="r_aab37f5088a137d512b40aad19b963375"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab37f5088a137d512b40aad19b963375">wave_amount</a></td></tr>
+<tr class="separator:aab37f5088a137d512b40aad19b963375"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:abce231e125943a7f744fd23391b45435" id="r_abce231e125943a7f744fd23391b45435"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abce231e125943a7f744fd23391b45435">bl_idname</a> = &quot;object.sine&quot;</td></tr>
+<tr class="separator:abce231e125943a7f744fd23391b45435"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b7126dee372f75fb8a2a85585415caa" id="r_a5b7126dee372f75fb8a2a85585415caa"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b7126dee372f75fb8a2a85585415caa">bl_label</a> = &quot;Periodic Wave&quot;</td></tr>
+<tr class="separator:a5b7126dee372f75fb8a2a85585415caa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b45c86c7ee6c639efcaf3657cb6df7a" id="r_a2b45c86c7ee6c639efcaf3657cb6df7a"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b45c86c7ee6c639efcaf3657cb6df7a">bl_options</a> = {'REGISTER', 'UNDO', 'PRESET'}</td></tr>
+<tr class="separator:a2b45c86c7ee6c639efcaf3657cb6df7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad004a44f2f2c31719261f8e0bd2bb833" id="r_ad004a44f2f2c31719261f8e0bd2bb833"><td class="memItemLeft" align="right" valign="top">EnumProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad004a44f2f2c31719261f8e0bd2bb833">axis</a></td></tr>
+<tr class="separator:ad004a44f2f2c31719261f8e0bd2bb833"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78f54c7e20b64ec883ebb7ff2522c958" id="r_a78f54c7e20b64ec883ebb7ff2522c958"><td class="memItemLeft" align="right" valign="top">EnumProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78f54c7e20b64ec883ebb7ff2522c958">wave</a></td></tr>
+<tr class="separator:a78f54c7e20b64ec883ebb7ff2522c958"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88fbd9fbbf0ccfcbc08c81a446270395" id="r_a88fbd9fbbf0ccfcbc08c81a446270395"><td class="memItemLeft" align="right" valign="top">FloatProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88fbd9fbbf0ccfcbc08c81a446270395">amplitude</a></td></tr>
+<tr class="separator:a88fbd9fbbf0ccfcbc08c81a446270395"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46b43d27fcd028f44956c8f8c61f7aff" id="r_a46b43d27fcd028f44956c8f8c61f7aff"><td class="memItemLeft" align="right" valign="top">FloatProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46b43d27fcd028f44956c8f8c61f7aff">period</a></td></tr>
+<tr class="separator:a46b43d27fcd028f44956c8f8c61f7aff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac73394cbc10e0e902c02fbb726eb67c5" id="r_ac73394cbc10e0e902c02fbb726eb67c5"><td class="memItemLeft" align="right" valign="top">FloatProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac73394cbc10e0e902c02fbb726eb67c5">beatperiod</a></td></tr>
+<tr class="separator:ac73394cbc10e0e902c02fbb726eb67c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf541d3754646fb5b384a36d9891e9aa" id="r_adf541d3754646fb5b384a36d9891e9aa"><td class="memItemLeft" align="right" valign="top">FloatProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf541d3754646fb5b384a36d9891e9aa">shift</a></td></tr>
+<tr class="separator:adf541d3754646fb5b384a36d9891e9aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a451f921ec6fd65a6dfa5b2cd5be3cfdd" id="r_a451f921ec6fd65a6dfa5b2cd5be3cfdd"><td class="memItemLeft" align="right" valign="top">FloatProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a451f921ec6fd65a6dfa5b2cd5be3cfdd">offset</a></td></tr>
+<tr class="separator:a451f921ec6fd65a6dfa5b2cd5be3cfdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a6f5f903aceec6f6c4f9287b729ee7c" id="r_a0a6f5f903aceec6f6c4f9287b729ee7c"><td class="memItemLeft" align="right" valign="top">IntProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a6f5f903aceec6f6c4f9287b729ee7c">iteration</a></td></tr>
+<tr class="separator:a0a6f5f903aceec6f6c4f9287b729ee7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad24c1c1fe072b88be766248fc3c39870" id="r_ad24c1c1fe072b88be766248fc3c39870"><td class="memItemLeft" align="right" valign="top">FloatProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad24c1c1fe072b88be766248fc3c39870">maxt</a></td></tr>
+<tr class="separator:ad24c1c1fe072b88be766248fc3c39870"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3968bed30f277538a5f281fc08051e55" id="r_a3968bed30f277538a5f281fc08051e55"><td class="memItemLeft" align="right" valign="top">FloatProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3968bed30f277538a5f281fc08051e55">mint</a></td></tr>
+<tr class="separator:a3968bed30f277538a5f281fc08051e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9ac06b5bd6485e02b466e545d89721c" id="r_ab9ac06b5bd6485e02b466e545d89721c"><td class="memItemLeft" align="right" valign="top">FloatProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9ac06b5bd6485e02b466e545d89721c">wave_distance</a></td></tr>
+<tr class="separator:ab9ac06b5bd6485e02b466e545d89721c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca5fe3decbd875e1907152a229e5ff3e" id="r_aca5fe3decbd875e1907152a229e5ff3e"><td class="memItemLeft" align="right" valign="top">FloatProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca5fe3decbd875e1907152a229e5ff3e">wave_angle_offset</a></td></tr>
+<tr class="separator:aca5fe3decbd875e1907152a229e5ff3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7a6bc74f77fb2cee8a74c114ae8c120" id="r_ab7a6bc74f77fb2cee8a74c114ae8c120"><td class="memItemLeft" align="right" valign="top">IntProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7a6bc74f77fb2cee8a74c114ae8c120">wave_amount</a></td></tr>
+<tr class="separator:ab7a6bc74f77fb2cee8a74c114ae8c120"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><pre class="fragment">Object Sine </pre> </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae92603301f7aaaac9db2eb82ca861783" name="ae92603301f7aaaac9db2eb82ca861783"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae92603301f7aaaac9db2eb82ca861783">&#9670;&#160;</a></span>execute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.curvecamequation.CamSineCurve.execute </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>context</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1curvecamequation_1_1CamSineCurve_ae92603301f7aaaac9db2eb82ca861783_cgraph.svg" width="530" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a88fbd9fbbf0ccfcbc08c81a446270395" name="a88fbd9fbbf0ccfcbc08c81a446270395"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88fbd9fbbf0ccfcbc08c81a446270395">&#9670;&#160;</a></span>amplitude</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FloatProperty cam.curvecamequation.CamSineCurve.amplitude</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Amplitude&quot;</span>,</div>
+<div class="line">        default=.01,</div>
+<div class="line">        min=0,</div>
+<div class="line">        max=10,</div>
+<div class="line">        precision=4,</div>
+<div class="line">        unit=<span class="stringliteral">&quot;LENGTH&quot;</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad004a44f2f2c31719261f8e0bd2bb833" name="ad004a44f2f2c31719261f8e0bd2bb833"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad004a44f2f2c31719261f8e0bd2bb833">&#9670;&#160;</a></span>axis <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">EnumProperty cam.curvecamequation.CamSineCurve.axis</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Displacement Axis&quot;</span>,</div>
+<div class="line">        items=(</div>
+<div class="line">            (<span class="stringliteral">&#39;XY&#39;</span>, <span class="stringliteral">&#39;Y to displace X axis&#39;</span>, <span class="stringliteral">&#39;Y constant; X sine displacement&#39;</span>),</div>
+<div class="line">            (<span class="stringliteral">&#39;YX&#39;</span>, <span class="stringliteral">&#39;X to displace Y axis&#39;</span>, <span class="stringliteral">&#39;X constant; Y sine displacement&#39;</span>),</div>
+<div class="line">            (<span class="stringliteral">&#39;ZX&#39;</span>, <span class="stringliteral">&#39;X to displace Z axis&#39;</span>, <span class="stringliteral">&#39;X constant; Y sine displacement&#39;</span>),</div>
+<div class="line">            (<span class="stringliteral">&#39;ZY&#39;</span>, <span class="stringliteral">&#39;Y to displace Z axis&#39;</span>, <span class="stringliteral">&#39;X constant; Y sine displacement&#39;</span>)</div>
+<div class="line">        ),</div>
+<div class="line">        default=<span class="stringliteral">&#39;ZX&#39;</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="accd651d39f0eb6e40122c7d7d66ffa71" name="accd651d39f0eb6e40122c7d7d66ffa71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accd651d39f0eb6e40122c7d7d66ffa71">&#9670;&#160;</a></span>axis <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.curvecamequation.CamSineCurve.axis</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac73394cbc10e0e902c02fbb726eb67c5" name="ac73394cbc10e0e902c02fbb726eb67c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac73394cbc10e0e902c02fbb726eb67c5">&#9670;&#160;</a></span>beatperiod</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FloatProperty cam.curvecamequation.CamSineCurve.beatperiod</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Beat Period Offset&quot;</span>,</div>
+<div class="line">        default=0.0,</div>
+<div class="line">        min=0.0,</div>
+<div class="line">        max=100,</div>
+<div class="line">        precision=4,</div>
+<div class="line">        unit=<span class="stringliteral">&quot;LENGTH&quot;</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="abce231e125943a7f744fd23391b45435" name="abce231e125943a7f744fd23391b45435"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abce231e125943a7f744fd23391b45435">&#9670;&#160;</a></span>bl_idname</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">str cam.curvecamequation.CamSineCurve.bl_idname = &quot;object.sine&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5b7126dee372f75fb8a2a85585415caa" name="a5b7126dee372f75fb8a2a85585415caa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b7126dee372f75fb8a2a85585415caa">&#9670;&#160;</a></span>bl_label</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">str cam.curvecamequation.CamSineCurve.bl_label = &quot;Periodic Wave&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2b45c86c7ee6c639efcaf3657cb6df7a" name="a2b45c86c7ee6c639efcaf3657cb6df7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b45c86c7ee6c639efcaf3657cb6df7a">&#9670;&#160;</a></span>bl_options</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">dict cam.curvecamequation.CamSineCurve.bl_options = {'REGISTER', 'UNDO', 'PRESET'}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0a6f5f903aceec6f6c4f9287b729ee7c" name="a0a6f5f903aceec6f6c4f9287b729ee7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a6f5f903aceec6f6c4f9287b729ee7c">&#9670;&#160;</a></span>iteration</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IntProperty cam.curvecamequation.CamSineCurve.iteration</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Iteration&quot;</span>,</div>
+<div class="line">        default=100,</div>
+<div class="line">        min=50,</div>
+<div class="line">        max=2000,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad24c1c1fe072b88be766248fc3c39870" name="ad24c1c1fe072b88be766248fc3c39870"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad24c1c1fe072b88be766248fc3c39870">&#9670;&#160;</a></span>maxt</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FloatProperty cam.curvecamequation.CamSineCurve.maxt</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Wave Ends at X&quot;</span>,</div>
+<div class="line">        default=0.5,</div>
+<div class="line">        min=-3.0,</div>
+<div class="line">        max=3,</div>
+<div class="line">        precision=4,</div>
+<div class="line">        unit=<span class="stringliteral">&quot;LENGTH&quot;</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3968bed30f277538a5f281fc08051e55" name="a3968bed30f277538a5f281fc08051e55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3968bed30f277538a5f281fc08051e55">&#9670;&#160;</a></span>mint</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FloatProperty cam.curvecamequation.CamSineCurve.mint</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Wave Starts at X&quot;</span>,</div>
+<div class="line">        default=0,</div>
+<div class="line">        min=-3.0,</div>
+<div class="line">        max=3,</div>
+<div class="line">        precision=4,</div>
+<div class="line">        unit=<span class="stringliteral">&quot;LENGTH&quot;</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a451f921ec6fd65a6dfa5b2cd5be3cfdd" name="a451f921ec6fd65a6dfa5b2cd5be3cfdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a451f921ec6fd65a6dfa5b2cd5be3cfdd">&#9670;&#160;</a></span>offset</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FloatProperty cam.curvecamequation.CamSineCurve.offset</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Offset&quot;</span>,</div>
+<div class="line">        default=0,</div>
+<div class="line">        min=-</div>
+<div class="line">        1.0,</div>
+<div class="line">        max=1,</div>
+<div class="line">        precision=4,</div>
+<div class="line">        unit=<span class="stringliteral">&quot;LENGTH&quot;</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a46b43d27fcd028f44956c8f8c61f7aff" name="a46b43d27fcd028f44956c8f8c61f7aff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46b43d27fcd028f44956c8f8c61f7aff">&#9670;&#160;</a></span>period</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FloatProperty cam.curvecamequation.CamSineCurve.period</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Period&quot;</span>,</div>
+<div class="line">        default=.5,</div>
+<div class="line">        min=0.001,</div>
+<div class="line">        max=100,</div>
+<div class="line">        precision=4,</div>
+<div class="line">        unit=<span class="stringliteral">&quot;LENGTH&quot;</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="adf541d3754646fb5b384a36d9891e9aa" name="adf541d3754646fb5b384a36d9891e9aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf541d3754646fb5b384a36d9891e9aa">&#9670;&#160;</a></span>shift</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FloatProperty cam.curvecamequation.CamSineCurve.shift</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Phase Shift&quot;</span>,</div>
+<div class="line">        default=0,</div>
+<div class="line">        min=-360,</div>
+<div class="line">        max=360,</div>
+<div class="line">        precision=4,</div>
+<div class="line">        unit=<span class="stringliteral">&quot;ROTATION&quot;</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a78f54c7e20b64ec883ebb7ff2522c958" name="a78f54c7e20b64ec883ebb7ff2522c958"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78f54c7e20b64ec883ebb7ff2522c958">&#9670;&#160;</a></span>wave <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">EnumProperty cam.curvecamequation.CamSineCurve.wave</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Wave&quot;</span>,</div>
+<div class="line">        items=(</div>
+<div class="line">            (<span class="stringliteral">&#39;sine&#39;</span>, <span class="stringliteral">&#39;Sine Wave&#39;</span>, <span class="stringliteral">&#39;Sine Wave&#39;</span>),</div>
+<div class="line">            (<span class="stringliteral">&#39;triangle&#39;</span>, <span class="stringliteral">&#39;Triangle Wave&#39;</span>, <span class="stringliteral">&#39;triangle wave&#39;</span>),</div>
+<div class="line">            (<span class="stringliteral">&#39;cycloid&#39;</span>, <span class="stringliteral">&#39;Cycloid&#39;</span>, <span class="stringliteral">&#39;Sine wave rectification&#39;</span>),</div>
+<div class="line">            (<span class="stringliteral">&#39;invcycloid&#39;</span>, <span class="stringliteral">&#39;Inverse Cycloid&#39;</span>, <span class="stringliteral">&#39;Sine wave rectification&#39;</span>)</div>
+<div class="line">        ),</div>
+<div class="line">        default=<span class="stringliteral">&#39;sine&#39;</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab59570e8915630d4973beafe73c17d5a" name="ab59570e8915630d4973beafe73c17d5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab59570e8915630d4973beafe73c17d5a">&#9670;&#160;</a></span>wave <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.curvecamequation.CamSineCurve.wave</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab7a6bc74f77fb2cee8a74c114ae8c120" name="ab7a6bc74f77fb2cee8a74c114ae8c120"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7a6bc74f77fb2cee8a74c114ae8c120">&#9670;&#160;</a></span>wave_amount <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IntProperty cam.curvecamequation.CamSineCurve.wave_amount</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Amount of Multiple Waves&quot;</span>,</div>
+<div class="line">        default=1,</div>
+<div class="line">        min=1,</div>
+<div class="line">        max=2000,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aab37f5088a137d512b40aad19b963375" name="aab37f5088a137d512b40aad19b963375"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab37f5088a137d512b40aad19b963375">&#9670;&#160;</a></span>wave_amount <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.curvecamequation.CamSineCurve.wave_amount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aca5fe3decbd875e1907152a229e5ff3e" name="aca5fe3decbd875e1907152a229e5ff3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca5fe3decbd875e1907152a229e5ff3e">&#9670;&#160;</a></span>wave_angle_offset</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FloatProperty cam.curvecamequation.CamSineCurve.wave_angle_offset</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Angle Offset for Multiple Waves&quot;</span>,</div>
+<div class="line">        default=pi/2,</div>
+<div class="line">        min=-200*pi,</div>
+<div class="line">        max=200*pi,</div>
+<div class="line">        precision=4,</div>
+<div class="line">        unit=<span class="stringliteral">&quot;ROTATION&quot;</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab9ac06b5bd6485e02b466e545d89721c" name="ab9ac06b5bd6485e02b466e545d89721c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9ac06b5bd6485e02b466e545d89721c">&#9670;&#160;</a></span>wave_distance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FloatProperty cam.curvecamequation.CamSineCurve.wave_distance</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Distance Between Multiple Waves&quot;</span>,</div>
+<div class="line">        default=0.0,</div>
+<div class="line">        min=0.0,</div>
+<div class="line">        max=100,</div>
+<div class="line">        precision=4,</div>
+<div class="line">        unit=<span class="stringliteral">&quot;LENGTH&quot;</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/<a class="el" href="curvecamequation_8py.html">curvecamequation.py</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.10.0-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacecam.html">cam</a></li><li class="navelem"><a class="el" href="namespacecam_1_1curvecamequation.html">curvecamequation</a></li><li class="navelem"><a class="el" href="classcam_1_1curvecamequation_1_1CamSineCurve.html">CamSineCurve</a></li>
+    <li class="footer">Generated by <a href="https://penify.dev/"><img class="footer" src="https://www.penify.dev/_next/static/media/snorkell-dark-logo.9fa414f5.svg" width="104" height="31" alt="doxygen"/></a> </li>
+  </ul>
+</div>
+</body>
+</html>

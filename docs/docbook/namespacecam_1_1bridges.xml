@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacecam_1_1bridges" xml:lang="en-US">
+<title>cam.bridges Namespace Reference</title>
+<indexterm><primary>cam.bridges</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacecam_1_1bridges_1ab88a28fe439f964efd23975589aaa2b4">addBridge</link> (x, y, rot, sizex, sizey)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1bridges_1aaf5e2c4aefcf0356f7045ed129199829">addAutoBridges</link> (o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1bridges_1a2dbd508f6928335ced548494d7f666b1">getBridgesPoly</link> (o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1bridges_1a5e1747f2a5f009fe7e5a6565534a7831">useBridges</link> (ch, o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1bridges_1a9fb9a9ba8729e5fc0ca07581049b7ca1">auto_cut_bridge</link> (o)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>BlenderCAM &apos;bridges.py&apos; © 2012 Vilem Novak
+
+Functions to add Bridges / Tabs to meshes or curves.
+Called with Operators defined in &apos;ops.py&apos;
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespacecam_1_1bridges_1aaf5e2c4aefcf0356f7045ed129199829"/><section>
+    <title>addAutoBridges()</title>
+<indexterm><primary>addAutoBridges</primary><secondary>cam.bridges</secondary></indexterm>
+<indexterm><primary>cam.bridges</primary><secondary>addAutoBridges</secondary></indexterm>
+<para><computeroutput>cam.bridges.addAutoBridges ( o)</computeroutput></para>
+<para><literallayout><computeroutput>Attempt to Add Auto Bridges as Set of Curves</computeroutput></literallayout> </para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1bridges_aaf5e2c4aefcf0356f7045ed129199829_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1bridges_1ab88a28fe439f964efd23975589aaa2b4"/><section>
+    <title>addBridge()</title>
+<indexterm><primary>addBridge</primary><secondary>cam.bridges</secondary></indexterm>
+<indexterm><primary>cam.bridges</primary><secondary>addBridge</secondary></indexterm>
+<para><computeroutput>cam.bridges.addBridge ( x,  y,  rot,  sizex,  sizey)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1bridges_ab88a28fe439f964efd23975589aaa2b4_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1bridges_1a9fb9a9ba8729e5fc0ca07581049b7ca1"/><section>
+    <title>auto_cut_bridge()</title>
+<indexterm><primary>auto_cut_bridge</primary><secondary>cam.bridges</secondary></indexterm>
+<indexterm><primary>cam.bridges</primary><secondary>auto_cut_bridge</secondary></indexterm>
+<para><computeroutput>cam.bridges.auto_cut_bridge ( o)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1bridges_1a2dbd508f6928335ced548494d7f666b1"/><section>
+    <title>getBridgesPoly()</title>
+<indexterm><primary>getBridgesPoly</primary><secondary>cam.bridges</secondary></indexterm>
+<indexterm><primary>cam.bridges</primary><secondary>getBridgesPoly</secondary></indexterm>
+<para><computeroutput>cam.bridges.getBridgesPoly ( o)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1bridges_a2dbd508f6928335ced548494d7f666b1_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1bridges_1a5e1747f2a5f009fe7e5a6565534a7831"/><section>
+    <title>useBridges()</title>
+<indexterm><primary>useBridges</primary><secondary>cam.bridges</secondary></indexterm>
+<indexterm><primary>cam.bridges</primary><secondary>useBridges</secondary></indexterm>
+<para><computeroutput>cam.bridges.useBridges ( ch,  o)</computeroutput></para>
+<para><literallayout><computeroutput>This Adds Bridges to Chunks, Takes the Bridge-objects Collection and Uses the Curves Inside It as Bridges.</computeroutput></literallayout> </para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1bridges_a5e1747f2a5f009fe7e5a6565534a7831_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+</section>

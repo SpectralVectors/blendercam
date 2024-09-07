@@ -1,0 +1,3329 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red0\green128\blue0;\red96\green64\blue32;\rede0\green128\blue0;\red128\green0\blue0;\red128\green96\blue32;\red0\green32\blue128;\red0\green128\blue128;\red255\green0\blue255;\red0\green0\blue0;\red112\green0\blue112;\red255\green0\blue0;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\paperw11900\paperh16840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext50 Code Example 9;}
+{\s50\li3600\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext51 Code Example 10;}
+{\s51\li3960\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext52 Code Example 11;}
+{\s52\li4320\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 12;}
+{\s53\li4680\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 13;}
+{\s60\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext61 List Continue 0;}
+{\s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext62 List Continue 1;}
+{\s62\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext63 List Continue 2;}
+{\s63\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext64 List Continue 3;}
+{\s64\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext65 List Continue 4;}
+{\s65\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext66 List Continue 5;}
+{\s66\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext67 List Continue 6;}
+{\s67\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext68 List Continue 7;}
+{\s68\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext69 List Continue 8;}
+{\s69\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext70 List Continue 9;}
+{\s70\li3600\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext71 List Continue 10;}
+{\s71\li3960\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext72 List Continue 11;}
+{\s72\li4320\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 12;}
+{\s73\li4680\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 13;}
+{\s80\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext81 DescContinue 0;}
+{\s81\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext82 DescContinue 1;}
+{\s82\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext83 DescContinue 2;}
+{\s83\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext84 DescContinue 3;}
+{\s84\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext85 DescContinue 4;}
+{\s85\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext86 DescContinue 5;}
+{\s86\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext87 DescContinue 6;}
+{\s87\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext88 DescContinue 7;}
+{\s88\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext89 DescContinue 8;}
+{\s89\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext90 DescContinue 9;}
+{\s90\li3600\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext91 DescContinue 10;}
+{\s91\li3960\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext92 DescContinue 11;}
+{\s92\li4320\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 12;}
+{\s93\li4680\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 13;}
+{\s100\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext101 LatexTOC 0;}
+{\s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext102 LatexTOC 1;}
+{\s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext103 LatexTOC 2;}
+{\s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext104 LatexTOC 3;}
+{\s104\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext105 LatexTOC 4;}
+{\s105\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext106 LatexTOC 5;}
+{\s106\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext107 LatexTOC 6;}
+{\s107\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext108 LatexTOC 7;}
+{\s108\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext109 LatexTOC 8;}
+{\s109\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext110 LatexTOC 9;}
+{\s110\li3600\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext111 LatexTOC 10;}
+{\s111\li3960\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext112 LatexTOC 11;}
+{\s112\li4320\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 12;}
+{\s113\li4680\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 13;}
+{\s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext121 \sautoupd List Bullet 0;}
+{\s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext122 \sautoupd List Bullet 1;}
+{\s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext123 \sautoupd List Bullet 2;}
+{\s123\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext124 \sautoupd List Bullet 3;}
+{\s124\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext125 \sautoupd List Bullet 4;}
+{\s125\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext126 \sautoupd List Bullet 5;}
+{\s126\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext127 \sautoupd List Bullet 6;}
+{\s127\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext128 \sautoupd List Bullet 7;}
+{\s128\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext129 \sautoupd List Bullet 8;}
+{\s129\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext130 \sautoupd List Bullet 9;}
+{\s130\fi-360\li3960\widctlpar\jclisttab\tx3960{\*\pn \pnlvlbody\ilvl0\ls11\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext131 \sautoupd List Bullet 10;}
+{\s131\fi-360\li4320\widctlpar\jclisttab\tx4320{\*\pn \pnlvlbody\ilvl0\ls12\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext132 \sautoupd List Bullet 11;}
+{\s132\fi-360\li4680\widctlpar\jclisttab\tx4680{\*\pn \pnlvlbody\ilvl0\ls13\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 12;}
+{\s133\fi-360\li5040\widctlpar\jclisttab\tx5040{\*\pn \pnlvlbody\ilvl0\ls14\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 13;}
+{\s140\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext141 \sautoupd List Enum 0;}
+{\s141\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext142 \sautoupd List Enum 1;}
+{\s142\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext143 \sautoupd List Enum 2;}
+{\s143\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext144 \sautoupd List Enum 3;}
+{\s144\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext145 \sautoupd List Enum 4;}
+{\s145\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext146 \sautoupd List Enum 5;}
+{\s146\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext147 \sautoupd List Enum 6;}
+{\s147\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext148 \sautoupd List Enum 7;}
+{\s148\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext149 \sautoupd List Enum 8;}
+{\s149\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext150 \sautoupd List Enum 9;}
+{\s150\fi-360\li3960\widctlpar\fs20\cgrid \sbasedon0 \snext151 \sautoupd List Enum 10;}
+{\s151\fi-360\li4320\widctlpar\fs20\cgrid \sbasedon0 \snext152 \sautoupd List Enum 11;}
+{\s152\fi-360\li4680\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 12;}
+{\s153\fi-360\li5040\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 13;}
+}
+{\comment begin body}
+{\info 
+{\title {\comment blendercam }blendercam}
+{\comment Generated by doxygen 1.10.0.}
+}\pard\plain 
+\sectd\pgnlcrm
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\vertalc\qc\par\par\par\par\par\par\par
+\pard\plain \s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid 
+{\field\fldedit {\*\fldinst TITLE \\*MERGEFORMAT}{\fldrslt blendercam}}\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\par
+\par\par\par\par\par\par\par\par\par\par\par\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+{\field\fldedit {\*\fldinst AUTHOR \\*MERGEFORMAT}{\fldrslt AUTHOR}}\par
+Version \par\page\page\vertalt
+\pard\plain 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Table of Contents\par
+\pard\plain \par
+{\field\fldedit {\*\fldinst TOC \\f \\*MERGEFORMAT}{\fldrslt Table of contents}}\par
+\pard\plain 
+\sect \sbkpage \pgndec \pgnrestart
+\sect \sectd \sbknone
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+\par \pard\plain 
+\par \pard\plain 
+{\field\fldedit{\*\fldinst INCLUDETEXT "md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam_01Installation.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+{\field\fldedit{\*\fldinst INCLUDETEXT "md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam-Panel-Descriptions.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+{\field\fldedit{\*\fldinst INCLUDETEXT "md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam-Tools.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+{\field\fldedit{\*\fldinst INCLUDETEXT "md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Getting_01started.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+{\field\fldedit{\*\fldinst INCLUDETEXT "md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Profile_01and_01Pocket_01operations.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+{\field\fldedit{\*\fldinst INCLUDETEXT "md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2README.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Namespace Index\par \pard\plain 
+{\tc \v Namespace Index}
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaces.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Hierarchical Index\par \pard\plain 
+{\tc \v Hierarchical Index}
+{\field\fldedit{\*\fldinst INCLUDETEXT "hierarchy.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Class Index\par \pard\plain 
+{\tc \v Class Index}
+{\field\fldedit{\*\fldinst INCLUDETEXT "annotated.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+File Index\par \pard\plain 
+{\tc \v File Index}
+{\field\fldedit{\*\fldinst INCLUDETEXT "files.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Namespace Documentation\par \pard\plain 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceball__1.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceball__10.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceball__12.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceball__16.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceball__2.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceball__20.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceball__3.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceball__4.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceball__5.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceball__6.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceball__7.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceball__8.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceBALLCONE__1.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1async__op.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1autoupdate.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1basrelief.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1bridges.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1cam__chunk.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1cam__operation.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1chain.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1collision.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1constants.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1curvecamcreate.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1curvecamequation.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1curvecamtools.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1engine.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1exception.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1gcodeimportparser.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1gcodepath.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1image__utils.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1involute__gear.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1joinery.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1machine__settings.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1anilam__crusader__m.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1anilam__crusader__m__read.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1attach.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1cad__iso__read.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1cad__nc__read.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1cad__read.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1centroid1.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1centroid1__read.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1drag__knife.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1emc2.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1emc2__read.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1emc2b.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1emc2b__crc.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1emc2b__crc__read.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1emc2b__read.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1emc2tap.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1emc2tap__read.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1fadal.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1format.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1gantry__router.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1gantry__router__read.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1gravos.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1grbl.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1heiden.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1heiden530.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1heiden__read.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1hm50.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1hm50__read.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1hpgl2d.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1hpgl2d__read.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1hpgl2dv.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1hpgl2dv__read.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1hpgl3d.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1hpgl3d__read.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1hxml__writer.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1iso.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1iso__codes.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1iso__crc.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1iso__crc__read.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1iso__modal.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1iso__modal__read.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1iso__read.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1lathe1.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1lathe1__read.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1lynx__otter__o.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1mach3.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1mach3__read.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1makerbot__codes.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1makerbotHBP.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1makerbotHBP__read.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1nc.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1nc__read.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1nclathe__read.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1num__reader.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1printbot3d.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1printbot3d__read.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1recreator.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1rez2.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1rez2__read.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1series1.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1series1__read.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1shopbot__mtc.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1siegkx1.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1siegkx1__read.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1tnc151.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1tnc151__read.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1nc_1_1winpc.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1numba__wrapper.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1opencamlib.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1opencamlib_1_1oclSample.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1opencamlib_1_1opencamlib.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1ops.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1pack.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1parametric.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1pattern.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1polygon__utils__cam.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1preferences.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1preset__managers.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1puzzle__joinery.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1simple.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1simulation.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1slice.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1strategy.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1testing.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1ui.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1ui__panels.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1ui__panels_1_1area.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1ui__panels_1_1buttons__panel.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1ui__panels_1_1chains.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1ui__panels_1_1cutter.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1ui__panels_1_1feedrate.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1ui__panels_1_1gcode.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1ui__panels_1_1info.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1ui__panels_1_1interface.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1ui__panels_1_1machine.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1ui__panels_1_1material.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1ui__panels_1_1movement.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1ui__panels_1_1op__properties.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1ui__panels_1_1operations.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1ui__panels_1_1optimisation.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1ui__panels_1_1pack.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1ui__panels_1_1slice.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1utils.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1version.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacecam_1_1voronoi.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceemc__test__2.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceend__cyl__1.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceend__cyl__10.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceend__cyl__12.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceend__cyl__16.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceend__cyl__2.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceend__cyl__20.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceend__cyl__3.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceend__cyl__4.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceend__cyl__5.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceend__cyl__6.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceend__cyl__7.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceend__cyl__8.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceFin__Ball__3_000__Block__All.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceFin__Ball__3_000__Block__Around.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceFin__Ball__3_000__Circles__All__EXPERIMENTAL.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceFin__Ball__3_000__Circles__Around__EXPERIMENTAL.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceFin__Ball__3_000__Cross__All.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceFin__Ball__3_000__Cross__Around.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceFin__Ball__3_000__Cutout.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceFin__Ball__3_000__Outline__Fill__EXPERIMENTAL.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceFin__Ball__3_000__Parallel__All.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceFin__Ball__3_000__Parallel__Around.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceFin__Ball__3_000__Pencil__EXPERIMENTAL.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceFin__Ball__3_000__Pocket__EXPERIMENTAL.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceFin__Ball__3_000__Spiral__All.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceFin__Ball__3_000__Spiral__Around.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceFinishing__3mm__ballnose.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacegcode__generator.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceinstall__addon.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacekk1000s.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacepie__area.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacepie__cam.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacepie__chains.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacepie__curvecreators.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacepie__curvetools.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacepie__cutter.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacepie__feedrate.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacepie__gcode.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacepie__info.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacepie__machine.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacepie__material.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacepie__movement.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacepie__operation.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacepie__optimisation.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacepie__pack__slice__relief.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacepie__setup.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceRou__Ball__3_000__Block__All.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceRou__Ball__3_000__Block__Around.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceRou__Ball__3_000__Circles__All__EXPERIMENTAL.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceRou__Ball__3_000__Circles__Around__EXPERIMENTAL.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceRou__Ball__3_000__Cross__All.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceRou__Ball__3_000__Cross__Around.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceRou__Ball__3_000__Cutout.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceRou__Ball__3_000__Outline__Fill__EXPERIMENTAL.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceRou__Ball__3_000__Parallel__All.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceRou__Ball__3_000__Parallel__Around.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceRou__Ball__3_000__Pencil__EXPERIMENTAL.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceRou__Ball__3_000__Pocket__EXPERIMENTAL.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceRou__Ball__3_000__Spiral__All.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespaceRou__Ball__3_000__Spiral__Around.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacetest__suite.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacev-carve__3mm__45deg.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacev-carve__3mm__60deg.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacev-carve__6mm__45deg.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "namespacev-carve__6mm__60deg.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Class Documentation{\tc \v Class Documentation}
+\par \pard\plain 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1preset__managers_1_1AddPresetCamCutter.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1preset__managers_1_1AddPresetCamMachine.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1preset__managers_1_1AddPresetCamOperation.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1format_1_1Address.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1format_1_1AddressPlusMinus.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1async__op_1_1AsyncCancelledException.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1async__op_1_1AsyncOperatorMixin.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1async__op_1_1AsyncTestOperator.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1basrelief_1_1BASRELIEF__Panel.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1basrelief_1_1BasReliefsettings.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classtest__suite_1_1BlenderCAMTest.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1cad__read_1_1CAD__backplot.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ops_1_1CalculatePath.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ui__panels_1_1chains_1_1CAM__CHAINS__Panel.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1preset__managers_1_1CAM__CUTTER__MT__presets.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ui__panels_1_1cutter_1_1CAM__CUTTER__Panel.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ui__panels_1_1feedrate_1_1CAM__FEEDRATE__Panel.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ui__panels_1_1info_1_1CAM__INFO__Panel.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ui__panels_1_1info_1_1CAM__INFO__Properties.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Panel.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Properties.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1preset__managers_1_1CAM__MACHINE__MT__presets.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ui__panels_1_1machine_1_1CAM__MACHINE__Panel.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Panel.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__PositionObject.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Properties.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Panel.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Properties.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1preset__managers_1_1CAM__OPERATION__MT__presets.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Properties.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ui__panels_1_1pack_1_1CAM__PACK__Panel.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ui__panels_1_1slice_1_1CAM__SLICE__Panel.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ui__panels_1_1chains_1_1CAM__UL__chains.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ui__panels_1_1chains_1_1CAM__UL__operations.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ui_1_1CAM__UL__orientations.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1preferences_1_1CamAddonPreferences.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ops_1_1CamBridgesAdd.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1chain_1_1camChain.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ops_1_1CamChainAdd.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ops_1_1CamChainOperationAdd.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ops_1_1CamChainOperationDown.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ops_1_1CamChainOperationRemove.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ops_1_1CamChainOperationUp.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ops_1_1CamChainRemove.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1curvecamtools_1_1CamCurveBoolean.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1curvecamtools_1_1CamCurveConvexHull.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1curvecamcreate_1_1CamCurveDrawer.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1curvecamcreate_1_1CamCurveFlatCone.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1curvecamcreate_1_1CamCurveGear.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1curvecamcreate_1_1CamCurveHatch.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1curvecamtools_1_1CamCurveIntarsion.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1curvecamcreate_1_1CamCurveInterlock.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1curvecamcreate_1_1CamCurveMortise.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1curvecamtools_1_1CamCurveOvercuts.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1curvecamtools_1_1CamCurveOvercutsB.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1curvecamcreate_1_1CamCurvePlate.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1curvecamcreate_1_1CamCurvePuzzle.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1curvecamtools_1_1CamCurveRemoveDoubles.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1curvecamequation_1_1CamCustomCurve.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1exception_1_1CamException.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1curvecamequation_1_1CamHypotrochoidCurve.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1curvecamequation_1_1CamLissajousCurve.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1curvecamtools_1_1CamMeshGetPockets.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1curvecamtools_1_1CamOffsetSilhouete.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1cam__operation_1_1camOperation.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ops_1_1CamOperationAdd.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ops_1_1CamOperationCopy.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ops_1_1CamOperationMove.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ops_1_1CamOperationRemove.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ops_1_1CamOrientationAdd.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ops_1_1CamPackObjects.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1cam__chunk_1_1camPathChunk.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1cam__chunk_1_1camPathChunkBuilder.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ops_1_1CAMSimulate.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ops_1_1CAMSimulateChain.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1curvecamequation_1_1CamSineCurve.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ops_1_1CamSliceObjects.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1engine_1_1CNCCAM__ENGINE.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1iso__codes_1_1Codes.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1makerbot__codes_1_1Codes.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1emc2tap_1_1CodesEMC2.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1voronoi_1_1Context.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1anilam__crusader__m_1_1Creator.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1attach_1_1Creator.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1centroid1_1_1Creator.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1drag__knife_1_1Creator.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1emc2_1_1Creator.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1emc2b_1_1Creator.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1emc2b__crc_1_1Creator.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1fadal_1_1Creator.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1gantry__router_1_1Creator.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1gravos_1_1Creator.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1grbl_1_1Creator.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1heiden530_1_1Creator.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1heiden_1_1Creator.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1hm50_1_1Creator.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1hpgl2d_1_1Creator.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1hpgl2dv_1_1Creator.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1hpgl3d_1_1Creator.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1iso_1_1Creator.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1iso__crc_1_1Creator.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1iso__modal_1_1Creator.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1lynx__otter__o_1_1Creator.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1mach3_1_1Creator.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1nc_1_1Creator.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1rez2_1_1Creator.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1series1_1_1Creator.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1shopbot__mtc_1_1Creator.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1siegkx1_1_1Creator.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1tnc151_1_1Creator.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1winpc_1_1Creator.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1emc2tap_1_1CreatorEMC2tap.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1lathe1_1_1CreatorIso.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ui_1_1CustomPanel.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1basrelief_1_1DoBasRelief.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1voronoi_1_1Edge.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1voronoi_1_1EdgeList.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classException.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1format_1_1Format.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1gcodeimportparser_1_1GcodeModel.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1gcodeimportparser_1_1GcodeParser.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1voronoi_1_1Halfedge.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ui_1_1import__settings.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1voronoi_1_1SiteList_1_1Iterator.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ops_1_1KillPathsBackground.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1gcodeimportparser_1_1Layer.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1machine__settings_1_1machineSettings.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1num__reader_1_1NumReader.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classobject.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1chain_1_1opReference.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1pack_1_1PackObjectsSettings.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classbpy_1_1types_1_1Panel.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1anilam__crusader__m__read_1_1Parser.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1cad__iso__read_1_1Parser.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1cad__nc__read_1_1Parser.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1centroid1__read_1_1Parser.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1emc2__read_1_1Parser.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1emc2b__crc__read_1_1Parser.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1emc2b__read_1_1Parser.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1emc2tap__read_1_1Parser.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1gantry__router__read_1_1Parser.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1heiden__read_1_1Parser.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1hm50__read_1_1Parser.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1hpgl2d__read_1_1Parser.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1hpgl2dv__read_1_1Parser.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1hpgl3d__read_1_1Parser.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1iso__crc__read_1_1Parser.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1iso__modal__read_1_1Parser.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1iso__read_1_1Parser.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1lathe1__read_1_1Parser.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1mach3__read_1_1Parser.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1makerbotHBP__read_1_1Parser.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1nc__read_1_1Parser.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1nclathe__read_1_1Parser.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1printbot3d__read_1_1Parser.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1rez2__read_1_1Parser.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1series1__read_1_1Parser.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1siegkx1__read_1_1Parser.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1tnc151__read_1_1Parser.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ops_1_1PathExport.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ops_1_1PathExportChain.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ops_1_1PathsAll.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ops_1_1PathsBackground.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ops_1_1PathsChain.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1utils_1_1Point.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1voronoi_1_1PriorityQueue.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1basrelief_1_1ProblemAreas.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classbpy_1_1types_1_1PropertyGroup.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1nc_1_1recreator_1_1Redirector.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1basrelief_1_1ReliefError.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1gcodeimportparser_1_1Segment.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1voronoi_1_1Site.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1voronoi_1_1SiteList.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1slice_1_1SliceObjectsSettings.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ops_1_1threadCom.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1autoupdate_1_1UpdateChecker.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1autoupdate_1_1Updater.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1autoupdate_1_1UpdateSourceOperator.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classpie__area_1_1VIEW3D__MT__PIE__Area.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classpie__cam_1_1VIEW3D__MT__PIE__CAM.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classpie__chains_1_1VIEW3D__MT__PIE__Chains.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classpie__curvecreators_1_1VIEW3D__MT__PIE__CurveCreators.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classpie__curvetools_1_1VIEW3D__MT__PIE__CurveTools.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classpie__cutter_1_1VIEW3D__MT__PIE__Cutter.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classpie__feedrate_1_1VIEW3D__MT__PIE__Feedrate.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classpie__gcode_1_1VIEW3D__MT__PIE__Gcode.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classpie__info_1_1VIEW3D__MT__PIE__Info.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classpie__machine_1_1VIEW3D__MT__PIE__Machine.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classpie__material_1_1VIEW3D__MT__PIE__Material.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classpie__movement_1_1VIEW3D__MT__PIE__Movement.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classpie__operation_1_1VIEW3D__MT__PIE__Operation.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classpie__optimisation_1_1VIEW3D__MT__PIE__Optimisation.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classpie__pack__slice__relief_1_1VIEW3D__MT__PIE__PackSliceRelief.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classpie__setup_1_1VIEW3D__MT__PIE__Setup.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ui_1_1VIEW3D__PT__tools__create.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ui_1_1VIEW3D__PT__tools__curvetools.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "classcam_1_1ui_1_1WM__OT__gcode__import.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+File Documentation{\tc \v File Documentation}
+\par \pard\plain 
+{\field\fldedit{\*\fldinst INCLUDETEXT "Blendercam_01Installation_8md.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "Blendercam-Panel-Descriptions_8md.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "Blendercam-Tools_8md.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "Getting_01started_8md.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "Profile_01and_01Pocket_01operations_8md.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "README_8md.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "async__op_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "autoupdate_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "basrelief_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "bridges_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "cam__chunk_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "cam__operation_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "chain_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "collision_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "constants_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "curvecamcreate_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "curvecamequation_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "curvecamtools_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "engine_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "exception_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "gcodeimportparser_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "gcodepath_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "image__utils_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "involute__gear_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "joinery_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "machine__settings_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "anilam__crusader__m_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "anilam__crusader__m__read_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "attach_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "cad__iso__read_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "cad__nc__read_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "cad__read_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "centroid1_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "centroid1__read_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "drag__knife_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "emc2_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "emc2__read_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "emc2b_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "emc2b__crc_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "emc2b__crc__read_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "emc2b__read_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "emc2tap_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "emc2tap__read_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "fadal_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "format_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "gantry__router_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "gantry__router__read_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "gravos_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "grbl_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "heiden_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "heiden530_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "heiden__read_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "hm50_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "hm50__read_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "hpgl2d_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "hpgl2d__read_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "hpgl2dv_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "hpgl2dv__read_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "hpgl3d_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "hpgl3d__read_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "hxml__writer_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "iso_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "iso__codes_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "iso__crc_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "iso__crc__read_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "iso__modal_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "iso__modal__read_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "iso__read_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "lathe1_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "lathe1__read_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "lynx__otter__o_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "mach3_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "mach3__read_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "makerbot__codes_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "makerbotHBP_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "makerbotHBP__read_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "nc_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "nc__read_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "nclathe__read_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "num__reader_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "printbot3d_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "printbot3d__read_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "recreator_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "rez2_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "rez2__read_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "series1_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "series1__read_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "shopbot__mtc_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "siegkx1_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "siegkx1__read_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "tnc151_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "tnc151__read_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "winpc_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "numba__wrapper_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "oclSample_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "opencamlib_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "ops_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "parametric_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "pattern_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "pie__area_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "pie__cutter_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "pie__feedrate_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "pie__gcode_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "pie__movement_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "pie__operation_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "pie__optimisation_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "pie__setup_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "pie__cam_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "pie__chains_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "pie__curvecreators_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "pie__curvetools_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "pie__info_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "pie__machine_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "pie__material_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "pie__pack__slice__relief_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "polygon__utils__cam_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "preferences_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "preset__managers_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "ball__1_800mm_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "ball__1_850mm_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "ball__10_800mm_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "ball__12_800mm_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "ball__16_800mm_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "ball__2_800mm_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "ball__2_850mm_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "ball__20_800mm_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "ball__3_800mm_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "ball__3_850mm_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "ball__4_800mm_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "ball__5_800mm_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "ball__6_800mm_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "ball__7_800mm_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "ball__8_800mm_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "BALLCONE__1_800mm_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "end__cyl__1_800mm_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "end__cyl__1_850mm_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "end__cyl__10_800mm_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "end__cyl__12_800mm_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "end__cyl__16_800mm_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "end__cyl__2_800mm_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "end__cyl__2_850mm_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "end__cyl__20_800mm_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "end__cyl__3_800mm_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "end__cyl__3_850mm_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "end__cyl__4_800mm_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "end__cyl__5_800mm_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "end__cyl__6_800mm_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "end__cyl__7_800mm_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "end__cyl__8_800mm_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "v-carve__3mm__45deg_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "v-carve__3mm__60deg_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "v-carve__6mm__45deg_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "v-carve__6mm__60deg_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "emc__test__2_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "kk1000s_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "Fin__Ball__3_000__Block__All_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "Fin__Ball__3_000__Block__Around_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "Fin__Ball__3_000__Circles__All__EXPERIMENTAL_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "Fin__Ball__3_000__Circles__Around__EXPERIMENTAL_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "Fin__Ball__3_000__Cross__All_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "Fin__Ball__3_000__Cross__Around_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "Fin__Ball__3_000__Cutout_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "Fin__Ball__3_000__Outline__Fill__EXPERIMENTAL_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "Fin__Ball__3_000__Parallel__All_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "Fin__Ball__3_000__Parallel__Around_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "Fin__Ball__3_000__Pencil__EXPERIMENTAL_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "Fin__Ball__3_000__Pocket__EXPERIMENTAL_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "Fin__Ball__3_000__Spiral__All_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "Fin__Ball__3_000__Spiral__Around_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "Finishing__3mm__ballnose_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "Rou__Ball__3_000__Block__All_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "Rou__Ball__3_000__Block__Around_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "Rou__Ball__3_000__Circles__All__EXPERIMENTAL_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "Rou__Ball__3_000__Circles__Around__EXPERIMENTAL_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "Rou__Ball__3_000__Cross__All_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "Rou__Ball__3_000__Cross__Around_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "Rou__Ball__3_000__Cutout_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "Rou__Ball__3_000__Outline__Fill__EXPERIMENTAL_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "Rou__Ball__3_000__Parallel__All_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "Rou__Ball__3_000__Parallel__Around_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "Rou__Ball__3_000__Pencil__EXPERIMENTAL_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "Rou__Ball__3_000__Pocket__EXPERIMENTAL_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "Rou__Ball__3_000__Spiral__All_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "Rou__Ball__3_000__Spiral__Around_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "puzzle__joinery_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "simple_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "simulation_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "strategy_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "testing_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "gcode__generator_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "install__addon_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "test__suite_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "ui_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "____init_____8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "nc_2____init_____8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "opencamlib_2____init_____8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "ui__panels_2____init_____8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "area_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "buttons__panel_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "chains_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "cutter_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "feedrate_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "gcode_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "info_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "interface_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "machine_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "material_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "movement_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "op__properties_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "operations_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "optimisation_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "pack_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "ui__panels_2pack_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "slice_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "ui__panels_2slice_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "utils_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "version_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+{\field\fldedit{\*\fldinst INCLUDETEXT "voronoi_8py.rtf" \\*MERGEFORMAT}{\fldrslt includedstuff}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Index\par 
+\pard\plain 
+{\tc \v Index}
+{\field\fldedit {\*\fldinst INDEX \\c2 \\*MERGEFORMAT}{\fldrslt INDEX}}
+}

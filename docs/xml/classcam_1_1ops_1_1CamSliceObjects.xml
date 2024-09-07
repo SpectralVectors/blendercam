@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1ops_1_1CamSliceObjects" kind="class" language="Python" prot="public">
+    <compoundname>cam::ops::CamSliceObjects</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Operator</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1ops_1_1CamSliceObjects_1aaf5afd4374a419a719ddc2ff6426eb29" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.ops.CamSliceObjects::bl_idname</definition>
+        <argsstring></argsstring>
+        <name>bl_idname</name>
+        <qualifiedname>cam.ops.CamSliceObjects.bl_idname</qualifiedname>
+        <initializer>=  &quot;object.cam_slice_objects&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="285" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="285" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ops_1_1CamSliceObjects_1a8908e58f507722f4ca7a53f064208c1d" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.ops.CamSliceObjects::bl_label</definition>
+        <argsstring></argsstring>
+        <name>bl_label</name>
+        <qualifiedname>cam.ops.CamSliceObjects.bl_label</qualifiedname>
+        <initializer>=  &quot;Slice Object - Useful for Lasercut Puzzles etc&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="286" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="286" bodyend="-1"/>
+        <referencedby refid="classcam_1_1preset__managers_1_1CAM__MACHINE__MT__presets_1af95f7812d2952b26a26809ab923dac09" compoundref="preset__managers_8py" startline="28" endline="38">cam.preset_managers.CAM_MACHINE_MT_presets.post_cb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ops_1_1CamSliceObjects_1a8628bf7b64723c5080130dbf8cde542f" prot="public" static="yes" mutable="no">
+        <type>dict</type>
+        <definition>dict cam.ops.CamSliceObjects::bl_options</definition>
+        <argsstring></argsstring>
+        <name>bl_options</name>
+        <qualifiedname>cam.ops.CamSliceObjects.bl_options</qualifiedname>
+        <initializer>=  {&apos;REGISTER&apos;, &apos;UNDO&apos;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="287" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="287" bodyend="-1"/>
+        <referencedby refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a9628cbca8e69ec75b2337171a02bf428" compoundref="async__op_8py" startline="32" endline="59">cam.async_op.AsyncOperatorMixin.modal</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcam_1_1ops_1_1CamSliceObjects_1a1308d0339137a7edc504f0e4730f7c1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.ops.CamSliceObjects.execute</definition>
+        <argsstring>(self, context)</argsstring>
+        <name>execute</name>
+        <qualifiedname>cam.ops.CamSliceObjects.execute</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="289" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="289" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1ops_1_1CamSliceObjects_1a1a2b31cd1bcbedb50c5841c727dce569" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.ops.CamSliceObjects.draw</definition>
+        <argsstring>(self, context)</argsstring>
+        <name>draw</name>
+        <qualifiedname>cam.ops.CamSliceObjects.draw</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="295" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="295" bodyend="298"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Slice a Mesh Object Horizontally</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.ops.CamSliceObjects</label>
+        <link refid="classcam_1_1ops_1_1CamSliceObjects"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.ops.CamSliceObjects</label>
+        <link refid="classcam_1_1ops_1_1CamSliceObjects"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+bl_idname</edgelabel>
+          <edgelabel>+bl_label</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+bl_options</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dict</label>
+      </node>
+      <node id="3">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="282" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="282" bodyend="298"/>
+    <listofallmembers>
+      <member refid="classcam_1_1ops_1_1CamSliceObjects_1aaf5afd4374a419a719ddc2ff6426eb29" prot="public" virt="non-virtual"><scope>cam::ops::CamSliceObjects</scope><name>bl_idname</name></member>
+      <member refid="classcam_1_1ops_1_1CamSliceObjects_1a8908e58f507722f4ca7a53f064208c1d" prot="public" virt="non-virtual"><scope>cam::ops::CamSliceObjects</scope><name>bl_label</name></member>
+      <member refid="classcam_1_1ops_1_1CamSliceObjects_1a8628bf7b64723c5080130dbf8cde542f" prot="public" virt="non-virtual"><scope>cam::ops::CamSliceObjects</scope><name>bl_options</name></member>
+      <member refid="classcam_1_1ops_1_1CamSliceObjects_1a1a2b31cd1bcbedb50c5841c727dce569" prot="public" virt="non-virtual"><scope>cam::ops::CamSliceObjects</scope><name>draw</name></member>
+      <member refid="classcam_1_1ops_1_1CamSliceObjects_1a1308d0339137a7edc504f0e4730f7c1f" prot="public" virt="non-virtual"><scope>cam::ops::CamSliceObjects</scope><name>execute</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

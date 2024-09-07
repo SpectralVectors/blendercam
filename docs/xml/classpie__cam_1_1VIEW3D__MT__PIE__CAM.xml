@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classpie__cam_1_1VIEW3D__MT__PIE__CAM" kind="class" language="Python" prot="public">
+    <compoundname>pie_cam::VIEW3D_MT_PIE_CAM</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Menu</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classpie__cam_1_1VIEW3D__MT__PIE__CAM_1a3e5fc882b24077ac7d5ba9c66a6a2bf7" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str pie_cam.VIEW3D_MT_PIE_CAM::bl_label</definition>
+        <argsstring></argsstring>
+        <name>bl_label</name>
+        <qualifiedname>pie_cam.VIEW3D_MT_PIE_CAM.bl_label</qualifiedname>
+        <initializer>=  &quot;∴    BlenderCAM    ∴&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/pie_cam.py" line="11" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/pie_cam.py" bodystart="11" bodyend="-1"/>
+        <referencedby refid="classcam_1_1preset__managers_1_1CAM__MACHINE__MT__presets_1af95f7812d2952b26a26809ab923dac09" compoundref="preset__managers_8py" startline="28" endline="38">cam.preset_managers.CAM_MACHINE_MT_presets.post_cb</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpie__cam_1_1VIEW3D__MT__PIE__CAM_1a265e9e1836965f49c9490e021a50e4ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>pie_cam.VIEW3D_MT_PIE_CAM.draw</definition>
+        <argsstring>(self, context)</argsstring>
+        <name>draw</name>
+        <qualifiedname>pie_cam.VIEW3D_MT_PIE_CAM.draw</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/pie_cam.py" line="13" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/pie_cam.py" bodystart="13" bodyend="97"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Menu</label>
+      </node>
+      <node id="1">
+        <label>pie_cam.VIEW3D_MT_PIE_CAM</label>
+        <link refid="classpie__cam_1_1VIEW3D__MT__PIE__CAM"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Menu</label>
+      </node>
+      <node id="1">
+        <label>pie_cam.VIEW3D_MT_PIE_CAM</label>
+        <link refid="classpie__cam_1_1VIEW3D__MT__PIE__CAM"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+bl_label</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/pie_cam.py" line="10" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/pie_cam.py" bodystart="10" bodyend="97"/>
+    <listofallmembers>
+      <member refid="classpie__cam_1_1VIEW3D__MT__PIE__CAM_1a3e5fc882b24077ac7d5ba9c66a6a2bf7" prot="public" virt="non-virtual"><scope>pie_cam::VIEW3D_MT_PIE_CAM</scope><name>bl_label</name></member>
+      <member refid="classpie__cam_1_1VIEW3D__MT__PIE__CAM_1a265e9e1836965f49c9490e021a50e4ce" prot="public" virt="non-virtual"><scope>pie_cam::VIEW3D_MT_PIE_CAM</scope><name>draw</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

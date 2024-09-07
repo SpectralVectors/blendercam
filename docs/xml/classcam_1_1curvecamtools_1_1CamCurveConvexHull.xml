@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1curvecamtools_1_1CamCurveConvexHull" kind="class" language="Python" prot="public">
+    <compoundname>cam::curvecamtools::CamCurveConvexHull</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Operator</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1curvecamtools_1_1CamCurveConvexHull_1a5170cd4935fa4fce80793e60be85adf6" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.curvecamtools.CamCurveConvexHull::bl_idname</definition>
+        <argsstring></argsstring>
+        <name>bl_idname</name>
+        <qualifiedname>cam.curvecamtools.CamCurveConvexHull.bl_idname</qualifiedname>
+        <initializer>=  &quot;object.convex_hull&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="65" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamtools_1_1CamCurveConvexHull_1adabc6251d1e1f73585b6a07a1eceffdc" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.curvecamtools.CamCurveConvexHull::bl_label</definition>
+        <argsstring></argsstring>
+        <name>bl_label</name>
+        <qualifiedname>cam.curvecamtools.CamCurveConvexHull.bl_label</qualifiedname>
+        <initializer>=  &quot;Convex Hull&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="66" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="66" bodyend="-1"/>
+        <referencedby refid="classcam_1_1preset__managers_1_1CAM__MACHINE__MT__presets_1af95f7812d2952b26a26809ab923dac09" compoundref="preset__managers_8py" startline="28" endline="38">cam.preset_managers.CAM_MACHINE_MT_presets.post_cb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamtools_1_1CamCurveConvexHull_1a4ec6431401723730ffe9be914f36dc71" prot="public" static="yes" mutable="no">
+        <type>dict</type>
+        <definition>dict cam.curvecamtools.CamCurveConvexHull::bl_options</definition>
+        <argsstring></argsstring>
+        <name>bl_options</name>
+        <qualifiedname>cam.curvecamtools.CamCurveConvexHull.bl_options</qualifiedname>
+        <initializer>=  {&apos;REGISTER&apos;, &apos;UNDO&apos;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="67" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="67" bodyend="-1"/>
+        <referencedby refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a9628cbca8e69ec75b2337171a02bf428" compoundref="async__op_8py" startline="32" endline="59">cam.async_op.AsyncOperatorMixin.modal</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcam_1_1curvecamtools_1_1CamCurveConvexHull_1afdb29031154c26ec795c13526bcd0eaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.curvecamtools.CamCurveConvexHull.poll</definition>
+        <argsstring>(cls, context)</argsstring>
+        <name>poll</name>
+        <qualifiedname>cam.curvecamtools.CamCurveConvexHull.poll</qualifiedname>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="70" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="70" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1curvecamtools_1_1CamCurveConvexHull_1a86c27f2a1e353d79df7cbca52bed4de7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.curvecamtools.CamCurveConvexHull.execute</definition>
+        <argsstring>(self, context)</argsstring>
+        <name>execute</name>
+        <qualifiedname>cam.curvecamtools.CamCurveConvexHull.execute</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="73" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="73" bodyend="78"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Perform Hull Operation on Single or Multiple Curves</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.curvecamtools.CamCurveConvexHull</label>
+        <link refid="classcam_1_1curvecamtools_1_1CamCurveConvexHull"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.curvecamtools.CamCurveConvexHull</label>
+        <link refid="classcam_1_1curvecamtools_1_1CamCurveConvexHull"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+bl_idname</edgelabel>
+          <edgelabel>+bl_label</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+bl_options</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dict</label>
+      </node>
+      <node id="3">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="63" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="63" bodyend="78"/>
+    <listofallmembers>
+      <member refid="classcam_1_1curvecamtools_1_1CamCurveConvexHull_1a5170cd4935fa4fce80793e60be85adf6" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamCurveConvexHull</scope><name>bl_idname</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamCurveConvexHull_1adabc6251d1e1f73585b6a07a1eceffdc" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamCurveConvexHull</scope><name>bl_label</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamCurveConvexHull_1a4ec6431401723730ffe9be914f36dc71" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamCurveConvexHull</scope><name>bl_options</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamCurveConvexHull_1a86c27f2a1e353d79df7cbca52bed4de7" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamCurveConvexHull</scope><name>execute</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamCurveConvexHull_1afdb29031154c26ec795c13526bcd0eaa" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamCurveConvexHull</scope><name>poll</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

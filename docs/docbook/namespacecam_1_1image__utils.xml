@@ -1,0 +1,344 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacecam_1_1image__utils" xml:lang="en-US">
+<title>cam.image_utils Namespace Reference</title>
+<indexterm><primary>cam.image_utils</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1ac949d3bf4f6d486454139b4a1eb2f037">numpysave</link> (a, iname)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1aa267f5232e4c05ff142965ace7d9a89d">getCircle</link> (r, z)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1a0c350a24695b04011277b9aa5f19b44e">getCircleBinary</link> (r)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1a1d3e768e16c295ee3c70e41b51ab02da">numpytoimage</link> (a, iname)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1a83a961a5085b3b57963924a9f59b923a">imagetonumpy</link> (i)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1ab74d8272c536f70d61aa970a50fc9c34">_offset_inner_loop</link> (y1, y2, cutterArrayNan, cwidth, sourceArray, width, height, comparearea)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1ae6c47694c2782315bff99d20fe756011">offsetArea</link> (o, samples)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1a7b8608f02f22f66d27f3dd0d422c0245">dilateAr</link> (ar, cycles)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1aaf4d42d8658edea8592459b5203b26d9">getOffsetImageCavities</link> (o, i)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1a85ad59a3920b6d9e68f695a8a450eba6">imageEdgeSearch_online</link> (o, ar, zimage)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1adbdfc8e165ed1de02722d825e64d9fcb">crazyPath</link> (o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1a3fcf50f37c06c58f8fb4e62b24e5ed16">buildStroke</link> (start, end, cutterArray)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1a2ac7ed9abec509b765d68e57864f70c6">testStroke</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1a456aab598ae9d0bbe6e1ab7677dc3f79">applyStroke</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1a699ed8d000c775ca6d9010bec5fe407e">testStrokeBinary</link> (img, stroke)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1af547241b4be016a996f378c3d9968e33">crazyStrokeImage</link> (o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1a78986f83a04d586f840ea5189833c83b">crazyStrokeImageBinary</link> (o, ar, avoidar)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1acd50c3e23214c9a027cffa5218a37c0c">imageToChunks</link> (o, image, with_border=False)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1a6f44ee3d0a162dd6fa1ba678aa1b64a9">imageToShapely</link> (o, i, with_border=False)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1a952222cdf7c1c31a56b31bca16c43638">getSampleImage</link> (s, sarray, minz)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1ac8299eb9bb62632ebee26b436f90640e">getResolution</link> (o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1aae9ef3677359b9c13dedb04ef10e4e2d">_backup_render_settings</link> (pairs)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1acf7406c3a07566907a69d5828cc1ff8f">_restore_render_settings</link> (pairs, properties)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1abe2238ab650e158ad3371d6535b7e120">renderSampleImage</link> (o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1a6a8c0ddae6ef977288acacb120e6c787">prepareArea</link> (o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1a3cf6dd7479cf84857f12a5ee07bdeacd">getCutterArray</link> (operation, pixsize)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>BlenderCAM &apos;image_utils.py&apos; © 2012 Vilem Novak
+
+Functions to render, save, convert and analyze image data.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespacecam_1_1image__utils_1aae9ef3677359b9c13dedb04ef10e4e2d"/><section>
+    <title>_backup_render_settings()</title>
+<indexterm><primary>_backup_render_settings</primary><secondary>cam.image_utils</secondary></indexterm>
+<indexterm><primary>cam.image_utils</primary><secondary>_backup_render_settings</secondary></indexterm>
+<para><computeroutput>cam.image_utils._backup_render_settings ( pairs)<computeroutput>[protected]</computeroutput></computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1image__utils_aae9ef3677359b9c13dedb04ef10e4e2d_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1image__utils_1ab74d8272c536f70d61aa970a50fc9c34"/><section>
+    <title>_offset_inner_loop()</title>
+<indexterm><primary>_offset_inner_loop</primary><secondary>cam.image_utils</secondary></indexterm>
+<indexterm><primary>cam.image_utils</primary><secondary>_offset_inner_loop</secondary></indexterm>
+<para><computeroutput>cam.image_utils._offset_inner_loop ( y1,  y2,  cutterArrayNan,  cwidth,  sourceArray,  width,  height,  comparearea)<computeroutput>[protected]</computeroutput></computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1image__utils_ab74d8272c536f70d61aa970a50fc9c34_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1image__utils_1acf7406c3a07566907a69d5828cc1ff8f"/><section>
+    <title>_restore_render_settings()</title>
+<indexterm><primary>_restore_render_settings</primary><secondary>cam.image_utils</secondary></indexterm>
+<indexterm><primary>cam.image_utils</primary><secondary>_restore_render_settings</secondary></indexterm>
+<para><computeroutput>cam.image_utils._restore_render_settings ( pairs,  properties)<computeroutput>[protected]</computeroutput></computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1image__utils_acf7406c3a07566907a69d5828cc1ff8f_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1image__utils_1a456aab598ae9d0bbe6e1ab7677dc3f79"/><section>
+    <title>applyStroke()</title>
+<indexterm><primary>applyStroke</primary><secondary>cam.image_utils</secondary></indexterm>
+<indexterm><primary>cam.image_utils</primary><secondary>applyStroke</secondary></indexterm>
+<para><computeroutput>cam.image_utils.applyStroke ( )</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1image__utils_1a3fcf50f37c06c58f8fb4e62b24e5ed16"/><section>
+    <title>buildStroke()</title>
+<indexterm><primary>buildStroke</primary><secondary>cam.image_utils</secondary></indexterm>
+<indexterm><primary>cam.image_utils</primary><secondary>buildStroke</secondary></indexterm>
+<para><computeroutput>cam.image_utils.buildStroke ( start,  end,  cutterArray)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1image__utils_1adbdfc8e165ed1de02722d825e64d9fcb"/><section>
+    <title>crazyPath()</title>
+<indexterm><primary>crazyPath</primary><secondary>cam.image_utils</secondary></indexterm>
+<indexterm><primary>cam.image_utils</primary><secondary>crazyPath</secondary></indexterm>
+<para><computeroutput>cam.image_utils.crazyPath ( o)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1image__utils_1af547241b4be016a996f378c3d9968e33"/><section>
+    <title>crazyStrokeImage()</title>
+<indexterm><primary>crazyStrokeImage</primary><secondary>cam.image_utils</secondary></indexterm>
+<indexterm><primary>cam.image_utils</primary><secondary>crazyStrokeImage</secondary></indexterm>
+<para><computeroutput>cam.image_utils.crazyStrokeImage ( o)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1image__utils_af547241b4be016a996f378c3d9968e33_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1image__utils_1a78986f83a04d586f840ea5189833c83b"/><section>
+    <title>crazyStrokeImageBinary()</title>
+<indexterm><primary>crazyStrokeImageBinary</primary><secondary>cam.image_utils</secondary></indexterm>
+<indexterm><primary>cam.image_utils</primary><secondary>crazyStrokeImageBinary</secondary></indexterm>
+<para><computeroutput>cam.image_utils.crazyStrokeImageBinary ( o,  ar,  avoidar)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1image__utils_a78986f83a04d586f840ea5189833c83b_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1image__utils_1a7b8608f02f22f66d27f3dd0d422c0245"/><section>
+    <title>dilateAr()</title>
+<indexterm><primary>dilateAr</primary><secondary>cam.image_utils</secondary></indexterm>
+<indexterm><primary>cam.image_utils</primary><secondary>dilateAr</secondary></indexterm>
+<para><computeroutput>cam.image_utils.dilateAr ( ar,  cycles)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1image__utils_1aa267f5232e4c05ff142965ace7d9a89d"/><section>
+    <title>getCircle()</title>
+<indexterm><primary>getCircle</primary><secondary>cam.image_utils</secondary></indexterm>
+<indexterm><primary>cam.image_utils</primary><secondary>getCircle</secondary></indexterm>
+<para><computeroutput>cam.image_utils.getCircle ( r,  z)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1image__utils_1a0c350a24695b04011277b9aa5f19b44e"/><section>
+    <title>getCircleBinary()</title>
+<indexterm><primary>getCircleBinary</primary><secondary>cam.image_utils</secondary></indexterm>
+<indexterm><primary>cam.image_utils</primary><secondary>getCircleBinary</secondary></indexterm>
+<para><computeroutput>cam.image_utils.getCircleBinary ( r)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1image__utils_a0c350a24695b04011277b9aa5f19b44e_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1image__utils_1a3cf6dd7479cf84857f12a5ee07bdeacd"/><section>
+    <title>getCutterArray()</title>
+<indexterm><primary>getCutterArray</primary><secondary>cam.image_utils</secondary></indexterm>
+<indexterm><primary>cam.image_utils</primary><secondary>getCutterArray</secondary></indexterm>
+<para><computeroutput>cam.image_utils.getCutterArray ( operation,  pixsize)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1image__utils_1aaf4d42d8658edea8592459b5203b26d9"/><section>
+    <title>getOffsetImageCavities()</title>
+<indexterm><primary>getOffsetImageCavities</primary><secondary>cam.image_utils</secondary></indexterm>
+<indexterm><primary>cam.image_utils</primary><secondary>getOffsetImageCavities</secondary></indexterm>
+<para><computeroutput>cam.image_utils.getOffsetImageCavities ( o,  i)</computeroutput></para>
+<para><literallayout><computeroutput>Detects Areas in the Offset Image Which Are &apos;cavities&apos; - the Curvature Changes.</computeroutput></literallayout> </para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1image__utils_aaf4d42d8658edea8592459b5203b26d9_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1image__utils_1ac8299eb9bb62632ebee26b436f90640e"/><section>
+    <title>getResolution()</title>
+<indexterm><primary>getResolution</primary><secondary>cam.image_utils</secondary></indexterm>
+<indexterm><primary>cam.image_utils</primary><secondary>getResolution</secondary></indexterm>
+<para><computeroutput>cam.image_utils.getResolution ( o)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1image__utils_1a952222cdf7c1c31a56b31bca16c43638"/><section>
+    <title>getSampleImage()</title>
+<indexterm><primary>getSampleImage</primary><secondary>cam.image_utils</secondary></indexterm>
+<indexterm><primary>cam.image_utils</primary><secondary>getSampleImage</secondary></indexterm>
+<para><computeroutput>cam.image_utils.getSampleImage ( s,  sarray,  minz)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1image__utils_1a85ad59a3920b6d9e68f695a8a450eba6"/><section>
+    <title>imageEdgeSearch_online()</title>
+<indexterm><primary>imageEdgeSearch_online</primary><secondary>cam.image_utils</secondary></indexterm>
+<indexterm><primary>cam.image_utils</primary><secondary>imageEdgeSearch_online</secondary></indexterm>
+<para><computeroutput>cam.image_utils.imageEdgeSearch_online ( o,  ar,  zimage)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1image__utils_a85ad59a3920b6d9e68f695a8a450eba6_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1image__utils_1acd50c3e23214c9a027cffa5218a37c0c"/><section>
+    <title>imageToChunks()</title>
+<indexterm><primary>imageToChunks</primary><secondary>cam.image_utils</secondary></indexterm>
+<indexterm><primary>cam.image_utils</primary><secondary>imageToChunks</secondary></indexterm>
+<para><computeroutput>cam.image_utils.imageToChunks ( o,  image,  with_border = <computeroutput>False</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1image__utils_1a83a961a5085b3b57963924a9f59b923a"/><section>
+    <title>imagetonumpy()</title>
+<indexterm><primary>imagetonumpy</primary><secondary>cam.image_utils</secondary></indexterm>
+<indexterm><primary>cam.image_utils</primary><secondary>imagetonumpy</secondary></indexterm>
+<para><computeroutput>cam.image_utils.imagetonumpy ( i)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1image__utils_a83a961a5085b3b57963924a9f59b923a_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1image__utils_1a6f44ee3d0a162dd6fa1ba678aa1b64a9"/><section>
+    <title>imageToShapely()</title>
+<indexterm><primary>imageToShapely</primary><secondary>cam.image_utils</secondary></indexterm>
+<indexterm><primary>cam.image_utils</primary><secondary>imageToShapely</secondary></indexterm>
+<para><computeroutput>cam.image_utils.imageToShapely ( o,  i,  with_border = <computeroutput>False</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1image__utils_1ac949d3bf4f6d486454139b4a1eb2f037"/><section>
+    <title>numpysave()</title>
+<indexterm><primary>numpysave</primary><secondary>cam.image_utils</secondary></indexterm>
+<indexterm><primary>cam.image_utils</primary><secondary>numpysave</secondary></indexterm>
+<para><computeroutput>cam.image_utils.numpysave ( a,  iname)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1image__utils_ac949d3bf4f6d486454139b4a1eb2f037_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1image__utils_1a1d3e768e16c295ee3c70e41b51ab02da"/><section>
+    <title>numpytoimage()</title>
+<indexterm><primary>numpytoimage</primary><secondary>cam.image_utils</secondary></indexterm>
+<indexterm><primary>cam.image_utils</primary><secondary>numpytoimage</secondary></indexterm>
+<para><computeroutput>cam.image_utils.numpytoimage ( a,  iname)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1image__utils_a1d3e768e16c295ee3c70e41b51ab02da_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1image__utils_1ae6c47694c2782315bff99d20fe756011"/><section>
+    <title>offsetArea()</title>
+<indexterm><primary>offsetArea</primary><secondary>cam.image_utils</secondary></indexterm>
+<indexterm><primary>cam.image_utils</primary><secondary>offsetArea</secondary></indexterm>
+<para><computeroutput>cam.image_utils.offsetArea ( o,  samples)</computeroutput></para>
+<para><literallayout><computeroutput> Offsets the Whole Image with the Cutter + Skin Offsets </computeroutput></literallayout> </para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1image__utils_ae6c47694c2782315bff99d20fe756011_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1image__utils_ae6c47694c2782315bff99d20fe756011_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1image__utils_1a6a8c0ddae6ef977288acacb120e6c787"/><section>
+    <title>prepareArea()</title>
+<indexterm><primary>prepareArea</primary><secondary>cam.image_utils</secondary></indexterm>
+<indexterm><primary>cam.image_utils</primary><secondary>prepareArea</secondary></indexterm>
+<para><computeroutput>cam.image_utils.prepareArea ( o)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1image__utils_a6a8c0ddae6ef977288acacb120e6c787_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1image__utils_1abe2238ab650e158ad3371d6535b7e120"/><section>
+    <title>renderSampleImage()</title>
+<indexterm><primary>renderSampleImage</primary><secondary>cam.image_utils</secondary></indexterm>
+<indexterm><primary>cam.image_utils</primary><secondary>renderSampleImage</secondary></indexterm>
+<para><computeroutput>cam.image_utils.renderSampleImage ( o)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1image__utils_abe2238ab650e158ad3371d6535b7e120_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1image__utils_1a2ac7ed9abec509b765d68e57864f70c6"/><section>
+    <title>testStroke()</title>
+<indexterm><primary>testStroke</primary><secondary>cam.image_utils</secondary></indexterm>
+<indexterm><primary>cam.image_utils</primary><secondary>testStroke</secondary></indexterm>
+<para><computeroutput>cam.image_utils.testStroke ( )</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1image__utils_1a699ed8d000c775ca6d9010bec5fe407e"/><section>
+    <title>testStrokeBinary()</title>
+<indexterm><primary>testStrokeBinary</primary><secondary>cam.image_utils</secondary></indexterm>
+<indexterm><primary>cam.image_utils</primary><secondary>testStrokeBinary</secondary></indexterm>
+<para><computeroutput>cam.image_utils.testStrokeBinary ( img,  stroke)</computeroutput></para></section>
+</section>
+</section>

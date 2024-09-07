@@ -1,0 +1,382 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="simple_8py" kind="file" language="Python">
+    <compoundname>simple.py</compoundname>
+    <innernamespace refid="namespacecam">cam</innernamespace>
+    <innernamespace refid="namespacecam_1_1simple">cam::simple</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacecam_1_1simple" refkind="compound"><highlight class="stringliteral">&quot;&quot;&quot;BlenderCAM<sp/>&apos;simple.py&apos;<sp/>©<sp/>2012<sp/>Vilem<sp/>Novak</highlight></codeline>
+<codeline lineno="2"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="3"><highlight class="stringliteral">Various<sp/>helper<sp/>functions,<sp/>less<sp/>complex<sp/>than<sp/>those<sp/>found<sp/>in<sp/>the<sp/>&apos;utils&apos;<sp/>files.</highlight></codeline>
+<codeline lineno="4"><highlight class="stringliteral">&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>math<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>(</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>hypot,</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>pi,</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>os</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>string</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>sys</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>time</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>shapely.geometry<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Polygon</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>bpy</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>mathutils<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Vector</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.constants<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>BULLET_SCALE</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="namespacecam_1_1simple_1a262550df3f6919e483a69d1ab2bbdd67" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacecam_1_1simple_1a262550df3f6919e483a69d1ab2bbdd67" kindref="member">tuple_add</ref>(t,<sp/>t1):<sp/><sp/></highlight><highlight class="comment">#<sp/>add<sp/>two<sp/>tuples<sp/>as<sp/>Vectors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>t[0]<sp/>+<sp/>t1[0],<sp/>t[1]<sp/>+<sp/>t1[1],<sp/>t[2]<sp/>+<sp/>t1[2]</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="namespacecam_1_1simple_1add7035aee58ca473e04f343d272a7c0e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacecam_1_1simple_1add7035aee58ca473e04f343d272a7c0e" kindref="member">tuple_sub</ref>(t,<sp/>t1):<sp/><sp/></highlight><highlight class="comment">#<sp/>sub<sp/>two<sp/>tuples<sp/>as<sp/>Vectors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>t[0]<sp/>-<sp/>t1[0],<sp/>t[1]<sp/>-<sp/>t1[1],<sp/>t[2]<sp/>-<sp/>t1[2]</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="namespacecam_1_1simple_1a3ddd8af23565cd2a293d5c2def4b1f4d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacecam_1_1simple_1a3ddd8af23565cd2a293d5c2def4b1f4d" kindref="member">tuple_mul</ref>(t,<sp/>c):<sp/><sp/></highlight><highlight class="comment">#<sp/>multiply<sp/>two<sp/>tuples<sp/>with<sp/>a<sp/>number</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>t[0]<sp/>*<sp/>c,<sp/>t[1]<sp/>*<sp/>c,<sp/>t[2]<sp/>*<sp/>c</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="namespacecam_1_1simple_1aa148c6f89eedf24bb8dc1c94724797c0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacecam_1_1simple_1aa148c6f89eedf24bb8dc1c94724797c0" kindref="member">tuple_length</ref>(t):<sp/><sp/></highlight><highlight class="comment">#<sp/>get<sp/>length<sp/>of<sp/>vector,<sp/>but<sp/>passed<sp/>in<sp/>as<sp/>tuple.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Vector(t).length</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">#<sp/>timing<sp/>functions<sp/>for<sp/>optimisation<sp/>purposes...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="namespacecam_1_1simple_1a1bab27e8df5b3cfd171e60a4594fc885" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacecam_1_1simple_1a1bab27e8df5b3cfd171e60a4594fc885" kindref="member">timinginit</ref>():</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>[0,<sp/>0]</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="namespacecam_1_1simple_1a71849721405a9bf079673d96ec99870f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacecam_1_1simple_1a71849721405a9bf079673d96ec99870f" kindref="member">timingstart</ref>(tinf):</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>t<sp/>=<sp/>time.time()</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>tinf[1]<sp/>=<sp/>t</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="namespacecam_1_1simple_1adaf914acd760df92f028164ba594df7c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacecam_1_1simple_1adaf914acd760df92f028164ba594df7c" kindref="member">timingadd</ref>(tinf):</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>t<sp/>=<sp/>time.time()</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>tinf[0]<sp/>+=<sp/>t<sp/>-<sp/>tinf[1]</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="namespacecam_1_1simple_1ad7fc75855dd67f553970b4d490b5935f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacecam_1_1simple_1ad7fc75855dd67f553970b4d490b5935f" kindref="member">timingprint</ref>(tinf):</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&apos;time<sp/>&apos;</highlight><highlight class="normal"><sp/>+<sp/>str(tinf[0])<sp/>+<sp/></highlight><highlight class="stringliteral">&apos;seconds&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="namespacecam_1_1simple_1a2f3a122bdf9b338d93ce3e2976f23af0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacecam_1_1simple_1a2f3a122bdf9b338d93ce3e2976f23af0" kindref="member">progress</ref>(text,<sp/>n=None):</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Function<sp/>for<sp/>Reporting<sp/>During<sp/>the<sp/>Script,<sp/>Works<sp/>for<sp/>Background<sp/>Operations<sp/>in<sp/>the<sp/>Header.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>text<sp/>=<sp/>str(text)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>n<sp/></highlight><highlight class="keywordflow">is</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>n<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>n<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;<sp/>&apos;</highlight><highlight class="normal"><sp/>+<sp/>str(int(n<sp/>*<sp/>1000)<sp/>/<sp/>1000)<sp/>+<sp/></highlight><highlight class="stringliteral">&apos;%&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>sys.stdout.write(</highlight><highlight class="stringliteral">&apos;progress{%s%s}\n&apos;</highlight><highlight class="normal"><sp/>%<sp/>(text,<sp/>n))</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>sys.stdout.flush()</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="namespacecam_1_1simple_1acff84c87dab7c1eb994a1cb93ed7e611" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacecam_1_1simple_1acff84c87dab7c1eb994a1cb93ed7e611" kindref="member">activate</ref>(o):</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Makes<sp/>an<sp/>Object<sp/>Active,<sp/>Used<sp/>Many<sp/>Times<sp/>in<sp/>Blender&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="71"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>s<sp/>=<sp/>bpy.context.scene</highlight></codeline>
+<codeline lineno="72"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>bpy.ops.object.select_all(action=&apos;DESELECT&apos;)</highlight></codeline>
+<codeline lineno="73"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>o.select_set(state=True)</highlight></codeline>
+<codeline lineno="74"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>s.objects[o.name].select_set(state=True)</highlight></codeline>
+<codeline lineno="75"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>bpy.context.view_layer.objects.active<sp/>=<sp/>o</highlight></codeline>
+<codeline lineno="76"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="77"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="78" refid="namespacecam_1_1simple_1afbecdc0eb99966e42e038a9453b9a6c3" refkind="member"><highlight class="stringliteral">def<sp/>dist2d(v1,<sp/>v2):</highlight></codeline>
+<codeline lineno="79"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal">Distance<sp/>Between<sp/>Two<sp/>Points<sp/>in<sp/>2D&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>hypot((v1[0]<sp/>-<sp/>v2[0]),<sp/>(v1[1]<sp/>-<sp/>v2[1]))</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="namespacecam_1_1simple_1a8793fb0354632bd2a0423add64470368" refkind="member"><highlight class="normal">def<sp/>delob(ob):</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;Object<sp/>Deletion<sp/>for<sp/>Multiple<sp/>Uses&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>activate(ob)</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>bpy.ops.object.delete(use_global=False)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="namespacecam_1_1simple_1a1622deda8c59258d08d5571f35820121" refkind="member"><highlight class="normal">def<sp/>dupliob(o,<sp/>pos):</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;Helper<sp/>Function<sp/>for<sp/>Visualising<sp/>Cutter<sp/>Positions<sp/>in<sp/>Bullet<sp/>Simulation&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>activate(o)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>bpy.ops.object.duplicate()</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>s<sp/>=<sp/>1.0<sp/>/<sp/>BULLET_SCALE</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>bpy.ops.transform.resize(value=(s,<sp/>s,<sp/>s),<sp/>constraint_axis=(False,<sp/>False,<sp/>False),<sp/>orient_type=&apos;GLOBAL&apos;,</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mirror=False,<sp/>use_proportional_edit=False,<sp/>proportional_edit_falloff=&apos;SMOOTH&apos;,</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>proportional_size=1)</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>o<sp/>=<sp/>bpy.context.active_object</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>bpy.ops.rigidbody.object_remove()</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>o.location<sp/>=<sp/>pos</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="namespacecam_1_1simple_1aefcc46bec25b6ab67d6c0ac02cebd5e8" refkind="member"><highlight class="normal">def<sp/>addToGroup(ob,<sp/>groupname):</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>activate(ob)</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>bpy.data.groups.get(groupname)<sp/>is<sp/>None:</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bpy.ops.group.create(name=groupname)</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>else:</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bpy.ops.object.group_link(group=groupname)</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="namespacecam_1_1simple_1ac2032d555b2e5def9ac73443ed6ba15d" refkind="member"><highlight class="normal">def<sp/>compare(v1,<sp/>v2,<sp/>vmiddle,<sp/>e):</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;Comparison<sp/>for<sp/>Optimisation<sp/>of<sp/>Paths&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>e=0.0001</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>v1<sp/>=<sp/>Vector(v1)</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>v2<sp/>=<sp/>Vector(v2)</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>vmiddle<sp/>=<sp/>Vector(vmiddle)</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>vect1<sp/>=<sp/>v2<sp/>-<sp/>v1</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>vect2<sp/>=<sp/>vmiddle<sp/>-<sp/>v1</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>vect1.normalize()</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>vect1<sp/>*=<sp/>vect2.length</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>v<sp/>=<sp/>vect2<sp/>-<sp/>vect1</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>v.length<sp/>&lt;<sp/>e:</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>True</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>False</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="namespacecam_1_1simple_1a3fe5761e6eaba4283d1a751e6aaf9908" refkind="member"><highlight class="normal">def<sp/>isVerticalLimit(v1,<sp/>v2,<sp/>limit):</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;Test<sp/>Path<sp/>Segment<sp/>on<sp/>Verticality<sp/>Threshold,<sp/>for<sp/>protect_vertical<sp/>Option&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>z<sp/>=<sp/>abs(v1[2]<sp/>-<sp/>v2[2])</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>verticality=0.05</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>this<sp/>will<sp/>be<sp/>better.</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>#</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>print(a)</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>z<sp/>&gt;<sp/>0:</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v2d<sp/>=<sp/>Vector((0,<sp/>0,<sp/>-1))</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v3d<sp/>=<sp/>Vector((v1[0]<sp/>-<sp/>v2[0],<sp/>v1[1]<sp/>-<sp/>v2[1],<sp/>v1[2]<sp/>-<sp/>v2[2]))</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>a<sp/>=<sp/>v3d.angle(v2d)</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>a<sp/>&gt;<sp/>pi<sp/>/<sp/>2:</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>a<sp/>=<sp/>abs(a<sp/>-<sp/>pi)</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>print(a)</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>a<sp/>&lt;<sp/>limit:</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>print(abs(v1[0]-v2[0])/z)</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>print(abs(v1[1]-v2[1])/z)</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>v1[2]<sp/>&gt;<sp/>v2[2]:</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v1<sp/>=<sp/>(v2[0],<sp/>v2[1],<sp/>v1[2])</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>v1,<sp/>v2</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>else:</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v2<sp/>=<sp/>(v1[0],<sp/>v1[1],<sp/>v2[2])</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>v1,<sp/>v2</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>v1,<sp/>v2</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152" refid="namespacecam_1_1simple_1a49f3897a327b7b41b7f2218969f79ce6" refkind="member"><highlight class="normal">def<sp/>getCachePath(o):</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>fn<sp/>=<sp/>bpy.data.filepath</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>l<sp/>=<sp/>len(bpy.path.basename(fn))</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>bn<sp/>=<sp/>bpy.path.basename(fn)[:-6]</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>print(&apos;fn-l:&apos;,<sp/>fn[:-l])</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>print(&apos;bn:&apos;,<sp/>bn)</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>iname<sp/>=<sp/>fn[:-l]<sp/>+<sp/>&apos;temp_cam&apos;<sp/>+<sp/>os.sep<sp/>+<sp/>bn<sp/>+<sp/>&apos;_&apos;<sp/>+<sp/>o.name</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>iname</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163" refid="namespacecam_1_1simple_1ab0f7b1055297f9747b69cc13255d365b" refkind="member"><highlight class="normal">def<sp/>getSimulationPath():</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>fn<sp/>=<sp/>bpy.data.filepath</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>l<sp/>=<sp/>len(bpy.path.basename(fn))</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>iname<sp/>=<sp/>fn[:-l]<sp/>+<sp/>&apos;temp_cam&apos;<sp/>+<sp/>os.sep</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>iname</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170" refid="namespacecam_1_1simple_1a2fe2dc97138338cd2d04e4db64d4c61f" refkind="member"><highlight class="normal">def<sp/>safeFileName(name):<sp/><sp/>#<sp/>for<sp/>export<sp/>gcode</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>valid_chars<sp/>=<sp/>&quot;-_.()%s%s&quot;<sp/>%<sp/>(string.ascii_letters,<sp/>string.digits)</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>filename<sp/>=<sp/>&apos;&apos;.join(c<sp/>for<sp/>c<sp/>in<sp/>name<sp/>if<sp/>c<sp/>in<sp/>valid_chars)</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>filename</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176" refid="namespacecam_1_1simple_1abdfbb02c3782e3e8ea3cdc68be6087de" refkind="member"><highlight class="normal">def<sp/>strInUnits(x,<sp/>precision=5):</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>bpy.context.scene.unit_settings.system<sp/>==<sp/>&apos;METRIC&apos;:</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>str(round(x<sp/>*<sp/>1000,<sp/>precision))<sp/>+<sp/>&apos;<sp/>mm<sp/>&apos;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>elif<sp/>bpy.context.scene.unit_settings.system<sp/>==<sp/>&apos;IMPERIAL&apos;:</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>str(round(x<sp/>*<sp/>1000<sp/>/<sp/>25.4,<sp/>precision))<sp/>+<sp/>&quot;&apos;&apos;<sp/>&quot;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>else:</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>str(x)</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal">#<sp/>select<sp/>multiple<sp/>object<sp/>starting<sp/>with<sp/>name</highlight></codeline>
+<codeline lineno="186" refid="namespacecam_1_1simple_1a6972e1df9cbde4afcc6b89b4af578fa5" refkind="member"><highlight class="normal">def<sp/>select_multiple(name):</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>scene<sp/>=<sp/>bpy.context.scene</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>bpy.ops.object.select_all(action=&apos;DESELECT&apos;)</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>for<sp/>ob<sp/>in<sp/>scene.objects:<sp/><sp/>#<sp/>join<sp/>pocket<sp/>curve<sp/>calculations</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>ob.name.startswith(name):</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ob.select_set(True)</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>else:</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ob.select_set(False)</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal">#<sp/>join<sp/>multiple<sp/>objects<sp/>starting<sp/>with<sp/>&apos;name&apos;<sp/>renaming<sp/>final<sp/>object<sp/>as<sp/>&apos;name&apos;</highlight></codeline>
+<codeline lineno="197" refid="namespacecam_1_1simple_1ae4d8fa884dd88653d4b5879f1186cc30" refkind="member"><highlight class="normal">def<sp/>join_multiple(name):</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>select_multiple(name)</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>bpy.ops.object.join()</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>bpy.context.active_object.name<sp/>=<sp/>name<sp/><sp/>#<sp/>rename<sp/>object</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal">#<sp/>remove<sp/>multiple<sp/>objects<sp/>starting<sp/>with<sp/>&apos;name&apos;....<sp/>useful<sp/>for<sp/>fixed<sp/>name<sp/>operation</highlight></codeline>
+<codeline lineno="204" refid="namespacecam_1_1simple_1af2ff34c32e584d04003dbcfbcdace33e" refkind="member"><highlight class="normal">def<sp/>remove_multiple(name):</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>scene<sp/>=<sp/>bpy.context.scene</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>bpy.ops.object.select_all(action=&apos;DESELECT&apos;)</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>for<sp/>ob<sp/>in<sp/>scene.objects:</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>ob.name.startswith(name):</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ob.select_set(True)</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bpy.ops.object.delete()</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213" refid="namespacecam_1_1simple_1ab7b4e6eb81e0b1a5afb31404a9763e96" refkind="member"><highlight class="normal">def<sp/>deselect():</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>bpy.ops.object.select_all(action=&apos;DESELECT&apos;)</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal">#<sp/>makes<sp/>the<sp/>object<sp/>with<sp/>the<sp/>name<sp/>active</highlight></codeline>
+<codeline lineno="218" refid="namespacecam_1_1simple_1a0aa7a5021de5aec8cae9ee3330104f01" refkind="member"><highlight class="normal">def<sp/>make_active(name):</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/>ob<sp/>=<sp/>bpy.context.scene.objects[name]</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>bpy.ops.object.select_all(action=&apos;DESELECT&apos;)</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>bpy.context.view_layer.objects.active<sp/>=<sp/>ob</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>ob.select_set(True)</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal">#<sp/>change<sp/>the<sp/>name<sp/>of<sp/>the<sp/>active<sp/>object</highlight></codeline>
+<codeline lineno="226" refid="namespacecam_1_1simple_1ace7b973051b55e5aa63bfd7d3a7dc591" refkind="member"><highlight class="normal">def<sp/>active_name(name):</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>bpy.context.active_object.name<sp/>=<sp/>name</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal">#<sp/>renames<sp/>and<sp/>makes<sp/>active<sp/>name<sp/>and<sp/>makes<sp/>it<sp/>active</highlight></codeline>
+<codeline lineno="231" refid="namespacecam_1_1simple_1a7a2786eacd8c337a58dda2cfe4b03a0b" refkind="member"><highlight class="normal">def<sp/>rename(name,<sp/>name2):</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>make_active(name)</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>bpy.context.active_object.name<sp/>=<sp/>name2</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal">#<sp/>boolean<sp/>union<sp/>of<sp/>objects<sp/>starting<sp/>with<sp/>name<sp/>result<sp/>is<sp/>object<sp/>name.</highlight></codeline>
+<codeline lineno="237"><highlight class="normal">#<sp/>all<sp/>objects<sp/>starting<sp/>with<sp/>name<sp/>will<sp/>be<sp/>deleted<sp/>and<sp/>the<sp/>result<sp/>will<sp/>be<sp/>name</highlight></codeline>
+<codeline lineno="238" refid="namespacecam_1_1simple_1a6c49d678cde9cb09d34b4073d69921ca" refkind="member"><highlight class="normal">def<sp/>union(name):</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/>select_multiple(name)</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/>bpy.ops.object.curve_boolean(boolean_type=&apos;UNION&apos;)</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/>active_name(&apos;unionboolean&apos;)</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/>remove_multiple(name)</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>rename(&apos;unionboolean&apos;,<sp/>name)</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246" refid="namespacecam_1_1simple_1abaa03646480c88a597204bd9b04ab5fb" refkind="member"><highlight class="normal">def<sp/>intersect(name):</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/>select_multiple(name)</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/>bpy.ops.object.curve_boolean(boolean_type=&apos;INTERSECT&apos;)</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/>active_name(&apos;intersection&apos;)</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal">#<sp/>boolean<sp/>difference<sp/>of<sp/>objects<sp/>starting<sp/>with<sp/>name<sp/>result<sp/>is<sp/>object<sp/>from<sp/>basename.</highlight></codeline>
+<codeline lineno="252"><highlight class="normal">#<sp/>all<sp/>objects<sp/>starting<sp/>with<sp/>name<sp/>will<sp/>be<sp/>deleted<sp/>and<sp/>the<sp/>result<sp/>will<sp/>be<sp/>basename</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255" refid="namespacecam_1_1simple_1a28de8e19bc79f44eee4716a653202529" refkind="member"><highlight class="normal">def<sp/>difference(name,<sp/>basename):</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/><sp/><sp/>name<sp/>is<sp/>the<sp/>series<sp/>to<sp/>select</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/><sp/><sp/>basename<sp/>is<sp/>what<sp/>the<sp/>base<sp/>you<sp/>want<sp/>to<sp/>cut<sp/>including<sp/>name</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/>select_multiple(name)</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/>bpy.context.view_layer.objects.active<sp/>=<sp/>bpy.data.objects[basename]</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/>bpy.ops.object.curve_boolean(boolean_type=&apos;DIFFERENCE&apos;)</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/>active_name(&apos;booleandifference&apos;)</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/>remove_multiple(name)</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/>rename(&apos;booleandifference&apos;,<sp/>basename)</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal">#<sp/>duplicate<sp/>active<sp/>object<sp/>or<sp/>duplicate<sp/>move</highlight></codeline>
+<codeline lineno="267"><highlight class="normal">#<sp/>if<sp/>x<sp/>or<sp/>y<sp/>not<sp/>the<sp/>default,<sp/>duplicate<sp/>move<sp/>will<sp/>be<sp/>executed</highlight></codeline>
+<codeline lineno="268" refid="namespacecam_1_1simple_1ad70bfdccec56b0fe0f994de5ff46089a" refkind="member"><highlight class="normal">def<sp/>duplicate(x=0,<sp/>y=0):</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>x<sp/>==<sp/>0<sp/>and<sp/>y<sp/>==<sp/>0:</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bpy.ops.object.duplicate()</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/>else:</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bpy.ops.object.duplicate_move(OBJECT_OT_duplicate={&quot;linked&quot;:<sp/>False,<sp/>&quot;mode&quot;:<sp/>&apos;TRANSLATION&apos;},</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TRANSFORM_OT_translate={&quot;value&quot;:<sp/>(x,<sp/>y,<sp/>0.0)})</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal">#<sp/>Mirror<sp/>active<sp/>object<sp/>along<sp/>the<sp/>x<sp/>axis</highlight></codeline>
+<codeline lineno="277" refid="namespacecam_1_1simple_1a6155a6b099868857e29377f43755fd86" refkind="member"><highlight class="normal">def<sp/>mirrorx():</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/>bpy.ops.transform.mirror(orient_type=&apos;GLOBAL&apos;,<sp/>orient_matrix=((1,<sp/>0,<sp/>0),<sp/>(0,<sp/>1,<sp/>0),<sp/>(0,<sp/>0,<sp/>1)),</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>orient_matrix_type=&apos;GLOBAL&apos;,<sp/>constraint_axis=(True,<sp/>False,<sp/>False))</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal">#<sp/>mirror<sp/>active<sp/>object<sp/>along<sp/>y<sp/>axis</highlight></codeline>
+<codeline lineno="283" refid="namespacecam_1_1simple_1affc4ed0c14c3a630237ee0dd7b5aeecb" refkind="member"><highlight class="normal">def<sp/>mirrory():</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/>bpy.ops.transform.mirror(orient_type=&apos;GLOBAL&apos;,<sp/>orient_matrix=((1,<sp/>0,<sp/>0),<sp/>(0,<sp/>1,<sp/>0),<sp/>(0,<sp/>0,<sp/>1)),</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>orient_matrix_type=&apos;GLOBAL&apos;,<sp/>constraint_axis=(False,<sp/>True,<sp/>False))</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal">#<sp/>move<sp/>active<sp/>object<sp/>and<sp/>apply<sp/>translation</highlight></codeline>
+<codeline lineno="289" refid="namespacecam_1_1simple_1ab3554d5d133e0b2b8c7cccfc696c75d9" refkind="member"><highlight class="normal">def<sp/>move(x=0.0,<sp/>y=0.0):</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/>bpy.ops.transform.translate(value=(x,<sp/>y,<sp/>0.0))</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/>bpy.ops.object.transform_apply(location=True)</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal">#<sp/>Rotate<sp/>active<sp/>object<sp/>and<sp/>apply<sp/>rotation</highlight></codeline>
+<codeline lineno="295" refid="namespacecam_1_1simple_1a3312f39a6392cd19d859546a9e414917" refkind="member"><highlight class="normal">def<sp/>rotate(angle):</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/>bpy.context.object.rotation_euler[2]<sp/>=<sp/>angle</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/>bpy.ops.object.transform_apply(rotation=True)</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal">#<sp/>remove<sp/>doubles</highlight></codeline>
+<codeline lineno="301" refid="namespacecam_1_1simple_1a818df7dbaed6a135fb8f33e0bd5aa5cb" refkind="member"><highlight class="normal">def<sp/>remove_doubles():</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/>bpy.ops.object.curve_remove_doubles()</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal">#<sp/>Add<sp/>overcut<sp/>to<sp/>active<sp/>object</highlight></codeline>
+<codeline lineno="306" refid="namespacecam_1_1simple_1ac3ee796226d5db467598e2da93e468bc" refkind="member"><highlight class="normal">def<sp/>add_overcut(diametre,<sp/>overcut=True):</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>overcut:</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name<sp/>=<sp/>bpy.context.active_object.name</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bpy.ops.object.curve_overcuts(diameter=diametre,<sp/>threshold=pi/2.05)</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>overcut_name<sp/>=<sp/>bpy.context.active_object.name</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>make_active(name)</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bpy.ops.object.delete()</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rename(overcut_name,<sp/>name)</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>remove_doubles()</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal">#<sp/>add<sp/>bounding<sp/>rectangtle<sp/>to<sp/>curve</highlight></codeline>
+<codeline lineno="318" refid="namespacecam_1_1simple_1a282879f2cf6a78cfa97b3565365b48af" refkind="member"><highlight class="normal">def<sp/>add_bound_rectangle(xmin,<sp/>ymin,<sp/>xmax,<sp/>ymax,<sp/>name=&apos;bounds_rectangle&apos;):</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>xmin<sp/>=<sp/>minimum<sp/>corner<sp/>x<sp/>value</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>ymin<sp/>=<sp/>minimum<sp/>corner<sp/>y<sp/>value</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>xmax<sp/>=<sp/>maximum<sp/>corner<sp/>x<sp/>value</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>ymax<sp/>=<sp/>maximum<sp/>corner<sp/>y<sp/>value</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>name<sp/>=<sp/>name<sp/>of<sp/>the<sp/>resulting<sp/>object</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/>xsize<sp/>=<sp/>xmax<sp/>-<sp/>xmin</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/>ysize<sp/>=<sp/>ymax<sp/>-<sp/>ymin</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/>bpy.ops.curve.simple(align=&apos;WORLD&apos;,<sp/>location=(xmin<sp/>+<sp/>xsize/2,<sp/>ymin<sp/>+<sp/>ysize/2,<sp/>0),<sp/>rotation=(0,<sp/>0,<sp/>0),</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Simple_Type=&apos;Rectangle&apos;,</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Simple_width=xsize,<sp/>Simple_length=ysize,<sp/>use_cyclic_u=True,<sp/>edit_mode=False,<sp/>shape=&apos;3D&apos;)</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/>bpy.ops.object.transform_apply(location=True)</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/>active_name(name)</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight></codeline>
+<codeline lineno="334" refid="namespacecam_1_1simple_1a9468af18a6c781da3dca3c6e9e3669e1" refkind="member"><highlight class="normal">def<sp/>add_rectangle(width,<sp/>height,<sp/>center_x=True,<sp/>center_y=True):</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/>x_offset<sp/>=<sp/>width<sp/>/<sp/>2</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/>y_offset<sp/>=<sp/>height<sp/>/<sp/>2</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>center_x:</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x_offset<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>center_y:</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y_offset<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/>bpy.ops.curve.simple(align=&apos;WORLD&apos;,<sp/>location=(x_offset,<sp/>y_offset,<sp/>0),<sp/>rotation=(0,<sp/>0,<sp/>0),</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Simple_Type=&apos;Rectangle&apos;,</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Simple_width=width,<sp/>Simple_length=height,<sp/>use_cyclic_u=True,<sp/>edit_mode=False,<sp/>shape=&apos;3D&apos;)</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/>bpy.ops.object.transform_apply(location=True)</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/>active_name(&apos;simple_rectangle&apos;)</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"></highlight></codeline>
+<codeline lineno="349"><highlight class="normal"></highlight></codeline>
+<codeline lineno="350"><highlight class="normal">#<sp/><sp/>Returns<sp/>coords<sp/>from<sp/>active<sp/>object</highlight></codeline>
+<codeline lineno="351" refid="namespacecam_1_1simple_1ab82682088de38733023bd3c2d58c8276" refkind="member"><highlight class="normal">def<sp/>active_to_coords():</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/>bpy.ops.object.duplicate()</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/>obj<sp/>=<sp/>bpy.context.active_object</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/>bpy.ops.object.convert(target=&apos;MESH&apos;)</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/>active_name(&quot;_tmp_mesh&quot;)</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/>coords<sp/>=<sp/>[]</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/>for<sp/>v<sp/>in<sp/>obj.data.vertices:<sp/><sp/>#<sp/>extract<sp/>X,Y<sp/>coordinates<sp/>from<sp/>the<sp/>vertices<sp/>data</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>coords.append((v.co.x,<sp/>v.co.y))</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/>remove_multiple(&apos;_tmp_mesh&apos;)</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>coords</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight></codeline>
+<codeline lineno="363"><highlight class="normal"></highlight></codeline>
+<codeline lineno="364"><highlight class="normal">#<sp/>returns<sp/>shapely<sp/>polygon<sp/>from<sp/>active<sp/>object</highlight></codeline>
+<codeline lineno="365" refid="namespacecam_1_1simple_1ad7b940312b51ca5a354839c9c336b6e4" refkind="member"><highlight class="normal">def<sp/>active_to_shapely_poly():</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>convert<sp/>coordinates<sp/>to<sp/>shapely<sp/>Polygon<sp/>datastructure</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>Polygon(active_to_coords())</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/simple.py"/>
+  </compounddef>
+</doxygen>

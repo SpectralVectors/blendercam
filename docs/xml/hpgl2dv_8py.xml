@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="hpgl2dv_8py" kind="file" language="Python">
+    <compoundname>hpgl2dv.py</compoundname>
+    <innerclass refid="classcam_1_1nc_1_1hpgl2dv_1_1Creator" prot="public">cam::nc::hpgl2dv::Creator</innerclass>
+    <innernamespace refid="namespacecam">cam</innernamespace>
+    <innernamespace refid="namespacecam_1_1nc">cam::nc</innernamespace>
+    <innernamespace refid="namespacecam_1_1nc_1_1hpgl2dv">cam::nc::hpgl2dv</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacecam_1_1nc_1_1hpgl2dv" refkind="compound"><highlight class="comment">#<sp/>hpgl2dv.py</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Copyright<sp/>(c)<sp/>2009,<sp/>Dan<sp/>Heeks</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">#<sp/>This<sp/>program<sp/>is<sp/>released<sp/>under<sp/>the<sp/>BSD<sp/>license.<sp/>See<sp/>the<sp/>file<sp/>COPYING<sp/>for<sp/>details.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">#<sp/>This<sp/>is<sp/>the<sp/>same<sp/>as<sp/>the<sp/>hpgl2d<sp/>machine,<sp/>but<sp/>uses<sp/>units<sp/>of<sp/>0.25mm<sp/>instead<sp/>of<sp/>0.01mm</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>nc</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>hpgl2d</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="classcam_1_1nc_1_1hpgl2dv_1_1Creator" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classcam_1_1nc_1_1hpgl2dv_1_1Creator" kindref="compound">Creator</ref>(<ref refid="classcam_1_1nc_1_1hpgl2d_1_1Creator" kindref="compound">hpgl2d.Creator</ref>):</highlight></codeline>
+<codeline lineno="14" refid="classcam_1_1nc_1_1hpgl2dv_1_1Creator_1a8ed7d723c5d4c4c7856f637ee7eabb57" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classcam_1_1nc_1_1hpgl2dv_1_1Creator_1a8ed7d723c5d4c4c7856f637ee7eabb57" kindref="member">__init__</ref>(self):</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hpgl2d.Creator.__init__(self)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="classcam_1_1nc_1_1hpgl2dv_1_1Creator_1a97348a94f0b2a1fb11e581a85899aaf5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classcam_1_1nc_1_1hpgl2dv_1_1Creator_1a97348a94f0b2a1fb11e581a85899aaf5" kindref="member">imperial</ref>(self):</highlight></codeline>
+<codeline lineno="18" refid="classcam_1_1nc_1_1hpgl2dv_1_1Creator_1aea9132e1c198640e5d78f6b574f9a409" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classcam_1_1nc_1_1hpgl2d_1_1Creator_1acd2904d16de36d8a0a3106bfcba8a436" kindref="member">units_to_mc_units</ref><ref refid="classcam_1_1nc_1_1hpgl2dv_1_1Creator_1aea9132e1c198640e5d78f6b574f9a409" kindref="member">units_to_mc_units</ref><sp/>=<sp/>101.6<sp/><sp/></highlight><highlight class="comment">#<sp/>multiplier<sp/>from<sp/>inches<sp/>to<sp/>machine<sp/>units</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classcam_1_1nc_1_1hpgl2dv_1_1Creator_1a90ae9c952ba36d7be3183010ec95662c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classcam_1_1nc_1_1hpgl2dv_1_1Creator_1a90ae9c952ba36d7be3183010ec95662c" kindref="member">metric</ref>(self):</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classcam_1_1nc_1_1hpgl2d_1_1Creator_1acd2904d16de36d8a0a3106bfcba8a436" kindref="member">units_to_mc_units</ref><ref refid="classcam_1_1nc_1_1hpgl2dv_1_1Creator_1aea9132e1c198640e5d78f6b574f9a409" kindref="member">units_to_mc_units</ref><sp/>=<sp/>4<sp/><sp/></highlight><highlight class="comment">#<sp/>multiplier<sp/>from<sp/>mm<sp/>to<sp/>machine<sp/>units</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="classcam_1_1nc_1_1hpgl2dv_1_1Creator_1abf1fb9e228857da67ba1e5750c59b803" refkind="member"><highlight class="normal">nc.creator<sp/>=<sp/><ref refid="classcam_1_1nc_1_1hpgl2dv_1_1Creator" kindref="compound">Creator</ref>()</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/hpgl2dv.py"/>
+  </compounddef>
+</doxygen>

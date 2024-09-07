@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1slice_1_1SliceObjectsSettings" xml:lang="en-US">
+<title>cam.slice.SliceObjectsSettings Class Reference</title>
+<indexterm><primary>cam.slice.SliceObjectsSettings</primary></indexterm>
+Inheritance diagram for cam.slice.SliceObjectsSettings:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1slice_1_1SliceObjectsSettings__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.slice.SliceObjectsSettings:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1slice_1_1SliceObjectsSettings__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1slice_1_1SliceObjectsSettings_1abcf16c5a49f27e0b4eafff441f46b0f8">slice_distance</link></para>
+</listitem>
+            <listitem><para>BoolProperty <link linkend="_classcam_1_1slice_1_1SliceObjectsSettings_1a94308cf2947682ae8597c46238161a96">slice_above0</link></para>
+</listitem>
+            <listitem><para>BoolProperty <link linkend="_classcam_1_1slice_1_1SliceObjectsSettings_1a7b16b35ecd7ff1db6656ca69a699af08">slice_3d</link></para>
+</listitem>
+            <listitem><para>BoolProperty <link linkend="_classcam_1_1slice_1_1SliceObjectsSettings_1add424eb935f93e8a60cdabdd03b27ead">indexes</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Stores All Data for Machines</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1slice_1_1SliceObjectsSettings_1add424eb935f93e8a60cdabdd03b27ead"/><section>
+    <title>indexes</title>
+<indexterm><primary>indexes</primary><secondary>cam.slice.SliceObjectsSettings</secondary></indexterm>
+<indexterm><primary>cam.slice.SliceObjectsSettings</primary><secondary>indexes</secondary></indexterm>
+<para><computeroutput>BoolProperty cam.slice.SliceObjectsSettings.indexes<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Add&#32;Indexes&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;Adds&#32;index&#32;text&#32;of&#32;layer&#32;+&#32;index&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="keyword">True</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1slice_1_1SliceObjectsSettings_1a7b16b35ecd7ff1db6656ca69a699af08"/><section>
+    <title>slice_3d</title>
+<indexterm><primary>slice_3d</primary><secondary>cam.slice.SliceObjectsSettings</secondary></indexterm>
+<indexterm><primary>cam.slice.SliceObjectsSettings</primary><secondary>slice_3d</secondary></indexterm>
+<para><computeroutput>BoolProperty cam.slice.SliceObjectsSettings.slice_3d<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;3D&#32;Slice&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;For&#32;3D&#32;carving&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="keyword">False</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1slice_1_1SliceObjectsSettings_1a94308cf2947682ae8597c46238161a96"/><section>
+    <title>slice_above0</title>
+<indexterm><primary>slice_above0</primary><secondary>cam.slice.SliceObjectsSettings</secondary></indexterm>
+<indexterm><primary>cam.slice.SliceObjectsSettings</primary><secondary>slice_above0</secondary></indexterm>
+<para><computeroutput>BoolProperty cam.slice.SliceObjectsSettings.slice_above0<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Slice&#32;Above&#32;0&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;only&#32;slice&#32;model&#32;above&#32;0&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="keyword">False</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1slice_1_1SliceObjectsSettings_1abcf16c5a49f27e0b4eafff441f46b0f8"/><section>
+    <title>slice_distance</title>
+<indexterm><primary>slice_distance</primary><secondary>cam.slice.SliceObjectsSettings</secondary></indexterm>
+<indexterm><primary>cam.slice.SliceObjectsSettings</primary><secondary>slice_distance</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.slice.SliceObjectsSettings.slice_distance<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Slicing&#32;Distance&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;Slices&#32;distance&#32;in&#32;z,&#32;should&#32;be&#32;most&#32;often&#32;&quot;</emphasis>
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;thickness&#32;of&#32;plywood&#32;sheet.&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0.001,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=10,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.005,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=constants.PRECISION,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/<link linkend="_slice_8py">slice.py</link></section>
+</section>

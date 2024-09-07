@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="opencamlib_8py" kind="file" language="Python">
+    <compoundname>opencamlib.py</compoundname>
+    <innernamespace refid="namespacecam">cam</innernamespace>
+    <innernamespace refid="namespacecam_1_1opencamlib">cam::opencamlib</innernamespace>
+    <innernamespace refid="namespacecam_1_1opencamlib_1_1opencamlib">cam::opencamlib::opencamlib</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacecam_1_1opencamlib_1_1opencamlib" refkind="compound"><highlight class="stringliteral">&quot;&quot;&quot;BlenderCAM<sp/>&apos;oclSample.py&apos;</highlight></codeline>
+<codeline lineno="2"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="3"><highlight class="stringliteral">Functions<sp/>used<sp/>by<sp/>OpenCAMLib<sp/>sampling.</highlight></codeline>
+<codeline lineno="4"><highlight class="stringliteral">&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>os</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>subprocess<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>call</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>tempfile</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>numpy<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>np</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordflow">try</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>ocl</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordflow">except</highlight><highlight class="normal"><sp/>ImportError:</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>opencamlib<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>ocl</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">except</highlight><highlight class="normal"><sp/>ImportError:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>bpy</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>..constants<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>BULLET_SCALE</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>..simple<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>activate</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>..<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>utils</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>..cam_chunk<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>camPathChunk</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>..async_op<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>progress_async</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.oclSample<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>(</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>get_oclSTL,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>ocl_sample</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="namespacecam_1_1opencamlib_1_1opencamlib_1ad09d62da3544d7a95f78e2fa8d8aa169" refkind="member"><highlight class="normal">OCL_SCALE<sp/>=<sp/>1000.0</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="namespacecam_1_1opencamlib_1_1opencamlib_1abf6e04943d0d03f58964a5d967060793" refkind="member"><highlight class="normal">PYTHON_BIN<sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="namespacecam_1_1opencamlib_1_1opencamlib_1a7b3e34a8199762c851a56af0322bb990" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacecam_1_1opencamlib_1_1opencamlib_1a7b3e34a8199762c851a56af0322bb990" kindref="member">pointSamplesFromOCL</ref>(points,<sp/>samples):</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>index,<sp/>point<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>enumerate(points):</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>point[2]<sp/>=<sp/>samples[index].z<sp/>/<sp/>OCL_SCALE</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="namespacecam_1_1opencamlib_1_1opencamlib_1a42296e013a032a82b2e7f8d19e1daec9" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacecam_1_1opencamlib_1_1opencamlib_1a42296e013a032a82b2e7f8d19e1daec9" kindref="member">chunkPointSamplesFromOCL</ref>(chunks,<sp/>samples):</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>s_index<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>ch<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>chunks:</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ch_points<sp/>=<sp/>ch.count()</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>z_vals<sp/>=<sp/>np.array([p.z<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>p<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>samples[s_index:s_index+ch_points]])</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>z_vals<sp/>/=<sp/>OCL_SCALE</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ch.setZ(z_vals)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>s_index<sp/>+=<sp/>ch_points</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>p_index<sp/>=<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>for<sp/>point<sp/>in<sp/>ch.points:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/>if<sp/>len(point)<sp/>==<sp/>2<sp/>or<sp/>point[2]<sp/>!=<sp/>2:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>z_sample<sp/>=<sp/>samples[s_index].z<sp/>/<sp/>OCL_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ch.points[p_index]<sp/>=<sp/>(point[0],<sp/>point[1],<sp/>z_sample)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/>#<sp/>print(str(point[2]))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/>else:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ch.points[p_index]<sp/>=<sp/>(point[0],<sp/>point[1],<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/>p_index<sp/>+=<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/>s_index<sp/>+=<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="namespacecam_1_1opencamlib_1_1opencamlib_1ae67517f2e1f47edcc0e509e47340f877" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacecam_1_1opencamlib_1_1opencamlib_1ae67517f2e1f47edcc0e509e47340f877" kindref="member">chunkPointsResampleFromOCL</ref>(chunks,<sp/>samples):</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>s_index<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>ch<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>chunks:</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ch_points<sp/>=<sp/>ch.count()</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>z_vals<sp/>=<sp/>np.array([p.z<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>p<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>samples[s_index:s_index+ch_points]])</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>z_vals<sp/>/=<sp/>OCL_SCALE</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ch.setZ(z_vals)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>s_index<sp/>+=<sp/>ch_points</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>s_index<sp/>=<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>for<sp/>ch<sp/>in<sp/>chunks:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/>p_index<sp/>=<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/>for<sp/>point<sp/>in<sp/>ch.points:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>len(point)<sp/>==<sp/>2<sp/>or<sp/>point[2]<sp/>!=<sp/>2:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>z_sample<sp/>=<sp/>samples[s_index].z<sp/>/<sp/>OCL_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ch.points[p_index]<sp/>=<sp/>(point[0],<sp/>point[1],<sp/>z_sample)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>print(str(point[2]))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>else:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ch.points[p_index]<sp/>=<sp/>(point[0],<sp/>point[1],<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_index<sp/>+=<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>s_index<sp/>+=<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="namespacecam_1_1opencamlib_1_1opencamlib_1a6be829fdfd769e5628967c7b2b9740c7" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacecam_1_1opencamlib_1_1opencamlib_1a6be829fdfd769e5628967c7b2b9740c7" kindref="member">exportModelsToSTL</ref>(operation):</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>file_number<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>collision_object<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>operation.objects:</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>activate(collision_object)</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bpy.ops.object.duplicate(linked=</highlight><highlight class="keyword">False</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>collision_object<sp/>=<sp/>bpy.context.scene.objects.active</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>bpy.context.scene.objects.selected<sp/>=<sp/>collision_object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>file_name<sp/>=<sp/>os.path.join(tempfile.gettempdir(),<sp/></highlight><highlight class="stringliteral">&quot;model{0}.stl&quot;</highlight><highlight class="normal">.format(str(file_number)))</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bpy.ops.object.transform_apply(location=</highlight><highlight class="keyword">True</highlight><highlight class="normal">,<sp/>rotation=</highlight><highlight class="keyword">True</highlight><highlight class="normal">,<sp/>scale=</highlight><highlight class="keyword">True</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bpy.ops.transform.resize(value=(OCL_SCALE,<sp/>OCL_SCALE,<sp/>OCL_SCALE),<sp/>constraint_axis=(</highlight><highlight class="keyword">False</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">False</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">False</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>orient_type=</highlight><highlight class="stringliteral">&apos;GLOBAL&apos;</highlight><highlight class="normal">,<sp/>mirror=</highlight><highlight class="keyword">False</highlight><highlight class="normal">,<sp/>use_proportional_edit=</highlight><highlight class="keyword">False</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>proportional_edit_falloff=</highlight><highlight class="stringliteral">&apos;SMOOTH&apos;</highlight><highlight class="normal">,<sp/>proportional_size=1,<sp/>snap=</highlight><highlight class="keyword">False</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>snap_target=</highlight><highlight class="stringliteral">&apos;CLOSEST&apos;</highlight><highlight class="normal">,<sp/>snap_point=(0,<sp/>0,<sp/>0),<sp/>snap_align=</highlight><highlight class="keyword">False</highlight><highlight class="normal">,<sp/>snap_normal=(0,<sp/>0,<sp/>0),</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>texture_space=</highlight><highlight class="keyword">False</highlight><highlight class="normal">,<sp/>release_confirm=</highlight><highlight class="keyword">False</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bpy.ops.object.transform_apply(location=</highlight><highlight class="keyword">True</highlight><highlight class="normal">,<sp/>rotation=</highlight><highlight class="keyword">True</highlight><highlight class="normal">,<sp/>scale=</highlight><highlight class="keyword">True</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bpy.ops.export_mesh.stl(check_existing=</highlight><highlight class="keyword">True</highlight><highlight class="normal">,<sp/>filepath=file_name,<sp/>filter_glob=</highlight><highlight class="stringliteral">&quot;*.stl&quot;</highlight><highlight class="normal">,<sp/>use_selection=</highlight><highlight class="keyword">True</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ascii=</highlight><highlight class="keyword">False</highlight><highlight class="normal">,<sp/>use_mesh_modifiers=</highlight><highlight class="keyword">True</highlight><highlight class="normal">,<sp/>axis_forward=</highlight><highlight class="stringliteral">&apos;Y&apos;</highlight><highlight class="normal">,<sp/>axis_up=</highlight><highlight class="stringliteral">&apos;Z&apos;</highlight><highlight class="normal">,<sp/>global_scale=1.0)</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bpy.ops.object.delete()</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>file_number<sp/>+=<sp/>1</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="namespacecam_1_1opencamlib_1_1opencamlib_1a27597745a18583333c13a4bed4aff4d1" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">async<sp/>def<sp/></highlight><highlight class="normal"><ref refid="namespacecam_1_1opencamlib_1_1opencamlib_1a27597745a18583333c13a4bed4aff4d1" kindref="member">oclSamplePoints</ref>(operation,<sp/>points):</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>samples<sp/>=<sp/>await<sp/>ocl_sample(operation,<sp/>points)</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacecam_1_1opencamlib_1_1opencamlib_1a7b3e34a8199762c851a56af0322bb990" kindref="member">pointSamplesFromOCL</ref>(points,<sp/>samples)</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="namespacecam_1_1opencamlib_1_1opencamlib_1ae3506537b9a397c9e043e6d872cb245c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">async<sp/>def<sp/></highlight><highlight class="normal">oclSample(operation,<sp/>chunks):</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>samples<sp/>=<sp/>await<sp/>ocl_sample(operation,<sp/>chunks)</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacecam_1_1opencamlib_1_1opencamlib_1a42296e013a032a82b2e7f8d19e1daec9" kindref="member">chunkPointSamplesFromOCL</ref>(chunks,<sp/>samples)</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="namespacecam_1_1opencamlib_1_1opencamlib_1a508b47223f669b193f323c1e6e50c9be" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">async<sp/>def<sp/></highlight><highlight class="normal"><ref refid="namespacecam_1_1opencamlib_1_1opencamlib_1a508b47223f669b193f323c1e6e50c9be" kindref="member">oclResampleChunks</ref>(operation,<sp/>chunks_to_resample,<sp/>use_cached_mesh):</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>tmp_chunks<sp/>=<sp/>list()</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>tmp_chunks.append(<ref refid="classcam_1_1cam__chunk_1_1camPathChunk" kindref="compound">camPathChunk</ref>(inpoints=[]))</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>chunk,<sp/>i_start,<sp/>i_length<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>chunks_to_resample:</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tmp_chunks[0].extend(chunk.get_points_np()[i_start:i_start+i_length])</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(i_start,<sp/>i_length,<sp/>len(tmp_chunks[0].points))</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>samples<sp/>=<sp/>await<sp/>ocl_sample(operation,<sp/>tmp_chunks,<sp/>use_cached_mesh=use_cached_mesh)</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>sample_index<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>chunk,<sp/>i_start,<sp/>i_length<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>chunks_to_resample:</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>z<sp/>=<sp/>np.array([p.z<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>p<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>samples[sample_index:sample_index+i_length]])<sp/>/<sp/>OCL_SCALE</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pts<sp/>=<sp/>chunk.get_points_np()</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pt_z<sp/>=<sp/>pts[i_start:i_start+i_length,<sp/>2]</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pt_z<sp/>=<sp/>np.where(z<sp/>&gt;<sp/>pt_z,<sp/>z,<sp/>pt_z)</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sample_index<sp/>+=<sp/>i_length</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>for<sp/>p_index<sp/>in<sp/>range(i_start,<sp/>i_start<sp/>+<sp/>i_length):</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/>z<sp/>=<sp/>samples[sample_index].z<sp/>/<sp/>OCL_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/>sample_index<sp/>+=<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/>if<sp/>z<sp/>&gt;<sp/>chunk.points[p_index][2]:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>chunk.points[p_index][2]<sp/>=<sp/>z</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="namespacecam_1_1opencamlib_1_1opencamlib_1abb414af07e5ed249661f8de1dd522114" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacecam_1_1opencamlib_1_1opencamlib_1abb414af07e5ed249661f8de1dd522114" kindref="member">oclWaterlineLayerHeights</ref>(operation):</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>layers<sp/>=<sp/>[]</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>l_last<sp/>=<sp/>operation.minz</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>l_step<sp/>=<sp/>operation.stepdown</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>l_first<sp/>=<sp/>operation.maxz<sp/>-<sp/>l_step</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>l_depth<sp/>=<sp/>l_first</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>l_depth<sp/>&gt;<sp/>(l_last<sp/>+<sp/>0.0000001):</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>layers.append(l_depth)</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l_depth<sp/>-=<sp/>l_step</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>layers.append(l_last)</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>layers</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="comment">#<sp/>def<sp/>oclGetMedialAxis(operation,<sp/>chunks):</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/>oclWaterlineHeightsToOCL(operation)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/>operationSettingsToOCL(operation)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/>curvesToOCL(operation)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/>call([PYTHON_BIN,<sp/>os.path.join(bpy.utils.script_path_pref(),<sp/>&quot;addons&quot;,<sp/>&quot;cam&quot;,<sp/>&quot;opencamlib&quot;,<sp/>&quot;ocl.py&quot;)])</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/>waterlineChunksFromOCL(operation,<sp/>chunks)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160" refid="namespacecam_1_1opencamlib_1_1opencamlib_1af66f8f08d2a6832de86a60a682e7d150" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">async<sp/>def<sp/></highlight><highlight class="normal"><ref refid="namespacecam_1_1opencamlib_1_1opencamlib_1af66f8f08d2a6832de86a60a682e7d150" kindref="member">oclGetWaterline</ref>(operation,<sp/>chunks):</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>layers<sp/>=<sp/><ref refid="namespacecam_1_1opencamlib_1_1opencamlib_1abb414af07e5ed249661f8de1dd522114" kindref="member">oclWaterlineLayerHeights</ref>(operation)</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>oclSTL<sp/>=<sp/>get_oclSTL(operation)</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>op_cutter_type<sp/>=<sp/>operation.cutter_type</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>op_cutter_diameter<sp/>=<sp/>operation.cutter_diameter</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>op_minz<sp/>=<sp/>operation.minz</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>op_cutter_type<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;VCARVE&quot;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>op_cutter_tip_angle<sp/>=<sp/>operation[</highlight><highlight class="stringliteral">&apos;cutter_tip_angle&apos;</highlight><highlight class="normal">]</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>cutter<sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>TODO:<sp/>automatically<sp/>determine<sp/>necessary<sp/>cutter<sp/>length<sp/>depending<sp/>on<sp/>object<sp/>size</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>cutter_length<sp/>=<sp/>150</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>op_cutter_type<sp/>==<sp/></highlight><highlight class="stringliteral">&apos;END&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cutter<sp/>=<sp/>ocl.CylCutter((op_cutter_diameter<sp/>+<sp/>operation.skin<sp/>*<sp/>2)<sp/>*<sp/>1000,<sp/>cutter_length)</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/>op_cutter_type<sp/>==<sp/></highlight><highlight class="stringliteral">&apos;BALLNOSE&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cutter<sp/>=<sp/>ocl.BallCutter((op_cutter_diameter<sp/>+<sp/>operation.skin<sp/>*<sp/>2)<sp/>*<sp/>1000,<sp/>cutter_length)</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/>op_cutter_type<sp/>==<sp/></highlight><highlight class="stringliteral">&apos;VCARVE&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cutter<sp/>=<sp/>ocl.ConeCutter((op_cutter_diameter<sp/>+<sp/>operation.skin<sp/>*<sp/>2)</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>1000,<sp/>op_cutter_tip_angle,<sp/>cutter_length)</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;Cutter<sp/>unsupported:<sp/>{0}\n&quot;</highlight><highlight class="normal">.format(op_cutter_type))</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>quit()</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>waterline<sp/>=<sp/>ocl.Waterline()</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>waterline.setSTL(oclSTL)</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>waterline.setCutter(cutter)</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>waterline.setSampling(0.1)<sp/><sp/></highlight><highlight class="comment">#<sp/>TODO:<sp/>add<sp/>sampling<sp/>setting<sp/>to<sp/>UI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>last_pos<sp/>=<sp/>[0,<sp/>0,<sp/>0]</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>count,<sp/>height<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>enumerate(layers):</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>layer_chunks<sp/>=<sp/>[]</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>await<sp/>progress_async(</highlight><highlight class="stringliteral">&quot;Waterline&quot;</highlight><highlight class="normal">,<sp/>int((100*count)/len(layers)))</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>waterline.reset()</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>waterline.setZ(height<sp/>*<sp/>OCL_SCALE)</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>waterline.run2()</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wl_loops<sp/>=<sp/>waterline.getLoops()</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>l<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>wl_loops:</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>inpoints<sp/>=<sp/>[]</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>p<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>l:</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>inpoints.append((p.x<sp/>/<sp/>OCL_SCALE,<sp/>p.y<sp/>/<sp/>OCL_SCALE,<sp/>p.z<sp/>/<sp/>OCL_SCALE))</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>inpoints.append(inpoints[0])</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>chunk<sp/>=<sp/><ref refid="classcam_1_1cam__chunk_1_1camPathChunk" kindref="compound">camPathChunk</ref>(inpoints=inpoints)</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>chunk.closed<sp/>=<sp/></highlight><highlight class="keyword">True</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>layer_chunks.append(chunk)</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>sort<sp/>chunks<sp/>so<sp/>that<sp/>ordering<sp/>is<sp/>stable</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>chunks.extend(await<sp/>utils.sortChunks(layer_chunks,<sp/>operation,<sp/>last_pos=last_pos))</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>len(chunks)<sp/>&gt;<sp/>0:</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>last_pos<sp/>=<sp/>chunks[-1].get_point(-1)</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight><highlight class="comment">#<sp/>def<sp/>oclFillMedialAxis(operation):</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/opencamlib/opencamlib.py"/>
+  </compounddef>
+</doxygen>

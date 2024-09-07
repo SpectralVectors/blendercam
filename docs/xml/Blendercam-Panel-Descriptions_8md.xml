@@ -1,0 +1,255 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="Blendercam-Panel-Descriptions_8md" kind="file" language="Markdown">
+    <compoundname>Blendercam-Panel-Descriptions.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Blendercam<sp/>Panel<sp/>Descriptions</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>[Enter<sp/>CAM<sp/>mode](#enter-cam-mode)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[CAM<sp/>operations](#cam-operations-panel)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[CAM<sp/>info<sp/>and<sp/>Warnings](#cam-info-and-warnings-panel)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[CAM<sp/>operation<sp/>setup](#cam-operation-setup-panel)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[CAM<sp/>optimization](#cam-optimization-panel)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[CAM<sp/>operation<sp/>area](#cam-operation-area-panel)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[CAM<sp/>material<sp/>size<sp/>and<sp/>position](#cam-material-size-and-position-panel)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[CAM<sp/>movement](#cam-movement-panel)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[CAM<sp/>feedrate](#cam-feedrate-panel)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[CAM<sp/>cutter](#cam-cutter-panel)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[CAM<sp/>machine](#cam-machine-panel)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[CAM<sp/>chains](#cam-chains-panel)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Enter<sp/>CAM<sp/>mode</highlight></codeline>
+<codeline><highlight class="normal">All<sp/>of<sp/>the<sp/>CAM<sp/>panels<sp/>are<sp/>found<sp/>in<sp/>the<sp/>Render<sp/>Data<sp/>settings.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>put<sp/>blender<sp/>into<sp/>CAM<sp/>mode<sp/>do<sp/>the<sp/>following.<sp/>The<sp/>Blendercam<sp/>add-on<sp/>must<sp/>be<sp/>enabled<sp/>already.<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">First<sp/>of<sp/>all,<sp/>change<sp/>render<sp/>engine<sp/>to<sp/>CAM<sp/>to<sp/>use<sp/>the<sp/>blender<sp/>cam<sp/>tool.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![Renderer<sp/>selection](images/cam_render.png)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>1.<sp/>select<sp/>**Blender<sp/>CAM**<sp/>as<sp/>the<sp/>render<sp/>engine<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>2.<sp/>select<sp/>the<sp/>**Properties**<sp/>editor</highlight></codeline>
+<codeline><highlight class="normal"><sp/>3.<sp/>select<sp/>the<sp/>**Render**<sp/>data<sp/>in<sp/>order<sp/>to<sp/>see<sp/>the<sp/>CAM<sp/>panels</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>CAM<sp/>operations<sp/>Panel</highlight></codeline>
+<codeline><highlight class="normal">![CAM<sp/>operations](images/opPanel2.png)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Calculate<sp/>path**<sp/>-<sp/>This<sp/>calculates<sp/>the<sp/>operation<sp/>which<sp/>is<sp/>currently<sp/>selected<sp/>in<sp/>the<sp/>cam<sp/>operations<sp/>list.<sp/>The<sp/>Button<sp/>will<sp/>stay<sp/>selected<sp/>until<sp/>the<sp/>calculation<sp/>is<sp/>completed.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>**Simulate<sp/>operation**<sp/>-<sp/>Works<sp/>for<sp/>3<sp/>axis<sp/>operations,<sp/>but<sp/>not<sp/>for<sp/>all.<sp/>It<sp/>creates<sp/>a<sp/>new<sp/>object<sp/>which<sp/>shows<sp/>the<sp/>simulation<sp/>-<sp/>the<sp/>subdivision<sp/>of<sp/>the<sp/>object<sp/>can<sp/>be<sp/>increased,<sp/>and<sp/>the<sp/>resolution<sp/>of<sp/>the<sp/>simulation<sp/>also<sp/>depends<sp/>on<sp/>simulation<sp/>sampling<sp/>raster<sp/>detail,<sp/>which<sp/>is<sp/>in<sp/>the<sp/>optimization<sp/>panel</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>**Operation<sp/>name**<sp/>-<sp/>Select<sp/>this<sp/>field<sp/>to<sp/>change<sp/>the<sp/>name<sp/>of<sp/>the<sp/>currently<sp/>selected<sp/>operation.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>**File<sp/>name**<sp/>-<sp/>Name<sp/>of<sp/>the<sp/>gcode<sp/>file.<sp/>The<sp/>file<sp/>extension<sp/>used<sp/>will<sp/>be<sp/>determined<sp/>by<sp/>the<sp/>g-code<sp/>post<sp/>processor<sp/>selected.<sp/>See<sp/>[Cam<sp/>Machine<sp/>panel](Blendercam-Panel-Descriptions.md)<sp/>for<sp/>setting<sp/>post<sp/>processor.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>**Source<sp/>of<sp/>data**<sp/>-<sp/>This<sp/>can<sp/>be<sp/>either<sp/>1<sp/>object,<sp/>a<sp/>group<sp/>of<sp/>objects,<sp/>or<sp/>an<sp/>image.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Object**<sp/>-<sp/>a<sp/>Blender<sp/>object.<sp/><sp/>This<sp/>could<sp/>be<sp/>a<sp/>mesh,<sp/>or<sp/>a<sp/>curve.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Group**<sp/>-<sp/>Objects<sp/>in<sp/>a<sp/>group.<sp/><sp/>Select<sp/>all<sp/>objects<sp/>you<sp/>want<sp/>to<sp/>use,<sp/>and<sp/>hit<sp/>Ctrl+G<sp/>to<sp/>create<sp/>a<sp/>new<sp/>group.<sp/>Then<sp/>type<sp/>name<sp/>of<sp/>the<sp/>group<sp/>in<sp/>the<sp/>field<sp/>(Group<sp/>will<sp/>be<sp/>the<sp/>name<sp/>of<sp/>the<sp/>first<sp/>group<sp/>you<sp/>create).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Image**<sp/>-<sp/>Open<sp/>an<sp/>image<sp/>that<sp/>will<sp/>be<sp/>used<sp/>as<sp/>a<sp/>height/depth<sp/>map.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>**Object**<sp/>-<sp/>the<sp/>blender<sp/>object<sp/>that<sp/>will<sp/>be<sp/>used<sp/>in<sp/>the<sp/>CAM<sp/>operation.<sp/>Select<sp/>the<sp/>object<sp/>from<sp/>a<sp/>drop<sp/>down<sp/>list.<sp/>Write<sp/>it&apos;s<sp/>name<sp/>in<sp/>the<sp/>field,<sp/>it<sp/>should<sp/>auto-complete<sp/>and<sp/>give<sp/>a<sp/>list<sp/>of<sp/>objects<sp/>to<sp/>select<sp/>from.</highlight></codeline>
+<codeline><highlight class="normal">**NOTE:**<sp/>if<sp/>you<sp/>change<sp/>the<sp/>objects<sp/>name<sp/>later<sp/>on<sp/>then<sp/>you<sp/>must<sp/>also<sp/>change<sp/>it<sp/>here.<sp/><sp/>The<sp/>field<sp/>will<sp/>turn<sp/>red<sp/>if<sp/>the<sp/>object<sp/>can<sp/>not<sp/>be<sp/>found.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>CAM<sp/>info<sp/>and<sp/>Warnings<sp/>Panel</highlight></codeline>
+<codeline><highlight class="normal">![Cam<sp/>Info<sp/>&amp;<sp/>warnings](images/camInfo.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>panel<sp/>will<sp/>show<sp/>any<sp/>trouble<sp/>found<sp/>during<sp/>the<sp/>computation,<sp/>estimated<sp/>operation<sp/>time,<sp/>and<sp/>chipload<sp/>data</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>CAM<sp/>operation<sp/>setup<sp/>Panel</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>![Strategy](images/opList.png)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Strategy**<sp/>sets<sp/>one<sp/>of<sp/>the<sp/>strategies.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Parallel**<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>![Parallel](images/opParallel.png)<sp/><sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Parallel<sp/>paths<sp/>at<sp/>any<sp/>angle</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Pocket**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>![pocket](images/opPocket.png)<sp/><sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Cutout**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>![profile<sp/>cutout](images/opProfile.png)<sp/><sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Cutout<sp/>a<sp/>silhouette<sp/>using<sp/>optional<sp/>offset.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Drill**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>![drill](images/opDrill.png)<sp/><sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>This<sp/>detects<sp/>circles<sp/>or<sp/>squares<sp/>in<sp/>any<sp/>2d<sp/>curve<sp/>and<sp/>converts<sp/>these<sp/>into<sp/>a<sp/>drill<sp/>operation.<sp/><sp/>Supports<sp/>peck<sp/>drilling<sp/>if<sp/>layers<sp/>are<sp/>enabled.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Cross**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>![cross](images/opCross.png)<sp/><sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Block**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>![block](images/opBlock.png)<sp/><sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Spiral**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>![spiral](images/opSpiral.png)<sp/><sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Best<sp/>suited<sp/>for<sp/>coins<sp/>or<sp/>other<sp/>circular<sp/>objects</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Circles**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>![circles](images/opCircle.png)<sp/><sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Best<sp/>suited<sp/>for<sp/>coins<sp/>or<sp/>other<sp/>circular<sp/>objects</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Outline<sp/>Fill**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>![outline<sp/>fill](images/opOutline.png)<sp/><sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Carve**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>![carve](https://cloud.githubusercontent.com/assets/648108/12060353/19527cf6-af44-11e5-9de1-27cf1c98a90a.jpg)<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Projects<sp/>any<sp/>2d<sp/>curve<sp/>on<sp/>3d<sp/>surface</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Overview<sp/>of<sp/>principles<sp/>strategies**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>![Strategy<sp/>Overview](images/opOverview.png)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>![waterline](https://cloud.githubusercontent.com/assets/648108/12060351/1316d53a-af44-11e5-8158-31c349a7a265.jpg)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Various<sp/>strategies<sp/>will<sp/>combine<sp/>these<sp/>parameters:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**distance<sp/>between<sp/>toolpaths**<sp/>-<sp/>also<sp/>called<sp/>stepover<sp/>in<sp/>other<sp/>applications</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**distance<sp/>along<sp/>toolpaths**<sp/>-<sp/>how<sp/>dense<sp/>will<sp/>be<sp/>the<sp/>operation<sp/>path.<sp/>This<sp/>can<sp/>influence<sp/>accuracy<sp/>of<sp/>the<sp/>machining.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**angle<sp/>of<sp/>paths**<sp/>-<sp/>this<sp/>rotates<sp/>the<sp/>parallel<sp/>and<sp/>cross<sp/>strategies<sp/>by<sp/>the<sp/>specified<sp/>amount.<sp/>Note<sp/>that<sp/>e.g.<sp/>rotating<sp/>by<sp/>90<sp/>changes<sp/>the<sp/>basic<sp/>axis<sp/>from<sp/>X<sp/>to<sp/>Y</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**parallel<sp/>step<sp/>back**<sp/>-<sp/>this<sp/>function<sp/>is<sp/>only<sp/>for<sp/>finishing<sp/>pass,<sp/>where<sp/>you<sp/>still<sp/>have<sp/>to<sp/>cut<sp/>some<sp/>substantial<sp/>amount<sp/>of<sp/>material,<sp/>and<sp/>want<sp/>also<sp/>to<sp/>save<sp/>the<sp/>cutter.<sp/>If<sp/>you<sp/>set<sp/>up<sp/>to<sp/>climb<sp/>movement,<sp/>it<sp/>goes<sp/>with<sp/>climb<sp/>into<sp/>material,<sp/>then<sp/>goes<sp/>in<sp/>the<sp/>other<sp/>direction<sp/>one<sp/>step<sp/>back<sp/>-<sp/>this<sp/>uses<sp/>the<sp/>back<sp/>movement<sp/>of<sp/>the<sp/>machine<sp/>for<sp/>finishing<sp/>the<sp/>surface.<sp/>Note<sp/>that<sp/>this<sp/>also<sp/>means<sp/>the<sp/>cutting<sp/>into<sp/>material<sp/>will<sp/>happen<sp/>with<sp/>a<sp/>rate<sp/>which<sp/>is<sp/>2x<sp/>of<sp/>distance<sp/>between<sp/>toolpaths<sp/>If<sp/>you<sp/>don&apos;t<sp/>know<sp/>what<sp/>this<sp/>all<sp/>means,<sp/>don&apos;t<sp/>use<sp/>this<sp/>function.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Skin**<sp/>-<sp/>useful<sp/>for<sp/>roughing,<sp/>leaves<sp/>a<sp/>layer<sp/>on<sp/>the<sp/>surface<sp/>for<sp/>finishing</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Inverse<sp/>milling**<sp/>-<sp/>used<sp/>if<sp/>you<sp/>want<sp/>to<sp/>mill<sp/>a<sp/>form<sp/>directly<sp/>from<sp/>positive<sp/>of<sp/>the<sp/>object.<sp/>Does<sp/>not<sp/>work<sp/>in<sp/>exact<sp/>mode.<sp/>Only<sp/>works<sp/>for<sp/>3<sp/>axis<sp/>strategies.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Direction**<sp/>-<sp/>for<sp/>block<sp/>and<sp/>spiral<sp/>strategy,<sp/>decides<sp/>if<sp/>the<sp/>path<sp/>progresses<sp/>from<sp/>inside<sp/>or<sp/>from<sp/>outside</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Carve<sp/>depth**<sp/>-<sp/>decides<sp/>how<sp/>deep<sp/>below<sp/>the<sp/>surface<sp/>will<sp/>go<sp/>the<sp/>carve<sp/>operation</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Don&apos;t<sp/>merge<sp/>outlines<sp/>when<sp/>cutting**<sp/>-<sp/>for<sp/>cutout<sp/>strategy.<sp/>Does<sp/>not<sp/>merge<sp/>outlines<sp/>-<sp/>this<sp/>results<sp/>into<sp/>cutting<sp/>in<sp/>the<sp/>object<sp/>area!<sp/>It<sp/>is<sp/>usefully<sp/>when<sp/>milling<sp/>PCBs,<sp/>where<sp/>you<sp/>don&apos;t<sp/>need<sp/>exact<sp/>shape<sp/>but<sp/>need<sp/>to<sp/>separate<sp/>areas<sp/>with<sp/>engraving.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Use<sp/>bridges**<sp/>-<sp/>for<sp/>cutout<sp/>operation,<sp/>places<sp/>automatically<sp/>bridges<sp/>by<sp/>the<sp/>rules<sp/>set<sp/>by<sp/>options<sp/>that<sp/>will<sp/>appear<sp/>after<sp/>this<sp/>is<sp/>enabled:<sp/>width,<sp/>height,<sp/>minimum<sp/>per<sp/>curve,<sp/>distance.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>CAM<sp/>optimization<sp/>Panel</highlight></codeline>
+<codeline><highlight class="normal">![Cam<sp/>Optimization](images/camOptim.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>panel<sp/>is<sp/>crucial<sp/>for<sp/>performance<sp/>of<sp/>blenderCAM.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>**Reduce<sp/>path<sp/>points**<sp/>-<sp/>reduces<sp/>number<sp/>of<sp/>commands<sp/>in<sp/>the<sp/>operation,<sp/>so<sp/>the<sp/>resulting<sp/>gcode<sp/>is<sp/>shorter<sp/>and<sp/>can<sp/>run<sp/>smoother<sp/>on<sp/>the<sp/>machine</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Reduction<sp/>threshold<sp/>in<sp/>um**<sp/>-<sp/>points<sp/>with<sp/>smaller<sp/>distance<sp/>(in<sp/>micrometers)<sp/>to<sp/>the<sp/>path<sp/>direction<sp/>will<sp/>be<sp/>reduced</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Use<sp/>exact<sp/>mode**<sp/>-<sp/>exact<sp/>mode<sp/>is<sp/>related<sp/>to<sp/>the<sp/>strategies<sp/>that<sp/>are<sp/>fully<sp/>3d<sp/>-<sp/>parallel,<sp/>cross,<sp/>block,<sp/>spiral,<sp/>circles,<sp/>waterline,<sp/>outline<sp/>fill,<sp/>carve.<sp/>It&apos;s<sp/>a<sp/>very<sp/>important<sp/>setting.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Non<sp/>exact<sp/>mode:**<sp/>In<sp/>non-exact<sp/>mode,<sp/>an<sp/>image<sp/>is<sp/>used<sp/>to<sp/>estimate<sp/>the<sp/>cutter<sp/>offsets,<sp/>and<sp/>the<sp/>Sampling<sp/>raster<sp/>detail<sp/>is<sp/>used<sp/>to<sp/>estimate<sp/>the<sp/>resolution<sp/>of<sp/>the<sp/>image.<sp/>Non<sp/>exact<sp/>mode<sp/>is<sp/>good<sp/>for<sp/>high<sp/>poly<sp/>meshes,<sp/>several<sp/>millions<sp/>of<sp/>polygons<sp/>shouldn&apos;t<sp/>be<sp/>problem<sp/>for<sp/>it,<sp/>but<sp/>the<sp/>sampling<sp/>raster<sp/>detail<sp/>setting<sp/>is<sp/>crucial<sp/>then.<sp/>Memory<sp/>overflow<sp/>can<sp/>happen<sp/>if<sp/>you<sp/>use<sp/>e.g.<sp/>default<sp/>blender<sp/>cube<sp/>that<sp/>you<sp/>have<sp/>by<sp/>startup,<sp/>since<sp/>the<sp/>cube<sp/>is<sp/>2<sp/>meter<sp/>in<sp/>size<sp/>in<sp/>blender<sp/>units.<sp/>For<sp/>artistic<sp/>use<sp/>with<sp/>high<sp/>poly<sp/>meshes,<sp/>non<sp/>exact<sp/>mode<sp/>is<sp/>good<sp/>for<sp/>most<sp/>of<sp/>the<sp/>cases.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Exact<sp/>mode:**<sp/>a<sp/>real<sp/>collision<sp/>simulation<sp/>is<sp/>used,<sp/>so<sp/>the<sp/>collisions<sp/>are<sp/>exact.<sp/>But<sp/>the<sp/>speed<sp/>goes<sp/>down<sp/>with<sp/>increasing<sp/>number<sp/>of<sp/>polygons.<sp/>It<sp/>is<sp/>recommended<sp/>in<sp/>these<sp/>situations:<sp/>Your<sp/>model<sp/>is<sp/>too<sp/>big<sp/>for<sp/>the<sp/>non<sp/>exact<sp/>mode,<sp/>you<sp/>need<sp/>high<sp/>precision,<sp/>your<sp/>model<sp/>doesn&apos;t<sp/>have<sp/>too<sp/>many<sp/>faces.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Sampling<sp/>raster<sp/>detail**<sp/>-<sp/>this<sp/>parameter<sp/>is<sp/>crucial<sp/>for<sp/>memory<sp/>use<sp/>and<sp/>mainly<sp/>speed<sp/>of<sp/>blender<sp/>CAM.<sp/>In<sp/>non-exact<sp/>mode,<sp/>blenderCAM<sp/>uses<sp/>an<sp/>image<sp/>to<sp/>compute<sp/>the<sp/>cutter<sp/>offset<sp/>positions.<sp/>If<sp/>the<sp/>raster<sp/>detail<sp/>is<sp/>0.1mm,<sp/>then<sp/>a<sp/>10x10<sp/>cm<sp/>object<sp/>will<sp/>use<sp/>a<sp/>1000x1000<sp/>image.<sp/>If<sp/>the<sp/>object<sp/>size<sp/>would<sp/>be<sp/>1m,<sp/>the<sp/>image<sp/>would<sp/>be<sp/>10000<sp/>x<sp/>10000<sp/>pixels,<sp/>which<sp/>will<sp/>probably<sp/>fill<sp/>the<sp/>memory<sp/>of<sp/>your<sp/>computer.<sp/>Check<sp/>your<sp/>object<sp/>size<sp/>before<sp/>computing<sp/>operations.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Simulation<sp/>sampling<sp/>raster<sp/>detail**<sp/>-<sp/>same<sp/>as<sp/>sampling<sp/>raster<sp/>detail,<sp/>but<sp/>only<sp/>for<sp/>simulation</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Detail<sp/>of<sp/>circles<sp/>used<sp/>for<sp/>curve<sp/>offsets**<sp/>-<sp/>exactly<sp/>what<sp/>it<sp/>says</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Use<sp/>OpenCAMLib**<sp/>-<sp/>use<sp/>external<sp/>library<sp/>for<sp/>calculating<sp/>toolpaths,<sp/>improving<sp/>toolpath<sp/>quality<sp/>(especially<sp/>with<sp/>waterlines)<sp/>and<sp/>calculation<sp/>time.<sp/>Has<sp/>to<sp/>be<sp/>used<sp/>with<sp/>exact<sp/>mode.<sp/>[[Using-BlenderCAM-with-OpenCAMLib]]</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>CAM<sp/>operation<sp/>area<sp/>panel</highlight></codeline>
+<codeline><highlight class="normal">![CAM<sp/>Operation<sp/>Area](images/camOpArea.png)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Use<sp/>layers**<sp/>-<sp/>sets<sp/>up<sp/>layers<sp/>for<sp/>roughing.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Step<sp/>down**<sp/>-<sp/>specifies<sp/>thickness<sp/>of<sp/>the<sp/>layers<sp/>for<sp/>roughing</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Ambient**<sp/>-<sp/>how<sp/>much<sp/>space<sp/>surrounding<sp/>the<sp/>object<sp/>will<sp/>be<sp/>used<sp/>for<sp/>the<sp/>milling</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**all**<sp/>-<sp/>a<sp/>rectangular<sp/>area<sp/>will<sp/>be<sp/>used</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**around**<sp/>-<sp/>object<sp/>silhouette<sp/>will<sp/>be<sp/>used,<sp/>with<sp/>a<sp/>radius<sp/>specified<sp/>by<sp/>Ambient<sp/>radius</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Depth<sp/>from<sp/>object**<sp/>-<sp/>takes<sp/>object<sp/>depth<sp/>and<sp/>sets<sp/>up<sp/>the<sp/>total<sp/>depth<sp/>of<sp/>the<sp/>operation<sp/>from<sp/>it.<sp/>Otherwise,<sp/>you<sp/>can<sp/>use<sp/>Operation<sp/>depth<sp/>to<sp/>do<sp/>the<sp/>same<sp/>manually.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>CAM<sp/>material<sp/>size<sp/>and<sp/>position<sp/>panel</highlight></codeline>
+<codeline><highlight class="normal">![CAM<sp/>material<sp/>size<sp/>and<sp/>position](images/materialSize.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>**Estimate<sp/>from<sp/>model**<sp/>-<sp/>will<sp/>assume<sp/>the<sp/>workpiece/material<sp/>has<sp/>the<sp/>same<sp/>size<sp/>as<sp/>the<sp/>model,<sp/>with<sp/>radius<sp/>around<sp/>the<sp/>model.</highlight></codeline>
+<codeline><highlight class="normal">If<sp/>not<sp/>enabled<sp/>then<sp/>the<sp/>Material<sp/>origin<sp/>and<sp/>Material<sp/>size<sp/>are<sp/>used<sp/>in<sp/>case<sp/>when<sp/>the<sp/>material/workpiece<sp/>is<sp/>not<sp/>the<sp/>same<sp/>as<sp/>the<sp/>model.<sp/><sp/>The<sp/>3D<sp/>view<sp/>will<sp/>show<sp/>the<sp/>machine<sp/>work<sp/>area<sp/>with<sp/>a<sp/>hashed<sp/>outline<sp/>and<sp/>the<sp/>material<sp/>size<sp/>and<sp/>position<sp/>will<sp/>be<sp/>a<sp/>lighter<sp/>grey.<sp/><sp/>The<sp/>material<sp/>object<sp/>is<sp/>not<sp/>selectable<sp/>in<sp/>the<sp/>3D<sp/>view<sp/>but<sp/>can<sp/>be<sp/>selected<sp/>in<sp/>the<sp/>Outliner<sp/>and<sp/>has<sp/>the<sp/>name<sp/>CAM_material.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Position<sp/>object**<sp/>-<sp/>this<sp/>will<sp/>move<sp/>the<sp/>object<sp/>to<sp/>positive<sp/>X<sp/>and<sp/>Y<sp/>and<sp/>negative<sp/>Z<sp/>so<sp/>that<sp/>it<sp/>is<sp/>fully<sp/>in<sp/>the<sp/>work<sp/>area<sp/>and<sp/>closest<sp/>to<sp/>the<sp/>origin.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>CAM<sp/>movement<sp/>panel</highlight></codeline>
+<codeline><highlight class="normal">![CAM<sp/>Movement](images/camMovement.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>**G64<sp/>trajectory**<sp/>This<sp/>enables<sp/>the<sp/>&quot;naive<sp/>cam<sp/>detector&quot;<sp/>and<sp/>enables<sp/>blending<sp/>with<sp/>a<sp/>tolerance.<sp/>If<sp/>you<sp/>program<sp/>G64<sp/>P0.05,<sp/>you<sp/>tell<sp/>the<sp/>planner<sp/>that<sp/>you<sp/>want<sp/>continuous<sp/>feed,<sp/>but<sp/>at<sp/>programmed<sp/>corners<sp/>you<sp/>want<sp/>it<sp/>to<sp/>slow<sp/>down<sp/>enough<sp/>so<sp/>that<sp/>the<sp/>tool<sp/>path<sp/>can<sp/>stay<sp/>within<sp/>0.05<sp/>user<sp/>units<sp/>of<sp/>the<sp/>programmed<sp/>path.<sp/>The<sp/>exact<sp/>amount<sp/>of<sp/>slowdown<sp/>depends<sp/>on<sp/>the<sp/>geometry<sp/>of<sp/>the<sp/>programmed<sp/>corner<sp/>and<sp/>the<sp/>machine<sp/>constraints,<sp/>but<sp/>the<sp/>only<sp/>thing<sp/>the<sp/>programmer<sp/>needs<sp/>to<sp/>worry<sp/>about<sp/>is<sp/>the<sp/>tolerance.<sp/>This<sp/>gives<sp/>the<sp/>programmer<sp/>complete<sp/>control<sp/>over<sp/>the<sp/>path<sp/>following<sp/>compromise.<sp/></highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Movement<sp/>type**<sp/>-<sp/>is<sp/>supported<sp/>only<sp/>for<sp/>some<sp/>of<sp/>the<sp/>strategies,<sp/>sets<sp/>up<sp/>how<sp/>the<sp/>cutter<sp/>moves<sp/>into<sp/>the<sp/>material</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Meander/ZigZag**<sp/>-<sp/>sometimes<sp/>also<sp/>called<sp/>ZigZag<sp/>,<sp/>this<sp/>means<sp/>you<sp/>don&apos;t<sp/>care<sp/>which<sp/>direction<sp/>the<sp/>cutter<sp/>goes<sp/>into<sp/>the<sp/>material.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Climb/Down<sp/>Milling**<sp/>-<sp/>the<sp/>default<sp/>movement,<sp/>and<sp/>mostly<sp/>used<sp/>when<sp/>doing<sp/>CNC<sp/>machining<sp/>if<sp/>the<sp/>machine<sp/>has<sp/>no<sp/>or<sp/>very<sp/>little<sp/>backlash.<sp/>The<sp/>cutter<sp/>rotates<sp/>with<sp/>the<sp/>direction<sp/>of<sp/>the<sp/>feed.<sp/>It<sp/>can<sp/>produce<sp/>a<sp/>better<sp/>finish,<sp/>less<sp/>stress<sp/>on<sp/>the<sp/>bit,<sp/>and<sp/>less<sp/>power<sp/>required.<sp/>If<sp/>the<sp/>machine<sp/>has<sp/>backlash<sp/>then<sp/>Conventional<sp/>milling<sp/>is<sp/>a<sp/>better<sp/>choice.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Conventional/Up<sp/>milling**<sp/>-<sp/>The<sp/>cutter<sp/>rotates<sp/>against<sp/>the<sp/>direction<sp/>of<sp/>the<sp/>feed.<sp/><sp/>If<sp/>the<sp/>machine<sp/>has<sp/>backlash<sp/>that<sp/>can<sp/>not<sp/>be<sp/>compensated<sp/>for<sp/>then<sp/>this<sp/>is<sp/>the<sp/>better<sp/>choice.<sp/><sp/>Some<sp/>woods<sp/>cut<sp/>better<sp/>with<sp/>this<sp/>method<sp/>but<sp/>grain<sp/>direction<sp/>also<sp/>has<sp/>to<sp/>be<sp/>considered.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Spindle<sp/>rotation**<sp/>-<sp/>this<sp/>parameter<sp/>is<sp/>not<sp/>exported,<sp/>but<sp/>it<sp/>is<sp/>used<sp/>when<sp/>setting<sp/>up<sp/>the<sp/>movement<sp/>type,<sp/>because<sp/>with<sp/>the<sp/>spindle<sp/>rotating<sp/>CCW,<sp/>all<sp/>operations<sp/>go<sp/>in<sp/>opposite<sp/>direction.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Free<sp/>movement<sp/>height**<sp/>-<sp/>how<sp/>high<sp/>will<sp/>the<sp/>cutter<sp/>travel<sp/>when<sp/>moving<sp/>between<sp/>toolpaths.<sp/><sp/>Keep<sp/>it<sp/>as<sp/>low<sp/>as<sp/>possible<sp/>to<sp/>reduce<sp/>total<sp/>cutting<sp/>time.<sp/><sp/>The<sp/>Z<sp/>axis<sp/>usually<sp/>has<sp/>the<sp/>slowest<sp/>rapid<sp/>rates<sp/>compared<sp/>to<sp/>the<sp/>other<sp/>two<sp/>axis<sp/>X<sp/>and<sp/>Y.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**First<sp/>down**<sp/>-<sp/>for<sp/>cutout<sp/>strategy.<sp/>If<sp/>on,<sp/>the<sp/>paths<sp/>are<sp/>cut<sp/>one<sp/>by<sp/>one<sp/>to<sp/>the<sp/>full<sp/>depth(all<sp/>layers),<sp/>otherwise<sp/>first<sp/>all<sp/>the<sp/>silhouettes<sp/>are<sp/>cut<sp/>on<sp/>layer<sp/>1,<sp/>then<sp/>2....</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Ramp<sp/>contour**<sp/>-<sp/>for<sp/>cutout<sp/>strategy,<sp/>instead<sp/>of<sp/>going<sp/>layer<sp/>by<sp/>layer,<sp/>it<sp/>goes<sp/>down<sp/>all<sp/>the<sp/>way<sp/>on<sp/>a<sp/>ramp.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Ramp<sp/>out**<sp/>-<sp/>also<sp/>going<sp/>out<sp/>is<sp/>performed<sp/>on<sp/>a<sp/>ramp,<sp/>to<sp/>prevent<sp/>burning<sp/>of<sp/>the<sp/>finished<sp/>piece<sp/>by<sp/>staying<sp/>on<sp/>one<sp/>place<sp/>in<sp/>XY<sp/>axes.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Stay<sp/>low<sp/>if<sp/>possible**<sp/>-<sp/>tries<sp/>to<sp/>not<sp/>lift<sp/>the<sp/>cutter<sp/>when<sp/>going<sp/>from<sp/>1<sp/>path<sp/>to<sp/>other,<sp/>when<sp/>the<sp/>paths<sp/>are<sp/>closer<sp/>to<sp/>each<sp/>other<sp/>than<sp/>the<sp/>cutter<sp/>radius,<sp/>which<sp/>means<sp/>no<sp/>extra<sp/>material<sp/>will<sp/>be<sp/>cut<sp/>during<sp/>this<sp/>travel<sp/>move.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Protect<sp/>vertical**<sp/>-<sp/>when<sp/>the<sp/>angle<sp/>of<sp/>the<sp/>path<sp/>is<sp/>above<sp/>verticality<sp/>limit,<sp/>the<sp/>move<sp/>will<sp/>be<sp/>made<sp/>vertical.<sp/>this<sp/>way<sp/>vertical<sp/>surfaces<sp/>won&apos;t<sp/>get<sp/>a<sp/>slope<sp/>because<sp/>of<sp/>the<sp/>distance<sp/>between<sp/>the<sp/>path<sp/>points.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>CAM<sp/>feedrate<sp/>panel</highlight></codeline>
+<codeline><highlight class="normal">![CAM<sp/>feedrate](images/camFeedrate.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>**feedrate/minute**<sp/>-<sp/>How<sp/>much<sp/>will<sp/>the<sp/>machine<sp/>travel<sp/>in<sp/>1<sp/>minute</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Plunge<sp/>speed**<sp/>-<sp/>the<sp/>feed<sp/>speed<sp/>gets<sp/>reduced<sp/>when<sp/>the<sp/>slope<sp/>of<sp/>the<sp/>path<sp/>is<sp/>above<sp/>the<sp/>Plunge<sp/>angle</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Plunge<sp/>angle**<sp/>-<sp/>any<sp/>angle<sp/>greater<sp/>than<sp/>the<sp/>plunge<sp/>angle<sp/>will<sp/>activate<sp/>plunge<sp/>speed</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Spindle<sp/>rpm**<sp/>-<sp/>spindle<sp/>revolutions<sp/>per<sp/>minute</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>CAM<sp/>cutter<sp/>panel</highlight></codeline>
+<codeline><highlight class="normal">![CAM<sp/>cutter](images/camCut.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>**Tool<sp/>number**<sp/>-<sp/>this<sp/>parameter<sp/>is<sp/>exported<sp/>with<sp/>toolchange<sp/>command</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Cutters**<sp/>-<sp/>supported<sp/>types<sp/>are<sp/>now<sp/>following:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![CAM<sp/>cutters](images/camCut2.png)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|<sp/>Cutters<sp/><sp/>|<sp/><sp/><sp/>|<sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|----------|---|---|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>End<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>![End](images/cut-end.jpg)<sp/><sp/>|<sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Ballnose<sp/>|<sp/>![Ballnose](images/cut-ballnose.jpg)<sp/><sp/>|<sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Bullnose<sp/>|<sp/>![Bullnose](images/cut-bullnose.jpg)<sp/><sp/>|<sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>V-Carve<sp/><sp/>|<sp/><sp/>![v-carve](images/cut-v-carve.jpg)<sp/>|<sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Ballcone<sp/>|<sp/><sp/>![Ballcone](images/cut-ballcone.jpg)<sp/>|<sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Laser<sp/><sp/><sp/><sp/>|<sp/><sp/>![Laser](images/cut-laser.jpg)<sp/>|<sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Custom<sp/><sp/><sp/>|<sp/><sp/>![Custom](images/cut-custom.jpg)<sp/>|<sp/><sp/><sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>![custom<sp/>cutter](images/cutCustom.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Cutter<sp/>object<sp/>-<sp/>a<sp/>3D<sp/>object<sp/>of<sp/>your<sp/>choice<sp/>available<sp/>in<sp/>the<sp/>drop<sp/>down<sp/>list.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>**Cutter<sp/>diameter**<sp/>-<sp/>The<sp/>exact<sp/>diameter<sp/>of<sp/>the<sp/>cutting<sp/>tool.<sp/><sp/>This<sp/>is<sp/>used<sp/>for<sp/>calculating<sp/>tool<sp/>paths.<sp/><sp/>For<sp/>a<sp/>v-bit<sp/>its<sp/>the<sp/>maximum<sp/>diameter<sp/>of<sp/>the<sp/>bit.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Cutter<sp/>flutes**<sp/>-<sp/>this<sp/>parameter<sp/>is<sp/>used<sp/>only<sp/>for<sp/>chipload<sp/>computation.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Tool<sp/>description**<sp/>-<sp/>A<sp/>description<sp/>of<sp/>the<sp/>tool.<sp/><sp/>Currently<sp/>this<sp/>is<sp/>not<sp/>used<sp/>for<sp/>anything.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>CAM<sp/>machine<sp/>panel</highlight></codeline>
+<codeline><highlight class="normal">![Cam<sp/>machine](images/machine.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>panel<sp/>sets<sp/>up<sp/>your<sp/>machine<sp/>and<sp/>the<sp/>settings<sp/>are<sp/>common<sp/>in<sp/>the<sp/>whole<sp/>file.</highlight></codeline>
+<codeline><highlight class="normal">You<sp/>can<sp/>also<sp/>set<sp/>up<sp/>your<sp/>machine<sp/>and<sp/>then<sp/>save<sp/>your<sp/>default<sp/>file<sp/>with<sp/>Ctrl+U<sp/>command.<sp/>This<sp/>way<sp/>you<sp/>will<sp/>always<sp/>start<sp/>with<sp/>the<sp/>settings<sp/>you<sp/>need.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>**Post<sp/>processor**<sp/>-<sp/>this<sp/>defines<sp/>the<sp/>formatting<sp/>of<sp/>the<sp/>output<sp/>file.<sp/>If<sp/>your<sp/>machine<sp/>is<sp/>not<sp/>in<sp/>the<sp/>list,<sp/>you<sp/>can<sp/>try<sp/>the<sp/>Iso<sp/>code,<sp/>which<sp/>is<sp/>standardized<sp/>g-code</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![post<sp/>processor](images/processor.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>**Unit<sp/>system**<sp/>-<sp/>Metric<sp/>or<sp/>Imperial</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Work<sp/>area**<sp/>-<sp/>if<sp/>the<sp/>operation<sp/>has<sp/>a<sp/>larger<sp/>area<sp/>than<sp/>this,<sp/>you<sp/>will<sp/>get<sp/>a<sp/>warning<sp/>in<sp/>the<sp/>info<sp/>panel</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Feedrate<sp/>minimum/maximum**<sp/>-<sp/>this<sp/>will<sp/>limit<sp/>your<sp/>feed<sp/>speeds<sp/>set<sp/>up<sp/>in<sp/>the<sp/>feedrate<sp/>panel.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>CAM<sp/>chains<sp/>panel</highlight></codeline>
+<codeline><highlight class="normal">This<sp/>enables<sp/>you<sp/>to<sp/>chain<sp/>operations.<sp/>It<sp/>is<sp/>useful<sp/>for<sp/>simulating<sp/>more<sp/>operations<sp/>or<sp/>exporting<sp/>a<sp/>chain<sp/>of<sp/>operations<sp/>if<sp/>you<sp/>have<sp/>automatic<sp/>toolchanger<sp/>or<sp/>use<sp/>the<sp/>same<sp/>tool<sp/>for<sp/>several<sp/>operations.</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/documentation/Blendercam-Panel-Descriptions.md"/>
+  </compounddef>
+</doxygen>

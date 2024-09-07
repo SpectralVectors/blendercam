@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1ui_1_1VIEW3D__PT__tools__curvetools" kind="class" language="Python" prot="public">
+    <compoundname>cam::ui::VIEW3D_PT_tools_curvetools</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Panel</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1ui_1_1VIEW3D__PT__tools__curvetools_1ae730c61d72446d555e9364ccbdcfa912" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.ui.VIEW3D_PT_tools_curvetools::bl_space_type</definition>
+        <argsstring></argsstring>
+        <name>bl_space_type</name>
+        <qualifiedname>cam.ui.VIEW3D_PT_tools_curvetools.bl_space_type</qualifiedname>
+        <initializer>=  &apos;VIEW_3D&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui.py" line="36" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui.py" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui_1_1VIEW3D__PT__tools__curvetools_1a20f79dfd6b020be3d902b037fead6293" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.ui.VIEW3D_PT_tools_curvetools::bl_region_type</definition>
+        <argsstring></argsstring>
+        <name>bl_region_type</name>
+        <qualifiedname>cam.ui.VIEW3D_PT_tools_curvetools.bl_region_type</qualifiedname>
+        <initializer>=  &apos;TOOLS&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui.py" line="37" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui.py" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui_1_1VIEW3D__PT__tools__curvetools_1a6dbda3a69db71231004b118f411120d7" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.ui.VIEW3D_PT_tools_curvetools::bl_context</definition>
+        <argsstring></argsstring>
+        <name>bl_context</name>
+        <qualifiedname>cam.ui.VIEW3D_PT_tools_curvetools.bl_context</qualifiedname>
+        <initializer>=  &quot;objectmode&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui.py" line="38" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui_1_1VIEW3D__PT__tools__curvetools_1a530ffe165fb54b0f9e3bf22cefdf4106" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.ui.VIEW3D_PT_tools_curvetools::bl_label</definition>
+        <argsstring></argsstring>
+        <name>bl_label</name>
+        <qualifiedname>cam.ui.VIEW3D_PT_tools_curvetools.bl_label</qualifiedname>
+        <initializer>=  &quot;Curve CAM Tools&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui.py" line="39" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui.py" bodystart="39" bodyend="-1"/>
+        <referencedby refid="classcam_1_1preset__managers_1_1CAM__MACHINE__MT__presets_1af95f7812d2952b26a26809ab923dac09" compoundref="preset__managers_8py" startline="28" endline="38">cam.preset_managers.CAM_MACHINE_MT_presets.post_cb</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcam_1_1ui_1_1VIEW3D__PT__tools__curvetools_1ad33948ec07efb5f5c31187b5d81c3ef8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.ui.VIEW3D_PT_tools_curvetools.draw</definition>
+        <argsstring>(self, context)</argsstring>
+        <name>draw</name>
+        <qualifiedname>cam.ui.VIEW3D_PT_tools_curvetools.draw</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui.py" line="41" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui.py" bodystart="41" bodyend="53"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Panel</label>
+      </node>
+      <node id="1">
+        <label>cam.ui.VIEW3D_PT_tools_curvetools</label>
+        <link refid="classcam_1_1ui_1_1VIEW3D__PT__tools__curvetools"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Panel</label>
+      </node>
+      <node id="1">
+        <label>cam.ui.VIEW3D_PT_tools_curvetools</label>
+        <link refid="classcam_1_1ui_1_1VIEW3D__PT__tools__curvetools"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+bl_context</edgelabel>
+          <edgelabel>+bl_label</edgelabel>
+          <edgelabel>+bl_region_type</edgelabel>
+          <edgelabel>+bl_space_type</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui.py" line="35" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui.py" bodystart="35" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classcam_1_1ui_1_1VIEW3D__PT__tools__curvetools_1a6dbda3a69db71231004b118f411120d7" prot="public" virt="non-virtual"><scope>cam::ui::VIEW3D_PT_tools_curvetools</scope><name>bl_context</name></member>
+      <member refid="classcam_1_1ui_1_1VIEW3D__PT__tools__curvetools_1a530ffe165fb54b0f9e3bf22cefdf4106" prot="public" virt="non-virtual"><scope>cam::ui::VIEW3D_PT_tools_curvetools</scope><name>bl_label</name></member>
+      <member refid="classcam_1_1ui_1_1VIEW3D__PT__tools__curvetools_1a20f79dfd6b020be3d902b037fead6293" prot="public" virt="non-virtual"><scope>cam::ui::VIEW3D_PT_tools_curvetools</scope><name>bl_region_type</name></member>
+      <member refid="classcam_1_1ui_1_1VIEW3D__PT__tools__curvetools_1ae730c61d72446d555e9364ccbdcfa912" prot="public" virt="non-virtual"><scope>cam::ui::VIEW3D_PT_tools_curvetools</scope><name>bl_space_type</name></member>
+      <member refid="classcam_1_1ui_1_1VIEW3D__PT__tools__curvetools_1ad33948ec07efb5f5c31187b5d81c3ef8" prot="public" virt="non-virtual"><scope>cam::ui::VIEW3D_PT_tools_curvetools</scope><name>draw</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

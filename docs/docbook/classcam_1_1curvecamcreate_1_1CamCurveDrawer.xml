@@ -1,0 +1,303 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1curvecamcreate_1_1CamCurveDrawer" xml:lang="en-US">
+<title>cam.curvecamcreate.CamCurveDrawer Class Reference</title>
+<indexterm><primary>cam.curvecamcreate.CamCurveDrawer</primary></indexterm>
+Inheritance diagram for cam.curvecamcreate.CamCurveDrawer:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1curvecamcreate_1_1CamCurveDrawer__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.curvecamcreate.CamCurveDrawer:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1curvecamcreate_1_1CamCurveDrawer__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1ac31db157669b5603870151029a38f227">draw</link> (self, context)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1a836de8c7a4790a1e877ea3c223eae393">execute</link> (self, context)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1afccdbdb9b64a89dbe52df4d0d14acd84">height</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1a48ccd422bfac85b7b60494f907c78d5c">finger_size</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1ad06b9673c246f805f42c1ece11734651">width</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1ad97894161ec71cd71f4ebdcccf8d35c3">depth</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1abc387bd80a353633d9f8efd995573686">drawer_plate_thickness</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1a2dafe6ab3cf83d86338dce2e2c8bfc6a">finger_tolerance</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1ad3126ece4ea12b4eebd130ccadb8d98a">overcut_diameter</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1a550136a84dcc424807847074749cc9fa">overcut</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1ab7b313896eb0d939929224e98e00cf99">bl_idname</link> = &quot;object.curve_drawer&quot;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1aaf15b13a31229db9cfb8b9f365c28651">bl_label</link> = &quot;Drawer&quot;</para>
+</listitem>
+            <listitem><para>dict <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1adb4adeff5c6fae186f235bbb764eba2f">bl_options</link> = {&apos;REGISTER&apos;, &apos;UNDO&apos;, &apos;PRESET&apos;}</para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1a0a87de6948f9d175f7b0f761fcd51915">depth</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1a4c4e3f0e79afa448cef67ea1b0088459">width</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1a604f8da4849575fea36ab8f593a1a24e">height</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1a33becb0a2a14a4616dd3b032ee32d440">finger_size</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1aaf127d02d9f44a5d6cca3213b7c76156">finger_tolerance</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1a83b6fb2d0641621adf2e7206d5d81840">finger_inset</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1a336d808f33f16cea3f7223d28b625338">drawer_plate_thickness</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1a12fb27fd08caaffd5bde57dfbf12dea6">drawer_hole_diameter</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1af53c492a5a4eff487eef3196cf3a3e82">drawer_hole_offset</link></para>
+</listitem>
+            <listitem><para>BoolProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1a4ed2566b8b3063656239bf400977dcbc">overcut</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1a18991d1795ff5ef2dce463f5691e1b9d">overcut_diameter</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Generates Drawers</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1ac31db157669b5603870151029a38f227"/><section>
+    <title>draw()</title>
+<indexterm><primary>draw</primary><secondary>cam.curvecamcreate.CamCurveDrawer</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveDrawer</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput>cam.curvecamcreate.CamCurveDrawer.draw ( self,  context)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1a836de8c7a4790a1e877ea3c223eae393"/><section>
+    <title>execute()</title>
+<indexterm><primary>execute</primary><secondary>cam.curvecamcreate.CamCurveDrawer</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveDrawer</primary><secondary>execute</secondary></indexterm>
+<para><computeroutput>cam.curvecamcreate.CamCurveDrawer.execute ( self,  context)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1ab7b313896eb0d939929224e98e00cf99"/><section>
+    <title>bl_idname</title>
+<indexterm><primary>bl_idname</primary><secondary>cam.curvecamcreate.CamCurveDrawer</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveDrawer</primary><secondary>bl_idname</secondary></indexterm>
+<para><computeroutput>str cam.curvecamcreate.CamCurveDrawer.bl_idname = &quot;object.curve_drawer&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1aaf15b13a31229db9cfb8b9f365c28651"/><section>
+    <title>bl_label</title>
+<indexterm><primary>bl_label</primary><secondary>cam.curvecamcreate.CamCurveDrawer</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveDrawer</primary><secondary>bl_label</secondary></indexterm>
+<para><computeroutput>str cam.curvecamcreate.CamCurveDrawer.bl_label = &quot;Drawer&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1adb4adeff5c6fae186f235bbb764eba2f"/><section>
+    <title>bl_options</title>
+<indexterm><primary>bl_options</primary><secondary>cam.curvecamcreate.CamCurveDrawer</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveDrawer</primary><secondary>bl_options</secondary></indexterm>
+<para><computeroutput>dict cam.curvecamcreate.CamCurveDrawer.bl_options = {&apos;REGISTER&apos;, &apos;UNDO&apos;, &apos;PRESET&apos;}<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1a0a87de6948f9d175f7b0f761fcd51915"/><section>
+    <title>depth<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>depth</primary><secondary>cam.curvecamcreate.CamCurveDrawer</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveDrawer</primary><secondary>depth</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamcreate.CamCurveDrawer.depth<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Drawer&#32;Depth&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.2,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=1.0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=4,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1ad97894161ec71cd71f4ebdcccf8d35c3"/><section>
+    <title>depth<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>depth</primary><secondary>cam.curvecamcreate.CamCurveDrawer</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveDrawer</primary><secondary>depth</secondary></indexterm>
+<para><computeroutput>cam.curvecamcreate.CamCurveDrawer.depth</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1a12fb27fd08caaffd5bde57dfbf12dea6"/><section>
+    <title>drawer_hole_diameter</title>
+<indexterm><primary>drawer_hole_diameter</primary><secondary>cam.curvecamcreate.CamCurveDrawer</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveDrawer</primary><secondary>drawer_hole_diameter</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamcreate.CamCurveDrawer.drawer_hole_diameter<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Drawer&#32;Hole&#32;Diameter&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.02,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0.00001,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=0.5,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=4,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1af53c492a5a4eff487eef3196cf3a3e82"/><section>
+    <title>drawer_hole_offset</title>
+<indexterm><primary>drawer_hole_offset</primary><secondary>cam.curvecamcreate.CamCurveDrawer</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveDrawer</primary><secondary>drawer_hole_offset</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamcreate.CamCurveDrawer.drawer_hole_offset<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Drawer&#32;Hole&#32;Offset&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=-0.5,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=0.5,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=4,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1a336d808f33f16cea3f7223d28b625338"/><section>
+    <title>drawer_plate_thickness<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>drawer_plate_thickness</primary><secondary>cam.curvecamcreate.CamCurveDrawer</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveDrawer</primary><secondary>drawer_plate_thickness</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamcreate.CamCurveDrawer.drawer_plate_thickness<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Drawer&#32;Plate&#32;Thickness&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.00477,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0.001,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=3.0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=4,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1abc387bd80a353633d9f8efd995573686"/><section>
+    <title>drawer_plate_thickness<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>drawer_plate_thickness</primary><secondary>cam.curvecamcreate.CamCurveDrawer</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveDrawer</primary><secondary>drawer_plate_thickness</secondary></indexterm>
+<para><computeroutput>cam.curvecamcreate.CamCurveDrawer.drawer_plate_thickness</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1a83b6fb2d0641621adf2e7206d5d81840"/><section>
+    <title>finger_inset</title>
+<indexterm><primary>finger_inset</primary><secondary>cam.curvecamcreate.CamCurveDrawer</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveDrawer</primary><secondary>finger_inset</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamcreate.CamCurveDrawer.finger_inset<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Finger&#32;Inset&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0.0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=0.01,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=4,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1a33becb0a2a14a4616dd3b032ee32d440"/><section>
+    <title>finger_size<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>finger_size</primary><secondary>cam.curvecamcreate.CamCurveDrawer</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveDrawer</primary><secondary>finger_size</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamcreate.CamCurveDrawer.finger_size<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Maximum&#32;Finger&#32;Size&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.015,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0.005,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=3.0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=4,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1a48ccd422bfac85b7b60494f907c78d5c"/><section>
+    <title>finger_size<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>finger_size</primary><secondary>cam.curvecamcreate.CamCurveDrawer</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveDrawer</primary><secondary>finger_size</secondary></indexterm>
+<para><computeroutput>cam.curvecamcreate.CamCurveDrawer.finger_size</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1aaf127d02d9f44a5d6cca3213b7c76156"/><section>
+    <title>finger_tolerance<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>finger_tolerance</primary><secondary>cam.curvecamcreate.CamCurveDrawer</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveDrawer</primary><secondary>finger_tolerance</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamcreate.CamCurveDrawer.finger_tolerance<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Finger&#32;Play&#32;Room&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.000045,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=0.003,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=4,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1a2dafe6ab3cf83d86338dce2e2c8bfc6a"/><section>
+    <title>finger_tolerance<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>finger_tolerance</primary><secondary>cam.curvecamcreate.CamCurveDrawer</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveDrawer</primary><secondary>finger_tolerance</secondary></indexterm>
+<para><computeroutput>cam.curvecamcreate.CamCurveDrawer.finger_tolerance</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1a604f8da4849575fea36ab8f593a1a24e"/><section>
+    <title>height<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>height</primary><secondary>cam.curvecamcreate.CamCurveDrawer</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveDrawer</primary><secondary>height</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamcreate.CamCurveDrawer.height<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Drawer&#32;Height&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.07,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=3.0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=4,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1afccdbdb9b64a89dbe52df4d0d14acd84"/><section>
+    <title>height<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>height</primary><secondary>cam.curvecamcreate.CamCurveDrawer</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveDrawer</primary><secondary>height</secondary></indexterm>
+<para><computeroutput>cam.curvecamcreate.CamCurveDrawer.height</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1a4ed2566b8b3063656239bf400977dcbc"/><section>
+    <title>overcut<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>overcut</primary><secondary>cam.curvecamcreate.CamCurveDrawer</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveDrawer</primary><secondary>overcut</secondary></indexterm>
+<para><computeroutput>BoolProperty cam.curvecamcreate.CamCurveDrawer.overcut<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Add&#32;Overcut&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="keyword">False</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1a550136a84dcc424807847074749cc9fa"/><section>
+    <title>overcut<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>overcut</primary><secondary>cam.curvecamcreate.CamCurveDrawer</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveDrawer</primary><secondary>overcut</secondary></indexterm>
+<para><computeroutput>cam.curvecamcreate.CamCurveDrawer.overcut</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1a18991d1795ff5ef2dce463f5691e1b9d"/><section>
+    <title>overcut_diameter<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>overcut_diameter</primary><secondary>cam.curvecamcreate.CamCurveDrawer</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveDrawer</primary><secondary>overcut_diameter</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamcreate.CamCurveDrawer.overcut_diameter<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Overcut&#32;Tool&#32;Diameter&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.003175,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=-0.001,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=0.5,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=4,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1ad3126ece4ea12b4eebd130ccadb8d98a"/><section>
+    <title>overcut_diameter<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>overcut_diameter</primary><secondary>cam.curvecamcreate.CamCurveDrawer</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveDrawer</primary><secondary>overcut_diameter</secondary></indexterm>
+<para><computeroutput>cam.curvecamcreate.CamCurveDrawer.overcut_diameter</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1a4c4e3f0e79afa448cef67ea1b0088459"/><section>
+    <title>width<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>width</primary><secondary>cam.curvecamcreate.CamCurveDrawer</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveDrawer</primary><secondary>width</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamcreate.CamCurveDrawer.width<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Drawer&#32;Width&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.125,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=3.0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=4,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveDrawer_1ad06b9673c246f805f42c1ece11734651"/><section>
+    <title>width<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>width</primary><secondary>cam.curvecamcreate.CamCurveDrawer</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveDrawer</primary><secondary>width</secondary></indexterm>
+<para><computeroutput>cam.curvecamcreate.CamCurveDrawer.width</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/<link linkend="_curvecamcreate_8py">curvecamcreate.py</link></section>
+</section>

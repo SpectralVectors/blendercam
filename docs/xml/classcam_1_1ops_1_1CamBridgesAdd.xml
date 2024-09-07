@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1ops_1_1CamBridgesAdd" kind="class" language="Python" prot="public">
+    <compoundname>cam::ops::CamBridgesAdd</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Operator</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1ops_1_1CamBridgesAdd_1a1e2ec43504e7a4e20ab48470f6ab9622" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.ops.CamBridgesAdd::bl_idname</definition>
+        <argsstring></argsstring>
+        <name>bl_idname</name>
+        <qualifiedname>cam.ops.CamBridgesAdd.bl_idname</qualifiedname>
+        <initializer>=  &quot;scene.cam_bridges_add&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="796" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="796" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ops_1_1CamBridgesAdd_1a9e56152f624c3b68db8ebc3e2f74fcca" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.ops.CamBridgesAdd::bl_label</definition>
+        <argsstring></argsstring>
+        <name>bl_label</name>
+        <qualifiedname>cam.ops.CamBridgesAdd.bl_label</qualifiedname>
+        <initializer>=  &quot;Add Bridges / Tabs&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="797" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="797" bodyend="-1"/>
+        <referencedby refid="classcam_1_1preset__managers_1_1CAM__MACHINE__MT__presets_1af95f7812d2952b26a26809ab923dac09" compoundref="preset__managers_8py" startline="28" endline="38">cam.preset_managers.CAM_MACHINE_MT_presets.post_cb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ops_1_1CamBridgesAdd_1a66689c604a32ba579b83babe74ba1408" prot="public" static="yes" mutable="no">
+        <type>dict</type>
+        <definition>dict cam.ops.CamBridgesAdd::bl_options</definition>
+        <argsstring></argsstring>
+        <name>bl_options</name>
+        <qualifiedname>cam.ops.CamBridgesAdd.bl_options</qualifiedname>
+        <initializer>=  {&apos;REGISTER&apos;, &apos;UNDO&apos;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="798" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="798" bodyend="-1"/>
+        <referencedby refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a9628cbca8e69ec75b2337171a02bf428" compoundref="async__op_8py" startline="32" endline="59">cam.async_op.AsyncOperatorMixin.modal</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcam_1_1ops_1_1CamBridgesAdd_1abccd459b6de503f0b2bf46643851da09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.ops.CamBridgesAdd.poll</definition>
+        <argsstring>(cls, context)</argsstring>
+        <name>poll</name>
+        <qualifiedname>cam.ops.CamBridgesAdd.poll</qualifiedname>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="801" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="801" bodyend="803"/>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1ops_1_1CamBridgesAdd_1a3e56edd34524eb6c1a956b499a698418" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.ops.CamBridgesAdd.execute</definition>
+        <argsstring>(self, context)</argsstring>
+        <name>execute</name>
+        <qualifiedname>cam.ops.CamBridgesAdd.execute</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="804" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="804" bodyend="810"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Add Bridge Objects to Curve</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.ops.CamBridgesAdd</label>
+        <link refid="classcam_1_1ops_1_1CamBridgesAdd"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.ops.CamBridgesAdd</label>
+        <link refid="classcam_1_1ops_1_1CamBridgesAdd"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+bl_idname</edgelabel>
+          <edgelabel>+bl_label</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+bl_options</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dict</label>
+      </node>
+      <node id="3">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="794" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="794" bodyend="810"/>
+    <listofallmembers>
+      <member refid="classcam_1_1ops_1_1CamBridgesAdd_1a1e2ec43504e7a4e20ab48470f6ab9622" prot="public" virt="non-virtual"><scope>cam::ops::CamBridgesAdd</scope><name>bl_idname</name></member>
+      <member refid="classcam_1_1ops_1_1CamBridgesAdd_1a9e56152f624c3b68db8ebc3e2f74fcca" prot="public" virt="non-virtual"><scope>cam::ops::CamBridgesAdd</scope><name>bl_label</name></member>
+      <member refid="classcam_1_1ops_1_1CamBridgesAdd_1a66689c604a32ba579b83babe74ba1408" prot="public" virt="non-virtual"><scope>cam::ops::CamBridgesAdd</scope><name>bl_options</name></member>
+      <member refid="classcam_1_1ops_1_1CamBridgesAdd_1a3e56edd34524eb6c1a956b499a698418" prot="public" virt="non-virtual"><scope>cam::ops::CamBridgesAdd</scope><name>execute</name></member>
+      <member refid="classcam_1_1ops_1_1CamBridgesAdd_1abccd459b6de503f0b2bf46643851da09" prot="public" virt="non-virtual"><scope>cam::ops::CamBridgesAdd</scope><name>poll</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

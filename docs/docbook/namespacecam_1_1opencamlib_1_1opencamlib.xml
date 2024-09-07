@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacecam_1_1opencamlib_1_1opencamlib" xml:lang="en-US">
+<title>cam.opencamlib.opencamlib Namespace Reference</title>
+<indexterm><primary>cam.opencamlib.opencamlib</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacecam_1_1opencamlib_1_1opencamlib_1a7b3e34a8199762c851a56af0322bb990">pointSamplesFromOCL</link> (points, samples)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1opencamlib_1_1opencamlib_1a42296e013a032a82b2e7f8d19e1daec9">chunkPointSamplesFromOCL</link> (chunks, samples)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1opencamlib_1_1opencamlib_1ae67517f2e1f47edcc0e509e47340f877">chunkPointsResampleFromOCL</link> (chunks, samples)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1opencamlib_1_1opencamlib_1a6be829fdfd769e5628967c7b2b9740c7">exportModelsToSTL</link> (operation)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1opencamlib_1_1opencamlib_1a27597745a18583333c13a4bed4aff4d1">oclSamplePoints</link> (operation, points)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1opencamlib_1_1opencamlib_1ae3506537b9a397c9e043e6d872cb245c">oclSample</link> (operation, chunks)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1opencamlib_1_1opencamlib_1a508b47223f669b193f323c1e6e50c9be">oclResampleChunks</link> (operation, chunks_to_resample, use_cached_mesh)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1opencamlib_1_1opencamlib_1abb414af07e5ed249661f8de1dd522114">oclWaterlineLayerHeights</link> (operation)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1opencamlib_1_1opencamlib_1af66f8f08d2a6832de86a60a682e7d150">oclGetWaterline</link> (operation, chunks)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>float <link linkend="_namespacecam_1_1opencamlib_1_1opencamlib_1ad09d62da3544d7a95f78e2fa8d8aa169">OCL_SCALE</link> = 1000.0</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1opencamlib_1_1opencamlib_1abf6e04943d0d03f58964a5d967060793">PYTHON_BIN</link> = None</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>BlenderCAM &apos;oclSample.py&apos;
+
+Functions used by OpenCAMLib sampling.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespacecam_1_1opencamlib_1_1opencamlib_1a42296e013a032a82b2e7f8d19e1daec9"/><section>
+    <title>chunkPointSamplesFromOCL()</title>
+<indexterm><primary>chunkPointSamplesFromOCL</primary><secondary>cam.opencamlib.opencamlib</secondary></indexterm>
+<indexterm><primary>cam.opencamlib.opencamlib</primary><secondary>chunkPointSamplesFromOCL</secondary></indexterm>
+<para><computeroutput>cam.opencamlib.opencamlib.chunkPointSamplesFromOCL ( chunks,  samples)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1opencamlib_1_1opencamlib_a42296e013a032a82b2e7f8d19e1daec9_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1opencamlib_1_1opencamlib_1ae67517f2e1f47edcc0e509e47340f877"/><section>
+    <title>chunkPointsResampleFromOCL()</title>
+<indexterm><primary>chunkPointsResampleFromOCL</primary><secondary>cam.opencamlib.opencamlib</secondary></indexterm>
+<indexterm><primary>cam.opencamlib.opencamlib</primary><secondary>chunkPointsResampleFromOCL</secondary></indexterm>
+<para><computeroutput>cam.opencamlib.opencamlib.chunkPointsResampleFromOCL ( chunks,  samples)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1opencamlib_1_1opencamlib_1a6be829fdfd769e5628967c7b2b9740c7"/><section>
+    <title>exportModelsToSTL()</title>
+<indexterm><primary>exportModelsToSTL</primary><secondary>cam.opencamlib.opencamlib</secondary></indexterm>
+<indexterm><primary>cam.opencamlib.opencamlib</primary><secondary>exportModelsToSTL</secondary></indexterm>
+<para><computeroutput>cam.opencamlib.opencamlib.exportModelsToSTL ( operation)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1opencamlib_1_1opencamlib_1af66f8f08d2a6832de86a60a682e7d150"/><section>
+    <title>oclGetWaterline()</title>
+<indexterm><primary>oclGetWaterline</primary><secondary>cam.opencamlib.opencamlib</secondary></indexterm>
+<indexterm><primary>cam.opencamlib.opencamlib</primary><secondary>oclGetWaterline</secondary></indexterm>
+<para><computeroutput>cam.opencamlib.opencamlib.oclGetWaterline ( operation,  chunks)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1opencamlib_1_1opencamlib_af66f8f08d2a6832de86a60a682e7d150_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1opencamlib_1_1opencamlib_1a508b47223f669b193f323c1e6e50c9be"/><section>
+    <title>oclResampleChunks()</title>
+<indexterm><primary>oclResampleChunks</primary><secondary>cam.opencamlib.opencamlib</secondary></indexterm>
+<indexterm><primary>cam.opencamlib.opencamlib</primary><secondary>oclResampleChunks</secondary></indexterm>
+<para><computeroutput>cam.opencamlib.opencamlib.oclResampleChunks ( operation,  chunks_to_resample,  use_cached_mesh)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1opencamlib_1_1opencamlib_1ae3506537b9a397c9e043e6d872cb245c"/><section>
+    <title>oclSample()</title>
+<indexterm><primary>oclSample</primary><secondary>cam.opencamlib.opencamlib</secondary></indexterm>
+<indexterm><primary>cam.opencamlib.opencamlib</primary><secondary>oclSample</secondary></indexterm>
+<para><computeroutput>cam.opencamlib.opencamlib.oclSample ( operation,  chunks)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1opencamlib_1_1opencamlib_ae3506537b9a397c9e043e6d872cb245c_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1opencamlib_1_1opencamlib_1a27597745a18583333c13a4bed4aff4d1"/><section>
+    <title>oclSamplePoints()</title>
+<indexterm><primary>oclSamplePoints</primary><secondary>cam.opencamlib.opencamlib</secondary></indexterm>
+<indexterm><primary>cam.opencamlib.opencamlib</primary><secondary>oclSamplePoints</secondary></indexterm>
+<para><computeroutput>cam.opencamlib.opencamlib.oclSamplePoints ( operation,  points)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1opencamlib_1_1opencamlib_a27597745a18583333c13a4bed4aff4d1_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1opencamlib_1_1opencamlib_1abb414af07e5ed249661f8de1dd522114"/><section>
+    <title>oclWaterlineLayerHeights()</title>
+<indexterm><primary>oclWaterlineLayerHeights</primary><secondary>cam.opencamlib.opencamlib</secondary></indexterm>
+<indexterm><primary>cam.opencamlib.opencamlib</primary><secondary>oclWaterlineLayerHeights</secondary></indexterm>
+<para><computeroutput>cam.opencamlib.opencamlib.oclWaterlineLayerHeights ( operation)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1opencamlib_1_1opencamlib_abb414af07e5ed249661f8de1dd522114_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1opencamlib_1_1opencamlib_1a7b3e34a8199762c851a56af0322bb990"/><section>
+    <title>pointSamplesFromOCL()</title>
+<indexterm><primary>pointSamplesFromOCL</primary><secondary>cam.opencamlib.opencamlib</secondary></indexterm>
+<indexterm><primary>cam.opencamlib.opencamlib</primary><secondary>pointSamplesFromOCL</secondary></indexterm>
+<para><computeroutput>cam.opencamlib.opencamlib.pointSamplesFromOCL ( points,  samples)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1opencamlib_1_1opencamlib_a7b3e34a8199762c851a56af0322bb990_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespacecam_1_1opencamlib_1_1opencamlib_1ad09d62da3544d7a95f78e2fa8d8aa169"/><section>
+    <title>OCL_SCALE</title>
+<indexterm><primary>OCL_SCALE</primary><secondary>cam.opencamlib.opencamlib</secondary></indexterm>
+<indexterm><primary>cam.opencamlib.opencamlib</primary><secondary>OCL_SCALE</secondary></indexterm>
+<para><computeroutput>float cam.opencamlib.opencamlib.OCL_SCALE = 1000.0</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1opencamlib_1_1opencamlib_1abf6e04943d0d03f58964a5d967060793"/><section>
+    <title>PYTHON_BIN</title>
+<indexterm><primary>PYTHON_BIN</primary><secondary>cam.opencamlib.opencamlib</secondary></indexterm>
+<indexterm><primary>cam.opencamlib.opencamlib</primary><secondary>PYTHON_BIN</secondary></indexterm>
+<para><computeroutput>cam.opencamlib.opencamlib.PYTHON_BIN = None</computeroutput></para></section>
+</section>
+</section>

@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacecam_1_1collision" kind="namespace" language="Python">
+    <compoundname>cam::collision</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacecam_1_1collision_1ac68250319f11c6dcb511b542492a6651" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.collision.getCutterBullet</definition>
+        <argsstring>(o)</argsstring>
+        <name>getCutterBullet</name>
+        <qualifiedname>cam.collision.getCutterBullet</qualifiedname>
+        <param>
+          <type>o</type>
+          <defname>o</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Cutter for Rigidbody Simulation Collisions
+    Note that Everything Is 100x Bigger for Simulation Precision.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/collision.py" line="32" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/collision.py" bodystart="32" bodyend="162"/>
+        <referencedby refid="namespacecam_1_1collision_1a152dde2dd547f6e625ef1ef16af8f022" compoundref="collision_8py" startline="207" endline="284">cam.collision.prepareBulletCollision</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1collision_1a8cd100d428097198fb93b4fe2fdb38ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.collision.subdivideLongEdges</definition>
+        <argsstring>(ob, threshold)</argsstring>
+        <name>subdivideLongEdges</name>
+        <qualifiedname>cam.collision.subdivideLongEdges</qualifiedname>
+        <param>
+          <type>ob</type>
+          <defname>ob</defname>
+        </param>
+        <param>
+          <type>threshold</type>
+          <defname>threshold</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/collision.py" line="163" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/collision.py" bodystart="163" bodyend="206"/>
+        <referencedby refid="namespacecam_1_1collision_1a152dde2dd547f6e625ef1ef16af8f022" compoundref="collision_8py" startline="207" endline="284">cam.collision.prepareBulletCollision</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1collision_1a152dde2dd547f6e625ef1ef16af8f022" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.collision.prepareBulletCollision</definition>
+        <argsstring>(o)</argsstring>
+        <name>prepareBulletCollision</name>
+        <qualifiedname>cam.collision.prepareBulletCollision</qualifiedname>
+        <param>
+          <type>o</type>
+          <defname>o</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Prepares All Objects Needed for Sampling with Bullet Collision</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/collision.py" line="207" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/collision.py" bodystart="207" bodyend="284"/>
+        <references refid="namespacecam_1_1collision_1ac68250319f11c6dcb511b542492a6651" compoundref="collision_8py" startline="32" endline="162">cam.collision.getCutterBullet</references>
+        <references refid="namespacecam_1_1collision_1a8cd100d428097198fb93b4fe2fdb38ce" compoundref="collision_8py" startline="163" endline="206">cam.collision.subdivideLongEdges</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1collision_1a96ec6268eec2ab8cfe5d23c01d1dce32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.collision.cleanupBulletCollision</definition>
+        <argsstring>(o)</argsstring>
+        <name>cleanupBulletCollision</name>
+        <qualifiedname>cam.collision.cleanupBulletCollision</qualifiedname>
+        <param>
+          <type>o</type>
+          <defname>o</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/collision.py" line="285" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/collision.py" bodystart="285" bodyend="304"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1collision_1ae1545df1df72aa0f8078e5eac263e3bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.collision.getSampleBullet</definition>
+        <argsstring>(cutter, x, y, radius, startz, endz)</argsstring>
+        <name>getSampleBullet</name>
+        <qualifiedname>cam.collision.getSampleBullet</qualifiedname>
+        <param>
+          <type>cutter</type>
+          <defname>cutter</defname>
+        </param>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+        </param>
+        <param>
+          <type>y</type>
+          <defname>y</defname>
+        </param>
+        <param>
+          <type>radius</type>
+          <defname>radius</defname>
+        </param>
+        <param>
+          <type>startz</type>
+          <defname>startz</defname>
+        </param>
+        <param>
+          <type>endz</type>
+          <defname>endz</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Collision Test for 3 Axis Milling. Is Simplified Compared to the Full 3D Test</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/collision.py" line="305" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/collision.py" bodystart="305" bodyend="318"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1collision_1ab12a78291ea708ec61bf4cc5508ff17e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.collision.getSampleBulletNAxis</definition>
+        <argsstring>(cutter, startpoint, endpoint, rotation, cutter_compensation)</argsstring>
+        <name>getSampleBulletNAxis</name>
+        <qualifiedname>cam.collision.getSampleBulletNAxis</qualifiedname>
+        <param>
+          <type>cutter</type>
+          <defname>cutter</defname>
+        </param>
+        <param>
+          <type>startpoint</type>
+          <defname>startpoint</defname>
+        </param>
+        <param>
+          <type>endpoint</type>
+          <defname>endpoint</defname>
+        </param>
+        <param>
+          <type>rotation</type>
+          <defname>rotation</defname>
+        </param>
+        <param>
+          <type>cutter_compensation</type>
+          <defname>cutter_compensation</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Fully 3D Collision Test for N-Axis Milling</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/collision.py" line="319" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/collision.py" bodystart="319" bodyend="336"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>BlenderCAM &apos;collision.py&apos; © 2012 Vilem Novak
+
+Functions for Bullet and Cutter collision checks.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/collision.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

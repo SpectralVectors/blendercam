@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1async__op_1_1AsyncOperatorMixin" xml:lang="en-US">
+<title>cam.async_op.AsyncOperatorMixin Class Reference</title>
+<indexterm><primary>cam.async_op.AsyncOperatorMixin</primary></indexterm>
+Inheritance diagram for cam.async_op.AsyncOperatorMixin:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1async__op_1_1AsyncOperatorMixin__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.async_op.AsyncOperatorMixin:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1async__op_1_1AsyncOperatorMixin__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1async__op_1_1AsyncOperatorMixin_1aad1db56f32bf5f238f40b563c0912cc9">__init__</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1async__op_1_1AsyncOperatorMixin_1a9628cbca8e69ec75b2337171a02bf428">modal</link> (self, context, event)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1async__op_1_1AsyncOperatorMixin_1a2216ff6bb0dfd132f4ec4cf79b7cba2b">show_progress</link> (self, context, text, n, value_type)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1async__op_1_1AsyncOperatorMixin_1a15a51cfd69d8e453e2e3d64386b1ebe3">tick</link> (self, context)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1async__op_1_1AsyncOperatorMixin_1acfd48e2950454c9895b578250e85185a">execute</link> (self, context)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1async__op_1_1AsyncOperatorMixin_1a315566a49d3d1a69d1b0635e86c45fbe">timer</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1async__op_1_1AsyncOperatorMixin_1a01b572e82c26d1f5db10e3182e810ad7">coroutine</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1async__op_1_1AsyncOperatorMixin_1a54532a564aaa17d7f30f58e5bf2710fe">_is_cancelled</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classcam_1_1async__op_1_1AsyncOperatorMixin_1aad1db56f32bf5f238f40b563c0912cc9"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>cam.async_op.AsyncOperatorMixin</secondary></indexterm>
+<indexterm><primary>cam.async_op.AsyncOperatorMixin</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>cam.async_op.AsyncOperatorMixin.__init__ ( self)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1async__op_1_1AsyncOperatorMixin_1acfd48e2950454c9895b578250e85185a"/><section>
+    <title>execute()</title>
+<indexterm><primary>execute</primary><secondary>cam.async_op.AsyncOperatorMixin</secondary></indexterm>
+<indexterm><primary>cam.async_op.AsyncOperatorMixin</primary><secondary>execute</secondary></indexterm>
+<para><computeroutput>cam.async_op.AsyncOperatorMixin.execute ( self,  context)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1async__op_1_1AsyncOperatorMixin_acfd48e2950454c9895b578250e85185a_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1async__op_1_1AsyncOperatorMixin_1a9628cbca8e69ec75b2337171a02bf428"/><section>
+    <title>modal()</title>
+<indexterm><primary>modal</primary><secondary>cam.async_op.AsyncOperatorMixin</secondary></indexterm>
+<indexterm><primary>cam.async_op.AsyncOperatorMixin</primary><secondary>modal</secondary></indexterm>
+<para><computeroutput>cam.async_op.AsyncOperatorMixin.modal ( self,  context,  event)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1async__op_1_1AsyncOperatorMixin_a9628cbca8e69ec75b2337171a02bf428_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1async__op_1_1AsyncOperatorMixin_a9628cbca8e69ec75b2337171a02bf428_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1async__op_1_1AsyncOperatorMixin_1a2216ff6bb0dfd132f4ec4cf79b7cba2b"/><section>
+    <title>show_progress()</title>
+<indexterm><primary>show_progress</primary><secondary>cam.async_op.AsyncOperatorMixin</secondary></indexterm>
+<indexterm><primary>cam.async_op.AsyncOperatorMixin</primary><secondary>show_progress</secondary></indexterm>
+<para><computeroutput>cam.async_op.AsyncOperatorMixin.show_progress ( self,  context,  text,  n,  value_type)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1async__op_1_1AsyncOperatorMixin_a2216ff6bb0dfd132f4ec4cf79b7cba2b_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1async__op_1_1AsyncOperatorMixin_1a15a51cfd69d8e453e2e3d64386b1ebe3"/><section>
+    <title>tick()</title>
+<indexterm><primary>tick</primary><secondary>cam.async_op.AsyncOperatorMixin</secondary></indexterm>
+<indexterm><primary>cam.async_op.AsyncOperatorMixin</primary><secondary>tick</secondary></indexterm>
+<para><computeroutput>cam.async_op.AsyncOperatorMixin.tick ( self,  context)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1async__op_1_1AsyncOperatorMixin_a15a51cfd69d8e453e2e3d64386b1ebe3_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1async__op_1_1AsyncOperatorMixin_a15a51cfd69d8e453e2e3d64386b1ebe3_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1async__op_1_1AsyncOperatorMixin_1a54532a564aaa17d7f30f58e5bf2710fe"/><section>
+    <title>_is_cancelled</title>
+<indexterm><primary>_is_cancelled</primary><secondary>cam.async_op.AsyncOperatorMixin</secondary></indexterm>
+<indexterm><primary>cam.async_op.AsyncOperatorMixin</primary><secondary>_is_cancelled</secondary></indexterm>
+<para><computeroutput>cam.async_op.AsyncOperatorMixin._is_cancelled<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1async__op_1_1AsyncOperatorMixin_1a01b572e82c26d1f5db10e3182e810ad7"/><section>
+    <title>coroutine</title>
+<indexterm><primary>coroutine</primary><secondary>cam.async_op.AsyncOperatorMixin</secondary></indexterm>
+<indexterm><primary>cam.async_op.AsyncOperatorMixin</primary><secondary>coroutine</secondary></indexterm>
+<para><computeroutput>cam.async_op.AsyncOperatorMixin.coroutine</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1async__op_1_1AsyncOperatorMixin_1a315566a49d3d1a69d1b0635e86c45fbe"/><section>
+    <title>timer</title>
+<indexterm><primary>timer</primary><secondary>cam.async_op.AsyncOperatorMixin</secondary></indexterm>
+<indexterm><primary>cam.async_op.AsyncOperatorMixin</primary><secondary>timer</secondary></indexterm>
+<para><computeroutput>cam.async_op.AsyncOperatorMixin.timer</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/<link linkend="_async__op_8py">async_op.py</link></section>
+</section>

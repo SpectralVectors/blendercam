@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacecam_1_1constants" xml:lang="en-US">
+<title>cam.constants Namespace Reference</title>
+<indexterm><primary>cam.constants</primary></indexterm>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_namespacecam_1_1constants_1a76605b94e98c701ed2586b9e35e6c6e1">PRECISION</link> = 5</para>
+</listitem>
+            <listitem><para>int <link linkend="_namespacecam_1_1constants_1af55e942bbece31b7a3eaf48c278db6ee">CHIPLOAD_PRECISION</link> = 10</para>
+</listitem>
+            <listitem><para>int <link linkend="_namespacecam_1_1constants_1a0259cec1e6ed28e941feed05cd7e7e91">MAX_OPERATION_TIME</link> = 3200000000</para>
+</listitem>
+            <listitem><para>list <link linkend="_namespacecam_1_1constants_1a8d6e124bc15f6ef4fa34b97f12a93b9c">G64_INCOMPATIBLE_MACHINES</link> = [&apos;GRBL&apos;]</para>
+</listitem>
+            <listitem><para>int <link linkend="_namespacecam_1_1constants_1a833d6ffb51aa125e9da3c0a9bfd4410a">BULLET_SCALE</link> = 10000</para>
+</listitem>
+            <listitem><para>tuple <link linkend="_namespacecam_1_1constants_1a60a427c155ebb0144f06ede241df8072">CUTTER_OFFSET</link> = (-5 * <link linkend="_namespacecam_1_1constants_1a833d6ffb51aa125e9da3c0a9bfd4410a">BULLET_SCALE</link>, -5 * <link linkend="_namespacecam_1_1constants_1a833d6ffb51aa125e9da3c0a9bfd4410a">BULLET_SCALE</link>, -5 * <link linkend="_namespacecam_1_1constants_1a833d6ffb51aa125e9da3c0a9bfd4410a">BULLET_SCALE</link>)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>BlenderCAM &apos;constants.py&apos;
+
+Package to store all constants of BlenderCAM.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespacecam_1_1constants_1a833d6ffb51aa125e9da3c0a9bfd4410a"/><section>
+    <title>BULLET_SCALE</title>
+<indexterm><primary>BULLET_SCALE</primary><secondary>cam.constants</secondary></indexterm>
+<indexterm><primary>cam.constants</primary><secondary>BULLET_SCALE</secondary></indexterm>
+<para><computeroutput>int cam.constants.BULLET_SCALE = 10000</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1constants_1af55e942bbece31b7a3eaf48c278db6ee"/><section>
+    <title>CHIPLOAD_PRECISION</title>
+<indexterm><primary>CHIPLOAD_PRECISION</primary><secondary>cam.constants</secondary></indexterm>
+<indexterm><primary>cam.constants</primary><secondary>CHIPLOAD_PRECISION</secondary></indexterm>
+<para><computeroutput>int cam.constants.CHIPLOAD_PRECISION = 10</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1constants_1a60a427c155ebb0144f06ede241df8072"/><section>
+    <title>CUTTER_OFFSET</title>
+<indexterm><primary>CUTTER_OFFSET</primary><secondary>cam.constants</secondary></indexterm>
+<indexterm><primary>cam.constants</primary><secondary>CUTTER_OFFSET</secondary></indexterm>
+<para><computeroutput>tuple cam.constants.CUTTER_OFFSET = (-5 * <link linkend="_namespacecam_1_1constants_1a833d6ffb51aa125e9da3c0a9bfd4410a">BULLET_SCALE</link>, -5 * <link linkend="_namespacecam_1_1constants_1a833d6ffb51aa125e9da3c0a9bfd4410a">BULLET_SCALE</link>, -5 * <link linkend="_namespacecam_1_1constants_1a833d6ffb51aa125e9da3c0a9bfd4410a">BULLET_SCALE</link>)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1constants_1a8d6e124bc15f6ef4fa34b97f12a93b9c"/><section>
+    <title>G64_INCOMPATIBLE_MACHINES</title>
+<indexterm><primary>G64_INCOMPATIBLE_MACHINES</primary><secondary>cam.constants</secondary></indexterm>
+<indexterm><primary>cam.constants</primary><secondary>G64_INCOMPATIBLE_MACHINES</secondary></indexterm>
+<para><computeroutput>list cam.constants.G64_INCOMPATIBLE_MACHINES = [&apos;GRBL&apos;]</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1constants_1a0259cec1e6ed28e941feed05cd7e7e91"/><section>
+    <title>MAX_OPERATION_TIME</title>
+<indexterm><primary>MAX_OPERATION_TIME</primary><secondary>cam.constants</secondary></indexterm>
+<indexterm><primary>cam.constants</primary><secondary>MAX_OPERATION_TIME</secondary></indexterm>
+<para><computeroutput>int cam.constants.MAX_OPERATION_TIME = 3200000000</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1constants_1a76605b94e98c701ed2586b9e35e6c6e1"/><section>
+    <title>PRECISION</title>
+<indexterm><primary>PRECISION</primary><secondary>cam.constants</secondary></indexterm>
+<indexterm><primary>cam.constants</primary><secondary>PRECISION</secondary></indexterm>
+<para><computeroutput>int cam.constants.PRECISION = 5</computeroutput></para></section>
+</section>
+</section>

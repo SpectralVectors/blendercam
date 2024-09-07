@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1curvecamcreate_1_1CamCurveFlatCone" xml:lang="en-US">
+<title>cam.curvecamcreate.CamCurveFlatCone Class Reference</title>
+<indexterm><primary>cam.curvecamcreate.CamCurveFlatCone</primary></indexterm>
+Inheritance diagram for cam.curvecamcreate.CamCurveFlatCone:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1curvecamcreate_1_1CamCurveFlatCone__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.curvecamcreate.CamCurveFlatCone:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1curvecamcreate_1_1CamCurveFlatCone__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a2eb1a5bb02a5de31a972abef45e2fbbd">execute</link> (self, context)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a938ee3fa461ba3522fb87a187cee65d4">bl_idname</link> = &quot;object.curve_flat_cone&quot;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a86a9914c156e93736859690fdaceb757">bl_label</link> = &quot;Cone Flat Calculator&quot;</para>
+</listitem>
+            <listitem><para>dict <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1aee0bbd9f3ed2ee8a8aa90c46e9c1c88b">bl_options</link> = {&apos;REGISTER&apos;, &apos;UNDO&apos;, &apos;PRESET&apos;}</para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a25d5560917a5c0d7f656a60e650aa252">small_d</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a639c65b9ad2766e166eec22973a9d64e">large_d</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a99bda9f760bcd7020d624c5e2a4f994f">height</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1acfbd8ebd4bd20947bbcf94b5ba08e603">tab</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a6841e5796198d0302ee26e840858e2f2">intake</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a94ca874640e2c79133cd56e7525e16c4">intake_skew</link></para>
+</listitem>
+            <listitem><para>IntProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a90b4405b60fe0125db38e6cc98403a44">resolution</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Perform Generates Rounded Plate with Mounting Holes</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a2eb1a5bb02a5de31a972abef45e2fbbd"/><section>
+    <title>execute()</title>
+<indexterm><primary>execute</primary><secondary>cam.curvecamcreate.CamCurveFlatCone</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveFlatCone</primary><secondary>execute</secondary></indexterm>
+<para><computeroutput>cam.curvecamcreate.CamCurveFlatCone.execute ( self,  context)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a938ee3fa461ba3522fb87a187cee65d4"/><section>
+    <title>bl_idname</title>
+<indexterm><primary>bl_idname</primary><secondary>cam.curvecamcreate.CamCurveFlatCone</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveFlatCone</primary><secondary>bl_idname</secondary></indexterm>
+<para><computeroutput>str cam.curvecamcreate.CamCurveFlatCone.bl_idname = &quot;object.curve_flat_cone&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a86a9914c156e93736859690fdaceb757"/><section>
+    <title>bl_label</title>
+<indexterm><primary>bl_label</primary><secondary>cam.curvecamcreate.CamCurveFlatCone</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveFlatCone</primary><secondary>bl_label</secondary></indexterm>
+<para><computeroutput>str cam.curvecamcreate.CamCurveFlatCone.bl_label = &quot;Cone Flat Calculator&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1aee0bbd9f3ed2ee8a8aa90c46e9c1c88b"/><section>
+    <title>bl_options</title>
+<indexterm><primary>bl_options</primary><secondary>cam.curvecamcreate.CamCurveFlatCone</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveFlatCone</primary><secondary>bl_options</secondary></indexterm>
+<para><computeroutput>dict cam.curvecamcreate.CamCurveFlatCone.bl_options = {&apos;REGISTER&apos;, &apos;UNDO&apos;, &apos;PRESET&apos;}<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a99bda9f760bcd7020d624c5e2a4f994f"/><section>
+    <title>height</title>
+<indexterm><primary>height</primary><secondary>cam.curvecamcreate.CamCurveFlatCone</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveFlatCone</primary><secondary>height</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamcreate.CamCurveFlatCone.height<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Height&#32;of&#32;Cone&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.457,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=3.0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=4,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a6841e5796198d0302ee26e840858e2f2"/><section>
+    <title>intake</title>
+<indexterm><primary>intake</primary><secondary>cam.curvecamcreate.CamCurveFlatCone</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveFlatCone</primary><secondary>intake</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamcreate.CamCurveFlatCone.intake<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Intake&#32;Diameter&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=0.200,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=4,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a94ca874640e2c79133cd56e7525e16c4"/><section>
+    <title>intake_skew</title>
+<indexterm><primary>intake_skew</primary><secondary>cam.curvecamcreate.CamCurveFlatCone</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveFlatCone</primary><secondary>intake_skew</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamcreate.CamCurveFlatCone.intake_skew<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Intake&#32;Skew&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=1,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0.1,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=4,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a639c65b9ad2766e166eec22973a9d64e"/><section>
+    <title>large_d</title>
+<indexterm><primary>large_d</primary><secondary>cam.curvecamcreate.CamCurveFlatCone</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveFlatCone</primary><secondary>large_d</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamcreate.CamCurveFlatCone.large_d<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Large&#32;Diameter&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.3048,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=3.0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=4,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a90b4405b60fe0125db38e6cc98403a44"/><section>
+    <title>resolution</title>
+<indexterm><primary>resolution</primary><secondary>cam.curvecamcreate.CamCurveFlatCone</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveFlatCone</primary><secondary>resolution</secondary></indexterm>
+<para><computeroutput>IntProperty cam.curvecamcreate.CamCurveFlatCone.resolution<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Resolution&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=12,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=5,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=200,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a25d5560917a5c0d7f656a60e650aa252"/><section>
+    <title>small_d</title>
+<indexterm><primary>small_d</primary><secondary>cam.curvecamcreate.CamCurveFlatCone</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveFlatCone</primary><secondary>small_d</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamcreate.CamCurveFlatCone.small_d<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Small&#32;Diameter&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=.025,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=0.1,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=4,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1acfbd8ebd4bd20947bbcf94b5ba08e603"/><section>
+    <title>tab</title>
+<indexterm><primary>tab</primary><secondary>cam.curvecamcreate.CamCurveFlatCone</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveFlatCone</primary><secondary>tab</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamcreate.CamCurveFlatCone.tab<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Tab&#32;Witdh&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.01,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=0.100,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=4,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/<link linkend="_curvecamcreate_8py">curvecamcreate.py</link></section>
+</section>

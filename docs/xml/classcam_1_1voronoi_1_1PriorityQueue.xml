@@ -1,0 +1,365 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1voronoi_1_1PriorityQueue" kind="class" language="Python" prot="public">
+    <compoundname>cam::voronoi::PriorityQueue</compoundname>
+    <basecompoundref refid="classobject" prot="public" virt="non-virtual">object</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcam_1_1voronoi_1_1PriorityQueue_1a3e1343b610d2bbbd6a7a383a290132ef" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.voronoi.PriorityQueue::ymin</definition>
+        <argsstring></argsstring>
+        <name>ymin</name>
+        <qualifiedname>cam.voronoi.PriorityQueue.ymin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="785" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="785" bodyend="-1"/>
+        <referencedby refid="classcam_1_1voronoi_1_1PriorityQueue_1af2c2effb4a6e93615875f33a137b7511" compoundref="voronoi_8py" startline="821" endline="830">cam.voronoi.PriorityQueue.getBucket</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1voronoi_1_1PriorityQueue_1a24048414dfc405085ef407756b8b6fd8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.voronoi.PriorityQueue::deltay</definition>
+        <argsstring></argsstring>
+        <name>deltay</name>
+        <qualifiedname>cam.voronoi.PriorityQueue.deltay</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="786" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="786" bodyend="-1"/>
+        <referencedby refid="classcam_1_1voronoi_1_1PriorityQueue_1af2c2effb4a6e93615875f33a137b7511" compoundref="voronoi_8py" startline="821" endline="830">cam.voronoi.PriorityQueue.getBucket</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1voronoi_1_1PriorityQueue_1a51ded7053f3c5f2ee7de7f2b96bb20d1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.voronoi.PriorityQueue::hashsize</definition>
+        <argsstring></argsstring>
+        <name>hashsize</name>
+        <qualifiedname>cam.voronoi.PriorityQueue.hashsize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="787" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="787" bodyend="-1"/>
+        <referencedby refid="classcam_1_1voronoi_1_1PriorityQueue_1af2c2effb4a6e93615875f33a137b7511" compoundref="voronoi_8py" startline="821" endline="830">cam.voronoi.PriorityQueue.getBucket</referencedby>
+        <referencedby refid="classcam_1_1voronoi_1_1EdgeList_1a0a7d44b327829d667431e4de43349ed1" compoundref="voronoi_8py" startline="732" endline="742">cam.voronoi.EdgeList.gethash</referencedby>
+        <referencedby refid="classcam_1_1voronoi_1_1EdgeList_1aaf9499fb416602dcb85cd6aef3c7733e" compoundref="voronoi_8py" startline="743" endline="782">cam.voronoi.EdgeList.leftbnd</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1voronoi_1_1PriorityQueue_1a551e508cdcddaa53975c71b2de64eab2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.voronoi.PriorityQueue::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <qualifiedname>cam.voronoi.PriorityQueue.count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="788" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="788" bodyend="-1"/>
+        <referencedby refid="classcam_1_1voronoi_1_1PriorityQueue_1a463ff2f03e47c5ec46cc37213ca84365" compoundref="voronoi_8py" startline="794" endline="796">cam.voronoi.PriorityQueue.__len__</referencedby>
+        <referencedby refid="classcam_1_1voronoi_1_1PriorityQueue_1af6527c4d041251aea54fd2d17a4a771c" compoundref="voronoi_8py" startline="812" endline="820">cam.voronoi.PriorityQueue.delete</referencedby>
+        <referencedby refid="classcam_1_1voronoi_1_1PriorityQueue_1a857ebc5af54336e935d69fd5568382ea" compoundref="voronoi_8py" startline="800" endline="811">cam.voronoi.PriorityQueue.insert</referencedby>
+        <referencedby refid="classcam_1_1voronoi_1_1PriorityQueue_1a8c055e209bd650be554efbf1bf89e8d7" compoundref="voronoi_8py" startline="797" endline="799">cam.voronoi.PriorityQueue.isEmpty</referencedby>
+        <referencedby refid="classcam_1_1voronoi_1_1PriorityQueue_1ae9633dad8a8489cd449ecfc313971165" compoundref="voronoi_8py" startline="839" endline="846">cam.voronoi.PriorityQueue.popMinHalfedge</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1voronoi_1_1PriorityQueue_1ace00680989b596205f4d728e0d5642ba" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.voronoi.PriorityQueue::minidx</definition>
+        <argsstring></argsstring>
+        <name>minidx</name>
+        <qualifiedname>cam.voronoi.PriorityQueue.minidx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="789" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="789" bodyend="-1"/>
+        <referencedby refid="classcam_1_1voronoi_1_1PriorityQueue_1af2c2effb4a6e93615875f33a137b7511" compoundref="voronoi_8py" startline="821" endline="830">cam.voronoi.PriorityQueue.getBucket</referencedby>
+        <referencedby refid="classcam_1_1voronoi_1_1PriorityQueue_1ac9eae4ab1d0eaa605475dd74e585d497" compoundref="voronoi_8py" startline="831" endline="838">cam.voronoi.PriorityQueue.getMinPt</referencedby>
+        <referencedby refid="classcam_1_1voronoi_1_1PriorityQueue_1ae9633dad8a8489cd449ecfc313971165" compoundref="voronoi_8py" startline="839" endline="846">cam.voronoi.PriorityQueue.popMinHalfedge</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1voronoi_1_1PriorityQueue_1a90a56d343f473dda5671383a70970207" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.voronoi.PriorityQueue::hash</definition>
+        <argsstring></argsstring>
+        <name>hash</name>
+        <qualifiedname>cam.voronoi.PriorityQueue.hash</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="790" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="790" bodyend="-1"/>
+        <referencedby refid="classcam_1_1voronoi_1_1PriorityQueue_1af6527c4d041251aea54fd2d17a4a771c" compoundref="voronoi_8py" startline="812" endline="820">cam.voronoi.PriorityQueue.delete</referencedby>
+        <referencedby refid="classcam_1_1voronoi_1_1EdgeList_1a0a7d44b327829d667431e4de43349ed1" compoundref="voronoi_8py" startline="732" endline="742">cam.voronoi.EdgeList.gethash</referencedby>
+        <referencedby refid="classcam_1_1voronoi_1_1PriorityQueue_1ac9eae4ab1d0eaa605475dd74e585d497" compoundref="voronoi_8py" startline="831" endline="838">cam.voronoi.PriorityQueue.getMinPt</referencedby>
+        <referencedby refid="classcam_1_1voronoi_1_1PriorityQueue_1a857ebc5af54336e935d69fd5568382ea" compoundref="voronoi_8py" startline="800" endline="811">cam.voronoi.PriorityQueue.insert</referencedby>
+        <referencedby refid="classcam_1_1voronoi_1_1EdgeList_1aaf9499fb416602dcb85cd6aef3c7733e" compoundref="voronoi_8py" startline="743" endline="782">cam.voronoi.EdgeList.leftbnd</referencedby>
+        <referencedby refid="classcam_1_1voronoi_1_1PriorityQueue_1ae9633dad8a8489cd449ecfc313971165" compoundref="voronoi_8py" startline="839" endline="846">cam.voronoi.PriorityQueue.popMinHalfedge</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcam_1_1voronoi_1_1PriorityQueue_1a400b68c79b53a33d02cfb16998716bed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.voronoi.PriorityQueue.__init__</definition>
+        <argsstring>(self, ymin, ymax, nsites)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>cam.voronoi.PriorityQueue.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classcam_1_1voronoi_1_1PriorityQueue_1a3e1343b610d2bbbd6a7a383a290132ef" kindref="member">ymin</ref></type>
+          <defname>ymin</defname>
+        </param>
+        <param>
+          <type>ymax</type>
+          <defname>ymax</defname>
+        </param>
+        <param>
+          <type>nsites</type>
+          <defname>nsites</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="784" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="784" bodyend="793"/>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1voronoi_1_1PriorityQueue_1a463ff2f03e47c5ec46cc37213ca84365" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.voronoi.PriorityQueue.__len__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__len__</name>
+        <qualifiedname>cam.voronoi.PriorityQueue.__len__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="794" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="794" bodyend="796"/>
+        <references refid="classcam_1_1cam__chunk_1_1camPathChunk_1a087dc7badc2dd49f26bc24d2cc3aafcd" compoundref="cam__chunk_8py" startline="145" endline="147">cam.cam_chunk.camPathChunk.count</references>
+        <references refid="classcam_1_1voronoi_1_1PriorityQueue_1a551e508cdcddaa53975c71b2de64eab2" compoundref="voronoi_8py" startline="788">cam.voronoi.PriorityQueue.count</references>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1voronoi_1_1PriorityQueue_1a8c055e209bd650be554efbf1bf89e8d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.voronoi.PriorityQueue.isEmpty</definition>
+        <argsstring>(self)</argsstring>
+        <name>isEmpty</name>
+        <qualifiedname>cam.voronoi.PriorityQueue.isEmpty</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="797" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="797" bodyend="799"/>
+        <references refid="classcam_1_1cam__chunk_1_1camPathChunk_1a087dc7badc2dd49f26bc24d2cc3aafcd" compoundref="cam__chunk_8py" startline="145" endline="147">cam.cam_chunk.camPathChunk.count</references>
+        <references refid="classcam_1_1voronoi_1_1PriorityQueue_1a551e508cdcddaa53975c71b2de64eab2" compoundref="voronoi_8py" startline="788">cam.voronoi.PriorityQueue.count</references>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1voronoi_1_1PriorityQueue_1a857ebc5af54336e935d69fd5568382ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.voronoi.PriorityQueue.insert</definition>
+        <argsstring>(self, he, site, offset)</argsstring>
+        <name>insert</name>
+        <qualifiedname>cam.voronoi.PriorityQueue.insert</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>he</type>
+          <defname>he</defname>
+        </param>
+        <param>
+          <type>site</type>
+          <defname>site</defname>
+        </param>
+        <param>
+          <type>offset</type>
+          <defname>offset</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="800" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="800" bodyend="811"/>
+        <references refid="classcam_1_1cam__chunk_1_1camPathChunk_1a087dc7badc2dd49f26bc24d2cc3aafcd" compoundref="cam__chunk_8py" startline="145" endline="147">cam.cam_chunk.camPathChunk.count</references>
+        <references refid="classcam_1_1voronoi_1_1PriorityQueue_1a551e508cdcddaa53975c71b2de64eab2" compoundref="voronoi_8py" startline="788">cam.voronoi.PriorityQueue.count</references>
+        <references refid="classcam_1_1voronoi_1_1PriorityQueue_1af2c2effb4a6e93615875f33a137b7511" compoundref="voronoi_8py" startline="821" endline="830">cam.voronoi.PriorityQueue.getBucket</references>
+        <references refid="classcam_1_1voronoi_1_1EdgeList_1a7b8c8191dfcce1f2492e236f4c12c43c" compoundref="voronoi_8py" startline="711">cam.voronoi.EdgeList.hash</references>
+        <references refid="classcam_1_1voronoi_1_1PriorityQueue_1a90a56d343f473dda5671383a70970207" compoundref="voronoi_8py" startline="790">cam.voronoi.PriorityQueue.hash</references>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1voronoi_1_1PriorityQueue_1af6527c4d041251aea54fd2d17a4a771c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.voronoi.PriorityQueue.delete</definition>
+        <argsstring>(self, he)</argsstring>
+        <name>delete</name>
+        <qualifiedname>cam.voronoi.PriorityQueue.delete</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>he</type>
+          <defname>he</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="812" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="812" bodyend="820"/>
+        <references refid="classcam_1_1cam__chunk_1_1camPathChunk_1a087dc7badc2dd49f26bc24d2cc3aafcd" compoundref="cam__chunk_8py" startline="145" endline="147">cam.cam_chunk.camPathChunk.count</references>
+        <references refid="classcam_1_1voronoi_1_1PriorityQueue_1a551e508cdcddaa53975c71b2de64eab2" compoundref="voronoi_8py" startline="788">cam.voronoi.PriorityQueue.count</references>
+        <references refid="classcam_1_1voronoi_1_1PriorityQueue_1af2c2effb4a6e93615875f33a137b7511" compoundref="voronoi_8py" startline="821" endline="830">cam.voronoi.PriorityQueue.getBucket</references>
+        <references refid="classcam_1_1voronoi_1_1EdgeList_1a7b8c8191dfcce1f2492e236f4c12c43c" compoundref="voronoi_8py" startline="711">cam.voronoi.EdgeList.hash</references>
+        <references refid="classcam_1_1voronoi_1_1PriorityQueue_1a90a56d343f473dda5671383a70970207" compoundref="voronoi_8py" startline="790">cam.voronoi.PriorityQueue.hash</references>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1voronoi_1_1PriorityQueue_1af2c2effb4a6e93615875f33a137b7511" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.voronoi.PriorityQueue.getBucket</definition>
+        <argsstring>(self, he)</argsstring>
+        <name>getBucket</name>
+        <qualifiedname>cam.voronoi.PriorityQueue.getBucket</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>he</type>
+          <defname>he</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="821" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="821" bodyend="830"/>
+        <references refid="classcam_1_1voronoi_1_1PriorityQueue_1a24048414dfc405085ef407756b8b6fd8" compoundref="voronoi_8py" startline="786">cam.voronoi.PriorityQueue.deltay</references>
+        <references refid="classcam_1_1voronoi_1_1EdgeList_1a34f2f20a085239606f72aa115afbb1cf" compoundref="voronoi_8py" startline="707">cam.voronoi.EdgeList.hashsize</references>
+        <references refid="classcam_1_1voronoi_1_1PriorityQueue_1a51ded7053f3c5f2ee7de7f2b96bb20d1" compoundref="voronoi_8py" startline="787">cam.voronoi.PriorityQueue.hashsize</references>
+        <references refid="classcam_1_1voronoi_1_1PriorityQueue_1ace00680989b596205f4d728e0d5642ba" compoundref="voronoi_8py" startline="789">cam.voronoi.PriorityQueue.minidx</references>
+        <references refid="classcam_1_1voronoi_1_1PriorityQueue_1a3e1343b610d2bbbd6a7a383a290132ef" compoundref="voronoi_8py" startline="785">cam.voronoi.PriorityQueue.ymin</references>
+        <references refid="classcam_1_1voronoi_1_1SiteList_1a7b927b44fd7c545e888183ec43045cfa" compoundref="voronoi_8py" startline="907">cam.voronoi.SiteList.ymin</references>
+        <referencedby refid="classcam_1_1voronoi_1_1PriorityQueue_1af6527c4d041251aea54fd2d17a4a771c" compoundref="voronoi_8py" startline="812" endline="820">cam.voronoi.PriorityQueue.delete</referencedby>
+        <referencedby refid="classcam_1_1voronoi_1_1PriorityQueue_1a857ebc5af54336e935d69fd5568382ea" compoundref="voronoi_8py" startline="800" endline="811">cam.voronoi.PriorityQueue.insert</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1voronoi_1_1PriorityQueue_1ac9eae4ab1d0eaa605475dd74e585d497" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.voronoi.PriorityQueue.getMinPt</definition>
+        <argsstring>(self)</argsstring>
+        <name>getMinPt</name>
+        <qualifiedname>cam.voronoi.PriorityQueue.getMinPt</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="831" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="831" bodyend="838"/>
+        <references refid="classcam_1_1voronoi_1_1EdgeList_1a7b8c8191dfcce1f2492e236f4c12c43c" compoundref="voronoi_8py" startline="711">cam.voronoi.EdgeList.hash</references>
+        <references refid="classcam_1_1voronoi_1_1PriorityQueue_1a90a56d343f473dda5671383a70970207" compoundref="voronoi_8py" startline="790">cam.voronoi.PriorityQueue.hash</references>
+        <references refid="classcam_1_1voronoi_1_1PriorityQueue_1ace00680989b596205f4d728e0d5642ba" compoundref="voronoi_8py" startline="789">cam.voronoi.PriorityQueue.minidx</references>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1voronoi_1_1PriorityQueue_1ae9633dad8a8489cd449ecfc313971165" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.voronoi.PriorityQueue.popMinHalfedge</definition>
+        <argsstring>(self)</argsstring>
+        <name>popMinHalfedge</name>
+        <qualifiedname>cam.voronoi.PriorityQueue.popMinHalfedge</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="839" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="839" bodyend="846"/>
+        <references refid="classcam_1_1cam__chunk_1_1camPathChunk_1a087dc7badc2dd49f26bc24d2cc3aafcd" compoundref="cam__chunk_8py" startline="145" endline="147">cam.cam_chunk.camPathChunk.count</references>
+        <references refid="classcam_1_1voronoi_1_1PriorityQueue_1a551e508cdcddaa53975c71b2de64eab2" compoundref="voronoi_8py" startline="788">cam.voronoi.PriorityQueue.count</references>
+        <references refid="classcam_1_1voronoi_1_1EdgeList_1a7b8c8191dfcce1f2492e236f4c12c43c" compoundref="voronoi_8py" startline="711">cam.voronoi.EdgeList.hash</references>
+        <references refid="classcam_1_1voronoi_1_1PriorityQueue_1a90a56d343f473dda5671383a70970207" compoundref="voronoi_8py" startline="790">cam.voronoi.PriorityQueue.hash</references>
+        <references refid="classcam_1_1voronoi_1_1PriorityQueue_1ace00680989b596205f4d728e0d5642ba" compoundref="voronoi_8py" startline="789">cam.voronoi.PriorityQueue.minidx</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>cam.voronoi.PriorityQueue</label>
+        <link refid="classcam_1_1voronoi_1_1PriorityQueue"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>object</label>
+        <link refid="classobject"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>cam.voronoi.PriorityQueue</label>
+        <link refid="classcam_1_1voronoi_1_1PriorityQueue"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>object</label>
+        <link refid="classobject"/>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="783" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="783" bodyend="846"/>
+    <listofallmembers>
+      <member refid="classcam_1_1voronoi_1_1PriorityQueue_1a400b68c79b53a33d02cfb16998716bed" prot="public" virt="non-virtual"><scope>cam::voronoi::PriorityQueue</scope><name>__init__</name></member>
+      <member refid="classcam_1_1voronoi_1_1PriorityQueue_1a463ff2f03e47c5ec46cc37213ca84365" prot="public" virt="non-virtual"><scope>cam::voronoi::PriorityQueue</scope><name>__len__</name></member>
+      <member refid="classcam_1_1voronoi_1_1PriorityQueue_1a551e508cdcddaa53975c71b2de64eab2" prot="public" virt="non-virtual"><scope>cam::voronoi::PriorityQueue</scope><name>count</name></member>
+      <member refid="classcam_1_1voronoi_1_1PriorityQueue_1af6527c4d041251aea54fd2d17a4a771c" prot="public" virt="non-virtual"><scope>cam::voronoi::PriorityQueue</scope><name>delete</name></member>
+      <member refid="classcam_1_1voronoi_1_1PriorityQueue_1a24048414dfc405085ef407756b8b6fd8" prot="public" virt="non-virtual"><scope>cam::voronoi::PriorityQueue</scope><name>deltay</name></member>
+      <member refid="classcam_1_1voronoi_1_1PriorityQueue_1af2c2effb4a6e93615875f33a137b7511" prot="public" virt="non-virtual"><scope>cam::voronoi::PriorityQueue</scope><name>getBucket</name></member>
+      <member refid="classcam_1_1voronoi_1_1PriorityQueue_1ac9eae4ab1d0eaa605475dd74e585d497" prot="public" virt="non-virtual"><scope>cam::voronoi::PriorityQueue</scope><name>getMinPt</name></member>
+      <member refid="classcam_1_1voronoi_1_1PriorityQueue_1a90a56d343f473dda5671383a70970207" prot="public" virt="non-virtual"><scope>cam::voronoi::PriorityQueue</scope><name>hash</name></member>
+      <member refid="classcam_1_1voronoi_1_1PriorityQueue_1a51ded7053f3c5f2ee7de7f2b96bb20d1" prot="public" virt="non-virtual"><scope>cam::voronoi::PriorityQueue</scope><name>hashsize</name></member>
+      <member refid="classcam_1_1voronoi_1_1PriorityQueue_1a857ebc5af54336e935d69fd5568382ea" prot="public" virt="non-virtual"><scope>cam::voronoi::PriorityQueue</scope><name>insert</name></member>
+      <member refid="classcam_1_1voronoi_1_1PriorityQueue_1a8c055e209bd650be554efbf1bf89e8d7" prot="public" virt="non-virtual"><scope>cam::voronoi::PriorityQueue</scope><name>isEmpty</name></member>
+      <member refid="classcam_1_1voronoi_1_1PriorityQueue_1ace00680989b596205f4d728e0d5642ba" prot="public" virt="non-virtual"><scope>cam::voronoi::PriorityQueue</scope><name>minidx</name></member>
+      <member refid="classcam_1_1voronoi_1_1PriorityQueue_1ae9633dad8a8489cd449ecfc313971165" prot="public" virt="non-virtual"><scope>cam::voronoi::PriorityQueue</scope><name>popMinHalfedge</name></member>
+      <member refid="classcam_1_1voronoi_1_1PriorityQueue_1a3e1343b610d2bbbd6a7a383a290132ef" prot="public" virt="non-virtual"><scope>cam::voronoi::PriorityQueue</scope><name>ymin</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1ops_1_1CamOrientationAdd" kind="class" language="Python" prot="public">
+    <compoundname>cam::ops::CamOrientationAdd</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Operator</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1ops_1_1CamOrientationAdd_1a1ef5594af40acf1735d05c933a7d67d3" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.ops.CamOrientationAdd::bl_idname</definition>
+        <argsstring></argsstring>
+        <name>bl_idname</name>
+        <qualifiedname>cam.ops.CamOrientationAdd.bl_idname</qualifiedname>
+        <initializer>=  &quot;scene.cam_orientation_add&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="769" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="769" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ops_1_1CamOrientationAdd_1a0e0334993ca906271d4035b4ba09a8c8" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.ops.CamOrientationAdd::bl_label</definition>
+        <argsstring></argsstring>
+        <name>bl_label</name>
+        <qualifiedname>cam.ops.CamOrientationAdd.bl_label</qualifiedname>
+        <initializer>=  &quot;Add Orientation&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="770" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="770" bodyend="-1"/>
+        <referencedby refid="classcam_1_1preset__managers_1_1CAM__MACHINE__MT__presets_1af95f7812d2952b26a26809ab923dac09" compoundref="preset__managers_8py" startline="28" endline="38">cam.preset_managers.CAM_MACHINE_MT_presets.post_cb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ops_1_1CamOrientationAdd_1ad8d29bc013d78c278b9e2c7a3d7d3fad" prot="public" static="yes" mutable="no">
+        <type>dict</type>
+        <definition>dict cam.ops.CamOrientationAdd::bl_options</definition>
+        <argsstring></argsstring>
+        <name>bl_options</name>
+        <qualifiedname>cam.ops.CamOrientationAdd.bl_options</qualifiedname>
+        <initializer>=  {&apos;REGISTER&apos;, &apos;UNDO&apos;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="771" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="771" bodyend="-1"/>
+        <referencedby refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a9628cbca8e69ec75b2337171a02bf428" compoundref="async__op_8py" startline="32" endline="59">cam.async_op.AsyncOperatorMixin.modal</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcam_1_1ops_1_1CamOrientationAdd_1a87fab7803eadf6f6c9a8ea75c98a7bb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.ops.CamOrientationAdd.poll</definition>
+        <argsstring>(cls, context)</argsstring>
+        <name>poll</name>
+        <qualifiedname>cam.ops.CamOrientationAdd.poll</qualifiedname>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="774" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="774" bodyend="776"/>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1ops_1_1CamOrientationAdd_1a686339676536748eda4a29d289fbd596" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.ops.CamOrientationAdd.execute</definition>
+        <argsstring>(self, context)</argsstring>
+        <name>execute</name>
+        <qualifiedname>cam.ops.CamOrientationAdd.execute</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="777" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="777" bodyend="793"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Add Orientation to CAM Operation, for Multiaxis Operations</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.ops.CamOrientationAdd</label>
+        <link refid="classcam_1_1ops_1_1CamOrientationAdd"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.ops.CamOrientationAdd</label>
+        <link refid="classcam_1_1ops_1_1CamOrientationAdd"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+bl_idname</edgelabel>
+          <edgelabel>+bl_label</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+bl_options</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dict</label>
+      </node>
+      <node id="3">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="767" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="767" bodyend="793"/>
+    <listofallmembers>
+      <member refid="classcam_1_1ops_1_1CamOrientationAdd_1a1ef5594af40acf1735d05c933a7d67d3" prot="public" virt="non-virtual"><scope>cam::ops::CamOrientationAdd</scope><name>bl_idname</name></member>
+      <member refid="classcam_1_1ops_1_1CamOrientationAdd_1a0e0334993ca906271d4035b4ba09a8c8" prot="public" virt="non-virtual"><scope>cam::ops::CamOrientationAdd</scope><name>bl_label</name></member>
+      <member refid="classcam_1_1ops_1_1CamOrientationAdd_1ad8d29bc013d78c278b9e2c7a3d7d3fad" prot="public" virt="non-virtual"><scope>cam::ops::CamOrientationAdd</scope><name>bl_options</name></member>
+      <member refid="classcam_1_1ops_1_1CamOrientationAdd_1a686339676536748eda4a29d289fbd596" prot="public" virt="non-virtual"><scope>cam::ops::CamOrientationAdd</scope><name>execute</name></member>
+      <member refid="classcam_1_1ops_1_1CamOrientationAdd_1a87fab7803eadf6f6c9a8ea75c98a7bb9" prot="public" virt="non-virtual"><scope>cam::ops::CamOrientationAdd</scope><name>poll</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

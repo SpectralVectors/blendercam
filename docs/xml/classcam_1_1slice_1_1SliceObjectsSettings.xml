@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1slice_1_1SliceObjectsSettings" kind="class" language="Python" prot="public">
+    <compoundname>cam::slice::SliceObjectsSettings</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PropertyGroup</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1slice_1_1SliceObjectsSettings_1abcf16c5a49f27e0b4eafff441f46b0f8" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.slice.SliceObjectsSettings::slice_distance</definition>
+        <argsstring></argsstring>
+        <name>slice_distance</name>
+        <qualifiedname>cam.slice.SliceObjectsSettings.slice_distance</qualifiedname>
+        <initializer>(
+        name=&quot;Slicing Distance&quot;,
+        description=&quot;Slices distance in z, should be most often &quot;
+        &quot;thickness of plywood sheet.&quot;,
+        min=0.001,
+        max=10,
+        default=0.005,
+        precision=<ref refid="namespacecam_1_1constants_1a76605b94e98c701ed2586b9e35e6c6e1" kindref="member">constants.PRECISION</ref>,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/slice.py" line="128" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/slice.py" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1slice_1_1SliceObjectsSettings_1a94308cf2947682ae8597c46238161a96" prot="public" static="yes" mutable="no">
+        <type>BoolProperty</type>
+        <definition>BoolProperty cam.slice.SliceObjectsSettings::slice_above0</definition>
+        <argsstring></argsstring>
+        <name>slice_above0</name>
+        <qualifiedname>cam.slice.SliceObjectsSettings.slice_above0</qualifiedname>
+        <initializer>(
+        name=&quot;Slice Above 0&quot;,
+        description=&quot;only slice model above 0&quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/slice.py" line="138" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/slice.py" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1slice_1_1SliceObjectsSettings_1a7b16b35ecd7ff1db6656ca69a699af08" prot="public" static="yes" mutable="no">
+        <type>BoolProperty</type>
+        <definition>BoolProperty cam.slice.SliceObjectsSettings::slice_3d</definition>
+        <argsstring></argsstring>
+        <name>slice_3d</name>
+        <qualifiedname>cam.slice.SliceObjectsSettings.slice_3d</qualifiedname>
+        <initializer>(
+        name=&quot;3D Slice&quot;,
+        description=&quot;For 3D carving&quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/slice.py" line="143" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/slice.py" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1slice_1_1SliceObjectsSettings_1add424eb935f93e8a60cdabdd03b27ead" prot="public" static="yes" mutable="no">
+        <type>BoolProperty</type>
+        <definition>BoolProperty cam.slice.SliceObjectsSettings::indexes</definition>
+        <argsstring></argsstring>
+        <name>indexes</name>
+        <qualifiedname>cam.slice.SliceObjectsSettings.indexes</qualifiedname>
+        <initializer>(
+        name=&quot;Add Indexes&quot;,
+        description=&quot;Adds index text of layer + index&quot;,
+        default=True,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/slice.py" line="148" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/slice.py" bodystart="148" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Stores All Data for Machines</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PropertyGroup</label>
+      </node>
+      <node id="1">
+        <label>cam.slice.SliceObjectsSettings</label>
+        <link refid="classcam_1_1slice_1_1SliceObjectsSettings"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>BoolProperty</label>
+      </node>
+      <node id="3">
+        <label>FloatProperty</label>
+      </node>
+      <node id="2">
+        <label>PropertyGroup</label>
+      </node>
+      <node id="1">
+        <label>cam.slice.SliceObjectsSettings</label>
+        <link refid="classcam_1_1slice_1_1SliceObjectsSettings"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+slice_distance</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+indexes</edgelabel>
+          <edgelabel>+slice_3d</edgelabel>
+          <edgelabel>+slice_above0</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/slice.py" line="125" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/slice.py" bodystart="125" bodyend="153"/>
+    <listofallmembers>
+      <member refid="classcam_1_1slice_1_1SliceObjectsSettings_1add424eb935f93e8a60cdabdd03b27ead" prot="public" virt="non-virtual"><scope>cam::slice::SliceObjectsSettings</scope><name>indexes</name></member>
+      <member refid="classcam_1_1slice_1_1SliceObjectsSettings_1a7b16b35ecd7ff1db6656ca69a699af08" prot="public" virt="non-virtual"><scope>cam::slice::SliceObjectsSettings</scope><name>slice_3d</name></member>
+      <member refid="classcam_1_1slice_1_1SliceObjectsSettings_1a94308cf2947682ae8597c46238161a96" prot="public" virt="non-virtual"><scope>cam::slice::SliceObjectsSettings</scope><name>slice_above0</name></member>
+      <member refid="classcam_1_1slice_1_1SliceObjectsSettings_1abcf16c5a49f27e0b4eafff441f46b0f8" prot="public" virt="non-virtual"><scope>cam::slice::SliceObjectsSettings</scope><name>slice_distance</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

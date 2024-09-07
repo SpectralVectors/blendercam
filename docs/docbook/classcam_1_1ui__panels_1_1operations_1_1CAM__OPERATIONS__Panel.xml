@@ -1,0 +1,270 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel" xml:lang="en-US">
+<title>cam.ui_panels.operations.CAM_OPERATIONS_Panel Class Reference</title>
+<indexterm><primary>cam.ui_panels.operations.CAM_OPERATIONS_Panel</primary></indexterm>
+Inheritance diagram for cam.ui_panels.operations.CAM_OPERATIONS_Panel:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.ui_panels.operations.CAM_OPERATIONS_Panel:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1a287d68a923d175bcee8d13d15b3e1031">draw_operations_list</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1a7dbb1ead4c39635eba23522b3a5e8575">draw_presets</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1a2cac88fc51b14921044bd982fae2203a">draw_calculate_path</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1a9d51da20ff311e42969e40b8823865dc">draw_export_gcode</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1a9629ea6686782f916b4d617ad6121e10">draw_simulate_op</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1ac335eea98d3c9cc7d06776f44a985a8e">draw_op_name</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1a90da0199f0b862e5fa58def12d862cfc">draw_op_filename</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1acc295337cbf9377edb78df8b6f993942">draw_operation_source</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1a484165d99d98941584e7298ba24cfb71">draw</link> (self, <link linkend="_classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1a0b6245dcfcc11980601bf16f2a029ebc">context</link>)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel">cam.ui_panels.buttons_panel.CAMButtonsPanel</link>        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a03843f1fecc691952b696f4bc75a0156">poll</link> (cls, context)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1ae2df719a61472a3f8674e26fe501b1f7">active_operation_index</link> (cls)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a9fe8584ab332e9830dfa800ee4582575">active_operation</link> (cls)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1acbcf6bed1c104021565fc4a486d1101a">__init__</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1aae624325882f33dd8820cdf27df16e4e">operations_count</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a3e5e2105cb372d0ad7ee959fa38e10e2">has_operations</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a41c101f031fc5ecdb0097889cf452de0">has_correct_level</link> (self)</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1a8b67e774fc89bed49e8023bbd31bb0a3">op</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1a0b6245dcfcc11980601bf16f2a029ebc">context</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Attributes inherited from <link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel">cam.ui_panels.buttons_panel.CAMButtonsPanel</link>        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a62a27293a2c27a52a2f779e92312c9b6">op</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a3991296d0c3a293ee962391d01387868">use_experimental</link></para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1a944c9dedfdfd0fd85460bfc5b02f5401">bl_label</link> = &quot;CAM Operations&quot;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1ab995f56436659c20c3b8cb8ec5ec9bb3">bl_idname</link> = &quot;WORLD_PT_CAM_OPERATIONS&quot;</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1a7fa63b12d1265b69aba57124e34b35c6">always_show_panel</link> = True</para>
+</listitem>
+            <listitem><para>int <link linkend="_classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1abd383c0dd05859d2b8b9440c593596ad">panel_interface_level</link> = 0</para>
+</listitem>
+            <listitem><para>dict <link linkend="_classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1ad809e89a1859824fddea4df1ce0d0f01">prop_level</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Static Public Attributes inherited from <link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel">cam.ui_panels.buttons_panel.CAMButtonsPanel</link>        <itemizedlist>
+            <listitem><para>str <link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a875a6b4e703be8c259b1d750426c76ad">bl_space_type</link> = &apos;PROPERTIES&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a9763fc8e0e8a24f2f6f4ab050829c6a2">bl_region_type</link> = &apos;WINDOW&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a5da786aaf2c38c096f23a7f504866537">bl_context</link> = &quot;render&quot;</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a7c1ca8db6e75af2657e5658f7e3d7219">always_show_panel</link> = False</para>
+</listitem>
+            <listitem><para>dict <link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a0864a41721ef5200ecbbf340a1f7d678">COMPAT_ENGINES</link> = {&apos;CNCCAM_RENDER&apos;}</para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>CAM Operations Panel</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1a484165d99d98941584e7298ba24cfb71"/><section>
+    <title>draw()</title>
+<indexterm><primary>draw</primary><secondary>cam.ui_panels.operations.CAM_OPERATIONS_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.operations.CAM_OPERATIONS_Panel</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.operations.CAM_OPERATIONS_Panel.draw ( self,  context)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1a2cac88fc51b14921044bd982fae2203a"/><section>
+    <title>draw_calculate_path()</title>
+<indexterm><primary>draw_calculate_path</primary><secondary>cam.ui_panels.operations.CAM_OPERATIONS_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.operations.CAM_OPERATIONS_Panel</primary><secondary>draw_calculate_path</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.operations.CAM_OPERATIONS_Panel.draw_calculate_path ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_a2cac88fc51b14921044bd982fae2203a_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1a9d51da20ff311e42969e40b8823865dc"/><section>
+    <title>draw_export_gcode()</title>
+<indexterm><primary>draw_export_gcode</primary><secondary>cam.ui_panels.operations.CAM_OPERATIONS_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.operations.CAM_OPERATIONS_Panel</primary><secondary>draw_export_gcode</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.operations.CAM_OPERATIONS_Panel.draw_export_gcode ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_a9d51da20ff311e42969e40b8823865dc_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1a90da0199f0b862e5fa58def12d862cfc"/><section>
+    <title>draw_op_filename()</title>
+<indexterm><primary>draw_op_filename</primary><secondary>cam.ui_panels.operations.CAM_OPERATIONS_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.operations.CAM_OPERATIONS_Panel</primary><secondary>draw_op_filename</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.operations.CAM_OPERATIONS_Panel.draw_op_filename ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_a90da0199f0b862e5fa58def12d862cfc_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1ac335eea98d3c9cc7d06776f44a985a8e"/><section>
+    <title>draw_op_name()</title>
+<indexterm><primary>draw_op_name</primary><secondary>cam.ui_panels.operations.CAM_OPERATIONS_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.operations.CAM_OPERATIONS_Panel</primary><secondary>draw_op_name</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.operations.CAM_OPERATIONS_Panel.draw_op_name ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_ac335eea98d3c9cc7d06776f44a985a8e_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1acc295337cbf9377edb78df8b6f993942"/><section>
+    <title>draw_operation_source()</title>
+<indexterm><primary>draw_operation_source</primary><secondary>cam.ui_panels.operations.CAM_OPERATIONS_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.operations.CAM_OPERATIONS_Panel</primary><secondary>draw_operation_source</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.operations.CAM_OPERATIONS_Panel.draw_operation_source ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_acc295337cbf9377edb78df8b6f993942_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1a287d68a923d175bcee8d13d15b3e1031"/><section>
+    <title>draw_operations_list()</title>
+<indexterm><primary>draw_operations_list</primary><secondary>cam.ui_panels.operations.CAM_OPERATIONS_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.operations.CAM_OPERATIONS_Panel</primary><secondary>draw_operations_list</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.operations.CAM_OPERATIONS_Panel.draw_operations_list ( self)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1a7dbb1ead4c39635eba23522b3a5e8575"/><section>
+    <title>draw_presets()</title>
+<indexterm><primary>draw_presets</primary><secondary>cam.ui_panels.operations.CAM_OPERATIONS_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.operations.CAM_OPERATIONS_Panel</primary><secondary>draw_presets</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.operations.CAM_OPERATIONS_Panel.draw_presets ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_a7dbb1ead4c39635eba23522b3a5e8575_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1a9629ea6686782f916b4d617ad6121e10"/><section>
+    <title>draw_simulate_op()</title>
+<indexterm><primary>draw_simulate_op</primary><secondary>cam.ui_panels.operations.CAM_OPERATIONS_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.operations.CAM_OPERATIONS_Panel</primary><secondary>draw_simulate_op</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.operations.CAM_OPERATIONS_Panel.draw_simulate_op ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_a9629ea6686782f916b4d617ad6121e10_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1a7fa63b12d1265b69aba57124e34b35c6"/><section>
+    <title>always_show_panel</title>
+<indexterm><primary>always_show_panel</primary><secondary>cam.ui_panels.operations.CAM_OPERATIONS_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.operations.CAM_OPERATIONS_Panel</primary><secondary>always_show_panel</secondary></indexterm>
+<para><computeroutput>bool cam.ui_panels.operations.CAM_OPERATIONS_Panel.always_show_panel = True<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1ab995f56436659c20c3b8cb8ec5ec9bb3"/><section>
+    <title>bl_idname</title>
+<indexterm><primary>bl_idname</primary><secondary>cam.ui_panels.operations.CAM_OPERATIONS_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.operations.CAM_OPERATIONS_Panel</primary><secondary>bl_idname</secondary></indexterm>
+<para><computeroutput>str cam.ui_panels.operations.CAM_OPERATIONS_Panel.bl_idname = &quot;WORLD_PT_CAM_OPERATIONS&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1a944c9dedfdfd0fd85460bfc5b02f5401"/><section>
+    <title>bl_label</title>
+<indexterm><primary>bl_label</primary><secondary>cam.ui_panels.operations.CAM_OPERATIONS_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.operations.CAM_OPERATIONS_Panel</primary><secondary>bl_label</secondary></indexterm>
+<para><computeroutput>str cam.ui_panels.operations.CAM_OPERATIONS_Panel.bl_label = &quot;CAM Operations&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1a0b6245dcfcc11980601bf16f2a029ebc"/><section>
+    <title>context</title>
+<indexterm><primary>context</primary><secondary>cam.ui_panels.operations.CAM_OPERATIONS_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.operations.CAM_OPERATIONS_Panel</primary><secondary>context</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.operations.CAM_OPERATIONS_Panel.context</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1a8b67e774fc89bed49e8023bbd31bb0a3"/><section>
+    <title>op</title>
+<indexterm><primary>op</primary><secondary>cam.ui_panels.operations.CAM_OPERATIONS_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.operations.CAM_OPERATIONS_Panel</primary><secondary>op</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.operations.CAM_OPERATIONS_Panel.op</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1abd383c0dd05859d2b8b9440c593596ad"/><section>
+    <title>panel_interface_level</title>
+<indexterm><primary>panel_interface_level</primary><secondary>cam.ui_panels.operations.CAM_OPERATIONS_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.operations.CAM_OPERATIONS_Panel</primary><secondary>panel_interface_level</secondary></indexterm>
+<para><computeroutput>int cam.ui_panels.operations.CAM_OPERATIONS_Panel.panel_interface_level = 0<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1ad809e89a1859824fddea4df1ce0d0f01"/><section>
+    <title>prop_level</title>
+<indexterm><primary>prop_level</primary><secondary>cam.ui_panels.operations.CAM_OPERATIONS_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.operations.CAM_OPERATIONS_Panel</primary><secondary>prop_level</secondary></indexterm>
+<para><computeroutput>dict cam.ui_panels.operations.CAM_OPERATIONS_Panel.prop_level<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">=&#32;&#32;{
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;draw_presets&apos;</emphasis>:&#32;1,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;draw_operations_list&apos;</emphasis>:&#32;0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;draw_calculate_path&apos;</emphasis>:&#32;0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;draw_export_gcode&apos;</emphasis>:&#32;1,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;draw_simulate_op&apos;</emphasis>:&#32;1,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;draw_op_name&apos;</emphasis>:&#32;1,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;draw_op_filename&apos;</emphasis>:&#32;0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;draw_operation_source&apos;</emphasis>:&#32;0
+&#32;&#32;&#32;&#32;}
+</programlisting></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/<link linkend="_operations_8py">operations.py</link></section>
+</section>

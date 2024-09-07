@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1curvecamtools_1_1CamMeshGetPockets" xml:lang="en-US">
+<title>cam.curvecamtools.CamMeshGetPockets Class Reference</title>
+<indexterm><primary>cam.curvecamtools.CamMeshGetPockets</primary></indexterm>
+Inheritance diagram for cam.curvecamtools.CamMeshGetPockets:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1curvecamtools_1_1CamMeshGetPockets__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.curvecamtools.CamMeshGetPockets:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1curvecamtools_1_1CamMeshGetPockets__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1curvecamtools_1_1CamMeshGetPockets_1a9d2469cf995c44b31fc2d7a9ca7c4548">poll</link> (cls, context)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1curvecamtools_1_1CamMeshGetPockets_1a6613ee7727b9dba2771a2d886f292773">execute</link> (self, context)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classcam_1_1curvecamtools_1_1CamMeshGetPockets_1aa8fc16136848555299a968e80870f779">bl_idname</link> = &quot;object.mesh_get_pockets&quot;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1curvecamtools_1_1CamMeshGetPockets_1ad5b313a9b59785485c4cfa8f4014f6d0">bl_label</link> = &quot;Get Pocket Surfaces&quot;</para>
+</listitem>
+            <listitem><para>dict <link linkend="_classcam_1_1curvecamtools_1_1CamMeshGetPockets_1ab148aa646758c40ef7f972516ab5d79d">bl_options</link> = {&apos;REGISTER&apos;, &apos;UNDO&apos;}</para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamtools_1_1CamMeshGetPockets_1a4a40779705bfd2516dfb5e384a3e2b33">threshold</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamtools_1_1CamMeshGetPockets_1a07463005354075681056ea9477e6a943">zlimit</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Detect Pockets in a Mesh and Extract Them as Curves</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamMeshGetPockets_1a6613ee7727b9dba2771a2d886f292773"/><section>
+    <title>execute()</title>
+<indexterm><primary>execute</primary><secondary>cam.curvecamtools.CamMeshGetPockets</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamMeshGetPockets</primary><secondary>execute</secondary></indexterm>
+<para><computeroutput>cam.curvecamtools.CamMeshGetPockets.execute ( self,  context)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamMeshGetPockets_1a9d2469cf995c44b31fc2d7a9ca7c4548"/><section>
+    <title>poll()</title>
+<indexterm><primary>poll</primary><secondary>cam.curvecamtools.CamMeshGetPockets</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamMeshGetPockets</primary><secondary>poll</secondary></indexterm>
+<para><computeroutput>cam.curvecamtools.CamMeshGetPockets.poll ( cls,  context)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamMeshGetPockets_1aa8fc16136848555299a968e80870f779"/><section>
+    <title>bl_idname</title>
+<indexterm><primary>bl_idname</primary><secondary>cam.curvecamtools.CamMeshGetPockets</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamMeshGetPockets</primary><secondary>bl_idname</secondary></indexterm>
+<para><computeroutput>str cam.curvecamtools.CamMeshGetPockets.bl_idname = &quot;object.mesh_get_pockets&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamMeshGetPockets_1ad5b313a9b59785485c4cfa8f4014f6d0"/><section>
+    <title>bl_label</title>
+<indexterm><primary>bl_label</primary><secondary>cam.curvecamtools.CamMeshGetPockets</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamMeshGetPockets</primary><secondary>bl_label</secondary></indexterm>
+<para><computeroutput>str cam.curvecamtools.CamMeshGetPockets.bl_label = &quot;Get Pocket Surfaces&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamMeshGetPockets_1ab148aa646758c40ef7f972516ab5d79d"/><section>
+    <title>bl_options</title>
+<indexterm><primary>bl_options</primary><secondary>cam.curvecamtools.CamMeshGetPockets</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamMeshGetPockets</primary><secondary>bl_options</secondary></indexterm>
+<para><computeroutput>dict cam.curvecamtools.CamMeshGetPockets.bl_options = {&apos;REGISTER&apos;, &apos;UNDO&apos;}<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamMeshGetPockets_1a4a40779705bfd2516dfb5e384a3e2b33"/><section>
+    <title>threshold</title>
+<indexterm><primary>threshold</primary><secondary>cam.curvecamtools.CamMeshGetPockets</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamMeshGetPockets</primary><secondary>threshold</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamtools.CamMeshGetPockets.threshold<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Horizontal&#32;Threshold&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;How&#32;horizontal&#32;the&#32;surface&#32;must&#32;be&#32;for&#32;a&#32;pocket:&#32;&quot;</emphasis>
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;1.0&#32;perfectly&#32;flat,&#32;0.0&#32;is&#32;any&#32;orientation&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=.99,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=1.0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=4,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamMeshGetPockets_1a07463005354075681056ea9477e6a943"/><section>
+    <title>zlimit</title>
+<indexterm><primary>zlimit</primary><secondary>cam.curvecamtools.CamMeshGetPockets</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamMeshGetPockets</primary><secondary>zlimit</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamtools.CamMeshGetPockets.zlimit<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Z&#32;Limit&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;Maximum&#32;z&#32;height&#32;considered&#32;for&#32;pocket&#32;operation,&#32;&quot;</emphasis>
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;default&#32;is&#32;0.0&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=-1000.0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=1000.0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=4,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&apos;LENGTH&apos;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/<link linkend="_curvecamtools_8py">curvecamtools.py</link></section>
+</section>

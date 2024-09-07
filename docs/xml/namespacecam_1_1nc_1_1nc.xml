@@ -1,0 +1,2417 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacecam_1_1nc_1_1nc" kind="namespace" language="Python">
+    <compoundname>cam::nc::nc</compoundname>
+    <innerclass refid="classcam_1_1nc_1_1nc_1_1Creator" prot="public">cam::nc::nc::Creator</innerclass>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacecam_1_1nc_1_1nc_1abd30b2c5b3de780c384ee7804ff938cf" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cam::nc::nc.ncOFF</definition>
+        <argsstring></argsstring>
+        <name>ncOFF</name>
+        <qualifiedname>cam.nc.nc.ncOFF</qualifiedname>
+        <initializer>=  0</initializer>
+        <briefdescription>
+<para><ref refid="nc_8py" kindref="compound">nc.py</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Base class for NC code creation And global functions for calling current creator</para>
+<para>Hirutso Enni, 2009-01-13 altered by Dan Falck 2010-08-04 added tap() arguments Michael Haberler 2010-10-07 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="12" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecam_1_1nc_1_1nc_1a95dcecaea1bad8e7a63a0280a02dde35" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cam::nc::nc.ncLEFT</definition>
+        <argsstring></argsstring>
+        <name>ncLEFT</name>
+        <qualifiedname>cam.nc.nc.ncLEFT</qualifiedname>
+        <initializer>=  -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="14" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecam_1_1nc_1_1nc_1abc22b36804e0487675c685a0bf18abc7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cam::nc::nc.ncRIGHT</definition>
+        <argsstring></argsstring>
+        <name>ncRIGHT</name>
+        <qualifiedname>cam.nc.nc.ncRIGHT</qualifiedname>
+        <initializer>=  +1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="15" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecam_1_1nc_1_1nc_1a4ebb84a6c868f8b01604495383df3f5f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cam::nc::nc.ncCW</definition>
+        <argsstring></argsstring>
+        <name>ncCW</name>
+        <qualifiedname>cam.nc.nc.ncCW</qualifiedname>
+        <initializer>=  -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="17" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecam_1_1nc_1_1nc_1a75d08e435350169027a100d76d537557" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cam::nc::nc.ncCCW</definition>
+        <argsstring></argsstring>
+        <name>ncCCW</name>
+        <qualifiedname>cam.nc.nc.ncCCW</qualifiedname>
+        <initializer>=  +1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="18" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecam_1_1nc_1_1nc_1aaf818838b2d8d41f10b40cd5c7d755dd" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cam::nc::nc.ncMIST</definition>
+        <argsstring></argsstring>
+        <name>ncMIST</name>
+        <qualifiedname>cam.nc.nc.ncMIST</qualifiedname>
+        <initializer>=  1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="20" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecam_1_1nc_1_1nc_1afce7ab21c08404ef1adc338867f17531" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cam::nc::nc.ncFLOOD</definition>
+        <argsstring></argsstring>
+        <name>ncFLOOD</name>
+        <qualifiedname>cam.nc.nc.ncFLOOD</qualifiedname>
+        <initializer>=  2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="21" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecam_1_1nc_1_1nc_1a983609d1bb7f24d5016a63113024a0cf" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam::nc::nc.creator</definition>
+        <argsstring></argsstring>
+        <name>creator</name>
+        <qualifiedname>cam.nc.nc.creator</qualifiedname>
+        <initializer>=  <ref refid="classcam_1_1nc_1_1nc_1_1Creator" kindref="compound">Creator</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="413" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="413" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a8b6455c52bcf6c1959022977b5d1ce68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.write</definition>
+        <argsstring>(s)</argsstring>
+        <name>write</name>
+        <qualifiedname>cam.nc.nc.write</qualifiedname>
+        <param>
+          <type>s</type>
+          <defname>s</defname>
+        </param>
+        <briefdescription>
+<para>Internals. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="419" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="419" bodyend="422"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a49cd91390516052eb941782e4fcf3103" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.output</definition>
+        <argsstring>(filename)</argsstring>
+        <name>output</name>
+        <qualifiedname>cam.nc.nc.output</qualifiedname>
+        <param>
+          <type>filename</type>
+          <defname>filename</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="423" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="423" bodyend="425"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a93452763182eb8b55a5c6b88e9adf0f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.program_begin</definition>
+        <argsstring>(id, name=&apos;&apos;)</argsstring>
+        <name>program_begin</name>
+        <qualifiedname>cam.nc.nc.program_begin</qualifiedname>
+        <param>
+          <type>id</type>
+          <defname>id</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+          <defval>&apos;&apos;</defval>
+        </param>
+        <briefdescription>
+<para>Programs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="430" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="430" bodyend="433"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1ab2653b621f92d4d0758eec2de99f1175" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.add_stock</definition>
+        <argsstring>(type_name, params)</argsstring>
+        <name>add_stock</name>
+        <qualifiedname>cam.nc.nc.add_stock</qualifiedname>
+        <param>
+          <type>type_name</type>
+          <defname>type_name</defname>
+        </param>
+        <param>
+          <type>params</type>
+          <defname>params</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="434" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="434" bodyend="437"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1ae174e9a14be3dda3e58448c99e7f983f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.program_stop</definition>
+        <argsstring>(optional=False)</argsstring>
+        <name>program_stop</name>
+        <qualifiedname>cam.nc.nc.program_stop</qualifiedname>
+        <param>
+          <type>optional</type>
+          <defname>optional</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="438" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="438" bodyend="441"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1aec60aad0c8e364502b3d3699f024facf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.program_end</definition>
+        <argsstring>()</argsstring>
+        <name>program_end</name>
+        <qualifiedname>cam.nc.nc.program_end</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="442" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="442" bodyend="445"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1afd0c909bd08487f8a0b0bebdb069921d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.flush_nc</definition>
+        <argsstring>()</argsstring>
+        <name>flush_nc</name>
+        <qualifiedname>cam.nc.nc.flush_nc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="446" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="446" bodyend="448"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a2affc5d9abe6258bffa88666e7d62e7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.sub_begin</definition>
+        <argsstring>(id, name=&apos;&apos;)</argsstring>
+        <name>sub_begin</name>
+        <qualifiedname>cam.nc.nc.sub_begin</qualifiedname>
+        <param>
+          <type>id</type>
+          <defname>id</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+          <defval>&apos;&apos;</defval>
+        </param>
+        <briefdescription>
+<para>Subprograms. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="453" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="453" bodyend="456"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1ae09b32d7eb96c506f9ed8f037d511e3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.sub_call</definition>
+        <argsstring>(id)</argsstring>
+        <name>sub_call</name>
+        <qualifiedname>cam.nc.nc.sub_call</qualifiedname>
+        <param>
+          <type>id</type>
+          <defname>id</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="457" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="457" bodyend="460"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a15c506e6d4c4ba6ca04c51ae9ba25ba0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.sub_end</definition>
+        <argsstring>()</argsstring>
+        <name>sub_end</name>
+        <qualifiedname>cam.nc.nc.sub_end</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="461" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="461" bodyend="463"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a7f2b6749cce54c4dd89eda9600a8e976" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.imperial</definition>
+        <argsstring>()</argsstring>
+        <name>imperial</name>
+        <qualifiedname>cam.nc.nc.imperial</qualifiedname>
+        <briefdescription>
+<para>Settings. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="468" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="468" bodyend="471"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a77aa91d77157709db49f6dbd7d6d2ded" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.metric</definition>
+        <argsstring>()</argsstring>
+        <name>metric</name>
+        <qualifiedname>cam.nc.nc.metric</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="472" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="472" bodyend="475"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1ad74908c6a20b925f202c3bec46ed8fc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.absolute</definition>
+        <argsstring>()</argsstring>
+        <name>absolute</name>
+        <qualifiedname>cam.nc.nc.absolute</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="476" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="476" bodyend="479"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a6963c0c9253920c23d018f5899835ec3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.incremental</definition>
+        <argsstring>()</argsstring>
+        <name>incremental</name>
+        <qualifiedname>cam.nc.nc.incremental</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="480" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="480" bodyend="483"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a57833e047f2ea97c9deacf88e2e0e062" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.polar</definition>
+        <argsstring>(on=True)</argsstring>
+        <name>polar</name>
+        <qualifiedname>cam.nc.nc.polar</qualifiedname>
+        <param>
+          <type>on</type>
+          <defname>on</defname>
+          <defval>True</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="484" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="484" bodyend="487"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1afae706ecde45c5e84d4947b830a093ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.set_plane</definition>
+        <argsstring>(plane)</argsstring>
+        <name>set_plane</name>
+        <qualifiedname>cam.nc.nc.set_plane</qualifiedname>
+        <param>
+          <type>plane</type>
+          <defname>plane</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="488" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="488" bodyend="491"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1ace48cca1473b383c797cc9c52d63728c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.set_temporary_origin</definition>
+        <argsstring>(x=None, y=None, z=None, a=None, b=None, c=None)</argsstring>
+        <name>set_temporary_origin</name>
+        <qualifiedname>cam.nc.nc.set_temporary_origin</qualifiedname>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>y</type>
+          <defname>y</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>z</type>
+          <defname>z</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>a</type>
+          <defname>a</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>b</type>
+          <defname>b</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>c</type>
+          <defname>c</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="492" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="492" bodyend="495"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a1253f3dc70debdd0acafaf15e5c0a6e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.remove_temporary_origin</definition>
+        <argsstring>()</argsstring>
+        <name>remove_temporary_origin</name>
+        <qualifiedname>cam.nc.nc.remove_temporary_origin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="496" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="496" bodyend="498"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a1d1f7deb327775e6202d01b7ff7953ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.tool_change</definition>
+        <argsstring>(id)</argsstring>
+        <name>tool_change</name>
+        <qualifiedname>cam.nc.nc.tool_change</qualifiedname>
+        <param>
+          <type>id</type>
+          <defname>id</defname>
+        </param>
+        <briefdescription>
+<para>Tools. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="503" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="503" bodyend="506"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1ae0a0d0163f26e46077ea5a28f5258530" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.tool_defn</definition>
+        <argsstring>(id, name=&apos;&apos;, params=None)</argsstring>
+        <name>tool_defn</name>
+        <qualifiedname>cam.nc.nc.tool_defn</qualifiedname>
+        <param>
+          <type>id</type>
+          <defname>id</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+          <defval>&apos;&apos;</defval>
+        </param>
+        <param>
+          <type>params</type>
+          <defname>params</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="507" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="507" bodyend="510"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a4a2637da7c871d89250368e1d498e4b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.offset_radius</definition>
+        <argsstring>(id, radius=None)</argsstring>
+        <name>offset_radius</name>
+        <qualifiedname>cam.nc.nc.offset_radius</qualifiedname>
+        <param>
+          <type>id</type>
+          <defname>id</defname>
+        </param>
+        <param>
+          <type>radius</type>
+          <defname>radius</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="511" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="511" bodyend="514"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a6760aee692432a19486b3c30af589384" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.offset_length</definition>
+        <argsstring>(id, length=None)</argsstring>
+        <name>offset_length</name>
+        <qualifiedname>cam.nc.nc.offset_length</qualifiedname>
+        <param>
+          <type>id</type>
+          <defname>id</defname>
+        </param>
+        <param>
+          <type>length</type>
+          <defname>length</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="515" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="515" bodyend="518"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1ad6b92768f96ea6bc862da4b6ef514d5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.current_tool</definition>
+        <argsstring>(self)</argsstring>
+        <name>current_tool</name>
+        <qualifiedname>cam.nc.nc.current_tool</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="519" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="519" bodyend="521"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1ab1c0e7d2464614f7a59f2907730a107d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.datum_shift</definition>
+        <argsstring>(x=None, y=None, z=None, a=None, b=None, c=None)</argsstring>
+        <name>datum_shift</name>
+        <qualifiedname>cam.nc.nc.datum_shift</qualifiedname>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>y</type>
+          <defname>y</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>z</type>
+          <defname>z</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>a</type>
+          <defname>a</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>b</type>
+          <defname>b</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>c</type>
+          <defname>c</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>Datums. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="526" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="526" bodyend="529"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a27c32800c81081418730c2bb403c6148" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.datum_set</definition>
+        <argsstring>(x=None, y=None, z=None, a=None, b=None, c=None)</argsstring>
+        <name>datum_set</name>
+        <qualifiedname>cam.nc.nc.datum_set</qualifiedname>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>y</type>
+          <defname>y</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>z</type>
+          <defname>z</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>a</type>
+          <defname>a</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>b</type>
+          <defname>b</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>c</type>
+          <defname>c</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="530" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="530" bodyend="533"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1aed1290b836577b89c33a2786f5e50f07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.workplane</definition>
+        <argsstring>(id)</argsstring>
+        <name>workplane</name>
+        <qualifiedname>cam.nc.nc.workplane</qualifiedname>
+        <param>
+          <type>id</type>
+          <defname>id</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="534" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="534" bodyend="537"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a3cdaab149cd04b2fb00dd27fbb08a893" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.clearanceplane</definition>
+        <argsstring>(z=None)</argsstring>
+        <name>clearanceplane</name>
+        <qualifiedname>cam.nc.nc.clearanceplane</qualifiedname>
+        <param>
+          <type>z</type>
+          <defname>z</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="538" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="538" bodyend="540"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a73c95d1cac4807e1ad34e3cd0498cef9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.matrix</definition>
+        <argsstring>(a1=None, b1=None, c1=None, a2=None, b2=None, c2=None, a3=None, b3=None, c3=None)</argsstring>
+        <name>matrix</name>
+        <qualifiedname>cam.nc.nc.matrix</qualifiedname>
+        <param>
+          <type>a1</type>
+          <defname>a1</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>b1</type>
+          <defname>b1</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>c1</type>
+          <defname>c1</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>a2</type>
+          <defname>a2</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>b2</type>
+          <defname>b2</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>c2</type>
+          <defname>c2</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>a3</type>
+          <defname>a3</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>b3</type>
+          <defname>b3</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>c3</type>
+          <defname>c3</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>APT360 like Transformation Definitions These definitions were created while looking at Irvin Kraal&apos;s book on APT. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Numerical Control Progamming in APT - page 211 </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="547" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="547" bodyend="550"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a94cb7570e7fbf4c72991185ee7bd21bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.translate</definition>
+        <argsstring>(x=None, y=None, z=None)</argsstring>
+        <name>translate</name>
+        <qualifiedname>cam.nc.nc.translate</qualifiedname>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>y</type>
+          <defname>y</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>z</type>
+          <defname>z</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="551" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="551" bodyend="554"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a3bae18fdfe198a827e36b23316c28c69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.rotate</definition>
+        <argsstring>(xyrot=None, yzrot=None, zxrot=None, angle=None)</argsstring>
+        <name>rotate</name>
+        <qualifiedname>cam.nc.nc.rotate</qualifiedname>
+        <param>
+          <type>xyrot</type>
+          <defname>xyrot</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>yzrot</type>
+          <defname>yzrot</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>zxrot</type>
+          <defname>zxrot</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>angle</type>
+          <defname>angle</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="555" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="555" bodyend="558"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a49eaf759253148019f147ba74514512c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.scale</definition>
+        <argsstring>(k=None)</argsstring>
+        <name>scale</name>
+        <qualifiedname>cam.nc.nc.scale</qualifiedname>
+        <param>
+          <type>k</type>
+          <defname>k</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="559" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="559" bodyend="562"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a01e84a7ca713359d793d51017ef49fb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.matrix_product</definition>
+        <argsstring>(matrix1=None, matrix2=None)</argsstring>
+        <name>matrix_product</name>
+        <qualifiedname>cam.nc.nc.matrix_product</qualifiedname>
+        <param>
+          <type>matrix1</type>
+          <defname>matrix1</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>matrix2</type>
+          <defname>matrix2</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="563" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="563" bodyend="566"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a34d1d352a4127656b2c2702493ecd966" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.mirror_plane</definition>
+        <argsstring>(plane1=None, plane2=None, plane3=None)</argsstring>
+        <name>mirror_plane</name>
+        <qualifiedname>cam.nc.nc.mirror_plane</qualifiedname>
+        <param>
+          <type>plane1</type>
+          <defname>plane1</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>plane2</type>
+          <defname>plane2</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>plane3</type>
+          <defname>plane3</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="567" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="567" bodyend="570"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a96ee4396671a01ffaae1a09a70d50fcb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.mirror_line</definition>
+        <argsstring>(line=None)</argsstring>
+        <name>mirror_line</name>
+        <qualifiedname>cam.nc.nc.mirror_line</qualifiedname>
+        <param>
+          <type>line</type>
+          <defname>line</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="571" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="571" bodyend="574"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a2aa8ab25220eb317f50d5e1781230921" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.feedrate</definition>
+        <argsstring>(f)</argsstring>
+        <name>feedrate</name>
+        <qualifiedname>cam.nc.nc.feedrate</qualifiedname>
+        <param>
+          <type>f</type>
+          <defname>f</defname>
+        </param>
+        <briefdescription>
+<para>Rates + Modes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="578" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="578" bodyend="581"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a21d0006f00a8f8f163d0ef2ae19a31e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.feedrate_hv</definition>
+        <argsstring>(fh, fv)</argsstring>
+        <name>feedrate_hv</name>
+        <qualifiedname>cam.nc.nc.feedrate_hv</qualifiedname>
+        <param>
+          <type>fh</type>
+          <defname>fh</defname>
+        </param>
+        <param>
+          <type>fv</type>
+          <defname>fv</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="582" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="582" bodyend="585"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a21a910b0d76cb7f68564765cc149eb24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.spindle</definition>
+        <argsstring>(s, clockwise=True)</argsstring>
+        <name>spindle</name>
+        <qualifiedname>cam.nc.nc.spindle</qualifiedname>
+        <param>
+          <type>s</type>
+          <defname>s</defname>
+        </param>
+        <param>
+          <type>clockwise</type>
+          <defname>clockwise</defname>
+          <defval>True</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="586" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="586" bodyend="589"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1af16478add27c802d5bb11d5c2f74b274" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.coolant</definition>
+        <argsstring>(mode=0)</argsstring>
+        <name>coolant</name>
+        <qualifiedname>cam.nc.nc.coolant</qualifiedname>
+        <param>
+          <type>mode</type>
+          <defname>mode</defname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="590" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="590" bodyend="593"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1ab5fdbe40038ddd3015c5e8dc0f5e9964" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.gearrange</definition>
+        <argsstring>(gear=0)</argsstring>
+        <name>gearrange</name>
+        <qualifiedname>cam.nc.nc.gearrange</qualifiedname>
+        <param>
+          <type>gear</type>
+          <defname>gear</defname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="594" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="594" bodyend="596"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a8657d368e8402228d437fbfe758740df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.rapid</definition>
+        <argsstring>(x=None, y=None, z=None, a=None, b=None, c=None)</argsstring>
+        <name>rapid</name>
+        <qualifiedname>cam.nc.nc.rapid</qualifiedname>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>y</type>
+          <defname>y</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>z</type>
+          <defname>z</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>a</type>
+          <defname>a</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>b</type>
+          <defname>b</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>c</type>
+          <defname>c</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>Moves. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="601" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="601" bodyend="604"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a7578810bc59ccdf99c9c99ca367b63be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.feed</definition>
+        <argsstring>(x=None, y=None, z=None, a=None, b=None, c=None)</argsstring>
+        <name>feed</name>
+        <qualifiedname>cam.nc.nc.feed</qualifiedname>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>y</type>
+          <defname>y</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>z</type>
+          <defname>z</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>a</type>
+          <defname>a</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>b</type>
+          <defname>b</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>c</type>
+          <defname>c</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="605" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="605" bodyend="608"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a756e0b86926b3291935ef719e3d9b074" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.arc_cw</definition>
+        <argsstring>(x=None, y=None, z=None, i=None, j=None, k=None, r=None)</argsstring>
+        <name>arc_cw</name>
+        <qualifiedname>cam.nc.nc.arc_cw</qualifiedname>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>y</type>
+          <defname>y</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>z</type>
+          <defname>z</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>i</type>
+          <defname>i</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>j</type>
+          <defname>j</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>k</type>
+          <defname>k</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>r</type>
+          <defname>r</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="609" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="609" bodyend="612"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1ac1c0de0472258ed82c4d3f6206b4d679" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.arc_ccw</definition>
+        <argsstring>(x=None, y=None, z=None, i=None, j=None, k=None, r=None)</argsstring>
+        <name>arc_ccw</name>
+        <qualifiedname>cam.nc.nc.arc_ccw</qualifiedname>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>y</type>
+          <defname>y</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>z</type>
+          <defname>z</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>i</type>
+          <defname>i</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>j</type>
+          <defname>j</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>k</type>
+          <defname>k</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>r</type>
+          <defname>r</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="613" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="613" bodyend="616"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a949d9b8211c3db33787dae701fafc43b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.dwell</definition>
+        <argsstring>(t)</argsstring>
+        <name>dwell</name>
+        <qualifiedname>cam.nc.nc.dwell</qualifiedname>
+        <param>
+          <type>t</type>
+          <defname>t</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="617" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="617" bodyend="620"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a2b35c170916de77950ff1d69c5962fc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.rapid_home</definition>
+        <argsstring>(x=None, y=None, z=None, a=None, b=None, c=None)</argsstring>
+        <name>rapid_home</name>
+        <qualifiedname>cam.nc.nc.rapid_home</qualifiedname>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>y</type>
+          <defname>y</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>z</type>
+          <defname>z</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>a</type>
+          <defname>a</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>b</type>
+          <defname>b</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>c</type>
+          <defname>c</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="621" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="621" bodyend="624"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a55d2ff04340887e538bd1ce692c32bab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.rapid_unhome</definition>
+        <argsstring>()</argsstring>
+        <name>rapid_unhome</name>
+        <qualifiedname>cam.nc.nc.rapid_unhome</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="625" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="625" bodyend="628"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a2eb5bee0f0dd69b7272cb9a753f79734" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.set_machine_coordinates</definition>
+        <argsstring>()</argsstring>
+        <name>set_machine_coordinates</name>
+        <qualifiedname>cam.nc.nc.set_machine_coordinates</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="629" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="629" bodyend="631"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a615cc957895920e1e32b80fee633eb35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.use_CRC</definition>
+        <argsstring>()</argsstring>
+        <name>use_CRC</name>
+        <qualifiedname>cam.nc.nc.use_CRC</qualifiedname>
+        <briefdescription>
+<para>Cutter radius compensation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="636" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="636" bodyend="639"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1ae7c69347a8ea423384b188ba63918774" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.CRC_nominal_path</definition>
+        <argsstring>()</argsstring>
+        <name>CRC_nominal_path</name>
+        <qualifiedname>cam.nc.nc.CRC_nominal_path</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="640" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="640" bodyend="643"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a1ae11ca953100924ad40dafdd8d7d4db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.start_CRC</definition>
+        <argsstring>(left=True, radius=0.0)</argsstring>
+        <name>start_CRC</name>
+        <qualifiedname>cam.nc.nc.start_CRC</qualifiedname>
+        <param>
+          <type>left</type>
+          <defname>left</defname>
+          <defval>True</defval>
+        </param>
+        <param>
+          <type>radius</type>
+          <defname>radius</defname>
+          <defval>0.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="644" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="644" bodyend="647"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1ad7e6d5529185e11daf072a0c5bdc0b9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.end_CRC</definition>
+        <argsstring>()</argsstring>
+        <name>end_CRC</name>
+        <qualifiedname>cam.nc.nc.end_CRC</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="648" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="648" bodyend="650"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a7164ab089845fe1e05f22ad9eb97a3e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.pattern</definition>
+        <argsstring>()</argsstring>
+        <name>pattern</name>
+        <qualifiedname>cam.nc.nc.pattern</qualifiedname>
+        <briefdescription>
+<para>Cycles. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="655" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="655" bodyend="658"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a6bfeb37fda535e9ca08622b3cdf91021" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.pocket</definition>
+        <argsstring>()</argsstring>
+        <name>pocket</name>
+        <qualifiedname>cam.nc.nc.pocket</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="659" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="659" bodyend="662"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a6af609274eab10818a4e7d3118de10be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.profile</definition>
+        <argsstring>()</argsstring>
+        <name>profile</name>
+        <qualifiedname>cam.nc.nc.profile</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="663" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="663" bodyend="666"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a4fd9d778d6e2f233f38a9a8bdb11ab9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.drill</definition>
+        <argsstring>(x=None, y=None, dwell=None, depthparams=None, retract_mode=None, spindle_mode=None, internal_coolant_on=None, rapid_to_clearance=None)</argsstring>
+        <name>drill</name>
+        <qualifiedname>cam.nc.nc.drill</qualifiedname>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>y</type>
+          <defname>y</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type><ref refid="namespacecam_1_1nc_1_1nc_1a949d9b8211c3db33787dae701fafc43b" kindref="member">dwell</ref></type>
+          <defname>dwell</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>depthparams</type>
+          <defname>depthparams</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>retract_mode</type>
+          <defname>retract_mode</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>spindle_mode</type>
+          <defname>spindle_mode</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>internal_coolant_on</type>
+          <defname>internal_coolant_on</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>rapid_to_clearance</type>
+          <defname>rapid_to_clearance</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="667" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="667" bodyend="671"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a71b7ee750daf4b638f3945e32e8c92d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.tap</definition>
+        <argsstring>(x=None, y=None, z=None, zretract=None, depth=None, standoff=None, dwell_bottom=None, pitch=None, stoppos=None, spin_in=None, spin_out=None, tap_mode=None, direction=None)</argsstring>
+        <name>tap</name>
+        <qualifiedname>cam.nc.nc.tap</qualifiedname>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>y</type>
+          <defname>y</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>z</type>
+          <defname>z</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>zretract</type>
+          <defname>zretract</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>depth</type>
+          <defname>depth</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>standoff</type>
+          <defname>standoff</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>dwell_bottom</type>
+          <defname>dwell_bottom</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>pitch</type>
+          <defname>pitch</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>stoppos</type>
+          <defname>stoppos</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>spin_in</type>
+          <defname>spin_in</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>spin_out</type>
+          <defname>spin_out</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>tap_mode</type>
+          <defname>tap_mode</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>direction</type>
+          <defname>direction</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="672" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="672" bodyend="676"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a466755553222942453bd0a5098684650" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.bore</definition>
+        <argsstring>(x=None, y=None, z=None, zretract=None, depth=None, standoff=None, dwell_bottom=None, feed_in=None, feed_out=None, stoppos=None, shift_back=None, shift_right=None, backbore=False, stop=False)</argsstring>
+        <name>bore</name>
+        <qualifiedname>cam.nc.nc.bore</qualifiedname>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>y</type>
+          <defname>y</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>z</type>
+          <defname>z</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>zretract</type>
+          <defname>zretract</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>depth</type>
+          <defname>depth</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>standoff</type>
+          <defname>standoff</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>dwell_bottom</type>
+          <defname>dwell_bottom</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>feed_in</type>
+          <defname>feed_in</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>feed_out</type>
+          <defname>feed_out</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>stoppos</type>
+          <defname>stoppos</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>shift_back</type>
+          <defname>shift_back</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>shift_right</type>
+          <defname>shift_right</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>backbore</type>
+          <defname>backbore</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>stop</type>
+          <defname>stop</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="677" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="677" bodyend="681"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a0daa749c78dd05c2ec7a91ec46ad1346" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.end_canned_cycle</definition>
+        <argsstring>()</argsstring>
+        <name>end_canned_cycle</name>
+        <qualifiedname>cam.nc.nc.end_canned_cycle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="682" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="682" bodyend="685"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1ab04378ea03bd17ea56d85f62cd154ba0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.peck</definition>
+        <argsstring>(count, first, last=None, step=0.0)</argsstring>
+        <name>peck</name>
+        <qualifiedname>cam.nc.nc.peck</qualifiedname>
+        <param>
+          <type>count</type>
+          <defname>count</defname>
+        </param>
+        <param>
+          <type>first</type>
+          <defname>first</defname>
+        </param>
+        <param>
+          <type>last</type>
+          <defname>last</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>step</type>
+          <defname>step</defname>
+          <defval>0.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="686" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="686" bodyend="696"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a3a12deb46bf7b5a2777abc4d852e7ce2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.comment</definition>
+        <argsstring>(text)</argsstring>
+        <name>comment</name>
+        <qualifiedname>cam.nc.nc.comment</qualifiedname>
+        <param>
+          <type>text</type>
+          <defname>text</defname>
+        </param>
+        <briefdescription>
+<para>Misc. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="701" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="701" bodyend="704"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a66d8bdba579d92ff128a81dbccc660d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.insert</definition>
+        <argsstring>(text)</argsstring>
+        <name>insert</name>
+        <qualifiedname>cam.nc.nc.insert</qualifiedname>
+        <param>
+          <type>text</type>
+          <defname>text</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="705" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="705" bodyend="708"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a11803da1e295182f48f49f30e3bd91a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.block_delete</definition>
+        <argsstring>(on=False)</argsstring>
+        <name>block_delete</name>
+        <qualifiedname>cam.nc.nc.block_delete</qualifiedname>
+        <param>
+          <type>on</type>
+          <defname>on</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="709" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="709" bodyend="712"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a6ec7f1730e85bee353f0bf11ccfce5a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.variable</definition>
+        <argsstring>(id)</argsstring>
+        <name>variable</name>
+        <qualifiedname>cam.nc.nc.variable</qualifiedname>
+        <param>
+          <type>id</type>
+          <defname>id</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="713" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="713" bodyend="716"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a1dd5aee5d6951798172d1b7051e357de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.variable_set</definition>
+        <argsstring>(id, value)</argsstring>
+        <name>variable_set</name>
+        <qualifiedname>cam.nc.nc.variable_set</qualifiedname>
+        <param>
+          <type>id</type>
+          <defname>id</defname>
+        </param>
+        <param>
+          <type>value</type>
+          <defname>value</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="717" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="717" bodyend="720"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a903ff4348154814b6cb7f655d0d2db8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.probe_single_point</definition>
+        <argsstring>(point_along_edge_x=None, point_along_edge_y=None, depth=None, retracted_point_x=None, retracted_point_y=None, destination_point_x=None, destination_point_y=None, intersection_variable_x=None, intersection_variable_y=None, probe_offset_x_component=None, probe_offset_y_component=None)</argsstring>
+        <name>probe_single_point</name>
+        <qualifiedname>cam.nc.nc.probe_single_point</qualifiedname>
+        <param>
+          <type>point_along_edge_x</type>
+          <defname>point_along_edge_x</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>point_along_edge_y</type>
+          <defname>point_along_edge_y</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>depth</type>
+          <defname>depth</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>retracted_point_x</type>
+          <defname>retracted_point_x</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>retracted_point_y</type>
+          <defname>retracted_point_y</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>destination_point_x</type>
+          <defname>destination_point_x</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>destination_point_y</type>
+          <defname>destination_point_y</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>intersection_variable_x</type>
+          <defname>intersection_variable_x</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>intersection_variable_y</type>
+          <defname>intersection_variable_y</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>probe_offset_x_component</type>
+          <defname>probe_offset_x_component</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>probe_offset_y_component</type>
+          <defname>probe_offset_y_component</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="721" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="721" bodyend="725"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1aaaa53447ccb503227227c835ef01cc4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.probe_downward_point</definition>
+        <argsstring>(x=None, y=None, depth=None, intersection_variable_z=None)</argsstring>
+        <name>probe_downward_point</name>
+        <qualifiedname>cam.nc.nc.probe_downward_point</qualifiedname>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>y</type>
+          <defname>y</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>depth</type>
+          <defname>depth</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>intersection_variable_z</type>
+          <defname>intersection_variable_z</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="726" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="726" bodyend="729"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a794e24b06bc50b3f86d3e6963658a144" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.report_probe_results</definition>
+        <argsstring>(x1=None, y1=None, z1=None, x2=None, y2=None, z2=None, x3=None, y3=None, z3=None, x4=None, y4=None, z4=None, x5=None, y5=None, z5=None, x6=None, y6=None, z6=None, xml_file_name=None)</argsstring>
+        <name>report_probe_results</name>
+        <qualifiedname>cam.nc.nc.report_probe_results</qualifiedname>
+        <param>
+          <type>x1</type>
+          <defname>x1</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>y1</type>
+          <defname>y1</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>z1</type>
+          <defname>z1</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>x2</type>
+          <defname>x2</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>y2</type>
+          <defname>y2</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>z2</type>
+          <defname>z2</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>x3</type>
+          <defname>x3</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>y3</type>
+          <defname>y3</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>z3</type>
+          <defname>z3</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>x4</type>
+          <defname>x4</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>y4</type>
+          <defname>y4</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>z4</type>
+          <defname>z4</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>x5</type>
+          <defname>x5</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>y5</type>
+          <defname>y5</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>z5</type>
+          <defname>z5</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>x6</type>
+          <defname>x6</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>y6</type>
+          <defname>y6</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>z6</type>
+          <defname>z6</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>xml_file_name</type>
+          <defname>xml_file_name</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="730" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="730" bodyend="734"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a9edf23b625c2bd2d19b9ba8e2f2c90e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.open_log_file</definition>
+        <argsstring>(xml_file_name=None)</argsstring>
+        <name>open_log_file</name>
+        <qualifiedname>cam.nc.nc.open_log_file</qualifiedname>
+        <param>
+          <type>xml_file_name</type>
+          <defname>xml_file_name</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="735" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="735" bodyend="738"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a333eda62aec03067ba85b44a61c86935" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.log_coordinate</definition>
+        <argsstring>(x=None, y=None, z=None)</argsstring>
+        <name>log_coordinate</name>
+        <qualifiedname>cam.nc.nc.log_coordinate</qualifiedname>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>y</type>
+          <defname>y</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>z</type>
+          <defname>z</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="739" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="739" bodyend="742"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a53322f0171bd6afaa06ec792f400c9d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.log_message</definition>
+        <argsstring>(message=None)</argsstring>
+        <name>log_message</name>
+        <qualifiedname>cam.nc.nc.log_message</qualifiedname>
+        <param>
+          <type>message</type>
+          <defname>message</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="743" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="743" bodyend="746"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1ad0beec7390788018dc746fa245e6fcde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.close_log_file</definition>
+        <argsstring>()</argsstring>
+        <name>close_log_file</name>
+        <qualifiedname>cam.nc.nc.close_log_file</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="747" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="747" bodyend="750"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a01da1b0ca0e7d91954e94c6626fb324d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.rapid_to_midpoint</definition>
+        <argsstring>(x1=None, y1=None, z1=None, x2=None, y2=None, z2=None)</argsstring>
+        <name>rapid_to_midpoint</name>
+        <qualifiedname>cam.nc.nc.rapid_to_midpoint</qualifiedname>
+        <param>
+          <type>x1</type>
+          <defname>x1</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>y1</type>
+          <defname>y1</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>z1</type>
+          <defname>z1</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>x2</type>
+          <defname>x2</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>y2</type>
+          <defname>y2</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>z2</type>
+          <defname>z2</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="751" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="751" bodyend="754"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a4624f93a758a6c73df07bba758d6bd62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.rapid_to_intersection</definition>
+        <argsstring>(x1, y1, x2, y2, x3, y3, x4, y4, intersection_x, intersection_y, ua_numerator, ua_denominator, ua, ub_numerator, ub)</argsstring>
+        <name>rapid_to_intersection</name>
+        <qualifiedname>cam.nc.nc.rapid_to_intersection</qualifiedname>
+        <param>
+          <type>x1</type>
+          <defname>x1</defname>
+        </param>
+        <param>
+          <type>y1</type>
+          <defname>y1</defname>
+        </param>
+        <param>
+          <type>x2</type>
+          <defname>x2</defname>
+        </param>
+        <param>
+          <type>y2</type>
+          <defname>y2</defname>
+        </param>
+        <param>
+          <type>x3</type>
+          <defname>x3</defname>
+        </param>
+        <param>
+          <type>y3</type>
+          <defname>y3</defname>
+        </param>
+        <param>
+          <type>x4</type>
+          <defname>x4</defname>
+        </param>
+        <param>
+          <type>y4</type>
+          <defname>y4</defname>
+        </param>
+        <param>
+          <type>intersection_x</type>
+          <defname>intersection_x</defname>
+        </param>
+        <param>
+          <type>intersection_y</type>
+          <defname>intersection_y</defname>
+        </param>
+        <param>
+          <type>ua_numerator</type>
+          <defname>ua_numerator</defname>
+        </param>
+        <param>
+          <type>ua_denominator</type>
+          <defname>ua_denominator</defname>
+        </param>
+        <param>
+          <type>ua</type>
+          <defname>ua</defname>
+        </param>
+        <param>
+          <type>ub_numerator</type>
+          <defname>ub_numerator</defname>
+        </param>
+        <param>
+          <type>ub</type>
+          <defname>ub</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="755" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="755" bodyend="759"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a9a18a96d0b3afcf63409a3e6018eb11d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.rapid_to_rotated_coordinate</definition>
+        <argsstring>(x1, y1, x2, y2, ref_x, ref_y, x_current, y_current, x_final, y_final)</argsstring>
+        <name>rapid_to_rotated_coordinate</name>
+        <qualifiedname>cam.nc.nc.rapid_to_rotated_coordinate</qualifiedname>
+        <param>
+          <type>x1</type>
+          <defname>x1</defname>
+        </param>
+        <param>
+          <type>y1</type>
+          <defname>y1</defname>
+        </param>
+        <param>
+          <type>x2</type>
+          <defname>x2</defname>
+        </param>
+        <param>
+          <type>y2</type>
+          <defname>y2</defname>
+        </param>
+        <param>
+          <type>ref_x</type>
+          <defname>ref_x</defname>
+        </param>
+        <param>
+          <type>ref_y</type>
+          <defname>ref_y</defname>
+        </param>
+        <param>
+          <type>x_current</type>
+          <defname>x_current</defname>
+        </param>
+        <param>
+          <type>y_current</type>
+          <defname>y_current</defname>
+        </param>
+        <param>
+          <type>x_final</type>
+          <defname>x_final</defname>
+        </param>
+        <param>
+          <type>y_final</type>
+          <defname>y_final</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="760" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="760" bodyend="764"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1aad8a0d26587ae07f88e5a75179885381" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.set_path_control_mode</definition>
+        <argsstring>(mode, motion_blending_tolerance, naive_cam_tolerance)</argsstring>
+        <name>set_path_control_mode</name>
+        <qualifiedname>cam.nc.nc.set_path_control_mode</qualifiedname>
+        <param>
+          <type>mode</type>
+          <defname>mode</defname>
+        </param>
+        <param>
+          <type>motion_blending_tolerance</type>
+          <defname>motion_blending_tolerance</defname>
+        </param>
+        <param>
+          <type>naive_cam_tolerance</type>
+          <defname>naive_cam_tolerance</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="765" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="765" bodyend="767"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a5e9aaca9955c8fb95dad44092558a3bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.wipe</definition>
+        <argsstring>()</argsstring>
+        <name>wipe</name>
+        <qualifiedname>cam.nc.nc.wipe</qualifiedname>
+        <briefdescription>
+<para>NC code creator for additive machines like RepRap. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="772" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="772" bodyend="775"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1abc318115f78663ca2d91126157d86702" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.extruder_on</definition>
+        <argsstring>()</argsstring>
+        <name>extruder_on</name>
+        <qualifiedname>cam.nc.nc.extruder_on</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="776" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="776" bodyend="779"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a77ad194ec2cabd245c600c14c2b7d483" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.extruder_off</definition>
+        <argsstring>()</argsstring>
+        <name>extruder_off</name>
+        <qualifiedname>cam.nc.nc.extruder_off</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="780" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="780" bodyend="783"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a36473a64d57ec3d8d8bfb883147d2d7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.set_extruder_flowrate</definition>
+        <argsstring>(flowrate)</argsstring>
+        <name>set_extruder_flowrate</name>
+        <qualifiedname>cam.nc.nc.set_extruder_flowrate</qualifiedname>
+        <param>
+          <type>flowrate</type>
+          <defname>flowrate</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="784" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="784" bodyend="787"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a9c030419249e1ab21249ba3422a34ffb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.extruder_temp</definition>
+        <argsstring>(temp=None)</argsstring>
+        <name>extruder_temp</name>
+        <qualifiedname>cam.nc.nc.extruder_temp</qualifiedname>
+        <param>
+          <type>temp</type>
+          <defname>temp</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="788" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="788" bodyend="791"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a333a772bbb47cae40c605859700232b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.fan_on</definition>
+        <argsstring>()</argsstring>
+        <name>fan_on</name>
+        <qualifiedname>cam.nc.nc.fan_on</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="792" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="792" bodyend="795"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1ac54675c89b77aca716632a8e43f05c43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.fan_off</definition>
+        <argsstring>()</argsstring>
+        <name>fan_off</name>
+        <qualifiedname>cam.nc.nc.fan_off</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="796" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="796" bodyend="799"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a9cac407940b4fe19bfe3a97b4fa6ecf7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.build_bed_temp</definition>
+        <argsstring>(temp=None)</argsstring>
+        <name>build_bed_temp</name>
+        <qualifiedname>cam.nc.nc.build_bed_temp</qualifiedname>
+        <param>
+          <type>temp</type>
+          <defname>temp</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="800" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="800" bodyend="803"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1nc_1a5a69714dde7282a277dca7997af3e46a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc.chamber_temp</definition>
+        <argsstring>(temp=None)</argsstring>
+        <name>chamber_temp</name>
+        <qualifiedname>cam.nc.nc.chamber_temp</qualifiedname>
+        <param>
+          <type>temp</type>
+          <defname>temp</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="804" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" bodystart="804" bodyend="806"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

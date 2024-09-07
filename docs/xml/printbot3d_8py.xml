@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="printbot3d_8py" kind="file" language="Python">
+    <compoundname>printbot3d.py</compoundname>
+    <innerclass refid="classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot" prot="public">cam::nc::printbot3d::CreatorPrintbot</innerclass>
+    <innernamespace refid="namespacecam">cam</innernamespace>
+    <innernamespace refid="namespacecam_1_1nc">cam::nc</innernamespace>
+    <innernamespace refid="namespacecam_1_1nc_1_1printbot3d">cam::nc::printbot3d</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacecam_1_1nc_1_1printbot3d" refkind="compound"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>nc</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>iso_modal</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>math</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot" kindref="compound">CreatorPrintbot</ref>(iso_modal.CreatorIsoModal):</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1aa0471049119710771ea47952890dec72" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1aa0471049119710771ea47952890dec72" kindref="member">__init__</ref>(self):</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iso_modal.CreatorIsoModal.__init__(self)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1afee08ec5c9dd42d8943b858851fbcb11" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1afee08ec5c9dd42d8943b858851fbcb11" kindref="member">tool_defn</ref>(self,<sp/>id,<sp/>name=&apos;&apos;,<sp/>params=None):</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1a0635e25ce6585a10cefea8985d6f1e17" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1a0635e25ce6585a10cefea8985d6f1e17" kindref="member">write_blocknum</ref>(self):</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1af9e1990b7ed926dd97e6bf4f9e892a54" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1af9e1990b7ed926dd97e6bf4f9e892a54" kindref="member">set_plane</ref>(self,<sp/>plane):</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1abe6a50723d1cfaac87784556f5ed5939" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1abe6a50723d1cfaac87784556f5ed5939" kindref="member">workplane</ref>(self,<sp/>id):</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Extruder<sp/>Control</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1a8c0e8f2c86a383bf51b9013d5ab863bb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1a8c0e8f2c86a383bf51b9013d5ab863bb" kindref="member">extruder_on</ref>(self):</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.write(</highlight><highlight class="stringliteral">&apos;M101\n&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1aa1d6f530da232632131796c34e0279f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1aa1d6f530da232632131796c34e0279f1" kindref="member">extruder_off</ref>(self):</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.write(</highlight><highlight class="stringliteral">&apos;M103\n&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1ad8959d99f932a67a51efbc379bf67b04" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1ad8959d99f932a67a51efbc379bf67b04" kindref="member">set_extruder_flowrate</ref>(self,<sp/>flowrate):</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>re-use<sp/>the<sp/>spindle<sp/>speed<sp/>function</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.spindle(flowrate,<sp/></highlight><highlight class="keyword">True</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1a52f668ab9b8239c5a11a434ca54f1f8e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1a52f668ab9b8239c5a11a434ca54f1f8e" kindref="member">extruder_temp</ref>(self,<sp/>temp):</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.write((maker.codes.EXTRUDER_TEMP(temp))<sp/>+<sp/>(</highlight><highlight class="stringliteral">&apos;\n&apos;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">#<sp/>General</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1a2693cb3edfbba763873076bec9a22523" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1a2693cb3edfbba763873076bec9a22523" kindref="member">rapid</ref>(x=None,<sp/>y=None,<sp/>z=None,<sp/>a=None,<sp/>b=None,<sp/>c=None):</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>do<sp/>a<sp/>G1<sp/>even<sp/>for<sp/>rapid<sp/>moves</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iso_modal.CreatorIsoModal.feed(self,<sp/>x,<sp/>y,<sp/>z)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1a04e21de1737e83fb17e6d47892907715" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1a04e21de1737e83fb17e6d47892907715" kindref="member">feed</ref>(self,<sp/>x=None,<sp/>y=None,<sp/>z=None,<sp/>a=None,<sp/>b=None,<sp/>c=None):</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iso_modal.CreatorIsoModal.feed(self,<sp/>x,<sp/>y,<sp/>z)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1a5fcb796978df3a5579b0133929042434" refkind="member"><highlight class="normal">nc.creator<sp/>=<sp/><ref refid="classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot" kindref="compound">CreatorPrintbot</ref>()</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/printbot3d.py"/>
+  </compounddef>
+</doxygen>

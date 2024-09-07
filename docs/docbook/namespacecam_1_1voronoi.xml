@@ -1,0 +1,235 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacecam_1_1voronoi" xml:lang="en-US">
+<title>cam.voronoi Namespace Reference</title>
+<indexterm><primary>cam.voronoi</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classcam_1_1voronoi_1_1Context">Context</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classcam_1_1voronoi_1_1Edge">Edge</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classcam_1_1voronoi_1_1EdgeList">EdgeList</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classcam_1_1voronoi_1_1Halfedge">Halfedge</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classcam_1_1voronoi_1_1PriorityQueue">PriorityQueue</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classcam_1_1voronoi_1_1Site">Site</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classcam_1_1voronoi_1_1SiteList">SiteList</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacecam_1_1voronoi_1ac8dd45b976fc7697e7dd1396ca7193e9">voronoi</link> (siteList, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1voronoi_1abead5205b1f51f97648617700cafb4fe">isEqual</link> (a, b, relativeError=<link linkend="_namespacecam_1_1voronoi_1a8440f2120b873dbf4281089f8657f877">TOLERANCE</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1voronoi_1a3f967fa7c1899ba5f855fc51cbb24db7">computeVoronoiDiagram</link> (points, xBuff=0, yBuff=0, polygonsOutput=False, formatOutput=False, closePoly=True)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1voronoi_1a5bbde6ed1e123752d21c52751c39736d">formatEdgesOutput</link> (edges)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1voronoi_1a757396b8dfd6c6b79adae9296bbacb1b">formatPolygonsOutput</link> (polygons)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1voronoi_1a27b3666c171229a27f6936e808a4266f">computeDelaunayTriangulation</link> (points)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_namespacecam_1_1voronoi_1a8440f2120b873dbf4281089f8657f877">TOLERANCE</link> = 1e-9</para>
+</listitem>
+            <listitem><para>int <link linkend="_namespacecam_1_1voronoi_1a3fd399888f78ae5e5565c979b41349e8">BIG_FLOAT</link> = 1e38</para>
+</listitem>
+            <listitem><para>bool <link linkend="_namespacecam_1_1voronoi_1a93152205ddb1e4fc45bf522b0f1701a2">PY3</link> = True</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>BlenderCAM &apos;voronoi.py&apos;
+
+Voronoi diagram calculator/ Delaunay triangulator
+
+- Voronoi Diagram Sweepline algorithm and C code by Steven Fortune, 1987, http://ect.bell-labs.com/who/sjf/
+- Python translation to file voronoi.py by Bill Simons, 2005, http://www.oxfish.com/
+- Additional changes for QGIS by Carson Farmer added November 2010
+- 2012 Ported to Python 3 and additional clip functions by domlysz at gmail.com
+
+Calculate Delaunay triangulation or the Voronoi polygons for a set of
+2D input points.
+
+Derived from code bearing the following notice:
+
+The author of this software is Steven Fortune.  Copyright (c) 1994 by AT&amp;T
+Bell Laboratories.
+Permission to use, copy, modify, and distribute this software for any
+purpose without fee is hereby granted, provided that this entire notice
+is included in all copies of any software which is or includes a copy
+or modification of this software and in all copies of the supporting
+documentation for such software.
+THIS SOFTWARE IS BEING PROVIDED &quot;AS IS&quot;, WITHOUT ANY EXPRESS OR IMPLIED
+WARRANTY.  IN PARTICULAR, NEITHER THE AUTHORS NOR AT&amp;T MAKE ANY
+REPRESENTATION OR WARRANTY OF ANY KIND CONCERNING THE MERCHANTABILITY
+OF THIS SOFTWARE OR ITS FITNESS FOR ANY PARTICULAR PURPOSE.
+
+Comments were incorporated from Shane O&apos;Sullivan&apos;s translation of the
+original code into C++ (http://mapviewer.skynet.ie/voronoi.html)
+
+Steve Fortune&apos;s homepage: http://netlib.bell-labs.com/cm/cs/who/sjf/index.html
+
+
+For programmatic use two functions are available:
+
+computeVoronoiDiagram(points, xBuff, yBuff, polygonsOutput=False, formatOutput=False) :
+Takes :
+    - a list of point objects (which must have x and y fields).
+    - x and y buffer values which are the expansion percentages of the bounding box rectangle including all input points.
+    Returns :
+    - With default options :
+      A list of 2-tuples, representing the two points of each Voronoi diagram edge.
+      Each point contains 2-tuples which are the x,y coordinates of point.
+      if formatOutput is True, returns :
+            - a list of 2-tuples, which are the x,y coordinates of the Voronoi diagram vertices.
+            - and a list of 2-tuples (v1, v2) representing edges of the Voronoi diagram.
+              v1 and v2 are the indices of the vertices at the end of the edge.
+    - If polygonsOutput option is True, returns :
+      A dictionary of polygons, keys are the indices of the input points,
+      values contains n-tuples representing the n points of each Voronoi diagram polygon.
+      Each point contains 2-tuples which are the x,y coordinates of point.
+      if formatOutput is True, returns :
+            - A list of 2-tuples, which are the x,y coordinates of the Voronoi diagram vertices.
+            - and a dictionary of input points indices. Values contains n-tuples representing the n points of each Voronoi diagram polygon.
+              Each tuple contains the vertex indices of the polygon vertices.
+
+computeDelaunayTriangulation(points):
+    Takes a list of point objects (which must have x and y fields).
+    Returns a list of 3-tuples: the indices of the points that form a Delaunay triangle.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespacecam_1_1voronoi_1a27b3666c171229a27f6936e808a4266f"/><section>
+    <title>computeDelaunayTriangulation()</title>
+<indexterm><primary>computeDelaunayTriangulation</primary><secondary>cam.voronoi</secondary></indexterm>
+<indexterm><primary>cam.voronoi</primary><secondary>computeDelaunayTriangulation</secondary></indexterm>
+<para><computeroutput>cam.voronoi.computeDelaunayTriangulation ( points)</computeroutput></para>
+<para><literallayout><computeroutput> Takes a list of point objects (which must have x and y fields).
+    Returns a list of 3-tuples: the indices of the points that form a
+    Delaunay triangle.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespacecam_1_1voronoi_1a3f967fa7c1899ba5f855fc51cbb24db7"/><section>
+    <title>computeVoronoiDiagram()</title>
+<indexterm><primary>computeVoronoiDiagram</primary><secondary>cam.voronoi</secondary></indexterm>
+<indexterm><primary>cam.voronoi</primary><secondary>computeVoronoiDiagram</secondary></indexterm>
+<para><computeroutput>cam.voronoi.computeVoronoiDiagram ( points,  xBuff = <computeroutput>0</computeroutput>
+,  yBuff = <computeroutput>0</computeroutput>
+,  polygonsOutput = <computeroutput>False</computeroutput>
+,  formatOutput = <computeroutput>False</computeroutput>
+,  closePoly = <computeroutput>True</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Takes :
+    - a list of point objects (which must have x and y fields).
+    - x and y buffer values which are the expansion percentages of the bounding box rectangle including all input points.
+    Returns :
+    - With default options :
+      A list of 2-tuples, representing the two points of each Voronoi diagram edge.
+      Each point contains 2-tuples which are the x,y coordinates of point.
+      if formatOutput is True, returns :
+            - a list of 2-tuples, which are the x,y coordinates of the Voronoi diagram vertices.
+            - and a list of 2-tuples (v1, v2) representing edges of the Voronoi diagram.
+              v1 and v2 are the indices of the vertices at the end of the edge.
+    - If polygonsOutput option is True, returns :
+      A dictionary of polygons, keys are the indices of the input points,
+      values contains n-tuples representing the n points of each Voronoi diagram polygon.
+      Each point contains 2-tuples which are the x,y coordinates of point.
+      if formatOutput is True, returns :
+            - A list of 2-tuples, which are the x,y coordinates of the Voronoi diagram vertices.
+            - and a dictionary of input points indices. Values contains n-tuples representing the n points of each Voronoi diagram polygon.
+              Each tuple contains the vertex indices of the polygon vertices.
+    - if closePoly is True then, in the list of points of a polygon, last point will be the same of first point
+</computeroutput></literallayout> </para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1voronoi_a3f967fa7c1899ba5f855fc51cbb24db7_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1voronoi_1a5bbde6ed1e123752d21c52751c39736d"/><section>
+    <title>formatEdgesOutput()</title>
+<indexterm><primary>formatEdgesOutput</primary><secondary>cam.voronoi</secondary></indexterm>
+<indexterm><primary>cam.voronoi</primary><secondary>formatEdgesOutput</secondary></indexterm>
+<para><computeroutput>cam.voronoi.formatEdgesOutput ( edges)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1voronoi_a5bbde6ed1e123752d21c52751c39736d_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1voronoi_1a757396b8dfd6c6b79adae9296bbacb1b"/><section>
+    <title>formatPolygonsOutput()</title>
+<indexterm><primary>formatPolygonsOutput</primary><secondary>cam.voronoi</secondary></indexterm>
+<indexterm><primary>cam.voronoi</primary><secondary>formatPolygonsOutput</secondary></indexterm>
+<para><computeroutput>cam.voronoi.formatPolygonsOutput ( polygons)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1voronoi_a757396b8dfd6c6b79adae9296bbacb1b_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1voronoi_1abead5205b1f51f97648617700cafb4fe"/><section>
+    <title>isEqual()</title>
+<indexterm><primary>isEqual</primary><secondary>cam.voronoi</secondary></indexterm>
+<indexterm><primary>cam.voronoi</primary><secondary>isEqual</secondary></indexterm>
+<para><computeroutput>cam.voronoi.isEqual ( a,  b,  relativeError = <computeroutput><link linkend="_namespacecam_1_1voronoi_1a8440f2120b873dbf4281089f8657f877">TOLERANCE</link></computeroutput>
+)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1voronoi_abead5205b1f51f97648617700cafb4fe_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1voronoi_1ac8dd45b976fc7697e7dd1396ca7193e9"/><section>
+    <title>voronoi()</title>
+<indexterm><primary>voronoi</primary><secondary>cam.voronoi</secondary></indexterm>
+<indexterm><primary>cam.voronoi</primary><secondary>voronoi</secondary></indexterm>
+<para><computeroutput>cam.voronoi.voronoi ( siteList,  context)</computeroutput></para></section>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespacecam_1_1voronoi_1a3fd399888f78ae5e5565c979b41349e8"/><section>
+    <title>BIG_FLOAT</title>
+<indexterm><primary>BIG_FLOAT</primary><secondary>cam.voronoi</secondary></indexterm>
+<indexterm><primary>cam.voronoi</primary><secondary>BIG_FLOAT</secondary></indexterm>
+<para><computeroutput>int cam.voronoi.BIG_FLOAT = 1e38</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1voronoi_1a93152205ddb1e4fc45bf522b0f1701a2"/><section>
+    <title>PY3</title>
+<indexterm><primary>PY3</primary><secondary>cam.voronoi</secondary></indexterm>
+<indexterm><primary>cam.voronoi</primary><secondary>PY3</secondary></indexterm>
+<para><computeroutput>bool cam.voronoi.PY3 = True</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1voronoi_1a8440f2120b873dbf4281089f8657f877"/><section>
+    <title>TOLERANCE</title>
+<indexterm><primary>TOLERANCE</primary><secondary>cam.voronoi</secondary></indexterm>
+<indexterm><primary>cam.voronoi</primary><secondary>TOLERANCE</secondary></indexterm>
+<para><computeroutput>int cam.voronoi.TOLERANCE = 1e-9</computeroutput></para></section>
+</section>
+</section>

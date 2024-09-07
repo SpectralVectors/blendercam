@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacecam_1_1pack" xml:lang="en-US">
+<title>cam.pack Namespace Reference</title>
+<indexterm><primary>cam.pack</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classcam_1_1pack_1_1PackObjectsSettings">PackObjectsSettings</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacecam_1_1pack_1a4c434edc8d0ae541564075cde40be782">srotate</link> (s, r, x, y)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1pack_1a9217d216d93f4560ecda5c5fc14d8a73">packCurves</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>BlenderCAM &apos;pack.py&apos; © 2012 Vilem Novak
+
+Takes all selected curves, converts them to polygons, offsets them by the pre-set margin
+then chooses a starting location possibly inside the already occupied area and moves and rotates the
+polygon out of the occupied area if one or more positions are found where the poly doesn&apos;t overlap,
+it is placed and added to the occupied area - allpoly
+Very slow and STUPID, a collision algorithm would be much much faster...
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespacecam_1_1pack_1a9217d216d93f4560ecda5c5fc14d8a73"/><section>
+    <title>packCurves()</title>
+<indexterm><primary>packCurves</primary><secondary>cam.pack</secondary></indexterm>
+<indexterm><primary>cam.pack</primary><secondary>packCurves</secondary></indexterm>
+<para><computeroutput>cam.pack.packCurves ( )</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1pack_1a4c434edc8d0ae541564075cde40be782"/><section>
+    <title>srotate()</title>
+<indexterm><primary>srotate</primary><secondary>cam.pack</secondary></indexterm>
+<indexterm><primary>cam.pack</primary><secondary>srotate</secondary></indexterm>
+<para><computeroutput>cam.pack.srotate ( s,  r,  x,  y)</computeroutput></para></section>
+</section>
+</section>

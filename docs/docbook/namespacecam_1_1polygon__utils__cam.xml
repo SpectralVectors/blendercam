@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacecam_1_1polygon__utils__cam" xml:lang="en-US">
+<title>cam.polygon_utils_cam Namespace Reference</title>
+<indexterm><primary>cam.polygon_utils_cam</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacecam_1_1polygon__utils__cam_1a4c7c9bd8878fcc08fa971814f966cdb9">Circle</link> (r, np)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1polygon__utils__cam_1aa272765b7df90158fc8d6ec33cc61d04">shapelyRemoveDoubles</link> (p, optimize_threshold)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1polygon__utils__cam_1a351d6823094e08ff98ab9fb2cdbcfb95">shapelyToMultipolygon</link> (anydata)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1polygon__utils__cam_1aa3ac86f49d87f2ce81230251f36bb1cd">shapelyToCoords</link> (anydata)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1polygon__utils__cam_1a2dbe38ef758d8ba030a560187c0a9995">shapelyToCurve</link> (name, p, z)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_namespacecam_1_1polygon__utils__cam_1a7855db3a4b65b88468010579c2180fe9">SHAPELY</link> = True</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>BlenderCAM &apos;polygon_utils_cam.py&apos; © 2012 Vilem Novak
+
+Functions to handle shapely operations and conversions - curve, coords, polygon
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespacecam_1_1polygon__utils__cam_1a4c7c9bd8878fcc08fa971814f966cdb9"/><section>
+    <title>Circle()</title>
+<indexterm><primary>Circle</primary><secondary>cam.polygon_utils_cam</secondary></indexterm>
+<indexterm><primary>cam.polygon_utils_cam</primary><secondary>Circle</secondary></indexterm>
+<para><computeroutput>cam.polygon_utils_cam.Circle ( r,  np)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1polygon__utils__cam_1aa272765b7df90158fc8d6ec33cc61d04"/><section>
+    <title>shapelyRemoveDoubles()</title>
+<indexterm><primary>shapelyRemoveDoubles</primary><secondary>cam.polygon_utils_cam</secondary></indexterm>
+<indexterm><primary>cam.polygon_utils_cam</primary><secondary>shapelyRemoveDoubles</secondary></indexterm>
+<para><computeroutput>cam.polygon_utils_cam.shapelyRemoveDoubles ( p,  optimize_threshold)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1polygon__utils__cam_1aa3ac86f49d87f2ce81230251f36bb1cd"/><section>
+    <title>shapelyToCoords()</title>
+<indexterm><primary>shapelyToCoords</primary><secondary>cam.polygon_utils_cam</secondary></indexterm>
+<indexterm><primary>cam.polygon_utils_cam</primary><secondary>shapelyToCoords</secondary></indexterm>
+<para><computeroutput>cam.polygon_utils_cam.shapelyToCoords ( anydata)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1polygon__utils__cam_aa3ac86f49d87f2ce81230251f36bb1cd_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1polygon__utils__cam_1a2dbe38ef758d8ba030a560187c0a9995"/><section>
+    <title>shapelyToCurve()</title>
+<indexterm><primary>shapelyToCurve</primary><secondary>cam.polygon_utils_cam</secondary></indexterm>
+<indexterm><primary>cam.polygon_utils_cam</primary><secondary>shapelyToCurve</secondary></indexterm>
+<para><computeroutput>cam.polygon_utils_cam.shapelyToCurve ( name,  p,  z)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1polygon__utils__cam_a2dbe38ef758d8ba030a560187c0a9995_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1polygon__utils__cam_1a351d6823094e08ff98ab9fb2cdbcfb95"/><section>
+    <title>shapelyToMultipolygon()</title>
+<indexterm><primary>shapelyToMultipolygon</primary><secondary>cam.polygon_utils_cam</secondary></indexterm>
+<indexterm><primary>cam.polygon_utils_cam</primary><secondary>shapelyToMultipolygon</secondary></indexterm>
+<para><computeroutput>cam.polygon_utils_cam.shapelyToMultipolygon ( anydata)</computeroutput></para></section>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespacecam_1_1polygon__utils__cam_1a7855db3a4b65b88468010579c2180fe9"/><section>
+    <title>SHAPELY</title>
+<indexterm><primary>SHAPELY</primary><secondary>cam.polygon_utils_cam</secondary></indexterm>
+<indexterm><primary>cam.polygon_utils_cam</primary><secondary>SHAPELY</secondary></indexterm>
+<para><computeroutput>bool cam.polygon_utils_cam.SHAPELY = True</computeroutput></para></section>
+</section>
+</section>

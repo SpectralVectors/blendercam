@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1autoupdate_1_1UpdateSourceOperator" kind="class" language="Python" prot="public">
+    <compoundname>cam::autoupdate::UpdateSourceOperator</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">bpy.types.Operator</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1autoupdate_1_1UpdateSourceOperator_1ab33486c49808c92b108bcf88f0538179" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.autoupdate.UpdateSourceOperator::bl_idname</definition>
+        <argsstring></argsstring>
+        <name>bl_idname</name>
+        <qualifiedname>cam.autoupdate.UpdateSourceOperator.bl_idname</qualifiedname>
+        <initializer>=  &quot;render.cam_set_update_source&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/autoupdate.py" line="174" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/autoupdate.py" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1autoupdate_1_1UpdateSourceOperator_1a1dcd8e2bb9ee351921deed009631e814" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.autoupdate.UpdateSourceOperator::bl_label</definition>
+        <argsstring></argsstring>
+        <name>bl_label</name>
+        <qualifiedname>cam.autoupdate.UpdateSourceOperator.bl_label</qualifiedname>
+        <initializer>=  &quot;Set BlenderCAM Update Source&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/autoupdate.py" line="175" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/autoupdate.py" bodystart="175" bodyend="-1"/>
+        <referencedby refid="classcam_1_1preset__managers_1_1CAM__MACHINE__MT__presets_1af95f7812d2952b26a26809ab923dac09" compoundref="preset__managers_8py" startline="28" endline="38">cam.preset_managers.CAM_MACHINE_MT_presets.post_cb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1autoupdate_1_1UpdateSourceOperator_1aaf6e4d2cc9cb54c082ccf33c3a362fce" prot="public" static="yes" mutable="no">
+        <type>StringProperty</type>
+        <definition>StringProperty cam.autoupdate.UpdateSourceOperator::new_source</definition>
+        <argsstring></argsstring>
+        <name>new_source</name>
+        <qualifiedname>cam.autoupdate.UpdateSourceOperator.new_source</qualifiedname>
+        <initializer>(
+        default=&apos;&apos;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/autoupdate.py" line="177" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/autoupdate.py" bodystart="177" bodyend="-1"/>
+        <referencedby refid="classcam_1_1autoupdate_1_1UpdateSourceOperator_1a46ef1de640e2121d7843f4a560e38af8" compoundref="autoupdate_8py" startline="181" endline="185">cam.autoupdate.UpdateSourceOperator.execute</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcam_1_1autoupdate_1_1UpdateSourceOperator_1a46ef1de640e2121d7843f4a560e38af8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.autoupdate.UpdateSourceOperator.execute</definition>
+        <argsstring>(self, context)</argsstring>
+        <name>execute</name>
+        <qualifiedname>cam.autoupdate.UpdateSourceOperator.execute</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/autoupdate.py" line="181" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/autoupdate.py" bodystart="181" bodyend="185"/>
+        <references refid="classcam_1_1autoupdate_1_1UpdateSourceOperator_1aaf6e4d2cc9cb54c082ccf33c3a362fce" compoundref="autoupdate_8py" startline="177">cam.autoupdate.UpdateSourceOperator.new_source</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>bpy.types.Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.autoupdate.UpdateSourceOperator</label>
+        <link refid="classcam_1_1autoupdate_1_1UpdateSourceOperator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>StringProperty</label>
+      </node>
+      <node id="2">
+        <label>bpy.types.Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.autoupdate.UpdateSourceOperator</label>
+        <link refid="classcam_1_1autoupdate_1_1UpdateSourceOperator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+bl_idname</edgelabel>
+          <edgelabel>+bl_label</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+new_source</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/autoupdate.py" line="173" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/autoupdate.py" bodystart="173" bodyend="185"/>
+    <listofallmembers>
+      <member refid="classcam_1_1autoupdate_1_1UpdateSourceOperator_1ab33486c49808c92b108bcf88f0538179" prot="public" virt="non-virtual"><scope>cam::autoupdate::UpdateSourceOperator</scope><name>bl_idname</name></member>
+      <member refid="classcam_1_1autoupdate_1_1UpdateSourceOperator_1a1dcd8e2bb9ee351921deed009631e814" prot="public" virt="non-virtual"><scope>cam::autoupdate::UpdateSourceOperator</scope><name>bl_label</name></member>
+      <member refid="classcam_1_1autoupdate_1_1UpdateSourceOperator_1a46ef1de640e2121d7843f4a560e38af8" prot="public" virt="non-virtual"><scope>cam::autoupdate::UpdateSourceOperator</scope><name>execute</name></member>
+      <member refid="classcam_1_1autoupdate_1_1UpdateSourceOperator_1aaf6e4d2cc9cb54c082ccf33c3a362fce" prot="public" virt="non-virtual"><scope>cam::autoupdate::UpdateSourceOperator</scope><name>new_source</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

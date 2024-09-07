@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacecam_1_1involute__gear" xml:lang="en-US">
+<title>cam.involute_gear Namespace Reference</title>
+<indexterm><primary>cam.involute_gear</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacecam_1_1involute__gear_1a8458bc1ecdad9132006e80f2a2ff6771">gear_polar</link> (r, theta)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1involute__gear_1af9e032dc811a4f74cea4ad00226e31b7">gear_iang</link> (r1, r2)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1involute__gear_1a3c13a5e9cd508d3e74f787cbd842ecff">gear_q7</link> (f, r, b, r2, t, s)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1involute__gear_1a8e62da9a31832de2406a053839a3ac78">gear_q6</link> (b, s, t, d)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1involute__gear_1a38d5258dcc1c263a4f83d5c913ebadfa">gear</link> (mm_per_tooth=0.003, number_of_teeth=5, hole_diameter=0.003175, pressure_angle=0.3488, clearance=0.0, backlash=0.0, rim_size=0.0005, hub_diameter=0.006, spokes=4)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1involute__gear_1a95d4f3aaf6278990b304f696492711f3">rack</link> (mm_per_tooth=0.01, number_of_teeth=11, height=0.012, pressure_angle=0.3488, backlash=0.0, hole_diameter=0.003175, tooth_per_hole=4)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>BlenderCAM &apos;involute_gear.py&apos; Ported by Alain Pelletier Jan 2022
+
+from:
+Public Domain Parametric Involute Spur Gear (and involute helical gear and involute rack)
+version 1.1
+by Leemon Baird, 2011, Leemon@Leemon.com
+http:www.thingiverse.com/thing:5505
+
+This file is public domain.  Use it for any purpose, including commercial
+applications.  Attribution would be nice, but is not required.  There is
+no warranty of any kind, including its correctness, usefulness, or safety.
+
+This is parameterized involute spur (or helical) gear.  It is much simpler and less powerful than
+others on Thingiverse.  But it is public domain.  I implemented it from scratch from the
+descriptions and equations on Wikipedia and the web, using Mathematica for calculations and testing,
+and I now release it into the public domain.
+
+    http:en.wikipedia.org/wiki/Involute_gear
+    http:en.wikipedia.org/wiki/Gear
+    http:en.wikipedia.org/wiki/List_of_gear_nomenclature
+    http:gtrebaol.free.fr/doc/catia/spur_gear.html
+    http:www.cs.cmu.edu/~rapidproto/mechanisms/chpt7.html
+
+The module gear() gives an involute spur gear, with reasonable defaults for all the parameters.
+Normally, you should just choose the first 4 parameters, and let the rest be default values.
+The module gear() gives a gear in the XY plane, centered on the origin, with one tooth centered on
+the positive Y axis.  The various functions below it take the same parameters, and return various
+measurements for the gear.  The most important is pitch_radius, which tells how far apart to space
+gears that are meshing, and adendum_radius, which gives the size of the region filled by the gear.
+A gear has a &quot;pitch circle&quot;, which is an invisible circle that cuts through the middle of each
+tooth (though not the exact center). In order for two gears to mesh, their pitch circles should
+just touch.  So the distance between their centers should be pitch_radius() for one, plus pitch_radius()
+for the other, which gives the radii of their pitch circles.
+
+In order for two gears to mesh, they must have the same mm_per_tooth and pressure_angle parameters.
+mm_per_tooth gives the number of millimeters of arc around the pitch circle covered by one tooth and one
+space between teeth.  The pitch angle controls how flat or bulged the sides of the teeth are.  Common
+values include 14.5 degrees and 20 degrees, and occasionally 25.  Though I&apos;ve seen 28 recommended for
+plastic gears. Larger numbers bulge out more, giving stronger teeth, so 28 degrees is the default here.
+
+The ratio of number_of_teeth for two meshing gears gives how many times one will make a full
+revolution when the the other makes one full revolution.  If the two numbers are coprime (i.e.
+are not both divisible by the same number greater than 1), then every tooth on one gear
+will meet every tooth on the other, for more even wear.  So coprime numbers of teeth are good.
+
+The module rack() gives a rack, which is a bar with teeth.  A rack can mesh with any
+gear that has the same mm_per_tooth and pressure_angle.
+
+Some terminology:
+The outline of a gear is a smooth circle (the &quot;pitch circle&quot;) which has mountains and valleys
+added so it is toothed.  So there is an inner circle (the &quot;root circle&quot;) that touches the
+base of all the teeth, an outer circle that touches the tips of all the teeth,
+and the invisible pitch circle in between them.  There is also a &quot;base circle&quot;, which can be smaller than
+all three of the others, which controls the shape of the teeth.  The side of each tooth lies on the path
+that the end of a string would follow if it were wrapped tightly around the base circle, then slowly unwound.
+That shape is an &quot;involute&quot;, which gives this type of gear its name.
+
+An involute spur gear, with reasonable defaults for all the parameters.
+Normally, you should just choose the first 4 parameters, and let the rest be default values.
+Meshing gears must match in mm_per_tooth, pressure_angle, and twist,
+and be separated by the sum of their pitch radii, which can be found with pitch_radius().
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespacecam_1_1involute__gear_1a38d5258dcc1c263a4f83d5c913ebadfa"/><section>
+    <title>gear()</title>
+<indexterm><primary>gear</primary><secondary>cam.involute_gear</secondary></indexterm>
+<indexterm><primary>cam.involute_gear</primary><secondary>gear</secondary></indexterm>
+<para><computeroutput>cam.involute_gear.gear ( mm_per_tooth = <computeroutput>0.003</computeroutput>
+,  number_of_teeth = <computeroutput>5</computeroutput>
+,  hole_diameter = <computeroutput>0.003175</computeroutput>
+,  pressure_angle = <computeroutput>0.3488</computeroutput>
+,  clearance = <computeroutput>0.0</computeroutput>
+,  backlash = <computeroutput>0.0</computeroutput>
+,  rim_size = <computeroutput>0.0005</computeroutput>
+,  hub_diameter = <computeroutput>0.006</computeroutput>
+,  spokes = <computeroutput>4</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1involute__gear_a38d5258dcc1c263a4f83d5c913ebadfa_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1involute__gear_1af9e032dc811a4f74cea4ad00226e31b7"/><section>
+    <title>gear_iang()</title>
+<indexterm><primary>gear_iang</primary><secondary>cam.involute_gear</secondary></indexterm>
+<indexterm><primary>cam.involute_gear</primary><secondary>gear_iang</secondary></indexterm>
+<para><computeroutput>cam.involute_gear.gear_iang ( r1,  r2)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1involute__gear_af9e032dc811a4f74cea4ad00226e31b7_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1involute__gear_1a8458bc1ecdad9132006e80f2a2ff6771"/><section>
+    <title>gear_polar()</title>
+<indexterm><primary>gear_polar</primary><secondary>cam.involute_gear</secondary></indexterm>
+<indexterm><primary>cam.involute_gear</primary><secondary>gear_polar</secondary></indexterm>
+<para><computeroutput>cam.involute_gear.gear_polar ( r,  theta)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1involute__gear_a8458bc1ecdad9132006e80f2a2ff6771_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1involute__gear_1a8e62da9a31832de2406a053839a3ac78"/><section>
+    <title>gear_q6()</title>
+<indexterm><primary>gear_q6</primary><secondary>cam.involute_gear</secondary></indexterm>
+<indexterm><primary>cam.involute_gear</primary><secondary>gear_q6</secondary></indexterm>
+<para><computeroutput>cam.involute_gear.gear_q6 ( b,  s,  t,  d)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1involute__gear_a8e62da9a31832de2406a053839a3ac78_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1involute__gear_a8e62da9a31832de2406a053839a3ac78_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1involute__gear_1a3c13a5e9cd508d3e74f787cbd842ecff"/><section>
+    <title>gear_q7()</title>
+<indexterm><primary>gear_q7</primary><secondary>cam.involute_gear</secondary></indexterm>
+<indexterm><primary>cam.involute_gear</primary><secondary>gear_q7</secondary></indexterm>
+<para><computeroutput>cam.involute_gear.gear_q7 ( f,  r,  b,  r2,  t,  s)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1involute__gear_a3c13a5e9cd508d3e74f787cbd842ecff_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1involute__gear_a3c13a5e9cd508d3e74f787cbd842ecff_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1involute__gear_1a95d4f3aaf6278990b304f696492711f3"/><section>
+    <title>rack()</title>
+<indexterm><primary>rack</primary><secondary>cam.involute_gear</secondary></indexterm>
+<indexterm><primary>cam.involute_gear</primary><secondary>rack</secondary></indexterm>
+<para><computeroutput>cam.involute_gear.rack ( mm_per_tooth = <computeroutput>0.01</computeroutput>
+,  number_of_teeth = <computeroutput>11</computeroutput>
+,  height = <computeroutput>0.012</computeroutput>
+,  pressure_angle = <computeroutput>0.3488</computeroutput>
+,  backlash = <computeroutput>0.0</computeroutput>
+,  hole_diameter = <computeroutput>0.003175</computeroutput>
+,  tooth_per_hole = <computeroutput>4</computeroutput>
+)</computeroutput></para></section>
+</section>
+</section>

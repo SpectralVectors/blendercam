@@ -1,0 +1,1118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle" kind="class" language="Python" prot="public">
+    <compoundname>cam::curvecamcreate::CamCurvePuzzle</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Operator</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a97efebe6fbc1b9917e7516f78f9e8a29" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.curvecamcreate.CamCurvePuzzle::bl_idname</definition>
+        <argsstring></argsstring>
+        <name>bl_idname</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.bl_idname</qualifiedname>
+        <initializer>=  &quot;object.curve_puzzle&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1055" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1055" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1ab8aefd83f44fcb8380a8766235aae1fc" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.curvecamcreate.CamCurvePuzzle::bl_label</definition>
+        <argsstring></argsstring>
+        <name>bl_label</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.bl_label</qualifiedname>
+        <initializer>=  &quot;Puzzle Joints&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1056" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1056" bodyend="-1"/>
+        <referencedby refid="classcam_1_1preset__managers_1_1CAM__MACHINE__MT__presets_1af95f7812d2952b26a26809ab923dac09" compoundref="preset__managers_8py" startline="28" endline="38">cam.preset_managers.CAM_MACHINE_MT_presets.post_cb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1ac055f852d01c921cacce81d3e96dcae2" prot="public" static="yes" mutable="no">
+        <type>dict</type>
+        <definition>dict cam.curvecamcreate.CamCurvePuzzle::bl_options</definition>
+        <argsstring></argsstring>
+        <name>bl_options</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.bl_options</qualifiedname>
+        <initializer>=  {&apos;REGISTER&apos;, &apos;UNDO&apos;, &apos;PRESET&apos;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1057" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1057" bodyend="-1"/>
+        <referencedby refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a9628cbca8e69ec75b2337171a02bf428" compoundref="async__op_8py" startline="32" endline="59">cam.async_op.AsyncOperatorMixin.modal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a324df44f193c62ac56eee230b0446bf1" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamcreate.CamCurvePuzzle::diameter</definition>
+        <argsstring></argsstring>
+        <name>diameter</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.diameter</qualifiedname>
+        <initializer>(
+        name=&quot;Tool Diameter&quot;,
+        default=0.003175,
+        min=0.001,
+        max=3.0,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1059" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1059" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamtools_1_1CamCurveIntarsion_1af4934bdf7ccb17b0c1652455ccef9e06" compoundref="curvecamtools_8py" startline="146" endline="197">cam.curvecamtools.CamCurveIntarsion.execute</referencedby>
+        <referencedby refid="classcam_1_1curvecamtools_1_1CamCurveOvercuts_1ac36621f328a1634d1e5f82068504df8c" compoundref="curvecamtools_8py" startline="239" endline="307">cam.curvecamtools.CamCurveOvercuts.execute</referencedby>
+        <referencedby refid="classcam_1_1curvecamtools_1_1CamCurveOvercutsB_1a4dfd3aeb9a26899f900625361349c9d0" compoundref="curvecamtools_8py" startline="369" endline="579">cam.curvecamtools.CamCurveOvercutsB.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1ad2fd6594dcd13c1df827a8e11c93b0f1" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamcreate.CamCurvePuzzle::finger_tolerance</definition>
+        <argsstring></argsstring>
+        <name>finger_tolerance</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.finger_tolerance</qualifiedname>
+        <initializer>(
+        name=&quot;Finger Play Room&quot;,
+        default=0.00005,
+        min=0,
+        max=0.003,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1067" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1067" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a53b8955206a23cd6d63c1619a33492d9" prot="public" static="yes" mutable="no">
+        <type>IntProperty</type>
+        <definition>IntProperty cam.curvecamcreate.CamCurvePuzzle::finger_amount</definition>
+        <argsstring></argsstring>
+        <name>finger_amount</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.finger_amount</qualifiedname>
+        <initializer>(
+        name=&quot;Finger Amount&quot;,
+        default=1,
+        min=0,
+        max=100,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1075" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1075" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a972c2d78baf1399582080523dc12c8c5" prot="public" static="yes" mutable="no">
+        <type>IntProperty</type>
+        <definition>IntProperty cam.curvecamcreate.CamCurvePuzzle::stem_size</definition>
+        <argsstring></argsstring>
+        <name>stem_size</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.stem_size</qualifiedname>
+        <initializer>(
+        name=&quot;Size of the Stem&quot;,
+        default=2,
+        min=1,
+        max=200,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1081" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1081" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a78c9c6751bd4bba251dc2cf5cbfee32d" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamcreate.CamCurvePuzzle::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.width</qualifiedname>
+        <initializer>(
+        name=&quot;Width&quot;,
+        default=0.100,
+        min=0.005,
+        max=3.0,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1087" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1087" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurvePlate_1a590d325266ef3b9e108fba68a45bd58a" compoundref="curvecamcreate_8py" startline="306" endline="478">cam.curvecamcreate.CamCurvePlate.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a51fc996f0212d2623f5992a24e54a946" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamcreate.CamCurvePuzzle::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.height</qualifiedname>
+        <initializer>(
+        name=&quot;Height or Thickness&quot;,
+        default=0.025,
+        min=0.005,
+        max=3.0,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1095" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1095" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurvePlate_1a590d325266ef3b9e108fba68a45bd58a" compoundref="curvecamcreate_8py" startline="306" endline="478">cam.curvecamcreate.CamCurvePlate.execute</referencedby>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a2eb1a5bb02a5de31a972abef45e2fbbd" compoundref="curvecamcreate_8py" startline="538" endline="575">cam.curvecamcreate.CamCurveFlatCone.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1aeb08be45d6d6d45673dfb0e7038be705" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamcreate.CamCurvePuzzle::angle</definition>
+        <argsstring></argsstring>
+        <name>angle</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.angle</qualifiedname>
+        <initializer>(
+        name=&quot;Angle A&quot;,
+        default=pi/4,
+        min=-10,
+        max=10,
+        subtype=&quot;ANGLE&quot;,
+        unit=&quot;ROTATION&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1104" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1ab186804dfc9fce1bc17d042ed2422507" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamcreate.CamCurvePuzzle::angleb</definition>
+        <argsstring></argsstring>
+        <name>angleb</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.angleb</qualifiedname>
+        <initializer>(
+        name=&quot;Angle B&quot;,
+        default=pi/4,
+        min=-10,
+        max=10,
+        subtype=&quot;ANGLE&quot;,
+        unit=&quot;ROTATION&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1112" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a38c16f56614b22dcb86c932d4e66c1be" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamcreate.CamCurvePuzzle::radius</definition>
+        <argsstring></argsstring>
+        <name>radius</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.radius</qualifiedname>
+        <initializer>(
+        name=&quot;Arc Radius&quot;,
+        default=0.025,
+        min=0.005,
+        max=5,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1121" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1121" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurvePlate_1a590d325266ef3b9e108fba68a45bd58a" compoundref="curvecamcreate_8py" startline="306" endline="478">cam.curvecamcreate.CamCurvePlate.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a5d4d4363492b4bd2a041fa09c3702a46" prot="public" static="yes" mutable="no">
+        <type>EnumProperty</type>
+        <definition>EnumProperty cam.curvecamcreate.CamCurvePuzzle::interlock_type</definition>
+        <argsstring></argsstring>
+        <name>interlock_type</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.interlock_type</qualifiedname>
+        <initializer>(
+        name=&apos;Type of Shape&apos;,
+        items=(
+            (&apos;JOINT&apos;, &apos;Joint&apos;, &apos;Puzzle Joint interlock&apos;),
+            (&apos;BAR&apos;, &apos;Bar&apos;, &apos;Bar interlock&apos;),
+            (&apos;ARC&apos;, &apos;Arc&apos;, &apos;Arc interlock&apos;),
+            (&apos;MULTIANGLE&apos;, &apos;Multi <ref refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1aeb08be45d6d6d45673dfb0e7038be705" kindref="member">angle</ref>&apos;, &apos;Multi <ref refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1aeb08be45d6d6d45673dfb0e7038be705" kindref="member">angle</ref> joint&apos;),
+            (&apos;CURVEBAR&apos;, &apos;Arc Bar&apos;, &apos;Arc Bar interlock&apos;),
+            (&apos;CURVEBARCURVE&apos;, &apos;Arc Bar Arc&apos;, &apos;Arc Bar Arc interlock&apos;),
+            (&apos;CURVET&apos;, &apos;T curve&apos;, &apos;T curve interlock&apos;),
+            (&apos;T&apos;, &apos;T Bar&apos;, &apos;T Bar interlock&apos;),
+            (&apos;CORNER&apos;, &apos;Corner Bar&apos;, &apos;Corner Bar interlock&apos;),
+            (&apos;TILE&apos;, &apos;Tile&apos;, &apos;Tile interlock&apos;),
+            (&apos;OPENCURVE&apos;, &apos;Open Curve&apos;, &apos;Corner Bar interlock&apos;)
+        ),
+        description=&apos;Type of interlock&apos;,
+        default=&apos;CURVET&apos;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1130" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1130" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1ad03fe32ff0b283e31cc54a27177fa6b5" compoundref="curvecamcreate_8py" startline="1332" endline="1445">cam.curvecamcreate.CamCurvePuzzle.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a83ce2cbf8ff42f7479ef40e18176f845" prot="public" static="yes" mutable="no">
+        <type>EnumProperty</type>
+        <definition>EnumProperty cam.curvecamcreate.CamCurvePuzzle::gender</definition>
+        <argsstring></argsstring>
+        <name>gender</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.gender</qualifiedname>
+        <initializer>(
+        name=&apos;Type Gender&apos;,
+        items=(
+            (&apos;MF&apos;, &apos;Male-Receptacle&apos;, &apos;Male and receptacle&apos;),
+            (&apos;F&apos;, &apos;Receptacle only&apos;, &apos;Receptacle&apos;),
+            (&apos;M&apos;, &apos;Male only&apos;, &apos;Male&apos;)
+        ),
+        description=&apos;Type of interlock&apos;,
+        default=&apos;MF&apos;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1148" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1adfe407363432c67e7cc277cafeb8f8ff" prot="public" static="yes" mutable="no">
+        <type>EnumProperty</type>
+        <definition>EnumProperty cam.curvecamcreate.CamCurvePuzzle::base_gender</definition>
+        <argsstring></argsstring>
+        <name>base_gender</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.base_gender</qualifiedname>
+        <initializer>(
+        name=&apos;Base Gender&apos;,
+        items=(
+            (&apos;MF&apos;, &apos;Male - Receptacle&apos;, &apos;Male - Receptacle&apos;),
+            (&apos;F&apos;, &apos;Receptacle&apos;, &apos;Receptacle&apos;),
+            (&apos;M&apos;, &apos;Male&apos;, &apos;Male&apos;)
+        ),
+        description=&apos;Type of interlock&apos;,
+        default=&apos;M&apos;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1158" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a451de9ccaaec5a235697ba62d51d6271" prot="public" static="yes" mutable="no">
+        <type>EnumProperty</type>
+        <definition>EnumProperty cam.curvecamcreate.CamCurvePuzzle::multiangle_gender</definition>
+        <argsstring></argsstring>
+        <name>multiangle_gender</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.multiangle_gender</qualifiedname>
+        <initializer>(
+        name=&apos;Multiangle Gender&apos;,
+        items=(
+            (&apos;MMF&apos;, &apos;Male Male Receptacle&apos;, &apos;M M F&apos;),
+            (&apos;MFF&apos;, &apos;Male Receptacle Receptacle&apos;, &apos;M F F&apos;)
+        ),
+        description=&apos;Type of interlock&apos;,
+        default=&apos;MFF&apos;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1168" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1aa0ddabf2977aa1a8962d9915d0e7462f" prot="public" static="yes" mutable="no">
+        <type>BoolProperty</type>
+        <definition>BoolProperty cam.curvecamcreate.CamCurvePuzzle::mitre</definition>
+        <argsstring></argsstring>
+        <name>mitre</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.mitre</qualifiedname>
+        <initializer>(
+        name=&quot;Add Mitres&quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1178" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1aa980d990be9f468f59f07e5cae6d3a50" prot="public" static="yes" mutable="no">
+        <type>BoolProperty</type>
+        <definition>BoolProperty cam.curvecamcreate.CamCurvePuzzle::twist_lock</definition>
+        <argsstring></argsstring>
+        <name>twist_lock</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.twist_lock</qualifiedname>
+        <initializer>(
+        name=&quot;Add TwistLock&quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1183" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a02812e4d508f82ba9c2ce0df6903819c" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamcreate.CamCurvePuzzle::twist_thick</definition>
+        <argsstring></argsstring>
+        <name>twist_thick</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.twist_thick</qualifiedname>
+        <initializer>(
+        name=&quot;Twist Thickness&quot;,
+        default=0.0047,
+        min=0.001,
+        max=3.0,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1187" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a5b60e458a4799260d3a85bff8b38fd6b" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamcreate.CamCurvePuzzle::twist_percent</definition>
+        <argsstring></argsstring>
+        <name>twist_percent</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.twist_percent</qualifiedname>
+        <initializer>(
+        name=&quot;Twist Neck&quot;,
+        default=0.3,
+        min=0.1,
+        max=0.9,
+        precision=4,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1195" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a8011590f111116e181a45f51a8f5b295" prot="public" static="yes" mutable="no">
+        <type>BoolProperty</type>
+        <definition>BoolProperty cam.curvecamcreate.CamCurvePuzzle::twist_keep</definition>
+        <argsstring></argsstring>
+        <name>twist_keep</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.twist_keep</qualifiedname>
+        <initializer>(
+        name=&quot;Keep Twist Holes&quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1202" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1af82bb26efd40cb6e323be84e6af647c1" prot="public" static="yes" mutable="no">
+        <type>BoolProperty</type>
+        <definition>BoolProperty cam.curvecamcreate.CamCurvePuzzle::twist_line</definition>
+        <argsstring></argsstring>
+        <name>twist_line</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.twist_line</qualifiedname>
+        <initializer>(
+        name=&quot;Add Twist to Bar&quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1206" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1acaedb283d0a23cb9941dbe14ffeb0941" prot="public" static="yes" mutable="no">
+        <type>IntProperty</type>
+        <definition>IntProperty cam.curvecamcreate.CamCurvePuzzle::twist_line_amount</definition>
+        <argsstring></argsstring>
+        <name>twist_line_amount</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.twist_line_amount</qualifiedname>
+        <initializer>(
+        name=&quot;Amount of Separators&quot;,
+        default=2,
+        min=1,
+        max=600,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1210" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a58b324661953fe1d23fc48b1386bbf4a" prot="public" static="yes" mutable="no">
+        <type>BoolProperty</type>
+        <definition>BoolProperty cam.curvecamcreate.CamCurvePuzzle::twist_separator</definition>
+        <argsstring></argsstring>
+        <name>twist_separator</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.twist_separator</qualifiedname>
+        <initializer>(
+        name=&quot;Add Twist Separator&quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1216" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a2b96f8fd510cf40f781ae222805fb536" prot="public" static="yes" mutable="no">
+        <type>IntProperty</type>
+        <definition>IntProperty cam.curvecamcreate.CamCurvePuzzle::twist_separator_amount</definition>
+        <argsstring></argsstring>
+        <name>twist_separator_amount</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.twist_separator_amount</qualifiedname>
+        <initializer>(
+        name=&quot;Amount of Separators&quot;,
+        default=2,
+        min=2,
+        max=600,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1220" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a362ffac5106f2a194224f2dea4122c17" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamcreate.CamCurvePuzzle::twist_separator_spacing</definition>
+        <argsstring></argsstring>
+        <name>twist_separator_spacing</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.twist_separator_spacing</qualifiedname>
+        <initializer>(
+        name=&quot;Separator Spacing&quot;,
+        default=0.025,
+        min=-0.004,
+        max=1.0,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1226" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1aab7f7f84b4059ec2c6a879eaf6cdf89f" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamcreate.CamCurvePuzzle::twist_separator_edge_distance</definition>
+        <argsstring></argsstring>
+        <name>twist_separator_edge_distance</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.twist_separator_edge_distance</qualifiedname>
+        <initializer>(
+        name=&quot;Separator Edge Distance&quot;,
+        default=0.01,
+        min=0.0005,
+        max=0.1,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1234" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a758ca56be8e198e7a5f0e370eeb0b3fa" prot="public" static="yes" mutable="no">
+        <type>IntProperty</type>
+        <definition>IntProperty cam.curvecamcreate.CamCurvePuzzle::tile_x_amount</definition>
+        <argsstring></argsstring>
+        <name>tile_x_amount</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.tile_x_amount</qualifiedname>
+        <initializer>(
+        name=&quot;Amount of X Fingers&quot;,
+        default=2,
+        min=1,
+        max=600,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1242" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1af23da0085f00e48b1f5adc622231a4fb" prot="public" static="yes" mutable="no">
+        <type>IntProperty</type>
+        <definition>IntProperty cam.curvecamcreate.CamCurvePuzzle::tile_y_amount</definition>
+        <argsstring></argsstring>
+        <name>tile_y_amount</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.tile_y_amount</qualifiedname>
+        <initializer>(
+        name=&quot;Amount of Y Fingers&quot;,
+        default=2,
+        min=1,
+        max=600,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1248" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a7c52098eb61ded9c08188073b2b00503" prot="public" static="yes" mutable="no">
+        <type>IntProperty</type>
+        <definition>IntProperty cam.curvecamcreate.CamCurvePuzzle::interlock_amount</definition>
+        <argsstring></argsstring>
+        <name>interlock_amount</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.interlock_amount</qualifiedname>
+        <initializer>(
+        name=&quot;Interlock Amount on Curve&quot;,
+        default=2,
+        min=0,
+        max=200,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1254" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a218d68cede79a97abaa0a13f43d94928" prot="public" static="yes" mutable="no">
+        <type>BoolProperty</type>
+        <definition>BoolProperty cam.curvecamcreate.CamCurvePuzzle::overcut</definition>
+        <argsstring></argsstring>
+        <name>overcut</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.overcut</qualifiedname>
+        <initializer>(
+        name=&quot;Add Overcut&quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1260" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1260" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurveDrawer_1ac31db157669b5603870151029a38f227" compoundref="curvecamcreate_8py" startline="930" endline="944">cam.curvecamcreate.CamCurveDrawer.draw</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a39ad0e18816f040b64b3957e6aeed1fa" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamcreate.CamCurvePuzzle::overcut_diameter</definition>
+        <argsstring></argsstring>
+        <name>overcut_diameter</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.overcut_diameter</qualifiedname>
+        <initializer>(
+        name=&quot;Overcut Tool Diameter&quot;,
+        default=0.003175,
+        min=-0.001,
+        max=0.5,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1264" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1264" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a3222a514bae20a87ea286d62b004cebc" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamcreate.CamCurvePuzzle::interlock_type</definition>
+        <argsstring></argsstring>
+        <name>interlock_type</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.interlock_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1280" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1280" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1ad03fe32ff0b283e31cc54a27177fa6b5" compoundref="curvecamcreate_8py" startline="1332" endline="1445">cam.curvecamcreate.CamCurvePuzzle.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a3afa2653e45cb1ab2ef5f1efa3dc0b1f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamcreate.CamCurvePuzzle::diameter</definition>
+        <argsstring></argsstring>
+        <name>diameter</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.diameter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1355" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1355" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamtools_1_1CamCurveIntarsion_1af4934bdf7ccb17b0c1652455ccef9e06" compoundref="curvecamtools_8py" startline="146" endline="197">cam.curvecamtools.CamCurveIntarsion.execute</referencedby>
+        <referencedby refid="classcam_1_1curvecamtools_1_1CamCurveOvercuts_1ac36621f328a1634d1e5f82068504df8c" compoundref="curvecamtools_8py" startline="239" endline="307">cam.curvecamtools.CamCurveOvercuts.execute</referencedby>
+        <referencedby refid="classcam_1_1curvecamtools_1_1CamCurveOvercutsB_1a4dfd3aeb9a26899f900625361349c9d0" compoundref="curvecamtools_8py" startline="369" endline="579">cam.curvecamtools.CamCurveOvercutsB.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1ac45210e8c3b73ceb56517318034b9fc1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamcreate.CamCurvePuzzle::finger_tolerance</definition>
+        <argsstring></argsstring>
+        <name>finger_tolerance</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.finger_tolerance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1355" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1355" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a656906e32d347ed4094984c450c6673b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamcreate.CamCurvePuzzle::finger_amount</definition>
+        <argsstring></argsstring>
+        <name>finger_amount</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.finger_amount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1361" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1361" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a8a748b89d36d6f99679a608ed26279a7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamcreate.CamCurvePuzzle::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1368" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1368" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurvePlate_1a590d325266ef3b9e108fba68a45bd58a" compoundref="curvecamcreate_8py" startline="306" endline="478">cam.curvecamcreate.CamCurvePlate.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a6e09399ed8bea5f0a0dc20df651445e5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamcreate.CamCurvePuzzle::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1368" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1368" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurvePlate_1a590d325266ef3b9e108fba68a45bd58a" compoundref="curvecamcreate_8py" startline="306" endline="478">cam.curvecamcreate.CamCurvePlate.execute</referencedby>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a2eb1a5bb02a5de31a972abef45e2fbbd" compoundref="curvecamcreate_8py" startline="538" endline="575">cam.curvecamcreate.CamCurveFlatCone.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a27ef022007e9c0d320f943c1ee582292" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamcreate.CamCurvePuzzle::angle</definition>
+        <argsstring></argsstring>
+        <name>angle</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.angle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1374" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1374" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a0c75a465e4752ae4df1c0f059198bb94" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamcreate.CamCurvePuzzle::angleb</definition>
+        <argsstring></argsstring>
+        <name>angleb</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.angleb</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1374" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1374" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1ada44ed34474e1d0bd8e8f0a97b5a2685" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamcreate.CamCurvePuzzle::radius</definition>
+        <argsstring></argsstring>
+        <name>radius</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.radius</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1379" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1379" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurvePlate_1a590d325266ef3b9e108fba68a45bd58a" compoundref="curvecamcreate_8py" startline="306" endline="478">cam.curvecamcreate.CamCurvePlate.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1afba499373a5a88c8a467e7e874f003ed" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamcreate.CamCurvePuzzle::tile_x_amount</definition>
+        <argsstring></argsstring>
+        <name>tile_x_amount</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.tile_x_amount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1424" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1424" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a95424dc314770f2938defab836a8a252" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamcreate.CamCurvePuzzle::tile_y_amount</definition>
+        <argsstring></argsstring>
+        <name>tile_y_amount</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.tile_y_amount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1424" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1424" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1aee209e1278832b2868d9746822c4a831" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamcreate.CamCurvePuzzle::overcut_diameter</definition>
+        <argsstring></argsstring>
+        <name>overcut_diameter</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.overcut_diameter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1434" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1434" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a26ddf586b02156a80ad416b8b1ce212f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamcreate.CamCurvePuzzle::overcut</definition>
+        <argsstring></argsstring>
+        <name>overcut</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.overcut</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1434" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1434" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurveDrawer_1ac31db157669b5603870151029a38f227" compoundref="curvecamcreate_8py" startline="930" endline="944">cam.curvecamcreate.CamCurveDrawer.draw</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a407ccc1fb166a47163bd5c7f2b37c61c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamcreate.CamCurvePuzzle::twist_thick</definition>
+        <argsstring></argsstring>
+        <name>twist_thick</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.twist_thick</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1437" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1437" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a9574b5525acbfe1b1f3fd6db1185801b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamcreate.CamCurvePuzzle::twist_separator_amount</definition>
+        <argsstring></argsstring>
+        <name>twist_separator_amount</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.twist_separator_amount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1437" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1437" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1aee75da92daba5bf116a8364c7959ed78" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamcreate.CamCurvePuzzle::twist_separator_spacing</definition>
+        <argsstring></argsstring>
+        <name>twist_separator_spacing</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.twist_separator_spacing</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1438" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1438" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a8f01ab1a775eba8a5d419c18254c567c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamcreate.CamCurvePuzzle::twist_separator_edge_distance</definition>
+        <argsstring></argsstring>
+        <name>twist_separator_edge_distance</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.twist_separator_edge_distance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1438" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1438" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1afd91d27efd950dc17e9a0546021630e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.curvecamcreate.CamCurvePuzzle.draw</definition>
+        <argsstring>(self, context)</argsstring>
+        <name>draw</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.draw</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1273" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1273" bodyend="1331"/>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1ad03fe32ff0b283e31cc54a27177fa6b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.curvecamcreate.CamCurvePuzzle.execute</definition>
+        <argsstring>(self, context)</argsstring>
+        <name>execute</name>
+        <qualifiedname>cam.curvecamcreate.CamCurvePuzzle.execute</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1332" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1332" bodyend="1445"/>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurveInterlock_1aa8081a77bcec6d5253812167165f0a51" compoundref="curvecamcreate_8py" startline="752">cam.curvecamcreate.CamCurveInterlock.interlock_type</references>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a5d4d4363492b4bd2a041fa09c3702a46" compoundref="curvecamcreate_8py" startline="1130">cam.curvecamcreate.CamCurvePuzzle.interlock_type</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Generates Puzzle Joints and Interlocks</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.curvecamcreate.CamCurvePuzzle</label>
+        <link refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="8">
+        <label>BoolProperty</label>
+      </node>
+      <node id="7">
+        <label>EnumProperty</label>
+      </node>
+      <node id="5">
+        <label>FloatProperty</label>
+      </node>
+      <node id="6">
+        <label>IntProperty</label>
+      </node>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.curvecamcreate.CamCurvePuzzle</label>
+        <link refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+bl_idname</edgelabel>
+          <edgelabel>+bl_label</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+bl_options</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+angle</edgelabel>
+          <edgelabel>+angleb</edgelabel>
+          <edgelabel>+diameter</edgelabel>
+          <edgelabel>+finger_tolerance</edgelabel>
+          <edgelabel>+height</edgelabel>
+          <edgelabel>+overcut_diameter</edgelabel>
+          <edgelabel>+radius</edgelabel>
+          <edgelabel>+twist_percent</edgelabel>
+          <edgelabel>+twist_separator_edge_distance</edgelabel>
+          <edgelabel>+twist_separator_spacing</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>+finger_amount</edgelabel>
+          <edgelabel>+interlock_amount</edgelabel>
+          <edgelabel>+stem_size</edgelabel>
+          <edgelabel>+tile_x_amount</edgelabel>
+          <edgelabel>+tile_y_amount</edgelabel>
+          <edgelabel>+twist_line_amount</edgelabel>
+          <edgelabel>+twist_separator_amount</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>+base_gender</edgelabel>
+          <edgelabel>+gender</edgelabel>
+          <edgelabel>+interlock_type</edgelabel>
+          <edgelabel>+multiangle_gender</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>+mitre</edgelabel>
+          <edgelabel>+overcut</edgelabel>
+          <edgelabel>+twist_keep</edgelabel>
+          <edgelabel>+twist_line</edgelabel>
+          <edgelabel>+twist_lock</edgelabel>
+          <edgelabel>+twist_separator</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dict</label>
+      </node>
+      <node id="3">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1053" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1053" bodyend="1445"/>
+    <listofallmembers>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1aeb08be45d6d6d45673dfb0e7038be705" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>angle</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a27ef022007e9c0d320f943c1ee582292" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>angle</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1ab186804dfc9fce1bc17d042ed2422507" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>angleb</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a0c75a465e4752ae4df1c0f059198bb94" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>angleb</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1adfe407363432c67e7cc277cafeb8f8ff" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>base_gender</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a97efebe6fbc1b9917e7516f78f9e8a29" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>bl_idname</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1ab8aefd83f44fcb8380a8766235aae1fc" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>bl_label</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1ac055f852d01c921cacce81d3e96dcae2" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>bl_options</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a324df44f193c62ac56eee230b0446bf1" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>diameter</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a3afa2653e45cb1ab2ef5f1efa3dc0b1f" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>diameter</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1afd91d27efd950dc17e9a0546021630e8" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>draw</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1ad03fe32ff0b283e31cc54a27177fa6b5" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>execute</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a53b8955206a23cd6d63c1619a33492d9" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>finger_amount</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a656906e32d347ed4094984c450c6673b" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>finger_amount</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1ad2fd6594dcd13c1df827a8e11c93b0f1" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>finger_tolerance</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1ac45210e8c3b73ceb56517318034b9fc1" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>finger_tolerance</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a83ce2cbf8ff42f7479ef40e18176f845" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>gender</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a51fc996f0212d2623f5992a24e54a946" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>height</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a6e09399ed8bea5f0a0dc20df651445e5" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>height</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a7c52098eb61ded9c08188073b2b00503" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>interlock_amount</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a5d4d4363492b4bd2a041fa09c3702a46" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>interlock_type</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a3222a514bae20a87ea286d62b004cebc" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>interlock_type</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1aa0ddabf2977aa1a8962d9915d0e7462f" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>mitre</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a451de9ccaaec5a235697ba62d51d6271" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>multiangle_gender</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a218d68cede79a97abaa0a13f43d94928" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>overcut</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a26ddf586b02156a80ad416b8b1ce212f" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>overcut</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a39ad0e18816f040b64b3957e6aeed1fa" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>overcut_diameter</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1aee209e1278832b2868d9746822c4a831" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>overcut_diameter</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a38c16f56614b22dcb86c932d4e66c1be" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>radius</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1ada44ed34474e1d0bd8e8f0a97b5a2685" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>radius</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a972c2d78baf1399582080523dc12c8c5" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>stem_size</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a758ca56be8e198e7a5f0e370eeb0b3fa" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>tile_x_amount</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1afba499373a5a88c8a467e7e874f003ed" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>tile_x_amount</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1af23da0085f00e48b1f5adc622231a4fb" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>tile_y_amount</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a95424dc314770f2938defab836a8a252" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>tile_y_amount</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a8011590f111116e181a45f51a8f5b295" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>twist_keep</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1af82bb26efd40cb6e323be84e6af647c1" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>twist_line</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1acaedb283d0a23cb9941dbe14ffeb0941" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>twist_line_amount</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1aa980d990be9f468f59f07e5cae6d3a50" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>twist_lock</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a5b60e458a4799260d3a85bff8b38fd6b" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>twist_percent</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a58b324661953fe1d23fc48b1386bbf4a" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>twist_separator</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a2b96f8fd510cf40f781ae222805fb536" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>twist_separator_amount</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a9574b5525acbfe1b1f3fd6db1185801b" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>twist_separator_amount</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1aab7f7f84b4059ec2c6a879eaf6cdf89f" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>twist_separator_edge_distance</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a8f01ab1a775eba8a5d419c18254c567c" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>twist_separator_edge_distance</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a362ffac5106f2a194224f2dea4122c17" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>twist_separator_spacing</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1aee75da92daba5bf116a8364c7959ed78" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>twist_separator_spacing</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a02812e4d508f82ba9c2ce0df6903819c" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>twist_thick</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a407ccc1fb166a47163bd5c7f2b37c61c" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>twist_thick</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a78c9c6751bd4bba251dc2cf5cbfee32d" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>width</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a8a748b89d36d6f99679a608ed26279a7" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurvePuzzle</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

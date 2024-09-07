@@ -1,0 +1,241 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacecam_1_1cam__chunk" xml:lang="en-US">
+<title>cam.cam_chunk Namespace Reference</title>
+<indexterm><primary>cam.cam_chunk</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classcam_1_1cam__chunk_1_1camPathChunk">camPathChunk</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classcam_1_1cam__chunk_1_1camPathChunkBuilder">camPathChunkBuilder</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacecam_1_1cam__chunk_1aae443f216453a876267923f185b8fea3">Rotate_pbyp</link> (originp, p, ang)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1cam__chunk_1a9ad480b2d187f750c8b12fa4c91c22e6">_internalXyDistanceTo</link> (ourpoints, theirpoints, cutoff)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1cam__chunk_1a45d40f21aa2c35b1e0b565c85333ed74">chunksCoherency</link> (chunks)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1cam__chunk_1acebd7e22b362088be2887cf1d12bbd88">setChunksZ</link> (chunks, z)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1cam__chunk_1a510d5a93759ed88ba4ee598399333408">_optimize_internal</link> (points, keep_points, e, protect_vertical, protect_vertical_limit)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1cam__chunk_1afcf54443e0975e21832bde727de88ac2">optimizeChunk</link> (chunk, operation)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1cam__chunk_1a90399dafb2a5285d13498e733ea638ce">limitChunks</link> (chunks, o, force=False)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1cam__chunk_1a99ba11ed9b7a4ae787bc650d16fdafba">parentChildPoly</link> (parents, children, o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1cam__chunk_1a218eb047597fabf4537005a14292a6d4">parentChildDist</link> (parents, children, o, distance=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1cam__chunk_1aadd268ccef89d272fd5ad5d2d87eb69a">parentChild</link> (parents, children, o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1cam__chunk_1af8dc0d6890bd1f95cceb91e7805688a4">chunksToShapely</link> (chunks)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1cam__chunk_1a9bf2bc0e6461327556a19fe116dfbda0">meshFromCurveToChunk</link> (<link linkend="_classobject">object</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1cam__chunk_1ad3e6072a206a9e8f2d864520447b8b87">makeVisible</link> (o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1cam__chunk_1a56a5d2a90ff15ceb9963e1f471fdad03">restoreVisibility</link> (o, storage)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1cam__chunk_1a58fc3af169a4c899092e731bbceaed80">meshFromCurve</link> (o, use_modifiers=False)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1cam__chunk_1ab2a9b4c221280b217dea624d99a312fa">curveToChunks</link> (o, use_modifiers=False)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1cam__chunk_1a0cc06d455ff3f17560db2450a67baa10">shapelyToChunks</link> (p, zlevel)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1cam__chunk_1a390ce4823666ce071f05f79f0fb69d95">chunkToShapely</link> (chunk)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1cam__chunk_1a2a33bfd7b634b7730791fc81fbe2d25d">chunksRefine</link> (chunks, o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1cam__chunk_1a56ba7c9150f76d7fcfade92ac0a49938">chunksRefineThreshold</link> (chunks, distance, limitdistance)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>BlenderCAM &apos;chunk.py&apos; © 2012 Vilem Novak
+ 
+Classes and Functions to build, store and optimize CAM path chunks.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespacecam_1_1cam__chunk_1a9ad480b2d187f750c8b12fa4c91c22e6"/><section>
+    <title>_internalXyDistanceTo()</title>
+<indexterm><primary>_internalXyDistanceTo</primary><secondary>cam.cam_chunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk</primary><secondary>_internalXyDistanceTo</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk._internalXyDistanceTo ( ourpoints,  theirpoints,  cutoff)<computeroutput>[protected]</computeroutput></computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1cam__chunk_a9ad480b2d187f750c8b12fa4c91c22e6_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1cam__chunk_1a510d5a93759ed88ba4ee598399333408"/><section>
+    <title>_optimize_internal()</title>
+<indexterm><primary>_optimize_internal</primary><secondary>cam.cam_chunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk</primary><secondary>_optimize_internal</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk._optimize_internal ( points,  keep_points,  e,  protect_vertical,  protect_vertical_limit)<computeroutput>[protected]</computeroutput></computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1cam__chunk_a510d5a93759ed88ba4ee598399333408_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1cam__chunk_1a45d40f21aa2c35b1e0b565c85333ed74"/><section>
+    <title>chunksCoherency()</title>
+<indexterm><primary>chunksCoherency</primary><secondary>cam.cam_chunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk</primary><secondary>chunksCoherency</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.chunksCoherency ( chunks)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1cam__chunk_1a2a33bfd7b634b7730791fc81fbe2d25d"/><section>
+    <title>chunksRefine()</title>
+<indexterm><primary>chunksRefine</primary><secondary>cam.cam_chunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk</primary><secondary>chunksRefine</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.chunksRefine ( chunks,  o)</computeroutput></para>
+<para><literallayout><computeroutput>Add Extra Points in Between for Chunks</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespacecam_1_1cam__chunk_1a56ba7c9150f76d7fcfade92ac0a49938"/><section>
+    <title>chunksRefineThreshold()</title>
+<indexterm><primary>chunksRefineThreshold</primary><secondary>cam.cam_chunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk</primary><secondary>chunksRefineThreshold</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.chunksRefineThreshold ( chunks,  distance,  limitdistance)</computeroutput></para>
+<para><literallayout><computeroutput>Add Extra Points in Between for Chunks. for Medial Axis Strategy only!</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespacecam_1_1cam__chunk_1af8dc0d6890bd1f95cceb91e7805688a4"/><section>
+    <title>chunksToShapely()</title>
+<indexterm><primary>chunksToShapely</primary><secondary>cam.cam_chunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk</primary><secondary>chunksToShapely</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.chunksToShapely ( chunks)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1cam__chunk_1a390ce4823666ce071f05f79f0fb69d95"/><section>
+    <title>chunkToShapely()</title>
+<indexterm><primary>chunkToShapely</primary><secondary>cam.cam_chunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk</primary><secondary>chunkToShapely</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.chunkToShapely ( chunk)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1cam__chunk_1ab2a9b4c221280b217dea624d99a312fa"/><section>
+    <title>curveToChunks()</title>
+<indexterm><primary>curveToChunks</primary><secondary>cam.cam_chunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk</primary><secondary>curveToChunks</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.curveToChunks ( o,  use_modifiers = <computeroutput>False</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1cam__chunk_ab2a9b4c221280b217dea624d99a312fa_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1cam__chunk_1a90399dafb2a5285d13498e733ea638ce"/><section>
+    <title>limitChunks()</title>
+<indexterm><primary>limitChunks</primary><secondary>cam.cam_chunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk</primary><secondary>limitChunks</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.limitChunks ( chunks,  o,  force = <computeroutput>False</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1cam__chunk_1ad3e6072a206a9e8f2d864520447b8b87"/><section>
+    <title>makeVisible()</title>
+<indexterm><primary>makeVisible</primary><secondary>cam.cam_chunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk</primary><secondary>makeVisible</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.makeVisible ( o)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1cam__chunk_1a58fc3af169a4c899092e731bbceaed80"/><section>
+    <title>meshFromCurve()</title>
+<indexterm><primary>meshFromCurve</primary><secondary>cam.cam_chunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk</primary><secondary>meshFromCurve</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.meshFromCurve ( o,  use_modifiers = <computeroutput>False</computeroutput>
+)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1cam__chunk_a58fc3af169a4c899092e731bbceaed80_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1cam__chunk_1a9bf2bc0e6461327556a19fe116dfbda0"/><section>
+    <title>meshFromCurveToChunk()</title>
+<indexterm><primary>meshFromCurveToChunk</primary><secondary>cam.cam_chunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk</primary><secondary>meshFromCurveToChunk</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.meshFromCurveToChunk ( object)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1cam__chunk_a9bf2bc0e6461327556a19fe116dfbda0_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1cam__chunk_1afcf54443e0975e21832bde727de88ac2"/><section>
+    <title>optimizeChunk()</title>
+<indexterm><primary>optimizeChunk</primary><secondary>cam.cam_chunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk</primary><secondary>optimizeChunk</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.optimizeChunk ( chunk,  operation)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1cam__chunk_afcf54443e0975e21832bde727de88ac2_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1cam__chunk_1aadd268ccef89d272fd5ad5d2d87eb69a"/><section>
+    <title>parentChild()</title>
+<indexterm><primary>parentChild</primary><secondary>cam.cam_chunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk</primary><secondary>parentChild</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.parentChild ( parents,  children,  o)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1cam__chunk_1a218eb047597fabf4537005a14292a6d4"/><section>
+    <title>parentChildDist()</title>
+<indexterm><primary>parentChildDist</primary><secondary>cam.cam_chunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk</primary><secondary>parentChildDist</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.parentChildDist ( parents,  children,  o,  distance = <computeroutput>None</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1cam__chunk_1a99ba11ed9b7a4ae787bc650d16fdafba"/><section>
+    <title>parentChildPoly()</title>
+<indexterm><primary>parentChildPoly</primary><secondary>cam.cam_chunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk</primary><secondary>parentChildPoly</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.parentChildPoly ( parents,  children,  o)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1cam__chunk_1a56a5d2a90ff15ceb9963e1f471fdad03"/><section>
+    <title>restoreVisibility()</title>
+<indexterm><primary>restoreVisibility</primary><secondary>cam.cam_chunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk</primary><secondary>restoreVisibility</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.restoreVisibility ( o,  storage)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1cam__chunk_1aae443f216453a876267923f185b8fea3"/><section>
+    <title>Rotate_pbyp()</title>
+<indexterm><primary>Rotate_pbyp</primary><secondary>cam.cam_chunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk</primary><secondary>Rotate_pbyp</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.Rotate_pbyp ( originp,  p,  ang)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1cam__chunk_aae443f216453a876267923f185b8fea3_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1cam__chunk_1acebd7e22b362088be2887cf1d12bbd88"/><section>
+    <title>setChunksZ()</title>
+<indexterm><primary>setChunksZ</primary><secondary>cam.cam_chunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk</primary><secondary>setChunksZ</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.setChunksZ ( chunks,  z)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1cam__chunk_1a0cc06d455ff3f17560db2450a67baa10"/><section>
+    <title>shapelyToChunks()</title>
+<indexterm><primary>shapelyToChunks</primary><secondary>cam.cam_chunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk</primary><secondary>shapelyToChunks</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.shapelyToChunks ( p,  zlevel)</computeroutput></para></section>
+</section>
+</section>

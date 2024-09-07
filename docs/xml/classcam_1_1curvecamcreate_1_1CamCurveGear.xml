@@ -1,0 +1,490 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1curvecamcreate_1_1CamCurveGear" kind="class" language="Python" prot="public">
+    <compoundname>cam::curvecamcreate::CamCurveGear</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Operator</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveGear_1a6280dc0a715388edfcd1718ed7b48ee9" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.curvecamcreate.CamCurveGear::bl_idname</definition>
+        <argsstring></argsstring>
+        <name>bl_idname</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveGear.bl_idname</qualifiedname>
+        <initializer>=  &quot;object.curve_gear&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1450" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1450" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveGear_1ac31f718314e425789ecae1de78653bf6" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.curvecamcreate.CamCurveGear::bl_label</definition>
+        <argsstring></argsstring>
+        <name>bl_label</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveGear.bl_label</qualifiedname>
+        <initializer>=  &quot;Gears&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1451" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1451" bodyend="-1"/>
+        <referencedby refid="classcam_1_1preset__managers_1_1CAM__MACHINE__MT__presets_1af95f7812d2952b26a26809ab923dac09" compoundref="preset__managers_8py" startline="28" endline="38">cam.preset_managers.CAM_MACHINE_MT_presets.post_cb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveGear_1af5ee6a62bbe5057e078140770873b694" prot="public" static="yes" mutable="no">
+        <type>dict</type>
+        <definition>dict cam.curvecamcreate.CamCurveGear::bl_options</definition>
+        <argsstring></argsstring>
+        <name>bl_options</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveGear.bl_options</qualifiedname>
+        <initializer>=  {&apos;REGISTER&apos;, &apos;UNDO&apos;, &apos;PRESET&apos;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1452" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1452" bodyend="-1"/>
+        <referencedby refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a9628cbca8e69ec75b2337171a02bf428" compoundref="async__op_8py" startline="32" endline="59">cam.async_op.AsyncOperatorMixin.modal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveGear_1a9d1760269797cac83d0655e348e29bb4" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamcreate.CamCurveGear::tooth_spacing</definition>
+        <argsstring></argsstring>
+        <name>tooth_spacing</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveGear.tooth_spacing</qualifiedname>
+        <initializer>(
+        name=&quot;Distance per Tooth&quot;,
+        default=0.010,
+        min=0.001,
+        max=1.0,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1454" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1454" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurveGear_1a4d69cda24cb070546e1386a8480d1c36" compoundref="curvecamcreate_8py" startline="1563" endline="1577">cam.curvecamcreate.CamCurveGear.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveGear_1a4efb0829251acf34dff82e0911729b5d" prot="public" static="yes" mutable="no">
+        <type>IntProperty</type>
+        <definition>IntProperty cam.curvecamcreate.CamCurveGear::tooth_amount</definition>
+        <argsstring></argsstring>
+        <name>tooth_amount</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveGear.tooth_amount</qualifiedname>
+        <initializer>(
+        name=&quot;Amount of Teeth&quot;,
+        default=7,
+        min=4,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1462" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1462" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurveGear_1a4d69cda24cb070546e1386a8480d1c36" compoundref="curvecamcreate_8py" startline="1563" endline="1577">cam.curvecamcreate.CamCurveGear.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveGear_1aefa4ddfca0df87f033873da9d3cc2f03" prot="public" static="yes" mutable="no">
+        <type>IntProperty</type>
+        <definition>IntProperty cam.curvecamcreate.CamCurveGear::spoke_amount</definition>
+        <argsstring></argsstring>
+        <name>spoke_amount</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveGear.spoke_amount</qualifiedname>
+        <initializer>(
+        name=&quot;Amount of Spokes&quot;,
+        default=4,
+        min=0,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1468" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1468" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurveGear_1a4d69cda24cb070546e1386a8480d1c36" compoundref="curvecamcreate_8py" startline="1563" endline="1577">cam.curvecamcreate.CamCurveGear.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveGear_1a3822e791cc60ebe4f7079a5a9a6dd063" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamcreate.CamCurveGear::hole_diameter</definition>
+        <argsstring></argsstring>
+        <name>hole_diameter</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveGear.hole_diameter</qualifiedname>
+        <initializer>(
+        name=&quot;Hole Diameter&quot;,
+        default=0.003175,
+        min=0,
+        max=3.0,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1474" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1474" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurveGear_1a4d69cda24cb070546e1386a8480d1c36" compoundref="curvecamcreate_8py" startline="1563" endline="1577">cam.curvecamcreate.CamCurveGear.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveGear_1ab54f64473b1cced1ba7e866d02955331" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamcreate.CamCurveGear::rim_size</definition>
+        <argsstring></argsstring>
+        <name>rim_size</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveGear.rim_size</qualifiedname>
+        <initializer>(
+        name=&quot;Rim Size&quot;,
+        default=0.003175,
+        min=0,
+        max=3.0,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1482" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1482" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurveGear_1a4d69cda24cb070546e1386a8480d1c36" compoundref="curvecamcreate_8py" startline="1563" endline="1577">cam.curvecamcreate.CamCurveGear.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveGear_1a2b4b1f858a6c9b0fae3d366b7347128f" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamcreate.CamCurveGear::hub_diameter</definition>
+        <argsstring></argsstring>
+        <name>hub_diameter</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveGear.hub_diameter</qualifiedname>
+        <initializer>(
+        name=&quot;Hub Diameter&quot;,
+        default=0.005,
+        min=0,
+        max=3.0,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1490" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1490" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurveGear_1a4d69cda24cb070546e1386a8480d1c36" compoundref="curvecamcreate_8py" startline="1563" endline="1577">cam.curvecamcreate.CamCurveGear.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveGear_1a57d5701c5f7d55e5931c2b5a3c0e9076" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamcreate.CamCurveGear::pressure_angle</definition>
+        <argsstring></argsstring>
+        <name>pressure_angle</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveGear.pressure_angle</qualifiedname>
+        <initializer>(
+        name=&quot;Pressure Angle&quot;,
+        default=radians(20),
+        min=0.001,
+        max=pi/2,
+        precision=4,
+        subtype=&quot;ANGLE&quot;,
+        unit=&quot;ROTATION&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1498" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1498" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurveGear_1a4d69cda24cb070546e1386a8480d1c36" compoundref="curvecamcreate_8py" startline="1563" endline="1577">cam.curvecamcreate.CamCurveGear.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveGear_1a1dcd88f12c204bd725b80d2bd58d048d" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamcreate.CamCurveGear::clearance</definition>
+        <argsstring></argsstring>
+        <name>clearance</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveGear.clearance</qualifiedname>
+        <initializer>(
+        name=&quot;Clearance&quot;,
+        default=0.00,
+        min=0,
+        max=0.1,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1507" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1507" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurveGear_1a4d69cda24cb070546e1386a8480d1c36" compoundref="curvecamcreate_8py" startline="1563" endline="1577">cam.curvecamcreate.CamCurveGear.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveGear_1a4522fa7db2452c66c9f877dea97cf509" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamcreate.CamCurveGear::backlash</definition>
+        <argsstring></argsstring>
+        <name>backlash</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveGear.backlash</qualifiedname>
+        <initializer>(
+        name=&quot;Backlash&quot;,
+        default=0.0,
+        min=0.0,
+        max=0.1,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1515" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1515" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurveGear_1a4d69cda24cb070546e1386a8480d1c36" compoundref="curvecamcreate_8py" startline="1563" endline="1577">cam.curvecamcreate.CamCurveGear.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveGear_1aa1a6995fcdced1afd8cb451a3d05cc90" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamcreate.CamCurveGear::rack_height</definition>
+        <argsstring></argsstring>
+        <name>rack_height</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveGear.rack_height</qualifiedname>
+        <initializer>(
+        name=&quot;Rack Height&quot;,
+        default=0.012,
+        min=0.001,
+        max=1,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1523" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1523" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurveGear_1a4d69cda24cb070546e1386a8480d1c36" compoundref="curvecamcreate_8py" startline="1563" endline="1577">cam.curvecamcreate.CamCurveGear.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveGear_1aa44861ff0525a42c4d6fcea49146c24c" prot="public" static="yes" mutable="no">
+        <type>IntProperty</type>
+        <definition>IntProperty cam.curvecamcreate.CamCurveGear::rack_tooth_per_hole</definition>
+        <argsstring></argsstring>
+        <name>rack_tooth_per_hole</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveGear.rack_tooth_per_hole</qualifiedname>
+        <initializer>(
+        name=&quot;Teeth per Mounting Hole&quot;,
+        default=7,
+        min=2,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1531" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1531" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurveGear_1a4d69cda24cb070546e1386a8480d1c36" compoundref="curvecamcreate_8py" startline="1563" endline="1577">cam.curvecamcreate.CamCurveGear.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveGear_1a0afcf8b64ae6f058bc5f94d9070e5041" prot="public" static="yes" mutable="no">
+        <type>EnumProperty</type>
+        <definition>EnumProperty cam.curvecamcreate.CamCurveGear::gear_type</definition>
+        <argsstring></argsstring>
+        <name>gear_type</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveGear.gear_type</qualifiedname>
+        <initializer>(
+        name=&apos;Type of Gear&apos;,
+        items=(
+            (&apos;PINION&apos;, &apos;Pinion&apos;, &apos;Circular Gear&apos;),
+            (&apos;RACK&apos;, &apos;Rack&apos;, &apos;Straight Rack&apos;)
+        ),
+        description=&apos;Type of gear&apos;,
+        default=&apos;PINION&apos;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1536" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1536" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurveGear_1a4d69cda24cb070546e1386a8480d1c36" compoundref="curvecamcreate_8py" startline="1563" endline="1577">cam.curvecamcreate.CamCurveGear.execute</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveGear_1aee7b970df686f0274dfdc5c24f076bd9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamcreate.CamCurveGear::gear_type</definition>
+        <argsstring></argsstring>
+        <name>gear_type</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveGear.gear_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1554" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1554" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurveGear_1a4d69cda24cb070546e1386a8480d1c36" compoundref="curvecamcreate_8py" startline="1563" endline="1577">cam.curvecamcreate.CamCurveGear.execute</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcam_1_1curvecamcreate_1_1CamCurveGear_1a09ec56457122376d9d519c3ffb341ab8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.curvecamcreate.CamCurveGear.draw</definition>
+        <argsstring>(self, context)</argsstring>
+        <name>draw</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveGear.draw</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1546" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1546" bodyend="1562"/>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1curvecamcreate_1_1CamCurveGear_1a4d69cda24cb070546e1386a8480d1c36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.curvecamcreate.CamCurveGear.execute</definition>
+        <argsstring>(self, context)</argsstring>
+        <name>execute</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveGear.execute</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1563" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1563" bodyend="1577"/>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurveGear_1a4522fa7db2452c66c9f877dea97cf509" compoundref="curvecamcreate_8py" startline="1515">cam.curvecamcreate.CamCurveGear.backlash</references>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurveGear_1a1dcd88f12c204bd725b80d2bd58d048d" compoundref="curvecamcreate_8py" startline="1507">cam.curvecamcreate.CamCurveGear.clearance</references>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurveGear_1a0afcf8b64ae6f058bc5f94d9070e5041" compoundref="curvecamcreate_8py" startline="1536">cam.curvecamcreate.CamCurveGear.gear_type</references>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurvePlate_1ad781f193fdacc42b50f6a2c4571fa89c" compoundref="curvecamcreate_8py" startline="234">cam.curvecamcreate.CamCurvePlate.hole_diameter</references>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurveGear_1a3822e791cc60ebe4f7079a5a9a6dd063" compoundref="curvecamcreate_8py" startline="1474">cam.curvecamcreate.CamCurveGear.hole_diameter</references>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurveGear_1a2b4b1f858a6c9b0fae3d366b7347128f" compoundref="curvecamcreate_8py" startline="1490">cam.curvecamcreate.CamCurveGear.hub_diameter</references>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurveGear_1a57d5701c5f7d55e5931c2b5a3c0e9076" compoundref="curvecamcreate_8py" startline="1498">cam.curvecamcreate.CamCurveGear.pressure_angle</references>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurveGear_1aa1a6995fcdced1afd8cb451a3d05cc90" compoundref="curvecamcreate_8py" startline="1523">cam.curvecamcreate.CamCurveGear.rack_height</references>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurveGear_1aa44861ff0525a42c4d6fcea49146c24c" compoundref="curvecamcreate_8py" startline="1531">cam.curvecamcreate.CamCurveGear.rack_tooth_per_hole</references>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurveGear_1ab54f64473b1cced1ba7e866d02955331" compoundref="curvecamcreate_8py" startline="1482">cam.curvecamcreate.CamCurveGear.rim_size</references>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurveGear_1aefa4ddfca0df87f033873da9d3cc2f03" compoundref="curvecamcreate_8py" startline="1468">cam.curvecamcreate.CamCurveGear.spoke_amount</references>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurveGear_1a4efb0829251acf34dff82e0911729b5d" compoundref="curvecamcreate_8py" startline="1462">cam.curvecamcreate.CamCurveGear.tooth_amount</references>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurveGear_1a9d1760269797cac83d0655e348e29bb4" compoundref="curvecamcreate_8py" startline="1454">cam.curvecamcreate.CamCurveGear.tooth_spacing</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Generates Involute Gears // version 1.1 by Leemon Baird, 2011, Leemon@Leemon.com
+http://www.thingiverse.com/thing:5505</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.curvecamcreate.CamCurveGear</label>
+        <link refid="classcam_1_1curvecamcreate_1_1CamCurveGear"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7">
+        <label>EnumProperty</label>
+      </node>
+      <node id="5">
+        <label>FloatProperty</label>
+      </node>
+      <node id="6">
+        <label>IntProperty</label>
+      </node>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.curvecamcreate.CamCurveGear</label>
+        <link refid="classcam_1_1curvecamcreate_1_1CamCurveGear"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+bl_idname</edgelabel>
+          <edgelabel>+bl_label</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+bl_options</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+backlash</edgelabel>
+          <edgelabel>+clearance</edgelabel>
+          <edgelabel>+hole_diameter</edgelabel>
+          <edgelabel>+hub_diameter</edgelabel>
+          <edgelabel>+pressure_angle</edgelabel>
+          <edgelabel>+rack_height</edgelabel>
+          <edgelabel>+rim_size</edgelabel>
+          <edgelabel>+tooth_spacing</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>+rack_tooth_per_hole</edgelabel>
+          <edgelabel>+spoke_amount</edgelabel>
+          <edgelabel>+tooth_amount</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>+gear_type</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dict</label>
+      </node>
+      <node id="3">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="1446" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="1446" bodyend="1577"/>
+    <listofallmembers>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveGear_1a4522fa7db2452c66c9f877dea97cf509" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveGear</scope><name>backlash</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveGear_1a6280dc0a715388edfcd1718ed7b48ee9" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveGear</scope><name>bl_idname</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveGear_1ac31f718314e425789ecae1de78653bf6" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveGear</scope><name>bl_label</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveGear_1af5ee6a62bbe5057e078140770873b694" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveGear</scope><name>bl_options</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveGear_1a1dcd88f12c204bd725b80d2bd58d048d" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveGear</scope><name>clearance</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveGear_1a09ec56457122376d9d519c3ffb341ab8" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveGear</scope><name>draw</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveGear_1a4d69cda24cb070546e1386a8480d1c36" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveGear</scope><name>execute</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveGear_1a0afcf8b64ae6f058bc5f94d9070e5041" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveGear</scope><name>gear_type</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveGear_1aee7b970df686f0274dfdc5c24f076bd9" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveGear</scope><name>gear_type</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveGear_1a3822e791cc60ebe4f7079a5a9a6dd063" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveGear</scope><name>hole_diameter</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveGear_1a2b4b1f858a6c9b0fae3d366b7347128f" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveGear</scope><name>hub_diameter</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveGear_1a57d5701c5f7d55e5931c2b5a3c0e9076" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveGear</scope><name>pressure_angle</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveGear_1aa1a6995fcdced1afd8cb451a3d05cc90" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveGear</scope><name>rack_height</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveGear_1aa44861ff0525a42c4d6fcea49146c24c" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveGear</scope><name>rack_tooth_per_hole</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveGear_1ab54f64473b1cced1ba7e866d02955331" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveGear</scope><name>rim_size</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveGear_1aefa4ddfca0df87f033873da9d3cc2f03" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveGear</scope><name>spoke_amount</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveGear_1a4efb0829251acf34dff82e0911729b5d" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveGear</scope><name>tooth_amount</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveGear_1a9d1760269797cac83d0655e348e29bb4" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveGear</scope><name>tooth_spacing</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

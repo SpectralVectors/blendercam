@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel" xml:lang="en-US">
+<title>cam.ui_panels.gcode.CAM_GCODE_Panel Class Reference</title>
+<indexterm><primary>cam.ui_panels.gcode.CAM_GCODE_Panel</primary></indexterm>
+Inheritance diagram for cam.ui_panels.gcode.CAM_GCODE_Panel:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.ui_panels.gcode.CAM_GCODE_Panel:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel_1a8b011951e3a81341d63fa0d4f0454101">draw_output_header</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel_1af71ab5ab830cebec747e82519d15aef7">draw_output_trailer</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel_1ac7ddaea513f711c6dd68411d8a0c9c41">draw_enable_dust</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel_1a6343153f6c5842028c863f651b5740d6">draw_enable_hold</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel_1ac075b89a16853b0dc3bab7f566103284">draw_enable_mist</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel_1a540da483456147976fdf3dd82d65789b">draw</link> (self, <link linkend="_classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel_1abb45a3bb21c5415449183d072d665b86">context</link>)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel">cam.ui_panels.buttons_panel.CAMButtonsPanel</link>        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a03843f1fecc691952b696f4bc75a0156">poll</link> (cls, context)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1ae2df719a61472a3f8674e26fe501b1f7">active_operation_index</link> (cls)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a9fe8584ab332e9830dfa800ee4582575">active_operation</link> (cls)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1acbcf6bed1c104021565fc4a486d1101a">__init__</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1aae624325882f33dd8820cdf27df16e4e">operations_count</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a3e5e2105cb372d0ad7ee959fa38e10e2">has_operations</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a41c101f031fc5ecdb0097889cf452de0">has_correct_level</link> (self)</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel_1a928e77d86cb5f3a4ca74b11e934c7846">op</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel_1abb45a3bb21c5415449183d072d665b86">context</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Attributes inherited from <link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel">cam.ui_panels.buttons_panel.CAMButtonsPanel</link>        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a62a27293a2c27a52a2f779e92312c9b6">op</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a3991296d0c3a293ee962391d01387868">use_experimental</link></para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel_1a109c6f56fac78fff6effa60b8d81a394">bl_label</link> = &quot;CAM G-code Options&quot;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel_1a387d0d4233d23c15f86c5eacbf41f46a">bl_idname</link> = &quot;WORLD_PT_CAM_GCODE&quot;</para>
+</listitem>
+            <listitem><para>int <link linkend="_classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel_1aed4d97fe3fb3796d06d0c2c81dc785fc">panel_interface_level</link> = 1</para>
+</listitem>
+            <listitem><para>dict <link linkend="_classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel_1a415d624d3c645e2383a59b6e9514838c">prop_level</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Static Public Attributes inherited from <link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel">cam.ui_panels.buttons_panel.CAMButtonsPanel</link>        <itemizedlist>
+            <listitem><para>str <link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a875a6b4e703be8c259b1d750426c76ad">bl_space_type</link> = &apos;PROPERTIES&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a9763fc8e0e8a24f2f6f4ab050829c6a2">bl_region_type</link> = &apos;WINDOW&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a5da786aaf2c38c096f23a7f504866537">bl_context</link> = &quot;render&quot;</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a7c1ca8db6e75af2657e5658f7e3d7219">always_show_panel</link> = False</para>
+</listitem>
+            <listitem><para>dict <link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a0864a41721ef5200ecbbf340a1f7d678">COMPAT_ENGINES</link> = {&apos;CNCCAM_RENDER&apos;}</para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>CAM Operation G-code Options Panel</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel_1a540da483456147976fdf3dd82d65789b"/><section>
+    <title>draw()</title>
+<indexterm><primary>draw</primary><secondary>cam.ui_panels.gcode.CAM_GCODE_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.gcode.CAM_GCODE_Panel</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.gcode.CAM_GCODE_Panel.draw ( self,  context)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel_1ac7ddaea513f711c6dd68411d8a0c9c41"/><section>
+    <title>draw_enable_dust()</title>
+<indexterm><primary>draw_enable_dust</primary><secondary>cam.ui_panels.gcode.CAM_GCODE_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.gcode.CAM_GCODE_Panel</primary><secondary>draw_enable_dust</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.gcode.CAM_GCODE_Panel.draw_enable_dust ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel_ac7ddaea513f711c6dd68411d8a0c9c41_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel_1a6343153f6c5842028c863f651b5740d6"/><section>
+    <title>draw_enable_hold()</title>
+<indexterm><primary>draw_enable_hold</primary><secondary>cam.ui_panels.gcode.CAM_GCODE_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.gcode.CAM_GCODE_Panel</primary><secondary>draw_enable_hold</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.gcode.CAM_GCODE_Panel.draw_enable_hold ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel_a6343153f6c5842028c863f651b5740d6_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel_1ac075b89a16853b0dc3bab7f566103284"/><section>
+    <title>draw_enable_mist()</title>
+<indexterm><primary>draw_enable_mist</primary><secondary>cam.ui_panels.gcode.CAM_GCODE_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.gcode.CAM_GCODE_Panel</primary><secondary>draw_enable_mist</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.gcode.CAM_GCODE_Panel.draw_enable_mist ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel_ac075b89a16853b0dc3bab7f566103284_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel_1a8b011951e3a81341d63fa0d4f0454101"/><section>
+    <title>draw_output_header()</title>
+<indexterm><primary>draw_output_header</primary><secondary>cam.ui_panels.gcode.CAM_GCODE_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.gcode.CAM_GCODE_Panel</primary><secondary>draw_output_header</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.gcode.CAM_GCODE_Panel.draw_output_header ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel_a8b011951e3a81341d63fa0d4f0454101_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel_1af71ab5ab830cebec747e82519d15aef7"/><section>
+    <title>draw_output_trailer()</title>
+<indexterm><primary>draw_output_trailer</primary><secondary>cam.ui_panels.gcode.CAM_GCODE_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.gcode.CAM_GCODE_Panel</primary><secondary>draw_output_trailer</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.gcode.CAM_GCODE_Panel.draw_output_trailer ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel_af71ab5ab830cebec747e82519d15aef7_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel_1a387d0d4233d23c15f86c5eacbf41f46a"/><section>
+    <title>bl_idname</title>
+<indexterm><primary>bl_idname</primary><secondary>cam.ui_panels.gcode.CAM_GCODE_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.gcode.CAM_GCODE_Panel</primary><secondary>bl_idname</secondary></indexterm>
+<para><computeroutput>str cam.ui_panels.gcode.CAM_GCODE_Panel.bl_idname = &quot;WORLD_PT_CAM_GCODE&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel_1a109c6f56fac78fff6effa60b8d81a394"/><section>
+    <title>bl_label</title>
+<indexterm><primary>bl_label</primary><secondary>cam.ui_panels.gcode.CAM_GCODE_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.gcode.CAM_GCODE_Panel</primary><secondary>bl_label</secondary></indexterm>
+<para><computeroutput>str cam.ui_panels.gcode.CAM_GCODE_Panel.bl_label = &quot;CAM G-code Options&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel_1abb45a3bb21c5415449183d072d665b86"/><section>
+    <title>context</title>
+<indexterm><primary>context</primary><secondary>cam.ui_panels.gcode.CAM_GCODE_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.gcode.CAM_GCODE_Panel</primary><secondary>context</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.gcode.CAM_GCODE_Panel.context</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel_1a928e77d86cb5f3a4ca74b11e934c7846"/><section>
+    <title>op</title>
+<indexterm><primary>op</primary><secondary>cam.ui_panels.gcode.CAM_GCODE_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.gcode.CAM_GCODE_Panel</primary><secondary>op</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.gcode.CAM_GCODE_Panel.op</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel_1aed4d97fe3fb3796d06d0c2c81dc785fc"/><section>
+    <title>panel_interface_level</title>
+<indexterm><primary>panel_interface_level</primary><secondary>cam.ui_panels.gcode.CAM_GCODE_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.gcode.CAM_GCODE_Panel</primary><secondary>panel_interface_level</secondary></indexterm>
+<para><computeroutput>int cam.ui_panels.gcode.CAM_GCODE_Panel.panel_interface_level = 1<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel_1a415d624d3c645e2383a59b6e9514838c"/><section>
+    <title>prop_level</title>
+<indexterm><primary>prop_level</primary><secondary>cam.ui_panels.gcode.CAM_GCODE_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.gcode.CAM_GCODE_Panel</primary><secondary>prop_level</secondary></indexterm>
+<para><computeroutput>dict cam.ui_panels.gcode.CAM_GCODE_Panel.prop_level<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">=&#32;&#32;{
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;draw_output_header&apos;</emphasis>:&#32;1,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;draw_output_trailer&apos;</emphasis>:&#32;1,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;draw_enable_dust&apos;</emphasis>:&#32;1,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;draw_enable_hold&apos;</emphasis>:&#32;1,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;draw_enable_mist&apos;</emphasis>:&#32;1
+&#32;&#32;&#32;&#32;}
+</programlisting></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/<link linkend="_gcode_8py">gcode.py</link></section>
+</section>

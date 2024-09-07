@@ -1,0 +1,242 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1voronoi_1_1Context" xml:lang="en-US">
+<title>cam.voronoi.Context Class Reference</title>
+<indexterm><primary>cam.voronoi.Context</primary></indexterm>
+Inheritance diagram for cam.voronoi.Context:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1voronoi_1_1Context__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.voronoi.Context:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1voronoi_1_1Context__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Context_1a83e9cfe5590b151ad32024d1ac99d4b5">__init__</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Context_1af9e1b1eec54228f9b24dbbed097de21c">getClipEdges</link> (self)</para>
+
+<para>Clip functions########. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Context_1a1afb06e806717af0e0b7210657473827">getClipPolygons</link> (self, closePoly)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Context_1ac17a9b09895f8a8613139081b39451ba">clipLine</link> (self, x1, y1, equation, leftDir)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Context_1a3a0bfd004006ebf1497ca69e27b5da0b">inExtent</link> (self, x, y)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Context_1ac034a0490700d5b880ecd2aa9273bb69">orderPts</link> (self, <link linkend="_classcam_1_1voronoi_1_1Context_1a1fc9f71afef8abf8520275c90e5484d3">edges</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Context_1ab864f15d0b8f4d57c6d3c91361326016">setClipBuffer</link> (self, xpourcent, ypourcent)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Context_1abbe0782e116f4d5195642fcee09b169e">outSite</link> (self, s)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Context_1a184fc66eecee3bf07f883d7326442682">outVertex</link> (self, s)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Context_1a54609016604226702998032c49f12d6a">outTriple</link> (self, s1, s2, s3)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Context_1aa566b448423775c57b4b4cf74325a473">outBisector</link> (self, edge)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Context_1ae341e24f5a8d04a42437b75bfb08ecb7">outEdge</link> (self, edge)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Context_1aa22cf409e34277047554d41ec7ea3e1c">doPrint</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Context_1af8ec6c8888c1ea32c5c3923cf36397a5">debug</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Context_1a9f01cd7fda0003ed92ba1a507932300c">extent</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Context_1afa5f37a2721cd6846fdcc0eec1f51aec">triangulate</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Context_1a1a8210e2dfed73d39754ba99d7640363">vertices</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Context_1abb7465a69e080ae72842db89a5bfcae0">lines</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Context_1a1fc9f71afef8abf8520275c90e5484d3">edges</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Context_1a5a4b12adbabb9558f41382d6844d83f7">triangles</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Context_1ad0784d3c3e22e422d9569a3141e25eae">polygons</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classcam_1_1voronoi_1_1Context_1a83e9cfe5590b151ad32024d1ac99d4b5"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>cam.voronoi.Context</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Context</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Context.__init__ ( self)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1voronoi_1_1Context_1ac17a9b09895f8a8613139081b39451ba"/><section>
+    <title>clipLine()</title>
+<indexterm><primary>clipLine</primary><secondary>cam.voronoi.Context</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Context</primary><secondary>clipLine</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Context.clipLine ( self,  x1,  y1,  equation,  leftDir)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1voronoi_1_1Context_ac17a9b09895f8a8613139081b39451ba_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1voronoi_1_1Context_1af9e1b1eec54228f9b24dbbed097de21c"/><section>
+    <title>getClipEdges()</title>
+<indexterm><primary>getClipEdges</primary><secondary>cam.voronoi.Context</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Context</primary><secondary>getClipEdges</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Context.getClipEdges ( self)</computeroutput></para><para>
+
+<para>Clip functions########. </para>
+</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1voronoi_1_1Context_af9e1b1eec54228f9b24dbbed097de21c_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1voronoi_1_1Context_1a1afb06e806717af0e0b7210657473827"/><section>
+    <title>getClipPolygons()</title>
+<indexterm><primary>getClipPolygons</primary><secondary>cam.voronoi.Context</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Context</primary><secondary>getClipPolygons</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Context.getClipPolygons ( self,  closePoly)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1voronoi_1_1Context_a1afb06e806717af0e0b7210657473827_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1voronoi_1_1Context_1a3a0bfd004006ebf1497ca69e27b5da0b"/><section>
+    <title>inExtent()</title>
+<indexterm><primary>inExtent</primary><secondary>cam.voronoi.Context</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Context</primary><secondary>inExtent</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Context.inExtent ( self,  x,  y)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1voronoi_1_1Context_a3a0bfd004006ebf1497ca69e27b5da0b_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1voronoi_1_1Context_1ac034a0490700d5b880ecd2aa9273bb69"/><section>
+    <title>orderPts()</title>
+<indexterm><primary>orderPts</primary><secondary>cam.voronoi.Context</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Context</primary><secondary>orderPts</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Context.orderPts ( self,  edges)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1voronoi_1_1Context_ac034a0490700d5b880ecd2aa9273bb69_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1voronoi_1_1Context_1aa566b448423775c57b4b4cf74325a473"/><section>
+    <title>outBisector()</title>
+<indexterm><primary>outBisector</primary><secondary>cam.voronoi.Context</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Context</primary><secondary>outBisector</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Context.outBisector ( self,  edge)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1Context_1ae341e24f5a8d04a42437b75bfb08ecb7"/><section>
+    <title>outEdge()</title>
+<indexterm><primary>outEdge</primary><secondary>cam.voronoi.Context</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Context</primary><secondary>outEdge</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Context.outEdge ( self,  edge)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1Context_1abbe0782e116f4d5195642fcee09b169e"/><section>
+    <title>outSite()</title>
+<indexterm><primary>outSite</primary><secondary>cam.voronoi.Context</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Context</primary><secondary>outSite</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Context.outSite ( self,  s)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1Context_1a54609016604226702998032c49f12d6a"/><section>
+    <title>outTriple()</title>
+<indexterm><primary>outTriple</primary><secondary>cam.voronoi.Context</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Context</primary><secondary>outTriple</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Context.outTriple ( self,  s1,  s2,  s3)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1Context_1a184fc66eecee3bf07f883d7326442682"/><section>
+    <title>outVertex()</title>
+<indexterm><primary>outVertex</primary><secondary>cam.voronoi.Context</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Context</primary><secondary>outVertex</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Context.outVertex ( self,  s)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1Context_1ab864f15d0b8f4d57c6d3c91361326016"/><section>
+    <title>setClipBuffer()</title>
+<indexterm><primary>setClipBuffer</primary><secondary>cam.voronoi.Context</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Context</primary><secondary>setClipBuffer</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Context.setClipBuffer ( self,  xpourcent,  ypourcent)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1voronoi_1_1Context_1af8ec6c8888c1ea32c5c3923cf36397a5"/><section>
+    <title>debug</title>
+<indexterm><primary>debug</primary><secondary>cam.voronoi.Context</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Context</primary><secondary>debug</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Context.debug</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1Context_1aa22cf409e34277047554d41ec7ea3e1c"/><section>
+    <title>doPrint</title>
+<indexterm><primary>doPrint</primary><secondary>cam.voronoi.Context</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Context</primary><secondary>doPrint</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Context.doPrint</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1Context_1a1fc9f71afef8abf8520275c90e5484d3"/><section>
+    <title>edges</title>
+<indexterm><primary>edges</primary><secondary>cam.voronoi.Context</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Context</primary><secondary>edges</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Context.edges</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1Context_1a9f01cd7fda0003ed92ba1a507932300c"/><section>
+    <title>extent</title>
+<indexterm><primary>extent</primary><secondary>cam.voronoi.Context</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Context</primary><secondary>extent</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Context.extent</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1Context_1abb7465a69e080ae72842db89a5bfcae0"/><section>
+    <title>lines</title>
+<indexterm><primary>lines</primary><secondary>cam.voronoi.Context</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Context</primary><secondary>lines</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Context.lines</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1Context_1ad0784d3c3e22e422d9569a3141e25eae"/><section>
+    <title>polygons</title>
+<indexterm><primary>polygons</primary><secondary>cam.voronoi.Context</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Context</primary><secondary>polygons</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Context.polygons</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1Context_1a5a4b12adbabb9558f41382d6844d83f7"/><section>
+    <title>triangles</title>
+<indexterm><primary>triangles</primary><secondary>cam.voronoi.Context</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Context</primary><secondary>triangles</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Context.triangles</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1Context_1afa5f37a2721cd6846fdcc0eec1f51aec"/><section>
+    <title>triangulate</title>
+<indexterm><primary>triangulate</primary><secondary>cam.voronoi.Context</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Context</primary><secondary>triangulate</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Context.triangulate</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1Context_1a1a8210e2dfed73d39754ba99d7640363"/><section>
+    <title>vertices</title>
+<indexterm><primary>vertices</primary><secondary>cam.voronoi.Context</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Context</primary><secondary>vertices</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Context.vertices</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/<link linkend="_voronoi_8py">voronoi.py</link></section>
+</section>

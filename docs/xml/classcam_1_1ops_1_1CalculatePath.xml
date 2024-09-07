@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1ops_1_1CalculatePath" kind="class" language="Python" prot="public">
+    <compoundname>cam::ops::CalculatePath</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Operator</basecompoundref>
+    <basecompoundref refid="classcam_1_1async__op_1_1AsyncOperatorMixin" prot="public" virt="non-virtual">cam.async_op.AsyncOperatorMixin</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1ops_1_1CalculatePath_1aeeacfe07566202bb24c8495b857d06bb" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.ops.CalculatePath::bl_idname</definition>
+        <argsstring></argsstring>
+        <name>bl_idname</name>
+        <qualifiedname>cam.ops.CalculatePath.bl_idname</qualifiedname>
+        <initializer>=  &quot;object.calculate_cam_path&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="223" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ops_1_1CalculatePath_1a210a7abfb4d47707de9a2f52c496b44d" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.ops.CalculatePath::bl_label</definition>
+        <argsstring></argsstring>
+        <name>bl_label</name>
+        <qualifiedname>cam.ops.CalculatePath.bl_label</qualifiedname>
+        <initializer>=  &quot;Calculate CAM Paths&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="224" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="224" bodyend="-1"/>
+        <referencedby refid="classcam_1_1preset__managers_1_1CAM__MACHINE__MT__presets_1af95f7812d2952b26a26809ab923dac09" compoundref="preset__managers_8py" startline="28" endline="38">cam.preset_managers.CAM_MACHINE_MT_presets.post_cb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ops_1_1CalculatePath_1a24aa14c06dc49887a157732b7995c624" prot="public" static="yes" mutable="no">
+        <type>dict</type>
+        <definition>dict cam.ops.CalculatePath::bl_options</definition>
+        <argsstring></argsstring>
+        <name>bl_options</name>
+        <qualifiedname>cam.ops.CalculatePath.bl_options</qualifiedname>
+        <initializer>=  {&apos;REGISTER&apos;, &apos;UNDO&apos;, &apos;BLOCKING&apos;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="225" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="225" bodyend="-1"/>
+        <referencedby refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a9628cbca8e69ec75b2337171a02bf428" compoundref="async__op_8py" startline="32" endline="59">cam.async_op.AsyncOperatorMixin.modal</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcam_1_1ops_1_1CalculatePath_1a77d7381fb8cc3c11c5e9148cb3d32203" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.ops.CalculatePath.poll</definition>
+        <argsstring>(cls, context)</argsstring>
+        <name>poll</name>
+        <qualifiedname>cam.ops.CalculatePath.poll</qualifiedname>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="228" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="228" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1ops_1_1CalculatePath_1a13dfe2f8578383234e74e58e2f292e1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.ops.CalculatePath.execute_async</definition>
+        <argsstring>(self, context)</argsstring>
+        <name>execute_async</name>
+        <qualifiedname>cam.ops.CalculatePath.execute_async</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="236" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="236" bodyend="241"/>
+        <references refid="namespacecam_1_1ops_1aa8e95f7410a7ceb178db48f4f8c2d995" compoundref="ops_8py" startline="158" endline="220">cam.ops._calc_path</references>
+        <referencedby refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a15a51cfd69d8e453e2e3d64386b1ebe3" compoundref="async__op_8py" startline="69" endline="87">cam.async_op.AsyncOperatorMixin.tick</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Calculate CAM Paths</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.ops.CalculatePath</label>
+        <link refid="classcam_1_1ops_1_1CalculatePath"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>cam.async_op.AsyncOperatorMixin</label>
+        <link refid="classcam_1_1async__op_1_1AsyncOperatorMixin"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.ops.CalculatePath</label>
+        <link refid="classcam_1_1ops_1_1CalculatePath"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+bl_idname</edgelabel>
+          <edgelabel>+bl_label</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+bl_options</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>cam.async_op.AsyncOperatorMixin</label>
+        <link refid="classcam_1_1async__op_1_1AsyncOperatorMixin"/>
+      </node>
+      <node id="5">
+        <label>dict</label>
+      </node>
+      <node id="4">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="221" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="221" bodyend="241"/>
+    <listofallmembers>
+      <member refid="classcam_1_1ops_1_1CalculatePath_1aeeacfe07566202bb24c8495b857d06bb" prot="public" virt="non-virtual"><scope>cam::ops::CalculatePath</scope><name>bl_idname</name></member>
+      <member refid="classcam_1_1ops_1_1CalculatePath_1a210a7abfb4d47707de9a2f52c496b44d" prot="public" virt="non-virtual"><scope>cam::ops::CalculatePath</scope><name>bl_label</name></member>
+      <member refid="classcam_1_1ops_1_1CalculatePath_1a24aa14c06dc49887a157732b7995c624" prot="public" virt="non-virtual"><scope>cam::ops::CalculatePath</scope><name>bl_options</name></member>
+      <member refid="classcam_1_1ops_1_1CalculatePath_1a13dfe2f8578383234e74e58e2f292e1b" prot="public" virt="non-virtual"><scope>cam::ops::CalculatePath</scope><name>execute_async</name></member>
+      <member refid="classcam_1_1ops_1_1CalculatePath_1a77d7381fb8cc3c11c5e9148cb3d32203" prot="public" virt="non-virtual"><scope>cam::ops::CalculatePath</scope><name>poll</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

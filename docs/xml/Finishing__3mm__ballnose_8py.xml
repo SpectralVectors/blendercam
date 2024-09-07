@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="Finishing__3mm__ballnose_8py" kind="file" language="Python">
+    <compoundname>Finishing_3mm_ballnose.py</compoundname>
+    <innernamespace refid="namespaceFinishing__3mm__ballnose">Finishing_3mm_ballnose</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespaceFinishing__3mm__ballnose" refkind="compound"><highlight class="keyword">import</highlight><highlight class="normal"><sp/>bpy</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>pathlib<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Path</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">bpy.ops.scene.cam_operation_add()</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="namespaceFinishing__3mm__ballnose_1a2285398bfefb010f059ef432c645b02b" refkind="member"><highlight class="normal">scene<sp/>=<sp/>bpy.context.scene</highlight></codeline>
+<codeline lineno="7" refid="namespaceFinishing__3mm__ballnose_1ac518e52fef48413baee2df149d9a4753" refkind="member"><highlight class="normal">o<sp/>=<sp/>scene.cam_operations[scene.cam_active_operation]</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="namespaceFinishing__3mm__ballnose_1aeb1cb2db4b43f749734439744e013cf1" refkind="member"><highlight class="normal">o.ambient_behaviour<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;AROUND&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="namespaceFinishing__3mm__ballnose_1a52ee6f7602db0bbbbe0fd53893a73fca" refkind="member"><highlight class="normal">o.ambient_radius<sp/>=<sp/>0.009999999776482582</highlight></codeline>
+<codeline lineno="11" refid="namespaceFinishing__3mm__ballnose_1ad7bb748e1246cbe5d1319810cd0f797e" refkind="member"><highlight class="normal">o.auto_nest<sp/>=<sp/></highlight><highlight class="keyword">False</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="namespaceFinishing__3mm__ballnose_1aaacbaf9513db64f6169abdc849f20cf4" refkind="member"><highlight class="normal">o.borderwidth<sp/>=<sp/>50</highlight></codeline>
+<codeline lineno="13" refid="namespaceFinishing__3mm__ballnose_1a6e5801506df89219d48b255a8d01f7a1" refkind="member"><highlight class="normal">o.carve_depth<sp/>=<sp/>0.0010000000474974513</highlight></codeline>
+<codeline lineno="14" refid="namespaceFinishing__3mm__ballnose_1a49ca1a41d288e84d5f17f4591e91bcda" refkind="member"><highlight class="normal">o.circle_detail<sp/>=<sp/>64</highlight></codeline>
+<codeline lineno="15" refid="namespaceFinishing__3mm__ballnose_1a999f2eb0970535c8d1c0facb7cf36b94" refkind="member"><highlight class="normal">o.curve_object<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="namespaceFinishing__3mm__ballnose_1aa493ee1dbc723044551a2f284840787c" refkind="member"><highlight class="normal">o.cut_type<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;OUTSIDE&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="namespaceFinishing__3mm__ballnose_1a466ecdfafa7b62a3a1e57666872cd148" refkind="member"><highlight class="normal">o.cutter_diameter<sp/>=<sp/>0.003000000026077032</highlight></codeline>
+<codeline lineno="18" refid="namespaceFinishing__3mm__ballnose_1a43a67e87b1d1472d9052135d7e538fcf" refkind="member"><highlight class="normal">o.cutter_length<sp/>=<sp/>25.0</highlight></codeline>
+<codeline lineno="19" refid="namespaceFinishing__3mm__ballnose_1ae55632d7856857197a04a97a9092e021" refkind="member"><highlight class="normal">o.cutter_tip_angle<sp/>=<sp/>60.0</highlight></codeline>
+<codeline lineno="20" refid="namespaceFinishing__3mm__ballnose_1ab14fec4a8f3bae54b242e78642040ece" refkind="member"><highlight class="normal">o.cutter_type<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;BALLNOSE&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="namespaceFinishing__3mm__ballnose_1a0fb3414ee840ef41086390922cdda39a" refkind="member"><highlight class="normal">o.dist_along_paths<sp/>=<sp/>0.00019999999494757503</highlight></codeline>
+<codeline lineno="22" refid="namespaceFinishing__3mm__ballnose_1ac3363955540d909e37d4f171086d0040" refkind="member"><highlight class="normal">o.dist_between_paths<sp/>=<sp/>0.0005000000237487257</highlight></codeline>
+<codeline lineno="23" refid="namespaceFinishing__3mm__ballnose_1af50c9635f033318bd8a5b8dcae6c471a" refkind="member"><highlight class="normal">o.dont_merge<sp/>=<sp/></highlight><highlight class="keyword">False</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="namespaceFinishing__3mm__ballnose_1af7113e3add9b79c9650f67c355f650ce" refkind="member"><highlight class="normal">o.duration<sp/>=<sp/>96.3156509399414</highlight></codeline>
+<codeline lineno="25" refid="namespaceFinishing__3mm__ballnose_1a57adab87388b65cdb8cb3d464bfe2459" refkind="member"><highlight class="normal">o.feedrate<sp/>=<sp/>1.0</highlight></codeline>
+<codeline lineno="26" refid="namespaceFinishing__3mm__ballnose_1a8ed254d5681d2207a4f24b4ea302d23d" refkind="member"><highlight class="normal">o.filename<sp/>=<sp/>o.name<sp/>=<sp/>f</highlight><highlight class="stringliteral">&apos;OP_{o.object_name}_{scene.cam_active_operation<sp/>+<sp/>1}_{Path(__file__).stem}&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="namespaceFinishing__3mm__ballnose_1a99445fb60dfaed59cef6d0d4cf198730" refkind="member"><highlight class="normal">o.free_movement_height<sp/>=<sp/>0.009999999776482582</highlight></codeline>
+<codeline lineno="28" refid="namespaceFinishing__3mm__ballnose_1a10850d9c0cf40332ce9deb5e1e25f76a" refkind="member"><highlight class="normal">o.geometry_source<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;OBJECT&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="namespaceFinishing__3mm__ballnose_1a9529719d2a1237a5d404cdee89666a4f" refkind="member"><highlight class="normal">o.inverse<sp/>=<sp/></highlight><highlight class="keyword">False</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="namespaceFinishing__3mm__ballnose_1ad91c778ade3eb926856f8b171746f284" refkind="member"><highlight class="normal">o.limit_curve<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="namespaceFinishing__3mm__ballnose_1a0aaac914d84b802913ea6acff8955ddf" refkind="member"><highlight class="normal">o.material_from_model<sp/>=<sp/></highlight><highlight class="keyword">True</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="namespaceFinishing__3mm__ballnose_1ae93863cf5d1841d39f7a339ba4ce2bfe" refkind="member"><highlight class="normal">o.material_origin<sp/>=<sp/>(0.0,<sp/>0.0,<sp/>0.0)</highlight></codeline>
+<codeline lineno="33" refid="namespaceFinishing__3mm__ballnose_1a6e0a73e2a1c5af6e1b388c66b706ccf4" refkind="member"><highlight class="normal">o.material_radius_around_model<sp/>=<sp/>0.019999999552965164</highlight></codeline>
+<codeline lineno="34" refid="namespaceFinishing__3mm__ballnose_1ae7b3f4b5fbeebfee8a4c4d101ef351f5" refkind="member"><highlight class="normal">o.material_size<sp/>=<sp/>(0.20000000298023224,<sp/>0.20000000298023224,<sp/>0.10000000149011612)</highlight></codeline>
+<codeline lineno="35" refid="namespaceFinishing__3mm__ballnose_1a8c3ce9afb035bac281d9aaa1b2451546" refkind="member"><highlight class="normal">o.max<sp/>=<sp/>(0.1325458288192749,<sp/>0.14115460216999054,<sp/>-0.041229985654354095)</highlight></codeline>
+<codeline lineno="36" refid="namespaceFinishing__3mm__ballnose_1ae6d53621e5ae94d02add5802fc874578" refkind="member"><highlight class="normal">o.min<sp/>=<sp/>(0.02779383957386017,<sp/>0.014265235513448715,<sp/>-0.1281193494796753)</highlight></codeline>
+<codeline lineno="37" refid="namespaceFinishing__3mm__ballnose_1a5ba01c56d962d67cfdf76adabba3c47a" refkind="member"><highlight class="normal">o.minz<sp/>=<sp/>-0.1281193494796753</highlight></codeline>
+<codeline lineno="38" refid="namespaceFinishing__3mm__ballnose_1ab9ef5d445c2dfc2a360d8877edb3d96c" refkind="member"><highlight class="normal">o.minz_from_ob<sp/>=<sp/></highlight><highlight class="keyword">True</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="namespaceFinishing__3mm__ballnose_1a95ebb5c3b2f86204dcb7f6ea44b92c7d" refkind="member"><highlight class="normal">o.movement_type<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;MEANDER&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="namespaceFinishing__3mm__ballnose_1a4a7403dfc00029ccea5a35a39a210109" refkind="member"><highlight class="normal">o.object<sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="namespaceFinishing__3mm__ballnose_1a97d5f4c8e20b330a530c07c2dffb8b3f" refkind="member"><highlight class="normal">o.optimize<sp/>=<sp/></highlight><highlight class="keyword">True</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="namespaceFinishing__3mm__ballnose_1a753dea2f32a05c69e319c3d57ac2e73d" refkind="member"><highlight class="normal">o.optimize_threshold<sp/>=<sp/>4.999999873689376e-05</highlight></codeline>
+<codeline lineno="43" refid="namespaceFinishing__3mm__ballnose_1a3226bc02b2f81d4f224acc587141b483" refkind="member"><highlight class="normal">o.parallel_angle<sp/>=<sp/>0.7853984832763672</highlight></codeline>
+<codeline lineno="44" refid="namespaceFinishing__3mm__ballnose_1af4f26885522ead4e46e98716c2c5b938" refkind="member"><highlight class="normal">o.pixsize<sp/>=<sp/>9.999999747378752e-05</highlight></codeline>
+<codeline lineno="45" refid="namespaceFinishing__3mm__ballnose_1a123c40a8a82abc119b6cd2e2f7d53bf1" refkind="member"><highlight class="normal">o.plunge_feedrate<sp/>=<sp/>50.0</highlight></codeline>
+<codeline lineno="46" refid="namespaceFinishing__3mm__ballnose_1a912205984811df3f3249d19894bd3845" refkind="member"><highlight class="normal">o.protect_vertical<sp/>=<sp/></highlight><highlight class="keyword">False</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="namespaceFinishing__3mm__ballnose_1abc21596d853211169b9b720a71c795e6" refkind="member"><highlight class="normal">o.render_all<sp/>=<sp/></highlight><highlight class="keyword">True</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="namespaceFinishing__3mm__ballnose_1a96898c305b810ac01ed4201a6f337324" refkind="member"><highlight class="normal">o.skin<sp/>=<sp/>0.0</highlight></codeline>
+<codeline lineno="49" refid="namespaceFinishing__3mm__ballnose_1a994850769580ef7479127ba3246f5111" refkind="member"><highlight class="normal">o.slice_detail<sp/>=<sp/>0.0010000000474974513</highlight></codeline>
+<codeline lineno="50" refid="namespaceFinishing__3mm__ballnose_1a433ebffc933fc27217dfa509414adcaf" refkind="member"><highlight class="normal">o.source_image_name<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="namespaceFinishing__3mm__ballnose_1a86e9195affdf36149891acc3070836a5" refkind="member"><highlight class="normal">o.source_image_offset<sp/>=<sp/>(0.0,<sp/>0.0,<sp/>0.0)</highlight></codeline>
+<codeline lineno="52" refid="namespaceFinishing__3mm__ballnose_1a57e0d79937fbc25f59dd8381721201c8" refkind="member"><highlight class="normal">o.source_image_scale_z<sp/>=<sp/>1.0</highlight></codeline>
+<codeline lineno="53" refid="namespaceFinishing__3mm__ballnose_1ac9813548b6a74eddfa39d4e31f8ecf36" refkind="member"><highlight class="normal">o.source_image_size_x<sp/>=<sp/>0.10000000149011612</highlight></codeline>
+<codeline lineno="54" refid="namespaceFinishing__3mm__ballnose_1abc7cdf0f3754ea86590fecfe5c4513e8" refkind="member"><highlight class="normal">o.spindle<sp/>=<sp/>30000.0</highlight></codeline>
+<codeline lineno="55" refid="namespaceFinishing__3mm__ballnose_1adebc3b8af27078aacae772d67eba6785" refkind="member"><highlight class="normal">o.stay_low<sp/>=<sp/></highlight><highlight class="keyword">False</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="namespaceFinishing__3mm__ballnose_1a9d1de2b78460d3465ec091d4cb5d5a1a" refkind="member"><highlight class="normal">o.stepdown<sp/>=<sp/>0.009999999776482582</highlight></codeline>
+<codeline lineno="57" refid="namespaceFinishing__3mm__ballnose_1a64c0ebdc5e0339a08dc635d4c78a8478" refkind="member"><highlight class="normal">o.strategy<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;CROSS&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="namespaceFinishing__3mm__ballnose_1a4830e5fdbd8aca7e4a33f623e57d708b" refkind="member"><highlight class="normal">o.testing<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="59" refid="namespaceFinishing__3mm__ballnose_1a7f39e2d249c80ed531f954619bb07703" refkind="member"><highlight class="normal">o.update_offsetimage_tag<sp/>=<sp/></highlight><highlight class="keyword">False</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="namespaceFinishing__3mm__ballnose_1ac6347a050c02758770c4c2facffe90ed" refkind="member"><highlight class="normal">o.update_silhouete_tag<sp/>=<sp/></highlight><highlight class="keyword">True</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="namespaceFinishing__3mm__ballnose_1aad1ed17a098f328653c397f2a952e457" refkind="member"><highlight class="normal">o.update_zbufferimage_tag<sp/>=<sp/></highlight><highlight class="keyword">False</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="namespaceFinishing__3mm__ballnose_1a8bb268ae935cf567a0d5a056a8129233" refkind="member"><highlight class="normal">o.use_layers<sp/>=<sp/></highlight><highlight class="keyword">False</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="namespaceFinishing__3mm__ballnose_1add427384f14a4cc4c9da3edac97acba8" refkind="member"><highlight class="normal">o.use_limit_curve<sp/>=<sp/></highlight><highlight class="keyword">False</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="namespaceFinishing__3mm__ballnose_1a8fbd4cabc2a9d171d165ab4cbd4a0d50" refkind="member"><highlight class="normal">o.waterline_fill<sp/>=<sp/></highlight><highlight class="keyword">True</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/presets/cam_operations/Finishing_3mm_ballnose.py"/>
+  </compounddef>
+</doxygen>

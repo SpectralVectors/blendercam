@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacecam_1_1bridges" kind="namespace" language="Python">
+    <compoundname>cam::bridges</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacecam_1_1bridges_1ab88a28fe439f964efd23975589aaa2b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.bridges.addBridge</definition>
+        <argsstring>(x, y, rot, sizex, sizey)</argsstring>
+        <name>addBridge</name>
+        <qualifiedname>cam.bridges.addBridge</qualifiedname>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+        </param>
+        <param>
+          <type>y</type>
+          <defname>y</defname>
+        </param>
+        <param>
+          <type>rot</type>
+          <defname>rot</defname>
+        </param>
+        <param>
+          <type>sizex</type>
+          <defname>sizex</defname>
+        </param>
+        <param>
+          <type>sizey</type>
+          <defname>sizey</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/bridges.py" line="24" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/bridges.py" bodystart="24" bodyend="44"/>
+        <referencedby refid="namespacecam_1_1bridges_1aaf5e2c4aefcf0356f7045ed129199829" compoundref="bridges_8py" startline="45" endline="85">cam.bridges.addAutoBridges</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1bridges_1aaf5e2c4aefcf0356f7045ed129199829" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.bridges.addAutoBridges</definition>
+        <argsstring>(o)</argsstring>
+        <name>addAutoBridges</name>
+        <qualifiedname>cam.bridges.addAutoBridges</qualifiedname>
+        <param>
+          <type>o</type>
+          <defname>o</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Attempt to Add Auto Bridges as Set of Curves</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/bridges.py" line="45" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/bridges.py" bodystart="45" bodyend="85"/>
+        <references refid="namespacecam_1_1bridges_1ab88a28fe439f964efd23975589aaa2b4" compoundref="bridges_8py" startline="24" endline="44">cam.bridges.addBridge</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1bridges_1a2dbd508f6928335ced548494d7f666b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.bridges.getBridgesPoly</definition>
+        <argsstring>(o)</argsstring>
+        <name>getBridgesPoly</name>
+        <qualifiedname>cam.bridges.getBridgesPoly</qualifiedname>
+        <param>
+          <type>o</type>
+          <defname>o</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/bridges.py" line="86" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/bridges.py" bodystart="86" bodyend="110"/>
+        <referencedby refid="namespacecam_1_1bridges_1a5e1747f2a5f009fe7e5a6565534a7831" compoundref="bridges_8py" startline="111" endline="264">cam.bridges.useBridges</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1bridges_1a5e1747f2a5f009fe7e5a6565534a7831" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.bridges.useBridges</definition>
+        <argsstring>(ch, o)</argsstring>
+        <name>useBridges</name>
+        <qualifiedname>cam.bridges.useBridges</qualifiedname>
+        <param>
+          <type>ch</type>
+          <defname>ch</defname>
+        </param>
+        <param>
+          <type>o</type>
+          <defname>o</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>This Adds Bridges to Chunks, Takes the Bridge-objects Collection and Uses the Curves Inside It as Bridges.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/bridges.py" line="111" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/bridges.py" bodystart="111" bodyend="264"/>
+        <references refid="namespacecam_1_1bridges_1a2dbd508f6928335ced548494d7f666b1" compoundref="bridges_8py" startline="86" endline="110">cam.bridges.getBridgesPoly</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1bridges_1a9fb9a9ba8729e5fc0ca07581049b7ca1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.bridges.auto_cut_bridge</definition>
+        <argsstring>(o)</argsstring>
+        <name>auto_cut_bridge</name>
+        <qualifiedname>cam.bridges.auto_cut_bridge</qualifiedname>
+        <param>
+          <type>o</type>
+          <defname>o</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/bridges.py" line="265" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/bridges.py" bodystart="265" bodyend="270"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>BlenderCAM &apos;bridges.py&apos; © 2012 Vilem Novak
+
+Functions to add Bridges / Tabs to meshes or curves.
+Called with Operators defined in &apos;ops.py&apos;
+</verbatim> </para>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/bridges.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

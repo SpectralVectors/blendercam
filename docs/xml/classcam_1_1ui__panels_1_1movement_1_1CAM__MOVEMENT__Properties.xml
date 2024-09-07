@@ -1,0 +1,544 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Properties" kind="class" language="Python" prot="public">
+    <compoundname>cam::ui_panels::movement::CAM_MOVEMENT_Properties</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PropertyGroup</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Properties_1a91ad11dcdba79afd09a66b4e0d9010fb" prot="public" static="yes" mutable="no">
+        <type>EnumProperty</type>
+        <definition>EnumProperty cam.ui_panels.movement.CAM_MOVEMENT_Properties::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>cam.ui_panels.movement.CAM_MOVEMENT_Properties.type</qualifiedname>
+        <initializer>(
+        name=&apos;Movement Type&apos;,
+        items=(
+            (&apos;CONVENTIONAL&apos;, &apos;Conventional / Up milling&apos;,
+             &apos;Cutter rotates against the direction of the feed&apos;),
+            (&apos;CLIMB&apos;, &apos;Climb / Down milling&apos;,
+             &apos;Cutter rotates with the direction of the feed&apos;),
+            (&apos;MEANDER&apos;, &apos;Meander / Zig Zag&apos;,
+             &apos;Cutting is done both with and against the &apos;
+             &apos;rotation of the spindle&apos;)
+        ),
+        description=&apos;movement type&apos;,
+        default=&apos;CLIMB&apos;,
+        update=update_operation,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/movement.py" line="29" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/movement.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Properties_1abe9a49d6ac58a174aeb5306120507809" prot="public" static="yes" mutable="no">
+        <type>EnumProperty</type>
+        <definition>EnumProperty cam.ui_panels.movement.CAM_MOVEMENT_Properties::insideout</definition>
+        <argsstring></argsstring>
+        <name>insideout</name>
+        <qualifiedname>cam.ui_panels.movement.CAM_MOVEMENT_Properties.insideout</qualifiedname>
+        <initializer>(
+        name=&apos;Direction&apos;,
+        items=(
+            (&apos;INSIDEOUT&apos;, &apos;Inside out&apos;, &apos;a&apos;),
+            (&apos;OUTSIDEIN&apos;, &apos;Outside in&apos;, &apos;a&apos;)
+        ),
+        description=&apos;Approach to the piece&apos;,
+        default=&apos;INSIDEOUT&apos;,
+        update=update_operation,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/movement.py" line="45" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/movement.py" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Properties_1ac7780fc216a7405cd97d188a6e04040f" prot="public" static="yes" mutable="no">
+        <type>EnumProperty</type>
+        <definition>EnumProperty cam.ui_panels.movement.CAM_MOVEMENT_Properties::spindle_rotation</definition>
+        <argsstring></argsstring>
+        <name>spindle_rotation</name>
+        <qualifiedname>cam.ui_panels.movement.CAM_MOVEMENT_Properties.spindle_rotation</qualifiedname>
+        <initializer>(
+        name=&apos;Spindle Rotation&apos;,
+        items=(
+            (&apos;CW&apos;, &apos;Clockwise&apos;, &apos;a&apos;),
+            (&apos;CCW&apos;, &apos;Counter clockwise&apos;, &apos;a&apos;)
+        ),
+        description=&apos;Spindle rotation direction&apos;,
+        default=&apos;CW&apos;,
+        update=update_operation,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/movement.py" line="56" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/movement.py" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Properties_1a750132340fc74b60b7fad711cce93d95" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.ui_panels.movement.CAM_MOVEMENT_Properties::free_height</definition>
+        <argsstring></argsstring>
+        <name>free_height</name>
+        <qualifiedname>cam.ui_panels.movement.CAM_MOVEMENT_Properties.free_height</qualifiedname>
+        <initializer>(
+        name=&quot;Free Movement Height&quot;,
+        default=0.01,
+        min=0.0000,
+        max=32,
+        precision=PRECISION,
+        unit=&quot;LENGTH&quot;,
+        update=update_operation,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/movement.py" line="67" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/movement.py" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Properties_1a2194c316793cdd6401799db16f20e6ea" prot="public" static="yes" mutable="no">
+        <type>BoolProperty</type>
+        <definition>BoolProperty cam.ui_panels.movement.CAM_MOVEMENT_Properties::useG64</definition>
+        <argsstring></argsstring>
+        <name>useG64</name>
+        <qualifiedname>cam.ui_panels.movement.CAM_MOVEMENT_Properties.useG64</qualifiedname>
+        <initializer>(
+        name=&quot;G64 Trajectory&quot;,
+        description=&apos;Use only if your machine supports &apos;
+        &apos;<ref refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Properties_1a1795d9c99926d318c3a9a03df58be439" kindref="member">G64</ref> code. LinuxCNC and Mach3 do&apos;,
+        default=False,
+        update=update_operation,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/movement.py" line="77" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/movement.py" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Properties_1a1795d9c99926d318c3a9a03df58be439" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.ui_panels.movement.CAM_MOVEMENT_Properties::G64</definition>
+        <argsstring></argsstring>
+        <name>G64</name>
+        <qualifiedname>cam.ui_panels.movement.CAM_MOVEMENT_Properties.G64</qualifiedname>
+        <initializer>(
+        name=&quot;Path Control Mode with Optional Tolerance&quot;,
+        default=0.0001,
+        min=0.0000,
+        max=0.005,
+        precision=PRECISION,
+        unit=&quot;LENGTH&quot;,
+        update=update_operation,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/movement.py" line="85" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/movement.py" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Properties_1a5e0ec9058f6e9d786cdf726116d37135" prot="public" static="yes" mutable="no">
+        <type>BoolProperty</type>
+        <definition>BoolProperty cam.ui_panels.movement.CAM_MOVEMENT_Properties::parallel_step_back</definition>
+        <argsstring></argsstring>
+        <name>parallel_step_back</name>
+        <qualifiedname>cam.ui_panels.movement.CAM_MOVEMENT_Properties.parallel_step_back</qualifiedname>
+        <initializer>(
+        name=&quot;Parallel Step Back&quot;,
+        description=&apos;For roughing and finishing in one pass: mills &apos;
+        &apos;material in climb mode, then steps back and goes &apos;
+        &apos;between 2 last chunks back&apos;,
+        default=False,
+        update=update_operation,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/movement.py" line="95" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/movement.py" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Properties_1abd31ed7179be38cf1b4cf92fa092273e" prot="public" static="yes" mutable="no">
+        <type>BoolProperty</type>
+        <definition>BoolProperty cam.ui_panels.movement.CAM_MOVEMENT_Properties::helix_enter</definition>
+        <argsstring></argsstring>
+        <name>helix_enter</name>
+        <qualifiedname>cam.ui_panels.movement.CAM_MOVEMENT_Properties.helix_enter</qualifiedname>
+        <initializer>(
+        name=&quot;Helix Enter - EXPERIMENTAL&quot;,
+        description=&quot;Enter material in helix&quot;,
+        default=False,
+        update=update_operation,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/movement.py" line="104" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/movement.py" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Properties_1ae4ceece6cf1e07d2072e96c27eb18f6a" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.ui_panels.movement.CAM_MOVEMENT_Properties::ramp_in_angle</definition>
+        <argsstring></argsstring>
+        <name>ramp_in_angle</name>
+        <qualifiedname>cam.ui_panels.movement.CAM_MOVEMENT_Properties.ramp_in_angle</qualifiedname>
+        <initializer>(
+        name=&quot;Ramp-in Angle&quot;,
+        default=pi / 6,
+        min=0,
+        max=pi * 0.4999,
+        precision=1,
+        subtype=&quot;ANGLE&quot;,
+        unit=&quot;ROTATION&quot;,
+        update=update_operation,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/movement.py" line="111" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/movement.py" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Properties_1a7875ed4d9823ba6e69dda7f35b0e8a1f" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.ui_panels.movement.CAM_MOVEMENT_Properties::helix_diameter</definition>
+        <argsstring></argsstring>
+        <name>helix_diameter</name>
+        <qualifiedname>cam.ui_panels.movement.CAM_MOVEMENT_Properties.helix_diameter</qualifiedname>
+        <initializer>(
+        name=&apos;Helix Diameter - % of Cutter Diameter&apos;,
+        default=90,
+        min=10,
+        max=100,
+        precision=1,
+        subtype=&apos;PERCENTAGE&apos;,
+        update=update_operation,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/movement.py" line="122" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/movement.py" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Properties_1afb51651371c3b660fc2656d8ff099514" prot="public" static="yes" mutable="no">
+        <type>BoolProperty</type>
+        <definition>BoolProperty cam.ui_panels.movement.CAM_MOVEMENT_Properties::ramp</definition>
+        <argsstring></argsstring>
+        <name>ramp</name>
+        <qualifiedname>cam.ui_panels.movement.CAM_MOVEMENT_Properties.ramp</qualifiedname>
+        <initializer>(
+        name=&quot;Ramp-in - EXPERIMENTAL&quot;,
+        description=&quot;Ramps down the whole contour, so the cutline looks &quot;
+        &quot;like helix&quot;,
+        default=False,
+        update=update_operation,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/movement.py" line="132" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/movement.py" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Properties_1aa4b7884b2212a22882958799ce41ae07" prot="public" static="yes" mutable="no">
+        <type>BoolProperty</type>
+        <definition>BoolProperty cam.ui_panels.movement.CAM_MOVEMENT_Properties::ramp_out</definition>
+        <argsstring></argsstring>
+        <name>ramp_out</name>
+        <qualifiedname>cam.ui_panels.movement.CAM_MOVEMENT_Properties.ramp_out</qualifiedname>
+        <initializer>(
+        name=&quot;Ramp-out - EXPERIMENTAL&quot;,
+        description=&quot;Ramp out to not leave mark on surface&quot;,
+        default=False,
+        update=update_operation,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/movement.py" line="140" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/movement.py" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Properties_1ab34d4f58abf832705a67c4930e07bed4" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.ui_panels.movement.CAM_MOVEMENT_Properties::ramp_out_angle</definition>
+        <argsstring></argsstring>
+        <name>ramp_out_angle</name>
+        <qualifiedname>cam.ui_panels.movement.CAM_MOVEMENT_Properties.ramp_out_angle</qualifiedname>
+        <initializer>(
+        name=&quot;Ramp-out Angle&quot;,
+        default=pi / 6,
+        min=0,
+        max=pi * 0.4999,
+        precision=1,
+        subtype=&quot;ANGLE&quot;,
+        unit=&quot;ROTATION&quot;,
+        update=update_operation,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/movement.py" line="147" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/movement.py" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Properties_1aed044498dd510a34ca599e3a4617c335" prot="public" static="yes" mutable="no">
+        <type>BoolProperty</type>
+        <definition>BoolProperty cam.ui_panels.movement.CAM_MOVEMENT_Properties::retract_tangential</definition>
+        <argsstring></argsstring>
+        <name>retract_tangential</name>
+        <qualifiedname>cam.ui_panels.movement.CAM_MOVEMENT_Properties.retract_tangential</qualifiedname>
+        <initializer>(
+        name=&quot;Retract Tangential - EXPERIMENTAL&quot;,
+        description=&quot;Retract from material in circular motion&quot;,
+        default=False,
+        update=update_operation,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/movement.py" line="158" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/movement.py" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Properties_1ae17f3662b1910542696c4a5dddc1a6f6" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.ui_panels.movement.CAM_MOVEMENT_Properties::retract_radius</definition>
+        <argsstring></argsstring>
+        <name>retract_radius</name>
+        <qualifiedname>cam.ui_panels.movement.CAM_MOVEMENT_Properties.retract_radius</qualifiedname>
+        <initializer>(
+        name=&apos;Retract Arc Radius&apos;,
+        default=0.001,
+        min=0.000001,
+        max=100,
+        precision=PRECISION,
+        unit=&quot;LENGTH&quot;,
+        update=update_operation,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/movement.py" line="165" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/movement.py" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Properties_1a192d1a4e6f9328c5664c246e7cca6d93" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.ui_panels.movement.CAM_MOVEMENT_Properties::retract_height</definition>
+        <argsstring></argsstring>
+        <name>retract_height</name>
+        <qualifiedname>cam.ui_panels.movement.CAM_MOVEMENT_Properties.retract_height</qualifiedname>
+        <initializer>(
+        name=&apos;Retract Arc Height&apos;,
+        default=0.001,
+        min=0.00000,
+        max=100,
+        precision=PRECISION,
+        unit=&quot;LENGTH&quot;,
+        update=update_operation,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/movement.py" line="175" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/movement.py" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Properties_1aa50684e57c8598a613df844cbb6f48a8" prot="public" static="yes" mutable="no">
+        <type>BoolProperty</type>
+        <definition>BoolProperty cam.ui_panels.movement.CAM_MOVEMENT_Properties::stay_low</definition>
+        <argsstring></argsstring>
+        <name>stay_low</name>
+        <qualifiedname>cam.ui_panels.movement.CAM_MOVEMENT_Properties.stay_low</qualifiedname>
+        <initializer>(
+        name=&quot;Stay Low if Possible&quot;,
+        default=True,
+        update=update_operation,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/movement.py" line="185" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/movement.py" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Properties_1a6f4af4226d5b86aef80244b5830cbde4" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.ui_panels.movement.CAM_MOVEMENT_Properties::merge_dist</definition>
+        <argsstring></argsstring>
+        <name>merge_dist</name>
+        <qualifiedname>cam.ui_panels.movement.CAM_MOVEMENT_Properties.merge_dist</qualifiedname>
+        <initializer>(
+        name=&quot;Merge Distance - EXPERIMENTAL&quot;,
+        default=0.0,
+        min=0.0000,
+        max=0.1,
+        precision=PRECISION,
+        unit=&quot;LENGTH&quot;,
+        update=update_operation,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/movement.py" line="191" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/movement.py" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Properties_1ad88247e9273a35214aca85482639fc3a" prot="public" static="yes" mutable="no">
+        <type>BoolProperty</type>
+        <definition>BoolProperty cam.ui_panels.movement.CAM_MOVEMENT_Properties::protect_vertical</definition>
+        <argsstring></argsstring>
+        <name>protect_vertical</name>
+        <qualifiedname>cam.ui_panels.movement.CAM_MOVEMENT_Properties.protect_vertical</qualifiedname>
+        <initializer>(
+        name=&quot;Protect Vertical&quot;,
+        description=&quot;The path goes only vertically next to steep areas&quot;,
+        default=True,
+        update=update_operation,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/movement.py" line="201" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/movement.py" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Properties_1aafbf665c1098158dced78e9da6b2f3dd" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.ui_panels.movement.CAM_MOVEMENT_Properties::protect_vertical_limit</definition>
+        <argsstring></argsstring>
+        <name>protect_vertical_limit</name>
+        <qualifiedname>cam.ui_panels.movement.CAM_MOVEMENT_Properties.protect_vertical_limit</qualifiedname>
+        <initializer>(
+        name=&quot;Verticality Limit&quot;,
+        description=&quot;What angle is already considered vertical&quot;,
+        default=pi / 45,
+        min=0,
+        max=pi * 0.5,
+        precision=0,
+        subtype=&quot;ANGLE&quot;,
+        unit=&quot;ROTATION&quot;,
+        update=update_operation,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/movement.py" line="208" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/movement.py" bodystart="208" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PropertyGroup</label>
+      </node>
+      <node id="1">
+        <label>cam.ui_panels.movement.CAM_MOVEMENT_Properties</label>
+        <link refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Properties"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>BoolProperty</label>
+      </node>
+      <node id="3">
+        <label>EnumProperty</label>
+      </node>
+      <node id="4">
+        <label>FloatProperty</label>
+      </node>
+      <node id="2">
+        <label>PropertyGroup</label>
+      </node>
+      <node id="1">
+        <label>cam.ui_panels.movement.CAM_MOVEMENT_Properties</label>
+        <link refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Properties"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+insideout</edgelabel>
+          <edgelabel>+spindle_rotation</edgelabel>
+          <edgelabel>+type</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+G64</edgelabel>
+          <edgelabel>+free_height</edgelabel>
+          <edgelabel>+helix_diameter</edgelabel>
+          <edgelabel>+merge_dist</edgelabel>
+          <edgelabel>+protect_vertical_limit</edgelabel>
+          <edgelabel>+ramp_in_angle</edgelabel>
+          <edgelabel>+ramp_out_angle</edgelabel>
+          <edgelabel>+retract_height</edgelabel>
+          <edgelabel>+retract_radius</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+helix_enter</edgelabel>
+          <edgelabel>+parallel_step_back</edgelabel>
+          <edgelabel>+protect_vertical</edgelabel>
+          <edgelabel>+ramp</edgelabel>
+          <edgelabel>+ramp_out</edgelabel>
+          <edgelabel>+retract_tangential</edgelabel>
+          <edgelabel>+stay_low</edgelabel>
+          <edgelabel>+useG64</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/movement.py" line="27" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/movement.py" bodystart="27" bodyend="220"/>
+    <listofallmembers>
+      <member refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Properties_1a750132340fc74b60b7fad711cce93d95" prot="public" virt="non-virtual"><scope>cam::ui_panels::movement::CAM_MOVEMENT_Properties</scope><name>free_height</name></member>
+      <member refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Properties_1a1795d9c99926d318c3a9a03df58be439" prot="public" virt="non-virtual"><scope>cam::ui_panels::movement::CAM_MOVEMENT_Properties</scope><name>G64</name></member>
+      <member refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Properties_1a7875ed4d9823ba6e69dda7f35b0e8a1f" prot="public" virt="non-virtual"><scope>cam::ui_panels::movement::CAM_MOVEMENT_Properties</scope><name>helix_diameter</name></member>
+      <member refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Properties_1abd31ed7179be38cf1b4cf92fa092273e" prot="public" virt="non-virtual"><scope>cam::ui_panels::movement::CAM_MOVEMENT_Properties</scope><name>helix_enter</name></member>
+      <member refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Properties_1abe9a49d6ac58a174aeb5306120507809" prot="public" virt="non-virtual"><scope>cam::ui_panels::movement::CAM_MOVEMENT_Properties</scope><name>insideout</name></member>
+      <member refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Properties_1a6f4af4226d5b86aef80244b5830cbde4" prot="public" virt="non-virtual"><scope>cam::ui_panels::movement::CAM_MOVEMENT_Properties</scope><name>merge_dist</name></member>
+      <member refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Properties_1a5e0ec9058f6e9d786cdf726116d37135" prot="public" virt="non-virtual"><scope>cam::ui_panels::movement::CAM_MOVEMENT_Properties</scope><name>parallel_step_back</name></member>
+      <member refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Properties_1ad88247e9273a35214aca85482639fc3a" prot="public" virt="non-virtual"><scope>cam::ui_panels::movement::CAM_MOVEMENT_Properties</scope><name>protect_vertical</name></member>
+      <member refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Properties_1aafbf665c1098158dced78e9da6b2f3dd" prot="public" virt="non-virtual"><scope>cam::ui_panels::movement::CAM_MOVEMENT_Properties</scope><name>protect_vertical_limit</name></member>
+      <member refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Properties_1afb51651371c3b660fc2656d8ff099514" prot="public" virt="non-virtual"><scope>cam::ui_panels::movement::CAM_MOVEMENT_Properties</scope><name>ramp</name></member>
+      <member refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Properties_1ae4ceece6cf1e07d2072e96c27eb18f6a" prot="public" virt="non-virtual"><scope>cam::ui_panels::movement::CAM_MOVEMENT_Properties</scope><name>ramp_in_angle</name></member>
+      <member refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Properties_1aa4b7884b2212a22882958799ce41ae07" prot="public" virt="non-virtual"><scope>cam::ui_panels::movement::CAM_MOVEMENT_Properties</scope><name>ramp_out</name></member>
+      <member refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Properties_1ab34d4f58abf832705a67c4930e07bed4" prot="public" virt="non-virtual"><scope>cam::ui_panels::movement::CAM_MOVEMENT_Properties</scope><name>ramp_out_angle</name></member>
+      <member refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Properties_1a192d1a4e6f9328c5664c246e7cca6d93" prot="public" virt="non-virtual"><scope>cam::ui_panels::movement::CAM_MOVEMENT_Properties</scope><name>retract_height</name></member>
+      <member refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Properties_1ae17f3662b1910542696c4a5dddc1a6f6" prot="public" virt="non-virtual"><scope>cam::ui_panels::movement::CAM_MOVEMENT_Properties</scope><name>retract_radius</name></member>
+      <member refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Properties_1aed044498dd510a34ca599e3a4617c335" prot="public" virt="non-virtual"><scope>cam::ui_panels::movement::CAM_MOVEMENT_Properties</scope><name>retract_tangential</name></member>
+      <member refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Properties_1ac7780fc216a7405cd97d188a6e04040f" prot="public" virt="non-virtual"><scope>cam::ui_panels::movement::CAM_MOVEMENT_Properties</scope><name>spindle_rotation</name></member>
+      <member refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Properties_1aa50684e57c8598a613df844cbb6f48a8" prot="public" virt="non-virtual"><scope>cam::ui_panels::movement::CAM_MOVEMENT_Properties</scope><name>stay_low</name></member>
+      <member refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Properties_1a91ad11dcdba79afd09a66b4e0d9010fb" prot="public" virt="non-virtual"><scope>cam::ui_panels::movement::CAM_MOVEMENT_Properties</scope><name>type</name></member>
+      <member refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Properties_1a2194c316793cdd6401799db16f20e6ea" prot="public" virt="non-virtual"><scope>cam::ui_panels::movement::CAM_MOVEMENT_Properties</scope><name>useG64</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,444 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1basrelief_1_1BasReliefsettings" xml:lang="en-US">
+<title>cam.basrelief.BasReliefsettings Class Reference</title>
+<indexterm><primary>cam.basrelief.BasReliefsettings</primary></indexterm>
+Inheritance diagram for cam.basrelief.BasReliefsettings:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1basrelief_1_1BasReliefsettings__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.basrelief.BasReliefsettings:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1basrelief_1_1BasReliefsettings__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>BoolProperty <link linkend="_classcam_1_1basrelief_1_1BasReliefsettings_1a02cf3acf4385f9e2bdd7917e6fd32fff">use_image_source</link></para>
+</listitem>
+            <listitem><para>StringProperty <link linkend="_classcam_1_1basrelief_1_1BasReliefsettings_1a13007ac7d4f20273c6ebca6fefcf30a0">source_image_name</link></para>
+</listitem>
+            <listitem><para>StringProperty <link linkend="_classcam_1_1basrelief_1_1BasReliefsettings_1a4b25a0c654ce88a785b48574c74dd23e">view_layer_name</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1basrelief_1_1BasReliefsettings_1abaa63120661727dc25c7cb3b81a475f6">bit_diameter</link></para>
+</listitem>
+            <listitem><para>IntProperty <link linkend="_classcam_1_1basrelief_1_1BasReliefsettings_1ab4a2b092e7db742c922c9f20df151ee4">pass_per_radius</link></para>
+</listitem>
+            <listitem><para>IntProperty <link linkend="_classcam_1_1basrelief_1_1BasReliefsettings_1ab5789f0d327f7ce26b016da4331bbe19">widthmm</link></para>
+</listitem>
+            <listitem><para>IntProperty <link linkend="_classcam_1_1basrelief_1_1BasReliefsettings_1a8364e7e45dc884c53a7b3f2ac3a481ce">heightmm</link></para>
+</listitem>
+            <listitem><para>IntProperty <link linkend="_classcam_1_1basrelief_1_1BasReliefsettings_1a163725dc844be070bede9643e4ae0237">thicknessmm</link></para>
+</listitem>
+            <listitem><para>EnumProperty <link linkend="_classcam_1_1basrelief_1_1BasReliefsettings_1a0fa94c30fd8f84f56967743d0b504840">justifyx</link></para>
+</listitem>
+            <listitem><para>EnumProperty <link linkend="_classcam_1_1basrelief_1_1BasReliefsettings_1a6ec3efaa2d51eedbb0d107932aa60715">justifyy</link></para>
+</listitem>
+            <listitem><para>EnumProperty <link linkend="_classcam_1_1basrelief_1_1BasReliefsettings_1a002c793b530cd34bf9aa903dde2e66ab">justifyz</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1basrelief_1_1BasReliefsettings_1ad03faf87e52daef6798fc4b17ae6c943">depth_exponent</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1basrelief_1_1BasReliefsettings_1adf164fa5a5bc56ca1983c89ef60284b0">silhouette_threshold</link></para>
+</listitem>
+            <listitem><para>BoolProperty <link linkend="_classcam_1_1basrelief_1_1BasReliefsettings_1a9977b9a6d1104ebdb58106291b2f73d3">recover_silhouettes</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1basrelief_1_1BasReliefsettings_1a9f4c0597afbcb02a5106cb05e6518fb0">silhouette_scale</link></para>
+</listitem>
+            <listitem><para>IntProperty <link linkend="_classcam_1_1basrelief_1_1BasReliefsettings_1af23a8ac5b0aa15bdbe189fea3db1eb9c">silhouette_exponent</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1basrelief_1_1BasReliefsettings_1ace3086b0bfe6bb3b2d9888500a8aecf2">attenuation</link></para>
+</listitem>
+            <listitem><para>IntProperty <link linkend="_classcam_1_1basrelief_1_1BasReliefsettings_1aa3e4bfba9ab23e6cb6ed000ee4a14d77">min_gridsize</link></para>
+</listitem>
+            <listitem><para>IntProperty <link linkend="_classcam_1_1basrelief_1_1BasReliefsettings_1a83a7f266f5f6c447a17276b169f39be4">smooth_iterations</link></para>
+</listitem>
+            <listitem><para>IntProperty <link linkend="_classcam_1_1basrelief_1_1BasReliefsettings_1a9709d6a804941ea8d76bac6f76d0c37b">vcycle_iterations</link></para>
+</listitem>
+            <listitem><para>IntProperty <link linkend="_classcam_1_1basrelief_1_1BasReliefsettings_1a72f1271b66522b9cc2ef83cf40260b29">linbcg_iterations</link></para>
+</listitem>
+            <listitem><para>BoolProperty <link linkend="_classcam_1_1basrelief_1_1BasReliefsettings_1aed5d8e359180aa6063323967ccecd120">use_planar</link></para>
+</listitem>
+            <listitem><para>BoolProperty <link linkend="_classcam_1_1basrelief_1_1BasReliefsettings_1a601540a6f999cf6b1ed1f94a62e18fd8">gradient_scaling_mask_use</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1basrelief_1_1BasReliefsettings_1a001d4ed97b779b0eb03b5b791b0a596c">decimate_ratio</link></para>
+</listitem>
+            <listitem><para>StringProperty <link linkend="_classcam_1_1basrelief_1_1BasReliefsettings_1aa0ac6747cd89707716e23b0e7be0cb15">gradient_scaling_mask_name</link></para>
+</listitem>
+            <listitem><para>BoolProperty <link linkend="_classcam_1_1basrelief_1_1BasReliefsettings_1a3c84a314c4c78833b465b8d9cad8aebd">scale_down_before_use</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1basrelief_1_1BasReliefsettings_1acfc8b4472ef13376ece5f43d0a5ccf8e">scale_down_before</link></para>
+</listitem>
+            <listitem><para>BoolProperty <link linkend="_classcam_1_1basrelief_1_1BasReliefsettings_1ab067c7193295c43a0c7777503c5ef68f">detail_enhancement_use</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1basrelief_1_1BasReliefsettings_1add089ce95055b467126345343ab949f1">detail_enhancement_amount</link></para>
+</listitem>
+            <listitem><para>BoolProperty <link linkend="_classcam_1_1basrelief_1_1BasReliefsettings_1a6ebfe2d9324f51afd4d2ce351202fc61">advanced</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1basrelief_1_1BasReliefsettings_1a6ebfe2d9324f51afd4d2ce351202fc61"/><section>
+    <title>advanced</title>
+<indexterm><primary>advanced</primary><secondary>cam.basrelief.BasReliefsettings</secondary></indexterm>
+<indexterm><primary>cam.basrelief.BasReliefsettings</primary><secondary>advanced</secondary></indexterm>
+<para><computeroutput>BoolProperty cam.basrelief.BasReliefsettings.advanced<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Advanced&#32;Options&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;Show&#32;advanced&#32;options&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="keyword">True</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1basrelief_1_1BasReliefsettings_1ace3086b0bfe6bb3b2d9888500a8aecf2"/><section>
+    <title>attenuation</title>
+<indexterm><primary>attenuation</primary><secondary>cam.basrelief.BasReliefsettings</secondary></indexterm>
+<indexterm><primary>cam.basrelief.BasReliefsettings</primary><secondary>attenuation</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.basrelief.BasReliefsettings.attenuation<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Gradient&#32;Attenuation&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;Gradient&#32;attenuation&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0.000001,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=100.0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=1.0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=PRECISION,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1basrelief_1_1BasReliefsettings_1abaa63120661727dc25c7cb3b81a475f6"/><section>
+    <title>bit_diameter</title>
+<indexterm><primary>bit_diameter</primary><secondary>cam.basrelief.BasReliefsettings</secondary></indexterm>
+<indexterm><primary>cam.basrelief.BasReliefsettings</primary><secondary>bit_diameter</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.basrelief.BasReliefsettings.bit_diameter<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Diameter&#32;of&#32;Ball&#32;End&#32;in&#32;mm&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;Diameter&#32;of&#32;bit&#32;which&#32;will&#32;be&#32;used&#32;for&#32;carving&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0.01,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=50.0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=3.175,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=PRECISION,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1basrelief_1_1BasReliefsettings_1a001d4ed97b779b0eb03b5b791b0a596c"/><section>
+    <title>decimate_ratio</title>
+<indexterm><primary>decimate_ratio</primary><secondary>cam.basrelief.BasReliefsettings</secondary></indexterm>
+<indexterm><primary>cam.basrelief.BasReliefsettings</primary><secondary>decimate_ratio</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.basrelief.BasReliefsettings.decimate_ratio<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Decimate&#32;Ratio&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;Simplify&#32;the&#32;mesh&#32;using&#32;the&#32;Decimate&#32;modifier.&#32;&quot;</emphasis>
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;The&#32;lower&#32;the&#32;value&#32;the&#32;more&#32;simplyfied&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0.01,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=1.0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.1,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=PRECISION,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1basrelief_1_1BasReliefsettings_1ad03faf87e52daef6798fc4b17ae6c943"/><section>
+    <title>depth_exponent</title>
+<indexterm><primary>depth_exponent</primary><secondary>cam.basrelief.BasReliefsettings</secondary></indexterm>
+<indexterm><primary>cam.basrelief.BasReliefsettings</primary><secondary>depth_exponent</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.basrelief.BasReliefsettings.depth_exponent<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Depth&#32;Exponent&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;Initial&#32;depth&#32;map&#32;is&#32;taken&#32;to&#32;this&#32;power.&#32;Higher&#32;=&#32;&quot;</emphasis>
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;sharper&#32;relief&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0.5,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=10.0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=1.0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=PRECISION,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1basrelief_1_1BasReliefsettings_1add089ce95055b467126345343ab949f1"/><section>
+    <title>detail_enhancement_amount</title>
+<indexterm><primary>detail_enhancement_amount</primary><secondary>cam.basrelief.BasReliefsettings</secondary></indexterm>
+<indexterm><primary>cam.basrelief.BasReliefsettings</primary><secondary>detail_enhancement_amount</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.basrelief.BasReliefsettings.detail_enhancement_amount<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Amount&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;Image&#32;scale&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0.025,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=1.0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=.5,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=PRECISION,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1basrelief_1_1BasReliefsettings_1ab067c7193295c43a0c7777503c5ef68f"/><section>
+    <title>detail_enhancement_use</title>
+<indexterm><primary>detail_enhancement_use</primary><secondary>cam.basrelief.BasReliefsettings</secondary></indexterm>
+<indexterm><primary>cam.basrelief.BasReliefsettings</primary><secondary>detail_enhancement_use</secondary></indexterm>
+<para><computeroutput>BoolProperty cam.basrelief.BasReliefsettings.detail_enhancement_use<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Enhance&#32;Details&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;Enhance&#32;details&#32;by&#32;frequency&#32;analysis&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="keyword">False</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1basrelief_1_1BasReliefsettings_1aa0ac6747cd89707716e23b0e7be0cb15"/><section>
+    <title>gradient_scaling_mask_name</title>
+<indexterm><primary>gradient_scaling_mask_name</primary><secondary>cam.basrelief.BasReliefsettings</secondary></indexterm>
+<indexterm><primary>cam.basrelief.BasReliefsettings</primary><secondary>gradient_scaling_mask_name</secondary></indexterm>
+<para><computeroutput>StringProperty cam.basrelief.BasReliefsettings.gradient_scaling_mask_name<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&apos;Scaling&#32;Mask&#32;Name&apos;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&apos;Mask&#32;name&apos;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1basrelief_1_1BasReliefsettings_1a601540a6f999cf6b1ed1f94a62e18fd8"/><section>
+    <title>gradient_scaling_mask_use</title>
+<indexterm><primary>gradient_scaling_mask_use</primary><secondary>cam.basrelief.BasReliefsettings</secondary></indexterm>
+<indexterm><primary>cam.basrelief.BasReliefsettings</primary><secondary>gradient_scaling_mask_use</secondary></indexterm>
+<para><computeroutput>BoolProperty cam.basrelief.BasReliefsettings.gradient_scaling_mask_use<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Scale&#32;Gradients&#32;with&#32;Mask&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="keyword">False</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1basrelief_1_1BasReliefsettings_1a8364e7e45dc884c53a7b3f2ac3a481ce"/><section>
+    <title>heightmm</title>
+<indexterm><primary>heightmm</primary><secondary>cam.basrelief.BasReliefsettings</secondary></indexterm>
+<indexterm><primary>cam.basrelief.BasReliefsettings</primary><secondary>heightmm</secondary></indexterm>
+<para><computeroutput>IntProperty cam.basrelief.BasReliefsettings.heightmm<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Desired&#32;Height&#32;in&#32;mm&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=150,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=5,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=4000,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1basrelief_1_1BasReliefsettings_1a0fa94c30fd8f84f56967743d0b504840"/><section>
+    <title>justifyx</title>
+<indexterm><primary>justifyx</primary><secondary>cam.basrelief.BasReliefsettings</secondary></indexterm>
+<indexterm><primary>cam.basrelief.BasReliefsettings</primary><secondary>justifyx</secondary></indexterm>
+<para><computeroutput>EnumProperty cam.basrelief.BasReliefsettings.justifyx<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;X&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;items=[
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&apos;1&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Left&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;&apos;</emphasis>,&#32;0),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&apos;-0.5&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Centered&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;&apos;</emphasis>,&#32;1),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&apos;-1&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Right&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;&apos;</emphasis>,&#32;2)
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;],
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="stringliteral">&apos;-1&apos;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1basrelief_1_1BasReliefsettings_1a6ec3efaa2d51eedbb0d107932aa60715"/><section>
+    <title>justifyy</title>
+<indexterm><primary>justifyy</primary><secondary>cam.basrelief.BasReliefsettings</secondary></indexterm>
+<indexterm><primary>cam.basrelief.BasReliefsettings</primary><secondary>justifyy</secondary></indexterm>
+<para><computeroutput>EnumProperty cam.basrelief.BasReliefsettings.justifyy<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Y&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;items=[
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&apos;1&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Bottom&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;&apos;</emphasis>,&#32;0),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&apos;-0.5&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Centered&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;&apos;</emphasis>,&#32;2),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&apos;-1&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Top&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;&apos;</emphasis>,&#32;1),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;],
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="stringliteral">&apos;-1&apos;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1basrelief_1_1BasReliefsettings_1a002c793b530cd34bf9aa903dde2e66ab"/><section>
+    <title>justifyz</title>
+<indexterm><primary>justifyz</primary><secondary>cam.basrelief.BasReliefsettings</secondary></indexterm>
+<indexterm><primary>cam.basrelief.BasReliefsettings</primary><secondary>justifyz</secondary></indexterm>
+<para><computeroutput>EnumProperty cam.basrelief.BasReliefsettings.justifyz<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Z&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;items=[
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&apos;-1&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Below&#32;0&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;&apos;</emphasis>,&#32;0),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&apos;-0.5&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Centered&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;&apos;</emphasis>,&#32;2),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&apos;1&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Above&#32;0&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;&apos;</emphasis>,&#32;1),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;],
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="stringliteral">&apos;-1&apos;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1basrelief_1_1BasReliefsettings_1a72f1271b66522b9cc2ef83cf40260b29"/><section>
+    <title>linbcg_iterations</title>
+<indexterm><primary>linbcg_iterations</primary><secondary>cam.basrelief.BasReliefsettings</secondary></indexterm>
+<indexterm><primary>cam.basrelief.BasReliefsettings</primary><secondary>linbcg_iterations</secondary></indexterm>
+<para><computeroutput>IntProperty cam.basrelief.BasReliefsettings.linbcg_iterations<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;LINBCG&#32;Iterations&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;Set&#32;lower&#32;for&#32;flatter&#32;relief,&#32;and&#32;when&#32;using&#32;&quot;</emphasis>
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;planar&#32;constraint&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=5,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=1,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=64,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1basrelief_1_1BasReliefsettings_1aa3e4bfba9ab23e6cb6ed000ee4a14d77"/><section>
+    <title>min_gridsize</title>
+<indexterm><primary>min_gridsize</primary><secondary>cam.basrelief.BasReliefsettings</secondary></indexterm>
+<indexterm><primary>cam.basrelief.BasReliefsettings</primary><secondary>min_gridsize</secondary></indexterm>
+<para><computeroutput>IntProperty cam.basrelief.BasReliefsettings.min_gridsize<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Minimum&#32;Grid&#32;Size&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=16,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=2,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=512,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1basrelief_1_1BasReliefsettings_1ab4a2b092e7db742c922c9f20df151ee4"/><section>
+    <title>pass_per_radius</title>
+<indexterm><primary>pass_per_radius</primary><secondary>cam.basrelief.BasReliefsettings</secondary></indexterm>
+<indexterm><primary>cam.basrelief.BasReliefsettings</primary><secondary>pass_per_radius</secondary></indexterm>
+<para><computeroutput>IntProperty cam.basrelief.BasReliefsettings.pass_per_radius<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Passes&#32;per&#32;Radius&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;Amount&#32;of&#32;passes&#32;per&#32;radius\n(more&#32;passes,&#32;&quot;</emphasis>
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;more&#32;mesh&#32;precision)&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=2,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=1,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=10,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1basrelief_1_1BasReliefsettings_1a9977b9a6d1104ebdb58106291b2f73d3"/><section>
+    <title>recover_silhouettes</title>
+<indexterm><primary>recover_silhouettes</primary><secondary>cam.basrelief.BasReliefsettings</secondary></indexterm>
+<indexterm><primary>cam.basrelief.BasReliefsettings</primary><secondary>recover_silhouettes</secondary></indexterm>
+<para><computeroutput>BoolProperty cam.basrelief.BasReliefsettings.recover_silhouettes<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Recover&#32;Silhouettes&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="keyword">True</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1basrelief_1_1BasReliefsettings_1acfc8b4472ef13376ece5f43d0a5ccf8e"/><section>
+    <title>scale_down_before</title>
+<indexterm><primary>scale_down_before</primary><secondary>cam.basrelief.BasReliefsettings</secondary></indexterm>
+<indexterm><primary>cam.basrelief.BasReliefsettings</primary><secondary>scale_down_before</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.basrelief.BasReliefsettings.scale_down_before<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Image&#32;Scale&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;Image&#32;scale&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0.025,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=1.0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=.5,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=PRECISION,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1basrelief_1_1BasReliefsettings_1a3c84a314c4c78833b465b8d9cad8aebd"/><section>
+    <title>scale_down_before_use</title>
+<indexterm><primary>scale_down_before_use</primary><secondary>cam.basrelief.BasReliefsettings</secondary></indexterm>
+<indexterm><primary>cam.basrelief.BasReliefsettings</primary><secondary>scale_down_before_use</secondary></indexterm>
+<para><computeroutput>BoolProperty cam.basrelief.BasReliefsettings.scale_down_before_use<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Scale&#32;Down&#32;Image&#32;Before&#32;Processing&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="keyword">False</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1basrelief_1_1BasReliefsettings_1af23a8ac5b0aa15bdbe189fea3db1eb9c"/><section>
+    <title>silhouette_exponent</title>
+<indexterm><primary>silhouette_exponent</primary><secondary>cam.basrelief.BasReliefsettings</secondary></indexterm>
+<indexterm><primary>cam.basrelief.BasReliefsettings</primary><secondary>silhouette_exponent</secondary></indexterm>
+<para><computeroutput>IntProperty cam.basrelief.BasReliefsettings.silhouette_exponent<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Silhouette&#32;Square&#32;Exponent&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;If&#32;lower,&#32;true&#32;depth&#32;distances&#32;between&#32;objects&#32;will&#32;be&#32;&quot;</emphasis>
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;more&#32;visibe&#32;in&#32;the&#32;relief&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=3,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=5,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1basrelief_1_1BasReliefsettings_1a9f4c0597afbcb02a5106cb05e6518fb0"/><section>
+    <title>silhouette_scale</title>
+<indexterm><primary>silhouette_scale</primary><secondary>cam.basrelief.BasReliefsettings</secondary></indexterm>
+<indexterm><primary>cam.basrelief.BasReliefsettings</primary><secondary>silhouette_scale</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.basrelief.BasReliefsettings.silhouette_scale<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Silhouette&#32;Scale&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;Silhouette&#32;scale&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0.000001,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=5.0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.3,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=PRECISION,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1basrelief_1_1BasReliefsettings_1adf164fa5a5bc56ca1983c89ef60284b0"/><section>
+    <title>silhouette_threshold</title>
+<indexterm><primary>silhouette_threshold</primary><secondary>cam.basrelief.BasReliefsettings</secondary></indexterm>
+<indexterm><primary>cam.basrelief.BasReliefsettings</primary><secondary>silhouette_threshold</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.basrelief.BasReliefsettings.silhouette_threshold<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Silhouette&#32;Threshold&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;Silhouette&#32;threshold&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0.000001,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=1.0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.003,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=PRECISION,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1basrelief_1_1BasReliefsettings_1a83a7f266f5f6c447a17276b169f39be4"/><section>
+    <title>smooth_iterations</title>
+<indexterm><primary>smooth_iterations</primary><secondary>cam.basrelief.BasReliefsettings</secondary></indexterm>
+<indexterm><primary>cam.basrelief.BasReliefsettings</primary><secondary>smooth_iterations</secondary></indexterm>
+<para><computeroutput>IntProperty cam.basrelief.BasReliefsettings.smooth_iterations<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Smooth&#32;Iterations&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=1,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=1,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=64,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1basrelief_1_1BasReliefsettings_1a13007ac7d4f20273c6ebca6fefcf30a0"/><section>
+    <title>source_image_name</title>
+<indexterm><primary>source_image_name</primary><secondary>cam.basrelief.BasReliefsettings</secondary></indexterm>
+<indexterm><primary>cam.basrelief.BasReliefsettings</primary><secondary>source_image_name</secondary></indexterm>
+<para><computeroutput>StringProperty cam.basrelief.BasReliefsettings.source_image_name<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&apos;Image&#32;Source&apos;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&apos;image&#32;source&apos;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1basrelief_1_1BasReliefsettings_1a163725dc844be070bede9643e4ae0237"/><section>
+    <title>thicknessmm</title>
+<indexterm><primary>thicknessmm</primary><secondary>cam.basrelief.BasReliefsettings</secondary></indexterm>
+<indexterm><primary>cam.basrelief.BasReliefsettings</primary><secondary>thicknessmm</secondary></indexterm>
+<para><computeroutput>IntProperty cam.basrelief.BasReliefsettings.thicknessmm<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Thickness&#32;in&#32;mm&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=15,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=5,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=100,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1basrelief_1_1BasReliefsettings_1a02cf3acf4385f9e2bdd7917e6fd32fff"/><section>
+    <title>use_image_source</title>
+<indexterm><primary>use_image_source</primary><secondary>cam.basrelief.BasReliefsettings</secondary></indexterm>
+<indexterm><primary>cam.basrelief.BasReliefsettings</primary><secondary>use_image_source</secondary></indexterm>
+<para><computeroutput>BoolProperty cam.basrelief.BasReliefsettings.use_image_source<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Use&#32;Image&#32;Source&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="keyword">False</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1basrelief_1_1BasReliefsettings_1aed5d8e359180aa6063323967ccecd120"/><section>
+    <title>use_planar</title>
+<indexterm><primary>use_planar</primary><secondary>cam.basrelief.BasReliefsettings</secondary></indexterm>
+<indexterm><primary>cam.basrelief.BasReliefsettings</primary><secondary>use_planar</secondary></indexterm>
+<para><computeroutput>BoolProperty cam.basrelief.BasReliefsettings.use_planar<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Use&#32;Planar&#32;Constraint&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="keyword">False</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1basrelief_1_1BasReliefsettings_1a9709d6a804941ea8d76bac6f76d0c37b"/><section>
+    <title>vcycle_iterations</title>
+<indexterm><primary>vcycle_iterations</primary><secondary>cam.basrelief.BasReliefsettings</secondary></indexterm>
+<indexterm><primary>cam.basrelief.BasReliefsettings</primary><secondary>vcycle_iterations</secondary></indexterm>
+<para><computeroutput>IntProperty cam.basrelief.BasReliefsettings.vcycle_iterations<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;V-Cycle&#32;Iterations&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;Set&#32;higher&#32;for&#32;planar&#32;constraint&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=2,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=1,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=128,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1basrelief_1_1BasReliefsettings_1a4b25a0c654ce88a785b48574c74dd23e"/><section>
+    <title>view_layer_name</title>
+<indexterm><primary>view_layer_name</primary><secondary>cam.basrelief.BasReliefsettings</secondary></indexterm>
+<indexterm><primary>cam.basrelief.BasReliefsettings</primary><secondary>view_layer_name</secondary></indexterm>
+<para><computeroutput>StringProperty cam.basrelief.BasReliefsettings.view_layer_name<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&apos;View&#32;Layer&#32;Source&apos;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&apos;Make&#32;a&#32;bas-relief&#32;from&#32;whatever&#32;is&#32;on&#32;this&#32;view&#32;layer&apos;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1basrelief_1_1BasReliefsettings_1ab5789f0d327f7ce26b016da4331bbe19"/><section>
+    <title>widthmm</title>
+<indexterm><primary>widthmm</primary><secondary>cam.basrelief.BasReliefsettings</secondary></indexterm>
+<indexterm><primary>cam.basrelief.BasReliefsettings</primary><secondary>widthmm</secondary></indexterm>
+<para><computeroutput>IntProperty cam.basrelief.BasReliefsettings.widthmm<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Desired&#32;Width&#32;in&#32;mm&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=200,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=5,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=4000,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/<link linkend="_basrelief_8py">basrelief.py</link></section>
+</section>

@@ -1,0 +1,498 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacecam_1_1cam__chunk" kind="namespace" language="Python">
+    <compoundname>cam::cam_chunk</compoundname>
+    <innerclass refid="classcam_1_1cam__chunk_1_1camPathChunk" prot="public">cam::cam_chunk::camPathChunk</innerclass>
+    <innerclass refid="classcam_1_1cam__chunk_1_1camPathChunkBuilder" prot="public">cam::cam_chunk::camPathChunkBuilder</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacecam_1_1cam__chunk_1aae443f216453a876267923f185b8fea3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.cam_chunk.Rotate_pbyp</definition>
+        <argsstring>(originp, p, ang)</argsstring>
+        <name>Rotate_pbyp</name>
+        <qualifiedname>cam.cam_chunk.Rotate_pbyp</qualifiedname>
+        <param>
+          <type>originp</type>
+          <defname>originp</defname>
+        </param>
+        <param>
+          <type>p</type>
+          <defname>p</defname>
+        </param>
+        <param>
+          <type>ang</type>
+          <defname>ang</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/cam_chunk.py" line="33" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/cam_chunk.py" bodystart="33" bodyend="48"/>
+        <referencedby refid="classcam_1_1cam__chunk_1_1camPathChunk_1a2194b46cca3aebb0c500e6dcb4a8e7ab" compoundref="cam__chunk_8py" startline="679" endline="729">cam.cam_chunk.camPathChunk.leadContour</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1cam__chunk_1a9ad480b2d187f750c8b12fa4c91c22e6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.cam_chunk._internalXyDistanceTo</definition>
+        <argsstring>(ourpoints, theirpoints, cutoff)</argsstring>
+        <name>_internalXyDistanceTo</name>
+        <qualifiedname>cam.cam_chunk._internalXyDistanceTo</qualifiedname>
+        <param>
+          <type>ourpoints</type>
+          <defname>ourpoints</defname>
+        </param>
+        <param>
+          <type>theirpoints</type>
+          <defname>theirpoints</defname>
+        </param>
+        <param>
+          <type>cutoff</type>
+          <defname>cutoff</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/cam_chunk.py" line="49" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/cam_chunk.py" bodystart="49" bodyend="63"/>
+        <referencedby refid="classcam_1_1cam__chunk_1_1camPathChunk_1a4479bed9ef7dfb9190652d8984b8a0b9" compoundref="cam__chunk_8py" startline="220" endline="237">cam.cam_chunk.camPathChunk.xyDistanceTo</referencedby>
+        <referencedby refid="classcam_1_1cam__chunk_1_1camPathChunk_1ac01f1831d2b22c9df83b8f356c9ba086" compoundref="cam__chunk_8py" startline="209" endline="218">cam.cam_chunk.camPathChunk.xyDistanceWithin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1cam__chunk_1a45d40f21aa2c35b1e0b565c85333ed74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.cam_chunk.chunksCoherency</definition>
+        <argsstring>(chunks)</argsstring>
+        <name>chunksCoherency</name>
+        <qualifiedname>cam.cam_chunk.chunksCoherency</qualifiedname>
+        <param>
+          <type>chunks</type>
+          <defname>chunks</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/cam_chunk.py" line="730" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/cam_chunk.py" bodystart="730" bodyend="758"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1cam__chunk_1acebd7e22b362088be2887cf1d12bbd88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.cam_chunk.setChunksZ</definition>
+        <argsstring>(chunks, z)</argsstring>
+        <name>setChunksZ</name>
+        <qualifiedname>cam.cam_chunk.setChunksZ</qualifiedname>
+        <param>
+          <type>chunks</type>
+          <defname>chunks</defname>
+        </param>
+        <param>
+          <type>z</type>
+          <defname>z</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/cam_chunk.py" line="759" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/cam_chunk.py" bodystart="759" bodyend="772"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1cam__chunk_1a510d5a93759ed88ba4ee598399333408" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.cam_chunk._optimize_internal</definition>
+        <argsstring>(points, keep_points, e, protect_vertical, protect_vertical_limit)</argsstring>
+        <name>_optimize_internal</name>
+        <qualifiedname>cam.cam_chunk._optimize_internal</qualifiedname>
+        <param>
+          <type>points</type>
+          <defname>points</defname>
+        </param>
+        <param>
+          <type>keep_points</type>
+          <defname>keep_points</defname>
+        </param>
+        <param>
+          <type>e</type>
+          <defname>e</defname>
+        </param>
+        <param>
+          <type>protect_vertical</type>
+          <defname>protect_vertical</defname>
+        </param>
+        <param>
+          <type>protect_vertical_limit</type>
+          <defname>protect_vertical_limit</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/cam_chunk.py" line="773" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/cam_chunk.py" bodystart="775" bodyend="835"/>
+        <referencedby refid="namespacecam_1_1cam__chunk_1afcf54443e0975e21832bde727de88ac2" compoundref="cam__chunk_8py" startline="836" endline="877">cam.cam_chunk.optimizeChunk</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1cam__chunk_1afcf54443e0975e21832bde727de88ac2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.cam_chunk.optimizeChunk</definition>
+        <argsstring>(chunk, operation)</argsstring>
+        <name>optimizeChunk</name>
+        <qualifiedname>cam.cam_chunk.optimizeChunk</qualifiedname>
+        <param>
+          <type>chunk</type>
+          <defname>chunk</defname>
+        </param>
+        <param>
+          <type>operation</type>
+          <defname>operation</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/cam_chunk.py" line="836" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/cam_chunk.py" bodystart="836" bodyend="877"/>
+        <references refid="namespacecam_1_1cam__chunk_1a510d5a93759ed88ba4ee598399333408" compoundref="cam__chunk_8py" startline="775" endline="835">cam.cam_chunk._optimize_internal</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1cam__chunk_1a90399dafb2a5285d13498e733ea638ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.cam_chunk.limitChunks</definition>
+        <argsstring>(chunks, o, force=False)</argsstring>
+        <name>limitChunks</name>
+        <qualifiedname>cam.cam_chunk.limitChunks</qualifiedname>
+        <param>
+          <type>chunks</type>
+          <defname>chunks</defname>
+        </param>
+        <param>
+          <type>o</type>
+          <defname>o</defname>
+        </param>
+        <param>
+          <type>force</type>
+          <defname>force</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/cam_chunk.py" line="878" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/cam_chunk.py" bodystart="880" bodyend="924"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1cam__chunk_1a99ba11ed9b7a4ae787bc650d16fdafba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.cam_chunk.parentChildPoly</definition>
+        <argsstring>(parents, children, o)</argsstring>
+        <name>parentChildPoly</name>
+        <qualifiedname>cam.cam_chunk.parentChildPoly</qualifiedname>
+        <param>
+          <type>parents</type>
+          <defname>parents</defname>
+        </param>
+        <param>
+          <type>children</type>
+          <defname>children</defname>
+        </param>
+        <param>
+          <type>o</type>
+          <defname>o</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/cam_chunk.py" line="925" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/cam_chunk.py" bodystart="925" bodyend="940"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1cam__chunk_1a218eb047597fabf4537005a14292a6d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.cam_chunk.parentChildDist</definition>
+        <argsstring>(parents, children, o, distance=None)</argsstring>
+        <name>parentChildDist</name>
+        <qualifiedname>cam.cam_chunk.parentChildDist</qualifiedname>
+        <param>
+          <type>parents</type>
+          <defname>parents</defname>
+        </param>
+        <param>
+          <type>children</type>
+          <defname>children</defname>
+        </param>
+        <param>
+          <type>o</type>
+          <defname>o</defname>
+        </param>
+        <param>
+          <type>distance</type>
+          <defname>distance</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/cam_chunk.py" line="941" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/cam_chunk.py" bodystart="941" bodyend="962"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1cam__chunk_1aadd268ccef89d272fd5ad5d2d87eb69a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.cam_chunk.parentChild</definition>
+        <argsstring>(parents, children, o)</argsstring>
+        <name>parentChild</name>
+        <qualifiedname>cam.cam_chunk.parentChild</qualifiedname>
+        <param>
+          <type>parents</type>
+          <defname>parents</defname>
+        </param>
+        <param>
+          <type>children</type>
+          <defname>children</defname>
+        </param>
+        <param>
+          <type>o</type>
+          <defname>o</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/cam_chunk.py" line="963" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/cam_chunk.py" bodystart="963" bodyend="974"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1cam__chunk_1af8dc0d6890bd1f95cceb91e7805688a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.cam_chunk.chunksToShapely</definition>
+        <argsstring>(chunks)</argsstring>
+        <name>chunksToShapely</name>
+        <qualifiedname>cam.cam_chunk.chunksToShapely</qualifiedname>
+        <param>
+          <type>chunks</type>
+          <defname>chunks</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/cam_chunk.py" line="975" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/cam_chunk.py" bodystart="975" bodyend="1117"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1cam__chunk_1a9bf2bc0e6461327556a19fe116dfbda0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.cam_chunk.meshFromCurveToChunk</definition>
+        <argsstring>(object)</argsstring>
+        <name>meshFromCurveToChunk</name>
+        <qualifiedname>cam.cam_chunk.meshFromCurveToChunk</qualifiedname>
+        <param>
+          <type><ref refid="classobject" kindref="compound">object</ref></type>
+          <defname>object</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/cam_chunk.py" line="1118" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/cam_chunk.py" bodystart="1118" bodyend="1186"/>
+        <referencedby refid="namespacecam_1_1cam__chunk_1ab2a9b4c221280b217dea624d99a312fa" compoundref="cam__chunk_8py" startline="1252" endline="1264">cam.cam_chunk.curveToChunks</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1cam__chunk_1ad3e6072a206a9e8f2d864520447b8b87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.cam_chunk.makeVisible</definition>
+        <argsstring>(o)</argsstring>
+        <name>makeVisible</name>
+        <qualifiedname>cam.cam_chunk.makeVisible</qualifiedname>
+        <param>
+          <type>o</type>
+          <defname>o</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/cam_chunk.py" line="1187" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/cam_chunk.py" bodystart="1187" bodyend="1204"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1cam__chunk_1a56a5d2a90ff15ceb9963e1f471fdad03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.cam_chunk.restoreVisibility</definition>
+        <argsstring>(o, storage)</argsstring>
+        <name>restoreVisibility</name>
+        <qualifiedname>cam.cam_chunk.restoreVisibility</qualifiedname>
+        <param>
+          <type>o</type>
+          <defname>o</defname>
+        </param>
+        <param>
+          <type>storage</type>
+          <defname>storage</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/cam_chunk.py" line="1205" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/cam_chunk.py" bodystart="1205" bodyend="1211"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1cam__chunk_1a58fc3af169a4c899092e731bbceaed80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.cam_chunk.meshFromCurve</definition>
+        <argsstring>(o, use_modifiers=False)</argsstring>
+        <name>meshFromCurve</name>
+        <qualifiedname>cam.cam_chunk.meshFromCurve</qualifiedname>
+        <param>
+          <type>o</type>
+          <defname>o</defname>
+        </param>
+        <param>
+          <type>use_modifiers</type>
+          <defname>use_modifiers</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/cam_chunk.py" line="1212" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/cam_chunk.py" bodystart="1212" bodyend="1251"/>
+        <referencedby refid="namespacecam_1_1cam__chunk_1ab2a9b4c221280b217dea624d99a312fa" compoundref="cam__chunk_8py" startline="1252" endline="1264">cam.cam_chunk.curveToChunks</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1cam__chunk_1ab2a9b4c221280b217dea624d99a312fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.cam_chunk.curveToChunks</definition>
+        <argsstring>(o, use_modifiers=False)</argsstring>
+        <name>curveToChunks</name>
+        <qualifiedname>cam.cam_chunk.curveToChunks</qualifiedname>
+        <param>
+          <type>o</type>
+          <defname>o</defname>
+        </param>
+        <param>
+          <type>use_modifiers</type>
+          <defname>use_modifiers</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/cam_chunk.py" line="1252" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/cam_chunk.py" bodystart="1252" bodyend="1264"/>
+        <references refid="namespacecam_1_1cam__chunk_1a58fc3af169a4c899092e731bbceaed80" compoundref="cam__chunk_8py" startline="1212" endline="1251">cam.cam_chunk.meshFromCurve</references>
+        <references refid="namespacecam_1_1cam__chunk_1a9bf2bc0e6461327556a19fe116dfbda0" compoundref="cam__chunk_8py" startline="1118" endline="1186">cam.cam_chunk.meshFromCurveToChunk</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1cam__chunk_1a0cc06d455ff3f17560db2450a67baa10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.cam_chunk.shapelyToChunks</definition>
+        <argsstring>(p, zlevel)</argsstring>
+        <name>shapelyToChunks</name>
+        <qualifiedname>cam.cam_chunk.shapelyToChunks</qualifiedname>
+        <param>
+          <type>p</type>
+          <defname>p</defname>
+        </param>
+        <param>
+          <type>zlevel</type>
+          <defname>zlevel</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/cam_chunk.py" line="1265" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/cam_chunk.py" bodystart="1265" bodyend="1285"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1cam__chunk_1a390ce4823666ce071f05f79f0fb69d95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.cam_chunk.chunkToShapely</definition>
+        <argsstring>(chunk)</argsstring>
+        <name>chunkToShapely</name>
+        <qualifiedname>cam.cam_chunk.chunkToShapely</qualifiedname>
+        <param>
+          <type>chunk</type>
+          <defname>chunk</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/cam_chunk.py" line="1286" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/cam_chunk.py" bodystart="1286" bodyend="1290"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1cam__chunk_1a2a33bfd7b634b7730791fc81fbe2d25d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.cam_chunk.chunksRefine</definition>
+        <argsstring>(chunks, o)</argsstring>
+        <name>chunksRefine</name>
+        <qualifiedname>cam.cam_chunk.chunksRefine</qualifiedname>
+        <param>
+          <type>chunks</type>
+          <defname>chunks</defname>
+        </param>
+        <param>
+          <type>o</type>
+          <defname>o</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Add Extra Points in Between for Chunks</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/cam_chunk.py" line="1291" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/cam_chunk.py" bodystart="1291" bodyend="1323"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1cam__chunk_1a56ba7c9150f76d7fcfade92ac0a49938" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.cam_chunk.chunksRefineThreshold</definition>
+        <argsstring>(chunks, distance, limitdistance)</argsstring>
+        <name>chunksRefineThreshold</name>
+        <qualifiedname>cam.cam_chunk.chunksRefineThreshold</qualifiedname>
+        <param>
+          <type>chunks</type>
+          <defname>chunks</defname>
+        </param>
+        <param>
+          <type>distance</type>
+          <defname>distance</defname>
+        </param>
+        <param>
+          <type>limitdistance</type>
+          <defname>limitdistance</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Add Extra Points in Between for Chunks. for Medial Axis Strategy only!</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/cam_chunk.py" line="1324" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/cam_chunk.py" bodystart="1324" bodyend="1363"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>BlenderCAM &apos;chunk.py&apos; © 2012 Vilem Novak
+ 
+Classes and Functions to build, store and optimize CAM path chunks.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/cam_chunk.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

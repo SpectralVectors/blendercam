@@ -1,0 +1,302 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacecam_1_1voronoi" kind="namespace" language="Python">
+    <compoundname>cam::voronoi</compoundname>
+    <innerclass refid="classcam_1_1voronoi_1_1Context" prot="public">cam::voronoi::Context</innerclass>
+    <innerclass refid="classcam_1_1voronoi_1_1Edge" prot="public">cam::voronoi::Edge</innerclass>
+    <innerclass refid="classcam_1_1voronoi_1_1EdgeList" prot="public">cam::voronoi::EdgeList</innerclass>
+    <innerclass refid="classcam_1_1voronoi_1_1Halfedge" prot="public">cam::voronoi::Halfedge</innerclass>
+    <innerclass refid="classcam_1_1voronoi_1_1PriorityQueue" prot="public">cam::voronoi::PriorityQueue</innerclass>
+    <innerclass refid="classcam_1_1voronoi_1_1Site" prot="public">cam::voronoi::Site</innerclass>
+    <innerclass refid="classcam_1_1voronoi_1_1SiteList" prot="public">cam::voronoi::SiteList</innerclass>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacecam_1_1voronoi_1a8440f2120b873dbf4281089f8657f877" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cam::voronoi.TOLERANCE</definition>
+        <argsstring></argsstring>
+        <name>TOLERANCE</name>
+        <qualifiedname>cam.voronoi.TOLERANCE</qualifiedname>
+        <initializer>=  1e-9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="64" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecam_1_1voronoi_1a3fd399888f78ae5e5565c979b41349e8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cam::voronoi.BIG_FLOAT</definition>
+        <argsstring></argsstring>
+        <name>BIG_FLOAT</name>
+        <qualifiedname>cam.voronoi.BIG_FLOAT</qualifiedname>
+        <initializer>=  1e38</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="65" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecam_1_1voronoi_1a93152205ddb1e4fc45bf522b0f1701a2" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool cam::voronoi::PY3</definition>
+        <argsstring></argsstring>
+        <name>PY3</name>
+        <qualifiedname>cam.voronoi.PY3</qualifiedname>
+        <initializer>=  True</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="68" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="68" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacecam_1_1voronoi_1ac8dd45b976fc7697e7dd1396ca7193e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.voronoi.voronoi</definition>
+        <argsstring>(siteList, context)</argsstring>
+        <name>voronoi</name>
+        <qualifiedname>cam.voronoi.voronoi</qualifiedname>
+        <param>
+          <type>siteList</type>
+          <defname>siteList</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="332" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="332" bodyend="470"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1voronoi_1abead5205b1f51f97648617700cafb4fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.voronoi.isEqual</definition>
+        <argsstring>(a, b, relativeError=TOLERANCE)</argsstring>
+        <name>isEqual</name>
+        <qualifiedname>cam.voronoi.isEqual</qualifiedname>
+        <param>
+          <type>a</type>
+          <defname>a</defname>
+        </param>
+        <param>
+          <type>b</type>
+          <defname>b</defname>
+        </param>
+        <param>
+          <type>relativeError</type>
+          <defname>relativeError</defname>
+          <defval><ref refid="namespacecam_1_1voronoi_1a8440f2120b873dbf4281089f8657f877" kindref="member">TOLERANCE</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="471" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="471" bodyend="477"/>
+        <referencedby refid="classcam_1_1voronoi_1_1Halfedge_1a806605e1bda51f333ea77f8a4936602e" compoundref="voronoi_8py" startline="669" endline="702">cam.voronoi.Halfedge.intersect</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1voronoi_1a3f967fa7c1899ba5f855fc51cbb24db7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.voronoi.computeVoronoiDiagram</definition>
+        <argsstring>(points, xBuff=0, yBuff=0, polygonsOutput=False, formatOutput=False, closePoly=True)</argsstring>
+        <name>computeVoronoiDiagram</name>
+        <qualifiedname>cam.voronoi.computeVoronoiDiagram</qualifiedname>
+        <param>
+          <type>points</type>
+          <defname>points</defname>
+        </param>
+        <param>
+          <type>xBuff</type>
+          <defname>xBuff</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>yBuff</type>
+          <defname>yBuff</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>polygonsOutput</type>
+          <defname>polygonsOutput</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>formatOutput</type>
+          <defname>formatOutput</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>closePoly</type>
+          <defname>closePoly</defname>
+          <defval>True</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Takes :
+    - a list of point objects (which must have x and y fields).
+    - x and y buffer values which are the expansion percentages of the bounding box rectangle including all input points.
+    Returns :
+    - With default options :
+      A list of 2-tuples, representing the two points of each Voronoi diagram edge.
+      Each point contains 2-tuples which are the x,y coordinates of point.
+      if formatOutput is True, returns :
+            - a list of 2-tuples, which are the x,y coordinates of the Voronoi diagram vertices.
+            - and a list of 2-tuples (v1, v2) representing edges of the Voronoi diagram.
+              v1 and v2 are the indices of the vertices at the end of the edge.
+    - If polygonsOutput option is True, returns :
+      A dictionary of polygons, keys are the indices of the input points,
+      values contains n-tuples representing the n points of each Voronoi diagram polygon.
+      Each point contains 2-tuples which are the x,y coordinates of point.
+      if formatOutput is True, returns :
+            - A list of 2-tuples, which are the x,y coordinates of the Voronoi diagram vertices.
+            - and a dictionary of input points indices. Values contains n-tuples representing the n points of each Voronoi diagram polygon.
+              Each tuple contains the vertex indices of the polygon vertices.
+    - if closePoly is True then, in the list of points of a polygon, last point will be the same of first point
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="914" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="914" bodyend="956"/>
+        <references refid="namespacecam_1_1voronoi_1a5bbde6ed1e123752d21c52751c39736d" compoundref="voronoi_8py" startline="957" endline="972">cam.voronoi.formatEdgesOutput</references>
+        <references refid="namespacecam_1_1voronoi_1a757396b8dfd6c6b79adae9296bbacb1b" compoundref="voronoi_8py" startline="973" endline="989">cam.voronoi.formatPolygonsOutput</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1voronoi_1a5bbde6ed1e123752d21c52751c39736d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.voronoi.formatEdgesOutput</definition>
+        <argsstring>(edges)</argsstring>
+        <name>formatEdgesOutput</name>
+        <qualifiedname>cam.voronoi.formatEdgesOutput</qualifiedname>
+        <param>
+          <type>edges</type>
+          <defname>edges</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="957" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="957" bodyend="972"/>
+        <referencedby refid="namespacecam_1_1voronoi_1a3f967fa7c1899ba5f855fc51cbb24db7" compoundref="voronoi_8py" startline="914" endline="956">cam.voronoi.computeVoronoiDiagram</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1voronoi_1a757396b8dfd6c6b79adae9296bbacb1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.voronoi.formatPolygonsOutput</definition>
+        <argsstring>(polygons)</argsstring>
+        <name>formatPolygonsOutput</name>
+        <qualifiedname>cam.voronoi.formatPolygonsOutput</qualifiedname>
+        <param>
+          <type>polygons</type>
+          <defname>polygons</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="973" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="973" bodyend="989"/>
+        <referencedby refid="namespacecam_1_1voronoi_1a3f967fa7c1899ba5f855fc51cbb24db7" compoundref="voronoi_8py" startline="914" endline="956">cam.voronoi.computeVoronoiDiagram</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1voronoi_1a27b3666c171229a27f6936e808a4266f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.voronoi.computeDelaunayTriangulation</definition>
+        <argsstring>(points)</argsstring>
+        <name>computeDelaunayTriangulation</name>
+        <qualifiedname>cam.voronoi.computeDelaunayTriangulation</qualifiedname>
+        <param>
+          <type>points</type>
+          <defname>points</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim> Takes a list of point objects (which must have x and y fields).
+    Returns a list of 3-tuples: the indices of the points that form a
+    Delaunay triangle.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="990" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="990" bodyend="1015"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>BlenderCAM &apos;voronoi.py&apos;
+
+Voronoi diagram calculator/ Delaunay triangulator
+
+- Voronoi Diagram Sweepline algorithm and C code by Steven Fortune, 1987, http://ect.bell-labs.com/who/sjf/
+- Python translation to file voronoi.py by Bill Simons, 2005, http://www.oxfish.com/
+- Additional changes for QGIS by Carson Farmer added November 2010
+- 2012 Ported to Python 3 and additional clip functions by domlysz at gmail.com
+
+Calculate Delaunay triangulation or the Voronoi polygons for a set of
+2D input points.
+
+Derived from code bearing the following notice:
+
+The author of this software is Steven Fortune.  Copyright (c) 1994 by AT&amp;T
+Bell Laboratories.
+Permission to use, copy, modify, and distribute this software for any
+purpose without fee is hereby granted, provided that this entire notice
+is included in all copies of any software which is or includes a copy
+or modification of this software and in all copies of the supporting
+documentation for such software.
+THIS SOFTWARE IS BEING PROVIDED &quot;AS IS&quot;, WITHOUT ANY EXPRESS OR IMPLIED
+WARRANTY.  IN PARTICULAR, NEITHER THE AUTHORS NOR AT&amp;T MAKE ANY
+REPRESENTATION OR WARRANTY OF ANY KIND CONCERNING THE MERCHANTABILITY
+OF THIS SOFTWARE OR ITS FITNESS FOR ANY PARTICULAR PURPOSE.
+
+Comments were incorporated from Shane O&apos;Sullivan&apos;s translation of the
+original code into C++ (http://mapviewer.skynet.ie/voronoi.html)
+
+Steve Fortune&apos;s homepage: http://netlib.bell-labs.com/cm/cs/who/sjf/index.html
+
+
+For programmatic use two functions are available:
+
+computeVoronoiDiagram(points, xBuff, yBuff, polygonsOutput=False, formatOutput=False) :
+Takes :
+    - a list of point objects (which must have x and y fields).
+    - x and y buffer values which are the expansion percentages of the bounding box rectangle including all input points.
+    Returns :
+    - With default options :
+      A list of 2-tuples, representing the two points of each Voronoi diagram edge.
+      Each point contains 2-tuples which are the x,y coordinates of point.
+      if formatOutput is True, returns :
+            - a list of 2-tuples, which are the x,y coordinates of the Voronoi diagram vertices.
+            - and a list of 2-tuples (v1, v2) representing edges of the Voronoi diagram.
+              v1 and v2 are the indices of the vertices at the end of the edge.
+    - If polygonsOutput option is True, returns :
+      A dictionary of polygons, keys are the indices of the input points,
+      values contains n-tuples representing the n points of each Voronoi diagram polygon.
+      Each point contains 2-tuples which are the x,y coordinates of point.
+      if formatOutput is True, returns :
+            - A list of 2-tuples, which are the x,y coordinates of the Voronoi diagram vertices.
+            - and a dictionary of input points indices. Values contains n-tuples representing the n points of each Voronoi diagram polygon.
+              Each tuple contains the vertex indices of the polygon vertices.
+
+computeDelaunayTriangulation(points):
+    Takes a list of point objects (which must have x and y fields).
+    Returns a list of 3-tuples: the indices of the points that form a Delaunay triangle.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

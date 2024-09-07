@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1ops_1_1CAMSimulate" kind="class" language="Python" prot="public">
+    <compoundname>cam::ops::CAMSimulate</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Operator</basecompoundref>
+    <basecompoundref refid="classcam_1_1async__op_1_1AsyncOperatorMixin" prot="public" virt="non-virtual">cam.async_op.AsyncOperatorMixin</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1ops_1_1CAMSimulate_1af4865f2d7c63c3af578dfafcce6dd6a4" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.ops.CAMSimulate::bl_idname</definition>
+        <argsstring></argsstring>
+        <name>bl_idname</name>
+        <qualifiedname>cam.ops.CAMSimulate.bl_idname</qualifiedname>
+        <initializer>=  &quot;object.cam_simulate&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="399" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="399" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ops_1_1CAMSimulate_1addf20267334c81563f52288a2982dbf7" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.ops.CAMSimulate::bl_label</definition>
+        <argsstring></argsstring>
+        <name>bl_label</name>
+        <qualifiedname>cam.ops.CAMSimulate.bl_label</qualifiedname>
+        <initializer>=  &quot;CAM Simulation&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="400" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="400" bodyend="-1"/>
+        <referencedby refid="classcam_1_1preset__managers_1_1CAM__MACHINE__MT__presets_1af95f7812d2952b26a26809ab923dac09" compoundref="preset__managers_8py" startline="28" endline="38">cam.preset_managers.CAM_MACHINE_MT_presets.post_cb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ops_1_1CAMSimulate_1a3fe0cac72f0a8d65e0cd4f3220fb70b5" prot="public" static="yes" mutable="no">
+        <type>dict</type>
+        <definition>dict cam.ops.CAMSimulate::bl_options</definition>
+        <argsstring></argsstring>
+        <name>bl_options</name>
+        <qualifiedname>cam.ops.CAMSimulate.bl_options</qualifiedname>
+        <initializer>=  {&apos;REGISTER&apos;, &apos;UNDO&apos;, &apos;BLOCKING&apos;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="401" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="401" bodyend="-1"/>
+        <referencedby refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a9628cbca8e69ec75b2337171a02bf428" compoundref="async__op_8py" startline="32" endline="59">cam.async_op.AsyncOperatorMixin.modal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ops_1_1CAMSimulate_1a064764e96e305e96f279788589891555" prot="public" static="yes" mutable="no">
+        <type>StringProperty</type>
+        <definition>StringProperty cam.ops.CAMSimulate::operation</definition>
+        <argsstring></argsstring>
+        <name>operation</name>
+        <qualifiedname>cam.ops.CAMSimulate.operation</qualifiedname>
+        <initializer>(
+        name=&quot;Operation&quot;,
+        description=&quot;Specify the operation to calculate&quot;,
+        default=&apos;Operation&apos;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="403" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="403" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcam_1_1ops_1_1CAMSimulate_1a633151f17849d281fd52ce82c00356a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.ops.CAMSimulate.execute_async</definition>
+        <argsstring>(self, context)</argsstring>
+        <name>execute_async</name>
+        <qualifiedname>cam.ops.CAMSimulate.execute_async</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="409" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="409" bodyend="424"/>
+        <referencedby refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a15a51cfd69d8e453e2e3d64386b1ebe3" compoundref="async__op_8py" startline="69" endline="87">cam.async_op.AsyncOperatorMixin.tick</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1ops_1_1CAMSimulate_1aec2c7a0b73b2034208cff181e39a1a6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.ops.CAMSimulate.draw</definition>
+        <argsstring>(self, context)</argsstring>
+        <name>draw</name>
+        <qualifiedname>cam.ops.CAMSimulate.draw</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="425" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="425" bodyend="430"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Simulate CAM Operation
+This Is Performed by: Creating an Image, Painting Z Depth of the Brush Subtractively.
+Works only for Some Operations, Can Not Be Used for 4-5 Axis.</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.ops.CAMSimulate</label>
+        <link refid="classcam_1_1ops_1_1CAMSimulate"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>cam.async_op.AsyncOperatorMixin</label>
+        <link refid="classcam_1_1async__op_1_1AsyncOperatorMixin"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6">
+        <label>StringProperty</label>
+      </node>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.ops.CAMSimulate</label>
+        <link refid="classcam_1_1ops_1_1CAMSimulate"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+bl_idname</edgelabel>
+          <edgelabel>+bl_label</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+bl_options</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>+operation</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>cam.async_op.AsyncOperatorMixin</label>
+        <link refid="classcam_1_1async__op_1_1AsyncOperatorMixin"/>
+      </node>
+      <node id="5">
+        <label>dict</label>
+      </node>
+      <node id="4">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="395" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="395" bodyend="430"/>
+    <listofallmembers>
+      <member refid="classcam_1_1ops_1_1CAMSimulate_1af4865f2d7c63c3af578dfafcce6dd6a4" prot="public" virt="non-virtual"><scope>cam::ops::CAMSimulate</scope><name>bl_idname</name></member>
+      <member refid="classcam_1_1ops_1_1CAMSimulate_1addf20267334c81563f52288a2982dbf7" prot="public" virt="non-virtual"><scope>cam::ops::CAMSimulate</scope><name>bl_label</name></member>
+      <member refid="classcam_1_1ops_1_1CAMSimulate_1a3fe0cac72f0a8d65e0cd4f3220fb70b5" prot="public" virt="non-virtual"><scope>cam::ops::CAMSimulate</scope><name>bl_options</name></member>
+      <member refid="classcam_1_1ops_1_1CAMSimulate_1aec2c7a0b73b2034208cff181e39a1a6b" prot="public" virt="non-virtual"><scope>cam::ops::CAMSimulate</scope><name>draw</name></member>
+      <member refid="classcam_1_1ops_1_1CAMSimulate_1a633151f17849d281fd52ce82c00356a7" prot="public" virt="non-virtual"><scope>cam::ops::CAMSimulate</scope><name>execute_async</name></member>
+      <member refid="classcam_1_1ops_1_1CAMSimulate_1a064764e96e305e96f279788589891555" prot="public" virt="non-virtual"><scope>cam::ops::CAMSimulate</scope><name>operation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

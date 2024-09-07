@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1autoupdate_1_1Updater" kind="class" language="Python" prot="public">
+    <compoundname>cam::autoupdate::Updater</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">bpy.types.Operator</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1autoupdate_1_1Updater_1ac805f0279e443768127f05ae9e48e4c6" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.autoupdate.Updater::bl_idname</definition>
+        <argsstring></argsstring>
+        <name>bl_idname</name>
+        <qualifiedname>cam.autoupdate.Updater.bl_idname</qualifiedname>
+        <initializer>=  &quot;render.cam_update_now&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/autoupdate.py" line="81" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/autoupdate.py" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1autoupdate_1_1Updater_1af7bae628191685f95b78939abd759ea6" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.autoupdate.Updater::bl_label</definition>
+        <argsstring></argsstring>
+        <name>bl_label</name>
+        <qualifiedname>cam.autoupdate.Updater.bl_label</qualifiedname>
+        <initializer>=  &quot;Update&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/autoupdate.py" line="82" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/autoupdate.py" bodystart="82" bodyend="-1"/>
+        <referencedby refid="classcam_1_1preset__managers_1_1CAM__MACHINE__MT__presets_1af95f7812d2952b26a26809ab923dac09" compoundref="preset__managers_8py" startline="28" endline="38">cam.preset_managers.CAM_MACHINE_MT_presets.post_cb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1autoupdate_1_1Updater_1a24b3ceef205d2e4ba85c95dc2e657725" prot="public" static="yes" mutable="no">
+        <type>dict</type>
+        <definition>dict cam.autoupdate.Updater::bl_options</definition>
+        <argsstring></argsstring>
+        <name>bl_options</name>
+        <qualifiedname>cam.autoupdate.Updater.bl_options</qualifiedname>
+        <initializer>=  {&apos;REGISTER&apos;, &apos;UNDO&apos;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/autoupdate.py" line="83" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/autoupdate.py" bodystart="83" bodyend="-1"/>
+        <referencedby refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a9628cbca8e69ec75b2337171a02bf428" compoundref="async__op_8py" startline="32" endline="59">cam.async_op.AsyncOperatorMixin.modal</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcam_1_1autoupdate_1_1Updater_1a1998cb8668d586339743e8d23e6daec2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.autoupdate.Updater.execute</definition>
+        <argsstring>(self, context)</argsstring>
+        <name>execute</name>
+        <qualifiedname>cam.autoupdate.Updater.execute</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/autoupdate.py" line="85" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/autoupdate.py" bodystart="85" bodyend="133"/>
+        <references refid="classcam_1_1autoupdate_1_1Updater_1a5b92859b501e1f1a87dc24d83883e1be" compoundref="autoupdate_8py" startline="134" endline="172">cam.autoupdate.Updater.install_zip_from_url</references>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1autoupdate_1_1Updater_1a5b92859b501e1f1a87dc24d83883e1be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.autoupdate.Updater.install_zip_from_url</definition>
+        <argsstring>(self, zip_url)</argsstring>
+        <name>install_zip_from_url</name>
+        <qualifiedname>cam.autoupdate.Updater.install_zip_from_url</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>zip_url</type>
+          <defname>zip_url</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/autoupdate.py" line="134" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/autoupdate.py" bodystart="134" bodyend="172"/>
+        <referencedby refid="classcam_1_1autoupdate_1_1Updater_1a1998cb8668d586339743e8d23e6daec2" compoundref="autoupdate_8py" startline="85" endline="133">cam.autoupdate.Updater.execute</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Update to Newer Version if Possible</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>bpy.types.Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.autoupdate.Updater</label>
+        <link refid="classcam_1_1autoupdate_1_1Updater"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>bpy.types.Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.autoupdate.Updater</label>
+        <link refid="classcam_1_1autoupdate_1_1Updater"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+bl_idname</edgelabel>
+          <edgelabel>+bl_label</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+bl_options</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dict</label>
+      </node>
+      <node id="3">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/autoupdate.py" line="79" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/autoupdate.py" bodystart="79" bodyend="172"/>
+    <listofallmembers>
+      <member refid="classcam_1_1autoupdate_1_1Updater_1ac805f0279e443768127f05ae9e48e4c6" prot="public" virt="non-virtual"><scope>cam::autoupdate::Updater</scope><name>bl_idname</name></member>
+      <member refid="classcam_1_1autoupdate_1_1Updater_1af7bae628191685f95b78939abd759ea6" prot="public" virt="non-virtual"><scope>cam::autoupdate::Updater</scope><name>bl_label</name></member>
+      <member refid="classcam_1_1autoupdate_1_1Updater_1a24b3ceef205d2e4ba85c95dc2e657725" prot="public" virt="non-virtual"><scope>cam::autoupdate::Updater</scope><name>bl_options</name></member>
+      <member refid="classcam_1_1autoupdate_1_1Updater_1a1998cb8668d586339743e8d23e6daec2" prot="public" virt="non-virtual"><scope>cam::autoupdate::Updater</scope><name>execute</name></member>
+      <member refid="classcam_1_1autoupdate_1_1Updater_1a5b92859b501e1f1a87dc24d83883e1be" prot="public" virt="non-virtual"><scope>cam::autoupdate::Updater</scope><name>install_zip_from_url</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

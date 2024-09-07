@@ -1,0 +1,397 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1curvecamtools_1_1CamCurveIntarsion" kind="class" language="Python" prot="public">
+    <compoundname>cam::curvecamtools::CamCurveIntarsion</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Operator</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1curvecamtools_1_1CamCurveIntarsion_1ab8e5a138d2b5ad107b9c458359eda2ce" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.curvecamtools.CamCurveIntarsion::bl_idname</definition>
+        <argsstring></argsstring>
+        <name>bl_idname</name>
+        <qualifiedname>cam.curvecamtools.CamCurveIntarsion.bl_idname</qualifiedname>
+        <initializer>=  &quot;object.curve_intarsion&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="81" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamtools_1_1CamCurveIntarsion_1ab16bd8dc303c1d07487f9dc7ac2f0ce8" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.curvecamtools.CamCurveIntarsion::bl_label</definition>
+        <argsstring></argsstring>
+        <name>bl_label</name>
+        <qualifiedname>cam.curvecamtools.CamCurveIntarsion.bl_label</qualifiedname>
+        <initializer>=  &quot;Intarsion&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="82" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="82" bodyend="-1"/>
+        <referencedby refid="classcam_1_1preset__managers_1_1CAM__MACHINE__MT__presets_1af95f7812d2952b26a26809ab923dac09" compoundref="preset__managers_8py" startline="28" endline="38">cam.preset_managers.CAM_MACHINE_MT_presets.post_cb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamtools_1_1CamCurveIntarsion_1a56c4c73830b9440c4ad73f79bd23f02c" prot="public" static="yes" mutable="no">
+        <type>dict</type>
+        <definition>dict cam.curvecamtools.CamCurveIntarsion::bl_options</definition>
+        <argsstring></argsstring>
+        <name>bl_options</name>
+        <qualifiedname>cam.curvecamtools.CamCurveIntarsion.bl_options</qualifiedname>
+        <initializer>=  {&apos;REGISTER&apos;, &apos;UNDO&apos;, &apos;PRESET&apos;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="83" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="83" bodyend="-1"/>
+        <referencedby refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a9628cbca8e69ec75b2337171a02bf428" compoundref="async__op_8py" startline="32" endline="59">cam.async_op.AsyncOperatorMixin.modal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamtools_1_1CamCurveIntarsion_1a62971e1fbed6d70a4f0dd1c78e9fa817" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamtools.CamCurveIntarsion::diameter</definition>
+        <argsstring></argsstring>
+        <name>diameter</name>
+        <qualifiedname>cam.curvecamtools.CamCurveIntarsion.diameter</qualifiedname>
+        <initializer>(
+        name=&quot;Cutter Diameter&quot;,
+        default=.001,
+        min=0,
+        max=0.025,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="85" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="85" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamtools_1_1CamCurveIntarsion_1af4934bdf7ccb17b0c1652455ccef9e06" compoundref="curvecamtools_8py" startline="146" endline="197">cam.curvecamtools.CamCurveIntarsion.execute</referencedby>
+        <referencedby refid="classcam_1_1curvecamtools_1_1CamCurveOvercuts_1ac36621f328a1634d1e5f82068504df8c" compoundref="curvecamtools_8py" startline="239" endline="307">cam.curvecamtools.CamCurveOvercuts.execute</referencedby>
+        <referencedby refid="classcam_1_1curvecamtools_1_1CamCurveOvercutsB_1a4dfd3aeb9a26899f900625361349c9d0" compoundref="curvecamtools_8py" startline="369" endline="579">cam.curvecamtools.CamCurveOvercutsB.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamtools_1_1CamCurveIntarsion_1af978e32455072cd598222f347c4633fb" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamtools.CamCurveIntarsion::tolerance</definition>
+        <argsstring></argsstring>
+        <name>tolerance</name>
+        <qualifiedname>cam.curvecamtools.CamCurveIntarsion.tolerance</qualifiedname>
+        <initializer>(
+        name=&quot;Cutout Tolerance&quot;,
+        default=.0001,
+        min=0,
+        max=0.005,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="93" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamtools_1_1CamCurveIntarsion_1a09b6422e24ebdccd39cf5701ea1e58e0" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamtools.CamCurveIntarsion::backlight</definition>
+        <argsstring></argsstring>
+        <name>backlight</name>
+        <qualifiedname>cam.curvecamtools.CamCurveIntarsion.backlight</qualifiedname>
+        <initializer>(
+        name=&quot;Backlight Seat&quot;,
+        default=0.000,
+        min=0,
+        max=0.010,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="101" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="101" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamtools_1_1CamCurveIntarsion_1af4934bdf7ccb17b0c1652455ccef9e06" compoundref="curvecamtools_8py" startline="146" endline="197">cam.curvecamtools.CamCurveIntarsion.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamtools_1_1CamCurveIntarsion_1a6f7b93d49b258a8a20d14cef090af0be" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamtools.CamCurveIntarsion::perimeter_cut</definition>
+        <argsstring></argsstring>
+        <name>perimeter_cut</name>
+        <qualifiedname>cam.curvecamtools.CamCurveIntarsion.perimeter_cut</qualifiedname>
+        <initializer>(
+        name=&quot;Perimeter Cut Offset&quot;,
+        default=0.000,
+        min=0,
+        max=0.100,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="109" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="109" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamtools_1_1CamCurveIntarsion_1af4934bdf7ccb17b0c1652455ccef9e06" compoundref="curvecamtools_8py" startline="146" endline="197">cam.curvecamtools.CamCurveIntarsion.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamtools_1_1CamCurveIntarsion_1a60e700426d873e210022ec940a188788" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamtools.CamCurveIntarsion::base_thickness</definition>
+        <argsstring></argsstring>
+        <name>base_thickness</name>
+        <qualifiedname>cam.curvecamtools.CamCurveIntarsion.base_thickness</qualifiedname>
+        <initializer>(
+        name=&quot;Base Material Thickness&quot;,
+        default=0.000,
+        min=0,
+        max=0.100,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="117" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamtools_1_1CamCurveIntarsion_1a4b78f6b6ff80fd9554ae8fce9d0bf621" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamtools.CamCurveIntarsion::intarsion_thickness</definition>
+        <argsstring></argsstring>
+        <name>intarsion_thickness</name>
+        <qualifiedname>cam.curvecamtools.CamCurveIntarsion.intarsion_thickness</qualifiedname>
+        <initializer>(
+        name=&quot;Intarsion Material Thickness&quot;,
+        default=0.000,
+        min=0,
+        max=0.100,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="125" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="125" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamtools_1_1CamCurveIntarsion_1af4934bdf7ccb17b0c1652455ccef9e06" compoundref="curvecamtools_8py" startline="146" endline="197">cam.curvecamtools.CamCurveIntarsion.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamtools_1_1CamCurveIntarsion_1ad76cf0cbce0e23d5bc2ce60f5bad7ffc" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamtools.CamCurveIntarsion::backlight_depth_from_top</definition>
+        <argsstring></argsstring>
+        <name>backlight_depth_from_top</name>
+        <qualifiedname>cam.curvecamtools.CamCurveIntarsion.backlight_depth_from_top</qualifiedname>
+        <initializer>(
+        name=&quot;Backlight Well Depth&quot;,
+        default=0.000,
+        min=0,
+        max=0.100,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="133" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="133" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcam_1_1curvecamtools_1_1CamCurveIntarsion_1aa87887432c6169ccf9187c78eeeb184f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamtools.CamCurveIntarsion::perimeter_cut</definition>
+        <argsstring></argsstring>
+        <name>perimeter_cut</name>
+        <qualifiedname>cam.curvecamtools.CamCurveIntarsion.perimeter_cut</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="174" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="174" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamtools_1_1CamCurveIntarsion_1af4934bdf7ccb17b0c1652455ccef9e06" compoundref="curvecamtools_8py" startline="146" endline="197">cam.curvecamtools.CamCurveIntarsion.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamtools_1_1CamCurveIntarsion_1af5b72d25b44cdebf4b696390c9751df9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamtools.CamCurveIntarsion::backlight</definition>
+        <argsstring></argsstring>
+        <name>backlight</name>
+        <qualifiedname>cam.curvecamtools.CamCurveIntarsion.backlight</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="191" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="191" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamtools_1_1CamCurveIntarsion_1af4934bdf7ccb17b0c1652455ccef9e06" compoundref="curvecamtools_8py" startline="146" endline="197">cam.curvecamtools.CamCurveIntarsion.execute</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcam_1_1curvecamtools_1_1CamCurveIntarsion_1af77e2818b63ac1e1b04d77b5e68362c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.curvecamtools.CamCurveIntarsion.poll</definition>
+        <argsstring>(cls, context)</argsstring>
+        <name>poll</name>
+        <qualifiedname>cam.curvecamtools.CamCurveIntarsion.poll</qualifiedname>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="143" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="143" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1curvecamtools_1_1CamCurveIntarsion_1af4934bdf7ccb17b0c1652455ccef9e06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.curvecamtools.CamCurveIntarsion.execute</definition>
+        <argsstring>(self, context)</argsstring>
+        <name>execute</name>
+        <qualifiedname>cam.curvecamtools.CamCurveIntarsion.execute</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="146" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="146" bodyend="197"/>
+        <references refid="classcam_1_1curvecamtools_1_1CamCurveIntarsion_1a09b6422e24ebdccd39cf5701ea1e58e0" compoundref="curvecamtools_8py" startline="101">cam.curvecamtools.CamCurveIntarsion.backlight</references>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a324df44f193c62ac56eee230b0446bf1" compoundref="curvecamcreate_8py" startline="1059">cam.curvecamcreate.CamCurvePuzzle.diameter</references>
+        <references refid="classcam_1_1curvecamtools_1_1CamCurveIntarsion_1a62971e1fbed6d70a4f0dd1c78e9fa817" compoundref="curvecamtools_8py" startline="85">cam.curvecamtools.CamCurveIntarsion.diameter</references>
+        <references refid="classcam_1_1curvecamtools_1_1CamCurveOvercuts_1a46234bd5cb1011ab2fe5b371a1e0e6ec" compoundref="curvecamtools_8py" startline="209">cam.curvecamtools.CamCurveOvercuts.diameter</references>
+        <references refid="classcam_1_1curvecamtools_1_1CamCurveOvercutsB_1afd44e9e8c2773daa67e19b90ff2f61c7" compoundref="curvecamtools_8py" startline="318">cam.curvecamtools.CamCurveOvercutsB.diameter</references>
+        <references refid="classcam_1_1curvecamtools_1_1CamCurveIntarsion_1a4b78f6b6ff80fd9554ae8fce9d0bf621" compoundref="curvecamtools_8py" startline="125">cam.curvecamtools.CamCurveIntarsion.intarsion_thickness</references>
+        <references refid="classcam_1_1curvecamtools_1_1CamCurveIntarsion_1a6f7b93d49b258a8a20d14cef090af0be" compoundref="curvecamtools_8py" startline="109">cam.curvecamtools.CamCurveIntarsion.perimeter_cut</references>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1curvecamtools_1_1CamCurveIntarsion_1a617f628b8a58cf3fb7034644d2e0a225" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.curvecamtools.CamCurveIntarsion.invoke</definition>
+        <argsstring>(self, context, event)</argsstring>
+        <name>invoke</name>
+        <qualifiedname>cam.curvecamtools.CamCurveIntarsion.invoke</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <param>
+          <type>event</type>
+          <defname>event</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="198" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="198" bodyend="202"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Makes Curve Cuttable Both Inside and Outside, for Intarsion and Joints</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.curvecamtools.CamCurveIntarsion</label>
+        <link refid="classcam_1_1curvecamtools_1_1CamCurveIntarsion"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>FloatProperty</label>
+      </node>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.curvecamtools.CamCurveIntarsion</label>
+        <link refid="classcam_1_1curvecamtools_1_1CamCurveIntarsion"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+bl_idname</edgelabel>
+          <edgelabel>+bl_label</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+bl_options</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+backlight</edgelabel>
+          <edgelabel>+backlight_depth_from_top</edgelabel>
+          <edgelabel>+base_thickness</edgelabel>
+          <edgelabel>+diameter</edgelabel>
+          <edgelabel>+intarsion_thickness</edgelabel>
+          <edgelabel>+perimeter_cut</edgelabel>
+          <edgelabel>+tolerance</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dict</label>
+      </node>
+      <node id="3">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="79" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="79" bodyend="202"/>
+    <listofallmembers>
+      <member refid="classcam_1_1curvecamtools_1_1CamCurveIntarsion_1a09b6422e24ebdccd39cf5701ea1e58e0" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamCurveIntarsion</scope><name>backlight</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamCurveIntarsion_1af5b72d25b44cdebf4b696390c9751df9" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamCurveIntarsion</scope><name>backlight</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamCurveIntarsion_1ad76cf0cbce0e23d5bc2ce60f5bad7ffc" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamCurveIntarsion</scope><name>backlight_depth_from_top</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamCurveIntarsion_1a60e700426d873e210022ec940a188788" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamCurveIntarsion</scope><name>base_thickness</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamCurveIntarsion_1ab8e5a138d2b5ad107b9c458359eda2ce" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamCurveIntarsion</scope><name>bl_idname</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamCurveIntarsion_1ab16bd8dc303c1d07487f9dc7ac2f0ce8" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamCurveIntarsion</scope><name>bl_label</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamCurveIntarsion_1a56c4c73830b9440c4ad73f79bd23f02c" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamCurveIntarsion</scope><name>bl_options</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamCurveIntarsion_1a62971e1fbed6d70a4f0dd1c78e9fa817" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamCurveIntarsion</scope><name>diameter</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamCurveIntarsion_1af4934bdf7ccb17b0c1652455ccef9e06" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamCurveIntarsion</scope><name>execute</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamCurveIntarsion_1a4b78f6b6ff80fd9554ae8fce9d0bf621" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamCurveIntarsion</scope><name>intarsion_thickness</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamCurveIntarsion_1a617f628b8a58cf3fb7034644d2e0a225" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamCurveIntarsion</scope><name>invoke</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamCurveIntarsion_1a6f7b93d49b258a8a20d14cef090af0be" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamCurveIntarsion</scope><name>perimeter_cut</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamCurveIntarsion_1aa87887432c6169ccf9187c78eeeb184f" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamCurveIntarsion</scope><name>perimeter_cut</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamCurveIntarsion_1af77e2818b63ac1e1b04d77b5e68362c3" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamCurveIntarsion</scope><name>poll</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamCurveIntarsion_1af978e32455072cd598222f347c4633fb" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamCurveIntarsion</scope><name>tolerance</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

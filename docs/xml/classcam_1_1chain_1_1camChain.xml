@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1chain_1_1camChain" kind="class" language="Python" prot="public">
+    <compoundname>cam::chain::camChain</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PropertyGroup</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1chain_1_1camChain_1a87591a6d264bdb51c41fba0f7a0fa73b" prot="public" static="yes" mutable="no">
+        <type>IntProperty</type>
+        <definition>IntProperty cam.chain.camChain::index</definition>
+        <argsstring></argsstring>
+        <name>index</name>
+        <qualifiedname>cam.chain.camChain.index</qualifiedname>
+        <initializer>(
+        <ref refid="classcam_1_1chain_1_1camChain_1afa7789eb81f76188eca69a1a6d5c7774" kindref="member">name</ref>=&quot;Index&quot;,
+        description=&quot;Index in the hard-defined camChains&quot;,
+        default=-1,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/chain.py" line="26" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/chain.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1chain_1_1camChain_1ac9a1f7ebc806037119baafce4eb481c7" prot="public" static="yes" mutable="no">
+        <type>IntProperty</type>
+        <definition>IntProperty cam.chain.camChain::active_operation</definition>
+        <argsstring></argsstring>
+        <name>active_operation</name>
+        <qualifiedname>cam.chain.camChain.active_operation</qualifiedname>
+        <initializer>(
+        <ref refid="classcam_1_1chain_1_1camChain_1afa7789eb81f76188eca69a1a6d5c7774" kindref="member">name</ref>=&quot;Active Operation&quot;,
+        description=&quot;Active operation in chain&quot;,
+        default=-1,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/chain.py" line="31" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/chain.py" bodystart="31" bodyend="-1"/>
+        <referencedby refid="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a03843f1fecc691952b696f4bc75a0156" compoundref="buttons__panel_8py" startline="23" endline="35">cam.ui_panels.buttons_panel.CAMButtonsPanel.poll</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1chain_1_1camChain_1afa7789eb81f76188eca69a1a6d5c7774" prot="public" static="yes" mutable="no">
+        <type>StringProperty</type>
+        <definition>StringProperty cam.chain.camChain::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>cam.chain.camChain.name</qualifiedname>
+        <initializer>(
+        name=&quot;Chain Name&quot;,
+        default=&quot;Chain&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/chain.py" line="36" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/chain.py" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1chain_1_1camChain_1a1b23593aa1e68ffdb042405c062da3a5" prot="public" static="yes" mutable="no">
+        <type>StringProperty</type>
+        <definition>StringProperty cam.chain.camChain::filename</definition>
+        <argsstring></argsstring>
+        <name>filename</name>
+        <qualifiedname>cam.chain.camChain.filename</qualifiedname>
+        <initializer>(
+        <ref refid="classcam_1_1chain_1_1camChain_1afa7789eb81f76188eca69a1a6d5c7774" kindref="member">name</ref>=&quot;File Name&quot;,
+        default=&quot;Chain&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/chain.py" line="40" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/chain.py" bodystart="40" bodyend="-1"/>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1ad43552228097db6017a1dbe4d9d1d240" compoundref="iso_8py" startline="353" endline="361">cam.nc.iso.Creator.make_subroutine_name</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1chain_1_1camChain_1a8681d673d64009abed9a3da40ac0b8c9" prot="public" static="yes" mutable="no">
+        <type>BoolProperty</type>
+        <definition>BoolProperty cam.chain.camChain::valid</definition>
+        <argsstring></argsstring>
+        <name>valid</name>
+        <qualifiedname>cam.chain.camChain.valid</qualifiedname>
+        <initializer>(
+        <ref refid="classcam_1_1chain_1_1camChain_1afa7789eb81f76188eca69a1a6d5c7774" kindref="member">name</ref>=&quot;Valid&quot;,
+        description=&quot;True if whole chain is ok for calculation&quot;,
+        default=True,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/chain.py" line="44" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/chain.py" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1chain_1_1camChain_1a3d1555185a35097d867368d2948ac7c4" prot="public" static="yes" mutable="no">
+        <type>BoolProperty</type>
+        <definition>BoolProperty cam.chain.camChain::computing</definition>
+        <argsstring></argsstring>
+        <name>computing</name>
+        <qualifiedname>cam.chain.camChain.computing</qualifiedname>
+        <initializer>(
+        <ref refid="classcam_1_1chain_1_1camChain_1afa7789eb81f76188eca69a1a6d5c7774" kindref="member">name</ref>=&quot;Computing Right Now&quot;,
+        description=&quot;&quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/chain.py" line="49" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/chain.py" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1chain_1_1camChain_1aa9e746054bfe6559a4731f7674a62861" prot="public" static="yes" mutable="no">
+        <type>CollectionProperty</type>
+        <definition>CollectionProperty cam.chain.camChain::operations</definition>
+        <argsstring></argsstring>
+        <name>operations</name>
+        <qualifiedname>cam.chain.camChain.operations</qualifiedname>
+        <initializer>(
+        type=<ref refid="classcam_1_1chain_1_1opReference" kindref="compound">opReference</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/chain.py" line="55" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/chain.py" bodystart="55" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PropertyGroup</label>
+      </node>
+      <node id="1">
+        <label>cam.chain.camChain</label>
+        <link refid="classcam_1_1chain_1_1camChain"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>BoolProperty</label>
+      </node>
+      <node id="6">
+        <label>CollectionProperty</label>
+      </node>
+      <node id="3">
+        <label>IntProperty</label>
+      </node>
+      <node id="4">
+        <label>StringProperty</label>
+      </node>
+      <node id="2">
+        <label>PropertyGroup</label>
+      </node>
+      <node id="1">
+        <label>cam.chain.camChain</label>
+        <link refid="classcam_1_1chain_1_1camChain"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+active_operation</edgelabel>
+          <edgelabel>+index</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+filename</edgelabel>
+          <edgelabel>+name</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+computing</edgelabel>
+          <edgelabel>+valid</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>+operations</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/chain.py" line="25" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/chain.py" bodystart="25" bodyend="58"/>
+    <listofallmembers>
+      <member refid="classcam_1_1chain_1_1camChain_1ac9a1f7ebc806037119baafce4eb481c7" prot="public" virt="non-virtual"><scope>cam::chain::camChain</scope><name>active_operation</name></member>
+      <member refid="classcam_1_1chain_1_1camChain_1a3d1555185a35097d867368d2948ac7c4" prot="public" virt="non-virtual"><scope>cam::chain::camChain</scope><name>computing</name></member>
+      <member refid="classcam_1_1chain_1_1camChain_1a1b23593aa1e68ffdb042405c062da3a5" prot="public" virt="non-virtual"><scope>cam::chain::camChain</scope><name>filename</name></member>
+      <member refid="classcam_1_1chain_1_1camChain_1a87591a6d264bdb51c41fba0f7a0fa73b" prot="public" virt="non-virtual"><scope>cam::chain::camChain</scope><name>index</name></member>
+      <member refid="classcam_1_1chain_1_1camChain_1afa7789eb81f76188eca69a1a6d5c7774" prot="public" virt="non-virtual"><scope>cam::chain::camChain</scope><name>name</name></member>
+      <member refid="classcam_1_1chain_1_1camChain_1aa9e746054bfe6559a4731f7674a62861" prot="public" virt="non-virtual"><scope>cam::chain::camChain</scope><name>operations</name></member>
+      <member refid="classcam_1_1chain_1_1camChain_1a8681d673d64009abed9a3da40ac0b8c9" prot="public" virt="non-virtual"><scope>cam::chain::camChain</scope><name>valid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

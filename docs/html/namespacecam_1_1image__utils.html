@@ -1,0 +1,866 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>blendercam: cam.image_utils Namespace Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">blendercam
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part --><!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('namespacecam_1_1image__utils.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle"><div class="title">cam.image_utils Namespace Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ac949d3bf4f6d486454139b4a1eb2f037" id="r_ac949d3bf4f6d486454139b4a1eb2f037"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac949d3bf4f6d486454139b4a1eb2f037">numpysave</a> (a, iname)</td></tr>
+<tr class="separator:ac949d3bf4f6d486454139b4a1eb2f037"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa267f5232e4c05ff142965ace7d9a89d" id="r_aa267f5232e4c05ff142965ace7d9a89d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa267f5232e4c05ff142965ace7d9a89d">getCircle</a> (r, z)</td></tr>
+<tr class="separator:aa267f5232e4c05ff142965ace7d9a89d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c350a24695b04011277b9aa5f19b44e" id="r_a0c350a24695b04011277b9aa5f19b44e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c350a24695b04011277b9aa5f19b44e">getCircleBinary</a> (r)</td></tr>
+<tr class="separator:a0c350a24695b04011277b9aa5f19b44e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d3e768e16c295ee3c70e41b51ab02da" id="r_a1d3e768e16c295ee3c70e41b51ab02da"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d3e768e16c295ee3c70e41b51ab02da">numpytoimage</a> (a, iname)</td></tr>
+<tr class="separator:a1d3e768e16c295ee3c70e41b51ab02da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83a961a5085b3b57963924a9f59b923a" id="r_a83a961a5085b3b57963924a9f59b923a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83a961a5085b3b57963924a9f59b923a">imagetonumpy</a> (i)</td></tr>
+<tr class="separator:a83a961a5085b3b57963924a9f59b923a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab74d8272c536f70d61aa970a50fc9c34" id="r_ab74d8272c536f70d61aa970a50fc9c34"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab74d8272c536f70d61aa970a50fc9c34">_offset_inner_loop</a> (y1, y2, cutterArrayNan, cwidth, sourceArray, width, height, comparearea)</td></tr>
+<tr class="separator:ab74d8272c536f70d61aa970a50fc9c34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6c47694c2782315bff99d20fe756011" id="r_ae6c47694c2782315bff99d20fe756011"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6c47694c2782315bff99d20fe756011">offsetArea</a> (o, samples)</td></tr>
+<tr class="separator:ae6c47694c2782315bff99d20fe756011"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b8608f02f22f66d27f3dd0d422c0245" id="r_a7b8608f02f22f66d27f3dd0d422c0245"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b8608f02f22f66d27f3dd0d422c0245">dilateAr</a> (ar, cycles)</td></tr>
+<tr class="separator:a7b8608f02f22f66d27f3dd0d422c0245"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf4d42d8658edea8592459b5203b26d9" id="r_aaf4d42d8658edea8592459b5203b26d9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf4d42d8658edea8592459b5203b26d9">getOffsetImageCavities</a> (o, i)</td></tr>
+<tr class="separator:aaf4d42d8658edea8592459b5203b26d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85ad59a3920b6d9e68f695a8a450eba6" id="r_a85ad59a3920b6d9e68f695a8a450eba6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85ad59a3920b6d9e68f695a8a450eba6">imageEdgeSearch_online</a> (o, ar, zimage)</td></tr>
+<tr class="separator:a85ad59a3920b6d9e68f695a8a450eba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbdfc8e165ed1de02722d825e64d9fcb" id="r_adbdfc8e165ed1de02722d825e64d9fcb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adbdfc8e165ed1de02722d825e64d9fcb">crazyPath</a> (o)</td></tr>
+<tr class="separator:adbdfc8e165ed1de02722d825e64d9fcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fcf50f37c06c58f8fb4e62b24e5ed16" id="r_a3fcf50f37c06c58f8fb4e62b24e5ed16"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3fcf50f37c06c58f8fb4e62b24e5ed16">buildStroke</a> (start, end, cutterArray)</td></tr>
+<tr class="separator:a3fcf50f37c06c58f8fb4e62b24e5ed16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ac7ed9abec509b765d68e57864f70c6" id="r_a2ac7ed9abec509b765d68e57864f70c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ac7ed9abec509b765d68e57864f70c6">testStroke</a> ()</td></tr>
+<tr class="separator:a2ac7ed9abec509b765d68e57864f70c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a456aab598ae9d0bbe6e1ab7677dc3f79" id="r_a456aab598ae9d0bbe6e1ab7677dc3f79"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a456aab598ae9d0bbe6e1ab7677dc3f79">applyStroke</a> ()</td></tr>
+<tr class="separator:a456aab598ae9d0bbe6e1ab7677dc3f79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a699ed8d000c775ca6d9010bec5fe407e" id="r_a699ed8d000c775ca6d9010bec5fe407e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a699ed8d000c775ca6d9010bec5fe407e">testStrokeBinary</a> (img, stroke)</td></tr>
+<tr class="separator:a699ed8d000c775ca6d9010bec5fe407e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af547241b4be016a996f378c3d9968e33" id="r_af547241b4be016a996f378c3d9968e33"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af547241b4be016a996f378c3d9968e33">crazyStrokeImage</a> (o)</td></tr>
+<tr class="separator:af547241b4be016a996f378c3d9968e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78986f83a04d586f840ea5189833c83b" id="r_a78986f83a04d586f840ea5189833c83b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78986f83a04d586f840ea5189833c83b">crazyStrokeImageBinary</a> (o, ar, avoidar)</td></tr>
+<tr class="separator:a78986f83a04d586f840ea5189833c83b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd50c3e23214c9a027cffa5218a37c0c" id="r_acd50c3e23214c9a027cffa5218a37c0c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd50c3e23214c9a027cffa5218a37c0c">imageToChunks</a> (o, image, with_border=False)</td></tr>
+<tr class="separator:acd50c3e23214c9a027cffa5218a37c0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f44ee3d0a162dd6fa1ba678aa1b64a9" id="r_a6f44ee3d0a162dd6fa1ba678aa1b64a9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f44ee3d0a162dd6fa1ba678aa1b64a9">imageToShapely</a> (o, i, with_border=False)</td></tr>
+<tr class="separator:a6f44ee3d0a162dd6fa1ba678aa1b64a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a952222cdf7c1c31a56b31bca16c43638" id="r_a952222cdf7c1c31a56b31bca16c43638"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a952222cdf7c1c31a56b31bca16c43638">getSampleImage</a> (s, sarray, minz)</td></tr>
+<tr class="separator:a952222cdf7c1c31a56b31bca16c43638"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8299eb9bb62632ebee26b436f90640e" id="r_ac8299eb9bb62632ebee26b436f90640e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8299eb9bb62632ebee26b436f90640e">getResolution</a> (o)</td></tr>
+<tr class="separator:ac8299eb9bb62632ebee26b436f90640e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae9ef3677359b9c13dedb04ef10e4e2d" id="r_aae9ef3677359b9c13dedb04ef10e4e2d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae9ef3677359b9c13dedb04ef10e4e2d">_backup_render_settings</a> (pairs)</td></tr>
+<tr class="separator:aae9ef3677359b9c13dedb04ef10e4e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf7406c3a07566907a69d5828cc1ff8f" id="r_acf7406c3a07566907a69d5828cc1ff8f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf7406c3a07566907a69d5828cc1ff8f">_restore_render_settings</a> (pairs, properties)</td></tr>
+<tr class="separator:acf7406c3a07566907a69d5828cc1ff8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe2238ab650e158ad3371d6535b7e120" id="r_abe2238ab650e158ad3371d6535b7e120"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe2238ab650e158ad3371d6535b7e120">renderSampleImage</a> (o)</td></tr>
+<tr class="separator:abe2238ab650e158ad3371d6535b7e120"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a8c0ddae6ef977288acacb120e6c787" id="r_a6a8c0ddae6ef977288acacb120e6c787"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a8c0ddae6ef977288acacb120e6c787">prepareArea</a> (o)</td></tr>
+<tr class="separator:a6a8c0ddae6ef977288acacb120e6c787"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cf6dd7479cf84857f12a5ee07bdeacd" id="r_a3cf6dd7479cf84857f12a5ee07bdeacd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3cf6dd7479cf84857f12a5ee07bdeacd">getCutterArray</a> (operation, pixsize)</td></tr>
+<tr class="separator:a3cf6dd7479cf84857f12a5ee07bdeacd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><pre class="fragment">BlenderCAM 'image_utils.py' © 2012 Vilem Novak
+
+Functions to render, save, convert and analyze image data.
+</pre> </div><h2 class="groupheader">Function Documentation</h2>
+<a id="aae9ef3677359b9c13dedb04ef10e4e2d" name="aae9ef3677359b9c13dedb04ef10e4e2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae9ef3677359b9c13dedb04ef10e4e2d">&#9670;&#160;</a></span>_backup_render_settings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.image_utils._backup_render_settings </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>pairs</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacecam_1_1image__utils_aae9ef3677359b9c13dedb04ef10e4e2d_icgraph.svg" width="471" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ab74d8272c536f70d61aa970a50fc9c34" name="ab74d8272c536f70d61aa970a50fc9c34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab74d8272c536f70d61aa970a50fc9c34">&#9670;&#160;</a></span>_offset_inner_loop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.image_utils._offset_inner_loop </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>y1</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>y2</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>cutterArrayNan</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>cwidth</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>sourceArray</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>width</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>height</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>comparearea</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacecam_1_1image__utils_ab74d8272c536f70d61aa970a50fc9c34_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="acf7406c3a07566907a69d5828cc1ff8f" name="acf7406c3a07566907a69d5828cc1ff8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf7406c3a07566907a69d5828cc1ff8f">&#9670;&#160;</a></span>_restore_render_settings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.image_utils._restore_render_settings </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>pairs</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>properties</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacecam_1_1image__utils_acf7406c3a07566907a69d5828cc1ff8f_icgraph.svg" width="471" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a456aab598ae9d0bbe6e1ab7677dc3f79" name="a456aab598ae9d0bbe6e1ab7677dc3f79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a456aab598ae9d0bbe6e1ab7677dc3f79">&#9670;&#160;</a></span>applyStroke()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.image_utils.applyStroke </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3fcf50f37c06c58f8fb4e62b24e5ed16" name="a3fcf50f37c06c58f8fb4e62b24e5ed16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fcf50f37c06c58f8fb4e62b24e5ed16">&#9670;&#160;</a></span>buildStroke()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.image_utils.buildStroke </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>start</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>end</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>cutterArray</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adbdfc8e165ed1de02722d825e64d9fcb" name="adbdfc8e165ed1de02722d825e64d9fcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbdfc8e165ed1de02722d825e64d9fcb">&#9670;&#160;</a></span>crazyPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.image_utils.crazyPath </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>o</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af547241b4be016a996f378c3d9968e33" name="af547241b4be016a996f378c3d9968e33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af547241b4be016a996f378c3d9968e33">&#9670;&#160;</a></span>crazyStrokeImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.image_utils.crazyStrokeImage </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>o</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacecam_1_1image__utils_af547241b4be016a996f378c3d9968e33_cgraph.svg" width="462" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a78986f83a04d586f840ea5189833c83b" name="a78986f83a04d586f840ea5189833c83b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78986f83a04d586f840ea5189833c83b">&#9670;&#160;</a></span>crazyStrokeImageBinary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.image_utils.crazyStrokeImageBinary </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>o</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>ar</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>avoidar</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacecam_1_1image__utils_a78986f83a04d586f840ea5189833c83b_cgraph.svg" width="462" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a7b8608f02f22f66d27f3dd0d422c0245" name="a7b8608f02f22f66d27f3dd0d422c0245"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b8608f02f22f66d27f3dd0d422c0245">&#9670;&#160;</a></span>dilateAr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.image_utils.dilateAr </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>ar</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>cycles</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa267f5232e4c05ff142965ace7d9a89d" name="aa267f5232e4c05ff142965ace7d9a89d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa267f5232e4c05ff142965ace7d9a89d">&#9670;&#160;</a></span>getCircle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.image_utils.getCircle </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>r</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>z</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0c350a24695b04011277b9aa5f19b44e" name="a0c350a24695b04011277b9aa5f19b44e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c350a24695b04011277b9aa5f19b44e">&#9670;&#160;</a></span>getCircleBinary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.image_utils.getCircleBinary </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>r</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacecam_1_1image__utils_a0c350a24695b04011277b9aa5f19b44e_icgraph.svg" width="462" height="115"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a3cf6dd7479cf84857f12a5ee07bdeacd" name="a3cf6dd7479cf84857f12a5ee07bdeacd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cf6dd7479cf84857f12a5ee07bdeacd">&#9670;&#160;</a></span>getCutterArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.image_utils.getCutterArray </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>operation</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>pixsize</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaf4d42d8658edea8592459b5203b26d9" name="aaf4d42d8658edea8592459b5203b26d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf4d42d8658edea8592459b5203b26d9">&#9670;&#160;</a></span>getOffsetImageCavities()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.image_utils.getOffsetImageCavities </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>o</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>i</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Detects Areas in the Offset Image Which Are 'cavities' - the Curvature Changes.</pre> <div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacecam_1_1image__utils_aaf4d42d8658edea8592459b5203b26d9_cgraph.svg" width="460" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ac8299eb9bb62632ebee26b436f90640e" name="ac8299eb9bb62632ebee26b436f90640e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8299eb9bb62632ebee26b436f90640e">&#9670;&#160;</a></span>getResolution()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.image_utils.getResolution </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>o</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a952222cdf7c1c31a56b31bca16c43638" name="a952222cdf7c1c31a56b31bca16c43638"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a952222cdf7c1c31a56b31bca16c43638">&#9670;&#160;</a></span>getSampleImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.image_utils.getSampleImage </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>s</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>sarray</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>minz</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a85ad59a3920b6d9e68f695a8a450eba6" name="a85ad59a3920b6d9e68f695a8a450eba6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85ad59a3920b6d9e68f695a8a450eba6">&#9670;&#160;</a></span>imageEdgeSearch_online()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.image_utils.imageEdgeSearch_online </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>o</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>ar</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>zimage</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacecam_1_1image__utils_a85ad59a3920b6d9e68f695a8a450eba6_icgraph.svg" width="460" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="acd50c3e23214c9a027cffa5218a37c0c" name="acd50c3e23214c9a027cffa5218a37c0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd50c3e23214c9a027cffa5218a37c0c">&#9670;&#160;</a></span>imageToChunks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.image_utils.imageToChunks </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>o</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>image</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>with_border</em><span class="paramdefsep"> = </span><span class="paramdefval">False</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a83a961a5085b3b57963924a9f59b923a" name="a83a961a5085b3b57963924a9f59b923a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83a961a5085b3b57963924a9f59b923a">&#9670;&#160;</a></span>imagetonumpy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.image_utils.imagetonumpy </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>i</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacecam_1_1image__utils_a83a961a5085b3b57963924a9f59b923a_icgraph.svg" width="518" height="102"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a6f44ee3d0a162dd6fa1ba678aa1b64a9" name="a6f44ee3d0a162dd6fa1ba678aa1b64a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f44ee3d0a162dd6fa1ba678aa1b64a9">&#9670;&#160;</a></span>imageToShapely()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.image_utils.imageToShapely </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>o</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>i</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>with_border</em><span class="paramdefsep"> = </span><span class="paramdefval">False</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac949d3bf4f6d486454139b4a1eb2f037" name="ac949d3bf4f6d486454139b4a1eb2f037"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac949d3bf4f6d486454139b4a1eb2f037">&#9670;&#160;</a></span>numpysave()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.image_utils.numpysave </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>a</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>iname</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacecam_1_1image__utils_ac949d3bf4f6d486454139b4a1eb2f037_cgraph.svg" width="503" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a1d3e768e16c295ee3c70e41b51ab02da" name="a1d3e768e16c295ee3c70e41b51ab02da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d3e768e16c295ee3c70e41b51ab02da">&#9670;&#160;</a></span>numpytoimage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.image_utils.numpytoimage </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>a</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>iname</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacecam_1_1image__utils_a1d3e768e16c295ee3c70e41b51ab02da_icgraph.svg" width="503" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ae6c47694c2782315bff99d20fe756011" name="ae6c47694c2782315bff99d20fe756011"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6c47694c2782315bff99d20fe756011">&#9670;&#160;</a></span>offsetArea()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.image_utils.offsetArea </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>o</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>samples</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment"> Offsets the Whole Image with the Cutter + Skin Offsets </pre> <div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacecam_1_1image__utils_ae6c47694c2782315bff99d20fe756011_cgraph.svg" width="439" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacecam_1_1image__utils_ae6c47694c2782315bff99d20fe756011_icgraph.svg" width="475" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a6a8c0ddae6ef977288acacb120e6c787" name="a6a8c0ddae6ef977288acacb120e6c787"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a8c0ddae6ef977288acacb120e6c787">&#9670;&#160;</a></span>prepareArea()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.image_utils.prepareArea </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>o</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacecam_1_1image__utils_a6a8c0ddae6ef977288acacb120e6c787_cgraph.svg" width="100%" height="370"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="abe2238ab650e158ad3371d6535b7e120" name="abe2238ab650e158ad3371d6535b7e120"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe2238ab650e158ad3371d6535b7e120">&#9670;&#160;</a></span>renderSampleImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.image_utils.renderSampleImage </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>o</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacecam_1_1image__utils_abe2238ab650e158ad3371d6535b7e120_cgraph.svg" width="518" height="166"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a2ac7ed9abec509b765d68e57864f70c6" name="a2ac7ed9abec509b765d68e57864f70c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ac7ed9abec509b765d68e57864f70c6">&#9670;&#160;</a></span>testStroke()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.image_utils.testStroke </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a699ed8d000c775ca6d9010bec5fe407e" name="a699ed8d000c775ca6d9010bec5fe407e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a699ed8d000c775ca6d9010bec5fe407e">&#9670;&#160;</a></span>testStrokeBinary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.image_utils.testStrokeBinary </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>img</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>stroke</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.10.0-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacecam.html">cam</a></li><li class="navelem"><a class="el" href="namespacecam_1_1image__utils.html">image_utils</a></li>
+    <li class="footer">Generated by <a href="https://penify.dev/"><img class="footer" src="https://www.penify.dev/_next/static/media/snorkell-dark-logo.9fa414f5.svg" width="104" height="31" alt="doxygen"/></a> </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1pack_1_1PackObjectsSettings" xml:lang="en-US">
+<title>cam.pack.PackObjectsSettings Class Reference</title>
+<indexterm><primary>cam.pack.PackObjectsSettings</primary></indexterm>
+Inheritance diagram for cam.pack.PackObjectsSettings:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1pack_1_1PackObjectsSettings__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.pack.PackObjectsSettings:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1pack_1_1PackObjectsSettings__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>EnumProperty <link linkend="_classcam_1_1pack_1_1PackObjectsSettings_1a44627536abd9cb5dd05280c440b7d1b7">sheet_fill_direction</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1pack_1_1PackObjectsSettings_1a253cadbd60015735039e18689c6b6741">sheet_x</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1pack_1_1PackObjectsSettings_1ad15fe0bf8b3e3367c4090bd2f3aee2d5">sheet_y</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1pack_1_1PackObjectsSettings_1a4b798344e0c9bdb4c6e466e017119398">distance</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1pack_1_1PackObjectsSettings_1adca2153c81c6606e51046e35469060db">tolerance</link></para>
+</listitem>
+            <listitem><para>BoolProperty <link linkend="_classcam_1_1pack_1_1PackObjectsSettings_1abaefaa7d5bb566e8d76663b6b528cd58">rotate</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1pack_1_1PackObjectsSettings_1a4305847ef749b076419707aebc3f350c">rotate_angle</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>stores all data for machines</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1pack_1_1PackObjectsSettings_1a4b798344e0c9bdb4c6e466e017119398"/><section>
+    <title>distance</title>
+<indexterm><primary>distance</primary><secondary>cam.pack.PackObjectsSettings</secondary></indexterm>
+<indexterm><primary>cam.pack.PackObjectsSettings</primary><secondary>distance</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.pack.PackObjectsSettings.distance<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Minimum&#32;Distance&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;Minimum&#32;distance&#32;between&#32;objects(should&#32;be&#32;&quot;</emphasis>
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;at&#32;least&#32;cutter&#32;diameter!)&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0.001,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=10,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.01,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=constants.PRECISION,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1pack_1_1PackObjectsSettings_1abaefaa7d5bb566e8d76663b6b528cd58"/><section>
+    <title>rotate</title>
+<indexterm><primary>rotate</primary><secondary>cam.pack.PackObjectsSettings</secondary></indexterm>
+<indexterm><primary>cam.pack.PackObjectsSettings</primary><secondary>rotate</secondary></indexterm>
+<para><computeroutput>BoolProperty cam.pack.PackObjectsSettings.rotate<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Enable&#32;Rotation&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;Enable&#32;rotation&#32;of&#32;elements&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="keyword">True</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1pack_1_1PackObjectsSettings_1a4305847ef749b076419707aebc3f350c"/><section>
+    <title>rotate_angle</title>
+<indexterm><primary>rotate_angle</primary><secondary>cam.pack.PackObjectsSettings</secondary></indexterm>
+<indexterm><primary>cam.pack.PackObjectsSettings</primary><secondary>rotate_angle</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.pack.PackObjectsSettings.rotate_angle<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Placement&#32;Angle&#32;Rotation&#32;Step&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;Bigger&#32;rotation&#32;angle,&#32;faster&#32;placemant&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.19635&#32;*&#32;4,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=pi&#32;/&#32;180,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=pi,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=5,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;subtype=<emphasis role="stringliteral">&quot;ANGLE&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;ROTATION&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1pack_1_1PackObjectsSettings_1a44627536abd9cb5dd05280c440b7d1b7"/><section>
+    <title>sheet_fill_direction</title>
+<indexterm><primary>sheet_fill_direction</primary><secondary>cam.pack.PackObjectsSettings</secondary></indexterm>
+<indexterm><primary>cam.pack.PackObjectsSettings</primary><secondary>sheet_fill_direction</secondary></indexterm>
+<para><computeroutput>EnumProperty cam.pack.PackObjectsSettings.sheet_fill_direction<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Fill&#32;Direction&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;items=(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&quot;X&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;X&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;Fills&#32;sheet&#32;in&#32;X&#32;axis&#32;direction&quot;</emphasis>),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&quot;Y&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;Y&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;Fills&#32;sheet&#32;in&#32;Y&#32;axis&#32;direction&quot;</emphasis>),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;Fill&#32;direction&#32;of&#32;the&#32;packer&#32;algorithm&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="stringliteral">&quot;Y&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1pack_1_1PackObjectsSettings_1a253cadbd60015735039e18689c6b6741"/><section>
+    <title>sheet_x</title>
+<indexterm><primary>sheet_x</primary><secondary>cam.pack.PackObjectsSettings</secondary></indexterm>
+<indexterm><primary>cam.pack.PackObjectsSettings</primary><secondary>sheet_x</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.pack.PackObjectsSettings.sheet_x<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;X&#32;Size&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;Sheet&#32;size&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0.001,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=10,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.5,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=constants.PRECISION,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1pack_1_1PackObjectsSettings_1ad15fe0bf8b3e3367c4090bd2f3aee2d5"/><section>
+    <title>sheet_y</title>
+<indexterm><primary>sheet_y</primary><secondary>cam.pack.PackObjectsSettings</secondary></indexterm>
+<indexterm><primary>cam.pack.PackObjectsSettings</primary><secondary>sheet_y</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.pack.PackObjectsSettings.sheet_y<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Y&#32;Size&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;Sheet&#32;size&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0.001,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=10,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.5,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=constants.PRECISION,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1pack_1_1PackObjectsSettings_1adca2153c81c6606e51046e35469060db"/><section>
+    <title>tolerance</title>
+<indexterm><primary>tolerance</primary><secondary>cam.pack.PackObjectsSettings</secondary></indexterm>
+<indexterm><primary>cam.pack.PackObjectsSettings</primary><secondary>tolerance</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.pack.PackObjectsSettings.tolerance<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Placement&#32;Tolerance&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;Tolerance&#32;for&#32;placement:&#32;smaller&#32;value&#32;slower&#32;placemant&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0.001,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=0.02,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.005,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=constants.PRECISION,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/<link linkend="_pack_8py">pack.py</link></section>
+</section>

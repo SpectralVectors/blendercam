@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespaceinstall__addon" kind="namespace" language="Python">
+    <compoundname>install_addon</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceinstall__addon_1a236e313b438a8226a866e2e1edb238d9" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str install_addon.INSTALL_CODE</definition>
+        <argsstring></argsstring>
+        <name>INSTALL_CODE</name>
+        <qualifiedname>install_addon.INSTALL_CODE</qualifiedname>
+        <initializer>=  f&quot;&quot;&quot;
+import bpy
+bpy.context.preferences.system.use_online_access = <ref refid="namespaceinstall__addon_1af6edc3cedfaa18fec28d738467fdf466" kindref="member">True</ref>
+bpy.ops.extensions.repo_sync_all(use_active_only=False)
+bpy.ops.extensions.package_install_files(filepath=&apos;{sys.argv[1]}&apos;, repo=&apos;user_default&apos;)
+bpy.ops.extensions.package_install(repo_index=0, pkg_id=&quot;stl_format_legacy&quot;)
+bpy.ops.extensions.package_install(repo_index=0, pkg_id=&quot;simplify_curves_plus&quot;)
+bpy.ops.extensions.package_install(repo_index=0, pkg_id=&quot;curve_tools&quot;)
+bpy.ops.wm.save_userpref()
+&quot;&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/tests/install_addon.py" line="8" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/tests/install_addon.py" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceinstall__addon_1a4d236307ed417fe6467d28c3d34744e3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int install_addon.NUM_RETRIES</definition>
+        <argsstring></argsstring>
+        <name>NUM_RETRIES</name>
+        <qualifiedname>install_addon.NUM_RETRIES</qualifiedname>
+        <initializer>=  10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/tests/install_addon.py" line="19" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/tests/install_addon.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceinstall__addon_1acf9fc90c53e168459f7b3b9cc8f0755a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>install_addon.file</definition>
+        <argsstring></argsstring>
+        <name>file</name>
+        <qualifiedname>install_addon.file</qualifiedname>
+        <initializer>=  pathlib.Path(td, &quot;install.py&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/tests/install_addon.py" line="22" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/tests/install_addon.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceinstall__addon_1a1862b103b0ea7287535e61ed2067081b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>install_addon.shell</definition>
+        <argsstring></argsstring>
+        <name>shell</name>
+        <qualifiedname>install_addon.shell</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/tests/install_addon.py" line="28" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/tests/install_addon.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceinstall__addon_1a878361957624bbe414dca92ab2d51d9d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>install_addon.check</definition>
+        <argsstring></argsstring>
+        <name>check</name>
+        <qualifiedname>install_addon.check</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/tests/install_addon.py" line="29" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/tests/install_addon.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceinstall__addon_1af6edc3cedfaa18fec28d738467fdf466" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>install_addon.True</definition>
+        <argsstring></argsstring>
+        <name>True</name>
+        <qualifiedname>install_addon.True</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/tests/install_addon.py" line="29" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/tests/install_addon.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceinstall__addon_1ab562f8effc7a7236318a4e3506637b25" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>install_addon.stdout</definition>
+        <argsstring></argsstring>
+        <name>stdout</name>
+        <qualifiedname>install_addon.stdout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/tests/install_addon.py" line="29" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/tests/install_addon.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceinstall__addon_1a753cd99f374b7fdb99ad5916f13d90f7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>install_addon.PIPE</definition>
+        <argsstring></argsstring>
+        <name>PIPE</name>
+        <qualifiedname>install_addon.PIPE</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/tests/install_addon.py" line="29" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/tests/install_addon.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceinstall__addon_1acd28f0278ea8932170e397cc02548155" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>install_addon.stderr</definition>
+        <argsstring></argsstring>
+        <name>stderr</name>
+        <qualifiedname>install_addon.stderr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/tests/install_addon.py" line="29" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/tests/install_addon.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceinstall__addon_1a8d2055c88de1fe1af4b2725979d6bfdc" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>install_addon.STDOUT</definition>
+        <argsstring></argsstring>
+        <name>STDOUT</name>
+        <qualifiedname>install_addon.STDOUT</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/tests/install_addon.py" line="29" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/tests/install_addon.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceinstall__addon_1aa5eb6bb69af1ed8c38a0bf92819d9fba" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>install_addon.text</definition>
+        <argsstring></argsstring>
+        <name>text</name>
+        <qualifiedname>install_addon.text</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/tests/install_addon.py" line="29" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/tests/install_addon.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceinstall__addon_1a6dccfd2c3db7c717df794f5b8a41c425" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>install_addon.crash_file</definition>
+        <argsstring></argsstring>
+        <name>crash_file</name>
+        <qualifiedname>install_addon.crash_file</qualifiedname>
+        <initializer>=  pathlib.Path(line[len(&quot;Writing: &quot;):])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/tests/install_addon.py" line="40" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/tests/install_addon.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/tests/install_addon.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

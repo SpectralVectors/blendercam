@@ -1,0 +1,859 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>blendercam: cam.nc.nclathe_read.Parser Class Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">blendercam
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part --><!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('classcam_1_1nc_1_1nclathe__read_1_1Parser.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="classcam_1_1nc_1_1nclathe__read_1_1Parser-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">cam.nc.nclathe_read.Parser Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="nc__read_8py.html">nc_read.py</a>  
+ <a href="#details">More...</a></p>
+<div class="dynheader">
+Collaboration diagram for cam.nc.nclathe_read.Parser:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1nclathe__read_1_1Parser__coll__graph.svg" width="204" height="396"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ac001a587e4d07cf40673beb8af4ea21b" id="r_ac001a587e4d07cf40673beb8af4ea21b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac001a587e4d07cf40673beb8af4ea21b">__init__</a> (self)</td></tr>
+<tr class="separator:ac001a587e4d07cf40673beb8af4ea21b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a926ee43bcd9086f2e654f7693b16a248" id="r_a926ee43bcd9086f2e654f7693b16a248"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a926ee43bcd9086f2e654f7693b16a248">files_open</a> (self, name, oname=None)</td></tr>
+<tr class="memdesc:a926ee43bcd9086f2e654f7693b16a248"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internals.  <br /></td></tr>
+<tr class="separator:a926ee43bcd9086f2e654f7693b16a248"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad52a01638c6a6554e7129a75b2185e05" id="r_ad52a01638c6a6554e7129a75b2185e05"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad52a01638c6a6554e7129a75b2185e05">files_close</a> (self)</td></tr>
+<tr class="separator:ad52a01638c6a6554e7129a75b2185e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac02b49722711d004ae445e3243bd0575" id="r_ac02b49722711d004ae445e3243bd0575"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac02b49722711d004ae445e3243bd0575">readline</a> (self)</td></tr>
+<tr class="separator:ac02b49722711d004ae445e3243bd0575"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5ea283b461b57e48c8d5b0ad0a45694" id="r_ab5ea283b461b57e48c8d5b0ad0a45694"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5ea283b461b57e48c8d5b0ad0a45694">write</a> (self, s)</td></tr>
+<tr class="separator:ab5ea283b461b57e48c8d5b0ad0a45694"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0790ecc5971df0039cc134af64236b45" id="r_a0790ecc5971df0039cc134af64236b45"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0790ecc5971df0039cc134af64236b45">begin_ncblock</a> (self)</td></tr>
+<tr class="memdesc:a0790ecc5971df0039cc134af64236b45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Xml.  <br /></td></tr>
+<tr class="separator:a0790ecc5971df0039cc134af64236b45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb071d7659ccf9787780f4c72b05b7e6" id="r_afb071d7659ccf9787780f4c72b05b7e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afb071d7659ccf9787780f4c72b05b7e6">end_ncblock</a> (self)</td></tr>
+<tr class="separator:afb071d7659ccf9787780f4c72b05b7e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7463a4e4f789700b8b418776001daf30" id="r_a7463a4e4f789700b8b418776001daf30"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7463a4e4f789700b8b418776001daf30">add_text</a> (self, s, col=None, cdata=False)</td></tr>
+<tr class="separator:a7463a4e4f789700b8b418776001daf30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a399b6c5953dedca1aaf21ecb3e64d17e" id="r_a399b6c5953dedca1aaf21ecb3e64d17e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a399b6c5953dedca1aaf21ecb3e64d17e">set_mode</a> (self, units=None)</td></tr>
+<tr class="separator:a399b6c5953dedca1aaf21ecb3e64d17e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa02859fa39229c323b28abe5a4fd06a2" id="r_aa02859fa39229c323b28abe5a4fd06a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa02859fa39229c323b28abe5a4fd06a2">set_tool</a> (self, number=None)</td></tr>
+<tr class="separator:aa02859fa39229c323b28abe5a4fd06a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33c385668a944d4b5013c8cae753fda9" id="r_a33c385668a944d4b5013c8cae753fda9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a33c385668a944d4b5013c8cae753fda9">begin_path</a> (self, col=None)</td></tr>
+<tr class="separator:a33c385668a944d4b5013c8cae753fda9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92a9288e10124488c6b458a347afa9b7" id="r_a92a9288e10124488c6b458a347afa9b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92a9288e10124488c6b458a347afa9b7">end_path</a> (self)</td></tr>
+<tr class="separator:a92a9288e10124488c6b458a347afa9b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e66fae75c57b080570f2893d2b8b4ba" id="r_a8e66fae75c57b080570f2893d2b8b4ba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e66fae75c57b080570f2893d2b8b4ba">add_line</a> (self, x=None, y=None, z=None, a=None, b=None, c=None)</td></tr>
+<tr class="separator:a8e66fae75c57b080570f2893d2b8b4ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c7031130f1cb6a9133aab8104dd519c" id="r_a5c7031130f1cb6a9133aab8104dd519c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c7031130f1cb6a9133aab8104dd519c">add_lathe_increment_line</a> (self, u=None, w=None)</td></tr>
+<tr class="separator:a5c7031130f1cb6a9133aab8104dd519c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af831cf56257fb77f7e451e315631e4f5" id="r_af831cf56257fb77f7e451e315631e4f5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af831cf56257fb77f7e451e315631e4f5">add_arc</a> (self, x=None, y=None, z=None, i=None, j=None, k=None, r=None, d=None)</td></tr>
+<tr class="separator:af831cf56257fb77f7e451e315631e4f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24da4349bbefa64e9019dc05bd33df6f" id="r_a24da4349bbefa64e9019dc05bd33df6f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24da4349bbefa64e9019dc05bd33df6f">incremental</a> (self)</td></tr>
+<tr class="separator:a24da4349bbefa64e9019dc05bd33df6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09fc6a35237313013c1246a36b3ab471" id="r_a09fc6a35237313013c1246a36b3ab471"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09fc6a35237313013c1246a36b3ab471">absolute</a> (self)</td></tr>
+<tr class="separator:a09fc6a35237313013c1246a36b3ab471"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ae87176be89baadf38d5f696b11d51939" id="r_ae87176be89baadf38d5f696b11d51939"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae87176be89baadf38d5f696b11d51939">currentx</a></td></tr>
+<tr class="separator:ae87176be89baadf38d5f696b11d51939"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc3ae12a2689558cbe8012c2b3cf3baf" id="r_adc3ae12a2689558cbe8012c2b3cf3baf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc3ae12a2689558cbe8012c2b3cf3baf">currenty</a></td></tr>
+<tr class="separator:adc3ae12a2689558cbe8012c2b3cf3baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a897bc2df0eb048c39c2400f2e592950a" id="r_a897bc2df0eb048c39c2400f2e592950a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a897bc2df0eb048c39c2400f2e592950a">currentz</a></td></tr>
+<tr class="separator:a897bc2df0eb048c39c2400f2e592950a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fb12b6cdb07d47a4dfc93aba3c94bf6" id="r_a1fb12b6cdb07d47a4dfc93aba3c94bf6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1fb12b6cdb07d47a4dfc93aba3c94bf6">absolute_flag</a></td></tr>
+<tr class="separator:a1fb12b6cdb07d47a4dfc93aba3c94bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95e6cf22e6f848678f38fef891834fa8" id="r_a95e6cf22e6f848678f38fef891834fa8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95e6cf22e6f848678f38fef891834fa8">file_in</a></td></tr>
+<tr class="separator:a95e6cf22e6f848678f38fef891834fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a196a44cff966dc63201ec5bdf3d901f1" id="r_a196a44cff966dc63201ec5bdf3d901f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a196a44cff966dc63201ec5bdf3d901f1">file_out</a></td></tr>
+<tr class="separator:a196a44cff966dc63201ec5bdf3d901f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1be7396a09b47da73eff8acda68893df" id="r_a1be7396a09b47da73eff8acda68893df"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1be7396a09b47da73eff8acda68893df">line</a></td></tr>
+<tr class="separator:a1be7396a09b47da73eff8acda68893df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="nc__read_8py.html">nc_read.py</a> </p>
+<p>Base class for NC code parsing</p>
+<p>Hirutso Enni, 2009-01-13 </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ac001a587e4d07cf40673beb8af4ea21b" name="ac001a587e4d07cf40673beb8af4ea21b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac001a587e4d07cf40673beb8af4ea21b">&#9670;&#160;</a></span>__init__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.nclathe_read.Parser.__init__ </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a09fc6a35237313013c1246a36b3ab471" name="a09fc6a35237313013c1246a36b3ab471"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09fc6a35237313013c1246a36b3ab471">&#9670;&#160;</a></span>absolute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.nclathe_read.Parser.absolute </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1nclathe__read_1_1Parser_a09fc6a35237313013c1246a36b3ab471_icgraph.svg" width="516" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="af831cf56257fb77f7e451e315631e4f5" name="af831cf56257fb77f7e451e315631e4f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af831cf56257fb77f7e451e315631e4f5">&#9670;&#160;</a></span>add_arc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.nclathe_read.Parser.add_arc </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>y</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>z</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>i</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>j</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>k</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>r</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>d</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1nclathe__read_1_1Parser_af831cf56257fb77f7e451e315631e4f5_cgraph.svg" width="551" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1nclathe__read_1_1Parser_af831cf56257fb77f7e451e315631e4f5_icgraph.svg" width="100%" height="557"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a5c7031130f1cb6a9133aab8104dd519c" name="a5c7031130f1cb6a9133aab8104dd519c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c7031130f1cb6a9133aab8104dd519c">&#9670;&#160;</a></span>add_lathe_increment_line()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.nclathe_read.Parser.add_lathe_increment_line </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>u</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>w</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1nclathe__read_1_1Parser_a5c7031130f1cb6a9133aab8104dd519c_cgraph.svg" width="524" height="68"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1nclathe__read_1_1Parser_a5c7031130f1cb6a9133aab8104dd519c_icgraph.svg" width="484" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a8e66fae75c57b080570f2893d2b8b4ba" name="a8e66fae75c57b080570f2893d2b8b4ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e66fae75c57b080570f2893d2b8b4ba">&#9670;&#160;</a></span>add_line()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.nclathe_read.Parser.add_line </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>y</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>z</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>a</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>b</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>c</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1nclathe__read_1_1Parser_a8e66fae75c57b080570f2893d2b8b4ba_cgraph.svg" width="555" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1nclathe__read_1_1Parser_a8e66fae75c57b080570f2893d2b8b4ba_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a7463a4e4f789700b8b418776001daf30" name="a7463a4e4f789700b8b418776001daf30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7463a4e4f789700b8b418776001daf30">&#9670;&#160;</a></span>add_text()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.nclathe_read.Parser.add_text </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>s</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>col</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>cdata</em><span class="paramdefsep"> = </span><span class="paramdefval">False</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1nclathe__read_1_1Parser_a7463a4e4f789700b8b418776001daf30_cgraph.svg" width="558" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1nclathe__read_1_1Parser_a7463a4e4f789700b8b418776001daf30_icgraph.svg" width="555" height="179"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a0790ecc5971df0039cc134af64236b45" name="a0790ecc5971df0039cc134af64236b45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0790ecc5971df0039cc134af64236b45">&#9670;&#160;</a></span>begin_ncblock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.nclathe_read.Parser.begin_ncblock </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Xml. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1nclathe__read_1_1Parser_a0790ecc5971df0039cc134af64236b45_cgraph.svg" width="536" height="68"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1nclathe__read_1_1Parser_a0790ecc5971df0039cc134af64236b45_icgraph.svg" width="534" height="179"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a33c385668a944d4b5013c8cae753fda9" name="a33c385668a944d4b5013c8cae753fda9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33c385668a944d4b5013c8cae753fda9">&#9670;&#160;</a></span>begin_path()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.nclathe_read.Parser.begin_path </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>col</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1nclathe__read_1_1Parser_a33c385668a944d4b5013c8cae753fda9_cgraph.svg" width="572" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1nclathe__read_1_1Parser_a33c385668a944d4b5013c8cae753fda9_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="afb071d7659ccf9787780f4c72b05b7e6" name="afb071d7659ccf9787780f4c72b05b7e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb071d7659ccf9787780f4c72b05b7e6">&#9670;&#160;</a></span>end_ncblock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.nclathe_read.Parser.end_ncblock </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1nclathe__read_1_1Parser_afb071d7659ccf9787780f4c72b05b7e6_cgraph.svg" width="524" height="68"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1nclathe__read_1_1Parser_afb071d7659ccf9787780f4c72b05b7e6_icgraph.svg" width="522" height="243"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a92a9288e10124488c6b458a347afa9b7" name="a92a9288e10124488c6b458a347afa9b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92a9288e10124488c6b458a347afa9b7">&#9670;&#160;</a></span>end_path()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.nclathe_read.Parser.end_path </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1nclathe__read_1_1Parser_a92a9288e10124488c6b458a347afa9b7_cgraph.svg" width="560" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1nclathe__read_1_1Parser_a92a9288e10124488c6b458a347afa9b7_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="ad52a01638c6a6554e7129a75b2185e05" name="ad52a01638c6a6554e7129a75b2185e05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad52a01638c6a6554e7129a75b2185e05">&#9670;&#160;</a></span>files_close()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.nclathe_read.Parser.files_close </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1nclathe__read_1_1Parser_ad52a01638c6a6554e7129a75b2185e05_cgraph.svg" width="527" height="68"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1nclathe__read_1_1Parser_ad52a01638c6a6554e7129a75b2185e05_icgraph.svg" width="524" height="243"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a926ee43bcd9086f2e654f7693b16a248" name="a926ee43bcd9086f2e654f7693b16a248"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a926ee43bcd9086f2e654f7693b16a248">&#9670;&#160;</a></span>files_open()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.nclathe_read.Parser.files_open </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>name</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>oname</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Internals. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1nclathe__read_1_1Parser_a926ee43bcd9086f2e654f7693b16a248_icgraph.svg" width="564" height="371"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a24da4349bbefa64e9019dc05bd33df6f" name="a24da4349bbefa64e9019dc05bd33df6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24da4349bbefa64e9019dc05bd33df6f">&#9670;&#160;</a></span>incremental()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.nclathe_read.Parser.incremental </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1nclathe__read_1_1Parser_a24da4349bbefa64e9019dc05bd33df6f_icgraph.svg" width="539" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ac02b49722711d004ae445e3243bd0575" name="ac02b49722711d004ae445e3243bd0575"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac02b49722711d004ae445e3243bd0575">&#9670;&#160;</a></span>readline()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.nclathe_read.Parser.readline </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1nclathe__read_1_1Parser_ac02b49722711d004ae445e3243bd0575_icgraph.svg" width="551" height="371"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a399b6c5953dedca1aaf21ecb3e64d17e" name="a399b6c5953dedca1aaf21ecb3e64d17e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a399b6c5953dedca1aaf21ecb3e64d17e">&#9670;&#160;</a></span>set_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.nclathe_read.Parser.set_mode </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>units</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1nclathe__read_1_1Parser_a399b6c5953dedca1aaf21ecb3e64d17e_cgraph.svg" width="564" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1nclathe__read_1_1Parser_a399b6c5953dedca1aaf21ecb3e64d17e_icgraph.svg" width="100%" height="479"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="aa02859fa39229c323b28abe5a4fd06a2" name="aa02859fa39229c323b28abe5a4fd06a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa02859fa39229c323b28abe5a4fd06a2">&#9670;&#160;</a></span>set_tool()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.nclathe_read.Parser.set_tool </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>number</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1nclathe__read_1_1Parser_aa02859fa39229c323b28abe5a4fd06a2_cgraph.svg" width="552" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1nclathe__read_1_1Parser_aa02859fa39229c323b28abe5a4fd06a2_icgraph.svg" width="512" height="115"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ab5ea283b461b57e48c8d5b0ad0a45694" name="ab5ea283b461b57e48c8d5b0ad0a45694"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5ea283b461b57e48c8d5b0ad0a45694">&#9670;&#160;</a></span>write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.nclathe_read.Parser.write </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>s</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1nclathe__read_1_1Parser_ab5ea283b461b57e48c8d5b0ad0a45694_cgraph.svg" width="248" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a1fb12b6cdb07d47a4dfc93aba3c94bf6" name="a1fb12b6cdb07d47a4dfc93aba3c94bf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fb12b6cdb07d47a4dfc93aba3c94bf6">&#9670;&#160;</a></span>absolute_flag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.nclathe_read.Parser.absolute_flag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae87176be89baadf38d5f696b11d51939" name="ae87176be89baadf38d5f696b11d51939"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae87176be89baadf38d5f696b11d51939">&#9670;&#160;</a></span>currentx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.nclathe_read.Parser.currentx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adc3ae12a2689558cbe8012c2b3cf3baf" name="adc3ae12a2689558cbe8012c2b3cf3baf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc3ae12a2689558cbe8012c2b3cf3baf">&#9670;&#160;</a></span>currenty</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.nclathe_read.Parser.currenty</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a897bc2df0eb048c39c2400f2e592950a" name="a897bc2df0eb048c39c2400f2e592950a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a897bc2df0eb048c39c2400f2e592950a">&#9670;&#160;</a></span>currentz</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.nclathe_read.Parser.currentz</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a95e6cf22e6f848678f38fef891834fa8" name="a95e6cf22e6f848678f38fef891834fa8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95e6cf22e6f848678f38fef891834fa8">&#9670;&#160;</a></span>file_in</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.nclathe_read.Parser.file_in</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a196a44cff966dc63201ec5bdf3d901f1" name="a196a44cff966dc63201ec5bdf3d901f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a196a44cff966dc63201ec5bdf3d901f1">&#9670;&#160;</a></span>file_out</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.nclathe_read.Parser.file_out</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1be7396a09b47da73eff8acda68893df" name="a1be7396a09b47da73eff8acda68893df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1be7396a09b47da73eff8acda68893df">&#9670;&#160;</a></span>line</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.nclathe_read.Parser.line</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/<a class="el" href="nclathe__read_8py.html">nclathe_read.py</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.10.0-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacecam.html">cam</a></li><li class="navelem"><a class="el" href="namespacecam_1_1nc.html">nc</a></li><li class="navelem"><a class="el" href="namespacecam_1_1nc_1_1nclathe__read.html">nclathe_read</a></li><li class="navelem"><a class="el" href="classcam_1_1nc_1_1nclathe__read_1_1Parser.html">Parser</a></li>
+    <li class="footer">Generated by <a href="https://penify.dev/"><img class="footer" src="https://www.penify.dev/_next/static/media/snorkell-dark-logo.9fa414f5.svg" width="104" height="31" alt="doxygen"/></a> </li>
+  </ul>
+</div>
+</body>
+</html>

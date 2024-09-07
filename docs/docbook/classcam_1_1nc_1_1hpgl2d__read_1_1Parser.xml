@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1nc_1_1hpgl2d__read_1_1Parser" xml:lang="en-US">
+<title>cam.nc.hpgl2d_read.Parser Class Reference</title>
+<indexterm><primary>cam.nc.hpgl2d_read.Parser</primary></indexterm>
+Inheritance diagram for cam.nc.hpgl2d_read.Parser:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1hpgl2d__read_1_1Parser__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.nc.hpgl2d_read.Parser:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1hpgl2d__read_1_1Parser__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hpgl2d__read_1_1Parser_1a69906a080b1c0ef2cb200d5f1e069e9f">__init__</link> (self, writer)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hpgl2d__read_1_1Parser_1a74d4c54cf7433206fcad1635112d3b61">ParsePuOrPd</link> (self, <link linkend="_classcam_1_1nc_1_1hpgl2d__read_1_1Parser_1a4f8d5d1c07aa7893ec4718e7c2b5b698">up</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hpgl2d__read_1_1Parser_1afa14f139b2b41ae0e70c8ee16d661e31">ParseAA</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hpgl2d__read_1_1Parser_1a0b707cfa8f85f48082f4e827cd2e4de2">ParseFromFirstLetter</link> (self, c)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_classcam_1_1nc_1_1num__reader_1_1NumReader">cam.nc.num_reader.NumReader</link>        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1num__reader_1_1NumReader_1aa6859eeefd5788834891f727ae66d342">get_number</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1num__reader_1_1NumReader_1abe0336cd15995dde1a46134b56f1c2b2">add_word</link> (self, color)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1num__reader_1_1NumReader_1ae908a2956d1e0cfd474a47540bee9759">Parse</link> (self, name, oname=None)</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hpgl2d__read_1_1Parser_1a5af51aa50510bf9b759b29a723dc5cef">i</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hpgl2d__read_1_1Parser_1a47360253a8a2391713ac09df79531020">j</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hpgl2d__read_1_1Parser_1afb58e79603fe31c02a026f5cef21f074">x</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hpgl2d__read_1_1Parser_1af5ac0e84b1706aa4c7e7b3a1ea1f8a0d">y</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hpgl2d__read_1_1Parser_1a8e8b58aa535a17df3661b4c957757fc8">down_z</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hpgl2d__read_1_1Parser_1a5f00c6298e67c87a9a31fd90733630fc">up_z</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hpgl2d__read_1_1Parser_1a4f8d5d1c07aa7893ec4718e7c2b5b698">up</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hpgl2d__read_1_1Parser_1a1d0c7f07313dfdc795155f1b1f832c22">units_to_mm</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hpgl2d__read_1_1Parser_1a4ed3be6ad531f2ad82f45e827cadec58">line_index</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Attributes inherited from <link linkend="_classcam_1_1nc_1_1num__reader_1_1NumReader">cam.nc.num_reader.NumReader</link>        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1num__reader_1_1NumReader_1ae433b63cb3d6ad388945853b487710d2">line_length</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1num__reader_1_1NumReader_1ab2d4301e748a3ae276a70a1b405d9dd5">line_index</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1num__reader_1_1NumReader_1aef74e3b02beaff006b39dffdbcd5e514">parse_word</link></para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classcam_1_1nc_1_1hpgl2d__read_1_1Parser_1a69906a080b1c0ef2cb200d5f1e069e9f"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>cam.nc.hpgl2d_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.hpgl2d_read.Parser</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>cam.nc.hpgl2d_read.Parser.__init__ ( self,  writer)</computeroutput></para><para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1num__reader_1_1NumReader_1a718c14f9d3e5513596d99df025211d9b">cam.nc.num_reader.NumReader</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1nc_1_1hpgl2d__read_1_1Parser_1afa14f139b2b41ae0e70c8ee16d661e31"/><section>
+    <title>ParseAA()</title>
+<indexterm><primary>ParseAA</primary><secondary>cam.nc.hpgl2d_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.hpgl2d_read.Parser</primary><secondary>ParseAA</secondary></indexterm>
+<para><computeroutput>cam.nc.hpgl2d_read.Parser.ParseAA ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1hpgl2d__read_1_1Parser_afa14f139b2b41ae0e70c8ee16d661e31_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1hpgl2d__read_1_1Parser_afa14f139b2b41ae0e70c8ee16d661e31_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1hpgl2d__read_1_1Parser_1a0b707cfa8f85f48082f4e827cd2e4de2"/><section>
+    <title>ParseFromFirstLetter()</title>
+<indexterm><primary>ParseFromFirstLetter</primary><secondary>cam.nc.hpgl2d_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.hpgl2d_read.Parser</primary><secondary>ParseFromFirstLetter</secondary></indexterm>
+<para><computeroutput>cam.nc.hpgl2d_read.Parser.ParseFromFirstLetter ( self,  c)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1hpgl2d__read_1_1Parser_a0b707cfa8f85f48082f4e827cd2e4de2_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1hpgl2d__read_1_1Parser_a0b707cfa8f85f48082f4e827cd2e4de2_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1hpgl2d__read_1_1Parser_1a74d4c54cf7433206fcad1635112d3b61"/><section>
+    <title>ParsePuOrPd()</title>
+<indexterm><primary>ParsePuOrPd</primary><secondary>cam.nc.hpgl2d_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.hpgl2d_read.Parser</primary><secondary>ParsePuOrPd</secondary></indexterm>
+<para><computeroutput>cam.nc.hpgl2d_read.Parser.ParsePuOrPd ( self,  up)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1hpgl2d__read_1_1Parser_a74d4c54cf7433206fcad1635112d3b61_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1nc_1_1hpgl2d__read_1_1Parser_1a8e8b58aa535a17df3661b4c957757fc8"/><section>
+    <title>down_z</title>
+<indexterm><primary>down_z</primary><secondary>cam.nc.hpgl2d_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.hpgl2d_read.Parser</primary><secondary>down_z</secondary></indexterm>
+<para><computeroutput>cam.nc.hpgl2d_read.Parser.down_z</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1hpgl2d__read_1_1Parser_1a5af51aa50510bf9b759b29a723dc5cef"/><section>
+    <title>i</title>
+<indexterm><primary>i</primary><secondary>cam.nc.hpgl2d_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.hpgl2d_read.Parser</primary><secondary>i</secondary></indexterm>
+<para><computeroutput>cam.nc.hpgl2d_read.Parser.i</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1hpgl2d__read_1_1Parser_1a47360253a8a2391713ac09df79531020"/><section>
+    <title>j</title>
+<indexterm><primary>j</primary><secondary>cam.nc.hpgl2d_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.hpgl2d_read.Parser</primary><secondary>j</secondary></indexterm>
+<para><computeroutput>cam.nc.hpgl2d_read.Parser.j</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1hpgl2d__read_1_1Parser_1a4ed3be6ad531f2ad82f45e827cadec58"/><section>
+    <title>line_index</title>
+<indexterm><primary>line_index</primary><secondary>cam.nc.hpgl2d_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.hpgl2d_read.Parser</primary><secondary>line_index</secondary></indexterm>
+<para><computeroutput>cam.nc.hpgl2d_read.Parser.line_index</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1hpgl2d__read_1_1Parser_1a1d0c7f07313dfdc795155f1b1f832c22"/><section>
+    <title>units_to_mm</title>
+<indexterm><primary>units_to_mm</primary><secondary>cam.nc.hpgl2d_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.hpgl2d_read.Parser</primary><secondary>units_to_mm</secondary></indexterm>
+<para><computeroutput>cam.nc.hpgl2d_read.Parser.units_to_mm</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1hpgl2d__read_1_1Parser_1a4f8d5d1c07aa7893ec4718e7c2b5b698"/><section>
+    <title>up</title>
+<indexterm><primary>up</primary><secondary>cam.nc.hpgl2d_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.hpgl2d_read.Parser</primary><secondary>up</secondary></indexterm>
+<para><computeroutput>cam.nc.hpgl2d_read.Parser.up</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1hpgl2d__read_1_1Parser_1a5f00c6298e67c87a9a31fd90733630fc"/><section>
+    <title>up_z</title>
+<indexterm><primary>up_z</primary><secondary>cam.nc.hpgl2d_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.hpgl2d_read.Parser</primary><secondary>up_z</secondary></indexterm>
+<para><computeroutput>cam.nc.hpgl2d_read.Parser.up_z</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1hpgl2d__read_1_1Parser_1afb58e79603fe31c02a026f5cef21f074"/><section>
+    <title>x</title>
+<indexterm><primary>x</primary><secondary>cam.nc.hpgl2d_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.hpgl2d_read.Parser</primary><secondary>x</secondary></indexterm>
+<para><computeroutput>cam.nc.hpgl2d_read.Parser.x</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1hpgl2d__read_1_1Parser_1af5ac0e84b1706aa4c7e7b3a1ea1f8a0d"/><section>
+    <title>y</title>
+<indexterm><primary>y</primary><secondary>cam.nc.hpgl2d_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.hpgl2d_read.Parser</primary><secondary>y</secondary></indexterm>
+<para><computeroutput>cam.nc.hpgl2d_read.Parser.y</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/<link linkend="_hpgl2d__read_8py">hpgl2d_read.py</link></section>
+</section>

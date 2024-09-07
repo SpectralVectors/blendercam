@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="preferences_8py" kind="file" language="Python">
+    <compoundname>preferences.py</compoundname>
+    <innerclass refid="classcam_1_1preferences_1_1CamAddonPreferences" prot="public">cam::preferences::CamAddonPreferences</innerclass>
+    <innernamespace refid="namespacecam">cam</innernamespace>
+    <innernamespace refid="namespacecam_1_1preferences">cam::preferences</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacecam_1_1preferences" refkind="compound"><highlight class="stringliteral">&quot;&quot;&quot;BlenderCAM<sp/>&apos;preferences.py&apos;</highlight></codeline>
+<codeline lineno="2"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="3"><highlight class="stringliteral">Class<sp/>to<sp/>store<sp/>all<sp/>Addon<sp/>preferences.</highlight></codeline>
+<codeline lineno="4"><highlight class="stringliteral">&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>bpy.props<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>(</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>BoolProperty,</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>EnumProperty,</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>IntProperty,</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>StringProperty,</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacebpy_1_1types" kindref="compound">bpy.types</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>(</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>AddonPreferences,</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="classcam_1_1preferences_1_1CamAddonPreferences" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classcam_1_1preferences_1_1CamAddonPreferences" kindref="compound">CamAddonPreferences</ref>(AddonPreferences):</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>this<sp/>must<sp/>match<sp/>the<sp/>addon<sp/>name,<sp/>use<sp/>&apos;__package__&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>when<sp/>defining<sp/>this<sp/>in<sp/>a<sp/>submodule<sp/>of<sp/>a<sp/>python<sp/>package.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classcam_1_1preferences_1_1CamAddonPreferences_1ac1ea58fb04891aa45e9f33f7bd4d0158" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>bl_idname<sp/>=<sp/>__package__</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="classcam_1_1preferences_1_1CamAddonPreferences_1a1b6bbc7852af1850d18ce91ca35a3d76" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>op_preset_update:<sp/>BoolProperty(</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&quot;Have<sp/>the<sp/>Operation<sp/>Presets<sp/>Been<sp/>Updated&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=</highlight><highlight class="keyword">False</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="classcam_1_1preferences_1_1CamAddonPreferences_1ace4aa38a2b592482500f958862bab6ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>experimental:<sp/>BoolProperty(</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&quot;Show<sp/>Experimental<sp/>Features&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=</highlight><highlight class="keyword">False</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="classcam_1_1preferences_1_1CamAddonPreferences_1a43d758ebc47cf17e7cbe706bb41b307d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>update_source:<sp/>StringProperty(</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&quot;Source<sp/>of<sp/>Updates<sp/>for<sp/>the<sp/>Addon&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>description=</highlight><highlight class="stringliteral">&quot;This<sp/>can<sp/>be<sp/>either<sp/>a<sp/>github<sp/>repo<sp/>link<sp/>in<sp/>which<sp/>case<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;it<sp/>will<sp/>download<sp/>the<sp/>latest<sp/>release<sp/>on<sp/>there,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;or<sp/>an<sp/>api<sp/>link<sp/>like<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;https://api.github.com/repos/&lt;author&gt;/blendercam/commits&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;<sp/>to<sp/>get<sp/>from<sp/>a<sp/>github<sp/>repository&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=</highlight><highlight class="stringliteral">&quot;https://github.com/pppalain/blendercam&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="classcam_1_1preferences_1_1CamAddonPreferences_1a35b937154b3186631b0e76daff097e9a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>last_update_check:<sp/>IntProperty(</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&quot;Last<sp/>Update<sp/>Time&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=0,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="classcam_1_1preferences_1_1CamAddonPreferences_1a8e39301938c0278caac753e48b6bbbc0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>last_commit_hash:<sp/>StringProperty(</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&quot;Hash<sp/>of<sp/>Last<sp/>Commit<sp/>from<sp/>Updater&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="classcam_1_1preferences_1_1CamAddonPreferences_1ae44f9012032a9335c1bc6b89a2d1642f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>just_updated:<sp/>BoolProperty(</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&quot;Set<sp/>to<sp/>True<sp/>on<sp/>Update<sp/>or<sp/>Initial<sp/>Install&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=</highlight><highlight class="keyword">True</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="classcam_1_1preferences_1_1CamAddonPreferences_1acb3ab0cee053c604aa0323b56e1d4220" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>new_version_available:<sp/>StringProperty(</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&quot;Set<sp/>to<sp/>New<sp/>Version<sp/>Name<sp/>if<sp/>One<sp/>Is<sp/>Found&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="classcam_1_1preferences_1_1CamAddonPreferences_1a6a98bab8ac5e536e3e0717443d2a75f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>default_interface_level:<sp/>EnumProperty(</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&quot;Interface<sp/>Level<sp/>in<sp/>New<sp/>File&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>description=</highlight><highlight class="stringliteral">&quot;Choose<sp/>visible<sp/>options&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>items=[</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Basic&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Only<sp/>show<sp/>Essential<sp/>Options&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="stringliteral">&quot;1&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Advanced&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Show<sp/>Advanced<sp/>Options&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="stringliteral">&quot;2&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Complete&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Show<sp/>All<sp/>Options&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="stringliteral">&quot;3&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Experimental&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Show<sp/>Experimental<sp/>Options&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>],</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=</highlight><highlight class="stringliteral">&quot;3&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="classcam_1_1preferences_1_1CamAddonPreferences_1ace97db4c7b0a98538f4ee17481325714" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>default_machine_preset:<sp/>StringProperty(</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&quot;Machine<sp/>Preset<sp/>in<sp/>New<sp/>File&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>description=</highlight><highlight class="stringliteral">&quot;So<sp/>that<sp/>machine<sp/>preset<sp/>choice<sp/>persists<sp/>between<sp/>files&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="classcam_1_1preferences_1_1CamAddonPreferences_1abb7df7d3f24ffdc38e070271ac54a800" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classcam_1_1preferences_1_1CamAddonPreferences_1abb7df7d3f24ffdc38e070271ac54a800" kindref="member">draw</ref>(self,<sp/>context):</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>layout<sp/>=<sp/>self.layout</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>layout.label(</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>text=</highlight><highlight class="stringliteral">&quot;Use<sp/>Experimental<sp/>Features<sp/>when<sp/>you<sp/>want<sp/>to<sp/>help<sp/>development<sp/>of<sp/>BlenderCAM:&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>layout.prop(self,<sp/></highlight><highlight class="stringliteral">&quot;experimental&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>layout.prop(self,<sp/></highlight><highlight class="stringliteral">&quot;update_source&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>layout.label(text=</highlight><highlight class="stringliteral">&quot;Choose<sp/>a<sp/>Preset<sp/>Update<sp/>Source&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UPDATE_SOURCES<sp/>=<sp/>[</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;https://github.com/vilemduha/blendercam&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Stable&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Stable<sp/>releases<sp/>(github.com/vilemduja/blendercam)&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>),</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;https://github.com/pppalain/blendercam&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Unstable&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Unstable<sp/>releases<sp/>(github.com/pppalain/blendercam)&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>),</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>comments<sp/>for<sp/>searching<sp/>in<sp/>github<sp/>actions<sp/>release<sp/>script<sp/>to</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>automatically<sp/>set<sp/>this<sp/>repo<sp/>if<sp/>required</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>REPO<sp/>ON<sp/>NEXT<sp/>LINE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;https://api.github.com/repos/pppalain/blendercam/commits&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Direct<sp/>from<sp/>git<sp/>(may<sp/>not<sp/>work)&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Get<sp/>from<sp/>git<sp/>commits<sp/>directly&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>),</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>REPO<sp/>ON<sp/>PREV<sp/>LINE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;None&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Don&apos;t<sp/>do<sp/>auto<sp/>update&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>]</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>grid<sp/>=<sp/>layout.grid_flow(align=</highlight><highlight class="keyword">True</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>url,<sp/>short,<sp/>long<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>UPDATE_SOURCES:</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>op<sp/>=<sp/>grid.operator(</highlight><highlight class="stringliteral">&quot;render.cam_set_update_source&quot;</highlight><highlight class="normal">,<sp/>text=short)</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>op.new_source<sp/>=<sp/>url</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preferences.py"/>
+  </compounddef>
+</doxygen>

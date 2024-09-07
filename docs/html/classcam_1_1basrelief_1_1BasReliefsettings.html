@@ -1,0 +1,1080 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>blendercam: cam.basrelief.BasReliefsettings Class Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">blendercam
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part --><!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('classcam_1_1basrelief_1_1BasReliefsettings.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="classcam_1_1basrelief_1_1BasReliefsettings-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">cam.basrelief.BasReliefsettings Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Inheritance diagram for cam.basrelief.BasReliefsettings:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1basrelief_1_1BasReliefsettings__inherit__graph.svg" width="231" height="390"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Collaboration diagram for cam.basrelief.BasReliefsettings:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1basrelief_1_1BasReliefsettings__coll__graph.svg" width="100%" height="552"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a02cf3acf4385f9e2bdd7917e6fd32fff" id="r_a02cf3acf4385f9e2bdd7917e6fd32fff"><td class="memItemLeft" align="right" valign="top">BoolProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02cf3acf4385f9e2bdd7917e6fd32fff">use_image_source</a></td></tr>
+<tr class="separator:a02cf3acf4385f9e2bdd7917e6fd32fff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13007ac7d4f20273c6ebca6fefcf30a0" id="r_a13007ac7d4f20273c6ebca6fefcf30a0"><td class="memItemLeft" align="right" valign="top">StringProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13007ac7d4f20273c6ebca6fefcf30a0">source_image_name</a></td></tr>
+<tr class="separator:a13007ac7d4f20273c6ebca6fefcf30a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b25a0c654ce88a785b48574c74dd23e" id="r_a4b25a0c654ce88a785b48574c74dd23e"><td class="memItemLeft" align="right" valign="top">StringProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b25a0c654ce88a785b48574c74dd23e">view_layer_name</a></td></tr>
+<tr class="separator:a4b25a0c654ce88a785b48574c74dd23e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaa63120661727dc25c7cb3b81a475f6" id="r_abaa63120661727dc25c7cb3b81a475f6"><td class="memItemLeft" align="right" valign="top">FloatProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abaa63120661727dc25c7cb3b81a475f6">bit_diameter</a></td></tr>
+<tr class="separator:abaa63120661727dc25c7cb3b81a475f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4a2b092e7db742c922c9f20df151ee4" id="r_ab4a2b092e7db742c922c9f20df151ee4"><td class="memItemLeft" align="right" valign="top">IntProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4a2b092e7db742c922c9f20df151ee4">pass_per_radius</a></td></tr>
+<tr class="separator:ab4a2b092e7db742c922c9f20df151ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5789f0d327f7ce26b016da4331bbe19" id="r_ab5789f0d327f7ce26b016da4331bbe19"><td class="memItemLeft" align="right" valign="top">IntProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5789f0d327f7ce26b016da4331bbe19">widthmm</a></td></tr>
+<tr class="separator:ab5789f0d327f7ce26b016da4331bbe19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8364e7e45dc884c53a7b3f2ac3a481ce" id="r_a8364e7e45dc884c53a7b3f2ac3a481ce"><td class="memItemLeft" align="right" valign="top">IntProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8364e7e45dc884c53a7b3f2ac3a481ce">heightmm</a></td></tr>
+<tr class="separator:a8364e7e45dc884c53a7b3f2ac3a481ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a163725dc844be070bede9643e4ae0237" id="r_a163725dc844be070bede9643e4ae0237"><td class="memItemLeft" align="right" valign="top">IntProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a163725dc844be070bede9643e4ae0237">thicknessmm</a></td></tr>
+<tr class="separator:a163725dc844be070bede9643e4ae0237"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fa94c30fd8f84f56967743d0b504840" id="r_a0fa94c30fd8f84f56967743d0b504840"><td class="memItemLeft" align="right" valign="top">EnumProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0fa94c30fd8f84f56967743d0b504840">justifyx</a></td></tr>
+<tr class="separator:a0fa94c30fd8f84f56967743d0b504840"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ec3efaa2d51eedbb0d107932aa60715" id="r_a6ec3efaa2d51eedbb0d107932aa60715"><td class="memItemLeft" align="right" valign="top">EnumProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ec3efaa2d51eedbb0d107932aa60715">justifyy</a></td></tr>
+<tr class="separator:a6ec3efaa2d51eedbb0d107932aa60715"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a002c793b530cd34bf9aa903dde2e66ab" id="r_a002c793b530cd34bf9aa903dde2e66ab"><td class="memItemLeft" align="right" valign="top">EnumProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a002c793b530cd34bf9aa903dde2e66ab">justifyz</a></td></tr>
+<tr class="separator:a002c793b530cd34bf9aa903dde2e66ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad03faf87e52daef6798fc4b17ae6c943" id="r_ad03faf87e52daef6798fc4b17ae6c943"><td class="memItemLeft" align="right" valign="top">FloatProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad03faf87e52daef6798fc4b17ae6c943">depth_exponent</a></td></tr>
+<tr class="separator:ad03faf87e52daef6798fc4b17ae6c943"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf164fa5a5bc56ca1983c89ef60284b0" id="r_adf164fa5a5bc56ca1983c89ef60284b0"><td class="memItemLeft" align="right" valign="top">FloatProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf164fa5a5bc56ca1983c89ef60284b0">silhouette_threshold</a></td></tr>
+<tr class="separator:adf164fa5a5bc56ca1983c89ef60284b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9977b9a6d1104ebdb58106291b2f73d3" id="r_a9977b9a6d1104ebdb58106291b2f73d3"><td class="memItemLeft" align="right" valign="top">BoolProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9977b9a6d1104ebdb58106291b2f73d3">recover_silhouettes</a></td></tr>
+<tr class="separator:a9977b9a6d1104ebdb58106291b2f73d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f4c0597afbcb02a5106cb05e6518fb0" id="r_a9f4c0597afbcb02a5106cb05e6518fb0"><td class="memItemLeft" align="right" valign="top">FloatProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f4c0597afbcb02a5106cb05e6518fb0">silhouette_scale</a></td></tr>
+<tr class="separator:a9f4c0597afbcb02a5106cb05e6518fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af23a8ac5b0aa15bdbe189fea3db1eb9c" id="r_af23a8ac5b0aa15bdbe189fea3db1eb9c"><td class="memItemLeft" align="right" valign="top">IntProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af23a8ac5b0aa15bdbe189fea3db1eb9c">silhouette_exponent</a></td></tr>
+<tr class="separator:af23a8ac5b0aa15bdbe189fea3db1eb9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace3086b0bfe6bb3b2d9888500a8aecf2" id="r_ace3086b0bfe6bb3b2d9888500a8aecf2"><td class="memItemLeft" align="right" valign="top">FloatProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace3086b0bfe6bb3b2d9888500a8aecf2">attenuation</a></td></tr>
+<tr class="separator:ace3086b0bfe6bb3b2d9888500a8aecf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3e4bfba9ab23e6cb6ed000ee4a14d77" id="r_aa3e4bfba9ab23e6cb6ed000ee4a14d77"><td class="memItemLeft" align="right" valign="top">IntProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa3e4bfba9ab23e6cb6ed000ee4a14d77">min_gridsize</a></td></tr>
+<tr class="separator:aa3e4bfba9ab23e6cb6ed000ee4a14d77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83a7f266f5f6c447a17276b169f39be4" id="r_a83a7f266f5f6c447a17276b169f39be4"><td class="memItemLeft" align="right" valign="top">IntProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83a7f266f5f6c447a17276b169f39be4">smooth_iterations</a></td></tr>
+<tr class="separator:a83a7f266f5f6c447a17276b169f39be4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9709d6a804941ea8d76bac6f76d0c37b" id="r_a9709d6a804941ea8d76bac6f76d0c37b"><td class="memItemLeft" align="right" valign="top">IntProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9709d6a804941ea8d76bac6f76d0c37b">vcycle_iterations</a></td></tr>
+<tr class="separator:a9709d6a804941ea8d76bac6f76d0c37b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72f1271b66522b9cc2ef83cf40260b29" id="r_a72f1271b66522b9cc2ef83cf40260b29"><td class="memItemLeft" align="right" valign="top">IntProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72f1271b66522b9cc2ef83cf40260b29">linbcg_iterations</a></td></tr>
+<tr class="separator:a72f1271b66522b9cc2ef83cf40260b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed5d8e359180aa6063323967ccecd120" id="r_aed5d8e359180aa6063323967ccecd120"><td class="memItemLeft" align="right" valign="top">BoolProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed5d8e359180aa6063323967ccecd120">use_planar</a></td></tr>
+<tr class="separator:aed5d8e359180aa6063323967ccecd120"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a601540a6f999cf6b1ed1f94a62e18fd8" id="r_a601540a6f999cf6b1ed1f94a62e18fd8"><td class="memItemLeft" align="right" valign="top">BoolProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a601540a6f999cf6b1ed1f94a62e18fd8">gradient_scaling_mask_use</a></td></tr>
+<tr class="separator:a601540a6f999cf6b1ed1f94a62e18fd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a001d4ed97b779b0eb03b5b791b0a596c" id="r_a001d4ed97b779b0eb03b5b791b0a596c"><td class="memItemLeft" align="right" valign="top">FloatProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a001d4ed97b779b0eb03b5b791b0a596c">decimate_ratio</a></td></tr>
+<tr class="separator:a001d4ed97b779b0eb03b5b791b0a596c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0ac6747cd89707716e23b0e7be0cb15" id="r_aa0ac6747cd89707716e23b0e7be0cb15"><td class="memItemLeft" align="right" valign="top">StringProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0ac6747cd89707716e23b0e7be0cb15">gradient_scaling_mask_name</a></td></tr>
+<tr class="separator:aa0ac6747cd89707716e23b0e7be0cb15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c84a314c4c78833b465b8d9cad8aebd" id="r_a3c84a314c4c78833b465b8d9cad8aebd"><td class="memItemLeft" align="right" valign="top">BoolProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c84a314c4c78833b465b8d9cad8aebd">scale_down_before_use</a></td></tr>
+<tr class="separator:a3c84a314c4c78833b465b8d9cad8aebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfc8b4472ef13376ece5f43d0a5ccf8e" id="r_acfc8b4472ef13376ece5f43d0a5ccf8e"><td class="memItemLeft" align="right" valign="top">FloatProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acfc8b4472ef13376ece5f43d0a5ccf8e">scale_down_before</a></td></tr>
+<tr class="separator:acfc8b4472ef13376ece5f43d0a5ccf8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab067c7193295c43a0c7777503c5ef68f" id="r_ab067c7193295c43a0c7777503c5ef68f"><td class="memItemLeft" align="right" valign="top">BoolProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab067c7193295c43a0c7777503c5ef68f">detail_enhancement_use</a></td></tr>
+<tr class="separator:ab067c7193295c43a0c7777503c5ef68f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add089ce95055b467126345343ab949f1" id="r_add089ce95055b467126345343ab949f1"><td class="memItemLeft" align="right" valign="top">FloatProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add089ce95055b467126345343ab949f1">detail_enhancement_amount</a></td></tr>
+<tr class="separator:add089ce95055b467126345343ab949f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ebfe2d9324f51afd4d2ce351202fc61" id="r_a6ebfe2d9324f51afd4d2ce351202fc61"><td class="memItemLeft" align="right" valign="top">BoolProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ebfe2d9324f51afd4d2ce351202fc61">advanced</a></td></tr>
+<tr class="separator:a6ebfe2d9324f51afd4d2ce351202fc61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a6ebfe2d9324f51afd4d2ce351202fc61" name="a6ebfe2d9324f51afd4d2ce351202fc61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ebfe2d9324f51afd4d2ce351202fc61">&#9670;&#160;</a></span>advanced</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BoolProperty cam.basrelief.BasReliefsettings.advanced</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Advanced Options&quot;</span>,</div>
+<div class="line">        description=<span class="stringliteral">&quot;Show advanced options&quot;</span>,</div>
+<div class="line">        default=<span class="keyword">True</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ace3086b0bfe6bb3b2d9888500a8aecf2" name="ace3086b0bfe6bb3b2d9888500a8aecf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace3086b0bfe6bb3b2d9888500a8aecf2">&#9670;&#160;</a></span>attenuation</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FloatProperty cam.basrelief.BasReliefsettings.attenuation</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Gradient Attenuation&quot;</span>,</div>
+<div class="line">        description=<span class="stringliteral">&quot;Gradient attenuation&quot;</span>,</div>
+<div class="line">        min=0.000001,</div>
+<div class="line">        max=100.0,</div>
+<div class="line">        default=1.0,</div>
+<div class="line">        precision=PRECISION,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="abaa63120661727dc25c7cb3b81a475f6" name="abaa63120661727dc25c7cb3b81a475f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaa63120661727dc25c7cb3b81a475f6">&#9670;&#160;</a></span>bit_diameter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FloatProperty cam.basrelief.BasReliefsettings.bit_diameter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Diameter of Ball End in mm&quot;</span>,</div>
+<div class="line">        description=<span class="stringliteral">&quot;Diameter of bit which will be used for carving&quot;</span>,</div>
+<div class="line">        min=0.01,</div>
+<div class="line">        max=50.0,</div>
+<div class="line">        default=3.175,</div>
+<div class="line">        precision=PRECISION,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a001d4ed97b779b0eb03b5b791b0a596c" name="a001d4ed97b779b0eb03b5b791b0a596c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a001d4ed97b779b0eb03b5b791b0a596c">&#9670;&#160;</a></span>decimate_ratio</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FloatProperty cam.basrelief.BasReliefsettings.decimate_ratio</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Decimate Ratio&quot;</span>,</div>
+<div class="line">        description=<span class="stringliteral">&quot;Simplify the mesh using the Decimate modifier. &quot;</span></div>
+<div class="line">        <span class="stringliteral">&quot;The lower the value the more simplyfied&quot;</span>,</div>
+<div class="line">        min=0.01,</div>
+<div class="line">        max=1.0,</div>
+<div class="line">        default=0.1,</div>
+<div class="line">        precision=PRECISION,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad03faf87e52daef6798fc4b17ae6c943" name="ad03faf87e52daef6798fc4b17ae6c943"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad03faf87e52daef6798fc4b17ae6c943">&#9670;&#160;</a></span>depth_exponent</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FloatProperty cam.basrelief.BasReliefsettings.depth_exponent</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Depth Exponent&quot;</span>,</div>
+<div class="line">        description=<span class="stringliteral">&quot;Initial depth map is taken to this power. Higher = &quot;</span></div>
+<div class="line">        <span class="stringliteral">&quot;sharper relief&quot;</span>,</div>
+<div class="line">        min=0.5,</div>
+<div class="line">        max=10.0,</div>
+<div class="line">        default=1.0,</div>
+<div class="line">        precision=PRECISION,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="add089ce95055b467126345343ab949f1" name="add089ce95055b467126345343ab949f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add089ce95055b467126345343ab949f1">&#9670;&#160;</a></span>detail_enhancement_amount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FloatProperty cam.basrelief.BasReliefsettings.detail_enhancement_amount</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Amount&quot;</span>,</div>
+<div class="line">        description=<span class="stringliteral">&quot;Image scale&quot;</span>,</div>
+<div class="line">        min=0.025,</div>
+<div class="line">        max=1.0,</div>
+<div class="line">        default=.5,</div>
+<div class="line">        precision=PRECISION,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab067c7193295c43a0c7777503c5ef68f" name="ab067c7193295c43a0c7777503c5ef68f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab067c7193295c43a0c7777503c5ef68f">&#9670;&#160;</a></span>detail_enhancement_use</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BoolProperty cam.basrelief.BasReliefsettings.detail_enhancement_use</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Enhance Details&quot;</span>,</div>
+<div class="line">        description=<span class="stringliteral">&quot;Enhance details by frequency analysis&quot;</span>,</div>
+<div class="line">        default=<span class="keyword">False</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa0ac6747cd89707716e23b0e7be0cb15" name="aa0ac6747cd89707716e23b0e7be0cb15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0ac6747cd89707716e23b0e7be0cb15">&#9670;&#160;</a></span>gradient_scaling_mask_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">StringProperty cam.basrelief.BasReliefsettings.gradient_scaling_mask_name</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&#39;Scaling Mask Name&#39;</span>,</div>
+<div class="line">        description=<span class="stringliteral">&#39;Mask name&#39;</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a601540a6f999cf6b1ed1f94a62e18fd8" name="a601540a6f999cf6b1ed1f94a62e18fd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a601540a6f999cf6b1ed1f94a62e18fd8">&#9670;&#160;</a></span>gradient_scaling_mask_use</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BoolProperty cam.basrelief.BasReliefsettings.gradient_scaling_mask_use</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Scale Gradients with Mask&quot;</span>,</div>
+<div class="line">        description=<span class="stringliteral">&quot;&quot;</span>,</div>
+<div class="line">        default=<span class="keyword">False</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8364e7e45dc884c53a7b3f2ac3a481ce" name="a8364e7e45dc884c53a7b3f2ac3a481ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8364e7e45dc884c53a7b3f2ac3a481ce">&#9670;&#160;</a></span>heightmm</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IntProperty cam.basrelief.BasReliefsettings.heightmm</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Desired Height in mm&quot;</span>,</div>
+<div class="line">        default=150,</div>
+<div class="line">        min=5,</div>
+<div class="line">        max=4000,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a0fa94c30fd8f84f56967743d0b504840" name="a0fa94c30fd8f84f56967743d0b504840"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fa94c30fd8f84f56967743d0b504840">&#9670;&#160;</a></span>justifyx</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">EnumProperty cam.basrelief.BasReliefsettings.justifyx</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;X&quot;</span>,</div>
+<div class="line">        items=[</div>
+<div class="line">            (<span class="stringliteral">&#39;1&#39;</span>, <span class="stringliteral">&#39;Left&#39;</span>, <span class="stringliteral">&#39;&#39;</span>, 0),</div>
+<div class="line">            (<span class="stringliteral">&#39;-0.5&#39;</span>, <span class="stringliteral">&#39;Centered&#39;</span>, <span class="stringliteral">&#39;&#39;</span>, 1),</div>
+<div class="line">            (<span class="stringliteral">&#39;-1&#39;</span>, <span class="stringliteral">&#39;Right&#39;</span>, <span class="stringliteral">&#39;&#39;</span>, 2)</div>
+<div class="line">        ],</div>
+<div class="line">        default=<span class="stringliteral">&#39;-1&#39;</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6ec3efaa2d51eedbb0d107932aa60715" name="a6ec3efaa2d51eedbb0d107932aa60715"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ec3efaa2d51eedbb0d107932aa60715">&#9670;&#160;</a></span>justifyy</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">EnumProperty cam.basrelief.BasReliefsettings.justifyy</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Y&quot;</span>,</div>
+<div class="line">        items=[</div>
+<div class="line">            (<span class="stringliteral">&#39;1&#39;</span>, <span class="stringliteral">&#39;Bottom&#39;</span>, <span class="stringliteral">&#39;&#39;</span>, 0),</div>
+<div class="line">            (<span class="stringliteral">&#39;-0.5&#39;</span>, <span class="stringliteral">&#39;Centered&#39;</span>, <span class="stringliteral">&#39;&#39;</span>, 2),</div>
+<div class="line">            (<span class="stringliteral">&#39;-1&#39;</span>, <span class="stringliteral">&#39;Top&#39;</span>, <span class="stringliteral">&#39;&#39;</span>, 1),</div>
+<div class="line">        ],</div>
+<div class="line">        default=<span class="stringliteral">&#39;-1&#39;</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a002c793b530cd34bf9aa903dde2e66ab" name="a002c793b530cd34bf9aa903dde2e66ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a002c793b530cd34bf9aa903dde2e66ab">&#9670;&#160;</a></span>justifyz</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">EnumProperty cam.basrelief.BasReliefsettings.justifyz</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Z&quot;</span>,</div>
+<div class="line">        items=[</div>
+<div class="line">            (<span class="stringliteral">&#39;-1&#39;</span>, <span class="stringliteral">&#39;Below 0&#39;</span>, <span class="stringliteral">&#39;&#39;</span>, 0),</div>
+<div class="line">            (<span class="stringliteral">&#39;-0.5&#39;</span>, <span class="stringliteral">&#39;Centered&#39;</span>, <span class="stringliteral">&#39;&#39;</span>, 2),</div>
+<div class="line">            (<span class="stringliteral">&#39;1&#39;</span>, <span class="stringliteral">&#39;Above 0&#39;</span>, <span class="stringliteral">&#39;&#39;</span>, 1),</div>
+<div class="line">        ],</div>
+<div class="line">        default=<span class="stringliteral">&#39;-1&#39;</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a72f1271b66522b9cc2ef83cf40260b29" name="a72f1271b66522b9cc2ef83cf40260b29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72f1271b66522b9cc2ef83cf40260b29">&#9670;&#160;</a></span>linbcg_iterations</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IntProperty cam.basrelief.BasReliefsettings.linbcg_iterations</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;LINBCG Iterations&quot;</span>,</div>
+<div class="line">        description=<span class="stringliteral">&quot;Set lower for flatter relief, and when using &quot;</span></div>
+<div class="line">        <span class="stringliteral">&quot;planar constraint&quot;</span>,</div>
+<div class="line">        default=5,</div>
+<div class="line">        min=1,</div>
+<div class="line">        max=64,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa3e4bfba9ab23e6cb6ed000ee4a14d77" name="aa3e4bfba9ab23e6cb6ed000ee4a14d77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3e4bfba9ab23e6cb6ed000ee4a14d77">&#9670;&#160;</a></span>min_gridsize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IntProperty cam.basrelief.BasReliefsettings.min_gridsize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Minimum Grid Size&quot;</span>,</div>
+<div class="line">        default=16,</div>
+<div class="line">        min=2,</div>
+<div class="line">        max=512,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab4a2b092e7db742c922c9f20df151ee4" name="ab4a2b092e7db742c922c9f20df151ee4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4a2b092e7db742c922c9f20df151ee4">&#9670;&#160;</a></span>pass_per_radius</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IntProperty cam.basrelief.BasReliefsettings.pass_per_radius</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Passes per Radius&quot;</span>,</div>
+<div class="line">        description=<span class="stringliteral">&quot;Amount of passes per radius\n(more passes, &quot;</span></div>
+<div class="line">        <span class="stringliteral">&quot;more mesh precision)&quot;</span>,</div>
+<div class="line">        default=2,</div>
+<div class="line">        min=1,</div>
+<div class="line">        max=10,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9977b9a6d1104ebdb58106291b2f73d3" name="a9977b9a6d1104ebdb58106291b2f73d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9977b9a6d1104ebdb58106291b2f73d3">&#9670;&#160;</a></span>recover_silhouettes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BoolProperty cam.basrelief.BasReliefsettings.recover_silhouettes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Recover Silhouettes&quot;</span>,</div>
+<div class="line">        description=<span class="stringliteral">&quot;&quot;</span>,</div>
+<div class="line">        default=<span class="keyword">True</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="acfc8b4472ef13376ece5f43d0a5ccf8e" name="acfc8b4472ef13376ece5f43d0a5ccf8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfc8b4472ef13376ece5f43d0a5ccf8e">&#9670;&#160;</a></span>scale_down_before</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FloatProperty cam.basrelief.BasReliefsettings.scale_down_before</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Image Scale&quot;</span>,</div>
+<div class="line">        description=<span class="stringliteral">&quot;Image scale&quot;</span>,</div>
+<div class="line">        min=0.025,</div>
+<div class="line">        max=1.0,</div>
+<div class="line">        default=.5,</div>
+<div class="line">        precision=PRECISION,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3c84a314c4c78833b465b8d9cad8aebd" name="a3c84a314c4c78833b465b8d9cad8aebd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c84a314c4c78833b465b8d9cad8aebd">&#9670;&#160;</a></span>scale_down_before_use</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BoolProperty cam.basrelief.BasReliefsettings.scale_down_before_use</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Scale Down Image Before Processing&quot;</span>,</div>
+<div class="line">        description=<span class="stringliteral">&quot;&quot;</span>,</div>
+<div class="line">        default=<span class="keyword">False</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af23a8ac5b0aa15bdbe189fea3db1eb9c" name="af23a8ac5b0aa15bdbe189fea3db1eb9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af23a8ac5b0aa15bdbe189fea3db1eb9c">&#9670;&#160;</a></span>silhouette_exponent</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IntProperty cam.basrelief.BasReliefsettings.silhouette_exponent</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Silhouette Square Exponent&quot;</span>,</div>
+<div class="line">        description=<span class="stringliteral">&quot;If lower, true depth distances between objects will be &quot;</span></div>
+<div class="line">        <span class="stringliteral">&quot;more visibe in the relief&quot;</span>,</div>
+<div class="line">        default=3,</div>
+<div class="line">        min=0,</div>
+<div class="line">        max=5,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9f4c0597afbcb02a5106cb05e6518fb0" name="a9f4c0597afbcb02a5106cb05e6518fb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f4c0597afbcb02a5106cb05e6518fb0">&#9670;&#160;</a></span>silhouette_scale</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FloatProperty cam.basrelief.BasReliefsettings.silhouette_scale</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Silhouette Scale&quot;</span>,</div>
+<div class="line">        description=<span class="stringliteral">&quot;Silhouette scale&quot;</span>,</div>
+<div class="line">        min=0.000001,</div>
+<div class="line">        max=5.0,</div>
+<div class="line">        default=0.3,</div>
+<div class="line">        precision=PRECISION,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="adf164fa5a5bc56ca1983c89ef60284b0" name="adf164fa5a5bc56ca1983c89ef60284b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf164fa5a5bc56ca1983c89ef60284b0">&#9670;&#160;</a></span>silhouette_threshold</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FloatProperty cam.basrelief.BasReliefsettings.silhouette_threshold</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Silhouette Threshold&quot;</span>,</div>
+<div class="line">        description=<span class="stringliteral">&quot;Silhouette threshold&quot;</span>,</div>
+<div class="line">        min=0.000001,</div>
+<div class="line">        max=1.0,</div>
+<div class="line">        default=0.003,</div>
+<div class="line">        precision=PRECISION,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a83a7f266f5f6c447a17276b169f39be4" name="a83a7f266f5f6c447a17276b169f39be4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83a7f266f5f6c447a17276b169f39be4">&#9670;&#160;</a></span>smooth_iterations</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IntProperty cam.basrelief.BasReliefsettings.smooth_iterations</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Smooth Iterations&quot;</span>,</div>
+<div class="line">        default=1,</div>
+<div class="line">        min=1,</div>
+<div class="line">        max=64,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a13007ac7d4f20273c6ebca6fefcf30a0" name="a13007ac7d4f20273c6ebca6fefcf30a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13007ac7d4f20273c6ebca6fefcf30a0">&#9670;&#160;</a></span>source_image_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">StringProperty cam.basrelief.BasReliefsettings.source_image_name</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&#39;Image Source&#39;</span>,</div>
+<div class="line">        description=<span class="stringliteral">&#39;image source&#39;</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a163725dc844be070bede9643e4ae0237" name="a163725dc844be070bede9643e4ae0237"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a163725dc844be070bede9643e4ae0237">&#9670;&#160;</a></span>thicknessmm</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IntProperty cam.basrelief.BasReliefsettings.thicknessmm</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Thickness in mm&quot;</span>,</div>
+<div class="line">        default=15,</div>
+<div class="line">        min=5,</div>
+<div class="line">        max=100,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a02cf3acf4385f9e2bdd7917e6fd32fff" name="a02cf3acf4385f9e2bdd7917e6fd32fff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02cf3acf4385f9e2bdd7917e6fd32fff">&#9670;&#160;</a></span>use_image_source</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BoolProperty cam.basrelief.BasReliefsettings.use_image_source</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Use Image Source&quot;</span>,</div>
+<div class="line">        description=<span class="stringliteral">&quot;&quot;</span>,</div>
+<div class="line">        default=<span class="keyword">False</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aed5d8e359180aa6063323967ccecd120" name="aed5d8e359180aa6063323967ccecd120"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed5d8e359180aa6063323967ccecd120">&#9670;&#160;</a></span>use_planar</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BoolProperty cam.basrelief.BasReliefsettings.use_planar</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Use Planar Constraint&quot;</span>,</div>
+<div class="line">        description=<span class="stringliteral">&quot;&quot;</span>,</div>
+<div class="line">        default=<span class="keyword">False</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9709d6a804941ea8d76bac6f76d0c37b" name="a9709d6a804941ea8d76bac6f76d0c37b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9709d6a804941ea8d76bac6f76d0c37b">&#9670;&#160;</a></span>vcycle_iterations</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IntProperty cam.basrelief.BasReliefsettings.vcycle_iterations</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;V-Cycle Iterations&quot;</span>,</div>
+<div class="line">        description=<span class="stringliteral">&quot;Set higher for planar constraint&quot;</span>,</div>
+<div class="line">        default=2,</div>
+<div class="line">        min=1,</div>
+<div class="line">        max=128,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4b25a0c654ce88a785b48574c74dd23e" name="a4b25a0c654ce88a785b48574c74dd23e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b25a0c654ce88a785b48574c74dd23e">&#9670;&#160;</a></span>view_layer_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">StringProperty cam.basrelief.BasReliefsettings.view_layer_name</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&#39;View Layer Source&#39;</span>,</div>
+<div class="line">        description=<span class="stringliteral">&#39;Make a bas-relief from whatever is on this view layer&#39;</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab5789f0d327f7ce26b016da4331bbe19" name="ab5789f0d327f7ce26b016da4331bbe19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5789f0d327f7ce26b016da4331bbe19">&#9670;&#160;</a></span>widthmm</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IntProperty cam.basrelief.BasReliefsettings.widthmm</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Desired Width in mm&quot;</span>,</div>
+<div class="line">        default=200,</div>
+<div class="line">        min=5,</div>
+<div class="line">        max=4000,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/<a class="el" href="basrelief_8py.html">basrelief.py</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.10.0-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacecam.html">cam</a></li><li class="navelem"><a class="el" href="namespacecam_1_1basrelief.html">basrelief</a></li><li class="navelem"><a class="el" href="classcam_1_1basrelief_1_1BasReliefsettings.html">BasReliefsettings</a></li>
+    <li class="footer">Generated by <a href="https://penify.dev/"><img class="footer" src="https://www.penify.dev/_next/static/media/snorkell-dark-logo.9fa414f5.svg" width="104" height="31" alt="doxygen"/></a> </li>
+  </ul>
+</div>
+</body>
+</html>

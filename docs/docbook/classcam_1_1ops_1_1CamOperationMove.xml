@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1ops_1_1CamOperationMove" xml:lang="en-US">
+<title>cam.ops.CamOperationMove Class Reference</title>
+<indexterm><primary>cam.ops.CamOperationMove</primary></indexterm>
+Inheritance diagram for cam.ops.CamOperationMove:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ops_1_1CamOperationMove__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.ops.CamOperationMove:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ops_1_1CamOperationMove__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1ops_1_1CamOperationMove_1ab1b0864a1f23ad480ba6cad5c83f47c3">poll</link> (cls, context)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ops_1_1CamOperationMove_1a7d8c248ef5644c42ae1339fb94cea58b">execute</link> (self, context)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1ops_1_1CamOperationMove_1a3a53f1038028bebcb370bcdf109e5135">direction</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classcam_1_1ops_1_1CamOperationMove_1a8fe6be663126540809688734c10e9d6f">bl_idname</link> = &quot;scene.cam_operation_move&quot;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1ops_1_1CamOperationMove_1a7aa71afbd7e3fd8b1ce22f4807d510b6">bl_label</link> = &quot;Move CAM Operation in List&quot;</para>
+</listitem>
+            <listitem><para>dict <link linkend="_classcam_1_1ops_1_1CamOperationMove_1a15e168b638531fd88cbbf9d251de4be1">bl_options</link> = {&apos;REGISTER&apos;, &apos;UNDO&apos;}</para>
+</listitem>
+            <listitem><para>EnumProperty <link linkend="_classcam_1_1ops_1_1CamOperationMove_1af37af83f8e88c25696ba29fb8b35abd5">direction</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Move CAM Operation</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1ops_1_1CamOperationMove_1a7d8c248ef5644c42ae1339fb94cea58b"/><section>
+    <title>execute()</title>
+<indexterm><primary>execute</primary><secondary>cam.ops.CamOperationMove</secondary></indexterm>
+<indexterm><primary>cam.ops.CamOperationMove</primary><secondary>execute</secondary></indexterm>
+<para><computeroutput>cam.ops.CamOperationMove.execute ( self,  context)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ops_1_1CamOperationMove_1ab1b0864a1f23ad480ba6cad5c83f47c3"/><section>
+    <title>poll()</title>
+<indexterm><primary>poll</primary><secondary>cam.ops.CamOperationMove</secondary></indexterm>
+<indexterm><primary>cam.ops.CamOperationMove</primary><secondary>poll</secondary></indexterm>
+<para><computeroutput>cam.ops.CamOperationMove.poll ( cls,  context)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1ops_1_1CamOperationMove_1a8fe6be663126540809688734c10e9d6f"/><section>
+    <title>bl_idname</title>
+<indexterm><primary>bl_idname</primary><secondary>cam.ops.CamOperationMove</secondary></indexterm>
+<indexterm><primary>cam.ops.CamOperationMove</primary><secondary>bl_idname</secondary></indexterm>
+<para><computeroutput>str cam.ops.CamOperationMove.bl_idname = &quot;scene.cam_operation_move&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ops_1_1CamOperationMove_1a7aa71afbd7e3fd8b1ce22f4807d510b6"/><section>
+    <title>bl_label</title>
+<indexterm><primary>bl_label</primary><secondary>cam.ops.CamOperationMove</secondary></indexterm>
+<indexterm><primary>cam.ops.CamOperationMove</primary><secondary>bl_label</secondary></indexterm>
+<para><computeroutput>str cam.ops.CamOperationMove.bl_label = &quot;Move CAM Operation in List&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ops_1_1CamOperationMove_1a15e168b638531fd88cbbf9d251de4be1"/><section>
+    <title>bl_options</title>
+<indexterm><primary>bl_options</primary><secondary>cam.ops.CamOperationMove</secondary></indexterm>
+<indexterm><primary>cam.ops.CamOperationMove</primary><secondary>bl_options</secondary></indexterm>
+<para><computeroutput>dict cam.ops.CamOperationMove.bl_options = {&apos;REGISTER&apos;, &apos;UNDO&apos;}<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ops_1_1CamOperationMove_1af37af83f8e88c25696ba29fb8b35abd5"/><section>
+    <title>direction<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>direction</primary><secondary>cam.ops.CamOperationMove</secondary></indexterm>
+<indexterm><primary>cam.ops.CamOperationMove</primary><secondary>direction</secondary></indexterm>
+<para><computeroutput>EnumProperty cam.ops.CamOperationMove.direction<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&apos;Direction&apos;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;items=(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&apos;UP&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Up&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;&apos;</emphasis>),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&apos;DOWN&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Down&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;&apos;</emphasis>)
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&apos;Direction&apos;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="stringliteral">&apos;DOWN&apos;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1ops_1_1CamOperationMove_1a3a53f1038028bebcb370bcdf109e5135"/><section>
+    <title>direction<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>direction</primary><secondary>cam.ops.CamOperationMove</secondary></indexterm>
+<indexterm><primary>cam.ops.CamOperationMove</primary><secondary>direction</secondary></indexterm>
+<para><computeroutput>cam.ops.CamOperationMove.direction</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/<link linkend="_ops_8py">ops.py</link></section>
+</section>

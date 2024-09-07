@@ -1,0 +1,267 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1curvecamcreate_1_1CamCurveGear" xml:lang="en-US">
+<title>cam.curvecamcreate.CamCurveGear Class Reference</title>
+<indexterm><primary>cam.curvecamcreate.CamCurveGear</primary></indexterm>
+Inheritance diagram for cam.curvecamcreate.CamCurveGear:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1curvecamcreate_1_1CamCurveGear__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.curvecamcreate.CamCurveGear:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1curvecamcreate_1_1CamCurveGear__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1curvecamcreate_1_1CamCurveGear_1a09ec56457122376d9d519c3ffb341ab8">draw</link> (self, context)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1curvecamcreate_1_1CamCurveGear_1a4d69cda24cb070546e1386a8480d1c36">execute</link> (self, context)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1curvecamcreate_1_1CamCurveGear_1aee7b970df686f0274dfdc5c24f076bd9">gear_type</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveGear_1a6280dc0a715388edfcd1718ed7b48ee9">bl_idname</link> = &quot;object.curve_gear&quot;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveGear_1ac31f718314e425789ecae1de78653bf6">bl_label</link> = &quot;Gears&quot;</para>
+</listitem>
+            <listitem><para>dict <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveGear_1af5ee6a62bbe5057e078140770873b694">bl_options</link> = {&apos;REGISTER&apos;, &apos;UNDO&apos;, &apos;PRESET&apos;}</para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveGear_1a9d1760269797cac83d0655e348e29bb4">tooth_spacing</link></para>
+</listitem>
+            <listitem><para>IntProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveGear_1a4efb0829251acf34dff82e0911729b5d">tooth_amount</link></para>
+</listitem>
+            <listitem><para>IntProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveGear_1aefa4ddfca0df87f033873da9d3cc2f03">spoke_amount</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveGear_1a3822e791cc60ebe4f7079a5a9a6dd063">hole_diameter</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveGear_1ab54f64473b1cced1ba7e866d02955331">rim_size</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveGear_1a2b4b1f858a6c9b0fae3d366b7347128f">hub_diameter</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveGear_1a57d5701c5f7d55e5931c2b5a3c0e9076">pressure_angle</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveGear_1a1dcd88f12c204bd725b80d2bd58d048d">clearance</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveGear_1a4522fa7db2452c66c9f877dea97cf509">backlash</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveGear_1aa1a6995fcdced1afd8cb451a3d05cc90">rack_height</link></para>
+</listitem>
+            <listitem><para>IntProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveGear_1aa44861ff0525a42c4d6fcea49146c24c">rack_tooth_per_hole</link></para>
+</listitem>
+            <listitem><para>EnumProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveGear_1a0afcf8b64ae6f058bc5f94d9070e5041">gear_type</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Generates Involute Gears // version 1.1 by Leemon Baird, 2011, Leemon@Leemon.com
+http://www.thingiverse.com/thing:5505</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveGear_1a09ec56457122376d9d519c3ffb341ab8"/><section>
+    <title>draw()</title>
+<indexterm><primary>draw</primary><secondary>cam.curvecamcreate.CamCurveGear</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveGear</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput>cam.curvecamcreate.CamCurveGear.draw ( self,  context)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveGear_1a4d69cda24cb070546e1386a8480d1c36"/><section>
+    <title>execute()</title>
+<indexterm><primary>execute</primary><secondary>cam.curvecamcreate.CamCurveGear</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveGear</primary><secondary>execute</secondary></indexterm>
+<para><computeroutput>cam.curvecamcreate.CamCurveGear.execute ( self,  context)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveGear_1a4522fa7db2452c66c9f877dea97cf509"/><section>
+    <title>backlash</title>
+<indexterm><primary>backlash</primary><secondary>cam.curvecamcreate.CamCurveGear</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveGear</primary><secondary>backlash</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamcreate.CamCurveGear.backlash<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Backlash&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0.0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=0.1,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=4,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveGear_1a6280dc0a715388edfcd1718ed7b48ee9"/><section>
+    <title>bl_idname</title>
+<indexterm><primary>bl_idname</primary><secondary>cam.curvecamcreate.CamCurveGear</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveGear</primary><secondary>bl_idname</secondary></indexterm>
+<para><computeroutput>str cam.curvecamcreate.CamCurveGear.bl_idname = &quot;object.curve_gear&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveGear_1ac31f718314e425789ecae1de78653bf6"/><section>
+    <title>bl_label</title>
+<indexterm><primary>bl_label</primary><secondary>cam.curvecamcreate.CamCurveGear</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveGear</primary><secondary>bl_label</secondary></indexterm>
+<para><computeroutput>str cam.curvecamcreate.CamCurveGear.bl_label = &quot;Gears&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveGear_1af5ee6a62bbe5057e078140770873b694"/><section>
+    <title>bl_options</title>
+<indexterm><primary>bl_options</primary><secondary>cam.curvecamcreate.CamCurveGear</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveGear</primary><secondary>bl_options</secondary></indexterm>
+<para><computeroutput>dict cam.curvecamcreate.CamCurveGear.bl_options = {&apos;REGISTER&apos;, &apos;UNDO&apos;, &apos;PRESET&apos;}<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveGear_1a1dcd88f12c204bd725b80d2bd58d048d"/><section>
+    <title>clearance</title>
+<indexterm><primary>clearance</primary><secondary>cam.curvecamcreate.CamCurveGear</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveGear</primary><secondary>clearance</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamcreate.CamCurveGear.clearance<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Clearance&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.00,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=0.1,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=4,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveGear_1a0afcf8b64ae6f058bc5f94d9070e5041"/><section>
+    <title>gear_type<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>gear_type</primary><secondary>cam.curvecamcreate.CamCurveGear</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveGear</primary><secondary>gear_type</secondary></indexterm>
+<para><computeroutput>EnumProperty cam.curvecamcreate.CamCurveGear.gear_type<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&apos;Type&#32;of&#32;Gear&apos;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;items=(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&apos;PINION&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Pinion&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Circular&#32;Gear&apos;</emphasis>),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&apos;RACK&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Rack&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Straight&#32;Rack&apos;</emphasis>)
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&apos;Type&#32;of&#32;gear&apos;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="stringliteral">&apos;PINION&apos;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveGear_1aee7b970df686f0274dfdc5c24f076bd9"/><section>
+    <title>gear_type<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>gear_type</primary><secondary>cam.curvecamcreate.CamCurveGear</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveGear</primary><secondary>gear_type</secondary></indexterm>
+<para><computeroutput>cam.curvecamcreate.CamCurveGear.gear_type</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveGear_1a3822e791cc60ebe4f7079a5a9a6dd063"/><section>
+    <title>hole_diameter</title>
+<indexterm><primary>hole_diameter</primary><secondary>cam.curvecamcreate.CamCurveGear</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveGear</primary><secondary>hole_diameter</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamcreate.CamCurveGear.hole_diameter<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Hole&#32;Diameter&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.003175,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=3.0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=4,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveGear_1a2b4b1f858a6c9b0fae3d366b7347128f"/><section>
+    <title>hub_diameter</title>
+<indexterm><primary>hub_diameter</primary><secondary>cam.curvecamcreate.CamCurveGear</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveGear</primary><secondary>hub_diameter</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamcreate.CamCurveGear.hub_diameter<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Hub&#32;Diameter&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.005,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=3.0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=4,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveGear_1a57d5701c5f7d55e5931c2b5a3c0e9076"/><section>
+    <title>pressure_angle</title>
+<indexterm><primary>pressure_angle</primary><secondary>cam.curvecamcreate.CamCurveGear</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveGear</primary><secondary>pressure_angle</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamcreate.CamCurveGear.pressure_angle<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Pressure&#32;Angle&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=radians(20),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0.001,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=pi/2,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=4,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;subtype=<emphasis role="stringliteral">&quot;ANGLE&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;ROTATION&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveGear_1aa1a6995fcdced1afd8cb451a3d05cc90"/><section>
+    <title>rack_height</title>
+<indexterm><primary>rack_height</primary><secondary>cam.curvecamcreate.CamCurveGear</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveGear</primary><secondary>rack_height</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamcreate.CamCurveGear.rack_height<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Rack&#32;Height&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.012,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0.001,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=1,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=4,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveGear_1aa44861ff0525a42c4d6fcea49146c24c"/><section>
+    <title>rack_tooth_per_hole</title>
+<indexterm><primary>rack_tooth_per_hole</primary><secondary>cam.curvecamcreate.CamCurveGear</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveGear</primary><secondary>rack_tooth_per_hole</secondary></indexterm>
+<para><computeroutput>IntProperty cam.curvecamcreate.CamCurveGear.rack_tooth_per_hole<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Teeth&#32;per&#32;Mounting&#32;Hole&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=7,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=2,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveGear_1ab54f64473b1cced1ba7e866d02955331"/><section>
+    <title>rim_size</title>
+<indexterm><primary>rim_size</primary><secondary>cam.curvecamcreate.CamCurveGear</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveGear</primary><secondary>rim_size</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamcreate.CamCurveGear.rim_size<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Rim&#32;Size&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.003175,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=3.0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=4,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveGear_1aefa4ddfca0df87f033873da9d3cc2f03"/><section>
+    <title>spoke_amount</title>
+<indexterm><primary>spoke_amount</primary><secondary>cam.curvecamcreate.CamCurveGear</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveGear</primary><secondary>spoke_amount</secondary></indexterm>
+<para><computeroutput>IntProperty cam.curvecamcreate.CamCurveGear.spoke_amount<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Amount&#32;of&#32;Spokes&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=4,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveGear_1a4efb0829251acf34dff82e0911729b5d"/><section>
+    <title>tooth_amount</title>
+<indexterm><primary>tooth_amount</primary><secondary>cam.curvecamcreate.CamCurveGear</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveGear</primary><secondary>tooth_amount</secondary></indexterm>
+<para><computeroutput>IntProperty cam.curvecamcreate.CamCurveGear.tooth_amount<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Amount&#32;of&#32;Teeth&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=7,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=4,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveGear_1a9d1760269797cac83d0655e348e29bb4"/><section>
+    <title>tooth_spacing</title>
+<indexterm><primary>tooth_spacing</primary><secondary>cam.curvecamcreate.CamCurveGear</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveGear</primary><secondary>tooth_spacing</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamcreate.CamCurveGear.tooth_spacing<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Distance&#32;per&#32;Tooth&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.010,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0.001,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=1.0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=4,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/<link linkend="_curvecamcreate_8py">curvecamcreate.py</link></section>
+</section>

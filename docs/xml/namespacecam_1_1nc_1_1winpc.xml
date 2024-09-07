@@ -1,0 +1,373 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacecam_1_1nc_1_1winpc" kind="namespace" language="Python">
+    <compoundname>cam::nc::winpc</compoundname>
+    <innerclass refid="classcam_1_1nc_1_1winpc_1_1Creator" prot="public">cam::nc::winpc::Creator</innerclass>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacecam_1_1nc_1_1winpc_1a245aaa8128f9ccb45b3701bbd46a5132" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam::nc::winpc.now</definition>
+        <argsstring></argsstring>
+        <name>now</name>
+        <qualifiedname>cam.nc.winpc.now</qualifiedname>
+        <initializer>=  datetime.datetime.now()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" line="7" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecam_1_1nc_1_1winpc_1a1fd78efb9daf90de767aa18064ea1688" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam::nc::winpc.creator</definition>
+        <argsstring></argsstring>
+        <name>creator</name>
+        <qualifiedname>cam.nc.winpc.creator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" line="317" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" bodystart="317" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecam_1_1nc_1_1winpc_1ad68508c7ef0e7948c943840419ec8ec2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam::nc::winpc.fhv</definition>
+        <argsstring></argsstring>
+        <name>fhv</name>
+        <qualifiedname>cam.nc.winpc.fhv</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" line="81" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecam_1_1nc_1_1winpc_1a53c46df3965f95fbd13c3d1a28f63612" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam::nc::winpc.fh</definition>
+        <argsstring></argsstring>
+        <name>fh</name>
+        <qualifiedname>cam.nc.winpc.fh</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" line="84" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecam_1_1nc_1_1winpc_1aa61a3aa35ac60c332d08138f4a05069b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam::nc::winpc.fv</definition>
+        <argsstring></argsstring>
+        <name>fv</name>
+        <qualifiedname>cam.nc.winpc.fv</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" line="85" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" bodystart="85" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1winpc_1a24d8e80034ee64b05f67c7cfbc927661" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.winpc.feedrate</definition>
+        <argsstring>(self, f)</argsstring>
+        <name>feedrate</name>
+        <qualifiedname>cam.nc.winpc.feedrate</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>f</type>
+          <defname>f</defname>
+        </param>
+        <briefdescription>
+<para>Rates + Modes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" line="79" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" bodystart="79" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1winpc_1afbefd0187dc60bf9753f65074a388e2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.winpc.feedrate_hv</definition>
+        <argsstring>(self, fh, fv)</argsstring>
+        <name>feedrate_hv</name>
+        <qualifiedname>cam.nc.winpc.feedrate_hv</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="namespacecam_1_1nc_1_1winpc_1a53c46df3965f95fbd13c3d1a28f63612" kindref="member">fh</ref></type>
+          <defname>fh</defname>
+        </param>
+        <param>
+          <type><ref refid="namespacecam_1_1nc_1_1winpc_1aa61a3aa35ac60c332d08138f4a05069b" kindref="member">fv</ref></type>
+          <defname>fv</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" line="83" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" bodystart="83" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1winpc_1a2e77a0444791e79b05bd93c52415f31e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.winpc.calc_feedrate_hv</definition>
+        <argsstring>(self, h, v)</argsstring>
+        <name>calc_feedrate_hv</name>
+        <qualifiedname>cam.nc.winpc.calc_feedrate_hv</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>h</type>
+          <defname>h</defname>
+        </param>
+        <param>
+          <type>v</type>
+          <defname>v</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" line="88" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" bodystart="88" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1winpc_1a4e51d41c29417cdc8a93b8645c61c01f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.winpc.report_probe_results</definition>
+        <argsstring>(self, x1=None, y1=None, z1=None, x2=None, y2=None, z2=None, x3=None, y3=None, z3=None, x4=None, y4=None, z4=None, x5=None, y5=None, z5=None, x6=None, y6=None, z6=None, xml_file_name=None)</argsstring>
+        <name>report_probe_results</name>
+        <qualifiedname>cam.nc.winpc.report_probe_results</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>x1</type>
+          <defname>x1</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>y1</type>
+          <defname>y1</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>z1</type>
+          <defname>z1</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>x2</type>
+          <defname>x2</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>y2</type>
+          <defname>y2</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>z2</type>
+          <defname>z2</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>x3</type>
+          <defname>x3</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>y3</type>
+          <defname>y3</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>z3</type>
+          <defname>z3</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>x4</type>
+          <defname>x4</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>y4</type>
+          <defname>y4</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>z4</type>
+          <defname>z4</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>x5</type>
+          <defname>x5</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>y5</type>
+          <defname>y5</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>z5</type>
+          <defname>z5</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>x6</type>
+          <defname>x6</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>y6</type>
+          <defname>y6</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>z6</type>
+          <defname>z6</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>xml_file_name</type>
+          <defname>xml_file_name</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>Probe routines. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" line="101" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" bodystart="101" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1winpc_1aa2e3de74311666759d5bdb4f07559d44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.winpc.open_log_file</definition>
+        <argsstring>(self, xml_file_name=None)</argsstring>
+        <name>open_log_file</name>
+        <qualifiedname>cam.nc.winpc.open_log_file</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>xml_file_name</type>
+          <defname>xml_file_name</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" line="275" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" bodystart="275" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1winpc_1a90be9ecebc890626f0b00c063cbfb849" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.winpc.close_log_file</definition>
+        <argsstring>(self)</argsstring>
+        <name>close_log_file</name>
+        <qualifiedname>cam.nc.winpc.close_log_file</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" line="281" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" bodystart="281" bodyend="284"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1winpc_1ad2bc7d90c71c5a768f151d61d8cfe965" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.winpc.log_coordinate</definition>
+        <argsstring>(self, x=None, y=None, z=None)</argsstring>
+        <name>log_coordinate</name>
+        <qualifiedname>cam.nc.winpc.log_coordinate</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>y</type>
+          <defname>y</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>z</type>
+          <defname>z</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" line="285" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" bodystart="285" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1nc_1_1winpc_1acc14e6e00c283bb3ea6b6aee040e431b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.winpc.log_message</definition>
+        <argsstring>(self, message=None)</argsstring>
+        <name>log_message</name>
+        <qualifiedname>cam.nc.winpc.log_message</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>message</type>
+          <defname>message</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" line="312" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" bodystart="312" bodyend="316"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

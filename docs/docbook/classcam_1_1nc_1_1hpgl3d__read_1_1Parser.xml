@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1nc_1_1hpgl3d__read_1_1Parser" xml:lang="en-US">
+<title>cam.nc.hpgl3d_read.Parser Class Reference</title>
+<indexterm><primary>cam.nc.hpgl3d_read.Parser</primary></indexterm>
+Inheritance diagram for cam.nc.hpgl3d_read.Parser:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1hpgl3d__read_1_1Parser__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.nc.hpgl3d_read.Parser:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1hpgl3d__read_1_1Parser__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hpgl3d__read_1_1Parser_1a5bb761ae37730841999e025ed9e0cb6b">__init__</link> (self, writer)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hpgl3d__read_1_1Parser_1a5502a04a5c200755a82803cfe7986b3d">ParseV</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hpgl3d__read_1_1Parser_1ae1ce5f283aa57d7de17d269c42a17c90">ParseZ</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hpgl3d__read_1_1Parser_1acfc73b1a3afefce2cbfbbc3c6ba852b1">ParseFromFirstLetter</link> (self, c)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_classcam_1_1nc_1_1num__reader_1_1NumReader">cam.nc.num_reader.NumReader</link>        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1num__reader_1_1NumReader_1aa6859eeefd5788834891f727ae66d342">get_number</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1num__reader_1_1NumReader_1abe0336cd15995dde1a46134b56f1c2b2">add_word</link> (self, color)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1num__reader_1_1NumReader_1ae908a2956d1e0cfd474a47540bee9759">Parse</link> (self, name, oname=None)</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hpgl3d__read_1_1Parser_1a8bbaadd0c296e3d66467b0546e316559">x</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hpgl3d__read_1_1Parser_1ab35b34fa8c306693fadce00e58931e0c">y</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hpgl3d__read_1_1Parser_1ac3ac99f5f4007ec090d9166cea329166">z</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hpgl3d__read_1_1Parser_1a98b080e3a85d1d3bbd01e1487303e661">f</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hpgl3d__read_1_1Parser_1ae3bf75587278231d775856270fa106c2">units_to_mm</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hpgl3d__read_1_1Parser_1aef60f46df600edbca57f85f2df74cdac">line_index</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Attributes inherited from <link linkend="_classcam_1_1nc_1_1num__reader_1_1NumReader">cam.nc.num_reader.NumReader</link>        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1num__reader_1_1NumReader_1ae433b63cb3d6ad388945853b487710d2">line_length</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1num__reader_1_1NumReader_1ab2d4301e748a3ae276a70a1b405d9dd5">line_index</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1num__reader_1_1NumReader_1aef74e3b02beaff006b39dffdbcd5e514">parse_word</link></para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classcam_1_1nc_1_1hpgl3d__read_1_1Parser_1a5bb761ae37730841999e025ed9e0cb6b"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>cam.nc.hpgl3d_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.hpgl3d_read.Parser</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>cam.nc.hpgl3d_read.Parser.__init__ ( self,  writer)</computeroutput></para><para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1num__reader_1_1NumReader_1a718c14f9d3e5513596d99df025211d9b">cam.nc.num_reader.NumReader</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1nc_1_1hpgl3d__read_1_1Parser_1acfc73b1a3afefce2cbfbbc3c6ba852b1"/><section>
+    <title>ParseFromFirstLetter()</title>
+<indexterm><primary>ParseFromFirstLetter</primary><secondary>cam.nc.hpgl3d_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.hpgl3d_read.Parser</primary><secondary>ParseFromFirstLetter</secondary></indexterm>
+<para><computeroutput>cam.nc.hpgl3d_read.Parser.ParseFromFirstLetter ( self,  c)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1hpgl3d__read_1_1Parser_acfc73b1a3afefce2cbfbbc3c6ba852b1_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1hpgl3d__read_1_1Parser_acfc73b1a3afefce2cbfbbc3c6ba852b1_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1hpgl3d__read_1_1Parser_1a5502a04a5c200755a82803cfe7986b3d"/><section>
+    <title>ParseV()</title>
+<indexterm><primary>ParseV</primary><secondary>cam.nc.hpgl3d_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.hpgl3d_read.Parser</primary><secondary>ParseV</secondary></indexterm>
+<para><computeroutput>cam.nc.hpgl3d_read.Parser.ParseV ( self)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1hpgl3d__read_1_1Parser_a5502a04a5c200755a82803cfe7986b3d_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1hpgl3d__read_1_1Parser_1ae1ce5f283aa57d7de17d269c42a17c90"/><section>
+    <title>ParseZ()</title>
+<indexterm><primary>ParseZ</primary><secondary>cam.nc.hpgl3d_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.hpgl3d_read.Parser</primary><secondary>ParseZ</secondary></indexterm>
+<para><computeroutput>cam.nc.hpgl3d_read.Parser.ParseZ ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1hpgl3d__read_1_1Parser_ae1ce5f283aa57d7de17d269c42a17c90_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1hpgl3d__read_1_1Parser_ae1ce5f283aa57d7de17d269c42a17c90_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1nc_1_1hpgl3d__read_1_1Parser_1a98b080e3a85d1d3bbd01e1487303e661"/><section>
+    <title>f</title>
+<indexterm><primary>f</primary><secondary>cam.nc.hpgl3d_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.hpgl3d_read.Parser</primary><secondary>f</secondary></indexterm>
+<para><computeroutput>cam.nc.hpgl3d_read.Parser.f</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1hpgl3d__read_1_1Parser_1aef60f46df600edbca57f85f2df74cdac"/><section>
+    <title>line_index</title>
+<indexterm><primary>line_index</primary><secondary>cam.nc.hpgl3d_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.hpgl3d_read.Parser</primary><secondary>line_index</secondary></indexterm>
+<para><computeroutput>cam.nc.hpgl3d_read.Parser.line_index</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1hpgl3d__read_1_1Parser_1ae3bf75587278231d775856270fa106c2"/><section>
+    <title>units_to_mm</title>
+<indexterm><primary>units_to_mm</primary><secondary>cam.nc.hpgl3d_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.hpgl3d_read.Parser</primary><secondary>units_to_mm</secondary></indexterm>
+<para><computeroutput>cam.nc.hpgl3d_read.Parser.units_to_mm</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1hpgl3d__read_1_1Parser_1a8bbaadd0c296e3d66467b0546e316559"/><section>
+    <title>x</title>
+<indexterm><primary>x</primary><secondary>cam.nc.hpgl3d_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.hpgl3d_read.Parser</primary><secondary>x</secondary></indexterm>
+<para><computeroutput>cam.nc.hpgl3d_read.Parser.x</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1hpgl3d__read_1_1Parser_1ab35b34fa8c306693fadce00e58931e0c"/><section>
+    <title>y</title>
+<indexterm><primary>y</primary><secondary>cam.nc.hpgl3d_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.hpgl3d_read.Parser</primary><secondary>y</secondary></indexterm>
+<para><computeroutput>cam.nc.hpgl3d_read.Parser.y</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1hpgl3d__read_1_1Parser_1ac3ac99f5f4007ec090d9166cea329166"/><section>
+    <title>z</title>
+<indexterm><primary>z</primary><secondary>cam.nc.hpgl3d_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.hpgl3d_read.Parser</primary><secondary>z</secondary></indexterm>
+<para><computeroutput>cam.nc.hpgl3d_read.Parser.z</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/<link linkend="_hpgl3d__read_8py">hpgl3d_read.py</link></section>
+</section>

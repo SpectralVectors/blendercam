@@ -1,0 +1,927 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacecam_1_1puzzle__joinery" kind="namespace" language="Python">
+    <compoundname>cam::puzzle_joinery</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacecam_1_1puzzle__joinery_1a632485e4a6a149796d643823525c2f31" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float cam::puzzle_joinery.DT</definition>
+        <argsstring></argsstring>
+        <name>DT</name>
+        <qualifiedname>cam.puzzle_joinery.DT</qualifiedname>
+        <initializer>=  1.025</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/puzzle_joinery.py" line="23" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/puzzle_joinery.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacecam_1_1puzzle__joinery_1a2975e13b4c0d374385227493e06d5101" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.puzzle_joinery.finger</definition>
+        <argsstring>(diameter, stem=2)</argsstring>
+        <name>finger</name>
+        <qualifiedname>cam.puzzle_joinery.finger</qualifiedname>
+        <param>
+          <type>diameter</type>
+          <defname>diameter</defname>
+        </param>
+        <param>
+          <type>stem</type>
+          <defname>stem</defname>
+          <defval>2</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/puzzle_joinery.py" line="26" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/puzzle_joinery.py" bodystart="26" bodyend="78"/>
+        <referencedby refid="namespacecam_1_1puzzle__joinery_1af57d1435a944dc9207c05e8a4c0ebb72" compoundref="puzzle__joinery_8py" startline="79" endline="108">cam.puzzle_joinery.fingers</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1puzzle__joinery_1af57d1435a944dc9207c05e8a4c0ebb72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.puzzle_joinery.fingers</definition>
+        <argsstring>(diameter, inside, amount=1, stem=1)</argsstring>
+        <name>fingers</name>
+        <qualifiedname>cam.puzzle_joinery.fingers</qualifiedname>
+        <param>
+          <type>diameter</type>
+          <defname>diameter</defname>
+        </param>
+        <param>
+          <type>inside</type>
+          <defname>inside</defname>
+        </param>
+        <param>
+          <type>amount</type>
+          <defname>amount</defname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>stem</type>
+          <defname>stem</defname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/puzzle_joinery.py" line="79" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/puzzle_joinery.py" bodystart="79" bodyend="108"/>
+        <references refid="namespacecam_1_1puzzle__joinery_1a2975e13b4c0d374385227493e06d5101" compoundref="puzzle__joinery_8py" startline="26" endline="78">cam.puzzle_joinery.finger</references>
+        <referencedby refid="namespacecam_1_1puzzle__joinery_1a110e06ffcd6df9f4eb8c11ba46639a86" compoundref="puzzle__joinery_8py" startline="205" endline="289">cam.puzzle_joinery.arc</referencedby>
+        <referencedby refid="namespacecam_1_1puzzle__joinery_1ac77a90bb750e0c3a3c99d6ad3265e79a" compoundref="puzzle__joinery_8py" startline="145" endline="203">cam.puzzle_joinery.bar</referencedby>
+        <referencedby refid="namespacecam_1_1puzzle__joinery_1aaea56558d97949cc0cf99af9f7746c00" compoundref="puzzle__joinery_8py" startline="545" endline="632">cam.puzzle_joinery.mitre</referencedby>
+        <referencedby refid="namespacecam_1_1puzzle__joinery_1a98efd38937a6d95b6579a1375c780036" compoundref="puzzle__joinery_8py" startline="634" endline="711">cam.puzzle_joinery.open_curve</referencedby>
+        <referencedby refid="namespacecam_1_1puzzle__joinery_1aca5a28f5f8c51f8954f13fd0c264e931" compoundref="puzzle__joinery_8py" startline="454" endline="502">cam.puzzle_joinery.t</referencedby>
+        <referencedby refid="namespacecam_1_1puzzle__joinery_1a0f65ff6f9261396e1c80cd5461fceee4" compoundref="puzzle__joinery_8py" startline="712" endline="749">cam.puzzle_joinery.tile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1puzzle__joinery_1a5034c27cd1215fd40b8ea153c9d8403c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.puzzle_joinery.twistf</definition>
+        <argsstring>(name, length, diameter, tolerance, twist, tneck, tthick, twist_keep=False)</argsstring>
+        <name>twistf</name>
+        <qualifiedname>cam.puzzle_joinery.twistf</qualifiedname>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>length</type>
+          <defname>length</defname>
+        </param>
+        <param>
+          <type>diameter</type>
+          <defname>diameter</defname>
+        </param>
+        <param>
+          <type>tolerance</type>
+          <defname>tolerance</defname>
+        </param>
+        <param>
+          <type>twist</type>
+          <defname>twist</defname>
+        </param>
+        <param>
+          <type>tneck</type>
+          <defname>tneck</defname>
+        </param>
+        <param>
+          <type>tthick</type>
+          <defname>tthick</defname>
+        </param>
+        <param>
+          <type>twist_keep</type>
+          <defname>twist_keep</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/puzzle_joinery.py" line="109" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/puzzle_joinery.py" bodystart="109" bodyend="124"/>
+        <referencedby refid="namespacecam_1_1puzzle__joinery_1a110e06ffcd6df9f4eb8c11ba46639a86" compoundref="puzzle__joinery_8py" startline="205" endline="289">cam.puzzle_joinery.arc</referencedby>
+        <referencedby refid="namespacecam_1_1puzzle__joinery_1ac77a90bb750e0c3a3c99d6ad3265e79a" compoundref="puzzle__joinery_8py" startline="145" endline="203">cam.puzzle_joinery.bar</referencedby>
+        <referencedby refid="namespacecam_1_1puzzle__joinery_1a98efd38937a6d95b6579a1375c780036" compoundref="puzzle__joinery_8py" startline="634" endline="711">cam.puzzle_joinery.open_curve</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1puzzle__joinery_1a49355291518955c6516bfbe10fd34b53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.puzzle_joinery.twistm</definition>
+        <argsstring>(name, length, diameter, tolerance, twist, tneck, tthick, angle, twist_keep=False, x=0, y=0)</argsstring>
+        <name>twistm</name>
+        <qualifiedname>cam.puzzle_joinery.twistm</qualifiedname>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>length</type>
+          <defname>length</defname>
+        </param>
+        <param>
+          <type>diameter</type>
+          <defname>diameter</defname>
+        </param>
+        <param>
+          <type>tolerance</type>
+          <defname>tolerance</defname>
+        </param>
+        <param>
+          <type>twist</type>
+          <defname>twist</defname>
+        </param>
+        <param>
+          <type>tneck</type>
+          <defname>tneck</defname>
+        </param>
+        <param>
+          <type>tthick</type>
+          <defname>tthick</defname>
+        </param>
+        <param>
+          <type>angle</type>
+          <defname>angle</defname>
+        </param>
+        <param>
+          <type>twist_keep</type>
+          <defname>twist_keep</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>y</type>
+          <defname>y</defname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/puzzle_joinery.py" line="125" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/puzzle_joinery.py" bodystart="125" bodyend="143"/>
+        <referencedby refid="namespacecam_1_1puzzle__joinery_1a110e06ffcd6df9f4eb8c11ba46639a86" compoundref="puzzle__joinery_8py" startline="205" endline="289">cam.puzzle_joinery.arc</referencedby>
+        <referencedby refid="namespacecam_1_1puzzle__joinery_1ac77a90bb750e0c3a3c99d6ad3265e79a" compoundref="puzzle__joinery_8py" startline="145" endline="203">cam.puzzle_joinery.bar</referencedby>
+        <referencedby refid="namespacecam_1_1puzzle__joinery_1a98efd38937a6d95b6579a1375c780036" compoundref="puzzle__joinery_8py" startline="634" endline="711">cam.puzzle_joinery.open_curve</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1puzzle__joinery_1ac77a90bb750e0c3a3c99d6ad3265e79a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.puzzle_joinery.bar</definition>
+        <argsstring>(width, thick, diameter, tolerance, amount=0, stem=1, twist=False, tneck=0.5, tthick=0.01, twist_keep=False, twist_line=False, twist_line_amount=2, which=&apos;MF&apos;)</argsstring>
+        <name>bar</name>
+        <qualifiedname>cam.puzzle_joinery.bar</qualifiedname>
+        <param>
+          <type>width</type>
+          <defname>width</defname>
+        </param>
+        <param>
+          <type>thick</type>
+          <defname>thick</defname>
+        </param>
+        <param>
+          <type>diameter</type>
+          <defname>diameter</defname>
+        </param>
+        <param>
+          <type>tolerance</type>
+          <defname>tolerance</defname>
+        </param>
+        <param>
+          <type>amount</type>
+          <defname>amount</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>stem</type>
+          <defname>stem</defname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>twist</type>
+          <defname>twist</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>tneck</type>
+          <defname>tneck</defname>
+          <defval>0.5</defval>
+        </param>
+        <param>
+          <type>tthick</type>
+          <defname>tthick</defname>
+          <defval>0.01</defval>
+        </param>
+        <param>
+          <type>twist_keep</type>
+          <defname>twist_keep</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>twist_line</type>
+          <defname>twist_line</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>twist_line_amount</type>
+          <defname>twist_line_amount</defname>
+          <defval>2</defval>
+        </param>
+        <param>
+          <type>which</type>
+          <defname>which</defname>
+          <defval>&apos;MF&apos;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/puzzle_joinery.py" line="144" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/puzzle_joinery.py" bodystart="145" bodyend="203"/>
+        <references refid="namespacecam_1_1puzzle__joinery_1af57d1435a944dc9207c05e8a4c0ebb72" compoundref="puzzle__joinery_8py" startline="79" endline="108">cam.puzzle_joinery.fingers</references>
+        <references refid="namespacecam_1_1puzzle__joinery_1a5034c27cd1215fd40b8ea153c9d8403c" compoundref="puzzle__joinery_8py" startline="109" endline="124">cam.puzzle_joinery.twistf</references>
+        <references refid="namespacecam_1_1puzzle__joinery_1a49355291518955c6516bfbe10fd34b53" compoundref="puzzle__joinery_8py" startline="125" endline="143">cam.puzzle_joinery.twistm</references>
+        <referencedby refid="namespacecam_1_1puzzle__joinery_1aaf5e385562ae64de94b65a1ced1831e0" compoundref="puzzle__joinery_8py" startline="347" endline="403">cam.puzzle_joinery.arcbar</referencedby>
+        <referencedby refid="namespacecam_1_1puzzle__joinery_1a61b368014071486e7050063c5325b915" compoundref="puzzle__joinery_8py" startline="504" endline="543">cam.puzzle_joinery.curved_t</referencedby>
+        <referencedby refid="namespacecam_1_1puzzle__joinery_1aca5a28f5f8c51f8954f13fd0c264e931" compoundref="puzzle__joinery_8py" startline="454" endline="502">cam.puzzle_joinery.t</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1puzzle__joinery_1a110e06ffcd6df9f4eb8c11ba46639a86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.puzzle_joinery.arc</definition>
+        <argsstring>(radius, thick, angle, diameter, tolerance, amount=0, stem=1, twist=False, tneck=0.5, tthick=0.01, twist_keep=False, which=&apos;MF&apos;)</argsstring>
+        <name>arc</name>
+        <qualifiedname>cam.puzzle_joinery.arc</qualifiedname>
+        <param>
+          <type>radius</type>
+          <defname>radius</defname>
+        </param>
+        <param>
+          <type>thick</type>
+          <defname>thick</defname>
+        </param>
+        <param>
+          <type>angle</type>
+          <defname>angle</defname>
+        </param>
+        <param>
+          <type>diameter</type>
+          <defname>diameter</defname>
+        </param>
+        <param>
+          <type>tolerance</type>
+          <defname>tolerance</defname>
+        </param>
+        <param>
+          <type>amount</type>
+          <defname>amount</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>stem</type>
+          <defname>stem</defname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>twist</type>
+          <defname>twist</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>tneck</type>
+          <defname>tneck</defname>
+          <defval>0.5</defval>
+        </param>
+        <param>
+          <type>tthick</type>
+          <defname>tthick</defname>
+          <defval>0.01</defval>
+        </param>
+        <param>
+          <type>twist_keep</type>
+          <defname>twist_keep</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>which</type>
+          <defname>which</defname>
+          <defval>&apos;MF&apos;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/puzzle_joinery.py" line="204" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/puzzle_joinery.py" bodystart="205" bodyend="289"/>
+        <references refid="namespacecam_1_1puzzle__joinery_1af57d1435a944dc9207c05e8a4c0ebb72" compoundref="puzzle__joinery_8py" startline="79" endline="108">cam.puzzle_joinery.fingers</references>
+        <references refid="namespacecam_1_1puzzle__joinery_1a5034c27cd1215fd40b8ea153c9d8403c" compoundref="puzzle__joinery_8py" startline="109" endline="124">cam.puzzle_joinery.twistf</references>
+        <references refid="namespacecam_1_1puzzle__joinery_1a49355291518955c6516bfbe10fd34b53" compoundref="puzzle__joinery_8py" startline="125" endline="143">cam.puzzle_joinery.twistm</references>
+        <referencedby refid="namespacecam_1_1puzzle__joinery_1aaf5e385562ae64de94b65a1ced1831e0" compoundref="puzzle__joinery_8py" startline="347" endline="403">cam.puzzle_joinery.arcbar</referencedby>
+        <referencedby refid="namespacecam_1_1puzzle__joinery_1a36b07d5ee313eed430a40227a29a5fd1" compoundref="puzzle__joinery_8py" startline="291" endline="345">cam.puzzle_joinery.arcbararc</referencedby>
+        <referencedby refid="namespacecam_1_1puzzle__joinery_1a61b368014071486e7050063c5325b915" compoundref="puzzle__joinery_8py" startline="504" endline="543">cam.puzzle_joinery.curved_t</referencedby>
+        <referencedby refid="namespacecam_1_1puzzle__joinery_1a5c10906df71f805f9badb118c2507386" compoundref="puzzle__joinery_8py" startline="405" endline="452">cam.puzzle_joinery.multiangle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1puzzle__joinery_1a36b07d5ee313eed430a40227a29a5fd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.puzzle_joinery.arcbararc</definition>
+        <argsstring>(length, radius, thick, angle, angleb, diameter, tolerance, amount=0, stem=1, twist=False, tneck=0.5, tthick=0.01, which=&apos;MF&apos;, twist_keep=False, twist_line=False, twist_line_amount=2)</argsstring>
+        <name>arcbararc</name>
+        <qualifiedname>cam.puzzle_joinery.arcbararc</qualifiedname>
+        <param>
+          <type>length</type>
+          <defname>length</defname>
+        </param>
+        <param>
+          <type>radius</type>
+          <defname>radius</defname>
+        </param>
+        <param>
+          <type>thick</type>
+          <defname>thick</defname>
+        </param>
+        <param>
+          <type>angle</type>
+          <defname>angle</defname>
+        </param>
+        <param>
+          <type>angleb</type>
+          <defname>angleb</defname>
+        </param>
+        <param>
+          <type>diameter</type>
+          <defname>diameter</defname>
+        </param>
+        <param>
+          <type>tolerance</type>
+          <defname>tolerance</defname>
+        </param>
+        <param>
+          <type>amount</type>
+          <defname>amount</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>stem</type>
+          <defname>stem</defname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>twist</type>
+          <defname>twist</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>tneck</type>
+          <defname>tneck</defname>
+          <defval>0.5</defval>
+        </param>
+        <param>
+          <type>tthick</type>
+          <defname>tthick</defname>
+          <defval>0.01</defval>
+        </param>
+        <param>
+          <type>which</type>
+          <defname>which</defname>
+          <defval>&apos;MF&apos;</defval>
+        </param>
+        <param>
+          <type>twist_keep</type>
+          <defname>twist_keep</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>twist_line</type>
+          <defname>twist_line</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>twist_line_amount</type>
+          <defname>twist_line_amount</defname>
+          <defval>2</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/puzzle_joinery.py" line="290" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/puzzle_joinery.py" bodystart="291" bodyend="345"/>
+        <references refid="namespacecam_1_1puzzle__joinery_1a110e06ffcd6df9f4eb8c11ba46639a86" compoundref="puzzle__joinery_8py" startline="205" endline="289">cam.puzzle_joinery.arc</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1puzzle__joinery_1aaf5e385562ae64de94b65a1ced1831e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.puzzle_joinery.arcbar</definition>
+        <argsstring>(length, radius, thick, angle, diameter, tolerance, amount=0, stem=1, twist=False, tneck=0.5, tthick=0.01, twist_keep=False, which=&apos;MF&apos;, twist_line=False, twist_line_amount=2)</argsstring>
+        <name>arcbar</name>
+        <qualifiedname>cam.puzzle_joinery.arcbar</qualifiedname>
+        <param>
+          <type>length</type>
+          <defname>length</defname>
+        </param>
+        <param>
+          <type>radius</type>
+          <defname>radius</defname>
+        </param>
+        <param>
+          <type>thick</type>
+          <defname>thick</defname>
+        </param>
+        <param>
+          <type>angle</type>
+          <defname>angle</defname>
+        </param>
+        <param>
+          <type>diameter</type>
+          <defname>diameter</defname>
+        </param>
+        <param>
+          <type>tolerance</type>
+          <defname>tolerance</defname>
+        </param>
+        <param>
+          <type>amount</type>
+          <defname>amount</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>stem</type>
+          <defname>stem</defname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>twist</type>
+          <defname>twist</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>tneck</type>
+          <defname>tneck</defname>
+          <defval>0.5</defval>
+        </param>
+        <param>
+          <type>tthick</type>
+          <defname>tthick</defname>
+          <defval>0.01</defval>
+        </param>
+        <param>
+          <type>twist_keep</type>
+          <defname>twist_keep</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>which</type>
+          <defname>which</defname>
+          <defval>&apos;MF&apos;</defval>
+        </param>
+        <param>
+          <type>twist_line</type>
+          <defname>twist_line</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>twist_line_amount</type>
+          <defname>twist_line_amount</defname>
+          <defval>2</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/puzzle_joinery.py" line="346" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/puzzle_joinery.py" bodystart="347" bodyend="403"/>
+        <references refid="namespacecam_1_1puzzle__joinery_1a110e06ffcd6df9f4eb8c11ba46639a86" compoundref="puzzle__joinery_8py" startline="205" endline="289">cam.puzzle_joinery.arc</references>
+        <references refid="namespacecam_1_1puzzle__joinery_1ac77a90bb750e0c3a3c99d6ad3265e79a" compoundref="puzzle__joinery_8py" startline="145" endline="203">cam.puzzle_joinery.bar</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1puzzle__joinery_1a5c10906df71f805f9badb118c2507386" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.puzzle_joinery.multiangle</definition>
+        <argsstring>(radius, thick, angle, diameter, tolerance, amount=0, stem=1, twist=False, tneck=0.5, tthick=0.01, combination=&apos;MFF&apos;)</argsstring>
+        <name>multiangle</name>
+        <qualifiedname>cam.puzzle_joinery.multiangle</qualifiedname>
+        <param>
+          <type>radius</type>
+          <defname>radius</defname>
+        </param>
+        <param>
+          <type>thick</type>
+          <defname>thick</defname>
+        </param>
+        <param>
+          <type>angle</type>
+          <defname>angle</defname>
+        </param>
+        <param>
+          <type>diameter</type>
+          <defname>diameter</defname>
+        </param>
+        <param>
+          <type>tolerance</type>
+          <defname>tolerance</defname>
+        </param>
+        <param>
+          <type>amount</type>
+          <defname>amount</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>stem</type>
+          <defname>stem</defname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>twist</type>
+          <defname>twist</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>tneck</type>
+          <defname>tneck</defname>
+          <defval>0.5</defval>
+        </param>
+        <param>
+          <type>tthick</type>
+          <defname>tthick</defname>
+          <defval>0.01</defval>
+        </param>
+        <param>
+          <type>combination</type>
+          <defname>combination</defname>
+          <defval>&apos;MFF&apos;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/puzzle_joinery.py" line="404" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/puzzle_joinery.py" bodystart="405" bodyend="452"/>
+        <references refid="namespacecam_1_1puzzle__joinery_1a110e06ffcd6df9f4eb8c11ba46639a86" compoundref="puzzle__joinery_8py" startline="205" endline="289">cam.puzzle_joinery.arc</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1puzzle__joinery_1aca5a28f5f8c51f8954f13fd0c264e931" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.puzzle_joinery.t</definition>
+        <argsstring>(length, thick, diameter, tolerance, amount=0, stem=1, twist=False, tneck=0.5, tthick=0.01, combination=&apos;MF&apos;, base_gender=&apos;M&apos;, corner=False)</argsstring>
+        <name>t</name>
+        <qualifiedname>cam.puzzle_joinery.t</qualifiedname>
+        <param>
+          <type>length</type>
+          <defname>length</defname>
+        </param>
+        <param>
+          <type>thick</type>
+          <defname>thick</defname>
+        </param>
+        <param>
+          <type>diameter</type>
+          <defname>diameter</defname>
+        </param>
+        <param>
+          <type>tolerance</type>
+          <defname>tolerance</defname>
+        </param>
+        <param>
+          <type>amount</type>
+          <defname>amount</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>stem</type>
+          <defname>stem</defname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>twist</type>
+          <defname>twist</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>tneck</type>
+          <defname>tneck</defname>
+          <defval>0.5</defval>
+        </param>
+        <param>
+          <type>tthick</type>
+          <defname>tthick</defname>
+          <defval>0.01</defval>
+        </param>
+        <param>
+          <type>combination</type>
+          <defname>combination</defname>
+          <defval>&apos;MF&apos;</defval>
+        </param>
+        <param>
+          <type>base_gender</type>
+          <defname>base_gender</defname>
+          <defval>&apos;M&apos;</defval>
+        </param>
+        <param>
+          <type>corner</type>
+          <defname>corner</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/puzzle_joinery.py" line="453" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/puzzle_joinery.py" bodystart="454" bodyend="502"/>
+        <references refid="namespacecam_1_1puzzle__joinery_1ac77a90bb750e0c3a3c99d6ad3265e79a" compoundref="puzzle__joinery_8py" startline="145" endline="203">cam.puzzle_joinery.bar</references>
+        <references refid="namespacecam_1_1puzzle__joinery_1af57d1435a944dc9207c05e8a4c0ebb72" compoundref="puzzle__joinery_8py" startline="79" endline="108">cam.puzzle_joinery.fingers</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1puzzle__joinery_1a61b368014071486e7050063c5325b915" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.puzzle_joinery.curved_t</definition>
+        <argsstring>(length, thick, radius, diameter, tolerance, amount=0, stem=1, twist=False, tneck=0.5, tthick=0.01, combination=&apos;MF&apos;, base_gender=&apos;M&apos;)</argsstring>
+        <name>curved_t</name>
+        <qualifiedname>cam.puzzle_joinery.curved_t</qualifiedname>
+        <param>
+          <type>length</type>
+          <defname>length</defname>
+        </param>
+        <param>
+          <type>thick</type>
+          <defname>thick</defname>
+        </param>
+        <param>
+          <type>radius</type>
+          <defname>radius</defname>
+        </param>
+        <param>
+          <type>diameter</type>
+          <defname>diameter</defname>
+        </param>
+        <param>
+          <type>tolerance</type>
+          <defname>tolerance</defname>
+        </param>
+        <param>
+          <type>amount</type>
+          <defname>amount</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>stem</type>
+          <defname>stem</defname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>twist</type>
+          <defname>twist</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>tneck</type>
+          <defname>tneck</defname>
+          <defval>0.5</defval>
+        </param>
+        <param>
+          <type>tthick</type>
+          <defname>tthick</defname>
+          <defval>0.01</defval>
+        </param>
+        <param>
+          <type>combination</type>
+          <defname>combination</defname>
+          <defval>&apos;MF&apos;</defval>
+        </param>
+        <param>
+          <type>base_gender</type>
+          <defname>base_gender</defname>
+          <defval>&apos;M&apos;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/puzzle_joinery.py" line="503" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/puzzle_joinery.py" bodystart="504" bodyend="543"/>
+        <references refid="namespacecam_1_1puzzle__joinery_1a110e06ffcd6df9f4eb8c11ba46639a86" compoundref="puzzle__joinery_8py" startline="205" endline="289">cam.puzzle_joinery.arc</references>
+        <references refid="namespacecam_1_1puzzle__joinery_1ac77a90bb750e0c3a3c99d6ad3265e79a" compoundref="puzzle__joinery_8py" startline="145" endline="203">cam.puzzle_joinery.bar</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1puzzle__joinery_1aaea56558d97949cc0cf99af9f7746c00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.puzzle_joinery.mitre</definition>
+        <argsstring>(length, thick, angle, angleb, diameter, tolerance, amount=0, stem=1, twist=False, tneck=0.5, tthick=0.01, which=&apos;MF&apos;)</argsstring>
+        <name>mitre</name>
+        <qualifiedname>cam.puzzle_joinery.mitre</qualifiedname>
+        <param>
+          <type>length</type>
+          <defname>length</defname>
+        </param>
+        <param>
+          <type>thick</type>
+          <defname>thick</defname>
+        </param>
+        <param>
+          <type>angle</type>
+          <defname>angle</defname>
+        </param>
+        <param>
+          <type>angleb</type>
+          <defname>angleb</defname>
+        </param>
+        <param>
+          <type>diameter</type>
+          <defname>diameter</defname>
+        </param>
+        <param>
+          <type>tolerance</type>
+          <defname>tolerance</defname>
+        </param>
+        <param>
+          <type>amount</type>
+          <defname>amount</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>stem</type>
+          <defname>stem</defname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>twist</type>
+          <defname>twist</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>tneck</type>
+          <defname>tneck</defname>
+          <defval>0.5</defval>
+        </param>
+        <param>
+          <type>tthick</type>
+          <defname>tthick</defname>
+          <defval>0.01</defval>
+        </param>
+        <param>
+          <type>which</type>
+          <defname>which</defname>
+          <defval>&apos;MF&apos;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/puzzle_joinery.py" line="544" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/puzzle_joinery.py" bodystart="545" bodyend="632"/>
+        <references refid="namespacecam_1_1puzzle__joinery_1af57d1435a944dc9207c05e8a4c0ebb72" compoundref="puzzle__joinery_8py" startline="79" endline="108">cam.puzzle_joinery.fingers</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1puzzle__joinery_1a98efd38937a6d95b6579a1375c780036" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.puzzle_joinery.open_curve</definition>
+        <argsstring>(line, thick, diameter, tolerance, amount=0, stem=1, twist=False, t_neck=0.5, t_thick=0.01, twist_amount=1, which=&apos;MF&apos;, twist_keep=False)</argsstring>
+        <name>open_curve</name>
+        <qualifiedname>cam.puzzle_joinery.open_curve</qualifiedname>
+        <param>
+          <type>line</type>
+          <defname>line</defname>
+        </param>
+        <param>
+          <type>thick</type>
+          <defname>thick</defname>
+        </param>
+        <param>
+          <type>diameter</type>
+          <defname>diameter</defname>
+        </param>
+        <param>
+          <type>tolerance</type>
+          <defname>tolerance</defname>
+        </param>
+        <param>
+          <type>amount</type>
+          <defname>amount</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>stem</type>
+          <defname>stem</defname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>twist</type>
+          <defname>twist</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>t_neck</type>
+          <defname>t_neck</defname>
+          <defval>0.5</defval>
+        </param>
+        <param>
+          <type>t_thick</type>
+          <defname>t_thick</defname>
+          <defval>0.01</defval>
+        </param>
+        <param>
+          <type>twist_amount</type>
+          <defname>twist_amount</defname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>which</type>
+          <defname>which</defname>
+          <defval>&apos;MF&apos;</defval>
+        </param>
+        <param>
+          <type>twist_keep</type>
+          <defname>twist_keep</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/puzzle_joinery.py" line="633" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/puzzle_joinery.py" bodystart="634" bodyend="711"/>
+        <references refid="namespacecam_1_1puzzle__joinery_1af57d1435a944dc9207c05e8a4c0ebb72" compoundref="puzzle__joinery_8py" startline="79" endline="108">cam.puzzle_joinery.fingers</references>
+        <references refid="namespacecam_1_1puzzle__joinery_1a5034c27cd1215fd40b8ea153c9d8403c" compoundref="puzzle__joinery_8py" startline="109" endline="124">cam.puzzle_joinery.twistf</references>
+        <references refid="namespacecam_1_1puzzle__joinery_1a49355291518955c6516bfbe10fd34b53" compoundref="puzzle__joinery_8py" startline="125" endline="143">cam.puzzle_joinery.twistm</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1puzzle__joinery_1a0f65ff6f9261396e1c80cd5461fceee4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.puzzle_joinery.tile</definition>
+        <argsstring>(diameter, tolerance, tile_x_amount, tile_y_amount, stem=1)</argsstring>
+        <name>tile</name>
+        <qualifiedname>cam.puzzle_joinery.tile</qualifiedname>
+        <param>
+          <type>diameter</type>
+          <defname>diameter</defname>
+        </param>
+        <param>
+          <type>tolerance</type>
+          <defname>tolerance</defname>
+        </param>
+        <param>
+          <type>tile_x_amount</type>
+          <defname>tile_x_amount</defname>
+        </param>
+        <param>
+          <type>tile_y_amount</type>
+          <defname>tile_y_amount</defname>
+        </param>
+        <param>
+          <type>stem</type>
+          <defname>stem</defname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/puzzle_joinery.py" line="712" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/puzzle_joinery.py" bodystart="712" bodyend="749"/>
+        <references refid="namespacecam_1_1puzzle__joinery_1af57d1435a944dc9207c05e8a4c0ebb72" compoundref="puzzle__joinery_8py" startline="79" endline="108">cam.puzzle_joinery.fingers</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>BlenderCAM &apos;puzzle_joinery.py&apos; © 2021 Alain Pelletier
+
+Functions to add various puzzle joints as curves.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/puzzle_joinery.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,651 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP" xml:lang="en-US">
+<title>cam.nc.makerbotHBP.CreatorMakerbotHBP Class Reference</title>
+<indexterm><primary>cam.nc.makerbotHBP.CreatorMakerbotHBP</primary></indexterm>
+Inheritance diagram for cam.nc.makerbotHBP.CreatorMakerbotHBP:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.nc.makerbotHBP.CreatorMakerbotHBP:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a8c993922dd60b3bb6b834104823b360d">__init__</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1afec3696325d2a3e72a6a2e0a71725afe">program_begin</link> (self, id, name=&apos;&apos;)</para>
+
+<para>program begin and end </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a0a17fb03354dfc3856e3558c5923ef8d">program_end</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1ae4a0e78b291557efad003bc3784b4513">program_stop</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a84d4d127818490ef471a20e28fdfd953">write_blocknum</link> (self)</para>
+
+<para>general </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a3f57ab94dd67602ec045e2570f4e700a">set_plane</link> (self, plane)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1ad0635c5b86bca3eeb32829218bdb61cc">workplane</link> (self, id)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a3532336263fad46a20671b4a4ae7e1c8">spindle</link> (self, s, clockwise)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a163afd0b97651a1d03fd6b077fa3e3ae">extruder_on</link> (self)</para>
+
+<para>Extruder Control. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a8339e2b893563769accd0ae0f5498430">extruder_off</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a6df2dd646a3165cf120e748231f6b8c6">set_extruder_flowrate</link> (self, flowrate)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a5053ec6b16f6b2d36c51e5aab42a76da">extruder_temp</link> (self, temp)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a69aa76179959feb96a28bac5d511df7a">build_bed_temp</link> (self, temp)</para>
+
+<para>Build Environment Control. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1ada46a989be6988f72210d9de4538b04f">chamber_temp</link> (self, temp)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a0d3858e15f25443b2ab001d295d843fc">fan_on</link> (self)</para>
+
+<para>Fan Control. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1ae46f7f079342239ebace0b6dae603155">fan_off</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1aa12f65920102b20d74d8be06dd0e0f98">wipe</link> (self)</para>
+
+<para>Custom routines. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1ac22be9ce0666ae7af1252717f81ecd0b">insert</link> (self, text)</para>
+
+<para>APT style INSERT- insert anything into program. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a2104f06ae7b7b2ead20d9e4e38514ed9">tool_change</link> (self, id)</para>
+
+<para>tool info </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1ad1566814ca2b86e35100efb2f928f10f">tool_defn</link> (self, id, name=&apos;&apos;, params=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a053352fbb6bc22b6d4602dc500b967e0">rapid</link> (self, <link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1acbd5056bb3fc225bcd4952034fae895e">x</link>=None, <link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a23bcb232e54936b156212975365490ff">y</link>=None, <link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a3f0b3135566ce650378a38829c45f63c">z</link>=None, <link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a0c25d13d765cc39c9ad4accea47fc89f">a</link>=None, <link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a1d76a5f0bcf75f63439839b09b144fdd">b</link>=None, <link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a6b3852a40df6162ce9e4cf2cc2791c43">c</link>=None)</para>
+
+<para>Moves. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a1d9d3db267970ad8b006b6b0448d2612">feed</link> (self, <link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1acbd5056bb3fc225bcd4952034fae895e">x</link>=None, <link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a23bcb232e54936b156212975365490ff">y</link>=None, <link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a3f0b3135566ce650378a38829c45f63c">z</link>=None, <link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a0c25d13d765cc39c9ad4accea47fc89f">a</link>=None, <link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a1d76a5f0bcf75f63439839b09b144fdd">b</link>=None, <link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a6b3852a40df6162ce9e4cf2cc2791c43">c</link>=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1ae5dd31471f1eea4c601bac75cecfd20a">same_xyz</link> (self, <link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1acbd5056bb3fc225bcd4952034fae895e">x</link>=None, <link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a23bcb232e54936b156212975365490ff">y</link>=None, <link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a3f0b3135566ce650378a38829c45f63c">z</link>=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a6a900c248df1059acd397cb17fc4b18c">arc</link> (self, cw, <link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1acbd5056bb3fc225bcd4952034fae895e">x</link>=None, <link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a23bcb232e54936b156212975365490ff">y</link>=None, <link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a3f0b3135566ce650378a38829c45f63c">z</link>=None, i=None, j=None, k=None, r=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a2cf899fa0839287bdca94b6207c078d6">arc_cw</link> (self, <link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1acbd5056bb3fc225bcd4952034fae895e">x</link>=None, <link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a23bcb232e54936b156212975365490ff">y</link>=None, <link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a3f0b3135566ce650378a38829c45f63c">z</link>=None, i=None, j=None, k=None, r=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1aa7b30248f278113e0c9a324820824941">arc_ccw</link> (self, <link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1acbd5056bb3fc225bcd4952034fae895e">x</link>=None, <link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a23bcb232e54936b156212975365490ff">y</link>=None, <link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a3f0b3135566ce650378a38829c45f63c">z</link>=None, i=None, j=None, k=None, r=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a699fda0d1ab542d35eb5ceb78d61dc42">dwell</link> (self, t)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1ae8b1be677b9bb93b6dfa827ca45d71bb">rapid_home</link> (self, <link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1acbd5056bb3fc225bcd4952034fae895e">x</link>=None, <link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a23bcb232e54936b156212975365490ff">y</link>=None, <link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a3f0b3135566ce650378a38829c45f63c">z</link>=None, <link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a0c25d13d765cc39c9ad4accea47fc89f">a</link>=None, <link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a1d76a5f0bcf75f63439839b09b144fdd">b</link>=None, <link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a6b3852a40df6162ce9e4cf2cc2791c43">c</link>=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a63abdcd0178a274c9d498a24d7242388">rapid_unhome</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1acc583019a39e9dcd04840feda7e12cfa">set_machine_coordinates</link> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a583e0028291a5cfff0e729e3888674c7">absolute_flag</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1abcbc9ce35650934e8faabdce1de54cb4">prev_g91</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a355188a2dbf597791128263c83994902">prev_g0123</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1acbd5056bb3fc225bcd4952034fae895e">x</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a23bcb232e54936b156212975365490ff">y</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a3f0b3135566ce650378a38829c45f63c">z</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a0c25d13d765cc39c9ad4accea47fc89f">a</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a1d76a5f0bcf75f63439839b09b144fdd">b</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a6b3852a40df6162ce9e4cf2cc2791c43">c</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1abdb10a7a76ab79b6ea503ab7781e9b73">fhv</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a75b3375eceeb0c5db2ca0d4dea79b26c">creator</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a8c993922dd60b3bb6b834104823b360d"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>cam.nc.makerbotHBP.CreatorMakerbotHBP</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbotHBP.CreatorMakerbotHBP</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbotHBP.CreatorMakerbotHBP.__init__ ( self)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a6a900c248df1059acd397cb17fc4b18c"/><section>
+    <title>arc()</title>
+<indexterm><primary>arc</primary><secondary>cam.nc.makerbotHBP.CreatorMakerbotHBP</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbotHBP.CreatorMakerbotHBP</primary><secondary>arc</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbotHBP.CreatorMakerbotHBP.arc ( self,  cw,  x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+,  i = <computeroutput>None</computeroutput>
+,  j = <computeroutput>None</computeroutput>
+,  k = <computeroutput>None</computeroutput>
+,  r = <computeroutput>None</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_a6a900c248df1059acd397cb17fc4b18c_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_a6a900c248df1059acd397cb17fc4b18c_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1aa7b30248f278113e0c9a324820824941"/><section>
+    <title>arc_ccw()</title>
+<indexterm><primary>arc_ccw</primary><secondary>cam.nc.makerbotHBP.CreatorMakerbotHBP</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbotHBP.CreatorMakerbotHBP</primary><secondary>arc_ccw</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbotHBP.CreatorMakerbotHBP.arc_ccw ( self,  x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+,  i = <computeroutput>None</computeroutput>
+,  j = <computeroutput>None</computeroutput>
+,  k = <computeroutput>None</computeroutput>
+,  r = <computeroutput>None</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_aa7b30248f278113e0c9a324820824941_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a2cf899fa0839287bdca94b6207c078d6"/><section>
+    <title>arc_cw()</title>
+<indexterm><primary>arc_cw</primary><secondary>cam.nc.makerbotHBP.CreatorMakerbotHBP</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbotHBP.CreatorMakerbotHBP</primary><secondary>arc_cw</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbotHBP.CreatorMakerbotHBP.arc_cw ( self,  x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+,  i = <computeroutput>None</computeroutput>
+,  j = <computeroutput>None</computeroutput>
+,  k = <computeroutput>None</computeroutput>
+,  r = <computeroutput>None</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_a2cf899fa0839287bdca94b6207c078d6_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a69aa76179959feb96a28bac5d511df7a"/><section>
+    <title>build_bed_temp()</title>
+<indexterm><primary>build_bed_temp</primary><secondary>cam.nc.makerbotHBP.CreatorMakerbotHBP</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbotHBP.CreatorMakerbotHBP</primary><secondary>build_bed_temp</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbotHBP.CreatorMakerbotHBP.build_bed_temp ( self,  temp)</computeroutput></para><para>
+
+<para>Build Environment Control. </para>
+</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_a69aa76179959feb96a28bac5d511df7a_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1ada46a989be6988f72210d9de4538b04f"/><section>
+    <title>chamber_temp()</title>
+<indexterm><primary>chamber_temp</primary><secondary>cam.nc.makerbotHBP.CreatorMakerbotHBP</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbotHBP.CreatorMakerbotHBP</primary><secondary>chamber_temp</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbotHBP.CreatorMakerbotHBP.chamber_temp ( self,  temp)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_ada46a989be6988f72210d9de4538b04f_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a699fda0d1ab542d35eb5ceb78d61dc42"/><section>
+    <title>dwell()</title>
+<indexterm><primary>dwell</primary><secondary>cam.nc.makerbotHBP.CreatorMakerbotHBP</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbotHBP.CreatorMakerbotHBP</primary><secondary>dwell</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbotHBP.CreatorMakerbotHBP.dwell ( self,  t)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_a699fda0d1ab542d35eb5ceb78d61dc42_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_a699fda0d1ab542d35eb5ceb78d61dc42_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a8339e2b893563769accd0ae0f5498430"/><section>
+    <title>extruder_off()</title>
+<indexterm><primary>extruder_off</primary><secondary>cam.nc.makerbotHBP.CreatorMakerbotHBP</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbotHBP.CreatorMakerbotHBP</primary><secondary>extruder_off</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbotHBP.CreatorMakerbotHBP.extruder_off ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_a8339e2b893563769accd0ae0f5498430_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a163afd0b97651a1d03fd6b077fa3e3ae"/><section>
+    <title>extruder_on()</title>
+<indexterm><primary>extruder_on</primary><secondary>cam.nc.makerbotHBP.CreatorMakerbotHBP</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbotHBP.CreatorMakerbotHBP</primary><secondary>extruder_on</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbotHBP.CreatorMakerbotHBP.extruder_on ( self)</computeroutput></para><para>
+
+<para>Extruder Control. </para>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a5053ec6b16f6b2d36c51e5aab42a76da"/><section>
+    <title>extruder_temp()</title>
+<indexterm><primary>extruder_temp</primary><secondary>cam.nc.makerbotHBP.CreatorMakerbotHBP</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbotHBP.CreatorMakerbotHBP</primary><secondary>extruder_temp</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbotHBP.CreatorMakerbotHBP.extruder_temp ( self,  temp)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_a5053ec6b16f6b2d36c51e5aab42a76da_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1ae46f7f079342239ebace0b6dae603155"/><section>
+    <title>fan_off()</title>
+<indexterm><primary>fan_off</primary><secondary>cam.nc.makerbotHBP.CreatorMakerbotHBP</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbotHBP.CreatorMakerbotHBP</primary><secondary>fan_off</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbotHBP.CreatorMakerbotHBP.fan_off ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_ae46f7f079342239ebace0b6dae603155_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a0d3858e15f25443b2ab001d295d843fc"/><section>
+    <title>fan_on()</title>
+<indexterm><primary>fan_on</primary><secondary>cam.nc.makerbotHBP.CreatorMakerbotHBP</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbotHBP.CreatorMakerbotHBP</primary><secondary>fan_on</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbotHBP.CreatorMakerbotHBP.fan_on ( self)</computeroutput></para><para>
+
+<para>Fan Control. </para>
+</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_a0d3858e15f25443b2ab001d295d843fc_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a1d9d3db267970ad8b006b6b0448d2612"/><section>
+    <title>feed()</title>
+<indexterm><primary>feed</primary><secondary>cam.nc.makerbotHBP.CreatorMakerbotHBP</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbotHBP.CreatorMakerbotHBP</primary><secondary>feed</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbotHBP.CreatorMakerbotHBP.feed ( self,  x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+,  a = <computeroutput>None</computeroutput>
+,  b = <computeroutput>None</computeroutput>
+,  c = <computeroutput>None</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_a1d9d3db267970ad8b006b6b0448d2612_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_a1d9d3db267970ad8b006b6b0448d2612_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1ac22be9ce0666ae7af1252717f81ecd0b"/><section>
+    <title>insert()</title>
+<indexterm><primary>insert</primary><secondary>cam.nc.makerbotHBP.CreatorMakerbotHBP</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbotHBP.CreatorMakerbotHBP</primary><secondary>insert</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbotHBP.CreatorMakerbotHBP.insert ( self,  text)</computeroutput></para><para>
+
+<para>APT style INSERT- insert anything into program. </para>
+</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_ac22be9ce0666ae7af1252717f81ecd0b_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1afec3696325d2a3e72a6a2e0a71725afe"/><section>
+    <title>program_begin()</title>
+<indexterm><primary>program_begin</primary><secondary>cam.nc.makerbotHBP.CreatorMakerbotHBP</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbotHBP.CreatorMakerbotHBP</primary><secondary>program_begin</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbotHBP.CreatorMakerbotHBP.program_begin ( self,  id,  name = <computeroutput>&apos;&apos;</computeroutput>
+)</computeroutput></para><para>
+
+<para>program begin and end </para>
+</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_afec3696325d2a3e72a6a2e0a71725afe_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a0a17fb03354dfc3856e3558c5923ef8d"/><section>
+    <title>program_end()</title>
+<indexterm><primary>program_end</primary><secondary>cam.nc.makerbotHBP.CreatorMakerbotHBP</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbotHBP.CreatorMakerbotHBP</primary><secondary>program_end</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbotHBP.CreatorMakerbotHBP.program_end ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_a0a17fb03354dfc3856e3558c5923ef8d_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1ae4a0e78b291557efad003bc3784b4513"/><section>
+    <title>program_stop()</title>
+<indexterm><primary>program_stop</primary><secondary>cam.nc.makerbotHBP.CreatorMakerbotHBP</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbotHBP.CreatorMakerbotHBP</primary><secondary>program_stop</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbotHBP.CreatorMakerbotHBP.program_stop ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_ae4a0e78b291557efad003bc3784b4513_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a053352fbb6bc22b6d4602dc500b967e0"/><section>
+    <title>rapid()</title>
+<indexterm><primary>rapid</primary><secondary>cam.nc.makerbotHBP.CreatorMakerbotHBP</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbotHBP.CreatorMakerbotHBP</primary><secondary>rapid</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbotHBP.CreatorMakerbotHBP.rapid ( self,  x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+,  a = <computeroutput>None</computeroutput>
+,  b = <computeroutput>None</computeroutput>
+,  c = <computeroutput>None</computeroutput>
+)</computeroutput></para><para>
+
+<para>Moves. </para>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_a053352fbb6bc22b6d4602dc500b967e0_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1ae8b1be677b9bb93b6dfa827ca45d71bb"/><section>
+    <title>rapid_home()</title>
+<indexterm><primary>rapid_home</primary><secondary>cam.nc.makerbotHBP.CreatorMakerbotHBP</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbotHBP.CreatorMakerbotHBP</primary><secondary>rapid_home</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbotHBP.CreatorMakerbotHBP.rapid_home ( self,  x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+,  a = <computeroutput>None</computeroutput>
+,  b = <computeroutput>None</computeroutput>
+,  c = <computeroutput>None</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a63abdcd0178a274c9d498a24d7242388"/><section>
+    <title>rapid_unhome()</title>
+<indexterm><primary>rapid_unhome</primary><secondary>cam.nc.makerbotHBP.CreatorMakerbotHBP</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbotHBP.CreatorMakerbotHBP</primary><secondary>rapid_unhome</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbotHBP.CreatorMakerbotHBP.rapid_unhome ( self)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1ae5dd31471f1eea4c601bac75cecfd20a"/><section>
+    <title>same_xyz()</title>
+<indexterm><primary>same_xyz</primary><secondary>cam.nc.makerbotHBP.CreatorMakerbotHBP</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbotHBP.CreatorMakerbotHBP</primary><secondary>same_xyz</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbotHBP.CreatorMakerbotHBP.same_xyz ( self,  x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_ae5dd31471f1eea4c601bac75cecfd20a_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a6df2dd646a3165cf120e748231f6b8c6"/><section>
+    <title>set_extruder_flowrate()</title>
+<indexterm><primary>set_extruder_flowrate</primary><secondary>cam.nc.makerbotHBP.CreatorMakerbotHBP</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbotHBP.CreatorMakerbotHBP</primary><secondary>set_extruder_flowrate</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbotHBP.CreatorMakerbotHBP.set_extruder_flowrate ( self,  flowrate)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_a6df2dd646a3165cf120e748231f6b8c6_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1acc583019a39e9dcd04840feda7e12cfa"/><section>
+    <title>set_machine_coordinates()</title>
+<indexterm><primary>set_machine_coordinates</primary><secondary>cam.nc.makerbotHBP.CreatorMakerbotHBP</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbotHBP.CreatorMakerbotHBP</primary><secondary>set_machine_coordinates</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbotHBP.CreatorMakerbotHBP.set_machine_coordinates ( self)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a3f57ab94dd67602ec045e2570f4e700a"/><section>
+    <title>set_plane()</title>
+<indexterm><primary>set_plane</primary><secondary>cam.nc.makerbotHBP.CreatorMakerbotHBP</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbotHBP.CreatorMakerbotHBP</primary><secondary>set_plane</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbotHBP.CreatorMakerbotHBP.set_plane ( self,  plane)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a3532336263fad46a20671b4a4ae7e1c8"/><section>
+    <title>spindle()</title>
+<indexterm><primary>spindle</primary><secondary>cam.nc.makerbotHBP.CreatorMakerbotHBP</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbotHBP.CreatorMakerbotHBP</primary><secondary>spindle</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbotHBP.CreatorMakerbotHBP.spindle ( self,  s,  clockwise)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_a3532336263fad46a20671b4a4ae7e1c8_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a2104f06ae7b7b2ead20d9e4e38514ed9"/><section>
+    <title>tool_change()</title>
+<indexterm><primary>tool_change</primary><secondary>cam.nc.makerbotHBP.CreatorMakerbotHBP</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbotHBP.CreatorMakerbotHBP</primary><secondary>tool_change</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbotHBP.CreatorMakerbotHBP.tool_change ( self,  id)</computeroutput></para><para>
+
+<para>tool info </para>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1ad1566814ca2b86e35100efb2f928f10f"/><section>
+    <title>tool_defn()</title>
+<indexterm><primary>tool_defn</primary><secondary>cam.nc.makerbotHBP.CreatorMakerbotHBP</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbotHBP.CreatorMakerbotHBP</primary><secondary>tool_defn</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbotHBP.CreatorMakerbotHBP.tool_defn ( self,  id,  name = <computeroutput>&apos;&apos;</computeroutput>
+,  params = <computeroutput>None</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1aa12f65920102b20d74d8be06dd0e0f98"/><section>
+    <title>wipe()</title>
+<indexterm><primary>wipe</primary><secondary>cam.nc.makerbotHBP.CreatorMakerbotHBP</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbotHBP.CreatorMakerbotHBP</primary><secondary>wipe</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbotHBP.CreatorMakerbotHBP.wipe ( self)</computeroutput></para><para>
+
+<para>Custom routines. </para>
+</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_aa12f65920102b20d74d8be06dd0e0f98_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1ad0635c5b86bca3eeb32829218bdb61cc"/><section>
+    <title>workplane()</title>
+<indexterm><primary>workplane</primary><secondary>cam.nc.makerbotHBP.CreatorMakerbotHBP</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbotHBP.CreatorMakerbotHBP</primary><secondary>workplane</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbotHBP.CreatorMakerbotHBP.workplane ( self,  id)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a84d4d127818490ef471a20e28fdfd953"/><section>
+    <title>write_blocknum()</title>
+<indexterm><primary>write_blocknum</primary><secondary>cam.nc.makerbotHBP.CreatorMakerbotHBP</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbotHBP.CreatorMakerbotHBP</primary><secondary>write_blocknum</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbotHBP.CreatorMakerbotHBP.write_blocknum ( self)</computeroutput></para><para>
+
+<para>general </para>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_a84d4d127818490ef471a20e28fdfd953_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a0c25d13d765cc39c9ad4accea47fc89f"/><section>
+    <title>a</title>
+<indexterm><primary>a</primary><secondary>cam.nc.makerbotHBP.CreatorMakerbotHBP</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbotHBP.CreatorMakerbotHBP</primary><secondary>a</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbotHBP.CreatorMakerbotHBP.a</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a583e0028291a5cfff0e729e3888674c7"/><section>
+    <title>absolute_flag</title>
+<indexterm><primary>absolute_flag</primary><secondary>cam.nc.makerbotHBP.CreatorMakerbotHBP</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbotHBP.CreatorMakerbotHBP</primary><secondary>absolute_flag</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbotHBP.CreatorMakerbotHBP.absolute_flag</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a1d76a5f0bcf75f63439839b09b144fdd"/><section>
+    <title>b</title>
+<indexterm><primary>b</primary><secondary>cam.nc.makerbotHBP.CreatorMakerbotHBP</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbotHBP.CreatorMakerbotHBP</primary><secondary>b</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbotHBP.CreatorMakerbotHBP.b</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a6b3852a40df6162ce9e4cf2cc2791c43"/><section>
+    <title>c</title>
+<indexterm><primary>c</primary><secondary>cam.nc.makerbotHBP.CreatorMakerbotHBP</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbotHBP.CreatorMakerbotHBP</primary><secondary>c</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbotHBP.CreatorMakerbotHBP.c</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a75b3375eceeb0c5db2ca0d4dea79b26c"/><section>
+    <title>creator</title>
+<indexterm><primary>creator</primary><secondary>cam.nc.makerbotHBP.CreatorMakerbotHBP</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbotHBP.CreatorMakerbotHBP</primary><secondary>creator</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbotHBP.CreatorMakerbotHBP.creator<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1abdb10a7a76ab79b6ea503ab7781e9b73"/><section>
+    <title>fhv</title>
+<indexterm><primary>fhv</primary><secondary>cam.nc.makerbotHBP.CreatorMakerbotHBP</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbotHBP.CreatorMakerbotHBP</primary><secondary>fhv</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbotHBP.CreatorMakerbotHBP.fhv</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a355188a2dbf597791128263c83994902"/><section>
+    <title>prev_g0123</title>
+<indexterm><primary>prev_g0123</primary><secondary>cam.nc.makerbotHBP.CreatorMakerbotHBP</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbotHBP.CreatorMakerbotHBP</primary><secondary>prev_g0123</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbotHBP.CreatorMakerbotHBP.prev_g0123</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1abcbc9ce35650934e8faabdce1de54cb4"/><section>
+    <title>prev_g91</title>
+<indexterm><primary>prev_g91</primary><secondary>cam.nc.makerbotHBP.CreatorMakerbotHBP</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbotHBP.CreatorMakerbotHBP</primary><secondary>prev_g91</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbotHBP.CreatorMakerbotHBP.prev_g91</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1acbd5056bb3fc225bcd4952034fae895e"/><section>
+    <title>x</title>
+<indexterm><primary>x</primary><secondary>cam.nc.makerbotHBP.CreatorMakerbotHBP</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbotHBP.CreatorMakerbotHBP</primary><secondary>x</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbotHBP.CreatorMakerbotHBP.x</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a23bcb232e54936b156212975365490ff"/><section>
+    <title>y</title>
+<indexterm><primary>y</primary><secondary>cam.nc.makerbotHBP.CreatorMakerbotHBP</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbotHBP.CreatorMakerbotHBP</primary><secondary>y</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbotHBP.CreatorMakerbotHBP.y</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a3f0b3135566ce650378a38829c45f63c"/><section>
+    <title>z</title>
+<indexterm><primary>z</primary><secondary>cam.nc.makerbotHBP.CreatorMakerbotHBP</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbotHBP.CreatorMakerbotHBP</primary><secondary>z</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbotHBP.CreatorMakerbotHBP.z</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/<link linkend="_makerbotHBP_8py">makerbotHBP.py</link></section>
+</section>

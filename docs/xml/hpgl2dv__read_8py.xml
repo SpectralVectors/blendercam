@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="hpgl2dv__read_8py" kind="file" language="Python">
+    <compoundname>hpgl2dv_read.py</compoundname>
+    <innerclass refid="classcam_1_1nc_1_1hpgl2dv__read_1_1Parser" prot="public">cam::nc::hpgl2dv_read::Parser</innerclass>
+    <innernamespace refid="namespacecam">cam</innernamespace>
+    <innernamespace refid="namespacecam_1_1nc">cam::nc</innernamespace>
+    <innernamespace refid="namespacecam_1_1nc_1_1hpgl2dv__read">cam::nc::hpgl2dv_read</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacecam_1_1nc_1_1hpgl2dv__read" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>hpgl2d_read<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>hpgl</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>sys</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">#<sp/>same<sp/>as<sp/>hpgl2d,<sp/>but<sp/>with<sp/>0.25mm<sp/>units,<sp/>instead<sp/>of<sp/>0.01mm</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="classcam_1_1nc_1_1hpgl2dv__read_1_1Parser" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classcam_1_1nc_1_1hpgl2dv__read_1_1Parser" kindref="compound">Parser</ref>(hpgl.Parser):</highlight></codeline>
+<codeline lineno="8" refid="classcam_1_1nc_1_1hpgl2dv__read_1_1Parser_1a269712711e7b587ba34c74bd7fbb4d7c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classcam_1_1nc_1_1hpgl2dv__read_1_1Parser_1a269712711e7b587ba34c74bd7fbb4d7c" kindref="member">__init__</ref>(self,<sp/>writer):</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hpgl.ParserHgpl2d.__init__(self,<sp/>writer)</highlight></codeline>
+<codeline lineno="10" refid="classcam_1_1nc_1_1hpgl2dv__read_1_1Parser_1a7bd26413ed08ea70c7db360117620d9e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classcam_1_1nc_1_1hpgl2dv__read_1_1Parser_1a7bd26413ed08ea70c7db360117620d9e" kindref="member">units_to_mm</ref><sp/>=<sp/>0.25</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/hpgl2dv_read.py"/>
+  </compounddef>
+</doxygen>

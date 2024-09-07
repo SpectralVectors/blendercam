@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="interface_8py" kind="file" language="Python">
+    <compoundname>interface.py</compoundname>
+    <innerclass refid="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Properties" prot="public">cam::ui_panels::interface::CAM_INTERFACE_Properties</innerclass>
+    <innerclass refid="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Panel" prot="public">cam::ui_panels::interface::CAM_INTERFACE_Panel</innerclass>
+    <innernamespace refid="namespacecam">cam</innernamespace>
+    <innernamespace refid="namespacecam_1_1ui__panels">cam::ui_panels</innernamespace>
+    <innernamespace refid="namespacecam_1_1ui__panels_1_1interface">cam::ui_panels::interface</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacecam_1_1ui__panels_1_1interface" refkind="compound"><highlight class="stringliteral">&quot;&quot;&quot;BlenderCAM<sp/>&apos;interface.py&apos;</highlight></codeline>
+<codeline lineno="2"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="3"><highlight class="stringliteral">&apos;Interface&apos;<sp/>properties<sp/>and<sp/>panel<sp/>in<sp/>Properties<sp/>&gt;<sp/>Render</highlight></codeline>
+<codeline lineno="4"><highlight class="stringliteral">&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>bpy</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>bpy.props<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>EnumProperty</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacebpy_1_1types" kindref="compound">bpy.types</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>(</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>Panel,</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>PropertyGroup</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.buttons_panel<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>CAMButtonsPanel</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="namespacecam_1_1ui__panels_1_1interface_1a8738e190503acf86522873336035d26e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacecam_1_1ui__panels_1_1interface_1a8738e190503acf86522873336035d26e" kindref="member">update_interface</ref>(self,<sp/>context):</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>set<sp/>default<sp/>for<sp/>new<sp/>files</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>addon_prefs<sp/>=<sp/>context.preferences.addons[</highlight><highlight class="stringliteral">&quot;bl_ext.user_default.blendercam&quot;</highlight><highlight class="normal">].preferences</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>addon_prefs.default_interface_level<sp/>=<sp/>context.scene.interface.level</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>bpy.ops.wm.save_userpref()</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Properties" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Properties" kindref="compound">CAM_INTERFACE_Properties</ref>(PropertyGroup):</highlight></codeline>
+<codeline lineno="24" refid="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Properties_1afd8eb7908c06b09bd47cc4c9df36acc2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>level:<sp/>EnumProperty(</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&quot;Interface&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>description=</highlight><highlight class="stringliteral">&quot;Choose<sp/>visible<sp/>options&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>items=[</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="stringliteral">&apos;0&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Basic&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Only<sp/>show<sp/>essential<sp/>options&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="stringliteral">&apos;1&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Advanced&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Show<sp/>advanced<sp/>options&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="stringliteral">&apos;2&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Complete&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Show<sp/>all<sp/>options&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="stringliteral">&apos;3&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Experimental&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Show<sp/>experimental<sp/>options&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>],</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=</highlight><highlight class="stringliteral">&apos;0&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>update=update_interface,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Panel" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Panel" kindref="compound">CAM_INTERFACE_Panel</ref>(<ref refid="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel" kindref="compound">CAMButtonsPanel</ref>,<sp/>Panel):</highlight></codeline>
+<codeline lineno="39" refid="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Panel_1a10bd2fdcf79aadc72e020a6a64a599db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>bl_label<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Interface&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Panel_1a060de30e6e3a6f7468808434942c8b5b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>bl_idname<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;WORLD_PT_CAM_INTERFACE&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Panel_1af3991f62632953176ca2c957d53ae9a8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>always_show_panel<sp/>=<sp/></highlight><highlight class="keyword">True</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Panel_1a74616c74cd87ed76bf847a26ec73cc89" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Panel_1a74616c74cd87ed76bf847a26ec73cc89" kindref="member">draw_interface_level</ref>(self):</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.layout.prop(self.<ref refid="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Panel_1a31b339ea41c92a6cfa95bb8ba47522eb" kindref="member">context</ref>.scene.interface,<sp/></highlight><highlight class="stringliteral">&apos;level&apos;</highlight><highlight class="normal">,<sp/>text=</highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Panel_1ac27334ae953aea9512a144cb1ef4bdd5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Panel_1ac27334ae953aea9512a144cb1ef4bdd5" kindref="member">draw</ref>(self,<sp/>context):</highlight></codeline>
+<codeline lineno="47" refid="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Panel_1a31b339ea41c92a6cfa95bb8ba47522eb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Panel_1a31b339ea41c92a6cfa95bb8ba47522eb" kindref="member">context</ref><sp/>=<sp/>context</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Panel_1a74616c74cd87ed76bf847a26ec73cc89" kindref="member">draw_interface_level</ref>()</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/interface.py"/>
+  </compounddef>
+</doxygen>

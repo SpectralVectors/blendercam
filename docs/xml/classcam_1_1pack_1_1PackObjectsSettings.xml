@@ -1,0 +1,228 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1pack_1_1PackObjectsSettings" kind="class" language="Python" prot="public">
+    <compoundname>cam::pack::PackObjectsSettings</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PropertyGroup</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1pack_1_1PackObjectsSettings_1a44627536abd9cb5dd05280c440b7d1b7" prot="public" static="yes" mutable="no">
+        <type>EnumProperty</type>
+        <definition>EnumProperty cam.pack.PackObjectsSettings::sheet_fill_direction</definition>
+        <argsstring></argsstring>
+        <name>sheet_fill_direction</name>
+        <qualifiedname>cam.pack.PackObjectsSettings.sheet_fill_direction</qualifiedname>
+        <initializer>(
+        name=&quot;Fill Direction&quot;,
+        items=(
+            (&quot;X&quot;, &quot;X&quot;, &quot;Fills sheet in X axis direction&quot;),
+            (&quot;Y&quot;, &quot;Y&quot;, &quot;Fills sheet in Y axis direction&quot;),
+        ),
+        description=&quot;Fill direction of the packer algorithm&quot;,
+        default=&quot;Y&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pack.py" line="200" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pack.py" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1pack_1_1PackObjectsSettings_1a253cadbd60015735039e18689c6b6741" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.pack.PackObjectsSettings::sheet_x</definition>
+        <argsstring></argsstring>
+        <name>sheet_x</name>
+        <qualifiedname>cam.pack.PackObjectsSettings.sheet_x</qualifiedname>
+        <initializer>(
+        name=&quot;X Size&quot;,
+        description=&quot;Sheet size&quot;,
+        min=0.001,
+        max=10,
+        default=0.5,
+        precision=<ref refid="namespacecam_1_1constants_1a76605b94e98c701ed2586b9e35e6c6e1" kindref="member">constants.PRECISION</ref>,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pack.py" line="209" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pack.py" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1pack_1_1PackObjectsSettings_1ad15fe0bf8b3e3367c4090bd2f3aee2d5" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.pack.PackObjectsSettings::sheet_y</definition>
+        <argsstring></argsstring>
+        <name>sheet_y</name>
+        <qualifiedname>cam.pack.PackObjectsSettings.sheet_y</qualifiedname>
+        <initializer>(
+        name=&quot;Y Size&quot;,
+        description=&quot;Sheet size&quot;,
+        min=0.001,
+        max=10,
+        default=0.5,
+        precision=<ref refid="namespacecam_1_1constants_1a76605b94e98c701ed2586b9e35e6c6e1" kindref="member">constants.PRECISION</ref>,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pack.py" line="218" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pack.py" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1pack_1_1PackObjectsSettings_1a4b798344e0c9bdb4c6e466e017119398" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.pack.PackObjectsSettings::distance</definition>
+        <argsstring></argsstring>
+        <name>distance</name>
+        <qualifiedname>cam.pack.PackObjectsSettings.distance</qualifiedname>
+        <initializer>(
+        name=&quot;Minimum Distance&quot;,
+        description=&quot;Minimum distance between objects(should be &quot;
+        &quot;at least cutter diameter!)&quot;,
+        min=0.001,
+        max=10,
+        default=0.01,
+        precision=<ref refid="namespacecam_1_1constants_1a76605b94e98c701ed2586b9e35e6c6e1" kindref="member">constants.PRECISION</ref>,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pack.py" line="227" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pack.py" bodystart="227" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurveHatch_1ad75191027148391d9c4d0ee0b81dbdd2" compoundref="curvecamcreate_8py" startline="125" endline="203">cam.curvecamcreate.CamCurveHatch.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1pack_1_1PackObjectsSettings_1adca2153c81c6606e51046e35469060db" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.pack.PackObjectsSettings::tolerance</definition>
+        <argsstring></argsstring>
+        <name>tolerance</name>
+        <qualifiedname>cam.pack.PackObjectsSettings.tolerance</qualifiedname>
+        <initializer>(
+        name=&quot;Placement Tolerance&quot;,
+        description=&quot;Tolerance for placement: smaller value slower placemant&quot;,
+        min=0.001,
+        max=0.02,
+        default=0.005,
+        precision=<ref refid="namespacecam_1_1constants_1a76605b94e98c701ed2586b9e35e6c6e1" kindref="member">constants.PRECISION</ref>,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pack.py" line="237" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pack.py" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1pack_1_1PackObjectsSettings_1abaefaa7d5bb566e8d76663b6b528cd58" prot="public" static="yes" mutable="no">
+        <type>BoolProperty</type>
+        <definition>BoolProperty cam.pack.PackObjectsSettings::rotate</definition>
+        <argsstring></argsstring>
+        <name>rotate</name>
+        <qualifiedname>cam.pack.PackObjectsSettings.rotate</qualifiedname>
+        <initializer>(
+        name=&quot;Enable Rotation&quot;,
+        description=&quot;Enable rotation of elements&quot;,
+        default=True,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pack.py" line="246" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pack.py" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1pack_1_1PackObjectsSettings_1a4305847ef749b076419707aebc3f350c" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.pack.PackObjectsSettings::rotate_angle</definition>
+        <argsstring></argsstring>
+        <name>rotate_angle</name>
+        <qualifiedname>cam.pack.PackObjectsSettings.rotate_angle</qualifiedname>
+        <initializer>(
+        name=&quot;Placement Angle Rotation Step&quot;,
+        description=&quot;Bigger rotation angle, faster placemant&quot;,
+        default=0.19635 * 4,
+        min=pi / 180,
+        max=pi,
+        precision=5,
+        subtype=&quot;ANGLE&quot;,
+        unit=&quot;ROTATION&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pack.py" line="251" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pack.py" bodystart="251" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>stores all data for machines</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PropertyGroup</label>
+      </node>
+      <node id="1">
+        <label>cam.pack.PackObjectsSettings</label>
+        <link refid="classcam_1_1pack_1_1PackObjectsSettings"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>BoolProperty</label>
+      </node>
+      <node id="3">
+        <label>EnumProperty</label>
+      </node>
+      <node id="4">
+        <label>FloatProperty</label>
+      </node>
+      <node id="2">
+        <label>PropertyGroup</label>
+      </node>
+      <node id="1">
+        <label>cam.pack.PackObjectsSettings</label>
+        <link refid="classcam_1_1pack_1_1PackObjectsSettings"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+sheet_fill_direction</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+distance</edgelabel>
+          <edgelabel>+rotate_angle</edgelabel>
+          <edgelabel>+sheet_x</edgelabel>
+          <edgelabel>+sheet_y</edgelabel>
+          <edgelabel>+tolerance</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+rotate</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pack.py" line="197" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pack.py" bodystart="197" bodyend="261"/>
+    <listofallmembers>
+      <member refid="classcam_1_1pack_1_1PackObjectsSettings_1a4b798344e0c9bdb4c6e466e017119398" prot="public" virt="non-virtual"><scope>cam::pack::PackObjectsSettings</scope><name>distance</name></member>
+      <member refid="classcam_1_1pack_1_1PackObjectsSettings_1abaefaa7d5bb566e8d76663b6b528cd58" prot="public" virt="non-virtual"><scope>cam::pack::PackObjectsSettings</scope><name>rotate</name></member>
+      <member refid="classcam_1_1pack_1_1PackObjectsSettings_1a4305847ef749b076419707aebc3f350c" prot="public" virt="non-virtual"><scope>cam::pack::PackObjectsSettings</scope><name>rotate_angle</name></member>
+      <member refid="classcam_1_1pack_1_1PackObjectsSettings_1a44627536abd9cb5dd05280c440b7d1b7" prot="public" virt="non-virtual"><scope>cam::pack::PackObjectsSettings</scope><name>sheet_fill_direction</name></member>
+      <member refid="classcam_1_1pack_1_1PackObjectsSettings_1a253cadbd60015735039e18689c6b6741" prot="public" virt="non-virtual"><scope>cam::pack::PackObjectsSettings</scope><name>sheet_x</name></member>
+      <member refid="classcam_1_1pack_1_1PackObjectsSettings_1ad15fe0bf8b3e3367c4090bd2f3aee2d5" prot="public" virt="non-virtual"><scope>cam::pack::PackObjectsSettings</scope><name>sheet_y</name></member>
+      <member refid="classcam_1_1pack_1_1PackObjectsSettings_1adca2153c81c6606e51046e35469060db" prot="public" virt="non-virtual"><scope>cam::pack::PackObjectsSettings</scope><name>tolerance</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

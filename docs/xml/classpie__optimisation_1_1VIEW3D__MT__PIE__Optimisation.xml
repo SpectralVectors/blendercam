@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classpie__optimisation_1_1VIEW3D__MT__PIE__Optimisation" kind="class" language="Python" prot="public">
+    <compoundname>pie_optimisation::VIEW3D_MT_PIE_Optimisation</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Menu</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classpie__optimisation_1_1VIEW3D__MT__PIE__Optimisation_1abf640a4308402cfdc3cb7d7ed2d35425" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str pie_optimisation.VIEW3D_MT_PIE_Optimisation::bl_label</definition>
+        <argsstring></argsstring>
+        <name>bl_label</name>
+        <qualifiedname>pie_optimisation.VIEW3D_MT_PIE_Optimisation.bl_label</qualifiedname>
+        <initializer>=  &quot;∴    Operation Optimisation    ∴&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/active_op/pie_optimisation.py" line="12" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/active_op/pie_optimisation.py" bodystart="12" bodyend="-1"/>
+        <referencedby refid="classcam_1_1preset__managers_1_1CAM__MACHINE__MT__presets_1af95f7812d2952b26a26809ab923dac09" compoundref="preset__managers_8py" startline="28" endline="38">cam.preset_managers.CAM_MACHINE_MT_presets.post_cb</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classpie__optimisation_1_1VIEW3D__MT__PIE__Optimisation_1afb7bf718a6dc9deb08c82651f1315d32" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pie_optimisation.VIEW3D_MT_PIE_Optimisation::exact_possible</definition>
+        <argsstring></argsstring>
+        <name>exact_possible</name>
+        <qualifiedname>pie_optimisation.VIEW3D_MT_PIE_Optimisation.exact_possible</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/active_op/pie_optimisation.py" line="31" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/active_op/pie_optimisation.py" bodystart="31" bodyend="-1"/>
+        <referencedby refid="classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1a2151614ea12a845f3fb1a2314be6ab6b" compoundref="optimisation_8py" startline="148" endline="162">cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel.draw_use_opencamlib</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpie__optimisation_1_1VIEW3D__MT__PIE__Optimisation_1a1db364e2a24459d5ae2c8ee60d7e6a54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>pie_optimisation.VIEW3D_MT_PIE_Optimisation.draw</definition>
+        <argsstring>(self, context)</argsstring>
+        <name>draw</name>
+        <qualifiedname>pie_optimisation.VIEW3D_MT_PIE_Optimisation.draw</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/active_op/pie_optimisation.py" line="14" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/active_op/pie_optimisation.py" bodystart="14" bodyend="94"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Menu</label>
+      </node>
+      <node id="1">
+        <label>pie_optimisation.VIEW3D_MT_PIE_Optimisation</label>
+        <link refid="classpie__optimisation_1_1VIEW3D__MT__PIE__Optimisation"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Menu</label>
+      </node>
+      <node id="1">
+        <label>pie_optimisation.VIEW3D_MT_PIE_Optimisation</label>
+        <link refid="classpie__optimisation_1_1VIEW3D__MT__PIE__Optimisation"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+bl_label</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/active_op/pie_optimisation.py" line="10" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/active_op/pie_optimisation.py" bodystart="10" bodyend="94"/>
+    <listofallmembers>
+      <member refid="classpie__optimisation_1_1VIEW3D__MT__PIE__Optimisation_1abf640a4308402cfdc3cb7d7ed2d35425" prot="public" virt="non-virtual"><scope>pie_optimisation::VIEW3D_MT_PIE_Optimisation</scope><name>bl_label</name></member>
+      <member refid="classpie__optimisation_1_1VIEW3D__MT__PIE__Optimisation_1a1db364e2a24459d5ae2c8ee60d7e6a54" prot="public" virt="non-virtual"><scope>pie_optimisation::VIEW3D_MT_PIE_Optimisation</scope><name>draw</name></member>
+      <member refid="classpie__optimisation_1_1VIEW3D__MT__PIE__Optimisation_1afb7bf718a6dc9deb08c82651f1315d32" prot="public" virt="non-virtual"><scope>pie_optimisation::VIEW3D_MT_PIE_Optimisation</scope><name>exact_possible</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

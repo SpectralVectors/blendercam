@@ -1,0 +1,470 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacecam_1_1basrelief" xml:lang="en-US">
+<title>cam.basrelief Namespace Reference</title>
+<indexterm><primary>cam.basrelief</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classcam_1_1basrelief_1_1BASRELIEF__Panel">BASRELIEF_Panel</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classcam_1_1basrelief_1_1BasReliefsettings">BasReliefsettings</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classcam_1_1basrelief_1_1DoBasRelief">DoBasRelief</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classcam_1_1basrelief_1_1ProblemAreas">ProblemAreas</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classcam_1_1basrelief_1_1ReliefError">ReliefError</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1a479a5a367df382f5a4d97e5d27fbc319">copy_compbuf_data</link> (inbuf, outbuf)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1a9cee957b1946a898fae51b693337d1ce">restrictbuf</link> (inbuf, outbuf)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1a9a1b6e682169add543f604f19092d632">prolongate</link> (inbuf, outbuf)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1a84845c220768cd5f4d97ea7af9ca3b4c">idx</link> (r, c, cols)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1ad911a47b6767f0bf2783a9bcf0e548ef">smooth</link> (U, F, linbcgiterations, planar)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1aabd40958bb5e5febbc0e8a1fb76f2c54">calculate_defect</link> (D, U, F)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1a9554e08aa23fcef890644aa887a681e9">add_correction</link> (U, C)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1a4cb6f56c1aa4d079ec817111a923c767">solve_pde_multigrid</link> (F, U, vcycleiterations, linbcgiterations, smoothiterations, mins, levels, useplanar, planar)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1a822964708e515d6bdd72592d1b8e34a6">asolve</link> (b, x)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1ac14b2661328ff1f3816c445ebfbca188">atimes</link> (x, res)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1a6c50cb05df82a36b700aa844163dd7da">snrm</link> (n, sx, itol)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1a7369a80f45ef2d8d836e195fc67ee148">linbcg</link> (n, b, x, itol, tol, itmax, iter, err, rows, cols, planar)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1a8d2a86f24138ce2779205fdd81f1a4c1">numpysave</link> (a, iname)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1a89cc1c47da537f47ed2cc5c3461b7e00">numpytoimage</link> (a, iname)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1a30e8d0f83e5e0e575e556a4ab0512c16">imagetonumpy</link> (i)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1a42f76d02a7449fbb2db6092b6dd7c708">tonemap</link> (i, exponent)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1a81d6fa58c4adc2b85ee592515995c256">vert</link> (column, row, z, XYscaling, Zscaling)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1a226bc6d169e18fc244218469ede9b91b">buildMesh</link> (mesh_z, br)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1af116eedd1395f73209312d186e0a14d2">renderScene</link> (width, height, bit_diameter, passes_per_radius, make_nodes, view_layer)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1aec4302bf58eeb5e852d939da4758b1f9">problemAreas</link> (br)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1aa0248196478d87431123a0e74908ab1c">relief</link> (br)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1aaa9a591a131ef4eddea99e827ed9c4cf">get_panels</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1a026b08c04bb7d54727fe19238719ae55">register</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1a517f356287ef040219859ad26bdd5627">unregister</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>float <link linkend="_namespacecam_1_1basrelief_1ab0272ddc03e40911739051c6dcc54284">EPS</link> = 1.0e-32</para>
+</listitem>
+            <listitem><para>int <link linkend="_namespacecam_1_1basrelief_1ac779b0b524d86ee2fb8119cffebad256">PRECISION</link> = 5</para>
+</listitem>
+            <listitem><para>bool <link linkend="_namespacecam_1_1basrelief_1a7443029a28482631e23f3f081740ed55">NUMPYALG</link> = False</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>BlenderCAM &apos;basrelief.py&apos;
+
+Module to allow the creation of reliefs from Images or View Layers.
+(https://en.wikipedia.org/wiki/Relief#Bas-relief_or_low_relief)
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespacecam_1_1basrelief_1a9554e08aa23fcef890644aa887a681e9"/><section>
+    <title>add_correction()</title>
+<indexterm><primary>add_correction</primary><secondary>cam.basrelief</secondary></indexterm>
+<indexterm><primary>cam.basrelief</primary><secondary>add_correction</secondary></indexterm>
+<para><computeroutput>cam.basrelief.add_correction ( U,  C)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1basrelief_a9554e08aa23fcef890644aa887a681e9_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1basrelief_1a822964708e515d6bdd72592d1b8e34a6"/><section>
+    <title>asolve()</title>
+<indexterm><primary>asolve</primary><secondary>cam.basrelief</secondary></indexterm>
+<indexterm><primary>cam.basrelief</primary><secondary>asolve</secondary></indexterm>
+<para><computeroutput>cam.basrelief.asolve ( b,  x)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1basrelief_a822964708e515d6bdd72592d1b8e34a6_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1basrelief_1ac14b2661328ff1f3816c445ebfbca188"/><section>
+    <title>atimes()</title>
+<indexterm><primary>atimes</primary><secondary>cam.basrelief</secondary></indexterm>
+<indexterm><primary>cam.basrelief</primary><secondary>atimes</secondary></indexterm>
+<para><computeroutput>cam.basrelief.atimes ( x,  res)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1basrelief_ac14b2661328ff1f3816c445ebfbca188_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1basrelief_1a226bc6d169e18fc244218469ede9b91b"/><section>
+    <title>buildMesh()</title>
+<indexterm><primary>buildMesh</primary><secondary>cam.basrelief</secondary></indexterm>
+<indexterm><primary>cam.basrelief</primary><secondary>buildMesh</secondary></indexterm>
+<para><computeroutput>cam.basrelief.buildMesh ( mesh_z,  br)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1basrelief_a226bc6d169e18fc244218469ede9b91b_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1basrelief_a226bc6d169e18fc244218469ede9b91b_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1basrelief_1aabd40958bb5e5febbc0e8a1fb76f2c54"/><section>
+    <title>calculate_defect()</title>
+<indexterm><primary>calculate_defect</primary><secondary>cam.basrelief</secondary></indexterm>
+<indexterm><primary>cam.basrelief</primary><secondary>calculate_defect</secondary></indexterm>
+<para><computeroutput>cam.basrelief.calculate_defect ( D,  U,  F)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1basrelief_aabd40958bb5e5febbc0e8a1fb76f2c54_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1basrelief_1a479a5a367df382f5a4d97e5d27fbc319"/><section>
+    <title>copy_compbuf_data()</title>
+<indexterm><primary>copy_compbuf_data</primary><secondary>cam.basrelief</secondary></indexterm>
+<indexterm><primary>cam.basrelief</primary><secondary>copy_compbuf_data</secondary></indexterm>
+<para><computeroutput>cam.basrelief.copy_compbuf_data ( inbuf,  outbuf)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1basrelief_a479a5a367df382f5a4d97e5d27fbc319_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1basrelief_1aaa9a591a131ef4eddea99e827ed9c4cf"/><section>
+    <title>get_panels()</title>
+<indexterm><primary>get_panels</primary><secondary>cam.basrelief</secondary></indexterm>
+<indexterm><primary>cam.basrelief</primary><secondary>get_panels</secondary></indexterm>
+<para><computeroutput>cam.basrelief.get_panels ( )</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1basrelief_1a84845c220768cd5f4d97ea7af9ca3b4c"/><section>
+    <title>idx()</title>
+<indexterm><primary>idx</primary><secondary>cam.basrelief</secondary></indexterm>
+<indexterm><primary>cam.basrelief</primary><secondary>idx</secondary></indexterm>
+<para><computeroutput>cam.basrelief.idx ( r,  c,  cols)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1basrelief_1a30e8d0f83e5e0e575e556a4ab0512c16"/><section>
+    <title>imagetonumpy()</title>
+<indexterm><primary>imagetonumpy</primary><secondary>cam.basrelief</secondary></indexterm>
+<indexterm><primary>cam.basrelief</primary><secondary>imagetonumpy</secondary></indexterm>
+<para><computeroutput>cam.basrelief.imagetonumpy ( i)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1basrelief_a30e8d0f83e5e0e575e556a4ab0512c16_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1basrelief_1a7369a80f45ef2d8d836e195fc67ee148"/><section>
+    <title>linbcg()</title>
+<indexterm><primary>linbcg</primary><secondary>cam.basrelief</secondary></indexterm>
+<indexterm><primary>cam.basrelief</primary><secondary>linbcg</secondary></indexterm>
+<para><computeroutput>cam.basrelief.linbcg ( n,  b,  x,  itol,  tol,  itmax,  iter,  err,  rows,  cols,  planar)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1basrelief_a7369a80f45ef2d8d836e195fc67ee148_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1basrelief_a7369a80f45ef2d8d836e195fc67ee148_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1basrelief_1a8d2a86f24138ce2779205fdd81f1a4c1"/><section>
+    <title>numpysave()</title>
+<indexterm><primary>numpysave</primary><secondary>cam.basrelief</secondary></indexterm>
+<indexterm><primary>cam.basrelief</primary><secondary>numpysave</secondary></indexterm>
+<para><computeroutput>cam.basrelief.numpysave ( a,  iname)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1basrelief_a8d2a86f24138ce2779205fdd81f1a4c1_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1basrelief_1a89cc1c47da537f47ed2cc5c3461b7e00"/><section>
+    <title>numpytoimage()</title>
+<indexterm><primary>numpytoimage</primary><secondary>cam.basrelief</secondary></indexterm>
+<indexterm><primary>cam.basrelief</primary><secondary>numpytoimage</secondary></indexterm>
+<para><computeroutput>cam.basrelief.numpytoimage ( a,  iname)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1basrelief_a89cc1c47da537f47ed2cc5c3461b7e00_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1basrelief_1aec4302bf58eeb5e852d939da4758b1f9"/><section>
+    <title>problemAreas()</title>
+<indexterm><primary>problemAreas</primary><secondary>cam.basrelief</secondary></indexterm>
+<indexterm><primary>cam.basrelief</primary><secondary>problemAreas</secondary></indexterm>
+<para><computeroutput>cam.basrelief.problemAreas ( br)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1basrelief_aec4302bf58eeb5e852d939da4758b1f9_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1basrelief_aec4302bf58eeb5e852d939da4758b1f9_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1basrelief_1a9a1b6e682169add543f604f19092d632"/><section>
+    <title>prolongate()</title>
+<indexterm><primary>prolongate</primary><secondary>cam.basrelief</secondary></indexterm>
+<indexterm><primary>cam.basrelief</primary><secondary>prolongate</secondary></indexterm>
+<para><computeroutput>cam.basrelief.prolongate ( inbuf,  outbuf)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1basrelief_a9a1b6e682169add543f604f19092d632_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1basrelief_1a026b08c04bb7d54727fe19238719ae55"/><section>
+    <title>register()</title>
+<indexterm><primary>register</primary><secondary>cam.basrelief</secondary></indexterm>
+<indexterm><primary>cam.basrelief</primary><secondary>register</secondary></indexterm>
+<para><computeroutput>cam.basrelief.register ( )</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1basrelief_1aa0248196478d87431123a0e74908ab1c"/><section>
+    <title>relief()</title>
+<indexterm><primary>relief</primary><secondary>cam.basrelief</secondary></indexterm>
+<indexterm><primary>cam.basrelief</primary><secondary>relief</secondary></indexterm>
+<para><computeroutput>cam.basrelief.relief ( br)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1basrelief_aa0248196478d87431123a0e74908ab1c_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1basrelief_aa0248196478d87431123a0e74908ab1c_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1basrelief_1af116eedd1395f73209312d186e0a14d2"/><section>
+    <title>renderScene()</title>
+<indexterm><primary>renderScene</primary><secondary>cam.basrelief</secondary></indexterm>
+<indexterm><primary>cam.basrelief</primary><secondary>renderScene</secondary></indexterm>
+<para><computeroutput>cam.basrelief.renderScene ( width,  height,  bit_diameter,  passes_per_radius,  make_nodes,  view_layer)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1basrelief_af116eedd1395f73209312d186e0a14d2_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1basrelief_1a9cee957b1946a898fae51b693337d1ce"/><section>
+    <title>restrictbuf()</title>
+<indexterm><primary>restrictbuf</primary><secondary>cam.basrelief</secondary></indexterm>
+<indexterm><primary>cam.basrelief</primary><secondary>restrictbuf</secondary></indexterm>
+<para><computeroutput>cam.basrelief.restrictbuf ( inbuf,  outbuf)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1basrelief_a9cee957b1946a898fae51b693337d1ce_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1basrelief_1ad911a47b6767f0bf2783a9bcf0e548ef"/><section>
+    <title>smooth()</title>
+<indexterm><primary>smooth</primary><secondary>cam.basrelief</secondary></indexterm>
+<indexterm><primary>cam.basrelief</primary><secondary>smooth</secondary></indexterm>
+<para><computeroutput>cam.basrelief.smooth ( U,  F,  linbcgiterations,  planar)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1basrelief_ad911a47b6767f0bf2783a9bcf0e548ef_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1basrelief_ad911a47b6767f0bf2783a9bcf0e548ef_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1basrelief_1a6c50cb05df82a36b700aa844163dd7da"/><section>
+    <title>snrm()</title>
+<indexterm><primary>snrm</primary><secondary>cam.basrelief</secondary></indexterm>
+<indexterm><primary>cam.basrelief</primary><secondary>snrm</secondary></indexterm>
+<para><computeroutput>cam.basrelief.snrm ( n,  sx,  itol)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1basrelief_a6c50cb05df82a36b700aa844163dd7da_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1basrelief_1a4cb6f56c1aa4d079ec817111a923c767"/><section>
+    <title>solve_pde_multigrid()</title>
+<indexterm><primary>solve_pde_multigrid</primary><secondary>cam.basrelief</secondary></indexterm>
+<indexterm><primary>cam.basrelief</primary><secondary>solve_pde_multigrid</secondary></indexterm>
+<para><computeroutput>cam.basrelief.solve_pde_multigrid ( F,  U,  vcycleiterations,  linbcgiterations,  smoothiterations,  mins,  levels,  useplanar,  planar)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1basrelief_a4cb6f56c1aa4d079ec817111a923c767_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1basrelief_a4cb6f56c1aa4d079ec817111a923c767_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1basrelief_1a42f76d02a7449fbb2db6092b6dd7c708"/><section>
+    <title>tonemap()</title>
+<indexterm><primary>tonemap</primary><secondary>cam.basrelief</secondary></indexterm>
+<indexterm><primary>cam.basrelief</primary><secondary>tonemap</secondary></indexterm>
+<para><computeroutput>cam.basrelief.tonemap ( i,  exponent)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1basrelief_a42f76d02a7449fbb2db6092b6dd7c708_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1basrelief_1a517f356287ef040219859ad26bdd5627"/><section>
+    <title>unregister()</title>
+<indexterm><primary>unregister</primary><secondary>cam.basrelief</secondary></indexterm>
+<indexterm><primary>cam.basrelief</primary><secondary>unregister</secondary></indexterm>
+<para><computeroutput>cam.basrelief.unregister ( )</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1basrelief_1a81d6fa58c4adc2b85ee592515995c256"/><section>
+    <title>vert()</title>
+<indexterm><primary>vert</primary><secondary>cam.basrelief</secondary></indexterm>
+<indexterm><primary>cam.basrelief</primary><secondary>vert</secondary></indexterm>
+<para><computeroutput>cam.basrelief.vert ( column,  row,  z,  XYscaling,  Zscaling)</computeroutput></para>
+<para><literallayout><computeroutput> Create a Single Vert </computeroutput></literallayout> </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1basrelief_a81d6fa58c4adc2b85ee592515995c256_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespacecam_1_1basrelief_1ab0272ddc03e40911739051c6dcc54284"/><section>
+    <title>EPS</title>
+<indexterm><primary>EPS</primary><secondary>cam.basrelief</secondary></indexterm>
+<indexterm><primary>cam.basrelief</primary><secondary>EPS</secondary></indexterm>
+<para><computeroutput>float cam.basrelief.EPS = 1.0e-32</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1basrelief_1a7443029a28482631e23f3f081740ed55"/><section>
+    <title>NUMPYALG</title>
+<indexterm><primary>NUMPYALG</primary><secondary>cam.basrelief</secondary></indexterm>
+<indexterm><primary>cam.basrelief</primary><secondary>NUMPYALG</secondary></indexterm>
+<para><computeroutput>bool cam.basrelief.NUMPYALG = False</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1basrelief_1ac779b0b524d86ee2fb8119cffebad256"/><section>
+    <title>PRECISION</title>
+<indexterm><primary>PRECISION</primary><secondary>cam.basrelief</secondary></indexterm>
+<indexterm><primary>cam.basrelief</primary><secondary>PRECISION</secondary></indexterm>
+<para><computeroutput>int cam.basrelief.PRECISION = 5</computeroutput></para></section>
+</section>
+</section>

@@ -1,0 +1,27 @@
+var classcam_1_1curvecamcreate_1_1CamCurveDrawer =
+[
+    [ "draw", "classcam_1_1curvecamcreate_1_1CamCurveDrawer.html#ac31db157669b5603870151029a38f227", null ],
+    [ "execute", "classcam_1_1curvecamcreate_1_1CamCurveDrawer.html#a836de8c7a4790a1e877ea3c223eae393", null ],
+    [ "bl_idname", "classcam_1_1curvecamcreate_1_1CamCurveDrawer.html#ab7b313896eb0d939929224e98e00cf99", null ],
+    [ "bl_label", "classcam_1_1curvecamcreate_1_1CamCurveDrawer.html#aaf15b13a31229db9cfb8b9f365c28651", null ],
+    [ "bl_options", "classcam_1_1curvecamcreate_1_1CamCurveDrawer.html#adb4adeff5c6fae186f235bbb764eba2f", null ],
+    [ "depth", "classcam_1_1curvecamcreate_1_1CamCurveDrawer.html#a0a87de6948f9d175f7b0f761fcd51915", null ],
+    [ "depth", "classcam_1_1curvecamcreate_1_1CamCurveDrawer.html#ad97894161ec71cd71f4ebdcccf8d35c3", null ],
+    [ "drawer_hole_diameter", "classcam_1_1curvecamcreate_1_1CamCurveDrawer.html#a12fb27fd08caaffd5bde57dfbf12dea6", null ],
+    [ "drawer_hole_offset", "classcam_1_1curvecamcreate_1_1CamCurveDrawer.html#af53c492a5a4eff487eef3196cf3a3e82", null ],
+    [ "drawer_plate_thickness", "classcam_1_1curvecamcreate_1_1CamCurveDrawer.html#a336d808f33f16cea3f7223d28b625338", null ],
+    [ "drawer_plate_thickness", "classcam_1_1curvecamcreate_1_1CamCurveDrawer.html#abc387bd80a353633d9f8efd995573686", null ],
+    [ "finger_inset", "classcam_1_1curvecamcreate_1_1CamCurveDrawer.html#a83b6fb2d0641621adf2e7206d5d81840", null ],
+    [ "finger_size", "classcam_1_1curvecamcreate_1_1CamCurveDrawer.html#a33becb0a2a14a4616dd3b032ee32d440", null ],
+    [ "finger_size", "classcam_1_1curvecamcreate_1_1CamCurveDrawer.html#a48ccd422bfac85b7b60494f907c78d5c", null ],
+    [ "finger_tolerance", "classcam_1_1curvecamcreate_1_1CamCurveDrawer.html#aaf127d02d9f44a5d6cca3213b7c76156", null ],
+    [ "finger_tolerance", "classcam_1_1curvecamcreate_1_1CamCurveDrawer.html#a2dafe6ab3cf83d86338dce2e2c8bfc6a", null ],
+    [ "height", "classcam_1_1curvecamcreate_1_1CamCurveDrawer.html#a604f8da4849575fea36ab8f593a1a24e", null ],
+    [ "height", "classcam_1_1curvecamcreate_1_1CamCurveDrawer.html#afccdbdb9b64a89dbe52df4d0d14acd84", null ],
+    [ "overcut", "classcam_1_1curvecamcreate_1_1CamCurveDrawer.html#a4ed2566b8b3063656239bf400977dcbc", null ],
+    [ "overcut", "classcam_1_1curvecamcreate_1_1CamCurveDrawer.html#a550136a84dcc424807847074749cc9fa", null ],
+    [ "overcut_diameter", "classcam_1_1curvecamcreate_1_1CamCurveDrawer.html#a18991d1795ff5ef2dce463f5691e1b9d", null ],
+    [ "overcut_diameter", "classcam_1_1curvecamcreate_1_1CamCurveDrawer.html#ad3126ece4ea12b4eebd130ccadb8d98a", null ],
+    [ "width", "classcam_1_1curvecamcreate_1_1CamCurveDrawer.html#a4c4e3f0e79afa448cef67ea1b0088459", null ],
+    [ "width", "classcam_1_1curvecamcreate_1_1CamCurveDrawer.html#ad06b9673c246f805f42c1ece11734651", null ]
+];

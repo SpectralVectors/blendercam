@@ -1,0 +1,879 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacecam_1_1joinery" kind="namespace" language="Python">
+    <compoundname>cam::joinery</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacecam_1_1joinery_1a4ac4d3b27239e9cb08ea6e1bed5c0aca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.joinery.finger_amount</definition>
+        <argsstring>(space, size)</argsstring>
+        <name>finger_amount</name>
+        <qualifiedname>cam.joinery.finger_amount</qualifiedname>
+        <param>
+          <type>space</type>
+          <defname>space</defname>
+        </param>
+        <param>
+          <type>size</type>
+          <defname>size</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" line="31" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" bodystart="31" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1joinery_1aa8f26b93ee93e064acfdfbe7c6e10f8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.joinery.mortise</definition>
+        <argsstring>(length, thickness, finger_play, cx=0, cy=0, rotation=0)</argsstring>
+        <name>mortise</name>
+        <qualifiedname>cam.joinery.mortise</qualifiedname>
+        <param>
+          <type>length</type>
+          <defname>length</defname>
+        </param>
+        <param>
+          <type>thickness</type>
+          <defname>thickness</defname>
+        </param>
+        <param>
+          <type>finger_play</type>
+          <defname>finger_play</defname>
+        </param>
+        <param>
+          <type>cx</type>
+          <defname>cx</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>cy</type>
+          <defname>cy</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>rotation</type>
+          <defname>rotation</defname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" line="40" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" bodystart="40" bodyend="50"/>
+        <referencedby refid="namespacecam_1_1joinery_1af8c753ab2426884c82136ed7dcdfcc03" compoundref="joinery_8py" startline="286" endline="336">cam.joinery.fixed_finger</referencedby>
+        <referencedby refid="namespacecam_1_1joinery_1ac9396593ad82b6ce75de7b39026a4aa1" compoundref="joinery_8py" startline="124" endline="154">cam.joinery.horizontal_finger</referencedby>
+        <referencedby refid="namespacecam_1_1joinery_1ae6f7cc58c00bb5e33071ee36267d7984" compoundref="joinery_8py" startline="51" endline="59">cam.joinery.interlock_groove</referencedby>
+        <referencedby refid="namespacecam_1_1joinery_1afc581b78151a7aa0780d7b58f9c5ed53" compoundref="joinery_8py" startline="60" endline="83">cam.joinery.interlock_twist</referencedby>
+        <referencedby refid="namespacecam_1_1joinery_1a84f5fa18a97d8eb2f51f192f2bd6bd29" compoundref="joinery_8py" startline="220" endline="231">cam.joinery.make_flex_pocket</referencedby>
+        <referencedby refid="namespacecam_1_1joinery_1a9a2c964c6d51901cd3affb202bf5da68" compoundref="joinery_8py" startline="232" endline="241">cam.joinery.make_variable_flex_pocket</referencedby>
+        <referencedby refid="namespacecam_1_1joinery_1a95096dd31f2638033794b4e801090bd6" compoundref="joinery_8py" startline="396" endline="481">cam.joinery.variable_finger</referencedby>
+        <referencedby refid="namespacecam_1_1joinery_1aec5f91b01dacee42e43588eeb35fe865" compoundref="joinery_8py" startline="155" endline="176">cam.joinery.vertical_finger</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1joinery_1ae6f7cc58c00bb5e33071ee36267d7984" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.joinery.interlock_groove</definition>
+        <argsstring>(length, thickness, finger_play, cx=0, cy=0, rotation=0)</argsstring>
+        <name>interlock_groove</name>
+        <qualifiedname>cam.joinery.interlock_groove</qualifiedname>
+        <param>
+          <type>length</type>
+          <defname>length</defname>
+        </param>
+        <param>
+          <type>thickness</type>
+          <defname>thickness</defname>
+        </param>
+        <param>
+          <type>finger_play</type>
+          <defname>finger_play</defname>
+        </param>
+        <param>
+          <type>cx</type>
+          <defname>cx</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>cy</type>
+          <defname>cy</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>rotation</type>
+          <defname>rotation</defname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" line="51" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" bodystart="51" bodyend="59"/>
+        <references refid="namespacecam_1_1joinery_1aa8f26b93ee93e064acfdfbe7c6e10f8d" compoundref="joinery_8py" startline="40" endline="50">cam.joinery.mortise</references>
+        <referencedby refid="namespacecam_1_1joinery_1a622ab1f40f0bd8272a4dca69e9b1ed13" compoundref="joinery_8py" startline="483" endline="492">cam.joinery.single_interlock</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1joinery_1afc581b78151a7aa0780d7b58f9c5ed53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.joinery.interlock_twist</definition>
+        <argsstring>(length, thickness, finger_play, cx=0, cy=0, rotation=0, percentage=0.5)</argsstring>
+        <name>interlock_twist</name>
+        <qualifiedname>cam.joinery.interlock_twist</qualifiedname>
+        <param>
+          <type>length</type>
+          <defname>length</defname>
+        </param>
+        <param>
+          <type>thickness</type>
+          <defname>thickness</defname>
+        </param>
+        <param>
+          <type>finger_play</type>
+          <defname>finger_play</defname>
+        </param>
+        <param>
+          <type>cx</type>
+          <defname>cx</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>cy</type>
+          <defname>cy</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>rotation</type>
+          <defname>rotation</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>percentage</type>
+          <defname>percentage</defname>
+          <defval>0.5</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" line="60" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" bodystart="60" bodyend="83"/>
+        <references refid="namespacecam_1_1joinery_1aa8f26b93ee93e064acfdfbe7c6e10f8d" compoundref="joinery_8py" startline="40" endline="50">cam.joinery.mortise</references>
+        <referencedby refid="namespacecam_1_1joinery_1a622ab1f40f0bd8272a4dca69e9b1ed13" compoundref="joinery_8py" startline="483" endline="492">cam.joinery.single_interlock</referencedby>
+        <referencedby refid="namespacecam_1_1joinery_1a3da143ee91d1471d9ee3517d9e4236e2" compoundref="joinery_8py" startline="84" endline="98">cam.joinery.twist_line</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1joinery_1a3da143ee91d1471d9ee3517d9e4236e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.joinery.twist_line</definition>
+        <argsstring>(length, thickness, finger_play, percentage, amount, distance, center=True)</argsstring>
+        <name>twist_line</name>
+        <qualifiedname>cam.joinery.twist_line</qualifiedname>
+        <param>
+          <type>length</type>
+          <defname>length</defname>
+        </param>
+        <param>
+          <type>thickness</type>
+          <defname>thickness</defname>
+        </param>
+        <param>
+          <type>finger_play</type>
+          <defname>finger_play</defname>
+        </param>
+        <param>
+          <type>percentage</type>
+          <defname>percentage</defname>
+        </param>
+        <param>
+          <type>amount</type>
+          <defname>amount</defname>
+        </param>
+        <param>
+          <type>distance</type>
+          <defname>distance</defname>
+        </param>
+        <param>
+          <type>center</type>
+          <defname>center</defname>
+          <defval>True</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" line="84" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" bodystart="84" bodyend="98"/>
+        <references refid="namespacecam_1_1joinery_1afc581b78151a7aa0780d7b58f9c5ed53" compoundref="joinery_8py" startline="60" endline="83">cam.joinery.interlock_twist</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1joinery_1a6081dedb48e3e42aa2d3f411707c7b68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.joinery.twist_separator_slot</definition>
+        <argsstring>(length, thickness, finger_play=0.00005, percentage=0.5)</argsstring>
+        <name>twist_separator_slot</name>
+        <qualifiedname>cam.joinery.twist_separator_slot</qualifiedname>
+        <param>
+          <type>length</type>
+          <defname>length</defname>
+        </param>
+        <param>
+          <type>thickness</type>
+          <defname>thickness</defname>
+        </param>
+        <param>
+          <type>finger_play</type>
+          <defname>finger_play</defname>
+          <defval>0.00005</defval>
+        </param>
+        <param>
+          <type>percentage</type>
+          <defname>percentage</defname>
+          <defval>0.5</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" line="99" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" bodystart="99" bodyend="107"/>
+        <referencedby refid="namespacecam_1_1joinery_1aa5fd56936169443acff0130d73692550" compoundref="joinery_8py" startline="109" endline="123">cam.joinery.interlock_twist_separator</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1joinery_1aa5fd56936169443acff0130d73692550" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.joinery.interlock_twist_separator</definition>
+        <argsstring>(length, thickness, amount, spacing, edge_distance, finger_play=0.00005, percentage=0.5, start=&apos;rounded&apos;, end=&apos;rounded&apos;)</argsstring>
+        <name>interlock_twist_separator</name>
+        <qualifiedname>cam.joinery.interlock_twist_separator</qualifiedname>
+        <param>
+          <type>length</type>
+          <defname>length</defname>
+        </param>
+        <param>
+          <type>thickness</type>
+          <defname>thickness</defname>
+        </param>
+        <param>
+          <type>amount</type>
+          <defname>amount</defname>
+        </param>
+        <param>
+          <type>spacing</type>
+          <defname>spacing</defname>
+        </param>
+        <param>
+          <type>edge_distance</type>
+          <defname>edge_distance</defname>
+        </param>
+        <param>
+          <type>finger_play</type>
+          <defname>finger_play</defname>
+          <defval>0.00005</defval>
+        </param>
+        <param>
+          <type>percentage</type>
+          <defname>percentage</defname>
+          <defval>0.5</defval>
+        </param>
+        <param>
+          <type>start</type>
+          <defname>start</defname>
+          <defval>&apos;rounded&apos;</defval>
+        </param>
+        <param>
+          <type>end</type>
+          <defname>end</defname>
+          <defval>&apos;rounded&apos;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" line="108" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" bodystart="109" bodyend="123"/>
+        <references refid="namespacecam_1_1joinery_1a6081dedb48e3e42aa2d3f411707c7b68" compoundref="joinery_8py" startline="99" endline="107">cam.joinery.twist_separator_slot</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1joinery_1ac9396593ad82b6ce75de7b39026a4aa1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.joinery.horizontal_finger</definition>
+        <argsstring>(length, thickness, finger_play, amount, center=True)</argsstring>
+        <name>horizontal_finger</name>
+        <qualifiedname>cam.joinery.horizontal_finger</qualifiedname>
+        <param>
+          <type>length</type>
+          <defname>length</defname>
+        </param>
+        <param>
+          <type>thickness</type>
+          <defname>thickness</defname>
+        </param>
+        <param>
+          <type>finger_play</type>
+          <defname>finger_play</defname>
+        </param>
+        <param>
+          <type>amount</type>
+          <defname>amount</defname>
+        </param>
+        <param>
+          <type>center</type>
+          <defname>center</defname>
+          <defval>True</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" line="124" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" bodystart="124" bodyend="154"/>
+        <references refid="namespacecam_1_1joinery_1aa8f26b93ee93e064acfdfbe7c6e10f8d" compoundref="joinery_8py" startline="40" endline="50">cam.joinery.mortise</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1joinery_1aec5f91b01dacee42e43588eeb35fe865" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.joinery.vertical_finger</definition>
+        <argsstring>(length, thickness, finger_play, amount)</argsstring>
+        <name>vertical_finger</name>
+        <qualifiedname>cam.joinery.vertical_finger</qualifiedname>
+        <param>
+          <type>length</type>
+          <defname>length</defname>
+        </param>
+        <param>
+          <type>thickness</type>
+          <defname>thickness</defname>
+        </param>
+        <param>
+          <type>finger_play</type>
+          <defname>finger_play</defname>
+        </param>
+        <param>
+          <type>amount</type>
+          <defname>amount</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" line="155" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" bodystart="155" bodyend="176"/>
+        <references refid="namespacecam_1_1joinery_1aa8f26b93ee93e064acfdfbe7c6e10f8d" compoundref="joinery_8py" startline="40" endline="50">cam.joinery.mortise</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1joinery_1a20be3c603d8a81a7f1c4191d61234d2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.joinery.finger_pair</definition>
+        <argsstring>(name, dx=0, dy=0)</argsstring>
+        <name>finger_pair</name>
+        <qualifiedname>cam.joinery.finger_pair</qualifiedname>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>dx</type>
+          <defname>dx</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>dy</type>
+          <defname>dy</defname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" line="177" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" bodystart="177" bodyend="196"/>
+        <referencedby refid="namespacecam_1_1joinery_1a4beb6fa6952bcbf9ff407ff4642fb85c" compoundref="joinery_8py" startline="242" endline="277">cam.joinery.create_flex_side</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1joinery_1a3af0d33b2403e19a33d4b837e15c3c5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.joinery.create_base_plate</definition>
+        <argsstring>(height, width, depth)</argsstring>
+        <name>create_base_plate</name>
+        <qualifiedname>cam.joinery.create_base_plate</qualifiedname>
+        <param>
+          <type>height</type>
+          <defname>height</defname>
+        </param>
+        <param>
+          <type>width</type>
+          <defname>width</defname>
+        </param>
+        <param>
+          <type>depth</type>
+          <defname>depth</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" line="197" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" bodystart="197" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1joinery_1a84f5fa18a97d8eb2f51f192f2bd6bd29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.joinery.make_flex_pocket</definition>
+        <argsstring>(length, height, finger_thick, finger_width, pocket_width)</argsstring>
+        <name>make_flex_pocket</name>
+        <qualifiedname>cam.joinery.make_flex_pocket</qualifiedname>
+        <param>
+          <type>length</type>
+          <defname>length</defname>
+        </param>
+        <param>
+          <type>height</type>
+          <defname>height</defname>
+        </param>
+        <param>
+          <type>finger_thick</type>
+          <defname>finger_thick</defname>
+        </param>
+        <param>
+          <type>finger_width</type>
+          <defname>finger_width</defname>
+        </param>
+        <param>
+          <type>pocket_width</type>
+          <defname>pocket_width</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" line="220" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" bodystart="220" bodyend="231"/>
+        <references refid="namespacecam_1_1joinery_1aa8f26b93ee93e064acfdfbe7c6e10f8d" compoundref="joinery_8py" startline="40" endline="50">cam.joinery.mortise</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1joinery_1a9a2c964c6d51901cd3affb202bf5da68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.joinery.make_variable_flex_pocket</definition>
+        <argsstring>(height, finger_thick, pocket_width, locations)</argsstring>
+        <name>make_variable_flex_pocket</name>
+        <qualifiedname>cam.joinery.make_variable_flex_pocket</qualifiedname>
+        <param>
+          <type>height</type>
+          <defname>height</defname>
+        </param>
+        <param>
+          <type>finger_thick</type>
+          <defname>finger_thick</defname>
+        </param>
+        <param>
+          <type>pocket_width</type>
+          <defname>pocket_width</defname>
+        </param>
+        <param>
+          <type>locations</type>
+          <defname>locations</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" line="232" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" bodystart="232" bodyend="241"/>
+        <references refid="namespacecam_1_1joinery_1aa8f26b93ee93e064acfdfbe7c6e10f8d" compoundref="joinery_8py" startline="40" endline="50">cam.joinery.mortise</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1joinery_1a4beb6fa6952bcbf9ff407ff4642fb85c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.joinery.create_flex_side</definition>
+        <argsstring>(length, height, finger_thick, top_bottom=False)</argsstring>
+        <name>create_flex_side</name>
+        <qualifiedname>cam.joinery.create_flex_side</qualifiedname>
+        <param>
+          <type>length</type>
+          <defname>length</defname>
+        </param>
+        <param>
+          <type>height</type>
+          <defname>height</defname>
+        </param>
+        <param>
+          <type>finger_thick</type>
+          <defname>finger_thick</defname>
+        </param>
+        <param>
+          <type>top_bottom</type>
+          <defname>top_bottom</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" line="242" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" bodystart="242" bodyend="277"/>
+        <references refid="namespacecam_1_1joinery_1a20be3c603d8a81a7f1c4191d61234d2a" compoundref="joinery_8py" startline="177" endline="196">cam.joinery.finger_pair</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1joinery_1af1aba5d7e1240c9c070b7a12efd28811" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.joinery.angle</definition>
+        <argsstring>(a, b)</argsstring>
+        <name>angle</name>
+        <qualifiedname>cam.joinery.angle</qualifiedname>
+        <param>
+          <type>a</type>
+          <defname>a</defname>
+        </param>
+        <param>
+          <type>b</type>
+          <defname>b</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" line="278" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" bodystart="278" bodyend="281"/>
+        <referencedby refid="namespacecam_1_1joinery_1a82ea8c18be2ffd4e5af6b1f72616885f" compoundref="joinery_8py" startline="282" endline="285">cam.joinery.angle_difference</referencedby>
+        <referencedby refid="namespacecam_1_1joinery_1abdc904de1ca164c34e7c78e527fdf86e" compoundref="joinery_8py" startline="494" endline="547">cam.joinery.distributed_interlock</referencedby>
+        <referencedby refid="namespacecam_1_1joinery_1ab6417066f03f11b1cec7f580599877e8" compoundref="joinery_8py" startline="368" endline="394">cam.joinery.dslope_array</referencedby>
+        <referencedby refid="namespacecam_1_1joinery_1af8c753ab2426884c82136ed7dcdfcc03" compoundref="joinery_8py" startline="286" endline="336">cam.joinery.fixed_finger</referencedby>
+        <referencedby refid="namespacecam_1_1joinery_1a95096dd31f2638033794b4e801090bd6" compoundref="joinery_8py" startline="396" endline="481">cam.joinery.variable_finger</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1joinery_1a82ea8c18be2ffd4e5af6b1f72616885f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.joinery.angle_difference</definition>
+        <argsstring>(a, b, c)</argsstring>
+        <name>angle_difference</name>
+        <qualifiedname>cam.joinery.angle_difference</qualifiedname>
+        <param>
+          <type>a</type>
+          <defname>a</defname>
+        </param>
+        <param>
+          <type>b</type>
+          <defname>b</defname>
+        </param>
+        <param>
+          <type>c</type>
+          <defname>c</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" line="282" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" bodystart="282" bodyend="285"/>
+        <references refid="namespacecam_1_1joinery_1af1aba5d7e1240c9c070b7a12efd28811" compoundref="joinery_8py" startline="278" endline="281">cam.joinery.angle</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1joinery_1af8c753ab2426884c82136ed7dcdfcc03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.joinery.fixed_finger</definition>
+        <argsstring>(loop, loop_length, finger_size, finger_thick, finger_tolerance, base=False)</argsstring>
+        <name>fixed_finger</name>
+        <qualifiedname>cam.joinery.fixed_finger</qualifiedname>
+        <param>
+          <type>loop</type>
+          <defname>loop</defname>
+        </param>
+        <param>
+          <type>loop_length</type>
+          <defname>loop_length</defname>
+        </param>
+        <param>
+          <type>finger_size</type>
+          <defname>finger_size</defname>
+        </param>
+        <param>
+          <type>finger_thick</type>
+          <defname>finger_thick</defname>
+        </param>
+        <param>
+          <type>finger_tolerance</type>
+          <defname>finger_tolerance</defname>
+        </param>
+        <param>
+          <type>base</type>
+          <defname>base</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" line="286" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" bodystart="286" bodyend="336"/>
+        <references refid="namespacecam_1_1joinery_1af1aba5d7e1240c9c070b7a12efd28811" compoundref="joinery_8py" startline="278" endline="281">cam.joinery.angle</references>
+        <references refid="namespacecam_1_1joinery_1aa8f26b93ee93e064acfdfbe7c6e10f8d" compoundref="joinery_8py" startline="40" endline="50">cam.joinery.mortise</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1joinery_1a8d85d169ea9a64cbdf89d284737c883b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.joinery.find_slope</definition>
+        <argsstring>(p1, p2)</argsstring>
+        <name>find_slope</name>
+        <qualifiedname>cam.joinery.find_slope</qualifiedname>
+        <param>
+          <type>p1</type>
+          <defname>p1</defname>
+        </param>
+        <param>
+          <type>p2</type>
+          <defname>p2</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" line="337" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" bodystart="337" bodyend="340"/>
+        <referencedby refid="namespacecam_1_1joinery_1ab6417066f03f11b1cec7f580599877e8" compoundref="joinery_8py" startline="368" endline="394">cam.joinery.dslope_array</referencedby>
+        <referencedby refid="namespacecam_1_1joinery_1a8697de1c50a8c7db18055aa1711c4207" compoundref="joinery_8py" startline="341" endline="367">cam.joinery.slope_array</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1joinery_1a8697de1c50a8c7db18055aa1711c4207" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.joinery.slope_array</definition>
+        <argsstring>(loop)</argsstring>
+        <name>slope_array</name>
+        <qualifiedname>cam.joinery.slope_array</qualifiedname>
+        <param>
+          <type>loop</type>
+          <defname>loop</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" line="341" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" bodystart="341" bodyend="367"/>
+        <references refid="namespacecam_1_1joinery_1a8d85d169ea9a64cbdf89d284737c883b" compoundref="joinery_8py" startline="337" endline="340">cam.joinery.find_slope</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1joinery_1ab6417066f03f11b1cec7f580599877e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.joinery.dslope_array</definition>
+        <argsstring>(loop, resolution=0.001)</argsstring>
+        <name>dslope_array</name>
+        <qualifiedname>cam.joinery.dslope_array</qualifiedname>
+        <param>
+          <type>loop</type>
+          <defname>loop</defname>
+        </param>
+        <param>
+          <type>resolution</type>
+          <defname>resolution</defname>
+          <defval>0.001</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" line="368" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" bodystart="368" bodyend="394"/>
+        <references refid="namespacecam_1_1joinery_1af1aba5d7e1240c9c070b7a12efd28811" compoundref="joinery_8py" startline="278" endline="281">cam.joinery.angle</references>
+        <references refid="namespacecam_1_1joinery_1a8d85d169ea9a64cbdf89d284737c883b" compoundref="joinery_8py" startline="337" endline="340">cam.joinery.find_slope</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1joinery_1a95096dd31f2638033794b4e801090bd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.joinery.variable_finger</definition>
+        <argsstring>(loop, loop_length, min_finger, finger_size, finger_thick, finger_tolerance, adaptive, base=False, double_adaptive=False)</argsstring>
+        <name>variable_finger</name>
+        <qualifiedname>cam.joinery.variable_finger</qualifiedname>
+        <param>
+          <type>loop</type>
+          <defname>loop</defname>
+        </param>
+        <param>
+          <type>loop_length</type>
+          <defname>loop_length</defname>
+        </param>
+        <param>
+          <type>min_finger</type>
+          <defname>min_finger</defname>
+        </param>
+        <param>
+          <type>finger_size</type>
+          <defname>finger_size</defname>
+        </param>
+        <param>
+          <type>finger_thick</type>
+          <defname>finger_thick</defname>
+        </param>
+        <param>
+          <type>finger_tolerance</type>
+          <defname>finger_tolerance</defname>
+        </param>
+        <param>
+          <type>adaptive</type>
+          <defname>adaptive</defname>
+        </param>
+        <param>
+          <type>base</type>
+          <defname>base</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>double_adaptive</type>
+          <defname>double_adaptive</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" line="395" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" bodystart="396" bodyend="481"/>
+        <references refid="namespacecam_1_1joinery_1af1aba5d7e1240c9c070b7a12efd28811" compoundref="joinery_8py" startline="278" endline="281">cam.joinery.angle</references>
+        <references refid="namespacecam_1_1joinery_1aa8f26b93ee93e064acfdfbe7c6e10f8d" compoundref="joinery_8py" startline="40" endline="50">cam.joinery.mortise</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1joinery_1a622ab1f40f0bd8272a4dca69e9b1ed13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.joinery.single_interlock</definition>
+        <argsstring>(finger_depth, finger_thick, finger_tolerance, x, y, groove_angle, type, amount=1, twist_percentage=0.5)</argsstring>
+        <name>single_interlock</name>
+        <qualifiedname>cam.joinery.single_interlock</qualifiedname>
+        <param>
+          <type>finger_depth</type>
+          <defname>finger_depth</defname>
+        </param>
+        <param>
+          <type>finger_thick</type>
+          <defname>finger_thick</defname>
+        </param>
+        <param>
+          <type>finger_tolerance</type>
+          <defname>finger_tolerance</defname>
+        </param>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+        </param>
+        <param>
+          <type>y</type>
+          <defname>y</defname>
+        </param>
+        <param>
+          <type>groove_angle</type>
+          <defname>groove_angle</defname>
+        </param>
+        <param>
+          <type>type</type>
+          <defname>type</defname>
+        </param>
+        <param>
+          <type>amount</type>
+          <defname>amount</defname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>twist_percentage</type>
+          <defname>twist_percentage</defname>
+          <defval>0.5</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" line="482" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" bodystart="483" bodyend="492"/>
+        <references refid="namespacecam_1_1joinery_1ae6f7cc58c00bb5e33071ee36267d7984" compoundref="joinery_8py" startline="51" endline="59">cam.joinery.interlock_groove</references>
+        <references refid="namespacecam_1_1joinery_1afc581b78151a7aa0780d7b58f9c5ed53" compoundref="joinery_8py" startline="60" endline="83">cam.joinery.interlock_twist</references>
+        <referencedby refid="namespacecam_1_1joinery_1abdc904de1ca164c34e7c78e527fdf86e" compoundref="joinery_8py" startline="494" endline="547">cam.joinery.distributed_interlock</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1joinery_1abdc904de1ca164c34e7c78e527fdf86e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.joinery.distributed_interlock</definition>
+        <argsstring>(loop, loop_length, finger_depth, finger_thick, finger_tolerance, finger_amount, tangent=0, fixed_angle=0, start=0.01, end=0.01, closed=True, type=&apos;GROOVE&apos;, twist_percentage=0.5)</argsstring>
+        <name>distributed_interlock</name>
+        <qualifiedname>cam.joinery.distributed_interlock</qualifiedname>
+        <param>
+          <type>loop</type>
+          <defname>loop</defname>
+        </param>
+        <param>
+          <type>loop_length</type>
+          <defname>loop_length</defname>
+        </param>
+        <param>
+          <type>finger_depth</type>
+          <defname>finger_depth</defname>
+        </param>
+        <param>
+          <type>finger_thick</type>
+          <defname>finger_thick</defname>
+        </param>
+        <param>
+          <type>finger_tolerance</type>
+          <defname>finger_tolerance</defname>
+        </param>
+        <param>
+          <type><ref refid="namespacecam_1_1joinery_1a4ac4d3b27239e9cb08ea6e1bed5c0aca" kindref="member">finger_amount</ref></type>
+          <defname>finger_amount</defname>
+        </param>
+        <param>
+          <type>tangent</type>
+          <defname>tangent</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>fixed_angle</type>
+          <defname>fixed_angle</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>start</type>
+          <defname>start</defname>
+          <defval>0.01</defval>
+        </param>
+        <param>
+          <type>end</type>
+          <defname>end</defname>
+          <defval>0.01</defval>
+        </param>
+        <param>
+          <type>closed</type>
+          <defname>closed</defname>
+          <defval>True</defval>
+        </param>
+        <param>
+          <type>type</type>
+          <defname>type</defname>
+          <defval>&apos;GROOVE&apos;</defval>
+        </param>
+        <param>
+          <type>twist_percentage</type>
+          <defname>twist_percentage</defname>
+          <defval>0.5</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" line="493" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" bodystart="494" bodyend="547"/>
+        <references refid="namespacecam_1_1joinery_1af1aba5d7e1240c9c070b7a12efd28811" compoundref="joinery_8py" startline="278" endline="281">cam.joinery.angle</references>
+        <references refid="namespacecam_1_1joinery_1a622ab1f40f0bd8272a4dca69e9b1ed13" compoundref="joinery_8py" startline="483" endline="492">cam.joinery.single_interlock</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>BlenderCAM &apos;joinery.py&apos; © 2021 Alain Pelletier
+
+Functions to create various woodworking joints - mortise, finger etc.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/joinery.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

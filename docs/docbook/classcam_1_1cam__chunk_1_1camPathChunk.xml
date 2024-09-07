@@ -1,0 +1,569 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1cam__chunk_1_1camPathChunk" xml:lang="en-US">
+<title>cam.cam_chunk.camPathChunk Class Reference</title>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary></indexterm>
+Collaboration diagram for cam.cam_chunk.camPathChunk:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1cam__chunk_1_1camPathChunk__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1adc5a759280cd9611da83633b13984aa5">__init__</link> (self, inpoints, <link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1aa1ab1dc3a73227c1520eb5aa5b87d198">startpoints</link>=None, <link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1adfb2c87a49216c5f7a17ac56b13c3efe">endpoints</link>=None, <link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1a600f43991a37ada31f6bf30e09ecfe8b">rotations</link>=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1af57aaae7d46be784db607f47be6afb8e">update_poly</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1a118ba0f8501dd0ea6025a9f904743f69">get_point</link> (self, n)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1ae0c9298aad44a4aa563b094fedc69c56">get_points</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1a10a1dc2eb1876f3b708c52607b76ec42">get_points_np</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1abe1aeb71e54a456bee35ec14d1262496">set_points</link> (self, <link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1a1c6b333f94c5f7758d5c23b04e7a3647">points</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1a087dc7badc2dd49f26bc24d2cc3aafcd">count</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1aba95ed5a0f6afd16c26e0ff5c3eb43b0">copy</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1a14da98abe609abafa374ed52861879d6">shift</link> (self, x, y, z)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1a0f5437289545fe6b907d27f742ab9096">setZ</link> (self, z, if_bigger=False)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1a4f4ed7e0454f519b790497c08b7aa585">offsetZ</link> (self, z)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1a639c609498222d070cea059663e7b6bd">flipX</link> (self, x_centre)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1ae0d231acd5cd271b99faa575c6576456">isbelowZ</link> (self, z)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1a63989275f778c6f651182f0eda5fca11">clampZ</link> (self, z)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1a25e385e784e465df38cb669d7072935c">clampmaxZ</link> (self, z)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1a4adf88f7f0c4d7586e3862101803bd04">dist</link> (self, pos, o)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1abd6e9df7f8b288e18bd067a288508611">distStart</link> (self, pos, o)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1ac01f1831d2b22c9df83b8f356c9ba086">xyDistanceWithin</link> (self, other, cutoff)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1a4479bed9ef7dfb9190652d8984b8a0b9">xyDistanceTo</link> (self, other, cutoff=0)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1aa8645380ad5be71c41888adaa4ce7e10">adaptdist</link> (self, pos, o)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1a024a2acdb2a0d7a59f95e4c021c5600f">getNextClosest</link> (self, o, pos)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1a5c371c8fff4931dc6d5d1837d14c3860">getLength</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1ae32d1b14d85935d36442e38bcdaea48e">reverse</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1ac89c2cd255d1a7b1d8a8b02d01b1e0f9">pop</link> (self, index)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1ae0583d05a0066c6d30ea67a74c5dfd98">dedupePoints</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1a3b0e7723b3e0090bcee3f318f91b2109">insert</link> (self, at_index, point, startpoint=None, endpoint=None, rotation=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1aedc45e8e76f0c85ca9ef80166965a837">append</link> (self, point, startpoint=None, endpoint=None, rotation=None, at_index=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1ab84ab2d7832f98ada7f90a728d575d1d">extend</link> (self, <link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1a1c6b333f94c5f7758d5c23b04e7a3647">points</link>, <link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1aa1ab1dc3a73227c1520eb5aa5b87d198">startpoints</link>=None, <link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1adfb2c87a49216c5f7a17ac56b13c3efe">endpoints</link>=None, <link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1a600f43991a37ada31f6bf30e09ecfe8b">rotations</link>=None, at_index=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1abcb368472753703c7c40837c4b76a6e7">clip_points</link> (self, minx, maxx, miny, maxy)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1a6a208a40138feb41a8027692557af7a2">rampContour</link> (self, <link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1a2fc64792951f2319934f522fd500d65a">zstart</link>, <link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1a5b65780528136439fd96a33097f90c5a">zend</link>, o)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1a11db061ac379175d08ea8b9a0e04e987">rampZigZag</link> (self, <link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1a2fc64792951f2319934f522fd500d65a">zstart</link>, <link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1a5b65780528136439fd96a33097f90c5a">zend</link>, o)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1af2bd7217bcf8840ba647d750acaa051c">changePathStart</link> (self, o)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1a056c57a463f7ef37f341e2f1a1e6eceb">breakPathForLeadinLeadout</link> (self, o)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1a2194b46cca3aebb0c500e6dcb4a8e7ab">leadContour</link> (self, o)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1a1c6b333f94c5f7758d5c23b04e7a3647">points</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1ab82e5810dbafd62c3a244205781ae966">poly</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1a7fb526d863d3153d2da0a6c382aaf51a">simppoly</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1aa1ab1dc3a73227c1520eb5aa5b87d198">startpoints</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1adfb2c87a49216c5f7a17ac56b13c3efe">endpoints</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1a600f43991a37ada31f6bf30e09ecfe8b">rotations</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1a7adc0741df185dec3a8da9e8ef58a420">closed</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1aa67ddac5e415d2cc7d80b6f7366a15fc">children</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1af7a265e21cdd80b080ff90e2a768cdef">parents</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1a9d44fac2616271250d3361ce93d5a036">sorted</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1afc9bbeb29cef5588fdce5adc1c2b9735">length</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1a2fc64792951f2319934f522fd500d65a">zstart</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1a5b65780528136439fd96a33097f90c5a">zend</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1cam__chunk_1_1camPathChunk_1a084b2697c35a0dfc9905858ed6543894">cango</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1adc5a759280cd9611da83633b13984aa5"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.__init__ ( self,  inpoints,  startpoints = <computeroutput>None</computeroutput>
+,  endpoints = <computeroutput>None</computeroutput>
+,  rotations = <computeroutput>None</computeroutput>
+)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1aa8645380ad5be71c41888adaa4ce7e10"/><section>
+    <title>adaptdist()</title>
+<indexterm><primary>adaptdist</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>adaptdist</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.adaptdist ( self,  pos,  o)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1aedc45e8e76f0c85ca9ef80166965a837"/><section>
+    <title>append()</title>
+<indexterm><primary>append</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>append</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.append ( self,  point,  startpoint = <computeroutput>None</computeroutput>
+,  endpoint = <computeroutput>None</computeroutput>
+,  rotation = <computeroutput>None</computeroutput>
+,  at_index = <computeroutput>None</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1cam__chunk_1_1camPathChunk_aedc45e8e76f0c85ca9ef80166965a837_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1cam__chunk_1_1camPathChunk_aedc45e8e76f0c85ca9ef80166965a837_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1a056c57a463f7ef37f341e2f1a1e6eceb"/><section>
+    <title>breakPathForLeadinLeadout()</title>
+<indexterm><primary>breakPathForLeadinLeadout</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>breakPathForLeadinLeadout</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.breakPathForLeadinLeadout ( self,  o)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1af2bd7217bcf8840ba647d750acaa051c"/><section>
+    <title>changePathStart()</title>
+<indexterm><primary>changePathStart</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>changePathStart</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.changePathStart ( self,  o)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1a25e385e784e465df38cb669d7072935c"/><section>
+    <title>clampmaxZ()</title>
+<indexterm><primary>clampmaxZ</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>clampmaxZ</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.clampmaxZ ( self,  z)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1a63989275f778c6f651182f0eda5fca11"/><section>
+    <title>clampZ()</title>
+<indexterm><primary>clampZ</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>clampZ</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.clampZ ( self,  z)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1abcb368472753703c7c40837c4b76a6e7"/><section>
+    <title>clip_points()</title>
+<indexterm><primary>clip_points</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>clip_points</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.clip_points ( self,  minx,  maxx,  miny,  maxy)</computeroutput></para>
+<para><literallayout><computeroutput>Remove Any Points Outside This Range</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1aba95ed5a0f6afd16c26e0ff5c3eb43b0"/><section>
+    <title>copy()</title>
+<indexterm><primary>copy</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>copy</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.copy ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1cam__chunk_1_1camPathChunk_aba95ed5a0f6afd16c26e0ff5c3eb43b0_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1cam__chunk_1_1camPathChunk_aba95ed5a0f6afd16c26e0ff5c3eb43b0_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1a087dc7badc2dd49f26bc24d2cc3aafcd"/><section>
+    <title>count()</title>
+<indexterm><primary>count</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>count</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.count ( self)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1cam__chunk_1_1camPathChunk_a087dc7badc2dd49f26bc24d2cc3aafcd_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1ae0583d05a0066c6d30ea67a74c5dfd98"/><section>
+    <title>dedupePoints()</title>
+<indexterm><primary>dedupePoints</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>dedupePoints</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.dedupePoints ( self)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1a4adf88f7f0c4d7586e3862101803bd04"/><section>
+    <title>dist()</title>
+<indexterm><primary>dist</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>dist</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.dist ( self,  pos,  o)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1abd6e9df7f8b288e18bd067a288508611"/><section>
+    <title>distStart()</title>
+<indexterm><primary>distStart</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>distStart</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.distStart ( self,  pos,  o)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1ab84ab2d7832f98ada7f90a728d575d1d"/><section>
+    <title>extend()</title>
+<indexterm><primary>extend</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>extend</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.extend ( self,  points,  startpoints = <computeroutput>None</computeroutput>
+,  endpoints = <computeroutput>None</computeroutput>
+,  rotations = <computeroutput>None</computeroutput>
+,  at_index = <computeroutput>None</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1cam__chunk_1_1camPathChunk_ab84ab2d7832f98ada7f90a728d575d1d_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1cam__chunk_1_1camPathChunk_ab84ab2d7832f98ada7f90a728d575d1d_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1a639c609498222d070cea059663e7b6bd"/><section>
+    <title>flipX()</title>
+<indexterm><primary>flipX</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>flipX</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.flipX ( self,  x_centre)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1a118ba0f8501dd0ea6025a9f904743f69"/><section>
+    <title>get_point()</title>
+<indexterm><primary>get_point</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>get_point</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.get_point ( self,  n)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1ae0c9298aad44a4aa563b094fedc69c56"/><section>
+    <title>get_points()</title>
+<indexterm><primary>get_points</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>get_points</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.get_points ( self)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1a10a1dc2eb1876f3b708c52607b76ec42"/><section>
+    <title>get_points_np()</title>
+<indexterm><primary>get_points_np</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>get_points_np</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.get_points_np ( self)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1a5c371c8fff4931dc6d5d1837d14c3860"/><section>
+    <title>getLength()</title>
+<indexterm><primary>getLength</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>getLength</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.getLength ( self)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1cam__chunk_1_1camPathChunk_a5c371c8fff4931dc6d5d1837d14c3860_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1a024a2acdb2a0d7a59f95e4c021c5600f"/><section>
+    <title>getNextClosest()</title>
+<indexterm><primary>getNextClosest</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>getNextClosest</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.getNextClosest ( self,  o,  pos)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1a3b0e7723b3e0090bcee3f318f91b2109"/><section>
+    <title>insert()</title>
+<indexterm><primary>insert</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>insert</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.insert ( self,  at_index,  point,  startpoint = <computeroutput>None</computeroutput>
+,  endpoint = <computeroutput>None</computeroutput>
+,  rotation = <computeroutput>None</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1cam__chunk_1_1camPathChunk_a3b0e7723b3e0090bcee3f318f91b2109_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1ae0d231acd5cd271b99faa575c6576456"/><section>
+    <title>isbelowZ()</title>
+<indexterm><primary>isbelowZ</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>isbelowZ</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.isbelowZ ( self,  z)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1a2194b46cca3aebb0c500e6dcb4a8e7ab"/><section>
+    <title>leadContour()</title>
+<indexterm><primary>leadContour</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>leadContour</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.leadContour ( self,  o)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1cam__chunk_1_1camPathChunk_a2194b46cca3aebb0c500e6dcb4a8e7ab_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1a4f4ed7e0454f519b790497c08b7aa585"/><section>
+    <title>offsetZ()</title>
+<indexterm><primary>offsetZ</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>offsetZ</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.offsetZ ( self,  z)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1ac89c2cd255d1a7b1d8a8b02d01b1e0f9"/><section>
+    <title>pop()</title>
+<indexterm><primary>pop</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>pop</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.pop ( self,  index)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1cam__chunk_1_1camPathChunk_ac89c2cd255d1a7b1d8a8b02d01b1e0f9_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1cam__chunk_1_1camPathChunk_ac89c2cd255d1a7b1d8a8b02d01b1e0f9_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1a6a208a40138feb41a8027692557af7a2"/><section>
+    <title>rampContour()</title>
+<indexterm><primary>rampContour</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>rampContour</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.rampContour ( self,  zstart,  zend,  o)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1cam__chunk_1_1camPathChunk_a6a208a40138feb41a8027692557af7a2_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1a11db061ac379175d08ea8b9a0e04e987"/><section>
+    <title>rampZigZag()</title>
+<indexterm><primary>rampZigZag</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>rampZigZag</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.rampZigZag ( self,  zstart,  zend,  o)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1cam__chunk_1_1camPathChunk_a11db061ac379175d08ea8b9a0e04e987_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1ae32d1b14d85935d36442e38bcdaea48e"/><section>
+    <title>reverse()</title>
+<indexterm><primary>reverse</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>reverse</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.reverse ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1cam__chunk_1_1camPathChunk_ae32d1b14d85935d36442e38bcdaea48e_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1cam__chunk_1_1camPathChunk_ae32d1b14d85935d36442e38bcdaea48e_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1abe1aeb71e54a456bee35ec14d1262496"/><section>
+    <title>set_points()</title>
+<indexterm><primary>set_points</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>set_points</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.set_points ( self,  points)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1a0f5437289545fe6b907d27f742ab9096"/><section>
+    <title>setZ()</title>
+<indexterm><primary>setZ</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>setZ</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.setZ ( self,  z,  if_bigger = <computeroutput>False</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1a14da98abe609abafa374ed52861879d6"/><section>
+    <title>shift()</title>
+<indexterm><primary>shift</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>shift</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.shift ( self,  x,  y,  z)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1cam__chunk_1_1camPathChunk_a14da98abe609abafa374ed52861879d6_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1af57aaae7d46be784db607f47be6afb8e"/><section>
+    <title>update_poly()</title>
+<indexterm><primary>update_poly</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>update_poly</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.update_poly ( self)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1cam__chunk_1_1camPathChunk_af57aaae7d46be784db607f47be6afb8e_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1a4479bed9ef7dfb9190652d8984b8a0b9"/><section>
+    <title>xyDistanceTo()</title>
+<indexterm><primary>xyDistanceTo</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>xyDistanceTo</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.xyDistanceTo ( self,  other,  cutoff = <computeroutput>0</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1cam__chunk_1_1camPathChunk_a4479bed9ef7dfb9190652d8984b8a0b9_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1ac01f1831d2b22c9df83b8f356c9ba086"/><section>
+    <title>xyDistanceWithin()</title>
+<indexterm><primary>xyDistanceWithin</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>xyDistanceWithin</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.xyDistanceWithin ( self,  other,  cutoff)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1cam__chunk_1_1camPathChunk_ac01f1831d2b22c9df83b8f356c9ba086_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1a084b2697c35a0dfc9905858ed6543894"/><section>
+    <title>cango</title>
+<indexterm><primary>cango</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>cango</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.cango</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1aa67ddac5e415d2cc7d80b6f7366a15fc"/><section>
+    <title>children</title>
+<indexterm><primary>children</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>children</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.children</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1a7adc0741df185dec3a8da9e8ef58a420"/><section>
+    <title>closed</title>
+<indexterm><primary>closed</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>closed</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.closed</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1adfb2c87a49216c5f7a17ac56b13c3efe"/><section>
+    <title>endpoints</title>
+<indexterm><primary>endpoints</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>endpoints</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.endpoints</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1afc9bbeb29cef5588fdce5adc1c2b9735"/><section>
+    <title>length</title>
+<indexterm><primary>length</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>length</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.length</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1af7a265e21cdd80b080ff90e2a768cdef"/><section>
+    <title>parents</title>
+<indexterm><primary>parents</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>parents</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.parents</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1a1c6b333f94c5f7758d5c23b04e7a3647"/><section>
+    <title>points</title>
+<indexterm><primary>points</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>points</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.points</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1ab82e5810dbafd62c3a244205781ae966"/><section>
+    <title>poly</title>
+<indexterm><primary>poly</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>poly</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.poly</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1a600f43991a37ada31f6bf30e09ecfe8b"/><section>
+    <title>rotations</title>
+<indexterm><primary>rotations</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>rotations</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.rotations</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1a7fb526d863d3153d2da0a6c382aaf51a"/><section>
+    <title>simppoly</title>
+<indexterm><primary>simppoly</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>simppoly</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.simppoly</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1a9d44fac2616271250d3361ce93d5a036"/><section>
+    <title>sorted</title>
+<indexterm><primary>sorted</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>sorted</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.sorted</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1aa1ab1dc3a73227c1520eb5aa5b87d198"/><section>
+    <title>startpoints</title>
+<indexterm><primary>startpoints</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>startpoints</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.startpoints</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1a5b65780528136439fd96a33097f90c5a"/><section>
+    <title>zend</title>
+<indexterm><primary>zend</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>zend</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.zend</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1cam__chunk_1_1camPathChunk_1a2fc64792951f2319934f522fd500d65a"/><section>
+    <title>zstart</title>
+<indexterm><primary>zstart</primary><secondary>cam.cam_chunk.camPathChunk</secondary></indexterm>
+<indexterm><primary>cam.cam_chunk.camPathChunk</primary><secondary>zstart</secondary></indexterm>
+<para><computeroutput>cam.cam_chunk.camPathChunk.zstart</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/<link linkend="_cam__chunk_8py">cam_chunk.py</link></section>
+</section>

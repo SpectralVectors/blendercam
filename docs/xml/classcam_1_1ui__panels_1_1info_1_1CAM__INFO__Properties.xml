@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1ui__panels_1_1info_1_1CAM__INFO__Properties" kind="class" language="Python" prot="public">
+    <compoundname>cam::ui_panels::info::CAM_INFO_Properties</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PropertyGroup</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1info_1_1CAM__INFO__Properties_1a7cb22ffb531b0c4fe719b5c547db715e" prot="public" static="yes" mutable="no">
+        <type>StringProperty</type>
+        <definition>StringProperty cam.ui_panels.info.CAM_INFO_Properties::warnings</definition>
+        <argsstring></argsstring>
+        <name>warnings</name>
+        <qualifiedname>cam.ui_panels.info.CAM_INFO_Properties.warnings</qualifiedname>
+        <initializer>(
+        name=&apos;Warnings&apos;,
+        description=&apos;Warnings&apos;,
+        default=&apos;&apos;,
+        update=update_operation,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/info.py" line="35" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/info.py" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1info_1_1CAM__INFO__Properties_1a5f862844dea04cf41b3fd960560a2525" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.ui_panels.info.CAM_INFO_Properties::chipload</definition>
+        <argsstring></argsstring>
+        <name>chipload</name>
+        <qualifiedname>cam.ui_panels.info.CAM_INFO_Properties.chipload</qualifiedname>
+        <initializer>(
+        name=&quot;Chipload&quot;,
+        description=&quot;Calculated chipload&quot;,
+        default=0.0, unit=&apos;LENGTH&apos;,
+        precision=CHIPLOAD_PRECISION,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/info.py" line="42" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/info.py" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1info_1_1CAM__INFO__Properties_1ac4e59879260a5738fa39bd399aa200e0" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.ui_panels.info.CAM_INFO_Properties::duration</definition>
+        <argsstring></argsstring>
+        <name>duration</name>
+        <qualifiedname>cam.ui_panels.info.CAM_INFO_Properties.duration</qualifiedname>
+        <initializer>(
+        name=&quot;Estimated Time&quot;,
+        default=0.01,
+        min=0.0000,
+        max=MAX_OPERATION_TIME,
+        precision=PRECISION,
+        unit=&quot;TIME&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/info.py" line="49" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/info.py" bodystart="49" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PropertyGroup</label>
+      </node>
+      <node id="1">
+        <label>cam.ui_panels.info.CAM_INFO_Properties</label>
+        <link refid="classcam_1_1ui__panels_1_1info_1_1CAM__INFO__Properties"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>FloatProperty</label>
+      </node>
+      <node id="3">
+        <label>StringProperty</label>
+      </node>
+      <node id="2">
+        <label>PropertyGroup</label>
+      </node>
+      <node id="1">
+        <label>cam.ui_panels.info.CAM_INFO_Properties</label>
+        <link refid="classcam_1_1ui__panels_1_1info_1_1CAM__INFO__Properties"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+warnings</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+chipload</edgelabel>
+          <edgelabel>+duration</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/info.py" line="33" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/info.py" bodystart="33" bodyend="58"/>
+    <listofallmembers>
+      <member refid="classcam_1_1ui__panels_1_1info_1_1CAM__INFO__Properties_1a5f862844dea04cf41b3fd960560a2525" prot="public" virt="non-virtual"><scope>cam::ui_panels::info::CAM_INFO_Properties</scope><name>chipload</name></member>
+      <member refid="classcam_1_1ui__panels_1_1info_1_1CAM__INFO__Properties_1ac4e59879260a5738fa39bd399aa200e0" prot="public" virt="non-virtual"><scope>cam::ui_panels::info::CAM_INFO_Properties</scope><name>duration</name></member>
+      <member refid="classcam_1_1ui__panels_1_1info_1_1CAM__INFO__Properties_1a7cb22ffb531b0c4fe719b5c547db715e" prot="public" virt="non-virtual"><scope>cam::ui_panels::info::CAM_INFO_Properties</scope><name>warnings</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

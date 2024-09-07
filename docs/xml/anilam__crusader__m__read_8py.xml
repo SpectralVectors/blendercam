@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="anilam__crusader__m__read_8py" kind="file" language="Python">
+    <compoundname>anilam_crusader_m_read.py</compoundname>
+    <innerclass refid="classcam_1_1nc_1_1anilam__crusader__m__read_1_1Parser" prot="public">cam::nc::anilam_crusader_m_read::Parser</innerclass>
+    <innernamespace refid="namespacecam">cam</innernamespace>
+    <innernamespace refid="namespacecam_1_1nc">cam::nc</innernamespace>
+    <innernamespace refid="namespacecam_1_1nc_1_1anilam__crusader__m__read">cam::nc::anilam_crusader_m_read</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacecam_1_1nc_1_1anilam__crusader__m__read" refkind="compound"><highlight class="comment">#<sp/>Preliminary<sp/>backplot<sp/>support<sp/>for<sp/>Anilam<sp/>Crusader<sp/>M<sp/>CNC<sp/>controller</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">#<sp/>This<sp/>code<sp/>modified<sp/>from<sp/>iso_read.py<sp/>and<sp/>emc2_read.py<sp/>distriuted<sp/>with<sp/>HeeksCAD<sp/>as<sp/>of<sp/>Sep<sp/>2010</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Kurt<sp/>Jensen<sp/>6<sp/>Sep<sp/>2010</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Use<sp/>at<sp/>your<sp/>own<sp/>risk.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>iso_read<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>iso</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>sys</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Override<sp/>some<sp/>iso<sp/>parser<sp/>methods<sp/>to<sp/>interpret<sp/>arc<sp/>centers<sp/>as<sp/>relative<sp/>to<sp/>origin,<sp/>not<sp/>relative<sp/>to<sp/>start<sp/>of<sp/>arc.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="classcam_1_1nc_1_1anilam__crusader__m__read_1_1Parser" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classcam_1_1nc_1_1anilam__crusader__m__read_1_1Parser" kindref="compound">Parser</ref>(iso.Parser):</highlight></codeline>
+<codeline lineno="12" refid="classcam_1_1nc_1_1anilam__crusader__m__read_1_1Parser_1a42460f6c056e70b7c6f3059cc3e6abb0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classcam_1_1nc_1_1anilam__crusader__m__read_1_1Parser_1a42460f6c056e70b7c6f3059cc3e6abb0" kindref="member">__init__</ref>(self,<sp/>writer):</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iso.Parser.__init__(self,<sp/>writer)</highlight></codeline>
+<codeline lineno="14" refid="classcam_1_1nc_1_1anilam__crusader__m__read_1_1Parser_1a94cc23b85a633aaf63fdc29dc6e09b5c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classcam_1_1nc_1_1anilam__crusader__m__read_1_1Parser_1a94cc23b85a633aaf63fdc29dc6e09b5c" kindref="member">arc_centre_absolute</ref><sp/>=<sp/></highlight><highlight class="keyword">True</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/anilam_crusader_m_read.py"/>
+  </compounddef>
+</doxygen>

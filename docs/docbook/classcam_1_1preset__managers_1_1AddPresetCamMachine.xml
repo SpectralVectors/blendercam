@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1preset__managers_1_1AddPresetCamMachine" xml:lang="en-US">
+<title>cam.preset_managers.AddPresetCamMachine Class Reference</title>
+<indexterm><primary>cam.preset_managers.AddPresetCamMachine</primary></indexterm>
+Inheritance diagram for cam.preset_managers.AddPresetCamMachine:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1preset__managers_1_1AddPresetCamMachine__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.preset_managers.AddPresetCamMachine:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1preset__managers_1_1AddPresetCamMachine__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classcam_1_1preset__managers_1_1AddPresetCamMachine_1ac1c708789b4f96b917499354a32c3f94">bl_idname</link> = &quot;render.cam_preset_machine_add&quot;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1preset__managers_1_1AddPresetCamMachine_1a47154ef591a14abd6d942277974c69c8">bl_label</link> = &quot;Add Machine Preset&quot;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1preset__managers_1_1AddPresetCamMachine_1a7ce33c6e0794b1614c151f7483d71335">preset_menu</link> = &quot;CAM_MACHINE_MT_presets&quot;</para>
+</listitem>
+            <listitem><para>list <link linkend="_classcam_1_1preset__managers_1_1AddPresetCamMachine_1a5c4514bf7f0c2ee7b45efec33a8bc573">preset_defines</link></para>
+</listitem>
+            <listitem><para>list <link linkend="_classcam_1_1preset__managers_1_1AddPresetCamMachine_1ab17ccff2cf9b96db7ecdfad4a005d2d7">preset_values</link></para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1preset__managers_1_1AddPresetCamMachine_1a0d38dced816ccb66109d1dc7fd4a144c">preset_subdir</link> = &quot;cam_machines&quot;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Add a Cam Machine Preset</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1preset__managers_1_1AddPresetCamMachine_1ac1c708789b4f96b917499354a32c3f94"/><section>
+    <title>bl_idname</title>
+<indexterm><primary>bl_idname</primary><secondary>cam.preset_managers.AddPresetCamMachine</secondary></indexterm>
+<indexterm><primary>cam.preset_managers.AddPresetCamMachine</primary><secondary>bl_idname</secondary></indexterm>
+<para><computeroutput>str cam.preset_managers.AddPresetCamMachine.bl_idname = &quot;render.cam_preset_machine_add&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1preset__managers_1_1AddPresetCamMachine_1a47154ef591a14abd6d942277974c69c8"/><section>
+    <title>bl_label</title>
+<indexterm><primary>bl_label</primary><secondary>cam.preset_managers.AddPresetCamMachine</secondary></indexterm>
+<indexterm><primary>cam.preset_managers.AddPresetCamMachine</primary><secondary>bl_label</secondary></indexterm>
+<para><computeroutput>str cam.preset_managers.AddPresetCamMachine.bl_label = &quot;Add Machine Preset&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1preset__managers_1_1AddPresetCamMachine_1a5c4514bf7f0c2ee7b45efec33a8bc573"/><section>
+    <title>preset_defines</title>
+<indexterm><primary>preset_defines</primary><secondary>cam.preset_managers.AddPresetCamMachine</secondary></indexterm>
+<indexterm><primary>cam.preset_managers.AddPresetCamMachine</primary><secondary>preset_defines</secondary></indexterm>
+<para><computeroutput>list cam.preset_managers.AddPresetCamMachine.preset_defines<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">=&#32;&#32;[
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;d&#32;=&#32;bpy.context.scene.cam_machine&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;s&#32;=&#32;bpy.context.scene.unit_settings&quot;</emphasis>
+&#32;&#32;&#32;&#32;]
+</programlisting></section>
+<anchor xml:id="_classcam_1_1preset__managers_1_1AddPresetCamMachine_1a7ce33c6e0794b1614c151f7483d71335"/><section>
+    <title>preset_menu</title>
+<indexterm><primary>preset_menu</primary><secondary>cam.preset_managers.AddPresetCamMachine</secondary></indexterm>
+<indexterm><primary>cam.preset_managers.AddPresetCamMachine</primary><secondary>preset_menu</secondary></indexterm>
+<para><computeroutput>str cam.preset_managers.AddPresetCamMachine.preset_menu = &quot;CAM_MACHINE_MT_presets&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1preset__managers_1_1AddPresetCamMachine_1a0d38dced816ccb66109d1dc7fd4a144c"/><section>
+    <title>preset_subdir</title>
+<indexterm><primary>preset_subdir</primary><secondary>cam.preset_managers.AddPresetCamMachine</secondary></indexterm>
+<indexterm><primary>cam.preset_managers.AddPresetCamMachine</primary><secondary>preset_subdir</secondary></indexterm>
+<para><computeroutput>str cam.preset_managers.AddPresetCamMachine.preset_subdir = &quot;cam_machines&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1preset__managers_1_1AddPresetCamMachine_1ab17ccff2cf9b96db7ecdfad4a005d2d7"/><section>
+    <title>preset_values</title>
+<indexterm><primary>preset_values</primary><secondary>cam.preset_managers.AddPresetCamMachine</secondary></indexterm>
+<indexterm><primary>cam.preset_managers.AddPresetCamMachine</primary><secondary>preset_values</secondary></indexterm>
+<para><computeroutput>list cam.preset_managers.AddPresetCamMachine.preset_values<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">=&#32;&#32;[
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;d.post_processor&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;s.system&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;d.use_position_definitions&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;d.starting_position&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;d.mtc_position&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;d.ending_position&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;d.working_area&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;d.feedrate_min&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;d.feedrate_max&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;d.feedrate_default&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;d.spindle_min&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;d.spindle_max&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;d.spindle_default&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;d.axis4&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;d.axis5&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;d.collet_size&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;d.output_tool_change&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;d.output_block_numbers&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;d.output_tool_definitions&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;d.output_g43_on_tool_change&quot;</emphasis>,
+&#32;&#32;&#32;&#32;]
+</programlisting></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/<link linkend="_preset__managers_8py">preset_managers.py</link></section>
+</section>

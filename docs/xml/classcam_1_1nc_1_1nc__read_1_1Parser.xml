@@ -1,0 +1,1094 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1nc_1_1nc__read_1_1Parser" kind="class" language="Python" prot="public">
+    <compoundname>cam::nc::nc_read::Parser</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcam_1_1nc_1_1nc__read_1_1Parser_1ad3d24bcce544b254208def08db8625e7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser::writer</definition>
+        <argsstring></argsstring>
+        <name>writer</name>
+        <qualifiedname>cam.nc.nc_read.Parser.writer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="15" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1nc_1_1nc__read_1_1Parser_1a6234f1b6dc8f963296f2445fd8574ae1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser::currentx</definition>
+        <argsstring></argsstring>
+        <name>currentx</name>
+        <qualifiedname>cam.nc.nc_read.Parser.currentx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="16" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="16" bodyend="-1"/>
+        <referencedby refid="classcam_1_1nc_1_1cad__nc__read_1_1Parser_1a7d77e08170185d002ab8782d4d9e5318" compoundref="cad__nc__read_8py" startline="93" endline="117">cam.nc.cad_nc_read.Parser.add_arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1nclathe__read_1_1Parser_1af831cf56257fb77f7e451e315631e4f5" compoundref="nclathe__read_8py" startline="133" endline="172">cam.nc.nclathe_read.Parser.add_arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1nclathe__read_1_1Parser_1a5c7031130f1cb6a9133aab8104dd519c" compoundref="nclathe__read_8py" startline="119" endline="132">cam.nc.nclathe_read.Parser.add_lathe_increment_line</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1cad__nc__read_1_1Parser_1a738a961ed9cebf72a1d9ae2cd63c49f8" compoundref="cad__nc__read_8py" startline="77" endline="92">cam.nc.cad_nc_read.Parser.add_line</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1nclathe__read_1_1Parser_1a8e66fae75c57b080570f2893d2b8b4ba" compoundref="nclathe__read_8py" startline="89" endline="118">cam.nc.nclathe_read.Parser.add_line</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1nc__read_1_1Parser_1aee97d02ca45ea183d03d02828f078a15" compoundref="nc__read_8py" startline="36" endline="62">cam.nc.nc_read.Parser.set_current_pos</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1nc_1_1nc__read_1_1Parser_1a598d7d5b16bea011b7fb883a94fa4859" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser::currenty</definition>
+        <argsstring></argsstring>
+        <name>currenty</name>
+        <qualifiedname>cam.nc.nc_read.Parser.currenty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="17" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="17" bodyend="-1"/>
+        <referencedby refid="classcam_1_1nc_1_1cad__nc__read_1_1Parser_1a7d77e08170185d002ab8782d4d9e5318" compoundref="cad__nc__read_8py" startline="93" endline="117">cam.nc.cad_nc_read.Parser.add_arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1nclathe__read_1_1Parser_1af831cf56257fb77f7e451e315631e4f5" compoundref="nclathe__read_8py" startline="133" endline="172">cam.nc.nclathe_read.Parser.add_arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1cad__nc__read_1_1Parser_1a738a961ed9cebf72a1d9ae2cd63c49f8" compoundref="cad__nc__read_8py" startline="77" endline="92">cam.nc.cad_nc_read.Parser.add_line</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1nclathe__read_1_1Parser_1a8e66fae75c57b080570f2893d2b8b4ba" compoundref="nclathe__read_8py" startline="89" endline="118">cam.nc.nclathe_read.Parser.add_line</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1nc__read_1_1Parser_1aee97d02ca45ea183d03d02828f078a15" compoundref="nc__read_8py" startline="36" endline="62">cam.nc.nc_read.Parser.set_current_pos</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1nc_1_1nc__read_1_1Parser_1ad0fd83b9cdc03ea0e10079f150766913" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser::currentz</definition>
+        <argsstring></argsstring>
+        <name>currentz</name>
+        <qualifiedname>cam.nc.nc_read.Parser.currentz</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="18" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="18" bodyend="-1"/>
+        <referencedby refid="classcam_1_1nc_1_1cad__nc__read_1_1Parser_1a7d77e08170185d002ab8782d4d9e5318" compoundref="cad__nc__read_8py" startline="93" endline="117">cam.nc.cad_nc_read.Parser.add_arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1nclathe__read_1_1Parser_1af831cf56257fb77f7e451e315631e4f5" compoundref="nclathe__read_8py" startline="133" endline="172">cam.nc.nclathe_read.Parser.add_arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1nclathe__read_1_1Parser_1a5c7031130f1cb6a9133aab8104dd519c" compoundref="nclathe__read_8py" startline="119" endline="132">cam.nc.nclathe_read.Parser.add_lathe_increment_line</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1cad__nc__read_1_1Parser_1a738a961ed9cebf72a1d9ae2cd63c49f8" compoundref="cad__nc__read_8py" startline="77" endline="92">cam.nc.cad_nc_read.Parser.add_line</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1nclathe__read_1_1Parser_1a8e66fae75c57b080570f2893d2b8b4ba" compoundref="nclathe__read_8py" startline="89" endline="118">cam.nc.nclathe_read.Parser.add_line</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1nc__read_1_1Parser_1aee97d02ca45ea183d03d02828f078a15" compoundref="nc__read_8py" startline="36" endline="62">cam.nc.nc_read.Parser.set_current_pos</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1nc_1_1nc__read_1_1Parser_1a978d03f3a2b380ed41048be75d1e162e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser::absolute_flag</definition>
+        <argsstring></argsstring>
+        <name>absolute_flag</name>
+        <qualifiedname>cam.nc.nc_read.Parser.absolute_flag</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="19" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="19" bodyend="-1"/>
+        <referencedby refid="classcam_1_1nc_1_1cad__nc__read_1_1Parser_1afa3060c7f228da7cab9df28f06eb251f" compoundref="cad__nc__read_8py" startline="121" endline="123">cam.nc.cad_nc_read.Parser.absolute</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a45c41543e061f4cdfbeabd5b45a42a7a" compoundref="heiden_8py" startline="238" endline="241">cam.nc.heiden.Creator.absolute</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1a9aa27edca4b9740fb914195f14bbb247" compoundref="iso_8py" startline="419" endline="422">cam.nc.iso.Creator.absolute</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a8693294ebb764f30b26802f9d58a888e" compoundref="lathe1_8py" startline="125" endline="128">cam.nc.lathe1.CreatorIso.absolute</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1nc__read_1_1Parser_1ac6508a88add299eca4dec80685e2aa1c" compoundref="nc__read_8py" startline="66" endline="68">cam.nc.nc_read.Parser.absolute</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1nclathe__read_1_1Parser_1a09fc6a35237313013c1246a36b3ab471" compoundref="nclathe__read_8py" startline="176" endline="178">cam.nc.nclathe_read.Parser.absolute</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1shopbot__mtc_1_1Creator_1a5cd57b47bc427d63d82dc88ba8a80ee9" compoundref="shopbot__mtc_8py" startline="101" endline="104">cam.nc.shopbot_mtc.Creator.absolute</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1nclathe__read_1_1Parser_1af831cf56257fb77f7e451e315631e4f5" compoundref="nclathe__read_8py" startline="133" endline="172">cam.nc.nclathe_read.Parser.add_arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1nclathe__read_1_1Parser_1a8e66fae75c57b080570f2893d2b8b4ba" compoundref="nclathe__read_8py" startline="89" endline="118">cam.nc.nclathe_read.Parser.add_line</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a78c90cc7cedad79ff356840b59527774" compoundref="heiden_8py" startline="535" endline="697">cam.nc.heiden.Creator.arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1aed90658ba02dc4e25c565f6e3a70670d" compoundref="iso_8py" startline="765" endline="939">cam.nc.iso.Creator.arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1abb9674871edcb35b7b6c7712b3381073" compoundref="lathe1_8py" startline="373" endline="431">cam.nc.lathe1.CreatorIso.arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a6a900c248df1059acd397cb17fc4b18c" compoundref="makerbotHBP_8py" startline="243" endline="295">cam.nc.makerbotHBP.CreatorMakerbotHBP.arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a983c9d1748987984ea5a74e7489b4664" compoundref="heiden_8py" startline="442" endline="483">cam.nc.heiden.Creator.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden530_1_1Creator_1a85c6b3c82eb4357cf5d08aad348f2805" compoundref="heiden530_8py" startline="163" endline="202">cam.nc.heiden530.Creator.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1ad072e258b3de2c4fa8b1033f28d67bbb" compoundref="iso_8py" startline="642" endline="709">cam.nc.iso.Creator.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a7278ca3bb84f4045368333fa059ab864" compoundref="lathe1_8py" startline="313" endline="359">cam.nc.lathe1.CreatorIso.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a1d9d3db267970ad8b006b6b0448d2612" compoundref="makerbotHBP_8py" startline="188" endline="229">cam.nc.makerbotHBP.CreatorMakerbotHBP.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1cad__nc__read_1_1Parser_1ac78b8b7e1e29b4529e5ea9fc27826bb5" compoundref="cad__nc__read_8py" startline="118" endline="120">cam.nc.cad_nc_read.Parser.incremental</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1centroid1_1_1Creator_1a405acebb6a464435d8d305b38945eb8c" compoundref="centroid1_8py" startline="56" endline="59">cam.nc.centroid1.Creator.incremental</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a0a18f771b23203322043703deddae5d8" compoundref="heiden_8py" startline="242" endline="245">cam.nc.heiden.Creator.incremental</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1a882c092d48477f2101362c0988d228e7" compoundref="iso_8py" startline="423" endline="426">cam.nc.iso.Creator.incremental</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1afb8eda52dbc738421b324d12969b57b8" compoundref="lathe1_8py" startline="129" endline="132">cam.nc.lathe1.CreatorIso.incremental</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1nc__read_1_1Parser_1a378c7032a0b9ac2c57e28c0e94d30355" compoundref="nc__read_8py" startline="63" endline="65">cam.nc.nc_read.Parser.incremental</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1nclathe__read_1_1Parser_1a24da4349bbefa64e9019dc05bd33df6f" compoundref="nclathe__read_8py" startline="173" endline="175">cam.nc.nclathe_read.Parser.incremental</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1shopbot__mtc_1_1Creator_1adeea6bf31a1eb12b907c17de54ca058f" compoundref="shopbot__mtc_8py" startline="105" endline="108">cam.nc.shopbot_mtc.Creator.incremental</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a2262faed4f078201d3fab4c023d3e1d2" compoundref="heiden_8py" startline="381" endline="441">cam.nc.heiden.Creator.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden530_1_1Creator_1ae0e91cfeea8854af12bf2494a799bc9a" compoundref="heiden530_8py" startline="127" endline="162">cam.nc.heiden530.Creator.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1a64bd7544d638558d278746433d3855d6" compoundref="iso_8py" startline="578" endline="641">cam.nc.iso.Creator.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a58e2089cb00422e3761f487ab0160e2b" compoundref="lathe1_8py" startline="248" endline="312">cam.nc.lathe1.CreatorIso.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1nc__read_1_1Parser_1aee97d02ca45ea183d03d02828f078a15" compoundref="nc__read_8py" startline="36" endline="62">cam.nc.nc_read.Parser.set_current_pos</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1nc_1_1nc__read_1_1Parser_1a7df431f68cf60e395facca0ca46e1d58" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser::drillz</definition>
+        <argsstring></argsstring>
+        <name>drillz</name>
+        <qualifiedname>cam.nc.nc_read.Parser.drillz</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="20" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1nc_1_1nc__read_1_1Parser_1afaab85d3d385befe21ab8a55096857bc" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser::need_m6_for_t_change</definition>
+        <argsstring></argsstring>
+        <name>need_m6_for_t_change</name>
+        <qualifiedname>cam.nc.nc_read.Parser.need_m6_for_t_change</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="21" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1nc_1_1nc__read_1_1Parser_1a8b464b4a326104ff2694107cbb924448" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser::line</definition>
+        <argsstring></argsstring>
+        <name>line</name>
+        <qualifiedname>cam.nc.nc_read.Parser.line</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="30" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="30" bodyend="-1"/>
+        <referencedby refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1ab661d91daf66cd54c13ab9fe1193955b" compoundref="gcodeimportparser_8py" startline="210" endline="214">cam.gcodeimportparser.GcodeParser.error</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1cad__iso__read_1_1Parser_1abf885d019794a8bef1b69f446c8851e1" compoundref="cad__iso__read_8py" startline="164" endline="235">cam.nc.cad_iso_read.Parser.Parse</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1cad__read_1_1CAD__backplot_1afce7c30e482cfb88a36593d4020909d7" compoundref="cad__read_8py" startline="27" endline="286">cam.nc.cad_read.CAD_backplot.Parse</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1__read_1_1Parser_1a4046e981f4f946bed728de957d10365f" compoundref="lathe1__read_8py" startline="28" endline="240">cam.nc.lathe1_read.Parser.Parse</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1num__reader_1_1NumReader_1ae908a2956d1e0cfd474a47540bee9759" compoundref="num__reader_8py" startline="40" endline="63">cam.nc.num_reader.NumReader.Parse</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1rez2__read_1_1Parser_1a16b4685a6d0b45b32ad762794240dfc0" compoundref="rez2__read_8py" startline="70" endline="308">cam.nc.rez2_read.Parser.Parse</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1hpgl2d__read_1_1Parser_1a0b707cfa8f85f48082f4e827cd2e4de2" compoundref="hpgl2d__read_8py" startline="81" endline="98">cam.nc.hpgl2d_read.Parser.ParseFromFirstLetter</referencedby>
+        <referencedby refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1ac0dc820285278526c3d681fdb0382144" compoundref="gcodeimportparser_8py" startline="126" endline="173">cam.gcodeimportparser.GcodeParser.parseLine</referencedby>
+        <referencedby refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1ad1fcff07178ae82267e8f431946ae94c" compoundref="gcodeimportparser_8py" startline="207" endline="209">cam.gcodeimportparser.GcodeParser.warn</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1nc_1_1nc__read_1_1Parser_1a44dea2d7915cf1ea18578e0bdb1e9a3d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser::file_in</definition>
+        <argsstring></argsstring>
+        <name>file_in</name>
+        <qualifiedname>cam.nc.nc_read.Parser.file_in</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="70" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="70" bodyend="-1"/>
+        <referencedby refid="classcam_1_1nc_1_1nc__read_1_1Parser_1ae97dacb299bf962f355da1a74960a5f4" compoundref="nc__read_8py" startline="23" endline="25">cam.nc.nc_read.Parser.__del__</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1cad__nc__read_1_1Parser_1ac451b96114b938111a316012fd8a7224" compoundref="cad__nc__read_8py" startline="27" endline="32">cam.nc.cad_nc_read.Parser.files_close</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1nclathe__read_1_1Parser_1ad52a01638c6a6554e7129a75b2185e05" compoundref="nclathe__read_8py" startline="29" endline="34">cam.nc.nclathe_read.Parser.files_close</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1nc_1_1nc__read_1_1Parser_1aec61ffe193ace8115045da27b9f20d60" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser::path_col</definition>
+        <argsstring></argsstring>
+        <name>path_col</name>
+        <qualifiedname>cam.nc.nc_read.Parser.path_col</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="72" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="72" bodyend="-1"/>
+        <referencedby refid="classcam_1_1nc_1_1cad__iso__read_1_1Parser_1abf885d019794a8bef1b69f446c8851e1" compoundref="cad__iso__read_8py" startline="164" endline="235">cam.nc.cad_iso_read.Parser.Parse</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1nc_1_1nc__read_1_1Parser_1ace817d71b9bf72487ef7419106fb836e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser::f</definition>
+        <argsstring></argsstring>
+        <name>f</name>
+        <qualifiedname>cam.nc.nc_read.Parser.f</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="73" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="73" bodyend="-1"/>
+        <referencedby refid="classcam_1_1nc_1_1tnc151_1_1Creator_1a71028bbf9670ac38bdbc57840dfe69ee" compoundref="tnc151_8py" startline="16" endline="25">cam.nc.tnc151.Creator.__init__</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a900d1af85bd319f17ed6056c3ad6b27c" compoundref="heiden_8py" startline="350" endline="357">cam.nc.heiden.Creator.calc_feedrate_hv</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1ad28b33ba02030585fc68e3d033fbbad3" compoundref="iso_8py" startline="547" endline="554">cam.nc.iso.Creator.calc_feedrate_hv</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1aa405230025a73414084634b6c3f18647" compoundref="lathe1_8py" startline="213" endline="220">cam.nc.lathe1.CreatorIso.calc_feedrate_hv</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1ad6b1d24fbc92f1da74083f915b84a688" compoundref="heiden_8py" startline="341" endline="344">cam.nc.heiden.Creator.feedrate</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1a2d1c6d9f9626da93eca6552355107bf8" compoundref="iso_8py" startline="538" endline="541">cam.nc.iso.Creator.feedrate</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1aa2766b882c26238c2c270e4c194b8958" compoundref="lathe1_8py" startline="204" endline="207">cam.nc.lathe1.CreatorIso.feedrate</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1cad__iso__read_1_1Parser_1abf885d019794a8bef1b69f446c8851e1" compoundref="cad__iso__read_8py" startline="164" endline="235">cam.nc.cad_iso_read.Parser.Parse</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden__read_1_1Parser_1a9c64dcddf3c2c0d3248079dde5314cfe" compoundref="heiden__read_8py" startline="99" endline="161">cam.nc.heiden_read.Parser.Parsey</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1hpgl3d__read_1_1Parser_1ae1ce5f283aa57d7de17d269c42a17c90" compoundref="hpgl3d__read_8py" startline="23" endline="43">cam.nc.hpgl3d_read.Parser.ParseZ</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1afed26a155fda42029b3e1ebab236b090" compoundref="heiden_8py" startline="161" endline="163">cam.nc.heiden.Creator.write_feedrate</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1a4dc9e277a3ab026ee8a6f072b9da1f7c" compoundref="iso_8py" startline="216" endline="218">cam.nc.iso.Creator.write_feedrate</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a9a21f6b80f6042cc4d442d33bbcf2c70" compoundref="lathe1_8py" startline="55" endline="63">cam.nc.lathe1.CreatorIso.write_feedrate</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1rez2_1_1Creator_1a1da535bbf2de8923273e826a51e7c30e" compoundref="rez2_8py" startline="55" endline="58">cam.nc.rez2.Creator.write_feedrate</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1shopbot__mtc_1_1Creator_1a1ff6a4b111d2090f0480291056999f70" compoundref="shopbot__mtc_8py" startline="57" endline="59">cam.nc.shopbot_mtc.Creator.write_feedrate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1nc_1_1nc__read_1_1Parser_1a1b74f5cf813238e70dc09826c0a5ca3a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser::arc</definition>
+        <argsstring></argsstring>
+        <name>arc</name>
+        <qualifiedname>cam.nc.nc_read.Parser.arc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="74" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="74" bodyend="-1"/>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a78c90cc7cedad79ff356840b59527774" compoundref="heiden_8py" startline="535" endline="697">cam.nc.heiden.Creator.arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1aed90658ba02dc4e25c565f6e3a70670d" compoundref="iso_8py" startline="765" endline="939">cam.nc.iso.Creator.arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a7c0262bb6935f21773e134b851cbff38" compoundref="heiden_8py" startline="701" endline="703">cam.nc.heiden.Creator.arc_ccw</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1hpgl2d_1_1Creator_1ae869adedb7242daa7c1b42302c182896" compoundref="hpgl2d_8py" startline="110" endline="113">cam.nc.hpgl2d.Creator.arc_ccw</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1a73623b6caaf8efee669803ee57ca97a9" compoundref="iso_8py" startline="943" endline="945">cam.nc.iso.Creator.arc_ccw</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a9eae946df7fc34b9a46e33a00d891c3d" compoundref="lathe1_8py" startline="435" endline="437">cam.nc.lathe1.CreatorIso.arc_ccw</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1aa7b30248f278113e0c9a324820824941" compoundref="makerbotHBP_8py" startline="299" endline="301">cam.nc.makerbotHBP.CreatorMakerbotHBP.arc_ccw</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1recreator_1_1Redirector_1a50bb4fcb175a9c87e1cf45a79cd54ff1" compoundref="recreator_8py" startline="228" endline="230">cam.nc.recreator.Redirector.arc_ccw</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1rez2_1_1Creator_1a7a7b089cf338846799311b5b1193a566" compoundref="rez2_8py" startline="443" endline="445">cam.nc.rez2.Creator.arc_ccw</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1afffaa9e4bad9251bb67ff287f47accda" compoundref="heiden_8py" startline="698" endline="700">cam.nc.heiden.Creator.arc_cw</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1hpgl2d_1_1Creator_1ae23fc4d361aa6de768d74b18324bae53" compoundref="hpgl2d_8py" startline="107" endline="109">cam.nc.hpgl2d.Creator.arc_cw</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1a334d38752a57cd7745f9361d583c68f6" compoundref="iso_8py" startline="940" endline="942">cam.nc.iso.Creator.arc_cw</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ae2f7d7587f9940cf9534e127f7234c4c" compoundref="lathe1_8py" startline="432" endline="434">cam.nc.lathe1.CreatorIso.arc_cw</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a2cf899fa0839287bdca94b6207c078d6" compoundref="makerbotHBP_8py" startline="296" endline="298">cam.nc.makerbotHBP.CreatorMakerbotHBP.arc_cw</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1recreator_1_1Redirector_1a54adbf876611896e0d8d530766a18964" compoundref="recreator_8py" startline="225" endline="227">cam.nc.recreator.Redirector.arc_cw</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1rez2_1_1Creator_1a96f30401310d0198de3d2d55da86510f" compoundref="rez2_8py" startline="440" endline="442">cam.nc.rez2.Creator.arc_cw</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1cad__iso__read_1_1Parser_1abf885d019794a8bef1b69f446c8851e1" compoundref="cad__iso__read_8py" startline="164" endline="235">cam.nc.cad_iso_read.Parser.Parse</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden__read_1_1Parser_1a9c64dcddf3c2c0d3248079dde5314cfe" compoundref="heiden__read_8py" startline="99" endline="161">cam.nc.heiden_read.Parser.Parsey</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1nc_1_1nc__read_1_1Parser_1a50d80e3ad75985304325d1128fb32714" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser::q</definition>
+        <argsstring></argsstring>
+        <name>q</name>
+        <qualifiedname>cam.nc.nc_read.Parser.q</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="75" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="75" bodyend="-1"/>
+        <referencedby refid="classcam_1_1nc_1_1cad__iso__read_1_1Parser_1abf885d019794a8bef1b69f446c8851e1" compoundref="cad__iso__read_8py" startline="164" endline="235">cam.nc.cad_iso_read.Parser.Parse</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1nc_1_1nc__read_1_1Parser_1adbb802c2693c13051e44691f06f50e18" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser::r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <qualifiedname>cam.nc.nc_read.Parser.r</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="76" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="76" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamequation_1_1CamHypotrochoidCurve_1a0f880d0887532fc03324dd062d53fe35" compoundref="curvecamequation_8py" startline="386" endline="440">cam.curvecamequation.CamHypotrochoidCurve.execute</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1cad__iso__read_1_1Parser_1abf885d019794a8bef1b69f446c8851e1" compoundref="cad__iso__read_8py" startline="164" endline="235">cam.nc.cad_iso_read.Parser.Parse</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1nc_1_1nc__read_1_1Parser_1a617dd81db0bbe41828591b6d39654c38" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser::a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <qualifiedname>cam.nc.nc_read.Parser.a</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="79" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="79" bodyend="-1"/>
+        <referencedby refid="classcam_1_1voronoi_1_1Edge_1a187545924179ca70e04edb9adc82995c" compoundref="voronoi_8py" startline="524" endline="528">cam.voronoi.Edge.dump</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1ad072e258b3de2c4fa8b1033f28d67bbb" compoundref="iso_8py" startline="642" endline="709">cam.nc.iso.Creator.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1a54b28a33e139c4d354fa74abf630440c" compoundref="iso_8py" startline="710" endline="726">cam.nc.iso.Creator.filter_xyz</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1cad__iso__read_1_1Parser_1abf885d019794a8bef1b69f446c8851e1" compoundref="cad__iso__read_8py" startline="164" endline="235">cam.nc.cad_iso_read.Parser.Parse</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden__read_1_1Parser_1a9c64dcddf3c2c0d3248079dde5314cfe" compoundref="heiden__read_8py" startline="99" endline="161">cam.nc.heiden_read.Parser.Parsey</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a2262faed4f078201d3fab4c023d3e1d2" compoundref="heiden_8py" startline="381" endline="441">cam.nc.heiden.Creator.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1a64bd7544d638558d278746433d3855d6" compoundref="iso_8py" startline="578" endline="641">cam.nc.iso.Creator.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a58e2089cb00422e3761f487ab0160e2b" compoundref="lathe1_8py" startline="248" endline="312">cam.nc.lathe1.CreatorIso.rapid</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1nc_1_1nc__read_1_1Parser_1aebd9e6401562eef4721b8e9d6782bf69" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <qualifiedname>cam.nc.nc_read.Parser.b</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="80" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="80" bodyend="-1"/>
+        <referencedby refid="classcam_1_1voronoi_1_1Edge_1a187545924179ca70e04edb9adc82995c" compoundref="voronoi_8py" startline="524" endline="528">cam.voronoi.Edge.dump</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1ad072e258b3de2c4fa8b1033f28d67bbb" compoundref="iso_8py" startline="642" endline="709">cam.nc.iso.Creator.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1a54b28a33e139c4d354fa74abf630440c" compoundref="iso_8py" startline="710" endline="726">cam.nc.iso.Creator.filter_xyz</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1cad__iso__read_1_1Parser_1abf885d019794a8bef1b69f446c8851e1" compoundref="cad__iso__read_8py" startline="164" endline="235">cam.nc.cad_iso_read.Parser.Parse</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden__read_1_1Parser_1a9c64dcddf3c2c0d3248079dde5314cfe" compoundref="heiden__read_8py" startline="99" endline="161">cam.nc.heiden_read.Parser.Parsey</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a2262faed4f078201d3fab4c023d3e1d2" compoundref="heiden_8py" startline="381" endline="441">cam.nc.heiden.Creator.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1a64bd7544d638558d278746433d3855d6" compoundref="iso_8py" startline="578" endline="641">cam.nc.iso.Creator.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a58e2089cb00422e3761f487ab0160e2b" compoundref="lathe1_8py" startline="248" endline="312">cam.nc.lathe1.CreatorIso.rapid</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1nc_1_1nc__read_1_1Parser_1a739314e3aa937b657856be8c1d8b0d6c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser::c</definition>
+        <argsstring></argsstring>
+        <name>c</name>
+        <qualifiedname>cam.nc.nc_read.Parser.c</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="81" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="81" bodyend="-1"/>
+        <referencedby refid="classcam_1_1voronoi_1_1Edge_1a187545924179ca70e04edb9adc82995c" compoundref="voronoi_8py" startline="524" endline="528">cam.voronoi.Edge.dump</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1ad072e258b3de2c4fa8b1033f28d67bbb" compoundref="iso_8py" startline="642" endline="709">cam.nc.iso.Creator.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1a54b28a33e139c4d354fa74abf630440c" compoundref="iso_8py" startline="710" endline="726">cam.nc.iso.Creator.filter_xyz</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1cad__iso__read_1_1Parser_1abf885d019794a8bef1b69f446c8851e1" compoundref="cad__iso__read_8py" startline="164" endline="235">cam.nc.cad_iso_read.Parser.Parse</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden__read_1_1Parser_1a9c64dcddf3c2c0d3248079dde5314cfe" compoundref="heiden__read_8py" startline="99" endline="161">cam.nc.heiden_read.Parser.Parsey</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a2262faed4f078201d3fab4c023d3e1d2" compoundref="heiden_8py" startline="381" endline="441">cam.nc.heiden.Creator.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1a64bd7544d638558d278746433d3855d6" compoundref="iso_8py" startline="578" endline="641">cam.nc.iso.Creator.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a58e2089cb00422e3761f487ab0160e2b" compoundref="lathe1_8py" startline="248" endline="312">cam.nc.lathe1.CreatorIso.rapid</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1nc_1_1nc__read_1_1Parser_1a77fa17e8c0e19d8744c39b9748fc10f4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser::h</definition>
+        <argsstring></argsstring>
+        <name>h</name>
+        <qualifiedname>cam.nc.nc_read.Parser.h</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="82" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1nc_1_1nc__read_1_1Parser_1ac773ae677bbaadd9e1cf4844dcee130d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser::i</definition>
+        <argsstring></argsstring>
+        <name>i</name>
+        <qualifiedname>cam.nc.nc_read.Parser.i</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="83" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="83" bodyend="-1"/>
+        <referencedby refid="classcam_1_1nc_1_1cad__iso__read_1_1Parser_1abf885d019794a8bef1b69f446c8851e1" compoundref="cad__iso__read_8py" startline="164" endline="235">cam.nc.cad_iso_read.Parser.Parse</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1nc_1_1nc__read_1_1Parser_1a39ae8216d67ecb34a5052af6283b7737" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser::j</definition>
+        <argsstring></argsstring>
+        <name>j</name>
+        <qualifiedname>cam.nc.nc_read.Parser.j</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="84" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="84" bodyend="-1"/>
+        <referencedby refid="classcam_1_1nc_1_1cad__iso__read_1_1Parser_1abf885d019794a8bef1b69f446c8851e1" compoundref="cad__iso__read_8py" startline="164" endline="235">cam.nc.cad_iso_read.Parser.Parse</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1nc_1_1nc__read_1_1Parser_1a1db00f02ccd65a930c8c06bf95b008f6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser::k</definition>
+        <argsstring></argsstring>
+        <name>k</name>
+        <qualifiedname>cam.nc.nc_read.Parser.k</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="85" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="85" bodyend="-1"/>
+        <referencedby refid="classcam_1_1nc_1_1cad__iso__read_1_1Parser_1abf885d019794a8bef1b69f446c8851e1" compoundref="cad__iso__read_8py" startline="164" endline="235">cam.nc.cad_iso_read.Parser.Parse</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1nc_1_1nc__read_1_1Parser_1a8f2c023a272b12b66001bc584832250f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser::p</definition>
+        <argsstring></argsstring>
+        <name>p</name>
+        <qualifiedname>cam.nc.nc_read.Parser.p</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="86" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="86" bodyend="-1"/>
+        <referencedby refid="classcam_1_1nc_1_1cad__iso__read_1_1Parser_1abf885d019794a8bef1b69f446c8851e1" compoundref="cad__iso__read_8py" startline="164" endline="235">cam.nc.cad_iso_read.Parser.Parse</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1nc_1_1nc__read_1_1Parser_1a9a19aa0f76ce74cf1a8307f70e4d8302" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser::s</definition>
+        <argsstring></argsstring>
+        <name>s</name>
+        <qualifiedname>cam.nc.nc_read.Parser.s</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="87" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="87" bodyend="-1"/>
+        <referencedby refid="classcam_1_1nc_1_1tnc151_1_1Creator_1a71028bbf9670ac38bdbc57840dfe69ee" compoundref="tnc151_8py" startline="16" endline="25">cam.nc.tnc151.Creator.__init__</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1cad__iso__read_1_1Parser_1abf885d019794a8bef1b69f446c8851e1" compoundref="cad__iso__read_8py" startline="164" endline="235">cam.nc.cad_iso_read.Parser.Parse</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a6b71e184484ffe0dbfe8bf2ba5164992" compoundref="heiden_8py" startline="358" endline="363">cam.nc.heiden.Creator.spindle</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1a5e2b864808c8b2ebc4907aaeca143440" compoundref="iso_8py" startline="555" endline="560">cam.nc.iso.Creator.spindle</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ad3811ae77734bb7c97a76393a0a8f5f1" compoundref="lathe1_8py" startline="221" endline="230">cam.nc.lathe1.CreatorIso.spindle</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a862aefde3a9f89fabf3f0475af9d9fa0" compoundref="heiden_8py" startline="178" endline="180">cam.nc.heiden.Creator.write_spindle</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden530_1_1Creator_1a8fd454c55ff737d346bcc51c3fbee56c" compoundref="heiden530_8py" startline="74" endline="77">cam.nc.heiden530.Creator.write_spindle</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1a9abb7b482b40a3e96bf8034d31828b08" compoundref="iso_8py" startline="236" endline="240">cam.nc.iso.Creator.write_spindle</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a9ed784383379608ea9337c078f9409fb" compoundref="lathe1_8py" startline="72" endline="75">cam.nc.lathe1.CreatorIso.write_spindle</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1shopbot__mtc_1_1Creator_1a695717e6e638f21b194a95c0a2db72bf" compoundref="shopbot__mtc_8py" startline="60" endline="62">cam.nc.shopbot_mtc.Creator.write_spindle</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1nc_1_1nc__read_1_1Parser_1a0ecf2cc5f0a22eb1a2cbf3afb774c9a7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <qualifiedname>cam.nc.nc_read.Parser.x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="88" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="88" bodyend="-1"/>
+        <referencedby refid="classcam_1_1voronoi_1_1Site_1ab29643b9d9b4c1ebb324dfa55c768359" compoundref="voronoi_8py" startline="499" endline="502">cam.voronoi.Site.__eq__</referencedby>
+        <referencedby refid="classcam_1_1voronoi_1_1Site_1a3d4a979ef5b9593139f6a68074766c22" compoundref="voronoi_8py" startline="487" endline="498">cam.voronoi.Site.__lt__</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1rez2_1_1Creator_1ad82091a797518ce790808a5a5d6bbeb3" compoundref="rez2_8py" startline="346" endline="439">cam.nc.rez2.Creator.arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a78c90cc7cedad79ff356840b59527774" compoundref="heiden_8py" startline="535" endline="697">cam.nc.heiden.Creator.arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1hpgl2d_1_1Creator_1a07d3cd6c125c6f27cc4fa4c42df59bf1" compoundref="hpgl2d_8py" startline="81" endline="106">cam.nc.hpgl2d.Creator.arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1aed90658ba02dc4e25c565f6e3a70670d" compoundref="iso_8py" startline="765" endline="939">cam.nc.iso.Creator.arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1abb9674871edcb35b7b6c7712b3381073" compoundref="lathe1_8py" startline="373" endline="431">cam.nc.lathe1.CreatorIso.arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a6a900c248df1059acd397cb17fc4b18c" compoundref="makerbotHBP_8py" startline="243" endline="295">cam.nc.makerbotHBP.CreatorMakerbotHBP.arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1attach_1_1Creator_1ada7fb49f4c4c96d529e62e9b90ebba81" compoundref="attach_8py" startline="114" endline="125">cam.nc.attach.Creator.arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1drag__knife_1_1Creator_1aaf27cef634bd0fd31db59b8be4fb6600" compoundref="drag__knife_8py" startline="58" endline="67">cam.nc.drag_knife.Creator.arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1recreator_1_1Redirector_1ac6b13c50b495805d701a065672fef1b3" compoundref="recreator_8py" startline="212" endline="224">cam.nc.recreator.Redirector.arc</referencedby>
+        <referencedby refid="classcam_1_1voronoi_1_1Site_1aecc5151b5064dbc4420bbb64dd5a2f61" compoundref="voronoi_8py" startline="503" endline="509">cam.voronoi.Site.distance</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1rez2_1_1Creator_1aec638a8489a120fef07a8bd6823476e4" compoundref="rez2_8py" startline="495" endline="544">cam.nc.rez2.Creator.drill</referencedby>
+        <referencedby refid="classcam_1_1voronoi_1_1Site_1ad918636e61be267de67afe852555283f" compoundref="voronoi_8py" startline="484" endline="486">cam.voronoi.Site.dump</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1rez2_1_1Creator_1abcab495c1a952b7ca233f76836c53438" compoundref="rez2_8py" startline="293" endline="332">cam.nc.rez2.Creator.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1attach_1_1Creator_1a27a17497f0889323fd31aab4f857e577" compoundref="attach_8py" startline="99" endline="113">cam.nc.attach.Creator.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1drag__knife_1_1Creator_1a0eb0ca2c035bd29dbe35b4767d733c4c" compoundref="drag__knife_8py" startline="43" endline="57">cam.nc.drag_knife.Creator.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a983c9d1748987984ea5a74e7489b4664" compoundref="heiden_8py" startline="442" endline="483">cam.nc.heiden.Creator.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden530_1_1Creator_1a85c6b3c82eb4357cf5d08aad348f2805" compoundref="heiden530_8py" startline="163" endline="202">cam.nc.heiden530.Creator.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1hpgl2d_1_1Creator_1aa06f2e78abd00f6c4c6525a43664fc3a" compoundref="hpgl2d_8py" startline="73" endline="80">cam.nc.hpgl2d.Creator.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1hpgl3d_1_1Creator_1a12b9a33fb5cfbdff48b640e61cbea77d" compoundref="hpgl3d_8py" startline="54" endline="67">cam.nc.hpgl3d.Creator.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1ad072e258b3de2c4fa8b1033f28d67bbb" compoundref="iso_8py" startline="642" endline="709">cam.nc.iso.Creator.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a7278ca3bb84f4045368333fa059ab864" compoundref="lathe1_8py" startline="313" endline="359">cam.nc.lathe1.CreatorIso.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a1d9d3db267970ad8b006b6b0448d2612" compoundref="makerbotHBP_8py" startline="188" endline="229">cam.nc.makerbotHBP.CreatorMakerbotHBP.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1recreator_1_1Redirector_1a18a127cd30af49f796b825ded2771cf0" compoundref="recreator_8py" startline="192" endline="211">cam.nc.recreator.Redirector.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1a54b28a33e139c4d354fa74abf630440c" compoundref="iso_8py" startline="710" endline="726">cam.nc.iso.Creator.filter_xyz</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1hpgl2d_1_1Creator_1a2ca5687b6c9aff33f8f45dbaf4eb2656" compoundref="hpgl2d_8py" startline="56" endline="64">cam.nc.hpgl2d.Creator.get_machine_x_y</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1hpgl3d_1_1Creator_1ad2ebb67f72b382a47c9b07f0ef987587" compoundref="hpgl3d_8py" startline="29" endline="40">cam.nc.hpgl3d.Creator.get_machine_xyz</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1cad__iso__read_1_1Parser_1abf885d019794a8bef1b69f446c8851e1" compoundref="cad__iso__read_8py" startline="164" endline="235">cam.nc.cad_iso_read.Parser.Parse</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1hpgl2d__read_1_1Parser_1afa14f139b2b41ae0e70c8ee16d661e31" compoundref="hpgl2d__read_8py" startline="43" endline="80">cam.nc.hpgl2d_read.Parser.ParseAA</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1hpgl3d__read_1_1Parser_1ae1ce5f283aa57d7de17d269c42a17c90" compoundref="hpgl3d__read_8py" startline="23" endline="43">cam.nc.hpgl3d_read.Parser.ParseZ</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1rez2_1_1Creator_1abe171ac0eb1fb68dc8ac0c973f8807e9" compoundref="rez2_8py" startline="247" endline="292">cam.nc.rez2.Creator.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a2262faed4f078201d3fab4c023d3e1d2" compoundref="heiden_8py" startline="381" endline="441">cam.nc.heiden.Creator.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden530_1_1Creator_1ae0e91cfeea8854af12bf2494a799bc9a" compoundref="heiden530_8py" startline="127" endline="162">cam.nc.heiden530.Creator.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1hpgl2d_1_1Creator_1a3e7de678991f3987b766ec4d68232bfb" compoundref="hpgl2d_8py" startline="65" endline="72">cam.nc.hpgl2d.Creator.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1hpgl3d_1_1Creator_1ac4ee4e0cb11891159d4e59467650aa76" compoundref="hpgl3d_8py" startline="41" endline="53">cam.nc.hpgl3d.Creator.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1a64bd7544d638558d278746433d3855d6" compoundref="iso_8py" startline="578" endline="641">cam.nc.iso.Creator.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a58e2089cb00422e3761f487ab0160e2b" compoundref="lathe1_8py" startline="248" endline="312">cam.nc.lathe1.CreatorIso.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1recreator_1_1Redirector_1a39c4e5620d31507b68f2742067f52c08" compoundref="recreator_8py" startline="176" endline="185">cam.nc.recreator.Redirector.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1aa81eb64e0085fe09112acb4de59173ec" compoundref="heiden_8py" startline="484" endline="496">cam.nc.heiden.Creator.same_xyz</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a34e522ee6fc4c09812344aa528c9cefb" compoundref="lathe1_8py" startline="360" endline="372">cam.nc.lathe1.CreatorIso.same_xyz</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1ae5dd31471f1eea4c601bac75cecfd20a" compoundref="makerbotHBP_8py" startline="230" endline="242">cam.nc.makerbotHBP.CreatorMakerbotHBP.same_xyz</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1rez2_1_1Creator_1af4e12ba8323a7e5e6c2d6d2f6a00607d" compoundref="rez2_8py" startline="333" endline="345">cam.nc.rez2.Creator.same_xyz</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a706db14683812bb3b86db958d7faa05a" compoundref="heiden_8py" startline="892" endline="947">cam.nc.heiden.Creator.tap</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1nc_1_1nc__read_1_1Parser_1a8e208fde06cb2837b23673dd835fc6e3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <qualifiedname>cam.nc.nc_read.Parser.y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="89" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="89" bodyend="-1"/>
+        <referencedby refid="classcam_1_1voronoi_1_1Site_1ab29643b9d9b4c1ebb324dfa55c768359" compoundref="voronoi_8py" startline="499" endline="502">cam.voronoi.Site.__eq__</referencedby>
+        <referencedby refid="classcam_1_1voronoi_1_1Site_1a3d4a979ef5b9593139f6a68074766c22" compoundref="voronoi_8py" startline="487" endline="498">cam.voronoi.Site.__lt__</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1rez2_1_1Creator_1ad82091a797518ce790808a5a5d6bbeb3" compoundref="rez2_8py" startline="346" endline="439">cam.nc.rez2.Creator.arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a78c90cc7cedad79ff356840b59527774" compoundref="heiden_8py" startline="535" endline="697">cam.nc.heiden.Creator.arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1hpgl2d_1_1Creator_1a07d3cd6c125c6f27cc4fa4c42df59bf1" compoundref="hpgl2d_8py" startline="81" endline="106">cam.nc.hpgl2d.Creator.arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1aed90658ba02dc4e25c565f6e3a70670d" compoundref="iso_8py" startline="765" endline="939">cam.nc.iso.Creator.arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1abb9674871edcb35b7b6c7712b3381073" compoundref="lathe1_8py" startline="373" endline="431">cam.nc.lathe1.CreatorIso.arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a6a900c248df1059acd397cb17fc4b18c" compoundref="makerbotHBP_8py" startline="243" endline="295">cam.nc.makerbotHBP.CreatorMakerbotHBP.arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1attach_1_1Creator_1ada7fb49f4c4c96d529e62e9b90ebba81" compoundref="attach_8py" startline="114" endline="125">cam.nc.attach.Creator.arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1drag__knife_1_1Creator_1aaf27cef634bd0fd31db59b8be4fb6600" compoundref="drag__knife_8py" startline="58" endline="67">cam.nc.drag_knife.Creator.arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1recreator_1_1Redirector_1ac6b13c50b495805d701a065672fef1b3" compoundref="recreator_8py" startline="212" endline="224">cam.nc.recreator.Redirector.arc</referencedby>
+        <referencedby refid="classcam_1_1voronoi_1_1Site_1aecc5151b5064dbc4420bbb64dd5a2f61" compoundref="voronoi_8py" startline="503" endline="509">cam.voronoi.Site.distance</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1rez2_1_1Creator_1aec638a8489a120fef07a8bd6823476e4" compoundref="rez2_8py" startline="495" endline="544">cam.nc.rez2.Creator.drill</referencedby>
+        <referencedby refid="classcam_1_1voronoi_1_1Site_1ad918636e61be267de67afe852555283f" compoundref="voronoi_8py" startline="484" endline="486">cam.voronoi.Site.dump</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1rez2_1_1Creator_1abcab495c1a952b7ca233f76836c53438" compoundref="rez2_8py" startline="293" endline="332">cam.nc.rez2.Creator.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1attach_1_1Creator_1a27a17497f0889323fd31aab4f857e577" compoundref="attach_8py" startline="99" endline="113">cam.nc.attach.Creator.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1drag__knife_1_1Creator_1a0eb0ca2c035bd29dbe35b4767d733c4c" compoundref="drag__knife_8py" startline="43" endline="57">cam.nc.drag_knife.Creator.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a983c9d1748987984ea5a74e7489b4664" compoundref="heiden_8py" startline="442" endline="483">cam.nc.heiden.Creator.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden530_1_1Creator_1a85c6b3c82eb4357cf5d08aad348f2805" compoundref="heiden530_8py" startline="163" endline="202">cam.nc.heiden530.Creator.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1hpgl2d_1_1Creator_1aa06f2e78abd00f6c4c6525a43664fc3a" compoundref="hpgl2d_8py" startline="73" endline="80">cam.nc.hpgl2d.Creator.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1hpgl3d_1_1Creator_1a12b9a33fb5cfbdff48b640e61cbea77d" compoundref="hpgl3d_8py" startline="54" endline="67">cam.nc.hpgl3d.Creator.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1ad072e258b3de2c4fa8b1033f28d67bbb" compoundref="iso_8py" startline="642" endline="709">cam.nc.iso.Creator.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a7278ca3bb84f4045368333fa059ab864" compoundref="lathe1_8py" startline="313" endline="359">cam.nc.lathe1.CreatorIso.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a1d9d3db267970ad8b006b6b0448d2612" compoundref="makerbotHBP_8py" startline="188" endline="229">cam.nc.makerbotHBP.CreatorMakerbotHBP.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1recreator_1_1Redirector_1a18a127cd30af49f796b825ded2771cf0" compoundref="recreator_8py" startline="192" endline="211">cam.nc.recreator.Redirector.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1a54b28a33e139c4d354fa74abf630440c" compoundref="iso_8py" startline="710" endline="726">cam.nc.iso.Creator.filter_xyz</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1hpgl2d_1_1Creator_1a2ca5687b6c9aff33f8f45dbaf4eb2656" compoundref="hpgl2d_8py" startline="56" endline="64">cam.nc.hpgl2d.Creator.get_machine_x_y</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1hpgl3d_1_1Creator_1ad2ebb67f72b382a47c9b07f0ef987587" compoundref="hpgl3d_8py" startline="29" endline="40">cam.nc.hpgl3d.Creator.get_machine_xyz</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1cad__iso__read_1_1Parser_1abf885d019794a8bef1b69f446c8851e1" compoundref="cad__iso__read_8py" startline="164" endline="235">cam.nc.cad_iso_read.Parser.Parse</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1hpgl2d__read_1_1Parser_1afa14f139b2b41ae0e70c8ee16d661e31" compoundref="hpgl2d__read_8py" startline="43" endline="80">cam.nc.hpgl2d_read.Parser.ParseAA</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1hpgl3d__read_1_1Parser_1ae1ce5f283aa57d7de17d269c42a17c90" compoundref="hpgl3d__read_8py" startline="23" endline="43">cam.nc.hpgl3d_read.Parser.ParseZ</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1rez2_1_1Creator_1abe171ac0eb1fb68dc8ac0c973f8807e9" compoundref="rez2_8py" startline="247" endline="292">cam.nc.rez2.Creator.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a2262faed4f078201d3fab4c023d3e1d2" compoundref="heiden_8py" startline="381" endline="441">cam.nc.heiden.Creator.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden530_1_1Creator_1ae0e91cfeea8854af12bf2494a799bc9a" compoundref="heiden530_8py" startline="127" endline="162">cam.nc.heiden530.Creator.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1hpgl2d_1_1Creator_1a3e7de678991f3987b766ec4d68232bfb" compoundref="hpgl2d_8py" startline="65" endline="72">cam.nc.hpgl2d.Creator.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1hpgl3d_1_1Creator_1ac4ee4e0cb11891159d4e59467650aa76" compoundref="hpgl3d_8py" startline="41" endline="53">cam.nc.hpgl3d.Creator.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1a64bd7544d638558d278746433d3855d6" compoundref="iso_8py" startline="578" endline="641">cam.nc.iso.Creator.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a58e2089cb00422e3761f487ab0160e2b" compoundref="lathe1_8py" startline="248" endline="312">cam.nc.lathe1.CreatorIso.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1recreator_1_1Redirector_1a39c4e5620d31507b68f2742067f52c08" compoundref="recreator_8py" startline="176" endline="185">cam.nc.recreator.Redirector.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1aa81eb64e0085fe09112acb4de59173ec" compoundref="heiden_8py" startline="484" endline="496">cam.nc.heiden.Creator.same_xyz</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a34e522ee6fc4c09812344aa528c9cefb" compoundref="lathe1_8py" startline="360" endline="372">cam.nc.lathe1.CreatorIso.same_xyz</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1ae5dd31471f1eea4c601bac75cecfd20a" compoundref="makerbotHBP_8py" startline="230" endline="242">cam.nc.makerbotHBP.CreatorMakerbotHBP.same_xyz</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1rez2_1_1Creator_1af4e12ba8323a7e5e6c2d6d2f6a00607d" compoundref="rez2_8py" startline="333" endline="345">cam.nc.rez2.Creator.same_xyz</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a706db14683812bb3b86db958d7faa05a" compoundref="heiden_8py" startline="892" endline="947">cam.nc.heiden.Creator.tap</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1nc_1_1nc__read_1_1Parser_1ab4f67a40ecb45e1096a5935b2ed8f03a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser::z</definition>
+        <argsstring></argsstring>
+        <name>z</name>
+        <qualifiedname>cam.nc.nc_read.Parser.z</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="90" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="90" bodyend="-1"/>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a78c90cc7cedad79ff356840b59527774" compoundref="heiden_8py" startline="535" endline="697">cam.nc.heiden.Creator.arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1aed90658ba02dc4e25c565f6e3a70670d" compoundref="iso_8py" startline="765" endline="939">cam.nc.iso.Creator.arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1abb9674871edcb35b7b6c7712b3381073" compoundref="lathe1_8py" startline="373" endline="431">cam.nc.lathe1.CreatorIso.arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a6a900c248df1059acd397cb17fc4b18c" compoundref="makerbotHBP_8py" startline="243" endline="295">cam.nc.makerbotHBP.CreatorMakerbotHBP.arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1attach_1_1Creator_1ada7fb49f4c4c96d529e62e9b90ebba81" compoundref="attach_8py" startline="114" endline="125">cam.nc.attach.Creator.arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1recreator_1_1Redirector_1ac6b13c50b495805d701a065672fef1b3" compoundref="recreator_8py" startline="212" endline="224">cam.nc.recreator.Redirector.arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1attach_1_1Creator_1a15a75411685b954b0073489b30f1342e" compoundref="attach_8py" startline="60" endline="92">cam.nc.attach.Creator.cut_path</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1rez2_1_1Creator_1aec638a8489a120fef07a8bd6823476e4" compoundref="rez2_8py" startline="495" endline="544">cam.nc.rez2.Creator.drill</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1attach_1_1Creator_1a27a17497f0889323fd31aab4f857e577" compoundref="attach_8py" startline="99" endline="113">cam.nc.attach.Creator.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1drag__knife_1_1Creator_1a0eb0ca2c035bd29dbe35b4767d733c4c" compoundref="drag__knife_8py" startline="43" endline="57">cam.nc.drag_knife.Creator.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a983c9d1748987984ea5a74e7489b4664" compoundref="heiden_8py" startline="442" endline="483">cam.nc.heiden.Creator.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden530_1_1Creator_1a85c6b3c82eb4357cf5d08aad348f2805" compoundref="heiden530_8py" startline="163" endline="202">cam.nc.heiden530.Creator.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1hpgl3d_1_1Creator_1a12b9a33fb5cfbdff48b640e61cbea77d" compoundref="hpgl3d_8py" startline="54" endline="67">cam.nc.hpgl3d.Creator.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1ad072e258b3de2c4fa8b1033f28d67bbb" compoundref="iso_8py" startline="642" endline="709">cam.nc.iso.Creator.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a7278ca3bb84f4045368333fa059ab864" compoundref="lathe1_8py" startline="313" endline="359">cam.nc.lathe1.CreatorIso.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a1d9d3db267970ad8b006b6b0448d2612" compoundref="makerbotHBP_8py" startline="188" endline="229">cam.nc.makerbotHBP.CreatorMakerbotHBP.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1recreator_1_1Redirector_1a18a127cd30af49f796b825ded2771cf0" compoundref="recreator_8py" startline="192" endline="211">cam.nc.recreator.Redirector.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1a54b28a33e139c4d354fa74abf630440c" compoundref="iso_8py" startline="710" endline="726">cam.nc.iso.Creator.filter_xyz</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1hpgl3d_1_1Creator_1ad2ebb67f72b382a47c9b07f0ef987587" compoundref="hpgl3d_8py" startline="29" endline="40">cam.nc.hpgl3d.Creator.get_machine_xyz</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1cad__iso__read_1_1Parser_1abf885d019794a8bef1b69f446c8851e1" compoundref="cad__iso__read_8py" startline="164" endline="235">cam.nc.cad_iso_read.Parser.Parse</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1hpgl3d__read_1_1Parser_1ae1ce5f283aa57d7de17d269c42a17c90" compoundref="hpgl3d__read_8py" startline="23" endline="43">cam.nc.hpgl3d_read.Parser.ParseZ</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1attach_1_1Creator_1a8d277dd0be3e8d12c6159eb11d873efe" compoundref="attach_8py" startline="93" endline="98">cam.nc.attach.Creator.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a2262faed4f078201d3fab4c023d3e1d2" compoundref="heiden_8py" startline="381" endline="441">cam.nc.heiden.Creator.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden530_1_1Creator_1ae0e91cfeea8854af12bf2494a799bc9a" compoundref="heiden530_8py" startline="127" endline="162">cam.nc.heiden530.Creator.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1hpgl3d_1_1Creator_1ac4ee4e0cb11891159d4e59467650aa76" compoundref="hpgl3d_8py" startline="41" endline="53">cam.nc.hpgl3d.Creator.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1a64bd7544d638558d278746433d3855d6" compoundref="iso_8py" startline="578" endline="641">cam.nc.iso.Creator.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a58e2089cb00422e3761f487ab0160e2b" compoundref="lathe1_8py" startline="248" endline="312">cam.nc.lathe1.CreatorIso.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1recreator_1_1Redirector_1a39c4e5620d31507b68f2742067f52c08" compoundref="recreator_8py" startline="176" endline="185">cam.nc.recreator.Redirector.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1aa81eb64e0085fe09112acb4de59173ec" compoundref="heiden_8py" startline="484" endline="496">cam.nc.heiden.Creator.same_xyz</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a34e522ee6fc4c09812344aa528c9cefb" compoundref="lathe1_8py" startline="360" endline="372">cam.nc.lathe1.CreatorIso.same_xyz</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1ae5dd31471f1eea4c601bac75cecfd20a" compoundref="makerbotHBP_8py" startline="230" endline="242">cam.nc.makerbotHBP.CreatorMakerbotHBP.same_xyz</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1rez2_1_1Creator_1af4e12ba8323a7e5e6c2d6d2f6a00607d" compoundref="rez2_8py" startline="333" endline="345">cam.nc.rez2.Creator.same_xyz</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1emc2tap_1_1CreatorEMC2tap_1ae7c40089d2816698fbe6cfbc9a10a052" compoundref="emc2tap_8py" startline="25" endline="82">cam.nc.emc2tap.CreatorEMC2tap.tap</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a706db14683812bb3b86db958d7faa05a" compoundref="heiden_8py" startline="892" endline="947">cam.nc.heiden.Creator.tap</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1nc_1_1nc__read_1_1Parser_1a9a4040127172837b9c75bfea55b37e18" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser::t</definition>
+        <argsstring></argsstring>
+        <name>t</name>
+        <qualifiedname>cam.nc.nc_read.Parser.t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="91" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="91" bodyend="-1"/>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a8efac61e9aa91a0c69e90e79c2e01465" compoundref="heiden_8py" startline="730" endline="740">cam.nc.heiden.Creator.start_CRC</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1a3e4b11f0c61e5d82b81802c1fe30ec7d" compoundref="iso_8py" startline="976" endline="985">cam.nc.iso.Creator.start_CRC</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a30a09a55fbe9c474dfa71534369714e6" compoundref="lathe1_8py" startline="461" endline="466">cam.nc.lathe1.CreatorIso.start_CRC</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a1e0d0a0333918e86dfaa5e03437bf452" compoundref="heiden_8py" startline="293" endline="297">cam.nc.heiden.Creator.tool_change</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden530_1_1Creator_1a1d09a200e101159ed97068ca958de3ec" compoundref="heiden530_8py" startline="116" endline="123">cam.nc.heiden530.Creator.tool_change</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1a3e61292523aa893f0187112023e51eff" compoundref="iso_8py" startline="472" endline="493">cam.nc.iso.Creator.tool_change</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ab029f691b34c12e7543805785ce78c49" compoundref="lathe1_8py" startline="170" endline="173">cam.nc.lathe1.CreatorIso.tool_change</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1nc_1_1nc__read_1_1Parser_1af929d6666685c1bddb6f26eaf8302708" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser::m6</definition>
+        <argsstring></argsstring>
+        <name>m6</name>
+        <qualifiedname>cam.nc.nc_read.Parser.m6</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="92" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1nc_1_1nc__read_1_1Parser_1a6d98e62c714bb323fdcd3acf4d135eb1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser::move</definition>
+        <argsstring></argsstring>
+        <name>move</name>
+        <qualifiedname>cam.nc.nc_read.Parser.move</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="96" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="96" bodyend="-1"/>
+        <referencedby refid="classcam_1_1nc_1_1cad__iso__read_1_1Parser_1abf885d019794a8bef1b69f446c8851e1" compoundref="cad__iso__read_8py" startline="164" endline="235">cam.nc.cad_iso_read.Parser.Parse</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1nc_1_1nc__read_1_1Parser_1a71812768687fcf7f29802edd2f04bab4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser::height_offset</definition>
+        <argsstring></argsstring>
+        <name>height_offset</name>
+        <qualifiedname>cam.nc.nc_read.Parser.height_offset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="97" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1nc_1_1nc__read_1_1Parser_1ae49ae98273ea0c7456b43888c5969028" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser::drill</definition>
+        <argsstring></argsstring>
+        <name>drill</name>
+        <qualifiedname>cam.nc.nc_read.Parser.drill</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="98" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="98" bodyend="-1"/>
+        <referencedby refid="classcam_1_1nc_1_1cad__iso__read_1_1Parser_1abf885d019794a8bef1b69f446c8851e1" compoundref="cad__iso__read_8py" startline="164" endline="235">cam.nc.cad_iso_read.Parser.Parse</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1nc_1_1nc__read_1_1Parser_1a089b53684fa77b309260a5f9c3c69863" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser::no_move</definition>
+        <argsstring></argsstring>
+        <name>no_move</name>
+        <qualifiedname>cam.nc.nc_read.Parser.no_move</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="99" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="99" bodyend="-1"/>
+        <referencedby refid="classcam_1_1nc_1_1cad__iso__read_1_1Parser_1abf885d019794a8bef1b69f446c8851e1" compoundref="cad__iso__read_8py" startline="164" endline="235">cam.nc.cad_iso_read.Parser.Parse</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1nc_1_1nc__read_1_1Parser_1a99c602510e3298336ae61d9e09152545" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser::col</definition>
+        <argsstring></argsstring>
+        <name>col</name>
+        <qualifiedname>cam.nc.nc_read.Parser.col</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="103" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="103" bodyend="-1"/>
+        <referencedby refid="classcam_1_1nc_1_1cad__iso__read_1_1Parser_1abf885d019794a8bef1b69f446c8851e1" compoundref="cad__iso__read_8py" startline="164" endline="235">cam.nc.cad_iso_read.Parser.Parse</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1nc_1_1nc__read_1_1Parser_1a14f1c838f66f62053ea20efae5f9fe58" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser::cdata</definition>
+        <argsstring></argsstring>
+        <name>cdata</name>
+        <qualifiedname>cam.nc.nc_read.Parser.cdata</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="104" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="104" bodyend="-1"/>
+        <referencedby refid="classcam_1_1nc_1_1cad__iso__read_1_1Parser_1abf885d019794a8bef1b69f446c8851e1" compoundref="cad__iso__read_8py" startline="164" endline="235">cam.nc.cad_iso_read.Parser.Parse</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1nc_1_1nc__read_1_1Parser_1a16a36853342c4e232ec3a91f1fc63321" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser::arc_centre_absolute</definition>
+        <argsstring></argsstring>
+        <name>arc_centre_absolute</name>
+        <qualifiedname>cam.nc.nc_read.Parser.arc_centre_absolute</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="133" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="133" bodyend="-1"/>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a78c90cc7cedad79ff356840b59527774" compoundref="heiden_8py" startline="535" endline="697">cam.nc.heiden.Creator.arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1aed90658ba02dc4e25c565f6e3a70670d" compoundref="iso_8py" startline="765" endline="939">cam.nc.iso.Creator.arc</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1nc_1_1nc__read_1_1Parser_1a2323e7561e7435e174db487682a8d199" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser::arc_centre_positive</definition>
+        <argsstring></argsstring>
+        <name>arc_centre_positive</name>
+        <qualifiedname>cam.nc.nc_read.Parser.arc_centre_positive</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="136" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="136" bodyend="-1"/>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a78c90cc7cedad79ff356840b59527774" compoundref="heiden_8py" startline="535" endline="697">cam.nc.heiden.Creator.arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1aed90658ba02dc4e25c565f6e3a70670d" compoundref="iso_8py" startline="765" endline="939">cam.nc.iso.Creator.arc</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1nc_1_1nc__read_1_1Parser_1a827f7de520b9eee1d56a56e29cb24127" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser::oldx</definition>
+        <argsstring></argsstring>
+        <name>oldx</name>
+        <qualifiedname>cam.nc.nc_read.Parser.oldx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="140" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="140" bodyend="-1"/>
+        <referencedby refid="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1a475e3852584eaa4d673a094b0897132c" compoundref="hxml__writer_8py" startline="114" endline="139">cam.nc.hxml_writer.HxmlWriter.add_arc</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1nc_1_1nc__read_1_1Parser_1a67ae94e8a1637e65b01adb8fc4390654" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser::oldy</definition>
+        <argsstring></argsstring>
+        <name>oldy</name>
+        <qualifiedname>cam.nc.nc_read.Parser.oldy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="145" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="145" bodyend="-1"/>
+        <referencedby refid="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1a475e3852584eaa4d673a094b0897132c" compoundref="hxml__writer_8py" startline="114" endline="139">cam.nc.hxml_writer.HxmlWriter.add_arc</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1nc_1_1nc__read_1_1Parser_1aa5b1c47988c5214e780c5a9d8609093e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser::oldz</definition>
+        <argsstring></argsstring>
+        <name>oldz</name>
+        <qualifiedname>cam.nc.nc_read.Parser.oldz</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="185" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="185" bodyend="-1"/>
+        <referencedby refid="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1a475e3852584eaa4d673a094b0897132c" compoundref="hxml__writer_8py" startline="114" endline="139">cam.nc.hxml_writer.HxmlWriter.add_arc</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcam_1_1nc_1_1nc__read_1_1Parser_1a0ce3ed62a0963bc990bff3edebde0c5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser.__init__</definition>
+        <argsstring>(self, writer)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>cam.nc.nc_read.Parser.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classcam_1_1nc_1_1nc__read_1_1Parser_1ad3d24bcce544b254208def08db8625e7" kindref="member">writer</ref></type>
+          <defname>writer</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="14" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="14" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1nc_1_1nc__read_1_1Parser_1ae97dacb299bf962f355da1a74960a5f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser.__del__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__del__</name>
+        <qualifiedname>cam.nc.nc_read.Parser.__del__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="23" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="23" bodyend="25"/>
+        <references refid="classcam_1_1nc_1_1cad__nc__read_1_1Parser_1ab8e9bb2c098704014abfb32861307400" compoundref="cad__nc__read_8py" startline="24">cam.nc.cad_nc_read.Parser.file_in</references>
+        <references refid="classcam_1_1nc_1_1nc__read_1_1Parser_1a44dea2d7915cf1ea18578e0bdb1e9a3d" compoundref="nc__read_8py" startline="70">cam.nc.nc_read.Parser.file_in</references>
+        <references refid="classcam_1_1nc_1_1nclathe__read_1_1Parser_1a95e6cf22e6f848678f38fef891834fa8" compoundref="nclathe__read_8py" startline="23">cam.nc.nclathe_read.Parser.file_in</references>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1nc_1_1nc__read_1_1Parser_1af38d287bc4d3f0d3dc1bbfce972d52f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser.readline</definition>
+        <argsstring>(self)</argsstring>
+        <name>readline</name>
+        <qualifiedname>cam.nc.nc_read.Parser.readline</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>Internals. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="29" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="29" bodyend="35"/>
+        <referencedby refid="classcam_1_1nc_1_1cad__iso__read_1_1Parser_1abf885d019794a8bef1b69f446c8851e1" compoundref="cad__iso__read_8py" startline="164" endline="235">cam.nc.cad_iso_read.Parser.Parse</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1cad__read_1_1CAD__backplot_1afce7c30e482cfb88a36593d4020909d7" compoundref="cad__read_8py" startline="27" endline="286">cam.nc.cad_read.CAD_backplot.Parse</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1__read_1_1Parser_1a4046e981f4f946bed728de957d10365f" compoundref="lathe1__read_8py" startline="28" endline="240">cam.nc.lathe1_read.Parser.Parse</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1num__reader_1_1NumReader_1ae908a2956d1e0cfd474a47540bee9759" compoundref="num__reader_8py" startline="40" endline="63">cam.nc.num_reader.NumReader.Parse</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1rez2__read_1_1Parser_1a16b4685a6d0b45b32ad762794240dfc0" compoundref="rez2__read_8py" startline="70" endline="308">cam.nc.rez2_read.Parser.Parse</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden__read_1_1Parser_1a9c64dcddf3c2c0d3248079dde5314cfe" compoundref="heiden__read_8py" startline="99" endline="161">cam.nc.heiden_read.Parser.Parsey</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1nc_1_1nc__read_1_1Parser_1aee97d02ca45ea183d03d02828f078a15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser.set_current_pos</definition>
+        <argsstring>(self, x, y, z)</argsstring>
+        <name>set_current_pos</name>
+        <qualifiedname>cam.nc.nc_read.Parser.set_current_pos</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classcam_1_1nc_1_1nc__read_1_1Parser_1a0ecf2cc5f0a22eb1a2cbf3afb774c9a7" kindref="member">x</ref></type>
+          <defname>x</defname>
+        </param>
+        <param>
+          <type><ref refid="classcam_1_1nc_1_1nc__read_1_1Parser_1a8e208fde06cb2837b23673dd835fc6e3" kindref="member">y</ref></type>
+          <defname>y</defname>
+        </param>
+        <param>
+          <type><ref refid="classcam_1_1nc_1_1nc__read_1_1Parser_1ab4f67a40ecb45e1096a5935b2ed8f03a" kindref="member">z</ref></type>
+          <defname>z</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="36" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="36" bodyend="62"/>
+        <references refid="classcam_1_1nc_1_1cad__nc__read_1_1Parser_1ad1f7a540675696b04ff42964524a607f" compoundref="cad__nc__read_8py" startline="16">cam.nc.cad_nc_read.Parser.absolute_flag</references>
+        <references refid="classcam_1_1nc_1_1centroid1_1_1Creator_1a194a952228c77c466cc12ae674f4dae6" compoundref="centroid1_8py" startline="26">cam.nc.centroid1.Creator.absolute_flag</references>
+        <references refid="classcam_1_1nc_1_1grbl_1_1Creator_1a4f0418af84bb3503f03fc5eda2ae9f44" compoundref="grbl_8py" startline="13">cam.nc.grbl.Creator.absolute_flag</references>
+        <references refid="classcam_1_1nc_1_1heiden_1_1Creator_1a119fed67167fa45c5a0a9ad5f0de0efc" compoundref="heiden_8py" startline="63">cam.nc.heiden.Creator.absolute_flag</references>
+        <references refid="classcam_1_1nc_1_1heiden530_1_1Creator_1a8d92ffccec2efe7c8fe3cca848bca430" compoundref="heiden530_8py" startline="28">cam.nc.heiden530.Creator.absolute_flag</references>
+        <references refid="classcam_1_1nc_1_1iso_1_1Creator_1a1580af6e4379185d7bdac6619e388296" compoundref="iso_8py" startline="52">cam.nc.iso.Creator.absolute_flag</references>
+        <references refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a273148769236b6b1d918e3f250cbcf54" compoundref="lathe1_8py" startline="50">cam.nc.lathe1.CreatorIso.absolute_flag</references>
+        <references refid="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a583e0028291a5cfff0e729e3888674c7" compoundref="makerbotHBP_8py" startline="17">cam.nc.makerbotHBP.CreatorMakerbotHBP.absolute_flag</references>
+        <references refid="classcam_1_1nc_1_1nc__read_1_1Parser_1a978d03f3a2b380ed41048be75d1e162e" compoundref="nc__read_8py" startline="19">cam.nc.nc_read.Parser.absolute_flag</references>
+        <references refid="classcam_1_1nc_1_1nclathe__read_1_1Parser_1a1fb12b6cdb07d47a4dfc93aba3c94bf6" compoundref="nclathe__read_8py" startline="15">cam.nc.nclathe_read.Parser.absolute_flag</references>
+        <references refid="classcam_1_1nc_1_1shopbot__mtc_1_1Creator_1ab98370f3b0958ddd6d116b018adf085c" compoundref="shopbot__mtc_8py" startline="45">cam.nc.shopbot_mtc.Creator.absolute_flag</references>
+        <references refid="classcam_1_1nc_1_1winpc_1_1Creator_1ae19ffe6eb88cc7a19868d286ccef4e7e" compoundref="winpc_8py" startline="13">cam.nc.winpc.Creator.absolute_flag</references>
+        <references refid="classcam_1_1nc_1_1cad__nc__read_1_1Parser_1a2f3e5559fa0cec745b4361531c0469a0" compoundref="cad__nc__read_8py" startline="12">cam.nc.cad_nc_read.Parser.currentx</references>
+        <references refid="classcam_1_1nc_1_1nc__read_1_1Parser_1a6234f1b6dc8f963296f2445fd8574ae1" compoundref="nc__read_8py" startline="16">cam.nc.nc_read.Parser.currentx</references>
+        <references refid="classcam_1_1nc_1_1nclathe__read_1_1Parser_1ae87176be89baadf38d5f696b11d51939" compoundref="nclathe__read_8py" startline="12">cam.nc.nclathe_read.Parser.currentx</references>
+        <references refid="classcam_1_1nc_1_1cad__nc__read_1_1Parser_1af0df61a9d20af2f50a3f054854bd91c7" compoundref="cad__nc__read_8py" startline="13">cam.nc.cad_nc_read.Parser.currenty</references>
+        <references refid="classcam_1_1nc_1_1nc__read_1_1Parser_1a598d7d5b16bea011b7fb883a94fa4859" compoundref="nc__read_8py" startline="17">cam.nc.nc_read.Parser.currenty</references>
+        <references refid="classcam_1_1nc_1_1nclathe__read_1_1Parser_1adc3ae12a2689558cbe8012c2b3cf3baf" compoundref="nclathe__read_8py" startline="13">cam.nc.nclathe_read.Parser.currenty</references>
+        <references refid="classcam_1_1nc_1_1cad__nc__read_1_1Parser_1ac52eed9c9bc69a6e874de5bebe02d7ca" compoundref="cad__nc__read_8py" startline="14">cam.nc.cad_nc_read.Parser.currentz</references>
+        <references refid="classcam_1_1nc_1_1nc__read_1_1Parser_1ad0fd83b9cdc03ea0e10079f150766913" compoundref="nc__read_8py" startline="18">cam.nc.nc_read.Parser.currentz</references>
+        <references refid="classcam_1_1nc_1_1nclathe__read_1_1Parser_1a897bc2df0eb048c39c2400f2e592950a" compoundref="nclathe__read_8py" startline="14">cam.nc.nclathe_read.Parser.currentz</references>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1nc_1_1nc__read_1_1Parser_1a378c7032a0b9ac2c57e28c0e94d30355" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser.incremental</definition>
+        <argsstring>(self)</argsstring>
+        <name>incremental</name>
+        <qualifiedname>cam.nc.nc_read.Parser.incremental</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="63" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="63" bodyend="65"/>
+        <references refid="classcam_1_1nc_1_1cad__nc__read_1_1Parser_1ad1f7a540675696b04ff42964524a607f" compoundref="cad__nc__read_8py" startline="16">cam.nc.cad_nc_read.Parser.absolute_flag</references>
+        <references refid="classcam_1_1nc_1_1centroid1_1_1Creator_1a194a952228c77c466cc12ae674f4dae6" compoundref="centroid1_8py" startline="26">cam.nc.centroid1.Creator.absolute_flag</references>
+        <references refid="classcam_1_1nc_1_1grbl_1_1Creator_1a4f0418af84bb3503f03fc5eda2ae9f44" compoundref="grbl_8py" startline="13">cam.nc.grbl.Creator.absolute_flag</references>
+        <references refid="classcam_1_1nc_1_1heiden_1_1Creator_1a119fed67167fa45c5a0a9ad5f0de0efc" compoundref="heiden_8py" startline="63">cam.nc.heiden.Creator.absolute_flag</references>
+        <references refid="classcam_1_1nc_1_1heiden530_1_1Creator_1a8d92ffccec2efe7c8fe3cca848bca430" compoundref="heiden530_8py" startline="28">cam.nc.heiden530.Creator.absolute_flag</references>
+        <references refid="classcam_1_1nc_1_1iso_1_1Creator_1a1580af6e4379185d7bdac6619e388296" compoundref="iso_8py" startline="52">cam.nc.iso.Creator.absolute_flag</references>
+        <references refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a273148769236b6b1d918e3f250cbcf54" compoundref="lathe1_8py" startline="50">cam.nc.lathe1.CreatorIso.absolute_flag</references>
+        <references refid="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a583e0028291a5cfff0e729e3888674c7" compoundref="makerbotHBP_8py" startline="17">cam.nc.makerbotHBP.CreatorMakerbotHBP.absolute_flag</references>
+        <references refid="classcam_1_1nc_1_1nc__read_1_1Parser_1a978d03f3a2b380ed41048be75d1e162e" compoundref="nc__read_8py" startline="19">cam.nc.nc_read.Parser.absolute_flag</references>
+        <references refid="classcam_1_1nc_1_1nclathe__read_1_1Parser_1a1fb12b6cdb07d47a4dfc93aba3c94bf6" compoundref="nclathe__read_8py" startline="15">cam.nc.nclathe_read.Parser.absolute_flag</references>
+        <references refid="classcam_1_1nc_1_1shopbot__mtc_1_1Creator_1ab98370f3b0958ddd6d116b018adf085c" compoundref="shopbot__mtc_8py" startline="45">cam.nc.shopbot_mtc.Creator.absolute_flag</references>
+        <references refid="classcam_1_1nc_1_1winpc_1_1Creator_1ae19ffe6eb88cc7a19868d286ccef4e7e" compoundref="winpc_8py" startline="13">cam.nc.winpc.Creator.absolute_flag</references>
+        <referencedby refid="classcam_1_1nc_1_1lathe1__read_1_1Parser_1a4046e981f4f946bed728de957d10365f" compoundref="lathe1__read_8py" startline="28" endline="240">cam.nc.lathe1_read.Parser.Parse</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1nc_1_1nc__read_1_1Parser_1ac6508a88add299eca4dec80685e2aa1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser.absolute</definition>
+        <argsstring>(self)</argsstring>
+        <name>absolute</name>
+        <qualifiedname>cam.nc.nc_read.Parser.absolute</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="66" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="66" bodyend="68"/>
+        <references refid="classcam_1_1nc_1_1cad__nc__read_1_1Parser_1ad1f7a540675696b04ff42964524a607f" compoundref="cad__nc__read_8py" startline="16">cam.nc.cad_nc_read.Parser.absolute_flag</references>
+        <references refid="classcam_1_1nc_1_1centroid1_1_1Creator_1a194a952228c77c466cc12ae674f4dae6" compoundref="centroid1_8py" startline="26">cam.nc.centroid1.Creator.absolute_flag</references>
+        <references refid="classcam_1_1nc_1_1grbl_1_1Creator_1a4f0418af84bb3503f03fc5eda2ae9f44" compoundref="grbl_8py" startline="13">cam.nc.grbl.Creator.absolute_flag</references>
+        <references refid="classcam_1_1nc_1_1heiden_1_1Creator_1a119fed67167fa45c5a0a9ad5f0de0efc" compoundref="heiden_8py" startline="63">cam.nc.heiden.Creator.absolute_flag</references>
+        <references refid="classcam_1_1nc_1_1heiden530_1_1Creator_1a8d92ffccec2efe7c8fe3cca848bca430" compoundref="heiden530_8py" startline="28">cam.nc.heiden530.Creator.absolute_flag</references>
+        <references refid="classcam_1_1nc_1_1iso_1_1Creator_1a1580af6e4379185d7bdac6619e388296" compoundref="iso_8py" startline="52">cam.nc.iso.Creator.absolute_flag</references>
+        <references refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a273148769236b6b1d918e3f250cbcf54" compoundref="lathe1_8py" startline="50">cam.nc.lathe1.CreatorIso.absolute_flag</references>
+        <references refid="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a583e0028291a5cfff0e729e3888674c7" compoundref="makerbotHBP_8py" startline="17">cam.nc.makerbotHBP.CreatorMakerbotHBP.absolute_flag</references>
+        <references refid="classcam_1_1nc_1_1nc__read_1_1Parser_1a978d03f3a2b380ed41048be75d1e162e" compoundref="nc__read_8py" startline="19">cam.nc.nc_read.Parser.absolute_flag</references>
+        <references refid="classcam_1_1nc_1_1nclathe__read_1_1Parser_1a1fb12b6cdb07d47a4dfc93aba3c94bf6" compoundref="nclathe__read_8py" startline="15">cam.nc.nclathe_read.Parser.absolute_flag</references>
+        <references refid="classcam_1_1nc_1_1shopbot__mtc_1_1Creator_1ab98370f3b0958ddd6d116b018adf085c" compoundref="shopbot__mtc_8py" startline="45">cam.nc.shopbot_mtc.Creator.absolute_flag</references>
+        <references refid="classcam_1_1nc_1_1winpc_1_1Creator_1ae19ffe6eb88cc7a19868d286ccef4e7e" compoundref="winpc_8py" startline="13">cam.nc.winpc.Creator.absolute_flag</references>
+        <referencedby refid="classcam_1_1nc_1_1lathe1__read_1_1Parser_1a4046e981f4f946bed728de957d10365f" compoundref="lathe1__read_8py" startline="28" endline="240">cam.nc.lathe1_read.Parser.Parse</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1nc_1_1nc__read_1_1Parser_1aa5c11b7afe9e0de7537f7307f06d4081" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.nc_read.Parser.Parse</definition>
+        <argsstring>(self, name)</argsstring>
+        <name>Parse</name>
+        <qualifiedname>cam.nc.nc_read.Parser.Parse</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="69" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="69" bodyend="188"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>cam.nc.nc_read.Parser</label>
+        <link refid="classcam_1_1nc_1_1nc__read_1_1Parser"/>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" line="12" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc_read.py" bodystart="12" bodyend="188"/>
+    <listofallmembers>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1ae97dacb299bf962f355da1a74960a5f4" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>__del__</name></member>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1a0ce3ed62a0963bc990bff3edebde0c5a" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>__init__</name></member>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1a617dd81db0bbe41828591b6d39654c38" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>a</name></member>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1ac6508a88add299eca4dec80685e2aa1c" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>absolute</name></member>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1a978d03f3a2b380ed41048be75d1e162e" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>absolute_flag</name></member>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1a1b74f5cf813238e70dc09826c0a5ca3a" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>arc</name></member>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1a16a36853342c4e232ec3a91f1fc63321" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>arc_centre_absolute</name></member>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1a2323e7561e7435e174db487682a8d199" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>arc_centre_positive</name></member>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1aebd9e6401562eef4721b8e9d6782bf69" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>b</name></member>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1a739314e3aa937b657856be8c1d8b0d6c" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>c</name></member>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1a14f1c838f66f62053ea20efae5f9fe58" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>cdata</name></member>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1a99c602510e3298336ae61d9e09152545" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>col</name></member>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1a6234f1b6dc8f963296f2445fd8574ae1" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>currentx</name></member>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1a598d7d5b16bea011b7fb883a94fa4859" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>currenty</name></member>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1ad0fd83b9cdc03ea0e10079f150766913" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>currentz</name></member>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1ae49ae98273ea0c7456b43888c5969028" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>drill</name></member>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1a7df431f68cf60e395facca0ca46e1d58" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>drillz</name></member>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1ace817d71b9bf72487ef7419106fb836e" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>f</name></member>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1a44dea2d7915cf1ea18578e0bdb1e9a3d" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>file_in</name></member>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1a77fa17e8c0e19d8744c39b9748fc10f4" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>h</name></member>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1a71812768687fcf7f29802edd2f04bab4" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>height_offset</name></member>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1ac773ae677bbaadd9e1cf4844dcee130d" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>i</name></member>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1a378c7032a0b9ac2c57e28c0e94d30355" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>incremental</name></member>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1a39ae8216d67ecb34a5052af6283b7737" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>j</name></member>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1a1db00f02ccd65a930c8c06bf95b008f6" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>k</name></member>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1a8b464b4a326104ff2694107cbb924448" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>line</name></member>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1af929d6666685c1bddb6f26eaf8302708" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>m6</name></member>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1a6d98e62c714bb323fdcd3acf4d135eb1" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>move</name></member>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1afaab85d3d385befe21ab8a55096857bc" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>need_m6_for_t_change</name></member>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1a089b53684fa77b309260a5f9c3c69863" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>no_move</name></member>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1a827f7de520b9eee1d56a56e29cb24127" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>oldx</name></member>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1a67ae94e8a1637e65b01adb8fc4390654" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>oldy</name></member>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1aa5b1c47988c5214e780c5a9d8609093e" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>oldz</name></member>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1a8f2c023a272b12b66001bc584832250f" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>p</name></member>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1aa5c11b7afe9e0de7537f7307f06d4081" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>Parse</name></member>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1aec61ffe193ace8115045da27b9f20d60" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>path_col</name></member>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1a50d80e3ad75985304325d1128fb32714" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>q</name></member>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1adbb802c2693c13051e44691f06f50e18" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>r</name></member>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1af38d287bc4d3f0d3dc1bbfce972d52f9" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>readline</name></member>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1a9a19aa0f76ce74cf1a8307f70e4d8302" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>s</name></member>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1aee97d02ca45ea183d03d02828f078a15" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>set_current_pos</name></member>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1a9a4040127172837b9c75bfea55b37e18" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>t</name></member>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1ad3d24bcce544b254208def08db8625e7" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>writer</name></member>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1a0ecf2cc5f0a22eb1a2cbf3afb774c9a7" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>x</name></member>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1a8e208fde06cb2837b23673dd835fc6e3" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>y</name></member>
+      <member refid="classcam_1_1nc_1_1nc__read_1_1Parser_1ab4f67a40ecb45e1096a5935b2ed8f03a" prot="public" virt="non-virtual"><scope>cam::nc::nc_read::Parser</scope><name>z</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

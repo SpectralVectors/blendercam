@@ -1,0 +1,867 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1nc_1_1winpc_1_1Creator" xml:lang="en-US">
+<title>cam.nc.winpc.Creator Class Reference</title>
+<indexterm><primary>cam.nc.winpc.Creator</primary></indexterm>
+Inheritance diagram for cam.nc.winpc.Creator:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1winpc_1_1Creator__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.nc.winpc.Creator:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1winpc_1_1Creator__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1winpc_1_1Creator_1a35a2176ac3b75df1aa3bdf9a1bc49614">__init__</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1winpc_1_1Creator_1aae1cb93a5dd430719105fa03a054f654">SPACE_STR</link> (self)</para>
+
+<para>Codes. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1winpc_1_1Creator_1ac4abcb37279bb85454570b22a9f2edea">TOOL</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1winpc_1_1Creator_1a620c5c36d79c5f0c9a2481cb26775a8b">write_spindle</link> (self)</para>
+
+<para>Internal. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1winpc_1_1Creator_1aca2b206132fccc31b615eb568e2fa355">program_begin</link> (self, id, <link linkend="_classcam_1_1nc_1_1winpc_1_1Creator_1a2516870c787e276bfa9061c5a80a5349">comment</link>)</para>
+
+<para>Programs. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1winpc_1_1Creator_1aa2dc25a2906dcd979f8454c5630b5f4d">program_end</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1winpc_1_1Creator_1a4f329a07a8ee02af17a7b57d602ab4b6">tool_defn</link> (self, id, name=&apos;&apos;, params=None)</para>
+
+<para>Settings. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1winpc_1_1Creator_1a5dda631594dd74a6a573e54c2cffbd5e">tool_change</link> (self, id)</para>
+
+<para>Tools. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1winpc_1_1Creator_1a2516870c787e276bfa9061c5a80a5349">comment</link> (self, text)</para>
+
+<para>Misc. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1winpc_1_1Creator_1a35e54099e5ecfbda678d8f66bc281994">workplane</link> (self, id)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_classcam_1_1nc_1_1iso_1_1Creator">cam.nc.iso.Creator</link>        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a79463d437baaaf23c828a2c9e62393f3">SPACE</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a320fb9399499337d9db63b743b567a2a">FORMAT_FEEDRATE</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a4f37122be213338ef0161b83f5f7c73c">FORMAT_ANG</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ad82d59b5d9074c0415c93f86f504ded9">FORMAT_TIME</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ae67567ecef76b98ad307b79c3eac86c2">BLOCK</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a0181c37cf5c794505115dcb25bc0374d">COMMENT</link> (self, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a618d52d9931049792ef89511ff43496c">comment</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a7353e8f9700ce2a913b2032aa8badbd5">VARIABLE</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a5e3a39bf548a686f948127bc4c616a04">VARIABLE_SET</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1adf4201163a2931b16cedba29cd45c0d7">PROGRAM</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a8705709f8177dd54b9737977dc14cc85">PROGRAM_END</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a4ad42f22f655a8b9bdb5665d4c686180">SUBPROG_CALL</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a8d22ce8b6db62774c06ece8e9f078406">SUBPROG_END</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a4737393168c799ec951c626c12856181">STOP_OPTIONAL</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ab19991ba2fcea25d98a7e1aab38542f7">STOP</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a61ba1b3d2e01e98e27293d008dc8b8d4">IMPERIAL</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ab1743c9a1ae281a68c81fb63ae40f7d2">METRIC</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a4eefc69436d3c3b3c01b57e2dc5db756">ABSOLUTE</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ac5ccab83b0e78c39d566e980259a45dc">INCREMENTAL</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a32d0b761b61d6dce9961c3019d523fef">SET_TEMPORARY_COORDINATE_SYSTEM</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ad78ac0eba4ccd0f101443906c0392783">REMOVE_TEMPORARY_COORDINATE_SYSTEM</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a1193f838840ce951f92d404655f2d7e6">POLAR_ON</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a2c3f9740f5e29eee583ba1e9ab37a2cd">POLAR_OFF</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1adbe8da6728a7d844db99a1a114ccd4b7">PLANE_XY</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a5bb399d51b26fdf1a6f95d1ea0cbc612">PLANE_XZ</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1adf6f0827492ef765681a669b36fdc652">PLANE_YZ</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a6d75009d5bd4707a06a8b23d3852e465">TOOL_DEFINITION</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ab80465085217d6580fc1aabbb0b879ea">WORKPLANE</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a752fd783814bcdff2b247170902d7356">WORKPLANE_BASE</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1aa98878c7f98a9561797d2cc209a4e3f1">SPINDLE_CW</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1adea2e25000aec2895a593510fb45f264">SPINDLE_CCW</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1acdb897c98f97ae65dfe11708e168d33f">COOLANT_OFF</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ac1a9f8cf9ac6d48d2cdac3399b64f803">COOLANT_MIST</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ad94ce3dc7d8be5391e6824fb823ea054">COOLANT_FLOOD</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a6c4d904a38a0123a69ac089251267c12">GEAR_OFF</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ad20a46f1e6059596a5e34a85124eb6a9">GEAR</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a2966c471410dca175eb3f6a39bb59a73">GEAR_BASE</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a0cb267a8d7a75b637fb6e80566b66da4">RAPID</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1af3f4ce046aa05b178fb74fa32fd80615">FEED</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a542fa199277743823eefd48b37ffd850">ARC_CW</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1af1974fdef3410f904acca2c752603177">ARC_CCW</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a38023bce2c5fa93a404b2c166ba9f7fe">DWELL</link> (self, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a2043c0e5205bc5f240aa9c08c4eebc76">dwell</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a32388018c96e2e7a9376205786ec6ee3">DRILL</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a9de38f28a50fe72c3acc6ab317e8ac72">DRILL_WITH_DWELL</link> (self, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a2043c0e5205bc5f240aa9c08c4eebc76">dwell</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a3269868e95decce5ee3450ea52751641">PECK_DRILL</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ad227f8c8732e1b78d1a1db7010b967e6">PECK_DEPTH</link> (self, depth)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ad20bd7a24fcae65e04341b0dd5f149ef">RETRACT</link> (self, height)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a7f15269551fb05f005c05a1f33b03761">END_CANNED_CYCLE</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1aedb9de0c1be02084ab4cdcc767a72a0c">TAP</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a34b460da792f566d4e7b233cbf99bea9">TAP_DEPTH</link> (self, depth)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ae4584d1a86a6fa5a293a5dd422e64e79">INTERNAL_COOLANT_ON</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a000c1bfb4fc6f547a76706d4e171569c">INTERNAL_COOLANT_OFF</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1af6bafbc234d88758aaf4558f65950110">X</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a4cb6004939e864e32d293d830f439aeb">Y</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a72ab233121c914e6aed3b3176810bdf6">Z</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a0325c52e11048b3d689ad38876b9c1c6">A</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a3f1de3e71a4e1fcf157d34e3b16f9189">B</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1af5baa238f6b2a93b9391868671e8376b">C</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1aec6333fee1c01d73d8985924dff313b0">CENTRE_X</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ae0a18ba463058d8dba91410e737b4641">CENTRE_Y</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1afb60457ccf0b36d39cb6a3e7cd4a53bf">CENTRE_Z</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a0de75cab5cca9f572851840601881f64">RADIUS</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a77082acb6d207c3e71a1a42e01ee53c3">TIME</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1aadf619f1e91ccbdbb57fee15e72e469a">PROBE_TOWARDS_WITH_SIGNAL</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a9568f31bad6001fa61611fa8be292412">PROBE_TOWARDS_WITHOUT_SIGNAL</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a7a13ade97cac72e3c29736d96bb439fe">PROBE_AWAY_WITH_SIGNAL</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1abf0c56cddcccd6e8afd354053abd2f66">PROBE_AWAY_WITHOUT_SIGNAL</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a73a16afaed0d5eb16c0e47e492546045">MACHINE_COORDINATES</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a32b1e998f8b2f6191d82b87feab1cb9a">EXACT_PATH_MODE</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a0fd5c01d35a6cc11c92ad14364467d70">EXACT_STOP_MODE</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a260dc14542c169e7cee4d032861da023">RETRACT_TO_CLEARANCE</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1af8f27ba578a3349b043cb179e7334590">RETRACT_TO_STANDOFF</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1abb81af5a0bdddfed387b71b68a51cc7a">write</link> (self, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a1fe2037055766f7134f9ac278450e4af">s</link>)</para>
+
+<para>Internals. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a4dc9e277a3ab026ee8a6f072b9da1f7c">write_feedrate</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a79bc6731e56722243a2c50928260c233">write_preps</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a6116effd3973c5b32d6f06a6e5368b2b">write_misc</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a9c9311f6b90cf5123a25b1fb6666594e">output_fixture</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a7bb9c29ffb8d5002a771685d8ac36154">increment_fixture</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a0a560874226e2b0b35538a8ced0970f5">get_fixture</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a1df8cf275c57b487084bd80e7bab120d">set_fixture</link> (self, fixture)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a8ca0f9ef01ac58c553701fc483bb7ea3">add_stock</link> (self, type_name, params)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1afcd2fb65cdc93069c93cada835219108">program_stop</link> (self, optional=False)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a1121a5224bb225fb9932a00e1eff2d21">number_file</link> (self, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a16be15e4395342af2aa760a3393c9da7">filename</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a6b79af602eda054ccddc9bceaf92f4ab">flush_nc</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ad43552228097db6017a1dbe4d9d1d240">make_subroutine_name</link> (self, id)</para>
+
+<para>Subprograms. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1abd77d254ccb46dea1553cf81faf74bd6">sub_begin</link> (self, id, name=None)</para>
+
+<para>Subprograms. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a189a88facff70a2033184ccd73309f65">sub_call</link> (self, id)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1aa52fa25396f5339439f91854a7cc2c62">sub_end</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a6a65cefd0fb7ef597468444472ec7803">disable_output</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1acdcc67c973edb0d35d9d2ee03162165b">enable_output</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a7d08a644f2310071134f7cea7e8bb7b1">imperial</link> (self)</para>
+
+<para>Settings. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a87e14f7ad8bcc131365d1f1f2fb6f42b">metric</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a9aa27edca4b9740fb914195f14bbb247">absolute</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a882c092d48477f2101362c0988d228e7">incremental</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a0a80136128b6466bdf30e894427d6bfb">polar</link> (self, on=True)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a94ebb21d1db6f13b80e1679559360ecf">set_plane</link> (self, plane)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a2bf1c3e1741543db5645635f968a01e5">set_temporary_origin</link> (self, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a6ad5dced2dbad76cc6cd1e5514e2b4f4">x</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a3d8999c9d8d9028c315370ecfaedaa74">y</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a151c164be5561b5fc2261f09ca9cb37f">z</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a5bf33095a84499e5eda47988cc5b546c">a</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a0e9ad1b1c3c0fa020d412050e7b063c4">b</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ad13f4ceed9d0ae641bfd2c0cde585763">c</link>=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a0aaa76de84053c3392e607d84f0c247e">remove_temporary_origin</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1aaacec2d1ed3f0ba378c22ec9c01d9010">translate</link> (self, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a6ad5dced2dbad76cc6cd1e5514e2b4f4">x</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a3d8999c9d8d9028c315370ecfaedaa74">y</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a151c164be5561b5fc2261f09ca9cb37f">z</link>=None)</para>
+
+<para>new graphics origin- make a new coordinate system and snap it onto the geometry the toolpath generated should be translated </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a50a917795ddd96336bb650282075dd6b">offset_radius</link> (self, id, radius=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a70c70366475b962ed64b04061d13869c">offset_length</link> (self, id, length=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a46031cdb0ec680d36993ecfcd2f6161a">current_tool</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1aecd7364c4166b92f243f6b89e8cede04">datum_shift</link> (self, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a6ad5dced2dbad76cc6cd1e5514e2b4f4">x</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a3d8999c9d8d9028c315370ecfaedaa74">y</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a151c164be5561b5fc2261f09ca9cb37f">z</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a5bf33095a84499e5eda47988cc5b546c">a</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a0e9ad1b1c3c0fa020d412050e7b063c4">b</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ad13f4ceed9d0ae641bfd2c0cde585763">c</link>=None)</para>
+
+<para>Datums. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a31fdea62a66bd99aa946e53737fe9162">datum_set</link> (self, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a6ad5dced2dbad76cc6cd1e5514e2b4f4">x</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a3d8999c9d8d9028c315370ecfaedaa74">y</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a151c164be5561b5fc2261f09ca9cb37f">z</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a5bf33095a84499e5eda47988cc5b546c">a</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a0e9ad1b1c3c0fa020d412050e7b063c4">b</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ad13f4ceed9d0ae641bfd2c0cde585763">c</link>=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a2d1c6d9f9626da93eca6552355107bf8">feedrate</link> (self, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a18d47f3478cfe42ca6f16652879a6217">f</link>)</para>
+
+<para>Rates + Modes. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a57c0823d547d228834bec6001ee1582a">feedrate_hv</link> (self, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a4b9051119dc23262d951af43dfde8521">fh</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ac1a85aebe10d310802c75c5e76aaa995">fv</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ad28b33ba02030585fc68e3d033fbbad3">calc_feedrate_hv</link> (self, h, v)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a5e2b864808c8b2ebc4907aaeca143440">spindle</link> (self, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a1fe2037055766f7134f9ac278450e4af">s</link>, clockwise)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a3e23cee17ea4e06b916e1472c938fad6">coolant</link> (self, mode=0)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ae9be52dffec064b2051414859e10eaf3">gearrange</link> (self, gear=0)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a64bd7544d638558d278746433d3855d6">rapid</link> (self, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a6ad5dced2dbad76cc6cd1e5514e2b4f4">x</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a3d8999c9d8d9028c315370ecfaedaa74">y</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a151c164be5561b5fc2261f09ca9cb37f">z</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a5bf33095a84499e5eda47988cc5b546c">a</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a0e9ad1b1c3c0fa020d412050e7b063c4">b</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ad13f4ceed9d0ae641bfd2c0cde585763">c</link>=None)</para>
+
+<para>Moves. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ad072e258b3de2c4fa8b1033f28d67bbb">feed</link> (self, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a6ad5dced2dbad76cc6cd1e5514e2b4f4">x</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a3d8999c9d8d9028c315370ecfaedaa74">y</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a151c164be5561b5fc2261f09ca9cb37f">z</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a5bf33095a84499e5eda47988cc5b546c">a</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a0e9ad1b1c3c0fa020d412050e7b063c4">b</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ad13f4ceed9d0ae641bfd2c0cde585763">c</link>=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a54b28a33e139c4d354fa74abf630440c">filter_xyz</link> (self, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a6ad5dced2dbad76cc6cd1e5514e2b4f4">x</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a3d8999c9d8d9028c315370ecfaedaa74">y</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a151c164be5561b5fc2261f09ca9cb37f">z</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a5bf33095a84499e5eda47988cc5b546c">a</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a0e9ad1b1c3c0fa020d412050e7b063c4">b</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ad13f4ceed9d0ae641bfd2c0cde585763">c</link>=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a4374104caa5387bf02c00b4b83695681">get_quadrant</link> (self, dx, dy)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1aacc459d91d8bf1903156fa9974629267">quadrant_start</link> (self, q, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a47334e9b02782bb4a70ee72a94667dbb">i</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a8f9a3288e6c233ed8c4f36d82f588477">j</link>, rad)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a827613cf1916273f770cf2ddcc5ee508">quadrant_end</link> (self, q, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a47334e9b02782bb4a70ee72a94667dbb">i</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a8f9a3288e6c233ed8c4f36d82f588477">j</link>, rad)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ad85c9ba57abf49924140f57230ca60e4">get_arc_angle</link> (self, sdx, sdy, edx, edy, cw)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1aed90658ba02dc4e25c565f6e3a70670d">arc</link> (self, cw, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a6ad5dced2dbad76cc6cd1e5514e2b4f4">x</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a3d8999c9d8d9028c315370ecfaedaa74">y</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a151c164be5561b5fc2261f09ca9cb37f">z</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a47334e9b02782bb4a70ee72a94667dbb">i</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a8f9a3288e6c233ed8c4f36d82f588477">j</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a539790db3dc30cdeb3d7a286f1fd0d1c">k</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ab5dfc58362bb16c7779603d6dd6c47ea">r</link>=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a334d38752a57cd7745f9361d583c68f6">arc_cw</link> (self, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a6ad5dced2dbad76cc6cd1e5514e2b4f4">x</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a3d8999c9d8d9028c315370ecfaedaa74">y</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a151c164be5561b5fc2261f09ca9cb37f">z</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a47334e9b02782bb4a70ee72a94667dbb">i</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a8f9a3288e6c233ed8c4f36d82f588477">j</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a539790db3dc30cdeb3d7a286f1fd0d1c">k</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ab5dfc58362bb16c7779603d6dd6c47ea">r</link>=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a73623b6caaf8efee669803ee57ca97a9">arc_ccw</link> (self, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a6ad5dced2dbad76cc6cd1e5514e2b4f4">x</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a3d8999c9d8d9028c315370ecfaedaa74">y</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a151c164be5561b5fc2261f09ca9cb37f">z</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a47334e9b02782bb4a70ee72a94667dbb">i</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a8f9a3288e6c233ed8c4f36d82f588477">j</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a539790db3dc30cdeb3d7a286f1fd0d1c">k</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ab5dfc58362bb16c7779603d6dd6c47ea">r</link>=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a2043c0e5205bc5f240aa9c08c4eebc76">dwell</link> (self, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a126e75ca3d4ad484d2bb6c7c7a4ee499">t</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a669f860818fff9e1e75e57241c940a2c">on_move</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1aa6936d7d9fe1e3f40e7865025c68b407">rapid_home</link> (self, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a6ad5dced2dbad76cc6cd1e5514e2b4f4">x</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a3d8999c9d8d9028c315370ecfaedaa74">y</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a151c164be5561b5fc2261f09ca9cb37f">z</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a5bf33095a84499e5eda47988cc5b546c">a</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a0e9ad1b1c3c0fa020d412050e7b063c4">b</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ad13f4ceed9d0ae641bfd2c0cde585763">c</link>=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1aee113a4db079dc4140df97e02ba00482">rapid_unhome</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1af99938ad4b445f8f57005450c2e56ffb">set_machine_coordinates</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1af5dc2ec8d21683230d93bc4872823c00">use_CRC</link> (self)</para>
+
+<para>CRC. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a8821bd6dbb5825a2a9c3dca170b98433">CRC_nominal_path</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a3e4b11f0c61e5d82b81802c1fe30ec7d">start_CRC</link> (self, left=True, radius=0.0)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ae1769eb250607139c9f16e9cc58b164f">end_CRC</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a11a90ac0d54bed09ac3d29778d5d147d">pattern</link> (self)</para>
+
+<para>Cycles. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a7af3e0915687d0f1bea4923818305682">pattern_uses_subroutine</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1acf0c68572a3d821b6ef84604dd92a473">pocket</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ad9e7a9b3810c15895504c08d715415a9">profile</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1aaf998f3cce99f775d989cbdc56c10984">write_internal_coolant_commands</link> (self, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1adbe067ef417b3418456899f6473df9f3">internal_coolant_on</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a61f29267aaaddc3d5c8471f9bf714cb3">drill</link> (self, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a6ad5dced2dbad76cc6cd1e5514e2b4f4">x</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a3d8999c9d8d9028c315370ecfaedaa74">y</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a2043c0e5205bc5f240aa9c08c4eebc76">dwell</link>=None, depthparams=None, retract_mode=None, spindle_mode=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1adbe067ef417b3418456899f6473df9f3">internal_coolant_on</link>=None, rapid_to_clearance=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a8efd5882a839fbf1414b0982cd1befd0">end_canned_cycle</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ac18f5cf3a4b28ca5ad7d11935309b8a5">insert</link> (self, text)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a5616abcbba58eb930bbc1c7c6cf87302">block_delete</link> (self, on=False)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a4d1b044feff1f1bfac19907d85daebe0">variable</link> (self, id)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a04092f294815f93711efb27477a1fb89">variable_set</link> (self, id, value)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1adc5343ffd168991077858693d6a79fef">probe_single_point</link> (self, point_along_edge_x=None, point_along_edge_y=None, depth=None, retracted_point_x=None, retracted_point_y=None, destination_point_x=None, destination_point_y=None, intersection_variable_x=None, intersection_variable_y=None, probe_offset_x_component=None, probe_offset_y_component=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a40689f45d25f7f726d11a172b608c0a4">probe_downward_point</link> (self, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a6ad5dced2dbad76cc6cd1e5514e2b4f4">x</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a3d8999c9d8d9028c315370ecfaedaa74">y</link>=None, depth=None, intersection_variable_z=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1aa108edc88f18c8ab0f813841c4f84799">report_probe_results</link> (self, x1=None, y1=None, z1=None, x2=None, y2=None, z2=None, x3=None, y3=None, z3=None, x4=None, y4=None, z4=None, x5=None, y5=None, z5=None, x6=None, y6=None, z6=None, xml_file_name=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1af8151a0e2cdd9e85fc647036dbb3ed54">open_log_file</link> (self, xml_file_name=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a2521f46f9bab4b239603f30315539ecc">log_coordinate</link> (self, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a6ad5dced2dbad76cc6cd1e5514e2b4f4">x</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a3d8999c9d8d9028c315370ecfaedaa74">y</link>=None, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a151c164be5561b5fc2261f09ca9cb37f">z</link>=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ae2d5838f0332ca215fad89ba5eb1e0ff">log_message</link> (self, message=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a75f2b1ef12bb87e7ddd0cbc8ccbdd6c1">close_log_file</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1afbb4d0ab68aa5fae6e3d9221fb871fbd">rapid_to_midpoint</link> (self, x1=None, y1=None, z1=None, x2=None, y2=None, z2=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a60e5583b4ddafa8966b05d2baa28ea67">rapid_to_intersection</link> (self, x1, y1, x2, y2, x3, y3, x4, y4, intersection_x, intersection_y, ua_numerator, ua_denominator, ua, ub_numerator, ub)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1affa9a90d01acd946672ba361abfbfffd">rapid_to_rotated_coordinate</link> (self, x1, y1, x2, y2, ref_x, ref_y, x_current, y_current, x_final, y_final)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a90209f1ea191f0235894e81b04332b9b">BEST_POSSIBLE_SPEED</link> (self, motion_blending_tolerance, naive_cam_tolerance)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1aca64f819f417da4a222b1c317c9b5741">set_path_control_mode</link> (self, mode, motion_blending_tolerance, naive_cam_tolerance)</para>
+</listitem>
+        </itemizedlist>
+Public Member Functions inherited from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator">cam.nc.nc.Creator</link>        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1ab3651c24840aa9b2a7a1bc828263eac9">file_open</link> (self, name)</para>
+
+<para>Internals. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a7bf39bc81f3b3714060d74f1339ae06c">file_close</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a6b9b5f41f66c0a89ae69a7f21776025d">writem</link> (self, a)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a25dc579a777162a8825f4a80cdb49dd7">clearanceplane</link> (self, z=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1aa444813a0c811ccdf5c131ef200f61ad">matrix</link> (self, a1=None, b1=None, c1=None, a2=None, b2=None, c2=None, a3=None, b3=None, c3=None)</para>
+
+<para>APT360 like Transformation Definitions These definitions were created while looking at Irvin Kraal&apos;s book on APT. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1adb91710cf1f26d4cf07f9da51e7798a5">rotate</link> (self, xyrot=None, yzrot=None, zxrot=None, angle=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a7277c1e666c6dda2b8a997f3518f3f3e">scale</link> (self, k=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a016998404be15eef6dc192118c572e4a">matrix_product</link> (self, matrix1=None, matrix2=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a183c1585f1851d4573dadc6645f3b473">mirror_plane</link> (self, plane1=None, plane2=None, plane3=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1aa777fc06dd6e476f08060e7cf4f88068">mirror_line</link> (self, line=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a0e6b1ba5ac8a76e36f68c1ef8b21435a">tap</link> (self, x=None, y=None, z=None, zretract=None, depth=None, standoff=None, dwell_bottom=None, pitch=None, stoppos=None, spin_in=None, spin_out=None, tap_mode=None, direction=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a167f093c98cb4777a2f495a94010cf64">bore</link> (self, x=None, y=None, z=None, zretract=None, depth=None, standoff=None, dwell_bottom=None, feed_in=None, feed_out=None, stoppos=None, shift_back=None, shift_right=None, backbore=False, stop=False)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a5943f76b586cd2d530dc0d305ef457bd">probe_linear_centre_outside</link> (self, x1=None, y1=None, depth=None, x2=None, y2=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1aec98966fe45ff7d2973002311f38b841">wipe</link> (self)</para>
+
+<para>NC code creator for additive machines like RepRap. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a227b7ab87099b672da953a0aad13eff6">extruder_on</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a1acc377f3f5c966fde33e8a22ae49dd2">extruder_off</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a55cd49b26a3b252e7c6f24fc6bd4fd25">set_extruder_flowrate</link> (self, flowrate)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a0911d697ca8205da25a327e638fd3620">extruder_temp</link> (self, temp)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a2f54ed36706db67ca412a8ff341526a3">fan_on</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a5b9d618bf11b2c17a1bc5f69944bd3b7">fan_off</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a52fa4c4b50e5f53df50ebee0319e9245">build_bed_temp</link> (self, temp)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1ab9f33126ca1fff2b36e6ca3f4ac81cef">chamber_temp</link> (self, temp)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a93388ba17e68b836b4eee5d907b7fb41">begin_ncblock</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a2a88ca7c016d69f6c5f8dd98f326868a">end_ncblock</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1ab7795ded7273e69a74d36614404fef0e">add_text</link> (self, s, col, cdata)</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1winpc_1_1Creator_1ae19ffe6eb88cc7a19868d286ccef4e7e">absolute_flag</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1winpc_1_1Creator_1a8be53baab35481b179dab31fee6ca28e">prev_g91</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1winpc_1_1Creator_1ae7cdae1e93205482f62b7b548de56b56">useCrc</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1winpc_1_1Creator_1a56aba84ad91a4ca7de2d5a2177566bb3">start_of_line</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1winpc_1_1Creator_1ac175eaff9a0dadc81ece465e042e76e0">t</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Attributes inherited from <link linkend="_classcam_1_1nc_1_1iso__modal_1_1Creator">cam.nc.iso_modal.Creator</link>        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso__modal_1_1Creator_1a1960331d37383ba31b6986287d30ad84">f_modal</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso__modal_1_1Creator_1a6844da8a604940ee1691f5f9f699f33a">g0123_modal</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso__modal_1_1Creator_1ae20fe013171f878a3b7110ee32f98b0e">drill_modal</link></para>
+</listitem>
+        </itemizedlist>
+Public Attributes inherited from <link linkend="_classcam_1_1nc_1_1iso_1_1Creator">cam.nc.iso.Creator</link>        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a5bf33095a84499e5eda47988cc5b546c">a</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a0e9ad1b1c3c0fa020d412050e7b063c4">b</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ad13f4ceed9d0ae641bfd2c0cde585763">c</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a18d47f3478cfe42ca6f16652879a6217">f</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a4b9051119dc23262d951af43dfde8521">fh</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ac1a85aebe10d310802c75c5e76aaa995">fv</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a73ba38ff8c30b28e1d8d995e7cbacdeb">fhv</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a3c240fc391429c0501ecab005fff4c5e">g_plane</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a34e4e87b68ce31e766882a922204efd7">g_list</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a47334e9b02782bb4a70ee72a94667dbb">i</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a8f9a3288e6c233ed8c4f36d82f588477">j</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a539790db3dc30cdeb3d7a286f1fd0d1c">k</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a0d5d31879e17be0bec5c859391a8cd19">m</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ab5dfc58362bb16c7779603d6dd6c47ea">r</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a1fe2037055766f7134f9ac278450e4af">s</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a126e75ca3d4ad484d2bb6c7c7a4ee499">t</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a2eee223c7f9dc0bb7dee7212dae0a35b">g0123_modal</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ae6bbd7c918b466ffd7714cccce3985d4">drill_modal</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1aaa57ca53f32b281b3c3329fd24ff7b32">prev_f</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1aba8e8d691eb5dbfd36172f7dac371c0b">prev_g0123</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a04f1ab2d852f477bc9349a9568922918">prev_drill</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1aee138cf1150ca1c1e51a09312280c34b">useCrc</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a69db7fc3a7c0770733b533ab9dbc3434">useCrcCenterline</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1abc0b0b7b2bd699391b89da90bfefb71d">gCRC</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a9e5511581895719f6d0d81867f28bd25">fmt</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a1580af6e4379185d7bdac6619e388296">absolute_flag</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a0d2e9b7d042d3c4b00b3e1211414d71d">ffmt</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1affdeeb61f36e58f36d980b7909e49425">sfmt</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a02f25cc7fb1802607bcf3239936794fb">in_quadrant_splitting</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a0d7d303b45410dea78ddb6eecf069550">in_canned_cycle</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1af627a8fd35ea318ba4c307969cf524a9">shift_x</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a0fdfcdbbbaa10e1ab212a8095c64e1de">shift_y</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a7945d0e4364343ba06a2dd5ba25181cb">shift_z</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1aa7fe569bd0a39c51dc493154ee17195c">start_of_line</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1adbe067ef417b3418456899f6473df9f3">internal_coolant_on</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1acbc30e76c20b99611de71e4276a3aee8">g98_not_g99</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1aaa57347090a9495db71347def21f520f">current_fixture</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a90ed577a10b4af5fc93e5c192ebcfbe5">fixture_wanted</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ae32d07e8ef0c1266bc781405b57ba5e5">move_done_since_tool_change</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a22bd7c4fd9fc538daf0074a3131831f0">tool_defn_params</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a84b02a601824b51c830b31def9a3fb5e">program_id</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a3590fcef6a72f866d7e35765b086110d">current_sub_id</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1afec4654f7efc289c1955d0c6f0a5ba41">subroutine_files</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a711b09b3642e943d68f89135368b4bc0">program_name</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1aa747ad6d7c345f5780a73a630a5ab444">temp_file_to_append_on_close</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a4206f2a2f3b3b5cbd2cfaa988b79881a">fixture_order</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a96a53dacc7113d3bbbae4342b512d1bd">output_disabled</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a5335fb84b4312007b7583c5ee6a580d7">z_for_g43</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1adff859d7181eb9e898e0071daae3cf9a">arc_centre_absolute</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a0ef85e045d5c1e369fd64ae8449e442b">arc_centre_positive</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1aad2331f27649b7a3c937fe7290f7cf03">drillExpanded</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a1363b0798f5af61e28c15a27908e5e11">dwell_allowed_in_G83</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1afb4dcbecee6b649447597385dd49a02f">can_do_helical_arcs</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a57a5f028ebb6967d53473d6b27ebd4ed">z_for_g53</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a615d8f945f1f30fdc3033631539d31c8">output_h_and_d_at_tool_change</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1aac824bf162f4133f5790df03cedb294a">output_block_numbers</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a84d8d1844632b84f722d5b902db7c0f3">start_block_number</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a23949427715d5753748124991c75467a">block_number_increment</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a968133d75ef43b026cdd719baed0d573">block_number_restart_after</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a827411ed31f05eb4bc4efea3287e273d">output_tool_definitions</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a6cc177f5e59722d62e46098ea5ab6f91">output_tool_change</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a860b4395ee7d9483e0e314c2f882f21e">output_g43_on_tool_change_line</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a0afbdd43f13696db94c1d7a89c0fa115">output_internal_coolant_commands</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a3cfafeaadceb82d8308bc67fc83f4781">output_g98_and_g99</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1aab1e8c90b8a156da420bbfb551bdca2d">output_g43_z_before_drilling_if_g98</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ab1677a3dd12a2b1b9da4830957fc1a4c">output_cutviewer_comments</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a0638f773aea644c5272e9a53b70f19e4">output_fixtures</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a27307023a415d1a73b77eb3162fbe496">use_this_program_id</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1af5558c70753c1bfd80424befd9669add">subroutines_in_own_files</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ae71b2c8f67bf74b04460b52458abaeb8">pattern_done_with_subroutine</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ae108c68123910baa4c531bc51c4f75f9">output_comment_before_tool_change</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a918f5f6106fe94672ccaebe6ddbb560b">output_arcs_as_lines</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a41c6cfa03c8593dcd794eb35adfa99b6">m_codes_on_their_own_line</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a16be15e4395342af2aa760a3393c9da7">filename</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a864d9abea7674c8cfae1757ef9538d0a">save_file</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a7a321f5f151cd03d8a3667c5db341818">file</link></para>
+</listitem>
+        </itemizedlist>
+Public Attributes inherited from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator">cam.nc.nc.Creator</link>        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a7b9f520b607a80af987b068cbd1d1d31">file</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a6a4389cab170edcaa81bf475fa97d463">filename</link></para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Static Public Attributes inherited from <link linkend="_classcam_1_1nc_1_1iso__modal_1_1Creator">cam.nc.iso_modal.Creator</link>        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso__modal_1_1Creator_1ad581846fc3c6726c02b669327c0ae43b">creator</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Static Public Attributes inherited from <link linkend="_classcam_1_1nc_1_1iso_1_1Creator">cam.nc.iso.Creator</link>        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a537fee130a6fda31dab64ef236dd4338">retract_height</link> = depthparams.start_depth + depthparams.rapid_safety_space</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a6ad5dced2dbad76cc6cd1e5514e2b4f4">x</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a3d8999c9d8d9028c315370ecfaedaa74">y</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a3b4ef084566cae6cc30597096ed02bfe">prev_z</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a151c164be5561b5fc2261f09ca9cb37f">z</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1af2642423413f4bc2b207bcf461902165">prev_retract</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a5e698a05fa4578929900ee9d3e95f196">first_drill_pos</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a4c3de121690f30c04c0f670ef8b3465d">creator</link></para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classcam_1_1nc_1_1winpc_1_1Creator_1a35a2176ac3b75df1aa3bdf9a1bc49614"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>cam.nc.winpc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.winpc.Creator</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>cam.nc.winpc.Creator.__init__ ( self)</computeroutput></para><para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1iso__modal_1_1Creator_1ae0f5b38b73b27650b1af8b5085d3129c">cam.nc.iso_modal.Creator</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1nc_1_1winpc_1_1Creator_1a2516870c787e276bfa9061c5a80a5349"/><section>
+    <title>comment()</title>
+<indexterm><primary>comment</primary><secondary>cam.nc.winpc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.winpc.Creator</primary><secondary>comment</secondary></indexterm>
+<para><computeroutput>cam.nc.winpc.Creator.comment ( self,  text)</computeroutput></para><para>
+
+<para>Misc. </para>
+</para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a618d52d9931049792ef89511ff43496c">cam.nc.iso.Creator</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1winpc_1_1Creator_a2516870c787e276bfa9061c5a80a5349_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1winpc_1_1Creator_a2516870c787e276bfa9061c5a80a5349_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1winpc_1_1Creator_1aca2b206132fccc31b615eb568e2fa355"/><section>
+    <title>program_begin()</title>
+<indexterm><primary>program_begin</primary><secondary>cam.nc.winpc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.winpc.Creator</primary><secondary>program_begin</secondary></indexterm>
+<para><computeroutput>cam.nc.winpc.Creator.program_begin ( self,  id,  comment)</computeroutput></para><para>
+
+<para>Programs. </para>
+</para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1adcc0019bc3a0dff0023e4d11b13b92c2">cam.nc.iso.Creator</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1winpc_1_1Creator_aca2b206132fccc31b615eb568e2fa355_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1winpc_1_1Creator_1aa2dc25a2906dcd979f8454c5630b5f4d"/><section>
+    <title>program_end()</title>
+<indexterm><primary>program_end</primary><secondary>cam.nc.winpc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.winpc.Creator</primary><secondary>program_end</secondary></indexterm>
+<para><computeroutput>cam.nc.winpc.Creator.program_end ( self)</computeroutput></para>
+<para><literallayout><computeroutput>End the program</computeroutput></literallayout> </para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1aeedc350647013e5f1543bbdcb32ebd27">cam.nc.iso.Creator</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1winpc_1_1Creator_aa2dc25a2906dcd979f8454c5630b5f4d_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1winpc_1_1Creator_1aae1cb93a5dd430719105fa03a054f654"/><section>
+    <title>SPACE_STR()</title>
+<indexterm><primary>SPACE_STR</primary><secondary>cam.nc.winpc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.winpc.Creator</primary><secondary>SPACE_STR</secondary></indexterm>
+<para><computeroutput>cam.nc.winpc.Creator.SPACE_STR ( self)</computeroutput></para><para>
+
+<para>Codes. </para>
+</para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1aa481cf1e394988751640fd5ce5af991e">cam.nc.iso.Creator</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1winpc_1_1Creator_aae1cb93a5dd430719105fa03a054f654_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1winpc_1_1Creator_1ac4abcb37279bb85454570b22a9f2edea"/><section>
+    <title>TOOL()</title>
+<indexterm><primary>TOOL</primary><secondary>cam.nc.winpc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.winpc.Creator</primary><secondary>TOOL</secondary></indexterm>
+<para><computeroutput>cam.nc.winpc.Creator.TOOL ( self)</computeroutput></para><para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a3c0640ab2405f7cf975459dfa0ddfdfd">cam.nc.iso.Creator</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1winpc_1_1Creator_ac4abcb37279bb85454570b22a9f2edea_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1winpc_1_1Creator_ac4abcb37279bb85454570b22a9f2edea_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1winpc_1_1Creator_1a5dda631594dd74a6a573e54c2cffbd5e"/><section>
+    <title>tool_change()</title>
+<indexterm><primary>tool_change</primary><secondary>cam.nc.winpc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.winpc.Creator</primary><secondary>tool_change</secondary></indexterm>
+<para><computeroutput>cam.nc.winpc.Creator.tool_change ( self,  id)</computeroutput></para><para>
+
+<para>Tools. </para>
+</para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a3e61292523aa893f0187112023e51eff">cam.nc.iso.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1winpc_1_1Creator_1a4f329a07a8ee02af17a7b57d602ab4b6"/><section>
+    <title>tool_defn()</title>
+<indexterm><primary>tool_defn</primary><secondary>cam.nc.winpc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.winpc.Creator</primary><secondary>tool_defn</secondary></indexterm>
+<para><computeroutput>cam.nc.winpc.Creator.tool_defn ( self,  id,  name = <computeroutput>&apos;&apos;</computeroutput>
+,  params = <computeroutput>None</computeroutput>
+)</computeroutput></para><para>
+
+<para>Settings. </para>
+</para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a07bce834ac4fae7cf098546f698cc7ff">cam.nc.iso.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1winpc_1_1Creator_1a35e54099e5ecfbda678d8f66bc281994"/><section>
+    <title>workplane()</title>
+<indexterm><primary>workplane</primary><secondary>cam.nc.winpc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.winpc.Creator</primary><secondary>workplane</secondary></indexterm>
+<para><computeroutput>cam.nc.winpc.Creator.workplane ( self,  id)</computeroutput></para>
+<para><literallayout><computeroutput>Set the workplane</computeroutput></literallayout> </para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1af689dfe2c7549ab5b062fb024d47b4ae">cam.nc.iso.Creator</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1winpc_1_1Creator_a35e54099e5ecfbda678d8f66bc281994_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1winpc_1_1Creator_1a620c5c36d79c5f0c9a2481cb26775a8b"/><section>
+    <title>write_spindle()</title>
+<indexterm><primary>write_spindle</primary><secondary>cam.nc.winpc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.winpc.Creator</primary><secondary>write_spindle</secondary></indexterm>
+<para><computeroutput>cam.nc.winpc.Creator.write_spindle ( self)</computeroutput></para><para>
+
+<para>Internal. </para>
+</para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a9abb7b482b40a3e96bf8034d31828b08">cam.nc.iso.Creator</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1winpc_1_1Creator_a620c5c36d79c5f0c9a2481cb26775a8b_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1nc_1_1winpc_1_1Creator_1ae19ffe6eb88cc7a19868d286ccef4e7e"/><section>
+    <title>absolute_flag</title>
+<indexterm><primary>absolute_flag</primary><secondary>cam.nc.winpc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.winpc.Creator</primary><secondary>absolute_flag</secondary></indexterm>
+<para><computeroutput>cam.nc.winpc.Creator.absolute_flag</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1winpc_1_1Creator_1a8be53baab35481b179dab31fee6ca28e"/><section>
+    <title>prev_g91</title>
+<indexterm><primary>prev_g91</primary><secondary>cam.nc.winpc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.winpc.Creator</primary><secondary>prev_g91</secondary></indexterm>
+<para><computeroutput>cam.nc.winpc.Creator.prev_g91</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1winpc_1_1Creator_1a56aba84ad91a4ca7de2d5a2177566bb3"/><section>
+    <title>start_of_line</title>
+<indexterm><primary>start_of_line</primary><secondary>cam.nc.winpc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.winpc.Creator</primary><secondary>start_of_line</secondary></indexterm>
+<para><computeroutput>cam.nc.winpc.Creator.start_of_line</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1winpc_1_1Creator_1ac175eaff9a0dadc81ece465e042e76e0"/><section>
+    <title>t</title>
+<indexterm><primary>t</primary><secondary>cam.nc.winpc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.winpc.Creator</primary><secondary>t</secondary></indexterm>
+<para><computeroutput>cam.nc.winpc.Creator.t</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1winpc_1_1Creator_1ae7cdae1e93205482f62b7b548de56b56"/><section>
+    <title>useCrc</title>
+<indexterm><primary>useCrc</primary><secondary>cam.nc.winpc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.winpc.Creator</primary><secondary>useCrc</secondary></indexterm>
+<para><computeroutput>cam.nc.winpc.Creator.useCrc</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/<link linkend="_winpc_8py">winpc.py</link></section>
+</section>

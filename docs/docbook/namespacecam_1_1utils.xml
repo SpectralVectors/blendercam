@@ -1,0 +1,822 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacecam_1_1utils" xml:lang="en-US">
+<title>cam.utils Namespace Reference</title>
+<indexterm><primary>cam.utils</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classcam_1_1utils_1_1Point">Point</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a18919ae557175a95fff88b53e5a3b1c0">opencamlib_version</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1aee109e0b5974b8e23a80ac76f616d8bc">positionObject</link> (operation)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a42945b53b548218ea12e9418f417ca20">getBoundsWorldspace</link> (obs, use_modifiers=False)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1aeeb8648e984e211788ae79507115cec9">getSplineBounds</link> (ob, curve)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1ad47b75642303c3c8941d63ba7b46fe3f">getOperationSources</link> (o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a23d9d89c3c47f486835580d46f4df47f">getBounds</link> (o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a44934b5138a8d4e5f75dd1f9b8511ab3">getBoundsMultiple</link> (operations)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1afec203931aa72411409e146b0e73f1ff">samplePathLow</link> (o, ch1, ch2, dosample)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a1b5e1fe704aba6c405af446c25d17faf">sampleChunks</link> (o, pathSamples, layers)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a51ddfd1df0512ecde6cc64184161050e">sampleChunksNAxis</link> (o, pathSamples, layers)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1aea87f7c02faf5e3cb6fd5fa0b644645e">extendChunks5axis</link> (chunks, o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a0a5db4824380f884b6e178a915ff3189">curveToShapely</link> (cob, use_modifiers=False)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a859b5b676c4de4eb2bd671ed8406311d">silhoueteOffset</link> (context, offset, style=1, mitrelimit=1.0)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a910819ad60efb7235a977ca706a44a74">polygonBoolean</link> (context, boolean_type)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1aa4330577e6b4139f49a42fee5904fbda">polygonConvexHull</link> (context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1afca9a0e1e1bb7a32de1c1a7eed5ec26f">Helix</link> (r, np, zstart, pend, rev)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a594a9ac04b6b117b91dca2b33b590ca3">comparezlevel</link> (x)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1af481efff070eae3ed307097a63fd5cfa">overlaps</link> (bb1, bb2)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a9ae3154ae77668a79b919ef35c27b9f3">connectChunksLow</link> (chunks, o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1aaac51386ee87ef045dc3e5c8d720c02f">getClosest</link> (o, pos, chunks)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1aa6f0d1bcff335cdff4ca60c1dfc6bf38">sortChunks</link> (chunks, o, last_pos=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1ae02a104e9e48d30dcb341cf054430d55">getVectorRight</link> (lastv, verts)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1ad23143360152f44586c2c5fd475dab5a">cleanUpDict</link> (ndict)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1ad145e7dfedf4b7c99360dcc04164aeb9">dictRemove</link> (dict, val)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a0daa9540602f1cac02fca5225e5098e2">addLoop</link> (parentloop, start, end)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1aa00f7ac04b8633821fc794ac9fec594e">cutloops</link> (csource, parentloop, loops)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1aa9de6b3628ecfc53788d0b39ae160b09">getOperationSilhouete</link> (operation)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a47d160ba2d06c46bc02d65a01962264c">getObjectSilhouete</link> (stype, objects=None, use_modifiers=False)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a1e00a4e51da1373a89fc0df800a6c942">getAmbient</link> (o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a1ab9ec76924101d005ca5b3bfb78bf74">getObjectOutline</link> (radius, o, Offset)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a28a65e4ea65ca0fa4c3dcbd744f16afd">addOrientationObject</link> (o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a975c3a3f885b39c99b87148fa0d0aa64">removeOrientationObject</link> (o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a3be3c5846a9fcf477c7fdbc8cb17b74f">addTranspMat</link> (ob, mname, color, alpha)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a84a4303144ba41c83854f9c1a1c419a1">addMachineAreaObject</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a619c0b7a8350fced480672a5f43aa19e">addMaterialAreaObject</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a3079115b9de5894e5d6f5a9953517420">getContainer</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1afb6ef4bc30df39f330934c69e805f5ac">unique</link> (L)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a50212ca99d40ea85344ce40bbdc2fac6">checkEqual</link> (lst)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a173e4fd2bc779fd7dc6325bef5632a8c">prepareIndexed</link> (o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1ad510033b188290751074a00603c2767d">cleanupIndexed</link> (operation)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a5f914fc55567d5a1146d3c4c7783ed7d">rotTo2axes</link> (e, axescombination)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a9c98fb17575e5bd74640e912e86fd3d6">reload_paths</link> (o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a516430a991c9ad9d80b3100b56fec518">updateMachine</link> (self, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a384a3656b07f19a6badb9e9f353cd798">updateMaterial</link> (self, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a5c4e7d2392e67c526aa55b471cada4fd">updateOperation</link> (self, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a17fd4c69ef8356e5048611351e72019d">isValid</link> (o, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a62f88dfc697b68eb1be1154638cc294a">operationValid</link> (self, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1aab37708a2d153c5937d45c31abc64ff6">isChainValid</link> (chain, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1aa893f233bfa661beb30a8f5ffefc8779">updateOperationValid</link> (self, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1add5ac02137d21a7da08df757480a8e72">updateChipload</link> (self, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1ab5d6bb813fd206109316ae0925ea1ff7">updateOffsetImage</link> (self, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1ae55715c8c41dd8b4ebf9dd42ea1c8901">updateZbufferImage</link> (self, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a51387d757073a27a853822f565c8f643">updateStrategy</link> (o, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1aa1501ac975b969ff6732d244dd9646e9">updateCutout</link> (o, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a9ff84a03af71e7b527c7e01a9baab6cb">updateExact</link> (o, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a37f367b47a9529121ea2967eff26f7b4">updateOpencamlib</link> (o, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a0e11b3766562708785bcfef4efbdd0ea">updateBridges</link> (o, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a06f8b4ae155619f84d40c7f3c4c25cdb">updateRotation</link> (o, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a2b7a2b2d5dd4324a117f5b55ea8720c9">updateRest</link> (o, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1aa2caf5536fe0be3026b2b19b4e8133c9">getStrategyList</link> (scene, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1abafb35abb7922a381596aecf8536a430">update_material</link> (self, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a5b64dfac7ecbc4532099561a82d224c0">update_operation</link> (self, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a974a8cdc152e4d144bf69f88c840fe6e">update_exact_mode</link> (self, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a7a4ba9e89d1f130e789c10b786882b58">update_opencamlib</link> (self, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1ac32b23363574ded306aedf743f70d8d1">update_zbuffer_image</link> (self, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a50fc43b6f5d57a19a21414e4d2beb5c5">check_operations_on_load</link> (context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a55c174100871df6f93454931497b92d8">Add_Pocket</link> (self, maxdepth, sname, new_cutter_diameter)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_namespacecam_1_1utils_1a8f0515b46d1fa277f26a8d3ebfcace8d">SHAPELY</link> = True</para>
+</listitem>
+            <listitem><para>bool <link linkend="_namespacecam_1_1utils_1a46b476e3124d1e325a75d0af4a9c93db">USE_PROFILER</link> = False</para>
+</listitem>
+            <listitem><para>dict <link linkend="_namespacecam_1_1utils_1ac926cdc3dfe9a36f652032fbb194d9c4">was_hidden_dict</link> = {}</para>
+</listitem>
+            <listitem><para>bool <link linkend="_namespacecam_1_1utils_1a4b0b5df083217b3ff34ccdba105a6adf">_IS_LOADING_DEFAULTS</link> = False</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a4f8c26f81df10fc347a1ce0578e3c4fd">changed</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1aa83d7ca645c129031a9f5aff41b8cdbf">update_offsetimage_tag</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1utils_1a6b43df4a1b68ab9c00667bb2f85b2bd5">update_zbufferimage_tag</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>BlenderCAM &apos;utils.py&apos; © 2012 Vilem Novak
+
+Main functionality of BlenderCAM.
+The functions here are called with operators defined in &apos;ops.py&apos;
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespacecam_1_1utils_1a55c174100871df6f93454931497b92d8"/><section>
+    <title>Add_Pocket()</title>
+<indexterm><primary>Add_Pocket</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>Add_Pocket</secondary></indexterm>
+<para><computeroutput>cam.utils.Add_Pocket ( self,  maxdepth,  sname,  new_cutter_diameter)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1utils_1a0daa9540602f1cac02fca5225e5098e2"/><section>
+    <title>addLoop()</title>
+<indexterm><primary>addLoop</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>addLoop</secondary></indexterm>
+<para><computeroutput>cam.utils.addLoop ( parentloop,  start,  end)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1utils_a0daa9540602f1cac02fca5225e5098e2_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1utils_a0daa9540602f1cac02fca5225e5098e2_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1utils_1a84a4303144ba41c83854f9c1a1c419a1"/><section>
+    <title>addMachineAreaObject()</title>
+<indexterm><primary>addMachineAreaObject</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>addMachineAreaObject</secondary></indexterm>
+<para><computeroutput>cam.utils.addMachineAreaObject ( )</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1utils_1a619c0b7a8350fced480672a5f43aa19e"/><section>
+    <title>addMaterialAreaObject()</title>
+<indexterm><primary>addMaterialAreaObject</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>addMaterialAreaObject</secondary></indexterm>
+<para><computeroutput>cam.utils.addMaterialAreaObject ( )</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1utils_a619c0b7a8350fced480672a5f43aa19e_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1utils_1a28a65e4ea65ca0fa4c3dcbd744f16afd"/><section>
+    <title>addOrientationObject()</title>
+<indexterm><primary>addOrientationObject</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>addOrientationObject</secondary></indexterm>
+<para><computeroutput>cam.utils.addOrientationObject ( o)</computeroutput></para>
+<para><literallayout><computeroutput>The Orientation Object Should Be Used to Set up Orientations of the Object for 4 and 5 Axis Milling.</computeroutput></literallayout> </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1utils_a28a65e4ea65ca0fa4c3dcbd744f16afd_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1utils_1a3be3c5846a9fcf477c7fdbc8cb17b74f"/><section>
+    <title>addTranspMat()</title>
+<indexterm><primary>addTranspMat</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>addTranspMat</secondary></indexterm>
+<para><computeroutput>cam.utils.addTranspMat ( ob,  mname,  color,  alpha)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1utils_1a50fc43b6f5d57a19a21414e4d2beb5c5"/><section>
+    <title>check_operations_on_load()</title>
+<indexterm><primary>check_operations_on_load</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>check_operations_on_load</secondary></indexterm>
+<para><computeroutput>cam.utils.check_operations_on_load ( context)</computeroutput></para>
+<para><literallayout><computeroutput>Checks Any Broken Computations on Load and Reset Them.</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespacecam_1_1utils_1a50212ca99d40ea85344ce40bbdc2fac6"/><section>
+    <title>checkEqual()</title>
+<indexterm><primary>checkEqual</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>checkEqual</secondary></indexterm>
+<para><computeroutput>cam.utils.checkEqual ( lst)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1utils_1ad23143360152f44586c2c5fd475dab5a"/><section>
+    <title>cleanUpDict()</title>
+<indexterm><primary>cleanUpDict</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>cleanUpDict</secondary></indexterm>
+<para><computeroutput>cam.utils.cleanUpDict ( ndict)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1utils_ad23143360152f44586c2c5fd475dab5a_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1utils_1ad510033b188290751074a00603c2767d"/><section>
+    <title>cleanupIndexed()</title>
+<indexterm><primary>cleanupIndexed</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>cleanupIndexed</secondary></indexterm>
+<para><computeroutput>cam.utils.cleanupIndexed ( operation)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1utils_1a594a9ac04b6b117b91dca2b33b590ca3"/><section>
+    <title>comparezlevel()</title>
+<indexterm><primary>comparezlevel</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>comparezlevel</secondary></indexterm>
+<para><computeroutput>cam.utils.comparezlevel ( x)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1utils_1a9ae3154ae77668a79b919ef35c27b9f3"/><section>
+    <title>connectChunksLow()</title>
+<indexterm><primary>connectChunksLow</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>connectChunksLow</secondary></indexterm>
+<para><computeroutput>cam.utils.connectChunksLow ( chunks,  o)</computeroutput></para>
+<para><literallayout><computeroutput> Connects Chunks that Are Close to Each Other without Lifting, Sampling Them &apos;low&apos; </computeroutput></literallayout> </para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1utils_a9ae3154ae77668a79b919ef35c27b9f3_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1utils_1a0a5db4824380f884b6e178a915ff3189"/><section>
+    <title>curveToShapely()</title>
+<indexterm><primary>curveToShapely</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>curveToShapely</secondary></indexterm>
+<para><computeroutput>cam.utils.curveToShapely ( cob,  use_modifiers = <computeroutput>False</computeroutput>
+)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1utils_a0a5db4824380f884b6e178a915ff3189_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1utils_1aa00f7ac04b8633821fc794ac9fec594e"/><section>
+    <title>cutloops()</title>
+<indexterm><primary>cutloops</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>cutloops</secondary></indexterm>
+<para><computeroutput>cam.utils.cutloops ( csource,  parentloop,  loops)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1utils_aa00f7ac04b8633821fc794ac9fec594e_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1utils_aa00f7ac04b8633821fc794ac9fec594e_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1utils_1ad145e7dfedf4b7c99360dcc04164aeb9"/><section>
+    <title>dictRemove()</title>
+<indexterm><primary>dictRemove</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>dictRemove</secondary></indexterm>
+<para><computeroutput>cam.utils.dictRemove ( dict,  val)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1utils_ad145e7dfedf4b7c99360dcc04164aeb9_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1utils_1aea87f7c02faf5e3cb6fd5fa0b644645e"/><section>
+    <title>extendChunks5axis()</title>
+<indexterm><primary>extendChunks5axis</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>extendChunks5axis</secondary></indexterm>
+<para><computeroutput>cam.utils.extendChunks5axis ( chunks,  o)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1utils_1a1e00a4e51da1373a89fc0df800a6c942"/><section>
+    <title>getAmbient()</title>
+<indexterm><primary>getAmbient</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>getAmbient</secondary></indexterm>
+<para><computeroutput>cam.utils.getAmbient ( o)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1utils_a1e00a4e51da1373a89fc0df800a6c942_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1utils_1a23d9d89c3c47f486835580d46f4df47f"/><section>
+    <title>getBounds()</title>
+<indexterm><primary>getBounds</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>getBounds</secondary></indexterm>
+<para><computeroutput>cam.utils.getBounds ( o)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1utils_1a44934b5138a8d4e5f75dd1f9b8511ab3"/><section>
+    <title>getBoundsMultiple()</title>
+<indexterm><primary>getBoundsMultiple</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>getBoundsMultiple</secondary></indexterm>
+<para><computeroutput>cam.utils.getBoundsMultiple ( operations)</computeroutput></para>
+<para><literallayout><computeroutput>Gets Bounds of Multiple Operations, Mainly for Purpose of Simulations or Rest Milling. Highly Suboptimal.</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespacecam_1_1utils_1a42945b53b548218ea12e9418f417ca20"/><section>
+    <title>getBoundsWorldspace()</title>
+<indexterm><primary>getBoundsWorldspace</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>getBoundsWorldspace</secondary></indexterm>
+<para><computeroutput>cam.utils.getBoundsWorldspace ( obs,  use_modifiers = <computeroutput>False</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1utils_1aaac51386ee87ef045dc3e5c8d720c02f"/><section>
+    <title>getClosest()</title>
+<indexterm><primary>getClosest</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>getClosest</secondary></indexterm>
+<para><computeroutput>cam.utils.getClosest ( o,  pos,  chunks)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1utils_aaac51386ee87ef045dc3e5c8d720c02f_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1utils_1a3079115b9de5894e5d6f5a9953517420"/><section>
+    <title>getContainer()</title>
+<indexterm><primary>getContainer</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>getContainer</secondary></indexterm>
+<para><computeroutput>cam.utils.getContainer ( )</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1utils_1a1ab9ec76924101d005ca5b3bfb78bf74"/><section>
+    <title>getObjectOutline()</title>
+<indexterm><primary>getObjectOutline</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>getObjectOutline</secondary></indexterm>
+<para><computeroutput>cam.utils.getObjectOutline ( radius,  o,  Offset)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1utils_1a47d160ba2d06c46bc02d65a01962264c"/><section>
+    <title>getObjectSilhouete()</title>
+<indexterm><primary>getObjectSilhouete</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>getObjectSilhouete</secondary></indexterm>
+<para><computeroutput>cam.utils.getObjectSilhouete ( stype,  objects = <computeroutput>None</computeroutput>
+,  use_modifiers = <computeroutput>False</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1utils_1aa9de6b3628ecfc53788d0b39ae160b09"/><section>
+    <title>getOperationSilhouete()</title>
+<indexterm><primary>getOperationSilhouete</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>getOperationSilhouete</secondary></indexterm>
+<para><computeroutput>cam.utils.getOperationSilhouete ( operation)</computeroutput></para>
+<para><literallayout><computeroutput>Gets Silhouette for the Operation
+    Uses Image Thresholding for Everything Except Curves.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespacecam_1_1utils_1ad47b75642303c3c8941d63ba7b46fe3f"/><section>
+    <title>getOperationSources()</title>
+<indexterm><primary>getOperationSources</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>getOperationSources</secondary></indexterm>
+<para><computeroutput>cam.utils.getOperationSources ( o)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1utils_1aeeb8648e984e211788ae79507115cec9"/><section>
+    <title>getSplineBounds()</title>
+<indexterm><primary>getSplineBounds</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>getSplineBounds</secondary></indexterm>
+<para><computeroutput>cam.utils.getSplineBounds ( ob,  curve)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1utils_1aa2caf5536fe0be3026b2b19b4e8133c9"/><section>
+    <title>getStrategyList()</title>
+<indexterm><primary>getStrategyList</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>getStrategyList</secondary></indexterm>
+<para><computeroutput>cam.utils.getStrategyList ( scene,  context)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1utils_1ae02a104e9e48d30dcb341cf054430d55"/><section>
+    <title>getVectorRight()</title>
+<indexterm><primary>getVectorRight</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>getVectorRight</secondary></indexterm>
+<para><computeroutput>cam.utils.getVectorRight ( lastv,  verts)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1utils_1afca9a0e1e1bb7a32de1c1a7eed5ec26f"/><section>
+    <title>Helix()</title>
+<indexterm><primary>Helix</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>Helix</secondary></indexterm>
+<para><computeroutput>cam.utils.Helix ( r,  np,  zstart,  pend,  rev)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1utils_1aab37708a2d153c5937d45c31abc64ff6"/><section>
+    <title>isChainValid()</title>
+<indexterm><primary>isChainValid</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>isChainValid</secondary></indexterm>
+<para><computeroutput>cam.utils.isChainValid ( chain,  context)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1utils_1a17fd4c69ef8356e5048611351e72019d"/><section>
+    <title>isValid()</title>
+<indexterm><primary>isValid</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>isValid</secondary></indexterm>
+<para><computeroutput>cam.utils.isValid ( o,  context)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1utils_1a18919ae557175a95fff88b53e5a3b1c0"/><section>
+    <title>opencamlib_version()</title>
+<indexterm><primary>opencamlib_version</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>opencamlib_version</secondary></indexterm>
+<para><computeroutput>cam.utils.opencamlib_version ( )</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1utils_1a62f88dfc697b68eb1be1154638cc294a"/><section>
+    <title>operationValid()</title>
+<indexterm><primary>operationValid</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>operationValid</secondary></indexterm>
+<para><computeroutput>cam.utils.operationValid ( self,  context)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1utils_1af481efff070eae3ed307097a63fd5cfa"/><section>
+    <title>overlaps()</title>
+<indexterm><primary>overlaps</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>overlaps</secondary></indexterm>
+<para><computeroutput>cam.utils.overlaps ( bb1,  bb2)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1utils_1a910819ad60efb7235a977ca706a44a74"/><section>
+    <title>polygonBoolean()</title>
+<indexterm><primary>polygonBoolean</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>polygonBoolean</secondary></indexterm>
+<para><computeroutput>cam.utils.polygonBoolean ( context,  boolean_type)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1utils_a910819ad60efb7235a977ca706a44a74_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1utils_1aa4330577e6b4139f49a42fee5904fbda"/><section>
+    <title>polygonConvexHull()</title>
+<indexterm><primary>polygonConvexHull</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>polygonConvexHull</secondary></indexterm>
+<para><computeroutput>cam.utils.polygonConvexHull ( context)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1utils_1aee109e0b5974b8e23a80ac76f616d8bc"/><section>
+    <title>positionObject()</title>
+<indexterm><primary>positionObject</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>positionObject</secondary></indexterm>
+<para><computeroutput>cam.utils.positionObject ( operation)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1utils_1a173e4fd2bc779fd7dc6325bef5632a8c"/><section>
+    <title>prepareIndexed()</title>
+<indexterm><primary>prepareIndexed</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>prepareIndexed</secondary></indexterm>
+<para><computeroutput>cam.utils.prepareIndexed ( o)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1utils_a173e4fd2bc779fd7dc6325bef5632a8c_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1utils_1a9c98fb17575e5bd74640e912e86fd3d6"/><section>
+    <title>reload_paths()</title>
+<indexterm><primary>reload_paths</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>reload_paths</secondary></indexterm>
+<para><computeroutput>cam.utils.reload_paths ( o)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1utils_1a975c3a3f885b39c99b87148fa0d0aa64"/><section>
+    <title>removeOrientationObject()</title>
+<indexterm><primary>removeOrientationObject</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>removeOrientationObject</secondary></indexterm>
+<para><computeroutput>cam.utils.removeOrientationObject ( o)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1utils_a975c3a3f885b39c99b87148fa0d0aa64_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1utils_1a5f914fc55567d5a1146d3c4c7783ed7d"/><section>
+    <title>rotTo2axes()</title>
+<indexterm><primary>rotTo2axes</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>rotTo2axes</secondary></indexterm>
+<para><computeroutput>cam.utils.rotTo2axes ( e,  axescombination)</computeroutput></para>
+<para><literallayout><computeroutput>Converts an Orientation Object Rotation to Rotation Defined by 2 Rotational Axes on the Machine -
+for Indexed Machining.
+Attempting to Do This for All Axes Combinations.
+</computeroutput></literallayout> </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1utils_a5f914fc55567d5a1146d3c4c7783ed7d_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1utils_1a1b5e1fe704aba6c405af446c25d17faf"/><section>
+    <title>sampleChunks()</title>
+<indexterm><primary>sampleChunks</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>sampleChunks</secondary></indexterm>
+<para><computeroutput>cam.utils.sampleChunks ( o,  pathSamples,  layers)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1utils_1a51ddfd1df0512ecde6cc64184161050e"/><section>
+    <title>sampleChunksNAxis()</title>
+<indexterm><primary>sampleChunksNAxis</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>sampleChunksNAxis</secondary></indexterm>
+<para><computeroutput>cam.utils.sampleChunksNAxis ( o,  pathSamples,  layers)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1utils_1afec203931aa72411409e146b0e73f1ff"/><section>
+    <title>samplePathLow()</title>
+<indexterm><primary>samplePathLow</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>samplePathLow</secondary></indexterm>
+<para><computeroutput>cam.utils.samplePathLow ( o,  ch1,  ch2,  dosample)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1utils_afec203931aa72411409e146b0e73f1ff_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1utils_1a859b5b676c4de4eb2bd671ed8406311d"/><section>
+    <title>silhoueteOffset()</title>
+<indexterm><primary>silhoueteOffset</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>silhoueteOffset</secondary></indexterm>
+<para><computeroutput>cam.utils.silhoueteOffset ( context,  offset,  style = <computeroutput>1</computeroutput>
+,  mitrelimit = <computeroutput>1.0</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1utils_a859b5b676c4de4eb2bd671ed8406311d_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1utils_1aa6f0d1bcff335cdff4ca60c1dfc6bf38"/><section>
+    <title>sortChunks()</title>
+<indexterm><primary>sortChunks</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>sortChunks</secondary></indexterm>
+<para><computeroutput>cam.utils.sortChunks ( chunks,  o,  last_pos = <computeroutput>None</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1utils_aa6f0d1bcff335cdff4ca60c1dfc6bf38_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1utils_1afb6ef4bc30df39f330934c69e805f5ac"/><section>
+    <title>unique()</title>
+<indexterm><primary>unique</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>unique</secondary></indexterm>
+<para><computeroutput>cam.utils.unique ( L)</computeroutput></para>
+<para><literallayout><computeroutput>Return a List of Unhashable Elements in S, but without Duplicates.
+[[1, 2], [2, 3], [1, 2]] &gt;&gt;&gt; [[1, 2], [2, 3]]</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespacecam_1_1utils_1a974a8cdc152e4d144bf69f88c840fe6e"/><section>
+    <title>update_exact_mode()</title>
+<indexterm><primary>update_exact_mode</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>update_exact_mode</secondary></indexterm>
+<para><computeroutput>cam.utils.update_exact_mode ( self,  context)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1utils_a974a8cdc152e4d144bf69f88c840fe6e_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1utils_1abafb35abb7922a381596aecf8536a430"/><section>
+    <title>update_material()</title>
+<indexterm><primary>update_material</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>update_material</secondary></indexterm>
+<para><computeroutput>cam.utils.update_material ( self,  context)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1utils_abafb35abb7922a381596aecf8536a430_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1utils_1a7a4ba9e89d1f130e789c10b786882b58"/><section>
+    <title>update_opencamlib()</title>
+<indexterm><primary>update_opencamlib</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>update_opencamlib</secondary></indexterm>
+<para><computeroutput>cam.utils.update_opencamlib ( self,  context)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1utils_a7a4ba9e89d1f130e789c10b786882b58_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1utils_1a5b64dfac7ecbc4532099561a82d224c0"/><section>
+    <title>update_operation()</title>
+<indexterm><primary>update_operation</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>update_operation</secondary></indexterm>
+<para><computeroutput>cam.utils.update_operation ( self,  context)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1utils_1ac32b23363574ded306aedf743f70d8d1"/><section>
+    <title>update_zbuffer_image()</title>
+<indexterm><primary>update_zbuffer_image</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>update_zbuffer_image</secondary></indexterm>
+<para><computeroutput>cam.utils.update_zbuffer_image ( self,  context)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1utils_1a0e11b3766562708785bcfef4efbdd0ea"/><section>
+    <title>updateBridges()</title>
+<indexterm><primary>updateBridges</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>updateBridges</secondary></indexterm>
+<para><computeroutput>cam.utils.updateBridges ( o,  context)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1utils_1add5ac02137d21a7da08df757480a8e72"/><section>
+    <title>updateChipload()</title>
+<indexterm><primary>updateChipload</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>updateChipload</secondary></indexterm>
+<para><computeroutput>cam.utils.updateChipload ( self,  context)</computeroutput></para>
+<para><literallayout><computeroutput>This Is Very Simple Computation of Chip Size, Could Be Very Much Improved</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespacecam_1_1utils_1aa1501ac975b969ff6732d244dd9646e9"/><section>
+    <title>updateCutout()</title>
+<indexterm><primary>updateCutout</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>updateCutout</secondary></indexterm>
+<para><computeroutput>cam.utils.updateCutout ( o,  context)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1utils_1a9ff84a03af71e7b527c7e01a9baab6cb"/><section>
+    <title>updateExact()</title>
+<indexterm><primary>updateExact</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>updateExact</secondary></indexterm>
+<para><computeroutput>cam.utils.updateExact ( o,  context)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1utils_a9ff84a03af71e7b527c7e01a9baab6cb_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1utils_1a516430a991c9ad9d80b3100b56fec518"/><section>
+    <title>updateMachine()</title>
+<indexterm><primary>updateMachine</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>updateMachine</secondary></indexterm>
+<para><computeroutput>cam.utils.updateMachine ( self,  context)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1utils_1a384a3656b07f19a6badb9e9f353cd798"/><section>
+    <title>updateMaterial()</title>
+<indexterm><primary>updateMaterial</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>updateMaterial</secondary></indexterm>
+<para><computeroutput>cam.utils.updateMaterial ( self,  context)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1utils_a384a3656b07f19a6badb9e9f353cd798_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1utils_1ab5d6bb813fd206109316ae0925ea1ff7"/><section>
+    <title>updateOffsetImage()</title>
+<indexterm><primary>updateOffsetImage</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>updateOffsetImage</secondary></indexterm>
+<para><computeroutput>cam.utils.updateOffsetImage ( self,  context)</computeroutput></para>
+<para><literallayout><computeroutput>Refresh Offset Image Tag for Rerendering</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespacecam_1_1utils_1a37f367b47a9529121ea2967eff26f7b4"/><section>
+    <title>updateOpencamlib()</title>
+<indexterm><primary>updateOpencamlib</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>updateOpencamlib</secondary></indexterm>
+<para><computeroutput>cam.utils.updateOpencamlib ( o,  context)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1utils_a37f367b47a9529121ea2967eff26f7b4_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1utils_1a5c4e7d2392e67c526aa55b471cada4fd"/><section>
+    <title>updateOperation()</title>
+<indexterm><primary>updateOperation</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>updateOperation</secondary></indexterm>
+<para><computeroutput>cam.utils.updateOperation ( self,  context)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1utils_1aa893f233bfa661beb30a8f5ffefc8779"/><section>
+    <title>updateOperationValid()</title>
+<indexterm><primary>updateOperationValid</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>updateOperationValid</secondary></indexterm>
+<para><computeroutput>cam.utils.updateOperationValid ( self,  context)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1utils_1a2b7a2b2d5dd4324a117f5b55ea8720c9"/><section>
+    <title>updateRest()</title>
+<indexterm><primary>updateRest</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>updateRest</secondary></indexterm>
+<para><computeroutput>cam.utils.updateRest ( o,  context)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1utils_1a06f8b4ae155619f84d40c7f3c4c25cdb"/><section>
+    <title>updateRotation()</title>
+<indexterm><primary>updateRotation</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>updateRotation</secondary></indexterm>
+<para><computeroutput>cam.utils.updateRotation ( o,  context)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1utils_1a51387d757073a27a853822f565c8f643"/><section>
+    <title>updateStrategy()</title>
+<indexterm><primary>updateStrategy</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>updateStrategy</secondary></indexterm>
+<para><computeroutput>cam.utils.updateStrategy ( o,  context)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1utils_a51387d757073a27a853822f565c8f643_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1utils_1ae55715c8c41dd8b4ebf9dd42ea1c8901"/><section>
+    <title>updateZbufferImage()</title>
+<indexterm><primary>updateZbufferImage</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>updateZbufferImage</secondary></indexterm>
+<para><computeroutput>cam.utils.updateZbufferImage ( self,  context)</computeroutput></para>
+<para><literallayout><computeroutput>Changes Tags so Offset and Zbuffer Images Get Updated on Calculation Time.</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespacecam_1_1utils_1a4b0b5df083217b3ff34ccdba105a6adf"/><section>
+    <title>_IS_LOADING_DEFAULTS</title>
+<indexterm><primary>_IS_LOADING_DEFAULTS</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>_IS_LOADING_DEFAULTS</secondary></indexterm>
+<para><computeroutput>bool cam.utils._IS_LOADING_DEFAULTS = False<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1utils_1a4f8c26f81df10fc347a1ce0578e3c4fd"/><section>
+    <title>changed</title>
+<indexterm><primary>changed</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>changed</secondary></indexterm>
+<para><computeroutput>cam.utils.changed</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1utils_1a8f0515b46d1fa277f26a8d3ebfcace8d"/><section>
+    <title>SHAPELY</title>
+<indexterm><primary>SHAPELY</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>SHAPELY</secondary></indexterm>
+<para><computeroutput>bool cam.utils.SHAPELY = True</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1utils_1aa83d7ca645c129031a9f5aff41b8cdbf"/><section>
+    <title>update_offsetimage_tag</title>
+<indexterm><primary>update_offsetimage_tag</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>update_offsetimage_tag</secondary></indexterm>
+<para><computeroutput>cam.utils.update_offsetimage_tag</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1utils_1a6b43df4a1b68ab9c00667bb2f85b2bd5"/><section>
+    <title>update_zbufferimage_tag</title>
+<indexterm><primary>update_zbufferimage_tag</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>update_zbufferimage_tag</secondary></indexterm>
+<para><computeroutput>cam.utils.update_zbufferimage_tag</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1utils_1a46b476e3124d1e325a75d0af4a9c93db"/><section>
+    <title>USE_PROFILER</title>
+<indexterm><primary>USE_PROFILER</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>USE_PROFILER</secondary></indexterm>
+<para><computeroutput>bool cam.utils.USE_PROFILER = False</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1utils_1ac926cdc3dfe9a36f652032fbb194d9c4"/><section>
+    <title>was_hidden_dict</title>
+<indexterm><primary>was_hidden_dict</primary><secondary>cam.utils</secondary></indexterm>
+<indexterm><primary>cam.utils</primary><secondary>was_hidden_dict</secondary></indexterm>
+<para><computeroutput>dict cam.utils.was_hidden_dict = {}</computeroutput></para></section>
+</section>
+</section>

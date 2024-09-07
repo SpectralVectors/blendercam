@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1preset__managers_1_1CAM__OPERATION__MT__presets" kind="class" language="Python" prot="public">
+    <compoundname>cam::preset_managers::CAM_OPERATION_MT_presets</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Menu</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1preset__managers_1_1CAM__OPERATION__MT__presets_1a2d9da3d4c507191295f420af666ba452" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.preset_managers.CAM_OPERATION_MT_presets::bl_label</definition>
+        <argsstring></argsstring>
+        <name>bl_label</name>
+        <qualifiedname>cam.preset_managers.CAM_OPERATION_MT_presets.bl_label</qualifiedname>
+        <initializer>=  &quot;Operation Presets&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preset_managers.py" line="63" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preset_managers.py" bodystart="63" bodyend="-1"/>
+        <referencedby refid="classcam_1_1preset__managers_1_1CAM__MACHINE__MT__presets_1af95f7812d2952b26a26809ab923dac09" compoundref="preset__managers_8py" startline="28" endline="38">cam.preset_managers.CAM_MACHINE_MT_presets.post_cb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1preset__managers_1_1CAM__OPERATION__MT__presets_1a620fff91443759270eb2219ae80d8025" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.preset_managers.CAM_OPERATION_MT_presets::preset_subdir</definition>
+        <argsstring></argsstring>
+        <name>preset_subdir</name>
+        <qualifiedname>cam.preset_managers.CAM_OPERATION_MT_presets.preset_subdir</qualifiedname>
+        <initializer>=  &quot;cam_operations&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preset_managers.py" line="64" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preset_managers.py" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1preset__managers_1_1CAM__OPERATION__MT__presets_1a0e8221cd570fc0cd1c55625d1d8ed128" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.preset_managers.CAM_OPERATION_MT_presets::preset_operator</definition>
+        <argsstring></argsstring>
+        <name>preset_operator</name>
+        <qualifiedname>cam.preset_managers.CAM_OPERATION_MT_presets.preset_operator</qualifiedname>
+        <initializer>=  &quot;script.execute_preset&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preset_managers.py" line="65" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preset_managers.py" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1preset__managers_1_1CAM__OPERATION__MT__presets_1a2c4967d1cdbd3ea2bf271ffe414cdec9" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>cam.preset_managers.CAM_OPERATION_MT_presets::draw</definition>
+        <argsstring></argsstring>
+        <name>draw</name>
+        <qualifiedname>cam.preset_managers.CAM_OPERATION_MT_presets.draw</qualifiedname>
+        <initializer>=  Menu.draw_preset</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preset_managers.py" line="66" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preset_managers.py" bodystart="66" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Menu</label>
+      </node>
+      <node id="1">
+        <label>cam.preset_managers.CAM_OPERATION_MT_presets</label>
+        <link refid="classcam_1_1preset__managers_1_1CAM__OPERATION__MT__presets"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Menu</label>
+      </node>
+      <node id="1">
+        <label>cam.preset_managers.CAM_OPERATION_MT_presets</label>
+        <link refid="classcam_1_1preset__managers_1_1CAM__OPERATION__MT__presets"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+bl_label</edgelabel>
+          <edgelabel>+preset_operator</edgelabel>
+          <edgelabel>+preset_subdir</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preset_managers.py" line="62" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preset_managers.py" bodystart="62" bodyend="68"/>
+    <listofallmembers>
+      <member refid="classcam_1_1preset__managers_1_1CAM__OPERATION__MT__presets_1a2d9da3d4c507191295f420af666ba452" prot="public" virt="non-virtual"><scope>cam::preset_managers::CAM_OPERATION_MT_presets</scope><name>bl_label</name></member>
+      <member refid="classcam_1_1preset__managers_1_1CAM__OPERATION__MT__presets_1a2c4967d1cdbd3ea2bf271ffe414cdec9" prot="public" virt="non-virtual"><scope>cam::preset_managers::CAM_OPERATION_MT_presets</scope><name>draw</name></member>
+      <member refid="classcam_1_1preset__managers_1_1CAM__OPERATION__MT__presets_1a0e8221cd570fc0cd1c55625d1d8ed128" prot="public" virt="non-virtual"><scope>cam::preset_managers::CAM_OPERATION_MT_presets</scope><name>preset_operator</name></member>
+      <member refid="classcam_1_1preset__managers_1_1CAM__OPERATION__MT__presets_1a620fff91443759270eb2219ae80d8025" prot="public" virt="non-virtual"><scope>cam::preset_managers::CAM_OPERATION_MT_presets</scope><name>preset_subdir</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

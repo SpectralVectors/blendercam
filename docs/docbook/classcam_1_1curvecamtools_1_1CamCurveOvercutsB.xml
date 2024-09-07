@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1curvecamtools_1_1CamCurveOvercutsB" xml:lang="en-US">
+<title>cam.curvecamtools.CamCurveOvercutsB Class Reference</title>
+<indexterm><primary>cam.curvecamtools.CamCurveOvercutsB</primary></indexterm>
+Inheritance diagram for cam.curvecamtools.CamCurveOvercutsB:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1curvecamtools_1_1CamCurveOvercutsB__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.curvecamtools.CamCurveOvercutsB:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1curvecamtools_1_1CamCurveOvercutsB__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1curvecamtools_1_1CamCurveOvercutsB_1a2810b434e0f2673d137991ddb6a10eae">poll</link> (cls, context)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1curvecamtools_1_1CamCurveOvercutsB_1a4dfd3aeb9a26899f900625361349c9d0">execute</link> (self, context)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1curvecamtools_1_1CamCurveOvercutsB_1a6feba745a3f4f35f8e59e2204c5a4f50">invoke</link> (self, context, event)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classcam_1_1curvecamtools_1_1CamCurveOvercutsB_1ab43e6e355b49019bbbf1175f33768c31">bl_idname</link> = &quot;object.curve_overcuts_b&quot;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1curvecamtools_1_1CamCurveOvercutsB_1a00a68e00c2ba55403a9f89ace24c2b49">bl_label</link> = &quot;Add Overcuts - B&quot;</para>
+</listitem>
+            <listitem><para>dict <link linkend="_classcam_1_1curvecamtools_1_1CamCurveOvercutsB_1aca08c0e28297a1096ffd5d129a376ee9">bl_options</link> = {&apos;REGISTER&apos;, &apos;UNDO&apos;}</para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamtools_1_1CamCurveOvercutsB_1afd44e9e8c2773daa67e19b90ff2f61c7">diameter</link></para>
+</listitem>
+            <listitem><para>EnumProperty <link linkend="_classcam_1_1curvecamtools_1_1CamCurveOvercutsB_1a75cc682947e5ce714679f4e1bd861af3">style</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamtools_1_1CamCurveOvercutsB_1a7e58839ae191156afaf3bf34c6c82e77">threshold</link></para>
+</listitem>
+            <listitem><para>BoolProperty <link linkend="_classcam_1_1curvecamtools_1_1CamCurveOvercutsB_1a7f0f19f527f31359194197be06ecef90">do_outer</link></para>
+</listitem>
+            <listitem><para>BoolProperty <link linkend="_classcam_1_1curvecamtools_1_1CamCurveOvercutsB_1a2f9ec2410395cd0732a28d68760b6626">do_invert</link></para>
+</listitem>
+            <listitem><para>BoolProperty <link linkend="_classcam_1_1curvecamtools_1_1CamCurveOvercutsB_1ade20fb00f6d4308c669aff796229398b">otherEdge</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Adds Overcuts for Slots</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamCurveOvercutsB_1a4dfd3aeb9a26899f900625361349c9d0"/><section>
+    <title>execute()</title>
+<indexterm><primary>execute</primary><secondary>cam.curvecamtools.CamCurveOvercutsB</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamCurveOvercutsB</primary><secondary>execute</secondary></indexterm>
+<para><computeroutput>cam.curvecamtools.CamCurveOvercutsB.execute ( self,  context)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamCurveOvercutsB_1a6feba745a3f4f35f8e59e2204c5a4f50"/><section>
+    <title>invoke()</title>
+<indexterm><primary>invoke</primary><secondary>cam.curvecamtools.CamCurveOvercutsB</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamCurveOvercutsB</primary><secondary>invoke</secondary></indexterm>
+<para><computeroutput>cam.curvecamtools.CamCurveOvercutsB.invoke ( self,  context,  event)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamCurveOvercutsB_1a2810b434e0f2673d137991ddb6a10eae"/><section>
+    <title>poll()</title>
+<indexterm><primary>poll</primary><secondary>cam.curvecamtools.CamCurveOvercutsB</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamCurveOvercutsB</primary><secondary>poll</secondary></indexterm>
+<para><computeroutput>cam.curvecamtools.CamCurveOvercutsB.poll ( cls,  context)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamCurveOvercutsB_1ab43e6e355b49019bbbf1175f33768c31"/><section>
+    <title>bl_idname</title>
+<indexterm><primary>bl_idname</primary><secondary>cam.curvecamtools.CamCurveOvercutsB</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamCurveOvercutsB</primary><secondary>bl_idname</secondary></indexterm>
+<para><computeroutput>str cam.curvecamtools.CamCurveOvercutsB.bl_idname = &quot;object.curve_overcuts_b&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamCurveOvercutsB_1a00a68e00c2ba55403a9f89ace24c2b49"/><section>
+    <title>bl_label</title>
+<indexterm><primary>bl_label</primary><secondary>cam.curvecamtools.CamCurveOvercutsB</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamCurveOvercutsB</primary><secondary>bl_label</secondary></indexterm>
+<para><computeroutput>str cam.curvecamtools.CamCurveOvercutsB.bl_label = &quot;Add Overcuts - B&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamCurveOvercutsB_1aca08c0e28297a1096ffd5d129a376ee9"/><section>
+    <title>bl_options</title>
+<indexterm><primary>bl_options</primary><secondary>cam.curvecamtools.CamCurveOvercutsB</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamCurveOvercutsB</primary><secondary>bl_options</secondary></indexterm>
+<para><computeroutput>dict cam.curvecamtools.CamCurveOvercutsB.bl_options = {&apos;REGISTER&apos;, &apos;UNDO&apos;}<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamCurveOvercutsB_1afd44e9e8c2773daa67e19b90ff2f61c7"/><section>
+    <title>diameter</title>
+<indexterm><primary>diameter</primary><secondary>cam.curvecamtools.CamCurveOvercutsB</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamCurveOvercutsB</primary><secondary>diameter</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamtools.CamCurveOvercutsB.diameter<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Tool&#32;Diameter&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=.003175,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&apos;Tool&#32;bit&#32;diameter&#32;used&#32;in&#32;cut&#32;operation&apos;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=100,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=4,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamCurveOvercutsB_1a2f9ec2410395cd0732a28d68760b6626"/><section>
+    <title>do_invert</title>
+<indexterm><primary>do_invert</primary><secondary>cam.curvecamtools.CamCurveOvercutsB</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamCurveOvercutsB</primary><secondary>do_invert</secondary></indexterm>
+<para><computeroutput>BoolProperty cam.curvecamtools.CamCurveOvercutsB.do_invert<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Invert&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&apos;invert&#32;overcut&#32;operation&#32;on&#32;all&#32;curves&apos;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="keyword">True</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamCurveOvercutsB_1a7f0f19f527f31359194197be06ecef90"/><section>
+    <title>do_outer</title>
+<indexterm><primary>do_outer</primary><secondary>cam.curvecamtools.CamCurveOvercutsB</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamCurveOvercutsB</primary><secondary>do_outer</secondary></indexterm>
+<para><computeroutput>BoolProperty cam.curvecamtools.CamCurveOvercutsB.do_outer<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Include&#32;Outer&#32;Curve&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&apos;Include&#32;the&#32;outer&#32;curve&#32;if&#32;there&#32;are&#32;curves&#32;inside&apos;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="keyword">True</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamCurveOvercutsB_1ade20fb00f6d4308c669aff796229398b"/><section>
+    <title>otherEdge</title>
+<indexterm><primary>otherEdge</primary><secondary>cam.curvecamtools.CamCurveOvercutsB</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamCurveOvercutsB</primary><secondary>otherEdge</secondary></indexterm>
+<para><computeroutput>BoolProperty cam.curvecamtools.CamCurveOvercutsB.otherEdge<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Other&#32;Edge&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&apos;change&#32;to&#32;the&#32;other&#32;edge&#32;for&#32;the&#32;overcut&#32;to&#32;be&#32;on&apos;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="keyword">False</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamCurveOvercutsB_1a75cc682947e5ce714679f4e1bd861af3"/><section>
+    <title>style</title>
+<indexterm><primary>style</primary><secondary>cam.curvecamtools.CamCurveOvercutsB</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamCurveOvercutsB</primary><secondary>style</secondary></indexterm>
+<para><computeroutput>EnumProperty cam.curvecamtools.CamCurveOvercutsB.style<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Style&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;items=(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&apos;OPEDGE&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;opposite&#32;edge&apos;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;place&#32;corner&#32;overcuts&#32;on&#32;opposite&#32;edges&apos;</emphasis>),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&apos;DOGBONE&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Dog-bone&#32;/&#32;Corner&#32;Point&apos;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;place&#32;overcuts&#32;at&#32;center&#32;of&#32;corners&apos;</emphasis>),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&apos;TBONE&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;T-bone&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;place&#32;corner&#32;overcuts&#32;on&#32;the&#32;same&#32;edge&apos;</emphasis>)
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="stringliteral">&apos;DOGBONE&apos;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&apos;style&#32;of&#32;overcut&#32;to&#32;use&apos;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamCurveOvercutsB_1a7e58839ae191156afaf3bf34c6c82e77"/><section>
+    <title>threshold</title>
+<indexterm><primary>threshold</primary><secondary>cam.curvecamtools.CamCurveOvercutsB</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamCurveOvercutsB</primary><secondary>threshold</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamtools.CamCurveOvercutsB.threshold<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Max&#32;Inside&#32;Angle&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=pi&#32;/&#32;2,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=-3.14,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=3.14,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&apos;The&#32;maximum&#32;angle&#32;to&#32;be&#32;considered&#32;as&#32;an&#32;inside&#32;corner&apos;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=4,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;subtype=<emphasis role="stringliteral">&quot;ANGLE&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;ROTATION&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/<link linkend="_curvecamtools_8py">curvecamtools.py</link></section>
+</section>

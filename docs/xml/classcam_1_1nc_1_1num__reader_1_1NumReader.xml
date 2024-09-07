@@ -1,0 +1,235 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1nc_1_1num__reader_1_1NumReader" kind="class" language="Python" prot="public">
+    <compoundname>cam::nc::num_reader::NumReader</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">nc.Parser</basecompoundref>
+    <derivedcompoundref refid="classcam_1_1nc_1_1hpgl2d__read_1_1Parser" prot="public" virt="non-virtual">cam.nc.hpgl2d_read.Parser</derivedcompoundref>
+    <derivedcompoundref refid="classcam_1_1nc_1_1hpgl3d__read_1_1Parser" prot="public" virt="non-virtual">cam.nc.hpgl3d_read.Parser</derivedcompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcam_1_1nc_1_1num__reader_1_1NumReader_1ae433b63cb3d6ad388945853b487710d2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.num_reader.NumReader::line_length</definition>
+        <argsstring></argsstring>
+        <name>line_length</name>
+        <qualifiedname>cam.nc.num_reader.NumReader.line_length</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/num_reader.py" line="17" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/num_reader.py" bodystart="17" bodyend="-1"/>
+        <referencedby refid="classcam_1_1nc_1_1num__reader_1_1NumReader_1ae908a2956d1e0cfd474a47540bee9759" compoundref="num__reader_8py" startline="40" endline="63">cam.nc.num_reader.NumReader.Parse</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1hpgl2d__read_1_1Parser_1a0b707cfa8f85f48082f4e827cd2e4de2" compoundref="hpgl2d__read_8py" startline="81" endline="98">cam.nc.hpgl2d_read.Parser.ParseFromFirstLetter</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1nc_1_1num__reader_1_1NumReader_1ab2d4301e748a3ae276a70a1b405d9dd5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.num_reader.NumReader::line_index</definition>
+        <argsstring></argsstring>
+        <name>line_index</name>
+        <qualifiedname>cam.nc.num_reader.NumReader.line_index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/num_reader.py" line="23" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/num_reader.py" bodystart="23" bodyend="-1"/>
+        <referencedby refid="classcam_1_1nc_1_1num__reader_1_1NumReader_1ae908a2956d1e0cfd474a47540bee9759" compoundref="num__reader_8py" startline="40" endline="63">cam.nc.num_reader.NumReader.Parse</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1hpgl2d__read_1_1Parser_1afa14f139b2b41ae0e70c8ee16d661e31" compoundref="hpgl2d__read_8py" startline="43" endline="80">cam.nc.hpgl2d_read.Parser.ParseAA</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1hpgl2d__read_1_1Parser_1a0b707cfa8f85f48082f4e827cd2e4de2" compoundref="hpgl2d__read_8py" startline="81" endline="98">cam.nc.hpgl2d_read.Parser.ParseFromFirstLetter</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1hpgl3d__read_1_1Parser_1ae1ce5f283aa57d7de17d269c42a17c90" compoundref="hpgl3d__read_8py" startline="23" endline="43">cam.nc.hpgl3d_read.Parser.ParseZ</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1nc_1_1num__reader_1_1NumReader_1aef74e3b02beaff006b39dffdbcd5e514" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.num_reader.NumReader::parse_word</definition>
+        <argsstring></argsstring>
+        <name>parse_word</name>
+        <qualifiedname>cam.nc.num_reader.NumReader.parse_word</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/num_reader.py" line="37" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/num_reader.py" bodystart="37" bodyend="-1"/>
+        <referencedby refid="classcam_1_1nc_1_1num__reader_1_1NumReader_1ae908a2956d1e0cfd474a47540bee9759" compoundref="num__reader_8py" startline="40" endline="63">cam.nc.num_reader.NumReader.Parse</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1hpgl2d__read_1_1Parser_1a0b707cfa8f85f48082f4e827cd2e4de2" compoundref="hpgl2d__read_8py" startline="81" endline="98">cam.nc.hpgl2d_read.Parser.ParseFromFirstLetter</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcam_1_1nc_1_1num__reader_1_1NumReader_1a718c14f9d3e5513596d99df025211d9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.num_reader.NumReader.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>cam.nc.num_reader.NumReader.__init__</qualifiedname>
+        <reimplementedby refid="classcam_1_1nc_1_1hpgl2d__read_1_1Parser_1a69906a080b1c0ef2cb200d5f1e069e9f">__init__</reimplementedby>
+        <reimplementedby refid="classcam_1_1nc_1_1hpgl3d__read_1_1Parser_1a5bb761ae37730841999e025ed9e0cb6b">__init__</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/num_reader.py" line="10" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/num_reader.py" bodystart="10" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1nc_1_1num__reader_1_1NumReader_1aa6859eeefd5788834891f727ae66d342" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.num_reader.NumReader.get_number</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_number</name>
+        <qualifiedname>cam.nc.num_reader.NumReader.get_number</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/num_reader.py" line="13" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/num_reader.py" bodystart="13" bodyend="35"/>
+        <referencedby refid="classcam_1_1nc_1_1hpgl2d__read_1_1Parser_1afa14f139b2b41ae0e70c8ee16d661e31" compoundref="hpgl2d__read_8py" startline="43" endline="80">cam.nc.hpgl2d_read.Parser.ParseAA</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1hpgl3d__read_1_1Parser_1ae1ce5f283aa57d7de17d269c42a17c90" compoundref="hpgl3d__read_8py" startline="23" endline="43">cam.nc.hpgl3d_read.Parser.ParseZ</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1nc_1_1num__reader_1_1NumReader_1abe0336cd15995dde1a46134b56f1c2b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.num_reader.NumReader.add_word</definition>
+        <argsstring>(self, color)</argsstring>
+        <name>add_word</name>
+        <qualifiedname>cam.nc.num_reader.NumReader.add_word</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>color</type>
+          <defname>color</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/num_reader.py" line="36" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/num_reader.py" bodystart="36" bodyend="39"/>
+        <referencedby refid="classcam_1_1nc_1_1hpgl2d__read_1_1Parser_1afa14f139b2b41ae0e70c8ee16d661e31" compoundref="hpgl2d__read_8py" startline="43" endline="80">cam.nc.hpgl2d_read.Parser.ParseAA</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1hpgl3d__read_1_1Parser_1ae1ce5f283aa57d7de17d269c42a17c90" compoundref="hpgl3d__read_8py" startline="23" endline="43">cam.nc.hpgl3d_read.Parser.ParseZ</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1nc_1_1num__reader_1_1NumReader_1ae908a2956d1e0cfd474a47540bee9759" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.num_reader.NumReader.Parse</definition>
+        <argsstring>(self, name, oname=None)</argsstring>
+        <name>Parse</name>
+        <qualifiedname>cam.nc.num_reader.NumReader.Parse</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>oname</type>
+          <defname>oname</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/num_reader.py" line="40" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/num_reader.py" bodystart="40" bodyend="63"/>
+        <references refid="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1a6e7c6bc9c8c2a21f0921aff59038d03c" compoundref="hxml__writer_8py" startline="25" endline="38">cam.nc.hxml_writer.HxmlWriter.add_text</references>
+        <references refid="classcam_1_1nc_1_1nc_1_1Creator_1ab7795ded7273e69a74d36614404fef0e" compoundref="nc_8py" startline="407" endline="409">cam.nc.nc.Creator.add_text</references>
+        <references refid="classcam_1_1nc_1_1rez2__read_1_1Parser_1a251d4c3e6ac88c4e956fd575821e197d" compoundref="rez2__read_8py" startline="56" endline="65">cam.nc.rez2_read.Parser.add_text</references>
+        <references refid="classcam_1_1nc_1_1cad__nc__read_1_1Parser_1a5cdc937caf408e00bc6bddbc37c0a21a" compoundref="cad__nc__read_8py" startline="47" endline="49">cam.nc.cad_nc_read.Parser.add_text</references>
+        <references refid="classcam_1_1nc_1_1nclathe__read_1_1Parser_1a7463a4e4f789700b8b418776001daf30" compoundref="nclathe__read_8py" startline="54" endline="67">cam.nc.nclathe_read.Parser.add_text</references>
+        <references refid="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1afeb6084dfab7b8f2329aee0b16098e15" compoundref="hxml__writer_8py" startline="19" endline="21">cam.nc.hxml_writer.HxmlWriter.begin_ncblock</references>
+        <references refid="classcam_1_1nc_1_1nc_1_1Creator_1a93388ba17e68b836b4eee5d907b7fb41" compoundref="nc_8py" startline="400" endline="403">cam.nc.nc.Creator.begin_ncblock</references>
+        <references refid="classcam_1_1nc_1_1nclathe__read_1_1Parser_1a0790ecc5971df0039cc134af64236b45" compoundref="nclathe__read_8py" startline="48" endline="50">cam.nc.nclathe_read.Parser.begin_ncblock</references>
+        <references refid="classcam_1_1nc_1_1cad__nc__read_1_1Parser_1aa5ec2adeab7290da981debafa8a07bbc" compoundref="cad__nc__read_8py" startline="44" endline="46">cam.nc.cad_nc_read.Parser.end_ncblock</references>
+        <references refid="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1a2e561ec54f08dff9d6275cba071a7d3d" compoundref="hxml__writer_8py" startline="22" endline="24">cam.nc.hxml_writer.HxmlWriter.end_ncblock</references>
+        <references refid="classcam_1_1nc_1_1nc_1_1Creator_1a2a88ca7c016d69f6c5f8dd98f326868a" compoundref="nc_8py" startline="404" endline="406">cam.nc.nc.Creator.end_ncblock</references>
+        <references refid="classcam_1_1nc_1_1nclathe__read_1_1Parser_1afb071d7659ccf9787780f4c72b05b7e6" compoundref="nclathe__read_8py" startline="51" endline="53">cam.nc.nclathe_read.Parser.end_ncblock</references>
+        <references refid="classcam_1_1nc_1_1cad__nc__read_1_1Parser_1ac451b96114b938111a316012fd8a7224" compoundref="cad__nc__read_8py" startline="27" endline="32">cam.nc.cad_nc_read.Parser.files_close</references>
+        <references refid="classcam_1_1nc_1_1nclathe__read_1_1Parser_1ad52a01638c6a6554e7129a75b2185e05" compoundref="nclathe__read_8py" startline="29" endline="34">cam.nc.nclathe_read.Parser.files_close</references>
+        <references refid="classcam_1_1nc_1_1cad__nc__read_1_1Parser_1a752167f413d6e0f6d81477354cdcde27" compoundref="cad__nc__read_8py" startline="21" endline="26">cam.nc.cad_nc_read.Parser.files_open</references>
+        <references refid="classcam_1_1nc_1_1nclathe__read_1_1Parser_1a926ee43bcd9086f2e654f7693b16a248" compoundref="nclathe__read_8py" startline="20" endline="28">cam.nc.nclathe_read.Parser.files_open</references>
+        <references refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1a7a8607d4c4cd0878317b540ab8a5fd2c" compoundref="gcodeimportparser_8py" startline="121">cam.gcodeimportparser.GcodeParser.line</references>
+        <references refid="classcam_1_1gcodeimportparser_1_1Segment_1a430f6fcf15d5040972b73017f6102083" compoundref="gcodeimportparser_8py" startline="480">cam.gcodeimportparser.Segment.line</references>
+        <references refid="classcam_1_1nc_1_1cad__nc__read_1_1Parser_1a1beda79bbfb4821b2156543d0abb22bc" compoundref="cad__nc__read_8py" startline="34">cam.nc.cad_nc_read.Parser.line</references>
+        <references refid="classcam_1_1nc_1_1nc__read_1_1Parser_1a8b464b4a326104ff2694107cbb924448" compoundref="nc__read_8py" startline="30">cam.nc.nc_read.Parser.line</references>
+        <references refid="classcam_1_1nc_1_1nclathe__read_1_1Parser_1a1be7396a09b47da73eff8acda68893df" compoundref="nclathe__read_8py" startline="36">cam.nc.nclathe_read.Parser.line</references>
+        <references refid="classcam_1_1nc_1_1rez2__read_1_1Parser_1ac2e6b8422c274b221244af910288f90f" compoundref="rez2__read_8py" startline="89">cam.nc.rez2_read.Parser.line</references>
+        <references refid="classpie__info_1_1VIEW3D__MT__PIE__Info_1a904cfe2f28671048e075c7440415161b" compoundref="pie__info_8py" startline="92">pie_info.VIEW3D_MT_PIE_Info.line</references>
+        <references refid="classcam_1_1nc_1_1hpgl2d__read_1_1Parser_1a4ed3be6ad531f2ad82f45e827cadec58" compoundref="hpgl2d__read_8py" startline="20">cam.nc.hpgl2d_read.Parser.line_index</references>
+        <references refid="classcam_1_1nc_1_1hpgl3d__read_1_1Parser_1aef60f46df600edbca57f85f2df74cdac" compoundref="hpgl3d__read_8py" startline="17">cam.nc.hpgl3d_read.Parser.line_index</references>
+        <references refid="classcam_1_1nc_1_1num__reader_1_1NumReader_1ab2d4301e748a3ae276a70a1b405d9dd5" compoundref="num__reader_8py" startline="23">cam.nc.num_reader.NumReader.line_index</references>
+        <references refid="classcam_1_1nc_1_1num__reader_1_1NumReader_1ae433b63cb3d6ad388945853b487710d2" compoundref="num__reader_8py" startline="17">cam.nc.num_reader.NumReader.line_length</references>
+        <references refid="classcam_1_1nc_1_1num__reader_1_1NumReader_1aef74e3b02beaff006b39dffdbcd5e514" compoundref="num__reader_8py" startline="37">cam.nc.num_reader.NumReader.parse_word</references>
+        <references refid="classcam_1_1nc_1_1hpgl2d__read_1_1Parser_1a0b707cfa8f85f48082f4e827cd2e4de2" compoundref="hpgl2d__read_8py" startline="81" endline="98">cam.nc.hpgl2d_read.Parser.ParseFromFirstLetter</references>
+        <references refid="classcam_1_1nc_1_1hpgl3d__read_1_1Parser_1acfc73b1a3afefce2cbfbbc3c6ba852b1" compoundref="hpgl3d__read_8py" startline="44" endline="49">cam.nc.hpgl3d_read.Parser.ParseFromFirstLetter</references>
+        <references refid="classcam_1_1nc_1_1cad__nc__read_1_1Parser_1a55e9f4415dc2e706c64ce7148aebf073" compoundref="cad__nc__read_8py" startline="33" endline="39">cam.nc.cad_nc_read.Parser.readline</references>
+        <references refid="classcam_1_1nc_1_1nc__read_1_1Parser_1af38d287bc4d3f0d3dc1bbfce972d52f9" compoundref="nc__read_8py" startline="29" endline="35">cam.nc.nc_read.Parser.readline</references>
+        <references refid="classcam_1_1nc_1_1nclathe__read_1_1Parser_1ac02b49722711d004ae445e3243bd0575" compoundref="nclathe__read_8py" startline="35" endline="41">cam.nc.nclathe_read.Parser.readline</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>cam.nc.num_reader.NumReader</label>
+        <link refid="classcam_1_1nc_1_1num__reader_1_1NumReader"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>cam.nc.hpgl2d_read.Parser</label>
+        <link refid="classcam_1_1nc_1_1hpgl2d__read_1_1Parser"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>cam.nc.hpgl3d_read.Parser</label>
+        <link refid="classcam_1_1nc_1_1hpgl3d__read_1_1Parser"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>nc.Parser</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>cam.nc.num_reader.NumReader</label>
+        <link refid="classcam_1_1nc_1_1num__reader_1_1NumReader"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>nc.Parser</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/num_reader.py" line="8" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/num_reader.py" bodystart="8" bodyend="63"/>
+    <listofallmembers>
+      <member refid="classcam_1_1nc_1_1num__reader_1_1NumReader_1a718c14f9d3e5513596d99df025211d9b" prot="public" virt="non-virtual"><scope>cam::nc::num_reader::NumReader</scope><name>__init__</name></member>
+      <member refid="classcam_1_1nc_1_1num__reader_1_1NumReader_1abe0336cd15995dde1a46134b56f1c2b2" prot="public" virt="non-virtual"><scope>cam::nc::num_reader::NumReader</scope><name>add_word</name></member>
+      <member refid="classcam_1_1nc_1_1num__reader_1_1NumReader_1aa6859eeefd5788834891f727ae66d342" prot="public" virt="non-virtual"><scope>cam::nc::num_reader::NumReader</scope><name>get_number</name></member>
+      <member refid="classcam_1_1nc_1_1num__reader_1_1NumReader_1ab2d4301e748a3ae276a70a1b405d9dd5" prot="public" virt="non-virtual"><scope>cam::nc::num_reader::NumReader</scope><name>line_index</name></member>
+      <member refid="classcam_1_1nc_1_1num__reader_1_1NumReader_1ae433b63cb3d6ad388945853b487710d2" prot="public" virt="non-virtual"><scope>cam::nc::num_reader::NumReader</scope><name>line_length</name></member>
+      <member refid="classcam_1_1nc_1_1num__reader_1_1NumReader_1ae908a2956d1e0cfd474a47540bee9759" prot="public" virt="non-virtual"><scope>cam::nc::num_reader::NumReader</scope><name>Parse</name></member>
+      <member refid="classcam_1_1nc_1_1num__reader_1_1NumReader_1aef74e3b02beaff006b39dffdbcd5e514" prot="public" virt="non-virtual"><scope>cam::nc::num_reader::NumReader</scope><name>parse_word</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1preset__managers_1_1AddPresetCamCutter" xml:lang="en-US">
+<title>cam.preset_managers.AddPresetCamCutter Class Reference</title>
+<indexterm><primary>cam.preset_managers.AddPresetCamCutter</primary></indexterm>
+Inheritance diagram for cam.preset_managers.AddPresetCamCutter:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1preset__managers_1_1AddPresetCamCutter__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.preset_managers.AddPresetCamCutter:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1preset__managers_1_1AddPresetCamCutter__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classcam_1_1preset__managers_1_1AddPresetCamCutter_1a69182c94e74d4c9d8f9e0958ccb6db04">bl_idname</link> = &quot;render.cam_preset_cutter_add&quot;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1preset__managers_1_1AddPresetCamCutter_1a0cf251ab36512fe1d4fd32b2951ca506">bl_label</link> = &quot;Add Cutter Preset&quot;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1preset__managers_1_1AddPresetCamCutter_1a82932b9eabcaa1a7a3451e943c04a921">preset_menu</link> = &quot;CAM_CUTTER_MT_presets&quot;</para>
+</listitem>
+            <listitem><para>list <link linkend="_classcam_1_1preset__managers_1_1AddPresetCamCutter_1ab65ca7988f1fa9745294b1a8b781ee49">preset_defines</link></para>
+</listitem>
+            <listitem><para>list <link linkend="_classcam_1_1preset__managers_1_1AddPresetCamCutter_1ae31cd83241105d4eb62a427ca95fd722">preset_values</link></para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1preset__managers_1_1AddPresetCamCutter_1a0e100ac29aa3f72b519554fc454d7253">preset_subdir</link> = &quot;cam_cutters&quot;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Add a Cutter Preset</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1preset__managers_1_1AddPresetCamCutter_1a69182c94e74d4c9d8f9e0958ccb6db04"/><section>
+    <title>bl_idname</title>
+<indexterm><primary>bl_idname</primary><secondary>cam.preset_managers.AddPresetCamCutter</secondary></indexterm>
+<indexterm><primary>cam.preset_managers.AddPresetCamCutter</primary><secondary>bl_idname</secondary></indexterm>
+<para><computeroutput>str cam.preset_managers.AddPresetCamCutter.bl_idname = &quot;render.cam_preset_cutter_add&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1preset__managers_1_1AddPresetCamCutter_1a0cf251ab36512fe1d4fd32b2951ca506"/><section>
+    <title>bl_label</title>
+<indexterm><primary>bl_label</primary><secondary>cam.preset_managers.AddPresetCamCutter</secondary></indexterm>
+<indexterm><primary>cam.preset_managers.AddPresetCamCutter</primary><secondary>bl_label</secondary></indexterm>
+<para><computeroutput>str cam.preset_managers.AddPresetCamCutter.bl_label = &quot;Add Cutter Preset&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1preset__managers_1_1AddPresetCamCutter_1ab65ca7988f1fa9745294b1a8b781ee49"/><section>
+    <title>preset_defines</title>
+<indexterm><primary>preset_defines</primary><secondary>cam.preset_managers.AddPresetCamCutter</secondary></indexterm>
+<indexterm><primary>cam.preset_managers.AddPresetCamCutter</primary><secondary>preset_defines</secondary></indexterm>
+<para><computeroutput>list cam.preset_managers.AddPresetCamCutter.preset_defines<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">=&#32;&#32;[
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;d&#32;=&#32;bpy.context.scene.cam_operations[bpy.context.scene.cam_active_operation]&quot;</emphasis>
+&#32;&#32;&#32;&#32;]
+</programlisting></section>
+<anchor xml:id="_classcam_1_1preset__managers_1_1AddPresetCamCutter_1a82932b9eabcaa1a7a3451e943c04a921"/><section>
+    <title>preset_menu</title>
+<indexterm><primary>preset_menu</primary><secondary>cam.preset_managers.AddPresetCamCutter</secondary></indexterm>
+<indexterm><primary>cam.preset_managers.AddPresetCamCutter</primary><secondary>preset_menu</secondary></indexterm>
+<para><computeroutput>str cam.preset_managers.AddPresetCamCutter.preset_menu = &quot;CAM_CUTTER_MT_presets&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1preset__managers_1_1AddPresetCamCutter_1a0e100ac29aa3f72b519554fc454d7253"/><section>
+    <title>preset_subdir</title>
+<indexterm><primary>preset_subdir</primary><secondary>cam.preset_managers.AddPresetCamCutter</secondary></indexterm>
+<indexterm><primary>cam.preset_managers.AddPresetCamCutter</primary><secondary>preset_subdir</secondary></indexterm>
+<para><computeroutput>str cam.preset_managers.AddPresetCamCutter.preset_subdir = &quot;cam_cutters&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1preset__managers_1_1AddPresetCamCutter_1ae31cd83241105d4eb62a427ca95fd722"/><section>
+    <title>preset_values</title>
+<indexterm><primary>preset_values</primary><secondary>cam.preset_managers.AddPresetCamCutter</secondary></indexterm>
+<indexterm><primary>cam.preset_managers.AddPresetCamCutter</primary><secondary>preset_values</secondary></indexterm>
+<para><computeroutput>list cam.preset_managers.AddPresetCamCutter.preset_values<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">=&#32;&#32;[
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;d.cutter_id&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;d.cutter_type&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;d.cutter_diameter&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;d.cutter_length&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;d.cutter_flutes&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;d.cutter_tip_angle&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;d.cutter_description&quot;</emphasis>,
+&#32;&#32;&#32;&#32;]
+</programlisting></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/<link linkend="_preset__managers_8py">preset_managers.py</link></section>
+</section>

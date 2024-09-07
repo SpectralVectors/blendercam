@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacecam_1_1collision" xml:lang="en-US">
+<title>cam.collision Namespace Reference</title>
+<indexterm><primary>cam.collision</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacecam_1_1collision_1ac68250319f11c6dcb511b542492a6651">getCutterBullet</link> (o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1collision_1a8cd100d428097198fb93b4fe2fdb38ce">subdivideLongEdges</link> (ob, threshold)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1collision_1a152dde2dd547f6e625ef1ef16af8f022">prepareBulletCollision</link> (o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1collision_1a96ec6268eec2ab8cfe5d23c01d1dce32">cleanupBulletCollision</link> (o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1collision_1ae1545df1df72aa0f8078e5eac263e3bd">getSampleBullet</link> (cutter, x, y, radius, startz, endz)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1collision_1ab12a78291ea708ec61bf4cc5508ff17e">getSampleBulletNAxis</link> (cutter, startpoint, endpoint, rotation, cutter_compensation)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>BlenderCAM &apos;collision.py&apos; © 2012 Vilem Novak
+
+Functions for Bullet and Cutter collision checks.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespacecam_1_1collision_1a96ec6268eec2ab8cfe5d23c01d1dce32"/><section>
+    <title>cleanupBulletCollision()</title>
+<indexterm><primary>cleanupBulletCollision</primary><secondary>cam.collision</secondary></indexterm>
+<indexterm><primary>cam.collision</primary><secondary>cleanupBulletCollision</secondary></indexterm>
+<para><computeroutput>cam.collision.cleanupBulletCollision ( o)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1collision_1ac68250319f11c6dcb511b542492a6651"/><section>
+    <title>getCutterBullet()</title>
+<indexterm><primary>getCutterBullet</primary><secondary>cam.collision</secondary></indexterm>
+<indexterm><primary>cam.collision</primary><secondary>getCutterBullet</secondary></indexterm>
+<para><computeroutput>cam.collision.getCutterBullet ( o)</computeroutput></para>
+<para><literallayout><computeroutput>Cutter for Rigidbody Simulation Collisions
+    Note that Everything Is 100x Bigger for Simulation Precision.</computeroutput></literallayout> </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1collision_ac68250319f11c6dcb511b542492a6651_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1collision_1ae1545df1df72aa0f8078e5eac263e3bd"/><section>
+    <title>getSampleBullet()</title>
+<indexterm><primary>getSampleBullet</primary><secondary>cam.collision</secondary></indexterm>
+<indexterm><primary>cam.collision</primary><secondary>getSampleBullet</secondary></indexterm>
+<para><computeroutput>cam.collision.getSampleBullet ( cutter,  x,  y,  radius,  startz,  endz)</computeroutput></para>
+<para><literallayout><computeroutput>Collision Test for 3 Axis Milling. Is Simplified Compared to the Full 3D Test</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespacecam_1_1collision_1ab12a78291ea708ec61bf4cc5508ff17e"/><section>
+    <title>getSampleBulletNAxis()</title>
+<indexterm><primary>getSampleBulletNAxis</primary><secondary>cam.collision</secondary></indexterm>
+<indexterm><primary>cam.collision</primary><secondary>getSampleBulletNAxis</secondary></indexterm>
+<para><computeroutput>cam.collision.getSampleBulletNAxis ( cutter,  startpoint,  endpoint,  rotation,  cutter_compensation)</computeroutput></para>
+<para><literallayout><computeroutput>Fully 3D Collision Test for N-Axis Milling</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespacecam_1_1collision_1a152dde2dd547f6e625ef1ef16af8f022"/><section>
+    <title>prepareBulletCollision()</title>
+<indexterm><primary>prepareBulletCollision</primary><secondary>cam.collision</secondary></indexterm>
+<indexterm><primary>cam.collision</primary><secondary>prepareBulletCollision</secondary></indexterm>
+<para><computeroutput>cam.collision.prepareBulletCollision ( o)</computeroutput></para>
+<para><literallayout><computeroutput>Prepares All Objects Needed for Sampling with Bullet Collision</computeroutput></literallayout> </para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1collision_a152dde2dd547f6e625ef1ef16af8f022_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1collision_1a8cd100d428097198fb93b4fe2fdb38ce"/><section>
+    <title>subdivideLongEdges()</title>
+<indexterm><primary>subdivideLongEdges</primary><secondary>cam.collision</secondary></indexterm>
+<indexterm><primary>cam.collision</primary><secondary>subdivideLongEdges</secondary></indexterm>
+<para><computeroutput>cam.collision.subdivideLongEdges ( ob,  threshold)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1collision_a8cd100d428097198fb93b4fe2fdb38ce_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+</section>

@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Properties" kind="class" language="Python" prot="public">
+    <compoundname>cam::ui_panels::interface::CAM_INTERFACE_Properties</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PropertyGroup</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Properties_1afd8eb7908c06b09bd47cc4c9df36acc2" prot="public" static="yes" mutable="no">
+        <type>EnumProperty</type>
+        <definition>EnumProperty cam.ui_panels.interface.CAM_INTERFACE_Properties::level</definition>
+        <argsstring></argsstring>
+        <name>level</name>
+        <qualifiedname>cam.ui_panels.interface.CAM_INTERFACE_Properties.level</qualifiedname>
+        <initializer>(
+        name=&quot;Interface&quot;,
+        description=&quot;Choose visible options&quot;,
+        items=[
+            (&apos;0&apos;, &quot;Basic&quot;, &quot;Only show essential options&quot;),
+            (&apos;1&apos;, &quot;Advanced&quot;, &quot;Show advanced options&quot;),
+            (&apos;2&apos;, &quot;Complete&quot;, &quot;Show all options&quot;),
+            (&apos;3&apos;, &quot;Experimental&quot;, &quot;Show experimental options&quot;)
+        ],
+        default=&apos;0&apos;,
+        update=<ref refid="namespacecam_1_1ui__panels_1_1interface_1a8738e190503acf86522873336035d26e" kindref="member">update_interface</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/interface.py" line="24" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/interface.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PropertyGroup</label>
+      </node>
+      <node id="1">
+        <label>cam.ui_panels.interface.CAM_INTERFACE_Properties</label>
+        <link refid="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Properties"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>EnumProperty</label>
+      </node>
+      <node id="2">
+        <label>PropertyGroup</label>
+      </node>
+      <node id="1">
+        <label>cam.ui_panels.interface.CAM_INTERFACE_Properties</label>
+        <link refid="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Properties"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+level</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/interface.py" line="23" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/interface.py" bodystart="23" bodyend="37"/>
+    <listofallmembers>
+      <member refid="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Properties_1afd8eb7908c06b09bd47cc4c9df36acc2" prot="public" virt="non-virtual"><scope>cam::ui_panels::interface::CAM_INTERFACE_Properties</scope><name>level</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

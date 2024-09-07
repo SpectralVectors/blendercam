@@ -1,0 +1,746 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1basrelief_1_1BasReliefsettings" kind="class" language="Python" prot="public">
+    <compoundname>cam::basrelief::BasReliefsettings</compoundname>
+    <basecompoundref refid="classbpy_1_1types_1_1PropertyGroup" prot="public" virt="non-virtual">bpy.types.PropertyGroup</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1basrelief_1_1BasReliefsettings_1a02cf3acf4385f9e2bdd7917e6fd32fff" prot="public" static="yes" mutable="no">
+        <type>BoolProperty</type>
+        <definition>BoolProperty cam.basrelief.BasReliefsettings::use_image_source</definition>
+        <argsstring></argsstring>
+        <name>use_image_source</name>
+        <qualifiedname>cam.basrelief.BasReliefsettings.use_image_source</qualifiedname>
+        <initializer>(
+        name=&quot;Use Image Source&quot;,
+        description=&quot;&quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="1002" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="1002" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1basrelief_1_1BasReliefsettings_1a13007ac7d4f20273c6ebca6fefcf30a0" prot="public" static="yes" mutable="no">
+        <type>StringProperty</type>
+        <definition>StringProperty cam.basrelief.BasReliefsettings::source_image_name</definition>
+        <argsstring></argsstring>
+        <name>source_image_name</name>
+        <qualifiedname>cam.basrelief.BasReliefsettings.source_image_name</qualifiedname>
+        <initializer>(
+        name=&apos;Image Source&apos;,
+        description=&apos;image source&apos;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="1007" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="1007" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1basrelief_1_1BasReliefsettings_1a4b25a0c654ce88a785b48574c74dd23e" prot="public" static="yes" mutable="no">
+        <type>StringProperty</type>
+        <definition>StringProperty cam.basrelief.BasReliefsettings::view_layer_name</definition>
+        <argsstring></argsstring>
+        <name>view_layer_name</name>
+        <qualifiedname>cam.basrelief.BasReliefsettings.view_layer_name</qualifiedname>
+        <initializer>(
+        name=&apos;View Layer Source&apos;,
+        description=&apos;Make a bas-<ref refid="namespacecam_1_1basrelief_1aa0248196478d87431123a0e74908ab1c" kindref="member">relief</ref> from whatever is on this view layer&apos;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="1011" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="1011" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1basrelief_1_1BasReliefsettings_1abaa63120661727dc25c7cb3b81a475f6" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.basrelief.BasReliefsettings::bit_diameter</definition>
+        <argsstring></argsstring>
+        <name>bit_diameter</name>
+        <qualifiedname>cam.basrelief.BasReliefsettings.bit_diameter</qualifiedname>
+        <initializer>(
+        name=&quot;Diameter of Ball End in mm&quot;,
+        description=&quot;Diameter of bit which will be used for carving&quot;,
+        min=0.01,
+        max=50.0,
+        default=3.175,
+        precision=<ref refid="namespacecam_1_1basrelief_1ac779b0b524d86ee2fb8119cffebad256" kindref="member">PRECISION</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="1015" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="1015" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1basrelief_1_1BasReliefsettings_1ab4a2b092e7db742c922c9f20df151ee4" prot="public" static="yes" mutable="no">
+        <type>IntProperty</type>
+        <definition>IntProperty cam.basrelief.BasReliefsettings::pass_per_radius</definition>
+        <argsstring></argsstring>
+        <name>pass_per_radius</name>
+        <qualifiedname>cam.basrelief.BasReliefsettings.pass_per_radius</qualifiedname>
+        <initializer>(
+        name=&quot;Passes per Radius&quot;,
+        description=&quot;Amount of passes per radius\n(more passes, &quot;
+        &quot;more mesh precision)&quot;,
+        default=2,
+        min=1,
+        max=10,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="1023" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="1023" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1basrelief_1_1BasReliefsettings_1ab5789f0d327f7ce26b016da4331bbe19" prot="public" static="yes" mutable="no">
+        <type>IntProperty</type>
+        <definition>IntProperty cam.basrelief.BasReliefsettings::widthmm</definition>
+        <argsstring></argsstring>
+        <name>widthmm</name>
+        <qualifiedname>cam.basrelief.BasReliefsettings.widthmm</qualifiedname>
+        <initializer>(
+        name=&quot;Desired Width in mm&quot;,
+        default=200,
+        min=5,
+        max=4000,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="1031" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="1031" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1basrelief_1_1BasReliefsettings_1a8364e7e45dc884c53a7b3f2ac3a481ce" prot="public" static="yes" mutable="no">
+        <type>IntProperty</type>
+        <definition>IntProperty cam.basrelief.BasReliefsettings::heightmm</definition>
+        <argsstring></argsstring>
+        <name>heightmm</name>
+        <qualifiedname>cam.basrelief.BasReliefsettings.heightmm</qualifiedname>
+        <initializer>(
+        name=&quot;Desired Height in mm&quot;,
+        default=150,
+        min=5,
+        max=4000,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="1037" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="1037" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1basrelief_1_1BasReliefsettings_1a163725dc844be070bede9643e4ae0237" prot="public" static="yes" mutable="no">
+        <type>IntProperty</type>
+        <definition>IntProperty cam.basrelief.BasReliefsettings::thicknessmm</definition>
+        <argsstring></argsstring>
+        <name>thicknessmm</name>
+        <qualifiedname>cam.basrelief.BasReliefsettings.thicknessmm</qualifiedname>
+        <initializer>(
+        name=&quot;Thickness in mm&quot;,
+        default=15,
+        min=5,
+        max=100,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="1043" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="1043" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1basrelief_1_1BasReliefsettings_1a0fa94c30fd8f84f56967743d0b504840" prot="public" static="yes" mutable="no">
+        <type>EnumProperty</type>
+        <definition>EnumProperty cam.basrelief.BasReliefsettings::justifyx</definition>
+        <argsstring></argsstring>
+        <name>justifyx</name>
+        <qualifiedname>cam.basrelief.BasReliefsettings.justifyx</qualifiedname>
+        <initializer>(
+        name=&quot;X&quot;,
+        items=[
+            (&apos;1&apos;, &apos;Left&apos;, &apos;&apos;, 0),
+            (&apos;-0.5&apos;, &apos;Centered&apos;, &apos;&apos;, 1),
+            (&apos;-1&apos;, &apos;Right&apos;, &apos;&apos;, 2)
+        ],
+        default=&apos;-1&apos;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="1050" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="1050" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1basrelief_1_1BasReliefsettings_1a6ec3efaa2d51eedbb0d107932aa60715" prot="public" static="yes" mutable="no">
+        <type>EnumProperty</type>
+        <definition>EnumProperty cam.basrelief.BasReliefsettings::justifyy</definition>
+        <argsstring></argsstring>
+        <name>justifyy</name>
+        <qualifiedname>cam.basrelief.BasReliefsettings.justifyy</qualifiedname>
+        <initializer>(
+        name=&quot;Y&quot;,
+        items=[
+            (&apos;1&apos;, &apos;Bottom&apos;, &apos;&apos;, 0),
+            (&apos;-0.5&apos;, &apos;Centered&apos;, &apos;&apos;, 2),
+            (&apos;-1&apos;, &apos;Top&apos;, &apos;&apos;, 1),
+        ],
+        default=&apos;-1&apos;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="1059" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="1059" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1basrelief_1_1BasReliefsettings_1a002c793b530cd34bf9aa903dde2e66ab" prot="public" static="yes" mutable="no">
+        <type>EnumProperty</type>
+        <definition>EnumProperty cam.basrelief.BasReliefsettings::justifyz</definition>
+        <argsstring></argsstring>
+        <name>justifyz</name>
+        <qualifiedname>cam.basrelief.BasReliefsettings.justifyz</qualifiedname>
+        <initializer>(
+        name=&quot;Z&quot;,
+        items=[
+            (&apos;-1&apos;, &apos;Below 0&apos;, &apos;&apos;, 0),
+            (&apos;-0.5&apos;, &apos;Centered&apos;, &apos;&apos;, 2),
+            (&apos;1&apos;, &apos;Above 0&apos;, &apos;&apos;, 1),
+        ],
+        default=&apos;-1&apos;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="1068" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="1068" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1basrelief_1_1BasReliefsettings_1ad03faf87e52daef6798fc4b17ae6c943" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.basrelief.BasReliefsettings::depth_exponent</definition>
+        <argsstring></argsstring>
+        <name>depth_exponent</name>
+        <qualifiedname>cam.basrelief.BasReliefsettings.depth_exponent</qualifiedname>
+        <initializer>(
+        name=&quot;Depth Exponent&quot;,
+        description=&quot;Initial depth map is taken to this power. Higher = &quot;
+        &quot;sharper relief&quot;,
+        min=0.5,
+        max=10.0,
+        default=1.0,
+        precision=<ref refid="namespacecam_1_1basrelief_1ac779b0b524d86ee2fb8119cffebad256" kindref="member">PRECISION</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="1078" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="1078" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1basrelief_1_1BasReliefsettings_1adf164fa5a5bc56ca1983c89ef60284b0" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.basrelief.BasReliefsettings::silhouette_threshold</definition>
+        <argsstring></argsstring>
+        <name>silhouette_threshold</name>
+        <qualifiedname>cam.basrelief.BasReliefsettings.silhouette_threshold</qualifiedname>
+        <initializer>(
+        name=&quot;Silhouette Threshold&quot;,
+        description=&quot;Silhouette threshold&quot;,
+        min=0.000001,
+        max=1.0,
+        default=0.003,
+        precision=<ref refid="namespacecam_1_1basrelief_1ac779b0b524d86ee2fb8119cffebad256" kindref="member">PRECISION</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="1088" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="1088" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1basrelief_1_1BasReliefsettings_1a9977b9a6d1104ebdb58106291b2f73d3" prot="public" static="yes" mutable="no">
+        <type>BoolProperty</type>
+        <definition>BoolProperty cam.basrelief.BasReliefsettings::recover_silhouettes</definition>
+        <argsstring></argsstring>
+        <name>recover_silhouettes</name>
+        <qualifiedname>cam.basrelief.BasReliefsettings.recover_silhouettes</qualifiedname>
+        <initializer>(
+        name=&quot;Recover Silhouettes&quot;,
+        description=&quot;&quot;,
+        default=True,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="1096" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="1096" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1basrelief_1_1BasReliefsettings_1a9f4c0597afbcb02a5106cb05e6518fb0" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.basrelief.BasReliefsettings::silhouette_scale</definition>
+        <argsstring></argsstring>
+        <name>silhouette_scale</name>
+        <qualifiedname>cam.basrelief.BasReliefsettings.silhouette_scale</qualifiedname>
+        <initializer>(
+        name=&quot;Silhouette Scale&quot;,
+        description=&quot;Silhouette scale&quot;,
+        min=0.000001,
+        max=5.0,
+        default=0.3,
+        precision=<ref refid="namespacecam_1_1basrelief_1ac779b0b524d86ee2fb8119cffebad256" kindref="member">PRECISION</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="1101" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="1101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1basrelief_1_1BasReliefsettings_1af23a8ac5b0aa15bdbe189fea3db1eb9c" prot="public" static="yes" mutable="no">
+        <type>IntProperty</type>
+        <definition>IntProperty cam.basrelief.BasReliefsettings::silhouette_exponent</definition>
+        <argsstring></argsstring>
+        <name>silhouette_exponent</name>
+        <qualifiedname>cam.basrelief.BasReliefsettings.silhouette_exponent</qualifiedname>
+        <initializer>(
+        name=&quot;Silhouette Square Exponent&quot;,
+        description=&quot;If lower, true depth distances between objects will be &quot;
+        &quot;more visibe in the relief&quot;,
+        default=3,
+        min=0,
+        max=5,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="1109" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="1109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1basrelief_1_1BasReliefsettings_1ace3086b0bfe6bb3b2d9888500a8aecf2" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.basrelief.BasReliefsettings::attenuation</definition>
+        <argsstring></argsstring>
+        <name>attenuation</name>
+        <qualifiedname>cam.basrelief.BasReliefsettings.attenuation</qualifiedname>
+        <initializer>(
+        name=&quot;Gradient Attenuation&quot;,
+        description=&quot;Gradient attenuation&quot;,
+        min=0.000001,
+        max=100.0,
+        default=1.0,
+        precision=<ref refid="namespacecam_1_1basrelief_1ac779b0b524d86ee2fb8119cffebad256" kindref="member">PRECISION</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="1117" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="1117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1basrelief_1_1BasReliefsettings_1aa3e4bfba9ab23e6cb6ed000ee4a14d77" prot="public" static="yes" mutable="no">
+        <type>IntProperty</type>
+        <definition>IntProperty cam.basrelief.BasReliefsettings::min_gridsize</definition>
+        <argsstring></argsstring>
+        <name>min_gridsize</name>
+        <qualifiedname>cam.basrelief.BasReliefsettings.min_gridsize</qualifiedname>
+        <initializer>(
+        name=&quot;Minimum Grid Size&quot;,
+        default=16,
+        min=2,
+        max=512,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="1125" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="1125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1basrelief_1_1BasReliefsettings_1a83a7f266f5f6c447a17276b169f39be4" prot="public" static="yes" mutable="no">
+        <type>IntProperty</type>
+        <definition>IntProperty cam.basrelief.BasReliefsettings::smooth_iterations</definition>
+        <argsstring></argsstring>
+        <name>smooth_iterations</name>
+        <qualifiedname>cam.basrelief.BasReliefsettings.smooth_iterations</qualifiedname>
+        <initializer>(
+        name=&quot;Smooth Iterations&quot;,
+        default=1,
+        min=1,
+        max=64,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="1131" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="1131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1basrelief_1_1BasReliefsettings_1a9709d6a804941ea8d76bac6f76d0c37b" prot="public" static="yes" mutable="no">
+        <type>IntProperty</type>
+        <definition>IntProperty cam.basrelief.BasReliefsettings::vcycle_iterations</definition>
+        <argsstring></argsstring>
+        <name>vcycle_iterations</name>
+        <qualifiedname>cam.basrelief.BasReliefsettings.vcycle_iterations</qualifiedname>
+        <initializer>(
+        name=&quot;V-Cycle Iterations&quot;,
+        description=&quot;Set higher for planar constraint&quot;,
+        default=2,
+        min=1,
+        max=128,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="1137" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="1137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1basrelief_1_1BasReliefsettings_1a72f1271b66522b9cc2ef83cf40260b29" prot="public" static="yes" mutable="no">
+        <type>IntProperty</type>
+        <definition>IntProperty cam.basrelief.BasReliefsettings::linbcg_iterations</definition>
+        <argsstring></argsstring>
+        <name>linbcg_iterations</name>
+        <qualifiedname>cam.basrelief.BasReliefsettings.linbcg_iterations</qualifiedname>
+        <initializer>(
+        name=&quot;LINBCG Iterations&quot;,
+        description=&quot;Set lower for flatter <ref refid="namespacecam_1_1basrelief_1aa0248196478d87431123a0e74908ab1c" kindref="member">relief</ref>, and when using &quot;
+        &quot;planar constraint&quot;,
+        default=5,
+        min=1,
+        max=64,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="1144" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="1144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1basrelief_1_1BasReliefsettings_1aed5d8e359180aa6063323967ccecd120" prot="public" static="yes" mutable="no">
+        <type>BoolProperty</type>
+        <definition>BoolProperty cam.basrelief.BasReliefsettings::use_planar</definition>
+        <argsstring></argsstring>
+        <name>use_planar</name>
+        <qualifiedname>cam.basrelief.BasReliefsettings.use_planar</qualifiedname>
+        <initializer>(
+        name=&quot;Use Planar Constraint&quot;,
+        description=&quot;&quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="1152" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="1152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1basrelief_1_1BasReliefsettings_1a601540a6f999cf6b1ed1f94a62e18fd8" prot="public" static="yes" mutable="no">
+        <type>BoolProperty</type>
+        <definition>BoolProperty cam.basrelief.BasReliefsettings::gradient_scaling_mask_use</definition>
+        <argsstring></argsstring>
+        <name>gradient_scaling_mask_use</name>
+        <qualifiedname>cam.basrelief.BasReliefsettings.gradient_scaling_mask_use</qualifiedname>
+        <initializer>(
+        name=&quot;Scale Gradients with Mask&quot;,
+        description=&quot;&quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="1157" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="1157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1basrelief_1_1BasReliefsettings_1a001d4ed97b779b0eb03b5b791b0a596c" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.basrelief.BasReliefsettings::decimate_ratio</definition>
+        <argsstring></argsstring>
+        <name>decimate_ratio</name>
+        <qualifiedname>cam.basrelief.BasReliefsettings.decimate_ratio</qualifiedname>
+        <initializer>(
+        name=&quot;Decimate Ratio&quot;,
+        description=&quot;Simplify the mesh using the Decimate modifier. &quot;
+        &quot;The lower the value the more simplyfied&quot;,
+        min=0.01,
+        max=1.0,
+        default=0.1,
+        precision=<ref refid="namespacecam_1_1basrelief_1ac779b0b524d86ee2fb8119cffebad256" kindref="member">PRECISION</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="1162" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="1162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1basrelief_1_1BasReliefsettings_1aa0ac6747cd89707716e23b0e7be0cb15" prot="public" static="yes" mutable="no">
+        <type>StringProperty</type>
+        <definition>StringProperty cam.basrelief.BasReliefsettings::gradient_scaling_mask_name</definition>
+        <argsstring></argsstring>
+        <name>gradient_scaling_mask_name</name>
+        <qualifiedname>cam.basrelief.BasReliefsettings.gradient_scaling_mask_name</qualifiedname>
+        <initializer>(
+        name=&apos;Scaling Mask Name&apos;,
+        description=&apos;Mask name&apos;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="1172" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="1172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1basrelief_1_1BasReliefsettings_1a3c84a314c4c78833b465b8d9cad8aebd" prot="public" static="yes" mutable="no">
+        <type>BoolProperty</type>
+        <definition>BoolProperty cam.basrelief.BasReliefsettings::scale_down_before_use</definition>
+        <argsstring></argsstring>
+        <name>scale_down_before_use</name>
+        <qualifiedname>cam.basrelief.BasReliefsettings.scale_down_before_use</qualifiedname>
+        <initializer>(
+        name=&quot;Scale Down Image Before Processing&quot;,
+        description=&quot;&quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="1176" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="1176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1basrelief_1_1BasReliefsettings_1acfc8b4472ef13376ece5f43d0a5ccf8e" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.basrelief.BasReliefsettings::scale_down_before</definition>
+        <argsstring></argsstring>
+        <name>scale_down_before</name>
+        <qualifiedname>cam.basrelief.BasReliefsettings.scale_down_before</qualifiedname>
+        <initializer>(
+        name=&quot;Image Scale&quot;,
+        description=&quot;Image scale&quot;,
+        min=0.025,
+        max=1.0,
+        default=.5,
+        precision=<ref refid="namespacecam_1_1basrelief_1ac779b0b524d86ee2fb8119cffebad256" kindref="member">PRECISION</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="1181" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="1181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1basrelief_1_1BasReliefsettings_1ab067c7193295c43a0c7777503c5ef68f" prot="public" static="yes" mutable="no">
+        <type>BoolProperty</type>
+        <definition>BoolProperty cam.basrelief.BasReliefsettings::detail_enhancement_use</definition>
+        <argsstring></argsstring>
+        <name>detail_enhancement_use</name>
+        <qualifiedname>cam.basrelief.BasReliefsettings.detail_enhancement_use</qualifiedname>
+        <initializer>(
+        name=&quot;Enhance Details&quot;,
+        description=&quot;Enhance details by frequency analysis&quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="1189" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="1189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1basrelief_1_1BasReliefsettings_1add089ce95055b467126345343ab949f1" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.basrelief.BasReliefsettings::detail_enhancement_amount</definition>
+        <argsstring></argsstring>
+        <name>detail_enhancement_amount</name>
+        <qualifiedname>cam.basrelief.BasReliefsettings.detail_enhancement_amount</qualifiedname>
+        <initializer>(
+        name=&quot;Amount&quot;,
+        description=&quot;Image scale&quot;,
+        min=0.025,
+        max=1.0,
+        default=.5,
+        precision=<ref refid="namespacecam_1_1basrelief_1ac779b0b524d86ee2fb8119cffebad256" kindref="member">PRECISION</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="1195" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="1195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1basrelief_1_1BasReliefsettings_1a6ebfe2d9324f51afd4d2ce351202fc61" prot="public" static="yes" mutable="no">
+        <type>BoolProperty</type>
+        <definition>BoolProperty cam.basrelief.BasReliefsettings::advanced</definition>
+        <argsstring></argsstring>
+        <name>advanced</name>
+        <qualifiedname>cam.basrelief.BasReliefsettings.advanced</qualifiedname>
+        <initializer>(
+        name=&quot;Advanced Options&quot;,
+        description=&quot;Show advanced options&quot;,
+        default=True,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="1204" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="1204" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>bpy::types::PropertyGroup</label>
+        <link refid="classbpy_1_1types_1_1PropertyGroup"/>
+      </node>
+      <node id="1">
+        <label>cam.basrelief.BasReliefsettings</label>
+        <link refid="classcam_1_1basrelief_1_1BasReliefsettings"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>BoolProperty</label>
+      </node>
+      <node id="7">
+        <label>EnumProperty</label>
+      </node>
+      <node id="5">
+        <label>FloatProperty</label>
+      </node>
+      <node id="6">
+        <label>IntProperty</label>
+      </node>
+      <node id="4">
+        <label>StringProperty</label>
+      </node>
+      <node id="2">
+        <label>bpy::types::PropertyGroup</label>
+        <link refid="classbpy_1_1types_1_1PropertyGroup"/>
+      </node>
+      <node id="1">
+        <label>cam.basrelief.BasReliefsettings</label>
+        <link refid="classcam_1_1basrelief_1_1BasReliefsettings"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+advanced</edgelabel>
+          <edgelabel>+detail_enhancement_use</edgelabel>
+          <edgelabel>+gradient_scaling_mask_use</edgelabel>
+          <edgelabel>+recover_silhouettes</edgelabel>
+          <edgelabel>+scale_down_before_use</edgelabel>
+          <edgelabel>+use_image_source</edgelabel>
+          <edgelabel>+use_planar</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+gradient_scaling_mask_name</edgelabel>
+          <edgelabel>+source_image_name</edgelabel>
+          <edgelabel>+view_layer_name</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+attenuation</edgelabel>
+          <edgelabel>+bit_diameter</edgelabel>
+          <edgelabel>+decimate_ratio</edgelabel>
+          <edgelabel>+depth_exponent</edgelabel>
+          <edgelabel>+detail_enhancement_amount</edgelabel>
+          <edgelabel>+scale_down_before</edgelabel>
+          <edgelabel>+silhouette_scale</edgelabel>
+          <edgelabel>+silhouette_threshold</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>+heightmm</edgelabel>
+          <edgelabel>+linbcg_iterations</edgelabel>
+          <edgelabel>+min_gridsize</edgelabel>
+          <edgelabel>+pass_per_radius</edgelabel>
+          <edgelabel>+silhouette_exponent</edgelabel>
+          <edgelabel>+smooth_iterations</edgelabel>
+          <edgelabel>+thicknessmm</edgelabel>
+          <edgelabel>+vcycle_iterations</edgelabel>
+          <edgelabel>+widthmm</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>+justifyx</edgelabel>
+          <edgelabel>+justifyy</edgelabel>
+          <edgelabel>+justifyz</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="1001" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="1001" bodyend="1210"/>
+    <listofallmembers>
+      <member refid="classcam_1_1basrelief_1_1BasReliefsettings_1a6ebfe2d9324f51afd4d2ce351202fc61" prot="public" virt="non-virtual"><scope>cam::basrelief::BasReliefsettings</scope><name>advanced</name></member>
+      <member refid="classcam_1_1basrelief_1_1BasReliefsettings_1ace3086b0bfe6bb3b2d9888500a8aecf2" prot="public" virt="non-virtual"><scope>cam::basrelief::BasReliefsettings</scope><name>attenuation</name></member>
+      <member refid="classcam_1_1basrelief_1_1BasReliefsettings_1abaa63120661727dc25c7cb3b81a475f6" prot="public" virt="non-virtual"><scope>cam::basrelief::BasReliefsettings</scope><name>bit_diameter</name></member>
+      <member refid="classcam_1_1basrelief_1_1BasReliefsettings_1a001d4ed97b779b0eb03b5b791b0a596c" prot="public" virt="non-virtual"><scope>cam::basrelief::BasReliefsettings</scope><name>decimate_ratio</name></member>
+      <member refid="classcam_1_1basrelief_1_1BasReliefsettings_1ad03faf87e52daef6798fc4b17ae6c943" prot="public" virt="non-virtual"><scope>cam::basrelief::BasReliefsettings</scope><name>depth_exponent</name></member>
+      <member refid="classcam_1_1basrelief_1_1BasReliefsettings_1add089ce95055b467126345343ab949f1" prot="public" virt="non-virtual"><scope>cam::basrelief::BasReliefsettings</scope><name>detail_enhancement_amount</name></member>
+      <member refid="classcam_1_1basrelief_1_1BasReliefsettings_1ab067c7193295c43a0c7777503c5ef68f" prot="public" virt="non-virtual"><scope>cam::basrelief::BasReliefsettings</scope><name>detail_enhancement_use</name></member>
+      <member refid="classcam_1_1basrelief_1_1BasReliefsettings_1aa0ac6747cd89707716e23b0e7be0cb15" prot="public" virt="non-virtual"><scope>cam::basrelief::BasReliefsettings</scope><name>gradient_scaling_mask_name</name></member>
+      <member refid="classcam_1_1basrelief_1_1BasReliefsettings_1a601540a6f999cf6b1ed1f94a62e18fd8" prot="public" virt="non-virtual"><scope>cam::basrelief::BasReliefsettings</scope><name>gradient_scaling_mask_use</name></member>
+      <member refid="classcam_1_1basrelief_1_1BasReliefsettings_1a8364e7e45dc884c53a7b3f2ac3a481ce" prot="public" virt="non-virtual"><scope>cam::basrelief::BasReliefsettings</scope><name>heightmm</name></member>
+      <member refid="classcam_1_1basrelief_1_1BasReliefsettings_1a0fa94c30fd8f84f56967743d0b504840" prot="public" virt="non-virtual"><scope>cam::basrelief::BasReliefsettings</scope><name>justifyx</name></member>
+      <member refid="classcam_1_1basrelief_1_1BasReliefsettings_1a6ec3efaa2d51eedbb0d107932aa60715" prot="public" virt="non-virtual"><scope>cam::basrelief::BasReliefsettings</scope><name>justifyy</name></member>
+      <member refid="classcam_1_1basrelief_1_1BasReliefsettings_1a002c793b530cd34bf9aa903dde2e66ab" prot="public" virt="non-virtual"><scope>cam::basrelief::BasReliefsettings</scope><name>justifyz</name></member>
+      <member refid="classcam_1_1basrelief_1_1BasReliefsettings_1a72f1271b66522b9cc2ef83cf40260b29" prot="public" virt="non-virtual"><scope>cam::basrelief::BasReliefsettings</scope><name>linbcg_iterations</name></member>
+      <member refid="classcam_1_1basrelief_1_1BasReliefsettings_1aa3e4bfba9ab23e6cb6ed000ee4a14d77" prot="public" virt="non-virtual"><scope>cam::basrelief::BasReliefsettings</scope><name>min_gridsize</name></member>
+      <member refid="classcam_1_1basrelief_1_1BasReliefsettings_1ab4a2b092e7db742c922c9f20df151ee4" prot="public" virt="non-virtual"><scope>cam::basrelief::BasReliefsettings</scope><name>pass_per_radius</name></member>
+      <member refid="classcam_1_1basrelief_1_1BasReliefsettings_1a9977b9a6d1104ebdb58106291b2f73d3" prot="public" virt="non-virtual"><scope>cam::basrelief::BasReliefsettings</scope><name>recover_silhouettes</name></member>
+      <member refid="classcam_1_1basrelief_1_1BasReliefsettings_1acfc8b4472ef13376ece5f43d0a5ccf8e" prot="public" virt="non-virtual"><scope>cam::basrelief::BasReliefsettings</scope><name>scale_down_before</name></member>
+      <member refid="classcam_1_1basrelief_1_1BasReliefsettings_1a3c84a314c4c78833b465b8d9cad8aebd" prot="public" virt="non-virtual"><scope>cam::basrelief::BasReliefsettings</scope><name>scale_down_before_use</name></member>
+      <member refid="classcam_1_1basrelief_1_1BasReliefsettings_1af23a8ac5b0aa15bdbe189fea3db1eb9c" prot="public" virt="non-virtual"><scope>cam::basrelief::BasReliefsettings</scope><name>silhouette_exponent</name></member>
+      <member refid="classcam_1_1basrelief_1_1BasReliefsettings_1a9f4c0597afbcb02a5106cb05e6518fb0" prot="public" virt="non-virtual"><scope>cam::basrelief::BasReliefsettings</scope><name>silhouette_scale</name></member>
+      <member refid="classcam_1_1basrelief_1_1BasReliefsettings_1adf164fa5a5bc56ca1983c89ef60284b0" prot="public" virt="non-virtual"><scope>cam::basrelief::BasReliefsettings</scope><name>silhouette_threshold</name></member>
+      <member refid="classcam_1_1basrelief_1_1BasReliefsettings_1a83a7f266f5f6c447a17276b169f39be4" prot="public" virt="non-virtual"><scope>cam::basrelief::BasReliefsettings</scope><name>smooth_iterations</name></member>
+      <member refid="classcam_1_1basrelief_1_1BasReliefsettings_1a13007ac7d4f20273c6ebca6fefcf30a0" prot="public" virt="non-virtual"><scope>cam::basrelief::BasReliefsettings</scope><name>source_image_name</name></member>
+      <member refid="classcam_1_1basrelief_1_1BasReliefsettings_1a163725dc844be070bede9643e4ae0237" prot="public" virt="non-virtual"><scope>cam::basrelief::BasReliefsettings</scope><name>thicknessmm</name></member>
+      <member refid="classcam_1_1basrelief_1_1BasReliefsettings_1a02cf3acf4385f9e2bdd7917e6fd32fff" prot="public" virt="non-virtual"><scope>cam::basrelief::BasReliefsettings</scope><name>use_image_source</name></member>
+      <member refid="classcam_1_1basrelief_1_1BasReliefsettings_1aed5d8e359180aa6063323967ccecd120" prot="public" virt="non-virtual"><scope>cam::basrelief::BasReliefsettings</scope><name>use_planar</name></member>
+      <member refid="classcam_1_1basrelief_1_1BasReliefsettings_1a9709d6a804941ea8d76bac6f76d0c37b" prot="public" virt="non-virtual"><scope>cam::basrelief::BasReliefsettings</scope><name>vcycle_iterations</name></member>
+      <member refid="classcam_1_1basrelief_1_1BasReliefsettings_1a4b25a0c654ce88a785b48574c74dd23e" prot="public" virt="non-virtual"><scope>cam::basrelief::BasReliefsettings</scope><name>view_layer_name</name></member>
+      <member refid="classcam_1_1basrelief_1_1BasReliefsettings_1ab5789f0d327f7ce26b016da4331bbe19" prot="public" virt="non-virtual"><scope>cam::basrelief::BasReliefsettings</scope><name>widthmm</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

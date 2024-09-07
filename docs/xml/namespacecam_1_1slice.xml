@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacecam_1_1slice" kind="namespace" language="Python">
+    <compoundname>cam::slice</compoundname>
+    <innerclass refid="classcam_1_1slice_1_1SliceObjectsSettings" prot="public">cam::slice::SliceObjectsSettings</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacecam_1_1slice_1a6831dd1c7835cc7f0affc4109792fda6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.slice.slicing2d</definition>
+        <argsstring>(ob, height)</argsstring>
+        <name>slicing2d</name>
+        <qualifiedname>cam.slice.slicing2d</qualifiedname>
+        <param>
+          <type>ob</type>
+          <defname>ob</defname>
+        </param>
+        <param>
+          <type>height</type>
+          <defname>height</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/slice.py" line="20" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/slice.py" bodystart="20" bodyend="40"/>
+        <referencedby refid="namespacecam_1_1slice_1a30350e381a415468a866fd20161f0fb6" compoundref="slice_8py" startline="62" endline="124">cam.slice.sliceObject</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1slice_1ac6beb7cb6839830b3c8aeaebffb12c09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.slice.slicing3d</definition>
+        <argsstring>(ob, start, end)</argsstring>
+        <name>slicing3d</name>
+        <qualifiedname>cam.slice.slicing3d</qualifiedname>
+        <param>
+          <type>ob</type>
+          <defname>ob</defname>
+        </param>
+        <param>
+          <type>start</type>
+          <defname>start</defname>
+        </param>
+        <param>
+          <type>end</type>
+          <defname>end</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/slice.py" line="41" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/slice.py" bodystart="41" bodyend="61"/>
+        <referencedby refid="namespacecam_1_1slice_1a30350e381a415468a866fd20161f0fb6" compoundref="slice_8py" startline="62" endline="124">cam.slice.sliceObject</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1slice_1a30350e381a415468a866fd20161f0fb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.slice.sliceObject</definition>
+        <argsstring>(ob)</argsstring>
+        <name>sliceObject</name>
+        <qualifiedname>cam.slice.sliceObject</qualifiedname>
+        <param>
+          <type>ob</type>
+          <defname>ob</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/slice.py" line="62" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/slice.py" bodystart="62" bodyend="124"/>
+        <references refid="namespacecam_1_1slice_1a6831dd1c7835cc7f0affc4109792fda6" compoundref="slice_8py" startline="20" endline="40">cam.slice.slicing2d</references>
+        <references refid="namespacecam_1_1slice_1ac6beb7cb6839830b3c8aeaebffb12c09" compoundref="slice_8py" startline="41" endline="61">cam.slice.slicing3d</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>BlenderCAM &apos;slice.py&apos; © 2021 Alain Pelletier
+
+Very simple slicing for 3D meshes, useful for plywood cutting.
+Completely rewritten April 2021.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/slice.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

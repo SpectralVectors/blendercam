@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacecam_1_1nc_1_1winpc" xml:lang="en-US">
+<title>cam.nc.winpc Namespace Reference</title>
+<indexterm><primary>cam.nc.winpc</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classcam_1_1nc_1_1winpc_1_1Creator">Creator</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1winpc_1a24d8e80034ee64b05f67c7cfbc927661">feedrate</link> (self, f)</para>
+
+<para>Rates + Modes. </para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1winpc_1afbefd0187dc60bf9753f65074a388e2a">feedrate_hv</link> (self, <link linkend="_namespacecam_1_1nc_1_1winpc_1a53c46df3965f95fbd13c3d1a28f63612">fh</link>, <link linkend="_namespacecam_1_1nc_1_1winpc_1aa61a3aa35ac60c332d08138f4a05069b">fv</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1winpc_1a2e77a0444791e79b05bd93c52415f31e">calc_feedrate_hv</link> (self, h, v)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1winpc_1a4e51d41c29417cdc8a93b8645c61c01f">report_probe_results</link> (self, x1=None, y1=None, z1=None, x2=None, y2=None, z2=None, x3=None, y3=None, z3=None, x4=None, y4=None, z4=None, x5=None, y5=None, z5=None, x6=None, y6=None, z6=None, xml_file_name=None)</para>
+
+<para>Probe routines. </para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1winpc_1aa2e3de74311666759d5bdb4f07559d44">open_log_file</link> (self, xml_file_name=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1winpc_1a90be9ecebc890626f0b00c063cbfb849">close_log_file</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1winpc_1ad2bc7d90c71c5a768f151d61d8cfe965">log_coordinate</link> (self, x=None, y=None, z=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1winpc_1acc14e6e00c283bb3ea6b6aee040e431b">log_message</link> (self, message=None)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1winpc_1a245aaa8128f9ccb45b3701bbd46a5132">now</link> = datetime.datetime.now()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1winpc_1a1fd78efb9daf90de767aa18064ea1688">creator</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1winpc_1ad68508c7ef0e7948c943840419ec8ec2">fhv</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1winpc_1a53c46df3965f95fbd13c3d1a28f63612">fh</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1winpc_1aa61a3aa35ac60c332d08138f4a05069b">fv</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespacecam_1_1nc_1_1winpc_1a2e77a0444791e79b05bd93c52415f31e"/><section>
+    <title>calc_feedrate_hv()</title>
+<indexterm><primary>calc_feedrate_hv</primary><secondary>cam.nc.winpc</secondary></indexterm>
+<indexterm><primary>cam.nc.winpc</primary><secondary>calc_feedrate_hv</secondary></indexterm>
+<para><computeroutput>cam.nc.winpc.calc_feedrate_hv ( self,  h,  v)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1winpc_1a90be9ecebc890626f0b00c063cbfb849"/><section>
+    <title>close_log_file()</title>
+<indexterm><primary>close_log_file</primary><secondary>cam.nc.winpc</secondary></indexterm>
+<indexterm><primary>cam.nc.winpc</primary><secondary>close_log_file</secondary></indexterm>
+<para><computeroutput>cam.nc.winpc.close_log_file ( self)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1winpc_1a24d8e80034ee64b05f67c7cfbc927661"/><section>
+    <title>feedrate()</title>
+<indexterm><primary>feedrate</primary><secondary>cam.nc.winpc</secondary></indexterm>
+<indexterm><primary>cam.nc.winpc</primary><secondary>feedrate</secondary></indexterm>
+<para><computeroutput>cam.nc.winpc.feedrate ( self,  f)</computeroutput></para><para>
+
+<para>Rates + Modes. </para>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1nc_1_1winpc_1afbefd0187dc60bf9753f65074a388e2a"/><section>
+    <title>feedrate_hv()</title>
+<indexterm><primary>feedrate_hv</primary><secondary>cam.nc.winpc</secondary></indexterm>
+<indexterm><primary>cam.nc.winpc</primary><secondary>feedrate_hv</secondary></indexterm>
+<para><computeroutput>cam.nc.winpc.feedrate_hv ( self,  fh,  fv)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1winpc_1ad2bc7d90c71c5a768f151d61d8cfe965"/><section>
+    <title>log_coordinate()</title>
+<indexterm><primary>log_coordinate</primary><secondary>cam.nc.winpc</secondary></indexterm>
+<indexterm><primary>cam.nc.winpc</primary><secondary>log_coordinate</secondary></indexterm>
+<para><computeroutput>cam.nc.winpc.log_coordinate ( self,  x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1winpc_1acc14e6e00c283bb3ea6b6aee040e431b"/><section>
+    <title>log_message()</title>
+<indexterm><primary>log_message</primary><secondary>cam.nc.winpc</secondary></indexterm>
+<indexterm><primary>cam.nc.winpc</primary><secondary>log_message</secondary></indexterm>
+<para><computeroutput>cam.nc.winpc.log_message ( self,  message = <computeroutput>None</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1winpc_1aa2e3de74311666759d5bdb4f07559d44"/><section>
+    <title>open_log_file()</title>
+<indexterm><primary>open_log_file</primary><secondary>cam.nc.winpc</secondary></indexterm>
+<indexterm><primary>cam.nc.winpc</primary><secondary>open_log_file</secondary></indexterm>
+<para><computeroutput>cam.nc.winpc.open_log_file ( self,  xml_file_name = <computeroutput>None</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1winpc_1a4e51d41c29417cdc8a93b8645c61c01f"/><section>
+    <title>report_probe_results()</title>
+<indexterm><primary>report_probe_results</primary><secondary>cam.nc.winpc</secondary></indexterm>
+<indexterm><primary>cam.nc.winpc</primary><secondary>report_probe_results</secondary></indexterm>
+<para><computeroutput>cam.nc.winpc.report_probe_results ( self,  x1 = <computeroutput>None</computeroutput>
+,  y1 = <computeroutput>None</computeroutput>
+,  z1 = <computeroutput>None</computeroutput>
+,  x2 = <computeroutput>None</computeroutput>
+,  y2 = <computeroutput>None</computeroutput>
+,  z2 = <computeroutput>None</computeroutput>
+,  x3 = <computeroutput>None</computeroutput>
+,  y3 = <computeroutput>None</computeroutput>
+,  z3 = <computeroutput>None</computeroutput>
+,  x4 = <computeroutput>None</computeroutput>
+,  y4 = <computeroutput>None</computeroutput>
+,  z4 = <computeroutput>None</computeroutput>
+,  x5 = <computeroutput>None</computeroutput>
+,  y5 = <computeroutput>None</computeroutput>
+,  z5 = <computeroutput>None</computeroutput>
+,  x6 = <computeroutput>None</computeroutput>
+,  y6 = <computeroutput>None</computeroutput>
+,  z6 = <computeroutput>None</computeroutput>
+,  xml_file_name = <computeroutput>None</computeroutput>
+)</computeroutput></para><para>
+
+<para>Probe routines. </para>
+</para>
+</section>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespacecam_1_1nc_1_1winpc_1a1fd78efb9daf90de767aa18064ea1688"/><section>
+    <title>creator</title>
+<indexterm><primary>creator</primary><secondary>cam.nc.winpc</secondary></indexterm>
+<indexterm><primary>cam.nc.winpc</primary><secondary>creator</secondary></indexterm>
+<para><computeroutput>cam.nc.winpc.creator</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1winpc_1a53c46df3965f95fbd13c3d1a28f63612"/><section>
+    <title>fh</title>
+<indexterm><primary>fh</primary><secondary>cam.nc.winpc</secondary></indexterm>
+<indexterm><primary>cam.nc.winpc</primary><secondary>fh</secondary></indexterm>
+<para><computeroutput>cam.nc.winpc.fh</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1winpc_1ad68508c7ef0e7948c943840419ec8ec2"/><section>
+    <title>fhv</title>
+<indexterm><primary>fhv</primary><secondary>cam.nc.winpc</secondary></indexterm>
+<indexterm><primary>cam.nc.winpc</primary><secondary>fhv</secondary></indexterm>
+<para><computeroutput>cam.nc.winpc.fhv</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1winpc_1aa61a3aa35ac60c332d08138f4a05069b"/><section>
+    <title>fv</title>
+<indexterm><primary>fv</primary><secondary>cam.nc.winpc</secondary></indexterm>
+<indexterm><primary>cam.nc.winpc</primary><secondary>fv</secondary></indexterm>
+<para><computeroutput>cam.nc.winpc.fv</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1winpc_1a245aaa8128f9ccb45b3701bbd46a5132"/><section>
+    <title>now</title>
+<indexterm><primary>now</primary><secondary>cam.nc.winpc</secondary></indexterm>
+<indexterm><primary>cam.nc.winpc</primary><secondary>now</secondary></indexterm>
+<para><computeroutput>cam.nc.winpc.now = datetime.datetime.now()</computeroutput></para></section>
+</section>
+</section>

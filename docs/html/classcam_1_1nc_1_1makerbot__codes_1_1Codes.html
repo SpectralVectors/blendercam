@@ -1,0 +1,2398 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>blendercam: cam.nc.makerbot_codes.Codes Class Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">blendercam
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part --><!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('classcam_1_1nc_1_1makerbot__codes_1_1Codes.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classcam_1_1nc_1_1makerbot__codes_1_1Codes-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">cam.nc.makerbot_codes.Codes Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="makerbot__codes_8py.html">makerbot_codes.py</a>  
+ <a href="#details">More...</a></p>
+<div class="dynheader">
+Collaboration diagram for cam.nc.makerbot_codes.Codes:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes__coll__graph.svg" width="227" height="276"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a497077e0e500cc8f419b8f3f61f008b4" id="r_a497077e0e500cc8f419b8f3f61f008b4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a497077e0e500cc8f419b8f3f61f008b4">SPACE</a> (self)</td></tr>
+<tr class="separator:a497077e0e500cc8f419b8f3f61f008b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06b7edd6dd5fa5856d501f25e01bc362" id="r_a06b7edd6dd5fa5856d501f25e01bc362"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06b7edd6dd5fa5856d501f25e01bc362">FORMAT_FEEDRATE</a> (self)</td></tr>
+<tr class="separator:a06b7edd6dd5fa5856d501f25e01bc362"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc7b432c3ad49dc3b29f800109e56a62" id="r_afc7b432c3ad49dc3b29f800109e56a62"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc7b432c3ad49dc3b29f800109e56a62">FORMAT_IN</a> (self)</td></tr>
+<tr class="separator:afc7b432c3ad49dc3b29f800109e56a62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a351a0dd880f2f1d34946b0206bc02077" id="r_a351a0dd880f2f1d34946b0206bc02077"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a351a0dd880f2f1d34946b0206bc02077">FORMAT_MM</a> (self)</td></tr>
+<tr class="separator:a351a0dd880f2f1d34946b0206bc02077"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6226c59099e944c1681836f697f871f" id="r_ad6226c59099e944c1681836f697f871f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6226c59099e944c1681836f697f871f">FORMAT_ANG</a> (self)</td></tr>
+<tr class="separator:ad6226c59099e944c1681836f697f871f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae980555080c1c2e305d037b43e56f68e" id="r_ae980555080c1c2e305d037b43e56f68e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae980555080c1c2e305d037b43e56f68e">FORMAT_TIME</a> (self)</td></tr>
+<tr class="separator:ae980555080c1c2e305d037b43e56f68e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4644301a3a02f68d8129074675400d2" id="r_ad4644301a3a02f68d8129074675400d2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4644301a3a02f68d8129074675400d2">FORMAT_DWELL</a> (self)</td></tr>
+<tr class="separator:ad4644301a3a02f68d8129074675400d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae47b3cf0c2cb47c66882055d656de521" id="r_ae47b3cf0c2cb47c66882055d656de521"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae47b3cf0c2cb47c66882055d656de521">BLOCK</a> (self)</td></tr>
+<tr class="separator:ae47b3cf0c2cb47c66882055d656de521"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b7d4923fea5d92064ba65e60074474e" id="r_a0b7d4923fea5d92064ba65e60074474e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b7d4923fea5d92064ba65e60074474e">COMMENT</a> (self, comment)</td></tr>
+<tr class="separator:a0b7d4923fea5d92064ba65e60074474e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55b7873fe223a5265274842df1167604" id="r_a55b7873fe223a5265274842df1167604"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55b7873fe223a5265274842df1167604">VARIABLE</a> (self)</td></tr>
+<tr class="separator:a55b7873fe223a5265274842df1167604"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c6db69ddf2182c0af0443cfc1ae61f0" id="r_a9c6db69ddf2182c0af0443cfc1ae61f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c6db69ddf2182c0af0443cfc1ae61f0">VARIABLE_SET</a> (self)</td></tr>
+<tr class="separator:a9c6db69ddf2182c0af0443cfc1ae61f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ef6bee01de125549a428833fd3bdc95" id="r_a2ef6bee01de125549a428833fd3bdc95"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ef6bee01de125549a428833fd3bdc95">PROGRAM</a> (self)</td></tr>
+<tr class="separator:a2ef6bee01de125549a428833fd3bdc95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84aafa8d86e1a826e6ce2677d0d63727" id="r_a84aafa8d86e1a826e6ce2677d0d63727"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84aafa8d86e1a826e6ce2677d0d63727">PROGRAM_END</a> (self)</td></tr>
+<tr class="separator:a84aafa8d86e1a826e6ce2677d0d63727"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a5aac98aa6fe6908e2bc5ea989b9298" id="r_a4a5aac98aa6fe6908e2bc5ea989b9298"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a5aac98aa6fe6908e2bc5ea989b9298">SUBPROG_CALL</a> (self)</td></tr>
+<tr class="separator:a4a5aac98aa6fe6908e2bc5ea989b9298"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a604a36f406e8f9420e1c0f46a852eb13" id="r_a604a36f406e8f9420e1c0f46a852eb13"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a604a36f406e8f9420e1c0f46a852eb13">SUBPROG_END</a> (self)</td></tr>
+<tr class="separator:a604a36f406e8f9420e1c0f46a852eb13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70e315ef48856297645b6debcbb55548" id="r_a70e315ef48856297645b6debcbb55548"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70e315ef48856297645b6debcbb55548">STOP_OPTIONAL</a> (self)</td></tr>
+<tr class="separator:a70e315ef48856297645b6debcbb55548"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a339effba69001baa0d6f1c7d82ad1214" id="r_a339effba69001baa0d6f1c7d82ad1214"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a339effba69001baa0d6f1c7d82ad1214">STOP</a> (self)</td></tr>
+<tr class="separator:a339effba69001baa0d6f1c7d82ad1214"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a606d80dcb9d15a6509a94edecdcafa22" id="r_a606d80dcb9d15a6509a94edecdcafa22"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a606d80dcb9d15a6509a94edecdcafa22">IMPERIAL</a> (self)</td></tr>
+<tr class="separator:a606d80dcb9d15a6509a94edecdcafa22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48d1897aa3601bdb99ca74fda67b6c52" id="r_a48d1897aa3601bdb99ca74fda67b6c52"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48d1897aa3601bdb99ca74fda67b6c52">METRIC</a> (self)</td></tr>
+<tr class="separator:a48d1897aa3601bdb99ca74fda67b6c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a314dcd2df274278e0a8477ea2bfb65e2" id="r_a314dcd2df274278e0a8477ea2bfb65e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a314dcd2df274278e0a8477ea2bfb65e2">ABSOLUTE</a> (self)</td></tr>
+<tr class="separator:a314dcd2df274278e0a8477ea2bfb65e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad05099ecbf36a95d1e9215fa06343083" id="r_ad05099ecbf36a95d1e9215fa06343083"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad05099ecbf36a95d1e9215fa06343083">INCREMENTAL</a> (self)</td></tr>
+<tr class="separator:ad05099ecbf36a95d1e9215fa06343083"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e28b767e1a820438a01440206e9fb6d" id="r_a3e28b767e1a820438a01440206e9fb6d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e28b767e1a820438a01440206e9fb6d">SET_TEMPORARY_COORDINATE_SYSTEM</a> (self)</td></tr>
+<tr class="separator:a3e28b767e1a820438a01440206e9fb6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf0e4de0e679428b138cd19b60aca8fc" id="r_adf0e4de0e679428b138cd19b60aca8fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf0e4de0e679428b138cd19b60aca8fc">REMOVE_TEMPORARY_COORDINATE_SYSTEM</a> (self)</td></tr>
+<tr class="separator:adf0e4de0e679428b138cd19b60aca8fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a759a3734dbd03221294b47bf757cad72" id="r_a759a3734dbd03221294b47bf757cad72"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a759a3734dbd03221294b47bf757cad72">POLAR_ON</a> (self)</td></tr>
+<tr class="separator:a759a3734dbd03221294b47bf757cad72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b86939a1ef78cc4a6bb0cfb955d7376" id="r_a2b86939a1ef78cc4a6bb0cfb955d7376"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b86939a1ef78cc4a6bb0cfb955d7376">POLAR_OFF</a> (self)</td></tr>
+<tr class="separator:a2b86939a1ef78cc4a6bb0cfb955d7376"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53c809dd39db31a4074e490ca9eaf824" id="r_a53c809dd39db31a4074e490ca9eaf824"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53c809dd39db31a4074e490ca9eaf824">PLANE_XY</a> (self)</td></tr>
+<tr class="separator:a53c809dd39db31a4074e490ca9eaf824"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4f88ed379ec35ba15330a572e670f3d" id="r_ad4f88ed379ec35ba15330a572e670f3d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4f88ed379ec35ba15330a572e670f3d">PLANE_XZ</a> (self)</td></tr>
+<tr class="separator:ad4f88ed379ec35ba15330a572e670f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fedce9ceb928ffc86620d3c273d652c" id="r_a0fedce9ceb928ffc86620d3c273d652c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0fedce9ceb928ffc86620d3c273d652c">PLANE_YZ</a> (self)</td></tr>
+<tr class="separator:a0fedce9ceb928ffc86620d3c273d652c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3e7ef50eabcb35110ee18b835785736" id="r_ad3e7ef50eabcb35110ee18b835785736"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3e7ef50eabcb35110ee18b835785736">TOOL</a> (self)</td></tr>
+<tr class="separator:ad3e7ef50eabcb35110ee18b835785736"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab22b9b33e6fcb75337e30bb8155e45a9" id="r_ab22b9b33e6fcb75337e30bb8155e45a9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab22b9b33e6fcb75337e30bb8155e45a9">TOOL_DEFINITION</a> (self)</td></tr>
+<tr class="separator:ab22b9b33e6fcb75337e30bb8155e45a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9ee4781020d355397093563966747f2" id="r_af9ee4781020d355397093563966747f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9ee4781020d355397093563966747f2">WORKPLANE</a> (self)</td></tr>
+<tr class="separator:af9ee4781020d355397093563966747f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa55ea50066c308715e6915d6fc91a6e2" id="r_aa55ea50066c308715e6915d6fc91a6e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa55ea50066c308715e6915d6fc91a6e2">WORKPLANE_BASE</a> (self)</td></tr>
+<tr class="separator:aa55ea50066c308715e6915d6fc91a6e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b43e66a4f06c90ea11a032b857950d5" id="r_a7b43e66a4f06c90ea11a032b857950d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b43e66a4f06c90ea11a032b857950d5">FEEDRATE</a> (self)</td></tr>
+<tr class="separator:a7b43e66a4f06c90ea11a032b857950d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a778bcba6e28aa838972d953afe798eb9" id="r_a778bcba6e28aa838972d953afe798eb9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a778bcba6e28aa838972d953afe798eb9">SPINDLE</a> (self, format, speed)</td></tr>
+<tr class="separator:a778bcba6e28aa838972d953afe798eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa44d414cfc2fa1c1e5a6b69616399b37" id="r_aa44d414cfc2fa1c1e5a6b69616399b37"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa44d414cfc2fa1c1e5a6b69616399b37">SPINDLE_CW</a> (self)</td></tr>
+<tr class="separator:aa44d414cfc2fa1c1e5a6b69616399b37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6f2eeec672be66886aee3a9e329205c" id="r_aa6f2eeec672be66886aee3a9e329205c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa6f2eeec672be66886aee3a9e329205c">SPINDLE_CCW</a> (self)</td></tr>
+<tr class="separator:aa6f2eeec672be66886aee3a9e329205c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9df651139692e059e028f129af21a5dd" id="r_a9df651139692e059e028f129af21a5dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9df651139692e059e028f129af21a5dd">COOLANT_OFF</a> (self)</td></tr>
+<tr class="separator:a9df651139692e059e028f129af21a5dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fce543d04c38ec1bcab7750b7bff72d" id="r_a8fce543d04c38ec1bcab7750b7bff72d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8fce543d04c38ec1bcab7750b7bff72d">COOLANT_MIST</a> (self)</td></tr>
+<tr class="separator:a8fce543d04c38ec1bcab7750b7bff72d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93e561bc6c58d982f13b40dba57babb4" id="r_a93e561bc6c58d982f13b40dba57babb4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93e561bc6c58d982f13b40dba57babb4">COOLANT_FLOOD</a> (self)</td></tr>
+<tr class="separator:a93e561bc6c58d982f13b40dba57babb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a138079d9303ad971219268bf2a89b142" id="r_a138079d9303ad971219268bf2a89b142"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a138079d9303ad971219268bf2a89b142">GEAR_OFF</a> (self)</td></tr>
+<tr class="separator:a138079d9303ad971219268bf2a89b142"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5345cca8f87bf24329f1c78494cf66de" id="r_a5345cca8f87bf24329f1c78494cf66de"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5345cca8f87bf24329f1c78494cf66de">GEAR</a> (self)</td></tr>
+<tr class="separator:a5345cca8f87bf24329f1c78494cf66de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae14614a7cee013a2cbdb8eba832cb64a" id="r_ae14614a7cee013a2cbdb8eba832cb64a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae14614a7cee013a2cbdb8eba832cb64a">GEAR_BASE</a> (self)</td></tr>
+<tr class="separator:ae14614a7cee013a2cbdb8eba832cb64a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a815508af4a3c0c45b9c03dd2ce9f0f40" id="r_a815508af4a3c0c45b9c03dd2ce9f0f40"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a815508af4a3c0c45b9c03dd2ce9f0f40">RAPID</a> (self)</td></tr>
+<tr class="separator:a815508af4a3c0c45b9c03dd2ce9f0f40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ac261f0e9add782797b3cdbc7d531ae" id="r_a5ac261f0e9add782797b3cdbc7d531ae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ac261f0e9add782797b3cdbc7d531ae">FEED</a> (self)</td></tr>
+<tr class="separator:a5ac261f0e9add782797b3cdbc7d531ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef6476c951a248126f0e623e8f6f3128" id="r_aef6476c951a248126f0e623e8f6f3128"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef6476c951a248126f0e623e8f6f3128">ARC_CW</a> (self)</td></tr>
+<tr class="separator:aef6476c951a248126f0e623e8f6f3128"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1a1fdca67cda6936aa0e07ac85763ec" id="r_ae1a1fdca67cda6936aa0e07ac85763ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1a1fdca67cda6936aa0e07ac85763ec">ARC_CCW</a> (self)</td></tr>
+<tr class="separator:ae1a1fdca67cda6936aa0e07ac85763ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1efc5e111136062a763b9ab9873bbafe" id="r_a1efc5e111136062a763b9ab9873bbafe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1efc5e111136062a763b9ab9873bbafe">DWELL</a> (self)</td></tr>
+<tr class="separator:a1efc5e111136062a763b9ab9873bbafe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a007c1d90daedbe0baa85c975f6d221e6" id="r_a007c1d90daedbe0baa85c975f6d221e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a007c1d90daedbe0baa85c975f6d221e6">DRILL</a> (self)</td></tr>
+<tr class="separator:a007c1d90daedbe0baa85c975f6d221e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a554b9566b5263535d088d589dc6dffca" id="r_a554b9566b5263535d088d589dc6dffca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a554b9566b5263535d088d589dc6dffca">DRILL_WITH_DWELL</a> (self, format, dwell)</td></tr>
+<tr class="separator:a554b9566b5263535d088d589dc6dffca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa240f4de9b8b68ed11a2c67a624bb900" id="r_aa240f4de9b8b68ed11a2c67a624bb900"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa240f4de9b8b68ed11a2c67a624bb900">PECK_DRILL</a> (self)</td></tr>
+<tr class="separator:aa240f4de9b8b68ed11a2c67a624bb900"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea1f2f5d966736fd066b8e492a57f5e9" id="r_aea1f2f5d966736fd066b8e492a57f5e9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea1f2f5d966736fd066b8e492a57f5e9">PECK_DEPTH</a> (self, format, depth)</td></tr>
+<tr class="separator:aea1f2f5d966736fd066b8e492a57f5e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e6aaeacab386c604eb60cd7171fe845" id="r_a9e6aaeacab386c604eb60cd7171fe845"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e6aaeacab386c604eb60cd7171fe845">RETRACT</a> (self, format, height)</td></tr>
+<tr class="separator:a9e6aaeacab386c604eb60cd7171fe845"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ef00ea47fbb8cc91250ccab45a9047d" id="r_a6ef00ea47fbb8cc91250ccab45a9047d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ef00ea47fbb8cc91250ccab45a9047d">END_CANNED_CYCLE</a> (self)</td></tr>
+<tr class="separator:a6ef00ea47fbb8cc91250ccab45a9047d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b10ac4ed70caaec1852ee295ac75cf5" id="r_a2b10ac4ed70caaec1852ee295ac75cf5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b10ac4ed70caaec1852ee295ac75cf5">X</a> (self)</td></tr>
+<tr class="separator:a2b10ac4ed70caaec1852ee295ac75cf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42aa4047d1d3b9167abcf20ee2cdf33f" id="r_a42aa4047d1d3b9167abcf20ee2cdf33f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42aa4047d1d3b9167abcf20ee2cdf33f">Y</a> (self)</td></tr>
+<tr class="separator:a42aa4047d1d3b9167abcf20ee2cdf33f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1410b9e3435455e10403d0b26b0cf67" id="r_ae1410b9e3435455e10403d0b26b0cf67"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1410b9e3435455e10403d0b26b0cf67">Z</a> (self)</td></tr>
+<tr class="separator:ae1410b9e3435455e10403d0b26b0cf67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e0b1adc11273073430b304306796667" id="r_a9e0b1adc11273073430b304306796667"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e0b1adc11273073430b304306796667">A</a> (self)</td></tr>
+<tr class="separator:a9e0b1adc11273073430b304306796667"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a914f87d69a92cbc6865cc221b0b21c36" id="r_a914f87d69a92cbc6865cc221b0b21c36"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a914f87d69a92cbc6865cc221b0b21c36">B</a> (self)</td></tr>
+<tr class="separator:a914f87d69a92cbc6865cc221b0b21c36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58f260177c05720983578bd950c7c56d" id="r_a58f260177c05720983578bd950c7c56d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58f260177c05720983578bd950c7c56d">C</a> (self)</td></tr>
+<tr class="separator:a58f260177c05720983578bd950c7c56d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ca54859cc966192553c6c5e7dc128f5" id="r_a9ca54859cc966192553c6c5e7dc128f5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ca54859cc966192553c6c5e7dc128f5">CENTRE_X</a> (self)</td></tr>
+<tr class="separator:a9ca54859cc966192553c6c5e7dc128f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72107ee6d618fa1dd4615a86e6f6bd14" id="r_a72107ee6d618fa1dd4615a86e6f6bd14"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72107ee6d618fa1dd4615a86e6f6bd14">CENTRE_Y</a> (self)</td></tr>
+<tr class="separator:a72107ee6d618fa1dd4615a86e6f6bd14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7403d86e07e671ccac7c79840c2c7ba1" id="r_a7403d86e07e671ccac7c79840c2c7ba1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7403d86e07e671ccac7c79840c2c7ba1">CENTRE_Z</a> (self)</td></tr>
+<tr class="separator:a7403d86e07e671ccac7c79840c2c7ba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ac978ca8609e6d5df33a285fa612bfe" id="r_a3ac978ca8609e6d5df33a285fa612bfe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ac978ca8609e6d5df33a285fa612bfe">RADIUS</a> (self)</td></tr>
+<tr class="separator:a3ac978ca8609e6d5df33a285fa612bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56a65aaa39338c37d13253c4daa353be" id="r_a56a65aaa39338c37d13253c4daa353be"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56a65aaa39338c37d13253c4daa353be">TIME</a> (self)</td></tr>
+<tr class="separator:a56a65aaa39338c37d13253c4daa353be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4283eb6c45aa049956527f9e7d3cb077" id="r_a4283eb6c45aa049956527f9e7d3cb077"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4283eb6c45aa049956527f9e7d3cb077">PROBE_TOWARDS_WITH_SIGNAL</a> (self)</td></tr>
+<tr class="separator:a4283eb6c45aa049956527f9e7d3cb077"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac747132b73161faa7e1a8dc3ebaf95be" id="r_ac747132b73161faa7e1a8dc3ebaf95be"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac747132b73161faa7e1a8dc3ebaf95be">PROBE_TOWARDS_WITHOUT_SIGNAL</a> (self)</td></tr>
+<tr class="separator:ac747132b73161faa7e1a8dc3ebaf95be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1d39e2caaa4ddd4c3be64de53632b49" id="r_af1d39e2caaa4ddd4c3be64de53632b49"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1d39e2caaa4ddd4c3be64de53632b49">PROBE_AWAY_WITH_SIGNAL</a> (self)</td></tr>
+<tr class="separator:af1d39e2caaa4ddd4c3be64de53632b49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1f9a43224119e485c5a570489d2eb72" id="r_aa1f9a43224119e485c5a570489d2eb72"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1f9a43224119e485c5a570489d2eb72">PROBE_AWAY_WITHOUT_SIGNAL</a> (self)</td></tr>
+<tr class="separator:aa1f9a43224119e485c5a570489d2eb72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eee078a4a7a1b1d7917873f26eda43d" id="r_a4eee078a4a7a1b1d7917873f26eda43d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4eee078a4a7a1b1d7917873f26eda43d">MACHINE_COORDINATES</a> (self)</td></tr>
+<tr class="separator:a4eee078a4a7a1b1d7917873f26eda43d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e42ac075072592b0beaf868c2df9427" id="r_a3e42ac075072592b0beaf868c2df9427"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e42ac075072592b0beaf868c2df9427">EXTRUDER_ON</a> (self)</td></tr>
+<tr class="separator:a3e42ac075072592b0beaf868c2df9427"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03765d08761774d3269a81d9996806f2" id="r_a03765d08761774d3269a81d9996806f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03765d08761774d3269a81d9996806f2">EXTRUDER_OFF</a> (self)</td></tr>
+<tr class="separator:a03765d08761774d3269a81d9996806f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec304e95d3f10abbe545149d1f914fe3" id="r_aec304e95d3f10abbe545149d1f914fe3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec304e95d3f10abbe545149d1f914fe3">EXTRUDER_TEMP</a> (self, degree_celsius)</td></tr>
+<tr class="separator:aec304e95d3f10abbe545149d1f914fe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad10e8f93f5010e2a10a96a6174b6ad7" id="r_aad10e8f93f5010e2a10a96a6174b6ad7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad10e8f93f5010e2a10a96a6174b6ad7">EXTRUDER_TEMP_WAIT</a> (self, degree_celsius)</td></tr>
+<tr class="separator:aad10e8f93f5010e2a10a96a6174b6ad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8062b6da058d81f1465a4ee8c462fbd0" id="r_a8062b6da058d81f1465a4ee8c462fbd0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8062b6da058d81f1465a4ee8c462fbd0">READ_EXTRUDER_TEMP</a> (self)</td></tr>
+<tr class="separator:a8062b6da058d81f1465a4ee8c462fbd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a496f9b3b0704051ad48b2e7cdad7f075" id="r_a496f9b3b0704051ad48b2e7cdad7f075"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a496f9b3b0704051ad48b2e7cdad7f075">EXTRUDER_SPEED_PWM</a> (self, speed_in_PWM)</td></tr>
+<tr class="separator:a496f9b3b0704051ad48b2e7cdad7f075"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1a2b6bd36aa06827e77fdb55c5ff8fb" id="r_ae1a2b6bd36aa06827e77fdb55c5ff8fb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1a2b6bd36aa06827e77fdb55c5ff8fb">EXTRUDER_SPEED_RPM</a> (self, speed_in_RPM)</td></tr>
+<tr class="separator:ae1a2b6bd36aa06827e77fdb55c5ff8fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab365cad523971a220cc52726196c174a" id="r_ab365cad523971a220cc52726196c174a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab365cad523971a220cc52726196c174a">STEPPERS_OFF</a> (self)</td></tr>
+<tr class="separator:ab365cad523971a220cc52726196c174a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f7c26ba52600b95938b4a35e25a9a7f" id="r_a4f7c26ba52600b95938b4a35e25a9a7f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f7c26ba52600b95938b4a35e25a9a7f">ALL_WAIT</a> (self)</td></tr>
+<tr class="separator:a4f7c26ba52600b95938b4a35e25a9a7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b22689672cd0c242b27ae0a766b654f" id="r_a0b22689672cd0c242b27ae0a766b654f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b22689672cd0c242b27ae0a766b654f">FAN_ON</a> (self)</td></tr>
+<tr class="separator:a0b22689672cd0c242b27ae0a766b654f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a702fffdcc4bebc3c318028317ddc91" id="r_a3a702fffdcc4bebc3c318028317ddc91"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a702fffdcc4bebc3c318028317ddc91">FAN_OFF</a> (self)</td></tr>
+<tr class="separator:a3a702fffdcc4bebc3c318028317ddc91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf7241f362283abe9d64093f1ff370b1" id="r_acf7241f362283abe9d64093f1ff370b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf7241f362283abe9d64093f1ff370b1">VALVE_OPEN</a> (self, delay)</td></tr>
+<tr class="separator:acf7241f362283abe9d64093f1ff370b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a478a7146a451ead8e8af6250d099736b" id="r_a478a7146a451ead8e8af6250d099736b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a478a7146a451ead8e8af6250d099736b">VALVE_CLOSE</a> (self, delay)</td></tr>
+<tr class="separator:a478a7146a451ead8e8af6250d099736b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fe721fd21e9831717de29e7c5659620" id="r_a6fe721fd21e9831717de29e7c5659620"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6fe721fd21e9831717de29e7c5659620">BUILD_BED_TEMP</a> (self, degree_celsius)</td></tr>
+<tr class="separator:a6fe721fd21e9831717de29e7c5659620"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f662d07dd28fee7b273e7fa9768925c" id="r_a3f662d07dd28fee7b273e7fa9768925c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f662d07dd28fee7b273e7fa9768925c">BED_HOLDING_PRESSURE</a> (self, pressure)</td></tr>
+<tr class="separator:a3f662d07dd28fee7b273e7fa9768925c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a2e51c1c37fd8044388fc913d6e100c" id="r_a8a2e51c1c37fd8044388fc913d6e100c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a2e51c1c37fd8044388fc913d6e100c">CHAMBER_TEMP</a> (self, degree_celsius)</td></tr>
+<tr class="separator:a8a2e51c1c37fd8044388fc913d6e100c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="makerbot__codes_8py.html">makerbot_codes.py</a> </p>
+<p>a lot like <a class="el" href="iso__codes_8py.html">iso_codes.py</a> but with reprap/makerbot specific M codes.</p>
+<p>Brad Collette, 12th Sept 2010</p>
+<p>Many of these codes have nothing to do with reprap/additive machining but are left here in anticipation of future hybrid machines. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9e0b1adc11273073430b304306796667" name="a9e0b1adc11273073430b304306796667"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e0b1adc11273073430b304306796667">&#9670;&#160;</a></span>A()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.A </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a9e0b1adc11273073430b304306796667_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a9e0b1adc11273073430b304306796667_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a314dcd2df274278e0a8477ea2bfb65e2" name="a314dcd2df274278e0a8477ea2bfb65e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a314dcd2df274278e0a8477ea2bfb65e2">&#9670;&#160;</a></span>ABSOLUTE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.ABSOLUTE </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a314dcd2df274278e0a8477ea2bfb65e2_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a314dcd2df274278e0a8477ea2bfb65e2_icgraph.svg" width="100%" height="450"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a4f7c26ba52600b95938b4a35e25a9a7f" name="a4f7c26ba52600b95938b4a35e25a9a7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f7c26ba52600b95938b4a35e25a9a7f">&#9670;&#160;</a></span>ALL_WAIT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.ALL_WAIT </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a4f7c26ba52600b95938b4a35e25a9a7f_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="ae1a1fdca67cda6936aa0e07ac85763ec" name="ae1a1fdca67cda6936aa0e07ac85763ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1a1fdca67cda6936aa0e07ac85763ec">&#9670;&#160;</a></span>ARC_CCW()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.ARC_CCW </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_ae1a1fdca67cda6936aa0e07ac85763ec_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="aef6476c951a248126f0e623e8f6f3128" name="aef6476c951a248126f0e623e8f6f3128"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef6476c951a248126f0e623e8f6f3128">&#9670;&#160;</a></span>ARC_CW()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.ARC_CW </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_aef6476c951a248126f0e623e8f6f3128_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a914f87d69a92cbc6865cc221b0b21c36" name="a914f87d69a92cbc6865cc221b0b21c36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a914f87d69a92cbc6865cc221b0b21c36">&#9670;&#160;</a></span>B()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.B </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a914f87d69a92cbc6865cc221b0b21c36_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a914f87d69a92cbc6865cc221b0b21c36_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a3f662d07dd28fee7b273e7fa9768925c" name="a3f662d07dd28fee7b273e7fa9768925c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f662d07dd28fee7b273e7fa9768925c">&#9670;&#160;</a></span>BED_HOLDING_PRESSURE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.BED_HOLDING_PRESSURE </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>pressure</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae47b3cf0c2cb47c66882055d656de521" name="ae47b3cf0c2cb47c66882055d656de521"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae47b3cf0c2cb47c66882055d656de521">&#9670;&#160;</a></span>BLOCK()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.BLOCK </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_ae47b3cf0c2cb47c66882055d656de521_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_ae47b3cf0c2cb47c66882055d656de521_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a6fe721fd21e9831717de29e7c5659620" name="a6fe721fd21e9831717de29e7c5659620"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fe721fd21e9831717de29e7c5659620">&#9670;&#160;</a></span>BUILD_BED_TEMP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.BUILD_BED_TEMP </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>degree_celsius</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a58f260177c05720983578bd950c7c56d" name="a58f260177c05720983578bd950c7c56d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58f260177c05720983578bd950c7c56d">&#9670;&#160;</a></span>C()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.C </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a58f260177c05720983578bd950c7c56d_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a58f260177c05720983578bd950c7c56d_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a9ca54859cc966192553c6c5e7dc128f5" name="a9ca54859cc966192553c6c5e7dc128f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ca54859cc966192553c6c5e7dc128f5">&#9670;&#160;</a></span>CENTRE_X()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.CENTRE_X </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a9ca54859cc966192553c6c5e7dc128f5_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a9ca54859cc966192553c6c5e7dc128f5_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a72107ee6d618fa1dd4615a86e6f6bd14" name="a72107ee6d618fa1dd4615a86e6f6bd14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72107ee6d618fa1dd4615a86e6f6bd14">&#9670;&#160;</a></span>CENTRE_Y()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.CENTRE_Y </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a72107ee6d618fa1dd4615a86e6f6bd14_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a72107ee6d618fa1dd4615a86e6f6bd14_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a7403d86e07e671ccac7c79840c2c7ba1" name="a7403d86e07e671ccac7c79840c2c7ba1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7403d86e07e671ccac7c79840c2c7ba1">&#9670;&#160;</a></span>CENTRE_Z()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.CENTRE_Z </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a7403d86e07e671ccac7c79840c2c7ba1_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a7403d86e07e671ccac7c79840c2c7ba1_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a8a2e51c1c37fd8044388fc913d6e100c" name="a8a2e51c1c37fd8044388fc913d6e100c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a2e51c1c37fd8044388fc913d6e100c">&#9670;&#160;</a></span>CHAMBER_TEMP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.CHAMBER_TEMP </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>degree_celsius</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0b7d4923fea5d92064ba65e60074474e" name="a0b7d4923fea5d92064ba65e60074474e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b7d4923fea5d92064ba65e60074474e">&#9670;&#160;</a></span>COMMENT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.COMMENT </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>comment</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a0b7d4923fea5d92064ba65e60074474e_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a93e561bc6c58d982f13b40dba57babb4" name="a93e561bc6c58d982f13b40dba57babb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93e561bc6c58d982f13b40dba57babb4">&#9670;&#160;</a></span>COOLANT_FLOOD()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.COOLANT_FLOOD </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a93e561bc6c58d982f13b40dba57babb4_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a93e561bc6c58d982f13b40dba57babb4_icgraph.svg" width="507" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a8fce543d04c38ec1bcab7750b7bff72d" name="a8fce543d04c38ec1bcab7750b7bff72d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fce543d04c38ec1bcab7750b7bff72d">&#9670;&#160;</a></span>COOLANT_MIST()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.COOLANT_MIST </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a8fce543d04c38ec1bcab7750b7bff72d_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a8fce543d04c38ec1bcab7750b7bff72d_icgraph.svg" width="507" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a9df651139692e059e028f129af21a5dd" name="a9df651139692e059e028f129af21a5dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9df651139692e059e028f129af21a5dd">&#9670;&#160;</a></span>COOLANT_OFF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.COOLANT_OFF </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a9df651139692e059e028f129af21a5dd_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a9df651139692e059e028f129af21a5dd_icgraph.svg" width="507" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a007c1d90daedbe0baa85c975f6d221e6" name="a007c1d90daedbe0baa85c975f6d221e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a007c1d90daedbe0baa85c975f6d221e6">&#9670;&#160;</a></span>DRILL()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.DRILL </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a007c1d90daedbe0baa85c975f6d221e6_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a007c1d90daedbe0baa85c975f6d221e6_icgraph.svg" width="100%" height="364"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a554b9566b5263535d088d589dc6dffca" name="a554b9566b5263535d088d589dc6dffca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a554b9566b5263535d088d589dc6dffca">&#9670;&#160;</a></span>DRILL_WITH_DWELL()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.DRILL_WITH_DWELL </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>format</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>dwell</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a554b9566b5263535d088d589dc6dffca_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a554b9566b5263535d088d589dc6dffca_icgraph.svg" width="100%" height="364"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a1efc5e111136062a763b9ab9873bbafe" name="a1efc5e111136062a763b9ab9873bbafe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1efc5e111136062a763b9ab9873bbafe">&#9670;&#160;</a></span>DWELL()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.DWELL </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a1efc5e111136062a763b9ab9873bbafe_icgraph.svg" width="100%" height="377"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a6ef00ea47fbb8cc91250ccab45a9047d" name="a6ef00ea47fbb8cc91250ccab45a9047d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ef00ea47fbb8cc91250ccab45a9047d">&#9670;&#160;</a></span>END_CANNED_CYCLE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.END_CANNED_CYCLE </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a6ef00ea47fbb8cc91250ccab45a9047d_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a6ef00ea47fbb8cc91250ccab45a9047d_icgraph.svg" width="500" height="115"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a03765d08761774d3269a81d9996806f2" name="a03765d08761774d3269a81d9996806f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03765d08761774d3269a81d9996806f2">&#9670;&#160;</a></span>EXTRUDER_OFF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.EXTRUDER_OFF </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3e42ac075072592b0beaf868c2df9427" name="a3e42ac075072592b0beaf868c2df9427"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e42ac075072592b0beaf868c2df9427">&#9670;&#160;</a></span>EXTRUDER_ON()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.EXTRUDER_ON </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a496f9b3b0704051ad48b2e7cdad7f075" name="a496f9b3b0704051ad48b2e7cdad7f075"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a496f9b3b0704051ad48b2e7cdad7f075">&#9670;&#160;</a></span>EXTRUDER_SPEED_PWM()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.EXTRUDER_SPEED_PWM </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>speed_in_PWM</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae1a2b6bd36aa06827e77fdb55c5ff8fb" name="ae1a2b6bd36aa06827e77fdb55c5ff8fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1a2b6bd36aa06827e77fdb55c5ff8fb">&#9670;&#160;</a></span>EXTRUDER_SPEED_RPM()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.EXTRUDER_SPEED_RPM </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>speed_in_RPM</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aec304e95d3f10abbe545149d1f914fe3" name="aec304e95d3f10abbe545149d1f914fe3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec304e95d3f10abbe545149d1f914fe3">&#9670;&#160;</a></span>EXTRUDER_TEMP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.EXTRUDER_TEMP </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>degree_celsius</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aad10e8f93f5010e2a10a96a6174b6ad7" name="aad10e8f93f5010e2a10a96a6174b6ad7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad10e8f93f5010e2a10a96a6174b6ad7">&#9670;&#160;</a></span>EXTRUDER_TEMP_WAIT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.EXTRUDER_TEMP_WAIT </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>degree_celsius</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3a702fffdcc4bebc3c318028317ddc91" name="a3a702fffdcc4bebc3c318028317ddc91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a702fffdcc4bebc3c318028317ddc91">&#9670;&#160;</a></span>FAN_OFF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.FAN_OFF </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a3a702fffdcc4bebc3c318028317ddc91_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a0b22689672cd0c242b27ae0a766b654f" name="a0b22689672cd0c242b27ae0a766b654f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b22689672cd0c242b27ae0a766b654f">&#9670;&#160;</a></span>FAN_ON()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.FAN_ON </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a0b22689672cd0c242b27ae0a766b654f_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a5ac261f0e9add782797b3cdbc7d531ae" name="a5ac261f0e9add782797b3cdbc7d531ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ac261f0e9add782797b3cdbc7d531ae">&#9670;&#160;</a></span>FEED()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.FEED </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a5ac261f0e9add782797b3cdbc7d531ae_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a7b43e66a4f06c90ea11a032b857950d5" name="a7b43e66a4f06c90ea11a032b857950d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b43e66a4f06c90ea11a032b857950d5">&#9670;&#160;</a></span>FEEDRATE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.FEEDRATE </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a7b43e66a4f06c90ea11a032b857950d5_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a7b43e66a4f06c90ea11a032b857950d5_icgraph.svg" width="496" height="243"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ad6226c59099e944c1681836f697f871f" name="ad6226c59099e944c1681836f697f871f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6226c59099e944c1681836f697f871f">&#9670;&#160;</a></span>FORMAT_ANG()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.FORMAT_ANG </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad4644301a3a02f68d8129074675400d2" name="ad4644301a3a02f68d8129074675400d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4644301a3a02f68d8129074675400d2">&#9670;&#160;</a></span>FORMAT_DWELL()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.FORMAT_DWELL </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_ad4644301a3a02f68d8129074675400d2_icgraph.svg" width="100%" height="364"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a06b7edd6dd5fa5856d501f25e01bc362" name="a06b7edd6dd5fa5856d501f25e01bc362"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06b7edd6dd5fa5856d501f25e01bc362">&#9670;&#160;</a></span>FORMAT_FEEDRATE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.FORMAT_FEEDRATE </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afc7b432c3ad49dc3b29f800109e56a62" name="afc7b432c3ad49dc3b29f800109e56a62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc7b432c3ad49dc3b29f800109e56a62">&#9670;&#160;</a></span>FORMAT_IN()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.FORMAT_IN </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a351a0dd880f2f1d34946b0206bc02077" name="a351a0dd880f2f1d34946b0206bc02077"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a351a0dd880f2f1d34946b0206bc02077">&#9670;&#160;</a></span>FORMAT_MM()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.FORMAT_MM </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae980555080c1c2e305d037b43e56f68e" name="ae980555080c1c2e305d037b43e56f68e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae980555080c1c2e305d037b43e56f68e">&#9670;&#160;</a></span>FORMAT_TIME()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.FORMAT_TIME </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_ae980555080c1c2e305d037b43e56f68e_icgraph.svg" width="100%" height="459"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a5345cca8f87bf24329f1c78494cf66de" name="a5345cca8f87bf24329f1c78494cf66de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5345cca8f87bf24329f1c78494cf66de">&#9670;&#160;</a></span>GEAR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.GEAR </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a5345cca8f87bf24329f1c78494cf66de_icgraph.svg" width="562" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ae14614a7cee013a2cbdb8eba832cb64a" name="ae14614a7cee013a2cbdb8eba832cb64a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae14614a7cee013a2cbdb8eba832cb64a">&#9670;&#160;</a></span>GEAR_BASE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.GEAR_BASE </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a138079d9303ad971219268bf2a89b142" name="a138079d9303ad971219268bf2a89b142"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a138079d9303ad971219268bf2a89b142">&#9670;&#160;</a></span>GEAR_OFF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.GEAR_OFF </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a138079d9303ad971219268bf2a89b142_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a138079d9303ad971219268bf2a89b142_icgraph.svg" width="526" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a606d80dcb9d15a6509a94edecdcafa22" name="a606d80dcb9d15a6509a94edecdcafa22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a606d80dcb9d15a6509a94edecdcafa22">&#9670;&#160;</a></span>IMPERIAL()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.IMPERIAL </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a606d80dcb9d15a6509a94edecdcafa22_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a606d80dcb9d15a6509a94edecdcafa22_icgraph.svg" width="100%" height="450"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="ad05099ecbf36a95d1e9215fa06343083" name="ad05099ecbf36a95d1e9215fa06343083"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad05099ecbf36a95d1e9215fa06343083">&#9670;&#160;</a></span>INCREMENTAL()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.INCREMENTAL </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_ad05099ecbf36a95d1e9215fa06343083_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_ad05099ecbf36a95d1e9215fa06343083_icgraph.svg" width="100%" height="487"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a4eee078a4a7a1b1d7917873f26eda43d" name="a4eee078a4a7a1b1d7917873f26eda43d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4eee078a4a7a1b1d7917873f26eda43d">&#9670;&#160;</a></span>MACHINE_COORDINATES()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.MACHINE_COORDINATES </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a4eee078a4a7a1b1d7917873f26eda43d_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a4eee078a4a7a1b1d7917873f26eda43d_icgraph.svg" width="534" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a48d1897aa3601bdb99ca74fda67b6c52" name="a48d1897aa3601bdb99ca74fda67b6c52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48d1897aa3601bdb99ca74fda67b6c52">&#9670;&#160;</a></span>METRIC()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.METRIC </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a48d1897aa3601bdb99ca74fda67b6c52_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a48d1897aa3601bdb99ca74fda67b6c52_icgraph.svg" width="570" height="315"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="aea1f2f5d966736fd066b8e492a57f5e9" name="aea1f2f5d966736fd066b8e492a57f5e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea1f2f5d966736fd066b8e492a57f5e9">&#9670;&#160;</a></span>PECK_DEPTH()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.PECK_DEPTH </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>format</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>depth</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_aea1f2f5d966736fd066b8e492a57f5e9_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_aea1f2f5d966736fd066b8e492a57f5e9_icgraph.svg" width="100%" height="364"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="aa240f4de9b8b68ed11a2c67a624bb900" name="aa240f4de9b8b68ed11a2c67a624bb900"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa240f4de9b8b68ed11a2c67a624bb900">&#9670;&#160;</a></span>PECK_DRILL()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.PECK_DRILL </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_aa240f4de9b8b68ed11a2c67a624bb900_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_aa240f4de9b8b68ed11a2c67a624bb900_icgraph.svg" width="100%" height="364"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a53c809dd39db31a4074e490ca9eaf824" name="a53c809dd39db31a4074e490ca9eaf824"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53c809dd39db31a4074e490ca9eaf824">&#9670;&#160;</a></span>PLANE_XY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.PLANE_XY </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a53c809dd39db31a4074e490ca9eaf824_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a53c809dd39db31a4074e490ca9eaf824_icgraph.svg" width="479" height="179"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ad4f88ed379ec35ba15330a572e670f3d" name="ad4f88ed379ec35ba15330a572e670f3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4f88ed379ec35ba15330a572e670f3d">&#9670;&#160;</a></span>PLANE_XZ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.PLANE_XZ </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_ad4f88ed379ec35ba15330a572e670f3d_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_ad4f88ed379ec35ba15330a572e670f3d_icgraph.svg" width="479" height="179"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a0fedce9ceb928ffc86620d3c273d652c" name="a0fedce9ceb928ffc86620d3c273d652c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fedce9ceb928ffc86620d3c273d652c">&#9670;&#160;</a></span>PLANE_YZ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.PLANE_YZ </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a0fedce9ceb928ffc86620d3c273d652c_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a0fedce9ceb928ffc86620d3c273d652c_icgraph.svg" width="479" height="179"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a2b86939a1ef78cc4a6bb0cfb955d7376" name="a2b86939a1ef78cc4a6bb0cfb955d7376"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b86939a1ef78cc4a6bb0cfb955d7376">&#9670;&#160;</a></span>POLAR_OFF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.POLAR_OFF </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a2b86939a1ef78cc4a6bb0cfb955d7376_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a2b86939a1ef78cc4a6bb0cfb955d7376_icgraph.svg" width="492" height="200"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a759a3734dbd03221294b47bf757cad72" name="a759a3734dbd03221294b47bf757cad72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a759a3734dbd03221294b47bf757cad72">&#9670;&#160;</a></span>POLAR_ON()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.POLAR_ON </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a759a3734dbd03221294b47bf757cad72_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a759a3734dbd03221294b47bf757cad72_icgraph.svg" width="492" height="200"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="af1d39e2caaa4ddd4c3be64de53632b49" name="af1d39e2caaa4ddd4c3be64de53632b49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1d39e2caaa4ddd4c3be64de53632b49">&#9670;&#160;</a></span>PROBE_AWAY_WITH_SIGNAL()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.PROBE_AWAY_WITH_SIGNAL </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_af1d39e2caaa4ddd4c3be64de53632b49_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="aa1f9a43224119e485c5a570489d2eb72" name="aa1f9a43224119e485c5a570489d2eb72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1f9a43224119e485c5a570489d2eb72">&#9670;&#160;</a></span>PROBE_AWAY_WITHOUT_SIGNAL()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.PROBE_AWAY_WITHOUT_SIGNAL </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_aa1f9a43224119e485c5a570489d2eb72_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a4283eb6c45aa049956527f9e7d3cb077" name="a4283eb6c45aa049956527f9e7d3cb077"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4283eb6c45aa049956527f9e7d3cb077">&#9670;&#160;</a></span>PROBE_TOWARDS_WITH_SIGNAL()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.PROBE_TOWARDS_WITH_SIGNAL </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a4283eb6c45aa049956527f9e7d3cb077_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a4283eb6c45aa049956527f9e7d3cb077_icgraph.svg" width="504" height="243"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ac747132b73161faa7e1a8dc3ebaf95be" name="ac747132b73161faa7e1a8dc3ebaf95be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac747132b73161faa7e1a8dc3ebaf95be">&#9670;&#160;</a></span>PROBE_TOWARDS_WITHOUT_SIGNAL()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.PROBE_TOWARDS_WITHOUT_SIGNAL </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_ac747132b73161faa7e1a8dc3ebaf95be_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a2ef6bee01de125549a428833fd3bdc95" name="a2ef6bee01de125549a428833fd3bdc95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ef6bee01de125549a428833fd3bdc95">&#9670;&#160;</a></span>PROGRAM()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.PROGRAM </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a2ef6bee01de125549a428833fd3bdc95_icgraph.svg" width="503" height="179"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a84aafa8d86e1a826e6ce2677d0d63727" name="a84aafa8d86e1a826e6ce2677d0d63727"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84aafa8d86e1a826e6ce2677d0d63727">&#9670;&#160;</a></span>PROGRAM_END()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.PROGRAM_END </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a84aafa8d86e1a826e6ce2677d0d63727_icgraph.svg" width="546" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a3ac978ca8609e6d5df33a285fa612bfe" name="a3ac978ca8609e6d5df33a285fa612bfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ac978ca8609e6d5df33a285fa612bfe">&#9670;&#160;</a></span>RADIUS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.RADIUS </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a3ac978ca8609e6d5df33a285fa612bfe_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a3ac978ca8609e6d5df33a285fa612bfe_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a815508af4a3c0c45b9c03dd2ce9f0f40" name="a815508af4a3c0c45b9c03dd2ce9f0f40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a815508af4a3c0c45b9c03dd2ce9f0f40">&#9670;&#160;</a></span>RAPID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.RAPID </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a815508af4a3c0c45b9c03dd2ce9f0f40_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a8062b6da058d81f1465a4ee8c462fbd0" name="a8062b6da058d81f1465a4ee8c462fbd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8062b6da058d81f1465a4ee8c462fbd0">&#9670;&#160;</a></span>READ_EXTRUDER_TEMP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.READ_EXTRUDER_TEMP </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adf0e4de0e679428b138cd19b60aca8fc" name="adf0e4de0e679428b138cd19b60aca8fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf0e4de0e679428b138cd19b60aca8fc">&#9670;&#160;</a></span>REMOVE_TEMPORARY_COORDINATE_SYSTEM()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.REMOVE_TEMPORARY_COORDINATE_SYSTEM </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_adf0e4de0e679428b138cd19b60aca8fc_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_adf0e4de0e679428b138cd19b60aca8fc_icgraph.svg" width="599" height="371"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a9e6aaeacab386c604eb60cd7171fe845" name="a9e6aaeacab386c604eb60cd7171fe845"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e6aaeacab386c604eb60cd7171fe845">&#9670;&#160;</a></span>RETRACT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.RETRACT </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>format</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>height</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a9e6aaeacab386c604eb60cd7171fe845_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a3e28b767e1a820438a01440206e9fb6d" name="a3e28b767e1a820438a01440206e9fb6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e28b767e1a820438a01440206e9fb6d">&#9670;&#160;</a></span>SET_TEMPORARY_COORDINATE_SYSTEM()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.SET_TEMPORARY_COORDINATE_SYSTEM </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a3e28b767e1a820438a01440206e9fb6d_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a3e28b767e1a820438a01440206e9fb6d_icgraph.svg" width="554" height="371"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a497077e0e500cc8f419b8f3f61f008b4" name="a497077e0e500cc8f419b8f3f61f008b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a497077e0e500cc8f419b8f3f61f008b4">&#9670;&#160;</a></span>SPACE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.SPACE </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a778bcba6e28aa838972d953afe798eb9" name="a778bcba6e28aa838972d953afe798eb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a778bcba6e28aa838972d953afe798eb9">&#9670;&#160;</a></span>SPINDLE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.SPINDLE </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>format</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>speed</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a778bcba6e28aa838972d953afe798eb9_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="aa6f2eeec672be66886aee3a9e329205c" name="aa6f2eeec672be66886aee3a9e329205c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6f2eeec672be66886aee3a9e329205c">&#9670;&#160;</a></span>SPINDLE_CCW()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.SPINDLE_CCW </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_aa6f2eeec672be66886aee3a9e329205c_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_aa6f2eeec672be66886aee3a9e329205c_icgraph.svg" width="100%" height="364"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="aa44d414cfc2fa1c1e5a6b69616399b37" name="aa44d414cfc2fa1c1e5a6b69616399b37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa44d414cfc2fa1c1e5a6b69616399b37">&#9670;&#160;</a></span>SPINDLE_CW()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.SPINDLE_CW </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_aa44d414cfc2fa1c1e5a6b69616399b37_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_aa44d414cfc2fa1c1e5a6b69616399b37_icgraph.svg" width="100%" height="364"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="ab365cad523971a220cc52726196c174a" name="ab365cad523971a220cc52726196c174a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab365cad523971a220cc52726196c174a">&#9670;&#160;</a></span>STEPPERS_OFF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.STEPPERS_OFF </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_ab365cad523971a220cc52726196c174a_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a339effba69001baa0d6f1c7d82ad1214" name="a339effba69001baa0d6f1c7d82ad1214"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a339effba69001baa0d6f1c7d82ad1214">&#9670;&#160;</a></span>STOP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.STOP </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a339effba69001baa0d6f1c7d82ad1214_icgraph.svg" width="600" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a70e315ef48856297645b6debcbb55548" name="a70e315ef48856297645b6debcbb55548"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70e315ef48856297645b6debcbb55548">&#9670;&#160;</a></span>STOP_OPTIONAL()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.STOP_OPTIONAL </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a70e315ef48856297645b6debcbb55548_icgraph.svg" width="566" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a4a5aac98aa6fe6908e2bc5ea989b9298" name="a4a5aac98aa6fe6908e2bc5ea989b9298"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a5aac98aa6fe6908e2bc5ea989b9298">&#9670;&#160;</a></span>SUBPROG_CALL()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.SUBPROG_CALL </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a4a5aac98aa6fe6908e2bc5ea989b9298_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a4a5aac98aa6fe6908e2bc5ea989b9298_icgraph.svg" width="512" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a604a36f406e8f9420e1c0f46a852eb13" name="a604a36f406e8f9420e1c0f46a852eb13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a604a36f406e8f9420e1c0f46a852eb13">&#9670;&#160;</a></span>SUBPROG_END()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.SUBPROG_END </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a604a36f406e8f9420e1c0f46a852eb13_icgraph.svg" width="514" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a56a65aaa39338c37d13253c4daa353be" name="a56a65aaa39338c37d13253c4daa353be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56a65aaa39338c37d13253c4daa353be">&#9670;&#160;</a></span>TIME()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.TIME </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a56a65aaa39338c37d13253c4daa353be_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a56a65aaa39338c37d13253c4daa353be_icgraph.svg" width="100%" height="460"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="ad3e7ef50eabcb35110ee18b835785736" name="ad3e7ef50eabcb35110ee18b835785736"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3e7ef50eabcb35110ee18b835785736">&#9670;&#160;</a></span>TOOL()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.TOOL </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_ad3e7ef50eabcb35110ee18b835785736_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_ad3e7ef50eabcb35110ee18b835785736_icgraph.svg" width="543" height="435"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ab22b9b33e6fcb75337e30bb8155e45a9" name="ab22b9b33e6fcb75337e30bb8155e45a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab22b9b33e6fcb75337e30bb8155e45a9">&#9670;&#160;</a></span>TOOL_DEFINITION()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.TOOL_DEFINITION </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_ab22b9b33e6fcb75337e30bb8155e45a9_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_ab22b9b33e6fcb75337e30bb8155e45a9_icgraph.svg" width="520" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a478a7146a451ead8e8af6250d099736b" name="a478a7146a451ead8e8af6250d099736b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a478a7146a451ead8e8af6250d099736b">&#9670;&#160;</a></span>VALVE_CLOSE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.VALVE_CLOSE </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>delay</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a478a7146a451ead8e8af6250d099736b_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="acf7241f362283abe9d64093f1ff370b1" name="acf7241f362283abe9d64093f1ff370b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf7241f362283abe9d64093f1ff370b1">&#9670;&#160;</a></span>VALVE_OPEN()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.VALVE_OPEN </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>delay</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_acf7241f362283abe9d64093f1ff370b1_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a55b7873fe223a5265274842df1167604" name="a55b7873fe223a5265274842df1167604"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55b7873fe223a5265274842df1167604">&#9670;&#160;</a></span>VARIABLE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.VARIABLE </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a55b7873fe223a5265274842df1167604_icgraph.svg" width="579" height="184"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a9c6db69ddf2182c0af0443cfc1ae61f0" name="a9c6db69ddf2182c0af0443cfc1ae61f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c6db69ddf2182c0af0443cfc1ae61f0">&#9670;&#160;</a></span>VARIABLE_SET()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.VARIABLE_SET </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a9c6db69ddf2182c0af0443cfc1ae61f0_icgraph.svg" width="579" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="af9ee4781020d355397093563966747f2" name="af9ee4781020d355397093563966747f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9ee4781020d355397093563966747f2">&#9670;&#160;</a></span>WORKPLANE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.WORKPLANE </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_af9ee4781020d355397093563966747f2_icgraph.svg" width="544" height="299"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="aa55ea50066c308715e6915d6fc91a6e2" name="aa55ea50066c308715e6915d6fc91a6e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa55ea50066c308715e6915d6fc91a6e2">&#9670;&#160;</a></span>WORKPLANE_BASE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.WORKPLANE_BASE </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_aa55ea50066c308715e6915d6fc91a6e2_icgraph.svg" width="544" height="299"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a2b10ac4ed70caaec1852ee295ac75cf5" name="a2b10ac4ed70caaec1852ee295ac75cf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b10ac4ed70caaec1852ee295ac75cf5">&#9670;&#160;</a></span>X()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.X </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a2b10ac4ed70caaec1852ee295ac75cf5_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a2b10ac4ed70caaec1852ee295ac75cf5_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a42aa4047d1d3b9167abcf20ee2cdf33f" name="a42aa4047d1d3b9167abcf20ee2cdf33f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42aa4047d1d3b9167abcf20ee2cdf33f">&#9670;&#160;</a></span>Y()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.Y </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a42aa4047d1d3b9167abcf20ee2cdf33f_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a42aa4047d1d3b9167abcf20ee2cdf33f_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="ae1410b9e3435455e10403d0b26b0cf67" name="ae1410b9e3435455e10403d0b26b0cf67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1410b9e3435455e10403d0b26b0cf67">&#9670;&#160;</a></span>Z()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.makerbot_codes.Codes.Z </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_ae1410b9e3435455e10403d0b26b0cf67_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1makerbot__codes_1_1Codes_ae1410b9e3435455e10403d0b26b0cf67_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/<a class="el" href="makerbot__codes_8py.html">makerbot_codes.py</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.10.0-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacecam.html">cam</a></li><li class="navelem"><a class="el" href="namespacecam_1_1nc.html">nc</a></li><li class="navelem"><a class="el" href="namespacecam_1_1nc_1_1makerbot__codes.html">makerbot_codes</a></li><li class="navelem"><a class="el" href="classcam_1_1nc_1_1makerbot__codes_1_1Codes.html">Codes</a></li>
+    <li class="footer">Generated by <a href="https://penify.dev/"><img class="footer" src="https://www.penify.dev/_next/static/media/snorkell-dark-logo.9fa414f5.svg" width="104" height="31" alt="doxygen"/></a> </li>
+  </ul>
+</div>
+</body>
+</html>

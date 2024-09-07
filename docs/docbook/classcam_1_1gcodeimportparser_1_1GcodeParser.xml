@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1gcodeimportparser_1_1GcodeParser" xml:lang="en-US">
+<title>cam.gcodeimportparser.GcodeParser Class Reference</title>
+<indexterm><primary>cam.gcodeimportparser.GcodeParser</primary></indexterm>
+Collaboration diagram for cam.gcodeimportparser.GcodeParser:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1gcodeimportparser_1_1GcodeParser__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1gcodeimportparser_1_1GcodeParser_1ae0a0bb17115a16b4b6d7abbef55bc249">__init__</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1gcodeimportparser_1_1GcodeParser_1a12f5177d16deb369ed01208f04f8fa23">parseFile</link> (self, <link linkend="_namespacecam_1_1gcodeimportparser_1aac325098144266bd0a85ea3cd1d417c5">path</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1gcodeimportparser_1_1GcodeParser_1ac0dc820285278526c3d681fdb0382144">parseLine</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1gcodeimportparser_1_1GcodeParser_1aa905fcf77304612d9c9d729009bb1cc2">parseArgs</link> (self, args)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1gcodeimportparser_1_1GcodeParser_1a13b499a56e116539b97359549babf007">parse_G1</link> (self, args, type=&quot;G1&quot;)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1gcodeimportparser_1_1GcodeParser_1a7e709ef80f16a2168e2db8f64e379882">parse_G0</link> (self, args, type=&quot;G0&quot;)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1gcodeimportparser_1_1GcodeParser_1aead9b776790ae8228391dcef251162ab">parse_G90</link> (self, args)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1gcodeimportparser_1_1GcodeParser_1a4530733314095c91d26edefc5aafa0a3">parse_G91</link> (self, args)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1gcodeimportparser_1_1GcodeParser_1afe07ed7b58c2c3701f13709df1cc241f">parse_G92</link> (self, args)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1gcodeimportparser_1_1GcodeParser_1ad1fcff07178ae82267e8f431946ae94c">warn</link> (self, msg)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1gcodeimportparser_1_1GcodeParser_1ab661d91daf66cd54c13ab9fe1193955b">error</link> (self, msg)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1gcodeimportparser_1_1GcodeParser_1addfc7f9a6fbff61fcb186713318879ef">model</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1gcodeimportparser_1_1GcodeParser_1a9a39a9c0300f34bc37467ee65542386f">lineNb</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1gcodeimportparser_1_1GcodeParser_1a7a8607d4c4cd0878317b540ab8a5fd2c">line</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1gcodeimportparser_1_1GcodeParser_1a83db65c29df056683ec1f0ace44dc986">last_command</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classcam_1_1gcodeimportparser_1_1GcodeParser_1a9d773066d297c5415ae8ff9f72b408d6">comment</link> = &quot;&quot;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classcam_1_1gcodeimportparser_1_1GcodeParser_1ae0a0bb17115a16b4b6d7abbef55bc249"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>cam.gcodeimportparser.GcodeParser</secondary></indexterm>
+<indexterm><primary>cam.gcodeimportparser.GcodeParser</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>cam.gcodeimportparser.GcodeParser.__init__ ( self)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1gcodeimportparser_1_1GcodeParser_1ab661d91daf66cd54c13ab9fe1193955b"/><section>
+    <title>error()</title>
+<indexterm><primary>error</primary><secondary>cam.gcodeimportparser.GcodeParser</secondary></indexterm>
+<indexterm><primary>cam.gcodeimportparser.GcodeParser</primary><secondary>error</secondary></indexterm>
+<para><computeroutput>cam.gcodeimportparser.GcodeParser.error ( self,  msg)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1gcodeimportparser_1_1GcodeParser_1a7e709ef80f16a2168e2db8f64e379882"/><section>
+    <title>parse_G0()</title>
+<indexterm><primary>parse_G0</primary><secondary>cam.gcodeimportparser.GcodeParser</secondary></indexterm>
+<indexterm><primary>cam.gcodeimportparser.GcodeParser</primary><secondary>parse_G0</secondary></indexterm>
+<para><computeroutput>cam.gcodeimportparser.GcodeParser.parse_G0 ( self,  args,  type = <computeroutput>&quot;G0&quot;</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1gcodeimportparser_1_1GcodeParser_a7e709ef80f16a2168e2db8f64e379882_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1gcodeimportparser_1_1GcodeParser_1a13b499a56e116539b97359549babf007"/><section>
+    <title>parse_G1()</title>
+<indexterm><primary>parse_G1</primary><secondary>cam.gcodeimportparser.GcodeParser</secondary></indexterm>
+<indexterm><primary>cam.gcodeimportparser.GcodeParser</primary><secondary>parse_G1</secondary></indexterm>
+<para><computeroutput>cam.gcodeimportparser.GcodeParser.parse_G1 ( self,  args,  type = <computeroutput>&quot;G1&quot;</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1gcodeimportparser_1_1GcodeParser_a13b499a56e116539b97359549babf007_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1gcodeimportparser_1_1GcodeParser_1aead9b776790ae8228391dcef251162ab"/><section>
+    <title>parse_G90()</title>
+<indexterm><primary>parse_G90</primary><secondary>cam.gcodeimportparser.GcodeParser</secondary></indexterm>
+<indexterm><primary>cam.gcodeimportparser.GcodeParser</primary><secondary>parse_G90</secondary></indexterm>
+<para><computeroutput>cam.gcodeimportparser.GcodeParser.parse_G90 ( self,  args)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1gcodeimportparser_1_1GcodeParser_1a4530733314095c91d26edefc5aafa0a3"/><section>
+    <title>parse_G91()</title>
+<indexterm><primary>parse_G91</primary><secondary>cam.gcodeimportparser.GcodeParser</secondary></indexterm>
+<indexterm><primary>cam.gcodeimportparser.GcodeParser</primary><secondary>parse_G91</secondary></indexterm>
+<para><computeroutput>cam.gcodeimportparser.GcodeParser.parse_G91 ( self,  args)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1gcodeimportparser_1_1GcodeParser_1afe07ed7b58c2c3701f13709df1cc241f"/><section>
+    <title>parse_G92()</title>
+<indexterm><primary>parse_G92</primary><secondary>cam.gcodeimportparser.GcodeParser</secondary></indexterm>
+<indexterm><primary>cam.gcodeimportparser.GcodeParser</primary><secondary>parse_G92</secondary></indexterm>
+<para><computeroutput>cam.gcodeimportparser.GcodeParser.parse_G92 ( self,  args)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1gcodeimportparser_1_1GcodeParser_afe07ed7b58c2c3701f13709df1cc241f_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1gcodeimportparser_1_1GcodeParser_1aa905fcf77304612d9c9d729009bb1cc2"/><section>
+    <title>parseArgs()</title>
+<indexterm><primary>parseArgs</primary><secondary>cam.gcodeimportparser.GcodeParser</secondary></indexterm>
+<indexterm><primary>cam.gcodeimportparser.GcodeParser</primary><secondary>parseArgs</secondary></indexterm>
+<para><computeroutput>cam.gcodeimportparser.GcodeParser.parseArgs ( self,  args)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1gcodeimportparser_1_1GcodeParser_aa905fcf77304612d9c9d729009bb1cc2_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1gcodeimportparser_1_1GcodeParser_1a12f5177d16deb369ed01208f04f8fa23"/><section>
+    <title>parseFile()</title>
+<indexterm><primary>parseFile</primary><secondary>cam.gcodeimportparser.GcodeParser</secondary></indexterm>
+<indexterm><primary>cam.gcodeimportparser.GcodeParser</primary><secondary>parseFile</secondary></indexterm>
+<para><computeroutput>cam.gcodeimportparser.GcodeParser.parseFile ( self,  path)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1gcodeimportparser_1_1GcodeParser_1ac0dc820285278526c3d681fdb0382144"/><section>
+    <title>parseLine()</title>
+<indexterm><primary>parseLine</primary><secondary>cam.gcodeimportparser.GcodeParser</secondary></indexterm>
+<indexterm><primary>cam.gcodeimportparser.GcodeParser</primary><secondary>parseLine</secondary></indexterm>
+<para><computeroutput>cam.gcodeimportparser.GcodeParser.parseLine ( self)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1gcodeimportparser_1_1GcodeParser_1ad1fcff07178ae82267e8f431946ae94c"/><section>
+    <title>warn()</title>
+<indexterm><primary>warn</primary><secondary>cam.gcodeimportparser.GcodeParser</secondary></indexterm>
+<indexterm><primary>cam.gcodeimportparser.GcodeParser</primary><secondary>warn</secondary></indexterm>
+<para><computeroutput>cam.gcodeimportparser.GcodeParser.warn ( self,  msg)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1gcodeimportparser_1_1GcodeParser_ad1fcff07178ae82267e8f431946ae94c_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1gcodeimportparser_1_1GcodeParser_1a9d773066d297c5415ae8ff9f72b408d6"/><section>
+    <title>comment</title>
+<indexterm><primary>comment</primary><secondary>cam.gcodeimportparser.GcodeParser</secondary></indexterm>
+<indexterm><primary>cam.gcodeimportparser.GcodeParser</primary><secondary>comment</secondary></indexterm>
+<para><computeroutput>str cam.gcodeimportparser.GcodeParser.comment = &quot;&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1gcodeimportparser_1_1GcodeParser_1a83db65c29df056683ec1f0ace44dc986"/><section>
+    <title>last_command</title>
+<indexterm><primary>last_command</primary><secondary>cam.gcodeimportparser.GcodeParser</secondary></indexterm>
+<indexterm><primary>cam.gcodeimportparser.GcodeParser</primary><secondary>last_command</secondary></indexterm>
+<para><computeroutput>cam.gcodeimportparser.GcodeParser.last_command</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1gcodeimportparser_1_1GcodeParser_1a7a8607d4c4cd0878317b540ab8a5fd2c"/><section>
+    <title>line</title>
+<indexterm><primary>line</primary><secondary>cam.gcodeimportparser.GcodeParser</secondary></indexterm>
+<indexterm><primary>cam.gcodeimportparser.GcodeParser</primary><secondary>line</secondary></indexterm>
+<para><computeroutput>cam.gcodeimportparser.GcodeParser.line</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1gcodeimportparser_1_1GcodeParser_1a9a39a9c0300f34bc37467ee65542386f"/><section>
+    <title>lineNb</title>
+<indexterm><primary>lineNb</primary><secondary>cam.gcodeimportparser.GcodeParser</secondary></indexterm>
+<indexterm><primary>cam.gcodeimportparser.GcodeParser</primary><secondary>lineNb</secondary></indexterm>
+<para><computeroutput>cam.gcodeimportparser.GcodeParser.lineNb</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1gcodeimportparser_1_1GcodeParser_1addfc7f9a6fbff61fcb186713318879ef"/><section>
+    <title>model</title>
+<indexterm><primary>model</primary><secondary>cam.gcodeimportparser.GcodeParser</secondary></indexterm>
+<indexterm><primary>cam.gcodeimportparser.GcodeParser</primary><secondary>model</secondary></indexterm>
+<para><computeroutput>cam.gcodeimportparser.GcodeParser.model</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/<link linkend="_gcodeimportparser_8py">gcodeimportparser.py</link></section>
+</section>

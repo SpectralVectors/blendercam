@@ -1,0 +1,295 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1curvecamcreate_1_1CamCurveMortise" xml:lang="en-US">
+<title>cam.curvecamcreate.CamCurveMortise Class Reference</title>
+<indexterm><primary>cam.curvecamcreate.CamCurveMortise</primary></indexterm>
+Inheritance diagram for cam.curvecamcreate.CamCurveMortise:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1curvecamcreate_1_1CamCurveMortise__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.curvecamcreate.CamCurveMortise:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1curvecamcreate_1_1CamCurveMortise__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1a2d0828ccab1c3d79277833785d333a37">poll</link> (cls, context)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1a4dd7097899b49fc06e5fc62da4843873">execute</link> (self, context)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1ae1c31e9457f53c37df451f6bf3db7e82">min_finger_size</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1a465c18826b576c79da80880870d6d32e">finger_size</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1a035c8c36d811a5f90184b120d8694d76">plate_thickness</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1a26b4a57bfa5c88074bac1a7c281df479">finger_tolerance</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1ac94cceeb30e1fcc6b314ed2db15f69a2">adaptive</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1a8bacd21e5052fc4d932414a2588f8d5c">double_adaptive</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1a2a7d6988a8030ca3fd75751ed552cf47">side_height</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1ad44599e387825fd455966b3822d21790">top_bottom</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1ade64b85f1e2906528293e7ace8b02009">flex_pocket</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1a77b3ca0a4590526451159adb7451e064">bl_idname</link> = &quot;object.curve_mortise&quot;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1abdbe32770f730a003b5bbde4387754f5">bl_label</link> = &quot;Mortise&quot;</para>
+</listitem>
+            <listitem><para>dict <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1a90cbcf8cf562039a3f072ee0c387fff5">bl_options</link> = {&apos;REGISTER&apos;, &apos;UNDO&apos;, &apos;PRESET&apos;}</para>
+</listitem>
+            <listitem><para>BoolProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1a18d961b7b628a7bf0b7a22534be58a20">finger_size</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1a93d8f089ba90d9fa8111533ce79a1a37">finger_size</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1a524d494ec8023f9d34ed7e1a45ad0104">min_finger_size</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1a9c6eca1f51b509a98e123241e706c17f">finger_tolerance</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1a447419d63210c61fc91ec8e5d8b20db5">plate_thickness</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1a5654198b1a0d196cced0e2a22439545a">side_height</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1aff6317c60a80cd3ad94fe0d19c34389a">flex_pocket</link></para>
+</listitem>
+            <listitem><para>BoolProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1abfbf54528c9697581a182dd0eeb201a1">top_bottom</link></para>
+</listitem>
+            <listitem><para>BoolProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1a5cb99031d4ba69aecb96564b71371903">opencurve</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1a04266d5a9a291b6a8a99e3c0556d7532">adaptive</link></para>
+</listitem>
+            <listitem><para>BoolProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1ad16eed6f73cbc0e24afd48e22a65b770">double_adaptive</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Generates Mortise Along a Curve</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1a4dd7097899b49fc06e5fc62da4843873"/><section>
+    <title>execute()</title>
+<indexterm><primary>execute</primary><secondary>cam.curvecamcreate.CamCurveMortise</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveMortise</primary><secondary>execute</secondary></indexterm>
+<para><computeroutput>cam.curvecamcreate.CamCurveMortise.execute ( self,  context)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1a2d0828ccab1c3d79277833785d333a37"/><section>
+    <title>poll()</title>
+<indexterm><primary>poll</primary><secondary>cam.curvecamcreate.CamCurveMortise</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveMortise</primary><secondary>poll</secondary></indexterm>
+<para><computeroutput>cam.curvecamcreate.CamCurveMortise.poll ( cls,  context)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1a04266d5a9a291b6a8a99e3c0556d7532"/><section>
+    <title>adaptive<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>adaptive</primary><secondary>cam.curvecamcreate.CamCurveMortise</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveMortise</primary><secondary>adaptive</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamcreate.CamCurveMortise.adaptive<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Adaptive&#32;Angle&#32;Threshold&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0.000,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=2,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;subtype=<emphasis role="stringliteral">&quot;ANGLE&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;ROTATION&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1ac94cceeb30e1fcc6b314ed2db15f69a2"/><section>
+    <title>adaptive<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>adaptive</primary><secondary>cam.curvecamcreate.CamCurveMortise</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveMortise</primary><secondary>adaptive</secondary></indexterm>
+<para><computeroutput>cam.curvecamcreate.CamCurveMortise.adaptive</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1a77b3ca0a4590526451159adb7451e064"/><section>
+    <title>bl_idname</title>
+<indexterm><primary>bl_idname</primary><secondary>cam.curvecamcreate.CamCurveMortise</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveMortise</primary><secondary>bl_idname</secondary></indexterm>
+<para><computeroutput>str cam.curvecamcreate.CamCurveMortise.bl_idname = &quot;object.curve_mortise&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1abdbe32770f730a003b5bbde4387754f5"/><section>
+    <title>bl_label</title>
+<indexterm><primary>bl_label</primary><secondary>cam.curvecamcreate.CamCurveMortise</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveMortise</primary><secondary>bl_label</secondary></indexterm>
+<para><computeroutput>str cam.curvecamcreate.CamCurveMortise.bl_label = &quot;Mortise&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1a90cbcf8cf562039a3f072ee0c387fff5"/><section>
+    <title>bl_options</title>
+<indexterm><primary>bl_options</primary><secondary>cam.curvecamcreate.CamCurveMortise</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveMortise</primary><secondary>bl_options</secondary></indexterm>
+<para><computeroutput>dict cam.curvecamcreate.CamCurveMortise.bl_options = {&apos;REGISTER&apos;, &apos;UNDO&apos;, &apos;PRESET&apos;}<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1ad16eed6f73cbc0e24afd48e22a65b770"/><section>
+    <title>double_adaptive<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>double_adaptive</primary><secondary>cam.curvecamcreate.CamCurveMortise</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveMortise</primary><secondary>double_adaptive</secondary></indexterm>
+<para><computeroutput>BoolProperty cam.curvecamcreate.CamCurveMortise.double_adaptive<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Double&#32;Adaptive&#32;Pockets&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="keyword">False</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1a8bacd21e5052fc4d932414a2588f8d5c"/><section>
+    <title>double_adaptive<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>double_adaptive</primary><secondary>cam.curvecamcreate.CamCurveMortise</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveMortise</primary><secondary>double_adaptive</secondary></indexterm>
+<para><computeroutput>cam.curvecamcreate.CamCurveMortise.double_adaptive</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1a18d961b7b628a7bf0b7a22534be58a20"/><section>
+    <title>finger_size<computeroutput>[1/3]</computeroutput></title>
+<indexterm><primary>finger_size</primary><secondary>cam.curvecamcreate.CamCurveMortise</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveMortise</primary><secondary>finger_size</secondary></indexterm>
+<para><computeroutput>BoolProperty cam.curvecamcreate.CamCurveMortise.finger_size<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Kurf&#32;Bending&#32;only&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="keyword">False</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1a93d8f089ba90d9fa8111533ce79a1a37"/><section>
+    <title>finger_size<computeroutput>[2/3]</computeroutput></title>
+<indexterm><primary>finger_size</primary><secondary>cam.curvecamcreate.CamCurveMortise</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveMortise</primary><secondary>finger_size</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamcreate.CamCurveMortise.finger_size<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Maximum&#32;Finger&#32;Size&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.015,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0.005,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=3.0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=4,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1a465c18826b576c79da80880870d6d32e"/><section>
+    <title>finger_size<computeroutput>[3/3]</computeroutput></title>
+<indexterm><primary>finger_size</primary><secondary>cam.curvecamcreate.CamCurveMortise</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveMortise</primary><secondary>finger_size</secondary></indexterm>
+<para><computeroutput>cam.curvecamcreate.CamCurveMortise.finger_size</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1a9c6eca1f51b509a98e123241e706c17f"/><section>
+    <title>finger_tolerance<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>finger_tolerance</primary><secondary>cam.curvecamcreate.CamCurveMortise</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveMortise</primary><secondary>finger_tolerance</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamcreate.CamCurveMortise.finger_tolerance<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Finger&#32;Play&#32;Room&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.000045,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=0.003,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=4,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1a26b4a57bfa5c88074bac1a7c281df479"/><section>
+    <title>finger_tolerance<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>finger_tolerance</primary><secondary>cam.curvecamcreate.CamCurveMortise</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveMortise</primary><secondary>finger_tolerance</secondary></indexterm>
+<para><computeroutput>cam.curvecamcreate.CamCurveMortise.finger_tolerance</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1aff6317c60a80cd3ad94fe0d19c34389a"/><section>
+    <title>flex_pocket<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>flex_pocket</primary><secondary>cam.curvecamcreate.CamCurveMortise</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveMortise</primary><secondary>flex_pocket</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamcreate.CamCurveMortise.flex_pocket<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Flex&#32;Pocket&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.004,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0.000,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=1.0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1ade64b85f1e2906528293e7ace8b02009"/><section>
+    <title>flex_pocket<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>flex_pocket</primary><secondary>cam.curvecamcreate.CamCurveMortise</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveMortise</primary><secondary>flex_pocket</secondary></indexterm>
+<para><computeroutput>cam.curvecamcreate.CamCurveMortise.flex_pocket</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1a524d494ec8023f9d34ed7e1a45ad0104"/><section>
+    <title>min_finger_size<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>min_finger_size</primary><secondary>cam.curvecamcreate.CamCurveMortise</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveMortise</primary><secondary>min_finger_size</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamcreate.CamCurveMortise.min_finger_size<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Minimum&#32;Finger&#32;Size&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.0025,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0.001,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=3.0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=4,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1ae1c31e9457f53c37df451f6bf3db7e82"/><section>
+    <title>min_finger_size<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>min_finger_size</primary><secondary>cam.curvecamcreate.CamCurveMortise</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveMortise</primary><secondary>min_finger_size</secondary></indexterm>
+<para><computeroutput>cam.curvecamcreate.CamCurveMortise.min_finger_size</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1a5cb99031d4ba69aecb96564b71371903"/><section>
+    <title>opencurve</title>
+<indexterm><primary>opencurve</primary><secondary>cam.curvecamcreate.CamCurveMortise</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveMortise</primary><secondary>opencurve</secondary></indexterm>
+<para><computeroutput>BoolProperty cam.curvecamcreate.CamCurveMortise.opencurve<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;OpenCurve&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="keyword">False</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1a447419d63210c61fc91ec8e5d8b20db5"/><section>
+    <title>plate_thickness<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>plate_thickness</primary><secondary>cam.curvecamcreate.CamCurveMortise</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveMortise</primary><secondary>plate_thickness</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamcreate.CamCurveMortise.plate_thickness<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Drawer&#32;Plate&#32;Thickness&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.00477,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0.001,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=3.0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1a035c8c36d811a5f90184b120d8694d76"/><section>
+    <title>plate_thickness<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>plate_thickness</primary><secondary>cam.curvecamcreate.CamCurveMortise</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveMortise</primary><secondary>plate_thickness</secondary></indexterm>
+<para><computeroutput>cam.curvecamcreate.CamCurveMortise.plate_thickness</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1a5654198b1a0d196cced0e2a22439545a"/><section>
+    <title>side_height<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>side_height</primary><secondary>cam.curvecamcreate.CamCurveMortise</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveMortise</primary><secondary>side_height</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamcreate.CamCurveMortise.side_height<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Side&#32;Height&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.05,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0.001,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=3.0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1a2a7d6988a8030ca3fd75751ed552cf47"/><section>
+    <title>side_height<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>side_height</primary><secondary>cam.curvecamcreate.CamCurveMortise</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveMortise</primary><secondary>side_height</secondary></indexterm>
+<para><computeroutput>cam.curvecamcreate.CamCurveMortise.side_height</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1abfbf54528c9697581a182dd0eeb201a1"/><section>
+    <title>top_bottom<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>top_bottom</primary><secondary>cam.curvecamcreate.CamCurveMortise</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveMortise</primary><secondary>top_bottom</secondary></indexterm>
+<para><computeroutput>BoolProperty cam.curvecamcreate.CamCurveMortise.top_bottom<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Side&#32;Top&#32;&amp;&#32;Bottom&#32;Fingers&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="keyword">True</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveMortise_1ad44599e387825fd455966b3822d21790"/><section>
+    <title>top_bottom<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>top_bottom</primary><secondary>cam.curvecamcreate.CamCurveMortise</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveMortise</primary><secondary>top_bottom</secondary></indexterm>
+<para><computeroutput>cam.curvecamcreate.CamCurveMortise.top_bottom</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/<link linkend="_curvecamcreate_8py">curvecamcreate.py</link></section>
+</section>

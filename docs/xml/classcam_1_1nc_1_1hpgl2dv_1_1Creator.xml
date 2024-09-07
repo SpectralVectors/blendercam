@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1nc_1_1hpgl2dv_1_1Creator" kind="class" language="Python" prot="public">
+    <compoundname>cam::nc::hpgl2dv::Creator</compoundname>
+    <basecompoundref refid="classcam_1_1nc_1_1hpgl2d_1_1Creator" prot="public" virt="non-virtual">cam.nc.hpgl2d.Creator</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1nc_1_1hpgl2dv_1_1Creator_1abf1fb9e228857da67ba1e5750c59b803" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>cam.nc.hpgl2dv.Creator::creator</definition>
+        <argsstring></argsstring>
+        <name>creator</name>
+        <qualifiedname>cam.nc.hpgl2dv.Creator.creator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/hpgl2dv.py" line="24" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/hpgl2dv.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcam_1_1nc_1_1hpgl2dv_1_1Creator_1aea9132e1c198640e5d78f6b574f9a409" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.hpgl2dv.Creator::units_to_mc_units</definition>
+        <argsstring></argsstring>
+        <name>units_to_mc_units</name>
+        <qualifiedname>cam.nc.hpgl2dv.Creator.units_to_mc_units</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/hpgl2dv.py" line="18" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/hpgl2dv.py" bodystart="18" bodyend="-1"/>
+        <referencedby refid="classcam_1_1nc_1_1hpgl2d_1_1Creator_1a07d3cd6c125c6f27cc4fa4c42df59bf1" compoundref="hpgl2d_8py" startline="81" endline="106">cam.nc.hpgl2d.Creator.arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1hpgl2d_1_1Creator_1a2ca5687b6c9aff33f8f45dbaf4eb2656" compoundref="hpgl2d_8py" startline="56" endline="64">cam.nc.hpgl2d.Creator.get_machine_x_y</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1hpgl3d_1_1Creator_1ad2ebb67f72b382a47c9b07f0ef987587" compoundref="hpgl3d_8py" startline="29" endline="40">cam.nc.hpgl3d.Creator.get_machine_xyz</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1hpgl2d_1_1Creator_1a6d672bbc24568f1f722707ba37cbb484" compoundref="hpgl2d_8py" startline="21" endline="23">cam.nc.hpgl2d.Creator.metric</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1hpgl2dv_1_1Creator_1a90ae9c952ba36d7be3183010ec95662c" compoundref="hpgl2dv_8py" startline="20" endline="23">cam.nc.hpgl2dv.Creator.metric</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcam_1_1nc_1_1hpgl2dv_1_1Creator_1a8ed7d723c5d4c4c7856f637ee7eabb57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.hpgl2dv.Creator.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>cam.nc.hpgl2dv.Creator.__init__</qualifiedname>
+        <reimplements refid="classcam_1_1nc_1_1hpgl2d_1_1Creator_1afa3781d9d9ed65dcacf075a0cdc15612">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/hpgl2dv.py" line="14" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/hpgl2dv.py" bodystart="14" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1nc_1_1hpgl2dv_1_1Creator_1a97348a94f0b2a1fb11e581a85899aaf5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.hpgl2dv.Creator.imperial</definition>
+        <argsstring>(self)</argsstring>
+        <name>imperial</name>
+        <qualifiedname>cam.nc.hpgl2dv.Creator.imperial</qualifiedname>
+        <reimplements refid="classcam_1_1nc_1_1hpgl2d_1_1Creator_1a40ab5a819ebeb4999827f9b1e481c48a">imperial</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>Settings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set imperial units</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/hpgl2dv.py" line="17" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/hpgl2dv.py" bodystart="17" bodyend="19"/>
+        <referencedby refid="classcam_1_1nc_1_1recreator_1_1Redirector_1aac89af9940b239a0231eaf6d86be2c28" compoundref="recreator_8py" startline="83" endline="87">cam.nc.recreator.Redirector.imperial</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1nc_1_1hpgl2dv_1_1Creator_1a90ae9c952ba36d7be3183010ec95662c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.hpgl2dv.Creator.metric</definition>
+        <argsstring>(self)</argsstring>
+        <name>metric</name>
+        <qualifiedname>cam.nc.hpgl2dv.Creator.metric</qualifiedname>
+        <reimplements refid="classcam_1_1nc_1_1hpgl2d_1_1Creator_1a6d672bbc24568f1f722707ba37cbb484">metric</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set metric units</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/hpgl2dv.py" line="20" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/hpgl2dv.py" bodystart="20" bodyend="23"/>
+        <references refid="classcam_1_1nc_1_1hpgl2d_1_1Creator_1acd2904d16de36d8a0a3106bfcba8a436" compoundref="hpgl2d_8py" startline="19">cam.nc.hpgl2d.Creator.units_to_mc_units</references>
+        <references refid="classcam_1_1nc_1_1hpgl2dv_1_1Creator_1aea9132e1c198640e5d78f6b574f9a409" compoundref="hpgl2dv_8py" startline="18">cam.nc.hpgl2dv.Creator.units_to_mc_units</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>cam.nc.hpgl2dv.Creator</label>
+        <link refid="classcam_1_1nc_1_1hpgl2dv_1_1Creator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>cam.nc.hpgl2d.Creator</label>
+        <link refid="classcam_1_1nc_1_1hpgl2d_1_1Creator"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>cam.nc.nc.Creator</label>
+        <link refid="classcam_1_1nc_1_1nc_1_1Creator"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>cam.nc.hpgl2dv.Creator</label>
+        <link refid="classcam_1_1nc_1_1hpgl2dv_1_1Creator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>cam.nc.hpgl2d.Creator</label>
+        <link refid="classcam_1_1nc_1_1hpgl2d_1_1Creator"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>cam.nc.nc.Creator</label>
+        <link refid="classcam_1_1nc_1_1nc_1_1Creator"/>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/hpgl2dv.py" line="13" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/hpgl2dv.py" bodystart="13" bodyend="25"/>
+    <listofallmembers>
+      <member refid="classcam_1_1nc_1_1hpgl2dv_1_1Creator_1a8ed7d723c5d4c4c7856f637ee7eabb57" prot="public" virt="non-virtual"><scope>cam::nc::hpgl2dv::Creator</scope><name>__init__</name></member>
+      <member refid="classcam_1_1nc_1_1hpgl2dv_1_1Creator_1abf1fb9e228857da67ba1e5750c59b803" prot="public" virt="non-virtual"><scope>cam::nc::hpgl2dv::Creator</scope><name>creator</name></member>
+      <member refid="classcam_1_1nc_1_1hpgl2dv_1_1Creator_1a97348a94f0b2a1fb11e581a85899aaf5" prot="public" virt="non-virtual"><scope>cam::nc::hpgl2dv::Creator</scope><name>imperial</name></member>
+      <member refid="classcam_1_1nc_1_1hpgl2dv_1_1Creator_1a90ae9c952ba36d7be3183010ec95662c" prot="public" virt="non-virtual"><scope>cam::nc::hpgl2dv::Creator</scope><name>metric</name></member>
+      <member refid="classcam_1_1nc_1_1hpgl2dv_1_1Creator_1aea9132e1c198640e5d78f6b574f9a409" prot="public" virt="non-virtual"><scope>cam::nc::hpgl2dv::Creator</scope><name>units_to_mc_units</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

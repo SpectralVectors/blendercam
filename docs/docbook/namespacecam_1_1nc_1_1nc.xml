@@ -1,0 +1,939 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacecam_1_1nc_1_1nc" xml:lang="en-US">
+<title>cam.nc.nc Namespace Reference</title>
+<indexterm><primary>cam.nc.nc</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classcam_1_1nc_1_1nc_1_1Creator">Creator</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a8b6455c52bcf6c1959022977b5d1ce68">write</link> (s)</para>
+
+<para>Internals. </para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a49cd91390516052eb941782e4fcf3103">output</link> (filename)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a93452763182eb8b55a5c6b88e9adf0f8">program_begin</link> (id, name=&apos;&apos;)</para>
+
+<para>Programs. </para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1ab2653b621f92d4d0758eec2de99f1175">add_stock</link> (type_name, params)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1ae174e9a14be3dda3e58448c99e7f983f">program_stop</link> (optional=False)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1aec60aad0c8e364502b3d3699f024facf">program_end</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1afd0c909bd08487f8a0b0bebdb069921d">flush_nc</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a2affc5d9abe6258bffa88666e7d62e7c">sub_begin</link> (id, name=&apos;&apos;)</para>
+
+<para>Subprograms. </para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1ae09b32d7eb96c506f9ed8f037d511e3f">sub_call</link> (id)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a15c506e6d4c4ba6ca04c51ae9ba25ba0">sub_end</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a7f2b6749cce54c4dd89eda9600a8e976">imperial</link> ()</para>
+
+<para>Settings. </para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a77aa91d77157709db49f6dbd7d6d2ded">metric</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1ad74908c6a20b925f202c3bec46ed8fc7">absolute</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a6963c0c9253920c23d018f5899835ec3">incremental</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a57833e047f2ea97c9deacf88e2e0e062">polar</link> (on=True)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1afae706ecde45c5e84d4947b830a093ff">set_plane</link> (plane)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1ace48cca1473b383c797cc9c52d63728c">set_temporary_origin</link> (x=None, y=None, z=None, a=None, b=None, c=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a1253f3dc70debdd0acafaf15e5c0a6e6">remove_temporary_origin</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a1d1f7deb327775e6202d01b7ff7953ca">tool_change</link> (id)</para>
+
+<para>Tools. </para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1ae0a0d0163f26e46077ea5a28f5258530">tool_defn</link> (id, name=&apos;&apos;, params=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a4a2637da7c871d89250368e1d498e4b5">offset_radius</link> (id, radius=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a6760aee692432a19486b3c30af589384">offset_length</link> (id, length=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1ad6b92768f96ea6bc862da4b6ef514d5f">current_tool</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1ab1c0e7d2464614f7a59f2907730a107d">datum_shift</link> (x=None, y=None, z=None, a=None, b=None, c=None)</para>
+
+<para>Datums. </para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a27c32800c81081418730c2bb403c6148">datum_set</link> (x=None, y=None, z=None, a=None, b=None, c=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1aed1290b836577b89c33a2786f5e50f07">workplane</link> (id)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a3cdaab149cd04b2fb00dd27fbb08a893">clearanceplane</link> (z=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a73c95d1cac4807e1ad34e3cd0498cef9">matrix</link> (a1=None, b1=None, c1=None, a2=None, b2=None, c2=None, a3=None, b3=None, c3=None)</para>
+
+<para>APT360 like Transformation Definitions These definitions were created while looking at Irvin Kraal&apos;s book on APT. </para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a94cb7570e7fbf4c72991185ee7bd21bd">translate</link> (x=None, y=None, z=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a3bae18fdfe198a827e36b23316c28c69">rotate</link> (xyrot=None, yzrot=None, zxrot=None, angle=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a49eaf759253148019f147ba74514512c">scale</link> (k=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a01e84a7ca713359d793d51017ef49fb5">matrix_product</link> (matrix1=None, matrix2=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a34d1d352a4127656b2c2702493ecd966">mirror_plane</link> (plane1=None, plane2=None, plane3=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a96ee4396671a01ffaae1a09a70d50fcb">mirror_line</link> (line=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a2aa8ab25220eb317f50d5e1781230921">feedrate</link> (f)</para>
+
+<para>Rates + Modes. </para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a21d0006f00a8f8f163d0ef2ae19a31e6">feedrate_hv</link> (fh, fv)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a21a910b0d76cb7f68564765cc149eb24">spindle</link> (s, clockwise=True)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1af16478add27c802d5bb11d5c2f74b274">coolant</link> (mode=0)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1ab5fdbe40038ddd3015c5e8dc0f5e9964">gearrange</link> (gear=0)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a8657d368e8402228d437fbfe758740df">rapid</link> (x=None, y=None, z=None, a=None, b=None, c=None)</para>
+
+<para>Moves. </para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a7578810bc59ccdf99c9c99ca367b63be">feed</link> (x=None, y=None, z=None, a=None, b=None, c=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a756e0b86926b3291935ef719e3d9b074">arc_cw</link> (x=None, y=None, z=None, i=None, j=None, k=None, r=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1ac1c0de0472258ed82c4d3f6206b4d679">arc_ccw</link> (x=None, y=None, z=None, i=None, j=None, k=None, r=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a949d9b8211c3db33787dae701fafc43b">dwell</link> (t)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a2b35c170916de77950ff1d69c5962fc1">rapid_home</link> (x=None, y=None, z=None, a=None, b=None, c=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a55d2ff04340887e538bd1ce692c32bab">rapid_unhome</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a2eb5bee0f0dd69b7272cb9a753f79734">set_machine_coordinates</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a615cc957895920e1e32b80fee633eb35">use_CRC</link> ()</para>
+
+<para>Cutter radius compensation. </para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1ae7c69347a8ea423384b188ba63918774">CRC_nominal_path</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a1ae11ca953100924ad40dafdd8d7d4db">start_CRC</link> (left=True, radius=0.0)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1ad7e6d5529185e11daf072a0c5bdc0b9f">end_CRC</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a7164ab089845fe1e05f22ad9eb97a3e3">pattern</link> ()</para>
+
+<para>Cycles. </para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a6bfeb37fda535e9ca08622b3cdf91021">pocket</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a6af609274eab10818a4e7d3118de10be">profile</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a4fd9d778d6e2f233f38a9a8bdb11ab9a">drill</link> (x=None, y=None, <link linkend="_namespacecam_1_1nc_1_1nc_1a949d9b8211c3db33787dae701fafc43b">dwell</link>=None, depthparams=None, retract_mode=None, spindle_mode=None, internal_coolant_on=None, rapid_to_clearance=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a71b7ee750daf4b638f3945e32e8c92d1">tap</link> (x=None, y=None, z=None, zretract=None, depth=None, standoff=None, dwell_bottom=None, pitch=None, stoppos=None, spin_in=None, spin_out=None, tap_mode=None, direction=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a466755553222942453bd0a5098684650">bore</link> (x=None, y=None, z=None, zretract=None, depth=None, standoff=None, dwell_bottom=None, feed_in=None, feed_out=None, stoppos=None, shift_back=None, shift_right=None, backbore=False, stop=False)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a0daa749c78dd05c2ec7a91ec46ad1346">end_canned_cycle</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1ab04378ea03bd17ea56d85f62cd154ba0">peck</link> (count, first, last=None, step=0.0)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a3a12deb46bf7b5a2777abc4d852e7ce2">comment</link> (text)</para>
+
+<para>Misc. </para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a66d8bdba579d92ff128a81dbccc660d3">insert</link> (text)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a11803da1e295182f48f49f30e3bd91a3">block_delete</link> (on=False)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a6ec7f1730e85bee353f0bf11ccfce5a4">variable</link> (id)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a1dd5aee5d6951798172d1b7051e357de">variable_set</link> (id, value)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a903ff4348154814b6cb7f655d0d2db8e">probe_single_point</link> (point_along_edge_x=None, point_along_edge_y=None, depth=None, retracted_point_x=None, retracted_point_y=None, destination_point_x=None, destination_point_y=None, intersection_variable_x=None, intersection_variable_y=None, probe_offset_x_component=None, probe_offset_y_component=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1aaaa53447ccb503227227c835ef01cc4c">probe_downward_point</link> (x=None, y=None, depth=None, intersection_variable_z=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a794e24b06bc50b3f86d3e6963658a144">report_probe_results</link> (x1=None, y1=None, z1=None, x2=None, y2=None, z2=None, x3=None, y3=None, z3=None, x4=None, y4=None, z4=None, x5=None, y5=None, z5=None, x6=None, y6=None, z6=None, xml_file_name=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a9edf23b625c2bd2d19b9ba8e2f2c90e4">open_log_file</link> (xml_file_name=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a333eda62aec03067ba85b44a61c86935">log_coordinate</link> (x=None, y=None, z=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a53322f0171bd6afaa06ec792f400c9d0">log_message</link> (message=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1ad0beec7390788018dc746fa245e6fcde">close_log_file</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a01da1b0ca0e7d91954e94c6626fb324d">rapid_to_midpoint</link> (x1=None, y1=None, z1=None, x2=None, y2=None, z2=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a4624f93a758a6c73df07bba758d6bd62">rapid_to_intersection</link> (x1, y1, x2, y2, x3, y3, x4, y4, intersection_x, intersection_y, ua_numerator, ua_denominator, ua, ub_numerator, ub)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a9a18a96d0b3afcf63409a3e6018eb11d">rapid_to_rotated_coordinate</link> (x1, y1, x2, y2, ref_x, ref_y, x_current, y_current, x_final, y_final)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1aad8a0d26587ae07f88e5a75179885381">set_path_control_mode</link> (mode, motion_blending_tolerance, naive_cam_tolerance)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a5e9aaca9955c8fb95dad44092558a3bf">wipe</link> ()</para>
+
+<para>NC code creator for additive machines like RepRap. </para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1abc318115f78663ca2d91126157d86702">extruder_on</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a77ad194ec2cabd245c600c14c2b7d483">extruder_off</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a36473a64d57ec3d8d8bfb883147d2d7a">set_extruder_flowrate</link> (flowrate)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a9c030419249e1ab21249ba3422a34ffb">extruder_temp</link> (temp=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a333a772bbb47cae40c605859700232b1">fan_on</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1ac54675c89b77aca716632a8e43f05c43">fan_off</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a9cac407940b4fe19bfe3a97b4fa6ecf7">build_bed_temp</link> (temp=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a5a69714dde7282a277dca7997af3e46a">chamber_temp</link> (temp=None)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_namespacecam_1_1nc_1_1nc_1abd30b2c5b3de780c384ee7804ff938cf">ncOFF</link> = 0</para>
+
+<para><link linkend="_nc_8py">nc.py</link> </para>
+</listitem>
+            <listitem><para>int <link linkend="_namespacecam_1_1nc_1_1nc_1a95dcecaea1bad8e7a63a0280a02dde35">ncLEFT</link> = -1</para>
+</listitem>
+            <listitem><para>int <link linkend="_namespacecam_1_1nc_1_1nc_1abc22b36804e0487675c685a0bf18abc7">ncRIGHT</link> = +1</para>
+</listitem>
+            <listitem><para>int <link linkend="_namespacecam_1_1nc_1_1nc_1a4ebb84a6c868f8b01604495383df3f5f">ncCW</link> = -1</para>
+</listitem>
+            <listitem><para>int <link linkend="_namespacecam_1_1nc_1_1nc_1a75d08e435350169027a100d76d537557">ncCCW</link> = +1</para>
+</listitem>
+            <listitem><para>int <link linkend="_namespacecam_1_1nc_1_1nc_1aaf818838b2d8d41f10b40cd5c7d755dd">ncMIST</link> = 1</para>
+</listitem>
+            <listitem><para>int <link linkend="_namespacecam_1_1nc_1_1nc_1afce7ab21c08404ef1adc338867f17531">ncFLOOD</link> = 2</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a983609d1bb7f24d5016a63113024a0cf">creator</link> = <link linkend="_classcam_1_1nc_1_1nc_1_1Creator">Creator</link>()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1ad74908c6a20b925f202c3bec46ed8fc7"/><section>
+    <title>absolute()</title>
+<indexterm><primary>absolute</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>absolute</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.absolute ( )</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1ab2653b621f92d4d0758eec2de99f1175"/><section>
+    <title>add_stock()</title>
+<indexterm><primary>add_stock</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>add_stock</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.add_stock ( type_name,  params)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1ac1c0de0472258ed82c4d3f6206b4d679"/><section>
+    <title>arc_ccw()</title>
+<indexterm><primary>arc_ccw</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>arc_ccw</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.arc_ccw ( x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+,  i = <computeroutput>None</computeroutput>
+,  j = <computeroutput>None</computeroutput>
+,  k = <computeroutput>None</computeroutput>
+,  r = <computeroutput>None</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a756e0b86926b3291935ef719e3d9b074"/><section>
+    <title>arc_cw()</title>
+<indexterm><primary>arc_cw</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>arc_cw</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.arc_cw ( x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+,  i = <computeroutput>None</computeroutput>
+,  j = <computeroutput>None</computeroutput>
+,  k = <computeroutput>None</computeroutput>
+,  r = <computeroutput>None</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a11803da1e295182f48f49f30e3bd91a3"/><section>
+    <title>block_delete()</title>
+<indexterm><primary>block_delete</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>block_delete</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.block_delete ( on = <computeroutput>False</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a466755553222942453bd0a5098684650"/><section>
+    <title>bore()</title>
+<indexterm><primary>bore</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>bore</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.bore ( x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+,  zretract = <computeroutput>None</computeroutput>
+,  depth = <computeroutput>None</computeroutput>
+,  standoff = <computeroutput>None</computeroutput>
+,  dwell_bottom = <computeroutput>None</computeroutput>
+,  feed_in = <computeroutput>None</computeroutput>
+,  feed_out = <computeroutput>None</computeroutput>
+,  stoppos = <computeroutput>None</computeroutput>
+,  shift_back = <computeroutput>None</computeroutput>
+,  shift_right = <computeroutput>None</computeroutput>
+,  backbore = <computeroutput>False</computeroutput>
+,  stop = <computeroutput>False</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a9cac407940b4fe19bfe3a97b4fa6ecf7"/><section>
+    <title>build_bed_temp()</title>
+<indexterm><primary>build_bed_temp</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>build_bed_temp</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.build_bed_temp ( temp = <computeroutput>None</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a5a69714dde7282a277dca7997af3e46a"/><section>
+    <title>chamber_temp()</title>
+<indexterm><primary>chamber_temp</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>chamber_temp</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.chamber_temp ( temp = <computeroutput>None</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a3cdaab149cd04b2fb00dd27fbb08a893"/><section>
+    <title>clearanceplane()</title>
+<indexterm><primary>clearanceplane</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>clearanceplane</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.clearanceplane ( z = <computeroutput>None</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1ad0beec7390788018dc746fa245e6fcde"/><section>
+    <title>close_log_file()</title>
+<indexterm><primary>close_log_file</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>close_log_file</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.close_log_file ( )</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a3a12deb46bf7b5a2777abc4d852e7ce2"/><section>
+    <title>comment()</title>
+<indexterm><primary>comment</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>comment</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.comment ( text)</computeroutput></para><para>
+
+<para>Misc. </para>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1af16478add27c802d5bb11d5c2f74b274"/><section>
+    <title>coolant()</title>
+<indexterm><primary>coolant</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>coolant</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.coolant ( mode = <computeroutput>0</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1ae7c69347a8ea423384b188ba63918774"/><section>
+    <title>CRC_nominal_path()</title>
+<indexterm><primary>CRC_nominal_path</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>CRC_nominal_path</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.CRC_nominal_path ( )</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1ad6b92768f96ea6bc862da4b6ef514d5f"/><section>
+    <title>current_tool()</title>
+<indexterm><primary>current_tool</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>current_tool</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.current_tool ( self)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a27c32800c81081418730c2bb403c6148"/><section>
+    <title>datum_set()</title>
+<indexterm><primary>datum_set</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>datum_set</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.datum_set ( x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+,  a = <computeroutput>None</computeroutput>
+,  b = <computeroutput>None</computeroutput>
+,  c = <computeroutput>None</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1ab1c0e7d2464614f7a59f2907730a107d"/><section>
+    <title>datum_shift()</title>
+<indexterm><primary>datum_shift</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>datum_shift</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.datum_shift ( x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+,  a = <computeroutput>None</computeroutput>
+,  b = <computeroutput>None</computeroutput>
+,  c = <computeroutput>None</computeroutput>
+)</computeroutput></para><para>
+
+<para>Datums. </para>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a4fd9d778d6e2f233f38a9a8bdb11ab9a"/><section>
+    <title>drill()</title>
+<indexterm><primary>drill</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>drill</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.drill ( x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  dwell = <computeroutput>None</computeroutput>
+,  depthparams = <computeroutput>None</computeroutput>
+,  retract_mode = <computeroutput>None</computeroutput>
+,  spindle_mode = <computeroutput>None</computeroutput>
+,  internal_coolant_on = <computeroutput>None</computeroutput>
+,  rapid_to_clearance = <computeroutput>None</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a949d9b8211c3db33787dae701fafc43b"/><section>
+    <title>dwell()</title>
+<indexterm><primary>dwell</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>dwell</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.dwell ( t)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a0daa749c78dd05c2ec7a91ec46ad1346"/><section>
+    <title>end_canned_cycle()</title>
+<indexterm><primary>end_canned_cycle</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>end_canned_cycle</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.end_canned_cycle ( )</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1ad7e6d5529185e11daf072a0c5bdc0b9f"/><section>
+    <title>end_CRC()</title>
+<indexterm><primary>end_CRC</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>end_CRC</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.end_CRC ( )</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a77ad194ec2cabd245c600c14c2b7d483"/><section>
+    <title>extruder_off()</title>
+<indexterm><primary>extruder_off</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>extruder_off</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.extruder_off ( )</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1abc318115f78663ca2d91126157d86702"/><section>
+    <title>extruder_on()</title>
+<indexterm><primary>extruder_on</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>extruder_on</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.extruder_on ( )</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a9c030419249e1ab21249ba3422a34ffb"/><section>
+    <title>extruder_temp()</title>
+<indexterm><primary>extruder_temp</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>extruder_temp</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.extruder_temp ( temp = <computeroutput>None</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1ac54675c89b77aca716632a8e43f05c43"/><section>
+    <title>fan_off()</title>
+<indexterm><primary>fan_off</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>fan_off</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.fan_off ( )</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a333a772bbb47cae40c605859700232b1"/><section>
+    <title>fan_on()</title>
+<indexterm><primary>fan_on</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>fan_on</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.fan_on ( )</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a7578810bc59ccdf99c9c99ca367b63be"/><section>
+    <title>feed()</title>
+<indexterm><primary>feed</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>feed</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.feed ( x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+,  a = <computeroutput>None</computeroutput>
+,  b = <computeroutput>None</computeroutput>
+,  c = <computeroutput>None</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a2aa8ab25220eb317f50d5e1781230921"/><section>
+    <title>feedrate()</title>
+<indexterm><primary>feedrate</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>feedrate</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.feedrate ( f)</computeroutput></para><para>
+
+<para>Rates + Modes. </para>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a21d0006f00a8f8f163d0ef2ae19a31e6"/><section>
+    <title>feedrate_hv()</title>
+<indexterm><primary>feedrate_hv</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>feedrate_hv</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.feedrate_hv ( fh,  fv)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1afd0c909bd08487f8a0b0bebdb069921d"/><section>
+    <title>flush_nc()</title>
+<indexterm><primary>flush_nc</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>flush_nc</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.flush_nc ( )</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1ab5fdbe40038ddd3015c5e8dc0f5e9964"/><section>
+    <title>gearrange()</title>
+<indexterm><primary>gearrange</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>gearrange</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.gearrange ( gear = <computeroutput>0</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a7f2b6749cce54c4dd89eda9600a8e976"/><section>
+    <title>imperial()</title>
+<indexterm><primary>imperial</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>imperial</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.imperial ( )</computeroutput></para><para>
+
+<para>Settings. </para>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a6963c0c9253920c23d018f5899835ec3"/><section>
+    <title>incremental()</title>
+<indexterm><primary>incremental</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>incremental</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.incremental ( )</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a66d8bdba579d92ff128a81dbccc660d3"/><section>
+    <title>insert()</title>
+<indexterm><primary>insert</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>insert</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.insert ( text)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a333eda62aec03067ba85b44a61c86935"/><section>
+    <title>log_coordinate()</title>
+<indexterm><primary>log_coordinate</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>log_coordinate</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.log_coordinate ( x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a53322f0171bd6afaa06ec792f400c9d0"/><section>
+    <title>log_message()</title>
+<indexterm><primary>log_message</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>log_message</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.log_message ( message = <computeroutput>None</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a73c95d1cac4807e1ad34e3cd0498cef9"/><section>
+    <title>matrix()</title>
+<indexterm><primary>matrix</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>matrix</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.matrix ( a1 = <computeroutput>None</computeroutput>
+,  b1 = <computeroutput>None</computeroutput>
+,  c1 = <computeroutput>None</computeroutput>
+,  a2 = <computeroutput>None</computeroutput>
+,  b2 = <computeroutput>None</computeroutput>
+,  c2 = <computeroutput>None</computeroutput>
+,  a3 = <computeroutput>None</computeroutput>
+,  b3 = <computeroutput>None</computeroutput>
+,  c3 = <computeroutput>None</computeroutput>
+)</computeroutput></para><para>
+
+<para>APT360 like Transformation Definitions These definitions were created while looking at Irvin Kraal&apos;s book on APT. </para>
+</para>
+
+<para><itemizedlist>
+<listitem>
+<para>Numerical Control Progamming in APT - page 211 </para>
+</listitem></itemizedlist>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a01e84a7ca713359d793d51017ef49fb5"/><section>
+    <title>matrix_product()</title>
+<indexterm><primary>matrix_product</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>matrix_product</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.matrix_product ( matrix1 = <computeroutput>None</computeroutput>
+,  matrix2 = <computeroutput>None</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a77aa91d77157709db49f6dbd7d6d2ded"/><section>
+    <title>metric()</title>
+<indexterm><primary>metric</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>metric</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.metric ( )</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a96ee4396671a01ffaae1a09a70d50fcb"/><section>
+    <title>mirror_line()</title>
+<indexterm><primary>mirror_line</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>mirror_line</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.mirror_line ( line = <computeroutput>None</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a34d1d352a4127656b2c2702493ecd966"/><section>
+    <title>mirror_plane()</title>
+<indexterm><primary>mirror_plane</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>mirror_plane</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.mirror_plane ( plane1 = <computeroutput>None</computeroutput>
+,  plane2 = <computeroutput>None</computeroutput>
+,  plane3 = <computeroutput>None</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a6760aee692432a19486b3c30af589384"/><section>
+    <title>offset_length()</title>
+<indexterm><primary>offset_length</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>offset_length</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.offset_length ( id,  length = <computeroutput>None</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a4a2637da7c871d89250368e1d498e4b5"/><section>
+    <title>offset_radius()</title>
+<indexterm><primary>offset_radius</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>offset_radius</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.offset_radius ( id,  radius = <computeroutput>None</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a9edf23b625c2bd2d19b9ba8e2f2c90e4"/><section>
+    <title>open_log_file()</title>
+<indexterm><primary>open_log_file</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>open_log_file</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.open_log_file ( xml_file_name = <computeroutput>None</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a49cd91390516052eb941782e4fcf3103"/><section>
+    <title>output()</title>
+<indexterm><primary>output</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>output</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.output ( filename)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a7164ab089845fe1e05f22ad9eb97a3e3"/><section>
+    <title>pattern()</title>
+<indexterm><primary>pattern</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>pattern</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.pattern ( )</computeroutput></para><para>
+
+<para>Cycles. </para>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1ab04378ea03bd17ea56d85f62cd154ba0"/><section>
+    <title>peck()</title>
+<indexterm><primary>peck</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>peck</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.peck ( count,  first,  last = <computeroutput>None</computeroutput>
+,  step = <computeroutput>0.0</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a6bfeb37fda535e9ca08622b3cdf91021"/><section>
+    <title>pocket()</title>
+<indexterm><primary>pocket</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>pocket</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.pocket ( )</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a57833e047f2ea97c9deacf88e2e0e062"/><section>
+    <title>polar()</title>
+<indexterm><primary>polar</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>polar</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.polar ( on = <computeroutput>True</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1aaaa53447ccb503227227c835ef01cc4c"/><section>
+    <title>probe_downward_point()</title>
+<indexterm><primary>probe_downward_point</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>probe_downward_point</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.probe_downward_point ( x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  depth = <computeroutput>None</computeroutput>
+,  intersection_variable_z = <computeroutput>None</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a903ff4348154814b6cb7f655d0d2db8e"/><section>
+    <title>probe_single_point()</title>
+<indexterm><primary>probe_single_point</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>probe_single_point</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.probe_single_point ( point_along_edge_x = <computeroutput>None</computeroutput>
+,  point_along_edge_y = <computeroutput>None</computeroutput>
+,  depth = <computeroutput>None</computeroutput>
+,  retracted_point_x = <computeroutput>None</computeroutput>
+,  retracted_point_y = <computeroutput>None</computeroutput>
+,  destination_point_x = <computeroutput>None</computeroutput>
+,  destination_point_y = <computeroutput>None</computeroutput>
+,  intersection_variable_x = <computeroutput>None</computeroutput>
+,  intersection_variable_y = <computeroutput>None</computeroutput>
+,  probe_offset_x_component = <computeroutput>None</computeroutput>
+,  probe_offset_y_component = <computeroutput>None</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a6af609274eab10818a4e7d3118de10be"/><section>
+    <title>profile()</title>
+<indexterm><primary>profile</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>profile</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.profile ( )</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a93452763182eb8b55a5c6b88e9adf0f8"/><section>
+    <title>program_begin()</title>
+<indexterm><primary>program_begin</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>program_begin</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.program_begin ( id,  name = <computeroutput>&apos;&apos;</computeroutput>
+)</computeroutput></para><para>
+
+<para>Programs. </para>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1aec60aad0c8e364502b3d3699f024facf"/><section>
+    <title>program_end()</title>
+<indexterm><primary>program_end</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>program_end</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.program_end ( )</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1ae174e9a14be3dda3e58448c99e7f983f"/><section>
+    <title>program_stop()</title>
+<indexterm><primary>program_stop</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>program_stop</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.program_stop ( optional = <computeroutput>False</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a8657d368e8402228d437fbfe758740df"/><section>
+    <title>rapid()</title>
+<indexterm><primary>rapid</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>rapid</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.rapid ( x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+,  a = <computeroutput>None</computeroutput>
+,  b = <computeroutput>None</computeroutput>
+,  c = <computeroutput>None</computeroutput>
+)</computeroutput></para><para>
+
+<para>Moves. </para>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a2b35c170916de77950ff1d69c5962fc1"/><section>
+    <title>rapid_home()</title>
+<indexterm><primary>rapid_home</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>rapid_home</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.rapid_home ( x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+,  a = <computeroutput>None</computeroutput>
+,  b = <computeroutput>None</computeroutput>
+,  c = <computeroutput>None</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a4624f93a758a6c73df07bba758d6bd62"/><section>
+    <title>rapid_to_intersection()</title>
+<indexterm><primary>rapid_to_intersection</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>rapid_to_intersection</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.rapid_to_intersection ( x1,  y1,  x2,  y2,  x3,  y3,  x4,  y4,  intersection_x,  intersection_y,  ua_numerator,  ua_denominator,  ua,  ub_numerator,  ub)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a01da1b0ca0e7d91954e94c6626fb324d"/><section>
+    <title>rapid_to_midpoint()</title>
+<indexterm><primary>rapid_to_midpoint</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>rapid_to_midpoint</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.rapid_to_midpoint ( x1 = <computeroutput>None</computeroutput>
+,  y1 = <computeroutput>None</computeroutput>
+,  z1 = <computeroutput>None</computeroutput>
+,  x2 = <computeroutput>None</computeroutput>
+,  y2 = <computeroutput>None</computeroutput>
+,  z2 = <computeroutput>None</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a9a18a96d0b3afcf63409a3e6018eb11d"/><section>
+    <title>rapid_to_rotated_coordinate()</title>
+<indexterm><primary>rapid_to_rotated_coordinate</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>rapid_to_rotated_coordinate</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.rapid_to_rotated_coordinate ( x1,  y1,  x2,  y2,  ref_x,  ref_y,  x_current,  y_current,  x_final,  y_final)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a55d2ff04340887e538bd1ce692c32bab"/><section>
+    <title>rapid_unhome()</title>
+<indexterm><primary>rapid_unhome</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>rapid_unhome</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.rapid_unhome ( )</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a1253f3dc70debdd0acafaf15e5c0a6e6"/><section>
+    <title>remove_temporary_origin()</title>
+<indexterm><primary>remove_temporary_origin</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>remove_temporary_origin</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.remove_temporary_origin ( )</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a794e24b06bc50b3f86d3e6963658a144"/><section>
+    <title>report_probe_results()</title>
+<indexterm><primary>report_probe_results</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>report_probe_results</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.report_probe_results ( x1 = <computeroutput>None</computeroutput>
+,  y1 = <computeroutput>None</computeroutput>
+,  z1 = <computeroutput>None</computeroutput>
+,  x2 = <computeroutput>None</computeroutput>
+,  y2 = <computeroutput>None</computeroutput>
+,  z2 = <computeroutput>None</computeroutput>
+,  x3 = <computeroutput>None</computeroutput>
+,  y3 = <computeroutput>None</computeroutput>
+,  z3 = <computeroutput>None</computeroutput>
+,  x4 = <computeroutput>None</computeroutput>
+,  y4 = <computeroutput>None</computeroutput>
+,  z4 = <computeroutput>None</computeroutput>
+,  x5 = <computeroutput>None</computeroutput>
+,  y5 = <computeroutput>None</computeroutput>
+,  z5 = <computeroutput>None</computeroutput>
+,  x6 = <computeroutput>None</computeroutput>
+,  y6 = <computeroutput>None</computeroutput>
+,  z6 = <computeroutput>None</computeroutput>
+,  xml_file_name = <computeroutput>None</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a3bae18fdfe198a827e36b23316c28c69"/><section>
+    <title>rotate()</title>
+<indexterm><primary>rotate</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>rotate</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.rotate ( xyrot = <computeroutput>None</computeroutput>
+,  yzrot = <computeroutput>None</computeroutput>
+,  zxrot = <computeroutput>None</computeroutput>
+,  angle = <computeroutput>None</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a49eaf759253148019f147ba74514512c"/><section>
+    <title>scale()</title>
+<indexterm><primary>scale</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>scale</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.scale ( k = <computeroutput>None</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a36473a64d57ec3d8d8bfb883147d2d7a"/><section>
+    <title>set_extruder_flowrate()</title>
+<indexterm><primary>set_extruder_flowrate</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>set_extruder_flowrate</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.set_extruder_flowrate ( flowrate)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a2eb5bee0f0dd69b7272cb9a753f79734"/><section>
+    <title>set_machine_coordinates()</title>
+<indexterm><primary>set_machine_coordinates</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>set_machine_coordinates</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.set_machine_coordinates ( )</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1aad8a0d26587ae07f88e5a75179885381"/><section>
+    <title>set_path_control_mode()</title>
+<indexterm><primary>set_path_control_mode</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>set_path_control_mode</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.set_path_control_mode ( mode,  motion_blending_tolerance,  naive_cam_tolerance)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1afae706ecde45c5e84d4947b830a093ff"/><section>
+    <title>set_plane()</title>
+<indexterm><primary>set_plane</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>set_plane</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.set_plane ( plane)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1ace48cca1473b383c797cc9c52d63728c"/><section>
+    <title>set_temporary_origin()</title>
+<indexterm><primary>set_temporary_origin</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>set_temporary_origin</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.set_temporary_origin ( x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+,  a = <computeroutput>None</computeroutput>
+,  b = <computeroutput>None</computeroutput>
+,  c = <computeroutput>None</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a21a910b0d76cb7f68564765cc149eb24"/><section>
+    <title>spindle()</title>
+<indexterm><primary>spindle</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>spindle</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.spindle ( s,  clockwise = <computeroutput>True</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a1ae11ca953100924ad40dafdd8d7d4db"/><section>
+    <title>start_CRC()</title>
+<indexterm><primary>start_CRC</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>start_CRC</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.start_CRC ( left = <computeroutput>True</computeroutput>
+,  radius = <computeroutput>0.0</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a2affc5d9abe6258bffa88666e7d62e7c"/><section>
+    <title>sub_begin()</title>
+<indexterm><primary>sub_begin</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>sub_begin</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.sub_begin ( id,  name = <computeroutput>&apos;&apos;</computeroutput>
+)</computeroutput></para><para>
+
+<para>Subprograms. </para>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1ae09b32d7eb96c506f9ed8f037d511e3f"/><section>
+    <title>sub_call()</title>
+<indexterm><primary>sub_call</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>sub_call</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.sub_call ( id)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a15c506e6d4c4ba6ca04c51ae9ba25ba0"/><section>
+    <title>sub_end()</title>
+<indexterm><primary>sub_end</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>sub_end</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.sub_end ( )</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a71b7ee750daf4b638f3945e32e8c92d1"/><section>
+    <title>tap()</title>
+<indexterm><primary>tap</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>tap</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.tap ( x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+,  zretract = <computeroutput>None</computeroutput>
+,  depth = <computeroutput>None</computeroutput>
+,  standoff = <computeroutput>None</computeroutput>
+,  dwell_bottom = <computeroutput>None</computeroutput>
+,  pitch = <computeroutput>None</computeroutput>
+,  stoppos = <computeroutput>None</computeroutput>
+,  spin_in = <computeroutput>None</computeroutput>
+,  spin_out = <computeroutput>None</computeroutput>
+,  tap_mode = <computeroutput>None</computeroutput>
+,  direction = <computeroutput>None</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a1d1f7deb327775e6202d01b7ff7953ca"/><section>
+    <title>tool_change()</title>
+<indexterm><primary>tool_change</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>tool_change</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.tool_change ( id)</computeroutput></para><para>
+
+<para>Tools. </para>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1ae0a0d0163f26e46077ea5a28f5258530"/><section>
+    <title>tool_defn()</title>
+<indexterm><primary>tool_defn</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>tool_defn</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.tool_defn ( id,  name = <computeroutput>&apos;&apos;</computeroutput>
+,  params = <computeroutput>None</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a94cb7570e7fbf4c72991185ee7bd21bd"/><section>
+    <title>translate()</title>
+<indexterm><primary>translate</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>translate</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.translate ( x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a615cc957895920e1e32b80fee633eb35"/><section>
+    <title>use_CRC()</title>
+<indexterm><primary>use_CRC</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>use_CRC</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.use_CRC ( )</computeroutput></para><para>
+
+<para>Cutter radius compensation. </para>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a6ec7f1730e85bee353f0bf11ccfce5a4"/><section>
+    <title>variable()</title>
+<indexterm><primary>variable</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>variable</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.variable ( id)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a1dd5aee5d6951798172d1b7051e357de"/><section>
+    <title>variable_set()</title>
+<indexterm><primary>variable_set</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>variable_set</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.variable_set ( id,  value)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a5e9aaca9955c8fb95dad44092558a3bf"/><section>
+    <title>wipe()</title>
+<indexterm><primary>wipe</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>wipe</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.wipe ( )</computeroutput></para><para>
+
+<para>NC code creator for additive machines like RepRap. </para>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1aed1290b836577b89c33a2786f5e50f07"/><section>
+    <title>workplane()</title>
+<indexterm><primary>workplane</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>workplane</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.workplane ( id)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a8b6455c52bcf6c1959022977b5d1ce68"/><section>
+    <title>write()</title>
+<indexterm><primary>write</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>write</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.write ( s)</computeroutput></para><para>
+
+<para>Internals. </para>
+</para>
+</section>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a983609d1bb7f24d5016a63113024a0cf"/><section>
+    <title>creator</title>
+<indexterm><primary>creator</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>creator</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.creator = <link linkend="_classcam_1_1nc_1_1nc_1_1Creator">Creator</link>()</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a75d08e435350169027a100d76d537557"/><section>
+    <title>ncCCW</title>
+<indexterm><primary>ncCCW</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>ncCCW</secondary></indexterm>
+<para><computeroutput>int cam.nc.nc.ncCCW = +1</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a4ebb84a6c868f8b01604495383df3f5f"/><section>
+    <title>ncCW</title>
+<indexterm><primary>ncCW</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>ncCW</secondary></indexterm>
+<para><computeroutput>int cam.nc.nc.ncCW = -1</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1afce7ab21c08404ef1adc338867f17531"/><section>
+    <title>ncFLOOD</title>
+<indexterm><primary>ncFLOOD</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>ncFLOOD</secondary></indexterm>
+<para><computeroutput>int cam.nc.nc.ncFLOOD = 2</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1a95dcecaea1bad8e7a63a0280a02dde35"/><section>
+    <title>ncLEFT</title>
+<indexterm><primary>ncLEFT</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>ncLEFT</secondary></indexterm>
+<para><computeroutput>int cam.nc.nc.ncLEFT = -1</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1aaf818838b2d8d41f10b40cd5c7d755dd"/><section>
+    <title>ncMIST</title>
+<indexterm><primary>ncMIST</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>ncMIST</secondary></indexterm>
+<para><computeroutput>int cam.nc.nc.ncMIST = 1</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1abd30b2c5b3de780c384ee7804ff938cf"/><section>
+    <title>ncOFF</title>
+<indexterm><primary>ncOFF</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>ncOFF</secondary></indexterm>
+<para><computeroutput>int cam.nc.nc.ncOFF = 0</computeroutput></para><para>
+
+<para><link linkend="_nc_8py">nc.py</link> </para>
+</para>
+
+<para>Base class for NC code creation And global functions for calling current creator</para>
+
+<para>Hirutso Enni, 2009-01-13 altered by Dan Falck 2010-08-04 added tap() arguments Michael Haberler 2010-10-07 </para>
+</section>
+<anchor xml:id="_namespacecam_1_1nc_1_1nc_1abc22b36804e0487675c685a0bf18abc7"/><section>
+    <title>ncRIGHT</title>
+<indexterm><primary>ncRIGHT</primary><secondary>cam.nc.nc</secondary></indexterm>
+<indexterm><primary>cam.nc.nc</primary><secondary>ncRIGHT</secondary></indexterm>
+<para><computeroutput>int cam.nc.nc.ncRIGHT = +1</computeroutput></para></section>
+</section>
+</section>

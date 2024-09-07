@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacecam_1_1gcodepath" xml:lang="en-US">
+<title>cam.gcodepath Namespace Reference</title>
+<indexterm><primary>cam.gcodepath</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacecam_1_1gcodepath_1a7db1aa3d8c59790e7771794c6acf98e8">pointonline</link> (a, b, c, tolerence)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1gcodepath_1a000950b2f348260ff45bc874210cbd91">exportGcodePath</link> (filename, vertslist, operations)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1gcodepath_1a71ea289ba3b1df8210f85c946b97af91">getPath</link> (context, operation)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1gcodepath_1a5d235fcec5e4bb7ae63b3af012278af8">getChangeData</link> (o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1gcodepath_1a9fcb32878c8e2d4b3ba3d29113779218">checkMemoryLimit</link> (o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1gcodepath_1a50fefd09fa0d13986f3e141d0e2cb166">getPath3axis</link> (context, operation)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1gcodepath_1a36d1c51fcfc551d0c5879424ed606bd9">getPath4axis</link> (context, operation)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>BlenderCAM &apos;gcodepath.py&apos; © 2012 Vilem Novak
+
+Generate and Export G-Code based on scene, machine, chain, operation and path settings.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespacecam_1_1gcodepath_1a9fcb32878c8e2d4b3ba3d29113779218"/><section>
+    <title>checkMemoryLimit()</title>
+<indexterm><primary>checkMemoryLimit</primary><secondary>cam.gcodepath</secondary></indexterm>
+<indexterm><primary>cam.gcodepath</primary><secondary>checkMemoryLimit</secondary></indexterm>
+<para><computeroutput>cam.gcodepath.checkMemoryLimit ( o)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1gcodepath_a9fcb32878c8e2d4b3ba3d29113779218_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1gcodepath_1a000950b2f348260ff45bc874210cbd91"/><section>
+    <title>exportGcodePath()</title>
+<indexterm><primary>exportGcodePath</primary><secondary>cam.gcodepath</secondary></indexterm>
+<indexterm><primary>cam.gcodepath</primary><secondary>exportGcodePath</secondary></indexterm>
+<para><computeroutput>cam.gcodepath.exportGcodePath ( filename,  vertslist,  operations)</computeroutput></para>
+<para><literallayout><computeroutput>Exports G-code with the Heeks NC Adopted Library.</computeroutput></literallayout> </para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1gcodepath_a000950b2f348260ff45bc874210cbd91_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1gcodepath_a000950b2f348260ff45bc874210cbd91_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1gcodepath_1a5d235fcec5e4bb7ae63b3af012278af8"/><section>
+    <title>getChangeData()</title>
+<indexterm><primary>getChangeData</primary><secondary>cam.gcodepath</secondary></indexterm>
+<indexterm><primary>cam.gcodepath</primary><secondary>getChangeData</secondary></indexterm>
+<para><computeroutput>cam.gcodepath.getChangeData ( o)</computeroutput></para>
+<para><literallayout><computeroutput>This Is a Function to Check if Object Props Have Changed,
+to See if Image Updates Are Needed in the Image Based Method</computeroutput></literallayout> </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1gcodepath_a5d235fcec5e4bb7ae63b3af012278af8_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1gcodepath_1a71ea289ba3b1df8210f85c946b97af91"/><section>
+    <title>getPath()</title>
+<indexterm><primary>getPath</primary><secondary>cam.gcodepath</secondary></indexterm>
+<indexterm><primary>cam.gcodepath</primary><secondary>getPath</secondary></indexterm>
+<para><computeroutput>cam.gcodepath.getPath ( context,  operation)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1gcodepath_a71ea289ba3b1df8210f85c946b97af91_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1gcodepath_1a50fefd09fa0d13986f3e141d0e2cb166"/><section>
+    <title>getPath3axis()</title>
+<indexterm><primary>getPath3axis</primary><secondary>cam.gcodepath</secondary></indexterm>
+<indexterm><primary>cam.gcodepath</primary><secondary>getPath3axis</secondary></indexterm>
+<para><computeroutput>cam.gcodepath.getPath3axis ( context,  operation)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1gcodepath_a50fefd09fa0d13986f3e141d0e2cb166_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1gcodepath_1a36d1c51fcfc551d0c5879424ed606bd9"/><section>
+    <title>getPath4axis()</title>
+<indexterm><primary>getPath4axis</primary><secondary>cam.gcodepath</secondary></indexterm>
+<indexterm><primary>cam.gcodepath</primary><secondary>getPath4axis</secondary></indexterm>
+<para><computeroutput>cam.gcodepath.getPath4axis ( context,  operation)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1gcodepath_a36d1c51fcfc551d0c5879424ed606bd9_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1gcodepath_1a7db1aa3d8c59790e7771794c6acf98e8"/><section>
+    <title>pointonline()</title>
+<indexterm><primary>pointonline</primary><secondary>cam.gcodepath</secondary></indexterm>
+<indexterm><primary>cam.gcodepath</primary><secondary>pointonline</secondary></indexterm>
+<para><computeroutput>cam.gcodepath.pointonline ( a,  b,  c,  tolerence)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1gcodepath_a7db1aa3d8c59790e7771794c6acf98e8_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+</section>

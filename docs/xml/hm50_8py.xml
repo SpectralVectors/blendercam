@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="hm50_8py" kind="file" language="Python">
+    <compoundname>hm50.py</compoundname>
+    <innerclass refid="classcam_1_1nc_1_1hm50_1_1Creator" prot="public">cam::nc::hm50::Creator</innerclass>
+    <innernamespace refid="namespacecam">cam</innernamespace>
+    <innernamespace refid="namespacecam_1_1nc">cam::nc</innernamespace>
+    <innernamespace refid="namespacecam_1_1nc_1_1hm50">cam::nc::hm50</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacecam_1_1nc_1_1hm50" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>nc</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>emc2</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="classcam_1_1nc_1_1hm50_1_1Creator" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classcam_1_1nc_1_1hm50_1_1Creator" kindref="compound">Creator</ref>(<ref refid="classcam_1_1nc_1_1emc2_1_1Creator" kindref="compound">emc2.Creator</ref>):</highlight></codeline>
+<codeline lineno="6" refid="classcam_1_1nc_1_1hm50_1_1Creator_1ab1cb5692a658a8b65ace24e154f6cad8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classcam_1_1nc_1_1hm50_1_1Creator_1ab1cb5692a658a8b65ace24e154f6cad8" kindref="member">__init__</ref>(self):</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>emc2.Creator.__init__(self)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classcam_1_1nc_1_1hm50_1_1Creator_1a19293e986ee5ceb3483a39809a18e014" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classcam_1_1nc_1_1hm50_1_1Creator_1a19293e986ee5ceb3483a39809a18e014" kindref="member">program_begin</ref>(self,<sp/>id,<sp/>comment):</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classcam_1_1nc_1_1iso_1_1Creator_1abb81af5a0bdddfed387b71b68a51cc7a" kindref="member">write</ref><ref refid="classcam_1_1nc_1_1nc_1_1Creator_1a80f2134add83bfaaf2870d075d36ed8a" kindref="member">write</ref>((</highlight><highlight class="stringliteral">&apos;(&apos;</highlight><highlight class="normal"><sp/>+<sp/>comment<sp/>+<sp/></highlight><highlight class="stringliteral">&apos;)&apos;</highlight><highlight class="normal"><sp/>+<sp/></highlight><highlight class="stringliteral">&apos;\n&apos;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="classcam_1_1nc_1_1hm50_1_1Creator_1a52a88e68142442ebc4581b840b5bab40" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classcam_1_1nc_1_1hm50_1_1Creator_1a52a88e68142442ebc4581b840b5bab40" kindref="member">tool_change</ref>(self,<sp/>id):</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classcam_1_1nc_1_1iso_1_1Creator_1abb81af5a0bdddfed387b71b68a51cc7a" kindref="member">write</ref><ref refid="classcam_1_1nc_1_1nc_1_1Creator_1a80f2134add83bfaaf2870d075d36ed8a" kindref="member">write</ref>(</highlight><highlight class="stringliteral">&apos;G53<sp/>G00<sp/>Z30\n&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classcam_1_1nc_1_1iso_1_1Creator_1abb81af5a0bdddfed387b71b68a51cc7a" kindref="member">write</ref><ref refid="classcam_1_1nc_1_1nc_1_1Creator_1a80f2134add83bfaaf2870d075d36ed8a" kindref="member">write</ref>((self.<ref refid="classcam_1_1nc_1_1iso_1_1Creator_1a3c0640ab2405f7cf975459dfa0ddfdfd" kindref="member">TOOL</ref>()<sp/>%<sp/>id)<sp/>+<sp/></highlight><highlight class="stringliteral">&apos;\n&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classcam_1_1nc_1_1iso_1_1Creator_1abb81af5a0bdddfed387b71b68a51cc7a" kindref="member">write</ref><ref refid="classcam_1_1nc_1_1nc_1_1Creator_1a80f2134add83bfaaf2870d075d36ed8a" kindref="member">write</ref>(</highlight><highlight class="stringliteral">&apos;G01<sp/>Z100.000<sp/>F800.000\n&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classcam_1_1nc_1_1iso_1_1Creator_1abb81af5a0bdddfed387b71b68a51cc7a" kindref="member">write</ref><ref refid="classcam_1_1nc_1_1nc_1_1Creator_1a80f2134add83bfaaf2870d075d36ed8a" kindref="member">write</ref>(</highlight><highlight class="stringliteral">&apos;M0\n&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classcam_1_1nc_1_1iso_1_1Creator_1abb81af5a0bdddfed387b71b68a51cc7a" kindref="member">write</ref><ref refid="classcam_1_1nc_1_1nc_1_1Creator_1a80f2134add83bfaaf2870d075d36ed8a" kindref="member">write</ref>(</highlight><highlight class="stringliteral">&apos;G01<sp/>Z10.000<sp/>F300.000\n&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classcam_1_1nc_1_1hm50_1_1Creator_1a3455283412cdcd3a90a241a8ccbe8f44" refkind="member"><highlight class="normal">nc.creator<sp/>=<sp/><ref refid="classcam_1_1nc_1_1hm50_1_1Creator" kindref="compound">Creator</ref>()</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/hm50.py"/>
+  </compounddef>
+</doxygen>
