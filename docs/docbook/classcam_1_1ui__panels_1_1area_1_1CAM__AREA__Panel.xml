@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel" xml:lang="en-US">
+<title>cam.ui_panels.area.CAM_AREA_Panel Class Reference</title>
+<indexterm><primary>cam.ui_panels.area.CAM_AREA_Panel</primary></indexterm>
+Inheritance diagram for cam.ui_panels.area.CAM_AREA_Panel:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.ui_panels.area.CAM_AREA_Panel:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_1a97609194e155a1367d259fd9fc3b8007">draw_use_layers</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_1a1a8049fa43f39b40f5716a3efc85d7f3">draw_first_down</link> (self, col)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_1aa134833afdf6802c89373a1e9f5e6048">draw_maxz</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_1ad9e466c7c4e2730e608ee8238988e2d4">draw_minz</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_1afbfc7e65c6e2651d65c1f8595a08a672">draw_ambient</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_1ae5b5413182cd6772e7a4af7fbfca5ebf">draw_limit_curve</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_1abdc54a0936c0ee333f38597bfeb86ab1">draw</link> (self, <link linkend="_classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_1ada410a6ab5a4cda97a33636cd514c8bf">context</link>)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel">cam.ui_panels.buttons_panel.CAMButtonsPanel</link>        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a03843f1fecc691952b696f4bc75a0156">poll</link> (cls, context)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1ae2df719a61472a3f8674e26fe501b1f7">active_operation_index</link> (cls)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a9fe8584ab332e9830dfa800ee4582575">active_operation</link> (cls)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1acbcf6bed1c104021565fc4a486d1101a">__init__</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1aae624325882f33dd8820cdf27df16e4e">operations_count</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a3e5e2105cb372d0ad7ee959fa38e10e2">has_operations</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a41c101f031fc5ecdb0097889cf452de0">has_correct_level</link> (self)</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_1a814fbebf4774df64327b21c62cf5d5af">op</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_1ada410a6ab5a4cda97a33636cd514c8bf">context</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Attributes inherited from <link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel">cam.ui_panels.buttons_panel.CAMButtonsPanel</link>        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a62a27293a2c27a52a2f779e92312c9b6">op</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a3991296d0c3a293ee962391d01387868">use_experimental</link></para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_1aaf69f67ad7c83f284c350d6477761188">bl_label</link> = &quot;CAM Operation Area&quot;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_1a4d4ccd5915a348d6048795d8563079fe">bl_idname</link> = &quot;WORLD_PT_CAM_OPERATION_AREA&quot;</para>
+</listitem>
+            <listitem><para>int <link linkend="_classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_1afc2870818783dd5ad6a59429aea7b260">panel_interface_level</link> = 0</para>
+</listitem>
+            <listitem><para>dict <link linkend="_classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_1ab9fd43f718be543c04828424917ca500">prop_level</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Static Public Attributes inherited from <link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel">cam.ui_panels.buttons_panel.CAMButtonsPanel</link>        <itemizedlist>
+            <listitem><para>str <link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a875a6b4e703be8c259b1d750426c76ad">bl_space_type</link> = &apos;PROPERTIES&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a9763fc8e0e8a24f2f6f4ab050829c6a2">bl_region_type</link> = &apos;WINDOW&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a5da786aaf2c38c096f23a7f504866537">bl_context</link> = &quot;render&quot;</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a7c1ca8db6e75af2657e5658f7e3d7219">always_show_panel</link> = False</para>
+</listitem>
+            <listitem><para>dict <link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a0864a41721ef5200ecbbf340a1f7d678">COMPAT_ENGINES</link> = {&apos;CNCCAM_RENDER&apos;}</para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>CAM Operation Area Panel</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_1abdc54a0936c0ee333f38597bfeb86ab1"/><section>
+    <title>draw()</title>
+<indexterm><primary>draw</primary><secondary>cam.ui_panels.area.CAM_AREA_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.area.CAM_AREA_Panel</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.area.CAM_AREA_Panel.draw ( self,  context)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_1afbfc7e65c6e2651d65c1f8595a08a672"/><section>
+    <title>draw_ambient()</title>
+<indexterm><primary>draw_ambient</primary><secondary>cam.ui_panels.area.CAM_AREA_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.area.CAM_AREA_Panel</primary><secondary>draw_ambient</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.area.CAM_AREA_Panel.draw_ambient ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_afbfc7e65c6e2651d65c1f8595a08a672_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_1a1a8049fa43f39b40f5716a3efc85d7f3"/><section>
+    <title>draw_first_down()</title>
+<indexterm><primary>draw_first_down</primary><secondary>cam.ui_panels.area.CAM_AREA_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.area.CAM_AREA_Panel</primary><secondary>draw_first_down</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.area.CAM_AREA_Panel.draw_first_down ( self,  col)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_a1a8049fa43f39b40f5716a3efc85d7f3_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_1ae5b5413182cd6772e7a4af7fbfca5ebf"/><section>
+    <title>draw_limit_curve()</title>
+<indexterm><primary>draw_limit_curve</primary><secondary>cam.ui_panels.area.CAM_AREA_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.area.CAM_AREA_Panel</primary><secondary>draw_limit_curve</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.area.CAM_AREA_Panel.draw_limit_curve ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_ae5b5413182cd6772e7a4af7fbfca5ebf_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_1aa134833afdf6802c89373a1e9f5e6048"/><section>
+    <title>draw_maxz()</title>
+<indexterm><primary>draw_maxz</primary><secondary>cam.ui_panels.area.CAM_AREA_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.area.CAM_AREA_Panel</primary><secondary>draw_maxz</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.area.CAM_AREA_Panel.draw_maxz ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_aa134833afdf6802c89373a1e9f5e6048_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_1ad9e466c7c4e2730e608ee8238988e2d4"/><section>
+    <title>draw_minz()</title>
+<indexterm><primary>draw_minz</primary><secondary>cam.ui_panels.area.CAM_AREA_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.area.CAM_AREA_Panel</primary><secondary>draw_minz</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.area.CAM_AREA_Panel.draw_minz ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_ad9e466c7c4e2730e608ee8238988e2d4_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_1a97609194e155a1367d259fd9fc3b8007"/><section>
+    <title>draw_use_layers()</title>
+<indexterm><primary>draw_use_layers</primary><secondary>cam.ui_panels.area.CAM_AREA_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.area.CAM_AREA_Panel</primary><secondary>draw_use_layers</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.area.CAM_AREA_Panel.draw_use_layers ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_a97609194e155a1367d259fd9fc3b8007_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_1a4d4ccd5915a348d6048795d8563079fe"/><section>
+    <title>bl_idname</title>
+<indexterm><primary>bl_idname</primary><secondary>cam.ui_panels.area.CAM_AREA_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.area.CAM_AREA_Panel</primary><secondary>bl_idname</secondary></indexterm>
+<para><computeroutput>str cam.ui_panels.area.CAM_AREA_Panel.bl_idname = &quot;WORLD_PT_CAM_OPERATION_AREA&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_1aaf69f67ad7c83f284c350d6477761188"/><section>
+    <title>bl_label</title>
+<indexterm><primary>bl_label</primary><secondary>cam.ui_panels.area.CAM_AREA_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.area.CAM_AREA_Panel</primary><secondary>bl_label</secondary></indexterm>
+<para><computeroutput>str cam.ui_panels.area.CAM_AREA_Panel.bl_label = &quot;CAM Operation Area&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_1ada410a6ab5a4cda97a33636cd514c8bf"/><section>
+    <title>context</title>
+<indexterm><primary>context</primary><secondary>cam.ui_panels.area.CAM_AREA_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.area.CAM_AREA_Panel</primary><secondary>context</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.area.CAM_AREA_Panel.context</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_1a814fbebf4774df64327b21c62cf5d5af"/><section>
+    <title>op</title>
+<indexterm><primary>op</primary><secondary>cam.ui_panels.area.CAM_AREA_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.area.CAM_AREA_Panel</primary><secondary>op</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.area.CAM_AREA_Panel.op</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_1afc2870818783dd5ad6a59429aea7b260"/><section>
+    <title>panel_interface_level</title>
+<indexterm><primary>panel_interface_level</primary><secondary>cam.ui_panels.area.CAM_AREA_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.area.CAM_AREA_Panel</primary><secondary>panel_interface_level</secondary></indexterm>
+<para><computeroutput>int cam.ui_panels.area.CAM_AREA_Panel.panel_interface_level = 0<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_1ab9fd43f718be543c04828424917ca500"/><section>
+    <title>prop_level</title>
+<indexterm><primary>prop_level</primary><secondary>cam.ui_panels.area.CAM_AREA_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.area.CAM_AREA_Panel</primary><secondary>prop_level</secondary></indexterm>
+<para><computeroutput>dict cam.ui_panels.area.CAM_AREA_Panel.prop_level<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">=&#32;&#32;{
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;draw_use_layers&apos;</emphasis>:&#32;0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;draw_maxz&apos;</emphasis>:&#32;1,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;draw_minz&apos;</emphasis>:&#32;1,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;draw_ambient&apos;</emphasis>:&#32;1,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;draw_limit_curve&apos;</emphasis>:&#32;1,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;draw_first_down&apos;</emphasis>:&#32;1,
+&#32;&#32;&#32;&#32;}
+</programlisting></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/<link linkend="_area_8py">area.py</link></section>
+</section>

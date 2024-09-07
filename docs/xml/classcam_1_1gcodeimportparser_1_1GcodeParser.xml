@@ -1,0 +1,428 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1gcodeimportparser_1_1GcodeParser" kind="class" language="Python" prot="public">
+    <compoundname>cam::gcodeimportparser::GcodeParser</compoundname>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1gcodeimportparser_1_1GcodeParser_1a9d773066d297c5415ae8ff9f72b408d6" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.gcodeimportparser.GcodeParser::comment</definition>
+        <argsstring></argsstring>
+        <name>comment</name>
+        <qualifiedname>cam.gcodeimportparser.GcodeParser.comment</qualifiedname>
+        <initializer>=  &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" line="104" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" bodystart="104" bodyend="-1"/>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1ae8e86bcc6f05521bf4b639128e3241ee" compoundref="heiden_8py" startline="1052" endline="1082">cam.nc.heiden.Creator.probe_downward_point</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1a40689f45d25f7f726d11a172b608c0a4" compoundref="iso_8py" startline="1270" endline="1294">cam.nc.iso.Creator.probe_downward_point</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a921825a14a9068d234377d7ac3b7777f" compoundref="heiden_8py" startline="990" endline="1051">cam.nc.heiden.Creator.probe_single_point</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1adc5343ffd168991077858693d6a79fef" compoundref="iso_8py" startline="1221" endline="1269">cam.nc.iso.Creator.probe_single_point</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a1979595ccdc20dcf20f67751d328f25d" compoundref="heiden_8py" startline="1130" endline="1164">cam.nc.heiden.Creator.rapid_to_intersection</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1a60e5583b4ddafa8966b05d2baa28ea67" compoundref="iso_8py" startline="1341" endline="1367">cam.nc.iso.Creator.rapid_to_intersection</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a20686a35918df93542b7b5d4472d3d71" compoundref="heiden_8py" startline="1172" endline="1197">cam.nc.heiden.Creator.rapid_to_rotated_coordinate</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1affa9a90d01acd946672ba361abfbfffd" compoundref="iso_8py" startline="1375" endline="1392">cam.nc.iso.Creator.rapid_to_rotated_coordinate</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1emc2_1_1Creator_1a305cc96f9d28416e6ca475bc62150768" compoundref="emc2_8py" startline="64" endline="185">cam.nc.emc2.Creator.report_probe_results</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1emc2tap_1_1CreatorEMC2tap_1ae7c40089d2816698fbe6cfbc9a10a052" compoundref="emc2tap_8py" startline="25" endline="82">cam.nc.emc2tap.CreatorEMC2tap.tap</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1a3e61292523aa893f0187112023e51eff" compoundref="iso_8py" startline="472" endline="493">cam.nc.iso.Creator.tool_change</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcam_1_1gcodeimportparser_1_1GcodeParser_1addfc7f9a6fbff61fcb186713318879ef" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.gcodeimportparser.GcodeParser::model</definition>
+        <argsstring></argsstring>
+        <name>model</name>
+        <qualifiedname>cam.gcodeimportparser.GcodeParser.model</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" line="109" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" bodystart="109" bodyend="-1"/>
+        <referencedby refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1a7e709ef80f16a2168e2db8f64e379882" compoundref="gcodeimportparser_8py" startline="191" endline="194">cam.gcodeimportparser.GcodeParser.parse_G0</referencedby>
+        <referencedby refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1a13b499a56e116539b97359549babf007" compoundref="gcodeimportparser_8py" startline="187" endline="190">cam.gcodeimportparser.GcodeParser.parse_G1</referencedby>
+        <referencedby refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1aead9b776790ae8228391dcef251162ab" compoundref="gcodeimportparser_8py" startline="195" endline="198">cam.gcodeimportparser.GcodeParser.parse_G90</referencedby>
+        <referencedby refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1a4530733314095c91d26edefc5aafa0a3" compoundref="gcodeimportparser_8py" startline="199" endline="202">cam.gcodeimportparser.GcodeParser.parse_G91</referencedby>
+        <referencedby refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1afe07ed7b58c2c3701f13709df1cc241f" compoundref="gcodeimportparser_8py" startline="203" endline="206">cam.gcodeimportparser.GcodeParser.parse_G92</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1gcodeimportparser_1_1GcodeParser_1a9a39a9c0300f34bc37467ee65542386f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.gcodeimportparser.GcodeParser::lineNb</definition>
+        <argsstring></argsstring>
+        <name>lineNb</name>
+        <qualifiedname>cam.gcodeimportparser.GcodeParser.lineNb</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" line="115" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" bodystart="115" bodyend="-1"/>
+        <referencedby refid="classcam_1_1gcodeimportparser_1_1Segment_1a03e689de0991a335580c4bf2726423e7" compoundref="gcodeimportparser_8py" startline="484" endline="488">cam.gcodeimportparser.Segment.__str__</referencedby>
+        <referencedby refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1ab661d91daf66cd54c13ab9fe1193955b" compoundref="gcodeimportparser_8py" startline="210" endline="214">cam.gcodeimportparser.GcodeParser.error</referencedby>
+        <referencedby refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1ad1fcff07178ae82267e8f431946ae94c" compoundref="gcodeimportparser_8py" startline="207" endline="209">cam.gcodeimportparser.GcodeParser.warn</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1gcodeimportparser_1_1GcodeParser_1a7a8607d4c4cd0878317b540ab8a5fd2c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.gcodeimportparser.GcodeParser::line</definition>
+        <argsstring></argsstring>
+        <name>line</name>
+        <qualifiedname>cam.gcodeimportparser.GcodeParser.line</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" line="121" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" bodystart="121" bodyend="-1"/>
+        <referencedby refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1ab661d91daf66cd54c13ab9fe1193955b" compoundref="gcodeimportparser_8py" startline="210" endline="214">cam.gcodeimportparser.GcodeParser.error</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1cad__iso__read_1_1Parser_1abf885d019794a8bef1b69f446c8851e1" compoundref="cad__iso__read_8py" startline="164" endline="235">cam.nc.cad_iso_read.Parser.Parse</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1cad__read_1_1CAD__backplot_1afce7c30e482cfb88a36593d4020909d7" compoundref="cad__read_8py" startline="27" endline="286">cam.nc.cad_read.CAD_backplot.Parse</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1__read_1_1Parser_1a4046e981f4f946bed728de957d10365f" compoundref="lathe1__read_8py" startline="28" endline="240">cam.nc.lathe1_read.Parser.Parse</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1num__reader_1_1NumReader_1ae908a2956d1e0cfd474a47540bee9759" compoundref="num__reader_8py" startline="40" endline="63">cam.nc.num_reader.NumReader.Parse</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1rez2__read_1_1Parser_1a16b4685a6d0b45b32ad762794240dfc0" compoundref="rez2__read_8py" startline="70" endline="308">cam.nc.rez2_read.Parser.Parse</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1hpgl2d__read_1_1Parser_1a0b707cfa8f85f48082f4e827cd2e4de2" compoundref="hpgl2d__read_8py" startline="81" endline="98">cam.nc.hpgl2d_read.Parser.ParseFromFirstLetter</referencedby>
+        <referencedby refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1ac0dc820285278526c3d681fdb0382144" compoundref="gcodeimportparser_8py" startline="126" endline="173">cam.gcodeimportparser.GcodeParser.parseLine</referencedby>
+        <referencedby refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1ad1fcff07178ae82267e8f431946ae94c" compoundref="gcodeimportparser_8py" startline="207" endline="209">cam.gcodeimportparser.GcodeParser.warn</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1gcodeimportparser_1_1GcodeParser_1a83db65c29df056683ec1f0ace44dc986" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.gcodeimportparser.GcodeParser::last_command</definition>
+        <argsstring></argsstring>
+        <name>last_command</name>
+        <qualifiedname>cam.gcodeimportparser.GcodeParser.last_command</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" line="160" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" bodystart="160" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcam_1_1gcodeimportparser_1_1GcodeParser_1ae0a0bb17115a16b4b6d7abbef55bc249" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.gcodeimportparser.GcodeParser.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>cam.gcodeimportparser.GcodeParser.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" line="108" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" bodystart="108" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1gcodeimportparser_1_1GcodeParser_1a12f5177d16deb369ed01208f04f8fa23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.gcodeimportparser.GcodeParser.parseFile</definition>
+        <argsstring>(self, path)</argsstring>
+        <name>parseFile</name>
+        <qualifiedname>cam.gcodeimportparser.GcodeParser.parseFile</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="namespacecam_1_1gcodeimportparser_1aac325098144266bd0a85ea3cd1d417c5" kindref="member">path</ref></type>
+          <defname>path</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" line="111" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" bodystart="111" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1gcodeimportparser_1_1GcodeParser_1ac0dc820285278526c3d681fdb0382144" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.gcodeimportparser.GcodeParser.parseLine</definition>
+        <argsstring>(self)</argsstring>
+        <name>parseLine</name>
+        <qualifiedname>cam.gcodeimportparser.GcodeParser.parseLine</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" line="126" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" bodystart="126" bodyend="173"/>
+        <references refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1a7a8607d4c4cd0878317b540ab8a5fd2c" compoundref="gcodeimportparser_8py" startline="121">cam.gcodeimportparser.GcodeParser.line</references>
+        <references refid="classcam_1_1gcodeimportparser_1_1Segment_1a430f6fcf15d5040972b73017f6102083" compoundref="gcodeimportparser_8py" startline="480">cam.gcodeimportparser.Segment.line</references>
+        <references refid="classcam_1_1nc_1_1cad__nc__read_1_1Parser_1a1beda79bbfb4821b2156543d0abb22bc" compoundref="cad__nc__read_8py" startline="34">cam.nc.cad_nc_read.Parser.line</references>
+        <references refid="classcam_1_1nc_1_1nc__read_1_1Parser_1a8b464b4a326104ff2694107cbb924448" compoundref="nc__read_8py" startline="30">cam.nc.nc_read.Parser.line</references>
+        <references refid="classcam_1_1nc_1_1nclathe__read_1_1Parser_1a1be7396a09b47da73eff8acda68893df" compoundref="nclathe__read_8py" startline="36">cam.nc.nclathe_read.Parser.line</references>
+        <references refid="classcam_1_1nc_1_1rez2__read_1_1Parser_1ac2e6b8422c274b221244af910288f90f" compoundref="rez2__read_8py" startline="89">cam.nc.rez2_read.Parser.line</references>
+        <references refid="classpie__info_1_1VIEW3D__MT__PIE__Info_1a904cfe2f28671048e075c7440415161b" compoundref="pie__info_8py" startline="92">pie_info.VIEW3D_MT_PIE_Info.line</references>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1gcodeimportparser_1_1GcodeParser_1aa905fcf77304612d9c9d729009bb1cc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.gcodeimportparser.GcodeParser.parseArgs</definition>
+        <argsstring>(self, args)</argsstring>
+        <name>parseArgs</name>
+        <qualifiedname>cam.gcodeimportparser.GcodeParser.parseArgs</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" line="174" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" bodystart="174" bodyend="186"/>
+        <referencedby refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1a7e709ef80f16a2168e2db8f64e379882" compoundref="gcodeimportparser_8py" startline="191" endline="194">cam.gcodeimportparser.GcodeParser.parse_G0</referencedby>
+        <referencedby refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1a13b499a56e116539b97359549babf007" compoundref="gcodeimportparser_8py" startline="187" endline="190">cam.gcodeimportparser.GcodeParser.parse_G1</referencedby>
+        <referencedby refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1afe07ed7b58c2c3701f13709df1cc241f" compoundref="gcodeimportparser_8py" startline="203" endline="206">cam.gcodeimportparser.GcodeParser.parse_G92</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1gcodeimportparser_1_1GcodeParser_1a13b499a56e116539b97359549babf007" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.gcodeimportparser.GcodeParser.parse_G1</definition>
+        <argsstring>(self, args, type=&quot;G1&quot;)</argsstring>
+        <name>parse_G1</name>
+        <qualifiedname>cam.gcodeimportparser.GcodeParser.parse_G1</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+        </param>
+        <param>
+          <type>type</type>
+          <defname>type</defname>
+          <defval>&quot;G1&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" line="187" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" bodystart="187" bodyend="190"/>
+        <references refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1addfc7f9a6fbff61fcb186713318879ef" compoundref="gcodeimportparser_8py" startline="109">cam.gcodeimportparser.GcodeParser.model</references>
+        <references refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1aa905fcf77304612d9c9d729009bb1cc2" compoundref="gcodeimportparser_8py" startline="174" endline="186">cam.gcodeimportparser.GcodeParser.parseArgs</references>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1gcodeimportparser_1_1GcodeParser_1a7e709ef80f16a2168e2db8f64e379882" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.gcodeimportparser.GcodeParser.parse_G0</definition>
+        <argsstring>(self, args, type=&quot;G0&quot;)</argsstring>
+        <name>parse_G0</name>
+        <qualifiedname>cam.gcodeimportparser.GcodeParser.parse_G0</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+        </param>
+        <param>
+          <type>type</type>
+          <defname>type</defname>
+          <defval>&quot;G0&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" line="191" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" bodystart="191" bodyend="194"/>
+        <references refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1addfc7f9a6fbff61fcb186713318879ef" compoundref="gcodeimportparser_8py" startline="109">cam.gcodeimportparser.GcodeParser.model</references>
+        <references refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1aa905fcf77304612d9c9d729009bb1cc2" compoundref="gcodeimportparser_8py" startline="174" endline="186">cam.gcodeimportparser.GcodeParser.parseArgs</references>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1gcodeimportparser_1_1GcodeParser_1aead9b776790ae8228391dcef251162ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.gcodeimportparser.GcodeParser.parse_G90</definition>
+        <argsstring>(self, args)</argsstring>
+        <name>parse_G90</name>
+        <qualifiedname>cam.gcodeimportparser.GcodeParser.parse_G90</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" line="195" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" bodystart="195" bodyend="198"/>
+        <references refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1addfc7f9a6fbff61fcb186713318879ef" compoundref="gcodeimportparser_8py" startline="109">cam.gcodeimportparser.GcodeParser.model</references>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1gcodeimportparser_1_1GcodeParser_1a4530733314095c91d26edefc5aafa0a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.gcodeimportparser.GcodeParser.parse_G91</definition>
+        <argsstring>(self, args)</argsstring>
+        <name>parse_G91</name>
+        <qualifiedname>cam.gcodeimportparser.GcodeParser.parse_G91</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" line="199" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" bodystart="199" bodyend="202"/>
+        <references refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1addfc7f9a6fbff61fcb186713318879ef" compoundref="gcodeimportparser_8py" startline="109">cam.gcodeimportparser.GcodeParser.model</references>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1gcodeimportparser_1_1GcodeParser_1afe07ed7b58c2c3701f13709df1cc241f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.gcodeimportparser.GcodeParser.parse_G92</definition>
+        <argsstring>(self, args)</argsstring>
+        <name>parse_G92</name>
+        <qualifiedname>cam.gcodeimportparser.GcodeParser.parse_G92</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" line="203" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" bodystart="203" bodyend="206"/>
+        <references refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1addfc7f9a6fbff61fcb186713318879ef" compoundref="gcodeimportparser_8py" startline="109">cam.gcodeimportparser.GcodeParser.model</references>
+        <references refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1aa905fcf77304612d9c9d729009bb1cc2" compoundref="gcodeimportparser_8py" startline="174" endline="186">cam.gcodeimportparser.GcodeParser.parseArgs</references>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1gcodeimportparser_1_1GcodeParser_1ad1fcff07178ae82267e8f431946ae94c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.gcodeimportparser.GcodeParser.warn</definition>
+        <argsstring>(self, msg)</argsstring>
+        <name>warn</name>
+        <qualifiedname>cam.gcodeimportparser.GcodeParser.warn</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>msg</type>
+          <defname>msg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" line="207" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" bodystart="207" bodyend="209"/>
+        <references refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1a7a8607d4c4cd0878317b540ab8a5fd2c" compoundref="gcodeimportparser_8py" startline="121">cam.gcodeimportparser.GcodeParser.line</references>
+        <references refid="classcam_1_1gcodeimportparser_1_1Segment_1a430f6fcf15d5040972b73017f6102083" compoundref="gcodeimportparser_8py" startline="480">cam.gcodeimportparser.Segment.line</references>
+        <references refid="classcam_1_1nc_1_1cad__nc__read_1_1Parser_1a1beda79bbfb4821b2156543d0abb22bc" compoundref="cad__nc__read_8py" startline="34">cam.nc.cad_nc_read.Parser.line</references>
+        <references refid="classcam_1_1nc_1_1nc__read_1_1Parser_1a8b464b4a326104ff2694107cbb924448" compoundref="nc__read_8py" startline="30">cam.nc.nc_read.Parser.line</references>
+        <references refid="classcam_1_1nc_1_1nclathe__read_1_1Parser_1a1be7396a09b47da73eff8acda68893df" compoundref="nclathe__read_8py" startline="36">cam.nc.nclathe_read.Parser.line</references>
+        <references refid="classcam_1_1nc_1_1rez2__read_1_1Parser_1ac2e6b8422c274b221244af910288f90f" compoundref="rez2__read_8py" startline="89">cam.nc.rez2_read.Parser.line</references>
+        <references refid="classpie__info_1_1VIEW3D__MT__PIE__Info_1a904cfe2f28671048e075c7440415161b" compoundref="pie__info_8py" startline="92">pie_info.VIEW3D_MT_PIE_Info.line</references>
+        <references refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1a9a39a9c0300f34bc37467ee65542386f" compoundref="gcodeimportparser_8py" startline="115">cam.gcodeimportparser.GcodeParser.lineNb</references>
+        <references refid="classcam_1_1gcodeimportparser_1_1Segment_1a54f17c0350148253305550b98c359a2d" compoundref="gcodeimportparser_8py" startline="479">cam.gcodeimportparser.Segment.lineNb</references>
+        <referencedby refid="classcam_1_1gcodeimportparser_1_1GcodeModel_1a51ce8c24cd510056704e5287c4fbf71a" compoundref="gcodeimportparser_8py" startline="242" endline="290">cam.gcodeimportparser.GcodeModel.do_G1</referencedby>
+        <referencedby refid="classcam_1_1gcodeimportparser_1_1GcodeModel_1a8825aa0c0c4b676428a0a7b547e18a38" compoundref="gcodeimportparser_8py" startline="291" endline="306">cam.gcodeimportparser.GcodeModel.do_G92</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1gcodeimportparser_1_1GcodeParser_1ab661d91daf66cd54c13ab9fe1193955b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.gcodeimportparser.GcodeParser.error</definition>
+        <argsstring>(self, msg)</argsstring>
+        <name>error</name>
+        <qualifiedname>cam.gcodeimportparser.GcodeParser.error</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>msg</type>
+          <defname>msg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" line="210" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" bodystart="210" bodyend="214"/>
+        <references refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1a7a8607d4c4cd0878317b540ab8a5fd2c" compoundref="gcodeimportparser_8py" startline="121">cam.gcodeimportparser.GcodeParser.line</references>
+        <references refid="classcam_1_1gcodeimportparser_1_1Segment_1a430f6fcf15d5040972b73017f6102083" compoundref="gcodeimportparser_8py" startline="480">cam.gcodeimportparser.Segment.line</references>
+        <references refid="classcam_1_1nc_1_1cad__nc__read_1_1Parser_1a1beda79bbfb4821b2156543d0abb22bc" compoundref="cad__nc__read_8py" startline="34">cam.nc.cad_nc_read.Parser.line</references>
+        <references refid="classcam_1_1nc_1_1nc__read_1_1Parser_1a8b464b4a326104ff2694107cbb924448" compoundref="nc__read_8py" startline="30">cam.nc.nc_read.Parser.line</references>
+        <references refid="classcam_1_1nc_1_1nclathe__read_1_1Parser_1a1be7396a09b47da73eff8acda68893df" compoundref="nclathe__read_8py" startline="36">cam.nc.nclathe_read.Parser.line</references>
+        <references refid="classcam_1_1nc_1_1rez2__read_1_1Parser_1ac2e6b8422c274b221244af910288f90f" compoundref="rez2__read_8py" startline="89">cam.nc.rez2_read.Parser.line</references>
+        <references refid="classpie__info_1_1VIEW3D__MT__PIE__Info_1a904cfe2f28671048e075c7440415161b" compoundref="pie__info_8py" startline="92">pie_info.VIEW3D_MT_PIE_Info.line</references>
+        <references refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1a9a39a9c0300f34bc37467ee65542386f" compoundref="gcodeimportparser_8py" startline="115">cam.gcodeimportparser.GcodeParser.lineNb</references>
+        <references refid="classcam_1_1gcodeimportparser_1_1Segment_1a54f17c0350148253305550b98c359a2d" compoundref="gcodeimportparser_8py" startline="479">cam.gcodeimportparser.Segment.lineNb</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>cam.gcodeimportparser.GcodeParser</label>
+        <link refid="classcam_1_1gcodeimportparser_1_1GcodeParser"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>+comment</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" line="103" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" bodystart="103" bodyend="214"/>
+    <listofallmembers>
+      <member refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1ae0a0bb17115a16b4b6d7abbef55bc249" prot="public" virt="non-virtual"><scope>cam::gcodeimportparser::GcodeParser</scope><name>__init__</name></member>
+      <member refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1a9d773066d297c5415ae8ff9f72b408d6" prot="public" virt="non-virtual"><scope>cam::gcodeimportparser::GcodeParser</scope><name>comment</name></member>
+      <member refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1ab661d91daf66cd54c13ab9fe1193955b" prot="public" virt="non-virtual"><scope>cam::gcodeimportparser::GcodeParser</scope><name>error</name></member>
+      <member refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1a83db65c29df056683ec1f0ace44dc986" prot="public" virt="non-virtual"><scope>cam::gcodeimportparser::GcodeParser</scope><name>last_command</name></member>
+      <member refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1a7a8607d4c4cd0878317b540ab8a5fd2c" prot="public" virt="non-virtual"><scope>cam::gcodeimportparser::GcodeParser</scope><name>line</name></member>
+      <member refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1a9a39a9c0300f34bc37467ee65542386f" prot="public" virt="non-virtual"><scope>cam::gcodeimportparser::GcodeParser</scope><name>lineNb</name></member>
+      <member refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1addfc7f9a6fbff61fcb186713318879ef" prot="public" virt="non-virtual"><scope>cam::gcodeimportparser::GcodeParser</scope><name>model</name></member>
+      <member refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1a7e709ef80f16a2168e2db8f64e379882" prot="public" virt="non-virtual"><scope>cam::gcodeimportparser::GcodeParser</scope><name>parse_G0</name></member>
+      <member refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1a13b499a56e116539b97359549babf007" prot="public" virt="non-virtual"><scope>cam::gcodeimportparser::GcodeParser</scope><name>parse_G1</name></member>
+      <member refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1aead9b776790ae8228391dcef251162ab" prot="public" virt="non-virtual"><scope>cam::gcodeimportparser::GcodeParser</scope><name>parse_G90</name></member>
+      <member refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1a4530733314095c91d26edefc5aafa0a3" prot="public" virt="non-virtual"><scope>cam::gcodeimportparser::GcodeParser</scope><name>parse_G91</name></member>
+      <member refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1afe07ed7b58c2c3701f13709df1cc241f" prot="public" virt="non-virtual"><scope>cam::gcodeimportparser::GcodeParser</scope><name>parse_G92</name></member>
+      <member refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1aa905fcf77304612d9c9d729009bb1cc2" prot="public" virt="non-virtual"><scope>cam::gcodeimportparser::GcodeParser</scope><name>parseArgs</name></member>
+      <member refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1a12f5177d16deb369ed01208f04f8fa23" prot="public" virt="non-virtual"><scope>cam::gcodeimportparser::GcodeParser</scope><name>parseFile</name></member>
+      <member refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1ac0dc820285278526c3d681fdb0382144" prot="public" virt="non-virtual"><scope>cam::gcodeimportparser::GcodeParser</scope><name>parseLine</name></member>
+      <member refid="classcam_1_1gcodeimportparser_1_1GcodeParser_1ad1fcff07178ae82267e8f431946ae94c" prot="public" virt="non-virtual"><scope>cam::gcodeimportparser::GcodeParser</scope><name>warn</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

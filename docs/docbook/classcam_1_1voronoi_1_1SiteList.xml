@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1voronoi_1_1SiteList" xml:lang="en-US">
+<title>cam.voronoi.SiteList Class Reference</title>
+<indexterm><primary>cam.voronoi.SiteList</primary></indexterm>
+Inheritance diagram for cam.voronoi.SiteList:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1voronoi_1_1SiteList__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.voronoi.SiteList:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1voronoi_1_1SiteList__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classcam_1_1voronoi_1_1SiteList_1_1Iterator">Iterator</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1SiteList_1a3d6440622adf555a43a3c918094c685a">__init__</link> (self, pointList)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1SiteList_1a6744a08d7380785e4be986dcc154660d">setSiteNumber</link> (self, site)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1SiteList_1a86722d67b25e5dd807a982316b298051">iterator</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1SiteList_1a0c950b9d02875d110bb17eba5632170d">__iter__</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1SiteList_1abc908031e9c9c68f27b8b608e697f1ba">__len__</link> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1SiteList_1a43c58ccaef1dab56ede94d1d46541cf4">_getxmin</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1SiteList_1a4195b9726b7325ddca5817a84c80736a">_getymin</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1SiteList_1a2a9dfd732c666afb486e4ccf4e3c1778">_getxmax</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1SiteList_1a10fc46e789f8fe5e5c9689484497d973">_getymax</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1SiteList_1a5c35c9260899f1f89fbc2cad441dcf7d">_getextent</link> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1SiteList_1aa829d49b84515c59a692076b87c1c574">xmin</link> = property(<link linkend="_classcam_1_1voronoi_1_1SiteList_1a43c58ccaef1dab56ede94d1d46541cf4">_getxmin</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1SiteList_1a7b927b44fd7c545e888183ec43045cfa">ymin</link> = property(<link linkend="_classcam_1_1voronoi_1_1SiteList_1a4195b9726b7325ddca5817a84c80736a">_getymin</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1SiteList_1a93a4ceaadac44d9f8effe070b187f88f">xmax</link> = property(<link linkend="_classcam_1_1voronoi_1_1SiteList_1a2a9dfd732c666afb486e4ccf4e3c1778">_getxmax</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1SiteList_1a50f4f7cdd58e2f6e04d234f1da021c27">ymax</link> = property(<link linkend="_classcam_1_1voronoi_1_1SiteList_1a10fc46e789f8fe5e5c9689484497d973">_getymax</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1SiteList_1ab1139d63b492e5ef7a1795c23111ed5b">extent</link> = property(<link linkend="_classcam_1_1voronoi_1_1SiteList_1a5c35c9260899f1f89fbc2cad441dcf7d">_getextent</link>)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1SiteList_1a8e92ca3c6bd1c8c5f60263557c4dcee4">__sites</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1SiteList_1aa04ad1df24f6227d974d981193ba4cd7">__sitenum</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1SiteList_1a0a8cd3a4e984593f8ee4a4e3bc937fab">__xmin</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1SiteList_1a09dd24b233c89fd47d444e28462d6785">__ymin</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1SiteList_1a80a44f1aed8f9b7c1ce9b4bd283a5d2c">__xmax</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1SiteList_1a00a25ffe5c7ee84ba5b803ca288b9e68">__ymax</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1SiteList_1afcfb9c3af8ed52c3a8f12c1459a473d4">__extent</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classcam_1_1voronoi_1_1SiteList_1a3d6440622adf555a43a3c918094c685a"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>cam.voronoi.SiteList</secondary></indexterm>
+<indexterm><primary>cam.voronoi.SiteList</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>cam.voronoi.SiteList.__init__ ( self,  pointList)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1voronoi_1_1SiteList_1a0c950b9d02875d110bb17eba5632170d"/><section>
+    <title>__iter__()</title>
+<indexterm><primary>__iter__</primary><secondary>cam.voronoi.SiteList</secondary></indexterm>
+<indexterm><primary>cam.voronoi.SiteList</primary><secondary>__iter__</secondary></indexterm>
+<para><computeroutput>cam.voronoi.SiteList.__iter__ ( self)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1SiteList_1abc908031e9c9c68f27b8b608e697f1ba"/><section>
+    <title>__len__()</title>
+<indexterm><primary>__len__</primary><secondary>cam.voronoi.SiteList</secondary></indexterm>
+<indexterm><primary>cam.voronoi.SiteList</primary><secondary>__len__</secondary></indexterm>
+<para><computeroutput>cam.voronoi.SiteList.__len__ ( self)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1SiteList_1a5c35c9260899f1f89fbc2cad441dcf7d"/><section>
+    <title>_getextent()</title>
+<indexterm><primary>_getextent</primary><secondary>cam.voronoi.SiteList</secondary></indexterm>
+<indexterm><primary>cam.voronoi.SiteList</primary><secondary>_getextent</secondary></indexterm>
+<para><computeroutput>cam.voronoi.SiteList._getextent ( self)<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1SiteList_1a2a9dfd732c666afb486e4ccf4e3c1778"/><section>
+    <title>_getxmax()</title>
+<indexterm><primary>_getxmax</primary><secondary>cam.voronoi.SiteList</secondary></indexterm>
+<indexterm><primary>cam.voronoi.SiteList</primary><secondary>_getxmax</secondary></indexterm>
+<para><computeroutput>cam.voronoi.SiteList._getxmax ( self)<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1SiteList_1a43c58ccaef1dab56ede94d1d46541cf4"/><section>
+    <title>_getxmin()</title>
+<indexterm><primary>_getxmin</primary><secondary>cam.voronoi.SiteList</secondary></indexterm>
+<indexterm><primary>cam.voronoi.SiteList</primary><secondary>_getxmin</secondary></indexterm>
+<para><computeroutput>cam.voronoi.SiteList._getxmin ( self)<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1SiteList_1a10fc46e789f8fe5e5c9689484497d973"/><section>
+    <title>_getymax()</title>
+<indexterm><primary>_getymax</primary><secondary>cam.voronoi.SiteList</secondary></indexterm>
+<indexterm><primary>cam.voronoi.SiteList</primary><secondary>_getymax</secondary></indexterm>
+<para><computeroutput>cam.voronoi.SiteList._getymax ( self)<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1SiteList_1a4195b9726b7325ddca5817a84c80736a"/><section>
+    <title>_getymin()</title>
+<indexterm><primary>_getymin</primary><secondary>cam.voronoi.SiteList</secondary></indexterm>
+<indexterm><primary>cam.voronoi.SiteList</primary><secondary>_getymin</secondary></indexterm>
+<para><computeroutput>cam.voronoi.SiteList._getymin ( self)<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1SiteList_1a86722d67b25e5dd807a982316b298051"/><section>
+    <title>iterator()</title>
+<indexterm><primary>iterator</primary><secondary>cam.voronoi.SiteList</secondary></indexterm>
+<indexterm><primary>cam.voronoi.SiteList</primary><secondary>iterator</secondary></indexterm>
+<para><computeroutput>cam.voronoi.SiteList.iterator ( self)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1SiteList_1a6744a08d7380785e4be986dcc154660d"/><section>
+    <title>setSiteNumber()</title>
+<indexterm><primary>setSiteNumber</primary><secondary>cam.voronoi.SiteList</secondary></indexterm>
+<indexterm><primary>cam.voronoi.SiteList</primary><secondary>setSiteNumber</secondary></indexterm>
+<para><computeroutput>cam.voronoi.SiteList.setSiteNumber ( self,  site)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1voronoi_1_1SiteList_1afcfb9c3af8ed52c3a8f12c1459a473d4"/><section>
+    <title>__extent</title>
+<indexterm><primary>__extent</primary><secondary>cam.voronoi.SiteList</secondary></indexterm>
+<indexterm><primary>cam.voronoi.SiteList</primary><secondary>__extent</secondary></indexterm>
+<para><computeroutput>cam.voronoi.SiteList.__extent<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1SiteList_1aa04ad1df24f6227d974d981193ba4cd7"/><section>
+    <title>__sitenum</title>
+<indexterm><primary>__sitenum</primary><secondary>cam.voronoi.SiteList</secondary></indexterm>
+<indexterm><primary>cam.voronoi.SiteList</primary><secondary>__sitenum</secondary></indexterm>
+<para><computeroutput>cam.voronoi.SiteList.__sitenum<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1SiteList_1a8e92ca3c6bd1c8c5f60263557c4dcee4"/><section>
+    <title>__sites</title>
+<indexterm><primary>__sites</primary><secondary>cam.voronoi.SiteList</secondary></indexterm>
+<indexterm><primary>cam.voronoi.SiteList</primary><secondary>__sites</secondary></indexterm>
+<para><computeroutput>cam.voronoi.SiteList.__sites<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1SiteList_1a80a44f1aed8f9b7c1ce9b4bd283a5d2c"/><section>
+    <title>__xmax</title>
+<indexterm><primary>__xmax</primary><secondary>cam.voronoi.SiteList</secondary></indexterm>
+<indexterm><primary>cam.voronoi.SiteList</primary><secondary>__xmax</secondary></indexterm>
+<para><computeroutput>cam.voronoi.SiteList.__xmax<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1SiteList_1a0a8cd3a4e984593f8ee4a4e3bc937fab"/><section>
+    <title>__xmin</title>
+<indexterm><primary>__xmin</primary><secondary>cam.voronoi.SiteList</secondary></indexterm>
+<indexterm><primary>cam.voronoi.SiteList</primary><secondary>__xmin</secondary></indexterm>
+<para><computeroutput>cam.voronoi.SiteList.__xmin<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1SiteList_1a00a25ffe5c7ee84ba5b803ca288b9e68"/><section>
+    <title>__ymax</title>
+<indexterm><primary>__ymax</primary><secondary>cam.voronoi.SiteList</secondary></indexterm>
+<indexterm><primary>cam.voronoi.SiteList</primary><secondary>__ymax</secondary></indexterm>
+<para><computeroutput>cam.voronoi.SiteList.__ymax<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1SiteList_1a09dd24b233c89fd47d444e28462d6785"/><section>
+    <title>__ymin</title>
+<indexterm><primary>__ymin</primary><secondary>cam.voronoi.SiteList</secondary></indexterm>
+<indexterm><primary>cam.voronoi.SiteList</primary><secondary>__ymin</secondary></indexterm>
+<para><computeroutput>cam.voronoi.SiteList.__ymin<computeroutput>[private]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_classcam_1_1voronoi_1_1SiteList_1ab1139d63b492e5ef7a1795c23111ed5b"/><section>
+    <title>extent</title>
+<indexterm><primary>extent</primary><secondary>cam.voronoi.SiteList</secondary></indexterm>
+<indexterm><primary>cam.voronoi.SiteList</primary><secondary>extent</secondary></indexterm>
+<para><computeroutput>cam.voronoi.SiteList.extent = property(<link linkend="_classcam_1_1voronoi_1_1SiteList_1a5c35c9260899f1f89fbc2cad441dcf7d">_getextent</link>)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1SiteList_1a93a4ceaadac44d9f8effe070b187f88f"/><section>
+    <title>xmax</title>
+<indexterm><primary>xmax</primary><secondary>cam.voronoi.SiteList</secondary></indexterm>
+<indexterm><primary>cam.voronoi.SiteList</primary><secondary>xmax</secondary></indexterm>
+<para><computeroutput>cam.voronoi.SiteList.xmax = property(<link linkend="_classcam_1_1voronoi_1_1SiteList_1a2a9dfd732c666afb486e4ccf4e3c1778">_getxmax</link>)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1SiteList_1aa829d49b84515c59a692076b87c1c574"/><section>
+    <title>xmin</title>
+<indexterm><primary>xmin</primary><secondary>cam.voronoi.SiteList</secondary></indexterm>
+<indexterm><primary>cam.voronoi.SiteList</primary><secondary>xmin</secondary></indexterm>
+<para><computeroutput>cam.voronoi.SiteList.xmin = property(<link linkend="_classcam_1_1voronoi_1_1SiteList_1a43c58ccaef1dab56ede94d1d46541cf4">_getxmin</link>)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1SiteList_1a50f4f7cdd58e2f6e04d234f1da021c27"/><section>
+    <title>ymax</title>
+<indexterm><primary>ymax</primary><secondary>cam.voronoi.SiteList</secondary></indexterm>
+<indexterm><primary>cam.voronoi.SiteList</primary><secondary>ymax</secondary></indexterm>
+<para><computeroutput>cam.voronoi.SiteList.ymax = property(<link linkend="_classcam_1_1voronoi_1_1SiteList_1a10fc46e789f8fe5e5c9689484497d973">_getymax</link>)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1SiteList_1a7b927b44fd7c545e888183ec43045cfa"/><section>
+    <title>ymin</title>
+<indexterm><primary>ymin</primary><secondary>cam.voronoi.SiteList</secondary></indexterm>
+<indexterm><primary>cam.voronoi.SiteList</primary><secondary>ymin</secondary></indexterm>
+<para><computeroutput>cam.voronoi.SiteList.ymin = property(<link linkend="_classcam_1_1voronoi_1_1SiteList_1a4195b9726b7325ddca5817a84c80736a">_getymin</link>)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/<link linkend="_voronoi_8py">voronoi.py</link></section>
+</section>

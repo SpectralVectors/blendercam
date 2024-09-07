@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="Blendercam_01Installation_8md" kind="file" language="Markdown">
+    <compoundname>Blendercam Installation.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>How<sp/>to<sp/>install<sp/>Blendercam<sp/>?</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Use<sp/>Blendercam<sp/>from<sp/>github<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Using<sp/>Blendercam<sp/>from<sp/>github<sp/>is<sp/>a<sp/>great<sp/>way<sp/>to<sp/>try<sp/>out<sp/>the<sp/>newest<sp/>features<sp/>and<sp/>fixes.<sp/><sp/>The<sp/>latest<sp/>build<sp/>(dailybuild)<sp/>of<sp/>Blender<sp/>can<sp/>be<sp/>used<sp/>with<sp/>the<sp/>latest<sp/>Master<sp/>branch<sp/>of<sp/>Blendercam<sp/>and<sp/>then<sp/>you<sp/>can<sp/>live<sp/>on<sp/>the<sp/>bleeding<sp/>edge.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>easiest<sp/>way<sp/>to<sp/>&quot;install&quot;<sp/>is<sp/>not<sp/>to<sp/>install<sp/>but<sp/>instead<sp/>just<sp/>tell<sp/>Blender<sp/>where<sp/>to<sp/>find<sp/>the<sp/>add-on.<sp/><sp/>This<sp/>way<sp/>you<sp/>don&apos;t<sp/>have<sp/>to<sp/>worry<sp/>about<sp/>copying/moving<sp/>files<sp/>around.<sp/><sp/>You<sp/>can<sp/>keep<sp/>Blendercam<sp/>source<sp/>files<sp/>separate<sp/>from<sp/>Blender<sp/>if<sp/>using<sp/>source<sp/>control<sp/>(ie<sp/>git<sp/>for<sp/>development)<sp/>and<sp/>still<sp/>easily<sp/>test<sp/>your<sp/>changes<sp/>in<sp/>Blender.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>[1.<sp/>Obtaining<sp/>Blender](#obtaining-blender)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[2.<sp/>Install<sp/>(or<sp/>update)<sp/>Blendercam<sp/>addon](#install-or-update-blendercam-addon)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[3.<sp/>Setup<sp/>Blender<sp/>scripts<sp/>alternate<sp/>path](#setup-blender-scripts-alternate-file-path)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[4.<sp/>Enable<sp/>Blendercam<sp/>and<sp/>required<sp/>add-ons](#enable-blendercam-and-required-add-ons)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[5.<sp/>(Optional)<sp/>Install<sp/>OpenCAMLib](#opencamlib)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Obtaining<sp/>Blender</highlight></codeline>
+<codeline><highlight class="normal">Blendercam<sp/>is<sp/>an<sp/>addon<sp/>of<sp/>Blender.<sp/>It<sp/>works<sp/>now<sp/>with<sp/>Blender<sp/>version<sp/>2.83,<sp/>2.92,<sp/>2.93,<sp/>3.0<sp/>-<sp/>3.4.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">You<sp/>can<sp/>download<sp/>blender<sp/>from<sp/>here:</highlight></codeline>
+<codeline><highlight class="normal">https://www.blender.org/download/</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Dependencies</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Blendercam<sp/>depends<sp/>on<sp/>the<sp/>following<sp/>python<sp/>modules.<sp/>If<sp/>they<sp/>are<sp/>not<sp/>available<sp/>in<sp/>the<sp/>python<sp/>that<sp/>your<sp/>blender<sp/>uses,<sp/>the<sp/>addon<sp/>will<sp/>auto-install</highlight></codeline>
+<codeline><highlight class="normal">these<sp/>modules<sp/>on<sp/>first<sp/>load.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|<sp/>Python<sp/>dependencies<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>Version<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>-------------<sp/>|:-------------:|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>shapely<sp/><sp/>|<sp/>&gt;=<sp/>1.5<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>numpy<sp/><sp/><sp/><sp/>|<sp/>...<sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Equation<sp/>|<sp/>...<sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>libgeos_c<sp/>|<sp/>libgeos-c1v5|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>opencamlib<sp/>|<sp/>&gt;=<sp/>2022.12<sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Install<sp/>(or<sp/>update)<sp/>Blendercam<sp/>addon</highlight></codeline>
+<codeline><highlight class="normal">The<sp/>first<sp/>step<sp/>is<sp/>to<sp/>get<sp/>the<sp/>addon<sp/>from<sp/>the<sp/>github<sp/>repository.<sp/>You<sp/>can<sp/>either<sp/>do<sp/>this<sp/>with<sp/>git,<sp/>or<sp/>by<sp/>downloading<sp/>and<sp/>extracting<sp/>a<sp/>zip<sp/>file.<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Install<sp/>(and<sp/>update)<sp/>using<sp/>Git</highlight></codeline>
+<codeline><highlight class="normal"><sp/>1.<sp/>If<sp/>you<sp/>have<sp/>git<sp/>installed<sp/>on<sp/>your<sp/>machine,<sp/>go<sp/>to<sp/>the<sp/>root<sp/>of<sp/>this<sp/>repository,<sp/>and<sp/>click<sp/>the<sp/>green<sp/>&apos;Code&apos;<sp/>button<sp/>and<sp/>copy<sp/>the<sp/>https<sp/>url.</highlight></codeline>
+<codeline><highlight class="normal"><sp/>2.<sp/>Open<sp/>a<sp/>command<sp/>shell<sp/>and<sp/>change<sp/>directory<sp/>to<sp/>where<sp/>you<sp/>want<sp/>to<sp/>install<sp/>blendercam</highlight></codeline>
+<codeline><highlight class="normal"><sp/>3.<sp/>Type<sp/>`git<sp/>clone<sp/>&lt;GIT<sp/>URL&gt;`,<sp/>where<sp/>`&lt;GIT<sp/>URL&gt;`<sp/>is<sp/>the<sp/>url<sp/>you<sp/>copied<sp/>above.</highlight></codeline>
+<codeline><highlight class="normal"><sp/>4.<sp/>git<sp/>will<sp/>make<sp/>a<sp/>subdirectory<sp/>called<sp/>`blendercam`<sp/>in<sp/>the<sp/>current<sp/>directory<sp/>then<sp/>download<sp/>the<sp/>most<sp/>recent<sp/>version<sp/>of<sp/>blendercam<sp/>from<sp/>github.</highlight></codeline>
+<codeline><highlight class="normal"><sp/>5.<sp/>If<sp/>in<sp/>future<sp/>you<sp/>want<sp/>to<sp/>update<sp/>to<sp/>the<sp/>latest<sp/>version,<sp/>in<sp/>a<sp/>command<sp/>shell<sp/>change<sp/>directory<sp/>to<sp/>the<sp/>blendercam<sp/>directory<sp/>and<sp/>type<sp/>`git<sp/>pull`.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>![git<sp/>clone](https://cloud.githubusercontent.com/assets/648108/12068782/8942a84a-afeb-11e5-86c4-31a60475fd27.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Install<sp/>using<sp/>zip<sp/>file</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>1.<sp/>To<sp/>install<sp/>from<sp/>a<sp/>zip<sp/>file,<sp/>go<sp/>to<sp/>the<sp/>root<sp/>of<sp/>this<sp/>repository,<sp/>and<sp/>click<sp/>the<sp/>green<sp/>&apos;Code&apos;<sp/>button<sp/>and<sp/>click<sp/>&apos;download<sp/>zip&apos;.<sp/>Extract<sp/>that<sp/>to<sp/>wherever<sp/>you<sp/>want<sp/>blendercam<sp/>to<sp/>be<sp/>installed.</highlight></codeline>
+<codeline><highlight class="normal"><sp/>2.<sp/>To<sp/>update,<sp/>you<sp/>need<sp/>to<sp/>repeat<sp/>step<sp/>1<sp/>from<sp/>scratch<sp/>and<sp/>overwrite<sp/>the<sp/>current<sp/>folder.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Setup<sp/>Blender<sp/>scripts<sp/>alternate<sp/>file<sp/>path</highlight></codeline>
+<codeline><highlight class="normal">The<sp/>second<sp/>step<sp/>is<sp/>to<sp/>tell<sp/>blender<sp/>to<sp/>also<sp/>search<sp/>an<sp/>alternate<sp/>path<sp/>for<sp/>add-ons.<sp/><sp/>When<sp/>blender<sp/>starts<sp/>up<sp/>it<sp/>will<sp/>search<sp/>its<sp/>own<sp/>paths<sp/>for<sp/>add-ons<sp/>and<sp/>will<sp/>also<sp/>search<sp/>the<sp/>alternate<sp/>path<sp/>that<sp/>you<sp/>add.<sp/><sp/>This<sp/>way<sp/>an<sp/>external<sp/>source<sp/>add-on<sp/>can<sp/>be<sp/>used<sp/>in<sp/>Blender.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>1.<sp/>select<sp/>**User<sp/>Preferences**<sp/>panel</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>![File<sp/>User<sp/>Preferences](images/addonInstall1.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>2.<sp/>select<sp/>**File**<sp/>tab</highlight></codeline>
+<codeline><highlight class="normal"><sp/>3.<sp/>select<sp/>the<sp/>file<sp/>button<sp/>on<sp/>the<sp/>**Scripts**<sp/>input<sp/>field<sp/>and<sp/>select<sp/>the<sp/>path<sp/>to<sp/>your<sp/>*blendercam/scripts*<sp/>directory</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>![File<sp/>Paths](images/addonInstall2.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>4.<sp/>select<sp/>**Save<sp/>User<sp/>Settings**</highlight></codeline>
+<codeline><highlight class="normal"><sp/>5.<sp/>restart<sp/>Blender</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Enable<sp/>Blendercam<sp/>and<sp/>required<sp/>add-ons</highlight></codeline>
+<codeline><highlight class="normal">The<sp/>next<sp/>step<sp/>is<sp/>to<sp/>enable<sp/>the<sp/>Blendercam<sp/>add-on.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![Enable<sp/>Addon](images/addonInstall3.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>1.<sp/>select<sp/>**User<sp/>Preference**<sp/>panel</highlight></codeline>
+<codeline><highlight class="normal"><sp/>2.<sp/>select<sp/>**Add-ons**<sp/>tab</highlight></codeline>
+<codeline><highlight class="normal"><sp/>3.<sp/>select<sp/>**Scene**<sp/>category</highlight></codeline>
+<codeline><highlight class="normal"><sp/>4.<sp/>enable<sp/>the<sp/>CAM<sp/>addon<sp/>by<sp/>left<sp/>clicking<sp/>on<sp/>the<sp/>check<sp/>box.<sp/>(Note:<sp/>the<sp/>checkbox<sp/>is<sp/>on<sp/>the<sp/>left<sp/>side<sp/>in<sp/>daily<sp/>builds<sp/>of<sp/>Blender<sp/>after<sp/>11<sp/>Jan<sp/>2016)<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>4a.<sp/>the<sp/>file<sp/>path<sp/>should<sp/>match<sp/>your<sp/>Blendercam<sp/>git<sp/>path</highlight></codeline>
+<codeline><highlight class="normal"><sp/>5.<sp/>Optional:<sp/>enable<sp/>the<sp/>experimental<sp/>features</highlight></codeline>
+<codeline><highlight class="normal"><sp/>6.<sp/>enable<sp/>additional<sp/>bundled<sp/>add-ons<sp/>required<sp/>by<sp/>some<sp/>Blendercam<sp/>features:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-<sp/>Add<sp/>Curve:<sp/>Extra<sp/>Objects</highlight></codeline>
+<codeline><highlight class="normal"><sp/>7.<sp/>select<sp/>**Save<sp/>User<sp/>Settings**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Now<sp/>when<sp/>ever<sp/>blender<sp/>is<sp/>started,<sp/>the<sp/>external<sp/>blendercam<sp/>add-on<sp/>will<sp/>be<sp/>enabled.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Opencamlib</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[OpenCAMLib](https://github.com/aewallin/opencamlib)<sp/>is<sp/>an<sp/>open<sp/>source<sp/>CAM<sp/>library<sp/>created<sp/>by<sp/>Anders<sp/>Wallin.<sp/>It<sp/>offers<sp/>high<sp/>quality<sp/>waterline<sp/>generation<sp/>and<sp/>drop<sp/>cutter<sp/>sampling<sp/>algorithms.<sp/>For<sp/>drop<sp/>cutter<sp/>algorithms<sp/>it&apos;s<sp/>more<sp/>reliable<sp/>than<sp/>Bullet<sp/>Physics<sp/>(Blender&apos;s<sp/>built-in<sp/>collision<sp/>detection<sp/>library)<sp/>and<sp/>offers<sp/>better<sp/>performance<sp/>(up<sp/>to<sp/>30<sp/>times<sp/>faster<sp/>than<sp/>regular<sp/>algorithm<sp/>on<sp/>24-core<sp/>machine).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">OpenCAMLib<sp/>is<sp/>automatically<sp/>installed<sp/>when<sp/>you<sp/>install<sp/>blendercam.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>use<sp/>OpenCAMLib<sp/>waterlines,<sp/>select<sp/>&quot;Show<sp/>experimental<sp/>features&quot;<sp/>in<sp/>Blender<sp/>User<sp/>Preferences<sp/>/<sp/>Addons<sp/>/<sp/>CAM<sp/>-<sp/>gcode<sp/>generation<sp/>tools.<sp/>Then<sp/>select<sp/>Waterline<sp/>strategy<sp/>and<sp/>&quot;Use<sp/>OpenCAMLib&quot;.<sp/>The<sp/>current<sp/>version<sp/>lacks<sp/>dialog<sp/>for<sp/>waterline<sp/>resolution<sp/>and<sp/>automatic<sp/>determination<sp/>of<sp/>cutter<sp/>length,<sp/>those<sp/>can<sp/>be<sp/>adjusted<sp/>in<sp/>`scripts/addons/cam/opencamlib/opencamlib.py`.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">For<sp/>&quot;parallel&quot;<sp/>strategy<sp/>and<sp/>other<sp/>drop<sp/>cutter<sp/>sampling<sp/>operations<sp/>select<sp/>both<sp/>&quot;Use<sp/>exact<sp/>mode&quot;<sp/>and<sp/>&quot;Use<sp/>OpenCAMLib&quot;.</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/documentation/Blendercam Installation.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="Getting_01started_8md" kind="file" language="Markdown">
+    <compoundname>Getting started.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">This<sp/>is<sp/>a<sp/>step-by-step<sp/>tutorial<sp/>on<sp/>generating<sp/>a<sp/>toolpath<sp/>with<sp/>Blender<sp/>CAM.<sp/>For<sp/>detailed<sp/>description<sp/>of<sp/>panel<sp/>options<sp/>go<sp/>[here](Blendercam-Panel-Descriptions.md).</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Change<sp/>render<sp/>engine</highlight></codeline>
+<codeline><highlight class="normal">First<sp/>of<sp/>all,<sp/>change<sp/>render<sp/>engine<sp/>to<sp/>CAM<sp/>to<sp/>use<sp/>the<sp/>blender<sp/>cam<sp/>tool.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![Renderer<sp/>selection](images/cam_render.png)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Change<sp/>units<sp/>in<sp/>Blender</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Change<sp/>units<sp/>to<sp/>metric<sp/>or<sp/>imperial<sp/>in<sp/>Scene<sp/>properties.</highlight></codeline>
+<codeline><highlight class="normal">![Renderer<sp/>selection](images/milim.png):</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Setup<sp/>machine<sp/>parameters</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Setup<sp/>machine<sp/>parameters<sp/>(postprocessor,<sp/>maximum<sp/>feed<sp/>rate,<sp/>work<sp/>area,<sp/>etc.)<sp/>in<sp/>&apos;CAM<sp/>Machine&apos;<sp/>options.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![Machine<sp/>setup](images/setup_machine.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Add<sp/>a<sp/>new<sp/>operation</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Add<sp/>new<sp/>operation<sp/>in<sp/>the<sp/>render<sp/>properties.</highlight></codeline>
+<codeline><highlight class="normal">![New<sp/>operation](images/newop.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Choose<sp/>Parallel<sp/>(or<sp/>Outline<sp/>Fill,<sp/>Circles,<sp/>Spiral,<sp/>Block,<sp/>Cross)<sp/>in<sp/>the<sp/>Strategy<sp/>dialog.<sp/>Waterline<sp/>option<sp/>works<sp/>best<sp/>when<sp/>OpenCAMLib<sp/>is<sp/>installed<sp/>and<sp/>other<sp/>operations<sp/>require<sp/>curve<sp/>data<sp/>source.<sp/>See<sp/>how<sp/>to<sp/>generate<sp/>curves<sp/>from<sp/>mesh<sp/>model<sp/>[here](Profile%20and%20Pocket%20operations.md).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![Select<sp/>operation](images/selectOperation.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">In<sp/>Object<sp/>dialog<sp/>select<sp/>object<sp/>being<sp/>source<sp/>of<sp/>geometry<sp/>for<sp/>toolpath<sp/>generation.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Configure<sp/>Cam<sp/>Material<sp/>and<sp/>position<sp/>object</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">In<sp/>CAM<sp/>Material<sp/>size<sp/>and<sp/>position,<sp/>set<sp/>radius<sp/>around<sp/>model<sp/>option<sp/>to<sp/>reflect<sp/>the<sp/>amount<sp/>of<sp/>stock<sp/>material<sp/>to<sp/>be<sp/>machined.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![Before<sp/>position](images/beforePosition.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Manually<sp/>position<sp/>object<sp/>inside<sp/>work<sp/>area,<sp/>or<sp/>use<sp/>&quot;Position<sp/>object&quot;<sp/>option<sp/>to<sp/>position<sp/>it<sp/>automatically.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![Click<sp/>position](images/positionObject.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![After<sp/>position](images/afterPosition.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>the<sp/>box<sp/>representing<sp/>material<sp/>doesn&apos;t<sp/>update,<sp/>uncheck<sp/>&quot;Estimate<sp/>from<sp/>model&quot;<sp/>option<sp/>and<sp/>then<sp/>check<sp/>it<sp/>again.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Configuration<sp/>of<sp/>the<sp/>active<sp/>Operation</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Set<sp/>&quot;Distance<sp/>between<sp/>toolpaths&quot;<sp/>to<sp/>desired<sp/>value.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&quot;Distance<sp/>along<sp/>toolpaths&quot;<sp/>option<sp/>determines<sp/>accuracy.<sp/>Lower<sp/>values<sp/>result<sp/>in<sp/>more<sp/>accurate<sp/>toolpath,<sp/>but<sp/>make<sp/>computation<sp/>slower<sp/>and<sp/>increase<sp/>amount<sp/>of<sp/>resulting<sp/>G-code.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Select<sp/>&quot;Use<sp/>exact<sp/>mode&quot;<sp/>-<sp/>it<sp/>improves<sp/>accuracy.<sp/>If<sp/>you<sp/>have<sp/>[OpenCAMLib](Opencamlib%20Installation.md)<sp/>installed,<sp/>also<sp/>select<sp/>&quot;UseOpenCAMLib&quot;<sp/>-<sp/>it<sp/>impoves<sp/>accuracy<sp/>and<sp/>speeds<sp/>up<sp/>the<sp/>computing<sp/>time.<sp/>OpenCAMLib<sp/>also<sp/>enables<sp/>high<sp/>quality<sp/>algorithm<sp/>from<sp/>calculating<sp/>waterline<sp/>toolpaths.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">CAM<sp/>Movement:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Enter<sp/>layer<sp/>depth<sp/>(in<sp/>Step<sp/>Down<sp/>dialog),<sp/>operation<sp/>depth,<sp/>start<sp/>depth<sp/>and<sp/>optionally<sp/>end<sp/>depth<sp/>(if<sp/>&quot;Depth<sp/>from<sp/>object&quot;<sp/>is<sp/>disabled).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">CAM<sp/>Feedrate:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Set<sp/>feedrate<sp/>and<sp/>spindle<sp/>rpm.<sp/>&quot;Plunge<sp/>speed&quot;<sp/>and<sp/>&quot;Plunge<sp/>angle&quot;<sp/>allows<sp/>slowing<sp/>down<sp/>feedrate<sp/>when<sp/>the<sp/>cutter<sp/>is<sp/>moving<sp/>down<sp/>on<sp/>steep<sp/>areas.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Cam<sp/>Cutter:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Set<sp/>cutter<sp/>tool<sp/>number<sp/>(used<sp/>in<sp/>G-code),<sp/>type,<sp/>number<sp/>of<sp/>flutes<sp/>and<sp/>diameter.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Multiples<sp/>operations<sp/>in<sp/>a<sp/>chain</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>join<sp/>multiple<sp/>operations<sp/>into<sp/>a<sp/>single<sp/>G-code<sp/>file,<sp/>use<sp/>CAM<sp/>chains<sp/>dialog.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![New<sp/>chain](images/newChain.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Calculate<sp/>Path<sp/>and<sp/>Generate<sp/>Gcode<sp/>file</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Click<sp/>&quot;Calculate<sp/>Path&quot;<sp/>to<sp/>generate<sp/>toolpath.<sp/>If<sp/>&quot;Auto<sp/>export&quot;<sp/>option<sp/>is<sp/>selected,<sp/>G-code<sp/>file<sp/>will<sp/>also<sp/>be<sp/>created.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![Calculate<sp/>path](images/calculatePath.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![Calculate<sp/>path<sp/>view](images/calculatePath2.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Quick<sp/>look<sp/>of<sp/>the<sp/>final<sp/>result</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Next<sp/>click<sp/>&quot;Simulate<sp/>operation&quot;<sp/>to<sp/>create<sp/>model<sp/>representing<sp/>machined<sp/>material.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![Simulate<sp/>Operation](images/simulateOp.png)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/documentation/Getting started.md"/>
+  </compounddef>
+</doxygen>

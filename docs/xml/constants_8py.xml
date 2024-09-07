@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="constants_8py" kind="file" language="Python">
+    <compoundname>constants.py</compoundname>
+    <innernamespace refid="namespacecam">cam</innernamespace>
+    <innernamespace refid="namespacecam_1_1constants">cam::constants</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacecam_1_1constants" refkind="compound"><highlight class="stringliteral">&quot;&quot;&quot;BlenderCAM<sp/>&apos;constants.py&apos;</highlight></codeline>
+<codeline lineno="2"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="3"><highlight class="stringliteral">Package<sp/>to<sp/>store<sp/>all<sp/>constants<sp/>of<sp/>BlenderCAM.</highlight></codeline>
+<codeline lineno="4"><highlight class="stringliteral">&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">#<sp/>PRECISION<sp/>is<sp/>used<sp/>in<sp/>most<sp/>operations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="namespacecam_1_1constants_1a76605b94e98c701ed2586b9e35e6c6e1" refkind="member"><highlight class="normal">PRECISION<sp/>=<sp/>5</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="namespacecam_1_1constants_1af55e942bbece31b7a3eaf48c278db6ee" refkind="member"><highlight class="normal">CHIPLOAD_PRECISION<sp/>=<sp/>10</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="namespacecam_1_1constants_1a0259cec1e6ed28e941feed05cd7e7e91" refkind="member"><highlight class="normal">MAX_OPERATION_TIME<sp/>=<sp/>3200000000<sp/><sp/></highlight><highlight class="comment">#<sp/>seconds</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="namespacecam_1_1constants_1a8d6e124bc15f6ef4fa34b97f12a93b9c" refkind="member"><highlight class="normal">G64_INCOMPATIBLE_MACHINES<sp/>=<sp/>[</highlight><highlight class="stringliteral">&apos;GRBL&apos;</highlight><highlight class="normal">]</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Upscale<sp/>factor<sp/>for<sp/>higher<sp/>precision<sp/>from<sp/>Bullet<sp/>library<sp/>-<sp/>(Rigidbody<sp/>Collision<sp/>World)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="namespacecam_1_1constants_1a833d6ffb51aa125e9da3c0a9bfd4410a" refkind="member"><highlight class="normal">BULLET_SCALE<sp/>=<sp/>10000</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Cutter<sp/>object<sp/>must<sp/>be<sp/>present<sp/>in<sp/>the<sp/>scene,<sp/>so<sp/>we<sp/>need<sp/>to<sp/>put<sp/>it<sp/>aside<sp/>for<sp/>sweep<sp/>collisions,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">#<sp/>otherwise<sp/>it<sp/>collides<sp/>with<sp/>itself.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="namespacecam_1_1constants_1a60a427c155ebb0144f06ede241df8072" refkind="member"><highlight class="normal">CUTTER_OFFSET<sp/>=<sp/>(-5<sp/>*<sp/>BULLET_SCALE,<sp/>-5<sp/>*<sp/>BULLET_SCALE,<sp/>-5<sp/>*<sp/>BULLET_SCALE)</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/constants.py"/>
+  </compounddef>
+</doxygen>

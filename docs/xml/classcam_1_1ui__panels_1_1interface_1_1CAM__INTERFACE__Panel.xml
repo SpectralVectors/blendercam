@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Panel" kind="class" language="Python" prot="public">
+    <compoundname>cam::ui_panels::interface::CAM_INTERFACE_Panel</compoundname>
+    <basecompoundref refid="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel" prot="public" virt="non-virtual">cam.ui_panels.buttons_panel.CAMButtonsPanel</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">Panel</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Panel_1a10bd2fdcf79aadc72e020a6a64a599db" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.ui_panels.interface.CAM_INTERFACE_Panel::bl_label</definition>
+        <argsstring></argsstring>
+        <name>bl_label</name>
+        <qualifiedname>cam.ui_panels.interface.CAM_INTERFACE_Panel.bl_label</qualifiedname>
+        <initializer>=  &quot;Interface&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/interface.py" line="39" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/interface.py" bodystart="39" bodyend="-1"/>
+        <referencedby refid="classcam_1_1preset__managers_1_1CAM__MACHINE__MT__presets_1af95f7812d2952b26a26809ab923dac09" compoundref="preset__managers_8py" startline="28" endline="38">cam.preset_managers.CAM_MACHINE_MT_presets.post_cb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Panel_1a060de30e6e3a6f7468808434942c8b5b" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.ui_panels.interface.CAM_INTERFACE_Panel::bl_idname</definition>
+        <argsstring></argsstring>
+        <name>bl_idname</name>
+        <qualifiedname>cam.ui_panels.interface.CAM_INTERFACE_Panel.bl_idname</qualifiedname>
+        <initializer>=  &quot;WORLD_PT_CAM_INTERFACE&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/interface.py" line="40" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/interface.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Panel_1af3991f62632953176ca2c957d53ae9a8" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool cam.ui_panels.interface.CAM_INTERFACE_Panel::always_show_panel</definition>
+        <argsstring></argsstring>
+        <name>always_show_panel</name>
+        <qualifiedname>cam.ui_panels.interface.CAM_INTERFACE_Panel.always_show_panel</qualifiedname>
+        <initializer>=  True</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/interface.py" line="41" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/interface.py" bodystart="41" bodyend="-1"/>
+        <referencedby refid="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a03843f1fecc691952b696f4bc75a0156" compoundref="buttons__panel_8py" startline="23" endline="35">cam.ui_panels.buttons_panel.CAMButtonsPanel.poll</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Panel_1a31b339ea41c92a6cfa95bb8ba47522eb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.ui_panels.interface.CAM_INTERFACE_Panel::context</definition>
+        <argsstring></argsstring>
+        <name>context</name>
+        <qualifiedname>cam.ui_panels.interface.CAM_INTERFACE_Panel.context</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/interface.py" line="47" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/interface.py" bodystart="47" bodyend="-1"/>
+        <referencedby refid="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__PositionObject_1aa38c9c5d55e91d7c4413b92bc3d45810" compoundref="material_8py" startline="113" endline="119">cam.ui_panels.material.CAM_MATERIAL_PositionObject.draw</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Panel_1a74616c74cd87ed76bf847a26ec73cc89" compoundref="interface_8py" startline="43" endline="45">cam.ui_panels.interface.CAM_INTERFACE_Panel.draw_interface_level</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Panel_1aa5ceb736bda3ca2eece8558a1586371a" compoundref="movement_8py" startline="260" endline="267">cam.ui_panels.movement.CAM_MOVEMENT_Panel.draw_use_g64</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a41c101f031fc5ecdb0097889cf452de0" compoundref="buttons__panel_8py" startline="60" endline="70">cam.ui_panels.buttons_panel.CAMButtonsPanel.has_correct_level</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Panel_1a74616c74cd87ed76bf847a26ec73cc89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.ui_panels.interface.CAM_INTERFACE_Panel.draw_interface_level</definition>
+        <argsstring>(self)</argsstring>
+        <name>draw_interface_level</name>
+        <qualifiedname>cam.ui_panels.interface.CAM_INTERFACE_Panel.draw_interface_level</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/interface.py" line="43" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/interface.py" bodystart="43" bodyend="45"/>
+        <references refid="classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_1ada410a6ab5a4cda97a33636cd514c8bf" compoundref="area_8py" startline="105">cam.ui_panels.area.CAM_AREA_Panel.context</references>
+        <references refid="classcam_1_1ui__panels_1_1cutter_1_1CAM__CUTTER__Panel_1a31bf0ed2e73fdc29abc93ee361358062" compoundref="cutter_8py" startline="143">cam.ui_panels.cutter.CAM_CUTTER_Panel.context</references>
+        <references refid="classcam_1_1ui__panels_1_1feedrate_1_1CAM__FEEDRATE__Panel_1af7ea3c39477abb98277067638950a1a7" compoundref="feedrate_8py" startline="52">cam.ui_panels.feedrate.CAM_FEEDRATE_Panel.context</references>
+        <references refid="classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel_1abb45a3bb21c5415449183d072d665b86" compoundref="gcode_8py" startline="65">cam.ui_panels.gcode.CAM_GCODE_Panel.context</references>
+        <references refid="classcam_1_1ui__panels_1_1info_1_1CAM__INFO__Panel_1aae3fadda191ebfce61e3fd84edb2284f" compoundref="info_8py" startline="153">cam.ui_panels.info.CAM_INFO_Panel.context</references>
+        <references refid="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Panel_1a31b339ea41c92a6cfa95bb8ba47522eb" compoundref="interface_8py" startline="47">cam.ui_panels.interface.CAM_INTERFACE_Panel.context</references>
+        <references refid="classcam_1_1ui__panels_1_1machine_1_1CAM__MACHINE__Panel_1a559531bb037b54b7470389776a73118a" compoundref="machine_8py" startline="123">cam.ui_panels.machine.CAM_MACHINE_Panel.context</references>
+        <references refid="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Panel_1ae1cd1999cc1aac994ff997d4743c1092" compoundref="material_8py" startline="164">cam.ui_panels.material.CAM_MATERIAL_Panel.context</references>
+        <references refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Panel_1a5c12b437ced467769af0add281ad6ad0" compoundref="movement_8py" startline="319">cam.ui_panels.movement.CAM_MOVEMENT_Panel.context</references>
+        <references refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel_1a29c49c092513bd72e8072600cb39e12d" compoundref="op__properties_8py" startline="230">cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel.context</references>
+        <references refid="classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1a0b6245dcfcc11980601bf16f2a029ebc" compoundref="operations_8py" startline="135">cam.ui_panels.operations.CAM_OPERATIONS_Panel.context</references>
+        <references refid="classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1aaa7c9818d8ae45b9e01a4278c6ed6a45" compoundref="optimisation_8py" startline="197">cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel.context</references>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Panel_1ac27334ae953aea9512a144cb1ef4bdd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.ui_panels.interface.CAM_INTERFACE_Panel.draw</definition>
+        <argsstring>(self, context)</argsstring>
+        <name>draw</name>
+        <qualifiedname>cam.ui_panels.interface.CAM_INTERFACE_Panel.draw</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Panel_1a31b339ea41c92a6cfa95bb8ba47522eb" kindref="member">context</ref></type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/interface.py" line="46" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/interface.py" bodystart="46" bodyend="49"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>Panel</label>
+      </node>
+      <node id="1">
+        <label>cam.ui_panels.interface.CAM_INTERFACE_Panel</label>
+        <link refid="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Panel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>cam.ui_panels.buttons_panel.CAMButtonsPanel</label>
+        <link refid="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>bool</label>
+      </node>
+      <node id="6">
+        <label>Panel</label>
+      </node>
+      <node id="1">
+        <label>cam.ui_panels.interface.CAM_INTERFACE_Panel</label>
+        <link refid="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Panel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+bl_idname</edgelabel>
+          <edgelabel>+bl_label</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+always_show_panel</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>cam.ui_panels.buttons_panel.CAMButtonsPanel</label>
+        <link refid="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+bl_context</edgelabel>
+          <edgelabel>+bl_region_type</edgelabel>
+          <edgelabel>+bl_space_type</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+always_show_panel</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+COMPAT_ENGINES</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>dict</label>
+      </node>
+      <node id="3">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/interface.py" line="38" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/interface.py" bodystart="38" bodyend="49"/>
+    <listofallmembers>
+      <member refid="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Panel_1af3991f62632953176ca2c957d53ae9a8" prot="public" virt="non-virtual"><scope>cam::ui_panels::interface::CAM_INTERFACE_Panel</scope><name>always_show_panel</name></member>
+      <member refid="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Panel_1a060de30e6e3a6f7468808434942c8b5b" prot="public" virt="non-virtual"><scope>cam::ui_panels::interface::CAM_INTERFACE_Panel</scope><name>bl_idname</name></member>
+      <member refid="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Panel_1a10bd2fdcf79aadc72e020a6a64a599db" prot="public" virt="non-virtual"><scope>cam::ui_panels::interface::CAM_INTERFACE_Panel</scope><name>bl_label</name></member>
+      <member refid="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Panel_1a31b339ea41c92a6cfa95bb8ba47522eb" prot="public" virt="non-virtual"><scope>cam::ui_panels::interface::CAM_INTERFACE_Panel</scope><name>context</name></member>
+      <member refid="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Panel_1ac27334ae953aea9512a144cb1ef4bdd5" prot="public" virt="non-virtual"><scope>cam::ui_panels::interface::CAM_INTERFACE_Panel</scope><name>draw</name></member>
+      <member refid="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Panel_1a74616c74cd87ed76bf847a26ec73cc89" prot="public" virt="non-virtual"><scope>cam::ui_panels::interface::CAM_INTERFACE_Panel</scope><name>draw_interface_level</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

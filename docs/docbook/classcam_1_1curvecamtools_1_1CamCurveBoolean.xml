@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1curvecamtools_1_1CamCurveBoolean" xml:lang="en-US">
+<title>cam.curvecamtools.CamCurveBoolean Class Reference</title>
+<indexterm><primary>cam.curvecamtools.CamCurveBoolean</primary></indexterm>
+Inheritance diagram for cam.curvecamtools.CamCurveBoolean:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1curvecamtools_1_1CamCurveBoolean__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.curvecamtools.CamCurveBoolean:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1curvecamtools_1_1CamCurveBoolean__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1curvecamtools_1_1CamCurveBoolean_1a9ec1cf5b12e52c3b7f1ad8aa3c5b1a3b">poll</link> (cls, context)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1curvecamtools_1_1CamCurveBoolean_1a81bbe1398aea04182ba31f33f0ce240f">execute</link> (self, context)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1curvecamtools_1_1CamCurveBoolean_1a0edf3deb2ed49bcc7da6ac2abd530517">invoke</link> (self, context, event)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1curvecamtools_1_1CamCurveBoolean_1a0b532a3131eda7444518412dee1f08ef">boolean_type</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classcam_1_1curvecamtools_1_1CamCurveBoolean_1a2ee3521b6f1da2f3bd8687503f202c66">bl_idname</link> = &quot;object.curve_boolean&quot;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1curvecamtools_1_1CamCurveBoolean_1a3f4b7fefbc2dd90b224f07bda144a3f1">bl_label</link> = &quot;Curve Boolean&quot;</para>
+</listitem>
+            <listitem><para>dict <link linkend="_classcam_1_1curvecamtools_1_1CamCurveBoolean_1aadf565236027c58e15b56e8930b43840">bl_options</link> = {&apos;REGISTER&apos;, &apos;UNDO&apos;}</para>
+</listitem>
+            <listitem><para>EnumProperty <link linkend="_classcam_1_1curvecamtools_1_1CamCurveBoolean_1a00eed4e6e65b6c6bfc8baf3a9c152176">boolean_type</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Perform Boolean Operation on Two or More Curves</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamCurveBoolean_1a81bbe1398aea04182ba31f33f0ce240f"/><section>
+    <title>execute()</title>
+<indexterm><primary>execute</primary><secondary>cam.curvecamtools.CamCurveBoolean</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamCurveBoolean</primary><secondary>execute</secondary></indexterm>
+<para><computeroutput>cam.curvecamtools.CamCurveBoolean.execute ( self,  context)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamCurveBoolean_1a0edf3deb2ed49bcc7da6ac2abd530517"/><section>
+    <title>invoke()</title>
+<indexterm><primary>invoke</primary><secondary>cam.curvecamtools.CamCurveBoolean</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamCurveBoolean</primary><secondary>invoke</secondary></indexterm>
+<para><computeroutput>cam.curvecamtools.CamCurveBoolean.invoke ( self,  context,  event)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamCurveBoolean_1a9ec1cf5b12e52c3b7f1ad8aa3c5b1a3b"/><section>
+    <title>poll()</title>
+<indexterm><primary>poll</primary><secondary>cam.curvecamtools.CamCurveBoolean</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamCurveBoolean</primary><secondary>poll</secondary></indexterm>
+<para><computeroutput>cam.curvecamtools.CamCurveBoolean.poll ( cls,  context)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamCurveBoolean_1a2ee3521b6f1da2f3bd8687503f202c66"/><section>
+    <title>bl_idname</title>
+<indexterm><primary>bl_idname</primary><secondary>cam.curvecamtools.CamCurveBoolean</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamCurveBoolean</primary><secondary>bl_idname</secondary></indexterm>
+<para><computeroutput>str cam.curvecamtools.CamCurveBoolean.bl_idname = &quot;object.curve_boolean&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamCurveBoolean_1a3f4b7fefbc2dd90b224f07bda144a3f1"/><section>
+    <title>bl_label</title>
+<indexterm><primary>bl_label</primary><secondary>cam.curvecamtools.CamCurveBoolean</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamCurveBoolean</primary><secondary>bl_label</secondary></indexterm>
+<para><computeroutput>str cam.curvecamtools.CamCurveBoolean.bl_label = &quot;Curve Boolean&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamCurveBoolean_1aadf565236027c58e15b56e8930b43840"/><section>
+    <title>bl_options</title>
+<indexterm><primary>bl_options</primary><secondary>cam.curvecamtools.CamCurveBoolean</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamCurveBoolean</primary><secondary>bl_options</secondary></indexterm>
+<para><computeroutput>dict cam.curvecamtools.CamCurveBoolean.bl_options = {&apos;REGISTER&apos;, &apos;UNDO&apos;}<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamCurveBoolean_1a00eed4e6e65b6c6bfc8baf3a9c152176"/><section>
+    <title>boolean_type<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>boolean_type</primary><secondary>cam.curvecamtools.CamCurveBoolean</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamCurveBoolean</primary><secondary>boolean_type</secondary></indexterm>
+<para><computeroutput>EnumProperty cam.curvecamtools.CamCurveBoolean.boolean_type<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&apos;Type&apos;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;items=(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&apos;UNION&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Union&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;&apos;</emphasis>),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&apos;DIFFERENCE&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Difference&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;&apos;</emphasis>),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&apos;INTERSECT&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Intersect&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;&apos;</emphasis>)
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&apos;Boolean&#32;type&apos;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="stringliteral">&apos;UNION&apos;</emphasis>
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamCurveBoolean_1a0b532a3131eda7444518412dee1f08ef"/><section>
+    <title>boolean_type<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>boolean_type</primary><secondary>cam.curvecamtools.CamCurveBoolean</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamCurveBoolean</primary><secondary>boolean_type</secondary></indexterm>
+<para><computeroutput>cam.curvecamtools.CamCurveBoolean.boolean_type</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/<link linkend="_curvecamtools_8py">curvecamtools.py</link></section>
+</section>

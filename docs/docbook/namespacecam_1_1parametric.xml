@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacecam_1_1parametric" xml:lang="en-US">
+<title>cam.parametric Namespace Reference</title>
+<indexterm><primary>cam.parametric</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacecam_1_1parametric_1a02742565c1f1faf491c0d3d677dd33b6">derive_bezier_handles</link> (a, b, c, d, tb, tc)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1parametric_1a1b0e9636a5e2114b9a4685200d2bbbae">create_parametric_curve</link> (function, *args, float min=0.0, float max=1.0, bool use_cubic=True, int iterations=8, int resolution_u=10, **kwargs)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1parametric_1a4da15b36d0d2946dca1fa698a15e8259">make_edge_loops</link> (*objects)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>BlenderCAM &apos;parametric.py&apos; © 2019 Devon (Gorialis) R
+
+MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+
+Summary:
+Create a Blender curve from a 3D parametric function.
+This allows for a 3D plot to be made of the function, which can be converted into a mesh.
+
+I have documented the inner workings here, but if you&apos;re not interested and just want to
+suit this to your own function, scroll down to the bottom and edit the `f(t)` function and
+the iteration count to your liking.
+
+This code has been checked to work on Blender 2.92.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespacecam_1_1parametric_1a1b0e9636a5e2114b9a4685200d2bbbae"/><section>
+    <title>create_parametric_curve()</title>
+<indexterm><primary>create_parametric_curve</primary><secondary>cam.parametric</secondary></indexterm>
+<indexterm><primary>cam.parametric</primary><secondary>create_parametric_curve</secondary></indexterm>
+<para><computeroutput>cam.parametric.create_parametric_curve ( function, * args, float  min = <computeroutput>0.0</computeroutput>
+, float  max = <computeroutput>1.0</computeroutput>
+, bool  use_cubic = <computeroutput>True</computeroutput>
+, int  iterations = <computeroutput>8</computeroutput>
+, int  resolution_u = <computeroutput>10</computeroutput>
+, ** kwargs)</computeroutput></para>
+<para><literallayout><computeroutput>Creates a Blender bezier curve object from a parametric function.
+This &quot;plots&quot; the function in 3D space from `min &lt;= t &lt;= max`.
+
+:param function:
+    The function to plot as a Blender curve.
+
+    This function should take in a float value of `t` and return a 3-item tuple or list
+    of the X, Y and Z coordinates at that point:
+    `function(t) -&gt; (x, y, z)`
+
+    `t` is plotted according to `min &lt;= t &lt;= max`, but if `use_cubic` is enabled, this function
+    needs to be able to take values less than `min` and greater than `max`.
+:param *args:
+    Additional positional arguments to be passed to the plotting function.
+    These are not required.
+:param use_cubic:
+    Whether or not to calculate the cubic bezier handles as to create smoother splines.
+    Turning this off reduces calculation time and memory usage, but produces more jagged
+    splines with sharp edges.
+:param iterations:
+    The &apos;subdivisions&apos; of the parametric to plot.
+    Setting this higher produces more accurate curves but increases calculation time and
+    memory usage.
+:param resolution_u:
+    The preview surface resolution in the U direction of the bezier curve.
+    Setting this to a higher value produces smoother curves in rendering, and increases the
+    number of vertices the curve will get if converted into a mesh (e.g. for edge looping)
+:param **kwargs:
+    Additional keyword arguments to be passed to the plotting function.
+    These are not required.
+:return:
+    The new Blender object.
+</computeroutput></literallayout> </para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1parametric_a1b0e9636a5e2114b9a4685200d2bbbae_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1parametric_1a02742565c1f1faf491c0d3d677dd33b6"/><section>
+    <title>derive_bezier_handles()</title>
+<indexterm><primary>derive_bezier_handles</primary><secondary>cam.parametric</secondary></indexterm>
+<indexterm><primary>cam.parametric</primary><secondary>derive_bezier_handles</secondary></indexterm>
+<para><computeroutput>cam.parametric.derive_bezier_handles ( a,  b,  c,  d,  tb,  tc)</computeroutput></para>
+<para><literallayout><computeroutput>Derives bezier handles by using the start and end of the curve with 2 intermediate
+points to use for interpolation.
+
+:param a:
+    The start point.
+:param b:
+    The first mid-point, located at `tb` on the bezier segment, where 0 &lt; `tb` &lt; 1.
+:param c:
+    The second mid-point, located at `tc` on the bezier segment, where 0 &lt; `tc` &lt; 1.
+:param d:
+    The end point.
+:param tb:
+    The position of the first point in the bezier segment.
+:param tc:
+    The position of the second point in the bezier segment.
+:return:
+    A tuple of the two intermediate handles, that is, the right handle of the start point
+    and the left handle of the end point.
+</computeroutput></literallayout> </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1parametric_a02742565c1f1faf491c0d3d677dd33b6_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1parametric_1a4da15b36d0d2946dca1fa698a15e8259"/><section>
+    <title>make_edge_loops()</title>
+<indexterm><primary>make_edge_loops</primary><secondary>cam.parametric</secondary></indexterm>
+<indexterm><primary>cam.parametric</primary><secondary>make_edge_loops</secondary></indexterm>
+<para><computeroutput>cam.parametric.make_edge_loops (* objects)</computeroutput></para>
+<para><literallayout><computeroutput>Turns a set of Curve objects into meshes, creates vertex groups,
+and merges them into a set of edge loops.
+
+:param *objects:
+    Positional arguments for each object to be converted and merged.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+</section>

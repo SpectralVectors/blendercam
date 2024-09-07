@@ -1,0 +1,236 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1curvecamcreate_1_1CamCurveInterlock" xml:lang="en-US">
+<title>cam.curvecamcreate.CamCurveInterlock Class Reference</title>
+<indexterm><primary>cam.curvecamcreate.CamCurveInterlock</primary></indexterm>
+Inheritance diagram for cam.curvecamcreate.CamCurveInterlock:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1curvecamcreate_1_1CamCurveInterlock__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.curvecamcreate.CamCurveInterlock:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1curvecamcreate_1_1CamCurveInterlock__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a62934ca74ef0c61a4be85404fffdb94b">execute</link> (self, context)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a07aa8d6020060cb6e5adb307a7c5a1ac">finger_size</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a34287f68e38577a71e75acda65f52f70">plate_thickness</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1curvecamcreate_1_1CamCurveInterlock_1aabf2fdda3161f93502f0aab58dd2c0df">finger_tolerance</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a9c8ecb3aee0a46b74c991dff811ede76">finger_amount</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a5ce56543cb58aeead50bef8c50b33a03">fixed_angle</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a7cfcf3fa8abb15be5defd6af726d12d4">interlock_type</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a72f69fce7c4e29c3fe30861d02f1049a">bl_idname</link> = &quot;object.curve_interlock&quot;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a333e503945596cc3577c29cb49e6f3ce">bl_label</link> = &quot;Interlock&quot;</para>
+</listitem>
+            <listitem><para>dict <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveInterlock_1adb6880c56639b6a78baa3ff53caec923">bl_options</link> = {&apos;REGISTER&apos;, &apos;UNDO&apos;, &apos;PRESET&apos;}</para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a5cc9734915fc4c5ca8da049b4dda4bca">finger_size</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a86d6cabae53b447a6515593561af29a1">finger_tolerance</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveInterlock_1ac680ec6eda4616002d81718800407107">plate_thickness</link></para>
+</listitem>
+            <listitem><para>BoolProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveInterlock_1ad7013a32c3dd7e6df9efc0f170617f07">opencurve</link></para>
+</listitem>
+            <listitem><para>EnumProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveInterlock_1aa8081a77bcec6d5253812167165f0a51">interlock_type</link></para>
+</listitem>
+            <listitem><para>IntProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a1fd0c342ea5e32ec4630a05816f20c1d">finger_amount</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveInterlock_1ab21f8ec56b2903d55c17746261767198">tangent_angle</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a202b510fa344e2e90584914d6d2f871a">fixed_angle</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Generates Interlock Along a Curve</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a62934ca74ef0c61a4be85404fffdb94b"/><section>
+    <title>execute()</title>
+<indexterm><primary>execute</primary><secondary>cam.curvecamcreate.CamCurveInterlock</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveInterlock</primary><secondary>execute</secondary></indexterm>
+<para><computeroutput>cam.curvecamcreate.CamCurveInterlock.execute ( self,  context)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a72f69fce7c4e29c3fe30861d02f1049a"/><section>
+    <title>bl_idname</title>
+<indexterm><primary>bl_idname</primary><secondary>cam.curvecamcreate.CamCurveInterlock</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveInterlock</primary><secondary>bl_idname</secondary></indexterm>
+<para><computeroutput>str cam.curvecamcreate.CamCurveInterlock.bl_idname = &quot;object.curve_interlock&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a333e503945596cc3577c29cb49e6f3ce"/><section>
+    <title>bl_label</title>
+<indexterm><primary>bl_label</primary><secondary>cam.curvecamcreate.CamCurveInterlock</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveInterlock</primary><secondary>bl_label</secondary></indexterm>
+<para><computeroutput>str cam.curvecamcreate.CamCurveInterlock.bl_label = &quot;Interlock&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveInterlock_1adb6880c56639b6a78baa3ff53caec923"/><section>
+    <title>bl_options</title>
+<indexterm><primary>bl_options</primary><secondary>cam.curvecamcreate.CamCurveInterlock</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveInterlock</primary><secondary>bl_options</secondary></indexterm>
+<para><computeroutput>dict cam.curvecamcreate.CamCurveInterlock.bl_options = {&apos;REGISTER&apos;, &apos;UNDO&apos;, &apos;PRESET&apos;}<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a1fd0c342ea5e32ec4630a05816f20c1d"/><section>
+    <title>finger_amount<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>finger_amount</primary><secondary>cam.curvecamcreate.CamCurveInterlock</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveInterlock</primary><secondary>finger_amount</secondary></indexterm>
+<para><computeroutput>IntProperty cam.curvecamcreate.CamCurveInterlock.finger_amount<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Finger&#32;Amount&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=2,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=1,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=100,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a9c8ecb3aee0a46b74c991dff811ede76"/><section>
+    <title>finger_amount<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>finger_amount</primary><secondary>cam.curvecamcreate.CamCurveInterlock</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveInterlock</primary><secondary>finger_amount</secondary></indexterm>
+<para><computeroutput>cam.curvecamcreate.CamCurveInterlock.finger_amount</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a5cc9734915fc4c5ca8da049b4dda4bca"/><section>
+    <title>finger_size<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>finger_size</primary><secondary>cam.curvecamcreate.CamCurveInterlock</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveInterlock</primary><secondary>finger_size</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamcreate.CamCurveInterlock.finger_size<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Finger&#32;Size&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.015,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0.005,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=3.0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=4,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a07aa8d6020060cb6e5adb307a7c5a1ac"/><section>
+    <title>finger_size<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>finger_size</primary><secondary>cam.curvecamcreate.CamCurveInterlock</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveInterlock</primary><secondary>finger_size</secondary></indexterm>
+<para><computeroutput>cam.curvecamcreate.CamCurveInterlock.finger_size</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a86d6cabae53b447a6515593561af29a1"/><section>
+    <title>finger_tolerance<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>finger_tolerance</primary><secondary>cam.curvecamcreate.CamCurveInterlock</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveInterlock</primary><secondary>finger_tolerance</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamcreate.CamCurveInterlock.finger_tolerance<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Finger&#32;Play&#32;Room&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.000045,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=0.003,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=4,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveInterlock_1aabf2fdda3161f93502f0aab58dd2c0df"/><section>
+    <title>finger_tolerance<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>finger_tolerance</primary><secondary>cam.curvecamcreate.CamCurveInterlock</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveInterlock</primary><secondary>finger_tolerance</secondary></indexterm>
+<para><computeroutput>cam.curvecamcreate.CamCurveInterlock.finger_tolerance</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a202b510fa344e2e90584914d6d2f871a"/><section>
+    <title>fixed_angle<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>fixed_angle</primary><secondary>cam.curvecamcreate.CamCurveInterlock</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveInterlock</primary><secondary>fixed_angle</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamcreate.CamCurveInterlock.fixed_angle<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Fixed&#32;Angle&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0.000,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=2,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;subtype=<emphasis role="stringliteral">&quot;ANGLE&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;ROTATION&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a5ce56543cb58aeead50bef8c50b33a03"/><section>
+    <title>fixed_angle<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>fixed_angle</primary><secondary>cam.curvecamcreate.CamCurveInterlock</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveInterlock</primary><secondary>fixed_angle</secondary></indexterm>
+<para><computeroutput>cam.curvecamcreate.CamCurveInterlock.fixed_angle</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveInterlock_1aa8081a77bcec6d5253812167165f0a51"/><section>
+    <title>interlock_type<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>interlock_type</primary><secondary>cam.curvecamcreate.CamCurveInterlock</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveInterlock</primary><secondary>interlock_type</secondary></indexterm>
+<para><computeroutput>EnumProperty cam.curvecamcreate.CamCurveInterlock.interlock_type<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&apos;Type&#32;of&#32;Interlock&apos;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;items=(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&apos;TWIST&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Twist&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Interlock&#32;requires&#32;1/4&#32;turn&#32;twist&apos;</emphasis>),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&apos;GROOVE&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Groove&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Simple&#32;sliding&#32;groove&apos;</emphasis>),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&apos;PUZZLE&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Puzzle&#32;Interlock&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Puzzle&#32;good&#32;for&#32;flat&#32;joints&apos;</emphasis>)
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&apos;Type&#32;of&#32;interlock&apos;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="stringliteral">&apos;GROOVE&apos;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a7cfcf3fa8abb15be5defd6af726d12d4"/><section>
+    <title>interlock_type<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>interlock_type</primary><secondary>cam.curvecamcreate.CamCurveInterlock</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveInterlock</primary><secondary>interlock_type</secondary></indexterm>
+<para><computeroutput>cam.curvecamcreate.CamCurveInterlock.interlock_type</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveInterlock_1ad7013a32c3dd7e6df9efc0f170617f07"/><section>
+    <title>opencurve</title>
+<indexterm><primary>opencurve</primary><secondary>cam.curvecamcreate.CamCurveInterlock</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveInterlock</primary><secondary>opencurve</secondary></indexterm>
+<para><computeroutput>BoolProperty cam.curvecamcreate.CamCurveInterlock.opencurve<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;OpenCurve&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="keyword">False</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveInterlock_1ac680ec6eda4616002d81718800407107"/><section>
+    <title>plate_thickness<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>plate_thickness</primary><secondary>cam.curvecamcreate.CamCurveInterlock</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveInterlock</primary><secondary>plate_thickness</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamcreate.CamCurveInterlock.plate_thickness<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Plate&#32;Thickness&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.00477,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0.001,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=3.0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a34287f68e38577a71e75acda65f52f70"/><section>
+    <title>plate_thickness<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>plate_thickness</primary><secondary>cam.curvecamcreate.CamCurveInterlock</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveInterlock</primary><secondary>plate_thickness</secondary></indexterm>
+<para><computeroutput>cam.curvecamcreate.CamCurveInterlock.plate_thickness</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamcreate_1_1CamCurveInterlock_1ab21f8ec56b2903d55c17746261767198"/><section>
+    <title>tangent_angle</title>
+<indexterm><primary>tangent_angle</primary><secondary>cam.curvecamcreate.CamCurveInterlock</secondary></indexterm>
+<indexterm><primary>cam.curvecamcreate.CamCurveInterlock</primary><secondary>tangent_angle</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamcreate.CamCurveInterlock.tangent_angle<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Tangent&#32;Deviation&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0.000,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=2,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;subtype=<emphasis role="stringliteral">&quot;ANGLE&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;ROTATION&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/<link linkend="_curvecamcreate_8py">curvecamcreate.py</link></section>
+</section>

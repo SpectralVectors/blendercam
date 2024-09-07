@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacecam_1_1pack" kind="namespace" language="Python">
+    <compoundname>cam::pack</compoundname>
+    <innerclass refid="classcam_1_1pack_1_1PackObjectsSettings" prot="public">cam::pack::PackObjectsSettings</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacecam_1_1pack_1a4c434edc8d0ae541564075cde40be782" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.pack.srotate</definition>
+        <argsstring>(s, r, x, y)</argsstring>
+        <name>srotate</name>
+        <qualifiedname>cam.pack.srotate</qualifiedname>
+        <param>
+          <type>s</type>
+          <defname>s</defname>
+        </param>
+        <param>
+          <type>r</type>
+          <defname>r</defname>
+        </param>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+        </param>
+        <param>
+          <type>y</type>
+          <defname>y</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pack.py" line="42" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pack.py" bodystart="42" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1pack_1a9217d216d93f4560ecda5c5fc14d8a73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.pack.packCurves</definition>
+        <argsstring>()</argsstring>
+        <name>packCurves</name>
+        <qualifiedname>cam.pack.packCurves</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pack.py" line="55" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pack.py" bodystart="55" bodyend="196"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>BlenderCAM &apos;pack.py&apos; © 2012 Vilem Novak
+
+Takes all selected curves, converts them to polygons, offsets them by the pre-set margin
+then chooses a starting location possibly inside the already occupied area and moves and rotates the
+polygon out of the occupied area if one or more positions are found where the poly doesn&apos;t overlap,
+it is placed and added to the occupied area - allpoly
+Very slow and STUPID, a collision algorithm would be much much faster...
+</verbatim> </para>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pack.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

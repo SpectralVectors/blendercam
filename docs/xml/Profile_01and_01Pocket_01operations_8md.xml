@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="Profile_01and_01Pocket_01operations_8md" kind="file" language="Markdown">
+    <compoundname>Profile and Pocket operations.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">1.<sp/>Convert<sp/>model<sp/>from<sp/>CSG<sp/>to<sp/>mesh<sp/>(in<sp/>this<sp/>example<sp/>FreeCAD<sp/>is<sp/>used<sp/>for<sp/>conversion).<sp/>Precision<sp/>setting<sp/>is<sp/>very<sp/>important<sp/>for<sp/>correct<sp/>result.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![Tesselation<sp/>with<sp/>Freecad](images/tesselation.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![Result<sp/>with<sp/>Freecad](images/partFreecad.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">2.<sp/>Save<sp/>mesh<sp/>as<sp/>PLY<sp/>or<sp/>STL.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">3.<sp/>Import<sp/>mesh<sp/>to<sp/>Blender.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![Import<sp/>Stl](images/importStl.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">4.<sp/>use<sp/>and<sp/>apply<sp/>&apos;Egde<sp/>Split&apos;<sp/>modifier.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![Edge<sp/>split<sp/>modifier](images/edgeSplit.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">5.<sp/>Enter<sp/>Edit<sp/>Mode<sp/>and<sp/>select<sp/>surface<sp/>(in<sp/>Face<sp/>Select<sp/>mode)<sp/>that<sp/>will<sp/>be<sp/>a<sp/>curve<sp/>source,<sp/>and<sp/>&apos;Separate&apos;<sp/>it.<sp/>Use<sp/>Select<sp/>Linked<sp/>(L<sp/>shortcut)<sp/>to<sp/>select<sp/>whole<sp/>faces.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![Separate<sp/>selection](images/partObjSep.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">6.<sp/>Repeat<sp/>with<sp/>other<sp/>curve<sp/>sources.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![Separate<sp/>selection<sp/>2](images/partObjSep2.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">7.<sp/>Use<sp/>&apos;Set<sp/>Origin<sp/>to<sp/>Geometry&apos;<sp/>on<sp/>all<sp/>separated<sp/>surfaces.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![Separate<sp/>selection<sp/>2](images/partOrigGeo.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">8.<sp/>Exit<sp/>Edit<sp/>Mode<sp/>and<sp/>select<sp/>separated<sp/>surfaces.<sp/>Convert<sp/>them<sp/>to<sp/>curves<sp/>using<sp/>&apos;Convert<sp/>to&apos;<sp/>(Alt<sp/>C).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![Convert<sp/>to<sp/>curve](images/partConvert.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">or<sp/>you<sp/>can<sp/>use<sp/>&quot;Object<sp/>silhouete&quot;<sp/>from<sp/>blendercam<sp/>tool<sp/>:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![Cam<sp/>Panel](images/curvecampanel.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![Object<sp/>silhouete](images/partObjectSil.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">9.<sp/>Edit<sp/>curves<sp/>to<sp/>separate<sp/>holes<sp/>from<sp/>external<sp/>contour.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![Object<sp/>silhouete](images/partSeparateHoles.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">10.<sp/>Add<sp/>Pocket<sp/>and<sp/>Profile<sp/>operations<sp/>:<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![Pocket<sp/>1](images/partPocket1.png)</highlight></codeline>
+<codeline><highlight class="normal">![Pocket<sp/>2](images/partPocket2.png)</highlight></codeline>
+<codeline><highlight class="normal">![Profile<sp/>1](images/partProfile1.png)</highlight></codeline>
+<codeline><highlight class="normal">![Profile<sp/>2](images/partProfile2.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">for<sp/>pads/pockets<sp/>(some<sp/>curves<sp/>need<sp/>to<sp/>be<sp/>modified<sp/>in<sp/>&apos;Edit<sp/>Mode&apos;):</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">It&apos;s<sp/>highly<sp/>recommended<sp/>to<sp/>create<sp/>roughing<sp/>and<sp/>finishing<sp/>pass.<sp/>For<sp/>roughing<sp/>pass<sp/>add<sp/>offset<sp/>by<sp/>altering<sp/>cutter&apos;s<sp/>diameter.<sp/>For<sp/>Profile<sp/>operation,<sp/>&apos;First<sp/>Down&apos;<sp/>and<sp/>&apos;Ramp<sp/>In&apos;<sp/>options<sp/>are<sp/>recommended.<sp/>&apos;First<sp/>Down&apos;<sp/>helps<sp/>avoid<sp/>non-cutting<sp/>moves<sp/>and<sp/>&apos;Ramp<sp/>In&apos;<sp/>reduces<sp/>cutter<sp/>load<sp/>by<sp/>avoiding<sp/>vertical<sp/>plunge<sp/>into<sp/>material.<sp/>For<sp/>Pocket<sp/>operation<sp/>instead<sp/>of<sp/>&apos;Ramp<sp/>In&apos;<sp/>try<sp/>using<sp/>&apos;Helix<sp/>enter&apos;<sp/>option.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/documentation/Profile and Pocket operations.md"/>
+  </compounddef>
+</doxygen>

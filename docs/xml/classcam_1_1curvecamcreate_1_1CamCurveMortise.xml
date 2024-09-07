@@ -1,0 +1,551 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1curvecamcreate_1_1CamCurveMortise" kind="class" language="Python" prot="public">
+    <compoundname>cam::curvecamcreate::CamCurveMortise</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Operator</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveMortise_1a77b3ca0a4590526451159adb7451e064" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.curvecamcreate.CamCurveMortise::bl_idname</definition>
+        <argsstring></argsstring>
+        <name>bl_idname</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveMortise.bl_idname</qualifiedname>
+        <initializer>=  &quot;object.curve_mortise&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="578" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="578" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveMortise_1abdbe32770f730a003b5bbde4387754f5" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.curvecamcreate.CamCurveMortise::bl_label</definition>
+        <argsstring></argsstring>
+        <name>bl_label</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveMortise.bl_label</qualifiedname>
+        <initializer>=  &quot;Mortise&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="579" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="579" bodyend="-1"/>
+        <referencedby refid="classcam_1_1preset__managers_1_1CAM__MACHINE__MT__presets_1af95f7812d2952b26a26809ab923dac09" compoundref="preset__managers_8py" startline="28" endline="38">cam.preset_managers.CAM_MACHINE_MT_presets.post_cb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveMortise_1a90cbcf8cf562039a3f072ee0c387fff5" prot="public" static="yes" mutable="no">
+        <type>dict</type>
+        <definition>dict cam.curvecamcreate.CamCurveMortise::bl_options</definition>
+        <argsstring></argsstring>
+        <name>bl_options</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveMortise.bl_options</qualifiedname>
+        <initializer>=  {&apos;REGISTER&apos;, &apos;UNDO&apos;, &apos;PRESET&apos;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="580" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="580" bodyend="-1"/>
+        <referencedby refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a9628cbca8e69ec75b2337171a02bf428" compoundref="async__op_8py" startline="32" endline="59">cam.async_op.AsyncOperatorMixin.modal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveMortise_1a18d961b7b628a7bf0b7a22534be58a20" prot="public" static="yes" mutable="no">
+        <type>BoolProperty</type>
+        <definition>BoolProperty cam.curvecamcreate.CamCurveMortise::finger_size</definition>
+        <argsstring></argsstring>
+        <name>finger_size</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveMortise.finger_size</qualifiedname>
+        <initializer>(
+        name=&quot;Kurf Bending only&quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="582" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="582" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveMortise_1a93d8f089ba90d9fa8111533ce79a1a37" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamcreate.CamCurveMortise::finger_size</definition>
+        <argsstring></argsstring>
+        <name>finger_size</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveMortise.finger_size</qualifiedname>
+        <initializer>(
+        name=&quot;Maximum Finger Size&quot;,
+        default=0.015,
+        min=0.005,
+        max=3.0,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="586" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="586" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveMortise_1a524d494ec8023f9d34ed7e1a45ad0104" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamcreate.CamCurveMortise::min_finger_size</definition>
+        <argsstring></argsstring>
+        <name>min_finger_size</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveMortise.min_finger_size</qualifiedname>
+        <initializer>(
+        name=&quot;Minimum Finger Size&quot;,
+        default=0.0025,
+        min=0.001,
+        max=3.0,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="594" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="594" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveMortise_1a9c6eca1f51b509a98e123241e706c17f" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamcreate.CamCurveMortise::finger_tolerance</definition>
+        <argsstring></argsstring>
+        <name>finger_tolerance</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveMortise.finger_tolerance</qualifiedname>
+        <initializer>(
+        name=&quot;Finger Play Room&quot;,
+        default=0.000045,
+        min=0,
+        max=0.003,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="602" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="602" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveMortise_1a447419d63210c61fc91ec8e5d8b20db5" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamcreate.CamCurveMortise::plate_thickness</definition>
+        <argsstring></argsstring>
+        <name>plate_thickness</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveMortise.plate_thickness</qualifiedname>
+        <initializer>(
+        name=&quot;Drawer Plate Thickness&quot;,
+        default=0.00477,
+        min=0.001,
+        max=3.0,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="610" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="610" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveMortise_1a5654198b1a0d196cced0e2a22439545a" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamcreate.CamCurveMortise::side_height</definition>
+        <argsstring></argsstring>
+        <name>side_height</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveMortise.side_height</qualifiedname>
+        <initializer>(
+        name=&quot;Side Height&quot;,
+        default=0.05,
+        min=0.001,
+        max=3.0,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="617" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="617" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveMortise_1aff6317c60a80cd3ad94fe0d19c34389a" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamcreate.CamCurveMortise::flex_pocket</definition>
+        <argsstring></argsstring>
+        <name>flex_pocket</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveMortise.flex_pocket</qualifiedname>
+        <initializer>(
+        name=&quot;Flex Pocket&quot;,
+        default=0.004,
+        min=0.000,
+        max=1.0,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="624" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="624" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveMortise_1abfbf54528c9697581a182dd0eeb201a1" prot="public" static="yes" mutable="no">
+        <type>BoolProperty</type>
+        <definition>BoolProperty cam.curvecamcreate.CamCurveMortise::top_bottom</definition>
+        <argsstring></argsstring>
+        <name>top_bottom</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveMortise.top_bottom</qualifiedname>
+        <initializer>(
+        name=&quot;Side Top &amp; Bottom Fingers&quot;,
+        default=True,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="631" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="631" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveMortise_1a5cb99031d4ba69aecb96564b71371903" prot="public" static="yes" mutable="no">
+        <type>BoolProperty</type>
+        <definition>BoolProperty cam.curvecamcreate.CamCurveMortise::opencurve</definition>
+        <argsstring></argsstring>
+        <name>opencurve</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveMortise.opencurve</qualifiedname>
+        <initializer>(
+        name=&quot;OpenCurve&quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="635" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="635" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurveMortise_1a4dd7097899b49fc06e5fc62da4843873" compoundref="curvecamcreate_8py" startline="656" endline="718">cam.curvecamcreate.CamCurveMortise.execute</referencedby>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a62934ca74ef0c61a4be85404fffdb94b" compoundref="curvecamcreate_8py" startline="785" endline="838">cam.curvecamcreate.CamCurveInterlock.execute</referencedby>
+        <referencedby refid="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1a3a8340d39d68a758d65b7603f76062b2" compoundref="curvecamtools_8py" startline="800" endline="834">cam.curvecamtools.CamOffsetSilhouete.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveMortise_1a04266d5a9a291b6a8a99e3c0556d7532" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamcreate.CamCurveMortise::adaptive</definition>
+        <argsstring></argsstring>
+        <name>adaptive</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveMortise.adaptive</qualifiedname>
+        <initializer>(
+        name=&quot;Adaptive Angle Threshold&quot;,
+        default=0.0,
+        min=0.000,
+        max=2,
+        subtype=&quot;ANGLE&quot;,
+        unit=&quot;ROTATION&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="639" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="639" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurveMortise_1a4dd7097899b49fc06e5fc62da4843873" compoundref="curvecamcreate_8py" startline="656" endline="718">cam.curvecamcreate.CamCurveMortise.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveMortise_1ad16eed6f73cbc0e24afd48e22a65b770" prot="public" static="yes" mutable="no">
+        <type>BoolProperty</type>
+        <definition>BoolProperty cam.curvecamcreate.CamCurveMortise::double_adaptive</definition>
+        <argsstring></argsstring>
+        <name>double_adaptive</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveMortise.double_adaptive</qualifiedname>
+        <initializer>(
+        name=&quot;Double Adaptive Pockets&quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="647" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="647" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveMortise_1ae1c31e9457f53c37df451f6bf3db7e82" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamcreate.CamCurveMortise::min_finger_size</definition>
+        <argsstring></argsstring>
+        <name>min_finger_size</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveMortise.min_finger_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="694" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="694" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveMortise_1a465c18826b576c79da80880870d6d32e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamcreate.CamCurveMortise::finger_size</definition>
+        <argsstring></argsstring>
+        <name>finger_size</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveMortise.finger_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="694" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="694" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveMortise_1a035c8c36d811a5f90184b120d8694d76" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamcreate.CamCurveMortise::plate_thickness</definition>
+        <argsstring></argsstring>
+        <name>plate_thickness</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveMortise.plate_thickness</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="694" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="694" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveMortise_1a26b4a57bfa5c88074bac1a7c281df479" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamcreate.CamCurveMortise::finger_tolerance</definition>
+        <argsstring></argsstring>
+        <name>finger_tolerance</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveMortise.finger_tolerance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="695" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="695" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveMortise_1ac94cceeb30e1fcc6b314ed2db15f69a2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamcreate.CamCurveMortise::adaptive</definition>
+        <argsstring></argsstring>
+        <name>adaptive</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveMortise.adaptive</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="695" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="695" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurveMortise_1a4dd7097899b49fc06e5fc62da4843873" compoundref="curvecamcreate_8py" startline="656" endline="718">cam.curvecamcreate.CamCurveMortise.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveMortise_1a8bacd21e5052fc4d932414a2588f8d5c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamcreate.CamCurveMortise::double_adaptive</definition>
+        <argsstring></argsstring>
+        <name>double_adaptive</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveMortise.double_adaptive</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="698" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="698" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveMortise_1a2a7d6988a8030ca3fd75751ed552cf47" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamcreate.CamCurveMortise::side_height</definition>
+        <argsstring></argsstring>
+        <name>side_height</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveMortise.side_height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="699" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="699" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveMortise_1ad44599e387825fd455966b3822d21790" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamcreate.CamCurveMortise::top_bottom</definition>
+        <argsstring></argsstring>
+        <name>top_bottom</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveMortise.top_bottom</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="700" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="700" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveMortise_1ade64b85f1e2906528293e7ace8b02009" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamcreate.CamCurveMortise::flex_pocket</definition>
+        <argsstring></argsstring>
+        <name>flex_pocket</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveMortise.flex_pocket</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="702" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="702" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcam_1_1curvecamcreate_1_1CamCurveMortise_1a2d0828ccab1c3d79277833785d333a37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.curvecamcreate.CamCurveMortise.poll</definition>
+        <argsstring>(cls, context)</argsstring>
+        <name>poll</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveMortise.poll</qualifiedname>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="653" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="653" bodyend="655"/>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1curvecamcreate_1_1CamCurveMortise_1a4dd7097899b49fc06e5fc62da4843873" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.curvecamcreate.CamCurveMortise.execute</definition>
+        <argsstring>(self, context)</argsstring>
+        <name>execute</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveMortise.execute</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="656" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="656" bodyend="718"/>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurveMortise_1a04266d5a9a291b6a8a99e3c0556d7532" compoundref="curvecamcreate_8py" startline="639">cam.curvecamcreate.CamCurveMortise.adaptive</references>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurveMortise_1a5cb99031d4ba69aecb96564b71371903" compoundref="curvecamcreate_8py" startline="635">cam.curvecamcreate.CamCurveMortise.opencurve</references>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurveInterlock_1ad7013a32c3dd7e6df9efc0f170617f07" compoundref="curvecamcreate_8py" startline="748">cam.curvecamcreate.CamCurveInterlock.opencurve</references>
+        <references refid="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1abbed91fdd4538fb77506569985aa97e1" compoundref="curvecamtools_8py" startline="788">cam.curvecamtools.CamOffsetSilhouete.opencurve</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Generates Mortise Along a Curve</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.curvecamcreate.CamCurveMortise</label>
+        <link refid="classcam_1_1curvecamcreate_1_1CamCurveMortise"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>BoolProperty</label>
+      </node>
+      <node id="6">
+        <label>FloatProperty</label>
+      </node>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.curvecamcreate.CamCurveMortise</label>
+        <link refid="classcam_1_1curvecamcreate_1_1CamCurveMortise"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+bl_idname</edgelabel>
+          <edgelabel>+bl_label</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+bl_options</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+double_adaptive</edgelabel>
+          <edgelabel>+finger_size</edgelabel>
+          <edgelabel>+opencurve</edgelabel>
+          <edgelabel>+top_bottom</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>+adaptive</edgelabel>
+          <edgelabel>+finger_size</edgelabel>
+          <edgelabel>+finger_tolerance</edgelabel>
+          <edgelabel>+flex_pocket</edgelabel>
+          <edgelabel>+min_finger_size</edgelabel>
+          <edgelabel>+plate_thickness</edgelabel>
+          <edgelabel>+side_height</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dict</label>
+      </node>
+      <node id="3">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="576" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="576" bodyend="718"/>
+    <listofallmembers>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveMortise_1a04266d5a9a291b6a8a99e3c0556d7532" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveMortise</scope><name>adaptive</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveMortise_1ac94cceeb30e1fcc6b314ed2db15f69a2" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveMortise</scope><name>adaptive</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveMortise_1a77b3ca0a4590526451159adb7451e064" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveMortise</scope><name>bl_idname</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveMortise_1abdbe32770f730a003b5bbde4387754f5" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveMortise</scope><name>bl_label</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveMortise_1a90cbcf8cf562039a3f072ee0c387fff5" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveMortise</scope><name>bl_options</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveMortise_1ad16eed6f73cbc0e24afd48e22a65b770" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveMortise</scope><name>double_adaptive</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveMortise_1a8bacd21e5052fc4d932414a2588f8d5c" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveMortise</scope><name>double_adaptive</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveMortise_1a4dd7097899b49fc06e5fc62da4843873" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveMortise</scope><name>execute</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveMortise_1a18d961b7b628a7bf0b7a22534be58a20" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveMortise</scope><name>finger_size</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveMortise_1a93d8f089ba90d9fa8111533ce79a1a37" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveMortise</scope><name>finger_size</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveMortise_1a465c18826b576c79da80880870d6d32e" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveMortise</scope><name>finger_size</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveMortise_1a9c6eca1f51b509a98e123241e706c17f" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveMortise</scope><name>finger_tolerance</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveMortise_1a26b4a57bfa5c88074bac1a7c281df479" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveMortise</scope><name>finger_tolerance</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveMortise_1aff6317c60a80cd3ad94fe0d19c34389a" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveMortise</scope><name>flex_pocket</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveMortise_1ade64b85f1e2906528293e7ace8b02009" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveMortise</scope><name>flex_pocket</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveMortise_1a524d494ec8023f9d34ed7e1a45ad0104" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveMortise</scope><name>min_finger_size</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveMortise_1ae1c31e9457f53c37df451f6bf3db7e82" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveMortise</scope><name>min_finger_size</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveMortise_1a5cb99031d4ba69aecb96564b71371903" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveMortise</scope><name>opencurve</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveMortise_1a447419d63210c61fc91ec8e5d8b20db5" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveMortise</scope><name>plate_thickness</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveMortise_1a035c8c36d811a5f90184b120d8694d76" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveMortise</scope><name>plate_thickness</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveMortise_1a2d0828ccab1c3d79277833785d333a37" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveMortise</scope><name>poll</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveMortise_1a5654198b1a0d196cced0e2a22439545a" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveMortise</scope><name>side_height</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveMortise_1a2a7d6988a8030ca3fd75751ed552cf47" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveMortise</scope><name>side_height</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveMortise_1abfbf54528c9697581a182dd0eeb201a1" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveMortise</scope><name>top_bottom</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveMortise_1ad44599e387825fd455966b3822d21790" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveMortise</scope><name>top_bottom</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,277 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacecam_1_1testing" kind="namespace" language="Python">
+    <compoundname>cam::testing</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacecam_1_1testing_1ab2fef368ff6c023b0b221bfaf37d128f" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list cam::testing.tests</definition>
+        <argsstring></argsstring>
+        <name>tests</name>
+        <qualifiedname>cam.testing.tests</qualifiedname>
+        <initializer>=  [
+    <ref refid="namespacecam_1_1testing_1a32a8eac2b8711a5eec30bcb2931dfeee" kindref="member">testCutout</ref>,
+    <ref refid="namespacecam_1_1testing_1adb2800c6463b497bc715098f86a82fe6" kindref="member">testParallel</ref>,
+    <ref refid="namespacecam_1_1testing_1aabd83e551ae9ee25bc26b7d6433b0b8d" kindref="member">testWaterline</ref>,
+    <ref refid="namespacecam_1_1testing_1a9e167aa24a8dbc55384f1e5535f2307b" kindref="member">testPocket</ref>,
+
+]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/testing.py" line="165" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/testing.py" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecam_1_1testing_1ad8987c50d27683e84c1613ea7cac0e81" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cam::testing.p</definition>
+        <argsstring></argsstring>
+        <name>p</name>
+        <qualifiedname>cam.testing.p</qualifiedname>
+        <initializer>=  i * .2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/testing.py" line="177" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/testing.py" bodystart="177" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacecam_1_1testing_1abefbc28ec689156ed4a9c97b8303ae9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.testing.addTestCurve</definition>
+        <argsstring>(loc)</argsstring>
+        <name>addTestCurve</name>
+        <qualifiedname>cam.testing.addTestCurve</qualifiedname>
+        <param>
+          <type>loc</type>
+          <defname>loc</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/testing.py" line="12" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/testing.py" bodystart="12" bodyend="26"/>
+        <referencedby refid="namespacecam_1_1testing_1a32a8eac2b8711a5eec30bcb2931dfeee" compoundref="testing_8py" startline="65" endline="72">cam.testing.testCutout</referencedby>
+        <referencedby refid="namespacecam_1_1testing_1a9e167aa24a8dbc55384f1e5535f2307b" compoundref="testing_8py" startline="73" endline="82">cam.testing.testPocket</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1testing_1a6c48142744a3a292f57c78917845bf65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.testing.addTestMesh</definition>
+        <argsstring>(loc)</argsstring>
+        <name>addTestMesh</name>
+        <qualifiedname>cam.testing.addTestMesh</qualifiedname>
+        <param>
+          <type>loc</type>
+          <defname>loc</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/testing.py" line="27" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/testing.py" bodystart="27" bodyend="41"/>
+        <referencedby refid="namespacecam_1_1testing_1adb2800c6463b497bc715098f86a82fe6" compoundref="testing_8py" startline="83" endline="91">cam.testing.testParallel</referencedby>
+        <referencedby refid="namespacecam_1_1testing_1aabd83e551ae9ee25bc26b7d6433b0b8d" compoundref="testing_8py" startline="92" endline="106">cam.testing.testWaterline</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1testing_1a5944e60b9d5d30759637782d98d8a106" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.testing.deleteFirstVert</definition>
+        <argsstring>(ob)</argsstring>
+        <name>deleteFirstVert</name>
+        <qualifiedname>cam.testing.deleteFirstVert</qualifiedname>
+        <param>
+          <type>ob</type>
+          <defname>ob</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/testing.py" line="42" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/testing.py" bodystart="42" bodyend="59"/>
+        <referencedby refid="namespacecam_1_1testing_1abfb420269e3048d5cb9c771655592ff2" compoundref="testing_8py" startline="60" endline="64">cam.testing.testCalc</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1testing_1abfb420269e3048d5cb9c771655592ff2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.testing.testCalc</definition>
+        <argsstring>(o)</argsstring>
+        <name>testCalc</name>
+        <qualifiedname>cam.testing.testCalc</qualifiedname>
+        <param>
+          <type>o</type>
+          <defname>o</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/testing.py" line="60" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/testing.py" bodystart="60" bodyend="64"/>
+        <references refid="namespacecam_1_1testing_1a5944e60b9d5d30759637782d98d8a106" compoundref="testing_8py" startline="42" endline="59">cam.testing.deleteFirstVert</references>
+        <referencedby refid="namespacecam_1_1testing_1a32a8eac2b8711a5eec30bcb2931dfeee" compoundref="testing_8py" startline="65" endline="72">cam.testing.testCutout</referencedby>
+        <referencedby refid="namespacecam_1_1testing_1a9e167aa24a8dbc55384f1e5535f2307b" compoundref="testing_8py" startline="73" endline="82">cam.testing.testPocket</referencedby>
+        <referencedby refid="namespacecam_1_1testing_1aabd83e551ae9ee25bc26b7d6433b0b8d" compoundref="testing_8py" startline="92" endline="106">cam.testing.testWaterline</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1testing_1a32a8eac2b8711a5eec30bcb2931dfeee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.testing.testCutout</definition>
+        <argsstring>(pos)</argsstring>
+        <name>testCutout</name>
+        <qualifiedname>cam.testing.testCutout</qualifiedname>
+        <param>
+          <type>pos</type>
+          <defname>pos</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/testing.py" line="65" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/testing.py" bodystart="65" bodyend="72"/>
+        <references refid="namespacecam_1_1testing_1abefbc28ec689156ed4a9c97b8303ae9e" compoundref="testing_8py" startline="12" endline="26">cam.testing.addTestCurve</references>
+        <references refid="namespacecam_1_1testing_1abfb420269e3048d5cb9c771655592ff2" compoundref="testing_8py" startline="60" endline="64">cam.testing.testCalc</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1testing_1a9e167aa24a8dbc55384f1e5535f2307b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.testing.testPocket</definition>
+        <argsstring>(pos)</argsstring>
+        <name>testPocket</name>
+        <qualifiedname>cam.testing.testPocket</qualifiedname>
+        <param>
+          <type>pos</type>
+          <defname>pos</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/testing.py" line="73" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/testing.py" bodystart="73" bodyend="82"/>
+        <references refid="namespacecam_1_1testing_1abefbc28ec689156ed4a9c97b8303ae9e" compoundref="testing_8py" startline="12" endline="26">cam.testing.addTestCurve</references>
+        <references refid="namespacecam_1_1testing_1abfb420269e3048d5cb9c771655592ff2" compoundref="testing_8py" startline="60" endline="64">cam.testing.testCalc</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1testing_1adb2800c6463b497bc715098f86a82fe6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.testing.testParallel</definition>
+        <argsstring>(pos)</argsstring>
+        <name>testParallel</name>
+        <qualifiedname>cam.testing.testParallel</qualifiedname>
+        <param>
+          <type>pos</type>
+          <defname>pos</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/testing.py" line="83" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/testing.py" bodystart="83" bodyend="91"/>
+        <references refid="namespacecam_1_1testing_1a6c48142744a3a292f57c78917845bf65" compoundref="testing_8py" startline="27" endline="41">cam.testing.addTestMesh</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1testing_1aabd83e551ae9ee25bc26b7d6433b0b8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.testing.testWaterline</definition>
+        <argsstring>(pos)</argsstring>
+        <name>testWaterline</name>
+        <qualifiedname>cam.testing.testWaterline</qualifiedname>
+        <param>
+          <type>pos</type>
+          <defname>pos</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/testing.py" line="92" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/testing.py" bodystart="92" bodyend="106"/>
+        <references refid="namespacecam_1_1testing_1a6c48142744a3a292f57c78917845bf65" compoundref="testing_8py" startline="27" endline="41">cam.testing.addTestMesh</references>
+        <references refid="namespacecam_1_1testing_1abfb420269e3048d5cb9c771655592ff2" compoundref="testing_8py" startline="60" endline="64">cam.testing.testCalc</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1testing_1abc477b91c136f577f1e65b01888bb28f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.testing.testSimulation</definition>
+        <argsstring>()</argsstring>
+        <name>testSimulation</name>
+        <qualifiedname>cam.testing.testSimulation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/testing.py" line="107" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/testing.py" bodystart="107" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1testing_1a4d199c95e8a1f9840f62af73f6fe7079" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.testing.cleanUp</definition>
+        <argsstring>()</argsstring>
+        <name>cleanUp</name>
+        <qualifiedname>cam.testing.cleanUp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/testing.py" line="111" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/testing.py" bodystart="111" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1testing_1aabfb4b9616b91b5aa8176470e4d3e373" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.testing.testOperation</definition>
+        <argsstring>(i)</argsstring>
+        <name>testOperation</name>
+        <qualifiedname>cam.testing.testOperation</qualifiedname>
+        <param>
+          <type>i</type>
+          <defname>i</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/testing.py" line="118" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/testing.py" bodystart="118" bodyend="156"/>
+        <referencedby refid="namespacecam_1_1testing_1a54beebb5016a1f115c1d079105334a3c" compoundref="testing_8py" startline="157" endline="164">cam.testing.testAll</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1testing_1a54beebb5016a1f115c1d079105334a3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.testing.testAll</definition>
+        <argsstring>()</argsstring>
+        <name>testAll</name>
+        <qualifiedname>cam.testing.testAll</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/testing.py" line="157" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/testing.py" bodystart="157" bodyend="164"/>
+        <references refid="namespacecam_1_1testing_1aabfb4b9616b91b5aa8176470e4d3e373" compoundref="testing_8py" startline="118" endline="156">cam.testing.testOperation</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>BlenderCAM &apos;testing.py&apos; © 2012 Vilem Novak
+
+Functions for automated testing.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/testing.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

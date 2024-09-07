@@ -1,0 +1,322 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1curvecamequation_1_1CamCustomCurve" kind="class" language="Python" prot="public">
+    <compoundname>cam::curvecamequation::CamCustomCurve</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Operator</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamCustomCurve_1ab9284c522d27945db85938f3e4f47abe" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.curvecamequation.CamCustomCurve::bl_idname</definition>
+        <argsstring></argsstring>
+        <name>bl_idname</name>
+        <qualifiedname>cam.curvecamequation.CamCustomCurve.bl_idname</qualifiedname>
+        <initializer>=  &quot;object.customcurve&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="443" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="443" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamCustomCurve_1a14ff193fd21533d0b6f8acb2e8cf1821" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.curvecamequation.CamCustomCurve::bl_label</definition>
+        <argsstring></argsstring>
+        <name>bl_label</name>
+        <qualifiedname>cam.curvecamequation.CamCustomCurve.bl_label</qualifiedname>
+        <initializer>=  &quot;Custom Curve&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="444" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="444" bodyend="-1"/>
+        <referencedby refid="classcam_1_1preset__managers_1_1CAM__MACHINE__MT__presets_1af95f7812d2952b26a26809ab923dac09" compoundref="preset__managers_8py" startline="28" endline="38">cam.preset_managers.CAM_MACHINE_MT_presets.post_cb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamCustomCurve_1aefe3139ba1cc48b97063a5a071ef096e" prot="public" static="yes" mutable="no">
+        <type>dict</type>
+        <definition>dict cam.curvecamequation.CamCustomCurve::bl_options</definition>
+        <argsstring></argsstring>
+        <name>bl_options</name>
+        <qualifiedname>cam.curvecamequation.CamCustomCurve.bl_options</qualifiedname>
+        <initializer>=  {&apos;REGISTER&apos;, &apos;UNDO&apos;, &apos;PRESET&apos;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="445" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="445" bodyend="-1"/>
+        <referencedby refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a9628cbca8e69ec75b2337171a02bf428" compoundref="async__op_8py" startline="32" endline="59">cam.async_op.AsyncOperatorMixin.modal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamCustomCurve_1ac5d0ad82a365e51e2e30f63adb217b73" prot="public" static="yes" mutable="no">
+        <type>StringProperty</type>
+        <definition>StringProperty cam.curvecamequation.CamCustomCurve::xstring</definition>
+        <argsstring></argsstring>
+        <name>xstring</name>
+        <qualifiedname>cam.curvecamequation.CamCustomCurve.xstring</qualifiedname>
+        <initializer>(
+        name=&quot;X Equation&quot;,
+        description=&quot;Equation x=F(t)&quot;,
+        default=&quot;t&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="447" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="447" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamCustomCurve_1a6284b2bee18f0e3f79441376a5d7289d" prot="public" static="yes" mutable="no">
+        <type>StringProperty</type>
+        <definition>StringProperty cam.curvecamequation.CamCustomCurve::ystring</definition>
+        <argsstring></argsstring>
+        <name>ystring</name>
+        <qualifiedname>cam.curvecamequation.CamCustomCurve.ystring</qualifiedname>
+        <initializer>(
+        name=&quot;Y Equation&quot;,
+        description=&quot;Equation y=F(t)&quot;,
+        default=&quot;0&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="452" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="452" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamCustomCurve_1a2c961314819e537b7a24bac29dc74b04" prot="public" static="yes" mutable="no">
+        <type>StringProperty</type>
+        <definition>StringProperty cam.curvecamequation.CamCustomCurve::zstring</definition>
+        <argsstring></argsstring>
+        <name>zstring</name>
+        <qualifiedname>cam.curvecamequation.CamCustomCurve.zstring</qualifiedname>
+        <initializer>(
+        name=&quot;Z Equation&quot;,
+        description=&quot;Equation z=F(t)&quot;,
+        default=&quot;0.05*sin(2*pi*4*t)&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="457" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="457" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamCustomCurve_1acaaa37402949d5061c55694e346300ab" prot="public" static="yes" mutable="no">
+        <type>IntProperty</type>
+        <definition>IntProperty cam.curvecamequation.CamCustomCurve::iteration</definition>
+        <argsstring></argsstring>
+        <name>iteration</name>
+        <qualifiedname>cam.curvecamequation.CamCustomCurve.iteration</qualifiedname>
+        <initializer>(
+        name=&quot;Iteration&quot;,
+        default=100,
+        min=50,
+        max=2000,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="463" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="463" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamCustomCurve_1aa6c8c2c2fac615d0ff3069c2cc8f2df5" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamequation.CamCustomCurve::maxt</definition>
+        <argsstring></argsstring>
+        <name>maxt</name>
+        <qualifiedname>cam.curvecamequation.CamCustomCurve.maxt</qualifiedname>
+        <initializer>(
+        name=&quot;Wave Ends at X&quot;,
+        default=0.5,
+        min=-3.0,
+        max=10,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="469" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="469" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamCustomCurve_1a1978589784d7f71af429678a2b0a1599" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamequation.CamCustomCurve::mint</definition>
+        <argsstring></argsstring>
+        <name>mint</name>
+        <qualifiedname>cam.curvecamequation.CamCustomCurve.mint</qualifiedname>
+        <initializer>(
+        name=&quot;Wave Starts at X&quot;,
+        default=0,
+        min=-3.0,
+        max=3,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="477" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="477" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamCustomCurve_1a761a5ec1fdf2e4c99b13d045d99d218d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamequation.CamCustomCurve::xstring</definition>
+        <argsstring></argsstring>
+        <name>xstring</name>
+        <qualifiedname>cam.curvecamequation.CamCustomCurve.xstring</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="487" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="487" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamCustomCurve_1a3c19139e1f1a2b903eeb98cbb8f346ad" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamequation.CamCustomCurve::ystring</definition>
+        <argsstring></argsstring>
+        <name>ystring</name>
+        <qualifiedname>cam.curvecamequation.CamCustomCurve.ystring</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="488" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="488" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamCustomCurve_1a7083fed23a5447e9c35e86d856556d4e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamequation.CamCustomCurve::zstring</definition>
+        <argsstring></argsstring>
+        <name>zstring</name>
+        <qualifiedname>cam.curvecamequation.CamCustomCurve.zstring</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="489" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="489" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcam_1_1curvecamequation_1_1CamCustomCurve_1a73acc3b97af663c9975aa711a9e75cb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.curvecamequation.CamCustomCurve.execute</definition>
+        <argsstring>(self, context)</argsstring>
+        <name>execute</name>
+        <qualifiedname>cam.curvecamequation.CamCustomCurve.execute</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="486" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="486" bodyend="517"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Object Custom Curve </verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.curvecamequation.CamCustomCurve</label>
+        <link refid="classcam_1_1curvecamequation_1_1CamCustomCurve"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7">
+        <label>FloatProperty</label>
+      </node>
+      <node id="6">
+        <label>IntProperty</label>
+      </node>
+      <node id="5">
+        <label>StringProperty</label>
+      </node>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.curvecamequation.CamCustomCurve</label>
+        <link refid="classcam_1_1curvecamequation_1_1CamCustomCurve"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+bl_idname</edgelabel>
+          <edgelabel>+bl_label</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+bl_options</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+xstring</edgelabel>
+          <edgelabel>+ystring</edgelabel>
+          <edgelabel>+zstring</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>+iteration</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>+maxt</edgelabel>
+          <edgelabel>+mint</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dict</label>
+      </node>
+      <node id="3">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="441" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="441" bodyend="517"/>
+    <listofallmembers>
+      <member refid="classcam_1_1curvecamequation_1_1CamCustomCurve_1ab9284c522d27945db85938f3e4f47abe" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamCustomCurve</scope><name>bl_idname</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamCustomCurve_1a14ff193fd21533d0b6f8acb2e8cf1821" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamCustomCurve</scope><name>bl_label</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamCustomCurve_1aefe3139ba1cc48b97063a5a071ef096e" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamCustomCurve</scope><name>bl_options</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamCustomCurve_1a73acc3b97af663c9975aa711a9e75cb0" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamCustomCurve</scope><name>execute</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamCustomCurve_1acaaa37402949d5061c55694e346300ab" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamCustomCurve</scope><name>iteration</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamCustomCurve_1aa6c8c2c2fac615d0ff3069c2cc8f2df5" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamCustomCurve</scope><name>maxt</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamCustomCurve_1a1978589784d7f71af429678a2b0a1599" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamCustomCurve</scope><name>mint</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamCustomCurve_1ac5d0ad82a365e51e2e30f63adb217b73" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamCustomCurve</scope><name>xstring</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamCustomCurve_1a761a5ec1fdf2e4c99b13d045d99d218d" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamCustomCurve</scope><name>xstring</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamCustomCurve_1a6284b2bee18f0e3f79441376a5d7289d" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamCustomCurve</scope><name>ystring</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamCustomCurve_1a3c19139e1f1a2b903eeb98cbb8f346ad" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamCustomCurve</scope><name>ystring</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamCustomCurve_1a2c961314819e537b7a24bac29dc74b04" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamCustomCurve</scope><name>zstring</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamCustomCurve_1a7083fed23a5447e9c35e86d856556d4e" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamCustomCurve</scope><name>zstring</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

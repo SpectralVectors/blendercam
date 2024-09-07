@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="Blendercam-Tools_8md" kind="file" language="Markdown">
+    <compoundname>Blendercam-Tools.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">Blendercam<sp/>has<sp/>a<sp/>number<sp/>of<sp/>curve<sp/>operators<sp/>that<sp/>will<sp/>modify<sp/>selected<sp/>curves<sp/>to<sp/>make<sp/>them<sp/>better<sp/>suited<sp/>to<sp/>CAM<sp/>operations.<sp/>They<sp/>can<sp/>be<sp/>found<sp/>in<sp/>the<sp/>Tool<sp/>Shelf<sp/>Panel<sp/>located<sp/>on<sp/>the<sp/>left<sp/>of<sp/>the<sp/>3D<sp/>view<sp/>editor.<sp/>The<sp/>operators<sp/>create<sp/>new<sp/>curves,<sp/>in<sp/>most<sp/>cases,<sp/>which<sp/>can<sp/>then<sp/>be<sp/>used<sp/>in<sp/>CAM<sp/>operations.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>[View<sp/>Tool<sp/>Shelf](#view-tool-shelf)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[View<sp/>Blendercam<sp/>Tools](#view-blendercam-tools)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[Curve<sp/>Boolean](#curve-boolean)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[Intarsion](#intarsion)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[Add<sp/>Overcuts](#add-overcuts)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[Add<sp/>OvercutsB](#add-overcutsb)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[Silhouette<sp/>Offset](#silhouette-offset)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[C-Remove<sp/>Doubles](#c-remove-doubles)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[Get<sp/>pocket<sp/>surfaces](#get-pocket-surfaces)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[Create<sp/>custom<sp/>curves](#create-curves-shapes)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>View<sp/>Tool<sp/>Shelf</highlight></codeline>
+<codeline><highlight class="normal">If<sp/>the<sp/>Tool<sp/>Shelf<sp/>is<sp/>not<sp/>visible<sp/>on<sp/>the<sp/>left<sp/>of<sp/>the<sp/>3D<sp/>view<sp/>then<sp/>use<sp/>the<sp/>short<sp/>cut<sp/>**T**<sp/>or<sp/>use<sp/>the<sp/>mouse<sp/>to<sp/>left<sp/>button<sp/>select<sp/>the<sp/>small<sp/>**+**<sp/>near<sp/>the<sp/>top<sp/>left<sp/>border<sp/>of<sp/>the<sp/>3D<sp/>view.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![Tool<sp/>Shelf<sp/>view](images/toolshelfview.png)<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>View<sp/>Blendercam<sp/>Tools</highlight></codeline>
+<codeline><highlight class="normal">![tools](images/curvecampanel.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>The<sp/>3D<sp/>view<sp/>editor<sp/>must<sp/>be<sp/>in<sp/>object<sp/>mode.<sp/>In<sp/>older<sp/>version<sp/>of<sp/>blender,<sp/>select<sp/>the<sp/>**Blender<sp/>CAM**<sp/>tab<sp/>to<sp/>view<sp/>the<sp/>**Curve<sp/>CAM<sp/>Tools**<sp/>panel.</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Select<sp/>the<sp/>expansion<sp/>arrow<sp/>to<sp/>see<sp/>the<sp/>tool<sp/>buttons<sp/>available.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Curve<sp/>Boolean</highlight></codeline>
+<codeline><highlight class="normal">![Boolean](images/bool_union.png)</highlight></codeline>
+<codeline><highlight class="normal">![Boolean<sp/>difference](images/bool_dif.png)</highlight></codeline>
+<codeline><highlight class="normal">![Boolean<sp/>Intersect](images/bool_inter.png)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Perform<sp/>a<sp/>Boolean<sp/>operation<sp/>on<sp/>two<sp/>or<sp/>more<sp/>curves.<sp/>A<sp/>new<sp/>curve<sp/>is<sp/>created.<sp/><sp/>The<sp/>Boolean<sp/>operations<sp/>that<sp/>can<sp/>be<sp/>performed<sp/>are:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Union<sp/>-<sp/>The<sp/>result<sp/>is<sp/>a<sp/>curve<sp/>that<sp/>forms<sp/>a<sp/>perimeter<sp/>around<sp/>the<sp/>union(merger)<sp/>of<sp/>all<sp/>curves<sp/>selected</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Difference<sp/>-<sp/>subtract<sp/>the<sp/>first<sp/>selected<sp/>curve(s)<sp/>from<sp/>the<sp/>last(active)<sp/>selected<sp/>curve.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>Intersect<sp/>-<sp/>resulting<sp/>curve<sp/>is<sp/>the<sp/>curve<sp/>portion<sp/>common<sp/>to<sp/>all<sp/>selected<sp/>curves</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Intarsion</highlight></codeline>
+<codeline><highlight class="normal">![intarsion](images/intarsion.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Makes<sp/>a<sp/>new<sp/>curve<sp/>that<sp/>is<sp/>cuttable<sp/>from<sp/>both<sp/>the<sp/>inside<sp/>and<sp/>outside.<sp/><sp/>This<sp/>is<sp/>useful<sp/>for<sp/>[intarsia](https://en.wikipedia.org/wiki/Intarsia),<sp/>inlays,<sp/>and<sp/>joints.<sp/><sp/>All<sp/>sharp<sp/>edges<sp/>are<sp/>rounded<sp/>over<sp/>using<sp/>the<sp/>cutter<sp/>diameter.<sp/>Works<sp/>on<sp/>mesh,<sp/>text,<sp/>and<sp/>curve<sp/>objects.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Add<sp/>Overcuts</highlight></codeline>
+<codeline><highlight class="normal">![Add<sp/>Overcuts](https://cloud.githubusercontent.com/assets/648108/12375365/318df7d8-bc95-11e5-953f-58e23f85c419.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Adds<sp/>overcuts<sp/>for<sp/>slots/inserts<sp/>and<sp/>creates<sp/>a<sp/>new<sp/>curve.<sp/><sp/>Works<sp/>on<sp/>text<sp/>and<sp/>curve<sp/>objects.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Operator<sp/>Options:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**diameter**<sp/>-<sp/>tool<sp/>diameter<sp/>to<sp/>use<sp/>for<sp/>the<sp/>overcut</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**threshold**<sp/>-<sp/>the<sp/>minimum<sp/>angle<sp/>that<sp/>an<sp/>overcut<sp/>is<sp/>applied.<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Outer<sp/>polygons**<sp/>-</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Invert**<sp/>-<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Add<sp/>OvercutsB</highlight></codeline>
+<codeline><highlight class="normal">![Add<sp/>Overcuts](images/overcut_db.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">An<sp/>enhanced<sp/>version<sp/>of<sp/>[Add<sp/>Overcuts](#add-overcuts)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Add<sp/>overcuts<sp/>for<sp/>slots/inserts/tabs<sp/>and<sp/>creates<sp/>a<sp/>new<sp/>curve.<sp/>Works<sp/>on<sp/>text<sp/>and<sp/>curve<sp/>objects.<sp/><sp/>Three<sp/>types<sp/>of<sp/>overcuts<sp/>can<sp/>be<sp/>used:<sp/>T-bone,<sp/>Dog-bone,<sp/>and<sp/>opposite<sp/>edge.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Operator<sp/>Options:</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Tool<sp/>Diameter**<sp/>-<sp/>Diameter<sp/>of<sp/>the<sp/>tool<sp/>bit</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Style**:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>*T-Bone*<sp/>-<sp/>place<sp/>overcuts<sp/>so<sp/>that<sp/>a<sp/>T<sp/>shape<sp/>is<sp/>formed<sp/>in<sp/>a<sp/>slot</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>*Dog-Bone/Corner<sp/>Point*<sp/>-<sp/>place<sp/>overcuts<sp/>so<sp/>that<sp/>a<sp/>dog<sp/>bone<sp/>shape<sp/>is<sp/>formed<sp/>in<sp/>a<sp/>slot</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>*Opposite<sp/>Edge*<sp/>-<sp/>when<sp/>placing<sp/>an<sp/>overcut<sp/>switch<sp/>to<sp/>the<sp/>opposite<sp/>edge<sp/>from<sp/>the<sp/>last<sp/>inside<sp/>corner</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Max<sp/>inside<sp/>angle**<sp/>-<sp/>if<sp/>the<sp/>angle<sp/>of<sp/>the<sp/>corner<sp/>is<sp/>less<sp/>than<sp/>max<sp/>inside<sp/>angle<sp/>then<sp/>the<sp/>corner<sp/>is<sp/>considered<sp/>an<sp/>inside<sp/>corner<sp/>and<sp/>an<sp/>overcut<sp/>will<sp/>be<sp/>placed.<sp/></highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Include<sp/>outer<sp/>curve**<sp/>-<sp/>If<sp/>there<sp/>are<sp/>curves<sp/>within<sp/>curves<sp/>then<sp/>include<sp/>the<sp/>most<sp/>outer<sp/>curve</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Invert**<sp/>-<sp/>make<sp/>inside<sp/>cut<sp/>an<sp/>outside<sp/>cut<sp/>or<sp/>vice<sp/>versa<sp/></highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**other<sp/>edge**<sp/>-<sp/>move<sp/>the<sp/>overcut<sp/>to<sp/>the<sp/>other<sp/>edge</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Examples:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#####<sp/>T-Bone</highlight></codeline>
+<codeline><highlight class="normal">![T-bone](images/overcut_tbone.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#####<sp/>T-Bone<sp/>other<sp/>edge</highlight></codeline>
+<codeline><highlight class="normal">![T-bone](images/overcut_tbone_oe.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#####<sp/>T-Bone<sp/>other<sp/>edge<sp/>invert</highlight></codeline>
+<codeline><highlight class="normal">![T-bone](images/overcut_tbone_oe_inv.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#####<sp/>T-Bone<sp/>other<sp/>edge</highlight></codeline>
+<codeline><highlight class="normal">![T-bone](images/overcut_tbone_oe_2.png)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Silhouette<sp/></highlight></codeline>
+<codeline><highlight class="normal">This<sp/>operator<sp/>finds<sp/>and<sp/>create<sp/>the<sp/>silhouette<sp/>of<sp/>objects(meshes,<sp/>text,<sp/>curves<sp/>just<sp/>get<sp/>converted)<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![Silhouette](images/silhouette.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Silhouette<sp/>Offset</highlight></codeline>
+<codeline><highlight class="normal">![Silhouette<sp/>Offset](images/silhouette_offset.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![Silhouette<sp/>Offset2](images/silhouette_offset2.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>operator<sp/>create<sp/>offsets<sp/>on<sp/>a<sp/>silhouette<sp/>in<sp/>a<sp/>new<sp/>curve.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Operator<sp/>Options:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**offset**<sp/>-<sp/>tool<sp/>diameter<sp/>to<sp/>use<sp/>for<sp/>the<sp/>offset</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>C-Remove<sp/>Doubles</highlight></codeline>
+<codeline><highlight class="normal">Curve<sp/>remove<sp/>doubles<sp/>-<sp/>warning,<sp/>removes<sp/>beziers!<sp/>Does<sp/>not<sp/>create<sp/>a<sp/>new<sp/>curve<sp/>but<sp/>modifies<sp/>the<sp/>original.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>operator<sp/>will<sp/>convert<sp/>the<sp/>curve<sp/>to<sp/>a<sp/>mesh,<sp/>perform<sp/>remove<sp/>doubles<sp/>on<sp/>the<sp/>mesh,<sp/>and<sp/>then<sp/>convert<sp/>it<sp/>back<sp/>to<sp/>a<sp/>curve.<sp/><sp/>This<sp/>can<sp/>be<sp/>used<sp/>to<sp/>fix<sp/>curves<sp/>that<sp/>are<sp/>imported<sp/>into<sp/>Blender<sp/>from<sp/>other<sp/>applications<sp/>i.e.<sp/>stl,<sp/>dxf,<sp/>that<sp/>may<sp/>have<sp/>overlapping<sp/>control<sp/>points<sp/>in<sp/>the<sp/>curve<sp/>which<sp/>can<sp/>be<sp/>a<sp/>problem<sp/>when<sp/>calculating<sp/>an<sp/>operation.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Get<sp/>pocket<sp/>surfaces</highlight></codeline>
+<codeline><highlight class="normal">![Get<sp/>Pocket<sp/>Surface](images/get_pocket2.png)</highlight></codeline>
+<codeline><highlight class="normal">![Get<sp/>Pocket<sp/>Surface2](images/get_pocket.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>operator<sp/>will<sp/>detect<sp/>pockets<sp/>in<sp/>a<sp/>mesh<sp/>and<sp/>extract<sp/>them<sp/>as<sp/>curves.<sp/><sp/>The<sp/>curves<sp/>can<sp/>then<sp/>be<sp/>used<sp/>for<sp/>pocket<sp/>operations.<sp/><sp/>Curves<sp/>that<sp/>are<sp/>at<sp/>the<sp/>same<sp/>z<sp/>level<sp/>will<sp/>be<sp/>in<sp/>the<sp/>same<sp/>object.<sp/><sp/>All<sp/>generated<sp/>curve<sp/>objects<sp/>will<sp/>be<sp/>placed<sp/>into<sp/>the<sp/>same<sp/>group.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Operator<sp/>Options:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**horizontal<sp/>threshold**<sp/>-<sp/>if<sp/>1.0<sp/>then<sp/>perfectly<sp/>flat<sp/>surface,<sp/>if<sp/>&lt;<sp/>1.0<sp/>then<sp/>allow<sp/>surfaces<sp/>not<sp/>perfectly<sp/>flat.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**z<sp/>limit**<sp/>-<sp/>flat<sp/>surfaces<sp/>that<sp/>are<sp/>below<sp/>the<sp/>z<sp/>limit<sp/>are<sp/>considered<sp/>a<sp/>pocket.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>way<sp/>the<sp/>detection<sp/>works<sp/>is<sp/>each<sp/>face<sp/>in<sp/>the<sp/>mesh<sp/>is<sp/>checked<sp/>to<sp/>see<sp/>if<sp/>it<sp/>is<sp/>horizontal<sp/>and<sp/>facing<sp/>up<sp/>by<sp/>checking<sp/>the<sp/>face<sp/>normal.<sp/><sp/>There<sp/>is<sp/>an<sp/>operator<sp/>option<sp/>called<sp/>**horizontal<sp/>threshold**<sp/>that<sp/>is<sp/>used<sp/>to<sp/>determine<sp/>if<sp/>the<sp/>face<sp/>is<sp/>horizontal.<sp/><sp/>A<sp/>value<sp/>closer<sp/>to<sp/>1.0<sp/>means<sp/>that<sp/>the<sp/>face<sp/>normal<sp/>must<sp/>be<sp/>almost<sp/>vertical<sp/>ie<sp/>the<sp/>face<sp/>must<sp/>be<sp/>almost<sp/>perfectly<sp/>flat.<sp/>A<sp/>value<sp/>closer<sp/>to<sp/>0.0<sp/>means<sp/>that<sp/>the<sp/>face<sp/>does<sp/>not<sp/>have<sp/>to<sp/>be<sp/>perfectly<sp/>horizontal<sp/>ie<sp/>part<sp/>of<sp/>a<sp/>curved<sp/>surface.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Operator<sp/>option<sp/>**z<sp/>limit**<sp/>controls<sp/>which<sp/>horizontal<sp/>surfaces<sp/>are<sp/>considered<sp/>a<sp/>pocket.<sp/><sp/>If<sp/>the<sp/>horizontal<sp/>surface<sp/>z<sp/>location<sp/>is<sp/>below<sp/>the<sp/>z<sp/>limit<sp/>then<sp/>the<sp/>surface<sp/>is<sp/>considered<sp/>a<sp/>pocket.<sp/>Setting<sp/>z<sp/>limit<sp/>to<sp/>0.0<sp/>(default<sp/>setting)<sp/>should<sp/>work<sp/>for<sp/>most<sp/>situations<sp/>if<sp/>mesh<sp/>top<sp/>is<sp/>at<sp/>z=0.0.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Create<sp/>Curves<sp/>Shapes<sp/></highlight></codeline>
+<codeline><highlight class="normal">This<sp/>operators<sp/>will<sp/>create<sp/>shapes<sp/>directly<sp/>from<sp/>the<sp/>panel.<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![Create<sp/>Panel](images/createcurve.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*create<sp/>sine</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![Create<sp/>Sine](images/createsine.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*create<sp/>lissajous<sp/>figure</highlight></codeline>
+<codeline><highlight class="normal">![Create<sp/>Lissajous](images/createlissajous.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*create<sp/>spirograph<sp/>type<sp/>figure</highlight></codeline>
+<codeline><highlight class="normal">![Create<sp/>Spirograph](images/createspiro.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*create<sp/>custom<sp/>curve</highlight></codeline>
+<codeline><highlight class="normal">![Create<sp/>Custom](images/createcustum.png)</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/documentation/Blendercam-Tools.md"/>
+  </compounddef>
+</doxygen>

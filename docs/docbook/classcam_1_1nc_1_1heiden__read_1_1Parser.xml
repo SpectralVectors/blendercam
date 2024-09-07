@@ -1,0 +1,307 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1nc_1_1heiden__read_1_1Parser" xml:lang="en-US">
+<title>cam.nc.heiden_read.Parser Class Reference</title>
+<indexterm><primary>cam.nc.heiden_read.Parser</primary></indexterm>
+Inheritance diagram for cam.nc.heiden_read.Parser:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1heiden__read_1_1Parser__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.nc.heiden_read.Parser:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1heiden__read_1_1Parser__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a0755ad069b59eae3c16f74c7ec209584">__init__</link> (self, writer)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a6ba99b0d9ed35f33c21552209751bb5d">ParseTool</link> (self, word)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a2d365bf67644f8475211a603e5de22b6">change_tool</link> (self, <link linkend="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a4375a5e6905edfafdbe5f85d00cd06b0">t</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a205d6ad12b787c9f9304102990744d4b">ParseWord</link> (self, word)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a9c64dcddf3c2c0d3248079dde5314cfe">Parsey</link> (self, name)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1heiden__read_1_1Parser_1aaa3288a37e5b91d85769cb52ca4dc639">pattern_main</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1heiden__read_1_1Parser_1ad2ebbbb4990a53474acd50490fc9edd6">pattern_tool</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a12ef28dee5d94b87540d00a335730da6">oldx</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a5bf4fce2deaaccf1b049228145e0547b">oldy</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a0e37acd388d8d9e6b97f813b73a9a24f">oldz</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1heiden__read_1_1Parser_1ad5dce329a107d56ea284086c9a828b04">olda</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1heiden__read_1_1Parser_1aa868213435407b2ac21c791ce189bb3f">oldb</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1heiden__read_1_1Parser_1adb0f2f3d33172851f2b4af5988c4505a">oldc</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a87fb9f4d740f3b9da2a92071b38d9730">col</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1heiden__read_1_1Parser_1ae9f616540041e59fdcc39ee1c601bc30">move</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a4375a5e6905edfafdbe5f85d00cd06b0">t</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a2e54d3dfd4d2afd6849faebc64f88e65">a</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a13d036ca4adaf111bb43f7cb7291e474">b</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a33ac3dba5dd50086031dd132c1cef18b">c</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1heiden__read_1_1Parser_1adb9a9deb21209ba6b1ef687caad0c411">rapid</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a7c8ae8db9473241c05fd60f997a19871">path_col</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1heiden__read_1_1Parser_1af443baaeb5d5197c36da90c8d2288859">f</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a2093372e3b5c2ae03be92e2f87740cbd">arc</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a76ca0f37d6715ff35217399c07f18c51">x</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a65f1f807a1e685d4db4ea82bdb9aea18">y</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a273e0c7ac1e28696a49c207d700df15f">z</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a9ab63785bb929801934eccda6afb48b5">h</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a212a56abc4596e504d8a6e7fd343980b">i</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a776e80cb39f4d6fe9618c044e89138b6">j</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a53c886fa74d89fdc1bc76b9ec80dae46">k</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1heiden__read_1_1Parser_1af0169c5904e055e93b5a1b34da41fd5c">p</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1heiden__read_1_1Parser_1ac3d13a1aa6d6f5b62c8e29c65e087e7e">q</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a98662aff8c66cc6192a4edb2d89d82b9">r</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1heiden__read_1_1Parser_1af732ff136d6bf3c1200fc8555324510e">s</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1heiden__read_1_1Parser_1ae1102bf82ec0319e8ef92a117ca575d3">no_move</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a0755ad069b59eae3c16f74c7ec209584"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>cam.nc.heiden_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.heiden_read.Parser</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>cam.nc.heiden_read.Parser.__init__ ( self,  writer)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a2d365bf67644f8475211a603e5de22b6"/><section>
+    <title>change_tool()</title>
+<indexterm><primary>change_tool</primary><secondary>cam.nc.heiden_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.heiden_read.Parser</primary><secondary>change_tool</secondary></indexterm>
+<para><computeroutput>cam.nc.heiden_read.Parser.change_tool ( self,  t)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a6ba99b0d9ed35f33c21552209751bb5d"/><section>
+    <title>ParseTool()</title>
+<indexterm><primary>ParseTool</primary><secondary>cam.nc.heiden_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.heiden_read.Parser</primary><secondary>ParseTool</secondary></indexterm>
+<para><computeroutput>cam.nc.heiden_read.Parser.ParseTool ( self,  word)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a205d6ad12b787c9f9304102990744d4b"/><section>
+    <title>ParseWord()</title>
+<indexterm><primary>ParseWord</primary><secondary>cam.nc.heiden_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.heiden_read.Parser</primary><secondary>ParseWord</secondary></indexterm>
+<para><computeroutput>cam.nc.heiden_read.Parser.ParseWord ( self,  word)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1heiden__read_1_1Parser_a205d6ad12b787c9f9304102990744d4b_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a9c64dcddf3c2c0d3248079dde5314cfe"/><section>
+    <title>Parsey()</title>
+<indexterm><primary>Parsey</primary><secondary>cam.nc.heiden_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.heiden_read.Parser</primary><secondary>Parsey</secondary></indexterm>
+<para><computeroutput>cam.nc.heiden_read.Parser.Parsey ( self,  name)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1heiden__read_1_1Parser_a9c64dcddf3c2c0d3248079dde5314cfe_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a2e54d3dfd4d2afd6849faebc64f88e65"/><section>
+    <title>a</title>
+<indexterm><primary>a</primary><secondary>cam.nc.heiden_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.heiden_read.Parser</primary><secondary>a</secondary></indexterm>
+<para><computeroutput>cam.nc.heiden_read.Parser.a</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a2093372e3b5c2ae03be92e2f87740cbd"/><section>
+    <title>arc</title>
+<indexterm><primary>arc</primary><secondary>cam.nc.heiden_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.heiden_read.Parser</primary><secondary>arc</secondary></indexterm>
+<para><computeroutput>cam.nc.heiden_read.Parser.arc</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a13d036ca4adaf111bb43f7cb7291e474"/><section>
+    <title>b</title>
+<indexterm><primary>b</primary><secondary>cam.nc.heiden_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.heiden_read.Parser</primary><secondary>b</secondary></indexterm>
+<para><computeroutput>cam.nc.heiden_read.Parser.b</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a33ac3dba5dd50086031dd132c1cef18b"/><section>
+    <title>c</title>
+<indexterm><primary>c</primary><secondary>cam.nc.heiden_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.heiden_read.Parser</primary><secondary>c</secondary></indexterm>
+<para><computeroutput>cam.nc.heiden_read.Parser.c</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a87fb9f4d740f3b9da2a92071b38d9730"/><section>
+    <title>col</title>
+<indexterm><primary>col</primary><secondary>cam.nc.heiden_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.heiden_read.Parser</primary><secondary>col</secondary></indexterm>
+<para><computeroutput>cam.nc.heiden_read.Parser.col</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1heiden__read_1_1Parser_1af443baaeb5d5197c36da90c8d2288859"/><section>
+    <title>f</title>
+<indexterm><primary>f</primary><secondary>cam.nc.heiden_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.heiden_read.Parser</primary><secondary>f</secondary></indexterm>
+<para><computeroutput>cam.nc.heiden_read.Parser.f</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a9ab63785bb929801934eccda6afb48b5"/><section>
+    <title>h</title>
+<indexterm><primary>h</primary><secondary>cam.nc.heiden_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.heiden_read.Parser</primary><secondary>h</secondary></indexterm>
+<para><computeroutput>cam.nc.heiden_read.Parser.h</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a212a56abc4596e504d8a6e7fd343980b"/><section>
+    <title>i</title>
+<indexterm><primary>i</primary><secondary>cam.nc.heiden_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.heiden_read.Parser</primary><secondary>i</secondary></indexterm>
+<para><computeroutput>cam.nc.heiden_read.Parser.i</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a776e80cb39f4d6fe9618c044e89138b6"/><section>
+    <title>j</title>
+<indexterm><primary>j</primary><secondary>cam.nc.heiden_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.heiden_read.Parser</primary><secondary>j</secondary></indexterm>
+<para><computeroutput>cam.nc.heiden_read.Parser.j</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a53c886fa74d89fdc1bc76b9ec80dae46"/><section>
+    <title>k</title>
+<indexterm><primary>k</primary><secondary>cam.nc.heiden_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.heiden_read.Parser</primary><secondary>k</secondary></indexterm>
+<para><computeroutput>cam.nc.heiden_read.Parser.k</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1heiden__read_1_1Parser_1ae9f616540041e59fdcc39ee1c601bc30"/><section>
+    <title>move</title>
+<indexterm><primary>move</primary><secondary>cam.nc.heiden_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.heiden_read.Parser</primary><secondary>move</secondary></indexterm>
+<para><computeroutput>cam.nc.heiden_read.Parser.move</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1heiden__read_1_1Parser_1ae1102bf82ec0319e8ef92a117ca575d3"/><section>
+    <title>no_move</title>
+<indexterm><primary>no_move</primary><secondary>cam.nc.heiden_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.heiden_read.Parser</primary><secondary>no_move</secondary></indexterm>
+<para><computeroutput>cam.nc.heiden_read.Parser.no_move</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1heiden__read_1_1Parser_1ad5dce329a107d56ea284086c9a828b04"/><section>
+    <title>olda</title>
+<indexterm><primary>olda</primary><secondary>cam.nc.heiden_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.heiden_read.Parser</primary><secondary>olda</secondary></indexterm>
+<para><computeroutput>cam.nc.heiden_read.Parser.olda</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1heiden__read_1_1Parser_1aa868213435407b2ac21c791ce189bb3f"/><section>
+    <title>oldb</title>
+<indexterm><primary>oldb</primary><secondary>cam.nc.heiden_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.heiden_read.Parser</primary><secondary>oldb</secondary></indexterm>
+<para><computeroutput>cam.nc.heiden_read.Parser.oldb</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1heiden__read_1_1Parser_1adb0f2f3d33172851f2b4af5988c4505a"/><section>
+    <title>oldc</title>
+<indexterm><primary>oldc</primary><secondary>cam.nc.heiden_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.heiden_read.Parser</primary><secondary>oldc</secondary></indexterm>
+<para><computeroutput>cam.nc.heiden_read.Parser.oldc</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a12ef28dee5d94b87540d00a335730da6"/><section>
+    <title>oldx</title>
+<indexterm><primary>oldx</primary><secondary>cam.nc.heiden_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.heiden_read.Parser</primary><secondary>oldx</secondary></indexterm>
+<para><computeroutput>cam.nc.heiden_read.Parser.oldx</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a5bf4fce2deaaccf1b049228145e0547b"/><section>
+    <title>oldy</title>
+<indexterm><primary>oldy</primary><secondary>cam.nc.heiden_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.heiden_read.Parser</primary><secondary>oldy</secondary></indexterm>
+<para><computeroutput>cam.nc.heiden_read.Parser.oldy</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a0e37acd388d8d9e6b97f813b73a9a24f"/><section>
+    <title>oldz</title>
+<indexterm><primary>oldz</primary><secondary>cam.nc.heiden_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.heiden_read.Parser</primary><secondary>oldz</secondary></indexterm>
+<para><computeroutput>cam.nc.heiden_read.Parser.oldz</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1heiden__read_1_1Parser_1af0169c5904e055e93b5a1b34da41fd5c"/><section>
+    <title>p</title>
+<indexterm><primary>p</primary><secondary>cam.nc.heiden_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.heiden_read.Parser</primary><secondary>p</secondary></indexterm>
+<para><computeroutput>cam.nc.heiden_read.Parser.p</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a7c8ae8db9473241c05fd60f997a19871"/><section>
+    <title>path_col</title>
+<indexterm><primary>path_col</primary><secondary>cam.nc.heiden_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.heiden_read.Parser</primary><secondary>path_col</secondary></indexterm>
+<para><computeroutput>cam.nc.heiden_read.Parser.path_col</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1heiden__read_1_1Parser_1aaa3288a37e5b91d85769cb52ca4dc639"/><section>
+    <title>pattern_main</title>
+<indexterm><primary>pattern_main</primary><secondary>cam.nc.heiden_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.heiden_read.Parser</primary><secondary>pattern_main</secondary></indexterm>
+<para><computeroutput>cam.nc.heiden_read.Parser.pattern_main</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1heiden__read_1_1Parser_1ad2ebbbb4990a53474acd50490fc9edd6"/><section>
+    <title>pattern_tool</title>
+<indexterm><primary>pattern_tool</primary><secondary>cam.nc.heiden_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.heiden_read.Parser</primary><secondary>pattern_tool</secondary></indexterm>
+<para><computeroutput>cam.nc.heiden_read.Parser.pattern_tool</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1heiden__read_1_1Parser_1ac3d13a1aa6d6f5b62c8e29c65e087e7e"/><section>
+    <title>q</title>
+<indexterm><primary>q</primary><secondary>cam.nc.heiden_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.heiden_read.Parser</primary><secondary>q</secondary></indexterm>
+<para><computeroutput>cam.nc.heiden_read.Parser.q</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a98662aff8c66cc6192a4edb2d89d82b9"/><section>
+    <title>r</title>
+<indexterm><primary>r</primary><secondary>cam.nc.heiden_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.heiden_read.Parser</primary><secondary>r</secondary></indexterm>
+<para><computeroutput>cam.nc.heiden_read.Parser.r</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1heiden__read_1_1Parser_1adb9a9deb21209ba6b1ef687caad0c411"/><section>
+    <title>rapid</title>
+<indexterm><primary>rapid</primary><secondary>cam.nc.heiden_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.heiden_read.Parser</primary><secondary>rapid</secondary></indexterm>
+<para><computeroutput>cam.nc.heiden_read.Parser.rapid</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1heiden__read_1_1Parser_1af732ff136d6bf3c1200fc8555324510e"/><section>
+    <title>s</title>
+<indexterm><primary>s</primary><secondary>cam.nc.heiden_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.heiden_read.Parser</primary><secondary>s</secondary></indexterm>
+<para><computeroutput>cam.nc.heiden_read.Parser.s</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a4375a5e6905edfafdbe5f85d00cd06b0"/><section>
+    <title>t</title>
+<indexterm><primary>t</primary><secondary>cam.nc.heiden_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.heiden_read.Parser</primary><secondary>t</secondary></indexterm>
+<para><computeroutput>cam.nc.heiden_read.Parser.t</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a76ca0f37d6715ff35217399c07f18c51"/><section>
+    <title>x</title>
+<indexterm><primary>x</primary><secondary>cam.nc.heiden_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.heiden_read.Parser</primary><secondary>x</secondary></indexterm>
+<para><computeroutput>cam.nc.heiden_read.Parser.x</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a65f1f807a1e685d4db4ea82bdb9aea18"/><section>
+    <title>y</title>
+<indexterm><primary>y</primary><secondary>cam.nc.heiden_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.heiden_read.Parser</primary><secondary>y</secondary></indexterm>
+<para><computeroutput>cam.nc.heiden_read.Parser.y</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1heiden__read_1_1Parser_1a273e0c7ac1e28696a49c207d700df15f"/><section>
+    <title>z</title>
+<indexterm><primary>z</primary><secondary>cam.nc.heiden_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.heiden_read.Parser</primary><secondary>z</secondary></indexterm>
+<para><computeroutput>cam.nc.heiden_read.Parser.z</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/<link linkend="_heiden__read_8py">heiden_read.py</link></section>
+</section>

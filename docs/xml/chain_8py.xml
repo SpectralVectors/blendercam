@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="chain_8py" kind="file" language="Python">
+    <compoundname>chain.py</compoundname>
+    <innerclass refid="classcam_1_1chain_1_1opReference" prot="public">cam::chain::opReference</innerclass>
+    <innerclass refid="classcam_1_1chain_1_1camChain" prot="public">cam::chain::camChain</innerclass>
+    <innernamespace refid="namespacecam">cam</innernamespace>
+    <innernamespace refid="namespacecam_1_1chain">cam::chain</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacecam_1_1chain" refkind="compound"><highlight class="stringliteral">&quot;&quot;&quot;BlenderCAM<sp/>&apos;chain.py&apos;</highlight></codeline>
+<codeline lineno="2"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="3"><highlight class="stringliteral">All<sp/>properties<sp/>of<sp/>a<sp/>CAM<sp/>Chain<sp/>(a<sp/>series<sp/>of<sp/>Operations),<sp/>and<sp/>the<sp/>Chain&apos;s<sp/>Operation<sp/>reference.</highlight></codeline>
+<codeline lineno="4"><highlight class="stringliteral">&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>bpy.props<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>(</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>BoolProperty,</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>CollectionProperty,</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>IntProperty,</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>StringProperty,</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacebpy_1_1types" kindref="compound">bpy.types</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>PropertyGroup</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">#<sp/>this<sp/>type<sp/>is<sp/>defined<sp/>just<sp/>to<sp/>hold<sp/>reference<sp/>to<sp/>operations<sp/>for<sp/>chains</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="classcam_1_1chain_1_1opReference" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classcam_1_1chain_1_1opReference" kindref="compound">opReference</ref>(PropertyGroup):</highlight></codeline>
+<codeline lineno="17" refid="classcam_1_1chain_1_1opReference_1a552db0340077ea03d6d3c48c16f82fe1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>name:<sp/>StringProperty(</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&quot;Operation<sp/>Name&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=</highlight><highlight class="stringliteral">&quot;Operation&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="21" refid="classcam_1_1chain_1_1opReference_1a25e8cd1f311fbeb1d02d406003d86812" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>computing<sp/>=<sp/></highlight><highlight class="keyword">False</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">#<sp/>for<sp/>UiList<sp/>display</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">#<sp/>chain<sp/>is<sp/>just<sp/>a<sp/>set<sp/>of<sp/>operations<sp/>which<sp/>get<sp/>connected<sp/>on<sp/>export<sp/>into<sp/>1<sp/>file.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="classcam_1_1chain_1_1camChain" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classcam_1_1chain_1_1camChain" kindref="compound">camChain</ref>(PropertyGroup):</highlight></codeline>
+<codeline lineno="26" refid="classcam_1_1chain_1_1camChain_1a87591a6d264bdb51c41fba0f7a0fa73b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>index:<sp/>IntProperty(</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&quot;Index&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>description=</highlight><highlight class="stringliteral">&quot;Index<sp/>in<sp/>the<sp/>hard-defined<sp/>camChains&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=-1,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="31" refid="classcam_1_1chain_1_1camChain_1ac9a1f7ebc806037119baafce4eb481c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>active_operation:<sp/>IntProperty(</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&quot;Active<sp/>Operation&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>description=</highlight><highlight class="stringliteral">&quot;Active<sp/>operation<sp/>in<sp/>chain&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=-1,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="36" refid="classcam_1_1chain_1_1camChain_1afa7789eb81f76188eca69a1a6d5c7774" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>name:<sp/>StringProperty(</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&quot;Chain<sp/>Name&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=</highlight><highlight class="stringliteral">&quot;Chain&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="40" refid="classcam_1_1chain_1_1camChain_1a1b23593aa1e68ffdb042405c062da3a5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>filename:<sp/>StringProperty(</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&quot;File<sp/>Name&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=</highlight><highlight class="stringliteral">&quot;Chain&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>)<sp/><sp/></highlight><highlight class="comment">#<sp/>filename<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="classcam_1_1chain_1_1camChain_1a8681d673d64009abed9a3da40ac0b8c9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>valid:<sp/>BoolProperty(</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&quot;Valid&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>description=</highlight><highlight class="stringliteral">&quot;True<sp/>if<sp/>whole<sp/>chain<sp/>is<sp/>ok<sp/>for<sp/>calculation&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=</highlight><highlight class="keyword">True</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="49" refid="classcam_1_1chain_1_1camChain_1a3d1555185a35097d867368d2948ac7c4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>computing:<sp/>BoolProperty(</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name=</highlight><highlight class="stringliteral">&quot;Computing<sp/>Right<sp/>Now&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>description=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=</highlight><highlight class="keyword">False</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>this<sp/>is<sp/>to<sp/>hold<sp/>just<sp/>operation<sp/>names.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="classcam_1_1chain_1_1camChain_1aa9e746054bfe6559a4731f7674a62861" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>operations:<sp/>CollectionProperty(</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>type=opReference,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/chain.py"/>
+  </compounddef>
+</doxygen>

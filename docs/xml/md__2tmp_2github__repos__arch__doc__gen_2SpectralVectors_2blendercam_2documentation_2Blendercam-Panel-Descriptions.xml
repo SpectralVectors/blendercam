@@ -1,0 +1,303 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam-Panel-Descriptions" kind="page">
+    <compoundname>md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam-Panel-Descriptions</compoundname>
+    <title>Blendercam Panel Descriptions</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><anchor id="md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam-Panel-Descriptions_1autotoc_md11"/><itemizedlist>
+<listitem><para>Enter CAM mode</para>
+</listitem><listitem><para>CAM operations</para>
+</listitem><listitem><para>CAM info and Warnings</para>
+</listitem><listitem><para>CAM operation setup</para>
+</listitem><listitem><para>CAM optimization</para>
+</listitem><listitem><para>CAM operation area</para>
+</listitem><listitem><para>CAM material size and position</para>
+</listitem><listitem><para>CAM movement</para>
+</listitem><listitem><para>CAM feedrate</para>
+</listitem><listitem><para>CAM cutter</para>
+</listitem><listitem><para>CAM machine</para>
+</listitem><listitem><para>CAM chains</para>
+</listitem></itemizedlist>
+</para>
+<sect1 id="md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam-Panel-Descriptions_1autotoc_md12">
+<title>Enter CAM mode</title><para>All of the CAM panels are found in the Render Data settings.</para>
+<para>To put blender into CAM mode do the following. The Blendercam add-on must be enabled already.</para>
+<para>First of all, change render engine to CAM to use the blender cam tool.</para>
+<para><image type="html" name="images/cam_render.png" alt="Renderer selection" inline="yes"></image>
+<orderedlist>
+<listitem><para>select <bold>Blender CAM</bold> as the render engine <linebreak/>
+</para>
+</listitem><listitem><para>select the <bold>Properties</bold> editor</para>
+</listitem><listitem><para>select the <bold>Render</bold> data in order to see the CAM panels</para>
+</listitem></orderedlist>
+</para>
+</sect1>
+<sect1 id="md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam-Panel-Descriptions_1autotoc_md13">
+<title>CAM operations Panel</title><para><image type="html" name="images/opPanel2.png" alt="CAM operations" inline="yes"></image>
+<itemizedlist>
+<listitem><para><bold>Calculate path</bold> - This calculates the operation which is currently selected in the cam operations list. The Button will stay selected until the calculation is completed.</para>
+</listitem><listitem><para><bold>Simulate operation</bold> - Works for 3 axis operations, but not for all. It creates a new object which shows the simulation - the subdivision of the object can be increased, and the resolution of the simulation also depends on simulation sampling raster detail, which is in the optimization panel</para>
+</listitem><listitem><para><bold>Operation name</bold> - Select this field to change the name of the currently selected operation.</para>
+</listitem><listitem><para><bold>File name</bold> - Name of the gcode file. The file extension used will be determined by the g-code post processor selected. See <ref refid="md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam-Panel-Descriptions" kindref="compound">Cam Machine panel</ref> for setting post processor.</para>
+</listitem><listitem><para><bold>Source of data</bold> - This can be either 1 object, a group of objects, or an image.<itemizedlist>
+<listitem><para><bold>Object</bold> - a Blender object. This could be a mesh, or a curve.</para>
+</listitem><listitem><para><bold>Group</bold> - Objects in a group. Select all objects you want to use, and hit Ctrl+G to create a new group. Then type name of the group in the field (Group will be the name of the first group you create).</para>
+</listitem><listitem><para><bold>Image</bold> - Open an image that will be used as a height/depth map.</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para><bold>Object</bold> - the blender object that will be used in the CAM operation. Select the object from a drop down list. Write it&apos;s name in the field, it should auto-complete and give a list of objects to select from. <bold>NOTE:</bold> if you change the objects name later on then you must also change it here. The field will turn red if the object can not be found.</para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+<sect1 id="md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam-Panel-Descriptions_1autotoc_md14">
+<title>CAM info and Warnings Panel</title><para><image type="html" name="images/camInfo.png" alt="Cam Info &amp; warnings" inline="yes"></image>
+</para>
+<para>This panel will show any trouble found during the computation, estimated operation time, and chipload data</para>
+</sect1>
+<sect1 id="md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam-Panel-Descriptions_1autotoc_md15">
+<title>CAM operation setup Panel</title><para><itemizedlist>
+<listitem><para><image type="html" name="images/opList.png" alt="Strategy" inline="yes"></image>
+</para>
+</listitem></itemizedlist>
+</para>
+<para><bold>Strategy</bold> sets one of the strategies.</para>
+<para><itemizedlist>
+<listitem><para><bold>Parallel</bold></para>
+<para><image type="html" name="images/opParallel.png" alt="Parallel" inline="yes"></image>
+ <linebreak/>
+</para>
+<para>Parallel paths at any angle</para>
+</listitem><listitem><para><bold>Pocket</bold></para>
+<para><image type="html" name="images/opPocket.png" alt="pocket" inline="yes"></image>
+ <linebreak/>
+</para>
+</listitem><listitem><para><bold>Cutout</bold></para>
+<para><image type="html" name="images/opProfile.png" alt="profile cutout" inline="yes"></image>
+ <linebreak/>
+</para>
+<para>Cutout a silhouette using optional offset.</para>
+</listitem><listitem><para><bold>Drill</bold></para>
+<para><image type="html" name="images/opDrill.png" alt="drill" inline="yes"></image>
+ <linebreak/>
+</para>
+<para>This detects circles or squares in any 2d curve and converts these into a drill operation. Supports peck drilling if layers are enabled.</para>
+</listitem><listitem><para><bold>Cross</bold></para>
+<para><image type="html" name="images/opCross.png" alt="cross" inline="yes"></image>
+ <linebreak/>
+</para>
+</listitem><listitem><para><bold>Block</bold></para>
+<para><image type="html" name="images/opBlock.png" alt="block" inline="yes"></image>
+ <linebreak/>
+</para>
+</listitem><listitem><para><bold>Spiral</bold></para>
+<para><image type="html" name="images/opSpiral.png" alt="spiral" inline="yes"></image>
+ <linebreak/>
+</para>
+<para>Best suited for coins or other circular objects</para>
+</listitem><listitem><para><bold>Circles</bold></para>
+<para><image type="html" name="images/opCircle.png" alt="circles" inline="yes"></image>
+ <linebreak/>
+</para>
+<para>Best suited for coins or other circular objects</para>
+</listitem><listitem><para><bold>Outline Fill</bold></para>
+<para><image type="html" name="images/opOutline.png" alt="outline fill" inline="yes"></image>
+ <linebreak/>
+</para>
+</listitem><listitem><para><bold>Carve</bold></para>
+<para><image type="html" name="https://cloud.githubusercontent.com/assets/648108/12060353/19527cf6-af44-11e5-9de1-27cf1c98a90a.jpg" alt="carve" inline="yes"></image>
+</para>
+<para>Projects any 2d curve on 3d surface</para>
+</listitem><listitem><para><bold>Overview of principles strategies</bold></para>
+</listitem></itemizedlist>
+</para>
+<para><image type="html" name="images/opOverview.png" alt="Strategy Overview" inline="yes"></image>
+</para>
+<para><image type="html" name="https://cloud.githubusercontent.com/assets/648108/12060351/1316d53a-af44-11e5-8158-31c349a7a265.jpg" alt="waterline" inline="yes"></image>
+</para>
+<para>Various strategies will combine these parameters:<itemizedlist>
+<listitem><para><bold>distance between toolpaths</bold> - also called stepover in other applications</para>
+</listitem><listitem><para><bold>distance along toolpaths</bold> - how dense will be the operation path. This can influence accuracy of the machining.</para>
+</listitem><listitem><para><bold>angle of paths</bold> - this rotates the parallel and cross strategies by the specified amount. Note that e.g. rotating by 90 changes the basic axis from X to Y</para>
+</listitem><listitem><para><bold>parallel step back</bold> - this function is only for finishing pass, where you still have to cut some substantial amount of material, and want also to save the cutter. If you set up to climb movement, it goes with climb into material, then goes in the other direction one step back - this uses the back movement of the machine for finishing the surface. Note that this also means the cutting into material will happen with a rate which is 2x of distance between toolpaths If you don&apos;t know what this all means, don&apos;t use this function.</para>
+</listitem><listitem><para><bold>Skin</bold> - useful for roughing, leaves a layer on the surface for finishing</para>
+</listitem><listitem><para><bold>Inverse milling</bold> - used if you want to mill a form directly from positive of the object. Does not work in exact mode. Only works for 3 axis strategies.</para>
+</listitem><listitem><para><bold>Direction</bold> - for block and spiral strategy, decides if the path progresses from inside or from outside</para>
+</listitem><listitem><para><bold>Carve depth</bold> - decides how deep below the surface will go the carve operation</para>
+</listitem><listitem><para><bold>Don&apos;t merge outlines when cutting</bold> - for cutout strategy. Does not merge outlines - this results into cutting in the object area! It is usefully when milling PCBs, where you don&apos;t need exact shape but need to separate areas with engraving.</para>
+</listitem><listitem><para><bold>Use bridges</bold> - for cutout operation, places automatically bridges by the rules set by options that will appear after this is enabled: width, height, minimum per curve, distance.</para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+<sect1 id="md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam-Panel-Descriptions_1autotoc_md16">
+<title>CAM optimization Panel</title><para><image type="html" name="images/camOptim.png" alt="Cam Optimization" inline="yes"></image>
+</para>
+<para>This panel is crucial for performance of blenderCAM.</para>
+<para><itemizedlist>
+<listitem><para><bold>Reduce path points</bold> - reduces number of commands in the operation, so the resulting gcode is shorter and can run smoother on the machine<itemizedlist>
+<listitem><para><bold>Reduction threshold in um</bold> - points with smaller distance (in micrometers) to the path direction will be reduced</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para><bold>Use exact mode</bold> - exact mode is related to the strategies that are fully 3d - parallel, cross, block, spiral, circles, waterline, outline fill, carve. It&apos;s a very important setting.<itemizedlist>
+<listitem><para><bold>Non exact mode:</bold> In non-exact mode, an image is used to estimate the cutter offsets, and the Sampling raster detail is used to estimate the resolution of the image. Non exact mode is good for high poly meshes, several millions of polygons shouldn&apos;t be problem for it, but the sampling raster detail setting is crucial then. Memory overflow can happen if you use e.g. default blender cube that you have by startup, since the cube is 2 meter in size in blender units. For artistic use with high poly meshes, non exact mode is good for most of the cases.</para>
+</listitem><listitem><para><bold>Exact mode:</bold> a real collision simulation is used, so the collisions are exact. But the speed goes down with increasing number of polygons. It is recommended in these situations: Your model is too big for the non exact mode, you need high precision, your model doesn&apos;t have too many faces.</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para><bold>Sampling raster detail</bold> - this parameter is crucial for memory use and mainly speed of blender CAM. In non-exact mode, blenderCAM uses an image to compute the cutter offset positions. If the raster detail is 0.1mm, then a 10x10 cm object will use a 1000x1000 image. If the object size would be 1m, the image would be 10000 x 10000 pixels, which will probably fill the memory of your computer. Check your object size before computing operations.</para>
+</listitem><listitem><para><bold>Simulation sampling raster detail</bold> - same as sampling raster detail, but only for simulation</para>
+</listitem><listitem><para><bold>Detail of circles used for curve offsets</bold> - exactly what it says</para>
+</listitem><listitem><para><bold>Use OpenCAMLib</bold> - use external library for calculating toolpaths, improving toolpath quality (especially with waterlines) and calculation time. Has to be used with exact mode. [[Using-BlenderCAM-with-OpenCAMLib]]</para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+<sect1 id="md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam-Panel-Descriptions_1autotoc_md17">
+<title>CAM operation area panel</title><para><image type="html" name="images/camOpArea.png" alt="CAM Operation Area" inline="yes"></image>
+<itemizedlist>
+<listitem><para><bold>Use layers</bold> - sets up layers for roughing.</para>
+</listitem><listitem><para><bold>Step down</bold> - specifies thickness of the layers for roughing</para>
+</listitem><listitem><para><bold>Ambient</bold> - how much space surrounding the object will be used for the milling<itemizedlist>
+<listitem><para><bold>all</bold> - a rectangular area will be used</para>
+</listitem><listitem><para><bold>around</bold> - object silhouette will be used, with a radius specified by Ambient radius</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para><bold>Depth from object</bold> - takes object depth and sets up the total depth of the operation from it. Otherwise, you can use Operation depth to do the same manually.</para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+<sect1 id="md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam-Panel-Descriptions_1autotoc_md18">
+<title>CAM material size and position panel</title><para><image type="html" name="images/materialSize.png" alt="CAM material size and position" inline="yes"></image>
+</para>
+<para><itemizedlist>
+<listitem><para><bold>Estimate from model</bold> - will assume the workpiece/material has the same size as the model, with radius around the model. If not enabled then the Material origin and Material size are used in case when the material/workpiece is not the same as the model. The 3D view will show the machine work area with a hashed outline and the material size and position will be a lighter grey. The material object is not selectable in the 3D view but can be selected in the Outliner and has the name CAM_material.</para>
+</listitem><listitem><para><bold>Position object</bold> - this will move the object to positive X and Y and negative Z so that it is fully in the work area and closest to the origin.</para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+<sect1 id="md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam-Panel-Descriptions_1autotoc_md19">
+<title>CAM movement panel</title><para><image type="html" name="images/camMovement.png" alt="CAM Movement" inline="yes"></image>
+</para>
+<para><itemizedlist>
+<listitem><para><bold>G64 trajectory</bold> This enables the &quot;naive cam detector&quot; and enables blending with a tolerance. If you program G64 P0.05, you tell the planner that you want continuous feed, but at programmed corners you want it to slow down enough so that the tool path can stay within 0.05 user units of the programmed path. The exact amount of slowdown depends on the geometry of the programmed corner and the machine constraints, but the only thing the programmer needs to worry about is the tolerance. This gives the programmer complete control over the path following compromise.</para>
+</listitem><listitem><para><bold>Movement type</bold> - is supported only for some of the strategies, sets up how the cutter moves into the material<itemizedlist>
+<listitem><para><bold>Meander/ZigZag</bold> - sometimes also called ZigZag , this means you don&apos;t care which direction the cutter goes into the material.</para>
+</listitem><listitem><para><bold>Climb/Down Milling</bold> - the default movement, and mostly used when doing CNC machining if the machine has no or very little backlash. The cutter rotates with the direction of the feed. It can produce a better finish, less stress on the bit, and less power required. If the machine has backlash then Conventional milling is a better choice.</para>
+</listitem><listitem><para><bold>Conventional/Up milling</bold> - The cutter rotates against the direction of the feed. If the machine has backlash that can not be compensated for then this is the better choice. Some woods cut better with this method but grain direction also has to be considered.</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para><bold>Spindle rotation</bold> - this parameter is not exported, but it is used when setting up the movement type, because with the spindle rotating CCW, all operations go in opposite direction.</para>
+</listitem><listitem><para><bold>Free movement height</bold> - how high will the cutter travel when moving between toolpaths. Keep it as low as possible to reduce total cutting time. The Z axis usually has the slowest rapid rates compared to the other two axis X and Y.</para>
+</listitem><listitem><para><bold>First down</bold> - for cutout strategy. If on, the paths are cut one by one to the full depth(all layers), otherwise first all the silhouettes are cut on layer 1, then 2....</para>
+</listitem><listitem><para><bold>Ramp contour</bold> - for cutout strategy, instead of going layer by layer, it goes down all the way on a ramp.</para>
+</listitem><listitem><para><bold>Ramp out</bold> - also going out is performed on a ramp, to prevent burning of the finished piece by staying on one place in XY axes.</para>
+</listitem><listitem><para><bold>Stay low if possible</bold> - tries to not lift the cutter when going from 1 path to other, when the paths are closer to each other than the cutter radius, which means no extra material will be cut during this travel move.</para>
+</listitem><listitem><para><bold>Protect vertical</bold> - when the angle of the path is above verticality limit, the move will be made vertical. this way vertical surfaces won&apos;t get a slope because of the distance between the path points.</para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+<sect1 id="md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam-Panel-Descriptions_1autotoc_md20">
+<title>CAM feedrate panel</title><para><image type="html" name="images/camFeedrate.png" alt="CAM feedrate" inline="yes"></image>
+</para>
+<para><itemizedlist>
+<listitem><para><bold>feedrate/minute</bold> - How much will the machine travel in 1 minute</para>
+</listitem><listitem><para><bold>Plunge speed</bold> - the feed speed gets reduced when the slope of the path is above the Plunge angle</para>
+</listitem><listitem><para><bold>Plunge angle</bold> - any angle greater than the plunge angle will activate plunge speed</para>
+</listitem><listitem><para><bold>Spindle rpm</bold> - spindle revolutions per minute</para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+<sect1 id="md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam-Panel-Descriptions_1autotoc_md21">
+<title>CAM cutter panel</title><para><image type="html" name="images/camCut.png" alt="CAM cutter" inline="yes"></image>
+</para>
+<para><itemizedlist>
+<listitem><para><bold>Tool number</bold> - this parameter is exported with toolchange command</para>
+</listitem><listitem><para><bold>Cutters</bold> - supported types are now following:</para>
+</listitem></itemizedlist>
+</para>
+<para><image type="html" name="images/camCut2.png" alt="CAM cutters" inline="yes"></image>
+</para>
+<para><table rows="8" cols="3"><row>
+<entry thead="yes"><para>Cutters   </para>
+</entry><entry thead="yes"><para></para>
+</entry><entry thead="yes"><para></para>
+</entry></row>
+<row>
+<entry thead="no"><para>End   </para>
+</entry><entry thead="no"><para><image type="html" name="images/cut-end.jpg" alt="End" inline="yes"></image>
+   </para>
+</entry><entry thead="no"><para></para>
+</entry></row>
+<row>
+<entry thead="no"><para>Ballnose   </para>
+</entry><entry thead="no"><para><image type="html" name="images/cut-ballnose.jpg" alt="Ballnose" inline="yes"></image>
+   </para>
+</entry><entry thead="no"><para></para>
+</entry></row>
+<row>
+<entry thead="no"><para>Bullnose   </para>
+</entry><entry thead="no"><para><image type="html" name="images/cut-bullnose.jpg" alt="Bullnose" inline="yes"></image>
+   </para>
+</entry><entry thead="no"><para></para>
+</entry></row>
+<row>
+<entry thead="no"><para>V-Carve   </para>
+</entry><entry thead="no"><para><image type="html" name="images/cut-v-carve.jpg" alt="v-carve" inline="yes"></image>
+   </para>
+</entry><entry thead="no"><para></para>
+</entry></row>
+<row>
+<entry thead="no"><para>Ballcone   </para>
+</entry><entry thead="no"><para><image type="html" name="images/cut-ballcone.jpg" alt="Ballcone" inline="yes"></image>
+   </para>
+</entry><entry thead="no"><para></para>
+</entry></row>
+<row>
+<entry thead="no"><para>Laser   </para>
+</entry><entry thead="no"><para><image type="html" name="images/cut-laser.jpg" alt="Laser" inline="yes"></image>
+   </para>
+</entry><entry thead="no"><para></para>
+</entry></row>
+<row>
+<entry thead="no"><para>Custom   </para>
+</entry><entry thead="no"><para><image type="html" name="images/cut-custom.jpg" alt="Custom" inline="yes"></image>
+   </para>
+</entry><entry thead="no"><para></para>
+</entry></row>
+</table>
+</para>
+<para><image type="html" name="images/cutCustom.png" alt="custom cutter" inline="yes"></image>
+</para>
+<para><itemizedlist>
+<listitem><para>Cutter object - a 3D object of your choice available in the drop down list.</para>
+</listitem></itemizedlist>
+</para>
+<para><bold>Cutter diameter</bold> - The exact diameter of the cutting tool. This is used for calculating tool paths. For a v-bit its the maximum diameter of the bit.<itemizedlist>
+<listitem><para><bold>Cutter flutes</bold> - this parameter is used only for chipload computation.</para>
+</listitem><listitem><para><bold>Tool description</bold> - A description of the tool. Currently this is not used for anything.</para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+<sect1 id="md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam-Panel-Descriptions_1autotoc_md22">
+<title>CAM machine panel</title><para><image type="html" name="images/machine.png" alt="Cam machine" inline="yes"></image>
+</para>
+<para>This panel sets up your machine and the settings are common in the whole file. You can also set up your machine and then save your default file with Ctrl+U command. This way you will always start with the settings you need.</para>
+<para><itemizedlist>
+<listitem><para><bold>Post processor</bold> - this defines the formatting of the output file. If your machine is not in the list, you can try the Iso code, which is standardized g-code</para>
+</listitem></itemizedlist>
+</para>
+<para><image type="html" name="images/processor.png" alt="post processor" inline="yes"></image>
+</para>
+<para><itemizedlist>
+<listitem><para><bold>Unit system</bold> - Metric or Imperial</para>
+</listitem><listitem><para><bold>Work area</bold> - if the operation has a larger area than this, you will get a warning in the info panel</para>
+</listitem><listitem><para><bold>Feedrate minimum/maximum</bold> - this will limit your feed speeds set up in the feedrate panel.</para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+<sect1 id="md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam-Panel-Descriptions_1autotoc_md23">
+<title>CAM chains panel</title><para>This enables you to chain operations. It is useful for simulating more operations or exporting a chain of operations if you have automatic toolchanger or use the same tool for several operations. </para>
+</sect1>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/documentation/Blendercam-Panel-Descriptions.md"/>
+  </compounddef>
+</doxygen>

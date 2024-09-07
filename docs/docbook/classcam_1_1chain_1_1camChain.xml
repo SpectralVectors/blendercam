@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1chain_1_1camChain" xml:lang="en-US">
+<title>cam.chain.camChain Class Reference</title>
+<indexterm><primary>cam.chain.camChain</primary></indexterm>
+Inheritance diagram for cam.chain.camChain:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1chain_1_1camChain__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.chain.camChain:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1chain_1_1camChain__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>IntProperty <link linkend="_classcam_1_1chain_1_1camChain_1a87591a6d264bdb51c41fba0f7a0fa73b">index</link></para>
+</listitem>
+            <listitem><para>IntProperty <link linkend="_classcam_1_1chain_1_1camChain_1ac9a1f7ebc806037119baafce4eb481c7">active_operation</link></para>
+</listitem>
+            <listitem><para>StringProperty <link linkend="_classcam_1_1chain_1_1camChain_1afa7789eb81f76188eca69a1a6d5c7774">name</link></para>
+</listitem>
+            <listitem><para>StringProperty <link linkend="_classcam_1_1chain_1_1camChain_1a1b23593aa1e68ffdb042405c062da3a5">filename</link></para>
+</listitem>
+            <listitem><para>BoolProperty <link linkend="_classcam_1_1chain_1_1camChain_1a8681d673d64009abed9a3da40ac0b8c9">valid</link></para>
+</listitem>
+            <listitem><para>BoolProperty <link linkend="_classcam_1_1chain_1_1camChain_1a3d1555185a35097d867368d2948ac7c4">computing</link></para>
+</listitem>
+            <listitem><para>CollectionProperty <link linkend="_classcam_1_1chain_1_1camChain_1aa9e746054bfe6559a4731f7674a62861">operations</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1chain_1_1camChain_1ac9a1f7ebc806037119baafce4eb481c7"/><section>
+    <title>active_operation</title>
+<indexterm><primary>active_operation</primary><secondary>cam.chain.camChain</secondary></indexterm>
+<indexterm><primary>cam.chain.camChain</primary><secondary>active_operation</secondary></indexterm>
+<para><computeroutput>IntProperty cam.chain.camChain.active_operation<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Active&#32;Operation&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;Active&#32;operation&#32;in&#32;chain&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=-1,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1chain_1_1camChain_1a3d1555185a35097d867368d2948ac7c4"/><section>
+    <title>computing</title>
+<indexterm><primary>computing</primary><secondary>cam.chain.camChain</secondary></indexterm>
+<indexterm><primary>cam.chain.camChain</primary><secondary>computing</secondary></indexterm>
+<para><computeroutput>BoolProperty cam.chain.camChain.computing<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Computing&#32;Right&#32;Now&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="keyword">False</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1chain_1_1camChain_1a1b23593aa1e68ffdb042405c062da3a5"/><section>
+    <title>filename</title>
+<indexterm><primary>filename</primary><secondary>cam.chain.camChain</secondary></indexterm>
+<indexterm><primary>cam.chain.camChain</primary><secondary>filename</secondary></indexterm>
+<para><computeroutput>StringProperty cam.chain.camChain.filename<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;File&#32;Name&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="stringliteral">&quot;Chain&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1chain_1_1camChain_1a87591a6d264bdb51c41fba0f7a0fa73b"/><section>
+    <title>index</title>
+<indexterm><primary>index</primary><secondary>cam.chain.camChain</secondary></indexterm>
+<indexterm><primary>cam.chain.camChain</primary><secondary>index</secondary></indexterm>
+<para><computeroutput>IntProperty cam.chain.camChain.index<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Index&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;Index&#32;in&#32;the&#32;hard-defined&#32;camChains&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=-1,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1chain_1_1camChain_1afa7789eb81f76188eca69a1a6d5c7774"/><section>
+    <title>name</title>
+<indexterm><primary>name</primary><secondary>cam.chain.camChain</secondary></indexterm>
+<indexterm><primary>cam.chain.camChain</primary><secondary>name</secondary></indexterm>
+<para><computeroutput>StringProperty cam.chain.camChain.name<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Chain&#32;Name&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="stringliteral">&quot;Chain&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1chain_1_1camChain_1aa9e746054bfe6559a4731f7674a62861"/><section>
+    <title>operations</title>
+<indexterm><primary>operations</primary><secondary>cam.chain.camChain</secondary></indexterm>
+<indexterm><primary>cam.chain.camChain</primary><secondary>operations</secondary></indexterm>
+<para><computeroutput>CollectionProperty cam.chain.camChain.operations<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;type=opReference,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1chain_1_1camChain_1a8681d673d64009abed9a3da40ac0b8c9"/><section>
+    <title>valid</title>
+<indexterm><primary>valid</primary><secondary>cam.chain.camChain</secondary></indexterm>
+<indexterm><primary>cam.chain.camChain</primary><secondary>valid</secondary></indexterm>
+<para><computeroutput>BoolProperty cam.chain.camChain.valid<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Valid&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;True&#32;if&#32;whole&#32;chain&#32;is&#32;ok&#32;for&#32;calculation&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="keyword">True</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/<link linkend="_chain_8py">chain.py</link></section>
+</section>

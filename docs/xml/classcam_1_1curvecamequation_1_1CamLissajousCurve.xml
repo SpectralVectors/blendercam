@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1curvecamequation_1_1CamLissajousCurve" kind="class" language="Python" prot="public">
+    <compoundname>cam::curvecamequation::CamLissajousCurve</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Operator</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamLissajousCurve_1afd89af4bbe5c5754667cdaa1d95b59e7" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.curvecamequation.CamLissajousCurve::bl_idname</definition>
+        <argsstring></argsstring>
+        <name>bl_idname</name>
+        <qualifiedname>cam.curvecamequation.CamLissajousCurve.bl_idname</qualifiedname>
+        <initializer>=  &quot;object.lissajous&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="195" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamLissajousCurve_1ae4e7bcf72673f0775a26a9ff21f5d636" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.curvecamequation.CamLissajousCurve::bl_label</definition>
+        <argsstring></argsstring>
+        <name>bl_label</name>
+        <qualifiedname>cam.curvecamequation.CamLissajousCurve.bl_label</qualifiedname>
+        <initializer>=  &quot;Lissajous Figure&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="196" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="196" bodyend="-1"/>
+        <referencedby refid="classcam_1_1preset__managers_1_1CAM__MACHINE__MT__presets_1af95f7812d2952b26a26809ab923dac09" compoundref="preset__managers_8py" startline="28" endline="38">cam.preset_managers.CAM_MACHINE_MT_presets.post_cb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamLissajousCurve_1a658c43c827ea0fde4ebb557cc22b4c76" prot="public" static="yes" mutable="no">
+        <type>dict</type>
+        <definition>dict cam.curvecamequation.CamLissajousCurve::bl_options</definition>
+        <argsstring></argsstring>
+        <name>bl_options</name>
+        <qualifiedname>cam.curvecamequation.CamLissajousCurve.bl_options</qualifiedname>
+        <initializer>=  {&apos;REGISTER&apos;, &apos;UNDO&apos;, &apos;PRESET&apos;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="197" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="197" bodyend="-1"/>
+        <referencedby refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a9628cbca8e69ec75b2337171a02bf428" compoundref="async__op_8py" startline="32" endline="59">cam.async_op.AsyncOperatorMixin.modal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamLissajousCurve_1ab2adcc741da667e7f778b4c6a5901318" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamequation.CamLissajousCurve::amplitude_A</definition>
+        <argsstring></argsstring>
+        <name>amplitude_A</name>
+        <qualifiedname>cam.curvecamequation.CamLissajousCurve.amplitude_A</qualifiedname>
+        <initializer>(
+        name=&quot;Amplitude A&quot;,
+        default=.1,
+        min=0,
+        max=100,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="199" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamLissajousCurve_1a2a757dd99100738e003978ceadafd740" prot="public" static="yes" mutable="no">
+        <type>EnumProperty</type>
+        <definition>EnumProperty cam.curvecamequation.CamLissajousCurve::waveA</definition>
+        <argsstring></argsstring>
+        <name>waveA</name>
+        <qualifiedname>cam.curvecamequation.CamLissajousCurve.waveA</qualifiedname>
+        <initializer>(
+        name=&quot;Wave X&quot;,
+        items=(
+            (&apos;sine&apos;, &apos;Sine Wave&apos;, &apos;Sine Wave&apos;),
+            (&apos;<ref refid="namespacecam_1_1curvecamequation_1a6b6956c5735e0173178e8b75bc6ed287" kindref="member">triangle</ref>&apos;, &apos;Triangle Wave&apos;, &apos;<ref refid="namespacecam_1_1curvecamequation_1a6b6956c5735e0173178e8b75bc6ed287" kindref="member">triangle</ref> wave&apos;)
+        ),
+        default=&apos;sine&apos;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="207" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamLissajousCurve_1a0738df63dae1f47710c085590239c729" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamequation.CamLissajousCurve::amplitude_B</definition>
+        <argsstring></argsstring>
+        <name>amplitude_B</name>
+        <qualifiedname>cam.curvecamequation.CamLissajousCurve.amplitude_B</qualifiedname>
+        <initializer>(
+        name=&quot;Amplitude B&quot;,
+        default=.1,
+        min=0,
+        max=100,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="216" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamLissajousCurve_1ae6bf89b5057592d9503886b523df09bc" prot="public" static="yes" mutable="no">
+        <type>EnumProperty</type>
+        <definition>EnumProperty cam.curvecamequation.CamLissajousCurve::waveB</definition>
+        <argsstring></argsstring>
+        <name>waveB</name>
+        <qualifiedname>cam.curvecamequation.CamLissajousCurve.waveB</qualifiedname>
+        <initializer>(
+        name=&quot;Wave Y&quot;,
+        items=(
+            (&apos;sine&apos;, &apos;Sine Wave&apos;, &apos;Sine Wave&apos;),
+            (&apos;<ref refid="namespacecam_1_1curvecamequation_1a6b6956c5735e0173178e8b75bc6ed287" kindref="member">triangle</ref>&apos;, &apos;Triangle Wave&apos;, &apos;<ref refid="namespacecam_1_1curvecamequation_1a6b6956c5735e0173178e8b75bc6ed287" kindref="member">triangle</ref> wave&apos;)
+        ),
+        default=&apos;sine&apos;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="224" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamLissajousCurve_1a5f21fa4af52a30b81aa2ded191827e27" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamequation.CamLissajousCurve::period_A</definition>
+        <argsstring></argsstring>
+        <name>period_A</name>
+        <qualifiedname>cam.curvecamequation.CamLissajousCurve.period_A</qualifiedname>
+        <initializer>(
+        name=&quot;Period A&quot;,
+        default=1.1,
+        min=0.001,
+        max=100,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="232" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamLissajousCurve_1aaedd365303de279f04bfde9393ddd721" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamequation.CamLissajousCurve::period_B</definition>
+        <argsstring></argsstring>
+        <name>period_B</name>
+        <qualifiedname>cam.curvecamequation.CamLissajousCurve.period_B</qualifiedname>
+        <initializer>(
+        name=&quot;Period B&quot;,
+        default=1.0,
+        min=0.001,
+        max=100,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="240" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamLissajousCurve_1acf3748d71f85fb13690d312cb1c3ec17" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamequation.CamLissajousCurve::period_Z</definition>
+        <argsstring></argsstring>
+        <name>period_Z</name>
+        <qualifiedname>cam.curvecamequation.CamLissajousCurve.period_Z</qualifiedname>
+        <initializer>(
+        name=&quot;Period Z&quot;,
+        default=1.0,
+        min=0.001,
+        max=100,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="248" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamLissajousCurve_1a2663528fc31836e51d221681912e2712" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamequation.CamLissajousCurve::amplitude_Z</definition>
+        <argsstring></argsstring>
+        <name>amplitude_Z</name>
+        <qualifiedname>cam.curvecamequation.CamLissajousCurve.amplitude_Z</qualifiedname>
+        <initializer>(
+        name=&quot;Amplitude Z&quot;,
+        default=0.0,
+        min=0,
+        max=100,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="256" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamLissajousCurve_1a453905e9471db3917e8d4a7632152904" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamequation.CamLissajousCurve::shift</definition>
+        <argsstring></argsstring>
+        <name>shift</name>
+        <qualifiedname>cam.curvecamequation.CamLissajousCurve.shift</qualifiedname>
+        <initializer>(
+        name=&quot;Phase Shift&quot;,
+        default=0,
+        min=-360,
+        max=360,
+        precision=4,
+        unit=&quot;ROTATION&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="264" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="264" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamequation_1_1CamSineCurve_1ae92603301f7aaaac9db2eb82ca861783" compoundref="curvecamequation_8py" startline="135" endline="192">cam.curvecamequation.CamSineCurve.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamLissajousCurve_1a0dc0879876f9eff10b3e85b4179fbed4" prot="public" static="yes" mutable="no">
+        <type>IntProperty</type>
+        <definition>IntProperty cam.curvecamequation.CamLissajousCurve::iteration</definition>
+        <argsstring></argsstring>
+        <name>iteration</name>
+        <qualifiedname>cam.curvecamequation.CamLissajousCurve.iteration</qualifiedname>
+        <initializer>(
+        name=&quot;Iteration&quot;,
+        default=500,
+        min=50,
+        max=10000,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="273" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="273" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamLissajousCurve_1a519fb717e64a9e6e1d32869ad0d73ffe" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamequation.CamLissajousCurve::maxt</definition>
+        <argsstring></argsstring>
+        <name>maxt</name>
+        <qualifiedname>cam.curvecamequation.CamLissajousCurve.maxt</qualifiedname>
+        <initializer>(
+        name=&quot;Wave Ends at X&quot;,
+        default=11,
+        min=-3.0,
+        max=1000000,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="279" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamLissajousCurve_1a82b01eef347b5d30fdccdfce037e6b37" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamequation.CamLissajousCurve::mint</definition>
+        <argsstring></argsstring>
+        <name>mint</name>
+        <qualifiedname>cam.curvecamequation.CamLissajousCurve.mint</qualifiedname>
+        <initializer>(
+        name=&quot;Wave Starts at X&quot;,
+        default=0,
+        min=-10.0,
+        max=3,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="287" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="287" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamLissajousCurve_1a44cf69d574ee826f5ccd4fb537724620" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamequation.CamLissajousCurve::waveA</definition>
+        <argsstring></argsstring>
+        <name>waveA</name>
+        <qualifiedname>cam.curvecamequation.CamLissajousCurve.waveA</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="299" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="299" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamLissajousCurve_1ae33d98b7e324b15585f7c6a003d12412" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamequation.CamLissajousCurve::waveB</definition>
+        <argsstring></argsstring>
+        <name>waveB</name>
+        <qualifiedname>cam.curvecamequation.CamLissajousCurve.waveB</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="304" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="304" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcam_1_1curvecamequation_1_1CamLissajousCurve_1a830367e3ea5f0e0b620d8039c44e1fc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.curvecamequation.CamLissajousCurve.execute</definition>
+        <argsstring>(self, context)</argsstring>
+        <name>execute</name>
+        <qualifiedname>cam.curvecamequation.CamLissajousCurve.execute</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="296" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="296" bodyend="340"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Lissajous </verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.curvecamequation.CamLissajousCurve</label>
+        <link refid="classcam_1_1curvecamequation_1_1CamLissajousCurve"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6">
+        <label>EnumProperty</label>
+      </node>
+      <node id="5">
+        <label>FloatProperty</label>
+      </node>
+      <node id="7">
+        <label>IntProperty</label>
+      </node>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.curvecamequation.CamLissajousCurve</label>
+        <link refid="classcam_1_1curvecamequation_1_1CamLissajousCurve"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+bl_idname</edgelabel>
+          <edgelabel>+bl_label</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+bl_options</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+amplitude_A</edgelabel>
+          <edgelabel>+amplitude_B</edgelabel>
+          <edgelabel>+amplitude_Z</edgelabel>
+          <edgelabel>+maxt</edgelabel>
+          <edgelabel>+mint</edgelabel>
+          <edgelabel>+period_A</edgelabel>
+          <edgelabel>+period_B</edgelabel>
+          <edgelabel>+period_Z</edgelabel>
+          <edgelabel>+shift</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>+waveA</edgelabel>
+          <edgelabel>+waveB</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>+iteration</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dict</label>
+      </node>
+      <node id="3">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="193" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="193" bodyend="340"/>
+    <listofallmembers>
+      <member refid="classcam_1_1curvecamequation_1_1CamLissajousCurve_1ab2adcc741da667e7f778b4c6a5901318" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamLissajousCurve</scope><name>amplitude_A</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamLissajousCurve_1a0738df63dae1f47710c085590239c729" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamLissajousCurve</scope><name>amplitude_B</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamLissajousCurve_1a2663528fc31836e51d221681912e2712" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamLissajousCurve</scope><name>amplitude_Z</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamLissajousCurve_1afd89af4bbe5c5754667cdaa1d95b59e7" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamLissajousCurve</scope><name>bl_idname</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamLissajousCurve_1ae4e7bcf72673f0775a26a9ff21f5d636" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamLissajousCurve</scope><name>bl_label</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamLissajousCurve_1a658c43c827ea0fde4ebb557cc22b4c76" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamLissajousCurve</scope><name>bl_options</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamLissajousCurve_1a830367e3ea5f0e0b620d8039c44e1fc7" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamLissajousCurve</scope><name>execute</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamLissajousCurve_1a0dc0879876f9eff10b3e85b4179fbed4" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamLissajousCurve</scope><name>iteration</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamLissajousCurve_1a519fb717e64a9e6e1d32869ad0d73ffe" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamLissajousCurve</scope><name>maxt</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamLissajousCurve_1a82b01eef347b5d30fdccdfce037e6b37" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamLissajousCurve</scope><name>mint</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamLissajousCurve_1a5f21fa4af52a30b81aa2ded191827e27" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamLissajousCurve</scope><name>period_A</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamLissajousCurve_1aaedd365303de279f04bfde9393ddd721" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamLissajousCurve</scope><name>period_B</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamLissajousCurve_1acf3748d71f85fb13690d312cb1c3ec17" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamLissajousCurve</scope><name>period_Z</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamLissajousCurve_1a453905e9471db3917e8d4a7632152904" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamLissajousCurve</scope><name>shift</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamLissajousCurve_1a2a757dd99100738e003978ceadafd740" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamLissajousCurve</scope><name>waveA</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamLissajousCurve_1a44cf69d574ee826f5ccd4fb537724620" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamLissajousCurve</scope><name>waveA</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamLissajousCurve_1ae6bf89b5057592d9503886b523df09bc" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamLissajousCurve</scope><name>waveB</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamLissajousCurve_1ae33d98b7e324b15585f7c6a003d12412" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamLissajousCurve</scope><name>waveB</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

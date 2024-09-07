@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1preset__managers_1_1AddPresetCamOperation" xml:lang="en-US">
+<title>cam.preset_managers.AddPresetCamOperation Class Reference</title>
+<indexterm><primary>cam.preset_managers.AddPresetCamOperation</primary></indexterm>
+Inheritance diagram for cam.preset_managers.AddPresetCamOperation:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1preset__managers_1_1AddPresetCamOperation__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.preset_managers.AddPresetCamOperation:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1preset__managers_1_1AddPresetCamOperation__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classcam_1_1preset__managers_1_1AddPresetCamOperation_1a6066f3df5b776d5032f3e4fed6a10922">bl_idname</link> = &quot;render.cam_preset_operation_add&quot;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1preset__managers_1_1AddPresetCamOperation_1ac176486e1fbe07dad2265d4f9f944cc3">bl_label</link> = &quot;Add Operation Preset&quot;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1preset__managers_1_1AddPresetCamOperation_1a4d93b37ff923625bcaebb986b9ffab3a">preset_menu</link> = &quot;CAM_OPERATION_MT_presets&quot;</para>
+</listitem>
+            <listitem><para>list <link linkend="_classcam_1_1preset__managers_1_1AddPresetCamOperation_1ab67d60a91b10228d459b0c3bec4bd823">preset_defines</link></para>
+</listitem>
+            <listitem><para>list <link linkend="_classcam_1_1preset__managers_1_1AddPresetCamOperation_1af58db1dfce679316710dbc2ef07cbc70">preset_values</link></para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1preset__managers_1_1AddPresetCamOperation_1a482e1eacc3fc56ce9e704c352dcf37fc">preset_subdir</link> = &quot;cam_operations&quot;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Add an Operation Preset</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1preset__managers_1_1AddPresetCamOperation_1a6066f3df5b776d5032f3e4fed6a10922"/><section>
+    <title>bl_idname</title>
+<indexterm><primary>bl_idname</primary><secondary>cam.preset_managers.AddPresetCamOperation</secondary></indexterm>
+<indexterm><primary>cam.preset_managers.AddPresetCamOperation</primary><secondary>bl_idname</secondary></indexterm>
+<para><computeroutput>str cam.preset_managers.AddPresetCamOperation.bl_idname = &quot;render.cam_preset_operation_add&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1preset__managers_1_1AddPresetCamOperation_1ac176486e1fbe07dad2265d4f9f944cc3"/><section>
+    <title>bl_label</title>
+<indexterm><primary>bl_label</primary><secondary>cam.preset_managers.AddPresetCamOperation</secondary></indexterm>
+<indexterm><primary>cam.preset_managers.AddPresetCamOperation</primary><secondary>bl_label</secondary></indexterm>
+<para><computeroutput>str cam.preset_managers.AddPresetCamOperation.bl_label = &quot;Add Operation Preset&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1preset__managers_1_1AddPresetCamOperation_1ab67d60a91b10228d459b0c3bec4bd823"/><section>
+    <title>preset_defines</title>
+<indexterm><primary>preset_defines</primary><secondary>cam.preset_managers.AddPresetCamOperation</secondary></indexterm>
+<indexterm><primary>cam.preset_managers.AddPresetCamOperation</primary><secondary>preset_defines</secondary></indexterm>
+<para><computeroutput>list cam.preset_managers.AddPresetCamOperation.preset_defines<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">=&#32;&#32;[
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;from&#32;pathlib&#32;import&#32;Path&apos;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;bpy.ops.scene.cam_operation_add()&apos;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;scene&#32;=&#32;bpy.context.scene&apos;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;o&#32;=&#32;scene.cam_operations[scene.cam_active_operation]&apos;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;o.name&#32;=&#32;f&apos;OP_{o.object_name}_{scene.cam_active_operation&#32;+&#32;1}_{Path(__file__).stem}&apos;&quot;</emphasis>,
+&#32;&#32;&#32;&#32;]
+</programlisting></section>
+<anchor xml:id="_classcam_1_1preset__managers_1_1AddPresetCamOperation_1a4d93b37ff923625bcaebb986b9ffab3a"/><section>
+    <title>preset_menu</title>
+<indexterm><primary>preset_menu</primary><secondary>cam.preset_managers.AddPresetCamOperation</secondary></indexterm>
+<indexterm><primary>cam.preset_managers.AddPresetCamOperation</primary><secondary>preset_menu</secondary></indexterm>
+<para><computeroutput>str cam.preset_managers.AddPresetCamOperation.preset_menu = &quot;CAM_OPERATION_MT_presets&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1preset__managers_1_1AddPresetCamOperation_1a482e1eacc3fc56ce9e704c352dcf37fc"/><section>
+    <title>preset_subdir</title>
+<indexterm><primary>preset_subdir</primary><secondary>cam.preset_managers.AddPresetCamOperation</secondary></indexterm>
+<indexterm><primary>cam.preset_managers.AddPresetCamOperation</primary><secondary>preset_subdir</secondary></indexterm>
+<para><computeroutput>str cam.preset_managers.AddPresetCamOperation.preset_subdir = &quot;cam_operations&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1preset__managers_1_1AddPresetCamOperation_1af58db1dfce679316710dbc2ef07cbc70"/><section>
+    <title>preset_values</title>
+<indexterm><primary>preset_values</primary><secondary>cam.preset_managers.AddPresetCamOperation</secondary></indexterm>
+<indexterm><primary>cam.preset_managers.AddPresetCamOperation</primary><secondary>preset_values</secondary></indexterm>
+<para><computeroutput>list cam.preset_managers.AddPresetCamOperation.preset_values<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/<link linkend="_preset__managers_8py">preset_managers.py</link></section>
+</section>

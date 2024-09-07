@@ -1,0 +1,648 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>blendercam: cam.nc.iso_read.Parser Class Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">blendercam
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part --><!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('classcam_1_1nc_1_1iso__read_1_1Parser.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="classcam_1_1nc_1_1iso__read_1_1Parser-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">cam.nc.iso_read.Parser Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Inheritance diagram for cam.nc.iso_read.Parser:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1iso__read_1_1Parser__inherit__graph.svg" width="175" height="410"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Collaboration diagram for cam.nc.iso_read.Parser:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1iso__read_1_1Parser__coll__graph.svg" width="175" height="410"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a1095fb1c67585531316b867ebb110582" id="r_a1095fb1c67585531316b867ebb110582"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1095fb1c67585531316b867ebb110582">__init__</a> (self, writer)</td></tr>
+<tr class="separator:a1095fb1c67585531316b867ebb110582"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f80565027c1838a9e7890bdbb952e2d" id="r_a2f80565027c1838a9e7890bdbb952e2d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f80565027c1838a9e7890bdbb952e2d">ParseWord</a> (self, word)</td></tr>
+<tr class="separator:a2f80565027c1838a9e7890bdbb952e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a66a5487cc73afc9e68fe5c1431e20930" id="r_a66a5487cc73afc9e68fe5c1431e20930"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66a5487cc73afc9e68fe5c1431e20930">pattern_main</a></td></tr>
+<tr class="separator:a66a5487cc73afc9e68fe5c1431e20930"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eca525e9179d6efb78999f4935dfe2d" id="r_a4eca525e9179d6efb78999f4935dfe2d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4eca525e9179d6efb78999f4935dfe2d">arc_centre_absolute</a></td></tr>
+<tr class="separator:a4eca525e9179d6efb78999f4935dfe2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90a8635714a0d82fe979909a124686b3" id="r_a90a8635714a0d82fe979909a124686b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90a8635714a0d82fe979909a124686b3">arc_centre_positive</a></td></tr>
+<tr class="separator:a90a8635714a0d82fe979909a124686b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9592a5d06dfe95950307e56237130594" id="r_a9592a5d06dfe95950307e56237130594"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9592a5d06dfe95950307e56237130594">oldx</a></td></tr>
+<tr class="separator:a9592a5d06dfe95950307e56237130594"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3688d7201f6be2eccf065374e3d39d86" id="r_a3688d7201f6be2eccf065374e3d39d86"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3688d7201f6be2eccf065374e3d39d86">oldy</a></td></tr>
+<tr class="separator:a3688d7201f6be2eccf065374e3d39d86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d8ffd8d08c655a17d1cca0917a0d576" id="r_a4d8ffd8d08c655a17d1cca0917a0d576"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d8ffd8d08c655a17d1cca0917a0d576">oldz</a></td></tr>
+<tr class="separator:a4d8ffd8d08c655a17d1cca0917a0d576"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b8418af57a17a08faab4ff21814ccb0" id="r_a4b8418af57a17a08faab4ff21814ccb0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b8418af57a17a08faab4ff21814ccb0">col</a></td></tr>
+<tr class="separator:a4b8418af57a17a08faab4ff21814ccb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a718e791c82cc1c06a1d6e571abdd6ec4" id="r_a718e791c82cc1c06a1d6e571abdd6ec4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a718e791c82cc1c06a1d6e571abdd6ec4">a</a></td></tr>
+<tr class="separator:a718e791c82cc1c06a1d6e571abdd6ec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaed9c8acf3d086353743cfcb694f851a" id="r_aaed9c8acf3d086353743cfcb694f851a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaed9c8acf3d086353743cfcb694f851a">move</a></td></tr>
+<tr class="separator:aaed9c8acf3d086353743cfcb694f851a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67823f5c73c913ffc8641485a37ef64e" id="r_a67823f5c73c913ffc8641485a37ef64e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a67823f5c73c913ffc8641485a37ef64e">b</a></td></tr>
+<tr class="separator:a67823f5c73c913ffc8641485a37ef64e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae61663d3c365f3c01ffacc09ffeff9e3" id="r_ae61663d3c365f3c01ffacc09ffeff9e3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae61663d3c365f3c01ffacc09ffeff9e3">c</a></td></tr>
+<tr class="separator:ae61663d3c365f3c01ffacc09ffeff9e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98f1351ba607f2c39fe8205b44ae0dea" id="r_a98f1351ba607f2c39fe8205b44ae0dea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98f1351ba607f2c39fe8205b44ae0dea">h</a></td></tr>
+<tr class="separator:a98f1351ba607f2c39fe8205b44ae0dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92731d500d3b85a3ea66fb5a1fd0d414" id="r_a92731d500d3b85a3ea66fb5a1fd0d414"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92731d500d3b85a3ea66fb5a1fd0d414">path_col</a></td></tr>
+<tr class="separator:a92731d500d3b85a3ea66fb5a1fd0d414"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dfd17905916bfc595d6afe430d7737f" id="r_a9dfd17905916bfc595d6afe430d7737f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9dfd17905916bfc595d6afe430d7737f">arc</a></td></tr>
+<tr class="separator:a9dfd17905916bfc595d6afe430d7737f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2e594691fc368bb6bd981299b984aa0" id="r_ae2e594691fc368bb6bd981299b984aa0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2e594691fc368bb6bd981299b984aa0">no_move</a></td></tr>
+<tr class="separator:ae2e594691fc368bb6bd981299b984aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f99daece0ab1b490c2b3ae329aa5cfa" id="r_a5f99daece0ab1b490c2b3ae329aa5cfa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f99daece0ab1b490c2b3ae329aa5cfa">height_offset</a></td></tr>
+<tr class="separator:a5f99daece0ab1b490c2b3ae329aa5cfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36d4b1bd2dd6c574c650b2fae37861c5" id="r_a36d4b1bd2dd6c574c650b2fae37861c5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a36d4b1bd2dd6c574c650b2fae37861c5">drill</a></td></tr>
+<tr class="separator:a36d4b1bd2dd6c574c650b2fae37861c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3d5cdc37cc97ad09ef5f396caff7a0b" id="r_ac3d5cdc37cc97ad09ef5f396caff7a0b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3d5cdc37cc97ad09ef5f396caff7a0b">i</a></td></tr>
+<tr class="separator:ac3d5cdc37cc97ad09ef5f396caff7a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ba4aabbd5cac7a760909768cc56a81a" id="r_a6ba4aabbd5cac7a760909768cc56a81a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ba4aabbd5cac7a760909768cc56a81a">j</a></td></tr>
+<tr class="separator:a6ba4aabbd5cac7a760909768cc56a81a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78f8fb76074bce17e1b32e2f6479d936" id="r_a78f8fb76074bce17e1b32e2f6479d936"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78f8fb76074bce17e1b32e2f6479d936">k</a></td></tr>
+<tr class="separator:a78f8fb76074bce17e1b32e2f6479d936"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c0271407e94194518ec9d0a462ba53a" id="r_a2c0271407e94194518ec9d0a462ba53a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c0271407e94194518ec9d0a462ba53a">p</a></td></tr>
+<tr class="separator:a2c0271407e94194518ec9d0a462ba53a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42bffdcc35c072e7cae0fe7db9ca03f4" id="r_a42bffdcc35c072e7cae0fe7db9ca03f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42bffdcc35c072e7cae0fe7db9ca03f4">q</a></td></tr>
+<tr class="separator:a42bffdcc35c072e7cae0fe7db9ca03f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49537adf4f3f1314c6c904cdec419d13" id="r_a49537adf4f3f1314c6c904cdec419d13"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49537adf4f3f1314c6c904cdec419d13">r</a></td></tr>
+<tr class="separator:a49537adf4f3f1314c6c904cdec419d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ef397dcfaf75c56995b8e5fc9320b28" id="r_a5ef397dcfaf75c56995b8e5fc9320b28"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ef397dcfaf75c56995b8e5fc9320b28">x</a></td></tr>
+<tr class="separator:a5ef397dcfaf75c56995b8e5fc9320b28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04e4f389d556d151a53a3e7ce4d3d348" id="r_a04e4f389d556d151a53a3e7ce4d3d348"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04e4f389d556d151a53a3e7ce4d3d348">y</a></td></tr>
+<tr class="separator:a04e4f389d556d151a53a3e7ce4d3d348"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a422690cc1d4b55dc283e1beac90f83c8" id="r_a422690cc1d4b55dc283e1beac90f83c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a422690cc1d4b55dc283e1beac90f83c8">z</a></td></tr>
+<tr class="separator:a422690cc1d4b55dc283e1beac90f83c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61e46df1d3ce6623d931d9318cd41f04" id="r_a61e46df1d3ce6623d931d9318cd41f04"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61e46df1d3ce6623d931d9318cd41f04">cdata</a></td></tr>
+<tr class="separator:a61e46df1d3ce6623d931d9318cd41f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a1095fb1c67585531316b867ebb110582" name="a1095fb1c67585531316b867ebb110582"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1095fb1c67585531316b867ebb110582">&#9670;&#160;</a></span>__init__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.iso_read.Parser.__init__ </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>writer</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2f80565027c1838a9e7890bdbb952e2d" name="a2f80565027c1838a9e7890bdbb952e2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f80565027c1838a9e7890bdbb952e2d">&#9670;&#160;</a></span>ParseWord()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.iso_read.Parser.ParseWord </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>word</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1iso__read_1_1Parser_a2f80565027c1838a9e7890bdbb952e2d_icgraph.svg" width="507" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a718e791c82cc1c06a1d6e571abdd6ec4" name="a718e791c82cc1c06a1d6e571abdd6ec4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a718e791c82cc1c06a1d6e571abdd6ec4">&#9670;&#160;</a></span>a</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.iso_read.Parser.a</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9dfd17905916bfc595d6afe430d7737f" name="a9dfd17905916bfc595d6afe430d7737f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dfd17905916bfc595d6afe430d7737f">&#9670;&#160;</a></span>arc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.iso_read.Parser.arc</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4eca525e9179d6efb78999f4935dfe2d" name="a4eca525e9179d6efb78999f4935dfe2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4eca525e9179d6efb78999f4935dfe2d">&#9670;&#160;</a></span>arc_centre_absolute</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.iso_read.Parser.arc_centre_absolute</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a90a8635714a0d82fe979909a124686b3" name="a90a8635714a0d82fe979909a124686b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90a8635714a0d82fe979909a124686b3">&#9670;&#160;</a></span>arc_centre_positive</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.iso_read.Parser.arc_centre_positive</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a67823f5c73c913ffc8641485a37ef64e" name="a67823f5c73c913ffc8641485a37ef64e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67823f5c73c913ffc8641485a37ef64e">&#9670;&#160;</a></span>b</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.iso_read.Parser.b</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae61663d3c365f3c01ffacc09ffeff9e3" name="ae61663d3c365f3c01ffacc09ffeff9e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae61663d3c365f3c01ffacc09ffeff9e3">&#9670;&#160;</a></span>c</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.iso_read.Parser.c</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a61e46df1d3ce6623d931d9318cd41f04" name="a61e46df1d3ce6623d931d9318cd41f04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61e46df1d3ce6623d931d9318cd41f04">&#9670;&#160;</a></span>cdata</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.iso_read.Parser.cdata</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4b8418af57a17a08faab4ff21814ccb0" name="a4b8418af57a17a08faab4ff21814ccb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b8418af57a17a08faab4ff21814ccb0">&#9670;&#160;</a></span>col</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.iso_read.Parser.col</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a36d4b1bd2dd6c574c650b2fae37861c5" name="a36d4b1bd2dd6c574c650b2fae37861c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36d4b1bd2dd6c574c650b2fae37861c5">&#9670;&#160;</a></span>drill</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.iso_read.Parser.drill</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a98f1351ba607f2c39fe8205b44ae0dea" name="a98f1351ba607f2c39fe8205b44ae0dea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98f1351ba607f2c39fe8205b44ae0dea">&#9670;&#160;</a></span>h</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.iso_read.Parser.h</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5f99daece0ab1b490c2b3ae329aa5cfa" name="a5f99daece0ab1b490c2b3ae329aa5cfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f99daece0ab1b490c2b3ae329aa5cfa">&#9670;&#160;</a></span>height_offset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.iso_read.Parser.height_offset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac3d5cdc37cc97ad09ef5f396caff7a0b" name="ac3d5cdc37cc97ad09ef5f396caff7a0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3d5cdc37cc97ad09ef5f396caff7a0b">&#9670;&#160;</a></span>i</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.iso_read.Parser.i</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6ba4aabbd5cac7a760909768cc56a81a" name="a6ba4aabbd5cac7a760909768cc56a81a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ba4aabbd5cac7a760909768cc56a81a">&#9670;&#160;</a></span>j</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.iso_read.Parser.j</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a78f8fb76074bce17e1b32e2f6479d936" name="a78f8fb76074bce17e1b32e2f6479d936"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78f8fb76074bce17e1b32e2f6479d936">&#9670;&#160;</a></span>k</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.iso_read.Parser.k</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaed9c8acf3d086353743cfcb694f851a" name="aaed9c8acf3d086353743cfcb694f851a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaed9c8acf3d086353743cfcb694f851a">&#9670;&#160;</a></span>move</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.iso_read.Parser.move</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae2e594691fc368bb6bd981299b984aa0" name="ae2e594691fc368bb6bd981299b984aa0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2e594691fc368bb6bd981299b984aa0">&#9670;&#160;</a></span>no_move</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.iso_read.Parser.no_move</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9592a5d06dfe95950307e56237130594" name="a9592a5d06dfe95950307e56237130594"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9592a5d06dfe95950307e56237130594">&#9670;&#160;</a></span>oldx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.iso_read.Parser.oldx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3688d7201f6be2eccf065374e3d39d86" name="a3688d7201f6be2eccf065374e3d39d86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3688d7201f6be2eccf065374e3d39d86">&#9670;&#160;</a></span>oldy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.iso_read.Parser.oldy</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4d8ffd8d08c655a17d1cca0917a0d576" name="a4d8ffd8d08c655a17d1cca0917a0d576"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d8ffd8d08c655a17d1cca0917a0d576">&#9670;&#160;</a></span>oldz</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.iso_read.Parser.oldz</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2c0271407e94194518ec9d0a462ba53a" name="a2c0271407e94194518ec9d0a462ba53a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c0271407e94194518ec9d0a462ba53a">&#9670;&#160;</a></span>p</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.iso_read.Parser.p</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a92731d500d3b85a3ea66fb5a1fd0d414" name="a92731d500d3b85a3ea66fb5a1fd0d414"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92731d500d3b85a3ea66fb5a1fd0d414">&#9670;&#160;</a></span>path_col</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.iso_read.Parser.path_col</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a66a5487cc73afc9e68fe5c1431e20930" name="a66a5487cc73afc9e68fe5c1431e20930"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66a5487cc73afc9e68fe5c1431e20930">&#9670;&#160;</a></span>pattern_main</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.iso_read.Parser.pattern_main</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a42bffdcc35c072e7cae0fe7db9ca03f4" name="a42bffdcc35c072e7cae0fe7db9ca03f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42bffdcc35c072e7cae0fe7db9ca03f4">&#9670;&#160;</a></span>q</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.iso_read.Parser.q</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a49537adf4f3f1314c6c904cdec419d13" name="a49537adf4f3f1314c6c904cdec419d13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49537adf4f3f1314c6c904cdec419d13">&#9670;&#160;</a></span>r</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.iso_read.Parser.r</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5ef397dcfaf75c56995b8e5fc9320b28" name="a5ef397dcfaf75c56995b8e5fc9320b28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ef397dcfaf75c56995b8e5fc9320b28">&#9670;&#160;</a></span>x</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.iso_read.Parser.x</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a04e4f389d556d151a53a3e7ce4d3d348" name="a04e4f389d556d151a53a3e7ce4d3d348"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04e4f389d556d151a53a3e7ce4d3d348">&#9670;&#160;</a></span>y</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.iso_read.Parser.y</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a422690cc1d4b55dc283e1beac90f83c8" name="a422690cc1d4b55dc283e1beac90f83c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a422690cc1d4b55dc283e1beac90f83c8">&#9670;&#160;</a></span>z</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.iso_read.Parser.z</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/<a class="el" href="iso__read_8py.html">iso_read.py</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.10.0-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacecam.html">cam</a></li><li class="navelem"><a class="el" href="namespacecam_1_1nc.html">nc</a></li><li class="navelem"><a class="el" href="namespacecam_1_1nc_1_1iso__read.html">iso_read</a></li><li class="navelem"><a class="el" href="classcam_1_1nc_1_1iso__read_1_1Parser.html">Parser</a></li>
+    <li class="footer">Generated by <a href="https://penify.dev/"><img class="footer" src="https://www.penify.dev/_next/static/media/snorkell-dark-logo.9fa414f5.svg" width="104" height="31" alt="doxygen"/></a> </li>
+  </ul>
+</div>
+</body>
+</html>

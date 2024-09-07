@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1nc_1_1format_1_1Address" xml:lang="en-US">
+<title>cam.nc.format.Address Class Reference</title>
+<indexterm><primary>cam.nc.format.Address</primary></indexterm>
+Inheritance diagram for cam.nc.format.Address:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1format_1_1Address__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.nc.format.Address:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1format_1_1Address__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1format_1_1Address_1a7ea9fc765e9f61f93dba234771b199ef">__init__</link> (self, <link linkend="_classcam_1_1nc_1_1format_1_1Address_1ab9446509a7f5029b1918caa3d0ce0eda">text</link>, <link linkend="_classcam_1_1nc_1_1format_1_1Address_1ae1b6bb153069a421de4eda6351d329bf">fmt</link>=<link linkend="_classcam_1_1nc_1_1format_1_1Format">Format</link>(), <link linkend="_classcam_1_1nc_1_1format_1_1Address_1ab5c1b467e8711fa42be5bf23679b6f7b">modal</link>=True)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1format_1_1Address_1a298494880b0b8ef3a2297ce1051443eb">set</link> (self, number)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1format_1_1Address_1aa21f0ffeb829537d9103759276c01a4b">write</link> (self, writer)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1format_1_1Address_1ab9446509a7f5029b1918caa3d0ce0eda">text</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1format_1_1Address_1ae1b6bb153069a421de4eda6351d329bf">fmt</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1format_1_1Address_1ab5c1b467e8711fa42be5bf23679b6f7b">modal</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1format_1_1Address_1a2c75d0d7a3b85bebe72ada306963a913">str</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1format_1_1Address_1a809f93ea987b03ec37929504bf5a017e">previous</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classcam_1_1nc_1_1format_1_1Address_1a7ea9fc765e9f61f93dba234771b199ef"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>cam.nc.format.Address</secondary></indexterm>
+<indexterm><primary>cam.nc.format.Address</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>cam.nc.format.Address.__init__ ( self,  text,  fmt = <computeroutput><link linkend="_classcam_1_1nc_1_1format_1_1Format">Format</link>()</computeroutput>
+,  modal = <computeroutput>True</computeroutput>
+)</computeroutput></para><para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1format_1_1AddressPlusMinus_1abba4b8da8e9a9898ac3f7daeb229f9d0">cam.nc.format.AddressPlusMinus</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1nc_1_1format_1_1Address_1a298494880b0b8ef3a2297ce1051443eb"/><section>
+    <title>set()</title>
+<indexterm><primary>set</primary><secondary>cam.nc.format.Address</secondary></indexterm>
+<indexterm><primary>cam.nc.format.Address</primary><secondary>set</secondary></indexterm>
+<para><computeroutput>cam.nc.format.Address.set ( self,  number)</computeroutput></para><para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1format_1_1AddressPlusMinus_1a654b288b78110c0abefdbc2c72a865c4">cam.nc.format.AddressPlusMinus</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1format_1_1Address_1aa21f0ffeb829537d9103759276c01a4b"/><section>
+    <title>write()</title>
+<indexterm><primary>write</primary><secondary>cam.nc.format.Address</secondary></indexterm>
+<indexterm><primary>cam.nc.format.Address</primary><secondary>write</secondary></indexterm>
+<para><computeroutput>cam.nc.format.Address.write ( self,  writer)</computeroutput></para><para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1format_1_1AddressPlusMinus_1aaacea4c7b677f0a602dbc9023ff365d2">cam.nc.format.AddressPlusMinus</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1format_1_1Address_aa21f0ffeb829537d9103759276c01a4b_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1nc_1_1format_1_1Address_1ae1b6bb153069a421de4eda6351d329bf"/><section>
+    <title>fmt</title>
+<indexterm><primary>fmt</primary><secondary>cam.nc.format.Address</secondary></indexterm>
+<indexterm><primary>cam.nc.format.Address</primary><secondary>fmt</secondary></indexterm>
+<para><computeroutput>cam.nc.format.Address.fmt</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1format_1_1Address_1ab5c1b467e8711fa42be5bf23679b6f7b"/><section>
+    <title>modal</title>
+<indexterm><primary>modal</primary><secondary>cam.nc.format.Address</secondary></indexterm>
+<indexterm><primary>cam.nc.format.Address</primary><secondary>modal</secondary></indexterm>
+<para><computeroutput>cam.nc.format.Address.modal</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1format_1_1Address_1a809f93ea987b03ec37929504bf5a017e"/><section>
+    <title>previous</title>
+<indexterm><primary>previous</primary><secondary>cam.nc.format.Address</secondary></indexterm>
+<indexterm><primary>cam.nc.format.Address</primary><secondary>previous</secondary></indexterm>
+<para><computeroutput>cam.nc.format.Address.previous</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1format_1_1Address_1a2c75d0d7a3b85bebe72ada306963a913"/><section>
+    <title>str</title>
+<indexterm><primary>str</primary><secondary>cam.nc.format.Address</secondary></indexterm>
+<indexterm><primary>cam.nc.format.Address</primary><secondary>str</secondary></indexterm>
+<para><computeroutput>cam.nc.format.Address.str</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1format_1_1Address_1ab9446509a7f5029b1918caa3d0ce0eda"/><section>
+    <title>text</title>
+<indexterm><primary>text</primary><secondary>cam.nc.format.Address</secondary></indexterm>
+<indexterm><primary>cam.nc.format.Address</primary><secondary>text</secondary></indexterm>
+<para><computeroutput>cam.nc.format.Address.text</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/<link linkend="_format_8py">format.py</link></section>
+</section>

@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel" xml:lang="en-US">
+<title>cam.ui_panels.buttons_panel.CAMButtonsPanel Class Reference</title>
+<indexterm><primary>cam.ui_panels.buttons_panel.CAMButtonsPanel</primary></indexterm>
+Inheritance diagram for cam.ui_panels.buttons_panel.CAMButtonsPanel:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.ui_panels.buttons_panel.CAMButtonsPanel:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a03843f1fecc691952b696f4bc75a0156">poll</link> (cls, context)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1ae2df719a61472a3f8674e26fe501b1f7">active_operation_index</link> (cls)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a9fe8584ab332e9830dfa800ee4582575">active_operation</link> (cls)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1acbcf6bed1c104021565fc4a486d1101a">__init__</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1aae624325882f33dd8820cdf27df16e4e">operations_count</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a3e5e2105cb372d0ad7ee959fa38e10e2">has_operations</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a41c101f031fc5ecdb0097889cf452de0">has_correct_level</link> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a62a27293a2c27a52a2f779e92312c9b6">op</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a3991296d0c3a293ee962391d01387868">use_experimental</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a875a6b4e703be8c259b1d750426c76ad">bl_space_type</link> = &apos;PROPERTIES&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a9763fc8e0e8a24f2f6f4ab050829c6a2">bl_region_type</link> = &apos;WINDOW&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a5da786aaf2c38c096f23a7f504866537">bl_context</link> = &quot;render&quot;</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a7c1ca8db6e75af2657e5658f7e3d7219">always_show_panel</link> = False</para>
+</listitem>
+            <listitem><para>dict <link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a0864a41721ef5200ecbbf340a1f7d678">COMPAT_ENGINES</link> = {&apos;CNCCAM_RENDER&apos;}</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1acbcf6bed1c104021565fc4a486d1101a"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>cam.ui_panels.buttons_panel.CAMButtonsPanel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.buttons_panel.CAMButtonsPanel</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.buttons_panel.CAMButtonsPanel.__init__ ( self)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a9fe8584ab332e9830dfa800ee4582575"/><section>
+    <title>active_operation()</title>
+<indexterm><primary>active_operation</primary><secondary>cam.ui_panels.buttons_panel.CAMButtonsPanel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.buttons_panel.CAMButtonsPanel</primary><secondary>active_operation</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.buttons_panel.CAMButtonsPanel.active_operation ( cls)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_a9fe8584ab332e9830dfa800ee4582575_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_a9fe8584ab332e9830dfa800ee4582575_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1ae2df719a61472a3f8674e26fe501b1f7"/><section>
+    <title>active_operation_index()</title>
+<indexterm><primary>active_operation_index</primary><secondary>cam.ui_panels.buttons_panel.CAMButtonsPanel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.buttons_panel.CAMButtonsPanel</primary><secondary>active_operation_index</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.buttons_panel.CAMButtonsPanel.active_operation_index ( cls)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_ae2df719a61472a3f8674e26fe501b1f7_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a41c101f031fc5ecdb0097889cf452de0"/><section>
+    <title>has_correct_level()</title>
+<indexterm><primary>has_correct_level</primary><secondary>cam.ui_panels.buttons_panel.CAMButtonsPanel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.buttons_panel.CAMButtonsPanel</primary><secondary>has_correct_level</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.buttons_panel.CAMButtonsPanel.has_correct_level ( self)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_a41c101f031fc5ecdb0097889cf452de0_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a3e5e2105cb372d0ad7ee959fa38e10e2"/><section>
+    <title>has_operations()</title>
+<indexterm><primary>has_operations</primary><secondary>cam.ui_panels.buttons_panel.CAMButtonsPanel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.buttons_panel.CAMButtonsPanel</primary><secondary>has_operations</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.buttons_panel.CAMButtonsPanel.has_operations ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_a3e5e2105cb372d0ad7ee959fa38e10e2_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1aae624325882f33dd8820cdf27df16e4e"/><section>
+    <title>operations_count()</title>
+<indexterm><primary>operations_count</primary><secondary>cam.ui_panels.buttons_panel.CAMButtonsPanel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.buttons_panel.CAMButtonsPanel</primary><secondary>operations_count</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.buttons_panel.CAMButtonsPanel.operations_count ( self)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_aae624325882f33dd8820cdf27df16e4e_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a03843f1fecc691952b696f4bc75a0156"/><section>
+    <title>poll()</title>
+<indexterm><primary>poll</primary><secondary>cam.ui_panels.buttons_panel.CAMButtonsPanel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.buttons_panel.CAMButtonsPanel</primary><secondary>poll</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.buttons_panel.CAMButtonsPanel.poll ( cls,  context)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_a03843f1fecc691952b696f4bc75a0156_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a7c1ca8db6e75af2657e5658f7e3d7219"/><section>
+    <title>always_show_panel</title>
+<indexterm><primary>always_show_panel</primary><secondary>cam.ui_panels.buttons_panel.CAMButtonsPanel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.buttons_panel.CAMButtonsPanel</primary><secondary>always_show_panel</secondary></indexterm>
+<para><computeroutput>bool cam.ui_panels.buttons_panel.CAMButtonsPanel.always_show_panel = False<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a5da786aaf2c38c096f23a7f504866537"/><section>
+    <title>bl_context</title>
+<indexterm><primary>bl_context</primary><secondary>cam.ui_panels.buttons_panel.CAMButtonsPanel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.buttons_panel.CAMButtonsPanel</primary><secondary>bl_context</secondary></indexterm>
+<para><computeroutput>str cam.ui_panels.buttons_panel.CAMButtonsPanel.bl_context = &quot;render&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a9763fc8e0e8a24f2f6f4ab050829c6a2"/><section>
+    <title>bl_region_type</title>
+<indexterm><primary>bl_region_type</primary><secondary>cam.ui_panels.buttons_panel.CAMButtonsPanel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.buttons_panel.CAMButtonsPanel</primary><secondary>bl_region_type</secondary></indexterm>
+<para><computeroutput>str cam.ui_panels.buttons_panel.CAMButtonsPanel.bl_region_type = &apos;WINDOW&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a875a6b4e703be8c259b1d750426c76ad"/><section>
+    <title>bl_space_type</title>
+<indexterm><primary>bl_space_type</primary><secondary>cam.ui_panels.buttons_panel.CAMButtonsPanel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.buttons_panel.CAMButtonsPanel</primary><secondary>bl_space_type</secondary></indexterm>
+<para><computeroutput>str cam.ui_panels.buttons_panel.CAMButtonsPanel.bl_space_type = &apos;PROPERTIES&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a0864a41721ef5200ecbbf340a1f7d678"/><section>
+    <title>COMPAT_ENGINES</title>
+<indexterm><primary>COMPAT_ENGINES</primary><secondary>cam.ui_panels.buttons_panel.CAMButtonsPanel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.buttons_panel.CAMButtonsPanel</primary><secondary>COMPAT_ENGINES</secondary></indexterm>
+<para><computeroutput>dict cam.ui_panels.buttons_panel.CAMButtonsPanel.COMPAT_ENGINES = {&apos;CNCCAM_RENDER&apos;}<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a62a27293a2c27a52a2f779e92312c9b6"/><section>
+    <title>op</title>
+<indexterm><primary>op</primary><secondary>cam.ui_panels.buttons_panel.CAMButtonsPanel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.buttons_panel.CAMButtonsPanel</primary><secondary>op</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.buttons_panel.CAMButtonsPanel.op</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a3991296d0c3a293ee962391d01387868"/><section>
+    <title>use_experimental</title>
+<indexterm><primary>use_experimental</primary><secondary>cam.ui_panels.buttons_panel.CAMButtonsPanel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.buttons_panel.CAMButtonsPanel</primary><secondary>use_experimental</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.buttons_panel.CAMButtonsPanel.use_experimental</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/<link linkend="_buttons__panel_8py">buttons_panel.py</link></section>
+</section>

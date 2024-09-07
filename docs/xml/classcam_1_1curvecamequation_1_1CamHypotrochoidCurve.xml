@@ -1,0 +1,288 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1curvecamequation_1_1CamHypotrochoidCurve" kind="class" language="Python" prot="public">
+    <compoundname>cam::curvecamequation::CamHypotrochoidCurve</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Operator</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamHypotrochoidCurve_1ac18ff8591f9969ab7b359396aa36c95c" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.curvecamequation.CamHypotrochoidCurve::bl_idname</definition>
+        <argsstring></argsstring>
+        <name>bl_idname</name>
+        <qualifiedname>cam.curvecamequation.CamHypotrochoidCurve.bl_idname</qualifiedname>
+        <initializer>=  &quot;object.hypotrochoid&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="343" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamHypotrochoidCurve_1a6e84121956e855037419c290d8ec94be" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.curvecamequation.CamHypotrochoidCurve::bl_label</definition>
+        <argsstring></argsstring>
+        <name>bl_label</name>
+        <qualifiedname>cam.curvecamequation.CamHypotrochoidCurve.bl_label</qualifiedname>
+        <initializer>=  &quot;Spirograph Type Figure&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="344" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="344" bodyend="-1"/>
+        <referencedby refid="classcam_1_1preset__managers_1_1CAM__MACHINE__MT__presets_1af95f7812d2952b26a26809ab923dac09" compoundref="preset__managers_8py" startline="28" endline="38">cam.preset_managers.CAM_MACHINE_MT_presets.post_cb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamHypotrochoidCurve_1ae578505295a00d507fe1fa50bb07483c" prot="public" static="yes" mutable="no">
+        <type>dict</type>
+        <definition>dict cam.curvecamequation.CamHypotrochoidCurve::bl_options</definition>
+        <argsstring></argsstring>
+        <name>bl_options</name>
+        <qualifiedname>cam.curvecamequation.CamHypotrochoidCurve.bl_options</qualifiedname>
+        <initializer>=  {&apos;REGISTER&apos;, &apos;UNDO&apos;, &apos;PRESET&apos;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="345" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="345" bodyend="-1"/>
+        <referencedby refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a9628cbca8e69ec75b2337171a02bf428" compoundref="async__op_8py" startline="32" endline="59">cam.async_op.AsyncOperatorMixin.modal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamHypotrochoidCurve_1ab77941e3bccf4fed730055370c41f011" prot="public" static="yes" mutable="no">
+        <type>EnumProperty</type>
+        <definition>EnumProperty cam.curvecamequation.CamHypotrochoidCurve::typecurve</definition>
+        <argsstring></argsstring>
+        <name>typecurve</name>
+        <qualifiedname>cam.curvecamequation.CamHypotrochoidCurve.typecurve</qualifiedname>
+        <initializer>(
+        name=&quot;Type of Curve&quot;,
+        items=(
+            (&apos;hypo&apos;, &apos;Hypotrochoid&apos;, &apos;Inside ring&apos;),
+            (&apos;epi&apos;, &apos;Epicycloid&apos;, &apos;Outside inner ring&apos;)
+        ),
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="347" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="347" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamHypotrochoidCurve_1ad87d74c556b9b94f069e4346a77966e3" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamequation.CamHypotrochoidCurve::R</definition>
+        <argsstring></argsstring>
+        <name>R</name>
+        <qualifiedname>cam.curvecamequation.CamHypotrochoidCurve.R</qualifiedname>
+        <initializer>(
+        name=&quot;Big Circle Radius&quot;,
+        default=0.25,
+        min=0.001,
+        max=100,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="354" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="354" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamequation_1_1CamHypotrochoidCurve_1a0f880d0887532fc03324dd062d53fe35" compoundref="curvecamequation_8py" startline="386" endline="440">cam.curvecamequation.CamHypotrochoidCurve.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamHypotrochoidCurve_1a000eefa1dea6b0121a7f3a8b63f3fc7f" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamequation.CamHypotrochoidCurve::r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <qualifiedname>cam.curvecamequation.CamHypotrochoidCurve.r</qualifiedname>
+        <initializer>(
+        name=&quot;Small Circle Radius&quot;,
+        default=0.18,
+        min=0.0001,
+        max=100,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="362" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="362" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamequation_1_1CamHypotrochoidCurve_1a0f880d0887532fc03324dd062d53fe35" compoundref="curvecamequation_8py" startline="386" endline="440">cam.curvecamequation.CamHypotrochoidCurve.execute</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1cad__iso__read_1_1Parser_1abf885d019794a8bef1b69f446c8851e1" compoundref="cad__iso__read_8py" startline="164" endline="235">cam.nc.cad_iso_read.Parser.Parse</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamHypotrochoidCurve_1a281c725c25b7eeb0f9b3d01b8a6917bd" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamequation.CamHypotrochoidCurve::d</definition>
+        <argsstring></argsstring>
+        <name>d</name>
+        <qualifiedname>cam.curvecamequation.CamHypotrochoidCurve.d</qualifiedname>
+        <initializer>(
+        name=&quot;Distance from Center of Interior Circle&quot;,
+        default=0.050,
+        min=0,
+        max=100,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="370" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="370" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamequation_1_1CamHypotrochoidCurve_1a0f880d0887532fc03324dd062d53fe35" compoundref="curvecamequation_8py" startline="386" endline="440">cam.curvecamequation.CamHypotrochoidCurve.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamHypotrochoidCurve_1a01b9129a0456beb8f0fab817d9f932b8" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamequation.CamHypotrochoidCurve::dip</definition>
+        <argsstring></argsstring>
+        <name>dip</name>
+        <qualifiedname>cam.curvecamequation.CamHypotrochoidCurve.dip</qualifiedname>
+        <initializer>(
+        name=&quot;Variable Depth from Center&quot;,
+        default=0.00,
+        min=-100,
+        max=100,
+        precision=4,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="378" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="378" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcam_1_1curvecamequation_1_1CamHypotrochoidCurve_1abd208f93fd9d4e6300b3e2495f628288" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamequation.CamHypotrochoidCurve::typecurve</definition>
+        <argsstring></argsstring>
+        <name>typecurve</name>
+        <qualifiedname>cam.curvecamequation.CamHypotrochoidCurve.typecurve</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="396" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="396" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcam_1_1curvecamequation_1_1CamHypotrochoidCurve_1a0f880d0887532fc03324dd062d53fe35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.curvecamequation.CamHypotrochoidCurve.execute</definition>
+        <argsstring>(self, context)</argsstring>
+        <name>execute</name>
+        <qualifiedname>cam.curvecamequation.CamHypotrochoidCurve.execute</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="386" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="386" bodyend="440"/>
+        <references refid="classcam_1_1curvecamequation_1_1CamHypotrochoidCurve_1a281c725c25b7eeb0f9b3d01b8a6917bd" compoundref="curvecamequation_8py" startline="370">cam.curvecamequation.CamHypotrochoidCurve.d</references>
+        <references refid="classcam_1_1curvecamequation_1_1CamHypotrochoidCurve_1ad87d74c556b9b94f069e4346a77966e3" compoundref="curvecamequation_8py" startline="354">cam.curvecamequation.CamHypotrochoidCurve.R</references>
+        <references refid="classcam_1_1curvecamequation_1_1CamHypotrochoidCurve_1a000eefa1dea6b0121a7f3a8b63f3fc7f" compoundref="curvecamequation_8py" startline="362">cam.curvecamequation.CamHypotrochoidCurve.r</references>
+        <references refid="classcam_1_1nc_1_1cad__iso__read_1_1Parser_1aceb57a5c8b783e4b1fe3c18bb2653593" compoundref="cad__iso__read_8py" startline="130">cam.nc.cad_iso_read.Parser.r</references>
+        <references refid="classcam_1_1nc_1_1heiden_1_1Creator_1a21be7cda4f97425844a1d68a1d847b43" compoundref="heiden_8py" startline="46">cam.nc.heiden.Creator.r</references>
+        <references refid="classcam_1_1nc_1_1heiden__read_1_1Parser_1a98662aff8c66cc6192a4edb2d89d82b9" compoundref="heiden__read_8py" startline="120">cam.nc.heiden_read.Parser.r</references>
+        <references refid="classcam_1_1nc_1_1iso_1_1Creator_1ab5dfc58362bb16c7779603d6dd6c47ea" compoundref="iso_8py" startline="35">cam.nc.iso.Creator.r</references>
+        <references refid="classcam_1_1nc_1_1iso__read_1_1Parser_1a49537adf4f3f1314c6c904cdec419d13" compoundref="iso__read_8py" startline="137">cam.nc.iso_read.Parser.r</references>
+        <references refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1abad0b6036ff224891c734b22d6d176b5" compoundref="lathe1_8py" startline="33">cam.nc.lathe1.CreatorIso.r</references>
+        <references refid="classcam_1_1nc_1_1nc__read_1_1Parser_1adbb802c2693c13051e44691f06f50e18" compoundref="nc__read_8py" startline="76">cam.nc.nc_read.Parser.r</references>
+        <references refid="classcam_1_1nc_1_1rez2_1_1Creator_1a82b42b5e34b021f8b2a7ed672f232362" compoundref="rez2_8py" startline="34">cam.nc.rez2.Creator.r</references>
+        <references refid="classcam_1_1nc_1_1rez2__read_1_1Parser_1aa1b9c14020903051c3c3e975f61e3dc6" compoundref="rez2__read_8py" startline="39">cam.nc.rez2_read.Parser.r</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Hypotrochoid </verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.curvecamequation.CamHypotrochoidCurve</label>
+        <link refid="classcam_1_1curvecamequation_1_1CamHypotrochoidCurve"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>EnumProperty</label>
+      </node>
+      <node id="6">
+        <label>FloatProperty</label>
+      </node>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.curvecamequation.CamHypotrochoidCurve</label>
+        <link refid="classcam_1_1curvecamequation_1_1CamHypotrochoidCurve"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+bl_idname</edgelabel>
+          <edgelabel>+bl_label</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+bl_options</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+typecurve</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>+R</edgelabel>
+          <edgelabel>+d</edgelabel>
+          <edgelabel>+dip</edgelabel>
+          <edgelabel>+r</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dict</label>
+      </node>
+      <node id="3">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" line="341" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamequation.py" bodystart="341" bodyend="440"/>
+    <listofallmembers>
+      <member refid="classcam_1_1curvecamequation_1_1CamHypotrochoidCurve_1ac18ff8591f9969ab7b359396aa36c95c" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamHypotrochoidCurve</scope><name>bl_idname</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamHypotrochoidCurve_1a6e84121956e855037419c290d8ec94be" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamHypotrochoidCurve</scope><name>bl_label</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamHypotrochoidCurve_1ae578505295a00d507fe1fa50bb07483c" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamHypotrochoidCurve</scope><name>bl_options</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamHypotrochoidCurve_1a281c725c25b7eeb0f9b3d01b8a6917bd" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamHypotrochoidCurve</scope><name>d</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamHypotrochoidCurve_1a01b9129a0456beb8f0fab817d9f932b8" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamHypotrochoidCurve</scope><name>dip</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamHypotrochoidCurve_1a0f880d0887532fc03324dd062d53fe35" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamHypotrochoidCurve</scope><name>execute</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamHypotrochoidCurve_1ad87d74c556b9b94f069e4346a77966e3" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamHypotrochoidCurve</scope><name>R</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamHypotrochoidCurve_1a000eefa1dea6b0121a7f3a8b63f3fc7f" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamHypotrochoidCurve</scope><name>r</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamHypotrochoidCurve_1ab77941e3bccf4fed730055370c41f011" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamHypotrochoidCurve</scope><name>typecurve</name></member>
+      <member refid="classcam_1_1curvecamequation_1_1CamHypotrochoidCurve_1abd208f93fd9d4e6300b3e2495f628288" prot="public" virt="non-virtual"><scope>cam::curvecamequation::CamHypotrochoidCurve</scope><name>typecurve</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacecam_1_1simulation" xml:lang="en-US">
+<title>cam.simulation Namespace Reference</title>
+<indexterm><primary>cam.simulation</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacecam_1_1simulation_1a4fdb0cd276a0ea12b5c5da8a5027d349">createSimulationObject</link> (name, operations, i)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1simulation_1adc9ef78d18d736aaaad18d0c87b40b92">doSimulation</link> (name, operations)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1simulation_1ad4b4f075cbaac6809f7a5f7e237620fb">generateSimulationImage</link> (operations, limits)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1simulation_1ac8934d1ae6a67c2697ccb4924f07b3d4">simCutterSpot</link> (xs, ys, z, cutterArray, si, getvolume=False)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>BlenderCAM &apos;simulation.py&apos; © 2012 Vilem Novak
+
+Functions to generate a mesh simulation from CAM Chain / Operation data.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespacecam_1_1simulation_1a4fdb0cd276a0ea12b5c5da8a5027d349"/><section>
+    <title>createSimulationObject()</title>
+<indexterm><primary>createSimulationObject</primary><secondary>cam.simulation</secondary></indexterm>
+<indexterm><primary>cam.simulation</primary><secondary>createSimulationObject</secondary></indexterm>
+<para><computeroutput>cam.simulation.createSimulationObject ( name,  operations,  i)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1simulation_a4fdb0cd276a0ea12b5c5da8a5027d349_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1simulation_1adc9ef78d18d736aaaad18d0c87b40b92"/><section>
+    <title>doSimulation()</title>
+<indexterm><primary>doSimulation</primary><secondary>cam.simulation</secondary></indexterm>
+<indexterm><primary>cam.simulation</primary><secondary>doSimulation</secondary></indexterm>
+<para><computeroutput>cam.simulation.doSimulation ( name,  operations)</computeroutput></para>
+<para><literallayout><computeroutput>Perform Simulation of Operations. Currently only for 3 Axis</computeroutput></literallayout> </para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1simulation_adc9ef78d18d736aaaad18d0c87b40b92_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1simulation_1ad4b4f075cbaac6809f7a5f7e237620fb"/><section>
+    <title>generateSimulationImage()</title>
+<indexterm><primary>generateSimulationImage</primary><secondary>cam.simulation</secondary></indexterm>
+<indexterm><primary>cam.simulation</primary><secondary>generateSimulationImage</secondary></indexterm>
+<para><computeroutput>cam.simulation.generateSimulationImage ( operations,  limits)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1simulation_ad4b4f075cbaac6809f7a5f7e237620fb_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1simulation_ad4b4f075cbaac6809f7a5f7e237620fb_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1simulation_1ac8934d1ae6a67c2697ccb4924f07b3d4"/><section>
+    <title>simCutterSpot()</title>
+<indexterm><primary>simCutterSpot</primary><secondary>cam.simulation</secondary></indexterm>
+<indexterm><primary>cam.simulation</primary><secondary>simCutterSpot</secondary></indexterm>
+<para><computeroutput>cam.simulation.simCutterSpot ( xs,  ys,  z,  cutterArray,  si,  getvolume = <computeroutput>False</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Simulates a Cutter Cutting Into Stock, Taking Away the Volume,
+and Optionally Returning the Volume that Has Been Milled. This Is Now Used for Feedrate Tweaking.</computeroutput></literallayout> </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1simulation_ac8934d1ae6a67c2697ccb4924f07b3d4_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+</section>

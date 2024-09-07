@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacecam_1_1ops" xml:lang="en-US">
+<title>cam.ops Namespace Reference</title>
+<indexterm><primary>cam.ops</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classcam_1_1ops_1_1CalculatePath">CalculatePath</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classcam_1_1ops_1_1CamBridgesAdd">CamBridgesAdd</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classcam_1_1ops_1_1CamChainAdd">CamChainAdd</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classcam_1_1ops_1_1CamChainOperationAdd">CamChainOperationAdd</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classcam_1_1ops_1_1CamChainOperationDown">CamChainOperationDown</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classcam_1_1ops_1_1CamChainOperationRemove">CamChainOperationRemove</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classcam_1_1ops_1_1CamChainOperationUp">CamChainOperationUp</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classcam_1_1ops_1_1CamChainRemove">CamChainRemove</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classcam_1_1ops_1_1CamOperationAdd">CamOperationAdd</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classcam_1_1ops_1_1CamOperationCopy">CamOperationCopy</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classcam_1_1ops_1_1CamOperationMove">CamOperationMove</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classcam_1_1ops_1_1CamOperationRemove">CamOperationRemove</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classcam_1_1ops_1_1CamOrientationAdd">CamOrientationAdd</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classcam_1_1ops_1_1CamPackObjects">CamPackObjects</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classcam_1_1ops_1_1CAMSimulate">CAMSimulate</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classcam_1_1ops_1_1CAMSimulateChain">CAMSimulateChain</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classcam_1_1ops_1_1CamSliceObjects">CamSliceObjects</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classcam_1_1ops_1_1KillPathsBackground">KillPathsBackground</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classcam_1_1ops_1_1PathExport">PathExport</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classcam_1_1ops_1_1PathExportChain">PathExportChain</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classcam_1_1ops_1_1PathsAll">PathsAll</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classcam_1_1ops_1_1PathsBackground">PathsBackground</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classcam_1_1ops_1_1PathsChain">PathsChain</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classcam_1_1ops_1_1threadCom">threadCom</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacecam_1_1ops_1ae3fb8f1b6fe43b80e3484ef36d316aa9">threadread</link> (tcom)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1ops_1af69d19d5ee398211781220bdcef95aaa">timer_update</link> (context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1ops_1aa8e95f7410a7ceb178db48f4f8c2d995">_calc_path</link> (operator, context)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1ops_1ab55fb8ec9a00e021e8e4a1c3ecc97cb4">getChainOperations</link> (chain)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1ops_1a8e91c04f466c78b8a07a494a883ae487">fixUnits</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>BlenderCAM &apos;ops.py&apos; © 2012 Vilem Novak
+
+Blender Operator definitions are in this file.
+They mostly call the functions from &apos;utils.py&apos;
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespacecam_1_1ops_1aa8e95f7410a7ceb178db48f4f8c2d995"/><section>
+    <title>_calc_path()</title>
+<indexterm><primary>_calc_path</primary><secondary>cam.ops</secondary></indexterm>
+<indexterm><primary>cam.ops</primary><secondary>_calc_path</secondary></indexterm>
+<para><computeroutput>cam.ops._calc_path ( operator,  context)<computeroutput>[protected]</computeroutput></computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1ops_aa8e95f7410a7ceb178db48f4f8c2d995_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1ops_1a8e91c04f466c78b8a07a494a883ae487"/><section>
+    <title>fixUnits()</title>
+<indexterm><primary>fixUnits</primary><secondary>cam.ops</secondary></indexterm>
+<indexterm><primary>cam.ops</primary><secondary>fixUnits</secondary></indexterm>
+<para><computeroutput>cam.ops.fixUnits ( )</computeroutput></para>
+<para><literallayout><computeroutput>Sets up Units for BlenderCAM</computeroutput></literallayout> </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1ops_a8e91c04f466c78b8a07a494a883ae487_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1ops_1ab55fb8ec9a00e021e8e4a1c3ecc97cb4"/><section>
+    <title>getChainOperations()</title>
+<indexterm><primary>getChainOperations</primary><secondary>cam.ops</secondary></indexterm>
+<indexterm><primary>cam.ops</primary><secondary>getChainOperations</secondary></indexterm>
+<para><computeroutput>cam.ops.getChainOperations ( chain)</computeroutput></para>
+<para><literallayout><computeroutput>Return Chain Operations, Currently Chain Object Can&apos;t Store Operations Directly Due to Blender Limitations</computeroutput></literallayout> </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1ops_ab55fb8ec9a00e021e8e4a1c3ecc97cb4_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1ops_1ae3fb8f1b6fe43b80e3484ef36d316aa9"/><section>
+    <title>threadread()</title>
+<indexterm><primary>threadread</primary><secondary>cam.ops</secondary></indexterm>
+<indexterm><primary>cam.ops</primary><secondary>threadread</secondary></indexterm>
+<para><computeroutput>cam.ops.threadread ( tcom)</computeroutput></para>
+<para><literallayout><computeroutput>Reads Stdout of Background Process, Done This Way to Have It Non-blocking</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespacecam_1_1ops_1af69d19d5ee398211781220bdcef95aaa"/><section>
+    <title>timer_update()</title>
+<indexterm><primary>timer_update</primary><secondary>cam.ops</secondary></indexterm>
+<indexterm><primary>cam.ops</primary><secondary>timer_update</secondary></indexterm>
+<para><computeroutput>cam.ops.timer_update ( context)</computeroutput></para>
+<para><literallayout><computeroutput>Monitoring of Background Processes</computeroutput></literallayout> </para>
+</section>
+</section>
+</section>

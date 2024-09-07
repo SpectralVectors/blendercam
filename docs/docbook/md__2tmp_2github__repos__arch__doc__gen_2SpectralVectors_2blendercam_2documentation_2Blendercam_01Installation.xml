@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam_01Installation" xml:lang="en-US">
+<title>How to install Blendercam ?</title>
+<indexterm><primary>How to install Blendercam ?</primary></indexterm>
+
+<para><anchor xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam_01Installation_1autotoc_md0"/> </para>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam_01Installation_1autotoc_md1">
+<title><title>Use Blendercam from github</title></title>
+
+<para>Using Blendercam from github is a great way to try out the newest features and fixes. The latest build (dailybuild) of Blender can be used with the latest Master branch of Blendercam and then you can live on the bleeding edge.</para>
+
+<para>The easiest way to &quot;install&quot; is not to install but instead just tell Blender where to find the add-on. This way you don&apos;t have to worry about copying/moving files around. You can keep Blendercam source files separate from Blender if using source control (ie git for development) and still easily test your changes in Blender.</para>
+
+<para><informaltable frame='bottom'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>
+</entry></row></tbody></tgroup></informaltable>
+</para>
+
+<para><itemizedlist>
+<listitem>
+<para>1. Obtaining Blender</para>
+</listitem><listitem>
+<para>2. Install (or update) Blendercam addon</para>
+</listitem><listitem>
+<para>3. Setup Blender scripts alternate path</para>
+</listitem><listitem>
+<para>4. Enable Blendercam and required add-ons</para>
+</listitem><listitem>
+<para>5. (Optional) Install OpenCAMLib</para>
+</listitem></itemizedlist>
+</para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam_01Installation_1autotoc_md3">
+<title><title>Obtaining Blender</title></title>
+
+<para>Blendercam is an addon of Blender. It works now with Blender version 2.83, 2.92, 2.93, 3.0 - 3.4.</para>
+
+<para>You can download blender from here: <link xlink:href="https://www.blender.org/download/">https://www.blender.org/download/</link></para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam_01Installation_1autotoc_md4">
+<title><title>Dependencies</title></title>
+
+<para>Blendercam depends on the following python modules. If they are not available in the python that your blender uses, the addon will auto-install these modules on first load.</para>
+
+<para><informaltable frame="all">
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<thead>
+      <row  class='markdownTableHead'>
+<entry>
+<para>Python dependencies   </para>
+</entry><entry align='center'>
+<para>Version    </para>
+</entry></row>
+</thead><tbody>
+      <row  class='markdownTableRowOdd'>
+<entry>
+<para>shapely   </para>
+</entry><entry align='center'>
+<para>&gt;= 1.5    </para>
+</entry></row>
+      <row  class='markdownTableRowEven'>
+<entry>
+<para>numpy   </para>
+</entry><entry align='center'>
+<para>...    </para>
+</entry></row>
+      <row  class='markdownTableRowOdd'>
+<entry>
+<para>Equation   </para>
+</entry><entry align='center'>
+<para>...    </para>
+</entry></row>
+      <row  class='markdownTableRowEven'>
+<entry>
+<para>libgeos_c   </para>
+</entry><entry align='center'>
+<para>libgeos-c1v5    </para>
+</entry></row>
+      <row  class='markdownTableRowOdd'>
+<entry>
+<para>opencamlib   </para>
+</entry><entry align='center'>
+<para>&gt;= 2022.12   </para>
+</entry></row>
+    </tbody>
+    </tgroup>
+</informaltable>
+</para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam_01Installation_1autotoc_md5">
+<title><title>Install (or update) Blendercam addon</title></title>
+
+<para>The first step is to get the addon from the github repository. You can either do this with git, or by downloading and extracting a zip file.</para>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam_01Installation_1autotoc_md6">
+<title><title>Install (and update) using Git</title></title>
+
+<para><orderedlist>
+<listitem>
+<para>If you have git installed on your machine, go to the root of this repository, and click the green &apos;Code&apos; button and copy the https url.</para>
+</listitem><listitem>
+<para>Open a command shell and change directory to where you want to install blendercam</para>
+</listitem><listitem>
+<para>Type <computeroutput>git clone &lt;GIT URL&gt;</computeroutput>, where <computeroutput>&lt;GIT URL&gt;</computeroutput> is the url you copied above.</para>
+</listitem><listitem>
+<para>git will make a subdirectory called <computeroutput>blendercam</computeroutput> in the current directory then download the most recent version of blendercam from github.</para>
+</listitem><listitem>
+<para>If in future you want to update to the latest version, in a command shell change directory to the blendercam directory and type <computeroutput>git pull</computeroutput>.</para>
+</listitem></orderedlist>
+</para>
+
+<para></para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam_01Installation_1autotoc_md7">
+<title><title>Install using zip file</title></title>
+
+<para><orderedlist>
+<listitem>
+<para>To install from a zip file, go to the root of this repository, and click the green &apos;Code&apos; button and click &apos;download zip&apos;. Extract that to wherever you want blendercam to be installed.</para>
+</listitem><listitem>
+<para>To update, you need to repeat step 1 from scratch and overwrite the current folder.</para>
+</listitem></orderedlist>
+</para>
+</section>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam_01Installation_1autotoc_md8">
+<title><title>Setup Blender scripts alternate file path</title></title>
+
+<para>The second step is to tell blender to also search an alternate path for add-ons. When blender starts up it will search its own paths for add-ons and will also search the alternate path that you add. This way an external source add-on can be used in Blender.</para>
+
+<para><orderedlist>
+<listitem>
+<para>select <emphasis role="bold">User Preferences</emphasis> panel</para>
+</listitem></orderedlist>
+</para>
+
+<para></para>
+
+<para><orderedlist>
+<listitem>
+<para>select <emphasis role="bold">File</emphasis> tab</para>
+</listitem><listitem>
+<para>select the file button on the <emphasis role="bold">Scripts</emphasis> input field and select the path to your <emphasis>blendercam/scripts</emphasis> directory</para>
+</listitem></orderedlist>
+</para>
+
+<para></para>
+
+<para><orderedlist>
+<listitem>
+<para>select <emphasis role="bold">Save User Settings</emphasis></para>
+</listitem><listitem>
+<para>restart Blender</para>
+</listitem></orderedlist>
+</para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam_01Installation_1autotoc_md9">
+<title><title>Enable Blendercam and required add-ons</title></title>
+
+<para>The next step is to enable the Blendercam add-on.</para>
+
+<para></para>
+
+<para><orderedlist>
+<listitem>
+<para>select <emphasis role="bold">User Preference</emphasis> panel</para>
+</listitem><listitem>
+<para>select <emphasis role="bold">Add-ons</emphasis> tab</para>
+</listitem><listitem>
+<para>select <emphasis role="bold">Scene</emphasis> category</para>
+</listitem><listitem>
+<para>enable the CAM addon by left clicking on the check box. (Note: the checkbox is on the left side in daily builds of Blender after 11 Jan 2016) <?linebreak?> 4a. the file path should match your Blendercam git path</para>
+</listitem><listitem>
+<para>Optional: enable the experimental features</para>
+</listitem><listitem>
+<para>enable additional bundled add-ons required by some Blendercam features:<itemizedlist>
+<listitem>
+<para>Add Curve: Extra Objects</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem>
+<para>select <emphasis role="bold">Save User Settings</emphasis></para>
+</listitem></orderedlist>
+</para>
+
+<para>Now when ever blender is started, the external blendercam add-on will be enabled.</para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam_01Installation_1autotoc_md10">
+<title><title>Opencamlib</title></title>
+
+<para><link xlink:href="https://github.com/aewallin/opencamlib">OpenCAMLib</link> is an open source CAM library created by Anders Wallin. It offers high quality waterline generation and drop cutter sampling algorithms. For drop cutter algorithms it&apos;s more reliable than Bullet Physics (Blender&apos;s built-in collision detection library) and offers better performance (up to 30 times faster than regular algorithm on 24-core machine).</para>
+
+<para>OpenCAMLib is automatically installed when you install blendercam.</para>
+
+<para>To use OpenCAMLib waterlines, select &quot;Show experimental features&quot; in Blender User Preferences / Addons / CAM - gcode generation tools. Then select Waterline strategy and &quot;Use OpenCAMLib&quot;. The current version lacks dialog for waterline resolution and automatic determination of cutter length, those can be adjusted in <computeroutput><link linkend="_opencamlib_8py">scripts/addons/cam/opencamlib/opencamlib.py</link></computeroutput>.</para>
+
+<para>For &quot;parallel&quot; strategy and other drop cutter sampling operations select both &quot;Use exact mode&quot; and &quot;Use OpenCAMLib&quot;. </para>
+</section>
+</section>

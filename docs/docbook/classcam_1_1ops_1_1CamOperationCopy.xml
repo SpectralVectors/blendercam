@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1ops_1_1CamOperationCopy" xml:lang="en-US">
+<title>cam.ops.CamOperationCopy Class Reference</title>
+<indexterm><primary>cam.ops.CamOperationCopy</primary></indexterm>
+Inheritance diagram for cam.ops.CamOperationCopy:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ops_1_1CamOperationCopy__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.ops.CamOperationCopy:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ops_1_1CamOperationCopy__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1ops_1_1CamOperationCopy_1a2e68860d7f8805f774f2b6838b887da1">poll</link> (cls, context)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ops_1_1CamOperationCopy_1a8f65c77a65264f8f6f7de292b19e647c">execute</link> (self, context)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classcam_1_1ops_1_1CamOperationCopy_1a95129a506947ae29ec8fa941a4bc72ad">bl_idname</link> = &quot;scene.cam_operation_copy&quot;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1ops_1_1CamOperationCopy_1ad56bac548ffbc67dd6f74b9682a45e4d">bl_label</link> = &quot;Copy Active CAM Operation&quot;</para>
+</listitem>
+            <listitem><para>dict <link linkend="_classcam_1_1ops_1_1CamOperationCopy_1a33fcfb805c3fd266bffe3fdb73e6ee5f">bl_options</link> = {&apos;REGISTER&apos;, &apos;UNDO&apos;}</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Copy CAM Operation</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1ops_1_1CamOperationCopy_1a8f65c77a65264f8f6f7de292b19e647c"/><section>
+    <title>execute()</title>
+<indexterm><primary>execute</primary><secondary>cam.ops.CamOperationCopy</secondary></indexterm>
+<indexterm><primary>cam.ops.CamOperationCopy</primary><secondary>execute</secondary></indexterm>
+<para><computeroutput>cam.ops.CamOperationCopy.execute ( self,  context)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ops_1_1CamOperationCopy_a8f65c77a65264f8f6f7de292b19e647c_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1ops_1_1CamOperationCopy_1a2e68860d7f8805f774f2b6838b887da1"/><section>
+    <title>poll()</title>
+<indexterm><primary>poll</primary><secondary>cam.ops.CamOperationCopy</secondary></indexterm>
+<indexterm><primary>cam.ops.CamOperationCopy</primary><secondary>poll</secondary></indexterm>
+<para><computeroutput>cam.ops.CamOperationCopy.poll ( cls,  context)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1ops_1_1CamOperationCopy_1a95129a506947ae29ec8fa941a4bc72ad"/><section>
+    <title>bl_idname</title>
+<indexterm><primary>bl_idname</primary><secondary>cam.ops.CamOperationCopy</secondary></indexterm>
+<indexterm><primary>cam.ops.CamOperationCopy</primary><secondary>bl_idname</secondary></indexterm>
+<para><computeroutput>str cam.ops.CamOperationCopy.bl_idname = &quot;scene.cam_operation_copy&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ops_1_1CamOperationCopy_1ad56bac548ffbc67dd6f74b9682a45e4d"/><section>
+    <title>bl_label</title>
+<indexterm><primary>bl_label</primary><secondary>cam.ops.CamOperationCopy</secondary></indexterm>
+<indexterm><primary>cam.ops.CamOperationCopy</primary><secondary>bl_label</secondary></indexterm>
+<para><computeroutput>str cam.ops.CamOperationCopy.bl_label = &quot;Copy Active CAM Operation&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ops_1_1CamOperationCopy_1a33fcfb805c3fd266bffe3fdb73e6ee5f"/><section>
+    <title>bl_options</title>
+<indexterm><primary>bl_options</primary><secondary>cam.ops.CamOperationCopy</secondary></indexterm>
+<indexterm><primary>cam.ops.CamOperationCopy</primary><secondary>bl_options</secondary></indexterm>
+<para><computeroutput>dict cam.ops.CamOperationCopy.bl_options = {&apos;REGISTER&apos;, &apos;UNDO&apos;}<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/<link linkend="_ops_8py">ops.py</link></section>
+</section>

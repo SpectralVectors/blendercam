@@ -1,0 +1,939 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>blendercam: cam.nc.hpgl2d.Creator Class Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">blendercam
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part --><!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('classcam_1_1nc_1_1hpgl2d_1_1Creator.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="classcam_1_1nc_1_1hpgl2d_1_1Creator-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">cam.nc.hpgl2d.Creator Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Inheritance diagram for cam.nc.hpgl2d.Creator:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1hpgl2d_1_1Creator__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Collaboration diagram for cam.nc.hpgl2d.Creator:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1hpgl2d_1_1Creator__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:afa3781d9d9ed65dcacf075a0cdc15612" id="r_afa3781d9d9ed65dcacf075a0cdc15612"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa3781d9d9ed65dcacf075a0cdc15612">__init__</a> (self)</td></tr>
+<tr class="separator:afa3781d9d9ed65dcacf075a0cdc15612"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40ab5a819ebeb4999827f9b1e481c48a" id="r_a40ab5a819ebeb4999827f9b1e481c48a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40ab5a819ebeb4999827f9b1e481c48a">imperial</a> (self)</td></tr>
+<tr class="memdesc:a40ab5a819ebeb4999827f9b1e481c48a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Settings.  <br /></td></tr>
+<tr class="separator:a40ab5a819ebeb4999827f9b1e481c48a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d672bbc24568f1f722707ba37cbb484" id="r_a6d672bbc24568f1f722707ba37cbb484"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d672bbc24568f1f722707ba37cbb484">metric</a> (self)</td></tr>
+<tr class="separator:a6d672bbc24568f1f722707ba37cbb484"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7cc09943b20c6319b78f570ce7e7577" id="r_ac7cc09943b20c6319b78f570ce7e7577"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7cc09943b20c6319b78f570ce7e7577">program_begin</a> (self, id, name='')</td></tr>
+<tr class="memdesc:ac7cc09943b20c6319b78f570ce7e7577"><td class="mdescLeft">&#160;</td><td class="mdescRight">Programs.  <br /></td></tr>
+<tr class="separator:ac7cc09943b20c6319b78f570ce7e7577"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54c06314d3103936cee6a528e9c6b18c" id="r_a54c06314d3103936cee6a528e9c6b18c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54c06314d3103936cee6a528e9c6b18c">program_end</a> (self)</td></tr>
+<tr class="separator:a54c06314d3103936cee6a528e9c6b18c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf3a8c154b5496eb826d2422b7fea6c8" id="r_acf3a8c154b5496eb826d2422b7fea6c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf3a8c154b5496eb826d2422b7fea6c8">closest_int</a> (self, f)</td></tr>
+<tr class="separator:acf3a8c154b5496eb826d2422b7fea6c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ca5687b6c9aff33f8f45dbaf4eb2656" id="r_a2ca5687b6c9aff33f8f45dbaf4eb2656"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ca5687b6c9aff33f8f45dbaf4eb2656">get_machine_x_y</a> (self, <a class="el" href="#ad7b466553e6ce78880fd8dfce812a622">x</a>=None, <a class="el" href="#af310068500fa9645d056284e8d17e688">y</a>=None)</td></tr>
+<tr class="separator:a2ca5687b6c9aff33f8f45dbaf4eb2656"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e7de678991f3987b766ec4d68232bfb" id="r_a3e7de678991f3987b766ec4d68232bfb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e7de678991f3987b766ec4d68232bfb">rapid</a> (self, <a class="el" href="#ad7b466553e6ce78880fd8dfce812a622">x</a>=None, <a class="el" href="#af310068500fa9645d056284e8d17e688">y</a>=None, z=None, a=None, b=None, c=None)</td></tr>
+<tr class="memdesc:a3e7de678991f3987b766ec4d68232bfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves.  <br /></td></tr>
+<tr class="separator:a3e7de678991f3987b766ec4d68232bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa06f2e78abd00f6c4c6525a43664fc3a" id="r_aa06f2e78abd00f6c4c6525a43664fc3a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa06f2e78abd00f6c4c6525a43664fc3a">feed</a> (self, <a class="el" href="#ad7b466553e6ce78880fd8dfce812a622">x</a>=None, <a class="el" href="#af310068500fa9645d056284e8d17e688">y</a>=None, z=None, a=None, b=None, c=None)</td></tr>
+<tr class="separator:aa06f2e78abd00f6c4c6525a43664fc3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07d3cd6c125c6f27cc4fa4c42df59bf1" id="r_a07d3cd6c125c6f27cc4fa4c42df59bf1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07d3cd6c125c6f27cc4fa4c42df59bf1">arc</a> (self, cw, <a class="el" href="#ad7b466553e6ce78880fd8dfce812a622">x</a>=None, <a class="el" href="#af310068500fa9645d056284e8d17e688">y</a>=None, z=None, i=None, j=None, k=None, r=None)</td></tr>
+<tr class="separator:a07d3cd6c125c6f27cc4fa4c42df59bf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae23fc4d361aa6de768d74b18324bae53" id="r_ae23fc4d361aa6de768d74b18324bae53"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae23fc4d361aa6de768d74b18324bae53">arc_cw</a> (self, <a class="el" href="#ad7b466553e6ce78880fd8dfce812a622">x</a>=None, <a class="el" href="#af310068500fa9645d056284e8d17e688">y</a>=None, z=None, i=None, j=None, k=None, r=None)</td></tr>
+<tr class="separator:ae23fc4d361aa6de768d74b18324bae53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae869adedb7242daa7c1b42302c182896" id="r_ae869adedb7242daa7c1b42302c182896"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae869adedb7242daa7c1b42302c182896">arc_ccw</a> (self, <a class="el" href="#ad7b466553e6ce78880fd8dfce812a622">x</a>=None, <a class="el" href="#af310068500fa9645d056284e8d17e688">y</a>=None, z=None, i=None, j=None, k=None, r=None)</td></tr>
+<tr class="separator:ae869adedb7242daa7c1b42302c182896"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classcam_1_1nc_1_1nc_1_1Creator')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html">cam.nc.nc.Creator</a></td></tr>
+<tr class="memitem:ab3651c24840aa9b2a7a1bc828263eac9 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_ab3651c24840aa9b2a7a1bc828263eac9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#ab3651c24840aa9b2a7a1bc828263eac9">file_open</a> (self, name)</td></tr>
+<tr class="memdesc:ab3651c24840aa9b2a7a1bc828263eac9 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internals.  <br /></td></tr>
+<tr class="separator:ab3651c24840aa9b2a7a1bc828263eac9 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bf39bc81f3b3714060d74f1339ae06c inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a7bf39bc81f3b3714060d74f1339ae06c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a7bf39bc81f3b3714060d74f1339ae06c">file_close</a> (self)</td></tr>
+<tr class="separator:a7bf39bc81f3b3714060d74f1339ae06c inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80f2134add83bfaaf2870d075d36ed8a inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a80f2134add83bfaaf2870d075d36ed8a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a80f2134add83bfaaf2870d075d36ed8a">write</a> (self, s)</td></tr>
+<tr class="separator:a80f2134add83bfaaf2870d075d36ed8a inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b9b5f41f66c0a89ae69a7f21776025d inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a6b9b5f41f66c0a89ae69a7f21776025d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a6b9b5f41f66c0a89ae69a7f21776025d">writem</a> (self, a)</td></tr>
+<tr class="separator:a6b9b5f41f66c0a89ae69a7f21776025d inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4f10ffcf1ffb003aea0a8a008e65cd4 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_aa4f10ffcf1ffb003aea0a8a008e65cd4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#aa4f10ffcf1ffb003aea0a8a008e65cd4">add_stock</a> (self, type_name, params)</td></tr>
+<tr class="separator:aa4f10ffcf1ffb003aea0a8a008e65cd4 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e043392f919d7f10a5a282a580bc8fa inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a5e043392f919d7f10a5a282a580bc8fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a5e043392f919d7f10a5a282a580bc8fa">program_stop</a> (self, optional=False)</td></tr>
+<tr class="separator:a5e043392f919d7f10a5a282a580bc8fa inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d841db837bad9de3466cfbd253ce875 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a7d841db837bad9de3466cfbd253ce875"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a7d841db837bad9de3466cfbd253ce875">flush_nc</a> (self)</td></tr>
+<tr class="separator:a7d841db837bad9de3466cfbd253ce875 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56a93e52f85de47ae50f099fd9fd9b28 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a56a93e52f85de47ae50f099fd9fd9b28"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a56a93e52f85de47ae50f099fd9fd9b28">sub_begin</a> (self, id, name='')</td></tr>
+<tr class="memdesc:a56a93e52f85de47ae50f099fd9fd9b28 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subprograms.  <br /></td></tr>
+<tr class="separator:a56a93e52f85de47ae50f099fd9fd9b28 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab679b1e883a53eb07ae578fc4f3f0efc inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_ab679b1e883a53eb07ae578fc4f3f0efc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#ab679b1e883a53eb07ae578fc4f3f0efc">sub_call</a> (self, id)</td></tr>
+<tr class="separator:ab679b1e883a53eb07ae578fc4f3f0efc inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4203d6942df1cc660ba9ba01ff44abe inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_ab4203d6942df1cc660ba9ba01ff44abe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#ab4203d6942df1cc660ba9ba01ff44abe">sub_end</a> (self)</td></tr>
+<tr class="separator:ab4203d6942df1cc660ba9ba01ff44abe inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43e3de6305aa47bada9e421ff957ef18 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a43e3de6305aa47bada9e421ff957ef18"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a43e3de6305aa47bada9e421ff957ef18">absolute</a> (self)</td></tr>
+<tr class="separator:a43e3de6305aa47bada9e421ff957ef18 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a263eb1faaf6a9ee93f8d78bca773f021 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a263eb1faaf6a9ee93f8d78bca773f021"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a263eb1faaf6a9ee93f8d78bca773f021">incremental</a> (self)</td></tr>
+<tr class="separator:a263eb1faaf6a9ee93f8d78bca773f021 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6d17212fd1159f967bbdbb4d69a03f1 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_ae6d17212fd1159f967bbdbb4d69a03f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#ae6d17212fd1159f967bbdbb4d69a03f1">polar</a> (self, on=True)</td></tr>
+<tr class="separator:ae6d17212fd1159f967bbdbb4d69a03f1 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63ca0750cbc4e11abbbaf856479f6bd8 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a63ca0750cbc4e11abbbaf856479f6bd8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a63ca0750cbc4e11abbbaf856479f6bd8">set_plane</a> (self, plane)</td></tr>
+<tr class="separator:a63ca0750cbc4e11abbbaf856479f6bd8 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b27c7c2c804ec3aa2a3e3e6bf3a638c inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a3b27c7c2c804ec3aa2a3e3e6bf3a638c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a3b27c7c2c804ec3aa2a3e3e6bf3a638c">set_temporary_origin</a> (self, x=None, y=None, z=None, a=None, b=None, c=None)</td></tr>
+<tr class="separator:a3b27c7c2c804ec3aa2a3e3e6bf3a638c inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7d4b51ed47c3deaff7d7a4167ec9630 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_ad7d4b51ed47c3deaff7d7a4167ec9630"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#ad7d4b51ed47c3deaff7d7a4167ec9630">remove_temporary_origin</a> (self)</td></tr>
+<tr class="separator:ad7d4b51ed47c3deaff7d7a4167ec9630 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fec89f9c286d6e852c9af389a46f491 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a6fec89f9c286d6e852c9af389a46f491"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a6fec89f9c286d6e852c9af389a46f491">tool_change</a> (self, id)</td></tr>
+<tr class="memdesc:a6fec89f9c286d6e852c9af389a46f491 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tools.  <br /></td></tr>
+<tr class="separator:a6fec89f9c286d6e852c9af389a46f491 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ac1f6171550de627fdfde4c831bc25d inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a3ac1f6171550de627fdfde4c831bc25d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a3ac1f6171550de627fdfde4c831bc25d">tool_defn</a> (self, id, name='', params=None)</td></tr>
+<tr class="separator:a3ac1f6171550de627fdfde4c831bc25d inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a755ac1c627b9d5373a00c71c02210590 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a755ac1c627b9d5373a00c71c02210590"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a755ac1c627b9d5373a00c71c02210590">offset_radius</a> (self, id, radius=None)</td></tr>
+<tr class="separator:a755ac1c627b9d5373a00c71c02210590 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a673202842c64cc44b229f441ae62994f inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a673202842c64cc44b229f441ae62994f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a673202842c64cc44b229f441ae62994f">offset_length</a> (self, id, length=None)</td></tr>
+<tr class="separator:a673202842c64cc44b229f441ae62994f inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb1d0f892dfa22f1fa591e0f32132ddd inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_abb1d0f892dfa22f1fa591e0f32132ddd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#abb1d0f892dfa22f1fa591e0f32132ddd">current_tool</a> (self)</td></tr>
+<tr class="separator:abb1d0f892dfa22f1fa591e0f32132ddd inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab99e5623dda8e62b2b94bd239d22e9b6 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_ab99e5623dda8e62b2b94bd239d22e9b6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#ab99e5623dda8e62b2b94bd239d22e9b6">datum_shift</a> (self, x=None, y=None, z=None, a=None, b=None, c=None)</td></tr>
+<tr class="memdesc:ab99e5623dda8e62b2b94bd239d22e9b6 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Datums.  <br /></td></tr>
+<tr class="separator:ab99e5623dda8e62b2b94bd239d22e9b6 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbee84ef2d71fe9ede19daa1022f1d92 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_acbee84ef2d71fe9ede19daa1022f1d92"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#acbee84ef2d71fe9ede19daa1022f1d92">datum_set</a> (self, x=None, y=None, z=None, a=None, b=None, c=None)</td></tr>
+<tr class="separator:acbee84ef2d71fe9ede19daa1022f1d92 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21d03ba3d16ff8d84cd5546268aabab6 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a21d03ba3d16ff8d84cd5546268aabab6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a21d03ba3d16ff8d84cd5546268aabab6">workplane</a> (self, id)</td></tr>
+<tr class="separator:a21d03ba3d16ff8d84cd5546268aabab6 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25dc579a777162a8825f4a80cdb49dd7 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a25dc579a777162a8825f4a80cdb49dd7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a25dc579a777162a8825f4a80cdb49dd7">clearanceplane</a> (self, z=None)</td></tr>
+<tr class="separator:a25dc579a777162a8825f4a80cdb49dd7 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa444813a0c811ccdf5c131ef200f61ad inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_aa444813a0c811ccdf5c131ef200f61ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#aa444813a0c811ccdf5c131ef200f61ad">matrix</a> (self, a1=None, b1=None, c1=None, a2=None, b2=None, c2=None, a3=None, b3=None, c3=None)</td></tr>
+<tr class="memdesc:aa444813a0c811ccdf5c131ef200f61ad inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="mdescLeft">&#160;</td><td class="mdescRight">APT360 like Transformation Definitions These definitions were created while looking at Irvin Kraal's book on APT.  <br /></td></tr>
+<tr class="separator:aa444813a0c811ccdf5c131ef200f61ad inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2916aeb745eb7bab7335e02638045f6 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_aa2916aeb745eb7bab7335e02638045f6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#aa2916aeb745eb7bab7335e02638045f6">translate</a> (self, x=None, y=None, z=None)</td></tr>
+<tr class="separator:aa2916aeb745eb7bab7335e02638045f6 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb91710cf1f26d4cf07f9da51e7798a5 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_adb91710cf1f26d4cf07f9da51e7798a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#adb91710cf1f26d4cf07f9da51e7798a5">rotate</a> (self, xyrot=None, yzrot=None, zxrot=None, angle=None)</td></tr>
+<tr class="separator:adb91710cf1f26d4cf07f9da51e7798a5 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7277c1e666c6dda2b8a997f3518f3f3e inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a7277c1e666c6dda2b8a997f3518f3f3e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a7277c1e666c6dda2b8a997f3518f3f3e">scale</a> (self, k=None)</td></tr>
+<tr class="separator:a7277c1e666c6dda2b8a997f3518f3f3e inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a016998404be15eef6dc192118c572e4a inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a016998404be15eef6dc192118c572e4a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a016998404be15eef6dc192118c572e4a">matrix_product</a> (self, matrix1=None, matrix2=None)</td></tr>
+<tr class="separator:a016998404be15eef6dc192118c572e4a inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a183c1585f1851d4573dadc6645f3b473 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a183c1585f1851d4573dadc6645f3b473"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a183c1585f1851d4573dadc6645f3b473">mirror_plane</a> (self, plane1=None, plane2=None, plane3=None)</td></tr>
+<tr class="separator:a183c1585f1851d4573dadc6645f3b473 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa777fc06dd6e476f08060e7cf4f88068 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_aa777fc06dd6e476f08060e7cf4f88068"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#aa777fc06dd6e476f08060e7cf4f88068">mirror_line</a> (self, line=None)</td></tr>
+<tr class="separator:aa777fc06dd6e476f08060e7cf4f88068 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09d15b7b72c2a18cae7dfb450f1da06e inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a09d15b7b72c2a18cae7dfb450f1da06e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a09d15b7b72c2a18cae7dfb450f1da06e">feedrate</a> (self, f)</td></tr>
+<tr class="memdesc:a09d15b7b72c2a18cae7dfb450f1da06e inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rates + Modes.  <br /></td></tr>
+<tr class="separator:a09d15b7b72c2a18cae7dfb450f1da06e inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f328adc58521e5ab9db7cf54dc6ce inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_ae66f328adc58521e5ab9db7cf54dc6ce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#ae66f328adc58521e5ab9db7cf54dc6ce">feedrate_hv</a> (self, fh, fv)</td></tr>
+<tr class="separator:ae66f328adc58521e5ab9db7cf54dc6ce inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba0d5dbaa64e8d6c8c0f6e02d5b2bb42 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_aba0d5dbaa64e8d6c8c0f6e02d5b2bb42"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#aba0d5dbaa64e8d6c8c0f6e02d5b2bb42">spindle</a> (self, s, clockwise=True)</td></tr>
+<tr class="separator:aba0d5dbaa64e8d6c8c0f6e02d5b2bb42 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59217559479a824dcf40a00da6d692ac inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a59217559479a824dcf40a00da6d692ac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a59217559479a824dcf40a00da6d692ac">coolant</a> (self, mode=0)</td></tr>
+<tr class="separator:a59217559479a824dcf40a00da6d692ac inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80e7b5c8fccc9bd3982c33a266d9fed0 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a80e7b5c8fccc9bd3982c33a266d9fed0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a80e7b5c8fccc9bd3982c33a266d9fed0">gearrange</a> (self, gear=0)</td></tr>
+<tr class="separator:a80e7b5c8fccc9bd3982c33a266d9fed0 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56b11f862045ee84c844133b646117c8 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a56b11f862045ee84c844133b646117c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a56b11f862045ee84c844133b646117c8">dwell</a> (self, t)</td></tr>
+<tr class="separator:a56b11f862045ee84c844133b646117c8 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec3c94a9584f18d2f9923081a5bdda34 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_aec3c94a9584f18d2f9923081a5bdda34"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#aec3c94a9584f18d2f9923081a5bdda34">rapid_home</a> (self, x=None, y=None, z=None, a=None, b=None, c=None)</td></tr>
+<tr class="separator:aec3c94a9584f18d2f9923081a5bdda34 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65815539ed9b7607ae21229b15ee0fe2 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a65815539ed9b7607ae21229b15ee0fe2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a65815539ed9b7607ae21229b15ee0fe2">rapid_unhome</a> (self)</td></tr>
+<tr class="separator:a65815539ed9b7607ae21229b15ee0fe2 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adba071f67fa119dc47a3cbdbe5324cc4 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_adba071f67fa119dc47a3cbdbe5324cc4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#adba071f67fa119dc47a3cbdbe5324cc4">set_machine_coordinates</a> (self)</td></tr>
+<tr class="separator:adba071f67fa119dc47a3cbdbe5324cc4 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af48057c7d845490d9cebf0c321858d87 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_af48057c7d845490d9cebf0c321858d87"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#af48057c7d845490d9cebf0c321858d87">use_CRC</a> (self)</td></tr>
+<tr class="memdesc:af48057c7d845490d9cebf0c321858d87 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cutter radius compensation.  <br /></td></tr>
+<tr class="separator:af48057c7d845490d9cebf0c321858d87 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59688c01984638c50dfbf012bd1ee4e3 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a59688c01984638c50dfbf012bd1ee4e3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a59688c01984638c50dfbf012bd1ee4e3">pattern</a> (self)</td></tr>
+<tr class="memdesc:a59688c01984638c50dfbf012bd1ee4e3 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cycles.  <br /></td></tr>
+<tr class="separator:a59688c01984638c50dfbf012bd1ee4e3 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89cf133b4ed304132bab0e3e930a7d1e inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a89cf133b4ed304132bab0e3e930a7d1e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a89cf133b4ed304132bab0e3e930a7d1e">pocket</a> (self)</td></tr>
+<tr class="separator:a89cf133b4ed304132bab0e3e930a7d1e inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf980db0661f226477a3b1a39d345e7c inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_acf980db0661f226477a3b1a39d345e7c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#acf980db0661f226477a3b1a39d345e7c">profile</a> (self)</td></tr>
+<tr class="separator:acf980db0661f226477a3b1a39d345e7c inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4819416a7408129c220de90d72c91a6c inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a4819416a7408129c220de90d72c91a6c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a4819416a7408129c220de90d72c91a6c">drill</a> (self, x=None, y=None, <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a56b11f862045ee84c844133b646117c8">dwell</a>=None, depthparams=None, retract_mode=None, spindle_mode=None, internal_coolant_on=None, rapid_to_clearance=None)</td></tr>
+<tr class="separator:a4819416a7408129c220de90d72c91a6c inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e6b1ba5ac8a76e36f68c1ef8b21435a inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a0e6b1ba5ac8a76e36f68c1ef8b21435a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a0e6b1ba5ac8a76e36f68c1ef8b21435a">tap</a> (self, x=None, y=None, z=None, zretract=None, depth=None, standoff=None, dwell_bottom=None, pitch=None, stoppos=None, spin_in=None, spin_out=None, tap_mode=None, direction=None)</td></tr>
+<tr class="separator:a0e6b1ba5ac8a76e36f68c1ef8b21435a inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a167f093c98cb4777a2f495a94010cf64 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a167f093c98cb4777a2f495a94010cf64"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a167f093c98cb4777a2f495a94010cf64">bore</a> (self, x=None, y=None, z=None, zretract=None, depth=None, standoff=None, dwell_bottom=None, feed_in=None, feed_out=None, stoppos=None, shift_back=None, shift_right=None, backbore=False, stop=False)</td></tr>
+<tr class="separator:a167f093c98cb4777a2f495a94010cf64 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acec2552d357ba49de5adbcbaf3ad93a5 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_acec2552d357ba49de5adbcbaf3ad93a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#acec2552d357ba49de5adbcbaf3ad93a5">end_canned_cycle</a> (self)</td></tr>
+<tr class="separator:acec2552d357ba49de5adbcbaf3ad93a5 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3e7940549c2d69d003224aa3cd586d3 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_ab3e7940549c2d69d003224aa3cd586d3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#ab3e7940549c2d69d003224aa3cd586d3">comment</a> (self, text)</td></tr>
+<tr class="memdesc:ab3e7940549c2d69d003224aa3cd586d3 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Misc.  <br /></td></tr>
+<tr class="separator:ab3e7940549c2d69d003224aa3cd586d3 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf1d934a3cd91810b1148e119887500c inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_adf1d934a3cd91810b1148e119887500c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#adf1d934a3cd91810b1148e119887500c">insert</a> (self, text)</td></tr>
+<tr class="separator:adf1d934a3cd91810b1148e119887500c inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2742a3c6e584e90c23d4abab5e44dcc inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_af2742a3c6e584e90c23d4abab5e44dcc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#af2742a3c6e584e90c23d4abab5e44dcc">block_delete</a> (self, on=False)</td></tr>
+<tr class="separator:af2742a3c6e584e90c23d4abab5e44dcc inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d02ebd696a2f2db466f1cf8863142d5 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a2d02ebd696a2f2db466f1cf8863142d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a2d02ebd696a2f2db466f1cf8863142d5">variable</a> (self, id)</td></tr>
+<tr class="separator:a2d02ebd696a2f2db466f1cf8863142d5 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a490ecd36ed3098409fcffee44dcd11f0 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a490ecd36ed3098409fcffee44dcd11f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a490ecd36ed3098409fcffee44dcd11f0">variable_set</a> (self, id, value)</td></tr>
+<tr class="separator:a490ecd36ed3098409fcffee44dcd11f0 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5943f76b586cd2d530dc0d305ef457bd inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a5943f76b586cd2d530dc0d305ef457bd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a5943f76b586cd2d530dc0d305ef457bd">probe_linear_centre_outside</a> (self, x1=None, y1=None, depth=None, x2=None, y2=None)</td></tr>
+<tr class="separator:a5943f76b586cd2d530dc0d305ef457bd inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2982bddb09ae7c6469a7b5e616566ab inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_ab2982bddb09ae7c6469a7b5e616566ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#ab2982bddb09ae7c6469a7b5e616566ab">probe_single_point</a> (self, point_along_edge_x=None, point_along_edge_y=None, depth=None, retracted_point_x=None, retracted_point_y=None, destination_point_x=None, destination_point_y=None, intersection_variable_x=None, intersection_variable_y=None, probe_offset_x_component=None, probe_offset_y_component=None)</td></tr>
+<tr class="separator:ab2982bddb09ae7c6469a7b5e616566ab inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a950f0b9dd784e5a706fb16bd4e356607 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a950f0b9dd784e5a706fb16bd4e356607"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a950f0b9dd784e5a706fb16bd4e356607">probe_downward_point</a> (self, x=None, y=None, depth=None, intersection_variable_z=None)</td></tr>
+<tr class="separator:a950f0b9dd784e5a706fb16bd4e356607 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ff98c29e67d4bb1e4d428e7a19ae0c9 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a7ff98c29e67d4bb1e4d428e7a19ae0c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a7ff98c29e67d4bb1e4d428e7a19ae0c9">report_probe_results</a> (self, x1=None, y1=None, z1=None, x2=None, y2=None, z2=None, x3=None, y3=None, z3=None, x4=None, y4=None, z4=None, x5=None, y5=None, z5=None, x6=None, y6=None, z6=None, xml_file_name=None)</td></tr>
+<tr class="separator:a7ff98c29e67d4bb1e4d428e7a19ae0c9 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae826db09c1b7c0fe1099f66f09f5758a inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_ae826db09c1b7c0fe1099f66f09f5758a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#ae826db09c1b7c0fe1099f66f09f5758a">open_log_file</a> (self, xml_file_name=None)</td></tr>
+<tr class="separator:ae826db09c1b7c0fe1099f66f09f5758a inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17e6de5013fe131ff946bd3e86be52dc inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a17e6de5013fe131ff946bd3e86be52dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a17e6de5013fe131ff946bd3e86be52dc">log_coordinate</a> (self, x=None, y=None, z=None)</td></tr>
+<tr class="separator:a17e6de5013fe131ff946bd3e86be52dc inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a41b57e7fbc95e765b4107d61f2b0fb inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a8a41b57e7fbc95e765b4107d61f2b0fb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a8a41b57e7fbc95e765b4107d61f2b0fb">log_message</a> (self, message=None)</td></tr>
+<tr class="separator:a8a41b57e7fbc95e765b4107d61f2b0fb inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae221051f5d050fe72024893d869c9e95 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_ae221051f5d050fe72024893d869c9e95"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#ae221051f5d050fe72024893d869c9e95">close_log_file</a> (self)</td></tr>
+<tr class="separator:ae221051f5d050fe72024893d869c9e95 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af58b38bf65ddba3bcef0cae39aac4a09 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_af58b38bf65ddba3bcef0cae39aac4a09"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#af58b38bf65ddba3bcef0cae39aac4a09">rapid_to_midpoint</a> (self, x1=None, y1=None, z1=None, x2=None, y2=None, z2=None)</td></tr>
+<tr class="separator:af58b38bf65ddba3bcef0cae39aac4a09 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab141de97e87759d48b8227e5738d056c inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_ab141de97e87759d48b8227e5738d056c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#ab141de97e87759d48b8227e5738d056c">rapid_to_intersection</a> (self, x1, y1, x2, y2, x3, y3, x4, y4, intersection_x, intersection_y, ua_numerator, ua_denominator, ua, ub_numerator, ub)</td></tr>
+<tr class="separator:ab141de97e87759d48b8227e5738d056c inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2f4b7454862bacf84d24d45d1702d1c inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_af2f4b7454862bacf84d24d45d1702d1c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#af2f4b7454862bacf84d24d45d1702d1c">rapid_to_rotated_coordinate</a> (self, x1, y1, x2, y2, ref_x, ref_y, x_current, y_current, x_final, y_final)</td></tr>
+<tr class="separator:af2f4b7454862bacf84d24d45d1702d1c inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36ddaf371b5dcf5cc53a8c6ed6a4e926 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a36ddaf371b5dcf5cc53a8c6ed6a4e926"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a36ddaf371b5dcf5cc53a8c6ed6a4e926">set_path_control_mode</a> (self, mode, motion_blending_tolerance, naive_cam_tolerance)</td></tr>
+<tr class="separator:a36ddaf371b5dcf5cc53a8c6ed6a4e926 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec98966fe45ff7d2973002311f38b841 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_aec98966fe45ff7d2973002311f38b841"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#aec98966fe45ff7d2973002311f38b841">wipe</a> (self)</td></tr>
+<tr class="memdesc:aec98966fe45ff7d2973002311f38b841 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="mdescLeft">&#160;</td><td class="mdescRight">NC code creator for additive machines like RepRap.  <br /></td></tr>
+<tr class="separator:aec98966fe45ff7d2973002311f38b841 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a227b7ab87099b672da953a0aad13eff6 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a227b7ab87099b672da953a0aad13eff6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a227b7ab87099b672da953a0aad13eff6">extruder_on</a> (self)</td></tr>
+<tr class="separator:a227b7ab87099b672da953a0aad13eff6 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1acc377f3f5c966fde33e8a22ae49dd2 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a1acc377f3f5c966fde33e8a22ae49dd2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a1acc377f3f5c966fde33e8a22ae49dd2">extruder_off</a> (self)</td></tr>
+<tr class="separator:a1acc377f3f5c966fde33e8a22ae49dd2 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55cd49b26a3b252e7c6f24fc6bd4fd25 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a55cd49b26a3b252e7c6f24fc6bd4fd25"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a55cd49b26a3b252e7c6f24fc6bd4fd25">set_extruder_flowrate</a> (self, flowrate)</td></tr>
+<tr class="separator:a55cd49b26a3b252e7c6f24fc6bd4fd25 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0911d697ca8205da25a327e638fd3620 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a0911d697ca8205da25a327e638fd3620"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a0911d697ca8205da25a327e638fd3620">extruder_temp</a> (self, temp)</td></tr>
+<tr class="separator:a0911d697ca8205da25a327e638fd3620 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f54ed36706db67ca412a8ff341526a3 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a2f54ed36706db67ca412a8ff341526a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a2f54ed36706db67ca412a8ff341526a3">fan_on</a> (self)</td></tr>
+<tr class="separator:a2f54ed36706db67ca412a8ff341526a3 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b9d618bf11b2c17a1bc5f69944bd3b7 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a5b9d618bf11b2c17a1bc5f69944bd3b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a5b9d618bf11b2c17a1bc5f69944bd3b7">fan_off</a> (self)</td></tr>
+<tr class="separator:a5b9d618bf11b2c17a1bc5f69944bd3b7 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52fa4c4b50e5f53df50ebee0319e9245 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a52fa4c4b50e5f53df50ebee0319e9245"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a52fa4c4b50e5f53df50ebee0319e9245">build_bed_temp</a> (self, temp)</td></tr>
+<tr class="separator:a52fa4c4b50e5f53df50ebee0319e9245 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9f33126ca1fff2b36e6ca3f4ac81cef inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_ab9f33126ca1fff2b36e6ca3f4ac81cef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#ab9f33126ca1fff2b36e6ca3f4ac81cef">chamber_temp</a> (self, temp)</td></tr>
+<tr class="separator:ab9f33126ca1fff2b36e6ca3f4ac81cef inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93388ba17e68b836b4eee5d907b7fb41 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a93388ba17e68b836b4eee5d907b7fb41"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a93388ba17e68b836b4eee5d907b7fb41">begin_ncblock</a> (self)</td></tr>
+<tr class="separator:a93388ba17e68b836b4eee5d907b7fb41 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a88ca7c016d69f6c5f8dd98f326868a inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a2a88ca7c016d69f6c5f8dd98f326868a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a2a88ca7c016d69f6c5f8dd98f326868a">end_ncblock</a> (self)</td></tr>
+<tr class="separator:a2a88ca7c016d69f6c5f8dd98f326868a inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7795ded7273e69a74d36614404fef0e inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_ab7795ded7273e69a74d36614404fef0e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#ab7795ded7273e69a74d36614404fef0e">add_text</a> (self, s, col, cdata)</td></tr>
+<tr class="separator:ab7795ded7273e69a74d36614404fef0e inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ad7b466553e6ce78880fd8dfce812a622" id="r_ad7b466553e6ce78880fd8dfce812a622"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7b466553e6ce78880fd8dfce812a622">x</a></td></tr>
+<tr class="separator:ad7b466553e6ce78880fd8dfce812a622"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af310068500fa9645d056284e8d17e688" id="r_af310068500fa9645d056284e8d17e688"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af310068500fa9645d056284e8d17e688">y</a></td></tr>
+<tr class="separator:af310068500fa9645d056284e8d17e688"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd2904d16de36d8a0a3106bfcba8a436" id="r_acd2904d16de36d8a0a3106bfcba8a436"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd2904d16de36d8a0a3106bfcba8a436">units_to_mc_units</a></td></tr>
+<tr class="separator:acd2904d16de36d8a0a3106bfcba8a436"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classcam_1_1nc_1_1nc_1_1Creator"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_classcam_1_1nc_1_1nc_1_1Creator')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html">cam.nc.nc.Creator</a></td></tr>
+<tr class="memitem:a7b9f520b607a80af987b068cbd1d1d31 inherit pub_attribs_classcam_1_1nc_1_1nc_1_1Creator" id="r_a7b9f520b607a80af987b068cbd1d1d31"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a7b9f520b607a80af987b068cbd1d1d31">file</a></td></tr>
+<tr class="separator:a7b9f520b607a80af987b068cbd1d1d31 inherit pub_attribs_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a4389cab170edcaa81bf475fa97d463 inherit pub_attribs_classcam_1_1nc_1_1nc_1_1Creator" id="r_a6a4389cab170edcaa81bf475fa97d463"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a6a4389cab170edcaa81bf475fa97d463">filename</a></td></tr>
+<tr class="separator:a6a4389cab170edcaa81bf475fa97d463 inherit pub_attribs_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a416f186fc8c4ac22f9f20e9ef411b415" id="r_a416f186fc8c4ac22f9f20e9ef411b415"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a416f186fc8c4ac22f9f20e9ef411b415">creator</a></td></tr>
+<tr class="separator:a416f186fc8c4ac22f9f20e9ef411b415"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="afa3781d9d9ed65dcacf075a0cdc15612" name="afa3781d9d9ed65dcacf075a0cdc15612"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa3781d9d9ed65dcacf075a0cdc15612">&#9670;&#160;</a></span>__init__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.hpgl2d.Creator.__init__ </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a4ca2842ee7b52903f44ba0b295296e8d">cam.nc.nc.Creator</a>.</p>
+
+<p>Reimplemented in <a class="el" href="classcam_1_1nc_1_1hpgl2dv_1_1Creator.html#a8ed7d723c5d4c4c7856f637ee7eabb57">cam.nc.hpgl2dv.Creator</a>, and <a class="el" href="classcam_1_1nc_1_1hpgl3d_1_1Creator.html#ad9efc09d0d823ed318225d1715734b56">cam.nc.hpgl3d.Creator</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a07d3cd6c125c6f27cc4fa4c42df59bf1" name="a07d3cd6c125c6f27cc4fa4c42df59bf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07d3cd6c125c6f27cc4fa4c42df59bf1">&#9670;&#160;</a></span>arc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.hpgl2d.Creator.arc </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>cw</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>y</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>z</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>i</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>j</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>k</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>r</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1hpgl2d_1_1Creator_a07d3cd6c125c6f27cc4fa4c42df59bf1_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1hpgl2d_1_1Creator_a07d3cd6c125c6f27cc4fa4c42df59bf1_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="ae869adedb7242daa7c1b42302c182896" name="ae869adedb7242daa7c1b42302c182896"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae869adedb7242daa7c1b42302c182896">&#9670;&#160;</a></span>arc_ccw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.hpgl2d.Creator.arc_ccw </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>y</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>z</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>i</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>j</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>k</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>r</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Counterclockwise arc move</pre> 
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a3edf67b50e4b3c8f327a084157363f9d">cam.nc.nc.Creator</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1hpgl2d_1_1Creator_ae869adedb7242daa7c1b42302c182896_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="ae23fc4d361aa6de768d74b18324bae53" name="ae23fc4d361aa6de768d74b18324bae53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae23fc4d361aa6de768d74b18324bae53">&#9670;&#160;</a></span>arc_cw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.hpgl2d.Creator.arc_cw </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>y</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>z</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>i</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>j</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>k</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>r</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Clockwise arc move</pre> 
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#ad43a5821c5d79340728de373b7fa2c19">cam.nc.nc.Creator</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1hpgl2d_1_1Creator_ae23fc4d361aa6de768d74b18324bae53_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="acf3a8c154b5496eb826d2422b7fea6c8" name="acf3a8c154b5496eb826d2422b7fea6c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf3a8c154b5496eb826d2422b7fea6c8">&#9670;&#160;</a></span>closest_int()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.hpgl2d.Creator.closest_int </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>f</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1hpgl2d_1_1Creator_acf3a8c154b5496eb826d2422b7fea6c8_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="aa06f2e78abd00f6c4c6525a43664fc3a" name="aa06f2e78abd00f6c4c6525a43664fc3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa06f2e78abd00f6c4c6525a43664fc3a">&#9670;&#160;</a></span>feed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.hpgl2d.Creator.feed </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>y</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>z</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>a</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>b</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>c</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Feed move</pre> 
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a58c3bce534b047d5824cde16c2571c0f">cam.nc.nc.Creator</a>.</p>
+
+<p>Reimplemented in <a class="el" href="classcam_1_1nc_1_1hpgl3d_1_1Creator.html#a12b9a33fb5cfbdff48b640e61cbea77d">cam.nc.hpgl3d.Creator</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1hpgl2d_1_1Creator_aa06f2e78abd00f6c4c6525a43664fc3a_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1hpgl2d_1_1Creator_aa06f2e78abd00f6c4c6525a43664fc3a_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a2ca5687b6c9aff33f8f45dbaf4eb2656" name="a2ca5687b6c9aff33f8f45dbaf4eb2656"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ca5687b6c9aff33f8f45dbaf4eb2656">&#9670;&#160;</a></span>get_machine_x_y()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.hpgl2d.Creator.get_machine_x_y </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>y</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1hpgl2d_1_1Creator_a2ca5687b6c9aff33f8f45dbaf4eb2656_cgraph.svg" width="495" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1hpgl2d_1_1Creator_a2ca5687b6c9aff33f8f45dbaf4eb2656_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a40ab5a819ebeb4999827f9b1e481c48a" name="a40ab5a819ebeb4999827f9b1e481c48a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40ab5a819ebeb4999827f9b1e481c48a">&#9670;&#160;</a></span>imperial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.hpgl2d.Creator.imperial </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Settings. </p>
+<pre class="fragment">Set imperial units</pre> 
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#acfa51223614b1c8c231c99f8e6103af1">cam.nc.nc.Creator</a>.</p>
+
+<p>Reimplemented in <a class="el" href="classcam_1_1nc_1_1hpgl2dv_1_1Creator.html#a97348a94f0b2a1fb11e581a85899aaf5">cam.nc.hpgl2dv.Creator</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1hpgl2d_1_1Creator_a40ab5a819ebeb4999827f9b1e481c48a_icgraph.svg" width="544" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a6d672bbc24568f1f722707ba37cbb484" name="a6d672bbc24568f1f722707ba37cbb484"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d672bbc24568f1f722707ba37cbb484">&#9670;&#160;</a></span>metric()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.hpgl2d.Creator.metric </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Set metric units</pre> 
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#ab7b52eb5d7170eafdc365d407a887e8b">cam.nc.nc.Creator</a>.</p>
+
+<p>Reimplemented in <a class="el" href="classcam_1_1nc_1_1hpgl2dv_1_1Creator.html#a90ae9c952ba36d7be3183010ec95662c">cam.nc.hpgl2dv.Creator</a>.</p>
+
+</div>
+</div>
+<a id="ac7cc09943b20c6319b78f570ce7e7577" name="ac7cc09943b20c6319b78f570ce7e7577"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7cc09943b20c6319b78f570ce7e7577">&#9670;&#160;</a></span>program_begin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.hpgl2d.Creator.program_begin </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>id</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>name</em><span class="paramdefsep"> = </span><span class="paramdefval">''</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Programs. </p>
+<pre class="fragment">Begin a program</pre> 
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a9a88c0cb630a1b3604d230f4c8b9b5ac">cam.nc.nc.Creator</a>.</p>
+
+<p>Reimplemented in <a class="el" href="classcam_1_1nc_1_1hpgl3d_1_1Creator.html#ac03769d740b965ef64af62ee5894ed0b">cam.nc.hpgl3d.Creator</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1hpgl2d_1_1Creator_ac7cc09943b20c6319b78f570ce7e7577_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a54c06314d3103936cee6a528e9c6b18c" name="a54c06314d3103936cee6a528e9c6b18c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54c06314d3103936cee6a528e9c6b18c">&#9670;&#160;</a></span>program_end()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.hpgl2d.Creator.program_end </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">End the program</pre> 
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a6b23941ee5eaaed546121898ee5b09fa">cam.nc.nc.Creator</a>.</p>
+
+<p>Reimplemented in <a class="el" href="classcam_1_1nc_1_1hpgl3d_1_1Creator.html#af90230d1943137edd9ce035307d9deae">cam.nc.hpgl3d.Creator</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1hpgl2d_1_1Creator_a54c06314d3103936cee6a528e9c6b18c_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a3e7de678991f3987b766ec4d68232bfb" name="a3e7de678991f3987b766ec4d68232bfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e7de678991f3987b766ec4d68232bfb">&#9670;&#160;</a></span>rapid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.hpgl2d.Creator.rapid </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>y</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>z</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>a</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>b</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>c</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Moves. </p>
+<pre class="fragment">Rapid move</pre> 
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#ad5d01e340589c729f48fab397ccf137c">cam.nc.nc.Creator</a>.</p>
+
+<p>Reimplemented in <a class="el" href="classcam_1_1nc_1_1hpgl3d_1_1Creator.html#ac4ee4e0cb11891159d4e59467650aa76">cam.nc.hpgl3d.Creator</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1hpgl2d_1_1Creator_a3e7de678991f3987b766ec4d68232bfb_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1hpgl2d_1_1Creator_a3e7de678991f3987b766ec4d68232bfb_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a416f186fc8c4ac22f9f20e9ef411b415" name="a416f186fc8c4ac22f9f20e9ef411b415"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a416f186fc8c4ac22f9f20e9ef411b415">&#9670;&#160;</a></span>creator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.hpgl2d.Creator.creator</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acd2904d16de36d8a0a3106bfcba8a436" name="acd2904d16de36d8a0a3106bfcba8a436"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd2904d16de36d8a0a3106bfcba8a436">&#9670;&#160;</a></span>units_to_mc_units</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.hpgl2d.Creator.units_to_mc_units</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad7b466553e6ce78880fd8dfce812a622" name="ad7b466553e6ce78880fd8dfce812a622"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7b466553e6ce78880fd8dfce812a622">&#9670;&#160;</a></span>x</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.hpgl2d.Creator.x</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af310068500fa9645d056284e8d17e688" name="af310068500fa9645d056284e8d17e688"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af310068500fa9645d056284e8d17e688">&#9670;&#160;</a></span>y</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.hpgl2d.Creator.y</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/<a class="el" href="hpgl2d_8py.html">hpgl2d.py</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.10.0-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacecam.html">cam</a></li><li class="navelem"><a class="el" href="namespacecam_1_1nc.html">nc</a></li><li class="navelem"><a class="el" href="namespacecam_1_1nc_1_1hpgl2d.html">hpgl2d</a></li><li class="navelem"><a class="el" href="classcam_1_1nc_1_1hpgl2d_1_1Creator.html">Creator</a></li>
+    <li class="footer">Generated by <a href="https://penify.dev/"><img class="footer" src="https://www.penify.dev/_next/static/media/snorkell-dark-logo.9fa414f5.svg" width="104" height="31" alt="doxygen"/></a> </li>
+  </ul>
+</div>
+</body>
+</html>

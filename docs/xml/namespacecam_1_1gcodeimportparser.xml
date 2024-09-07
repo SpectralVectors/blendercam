@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacecam_1_1gcodeimportparser" kind="namespace" language="Python">
+    <compoundname>cam::gcodeimportparser</compoundname>
+    <innerclass refid="classcam_1_1gcodeimportparser_1_1GcodeModel" prot="public">cam::gcodeimportparser::GcodeModel</innerclass>
+    <innerclass refid="classcam_1_1gcodeimportparser_1_1GcodeParser" prot="public">cam::gcodeimportparser::GcodeParser</innerclass>
+    <innerclass refid="classcam_1_1gcodeimportparser_1_1Layer" prot="public">cam::gcodeimportparser::Layer</innerclass>
+    <innerclass refid="classcam_1_1gcodeimportparser_1_1Segment" prot="public">cam::gcodeimportparser::Segment</innerclass>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacecam_1_1gcodeimportparser_1af2f94876c6227b47d87730d7ca322909" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam::gcodeimportparser.suppress</definition>
+        <argsstring></argsstring>
+        <name>suppress</name>
+        <qualifiedname>cam.gcodeimportparser.suppress</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" line="13" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecam_1_1gcodeimportparser_1aac325098144266bd0a85ea3cd1d417c5" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str cam::gcodeimportparser.path</definition>
+        <argsstring></argsstring>
+        <name>path</name>
+        <qualifiedname>cam.gcodeimportparser.path</qualifiedname>
+        <initializer>=  &quot;test.gcode&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" line="501" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" bodystart="501" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecam_1_1gcodeimportparser_1a2496a51392df934f6ca93c535ac22ece" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam::gcodeimportparser.parser</definition>
+        <argsstring></argsstring>
+        <name>parser</name>
+        <qualifiedname>cam.gcodeimportparser.parser</qualifiedname>
+        <initializer>=  <ref refid="classcam_1_1gcodeimportparser_1_1GcodeParser" kindref="compound">GcodeParser</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" line="503" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" bodystart="503" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecam_1_1gcodeimportparser_1a005ba48098fc309c42cc78c99def7a4f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam::gcodeimportparser.model</definition>
+        <argsstring></argsstring>
+        <name>model</name>
+        <qualifiedname>cam.gcodeimportparser.model</qualifiedname>
+        <initializer>=  parser.parseFile(<ref refid="namespacecam_1_1gcodeimportparser_1aac325098144266bd0a85ea3cd1d417c5" kindref="member">path</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" line="504" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" bodystart="504" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacecam_1_1gcodeimportparser_1aa6ef446acab03d0b240ce4ba37a739c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.gcodeimportparser.import_gcode</definition>
+        <argsstring>(context, filepath)</argsstring>
+        <name>import_gcode</name>
+        <qualifiedname>cam.gcodeimportparser.import_gcode</qualifiedname>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <param>
+          <type>filepath</type>
+          <defname>filepath</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" line="16" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" bodystart="16" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1gcodeimportparser_1a0079f2bbd765282c819b15b22a8dbfba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.gcodeimportparser.segments_to_meshdata</definition>
+        <argsstring>(segments)</argsstring>
+        <name>segments_to_meshdata</name>
+        <qualifiedname>cam.gcodeimportparser.segments_to_meshdata</qualifiedname>
+        <param>
+          <type>segments</type>
+          <defname>segments</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" line="41" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" bodystart="41" bodyend="71"/>
+        <referencedby refid="classcam_1_1gcodeimportparser_1_1GcodeModel_1ab3b35fbaaa6dac1438210fb3e595633c" compoundref="gcodeimportparser_8py" startline="459" endline="472">cam.gcodeimportparser.GcodeModel.draw</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1gcodeimportparser_1a78824264a84e441ecc7438b7f004ac36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.gcodeimportparser.obj_from_pydata</definition>
+        <argsstring>(name, verts, edges=None, close=True, collection_name=None)</argsstring>
+        <name>obj_from_pydata</name>
+        <qualifiedname>cam.gcodeimportparser.obj_from_pydata</qualifiedname>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>verts</type>
+          <defname>verts</defname>
+        </param>
+        <param>
+          <type>edges</type>
+          <defname>edges</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>close</type>
+          <defname>close</defname>
+          <defval>True</defval>
+        </param>
+        <param>
+          <type>collection_name</type>
+          <defname>collection_name</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" line="72" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" bodystart="72" bodyend="102"/>
+        <referencedby refid="classcam_1_1gcodeimportparser_1_1GcodeModel_1ab3b35fbaaa6dac1438210fb3e595633c" compoundref="gcodeimportparser_8py" startline="459" endline="472">cam.gcodeimportparser.GcodeModel.draw</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>BlenderCAM &apos;gcodeimportparser.py&apos;
+
+Code modified from YAGV (Yet Another G-code Viewer) - https://github.com/jonathanwin/yagv
+No license terms found in YAGV repo, will assume GNU release
+</verbatim> </para>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

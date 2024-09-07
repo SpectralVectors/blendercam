@@ -1,0 +1,367 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1voronoi_1_1Edge" kind="class" language="Python" prot="public">
+    <compoundname>cam::voronoi::Edge</compoundname>
+    <basecompoundref refid="classobject" prot="public" virt="non-virtual">object</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1voronoi_1_1Edge_1a3e460388b76a80cf7bbb520ce8302070" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int cam.voronoi.Edge::LE</definition>
+        <argsstring></argsstring>
+        <name>LE</name>
+        <qualifiedname>cam.voronoi.Edge.LE</qualifiedname>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="511" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="511" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1voronoi_1_1Edge_1af714ba076df73eb740933093257e6a14" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int cam.voronoi.Edge::RE</definition>
+        <argsstring></argsstring>
+        <name>RE</name>
+        <qualifiedname>cam.voronoi.Edge.RE</qualifiedname>
+        <initializer>=  1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="512" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="512" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1voronoi_1_1Edge_1a1699e396e1237c7746c5b17dceb19304" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int cam.voronoi.Edge::EDGE_NUM</definition>
+        <argsstring></argsstring>
+        <name>EDGE_NUM</name>
+        <qualifiedname>cam.voronoi.Edge.EDGE_NUM</qualifiedname>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="513" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="513" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1voronoi_1_1Edge_1a0be3933a4b7cf73143f06b06da1ca27f" prot="public" static="yes" mutable="no">
+        <type>dict</type>
+        <definition>dict cam.voronoi.Edge::DELETED</definition>
+        <argsstring></argsstring>
+        <name>DELETED</name>
+        <qualifiedname>cam.voronoi.Edge.DELETED</qualifiedname>
+        <initializer>=  {}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="514" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="514" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcam_1_1voronoi_1_1Edge_1a5b93e5081073c732d3481ce14728f1b9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.voronoi.Edge::a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <qualifiedname>cam.voronoi.Edge.a</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="517" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="517" bodyend="-1"/>
+        <referencedby refid="classcam_1_1voronoi_1_1Edge_1a187545924179ca70e04edb9adc82995c" compoundref="voronoi_8py" startline="524" endline="528">cam.voronoi.Edge.dump</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1ad072e258b3de2c4fa8b1033f28d67bbb" compoundref="iso_8py" startline="642" endline="709">cam.nc.iso.Creator.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1a54b28a33e139c4d354fa74abf630440c" compoundref="iso_8py" startline="710" endline="726">cam.nc.iso.Creator.filter_xyz</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1cad__iso__read_1_1Parser_1abf885d019794a8bef1b69f446c8851e1" compoundref="cad__iso__read_8py" startline="164" endline="235">cam.nc.cad_iso_read.Parser.Parse</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden__read_1_1Parser_1a9c64dcddf3c2c0d3248079dde5314cfe" compoundref="heiden__read_8py" startline="99" endline="161">cam.nc.heiden_read.Parser.Parsey</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a2262faed4f078201d3fab4c023d3e1d2" compoundref="heiden_8py" startline="381" endline="441">cam.nc.heiden.Creator.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1a64bd7544d638558d278746433d3855d6" compoundref="iso_8py" startline="578" endline="641">cam.nc.iso.Creator.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a58e2089cb00422e3761f487ab0160e2b" compoundref="lathe1_8py" startline="248" endline="312">cam.nc.lathe1.CreatorIso.rapid</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1voronoi_1_1Edge_1a6b18b30dbdf47d1b0cdf6b4eaa923e30" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.voronoi.Edge::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <qualifiedname>cam.voronoi.Edge.b</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="518" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="518" bodyend="-1"/>
+        <referencedby refid="classcam_1_1voronoi_1_1Edge_1a187545924179ca70e04edb9adc82995c" compoundref="voronoi_8py" startline="524" endline="528">cam.voronoi.Edge.dump</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1ad072e258b3de2c4fa8b1033f28d67bbb" compoundref="iso_8py" startline="642" endline="709">cam.nc.iso.Creator.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1a54b28a33e139c4d354fa74abf630440c" compoundref="iso_8py" startline="710" endline="726">cam.nc.iso.Creator.filter_xyz</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1cad__iso__read_1_1Parser_1abf885d019794a8bef1b69f446c8851e1" compoundref="cad__iso__read_8py" startline="164" endline="235">cam.nc.cad_iso_read.Parser.Parse</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden__read_1_1Parser_1a9c64dcddf3c2c0d3248079dde5314cfe" compoundref="heiden__read_8py" startline="99" endline="161">cam.nc.heiden_read.Parser.Parsey</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a2262faed4f078201d3fab4c023d3e1d2" compoundref="heiden_8py" startline="381" endline="441">cam.nc.heiden.Creator.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1a64bd7544d638558d278746433d3855d6" compoundref="iso_8py" startline="578" endline="641">cam.nc.iso.Creator.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a58e2089cb00422e3761f487ab0160e2b" compoundref="lathe1_8py" startline="248" endline="312">cam.nc.lathe1.CreatorIso.rapid</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1voronoi_1_1Edge_1aa0dabe9556c13ac45220e442151bfeb2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.voronoi.Edge::c</definition>
+        <argsstring></argsstring>
+        <name>c</name>
+        <qualifiedname>cam.voronoi.Edge.c</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="519" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="519" bodyend="-1"/>
+        <referencedby refid="classcam_1_1voronoi_1_1Edge_1a187545924179ca70e04edb9adc82995c" compoundref="voronoi_8py" startline="524" endline="528">cam.voronoi.Edge.dump</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1ad072e258b3de2c4fa8b1033f28d67bbb" compoundref="iso_8py" startline="642" endline="709">cam.nc.iso.Creator.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1a54b28a33e139c4d354fa74abf630440c" compoundref="iso_8py" startline="710" endline="726">cam.nc.iso.Creator.filter_xyz</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1cad__iso__read_1_1Parser_1abf885d019794a8bef1b69f446c8851e1" compoundref="cad__iso__read_8py" startline="164" endline="235">cam.nc.cad_iso_read.Parser.Parse</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden__read_1_1Parser_1a9c64dcddf3c2c0d3248079dde5314cfe" compoundref="heiden__read_8py" startline="99" endline="161">cam.nc.heiden_read.Parser.Parsey</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a2262faed4f078201d3fab4c023d3e1d2" compoundref="heiden_8py" startline="381" endline="441">cam.nc.heiden.Creator.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1a64bd7544d638558d278746433d3855d6" compoundref="iso_8py" startline="578" endline="641">cam.nc.iso.Creator.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a58e2089cb00422e3761f487ab0160e2b" compoundref="lathe1_8py" startline="248" endline="312">cam.nc.lathe1.CreatorIso.rapid</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1voronoi_1_1Edge_1a2ea1eee2854f1e2a15a02eff8b730b1b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.voronoi.Edge::ep</definition>
+        <argsstring></argsstring>
+        <name>ep</name>
+        <qualifiedname>cam.voronoi.Edge.ep</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="520" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="520" bodyend="-1"/>
+        <referencedby refid="classcam_1_1voronoi_1_1Edge_1a187545924179ca70e04edb9adc82995c" compoundref="voronoi_8py" startline="524" endline="528">cam.voronoi.Edge.dump</referencedby>
+        <referencedby refid="classcam_1_1voronoi_1_1Edge_1a92098b23bdd500a882f8d7784dcce0e4" compoundref="voronoi_8py" startline="529" endline="534">cam.voronoi.Edge.setEndpoint</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1voronoi_1_1Edge_1a2cb7e08ba19fae6602040f46dc03e9a1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.voronoi.Edge::reg</definition>
+        <argsstring></argsstring>
+        <name>reg</name>
+        <qualifiedname>cam.voronoi.Edge.reg</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="521" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="521" bodyend="-1"/>
+        <referencedby refid="classcam_1_1voronoi_1_1Edge_1a187545924179ca70e04edb9adc82995c" compoundref="voronoi_8py" startline="524" endline="528">cam.voronoi.Edge.dump</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1voronoi_1_1Edge_1a8db33174e78d021baca1637fff78c4ff" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.voronoi.Edge::edgenum</definition>
+        <argsstring></argsstring>
+        <name>edgenum</name>
+        <qualifiedname>cam.voronoi.Edge.edgenum</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="522" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="522" bodyend="-1"/>
+        <referencedby refid="classcam_1_1voronoi_1_1Edge_1a187545924179ca70e04edb9adc82995c" compoundref="voronoi_8py" startline="524" endline="528">cam.voronoi.Edge.dump</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcam_1_1voronoi_1_1Edge_1a495e5812e2e3162abdeacd7c8a59e3d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.voronoi.Edge.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>cam.voronoi.Edge.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="516" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="516" bodyend="523"/>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1voronoi_1_1Edge_1a187545924179ca70e04edb9adc82995c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.voronoi.Edge.dump</definition>
+        <argsstring>(self)</argsstring>
+        <name>dump</name>
+        <qualifiedname>cam.voronoi.Edge.dump</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="524" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="524" bodyend="528"/>
+        <references refid="classcam_1_1nc_1_1cad__iso__read_1_1Parser_1afd31d0836112cf49be00ab44b7b7b7dc" compoundref="cad__iso__read_8py" startline="37">cam.nc.cad_iso_read.Parser.a</references>
+        <references refid="classcam_1_1nc_1_1heiden_1_1Creator_1ac38c505b417f3b990d45143f2fab87c9" compoundref="heiden_8py" startline="32">cam.nc.heiden.Creator.a</references>
+        <references refid="classcam_1_1nc_1_1heiden__read_1_1Parser_1a2e54d3dfd4d2afd6849faebc64f88e65" compoundref="heiden__read_8py" startline="58">cam.nc.heiden_read.Parser.a</references>
+        <references refid="classcam_1_1nc_1_1iso_1_1Creator_1a5bf33095a84499e5eda47988cc5b546c" compoundref="iso_8py" startline="22">cam.nc.iso.Creator.a</references>
+        <references refid="classcam_1_1nc_1_1iso__read_1_1Parser_1a718e791c82cc1c06a1d6e571abdd6ec4" compoundref="iso__read_8py" startline="36">cam.nc.iso_read.Parser.a</references>
+        <references refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a40f2fcb455194e2cec1e049a1eb7c1b9" compoundref="lathe1_8py" startline="20">cam.nc.lathe1.CreatorIso.a</references>
+        <references refid="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a0c25d13d765cc39c9ad4accea47fc89f" compoundref="makerbotHBP_8py" startline="167">cam.nc.makerbotHBP.CreatorMakerbotHBP.a</references>
+        <references refid="classcam_1_1nc_1_1nc__read_1_1Parser_1a617dd81db0bbe41828591b6d39654c38" compoundref="nc__read_8py" startline="79">cam.nc.nc_read.Parser.a</references>
+        <references refid="classcam_1_1nc_1_1rez2_1_1Creator_1a336006692166a7610e897448e1719f88" compoundref="rez2_8py" startline="21">cam.nc.rez2.Creator.a</references>
+        <references refid="classcam_1_1nc_1_1rez2__read_1_1Parser_1a40819af39d23f8be5e4b86e55e96a5fb" compoundref="rez2__read_8py" startline="30">cam.nc.rez2_read.Parser.a</references>
+        <references refid="classcam_1_1voronoi_1_1Edge_1a5b93e5081073c732d3481ce14728f1b9" compoundref="voronoi_8py" startline="517">cam.voronoi.Edge.a</references>
+        <references refid="classcam_1_1nc_1_1cad__iso__read_1_1Parser_1a93a62b7a93505c0e9bfdeafbd3b0f3c4" compoundref="cad__iso__read_8py" startline="41">cam.nc.cad_iso_read.Parser.b</references>
+        <references refid="classcam_1_1nc_1_1heiden_1_1Creator_1a55251966842eb7ed3b67fc41ce56a86c" compoundref="heiden_8py" startline="33">cam.nc.heiden.Creator.b</references>
+        <references refid="classcam_1_1nc_1_1heiden__read_1_1Parser_1a13d036ca4adaf111bb43f7cb7291e474" compoundref="heiden__read_8py" startline="62">cam.nc.heiden_read.Parser.b</references>
+        <references refid="classcam_1_1nc_1_1iso_1_1Creator_1a0e9ad1b1c3c0fa020d412050e7b063c4" compoundref="iso_8py" startline="23">cam.nc.iso.Creator.b</references>
+        <references refid="classcam_1_1nc_1_1iso__read_1_1Parser_1a67823f5c73c913ffc8641485a37ef64e" compoundref="iso__read_8py" startline="40">cam.nc.iso_read.Parser.b</references>
+        <references refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a28a84d2d20e1e5bc409782bc7813f65b" compoundref="lathe1_8py" startline="21">cam.nc.lathe1.CreatorIso.b</references>
+        <references refid="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a1d76a5f0bcf75f63439839b09b144fdd" compoundref="makerbotHBP_8py" startline="175">cam.nc.makerbotHBP.CreatorMakerbotHBP.b</references>
+        <references refid="classcam_1_1nc_1_1nc__read_1_1Parser_1aebd9e6401562eef4721b8e9d6782bf69" compoundref="nc__read_8py" startline="80">cam.nc.nc_read.Parser.b</references>
+        <references refid="classcam_1_1nc_1_1rez2_1_1Creator_1a1ef983d34bb80c987337ee8a49cbbf15" compoundref="rez2_8py" startline="22">cam.nc.rez2.Creator.b</references>
+        <references refid="classcam_1_1nc_1_1rez2__read_1_1Parser_1a24ccb12a7edf3e48e9545bc7ebf729d6" compoundref="rez2__read_8py" startline="31">cam.nc.rez2_read.Parser.b</references>
+        <references refid="classcam_1_1voronoi_1_1Edge_1a6b18b30dbdf47d1b0cdf6b4eaa923e30" compoundref="voronoi_8py" startline="518">cam.voronoi.Edge.b</references>
+        <references refid="classcam_1_1nc_1_1cad__iso__read_1_1Parser_1a72db2550c8473351c48e1637be98e8cd" compoundref="cad__iso__read_8py" startline="45">cam.nc.cad_iso_read.Parser.c</references>
+        <references refid="classcam_1_1nc_1_1heiden_1_1Creator_1a19d5498d1c1d4eccf45c0cbec6a9acb6" compoundref="heiden_8py" startline="34">cam.nc.heiden.Creator.c</references>
+        <references refid="classcam_1_1nc_1_1heiden__read_1_1Parser_1a33ac3dba5dd50086031dd132c1cef18b" compoundref="heiden__read_8py" startline="66">cam.nc.heiden_read.Parser.c</references>
+        <references refid="classcam_1_1nc_1_1iso_1_1Creator_1ad13f4ceed9d0ae641bfd2c0cde585763" compoundref="iso_8py" startline="24">cam.nc.iso.Creator.c</references>
+        <references refid="classcam_1_1nc_1_1iso__read_1_1Parser_1ae61663d3c365f3c01ffacc09ffeff9e3" compoundref="iso__read_8py" startline="44">cam.nc.iso_read.Parser.c</references>
+        <references refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1aa2c5937ce15bbfe2b9dcfe0aa36a6e9b" compoundref="lathe1_8py" startline="22">cam.nc.lathe1.CreatorIso.c</references>
+        <references refid="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a6b3852a40df6162ce9e4cf2cc2791c43" compoundref="makerbotHBP_8py" startline="183">cam.nc.makerbotHBP.CreatorMakerbotHBP.c</references>
+        <references refid="classcam_1_1nc_1_1nc__read_1_1Parser_1a739314e3aa937b657856be8c1d8b0d6c" compoundref="nc__read_8py" startline="81">cam.nc.nc_read.Parser.c</references>
+        <references refid="classcam_1_1nc_1_1rez2_1_1Creator_1a209a5487d17b868f67e1134f1a6c82ad" compoundref="rez2_8py" startline="23">cam.nc.rez2.Creator.c</references>
+        <references refid="classcam_1_1nc_1_1rez2__read_1_1Parser_1a16b4952c1c656a4ebed5c765ca9b0ffd" compoundref="rez2__read_8py" startline="32">cam.nc.rez2_read.Parser.c</references>
+        <references refid="classcam_1_1voronoi_1_1Edge_1aa0dabe9556c13ac45220e442151bfeb2" compoundref="voronoi_8py" startline="519">cam.voronoi.Edge.c</references>
+        <references refid="classcam_1_1voronoi_1_1Edge_1a8db33174e78d021baca1637fff78c4ff" compoundref="voronoi_8py" startline="522">cam.voronoi.Edge.edgenum</references>
+        <references refid="classcam_1_1voronoi_1_1Edge_1a2ea1eee2854f1e2a15a02eff8b730b1b" compoundref="voronoi_8py" startline="520">cam.voronoi.Edge.ep</references>
+        <references refid="classcam_1_1voronoi_1_1Edge_1a2cb7e08ba19fae6602040f46dc03e9a1" compoundref="voronoi_8py" startline="521">cam.voronoi.Edge.reg</references>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1voronoi_1_1Edge_1a92098b23bdd500a882f8d7784dcce0e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.voronoi.Edge.setEndpoint</definition>
+        <argsstring>(self, lrFlag, site)</argsstring>
+        <name>setEndpoint</name>
+        <qualifiedname>cam.voronoi.Edge.setEndpoint</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>lrFlag</type>
+          <defname>lrFlag</defname>
+        </param>
+        <param>
+          <type>site</type>
+          <defname>site</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="529" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="529" bodyend="534"/>
+        <references refid="classcam_1_1voronoi_1_1Edge_1a2ea1eee2854f1e2a15a02eff8b730b1b" compoundref="voronoi_8py" startline="520">cam.voronoi.Edge.ep</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classcam_1_1voronoi_1_1Edge_1ae74629efa5cc77be12c0739a4a758640" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.voronoi.Edge.bisect</definition>
+        <argsstring>(s1, s2)</argsstring>
+        <name>bisect</name>
+        <qualifiedname>cam.voronoi.Edge.bisect</qualifiedname>
+        <param>
+          <type>s1</type>
+          <defname>s1</defname>
+        </param>
+        <param>
+          <type>s2</type>
+          <defname>s2</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="536" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="536" bodyend="568"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>cam.voronoi.Edge</label>
+        <link refid="classcam_1_1voronoi_1_1Edge"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>object</label>
+        <link refid="classobject"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>cam.voronoi.Edge</label>
+        <link refid="classcam_1_1voronoi_1_1Edge"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+EDGE_NUM</edgelabel>
+          <edgelabel>+LE</edgelabel>
+          <edgelabel>+RE</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+DELETED</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dict</label>
+      </node>
+      <node id="3">
+        <label>int</label>
+      </node>
+      <node id="2">
+        <label>object</label>
+        <link refid="classobject"/>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="510" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="510" bodyend="568"/>
+    <listofallmembers>
+      <member refid="classcam_1_1voronoi_1_1Edge_1a495e5812e2e3162abdeacd7c8a59e3d4" prot="public" virt="non-virtual"><scope>cam::voronoi::Edge</scope><name>__init__</name></member>
+      <member refid="classcam_1_1voronoi_1_1Edge_1a5b93e5081073c732d3481ce14728f1b9" prot="public" virt="non-virtual"><scope>cam::voronoi::Edge</scope><name>a</name></member>
+      <member refid="classcam_1_1voronoi_1_1Edge_1a6b18b30dbdf47d1b0cdf6b4eaa923e30" prot="public" virt="non-virtual"><scope>cam::voronoi::Edge</scope><name>b</name></member>
+      <member refid="classcam_1_1voronoi_1_1Edge_1ae74629efa5cc77be12c0739a4a758640" prot="public" virt="non-virtual"><scope>cam::voronoi::Edge</scope><name>bisect</name></member>
+      <member refid="classcam_1_1voronoi_1_1Edge_1aa0dabe9556c13ac45220e442151bfeb2" prot="public" virt="non-virtual"><scope>cam::voronoi::Edge</scope><name>c</name></member>
+      <member refid="classcam_1_1voronoi_1_1Edge_1a0be3933a4b7cf73143f06b06da1ca27f" prot="public" virt="non-virtual"><scope>cam::voronoi::Edge</scope><name>DELETED</name></member>
+      <member refid="classcam_1_1voronoi_1_1Edge_1a187545924179ca70e04edb9adc82995c" prot="public" virt="non-virtual"><scope>cam::voronoi::Edge</scope><name>dump</name></member>
+      <member refid="classcam_1_1voronoi_1_1Edge_1a1699e396e1237c7746c5b17dceb19304" prot="public" virt="non-virtual"><scope>cam::voronoi::Edge</scope><name>EDGE_NUM</name></member>
+      <member refid="classcam_1_1voronoi_1_1Edge_1a8db33174e78d021baca1637fff78c4ff" prot="public" virt="non-virtual"><scope>cam::voronoi::Edge</scope><name>edgenum</name></member>
+      <member refid="classcam_1_1voronoi_1_1Edge_1a2ea1eee2854f1e2a15a02eff8b730b1b" prot="public" virt="non-virtual"><scope>cam::voronoi::Edge</scope><name>ep</name></member>
+      <member refid="classcam_1_1voronoi_1_1Edge_1a3e460388b76a80cf7bbb520ce8302070" prot="public" virt="non-virtual"><scope>cam::voronoi::Edge</scope><name>LE</name></member>
+      <member refid="classcam_1_1voronoi_1_1Edge_1af714ba076df73eb740933093257e6a14" prot="public" virt="non-virtual"><scope>cam::voronoi::Edge</scope><name>RE</name></member>
+      <member refid="classcam_1_1voronoi_1_1Edge_1a2cb7e08ba19fae6602040f46dc03e9a1" prot="public" virt="non-virtual"><scope>cam::voronoi::Edge</scope><name>reg</name></member>
+      <member refid="classcam_1_1voronoi_1_1Edge_1a92098b23bdd500a882f8d7784dcce0e4" prot="public" virt="non-virtual"><scope>cam::voronoi::Edge</scope><name>setEndpoint</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,484 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter" xml:lang="en-US">
+<title>cam.nc.hxml_writer.HxmlWriter Class Reference</title>
+<indexterm><primary>cam.nc.hxml_writer.HxmlWriter</primary></indexterm>
+Collaboration diagram for cam.nc.hxml_writer.HxmlWriter:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1a16068c8d7be500bc8d9c962bb6cd16d6">__init__</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1ad4391268cf974e8637b829b1ec27c382">__del__</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1aed6f93c98cb8c0e3f3e826e75b6d6f15">write</link> (self, s)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1afeb6084dfab7b8f2329aee0b16098e15">begin_ncblock</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1a2e561ec54f08dff9d6275cba071a7d3d">end_ncblock</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1a6e7c6bc9c8c2a21f0921aff59038d03c">add_text</link> (self, s, col, cdata)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1adb0551863323ff7ab2906281fd5703df">set_mode</link> (self, units)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1afaf943891cd90b76fa6af488bc9aa1bb">metric</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1a436a65a95d5fe72d3bd218df50330d54">imperial</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1a6439ae429d6711afc62f954362e80aec">begin_path</link> (self, col)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1a148b76fde9d4c7ea5430a17628e6c9ef">end_path</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1ab35840b54db51f029936075a62ce2ff6">rapid</link> (self, x=None, y=None, z=None, a=None, b=None, c=None, machine_coordinates=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1ac958d009942f98626d17139695d73ea0">feed</link> (self, x=None, y=None, z=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1a403fdf3735ec6e70365ddac2a134222f">arc_cw</link> (self, x=None, y=None, z=None, i=None, j=None, k=None, r=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1aa89fa08595ee9733078e37d1692857f3">arc_ccw</link> (self, x=None, y=None, z=None, i=None, j=None, k=None, r=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1ac2e4ecca1b347a141f77f807334727c9">tool_change</link> (self, id)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1ae784fa9742110b81550c0810a83b1336">spindle</link> (self, s, clockwise)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1ab9ce249f07ea05c9b5393cb1f1fb6a47">feedrate</link> (self, f)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1a9ecbcbc437d91a80c11b77d2d9007887">add_line</link> (self, x, y, z, a=None, b=None, c=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1a475e3852584eaa4d673a094b0897132c">add_arc</link> (self, x, y, z, i, j, k, r=None, d=None)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1a50a8311e3d5df253fbde77eebbb08e99">file_out</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1a4d72775ee3a370edf61efd50eb617745">oldx</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1ada125dbf706fa0b0430d08e9b0ce93e3">oldy</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1a76b40a7bae6eae6da3b64f6396e8a64c">oldz</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1a16068c8d7be500bc8d9c962bb6cd16d6"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>cam.nc.hxml_writer.HxmlWriter</secondary></indexterm>
+<indexterm><primary>cam.nc.hxml_writer.HxmlWriter</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>cam.nc.hxml_writer.HxmlWriter.__init__ ( self)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1ad4391268cf974e8637b829b1ec27c382"/><section>
+    <title>__del__()</title>
+<indexterm><primary>__del__</primary><secondary>cam.nc.hxml_writer.HxmlWriter</secondary></indexterm>
+<indexterm><primary>cam.nc.hxml_writer.HxmlWriter</primary><secondary>__del__</secondary></indexterm>
+<para><computeroutput>cam.nc.hxml_writer.HxmlWriter.__del__ ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_ad4391268cf974e8637b829b1ec27c382_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1a475e3852584eaa4d673a094b0897132c"/><section>
+    <title>add_arc()</title>
+<indexterm><primary>add_arc</primary><secondary>cam.nc.hxml_writer.HxmlWriter</secondary></indexterm>
+<indexterm><primary>cam.nc.hxml_writer.HxmlWriter</primary><secondary>add_arc</secondary></indexterm>
+<para><computeroutput>cam.nc.hxml_writer.HxmlWriter.add_arc ( self,  x,  y,  z,  i,  j,  k,  r = <computeroutput>None</computeroutput>
+,  d = <computeroutput>None</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_a475e3852584eaa4d673a094b0897132c_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_a475e3852584eaa4d673a094b0897132c_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1a9ecbcbc437d91a80c11b77d2d9007887"/><section>
+    <title>add_line()</title>
+<indexterm><primary>add_line</primary><secondary>cam.nc.hxml_writer.HxmlWriter</secondary></indexterm>
+<indexterm><primary>cam.nc.hxml_writer.HxmlWriter</primary><secondary>add_line</secondary></indexterm>
+<para><computeroutput>cam.nc.hxml_writer.HxmlWriter.add_line ( self,  x,  y,  z,  a = <computeroutput>None</computeroutput>
+,  b = <computeroutput>None</computeroutput>
+,  c = <computeroutput>None</computeroutput>
+)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_a9ecbcbc437d91a80c11b77d2d9007887_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1a6e7c6bc9c8c2a21f0921aff59038d03c"/><section>
+    <title>add_text()</title>
+<indexterm><primary>add_text</primary><secondary>cam.nc.hxml_writer.HxmlWriter</secondary></indexterm>
+<indexterm><primary>cam.nc.hxml_writer.HxmlWriter</primary><secondary>add_text</secondary></indexterm>
+<para><computeroutput>cam.nc.hxml_writer.HxmlWriter.add_text ( self,  s,  col,  cdata)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_a6e7c6bc9c8c2a21f0921aff59038d03c_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_a6e7c6bc9c8c2a21f0921aff59038d03c_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1aa89fa08595ee9733078e37d1692857f3"/><section>
+    <title>arc_ccw()</title>
+<indexterm><primary>arc_ccw</primary><secondary>cam.nc.hxml_writer.HxmlWriter</secondary></indexterm>
+<indexterm><primary>cam.nc.hxml_writer.HxmlWriter</primary><secondary>arc_ccw</secondary></indexterm>
+<para><computeroutput>cam.nc.hxml_writer.HxmlWriter.arc_ccw ( self,  x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+,  i = <computeroutput>None</computeroutput>
+,  j = <computeroutput>None</computeroutput>
+,  k = <computeroutput>None</computeroutput>
+,  r = <computeroutput>None</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_aa89fa08595ee9733078e37d1692857f3_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1a403fdf3735ec6e70365ddac2a134222f"/><section>
+    <title>arc_cw()</title>
+<indexterm><primary>arc_cw</primary><secondary>cam.nc.hxml_writer.HxmlWriter</secondary></indexterm>
+<indexterm><primary>cam.nc.hxml_writer.HxmlWriter</primary><secondary>arc_cw</secondary></indexterm>
+<para><computeroutput>cam.nc.hxml_writer.HxmlWriter.arc_cw ( self,  x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+,  i = <computeroutput>None</computeroutput>
+,  j = <computeroutput>None</computeroutput>
+,  k = <computeroutput>None</computeroutput>
+,  r = <computeroutput>None</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_a403fdf3735ec6e70365ddac2a134222f_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1afeb6084dfab7b8f2329aee0b16098e15"/><section>
+    <title>begin_ncblock()</title>
+<indexterm><primary>begin_ncblock</primary><secondary>cam.nc.hxml_writer.HxmlWriter</secondary></indexterm>
+<indexterm><primary>cam.nc.hxml_writer.HxmlWriter</primary><secondary>begin_ncblock</secondary></indexterm>
+<para><computeroutput>cam.nc.hxml_writer.HxmlWriter.begin_ncblock ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_afeb6084dfab7b8f2329aee0b16098e15_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_afeb6084dfab7b8f2329aee0b16098e15_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1a6439ae429d6711afc62f954362e80aec"/><section>
+    <title>begin_path()</title>
+<indexterm><primary>begin_path</primary><secondary>cam.nc.hxml_writer.HxmlWriter</secondary></indexterm>
+<indexterm><primary>cam.nc.hxml_writer.HxmlWriter</primary><secondary>begin_path</secondary></indexterm>
+<para><computeroutput>cam.nc.hxml_writer.HxmlWriter.begin_path ( self,  col)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_a6439ae429d6711afc62f954362e80aec_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_a6439ae429d6711afc62f954362e80aec_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1a2e561ec54f08dff9d6275cba071a7d3d"/><section>
+    <title>end_ncblock()</title>
+<indexterm><primary>end_ncblock</primary><secondary>cam.nc.hxml_writer.HxmlWriter</secondary></indexterm>
+<indexterm><primary>cam.nc.hxml_writer.HxmlWriter</primary><secondary>end_ncblock</secondary></indexterm>
+<para><computeroutput>cam.nc.hxml_writer.HxmlWriter.end_ncblock ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_a2e561ec54f08dff9d6275cba071a7d3d_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_a2e561ec54f08dff9d6275cba071a7d3d_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1a148b76fde9d4c7ea5430a17628e6c9ef"/><section>
+    <title>end_path()</title>
+<indexterm><primary>end_path</primary><secondary>cam.nc.hxml_writer.HxmlWriter</secondary></indexterm>
+<indexterm><primary>cam.nc.hxml_writer.HxmlWriter</primary><secondary>end_path</secondary></indexterm>
+<para><computeroutput>cam.nc.hxml_writer.HxmlWriter.end_path ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_a148b76fde9d4c7ea5430a17628e6c9ef_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_a148b76fde9d4c7ea5430a17628e6c9ef_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1ac958d009942f98626d17139695d73ea0"/><section>
+    <title>feed()</title>
+<indexterm><primary>feed</primary><secondary>cam.nc.hxml_writer.HxmlWriter</secondary></indexterm>
+<indexterm><primary>cam.nc.hxml_writer.HxmlWriter</primary><secondary>feed</secondary></indexterm>
+<para><computeroutput>cam.nc.hxml_writer.HxmlWriter.feed ( self,  x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_ac958d009942f98626d17139695d73ea0_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_ac958d009942f98626d17139695d73ea0_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1ab9ce249f07ea05c9b5393cb1f1fb6a47"/><section>
+    <title>feedrate()</title>
+<indexterm><primary>feedrate</primary><secondary>cam.nc.hxml_writer.HxmlWriter</secondary></indexterm>
+<indexterm><primary>cam.nc.hxml_writer.HxmlWriter</primary><secondary>feedrate</secondary></indexterm>
+<para><computeroutput>cam.nc.hxml_writer.HxmlWriter.feedrate ( self,  f)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1a436a65a95d5fe72d3bd218df50330d54"/><section>
+    <title>imperial()</title>
+<indexterm><primary>imperial</primary><secondary>cam.nc.hxml_writer.HxmlWriter</secondary></indexterm>
+<indexterm><primary>cam.nc.hxml_writer.HxmlWriter</primary><secondary>imperial</secondary></indexterm>
+<para><computeroutput>cam.nc.hxml_writer.HxmlWriter.imperial ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_a436a65a95d5fe72d3bd218df50330d54_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_a436a65a95d5fe72d3bd218df50330d54_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1afaf943891cd90b76fa6af488bc9aa1bb"/><section>
+    <title>metric()</title>
+<indexterm><primary>metric</primary><secondary>cam.nc.hxml_writer.HxmlWriter</secondary></indexterm>
+<indexterm><primary>cam.nc.hxml_writer.HxmlWriter</primary><secondary>metric</secondary></indexterm>
+<para><computeroutput>cam.nc.hxml_writer.HxmlWriter.metric ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_afaf943891cd90b76fa6af488bc9aa1bb_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1ab35840b54db51f029936075a62ce2ff6"/><section>
+    <title>rapid()</title>
+<indexterm><primary>rapid</primary><secondary>cam.nc.hxml_writer.HxmlWriter</secondary></indexterm>
+<indexterm><primary>cam.nc.hxml_writer.HxmlWriter</primary><secondary>rapid</secondary></indexterm>
+<para><computeroutput>cam.nc.hxml_writer.HxmlWriter.rapid ( self,  x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+,  a = <computeroutput>None</computeroutput>
+,  b = <computeroutput>None</computeroutput>
+,  c = <computeroutput>None</computeroutput>
+,  machine_coordinates = <computeroutput>None</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_ab35840b54db51f029936075a62ce2ff6_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_ab35840b54db51f029936075a62ce2ff6_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1adb0551863323ff7ab2906281fd5703df"/><section>
+    <title>set_mode()</title>
+<indexterm><primary>set_mode</primary><secondary>cam.nc.hxml_writer.HxmlWriter</secondary></indexterm>
+<indexterm><primary>cam.nc.hxml_writer.HxmlWriter</primary><secondary>set_mode</secondary></indexterm>
+<para><computeroutput>cam.nc.hxml_writer.HxmlWriter.set_mode ( self,  units)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_adb0551863323ff7ab2906281fd5703df_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_adb0551863323ff7ab2906281fd5703df_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1ae784fa9742110b81550c0810a83b1336"/><section>
+    <title>spindle()</title>
+<indexterm><primary>spindle</primary><secondary>cam.nc.hxml_writer.HxmlWriter</secondary></indexterm>
+<indexterm><primary>cam.nc.hxml_writer.HxmlWriter</primary><secondary>spindle</secondary></indexterm>
+<para><computeroutput>cam.nc.hxml_writer.HxmlWriter.spindle ( self,  s,  clockwise)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_ae784fa9742110b81550c0810a83b1336_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1ac2e4ecca1b347a141f77f807334727c9"/><section>
+    <title>tool_change()</title>
+<indexterm><primary>tool_change</primary><secondary>cam.nc.hxml_writer.HxmlWriter</secondary></indexterm>
+<indexterm><primary>cam.nc.hxml_writer.HxmlWriter</primary><secondary>tool_change</secondary></indexterm>
+<para><computeroutput>cam.nc.hxml_writer.HxmlWriter.tool_change ( self,  id)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_ac2e4ecca1b347a141f77f807334727c9_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1aed6f93c98cb8c0e3f3e826e75b6d6f15"/><section>
+    <title>write()</title>
+<indexterm><primary>write</primary><secondary>cam.nc.hxml_writer.HxmlWriter</secondary></indexterm>
+<indexterm><primary>cam.nc.hxml_writer.HxmlWriter</primary><secondary>write</secondary></indexterm>
+<para><computeroutput>cam.nc.hxml_writer.HxmlWriter.write ( self,  s)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_aed6f93c98cb8c0e3f3e826e75b6d6f15_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1a50a8311e3d5df253fbde77eebbb08e99"/><section>
+    <title>file_out</title>
+<indexterm><primary>file_out</primary><secondary>cam.nc.hxml_writer.HxmlWriter</secondary></indexterm>
+<indexterm><primary>cam.nc.hxml_writer.HxmlWriter</primary><secondary>file_out</secondary></indexterm>
+<para><computeroutput>cam.nc.hxml_writer.HxmlWriter.file_out</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1a4d72775ee3a370edf61efd50eb617745"/><section>
+    <title>oldx</title>
+<indexterm><primary>oldx</primary><secondary>cam.nc.hxml_writer.HxmlWriter</secondary></indexterm>
+<indexterm><primary>cam.nc.hxml_writer.HxmlWriter</primary><secondary>oldx</secondary></indexterm>
+<para><computeroutput>cam.nc.hxml_writer.HxmlWriter.oldx</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1ada125dbf706fa0b0430d08e9b0ce93e3"/><section>
+    <title>oldy</title>
+<indexterm><primary>oldy</primary><secondary>cam.nc.hxml_writer.HxmlWriter</secondary></indexterm>
+<indexterm><primary>cam.nc.hxml_writer.HxmlWriter</primary><secondary>oldy</secondary></indexterm>
+<para><computeroutput>cam.nc.hxml_writer.HxmlWriter.oldy</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1a76b40a7bae6eae6da3b64f6396e8a64c"/><section>
+    <title>oldz</title>
+<indexterm><primary>oldz</primary><secondary>cam.nc.hxml_writer.HxmlWriter</secondary></indexterm>
+<indexterm><primary>cam.nc.hxml_writer.HxmlWriter</primary><secondary>oldz</secondary></indexterm>
+<para><computeroutput>cam.nc.hxml_writer.HxmlWriter.oldz</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/<link linkend="_hxml__writer_8py">hxml_writer.py</link></section>
+</section>

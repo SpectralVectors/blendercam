@@ -1,0 +1,432 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacecam_1_1joinery" xml:lang="en-US">
+<title>cam.joinery Namespace Reference</title>
+<indexterm><primary>cam.joinery</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacecam_1_1joinery_1a4ac4d3b27239e9cb08ea6e1bed5c0aca">finger_amount</link> (space, size)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1joinery_1aa8f26b93ee93e064acfdfbe7c6e10f8d">mortise</link> (length, thickness, finger_play, cx=0, cy=0, rotation=0)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1joinery_1ae6f7cc58c00bb5e33071ee36267d7984">interlock_groove</link> (length, thickness, finger_play, cx=0, cy=0, rotation=0)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1joinery_1afc581b78151a7aa0780d7b58f9c5ed53">interlock_twist</link> (length, thickness, finger_play, cx=0, cy=0, rotation=0, percentage=0.5)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1joinery_1a3da143ee91d1471d9ee3517d9e4236e2">twist_line</link> (length, thickness, finger_play, percentage, amount, distance, center=True)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1joinery_1a6081dedb48e3e42aa2d3f411707c7b68">twist_separator_slot</link> (length, thickness, finger_play=0.00005, percentage=0.5)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1joinery_1aa5fd56936169443acff0130d73692550">interlock_twist_separator</link> (length, thickness, amount, spacing, edge_distance, finger_play=0.00005, percentage=0.5, start=&apos;rounded&apos;, end=&apos;rounded&apos;)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1joinery_1ac9396593ad82b6ce75de7b39026a4aa1">horizontal_finger</link> (length, thickness, finger_play, amount, center=True)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1joinery_1aec5f91b01dacee42e43588eeb35fe865">vertical_finger</link> (length, thickness, finger_play, amount)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1joinery_1a20be3c603d8a81a7f1c4191d61234d2a">finger_pair</link> (name, dx=0, dy=0)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1joinery_1a3af0d33b2403e19a33d4b837e15c3c5f">create_base_plate</link> (height, width, depth)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1joinery_1a84f5fa18a97d8eb2f51f192f2bd6bd29">make_flex_pocket</link> (length, height, finger_thick, finger_width, pocket_width)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1joinery_1a9a2c964c6d51901cd3affb202bf5da68">make_variable_flex_pocket</link> (height, finger_thick, pocket_width, locations)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1joinery_1a4beb6fa6952bcbf9ff407ff4642fb85c">create_flex_side</link> (length, height, finger_thick, top_bottom=False)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1joinery_1af1aba5d7e1240c9c070b7a12efd28811">angle</link> (a, b)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1joinery_1a82ea8c18be2ffd4e5af6b1f72616885f">angle_difference</link> (a, b, c)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1joinery_1af8c753ab2426884c82136ed7dcdfcc03">fixed_finger</link> (loop, loop_length, finger_size, finger_thick, finger_tolerance, base=False)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1joinery_1a8d85d169ea9a64cbdf89d284737c883b">find_slope</link> (p1, p2)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1joinery_1a8697de1c50a8c7db18055aa1711c4207">slope_array</link> (loop)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1joinery_1ab6417066f03f11b1cec7f580599877e8">dslope_array</link> (loop, resolution=0.001)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1joinery_1a95096dd31f2638033794b4e801090bd6">variable_finger</link> (loop, loop_length, min_finger, finger_size, finger_thick, finger_tolerance, adaptive, base=False, double_adaptive=False)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1joinery_1a622ab1f40f0bd8272a4dca69e9b1ed13">single_interlock</link> (finger_depth, finger_thick, finger_tolerance, x, y, groove_angle, type, amount=1, twist_percentage=0.5)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1joinery_1abdc904de1ca164c34e7c78e527fdf86e">distributed_interlock</link> (loop, loop_length, finger_depth, finger_thick, finger_tolerance, <link linkend="_namespacecam_1_1joinery_1a4ac4d3b27239e9cb08ea6e1bed5c0aca">finger_amount</link>, tangent=0, fixed_angle=0, start=0.01, end=0.01, closed=True, type=&apos;GROOVE&apos;, twist_percentage=0.5)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>BlenderCAM &apos;joinery.py&apos; © 2021 Alain Pelletier
+
+Functions to create various woodworking joints - mortise, finger etc.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespacecam_1_1joinery_1af1aba5d7e1240c9c070b7a12efd28811"/><section>
+    <title>angle()</title>
+<indexterm><primary>angle</primary><secondary>cam.joinery</secondary></indexterm>
+<indexterm><primary>cam.joinery</primary><secondary>angle</secondary></indexterm>
+<para><computeroutput>cam.joinery.angle ( a,  b)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1joinery_af1aba5d7e1240c9c070b7a12efd28811_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1joinery_1a82ea8c18be2ffd4e5af6b1f72616885f"/><section>
+    <title>angle_difference()</title>
+<indexterm><primary>angle_difference</primary><secondary>cam.joinery</secondary></indexterm>
+<indexterm><primary>cam.joinery</primary><secondary>angle_difference</secondary></indexterm>
+<para><computeroutput>cam.joinery.angle_difference ( a,  b,  c)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1joinery_a82ea8c18be2ffd4e5af6b1f72616885f_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1joinery_1a3af0d33b2403e19a33d4b837e15c3c5f"/><section>
+    <title>create_base_plate()</title>
+<indexterm><primary>create_base_plate</primary><secondary>cam.joinery</secondary></indexterm>
+<indexterm><primary>cam.joinery</primary><secondary>create_base_plate</secondary></indexterm>
+<para><computeroutput>cam.joinery.create_base_plate ( height,  width,  depth)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1joinery_1a4beb6fa6952bcbf9ff407ff4642fb85c"/><section>
+    <title>create_flex_side()</title>
+<indexterm><primary>create_flex_side</primary><secondary>cam.joinery</secondary></indexterm>
+<indexterm><primary>cam.joinery</primary><secondary>create_flex_side</secondary></indexterm>
+<para><computeroutput>cam.joinery.create_flex_side ( length,  height,  finger_thick,  top_bottom = <computeroutput>False</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1joinery_a4beb6fa6952bcbf9ff407ff4642fb85c_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1joinery_1abdc904de1ca164c34e7c78e527fdf86e"/><section>
+    <title>distributed_interlock()</title>
+<indexterm><primary>distributed_interlock</primary><secondary>cam.joinery</secondary></indexterm>
+<indexterm><primary>cam.joinery</primary><secondary>distributed_interlock</secondary></indexterm>
+<para><computeroutput>cam.joinery.distributed_interlock ( loop,  loop_length,  finger_depth,  finger_thick,  finger_tolerance,  finger_amount,  tangent = <computeroutput>0</computeroutput>
+,  fixed_angle = <computeroutput>0</computeroutput>
+,  start = <computeroutput>0.01</computeroutput>
+,  end = <computeroutput>0.01</computeroutput>
+,  closed = <computeroutput>True</computeroutput>
+,  type = <computeroutput>&apos;GROOVE&apos;</computeroutput>
+,  twist_percentage = <computeroutput>0.5</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1joinery_abdc904de1ca164c34e7c78e527fdf86e_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1joinery_1ab6417066f03f11b1cec7f580599877e8"/><section>
+    <title>dslope_array()</title>
+<indexterm><primary>dslope_array</primary><secondary>cam.joinery</secondary></indexterm>
+<indexterm><primary>cam.joinery</primary><secondary>dslope_array</secondary></indexterm>
+<para><computeroutput>cam.joinery.dslope_array ( loop,  resolution = <computeroutput>0.001</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1joinery_ab6417066f03f11b1cec7f580599877e8_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1joinery_1a8d85d169ea9a64cbdf89d284737c883b"/><section>
+    <title>find_slope()</title>
+<indexterm><primary>find_slope</primary><secondary>cam.joinery</secondary></indexterm>
+<indexterm><primary>cam.joinery</primary><secondary>find_slope</secondary></indexterm>
+<para><computeroutput>cam.joinery.find_slope ( p1,  p2)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1joinery_a8d85d169ea9a64cbdf89d284737c883b_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1joinery_1a4ac4d3b27239e9cb08ea6e1bed5c0aca"/><section>
+    <title>finger_amount()</title>
+<indexterm><primary>finger_amount</primary><secondary>cam.joinery</secondary></indexterm>
+<indexterm><primary>cam.joinery</primary><secondary>finger_amount</secondary></indexterm>
+<para><computeroutput>cam.joinery.finger_amount ( space,  size)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1joinery_1a20be3c603d8a81a7f1c4191d61234d2a"/><section>
+    <title>finger_pair()</title>
+<indexterm><primary>finger_pair</primary><secondary>cam.joinery</secondary></indexterm>
+<indexterm><primary>cam.joinery</primary><secondary>finger_pair</secondary></indexterm>
+<para><computeroutput>cam.joinery.finger_pair ( name,  dx = <computeroutput>0</computeroutput>
+,  dy = <computeroutput>0</computeroutput>
+)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1joinery_a20be3c603d8a81a7f1c4191d61234d2a_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1joinery_1af8c753ab2426884c82136ed7dcdfcc03"/><section>
+    <title>fixed_finger()</title>
+<indexterm><primary>fixed_finger</primary><secondary>cam.joinery</secondary></indexterm>
+<indexterm><primary>cam.joinery</primary><secondary>fixed_finger</secondary></indexterm>
+<para><computeroutput>cam.joinery.fixed_finger ( loop,  loop_length,  finger_size,  finger_thick,  finger_tolerance,  base = <computeroutput>False</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1joinery_af8c753ab2426884c82136ed7dcdfcc03_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1joinery_1ac9396593ad82b6ce75de7b39026a4aa1"/><section>
+    <title>horizontal_finger()</title>
+<indexterm><primary>horizontal_finger</primary><secondary>cam.joinery</secondary></indexterm>
+<indexterm><primary>cam.joinery</primary><secondary>horizontal_finger</secondary></indexterm>
+<para><computeroutput>cam.joinery.horizontal_finger ( length,  thickness,  finger_play,  amount,  center = <computeroutput>True</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1joinery_ac9396593ad82b6ce75de7b39026a4aa1_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1joinery_1ae6f7cc58c00bb5e33071ee36267d7984"/><section>
+    <title>interlock_groove()</title>
+<indexterm><primary>interlock_groove</primary><secondary>cam.joinery</secondary></indexterm>
+<indexterm><primary>cam.joinery</primary><secondary>interlock_groove</secondary></indexterm>
+<para><computeroutput>cam.joinery.interlock_groove ( length,  thickness,  finger_play,  cx = <computeroutput>0</computeroutput>
+,  cy = <computeroutput>0</computeroutput>
+,  rotation = <computeroutput>0</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1joinery_ae6f7cc58c00bb5e33071ee36267d7984_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1joinery_ae6f7cc58c00bb5e33071ee36267d7984_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1joinery_1afc581b78151a7aa0780d7b58f9c5ed53"/><section>
+    <title>interlock_twist()</title>
+<indexterm><primary>interlock_twist</primary><secondary>cam.joinery</secondary></indexterm>
+<indexterm><primary>cam.joinery</primary><secondary>interlock_twist</secondary></indexterm>
+<para><computeroutput>cam.joinery.interlock_twist ( length,  thickness,  finger_play,  cx = <computeroutput>0</computeroutput>
+,  cy = <computeroutput>0</computeroutput>
+,  rotation = <computeroutput>0</computeroutput>
+,  percentage = <computeroutput>0.5</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1joinery_afc581b78151a7aa0780d7b58f9c5ed53_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1joinery_afc581b78151a7aa0780d7b58f9c5ed53_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1joinery_1aa5fd56936169443acff0130d73692550"/><section>
+    <title>interlock_twist_separator()</title>
+<indexterm><primary>interlock_twist_separator</primary><secondary>cam.joinery</secondary></indexterm>
+<indexterm><primary>cam.joinery</primary><secondary>interlock_twist_separator</secondary></indexterm>
+<para><computeroutput>cam.joinery.interlock_twist_separator ( length,  thickness,  amount,  spacing,  edge_distance,  finger_play = <computeroutput>0.00005</computeroutput>
+,  percentage = <computeroutput>0.5</computeroutput>
+,  start = <computeroutput>&apos;rounded&apos;</computeroutput>
+,  end = <computeroutput>&apos;rounded&apos;</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1joinery_aa5fd56936169443acff0130d73692550_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1joinery_1a84f5fa18a97d8eb2f51f192f2bd6bd29"/><section>
+    <title>make_flex_pocket()</title>
+<indexterm><primary>make_flex_pocket</primary><secondary>cam.joinery</secondary></indexterm>
+<indexterm><primary>cam.joinery</primary><secondary>make_flex_pocket</secondary></indexterm>
+<para><computeroutput>cam.joinery.make_flex_pocket ( length,  height,  finger_thick,  finger_width,  pocket_width)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1joinery_a84f5fa18a97d8eb2f51f192f2bd6bd29_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1joinery_1a9a2c964c6d51901cd3affb202bf5da68"/><section>
+    <title>make_variable_flex_pocket()</title>
+<indexterm><primary>make_variable_flex_pocket</primary><secondary>cam.joinery</secondary></indexterm>
+<indexterm><primary>cam.joinery</primary><secondary>make_variable_flex_pocket</secondary></indexterm>
+<para><computeroutput>cam.joinery.make_variable_flex_pocket ( height,  finger_thick,  pocket_width,  locations)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1joinery_a9a2c964c6d51901cd3affb202bf5da68_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1joinery_1aa8f26b93ee93e064acfdfbe7c6e10f8d"/><section>
+    <title>mortise()</title>
+<indexterm><primary>mortise</primary><secondary>cam.joinery</secondary></indexterm>
+<indexterm><primary>cam.joinery</primary><secondary>mortise</secondary></indexterm>
+<para><computeroutput>cam.joinery.mortise ( length,  thickness,  finger_play,  cx = <computeroutput>0</computeroutput>
+,  cy = <computeroutput>0</computeroutput>
+,  rotation = <computeroutput>0</computeroutput>
+)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1joinery_aa8f26b93ee93e064acfdfbe7c6e10f8d_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1joinery_1a622ab1f40f0bd8272a4dca69e9b1ed13"/><section>
+    <title>single_interlock()</title>
+<indexterm><primary>single_interlock</primary><secondary>cam.joinery</secondary></indexterm>
+<indexterm><primary>cam.joinery</primary><secondary>single_interlock</secondary></indexterm>
+<para><computeroutput>cam.joinery.single_interlock ( finger_depth,  finger_thick,  finger_tolerance,  x,  y,  groove_angle,  type,  amount = <computeroutput>1</computeroutput>
+,  twist_percentage = <computeroutput>0.5</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1joinery_a622ab1f40f0bd8272a4dca69e9b1ed13_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1joinery_a622ab1f40f0bd8272a4dca69e9b1ed13_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1joinery_1a8697de1c50a8c7db18055aa1711c4207"/><section>
+    <title>slope_array()</title>
+<indexterm><primary>slope_array</primary><secondary>cam.joinery</secondary></indexterm>
+<indexterm><primary>cam.joinery</primary><secondary>slope_array</secondary></indexterm>
+<para><computeroutput>cam.joinery.slope_array ( loop)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1joinery_a8697de1c50a8c7db18055aa1711c4207_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1joinery_1a3da143ee91d1471d9ee3517d9e4236e2"/><section>
+    <title>twist_line()</title>
+<indexterm><primary>twist_line</primary><secondary>cam.joinery</secondary></indexterm>
+<indexterm><primary>cam.joinery</primary><secondary>twist_line</secondary></indexterm>
+<para><computeroutput>cam.joinery.twist_line ( length,  thickness,  finger_play,  percentage,  amount,  distance,  center = <computeroutput>True</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1joinery_a3da143ee91d1471d9ee3517d9e4236e2_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1joinery_1a6081dedb48e3e42aa2d3f411707c7b68"/><section>
+    <title>twist_separator_slot()</title>
+<indexterm><primary>twist_separator_slot</primary><secondary>cam.joinery</secondary></indexterm>
+<indexterm><primary>cam.joinery</primary><secondary>twist_separator_slot</secondary></indexterm>
+<para><computeroutput>cam.joinery.twist_separator_slot ( length,  thickness,  finger_play = <computeroutput>0.00005</computeroutput>
+,  percentage = <computeroutput>0.5</computeroutput>
+)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1joinery_a6081dedb48e3e42aa2d3f411707c7b68_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1joinery_1a95096dd31f2638033794b4e801090bd6"/><section>
+    <title>variable_finger()</title>
+<indexterm><primary>variable_finger</primary><secondary>cam.joinery</secondary></indexterm>
+<indexterm><primary>cam.joinery</primary><secondary>variable_finger</secondary></indexterm>
+<para><computeroutput>cam.joinery.variable_finger ( loop,  loop_length,  min_finger,  finger_size,  finger_thick,  finger_tolerance,  adaptive,  base = <computeroutput>False</computeroutput>
+,  double_adaptive = <computeroutput>False</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1joinery_a95096dd31f2638033794b4e801090bd6_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1joinery_1aec5f91b01dacee42e43588eeb35fe865"/><section>
+    <title>vertical_finger()</title>
+<indexterm><primary>vertical_finger</primary><secondary>cam.joinery</secondary></indexterm>
+<indexterm><primary>cam.joinery</primary><secondary>vertical_finger</secondary></indexterm>
+<para><computeroutput>cam.joinery.vertical_finger ( length,  thickness,  finger_play,  amount)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1joinery_aec5f91b01dacee42e43588eeb35fe865_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+</section>

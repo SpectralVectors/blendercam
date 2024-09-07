@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="install__addon_8py" kind="file" language="Python">
+    <compoundname>install_addon.py</compoundname>
+    <innernamespace refid="namespaceinstall__addon">install_addon</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespaceinstall__addon" refkind="compound"><highlight class="keyword">import</highlight><highlight class="normal"><sp/>pathlib</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>shutil</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>subprocess</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>sys</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>tempfile</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="namespaceinstall__addon_1a236e313b438a8226a866e2e1edb238d9" refkind="member"><highlight class="normal">INSTALL_CODE<sp/>=<sp/>f</highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="9"><highlight class="stringliteral">import<sp/>bpy</highlight></codeline>
+<codeline lineno="10"><highlight class="stringliteral">bpy.context.preferences.system.use_online_access<sp/>=<sp/>True</highlight></codeline>
+<codeline lineno="11"><highlight class="stringliteral">bpy.ops.extensions.repo_sync_all(use_active_only=False)</highlight></codeline>
+<codeline lineno="12"><highlight class="stringliteral">bpy.ops.extensions.package_install_files(filepath=&apos;{sys.argv[1]}&apos;,<sp/>repo=&apos;user_default&apos;)</highlight></codeline>
+<codeline lineno="13"><highlight class="stringliteral">bpy.ops.extensions.package_install(repo_index=0,<sp/>pkg_id=&quot;stl_format_legacy&quot;)</highlight></codeline>
+<codeline lineno="14"><highlight class="stringliteral">bpy.ops.extensions.package_install(repo_index=0,<sp/>pkg_id=&quot;simplify_curves_plus&quot;)</highlight></codeline>
+<codeline lineno="15"><highlight class="stringliteral">bpy.ops.extensions.package_install(repo_index=0,<sp/>pkg_id=&quot;curve_tools&quot;)</highlight></codeline>
+<codeline lineno="16"><highlight class="stringliteral">bpy.ops.wm.save_userpref()</highlight></codeline>
+<codeline lineno="17"><highlight class="stringliteral">&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="namespaceinstall__addon_1a4d236307ed417fe6467d28c3d34744e3" refkind="member"><highlight class="normal">NUM_RETRIES<sp/>=<sp/>10</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">with</highlight><highlight class="normal"><sp/>tempfile.TemporaryDirectory()<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>td:</highlight></codeline>
+<codeline lineno="22" refid="namespaceinstall__addon_1acf9fc90c53e168459f7b3b9cc8f0755a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>file<sp/>=<sp/>pathlib.Path(td,<sp/></highlight><highlight class="stringliteral">&quot;install.py&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>file.write_text(INSTALL_CODE)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>blender<sp/>4.0<sp/>installing<sp/>addon<sp/>crashes<sp/>sometimes<sp/>on<sp/>mac<sp/>github<sp/>actions...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>x<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(NUM_RETRIES):</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="28" refid="namespaceinstall__addon_1a1862b103b0ea7287535e61ed2067081b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>subprocess.run([shutil.which(</highlight><highlight class="stringliteral">&apos;blender&apos;</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral">&apos;-b&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;-P&apos;</highlight><highlight class="normal">,<sp/>str(file)],<sp/>shell=</highlight><highlight class="keyword">False</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="29" refid="namespaceinstall__addon_1a878361957624bbe414dca92ab2d51d9d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>check=</highlight><highlight class="keyword">True</highlight><highlight class="normal">,<sp/>stdout=subprocess.PIPE,<sp/>stderr=subprocess.STDOUT,<sp/>text=</highlight><highlight class="keyword">True</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;installed<sp/>addon<sp/>okay&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys.exit(0)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">except</highlight><highlight class="normal"><sp/>subprocess.CalledProcessError<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>e:</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;Install<sp/>addon<sp/>failed,<sp/>retrying:&quot;</highlight><highlight class="normal">,<sp/>e)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;Command<sp/>output:&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;------------------------------&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(e.output)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;------------------------------&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>line<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>str(e.output):</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>line.startswith(</highlight><highlight class="stringliteral">&quot;Writing:<sp/>&quot;</highlight><highlight class="normal">):</highlight></codeline>
+<codeline lineno="40" refid="namespaceinstall__addon_1a6dccfd2c3db7c717df794f5b8a41c425" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>crash_file<sp/>=<sp/>pathlib.Path(line[len(</highlight><highlight class="stringliteral">&quot;Writing:<sp/>&quot;</highlight><highlight class="normal">):])</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>crash_file.exists():</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;Crash<sp/>log:\n================&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(crash_file.read_text())</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;============================&quot;</highlight><highlight class="normal">)</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/tests/install_addon.py"/>
+  </compounddef>
+</doxygen>

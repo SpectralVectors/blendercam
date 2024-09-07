@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1ui_1_1CustomPanel" xml:lang="en-US">
+<title>cam.ui.CustomPanel Class Reference</title>
+<indexterm><primary>cam.ui.CustomPanel</primary></indexterm>
+Inheritance diagram for cam.ui.CustomPanel:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui_1_1CustomPanel__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.ui.CustomPanel:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui_1_1CustomPanel__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1ui_1_1CustomPanel_1acd4060f5d8c2e3fd0d4a2c8cc2c24e28">poll</link> (cls, context)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui_1_1CustomPanel_1a77856c61f7c916d86061fa3bc41a0c2d">draw</link> (self, context)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classcam_1_1ui_1_1CustomPanel_1a2d3996ad47b79d3e7027f5790d62e813">bl_space_type</link> = &apos;VIEW_3D&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1ui_1_1CustomPanel_1af93e3f668c449b0a578a53cbdac7818c">bl_region_type</link> = &apos;TOOLS&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1ui_1_1CustomPanel_1a236a769f9afdedaffb7c1a9dcd887de2">bl_context</link> = &quot;objectmode&quot;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1ui_1_1CustomPanel_1a18008a18980aead2ff83155cfcb9d0ac">bl_label</link> = &quot;Import G-code&quot;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1ui_1_1CustomPanel_1a6ef2ccae53850117d788e35d6653a5b2">bl_idname</link> = &quot;OBJECT_PT_importgcode&quot;</para>
+</listitem>
+            <listitem><para>dict <link linkend="_classcam_1_1ui_1_1CustomPanel_1aae2dc3c18a9caa6d4cc33e2c2d88a99d">bl_options</link> = {&apos;DEFAULT_CLOSED&apos;}</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1ui_1_1CustomPanel_1a77856c61f7c916d86061fa3bc41a0c2d"/><section>
+    <title>draw()</title>
+<indexterm><primary>draw</primary><secondary>cam.ui.CustomPanel</secondary></indexterm>
+<indexterm><primary>cam.ui.CustomPanel</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput>cam.ui.CustomPanel.draw ( self,  context)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui_1_1CustomPanel_1acd4060f5d8c2e3fd0d4a2c8cc2c24e28"/><section>
+    <title>poll()</title>
+<indexterm><primary>poll</primary><secondary>cam.ui.CustomPanel</secondary></indexterm>
+<indexterm><primary>cam.ui.CustomPanel</primary><secondary>poll</secondary></indexterm>
+<para><computeroutput>cam.ui.CustomPanel.poll ( cls,  context)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1ui_1_1CustomPanel_1a236a769f9afdedaffb7c1a9dcd887de2"/><section>
+    <title>bl_context</title>
+<indexterm><primary>bl_context</primary><secondary>cam.ui.CustomPanel</secondary></indexterm>
+<indexterm><primary>cam.ui.CustomPanel</primary><secondary>bl_context</secondary></indexterm>
+<para><computeroutput>str cam.ui.CustomPanel.bl_context = &quot;objectmode&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui_1_1CustomPanel_1a6ef2ccae53850117d788e35d6653a5b2"/><section>
+    <title>bl_idname</title>
+<indexterm><primary>bl_idname</primary><secondary>cam.ui.CustomPanel</secondary></indexterm>
+<indexterm><primary>cam.ui.CustomPanel</primary><secondary>bl_idname</secondary></indexterm>
+<para><computeroutput>str cam.ui.CustomPanel.bl_idname = &quot;OBJECT_PT_importgcode&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui_1_1CustomPanel_1a18008a18980aead2ff83155cfcb9d0ac"/><section>
+    <title>bl_label</title>
+<indexterm><primary>bl_label</primary><secondary>cam.ui.CustomPanel</secondary></indexterm>
+<indexterm><primary>cam.ui.CustomPanel</primary><secondary>bl_label</secondary></indexterm>
+<para><computeroutput>str cam.ui.CustomPanel.bl_label = &quot;Import G-code&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui_1_1CustomPanel_1aae2dc3c18a9caa6d4cc33e2c2d88a99d"/><section>
+    <title>bl_options</title>
+<indexterm><primary>bl_options</primary><secondary>cam.ui.CustomPanel</secondary></indexterm>
+<indexterm><primary>cam.ui.CustomPanel</primary><secondary>bl_options</secondary></indexterm>
+<para><computeroutput>dict cam.ui.CustomPanel.bl_options = {&apos;DEFAULT_CLOSED&apos;}<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui_1_1CustomPanel_1af93e3f668c449b0a578a53cbdac7818c"/><section>
+    <title>bl_region_type</title>
+<indexterm><primary>bl_region_type</primary><secondary>cam.ui.CustomPanel</secondary></indexterm>
+<indexterm><primary>cam.ui.CustomPanel</primary><secondary>bl_region_type</secondary></indexterm>
+<para><computeroutput>str cam.ui.CustomPanel.bl_region_type = &apos;TOOLS&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui_1_1CustomPanel_1a2d3996ad47b79d3e7027f5790d62e813"/><section>
+    <title>bl_space_type</title>
+<indexterm><primary>bl_space_type</primary><secondary>cam.ui.CustomPanel</secondary></indexterm>
+<indexterm><primary>cam.ui.CustomPanel</primary><secondary>bl_space_type</secondary></indexterm>
+<para><computeroutput>str cam.ui.CustomPanel.bl_space_type = &apos;VIEW_3D&apos;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/<link linkend="_ui_8py">ui.py</link></section>
+</section>

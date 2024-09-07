@@ -1,0 +1,501 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>blendercam: cam.curvecamtools.CamCurveOvercutsB Class Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">blendercam
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part --><!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('classcam_1_1curvecamtools_1_1CamCurveOvercutsB.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="classcam_1_1curvecamtools_1_1CamCurveOvercutsB-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">cam.curvecamtools.CamCurveOvercutsB Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Inheritance diagram for cam.curvecamtools.CamCurveOvercutsB:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1curvecamtools_1_1CamCurveOvercutsB__inherit__graph.svg" width="226" height="404"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Collaboration diagram for cam.curvecamtools.CamCurveOvercutsB:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1curvecamtools_1_1CamCurveOvercutsB__coll__graph.svg" width="646" height="288"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a2810b434e0f2673d137991ddb6a10eae" id="r_a2810b434e0f2673d137991ddb6a10eae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2810b434e0f2673d137991ddb6a10eae">poll</a> (cls, context)</td></tr>
+<tr class="separator:a2810b434e0f2673d137991ddb6a10eae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dfd3aeb9a26899f900625361349c9d0" id="r_a4dfd3aeb9a26899f900625361349c9d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4dfd3aeb9a26899f900625361349c9d0">execute</a> (self, context)</td></tr>
+<tr class="separator:a4dfd3aeb9a26899f900625361349c9d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6feba745a3f4f35f8e59e2204c5a4f50" id="r_a6feba745a3f4f35f8e59e2204c5a4f50"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6feba745a3f4f35f8e59e2204c5a4f50">invoke</a> (self, context, event)</td></tr>
+<tr class="separator:a6feba745a3f4f35f8e59e2204c5a4f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:ab43e6e355b49019bbbf1175f33768c31" id="r_ab43e6e355b49019bbbf1175f33768c31"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab43e6e355b49019bbbf1175f33768c31">bl_idname</a> = &quot;object.curve_overcuts_b&quot;</td></tr>
+<tr class="separator:ab43e6e355b49019bbbf1175f33768c31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00a68e00c2ba55403a9f89ace24c2b49" id="r_a00a68e00c2ba55403a9f89ace24c2b49"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00a68e00c2ba55403a9f89ace24c2b49">bl_label</a> = &quot;Add Overcuts - B&quot;</td></tr>
+<tr class="separator:a00a68e00c2ba55403a9f89ace24c2b49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca08c0e28297a1096ffd5d129a376ee9" id="r_aca08c0e28297a1096ffd5d129a376ee9"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca08c0e28297a1096ffd5d129a376ee9">bl_options</a> = {'REGISTER', 'UNDO'}</td></tr>
+<tr class="separator:aca08c0e28297a1096ffd5d129a376ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd44e9e8c2773daa67e19b90ff2f61c7" id="r_afd44e9e8c2773daa67e19b90ff2f61c7"><td class="memItemLeft" align="right" valign="top">FloatProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd44e9e8c2773daa67e19b90ff2f61c7">diameter</a></td></tr>
+<tr class="separator:afd44e9e8c2773daa67e19b90ff2f61c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75cc682947e5ce714679f4e1bd861af3" id="r_a75cc682947e5ce714679f4e1bd861af3"><td class="memItemLeft" align="right" valign="top">EnumProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75cc682947e5ce714679f4e1bd861af3">style</a></td></tr>
+<tr class="separator:a75cc682947e5ce714679f4e1bd861af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e58839ae191156afaf3bf34c6c82e77" id="r_a7e58839ae191156afaf3bf34c6c82e77"><td class="memItemLeft" align="right" valign="top">FloatProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e58839ae191156afaf3bf34c6c82e77">threshold</a></td></tr>
+<tr class="separator:a7e58839ae191156afaf3bf34c6c82e77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f0f19f527f31359194197be06ecef90" id="r_a7f0f19f527f31359194197be06ecef90"><td class="memItemLeft" align="right" valign="top">BoolProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f0f19f527f31359194197be06ecef90">do_outer</a></td></tr>
+<tr class="separator:a7f0f19f527f31359194197be06ecef90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f9ec2410395cd0732a28d68760b6626" id="r_a2f9ec2410395cd0732a28d68760b6626"><td class="memItemLeft" align="right" valign="top">BoolProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f9ec2410395cd0732a28d68760b6626">do_invert</a></td></tr>
+<tr class="separator:a2f9ec2410395cd0732a28d68760b6626"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade20fb00f6d4308c669aff796229398b" id="r_ade20fb00f6d4308c669aff796229398b"><td class="memItemLeft" align="right" valign="top">BoolProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade20fb00f6d4308c669aff796229398b">otherEdge</a></td></tr>
+<tr class="separator:ade20fb00f6d4308c669aff796229398b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><pre class="fragment">Adds Overcuts for Slots</pre> </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4dfd3aeb9a26899f900625361349c9d0" name="a4dfd3aeb9a26899f900625361349c9d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dfd3aeb9a26899f900625361349c9d0">&#9670;&#160;</a></span>execute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.curvecamtools.CamCurveOvercutsB.execute </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>context</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6feba745a3f4f35f8e59e2204c5a4f50" name="a6feba745a3f4f35f8e59e2204c5a4f50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6feba745a3f4f35f8e59e2204c5a4f50">&#9670;&#160;</a></span>invoke()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.curvecamtools.CamCurveOvercutsB.invoke </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>context</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>event</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2810b434e0f2673d137991ddb6a10eae" name="a2810b434e0f2673d137991ddb6a10eae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2810b434e0f2673d137991ddb6a10eae">&#9670;&#160;</a></span>poll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.curvecamtools.CamCurveOvercutsB.poll </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>cls</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>context</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ab43e6e355b49019bbbf1175f33768c31" name="ab43e6e355b49019bbbf1175f33768c31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab43e6e355b49019bbbf1175f33768c31">&#9670;&#160;</a></span>bl_idname</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">str cam.curvecamtools.CamCurveOvercutsB.bl_idname = &quot;object.curve_overcuts_b&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a00a68e00c2ba55403a9f89ace24c2b49" name="a00a68e00c2ba55403a9f89ace24c2b49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00a68e00c2ba55403a9f89ace24c2b49">&#9670;&#160;</a></span>bl_label</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">str cam.curvecamtools.CamCurveOvercutsB.bl_label = &quot;Add Overcuts - B&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aca08c0e28297a1096ffd5d129a376ee9" name="aca08c0e28297a1096ffd5d129a376ee9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca08c0e28297a1096ffd5d129a376ee9">&#9670;&#160;</a></span>bl_options</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">dict cam.curvecamtools.CamCurveOvercutsB.bl_options = {'REGISTER', 'UNDO'}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afd44e9e8c2773daa67e19b90ff2f61c7" name="afd44e9e8c2773daa67e19b90ff2f61c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd44e9e8c2773daa67e19b90ff2f61c7">&#9670;&#160;</a></span>diameter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FloatProperty cam.curvecamtools.CamCurveOvercutsB.diameter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Tool Diameter&quot;</span>,</div>
+<div class="line">        default=.003175,</div>
+<div class="line">        description=<span class="stringliteral">&#39;Tool bit diameter used in cut operation&#39;</span>,</div>
+<div class="line">        min=0,</div>
+<div class="line">        max=100,</div>
+<div class="line">        precision=4,</div>
+<div class="line">        unit=<span class="stringliteral">&quot;LENGTH&quot;</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2f9ec2410395cd0732a28d68760b6626" name="a2f9ec2410395cd0732a28d68760b6626"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f9ec2410395cd0732a28d68760b6626">&#9670;&#160;</a></span>do_invert</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BoolProperty cam.curvecamtools.CamCurveOvercutsB.do_invert</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Invert&quot;</span>,</div>
+<div class="line">        description=<span class="stringliteral">&#39;invert overcut operation on all curves&#39;</span>,</div>
+<div class="line">        default=<span class="keyword">True</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7f0f19f527f31359194197be06ecef90" name="a7f0f19f527f31359194197be06ecef90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f0f19f527f31359194197be06ecef90">&#9670;&#160;</a></span>do_outer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BoolProperty cam.curvecamtools.CamCurveOvercutsB.do_outer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Include Outer Curve&quot;</span>,</div>
+<div class="line">        description=<span class="stringliteral">&#39;Include the outer curve if there are curves inside&#39;</span>,</div>
+<div class="line">        default=<span class="keyword">True</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ade20fb00f6d4308c669aff796229398b" name="ade20fb00f6d4308c669aff796229398b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade20fb00f6d4308c669aff796229398b">&#9670;&#160;</a></span>otherEdge</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BoolProperty cam.curvecamtools.CamCurveOvercutsB.otherEdge</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Other Edge&quot;</span>,</div>
+<div class="line">        description=<span class="stringliteral">&#39;change to the other edge for the overcut to be on&#39;</span>,</div>
+<div class="line">        default=<span class="keyword">False</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a75cc682947e5ce714679f4e1bd861af3" name="a75cc682947e5ce714679f4e1bd861af3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75cc682947e5ce714679f4e1bd861af3">&#9670;&#160;</a></span>style</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">EnumProperty cam.curvecamtools.CamCurveOvercutsB.style</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Style&quot;</span>,</div>
+<div class="line">        items=(</div>
+<div class="line">            (<span class="stringliteral">&#39;OPEDGE&#39;</span>, <span class="stringliteral">&#39;opposite edge&#39;</span>,</div>
+<div class="line">             <span class="stringliteral">&#39;place corner overcuts on opposite edges&#39;</span>),</div>
+<div class="line">            (<span class="stringliteral">&#39;DOGBONE&#39;</span>, <span class="stringliteral">&#39;Dog-bone / Corner Point&#39;</span>,</div>
+<div class="line">                <span class="stringliteral">&#39;place overcuts at center of corners&#39;</span>),</div>
+<div class="line">            (<span class="stringliteral">&#39;TBONE&#39;</span>, <span class="stringliteral">&#39;T-bone&#39;</span>, <span class="stringliteral">&#39;place corner overcuts on the same edge&#39;</span>)</div>
+<div class="line">        ),</div>
+<div class="line">        default=<span class="stringliteral">&#39;DOGBONE&#39;</span>,</div>
+<div class="line">        description=<span class="stringliteral">&#39;style of overcut to use&#39;</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7e58839ae191156afaf3bf34c6c82e77" name="a7e58839ae191156afaf3bf34c6c82e77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e58839ae191156afaf3bf34c6c82e77">&#9670;&#160;</a></span>threshold</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FloatProperty cam.curvecamtools.CamCurveOvercutsB.threshold</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Max Inside Angle&quot;</span>,</div>
+<div class="line">        default=pi / 2,</div>
+<div class="line">        min=-3.14,</div>
+<div class="line">        max=3.14,</div>
+<div class="line">        description=<span class="stringliteral">&#39;The maximum angle to be considered as an inside corner&#39;</span>,</div>
+<div class="line">        precision=4,</div>
+<div class="line">        subtype=<span class="stringliteral">&quot;ANGLE&quot;</span>,</div>
+<div class="line">        unit=<span class="stringliteral">&quot;ROTATION&quot;</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/<a class="el" href="curvecamtools_8py.html">curvecamtools.py</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.10.0-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacecam.html">cam</a></li><li class="navelem"><a class="el" href="namespacecam_1_1curvecamtools.html">curvecamtools</a></li><li class="navelem"><a class="el" href="classcam_1_1curvecamtools_1_1CamCurveOvercutsB.html">CamCurveOvercutsB</a></li>
+    <li class="footer">Generated by <a href="https://penify.dev/"><img class="footer" src="https://www.penify.dev/_next/static/media/snorkell-dark-logo.9fa414f5.svg" width="104" height="31" alt="doxygen"/></a> </li>
+  </ul>
+</div>
+</body>
+</html>

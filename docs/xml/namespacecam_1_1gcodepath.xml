@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacecam_1_1gcodepath" kind="namespace" language="Python">
+    <compoundname>cam::gcodepath</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacecam_1_1gcodepath_1a7db1aa3d8c59790e7771794c6acf98e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.gcodepath.pointonline</definition>
+        <argsstring>(a, b, c, tolerence)</argsstring>
+        <name>pointonline</name>
+        <qualifiedname>cam.gcodepath.pointonline</qualifiedname>
+        <param>
+          <type>a</type>
+          <defname>a</defname>
+        </param>
+        <param>
+          <type>b</type>
+          <defname>b</defname>
+        </param>
+        <param>
+          <type>c</type>
+          <defname>c</defname>
+        </param>
+        <param>
+          <type>tolerence</type>
+          <defname>tolerence</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodepath.py" line="64" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodepath.py" bodystart="64" bodyend="76"/>
+        <referencedby refid="namespacecam_1_1gcodepath_1a000950b2f348260ff45bc874210cbd91" compoundref="gcodepath_8py" startline="77" endline="522">cam.gcodepath.exportGcodePath</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1gcodepath_1a000950b2f348260ff45bc874210cbd91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.gcodepath.exportGcodePath</definition>
+        <argsstring>(filename, vertslist, operations)</argsstring>
+        <name>exportGcodePath</name>
+        <qualifiedname>cam.gcodepath.exportGcodePath</qualifiedname>
+        <param>
+          <type>filename</type>
+          <defname>filename</defname>
+        </param>
+        <param>
+          <type>vertslist</type>
+          <defname>vertslist</defname>
+        </param>
+        <param>
+          <type>operations</type>
+          <defname>operations</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Exports G-code with the Heeks NC Adopted Library.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodepath.py" line="77" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodepath.py" bodystart="77" bodyend="522"/>
+        <references refid="namespacecam_1_1gcodepath_1a7db1aa3d8c59790e7771794c6acf98e8" compoundref="gcodepath_8py" startline="64" endline="76">cam.gcodepath.pointonline</references>
+        <referencedby refid="namespacecam_1_1gcodepath_1a71ea289ba3b1df8210f85c946b97af91" compoundref="gcodepath_8py" startline="523" endline="585">cam.gcodepath.getPath</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1gcodepath_1a71ea289ba3b1df8210f85c946b97af91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.gcodepath.getPath</definition>
+        <argsstring>(context, operation)</argsstring>
+        <name>getPath</name>
+        <qualifiedname>cam.gcodepath.getPath</qualifiedname>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <param>
+          <type>operation</type>
+          <defname>operation</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodepath.py" line="523" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodepath.py" bodystart="523" bodyend="585"/>
+        <references refid="namespacecam_1_1gcodepath_1a9fcb32878c8e2d4b3ba3d29113779218" compoundref="gcodepath_8py" startline="603" endline="620">cam.gcodepath.checkMemoryLimit</references>
+        <references refid="namespacecam_1_1gcodepath_1a000950b2f348260ff45bc874210cbd91" compoundref="gcodepath_8py" startline="77" endline="522">cam.gcodepath.exportGcodePath</references>
+        <references refid="namespacecam_1_1gcodepath_1a5d235fcec5e4bb7ae63b3af012278af8" compoundref="gcodepath_8py" startline="586" endline="602">cam.gcodepath.getChangeData</references>
+        <references refid="namespacecam_1_1gcodepath_1a50fefd09fa0d13986f3e141d0e2cb166" compoundref="gcodepath_8py" startline="621" endline="871">cam.gcodepath.getPath3axis</references>
+        <references refid="namespacecam_1_1gcodepath_1a36d1c51fcfc551d0c5879424ed606bd9" compoundref="gcodepath_8py" startline="872" endline="885">cam.gcodepath.getPath4axis</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1gcodepath_1a5d235fcec5e4bb7ae63b3af012278af8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.gcodepath.getChangeData</definition>
+        <argsstring>(o)</argsstring>
+        <name>getChangeData</name>
+        <qualifiedname>cam.gcodepath.getChangeData</qualifiedname>
+        <param>
+          <type>o</type>
+          <defname>o</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>This Is a Function to Check if Object Props Have Changed,
+to See if Image Updates Are Needed in the Image Based Method</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodepath.py" line="586" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodepath.py" bodystart="586" bodyend="602"/>
+        <referencedby refid="namespacecam_1_1gcodepath_1a71ea289ba3b1df8210f85c946b97af91" compoundref="gcodepath_8py" startline="523" endline="585">cam.gcodepath.getPath</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1gcodepath_1a9fcb32878c8e2d4b3ba3d29113779218" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.gcodepath.checkMemoryLimit</definition>
+        <argsstring>(o)</argsstring>
+        <name>checkMemoryLimit</name>
+        <qualifiedname>cam.gcodepath.checkMemoryLimit</qualifiedname>
+        <param>
+          <type>o</type>
+          <defname>o</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodepath.py" line="603" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodepath.py" bodystart="603" bodyend="620"/>
+        <referencedby refid="namespacecam_1_1gcodepath_1a71ea289ba3b1df8210f85c946b97af91" compoundref="gcodepath_8py" startline="523" endline="585">cam.gcodepath.getPath</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1gcodepath_1a50fefd09fa0d13986f3e141d0e2cb166" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.gcodepath.getPath3axis</definition>
+        <argsstring>(context, operation)</argsstring>
+        <name>getPath3axis</name>
+        <qualifiedname>cam.gcodepath.getPath3axis</qualifiedname>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <param>
+          <type>operation</type>
+          <defname>operation</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodepath.py" line="621" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodepath.py" bodystart="621" bodyend="871"/>
+        <referencedby refid="namespacecam_1_1gcodepath_1a71ea289ba3b1df8210f85c946b97af91" compoundref="gcodepath_8py" startline="523" endline="585">cam.gcodepath.getPath</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1gcodepath_1a36d1c51fcfc551d0c5879424ed606bd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.gcodepath.getPath4axis</definition>
+        <argsstring>(context, operation)</argsstring>
+        <name>getPath4axis</name>
+        <qualifiedname>cam.gcodepath.getPath4axis</qualifiedname>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <param>
+          <type>operation</type>
+          <defname>operation</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodepath.py" line="872" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodepath.py" bodystart="872" bodyend="885"/>
+        <referencedby refid="namespacecam_1_1gcodepath_1a71ea289ba3b1df8210f85c946b97af91" compoundref="gcodepath_8py" startline="523" endline="585">cam.gcodepath.getPath</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>BlenderCAM &apos;gcodepath.py&apos; © 2012 Vilem Novak
+
+Generate and Export G-Code based on scene, machine, chain, operation and path settings.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodepath.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

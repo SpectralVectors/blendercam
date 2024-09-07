@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1nc_1_1hm50_1_1Creator" kind="class" language="Python" prot="public">
+    <compoundname>cam::nc::hm50::Creator</compoundname>
+    <basecompoundref refid="classcam_1_1nc_1_1emc2_1_1Creator" prot="public" virt="non-virtual">cam.nc.emc2.Creator</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1nc_1_1hm50_1_1Creator_1a3455283412cdcd3a90a241a8ccbe8f44" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>cam.nc.hm50.Creator::creator</definition>
+        <argsstring></argsstring>
+        <name>creator</name>
+        <qualifiedname>cam.nc.hm50.Creator.creator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/hm50.py" line="20" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/hm50.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcam_1_1nc_1_1hm50_1_1Creator_1ab1cb5692a658a8b65ace24e154f6cad8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.hm50.Creator.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>cam.nc.hm50.Creator.__init__</qualifiedname>
+        <reimplements refid="classcam_1_1nc_1_1emc2_1_1Creator_1a102ce1d4f49f9d4c6a025f374ad0d272">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/hm50.py" line="6" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/hm50.py" bodystart="6" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1nc_1_1hm50_1_1Creator_1a19293e986ee5ceb3483a39809a18e014" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.hm50.Creator.program_begin</definition>
+        <argsstring>(self, id, comment)</argsstring>
+        <name>program_begin</name>
+        <qualifiedname>cam.nc.hm50.Creator.program_begin</qualifiedname>
+        <reimplements refid="classcam_1_1nc_1_1emc2_1_1Creator_1a84d06cb4095e152f0b3826b8ba81f773">program_begin</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>id</type>
+          <defname>id</defname>
+        </param>
+        <param>
+          <type><ref refid="classcam_1_1nc_1_1iso_1_1Creator_1a618d52d9931049792ef89511ff43496c" kindref="member">comment</ref></type>
+          <defname>name</defname>
+        </param>
+        <briefdescription>
+<para>Programs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/hm50.py" line="9" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/hm50.py" bodystart="9" bodyend="11"/>
+        <references refid="classcam_1_1nc_1_1cad__nc__read_1_1Parser_1adcf2f47949df29f187f27fe985884633" compoundref="cad__nc__read_8py" startline="40" endline="42">cam.nc.cad_nc_read.Parser.write</references>
+        <references refid="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1aed6f93c98cb8c0e3f3e826e75b6d6f15" compoundref="hxml__writer_8py" startline="14" endline="16">cam.nc.hxml_writer.HxmlWriter.write</references>
+        <references refid="classcam_1_1nc_1_1iso_1_1Creator_1abb81af5a0bdddfed387b71b68a51cc7a" compoundref="iso_8py" startline="210" endline="215">cam.nc.iso.Creator.write</references>
+        <references refid="classcam_1_1nc_1_1nc_1_1Creator_1a80f2134add83bfaaf2870d075d36ed8a" compoundref="nc_8py" startline="44" endline="50">cam.nc.nc.Creator.write</references>
+        <references refid="classcam_1_1nc_1_1nclathe__read_1_1Parser_1ab5ea283b461b57e48c8d5b0ad0a45694" compoundref="nclathe__read_8py" startline="42" endline="44">cam.nc.nclathe_read.Parser.write</references>
+        <references refid="classcam_1_1nc_1_1recreator_1_1Redirector_1a79cc974683588db3ef959189e7552c0d" compoundref="recreator_8py" startline="28" endline="30">cam.nc.recreator.Redirector.write</references>
+        <references refid="classcam_1_1nc_1_1format_1_1Address_1aa21f0ffeb829537d9103759276c01a4b" compoundref="format_8py" startline="78" endline="89">cam.nc.format.Address.write</references>
+        <references refid="classcam_1_1nc_1_1format_1_1AddressPlusMinus_1aaacea4c7b677f0a602dbc9023ff365d2" compoundref="format_8py" startline="103" endline="114">cam.nc.format.AddressPlusMinus.write</references>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1nc_1_1hm50_1_1Creator_1a52a88e68142442ebc4581b840b5bab40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.hm50.Creator.tool_change</definition>
+        <argsstring>(self, id)</argsstring>
+        <name>tool_change</name>
+        <qualifiedname>cam.nc.hm50.Creator.tool_change</qualifiedname>
+        <reimplements refid="classcam_1_1nc_1_1iso_1_1Creator_1a3e61292523aa893f0187112023e51eff">tool_change</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>id</type>
+          <defname>id</defname>
+        </param>
+        <briefdescription>
+<para>Tools. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/hm50.py" line="12" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/hm50.py" bodystart="12" bodyend="19"/>
+        <references refid="classcam_1_1nc_1_1heiden_1_1Creator_1ab9bca36d46d8057838c6bd6615324fed" compoundref="heiden_8py" startline="107" endline="107">cam.nc.heiden.Creator.TOOL</references>
+        <references refid="classcam_1_1nc_1_1heiden530_1_1Creator_1afee0457dd78e89cc8130714caa80857a" compoundref="heiden530_8py" startline="50" endline="51">cam.nc.heiden530.Creator.TOOL</references>
+        <references refid="classcam_1_1nc_1_1iso_1_1Creator_1a3c0640ab2405f7cf975459dfa0ddfdfd" compoundref="iso_8py" startline="148" endline="148">cam.nc.iso.Creator.TOOL</references>
+        <references refid="classcam_1_1nc_1_1makerbot__codes_1_1Codes_1ad3e7ef50eabcb35110ee18b835785736" compoundref="makerbot__codes_8py" startline="45" endline="45">cam.nc.makerbot_codes.Codes.TOOL</references>
+        <references refid="classcam_1_1nc_1_1shopbot__mtc_1_1Creator_1a1a9dd236248ed4cc515498f281ed88fc" compoundref="shopbot__mtc_8py" startline="52" endline="53">cam.nc.shopbot_mtc.Creator.TOOL</references>
+        <references refid="classcam_1_1nc_1_1tnc151_1_1Creator_1a0e71a03cb5912ce4f688ddc12018cbb8" compoundref="tnc151_8py" startline="29" endline="30">cam.nc.tnc151.Creator.TOOL</references>
+        <references refid="classcam_1_1nc_1_1winpc_1_1Creator_1ac4abcb37279bb85454570b22a9f2edea" compoundref="winpc_8py" startline="20" endline="22">cam.nc.winpc.Creator.TOOL</references>
+        <references refid="classcam_1_1nc_1_1cad__nc__read_1_1Parser_1adcf2f47949df29f187f27fe985884633" compoundref="cad__nc__read_8py" startline="40" endline="42">cam.nc.cad_nc_read.Parser.write</references>
+        <references refid="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1aed6f93c98cb8c0e3f3e826e75b6d6f15" compoundref="hxml__writer_8py" startline="14" endline="16">cam.nc.hxml_writer.HxmlWriter.write</references>
+        <references refid="classcam_1_1nc_1_1iso_1_1Creator_1abb81af5a0bdddfed387b71b68a51cc7a" compoundref="iso_8py" startline="210" endline="215">cam.nc.iso.Creator.write</references>
+        <references refid="classcam_1_1nc_1_1nc_1_1Creator_1a80f2134add83bfaaf2870d075d36ed8a" compoundref="nc_8py" startline="44" endline="50">cam.nc.nc.Creator.write</references>
+        <references refid="classcam_1_1nc_1_1nclathe__read_1_1Parser_1ab5ea283b461b57e48c8d5b0ad0a45694" compoundref="nclathe__read_8py" startline="42" endline="44">cam.nc.nclathe_read.Parser.write</references>
+        <references refid="classcam_1_1nc_1_1recreator_1_1Redirector_1a79cc974683588db3ef959189e7552c0d" compoundref="recreator_8py" startline="28" endline="30">cam.nc.recreator.Redirector.write</references>
+        <references refid="classcam_1_1nc_1_1format_1_1Address_1aa21f0ffeb829537d9103759276c01a4b" compoundref="format_8py" startline="78" endline="89">cam.nc.format.Address.write</references>
+        <references refid="classcam_1_1nc_1_1format_1_1AddressPlusMinus_1aaacea4c7b677f0a602dbc9023ff365d2" compoundref="format_8py" startline="103" endline="114">cam.nc.format.AddressPlusMinus.write</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>cam.nc.hm50.Creator</label>
+        <link refid="classcam_1_1nc_1_1hm50_1_1Creator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>cam.nc.emc2.Creator</label>
+        <link refid="classcam_1_1nc_1_1emc2_1_1Creator"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>cam.nc.iso.Creator</label>
+        <link refid="classcam_1_1nc_1_1iso_1_1Creator"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>cam.nc.nc.Creator</label>
+        <link refid="classcam_1_1nc_1_1nc_1_1Creator"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>cam.nc.hm50.Creator</label>
+        <link refid="classcam_1_1nc_1_1hm50_1_1Creator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>cam.nc.emc2.Creator</label>
+        <link refid="classcam_1_1nc_1_1emc2_1_1Creator"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>cam.nc.iso.Creator</label>
+        <link refid="classcam_1_1nc_1_1iso_1_1Creator"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>cam.nc.nc.Creator</label>
+        <link refid="classcam_1_1nc_1_1nc_1_1Creator"/>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/hm50.py" line="5" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/hm50.py" bodystart="5" bodyend="21"/>
+    <listofallmembers>
+      <member refid="classcam_1_1nc_1_1hm50_1_1Creator_1ab1cb5692a658a8b65ace24e154f6cad8" prot="public" virt="non-virtual"><scope>cam::nc::hm50::Creator</scope><name>__init__</name></member>
+      <member refid="classcam_1_1nc_1_1hm50_1_1Creator_1a3455283412cdcd3a90a241a8ccbe8f44" prot="public" virt="non-virtual"><scope>cam::nc::hm50::Creator</scope><name>creator</name></member>
+      <member refid="classcam_1_1nc_1_1hm50_1_1Creator_1a19293e986ee5ceb3483a39809a18e014" prot="public" virt="non-virtual"><scope>cam::nc::hm50::Creator</scope><name>program_begin</name></member>
+      <member refid="classcam_1_1nc_1_1hm50_1_1Creator_1a52a88e68142442ebc4581b840b5bab40" prot="public" virt="non-virtual"><scope>cam::nc::hm50::Creator</scope><name>tool_change</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

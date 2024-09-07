@@ -1,0 +1,971 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>blendercam: cam.nc.hxml_writer.HxmlWriter Class Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">blendercam
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part --><!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">cam.nc.hxml_writer.HxmlWriter Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Collaboration diagram for cam.nc.hxml_writer.HxmlWriter:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter__coll__graph.svg" width="232" height="336"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a16068c8d7be500bc8d9c962bb6cd16d6" id="r_a16068c8d7be500bc8d9c962bb6cd16d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a16068c8d7be500bc8d9c962bb6cd16d6">__init__</a> (self)</td></tr>
+<tr class="separator:a16068c8d7be500bc8d9c962bb6cd16d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4391268cf974e8637b829b1ec27c382" id="r_ad4391268cf974e8637b829b1ec27c382"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4391268cf974e8637b829b1ec27c382">__del__</a> (self)</td></tr>
+<tr class="separator:ad4391268cf974e8637b829b1ec27c382"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed6f93c98cb8c0e3f3e826e75b6d6f15" id="r_aed6f93c98cb8c0e3f3e826e75b6d6f15"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed6f93c98cb8c0e3f3e826e75b6d6f15">write</a> (self, s)</td></tr>
+<tr class="separator:aed6f93c98cb8c0e3f3e826e75b6d6f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeb6084dfab7b8f2329aee0b16098e15" id="r_afeb6084dfab7b8f2329aee0b16098e15"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afeb6084dfab7b8f2329aee0b16098e15">begin_ncblock</a> (self)</td></tr>
+<tr class="separator:afeb6084dfab7b8f2329aee0b16098e15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e561ec54f08dff9d6275cba071a7d3d" id="r_a2e561ec54f08dff9d6275cba071a7d3d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e561ec54f08dff9d6275cba071a7d3d">end_ncblock</a> (self)</td></tr>
+<tr class="separator:a2e561ec54f08dff9d6275cba071a7d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e7c6bc9c8c2a21f0921aff59038d03c" id="r_a6e7c6bc9c8c2a21f0921aff59038d03c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e7c6bc9c8c2a21f0921aff59038d03c">add_text</a> (self, s, col, cdata)</td></tr>
+<tr class="separator:a6e7c6bc9c8c2a21f0921aff59038d03c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb0551863323ff7ab2906281fd5703df" id="r_adb0551863323ff7ab2906281fd5703df"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb0551863323ff7ab2906281fd5703df">set_mode</a> (self, units)</td></tr>
+<tr class="separator:adb0551863323ff7ab2906281fd5703df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaf943891cd90b76fa6af488bc9aa1bb" id="r_afaf943891cd90b76fa6af488bc9aa1bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afaf943891cd90b76fa6af488bc9aa1bb">metric</a> (self)</td></tr>
+<tr class="separator:afaf943891cd90b76fa6af488bc9aa1bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a436a65a95d5fe72d3bd218df50330d54" id="r_a436a65a95d5fe72d3bd218df50330d54"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a436a65a95d5fe72d3bd218df50330d54">imperial</a> (self)</td></tr>
+<tr class="separator:a436a65a95d5fe72d3bd218df50330d54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6439ae429d6711afc62f954362e80aec" id="r_a6439ae429d6711afc62f954362e80aec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6439ae429d6711afc62f954362e80aec">begin_path</a> (self, col)</td></tr>
+<tr class="separator:a6439ae429d6711afc62f954362e80aec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a148b76fde9d4c7ea5430a17628e6c9ef" id="r_a148b76fde9d4c7ea5430a17628e6c9ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a148b76fde9d4c7ea5430a17628e6c9ef">end_path</a> (self)</td></tr>
+<tr class="separator:a148b76fde9d4c7ea5430a17628e6c9ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab35840b54db51f029936075a62ce2ff6" id="r_ab35840b54db51f029936075a62ce2ff6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab35840b54db51f029936075a62ce2ff6">rapid</a> (self, x=None, y=None, z=None, a=None, b=None, c=None, machine_coordinates=None)</td></tr>
+<tr class="separator:ab35840b54db51f029936075a62ce2ff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac958d009942f98626d17139695d73ea0" id="r_ac958d009942f98626d17139695d73ea0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac958d009942f98626d17139695d73ea0">feed</a> (self, x=None, y=None, z=None)</td></tr>
+<tr class="separator:ac958d009942f98626d17139695d73ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a403fdf3735ec6e70365ddac2a134222f" id="r_a403fdf3735ec6e70365ddac2a134222f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a403fdf3735ec6e70365ddac2a134222f">arc_cw</a> (self, x=None, y=None, z=None, i=None, j=None, k=None, r=None)</td></tr>
+<tr class="separator:a403fdf3735ec6e70365ddac2a134222f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa89fa08595ee9733078e37d1692857f3" id="r_aa89fa08595ee9733078e37d1692857f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa89fa08595ee9733078e37d1692857f3">arc_ccw</a> (self, x=None, y=None, z=None, i=None, j=None, k=None, r=None)</td></tr>
+<tr class="separator:aa89fa08595ee9733078e37d1692857f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2e4ecca1b347a141f77f807334727c9" id="r_ac2e4ecca1b347a141f77f807334727c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac2e4ecca1b347a141f77f807334727c9">tool_change</a> (self, id)</td></tr>
+<tr class="separator:ac2e4ecca1b347a141f77f807334727c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae784fa9742110b81550c0810a83b1336" id="r_ae784fa9742110b81550c0810a83b1336"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae784fa9742110b81550c0810a83b1336">spindle</a> (self, s, clockwise)</td></tr>
+<tr class="separator:ae784fa9742110b81550c0810a83b1336"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9ce249f07ea05c9b5393cb1f1fb6a47" id="r_ab9ce249f07ea05c9b5393cb1f1fb6a47"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9ce249f07ea05c9b5393cb1f1fb6a47">feedrate</a> (self, f)</td></tr>
+<tr class="separator:ab9ce249f07ea05c9b5393cb1f1fb6a47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ecbcbc437d91a80c11b77d2d9007887" id="r_a9ecbcbc437d91a80c11b77d2d9007887"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ecbcbc437d91a80c11b77d2d9007887">add_line</a> (self, x, y, z, a=None, b=None, c=None)</td></tr>
+<tr class="separator:a9ecbcbc437d91a80c11b77d2d9007887"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a475e3852584eaa4d673a094b0897132c" id="r_a475e3852584eaa4d673a094b0897132c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a475e3852584eaa4d673a094b0897132c">add_arc</a> (self, x, y, z, i, j, k, r=None, d=None)</td></tr>
+<tr class="separator:a475e3852584eaa4d673a094b0897132c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a50a8311e3d5df253fbde77eebbb08e99" id="r_a50a8311e3d5df253fbde77eebbb08e99"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50a8311e3d5df253fbde77eebbb08e99">file_out</a></td></tr>
+<tr class="separator:a50a8311e3d5df253fbde77eebbb08e99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d72775ee3a370edf61efd50eb617745" id="r_a4d72775ee3a370edf61efd50eb617745"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d72775ee3a370edf61efd50eb617745">oldx</a></td></tr>
+<tr class="separator:a4d72775ee3a370edf61efd50eb617745"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada125dbf706fa0b0430d08e9b0ce93e3" id="r_ada125dbf706fa0b0430d08e9b0ce93e3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada125dbf706fa0b0430d08e9b0ce93e3">oldy</a></td></tr>
+<tr class="separator:ada125dbf706fa0b0430d08e9b0ce93e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76b40a7bae6eae6da3b64f6396e8a64c" id="r_a76b40a7bae6eae6da3b64f6396e8a64c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76b40a7bae6eae6da3b64f6396e8a64c">oldz</a></td></tr>
+<tr class="separator:a76b40a7bae6eae6da3b64f6396e8a64c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a16068c8d7be500bc8d9c962bb6cd16d6" name="a16068c8d7be500bc8d9c962bb6cd16d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16068c8d7be500bc8d9c962bb6cd16d6">&#9670;&#160;</a></span>__init__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.hxml_writer.HxmlWriter.__init__ </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad4391268cf974e8637b829b1ec27c382" name="ad4391268cf974e8637b829b1ec27c382"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4391268cf974e8637b829b1ec27c382">&#9670;&#160;</a></span>__del__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.hxml_writer.HxmlWriter.__del__ </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_ad4391268cf974e8637b829b1ec27c382_cgraph.svg" width="556" height="68"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a475e3852584eaa4d673a094b0897132c" name="a475e3852584eaa4d673a094b0897132c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a475e3852584eaa4d673a094b0897132c">&#9670;&#160;</a></span>add_arc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.hxml_writer.HxmlWriter.add_arc </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>y</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>z</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>i</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>j</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>k</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>r</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>d</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_a475e3852584eaa4d673a094b0897132c_cgraph.svg" width="607" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_a475e3852584eaa4d673a094b0897132c_icgraph.svg" width="100%" height="557"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a9ecbcbc437d91a80c11b77d2d9007887" name="a9ecbcbc437d91a80c11b77d2d9007887"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ecbcbc437d91a80c11b77d2d9007887">&#9670;&#160;</a></span>add_line()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.hxml_writer.HxmlWriter.add_line </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>y</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>z</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>a</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>b</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>c</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_a9ecbcbc437d91a80c11b77d2d9007887_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a6e7c6bc9c8c2a21f0921aff59038d03c" name="a6e7c6bc9c8c2a21f0921aff59038d03c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e7c6bc9c8c2a21f0921aff59038d03c">&#9670;&#160;</a></span>add_text()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.hxml_writer.HxmlWriter.add_text </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>s</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>col</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>cdata</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_a6e7c6bc9c8c2a21f0921aff59038d03c_cgraph.svg" width="614" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_a6e7c6bc9c8c2a21f0921aff59038d03c_icgraph.svg" width="583" height="179"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="aa89fa08595ee9733078e37d1692857f3" name="aa89fa08595ee9733078e37d1692857f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa89fa08595ee9733078e37d1692857f3">&#9670;&#160;</a></span>arc_ccw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.hxml_writer.HxmlWriter.arc_ccw </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>y</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>z</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>i</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>j</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>k</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>r</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_aa89fa08595ee9733078e37d1692857f3_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a403fdf3735ec6e70365ddac2a134222f" name="a403fdf3735ec6e70365ddac2a134222f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a403fdf3735ec6e70365ddac2a134222f">&#9670;&#160;</a></span>arc_cw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.hxml_writer.HxmlWriter.arc_cw </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>y</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>z</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>i</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>j</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>k</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>r</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_a403fdf3735ec6e70365ddac2a134222f_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="afeb6084dfab7b8f2329aee0b16098e15" name="afeb6084dfab7b8f2329aee0b16098e15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afeb6084dfab7b8f2329aee0b16098e15">&#9670;&#160;</a></span>begin_ncblock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.hxml_writer.HxmlWriter.begin_ncblock </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_afeb6084dfab7b8f2329aee0b16098e15_cgraph.svg" width="592" height="68"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_afeb6084dfab7b8f2329aee0b16098e15_icgraph.svg" width="562" height="179"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a6439ae429d6711afc62f954362e80aec" name="a6439ae429d6711afc62f954362e80aec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6439ae429d6711afc62f954362e80aec">&#9670;&#160;</a></span>begin_path()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.hxml_writer.HxmlWriter.begin_path </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>col</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_a6439ae429d6711afc62f954362e80aec_cgraph.svg" width="628" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_a6439ae429d6711afc62f954362e80aec_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a2e561ec54f08dff9d6275cba071a7d3d" name="a2e561ec54f08dff9d6275cba071a7d3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e561ec54f08dff9d6275cba071a7d3d">&#9670;&#160;</a></span>end_ncblock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.hxml_writer.HxmlWriter.end_ncblock </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_a2e561ec54f08dff9d6275cba071a7d3d_cgraph.svg" width="580" height="68"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_a2e561ec54f08dff9d6275cba071a7d3d_icgraph.svg" width="550" height="243"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a148b76fde9d4c7ea5430a17628e6c9ef" name="a148b76fde9d4c7ea5430a17628e6c9ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a148b76fde9d4c7ea5430a17628e6c9ef">&#9670;&#160;</a></span>end_path()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.hxml_writer.HxmlWriter.end_path </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_a148b76fde9d4c7ea5430a17628e6c9ef_cgraph.svg" width="616" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_a148b76fde9d4c7ea5430a17628e6c9ef_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="ac958d009942f98626d17139695d73ea0" name="ac958d009942f98626d17139695d73ea0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac958d009942f98626d17139695d73ea0">&#9670;&#160;</a></span>feed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.hxml_writer.HxmlWriter.feed </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>y</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>z</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_ac958d009942f98626d17139695d73ea0_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_ac958d009942f98626d17139695d73ea0_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="ab9ce249f07ea05c9b5393cb1f1fb6a47" name="ab9ce249f07ea05c9b5393cb1f1fb6a47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9ce249f07ea05c9b5393cb1f1fb6a47">&#9670;&#160;</a></span>feedrate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.hxml_writer.HxmlWriter.feedrate </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>f</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a436a65a95d5fe72d3bd218df50330d54" name="a436a65a95d5fe72d3bd218df50330d54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a436a65a95d5fe72d3bd218df50330d54">&#9670;&#160;</a></span>imperial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.hxml_writer.HxmlWriter.imperial </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_a436a65a95d5fe72d3bd218df50330d54_cgraph.svg" width="100%" height="419"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_a436a65a95d5fe72d3bd218df50330d54_icgraph.svg" width="604" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="afaf943891cd90b76fa6af488bc9aa1bb" name="afaf943891cd90b76fa6af488bc9aa1bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afaf943891cd90b76fa6af488bc9aa1bb">&#9670;&#160;</a></span>metric()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.hxml_writer.HxmlWriter.metric </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_afaf943891cd90b76fa6af488bc9aa1bb_cgraph.svg" width="100%" height="419"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="ab35840b54db51f029936075a62ce2ff6" name="ab35840b54db51f029936075a62ce2ff6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab35840b54db51f029936075a62ce2ff6">&#9670;&#160;</a></span>rapid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.hxml_writer.HxmlWriter.rapid </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>y</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>z</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>a</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>b</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>c</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>machine_coordinates</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_ab35840b54db51f029936075a62ce2ff6_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_ab35840b54db51f029936075a62ce2ff6_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="adb0551863323ff7ab2906281fd5703df" name="adb0551863323ff7ab2906281fd5703df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb0551863323ff7ab2906281fd5703df">&#9670;&#160;</a></span>set_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.hxml_writer.HxmlWriter.set_mode </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>units</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_adb0551863323ff7ab2906281fd5703df_cgraph.svg" width="620" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_adb0551863323ff7ab2906281fd5703df_icgraph.svg" width="100%" height="479"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="ae784fa9742110b81550c0810a83b1336" name="ae784fa9742110b81550c0810a83b1336"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae784fa9742110b81550c0810a83b1336">&#9670;&#160;</a></span>spindle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.hxml_writer.HxmlWriter.spindle </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>s</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>clockwise</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_ae784fa9742110b81550c0810a83b1336_icgraph.svg" width="556" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ac2e4ecca1b347a141f77f807334727c9" name="ac2e4ecca1b347a141f77f807334727c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2e4ecca1b347a141f77f807334727c9">&#9670;&#160;</a></span>tool_change()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.hxml_writer.HxmlWriter.tool_change </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>id</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_ac2e4ecca1b347a141f77f807334727c9_cgraph.svg" width="582" height="68"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="aed6f93c98cb8c0e3f3e826e75b6d6f15" name="aed6f93c98cb8c0e3f3e826e75b6d6f15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed6f93c98cb8c0e3f3e826e75b6d6f15">&#9670;&#160;</a></span>write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.hxml_writer.HxmlWriter.write </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>s</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_aed6f93c98cb8c0e3f3e826e75b6d6f15_cgraph.svg" width="276" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a50a8311e3d5df253fbde77eebbb08e99" name="a50a8311e3d5df253fbde77eebbb08e99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50a8311e3d5df253fbde77eebbb08e99">&#9670;&#160;</a></span>file_out</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.hxml_writer.HxmlWriter.file_out</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4d72775ee3a370edf61efd50eb617745" name="a4d72775ee3a370edf61efd50eb617745"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d72775ee3a370edf61efd50eb617745">&#9670;&#160;</a></span>oldx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.hxml_writer.HxmlWriter.oldx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ada125dbf706fa0b0430d08e9b0ce93e3" name="ada125dbf706fa0b0430d08e9b0ce93e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada125dbf706fa0b0430d08e9b0ce93e3">&#9670;&#160;</a></span>oldy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.hxml_writer.HxmlWriter.oldy</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a76b40a7bae6eae6da3b64f6396e8a64c" name="a76b40a7bae6eae6da3b64f6396e8a64c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76b40a7bae6eae6da3b64f6396e8a64c">&#9670;&#160;</a></span>oldz</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.hxml_writer.HxmlWriter.oldz</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/<a class="el" href="hxml__writer_8py.html">hxml_writer.py</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.10.0-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacecam.html">cam</a></li><li class="navelem"><a class="el" href="namespacecam_1_1nc.html">nc</a></li><li class="navelem"><a class="el" href="namespacecam_1_1nc_1_1hxml__writer.html">hxml_writer</a></li><li class="navelem"><a class="el" href="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter.html">HxmlWriter</a></li>
+    <li class="footer">Generated by <a href="https://penify.dev/"><img class="footer" src="https://www.penify.dev/_next/static/media/snorkell-dark-logo.9fa414f5.svg" width="104" height="31" alt="doxygen"/></a> </li>
+  </ul>
+</div>
+</body>
+</html>

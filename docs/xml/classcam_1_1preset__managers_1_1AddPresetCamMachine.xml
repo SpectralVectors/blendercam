@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1preset__managers_1_1AddPresetCamMachine" kind="class" language="Python" prot="public">
+    <compoundname>cam::preset_managers::AddPresetCamMachine</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">AddPresetBase</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">Operator</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1preset__managers_1_1AddPresetCamMachine_1ac1c708789b4f96b917499354a32c3f94" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.preset_managers.AddPresetCamMachine::bl_idname</definition>
+        <argsstring></argsstring>
+        <name>bl_idname</name>
+        <qualifiedname>cam.preset_managers.AddPresetCamMachine.bl_idname</qualifiedname>
+        <initializer>=  &quot;render.cam_preset_machine_add&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preset_managers.py" line="188" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preset_managers.py" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1preset__managers_1_1AddPresetCamMachine_1a47154ef591a14abd6d942277974c69c8" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.preset_managers.AddPresetCamMachine::bl_label</definition>
+        <argsstring></argsstring>
+        <name>bl_label</name>
+        <qualifiedname>cam.preset_managers.AddPresetCamMachine.bl_label</qualifiedname>
+        <initializer>=  &quot;Add Machine Preset&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preset_managers.py" line="189" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preset_managers.py" bodystart="189" bodyend="-1"/>
+        <referencedby refid="classcam_1_1preset__managers_1_1CAM__MACHINE__MT__presets_1af95f7812d2952b26a26809ab923dac09" compoundref="preset__managers_8py" startline="28" endline="38">cam.preset_managers.CAM_MACHINE_MT_presets.post_cb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1preset__managers_1_1AddPresetCamMachine_1a7ce33c6e0794b1614c151f7483d71335" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.preset_managers.AddPresetCamMachine::preset_menu</definition>
+        <argsstring></argsstring>
+        <name>preset_menu</name>
+        <qualifiedname>cam.preset_managers.AddPresetCamMachine.preset_menu</qualifiedname>
+        <initializer>=  &quot;CAM_MACHINE_MT_presets&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preset_managers.py" line="190" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preset_managers.py" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1preset__managers_1_1AddPresetCamMachine_1a5c4514bf7f0c2ee7b45efec33a8bc573" prot="public" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list cam.preset_managers.AddPresetCamMachine::preset_defines</definition>
+        <argsstring></argsstring>
+        <name>preset_defines</name>
+        <qualifiedname>cam.preset_managers.AddPresetCamMachine.preset_defines</qualifiedname>
+        <initializer>=  [
+        &quot;d = bpy.context.scene.cam_machine&quot;,
+        &quot;s = bpy.context.scene.unit_settings&quot;
+    ]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preset_managers.py" line="192" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preset_managers.py" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1preset__managers_1_1AddPresetCamMachine_1ab17ccff2cf9b96db7ecdfad4a005d2d7" prot="public" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list cam.preset_managers.AddPresetCamMachine::preset_values</definition>
+        <argsstring></argsstring>
+        <name>preset_values</name>
+        <qualifiedname>cam.preset_managers.AddPresetCamMachine.preset_values</qualifiedname>
+        <initializer>=  [
+        &quot;d.post_processor&quot;,
+        &quot;s.system&quot;,
+        &quot;d.use_position_definitions&quot;,
+        &quot;d.starting_position&quot;,
+        &quot;d.mtc_position&quot;,
+        &quot;d.ending_position&quot;,
+        &quot;d.working_area&quot;,
+        &quot;d.feedrate_min&quot;,
+        &quot;d.feedrate_max&quot;,
+        &quot;d.feedrate_default&quot;,
+        &quot;d.spindle_min&quot;,
+        &quot;d.spindle_max&quot;,
+        &quot;d.spindle_default&quot;,
+        &quot;d.axis4&quot;,
+        &quot;d.axis5&quot;,
+        &quot;d.collet_size&quot;,
+        &quot;d.output_tool_change&quot;,
+        &quot;d.output_block_numbers&quot;,
+        &quot;d.output_tool_definitions&quot;,
+        &quot;d.output_g43_on_tool_change&quot;,
+    ]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preset_managers.py" line="196" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preset_managers.py" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1preset__managers_1_1AddPresetCamMachine_1a0d38dced816ccb66109d1dc7fd4a144c" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.preset_managers.AddPresetCamMachine::preset_subdir</definition>
+        <argsstring></argsstring>
+        <name>preset_subdir</name>
+        <qualifiedname>cam.preset_managers.AddPresetCamMachine.preset_subdir</qualifiedname>
+        <initializer>=  &quot;cam_machines&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preset_managers.py" line="219" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preset_managers.py" bodystart="219" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Add a Cam Machine Preset</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AddPresetBase</label>
+      </node>
+      <node id="3">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.preset_managers.AddPresetCamMachine</label>
+        <link refid="classcam_1_1preset__managers_1_1AddPresetCamMachine"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>AddPresetBase</label>
+      </node>
+      <node id="3">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.preset_managers.AddPresetCamMachine</label>
+        <link refid="classcam_1_1preset__managers_1_1AddPresetCamMachine"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+bl_idname</edgelabel>
+          <edgelabel>+bl_label</edgelabel>
+          <edgelabel>+preset_menu</edgelabel>
+          <edgelabel>+preset_subdir</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+preset_defines</edgelabel>
+          <edgelabel>+preset_values</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>list</label>
+      </node>
+      <node id="4">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preset_managers.py" line="186" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preset_managers.py" bodystart="186" bodyend="220"/>
+    <listofallmembers>
+      <member refid="classcam_1_1preset__managers_1_1AddPresetCamMachine_1ac1c708789b4f96b917499354a32c3f94" prot="public" virt="non-virtual"><scope>cam::preset_managers::AddPresetCamMachine</scope><name>bl_idname</name></member>
+      <member refid="classcam_1_1preset__managers_1_1AddPresetCamMachine_1a47154ef591a14abd6d942277974c69c8" prot="public" virt="non-virtual"><scope>cam::preset_managers::AddPresetCamMachine</scope><name>bl_label</name></member>
+      <member refid="classcam_1_1preset__managers_1_1AddPresetCamMachine_1a5c4514bf7f0c2ee7b45efec33a8bc573" prot="public" virt="non-virtual"><scope>cam::preset_managers::AddPresetCamMachine</scope><name>preset_defines</name></member>
+      <member refid="classcam_1_1preset__managers_1_1AddPresetCamMachine_1a7ce33c6e0794b1614c151f7483d71335" prot="public" virt="non-virtual"><scope>cam::preset_managers::AddPresetCamMachine</scope><name>preset_menu</name></member>
+      <member refid="classcam_1_1preset__managers_1_1AddPresetCamMachine_1a0d38dced816ccb66109d1dc7fd4a144c" prot="public" virt="non-virtual"><scope>cam::preset_managers::AddPresetCamMachine</scope><name>preset_subdir</name></member>
+      <member refid="classcam_1_1preset__managers_1_1AddPresetCamMachine_1ab17ccff2cf9b96db7ecdfad4a005d2d7" prot="public" virt="non-virtual"><scope>cam::preset_managers::AddPresetCamMachine</scope><name>preset_values</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

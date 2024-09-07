@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__PositionObject" kind="class" language="Python" prot="public">
+    <compoundname>cam::ui_panels::material::CAM_MATERIAL_PositionObject</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Operator</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__PositionObject_1a50c4d093f6e3e2fbaa40f660666515c2" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.ui_panels.material.CAM_MATERIAL_PositionObject::bl_idname</definition>
+        <argsstring></argsstring>
+        <name>bl_idname</name>
+        <qualifiedname>cam.ui_panels.material.CAM_MATERIAL_PositionObject.bl_idname</qualifiedname>
+        <initializer>=  &quot;object.material_cam_position&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/material.py" line="99" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/material.py" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__PositionObject_1a65d5989b22306d514fc5251b764ffe0b" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.ui_panels.material.CAM_MATERIAL_PositionObject::bl_label</definition>
+        <argsstring></argsstring>
+        <name>bl_label</name>
+        <qualifiedname>cam.ui_panels.material.CAM_MATERIAL_PositionObject.bl_label</qualifiedname>
+        <initializer>=  &quot;Position Object for CAM Operation&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/material.py" line="100" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/material.py" bodystart="100" bodyend="-1"/>
+        <referencedby refid="classcam_1_1preset__managers_1_1CAM__MACHINE__MT__presets_1af95f7812d2952b26a26809ab923dac09" compoundref="preset__managers_8py" startline="28" endline="38">cam.preset_managers.CAM_MACHINE_MT_presets.post_cb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__PositionObject_1a86ceab96fb144408361e2e84d7f5d514" prot="public" static="yes" mutable="no">
+        <type>dict</type>
+        <definition>dict cam.ui_panels.material.CAM_MATERIAL_PositionObject::bl_options</definition>
+        <argsstring></argsstring>
+        <name>bl_options</name>
+        <qualifiedname>cam.ui_panels.material.CAM_MATERIAL_PositionObject.bl_options</qualifiedname>
+        <initializer>=  {&apos;REGISTER&apos;, &apos;UNDO&apos;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/material.py" line="101" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/material.py" bodystart="101" bodyend="-1"/>
+        <referencedby refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a9628cbca8e69ec75b2337171a02bf428" compoundref="async__op_8py" startline="32" endline="59">cam.async_op.AsyncOperatorMixin.modal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__PositionObject_1a3a8bf74a94578f548e4ab479fecaf178" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int cam.ui_panels.material.CAM_MATERIAL_PositionObject::interface_level</definition>
+        <argsstring></argsstring>
+        <name>interface_level</name>
+        <qualifiedname>cam.ui_panels.material.CAM_MATERIAL_PositionObject.interface_level</qualifiedname>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/material.py" line="102" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/material.py" bodystart="102" bodyend="-1"/>
+        <referencedby refid="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__PositionObject_1aa38c9c5d55e91d7c4413b92bc3d45810" compoundref="material_8py" startline="113" endline="119">cam.ui_panels.material.CAM_MATERIAL_PositionObject.draw</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__PositionObject_1a5a6f5b45e8d597882e977e77adb637d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.ui_panels.material.CAM_MATERIAL_PositionObject.execute</definition>
+        <argsstring>(self, context)</argsstring>
+        <name>execute</name>
+        <qualifiedname>cam.ui_panels.material.CAM_MATERIAL_PositionObject.execute</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/material.py" line="104" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/material.py" bodystart="104" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__PositionObject_1aa38c9c5d55e91d7c4413b92bc3d45810" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.ui_panels.material.CAM_MATERIAL_PositionObject.draw</definition>
+        <argsstring>(self, context)</argsstring>
+        <name>draw</name>
+        <qualifiedname>cam.ui_panels.material.CAM_MATERIAL_PositionObject.draw</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/material.py" line="113" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/material.py" bodystart="113" bodyend="119"/>
+        <references refid="classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_1ada410a6ab5a4cda97a33636cd514c8bf" compoundref="area_8py" startline="105">cam.ui_panels.area.CAM_AREA_Panel.context</references>
+        <references refid="classcam_1_1ui__panels_1_1cutter_1_1CAM__CUTTER__Panel_1a31bf0ed2e73fdc29abc93ee361358062" compoundref="cutter_8py" startline="143">cam.ui_panels.cutter.CAM_CUTTER_Panel.context</references>
+        <references refid="classcam_1_1ui__panels_1_1feedrate_1_1CAM__FEEDRATE__Panel_1af7ea3c39477abb98277067638950a1a7" compoundref="feedrate_8py" startline="52">cam.ui_panels.feedrate.CAM_FEEDRATE_Panel.context</references>
+        <references refid="classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel_1abb45a3bb21c5415449183d072d665b86" compoundref="gcode_8py" startline="65">cam.ui_panels.gcode.CAM_GCODE_Panel.context</references>
+        <references refid="classcam_1_1ui__panels_1_1info_1_1CAM__INFO__Panel_1aae3fadda191ebfce61e3fd84edb2284f" compoundref="info_8py" startline="153">cam.ui_panels.info.CAM_INFO_Panel.context</references>
+        <references refid="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Panel_1a31b339ea41c92a6cfa95bb8ba47522eb" compoundref="interface_8py" startline="47">cam.ui_panels.interface.CAM_INTERFACE_Panel.context</references>
+        <references refid="classcam_1_1ui__panels_1_1machine_1_1CAM__MACHINE__Panel_1a559531bb037b54b7470389776a73118a" compoundref="machine_8py" startline="123">cam.ui_panels.machine.CAM_MACHINE_Panel.context</references>
+        <references refid="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Panel_1ae1cd1999cc1aac994ff997d4743c1092" compoundref="material_8py" startline="164">cam.ui_panels.material.CAM_MATERIAL_Panel.context</references>
+        <references refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Panel_1a5c12b437ced467769af0add281ad6ad0" compoundref="movement_8py" startline="319">cam.ui_panels.movement.CAM_MOVEMENT_Panel.context</references>
+        <references refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel_1a29c49c092513bd72e8072600cb39e12d" compoundref="op__properties_8py" startline="230">cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel.context</references>
+        <references refid="classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1a0b6245dcfcc11980601bf16f2a029ebc" compoundref="operations_8py" startline="135">cam.ui_panels.operations.CAM_OPERATIONS_Panel.context</references>
+        <references refid="classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1aaa7c9818d8ae45b9e01a4278c6ed6a45" compoundref="optimisation_8py" startline="197">cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel.context</references>
+        <references refid="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__PositionObject_1a3a8bf74a94578f548e4ab479fecaf178" compoundref="material_8py" startline="102">cam.ui_panels.material.CAM_MATERIAL_PositionObject.interface_level</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.ui_panels.material.CAM_MATERIAL_PositionObject</label>
+        <link refid="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__PositionObject"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.ui_panels.material.CAM_MATERIAL_PositionObject</label>
+        <link refid="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__PositionObject"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+bl_idname</edgelabel>
+          <edgelabel>+bl_label</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+bl_options</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+interface_level</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dict</label>
+      </node>
+      <node id="5">
+        <label>int</label>
+      </node>
+      <node id="3">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/material.py" line="97" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/material.py" bodystart="97" bodyend="119"/>
+    <listofallmembers>
+      <member refid="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__PositionObject_1a50c4d093f6e3e2fbaa40f660666515c2" prot="public" virt="non-virtual"><scope>cam::ui_panels::material::CAM_MATERIAL_PositionObject</scope><name>bl_idname</name></member>
+      <member refid="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__PositionObject_1a65d5989b22306d514fc5251b764ffe0b" prot="public" virt="non-virtual"><scope>cam::ui_panels::material::CAM_MATERIAL_PositionObject</scope><name>bl_label</name></member>
+      <member refid="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__PositionObject_1a86ceab96fb144408361e2e84d7f5d514" prot="public" virt="non-virtual"><scope>cam::ui_panels::material::CAM_MATERIAL_PositionObject</scope><name>bl_options</name></member>
+      <member refid="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__PositionObject_1aa38c9c5d55e91d7c4413b92bc3d45810" prot="public" virt="non-virtual"><scope>cam::ui_panels::material::CAM_MATERIAL_PositionObject</scope><name>draw</name></member>
+      <member refid="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__PositionObject_1a5a6f5b45e8d597882e977e77adb637d5" prot="public" virt="non-virtual"><scope>cam::ui_panels::material::CAM_MATERIAL_PositionObject</scope><name>execute</name></member>
+      <member refid="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__PositionObject_1a3a8bf74a94578f548e4ab479fecaf178" prot="public" virt="non-virtual"><scope>cam::ui_panels::material::CAM_MATERIAL_PositionObject</scope><name>interface_level</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

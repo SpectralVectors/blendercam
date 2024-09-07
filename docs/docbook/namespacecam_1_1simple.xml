@@ -1,0 +1,332 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacecam_1_1simple" xml:lang="en-US">
+<title>cam.simple Namespace Reference</title>
+<indexterm><primary>cam.simple</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacecam_1_1simple_1a262550df3f6919e483a69d1ab2bbdd67">tuple_add</link> (t, t1)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1simple_1add7035aee58ca473e04f343d272a7c0e">tuple_sub</link> (t, t1)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1simple_1a3ddd8af23565cd2a293d5c2def4b1f4d">tuple_mul</link> (t, c)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1simple_1aa148c6f89eedf24bb8dc1c94724797c0">tuple_length</link> (t)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1simple_1a1bab27e8df5b3cfd171e60a4594fc885">timinginit</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1simple_1a71849721405a9bf079673d96ec99870f">timingstart</link> (tinf)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1simple_1adaf914acd760df92f028164ba594df7c">timingadd</link> (tinf)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1simple_1ad7fc75855dd67f553970b4d490b5935f">timingprint</link> (tinf)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1simple_1a2f3a122bdf9b338d93ce3e2976f23af0">progress</link> (text, n=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1simple_1acff84c87dab7c1eb994a1cb93ed7e611">activate</link> (o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1simple_1afbecdc0eb99966e42e038a9453b9a6c3">dist2d</link> (v1, v2)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1simple_1a8793fb0354632bd2a0423add64470368">delob</link> (ob)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1simple_1a1622deda8c59258d08d5571f35820121">dupliob</link> (o, pos)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1simple_1aefcc46bec25b6ab67d6c0ac02cebd5e8">addToGroup</link> (ob, groupname)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1simple_1ac2032d555b2e5def9ac73443ed6ba15d">compare</link> (v1, v2, vmiddle, e)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1simple_1a3fe5761e6eaba4283d1a751e6aaf9908">isVerticalLimit</link> (v1, v2, limit)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1simple_1a49f3897a327b7b41b7f2218969f79ce6">getCachePath</link> (o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1simple_1ab0f7b1055297f9747b69cc13255d365b">getSimulationPath</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1simple_1a2fe2dc97138338cd2d04e4db64d4c61f">safeFileName</link> (name)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1simple_1abdfbb02c3782e3e8ea3cdc68be6087de">strInUnits</link> (x, precision=5)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1simple_1a6972e1df9cbde4afcc6b89b4af578fa5">select_multiple</link> (name)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1simple_1ae4d8fa884dd88653d4b5879f1186cc30">join_multiple</link> (name)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1simple_1af2ff34c32e584d04003dbcfbcdace33e">remove_multiple</link> (name)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1simple_1ab7b4e6eb81e0b1a5afb31404a9763e96">deselect</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1simple_1a0aa7a5021de5aec8cae9ee3330104f01">make_active</link> (name)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1simple_1ace7b973051b55e5aa63bfd7d3a7dc591">active_name</link> (name)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1simple_1a7a2786eacd8c337a58dda2cfe4b03a0b">rename</link> (name, name2)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1simple_1a6c49d678cde9cb09d34b4073d69921ca">union</link> (name)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1simple_1abaa03646480c88a597204bd9b04ab5fb">intersect</link> (name)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1simple_1a28de8e19bc79f44eee4716a653202529">difference</link> (name, basename)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1simple_1ad70bfdccec56b0fe0f994de5ff46089a">duplicate</link> (x=0, y=0)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1simple_1a6155a6b099868857e29377f43755fd86">mirrorx</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1simple_1affc4ed0c14c3a630237ee0dd7b5aeecb">mirrory</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1simple_1ab3554d5d133e0b2b8c7cccfc696c75d9">move</link> (x=0.0, y=0.0)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1simple_1a3312f39a6392cd19d859546a9e414917">rotate</link> (angle)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1simple_1a818df7dbaed6a135fb8f33e0bd5aa5cb">remove_doubles</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1simple_1ac3ee796226d5db467598e2da93e468bc">add_overcut</link> (diametre, overcut=True)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1simple_1a282879f2cf6a78cfa97b3565365b48af">add_bound_rectangle</link> (xmin, ymin, xmax, ymax, name=&apos;bounds_rectangle&apos;)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1simple_1a9468af18a6c781da3dca3c6e9e3669e1">add_rectangle</link> (width, height, center_x=True, center_y=True)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1simple_1ab82682088de38733023bd3c2d58c8276">active_to_coords</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1simple_1ad7b940312b51ca5a354839c9c336b6e4">active_to_shapely_poly</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>BlenderCAM &apos;simple.py&apos; © 2012 Vilem Novak
+
+Various helper functions, less complex than those found in the &apos;utils&apos; files.
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespacecam_1_1simple_1acff84c87dab7c1eb994a1cb93ed7e611"/><section>
+    <title>activate()</title>
+<indexterm><primary>activate</primary><secondary>cam.simple</secondary></indexterm>
+<indexterm><primary>cam.simple</primary><secondary>activate</secondary></indexterm>
+<para><computeroutput>cam.simple.activate ( o)</computeroutput></para>
+<para><literallayout><computeroutput>Makes an Object Active, Used Many Times in Blender</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespacecam_1_1simple_1ace7b973051b55e5aa63bfd7d3a7dc591"/><section>
+    <title>active_name()</title>
+<indexterm><primary>active_name</primary><secondary>cam.simple</secondary></indexterm>
+<indexterm><primary>cam.simple</primary><secondary>active_name</secondary></indexterm>
+<para><computeroutput>cam.simple.active_name ( name)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1simple_1ab82682088de38733023bd3c2d58c8276"/><section>
+    <title>active_to_coords()</title>
+<indexterm><primary>active_to_coords</primary><secondary>cam.simple</secondary></indexterm>
+<indexterm><primary>cam.simple</primary><secondary>active_to_coords</secondary></indexterm>
+<para><computeroutput>cam.simple.active_to_coords ( )</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1simple_1ad7b940312b51ca5a354839c9c336b6e4"/><section>
+    <title>active_to_shapely_poly()</title>
+<indexterm><primary>active_to_shapely_poly</primary><secondary>cam.simple</secondary></indexterm>
+<indexterm><primary>cam.simple</primary><secondary>active_to_shapely_poly</secondary></indexterm>
+<para><computeroutput>cam.simple.active_to_shapely_poly ( )</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1simple_1a282879f2cf6a78cfa97b3565365b48af"/><section>
+    <title>add_bound_rectangle()</title>
+<indexterm><primary>add_bound_rectangle</primary><secondary>cam.simple</secondary></indexterm>
+<indexterm><primary>cam.simple</primary><secondary>add_bound_rectangle</secondary></indexterm>
+<para><computeroutput>cam.simple.add_bound_rectangle ( xmin,  ymin,  xmax,  ymax,  name = <computeroutput>&apos;bounds_rectangle&apos;</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1simple_1ac3ee796226d5db467598e2da93e468bc"/><section>
+    <title>add_overcut()</title>
+<indexterm><primary>add_overcut</primary><secondary>cam.simple</secondary></indexterm>
+<indexterm><primary>cam.simple</primary><secondary>add_overcut</secondary></indexterm>
+<para><computeroutput>cam.simple.add_overcut ( diametre,  overcut = <computeroutput>True</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1simple_1a9468af18a6c781da3dca3c6e9e3669e1"/><section>
+    <title>add_rectangle()</title>
+<indexterm><primary>add_rectangle</primary><secondary>cam.simple</secondary></indexterm>
+<indexterm><primary>cam.simple</primary><secondary>add_rectangle</secondary></indexterm>
+<para><computeroutput>cam.simple.add_rectangle ( width,  height,  center_x = <computeroutput>True</computeroutput>
+,  center_y = <computeroutput>True</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1simple_1aefcc46bec25b6ab67d6c0ac02cebd5e8"/><section>
+    <title>addToGroup()</title>
+<indexterm><primary>addToGroup</primary><secondary>cam.simple</secondary></indexterm>
+<indexterm><primary>cam.simple</primary><secondary>addToGroup</secondary></indexterm>
+<para><computeroutput>cam.simple.addToGroup ( ob,  groupname)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1simple_1ac2032d555b2e5def9ac73443ed6ba15d"/><section>
+    <title>compare()</title>
+<indexterm><primary>compare</primary><secondary>cam.simple</secondary></indexterm>
+<indexterm><primary>cam.simple</primary><secondary>compare</secondary></indexterm>
+<para><computeroutput>cam.simple.compare ( v1,  v2,  vmiddle,  e)</computeroutput></para>
+<para><literallayout><computeroutput>Comparison for Optimisation of Paths</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespacecam_1_1simple_1a8793fb0354632bd2a0423add64470368"/><section>
+    <title>delob()</title>
+<indexterm><primary>delob</primary><secondary>cam.simple</secondary></indexterm>
+<indexterm><primary>cam.simple</primary><secondary>delob</secondary></indexterm>
+<para><computeroutput>cam.simple.delob ( ob)</computeroutput></para>
+<para><literallayout><computeroutput>Object Deletion for Multiple Uses</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespacecam_1_1simple_1ab7b4e6eb81e0b1a5afb31404a9763e96"/><section>
+    <title>deselect()</title>
+<indexterm><primary>deselect</primary><secondary>cam.simple</secondary></indexterm>
+<indexterm><primary>cam.simple</primary><secondary>deselect</secondary></indexterm>
+<para><computeroutput>cam.simple.deselect ( )</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1simple_1a28de8e19bc79f44eee4716a653202529"/><section>
+    <title>difference()</title>
+<indexterm><primary>difference</primary><secondary>cam.simple</secondary></indexterm>
+<indexterm><primary>cam.simple</primary><secondary>difference</secondary></indexterm>
+<para><computeroutput>cam.simple.difference ( name,  basename)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1simple_1afbecdc0eb99966e42e038a9453b9a6c3"/><section>
+    <title>dist2d()</title>
+<indexterm><primary>dist2d</primary><secondary>cam.simple</secondary></indexterm>
+<indexterm><primary>cam.simple</primary><secondary>dist2d</secondary></indexterm>
+<para><computeroutput>cam.simple.dist2d ( v1,  v2)</computeroutput></para>
+<para><literallayout><computeroutput>Distance Between Two Points in 2D</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespacecam_1_1simple_1ad70bfdccec56b0fe0f994de5ff46089a"/><section>
+    <title>duplicate()</title>
+<indexterm><primary>duplicate</primary><secondary>cam.simple</secondary></indexterm>
+<indexterm><primary>cam.simple</primary><secondary>duplicate</secondary></indexterm>
+<para><computeroutput>cam.simple.duplicate ( x = <computeroutput>0</computeroutput>
+,  y = <computeroutput>0</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1simple_1a1622deda8c59258d08d5571f35820121"/><section>
+    <title>dupliob()</title>
+<indexterm><primary>dupliob</primary><secondary>cam.simple</secondary></indexterm>
+<indexterm><primary>cam.simple</primary><secondary>dupliob</secondary></indexterm>
+<para><computeroutput>cam.simple.dupliob ( o,  pos)</computeroutput></para>
+<para><literallayout><computeroutput>Helper Function for Visualising Cutter Positions in Bullet Simulation</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespacecam_1_1simple_1a49f3897a327b7b41b7f2218969f79ce6"/><section>
+    <title>getCachePath()</title>
+<indexterm><primary>getCachePath</primary><secondary>cam.simple</secondary></indexterm>
+<indexterm><primary>cam.simple</primary><secondary>getCachePath</secondary></indexterm>
+<para><computeroutput>cam.simple.getCachePath ( o)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1simple_1ab0f7b1055297f9747b69cc13255d365b"/><section>
+    <title>getSimulationPath()</title>
+<indexterm><primary>getSimulationPath</primary><secondary>cam.simple</secondary></indexterm>
+<indexterm><primary>cam.simple</primary><secondary>getSimulationPath</secondary></indexterm>
+<para><computeroutput>cam.simple.getSimulationPath ( )</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1simple_1abaa03646480c88a597204bd9b04ab5fb"/><section>
+    <title>intersect()</title>
+<indexterm><primary>intersect</primary><secondary>cam.simple</secondary></indexterm>
+<indexterm><primary>cam.simple</primary><secondary>intersect</secondary></indexterm>
+<para><computeroutput>cam.simple.intersect ( name)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1simple_1a3fe5761e6eaba4283d1a751e6aaf9908"/><section>
+    <title>isVerticalLimit()</title>
+<indexterm><primary>isVerticalLimit</primary><secondary>cam.simple</secondary></indexterm>
+<indexterm><primary>cam.simple</primary><secondary>isVerticalLimit</secondary></indexterm>
+<para><computeroutput>cam.simple.isVerticalLimit ( v1,  v2,  limit)</computeroutput></para>
+<para><literallayout><computeroutput>Test Path Segment on Verticality Threshold, for protect_vertical Option</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespacecam_1_1simple_1ae4d8fa884dd88653d4b5879f1186cc30"/><section>
+    <title>join_multiple()</title>
+<indexterm><primary>join_multiple</primary><secondary>cam.simple</secondary></indexterm>
+<indexterm><primary>cam.simple</primary><secondary>join_multiple</secondary></indexterm>
+<para><computeroutput>cam.simple.join_multiple ( name)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1simple_1a0aa7a5021de5aec8cae9ee3330104f01"/><section>
+    <title>make_active()</title>
+<indexterm><primary>make_active</primary><secondary>cam.simple</secondary></indexterm>
+<indexterm><primary>cam.simple</primary><secondary>make_active</secondary></indexterm>
+<para><computeroutput>cam.simple.make_active ( name)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1simple_1a6155a6b099868857e29377f43755fd86"/><section>
+    <title>mirrorx()</title>
+<indexterm><primary>mirrorx</primary><secondary>cam.simple</secondary></indexterm>
+<indexterm><primary>cam.simple</primary><secondary>mirrorx</secondary></indexterm>
+<para><computeroutput>cam.simple.mirrorx ( )</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1simple_1affc4ed0c14c3a630237ee0dd7b5aeecb"/><section>
+    <title>mirrory()</title>
+<indexterm><primary>mirrory</primary><secondary>cam.simple</secondary></indexterm>
+<indexterm><primary>cam.simple</primary><secondary>mirrory</secondary></indexterm>
+<para><computeroutput>cam.simple.mirrory ( )</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1simple_1ab3554d5d133e0b2b8c7cccfc696c75d9"/><section>
+    <title>move()</title>
+<indexterm><primary>move</primary><secondary>cam.simple</secondary></indexterm>
+<indexterm><primary>cam.simple</primary><secondary>move</secondary></indexterm>
+<para><computeroutput>cam.simple.move ( x = <computeroutput>0.0</computeroutput>
+,  y = <computeroutput>0.0</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1simple_1a2f3a122bdf9b338d93ce3e2976f23af0"/><section>
+    <title>progress()</title>
+<indexterm><primary>progress</primary><secondary>cam.simple</secondary></indexterm>
+<indexterm><primary>cam.simple</primary><secondary>progress</secondary></indexterm>
+<para><computeroutput>cam.simple.progress ( text,  n = <computeroutput>None</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Function for Reporting During the Script, Works for Background Operations in the Header.</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespacecam_1_1simple_1a818df7dbaed6a135fb8f33e0bd5aa5cb"/><section>
+    <title>remove_doubles()</title>
+<indexterm><primary>remove_doubles</primary><secondary>cam.simple</secondary></indexterm>
+<indexterm><primary>cam.simple</primary><secondary>remove_doubles</secondary></indexterm>
+<para><computeroutput>cam.simple.remove_doubles ( )</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1simple_1af2ff34c32e584d04003dbcfbcdace33e"/><section>
+    <title>remove_multiple()</title>
+<indexterm><primary>remove_multiple</primary><secondary>cam.simple</secondary></indexterm>
+<indexterm><primary>cam.simple</primary><secondary>remove_multiple</secondary></indexterm>
+<para><computeroutput>cam.simple.remove_multiple ( name)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1simple_1a7a2786eacd8c337a58dda2cfe4b03a0b"/><section>
+    <title>rename()</title>
+<indexterm><primary>rename</primary><secondary>cam.simple</secondary></indexterm>
+<indexterm><primary>cam.simple</primary><secondary>rename</secondary></indexterm>
+<para><computeroutput>cam.simple.rename ( name,  name2)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1simple_1a3312f39a6392cd19d859546a9e414917"/><section>
+    <title>rotate()</title>
+<indexterm><primary>rotate</primary><secondary>cam.simple</secondary></indexterm>
+<indexterm><primary>cam.simple</primary><secondary>rotate</secondary></indexterm>
+<para><computeroutput>cam.simple.rotate ( angle)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1simple_1a2fe2dc97138338cd2d04e4db64d4c61f"/><section>
+    <title>safeFileName()</title>
+<indexterm><primary>safeFileName</primary><secondary>cam.simple</secondary></indexterm>
+<indexterm><primary>cam.simple</primary><secondary>safeFileName</secondary></indexterm>
+<para><computeroutput>cam.simple.safeFileName ( name)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1simple_1a6972e1df9cbde4afcc6b89b4af578fa5"/><section>
+    <title>select_multiple()</title>
+<indexterm><primary>select_multiple</primary><secondary>cam.simple</secondary></indexterm>
+<indexterm><primary>cam.simple</primary><secondary>select_multiple</secondary></indexterm>
+<para><computeroutput>cam.simple.select_multiple ( name)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1simple_1abdfbb02c3782e3e8ea3cdc68be6087de"/><section>
+    <title>strInUnits()</title>
+<indexterm><primary>strInUnits</primary><secondary>cam.simple</secondary></indexterm>
+<indexterm><primary>cam.simple</primary><secondary>strInUnits</secondary></indexterm>
+<para><computeroutput>cam.simple.strInUnits ( x,  precision = <computeroutput>5</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1simple_1adaf914acd760df92f028164ba594df7c"/><section>
+    <title>timingadd()</title>
+<indexterm><primary>timingadd</primary><secondary>cam.simple</secondary></indexterm>
+<indexterm><primary>cam.simple</primary><secondary>timingadd</secondary></indexterm>
+<para><computeroutput>cam.simple.timingadd ( tinf)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1simple_1a1bab27e8df5b3cfd171e60a4594fc885"/><section>
+    <title>timinginit()</title>
+<indexterm><primary>timinginit</primary><secondary>cam.simple</secondary></indexterm>
+<indexterm><primary>cam.simple</primary><secondary>timinginit</secondary></indexterm>
+<para><computeroutput>cam.simple.timinginit ( )</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1simple_1ad7fc75855dd67f553970b4d490b5935f"/><section>
+    <title>timingprint()</title>
+<indexterm><primary>timingprint</primary><secondary>cam.simple</secondary></indexterm>
+<indexterm><primary>cam.simple</primary><secondary>timingprint</secondary></indexterm>
+<para><computeroutput>cam.simple.timingprint ( tinf)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1simple_1a71849721405a9bf079673d96ec99870f"/><section>
+    <title>timingstart()</title>
+<indexterm><primary>timingstart</primary><secondary>cam.simple</secondary></indexterm>
+<indexterm><primary>cam.simple</primary><secondary>timingstart</secondary></indexterm>
+<para><computeroutput>cam.simple.timingstart ( tinf)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1simple_1a262550df3f6919e483a69d1ab2bbdd67"/><section>
+    <title>tuple_add()</title>
+<indexterm><primary>tuple_add</primary><secondary>cam.simple</secondary></indexterm>
+<indexterm><primary>cam.simple</primary><secondary>tuple_add</secondary></indexterm>
+<para><computeroutput>cam.simple.tuple_add ( t,  t1)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1simple_1aa148c6f89eedf24bb8dc1c94724797c0"/><section>
+    <title>tuple_length()</title>
+<indexterm><primary>tuple_length</primary><secondary>cam.simple</secondary></indexterm>
+<indexterm><primary>cam.simple</primary><secondary>tuple_length</secondary></indexterm>
+<para><computeroutput>cam.simple.tuple_length ( t)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1simple_1a3ddd8af23565cd2a293d5c2def4b1f4d"/><section>
+    <title>tuple_mul()</title>
+<indexterm><primary>tuple_mul</primary><secondary>cam.simple</secondary></indexterm>
+<indexterm><primary>cam.simple</primary><secondary>tuple_mul</secondary></indexterm>
+<para><computeroutput>cam.simple.tuple_mul ( t,  c)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1simple_1add7035aee58ca473e04f343d272a7c0e"/><section>
+    <title>tuple_sub()</title>
+<indexterm><primary>tuple_sub</primary><secondary>cam.simple</secondary></indexterm>
+<indexterm><primary>cam.simple</primary><secondary>tuple_sub</secondary></indexterm>
+<para><computeroutput>cam.simple.tuple_sub ( t,  t1)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1simple_1a6c49d678cde9cb09d34b4073d69921ca"/><section>
+    <title>union()</title>
+<indexterm><primary>union</primary><secondary>cam.simple</secondary></indexterm>
+<indexterm><primary>cam.simple</primary><secondary>union</secondary></indexterm>
+<para><computeroutput>cam.simple.union ( name)</computeroutput></para></section>
+</section>
+</section>

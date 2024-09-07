@@ -1,0 +1,245 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_nc_8py" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py File Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/nc.py</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classcam_1_1nc_1_1nc_1_1Creator">cam.nc.nc.Creator</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacecam">cam</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacecam_1_1nc">cam.nc</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacecam_1_1nc_1_1nc">cam.nc.nc</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a8b6455c52bcf6c1959022977b5d1ce68">cam.nc.nc.write</link> (s)</para>
+
+<para>Internals. </para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a49cd91390516052eb941782e4fcf3103">cam.nc.nc.output</link> (filename)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a93452763182eb8b55a5c6b88e9adf0f8">cam.nc.nc.program_begin</link> (id, name=&apos;&apos;)</para>
+
+<para>Programs. </para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1ab2653b621f92d4d0758eec2de99f1175">cam.nc.nc.add_stock</link> (type_name, params)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1ae174e9a14be3dda3e58448c99e7f983f">cam.nc.nc.program_stop</link> (optional=False)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1aec60aad0c8e364502b3d3699f024facf">cam.nc.nc.program_end</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1afd0c909bd08487f8a0b0bebdb069921d">cam.nc.nc.flush_nc</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a2affc5d9abe6258bffa88666e7d62e7c">cam.nc.nc.sub_begin</link> (id, name=&apos;&apos;)</para>
+
+<para>Subprograms. </para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1ae09b32d7eb96c506f9ed8f037d511e3f">cam.nc.nc.sub_call</link> (id)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a15c506e6d4c4ba6ca04c51ae9ba25ba0">cam.nc.nc.sub_end</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a7f2b6749cce54c4dd89eda9600a8e976">cam.nc.nc.imperial</link> ()</para>
+
+<para>Settings. </para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a77aa91d77157709db49f6dbd7d6d2ded">cam.nc.nc.metric</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1ad74908c6a20b925f202c3bec46ed8fc7">cam.nc.nc.absolute</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a6963c0c9253920c23d018f5899835ec3">cam.nc.nc.incremental</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a57833e047f2ea97c9deacf88e2e0e062">cam.nc.nc.polar</link> (on=True)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1afae706ecde45c5e84d4947b830a093ff">cam.nc.nc.set_plane</link> (plane)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1ace48cca1473b383c797cc9c52d63728c">cam.nc.nc.set_temporary_origin</link> (x=None, y=None, z=None, a=None, b=None, c=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a1253f3dc70debdd0acafaf15e5c0a6e6">cam.nc.nc.remove_temporary_origin</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a1d1f7deb327775e6202d01b7ff7953ca">cam.nc.nc.tool_change</link> (id)</para>
+
+<para>Tools. </para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1ae0a0d0163f26e46077ea5a28f5258530">cam.nc.nc.tool_defn</link> (id, name=&apos;&apos;, params=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a4a2637da7c871d89250368e1d498e4b5">cam.nc.nc.offset_radius</link> (id, radius=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a6760aee692432a19486b3c30af589384">cam.nc.nc.offset_length</link> (id, length=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1ad6b92768f96ea6bc862da4b6ef514d5f">cam.nc.nc.current_tool</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1ab1c0e7d2464614f7a59f2907730a107d">cam.nc.nc.datum_shift</link> (x=None, y=None, z=None, a=None, b=None, c=None)</para>
+
+<para>Datums. </para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a27c32800c81081418730c2bb403c6148">cam.nc.nc.datum_set</link> (x=None, y=None, z=None, a=None, b=None, c=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1aed1290b836577b89c33a2786f5e50f07">cam.nc.nc.workplane</link> (id)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a3cdaab149cd04b2fb00dd27fbb08a893">cam.nc.nc.clearanceplane</link> (z=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a73c95d1cac4807e1ad34e3cd0498cef9">cam.nc.nc.matrix</link> (a1=None, b1=None, c1=None, a2=None, b2=None, c2=None, a3=None, b3=None, c3=None)</para>
+
+<para>APT360 like Transformation Definitions These definitions were created while looking at Irvin Kraal&apos;s book on APT. </para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a94cb7570e7fbf4c72991185ee7bd21bd">cam.nc.nc.translate</link> (x=None, y=None, z=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a3bae18fdfe198a827e36b23316c28c69">cam.nc.nc.rotate</link> (xyrot=None, yzrot=None, zxrot=None, angle=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a49eaf759253148019f147ba74514512c">cam.nc.nc.scale</link> (k=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a01e84a7ca713359d793d51017ef49fb5">cam.nc.nc.matrix_product</link> (matrix1=None, matrix2=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a34d1d352a4127656b2c2702493ecd966">cam.nc.nc.mirror_plane</link> (plane1=None, plane2=None, plane3=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a96ee4396671a01ffaae1a09a70d50fcb">cam.nc.nc.mirror_line</link> (line=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a2aa8ab25220eb317f50d5e1781230921">cam.nc.nc.feedrate</link> (f)</para>
+
+<para>Rates + Modes. </para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a21d0006f00a8f8f163d0ef2ae19a31e6">cam.nc.nc.feedrate_hv</link> (fh, fv)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a21a910b0d76cb7f68564765cc149eb24">cam.nc.nc.spindle</link> (s, clockwise=True)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1af16478add27c802d5bb11d5c2f74b274">cam.nc.nc.coolant</link> (mode=0)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1ab5fdbe40038ddd3015c5e8dc0f5e9964">cam.nc.nc.gearrange</link> (gear=0)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a8657d368e8402228d437fbfe758740df">cam.nc.nc.rapid</link> (x=None, y=None, z=None, a=None, b=None, c=None)</para>
+
+<para>Moves. </para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a7578810bc59ccdf99c9c99ca367b63be">cam.nc.nc.feed</link> (x=None, y=None, z=None, a=None, b=None, c=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a756e0b86926b3291935ef719e3d9b074">cam.nc.nc.arc_cw</link> (x=None, y=None, z=None, i=None, j=None, k=None, r=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1ac1c0de0472258ed82c4d3f6206b4d679">cam.nc.nc.arc_ccw</link> (x=None, y=None, z=None, i=None, j=None, k=None, r=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a949d9b8211c3db33787dae701fafc43b">cam.nc.nc.dwell</link> (t)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a2b35c170916de77950ff1d69c5962fc1">cam.nc.nc.rapid_home</link> (x=None, y=None, z=None, a=None, b=None, c=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a55d2ff04340887e538bd1ce692c32bab">cam.nc.nc.rapid_unhome</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a2eb5bee0f0dd69b7272cb9a753f79734">cam.nc.nc.set_machine_coordinates</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a615cc957895920e1e32b80fee633eb35">cam.nc.nc.use_CRC</link> ()</para>
+
+<para>Cutter radius compensation. </para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1ae7c69347a8ea423384b188ba63918774">cam.nc.nc.CRC_nominal_path</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a1ae11ca953100924ad40dafdd8d7d4db">cam.nc.nc.start_CRC</link> (left=True, radius=0.0)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1ad7e6d5529185e11daf072a0c5bdc0b9f">cam.nc.nc.end_CRC</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a7164ab089845fe1e05f22ad9eb97a3e3">cam.nc.nc.pattern</link> ()</para>
+
+<para>Cycles. </para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a6bfeb37fda535e9ca08622b3cdf91021">cam.nc.nc.pocket</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a6af609274eab10818a4e7d3118de10be">cam.nc.nc.profile</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a4fd9d778d6e2f233f38a9a8bdb11ab9a">cam.nc.nc.drill</link> (x=None, y=None, <link linkend="_namespacecam_1_1nc_1_1nc_1a949d9b8211c3db33787dae701fafc43b">dwell</link>=None, depthparams=None, retract_mode=None, spindle_mode=None, internal_coolant_on=None, rapid_to_clearance=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a71b7ee750daf4b638f3945e32e8c92d1">cam.nc.nc.tap</link> (x=None, y=None, z=None, zretract=None, depth=None, standoff=None, dwell_bottom=None, pitch=None, stoppos=None, spin_in=None, spin_out=None, tap_mode=None, direction=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a466755553222942453bd0a5098684650">cam.nc.nc.bore</link> (x=None, y=None, z=None, zretract=None, depth=None, standoff=None, dwell_bottom=None, feed_in=None, feed_out=None, stoppos=None, shift_back=None, shift_right=None, backbore=False, stop=False)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a0daa749c78dd05c2ec7a91ec46ad1346">cam.nc.nc.end_canned_cycle</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1ab04378ea03bd17ea56d85f62cd154ba0">cam.nc.nc.peck</link> (count, first, last=None, step=0.0)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a3a12deb46bf7b5a2777abc4d852e7ce2">cam.nc.nc.comment</link> (text)</para>
+
+<para>Misc. </para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a66d8bdba579d92ff128a81dbccc660d3">cam.nc.nc.insert</link> (text)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a11803da1e295182f48f49f30e3bd91a3">cam.nc.nc.block_delete</link> (on=False)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a6ec7f1730e85bee353f0bf11ccfce5a4">cam.nc.nc.variable</link> (id)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a1dd5aee5d6951798172d1b7051e357de">cam.nc.nc.variable_set</link> (id, value)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a903ff4348154814b6cb7f655d0d2db8e">cam.nc.nc.probe_single_point</link> (point_along_edge_x=None, point_along_edge_y=None, depth=None, retracted_point_x=None, retracted_point_y=None, destination_point_x=None, destination_point_y=None, intersection_variable_x=None, intersection_variable_y=None, probe_offset_x_component=None, probe_offset_y_component=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1aaaa53447ccb503227227c835ef01cc4c">cam.nc.nc.probe_downward_point</link> (x=None, y=None, depth=None, intersection_variable_z=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a794e24b06bc50b3f86d3e6963658a144">cam.nc.nc.report_probe_results</link> (x1=None, y1=None, z1=None, x2=None, y2=None, z2=None, x3=None, y3=None, z3=None, x4=None, y4=None, z4=None, x5=None, y5=None, z5=None, x6=None, y6=None, z6=None, xml_file_name=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a9edf23b625c2bd2d19b9ba8e2f2c90e4">cam.nc.nc.open_log_file</link> (xml_file_name=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a333eda62aec03067ba85b44a61c86935">cam.nc.nc.log_coordinate</link> (x=None, y=None, z=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a53322f0171bd6afaa06ec792f400c9d0">cam.nc.nc.log_message</link> (message=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1ad0beec7390788018dc746fa245e6fcde">cam.nc.nc.close_log_file</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a01da1b0ca0e7d91954e94c6626fb324d">cam.nc.nc.rapid_to_midpoint</link> (x1=None, y1=None, z1=None, x2=None, y2=None, z2=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a4624f93a758a6c73df07bba758d6bd62">cam.nc.nc.rapid_to_intersection</link> (x1, y1, x2, y2, x3, y3, x4, y4, intersection_x, intersection_y, ua_numerator, ua_denominator, ua, ub_numerator, ub)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a9a18a96d0b3afcf63409a3e6018eb11d">cam.nc.nc.rapid_to_rotated_coordinate</link> (x1, y1, x2, y2, ref_x, ref_y, x_current, y_current, x_final, y_final)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1aad8a0d26587ae07f88e5a75179885381">cam.nc.nc.set_path_control_mode</link> (mode, motion_blending_tolerance, naive_cam_tolerance)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a5e9aaca9955c8fb95dad44092558a3bf">cam.nc.nc.wipe</link> ()</para>
+
+<para>NC code creator for additive machines like RepRap. </para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1abc318115f78663ca2d91126157d86702">cam.nc.nc.extruder_on</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a77ad194ec2cabd245c600c14c2b7d483">cam.nc.nc.extruder_off</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a36473a64d57ec3d8d8bfb883147d2d7a">cam.nc.nc.set_extruder_flowrate</link> (flowrate)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a9c030419249e1ab21249ba3422a34ffb">cam.nc.nc.extruder_temp</link> (temp=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a333a772bbb47cae40c605859700232b1">cam.nc.nc.fan_on</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1ac54675c89b77aca716632a8e43f05c43">cam.nc.nc.fan_off</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a9cac407940b4fe19bfe3a97b4fa6ecf7">cam.nc.nc.build_bed_temp</link> (temp=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a5a69714dde7282a277dca7997af3e46a">cam.nc.nc.chamber_temp</link> (temp=None)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_namespacecam_1_1nc_1_1nc_1abd30b2c5b3de780c384ee7804ff938cf">cam.nc.nc.ncOFF</link> = 0</para>
+
+<para><link linkend="_nc_8py">nc.py</link> </para>
+</listitem>
+            <listitem><para>int <link linkend="_namespacecam_1_1nc_1_1nc_1a95dcecaea1bad8e7a63a0280a02dde35">cam.nc.nc.ncLEFT</link> = -1</para>
+</listitem>
+            <listitem><para>int <link linkend="_namespacecam_1_1nc_1_1nc_1abc22b36804e0487675c685a0bf18abc7">cam.nc.nc.ncRIGHT</link> = +1</para>
+</listitem>
+            <listitem><para>int <link linkend="_namespacecam_1_1nc_1_1nc_1a4ebb84a6c868f8b01604495383df3f5f">cam.nc.nc.ncCW</link> = -1</para>
+</listitem>
+            <listitem><para>int <link linkend="_namespacecam_1_1nc_1_1nc_1a75d08e435350169027a100d76d537557">cam.nc.nc.ncCCW</link> = +1</para>
+</listitem>
+            <listitem><para>int <link linkend="_namespacecam_1_1nc_1_1nc_1aaf818838b2d8d41f10b40cd5c7d755dd">cam.nc.nc.ncMIST</link> = 1</para>
+</listitem>
+            <listitem><para>int <link linkend="_namespacecam_1_1nc_1_1nc_1afce7ab21c08404ef1adc338867f17531">cam.nc.nc.ncFLOOD</link> = 2</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1nc_1_1nc_1a983609d1bb7f24d5016a63113024a0cf">cam.nc.nc.creator</link> = <link linkend="_classcam_1_1nc_1_1nc_1_1Creator">Creator</link>()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

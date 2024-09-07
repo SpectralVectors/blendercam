@@ -1,0 +1,310 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1curvecamtools_1_1CamCurveOvercuts" kind="class" language="Python" prot="public">
+    <compoundname>cam::curvecamtools::CamCurveOvercuts</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Operator</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1curvecamtools_1_1CamCurveOvercuts_1a1e3077db6ad2a96e599657eb9512950d" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.curvecamtools.CamCurveOvercuts::bl_idname</definition>
+        <argsstring></argsstring>
+        <name>bl_idname</name>
+        <qualifiedname>cam.curvecamtools.CamCurveOvercuts.bl_idname</qualifiedname>
+        <initializer>=  &quot;object.curve_overcuts&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="205" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamtools_1_1CamCurveOvercuts_1a16ebc34f9362f4c0b8cae299fc141202" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.curvecamtools.CamCurveOvercuts::bl_label</definition>
+        <argsstring></argsstring>
+        <name>bl_label</name>
+        <qualifiedname>cam.curvecamtools.CamCurveOvercuts.bl_label</qualifiedname>
+        <initializer>=  &quot;Add Overcuts - A&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="206" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="206" bodyend="-1"/>
+        <referencedby refid="classcam_1_1preset__managers_1_1CAM__MACHINE__MT__presets_1af95f7812d2952b26a26809ab923dac09" compoundref="preset__managers_8py" startline="28" endline="38">cam.preset_managers.CAM_MACHINE_MT_presets.post_cb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamtools_1_1CamCurveOvercuts_1a5fbfd3a62b1e405e64a0994600a6b710" prot="public" static="yes" mutable="no">
+        <type>dict</type>
+        <definition>dict cam.curvecamtools.CamCurveOvercuts::bl_options</definition>
+        <argsstring></argsstring>
+        <name>bl_options</name>
+        <qualifiedname>cam.curvecamtools.CamCurveOvercuts.bl_options</qualifiedname>
+        <initializer>=  {&apos;REGISTER&apos;, &apos;UNDO&apos;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="207" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="207" bodyend="-1"/>
+        <referencedby refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a9628cbca8e69ec75b2337171a02bf428" compoundref="async__op_8py" startline="32" endline="59">cam.async_op.AsyncOperatorMixin.modal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamtools_1_1CamCurveOvercuts_1a46234bd5cb1011ab2fe5b371a1e0e6ec" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamtools.CamCurveOvercuts::diameter</definition>
+        <argsstring></argsstring>
+        <name>diameter</name>
+        <qualifiedname>cam.curvecamtools.CamCurveOvercuts.diameter</qualifiedname>
+        <initializer>(
+        name=&quot;Diameter&quot;,
+        default=.003175,
+        min=0,
+        max=100,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="209" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="209" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamtools_1_1CamCurveIntarsion_1af4934bdf7ccb17b0c1652455ccef9e06" compoundref="curvecamtools_8py" startline="146" endline="197">cam.curvecamtools.CamCurveIntarsion.execute</referencedby>
+        <referencedby refid="classcam_1_1curvecamtools_1_1CamCurveOvercuts_1ac36621f328a1634d1e5f82068504df8c" compoundref="curvecamtools_8py" startline="239" endline="307">cam.curvecamtools.CamCurveOvercuts.execute</referencedby>
+        <referencedby refid="classcam_1_1curvecamtools_1_1CamCurveOvercutsB_1a4dfd3aeb9a26899f900625361349c9d0" compoundref="curvecamtools_8py" startline="369" endline="579">cam.curvecamtools.CamCurveOvercutsB.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamtools_1_1CamCurveOvercuts_1a991adc6e8f5e6b15981ffd73b699d310" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamtools.CamCurveOvercuts::threshold</definition>
+        <argsstring></argsstring>
+        <name>threshold</name>
+        <qualifiedname>cam.curvecamtools.CamCurveOvercuts.threshold</qualifiedname>
+        <initializer>(
+        name=&quot;Threshold&quot;,
+        default=pi / 2 * .99,
+        min=-3.14,
+        max=3.14,
+        precision=4,
+        subtype=&quot;ANGLE&quot;,
+        unit=&quot;ROTATION&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="217" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="217" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamtools_1_1CamCurveOvercutsB_1a4dfd3aeb9a26899f900625361349c9d0" compoundref="curvecamtools_8py" startline="369" endline="579">cam.curvecamtools.CamCurveOvercutsB.execute</referencedby>
+        <referencedby refid="classcam_1_1curvecamtools_1_1CamMeshGetPockets_1a6613ee7727b9dba2771a2d886f292773" compoundref="curvecamtools_8py" startline="677" endline="757">cam.curvecamtools.CamMeshGetPockets.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamtools_1_1CamCurveOvercuts_1ad7b011f107143529b74abedb06be3782" prot="public" static="yes" mutable="no">
+        <type>BoolProperty</type>
+        <definition>BoolProperty cam.curvecamtools.CamCurveOvercuts::do_outer</definition>
+        <argsstring></argsstring>
+        <name>do_outer</name>
+        <qualifiedname>cam.curvecamtools.CamCurveOvercuts.do_outer</qualifiedname>
+        <initializer>(
+        name=&quot;Outer Polygons&quot;,
+        default=True,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="226" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="226" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamtools_1_1CamCurveOvercuts_1ac36621f328a1634d1e5f82068504df8c" compoundref="curvecamtools_8py" startline="239" endline="307">cam.curvecamtools.CamCurveOvercuts.execute</referencedby>
+        <referencedby refid="classcam_1_1curvecamtools_1_1CamCurveOvercutsB_1a4dfd3aeb9a26899f900625361349c9d0" compoundref="curvecamtools_8py" startline="369" endline="579">cam.curvecamtools.CamCurveOvercutsB.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamtools_1_1CamCurveOvercuts_1a6c22d0b21c3e71fde05fdbb36eb07c34" prot="public" static="yes" mutable="no">
+        <type>BoolProperty</type>
+        <definition>BoolProperty cam.curvecamtools.CamCurveOvercuts::invert</definition>
+        <argsstring></argsstring>
+        <name>invert</name>
+        <qualifiedname>cam.curvecamtools.CamCurveOvercuts.invert</qualifiedname>
+        <initializer>(
+        name=&quot;Invert&quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="230" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="230" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamtools_1_1CamCurveOvercuts_1ac36621f328a1634d1e5f82068504df8c" compoundref="curvecamtools_8py" startline="239" endline="307">cam.curvecamtools.CamCurveOvercuts.execute</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcam_1_1curvecamtools_1_1CamCurveOvercuts_1aa57a5ac95225fb53a47d0d1a18c42d3f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamtools.CamCurveOvercuts::threshold</definition>
+        <argsstring></argsstring>
+        <name>threshold</name>
+        <qualifiedname>cam.curvecamtools.CamCurveOvercuts.threshold</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="276" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="276" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamtools_1_1CamCurveOvercutsB_1a4dfd3aeb9a26899f900625361349c9d0" compoundref="curvecamtools_8py" startline="369" endline="579">cam.curvecamtools.CamCurveOvercutsB.execute</referencedby>
+        <referencedby refid="classcam_1_1curvecamtools_1_1CamMeshGetPockets_1a6613ee7727b9dba2771a2d886f292773" compoundref="curvecamtools_8py" startline="677" endline="757">cam.curvecamtools.CamMeshGetPockets.execute</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcam_1_1curvecamtools_1_1CamCurveOvercuts_1ae676c193f4332fbd45e7ceaec9c61bf2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.curvecamtools.CamCurveOvercuts.poll</definition>
+        <argsstring>(cls, context)</argsstring>
+        <name>poll</name>
+        <qualifiedname>cam.curvecamtools.CamCurveOvercuts.poll</qualifiedname>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="236" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="236" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1curvecamtools_1_1CamCurveOvercuts_1ac36621f328a1634d1e5f82068504df8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.curvecamtools.CamCurveOvercuts.execute</definition>
+        <argsstring>(self, context)</argsstring>
+        <name>execute</name>
+        <qualifiedname>cam.curvecamtools.CamCurveOvercuts.execute</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="239" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="239" bodyend="307"/>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a324df44f193c62ac56eee230b0446bf1" compoundref="curvecamcreate_8py" startline="1059">cam.curvecamcreate.CamCurvePuzzle.diameter</references>
+        <references refid="classcam_1_1curvecamtools_1_1CamCurveIntarsion_1a62971e1fbed6d70a4f0dd1c78e9fa817" compoundref="curvecamtools_8py" startline="85">cam.curvecamtools.CamCurveIntarsion.diameter</references>
+        <references refid="classcam_1_1curvecamtools_1_1CamCurveOvercuts_1a46234bd5cb1011ab2fe5b371a1e0e6ec" compoundref="curvecamtools_8py" startline="209">cam.curvecamtools.CamCurveOvercuts.diameter</references>
+        <references refid="classcam_1_1curvecamtools_1_1CamCurveOvercutsB_1afd44e9e8c2773daa67e19b90ff2f61c7" compoundref="curvecamtools_8py" startline="318">cam.curvecamtools.CamCurveOvercutsB.diameter</references>
+        <references refid="classcam_1_1curvecamtools_1_1CamCurveOvercuts_1ad7b011f107143529b74abedb06be3782" compoundref="curvecamtools_8py" startline="226">cam.curvecamtools.CamCurveOvercuts.do_outer</references>
+        <references refid="classcam_1_1curvecamtools_1_1CamCurveOvercutsB_1a7f0f19f527f31359194197be06ecef90" compoundref="curvecamtools_8py" startline="349">cam.curvecamtools.CamCurveOvercutsB.do_outer</references>
+        <references refid="classcam_1_1curvecamtools_1_1CamCurveOvercuts_1a6c22d0b21c3e71fde05fdbb36eb07c34" compoundref="curvecamtools_8py" startline="230">cam.curvecamtools.CamCurveOvercuts.invert</references>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1curvecamtools_1_1CamCurveOvercuts_1a8f652ec9748291f3fdca904bb44cedb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.curvecamtools.CamCurveOvercuts.invoke</definition>
+        <argsstring>(self, context, event)</argsstring>
+        <name>invoke</name>
+        <qualifiedname>cam.curvecamtools.CamCurveOvercuts.invoke</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <param>
+          <type>event</type>
+          <defname>event</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="308" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="308" bodyend="311"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Adds Overcuts for Slots</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.curvecamtools.CamCurveOvercuts</label>
+        <link refid="classcam_1_1curvecamtools_1_1CamCurveOvercuts"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6">
+        <label>BoolProperty</label>
+      </node>
+      <node id="5">
+        <label>FloatProperty</label>
+      </node>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.curvecamtools.CamCurveOvercuts</label>
+        <link refid="classcam_1_1curvecamtools_1_1CamCurveOvercuts"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+bl_idname</edgelabel>
+          <edgelabel>+bl_label</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+bl_options</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+diameter</edgelabel>
+          <edgelabel>+threshold</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>+do_outer</edgelabel>
+          <edgelabel>+invert</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dict</label>
+      </node>
+      <node id="3">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="203" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="203" bodyend="311"/>
+    <listofallmembers>
+      <member refid="classcam_1_1curvecamtools_1_1CamCurveOvercuts_1a1e3077db6ad2a96e599657eb9512950d" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamCurveOvercuts</scope><name>bl_idname</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamCurveOvercuts_1a16ebc34f9362f4c0b8cae299fc141202" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamCurveOvercuts</scope><name>bl_label</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamCurveOvercuts_1a5fbfd3a62b1e405e64a0994600a6b710" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamCurveOvercuts</scope><name>bl_options</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamCurveOvercuts_1a46234bd5cb1011ab2fe5b371a1e0e6ec" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamCurveOvercuts</scope><name>diameter</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamCurveOvercuts_1ad7b011f107143529b74abedb06be3782" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamCurveOvercuts</scope><name>do_outer</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamCurveOvercuts_1ac36621f328a1634d1e5f82068504df8c" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamCurveOvercuts</scope><name>execute</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamCurveOvercuts_1a6c22d0b21c3e71fde05fdbb36eb07c34" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamCurveOvercuts</scope><name>invert</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamCurveOvercuts_1a8f652ec9748291f3fdca904bb44cedb1" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamCurveOvercuts</scope><name>invoke</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamCurveOvercuts_1ae676c193f4332fbd45e7ceaec9c61bf2" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamCurveOvercuts</scope><name>poll</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamCurveOvercuts_1a991adc6e8f5e6b15981ffd73b699d310" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamCurveOvercuts</scope><name>threshold</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamCurveOvercuts_1aa57a5ac95225fb53a47d0d1a18c42d3f" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamCurveOvercuts</scope><name>threshold</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

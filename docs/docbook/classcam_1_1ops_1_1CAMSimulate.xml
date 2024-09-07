@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1ops_1_1CAMSimulate" xml:lang="en-US">
+<title>cam.ops.CAMSimulate Class Reference</title>
+<indexterm><primary>cam.ops.CAMSimulate</primary></indexterm>
+Inheritance diagram for cam.ops.CAMSimulate:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ops_1_1CAMSimulate__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.ops.CAMSimulate:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ops_1_1CAMSimulate__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1ops_1_1CAMSimulate_1a633151f17849d281fd52ce82c00356a7">execute_async</link> (self, context)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ops_1_1CAMSimulate_1aec2c7a0b73b2034208cff181e39a1a6b">draw</link> (self, context)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_classcam_1_1async__op_1_1AsyncOperatorMixin">cam.async_op.AsyncOperatorMixin</link>        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1async__op_1_1AsyncOperatorMixin_1aad1db56f32bf5f238f40b563c0912cc9">__init__</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1async__op_1_1AsyncOperatorMixin_1a9628cbca8e69ec75b2337171a02bf428">modal</link> (self, context, event)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1async__op_1_1AsyncOperatorMixin_1a2216ff6bb0dfd132f4ec4cf79b7cba2b">show_progress</link> (self, context, text, n, value_type)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1async__op_1_1AsyncOperatorMixin_1a15a51cfd69d8e453e2e3d64386b1ebe3">tick</link> (self, context)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1async__op_1_1AsyncOperatorMixin_1acfd48e2950454c9895b578250e85185a">execute</link> (self, context)</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classcam_1_1ops_1_1CAMSimulate_1af4865f2d7c63c3af578dfafcce6dd6a4">bl_idname</link> = &quot;object.cam_simulate&quot;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1ops_1_1CAMSimulate_1addf20267334c81563f52288a2982dbf7">bl_label</link> = &quot;CAM Simulation&quot;</para>
+</listitem>
+            <listitem><para>dict <link linkend="_classcam_1_1ops_1_1CAMSimulate_1a3fe0cac72f0a8d65e0cd4f3220fb70b5">bl_options</link> = {&apos;REGISTER&apos;, &apos;UNDO&apos;, &apos;BLOCKING&apos;}</para>
+</listitem>
+            <listitem><para>StringProperty <link linkend="_classcam_1_1ops_1_1CAMSimulate_1a064764e96e305e96f279788589891555">operation</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Public Attributes inherited from <link linkend="_classcam_1_1async__op_1_1AsyncOperatorMixin">cam.async_op.AsyncOperatorMixin</link>        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1async__op_1_1AsyncOperatorMixin_1a315566a49d3d1a69d1b0635e86c45fbe">timer</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1async__op_1_1AsyncOperatorMixin_1a01b572e82c26d1f5db10e3182e810ad7">coroutine</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Protected Attributes inherited from <link linkend="_classcam_1_1async__op_1_1AsyncOperatorMixin">cam.async_op.AsyncOperatorMixin</link>        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1async__op_1_1AsyncOperatorMixin_1a54532a564aaa17d7f30f58e5bf2710fe">_is_cancelled</link></para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Simulate CAM Operation
+This Is Performed by: Creating an Image, Painting Z Depth of the Brush Subtractively.
+Works only for Some Operations, Can Not Be Used for 4-5 Axis.</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1ops_1_1CAMSimulate_1aec2c7a0b73b2034208cff181e39a1a6b"/><section>
+    <title>draw()</title>
+<indexterm><primary>draw</primary><secondary>cam.ops.CAMSimulate</secondary></indexterm>
+<indexterm><primary>cam.ops.CAMSimulate</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput>cam.ops.CAMSimulate.draw ( self,  context)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ops_1_1CAMSimulate_1a633151f17849d281fd52ce82c00356a7"/><section>
+    <title>execute_async()</title>
+<indexterm><primary>execute_async</primary><secondary>cam.ops.CAMSimulate</secondary></indexterm>
+<indexterm><primary>cam.ops.CAMSimulate</primary><secondary>execute_async</secondary></indexterm>
+<para><computeroutput>cam.ops.CAMSimulate.execute_async ( self,  context)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ops_1_1CAMSimulate_a633151f17849d281fd52ce82c00356a7_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1ops_1_1CAMSimulate_1af4865f2d7c63c3af578dfafcce6dd6a4"/><section>
+    <title>bl_idname</title>
+<indexterm><primary>bl_idname</primary><secondary>cam.ops.CAMSimulate</secondary></indexterm>
+<indexterm><primary>cam.ops.CAMSimulate</primary><secondary>bl_idname</secondary></indexterm>
+<para><computeroutput>str cam.ops.CAMSimulate.bl_idname = &quot;object.cam_simulate&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ops_1_1CAMSimulate_1addf20267334c81563f52288a2982dbf7"/><section>
+    <title>bl_label</title>
+<indexterm><primary>bl_label</primary><secondary>cam.ops.CAMSimulate</secondary></indexterm>
+<indexterm><primary>cam.ops.CAMSimulate</primary><secondary>bl_label</secondary></indexterm>
+<para><computeroutput>str cam.ops.CAMSimulate.bl_label = &quot;CAM Simulation&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ops_1_1CAMSimulate_1a3fe0cac72f0a8d65e0cd4f3220fb70b5"/><section>
+    <title>bl_options</title>
+<indexterm><primary>bl_options</primary><secondary>cam.ops.CAMSimulate</secondary></indexterm>
+<indexterm><primary>cam.ops.CAMSimulate</primary><secondary>bl_options</secondary></indexterm>
+<para><computeroutput>dict cam.ops.CAMSimulate.bl_options = {&apos;REGISTER&apos;, &apos;UNDO&apos;, &apos;BLOCKING&apos;}<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ops_1_1CAMSimulate_1a064764e96e305e96f279788589891555"/><section>
+    <title>operation</title>
+<indexterm><primary>operation</primary><secondary>cam.ops.CAMSimulate</secondary></indexterm>
+<indexterm><primary>cam.ops.CAMSimulate</primary><secondary>operation</secondary></indexterm>
+<para><computeroutput>StringProperty cam.ops.CAMSimulate.operation<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Operation&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;Specify&#32;the&#32;operation&#32;to&#32;calculate&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="stringliteral">&apos;Operation&apos;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/<link linkend="_ops_8py">ops.py</link></section>
+</section>

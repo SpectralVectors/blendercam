@@ -1,0 +1,2644 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>blendercam: cam.nc.rez2.Creator Class Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">blendercam
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part --><!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('classcam_1_1nc_1_1rez2_1_1Creator.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="classcam_1_1nc_1_1rez2_1_1Creator-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">cam.nc.rez2.Creator Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Inheritance diagram for cam.nc.rez2.Creator:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1rez2_1_1Creator__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Collaboration diagram for cam.nc.rez2.Creator:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1rez2_1_1Creator__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a8cc5926e24e02ced7a5e5c10020d8887" id="r_a8cc5926e24e02ced7a5e5c10020d8887"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8cc5926e24e02ced7a5e5c10020d8887">__init__</a> (self)</td></tr>
+<tr class="separator:a8cc5926e24e02ced7a5e5c10020d8887"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a016ff8378bca14c3213d770f03cc5ba4" id="r_a016ff8378bca14c3213d770f03cc5ba4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a016ff8378bca14c3213d770f03cc5ba4">FORMAT_IN</a> (self)</td></tr>
+<tr class="memdesc:a016ff8378bca14c3213d770f03cc5ba4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internals.  <br /></td></tr>
+<tr class="separator:a016ff8378bca14c3213d770f03cc5ba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5bf6b1f61e376e7a935b1a0b17faa13" id="r_ad5bf6b1f61e376e7a935b1a0b17faa13"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5bf6b1f61e376e7a935b1a0b17faa13">FORMAT_MM</a> (self)</td></tr>
+<tr class="separator:ad5bf6b1f61e376e7a935b1a0b17faa13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf7c3fb7afa5b735b94668c73afae18e" id="r_abf7c3fb7afa5b735b94668c73afae18e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf7c3fb7afa5b735b94668c73afae18e">COMMENT</a> (self, <a class="el" href="#aeb078a15644fd38428fe437050b95d86">comment</a>)</td></tr>
+<tr class="separator:abf7c3fb7afa5b735b94668c73afae18e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1da535bbf2de8923273e826a51e7c30e" id="r_a1da535bbf2de8923273e826a51e7c30e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1da535bbf2de8923273e826a51e7c30e">write_feedrate</a> (self)</td></tr>
+<tr class="separator:a1da535bbf2de8923273e826a51e7c30e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a453a63b00ef5bfa3c5847aeef71b7440" id="r_a453a63b00ef5bfa3c5847aeef71b7440"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a453a63b00ef5bfa3c5847aeef71b7440">write_preps</a> (self)</td></tr>
+<tr class="separator:a453a63b00ef5bfa3c5847aeef71b7440"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3681ea24c5f728b3befd5a29ebca47e" id="r_ae3681ea24c5f728b3befd5a29ebca47e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3681ea24c5f728b3befd5a29ebca47e">write_misc</a> (self)</td></tr>
+<tr class="separator:ae3681ea24c5f728b3befd5a29ebca47e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e1b38d4f2704c617f43c45b38d064d4" id="r_a0e1b38d4f2704c617f43c45b38d064d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e1b38d4f2704c617f43c45b38d064d4">write_blocknum</a> (self)</td></tr>
+<tr class="separator:a0e1b38d4f2704c617f43c45b38d064d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfbc006caeac124462fc81a334fc414a" id="r_acfbc006caeac124462fc81a334fc414a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acfbc006caeac124462fc81a334fc414a">write_spindle</a> (self)</td></tr>
+<tr class="separator:acfbc006caeac124462fc81a334fc414a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cbff573fe91777aa6a54387034ce50a" id="r_a3cbff573fe91777aa6a54387034ce50a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3cbff573fe91777aa6a54387034ce50a">program_begin</a> (self, id, name='')</td></tr>
+<tr class="memdesc:a3cbff573fe91777aa6a54387034ce50a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Programs.  <br /></td></tr>
+<tr class="separator:a3cbff573fe91777aa6a54387034ce50a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa41df643a5e5b36c339765d70fa19e8" id="r_afa41df643a5e5b36c339765d70fa19e8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa41df643a5e5b36c339765d70fa19e8">program_stop</a> (self, optional=False)</td></tr>
+<tr class="separator:afa41df643a5e5b36c339765d70fa19e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7bc928a67448af439aeba0659882006" id="r_ac7bc928a67448af439aeba0659882006"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7bc928a67448af439aeba0659882006">program_end</a> (self)</td></tr>
+<tr class="separator:ac7bc928a67448af439aeba0659882006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a2088c51507b018bd6a3572a948ce22" id="r_a8a2088c51507b018bd6a3572a948ce22"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a2088c51507b018bd6a3572a948ce22">flush_nc</a> (self)</td></tr>
+<tr class="separator:a8a2088c51507b018bd6a3572a948ce22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2eb15694723a6802714b1deeb1d9caa" id="r_ae2eb15694723a6802714b1deeb1d9caa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2eb15694723a6802714b1deeb1d9caa">sub_begin</a> (self, id, name='')</td></tr>
+<tr class="memdesc:ae2eb15694723a6802714b1deeb1d9caa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subprograms.  <br /></td></tr>
+<tr class="separator:ae2eb15694723a6802714b1deeb1d9caa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1711ea477059d8addd10dc85c21dee40" id="r_a1711ea477059d8addd10dc85c21dee40"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1711ea477059d8addd10dc85c21dee40">sub_call</a> (self, id)</td></tr>
+<tr class="separator:a1711ea477059d8addd10dc85c21dee40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07b2f5317134ee428cd27649870aeec7" id="r_a07b2f5317134ee428cd27649870aeec7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07b2f5317134ee428cd27649870aeec7">sub_end</a> (self)</td></tr>
+<tr class="separator:a07b2f5317134ee428cd27649870aeec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a551b8f3d479e88b2c5741d33cd9aadef" id="r_a551b8f3d479e88b2c5741d33cd9aadef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a551b8f3d479e88b2c5741d33cd9aadef">imperial</a> (self)</td></tr>
+<tr class="memdesc:a551b8f3d479e88b2c5741d33cd9aadef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Settings.  <br /></td></tr>
+<tr class="separator:a551b8f3d479e88b2c5741d33cd9aadef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a320aaac705cbf29ab9a6bdcb619c7567" id="r_a320aaac705cbf29ab9a6bdcb619c7567"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a320aaac705cbf29ab9a6bdcb619c7567">metric</a> (self)</td></tr>
+<tr class="separator:a320aaac705cbf29ab9a6bdcb619c7567"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa810c5c40e0dff361b027aca9bc025f1" id="r_aa810c5c40e0dff361b027aca9bc025f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa810c5c40e0dff361b027aca9bc025f1">absolute</a> (self)</td></tr>
+<tr class="separator:aa810c5c40e0dff361b027aca9bc025f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d0b09adc6b38952e96c7c6c9604a126" id="r_a6d0b09adc6b38952e96c7c6c9604a126"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d0b09adc6b38952e96c7c6c9604a126">incremental</a> (self)</td></tr>
+<tr class="separator:a6d0b09adc6b38952e96c7c6c9604a126"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fda1e8f6c1a8f69df6fcedcd71296bf" id="r_a6fda1e8f6c1a8f69df6fcedcd71296bf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6fda1e8f6c1a8f69df6fcedcd71296bf">polar</a> (self, on=True)</td></tr>
+<tr class="separator:a6fda1e8f6c1a8f69df6fcedcd71296bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa073ab6ca0a4335beed7d2478315c7f7" id="r_aa073ab6ca0a4335beed7d2478315c7f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa073ab6ca0a4335beed7d2478315c7f7">set_plane</a> (self, plane)</td></tr>
+<tr class="separator:aa073ab6ca0a4335beed7d2478315c7f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6402010a20ba9587dfd4e34d99e1ac32" id="r_a6402010a20ba9587dfd4e34d99e1ac32"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6402010a20ba9587dfd4e34d99e1ac32">tool_change</a> (self, id)</td></tr>
+<tr class="memdesc:a6402010a20ba9587dfd4e34d99e1ac32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tools.  <br /></td></tr>
+<tr class="separator:a6402010a20ba9587dfd4e34d99e1ac32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a233c3b7d3318f17628bfe75a3c0e4c62" id="r_a233c3b7d3318f17628bfe75a3c0e4c62"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a233c3b7d3318f17628bfe75a3c0e4c62">tool_defn</a> (self, id, name='', params=None)</td></tr>
+<tr class="separator:a233c3b7d3318f17628bfe75a3c0e4c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09e2236065281f5563b93511be9fc15e" id="r_a09e2236065281f5563b93511be9fc15e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09e2236065281f5563b93511be9fc15e">offset_radius</a> (self, id, radius=None)</td></tr>
+<tr class="separator:a09e2236065281f5563b93511be9fc15e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade4ab9d7b60a96fb6a7192bd4322196c" id="r_ade4ab9d7b60a96fb6a7192bd4322196c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade4ab9d7b60a96fb6a7192bd4322196c">offset_length</a> (self, id, length=None)</td></tr>
+<tr class="separator:ade4ab9d7b60a96fb6a7192bd4322196c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a889fcf5e36af8919f5bf789ff6441240" id="r_a889fcf5e36af8919f5bf789ff6441240"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a889fcf5e36af8919f5bf789ff6441240">datum_shift</a> (self, <a class="el" href="#a84088624737be8ac1ecc6f99c5084179">x</a>=None, <a class="el" href="#add4ff0747beb346b74efcc046a60909d">y</a>=None, <a class="el" href="#adb5bd1fe79c623050354dbb8fe27c0f4">z</a>=None, <a class="el" href="#a336006692166a7610e897448e1719f88">a</a>=None, <a class="el" href="#a1ef983d34bb80c987337ee8a49cbbf15">b</a>=None, <a class="el" href="#a209a5487d17b868f67e1134f1a6c82ad">c</a>=None)</td></tr>
+<tr class="memdesc:a889fcf5e36af8919f5bf789ff6441240"><td class="mdescLeft">&#160;</td><td class="mdescRight">Datums.  <br /></td></tr>
+<tr class="separator:a889fcf5e36af8919f5bf789ff6441240"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a6470a77e72de49a15af36ff0548213" id="r_a2a6470a77e72de49a15af36ff0548213"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a6470a77e72de49a15af36ff0548213">datum_set</a> (self, <a class="el" href="#a84088624737be8ac1ecc6f99c5084179">x</a>=None, <a class="el" href="#add4ff0747beb346b74efcc046a60909d">y</a>=None, <a class="el" href="#adb5bd1fe79c623050354dbb8fe27c0f4">z</a>=None, <a class="el" href="#a336006692166a7610e897448e1719f88">a</a>=None, <a class="el" href="#a1ef983d34bb80c987337ee8a49cbbf15">b</a>=None, <a class="el" href="#a209a5487d17b868f67e1134f1a6c82ad">c</a>=None)</td></tr>
+<tr class="separator:a2a6470a77e72de49a15af36ff0548213"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af574c17a6d767e6b83b75e9553fbbdc9" id="r_af574c17a6d767e6b83b75e9553fbbdc9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af574c17a6d767e6b83b75e9553fbbdc9">workplane</a> (self, id)</td></tr>
+<tr class="separator:af574c17a6d767e6b83b75e9553fbbdc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29e57b4b1a2deb4e38a854b092132535" id="r_a29e57b4b1a2deb4e38a854b092132535"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29e57b4b1a2deb4e38a854b092132535">feedrate</a> (self, <a class="el" href="#a504eeee6dea3d3c433d9f4258d9bb8ab">f</a>)</td></tr>
+<tr class="memdesc:a29e57b4b1a2deb4e38a854b092132535"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rates + Modes.  <br /></td></tr>
+<tr class="separator:a29e57b4b1a2deb4e38a854b092132535"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5251bdf37c79070ba1f0545fd39515b" id="r_af5251bdf37c79070ba1f0545fd39515b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5251bdf37c79070ba1f0545fd39515b">feedrate_hv</a> (self, <a class="el" href="#aa5986c1621070be3cc329e7e42e66bb7">fh</a>, <a class="el" href="#afb38324055219c85066f9853563e18b8">fv</a>)</td></tr>
+<tr class="separator:af5251bdf37c79070ba1f0545fd39515b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad21197ba897a47f9c2b6d841b7724846" id="r_ad21197ba897a47f9c2b6d841b7724846"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad21197ba897a47f9c2b6d841b7724846">calc_feedrate_hv</a> (self, h, v)</td></tr>
+<tr class="separator:ad21197ba897a47f9c2b6d841b7724846"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada1dae0bc21963507bc0929f157910cb" id="r_ada1dae0bc21963507bc0929f157910cb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada1dae0bc21963507bc0929f157910cb">spindle</a> (self, <a class="el" href="#a458da8652e6c0efe5078567dffa2fc8f">s</a>, clockwise)</td></tr>
+<tr class="separator:ada1dae0bc21963507bc0929f157910cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f26084e78a4feec06373aa225fe23ca" id="r_a2f26084e78a4feec06373aa225fe23ca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f26084e78a4feec06373aa225fe23ca">coolant</a> (self, mode=0)</td></tr>
+<tr class="separator:a2f26084e78a4feec06373aa225fe23ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a278fc106c0bdea687db46256d09ebbf4" id="r_a278fc106c0bdea687db46256d09ebbf4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a278fc106c0bdea687db46256d09ebbf4">gearrange</a> (self, gear=0)</td></tr>
+<tr class="separator:a278fc106c0bdea687db46256d09ebbf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe171ac0eb1fb68dc8ac0c973f8807e9" id="r_abe171ac0eb1fb68dc8ac0c973f8807e9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe171ac0eb1fb68dc8ac0c973f8807e9">rapid</a> (self, <a class="el" href="#a84088624737be8ac1ecc6f99c5084179">x</a>=0.0000, <a class="el" href="#add4ff0747beb346b74efcc046a60909d">y</a>=0.0000, <a class="el" href="#adb5bd1fe79c623050354dbb8fe27c0f4">z</a>=0.0000, <a class="el" href="#a336006692166a7610e897448e1719f88">a</a>=0.0000, <a class="el" href="#a1ef983d34bb80c987337ee8a49cbbf15">b</a>=0.0000, <a class="el" href="#a209a5487d17b868f67e1134f1a6c82ad">c</a>=0.0000, how=False)</td></tr>
+<tr class="memdesc:abe171ac0eb1fb68dc8ac0c973f8807e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves.  <br /></td></tr>
+<tr class="separator:abe171ac0eb1fb68dc8ac0c973f8807e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcab495c1a952b7ca233f76836c53438" id="r_abcab495c1a952b7ca233f76836c53438"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abcab495c1a952b7ca233f76836c53438">feed</a> (self, <a class="el" href="#a84088624737be8ac1ecc6f99c5084179">x</a>=0.0000, <a class="el" href="#add4ff0747beb346b74efcc046a60909d">y</a>=0.0000, <a class="el" href="#adb5bd1fe79c623050354dbb8fe27c0f4">z</a>=0.0000, how=False)</td></tr>
+<tr class="separator:abcab495c1a952b7ca233f76836c53438"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4e12ba8323a7e5e6c2d6d2f6a00607d" id="r_af4e12ba8323a7e5e6c2d6d2f6a00607d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af4e12ba8323a7e5e6c2d6d2f6a00607d">same_xyz</a> (self, <a class="el" href="#a84088624737be8ac1ecc6f99c5084179">x</a>=None, <a class="el" href="#add4ff0747beb346b74efcc046a60909d">y</a>=None, <a class="el" href="#adb5bd1fe79c623050354dbb8fe27c0f4">z</a>=None)</td></tr>
+<tr class="separator:af4e12ba8323a7e5e6c2d6d2f6a00607d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad82091a797518ce790808a5a5d6bbeb3" id="r_ad82091a797518ce790808a5a5d6bbeb3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad82091a797518ce790808a5a5d6bbeb3">arc</a> (self, cw, <a class="el" href="#a84088624737be8ac1ecc6f99c5084179">x</a>=0.0000, <a class="el" href="#add4ff0747beb346b74efcc046a60909d">y</a>=0.0000, <a class="el" href="#adb5bd1fe79c623050354dbb8fe27c0f4">z</a>=0.0000, <a class="el" href="#ae6e43e3eb896effccec7df1e7c32b971">i</a>=0.0000, <a class="el" href="#aa89d109ddbd1eac7224f36f6bdc9e48a">j</a>=0.0000, <a class="el" href="#a42092a05d57c46d85aae424b4cc1656c">k</a>=0.0000, <a class="el" href="#a82b42b5e34b021f8b2a7ed672f232362">r</a>=0.0000)</td></tr>
+<tr class="separator:ad82091a797518ce790808a5a5d6bbeb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96f30401310d0198de3d2d55da86510f" id="r_a96f30401310d0198de3d2d55da86510f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a96f30401310d0198de3d2d55da86510f">arc_cw</a> (self, <a class="el" href="#a84088624737be8ac1ecc6f99c5084179">x</a>=None, <a class="el" href="#add4ff0747beb346b74efcc046a60909d">y</a>=None, <a class="el" href="#adb5bd1fe79c623050354dbb8fe27c0f4">z</a>=None, <a class="el" href="#ae6e43e3eb896effccec7df1e7c32b971">i</a>=None, <a class="el" href="#aa89d109ddbd1eac7224f36f6bdc9e48a">j</a>=None, <a class="el" href="#a42092a05d57c46d85aae424b4cc1656c">k</a>=None, <a class="el" href="#a82b42b5e34b021f8b2a7ed672f232362">r</a>=None)</td></tr>
+<tr class="separator:a96f30401310d0198de3d2d55da86510f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a7b089cf338846799311b5b1193a566" id="r_a7a7b089cf338846799311b5b1193a566"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a7b089cf338846799311b5b1193a566">arc_ccw</a> (self, <a class="el" href="#a84088624737be8ac1ecc6f99c5084179">x</a>=None, <a class="el" href="#add4ff0747beb346b74efcc046a60909d">y</a>=None, <a class="el" href="#adb5bd1fe79c623050354dbb8fe27c0f4">z</a>=None, <a class="el" href="#ae6e43e3eb896effccec7df1e7c32b971">i</a>=None, <a class="el" href="#aa89d109ddbd1eac7224f36f6bdc9e48a">j</a>=None, <a class="el" href="#a42092a05d57c46d85aae424b4cc1656c">k</a>=None, <a class="el" href="#a82b42b5e34b021f8b2a7ed672f232362">r</a>=None)</td></tr>
+<tr class="separator:a7a7b089cf338846799311b5b1193a566"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d5473b4b265357432b5f47f73241178" id="r_a5d5473b4b265357432b5f47f73241178"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d5473b4b265357432b5f47f73241178">dwell</a> (self, <a class="el" href="#a2cf116b510718024c5e2074120ef4de6">t</a>)</td></tr>
+<tr class="separator:a5d5473b4b265357432b5f47f73241178"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a7d8410ec979d6d2bf4164967d0a1a9" id="r_a8a7d8410ec979d6d2bf4164967d0a1a9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a7d8410ec979d6d2bf4164967d0a1a9">rapid_home</a> (self, <a class="el" href="#a84088624737be8ac1ecc6f99c5084179">x</a>=None, <a class="el" href="#add4ff0747beb346b74efcc046a60909d">y</a>=None, <a class="el" href="#adb5bd1fe79c623050354dbb8fe27c0f4">z</a>=None, <a class="el" href="#a336006692166a7610e897448e1719f88">a</a>=None, <a class="el" href="#a1ef983d34bb80c987337ee8a49cbbf15">b</a>=None, <a class="el" href="#a209a5487d17b868f67e1134f1a6c82ad">c</a>=None)</td></tr>
+<tr class="separator:a8a7d8410ec979d6d2bf4164967d0a1a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bdac44f439a1de9bccfbefa02ed492c" id="r_a9bdac44f439a1de9bccfbefa02ed492c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9bdac44f439a1de9bccfbefa02ed492c">rapid_unhome</a> (self)</td></tr>
+<tr class="separator:a9bdac44f439a1de9bccfbefa02ed492c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a832faa0c3acbd4f55d9ca09a57cdaee6" id="r_a832faa0c3acbd4f55d9ca09a57cdaee6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a832faa0c3acbd4f55d9ca09a57cdaee6">pattern</a> (self)</td></tr>
+<tr class="memdesc:a832faa0c3acbd4f55d9ca09a57cdaee6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cycles.  <br /></td></tr>
+<tr class="separator:a832faa0c3acbd4f55d9ca09a57cdaee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab092d47ef20333829cb486b0ed9e926a" id="r_ab092d47ef20333829cb486b0ed9e926a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab092d47ef20333829cb486b0ed9e926a">pocket</a> (self)</td></tr>
+<tr class="separator:ab092d47ef20333829cb486b0ed9e926a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3a2e248f917068346b8ba5e0a80a739" id="r_ae3a2e248f917068346b8ba5e0a80a739"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3a2e248f917068346b8ba5e0a80a739">profile</a> (self)</td></tr>
+<tr class="separator:ae3a2e248f917068346b8ba5e0a80a739"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0dc22f39380207dd57c000b81c94c85" id="r_af0dc22f39380207dd57c000b81c94c85"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0dc22f39380207dd57c000b81c94c85">circular_pocket</a> (self, <a class="el" href="#a84088624737be8ac1ecc6f99c5084179">x</a>=None, <a class="el" href="#add4ff0747beb346b74efcc046a60909d">y</a>=None, ToolDiameter=None, HoleDiameter=None, ClearanceHeight=None, StartHeight=None, MaterialTop=None, FeedRate=None, SpindleRPM=None, HoleDepth=None, DepthOfCut=None, StepOver=None)</td></tr>
+<tr class="separator:af0dc22f39380207dd57c000b81c94c85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec638a8489a120fef07a8bd6823476e4" id="r_aec638a8489a120fef07a8bd6823476e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec638a8489a120fef07a8bd6823476e4">drill</a> (self, <a class="el" href="#a84088624737be8ac1ecc6f99c5084179">x</a>=None, <a class="el" href="#add4ff0747beb346b74efcc046a60909d">y</a>=None, <a class="el" href="#a5d5473b4b265357432b5f47f73241178">dwell</a>=None, depthparams=None, retract_mode=None, spindle_mode=None, internal_coolant_on=None, rapid_to_clearance=None)</td></tr>
+<tr class="separator:aec638a8489a120fef07a8bd6823476e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4756893638325384a66f675c703ad36" id="r_ac4756893638325384a66f675c703ad36"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4756893638325384a66f675c703ad36">tap</a> (self, <a class="el" href="#a84088624737be8ac1ecc6f99c5084179">x</a>=None, <a class="el" href="#add4ff0747beb346b74efcc046a60909d">y</a>=None, <a class="el" href="#adb5bd1fe79c623050354dbb8fe27c0f4">z</a>=None, zretract=None, depth=None, standoff=None, dwell_bottom=None, pitch=None, stoppos=None, spin_in=None, spin_out=None, tap_mode=None, direction=None)</td></tr>
+<tr class="separator:ac4756893638325384a66f675c703ad36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73b2c0ace72a96fd9d7708b6192b8d2a" id="r_a73b2c0ace72a96fd9d7708b6192b8d2a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73b2c0ace72a96fd9d7708b6192b8d2a">bore</a> (self, <a class="el" href="#a84088624737be8ac1ecc6f99c5084179">x</a>=None, <a class="el" href="#add4ff0747beb346b74efcc046a60909d">y</a>=None, <a class="el" href="#adb5bd1fe79c623050354dbb8fe27c0f4">z</a>=None, zretract=None, depth=None, standoff=None, dwell_bottom=None, feed_in=None, feed_out=None, stoppos=None, shift_back=None, shift_right=None, backbore=False, stop=False)</td></tr>
+<tr class="separator:a73b2c0ace72a96fd9d7708b6192b8d2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb078a15644fd38428fe437050b95d86" id="r_aeb078a15644fd38428fe437050b95d86"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb078a15644fd38428fe437050b95d86">comment</a> (self, text)</td></tr>
+<tr class="memdesc:aeb078a15644fd38428fe437050b95d86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Misc.  <br /></td></tr>
+<tr class="separator:aeb078a15644fd38428fe437050b95d86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8074041ccc55a2f845fc7aa7e8b4fee" id="r_af8074041ccc55a2f845fc7aa7e8b4fee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8074041ccc55a2f845fc7aa7e8b4fee">variable</a> (self, id)</td></tr>
+<tr class="separator:af8074041ccc55a2f845fc7aa7e8b4fee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c8ccc5a48039dda6e9c70e4f6d44a5e" id="r_a8c8ccc5a48039dda6e9c70e4f6d44a5e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c8ccc5a48039dda6e9c70e4f6d44a5e">variable_set</a> (self, id, value)</td></tr>
+<tr class="separator:a8c8ccc5a48039dda6e9c70e4f6d44a5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classcam_1_1nc_1_1nc_1_1Creator')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html">cam.nc.nc.Creator</a></td></tr>
+<tr class="memitem:ab3651c24840aa9b2a7a1bc828263eac9 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_ab3651c24840aa9b2a7a1bc828263eac9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#ab3651c24840aa9b2a7a1bc828263eac9">file_open</a> (self, name)</td></tr>
+<tr class="memdesc:ab3651c24840aa9b2a7a1bc828263eac9 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internals.  <br /></td></tr>
+<tr class="separator:ab3651c24840aa9b2a7a1bc828263eac9 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bf39bc81f3b3714060d74f1339ae06c inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a7bf39bc81f3b3714060d74f1339ae06c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a7bf39bc81f3b3714060d74f1339ae06c">file_close</a> (self)</td></tr>
+<tr class="separator:a7bf39bc81f3b3714060d74f1339ae06c inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80f2134add83bfaaf2870d075d36ed8a inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a80f2134add83bfaaf2870d075d36ed8a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a80f2134add83bfaaf2870d075d36ed8a">write</a> (self, s)</td></tr>
+<tr class="separator:a80f2134add83bfaaf2870d075d36ed8a inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b9b5f41f66c0a89ae69a7f21776025d inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a6b9b5f41f66c0a89ae69a7f21776025d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a6b9b5f41f66c0a89ae69a7f21776025d">writem</a> (self, a)</td></tr>
+<tr class="separator:a6b9b5f41f66c0a89ae69a7f21776025d inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4f10ffcf1ffb003aea0a8a008e65cd4 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_aa4f10ffcf1ffb003aea0a8a008e65cd4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#aa4f10ffcf1ffb003aea0a8a008e65cd4">add_stock</a> (self, type_name, params)</td></tr>
+<tr class="separator:aa4f10ffcf1ffb003aea0a8a008e65cd4 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b27c7c2c804ec3aa2a3e3e6bf3a638c inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a3b27c7c2c804ec3aa2a3e3e6bf3a638c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a3b27c7c2c804ec3aa2a3e3e6bf3a638c">set_temporary_origin</a> (self, x=None, y=None, z=None, a=None, b=None, c=None)</td></tr>
+<tr class="separator:a3b27c7c2c804ec3aa2a3e3e6bf3a638c inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7d4b51ed47c3deaff7d7a4167ec9630 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_ad7d4b51ed47c3deaff7d7a4167ec9630"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#ad7d4b51ed47c3deaff7d7a4167ec9630">remove_temporary_origin</a> (self)</td></tr>
+<tr class="separator:ad7d4b51ed47c3deaff7d7a4167ec9630 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb1d0f892dfa22f1fa591e0f32132ddd inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_abb1d0f892dfa22f1fa591e0f32132ddd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#abb1d0f892dfa22f1fa591e0f32132ddd">current_tool</a> (self)</td></tr>
+<tr class="separator:abb1d0f892dfa22f1fa591e0f32132ddd inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25dc579a777162a8825f4a80cdb49dd7 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a25dc579a777162a8825f4a80cdb49dd7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a25dc579a777162a8825f4a80cdb49dd7">clearanceplane</a> (self, z=None)</td></tr>
+<tr class="separator:a25dc579a777162a8825f4a80cdb49dd7 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa444813a0c811ccdf5c131ef200f61ad inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_aa444813a0c811ccdf5c131ef200f61ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#aa444813a0c811ccdf5c131ef200f61ad">matrix</a> (self, a1=None, b1=None, c1=None, a2=None, b2=None, c2=None, a3=None, b3=None, c3=None)</td></tr>
+<tr class="memdesc:aa444813a0c811ccdf5c131ef200f61ad inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="mdescLeft">&#160;</td><td class="mdescRight">APT360 like Transformation Definitions These definitions were created while looking at Irvin Kraal's book on APT.  <br /></td></tr>
+<tr class="separator:aa444813a0c811ccdf5c131ef200f61ad inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2916aeb745eb7bab7335e02638045f6 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_aa2916aeb745eb7bab7335e02638045f6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#aa2916aeb745eb7bab7335e02638045f6">translate</a> (self, x=None, y=None, z=None)</td></tr>
+<tr class="separator:aa2916aeb745eb7bab7335e02638045f6 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb91710cf1f26d4cf07f9da51e7798a5 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_adb91710cf1f26d4cf07f9da51e7798a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#adb91710cf1f26d4cf07f9da51e7798a5">rotate</a> (self, xyrot=None, yzrot=None, zxrot=None, angle=None)</td></tr>
+<tr class="separator:adb91710cf1f26d4cf07f9da51e7798a5 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7277c1e666c6dda2b8a997f3518f3f3e inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a7277c1e666c6dda2b8a997f3518f3f3e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a7277c1e666c6dda2b8a997f3518f3f3e">scale</a> (self, k=None)</td></tr>
+<tr class="separator:a7277c1e666c6dda2b8a997f3518f3f3e inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a016998404be15eef6dc192118c572e4a inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a016998404be15eef6dc192118c572e4a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a016998404be15eef6dc192118c572e4a">matrix_product</a> (self, matrix1=None, matrix2=None)</td></tr>
+<tr class="separator:a016998404be15eef6dc192118c572e4a inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a183c1585f1851d4573dadc6645f3b473 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a183c1585f1851d4573dadc6645f3b473"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a183c1585f1851d4573dadc6645f3b473">mirror_plane</a> (self, plane1=None, plane2=None, plane3=None)</td></tr>
+<tr class="separator:a183c1585f1851d4573dadc6645f3b473 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa777fc06dd6e476f08060e7cf4f88068 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_aa777fc06dd6e476f08060e7cf4f88068"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#aa777fc06dd6e476f08060e7cf4f88068">mirror_line</a> (self, line=None)</td></tr>
+<tr class="separator:aa777fc06dd6e476f08060e7cf4f88068 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adba071f67fa119dc47a3cbdbe5324cc4 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_adba071f67fa119dc47a3cbdbe5324cc4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#adba071f67fa119dc47a3cbdbe5324cc4">set_machine_coordinates</a> (self)</td></tr>
+<tr class="separator:adba071f67fa119dc47a3cbdbe5324cc4 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af48057c7d845490d9cebf0c321858d87 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_af48057c7d845490d9cebf0c321858d87"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#af48057c7d845490d9cebf0c321858d87">use_CRC</a> (self)</td></tr>
+<tr class="memdesc:af48057c7d845490d9cebf0c321858d87 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cutter radius compensation.  <br /></td></tr>
+<tr class="separator:af48057c7d845490d9cebf0c321858d87 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acec2552d357ba49de5adbcbaf3ad93a5 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_acec2552d357ba49de5adbcbaf3ad93a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#acec2552d357ba49de5adbcbaf3ad93a5">end_canned_cycle</a> (self)</td></tr>
+<tr class="separator:acec2552d357ba49de5adbcbaf3ad93a5 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf1d934a3cd91810b1148e119887500c inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_adf1d934a3cd91810b1148e119887500c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#adf1d934a3cd91810b1148e119887500c">insert</a> (self, text)</td></tr>
+<tr class="separator:adf1d934a3cd91810b1148e119887500c inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2742a3c6e584e90c23d4abab5e44dcc inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_af2742a3c6e584e90c23d4abab5e44dcc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#af2742a3c6e584e90c23d4abab5e44dcc">block_delete</a> (self, on=False)</td></tr>
+<tr class="separator:af2742a3c6e584e90c23d4abab5e44dcc inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5943f76b586cd2d530dc0d305ef457bd inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a5943f76b586cd2d530dc0d305ef457bd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a5943f76b586cd2d530dc0d305ef457bd">probe_linear_centre_outside</a> (self, x1=None, y1=None, depth=None, x2=None, y2=None)</td></tr>
+<tr class="separator:a5943f76b586cd2d530dc0d305ef457bd inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2982bddb09ae7c6469a7b5e616566ab inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_ab2982bddb09ae7c6469a7b5e616566ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#ab2982bddb09ae7c6469a7b5e616566ab">probe_single_point</a> (self, point_along_edge_x=None, point_along_edge_y=None, depth=None, retracted_point_x=None, retracted_point_y=None, destination_point_x=None, destination_point_y=None, intersection_variable_x=None, intersection_variable_y=None, probe_offset_x_component=None, probe_offset_y_component=None)</td></tr>
+<tr class="separator:ab2982bddb09ae7c6469a7b5e616566ab inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a950f0b9dd784e5a706fb16bd4e356607 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a950f0b9dd784e5a706fb16bd4e356607"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a950f0b9dd784e5a706fb16bd4e356607">probe_downward_point</a> (self, x=None, y=None, depth=None, intersection_variable_z=None)</td></tr>
+<tr class="separator:a950f0b9dd784e5a706fb16bd4e356607 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ff98c29e67d4bb1e4d428e7a19ae0c9 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a7ff98c29e67d4bb1e4d428e7a19ae0c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a7ff98c29e67d4bb1e4d428e7a19ae0c9">report_probe_results</a> (self, x1=None, y1=None, z1=None, x2=None, y2=None, z2=None, x3=None, y3=None, z3=None, x4=None, y4=None, z4=None, x5=None, y5=None, z5=None, x6=None, y6=None, z6=None, xml_file_name=None)</td></tr>
+<tr class="separator:a7ff98c29e67d4bb1e4d428e7a19ae0c9 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae826db09c1b7c0fe1099f66f09f5758a inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_ae826db09c1b7c0fe1099f66f09f5758a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#ae826db09c1b7c0fe1099f66f09f5758a">open_log_file</a> (self, xml_file_name=None)</td></tr>
+<tr class="separator:ae826db09c1b7c0fe1099f66f09f5758a inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17e6de5013fe131ff946bd3e86be52dc inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a17e6de5013fe131ff946bd3e86be52dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a17e6de5013fe131ff946bd3e86be52dc">log_coordinate</a> (self, x=None, y=None, z=None)</td></tr>
+<tr class="separator:a17e6de5013fe131ff946bd3e86be52dc inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a41b57e7fbc95e765b4107d61f2b0fb inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a8a41b57e7fbc95e765b4107d61f2b0fb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a8a41b57e7fbc95e765b4107d61f2b0fb">log_message</a> (self, message=None)</td></tr>
+<tr class="separator:a8a41b57e7fbc95e765b4107d61f2b0fb inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae221051f5d050fe72024893d869c9e95 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_ae221051f5d050fe72024893d869c9e95"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#ae221051f5d050fe72024893d869c9e95">close_log_file</a> (self)</td></tr>
+<tr class="separator:ae221051f5d050fe72024893d869c9e95 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af58b38bf65ddba3bcef0cae39aac4a09 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_af58b38bf65ddba3bcef0cae39aac4a09"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#af58b38bf65ddba3bcef0cae39aac4a09">rapid_to_midpoint</a> (self, x1=None, y1=None, z1=None, x2=None, y2=None, z2=None)</td></tr>
+<tr class="separator:af58b38bf65ddba3bcef0cae39aac4a09 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab141de97e87759d48b8227e5738d056c inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_ab141de97e87759d48b8227e5738d056c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#ab141de97e87759d48b8227e5738d056c">rapid_to_intersection</a> (self, x1, y1, x2, y2, x3, y3, x4, y4, intersection_x, intersection_y, ua_numerator, ua_denominator, ua, ub_numerator, ub)</td></tr>
+<tr class="separator:ab141de97e87759d48b8227e5738d056c inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2f4b7454862bacf84d24d45d1702d1c inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_af2f4b7454862bacf84d24d45d1702d1c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#af2f4b7454862bacf84d24d45d1702d1c">rapid_to_rotated_coordinate</a> (self, x1, y1, x2, y2, ref_x, ref_y, x_current, y_current, x_final, y_final)</td></tr>
+<tr class="separator:af2f4b7454862bacf84d24d45d1702d1c inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36ddaf371b5dcf5cc53a8c6ed6a4e926 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a36ddaf371b5dcf5cc53a8c6ed6a4e926"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a36ddaf371b5dcf5cc53a8c6ed6a4e926">set_path_control_mode</a> (self, mode, motion_blending_tolerance, naive_cam_tolerance)</td></tr>
+<tr class="separator:a36ddaf371b5dcf5cc53a8c6ed6a4e926 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec98966fe45ff7d2973002311f38b841 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_aec98966fe45ff7d2973002311f38b841"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#aec98966fe45ff7d2973002311f38b841">wipe</a> (self)</td></tr>
+<tr class="memdesc:aec98966fe45ff7d2973002311f38b841 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="mdescLeft">&#160;</td><td class="mdescRight">NC code creator for additive machines like RepRap.  <br /></td></tr>
+<tr class="separator:aec98966fe45ff7d2973002311f38b841 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a227b7ab87099b672da953a0aad13eff6 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a227b7ab87099b672da953a0aad13eff6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a227b7ab87099b672da953a0aad13eff6">extruder_on</a> (self)</td></tr>
+<tr class="separator:a227b7ab87099b672da953a0aad13eff6 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1acc377f3f5c966fde33e8a22ae49dd2 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a1acc377f3f5c966fde33e8a22ae49dd2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a1acc377f3f5c966fde33e8a22ae49dd2">extruder_off</a> (self)</td></tr>
+<tr class="separator:a1acc377f3f5c966fde33e8a22ae49dd2 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55cd49b26a3b252e7c6f24fc6bd4fd25 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a55cd49b26a3b252e7c6f24fc6bd4fd25"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a55cd49b26a3b252e7c6f24fc6bd4fd25">set_extruder_flowrate</a> (self, flowrate)</td></tr>
+<tr class="separator:a55cd49b26a3b252e7c6f24fc6bd4fd25 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0911d697ca8205da25a327e638fd3620 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a0911d697ca8205da25a327e638fd3620"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a0911d697ca8205da25a327e638fd3620">extruder_temp</a> (self, temp)</td></tr>
+<tr class="separator:a0911d697ca8205da25a327e638fd3620 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f54ed36706db67ca412a8ff341526a3 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a2f54ed36706db67ca412a8ff341526a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a2f54ed36706db67ca412a8ff341526a3">fan_on</a> (self)</td></tr>
+<tr class="separator:a2f54ed36706db67ca412a8ff341526a3 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b9d618bf11b2c17a1bc5f69944bd3b7 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a5b9d618bf11b2c17a1bc5f69944bd3b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a5b9d618bf11b2c17a1bc5f69944bd3b7">fan_off</a> (self)</td></tr>
+<tr class="separator:a5b9d618bf11b2c17a1bc5f69944bd3b7 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52fa4c4b50e5f53df50ebee0319e9245 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a52fa4c4b50e5f53df50ebee0319e9245"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a52fa4c4b50e5f53df50ebee0319e9245">build_bed_temp</a> (self, temp)</td></tr>
+<tr class="separator:a52fa4c4b50e5f53df50ebee0319e9245 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9f33126ca1fff2b36e6ca3f4ac81cef inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_ab9f33126ca1fff2b36e6ca3f4ac81cef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#ab9f33126ca1fff2b36e6ca3f4ac81cef">chamber_temp</a> (self, temp)</td></tr>
+<tr class="separator:ab9f33126ca1fff2b36e6ca3f4ac81cef inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93388ba17e68b836b4eee5d907b7fb41 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a93388ba17e68b836b4eee5d907b7fb41"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a93388ba17e68b836b4eee5d907b7fb41">begin_ncblock</a> (self)</td></tr>
+<tr class="separator:a93388ba17e68b836b4eee5d907b7fb41 inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a88ca7c016d69f6c5f8dd98f326868a inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_a2a88ca7c016d69f6c5f8dd98f326868a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a2a88ca7c016d69f6c5f8dd98f326868a">end_ncblock</a> (self)</td></tr>
+<tr class="separator:a2a88ca7c016d69f6c5f8dd98f326868a inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7795ded7273e69a74d36614404fef0e inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator" id="r_ab7795ded7273e69a74d36614404fef0e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#ab7795ded7273e69a74d36614404fef0e">add_text</a> (self, s, col, cdata)</td></tr>
+<tr class="separator:ab7795ded7273e69a74d36614404fef0e inherit pub_methods_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a336006692166a7610e897448e1719f88" id="r_a336006692166a7610e897448e1719f88"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a336006692166a7610e897448e1719f88">a</a></td></tr>
+<tr class="separator:a336006692166a7610e897448e1719f88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ef983d34bb80c987337ee8a49cbbf15" id="r_a1ef983d34bb80c987337ee8a49cbbf15"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ef983d34bb80c987337ee8a49cbbf15">b</a></td></tr>
+<tr class="separator:a1ef983d34bb80c987337ee8a49cbbf15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a209a5487d17b868f67e1134f1a6c82ad" id="r_a209a5487d17b868f67e1134f1a6c82ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a209a5487d17b868f67e1134f1a6c82ad">c</a></td></tr>
+<tr class="separator:a209a5487d17b868f67e1134f1a6c82ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a504eeee6dea3d3c433d9f4258d9bb8ab" id="r_a504eeee6dea3d3c433d9f4258d9bb8ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a504eeee6dea3d3c433d9f4258d9bb8ab">f</a></td></tr>
+<tr class="separator:a504eeee6dea3d3c433d9f4258d9bb8ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5986c1621070be3cc329e7e42e66bb7" id="r_aa5986c1621070be3cc329e7e42e66bb7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5986c1621070be3cc329e7e42e66bb7">fh</a></td></tr>
+<tr class="separator:aa5986c1621070be3cc329e7e42e66bb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb38324055219c85066f9853563e18b8" id="r_afb38324055219c85066f9853563e18b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afb38324055219c85066f9853563e18b8">fv</a></td></tr>
+<tr class="separator:afb38324055219c85066f9853563e18b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1651a8fd4f7a5ce80a1c3fd0a52f072" id="r_ac1651a8fd4f7a5ce80a1c3fd0a52f072"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac1651a8fd4f7a5ce80a1c3fd0a52f072">fhv</a></td></tr>
+<tr class="separator:ac1651a8fd4f7a5ce80a1c3fd0a52f072"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcb8711bf1bbac539e4cab55872eaede" id="r_adcb8711bf1bbac539e4cab55872eaede"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adcb8711bf1bbac539e4cab55872eaede">g</a></td></tr>
+<tr class="separator:adcb8711bf1bbac539e4cab55872eaede"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6e43e3eb896effccec7df1e7c32b971" id="r_ae6e43e3eb896effccec7df1e7c32b971"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6e43e3eb896effccec7df1e7c32b971">i</a></td></tr>
+<tr class="separator:ae6e43e3eb896effccec7df1e7c32b971"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa89d109ddbd1eac7224f36f6bdc9e48a" id="r_aa89d109ddbd1eac7224f36f6bdc9e48a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa89d109ddbd1eac7224f36f6bdc9e48a">j</a></td></tr>
+<tr class="separator:aa89d109ddbd1eac7224f36f6bdc9e48a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42092a05d57c46d85aae424b4cc1656c" id="r_a42092a05d57c46d85aae424b4cc1656c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42092a05d57c46d85aae424b4cc1656c">k</a></td></tr>
+<tr class="separator:a42092a05d57c46d85aae424b4cc1656c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e9bb80d483eec4d3be17a5e0a3a63b4" id="r_a4e9bb80d483eec4d3be17a5e0a3a63b4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e9bb80d483eec4d3be17a5e0a3a63b4">m</a></td></tr>
+<tr class="separator:a4e9bb80d483eec4d3be17a5e0a3a63b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68d42558f7ffecddec36abb0b1a893e7" id="r_a68d42558f7ffecddec36abb0b1a893e7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a68d42558f7ffecddec36abb0b1a893e7">n</a></td></tr>
+<tr class="separator:a68d42558f7ffecddec36abb0b1a893e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82b42b5e34b021f8b2a7ed672f232362" id="r_a82b42b5e34b021f8b2a7ed672f232362"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82b42b5e34b021f8b2a7ed672f232362">r</a></td></tr>
+<tr class="separator:a82b42b5e34b021f8b2a7ed672f232362"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a458da8652e6c0efe5078567dffa2fc8f" id="r_a458da8652e6c0efe5078567dffa2fc8f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a458da8652e6c0efe5078567dffa2fc8f">s</a></td></tr>
+<tr class="separator:a458da8652e6c0efe5078567dffa2fc8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cf116b510718024c5e2074120ef4de6" id="r_a2cf116b510718024c5e2074120ef4de6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2cf116b510718024c5e2074120ef4de6">t</a></td></tr>
+<tr class="separator:a2cf116b510718024c5e2074120ef4de6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84088624737be8ac1ecc6f99c5084179" id="r_a84088624737be8ac1ecc6f99c5084179"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84088624737be8ac1ecc6f99c5084179">x</a></td></tr>
+<tr class="separator:a84088624737be8ac1ecc6f99c5084179"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add4ff0747beb346b74efcc046a60909d" id="r_add4ff0747beb346b74efcc046a60909d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add4ff0747beb346b74efcc046a60909d">y</a></td></tr>
+<tr class="separator:add4ff0747beb346b74efcc046a60909d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb5bd1fe79c623050354dbb8fe27c0f4" id="r_adb5bd1fe79c623050354dbb8fe27c0f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb5bd1fe79c623050354dbb8fe27c0f4">z</a></td></tr>
+<tr class="separator:adb5bd1fe79c623050354dbb8fe27c0f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa798b50193aafb95c09f73c1af6fdb34" id="r_aa798b50193aafb95c09f73c1af6fdb34"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa798b50193aafb95c09f73c1af6fdb34">x1</a></td></tr>
+<tr class="separator:aa798b50193aafb95c09f73c1af6fdb34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab941ee0c671f47a9fa66d85352628027" id="r_ab941ee0c671f47a9fa66d85352628027"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab941ee0c671f47a9fa66d85352628027">x2</a></td></tr>
+<tr class="separator:ab941ee0c671f47a9fa66d85352628027"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc634fd368170725457f3398cbccf266" id="r_afc634fd368170725457f3398cbccf266"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc634fd368170725457f3398cbccf266">y1</a></td></tr>
+<tr class="separator:afc634fd368170725457f3398cbccf266"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9693b2581ce1560539513e4c7bf2fd2" id="r_aa9693b2581ce1560539513e4c7bf2fd2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9693b2581ce1560539513e4c7bf2fd2">y2</a></td></tr>
+<tr class="separator:aa9693b2581ce1560539513e4c7bf2fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af84ae3917d42b2e8093774d05da95cc4" id="r_af84ae3917d42b2e8093774d05da95cc4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af84ae3917d42b2e8093774d05da95cc4">SPACE</a></td></tr>
+<tr class="separator:af84ae3917d42b2e8093774d05da95cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac996522221ce3396050a3c68e6c4ad9f" id="r_ac996522221ce3396050a3c68e6c4ad9f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac996522221ce3396050a3c68e6c4ad9f">fmt</a></td></tr>
+<tr class="separator:ac996522221ce3396050a3c68e6c4ad9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e953c59806a853b01f620c0246c50a8" id="r_a8e953c59806a853b01f620c0246c50a8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e953c59806a853b01f620c0246c50a8">g_code</a></td></tr>
+<tr class="separator:a8e953c59806a853b01f620c0246c50a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classcam_1_1nc_1_1nc_1_1Creator"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_classcam_1_1nc_1_1nc_1_1Creator')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html">cam.nc.nc.Creator</a></td></tr>
+<tr class="memitem:a7b9f520b607a80af987b068cbd1d1d31 inherit pub_attribs_classcam_1_1nc_1_1nc_1_1Creator" id="r_a7b9f520b607a80af987b068cbd1d1d31"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a7b9f520b607a80af987b068cbd1d1d31">file</a></td></tr>
+<tr class="separator:a7b9f520b607a80af987b068cbd1d1d31 inherit pub_attribs_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a4389cab170edcaa81bf475fa97d463 inherit pub_attribs_classcam_1_1nc_1_1nc_1_1Creator" id="r_a6a4389cab170edcaa81bf475fa97d463"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a6a4389cab170edcaa81bf475fa97d463">filename</a></td></tr>
+<tr class="separator:a6a4389cab170edcaa81bf475fa97d463 inherit pub_attribs_classcam_1_1nc_1_1nc_1_1Creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a997ebcfcb5f589bee1b37a0b2934bf60" id="r_a997ebcfcb5f589bee1b37a0b2934bf60"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a997ebcfcb5f589bee1b37a0b2934bf60">creator</a></td></tr>
+<tr class="separator:a997ebcfcb5f589bee1b37a0b2934bf60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a8cc5926e24e02ced7a5e5c10020d8887" name="a8cc5926e24e02ced7a5e5c10020d8887"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cc5926e24e02ced7a5e5c10020d8887">&#9670;&#160;</a></span>__init__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.__init__ </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a4ca2842ee7b52903f44ba0b295296e8d">cam.nc.nc.Creator</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa810c5c40e0dff361b027aca9bc025f1" name="aa810c5c40e0dff361b027aca9bc025f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa810c5c40e0dff361b027aca9bc025f1">&#9670;&#160;</a></span>absolute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.absolute </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Set absolute coordinates</pre> 
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a43e3de6305aa47bada9e421ff957ef18">cam.nc.nc.Creator</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1rez2_1_1Creator_aa810c5c40e0dff361b027aca9bc025f1_icgraph.svg" width="468" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ad82091a797518ce790808a5a5d6bbeb3" name="ad82091a797518ce790808a5a5d6bbeb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad82091a797518ce790808a5a5d6bbeb3">&#9670;&#160;</a></span>arc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.arc </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>cw</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x</em><span class="paramdefsep"> = </span><span class="paramdefval">0.0000</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>y</em><span class="paramdefsep"> = </span><span class="paramdefval">0.0000</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>z</em><span class="paramdefsep"> = </span><span class="paramdefval">0.0000</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>i</em><span class="paramdefsep"> = </span><span class="paramdefval">0.0000</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>j</em><span class="paramdefsep"> = </span><span class="paramdefval">0.0000</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>k</em><span class="paramdefsep"> = </span><span class="paramdefval">0.0000</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>r</em><span class="paramdefsep"> = </span><span class="paramdefval">0.0000</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1rez2_1_1Creator_ad82091a797518ce790808a5a5d6bbeb3_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1rez2_1_1Creator_ad82091a797518ce790808a5a5d6bbeb3_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a7a7b089cf338846799311b5b1193a566" name="a7a7b089cf338846799311b5b1193a566"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a7b089cf338846799311b5b1193a566">&#9670;&#160;</a></span>arc_ccw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.arc_ccw </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>y</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>z</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>i</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>j</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>k</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>r</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Counterclockwise arc move</pre> 
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a3edf67b50e4b3c8f327a084157363f9d">cam.nc.nc.Creator</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1rez2_1_1Creator_a7a7b089cf338846799311b5b1193a566_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a96f30401310d0198de3d2d55da86510f" name="a96f30401310d0198de3d2d55da86510f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96f30401310d0198de3d2d55da86510f">&#9670;&#160;</a></span>arc_cw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.arc_cw </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>y</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>z</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>i</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>j</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>k</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>r</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Clockwise arc move</pre> 
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#ad43a5821c5d79340728de373b7fa2c19">cam.nc.nc.Creator</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1rez2_1_1Creator_a96f30401310d0198de3d2d55da86510f_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a73b2c0ace72a96fd9d7708b6192b8d2a" name="a73b2c0ace72a96fd9d7708b6192b8d2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73b2c0ace72a96fd9d7708b6192b8d2a">&#9670;&#160;</a></span>bore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.bore </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>y</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>z</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>zretract</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>depth</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>standoff</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>dwell_bottom</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>feed_in</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>feed_out</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>stoppos</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>shift_back</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>shift_right</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>backbore</em><span class="paramdefsep"> = </span><span class="paramdefval">False</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>stop</em><span class="paramdefsep"> = </span><span class="paramdefval">False</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Boring routines</pre> 
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a167f093c98cb4777a2f495a94010cf64">cam.nc.nc.Creator</a>.</p>
+
+</div>
+</div>
+<a id="ad21197ba897a47f9c2b6d841b7724846" name="ad21197ba897a47f9c2b6d841b7724846"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad21197ba897a47f9c2b6d841b7724846">&#9670;&#160;</a></span>calc_feedrate_hv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.calc_feedrate_hv </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>h</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>v</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1rez2_1_1Creator_ad21197ba897a47f9c2b6d841b7724846_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="af0dc22f39380207dd57c000b81c94c85" name="af0dc22f39380207dd57c000b81c94c85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0dc22f39380207dd57c000b81c94c85">&#9670;&#160;</a></span>circular_pocket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.circular_pocket </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>y</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>ToolDiameter</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>HoleDiameter</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>ClearanceHeight</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>StartHeight</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>MaterialTop</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>FeedRate</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>SpindleRPM</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>HoleDepth</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>DepthOfCut</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>StepOver</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1rez2_1_1Creator_af0dc22f39380207dd57c000b81c94c85_icgraph.svg" width="516" height="75"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="abf7c3fb7afa5b735b94668c73afae18e" name="abf7c3fb7afa5b735b94668c73afae18e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf7c3fb7afa5b735b94668c73afae18e">&#9670;&#160;</a></span>COMMENT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.COMMENT </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>comment</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1rez2_1_1Creator_abf7c3fb7afa5b735b94668c73afae18e_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="aeb078a15644fd38428fe437050b95d86" name="aeb078a15644fd38428fe437050b95d86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb078a15644fd38428fe437050b95d86">&#9670;&#160;</a></span>comment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.comment </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>text</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Misc. </p>
+
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#ab3e7940549c2d69d003224aa3cd586d3">cam.nc.nc.Creator</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1rez2_1_1Creator_aeb078a15644fd38428fe437050b95d86_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1rez2_1_1Creator_aeb078a15644fd38428fe437050b95d86_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a2f26084e78a4feec06373aa225fe23ca" name="a2f26084e78a4feec06373aa225fe23ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f26084e78a4feec06373aa225fe23ca">&#9670;&#160;</a></span>coolant()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.coolant </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>mode</em><span class="paramdefsep"> = </span><span class="paramdefval">0</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Set the coolant mode</pre> 
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a59217559479a824dcf40a00da6d692ac">cam.nc.nc.Creator</a>.</p>
+
+</div>
+</div>
+<a id="a2a6470a77e72de49a15af36ff0548213" name="a2a6470a77e72de49a15af36ff0548213"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a6470a77e72de49a15af36ff0548213">&#9670;&#160;</a></span>datum_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.datum_set </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>y</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>z</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>a</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>b</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>c</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Set the datum</pre> 
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#acbee84ef2d71fe9ede19daa1022f1d92">cam.nc.nc.Creator</a>.</p>
+
+</div>
+</div>
+<a id="a889fcf5e36af8919f5bf789ff6441240" name="a889fcf5e36af8919f5bf789ff6441240"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a889fcf5e36af8919f5bf789ff6441240">&#9670;&#160;</a></span>datum_shift()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.datum_shift </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>y</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>z</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>a</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>b</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>c</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Datums. </p>
+
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#ab99e5623dda8e62b2b94bd239d22e9b6">cam.nc.nc.Creator</a>.</p>
+
+</div>
+</div>
+<a id="aec638a8489a120fef07a8bd6823476e4" name="aec638a8489a120fef07a8bd6823476e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec638a8489a120fef07a8bd6823476e4">&#9670;&#160;</a></span>drill()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.drill </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>y</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>dwell</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>depthparams</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>retract_mode</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>spindle_mode</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>internal_coolant_on</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>rapid_to_clearance</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Drilling routines</pre> 
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a4819416a7408129c220de90d72c91a6c">cam.nc.nc.Creator</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1rez2_1_1Creator_aec638a8489a120fef07a8bd6823476e4_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1rez2_1_1Creator_aec638a8489a120fef07a8bd6823476e4_icgraph.svg" width="446" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a5d5473b4b265357432b5f47f73241178" name="a5d5473b4b265357432b5f47f73241178"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d5473b4b265357432b5f47f73241178">&#9670;&#160;</a></span>dwell()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.dwell </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>t</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Dwell</pre> 
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a56b11f862045ee84c844133b646117c8">cam.nc.nc.Creator</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1rez2_1_1Creator_a5d5473b4b265357432b5f47f73241178_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1rez2_1_1Creator_a5d5473b4b265357432b5f47f73241178_icgraph.svg" width="100%" height="364"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="abcab495c1a952b7ca233f76836c53438" name="abcab495c1a952b7ca233f76836c53438"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcab495c1a952b7ca233f76836c53438">&#9670;&#160;</a></span>feed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.feed </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x</em><span class="paramdefsep"> = </span><span class="paramdefval">0.0000</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>y</em><span class="paramdefsep"> = </span><span class="paramdefval">0.0000</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>z</em><span class="paramdefsep"> = </span><span class="paramdefval">0.0000</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>a</em><span class="paramdefsep"> = </span><span class="paramdefval">False</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Feed move</pre> 
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a58c3bce534b047d5824cde16c2571c0f">cam.nc.nc.Creator</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1rez2_1_1Creator_abcab495c1a952b7ca233f76836c53438_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1rez2_1_1Creator_abcab495c1a952b7ca233f76836c53438_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a29e57b4b1a2deb4e38a854b092132535" name="a29e57b4b1a2deb4e38a854b092132535"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29e57b4b1a2deb4e38a854b092132535">&#9670;&#160;</a></span>feedrate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.feedrate </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>f</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Rates + Modes. </p>
+
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a09d15b7b72c2a18cae7dfb450f1da06e">cam.nc.nc.Creator</a>.</p>
+
+</div>
+</div>
+<a id="af5251bdf37c79070ba1f0545fd39515b" name="af5251bdf37c79070ba1f0545fd39515b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5251bdf37c79070ba1f0545fd39515b">&#9670;&#160;</a></span>feedrate_hv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.feedrate_hv </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>fh</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>fv</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Set the horizontal and vertical feedrates</pre> 
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#ae66f328adc58521e5ab9db7cf54dc6ce">cam.nc.nc.Creator</a>.</p>
+
+</div>
+</div>
+<a id="a8a2088c51507b018bd6a3572a948ce22" name="a8a2088c51507b018bd6a3572a948ce22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a2088c51507b018bd6a3572a948ce22">&#9670;&#160;</a></span>flush_nc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.flush_nc </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Flush all pending codes</pre> 
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a7d841db837bad9de3466cfbd253ce875">cam.nc.nc.Creator</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1rez2_1_1Creator_a8a2088c51507b018bd6a3572a948ce22_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1rez2_1_1Creator_a8a2088c51507b018bd6a3572a948ce22_icgraph.svg" width="466" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a016ff8378bca14c3213d770f03cc5ba4" name="a016ff8378bca14c3213d770f03cc5ba4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a016ff8378bca14c3213d770f03cc5ba4">&#9670;&#160;</a></span>FORMAT_IN()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.FORMAT_IN </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Internals. </p>
+
+</div>
+</div>
+<a id="ad5bf6b1f61e376e7a935b1a0b17faa13" name="ad5bf6b1f61e376e7a935b1a0b17faa13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5bf6b1f61e376e7a935b1a0b17faa13">&#9670;&#160;</a></span>FORMAT_MM()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.FORMAT_MM </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a278fc106c0bdea687db46256d09ebbf4" name="a278fc106c0bdea687db46256d09ebbf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a278fc106c0bdea687db46256d09ebbf4">&#9670;&#160;</a></span>gearrange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.gearrange </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>gear</em><span class="paramdefsep"> = </span><span class="paramdefval">0</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Set the gear range</pre> 
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a80e7b5c8fccc9bd3982c33a266d9fed0">cam.nc.nc.Creator</a>.</p>
+
+</div>
+</div>
+<a id="a551b8f3d479e88b2c5741d33cd9aadef" name="a551b8f3d479e88b2c5741d33cd9aadef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a551b8f3d479e88b2c5741d33cd9aadef">&#9670;&#160;</a></span>imperial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.imperial </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Settings. </p>
+
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#acfa51223614b1c8c231c99f8e6103af1">cam.nc.nc.Creator</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1rez2_1_1Creator_a551b8f3d479e88b2c5741d33cd9aadef_icgraph.svg" width="528" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a6d0b09adc6b38952e96c7c6c9604a126" name="a6d0b09adc6b38952e96c7c6c9604a126"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d0b09adc6b38952e96c7c6c9604a126">&#9670;&#160;</a></span>incremental()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.incremental </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Set incremental coordinates</pre> 
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a263eb1faaf6a9ee93f8d78bca773f021">cam.nc.nc.Creator</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1rez2_1_1Creator_a6d0b09adc6b38952e96c7c6c9604a126_icgraph.svg" width="491" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a320aaac705cbf29ab9a6bdcb619c7567" name="a320aaac705cbf29ab9a6bdcb619c7567"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a320aaac705cbf29ab9a6bdcb619c7567">&#9670;&#160;</a></span>metric()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.metric </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Set metric units</pre> 
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#ab7b52eb5d7170eafdc365d407a887e8b">cam.nc.nc.Creator</a>.</p>
+
+</div>
+</div>
+<a id="ade4ab9d7b60a96fb6a7192bd4322196c" name="ade4ab9d7b60a96fb6a7192bd4322196c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade4ab9d7b60a96fb6a7192bd4322196c">&#9670;&#160;</a></span>offset_length()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.offset_length </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>id</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>length</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Set tool length offsetting</pre> 
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a673202842c64cc44b229f441ae62994f">cam.nc.nc.Creator</a>.</p>
+
+</div>
+</div>
+<a id="a09e2236065281f5563b93511be9fc15e" name="a09e2236065281f5563b93511be9fc15e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09e2236065281f5563b93511be9fc15e">&#9670;&#160;</a></span>offset_radius()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.offset_radius </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>id</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>radius</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Set tool radius offsetting</pre> 
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a755ac1c627b9d5373a00c71c02210590">cam.nc.nc.Creator</a>.</p>
+
+</div>
+</div>
+<a id="a832faa0c3acbd4f55d9ca09a57cdaee6" name="a832faa0c3acbd4f55d9ca09a57cdaee6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a832faa0c3acbd4f55d9ca09a57cdaee6">&#9670;&#160;</a></span>pattern()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.pattern </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cycles. </p>
+
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a59688c01984638c50dfbf012bd1ee4e3">cam.nc.nc.Creator</a>.</p>
+
+</div>
+</div>
+<a id="ab092d47ef20333829cb486b0ed9e926a" name="ab092d47ef20333829cb486b0ed9e926a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab092d47ef20333829cb486b0ed9e926a">&#9670;&#160;</a></span>pocket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.pocket </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Pocket routine</pre> 
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a89cf133b4ed304132bab0e3e930a7d1e">cam.nc.nc.Creator</a>.</p>
+
+</div>
+</div>
+<a id="a6fda1e8f6c1a8f69df6fcedcd71296bf" name="a6fda1e8f6c1a8f69df6fcedcd71296bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fda1e8f6c1a8f69df6fcedcd71296bf">&#9670;&#160;</a></span>polar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.polar </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>on</em><span class="paramdefsep"> = </span><span class="paramdefval">True</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Set polar coordinates</pre> 
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#ae6d17212fd1159f967bbdbb4d69a03f1">cam.nc.nc.Creator</a>.</p>
+
+</div>
+</div>
+<a id="ae3a2e248f917068346b8ba5e0a80a739" name="ae3a2e248f917068346b8ba5e0a80a739"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3a2e248f917068346b8ba5e0a80a739">&#9670;&#160;</a></span>profile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.profile </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Profile routine</pre> 
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#acf980db0661f226477a3b1a39d345e7c">cam.nc.nc.Creator</a>.</p>
+
+</div>
+</div>
+<a id="a3cbff573fe91777aa6a54387034ce50a" name="a3cbff573fe91777aa6a54387034ce50a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cbff573fe91777aa6a54387034ce50a">&#9670;&#160;</a></span>program_begin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.program_begin </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>id</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>name</em><span class="paramdefsep"> = </span><span class="paramdefval">''</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Programs. </p>
+
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a9a88c0cb630a1b3604d230f4c8b9b5ac">cam.nc.nc.Creator</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1rez2_1_1Creator_a3cbff573fe91777aa6a54387034ce50a_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="ac7bc928a67448af439aeba0659882006" name="ac7bc928a67448af439aeba0659882006"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7bc928a67448af439aeba0659882006">&#9670;&#160;</a></span>program_end()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.program_end </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">End the program</pre> 
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a6b23941ee5eaaed546121898ee5b09fa">cam.nc.nc.Creator</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1rez2_1_1Creator_ac7bc928a67448af439aeba0659882006_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="afa41df643a5e5b36c339765d70fa19e8" name="afa41df643a5e5b36c339765d70fa19e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa41df643a5e5b36c339765d70fa19e8">&#9670;&#160;</a></span>program_stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.program_stop </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>optional</em><span class="paramdefsep"> = </span><span class="paramdefval">False</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Stop the machine</pre> 
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a5e043392f919d7f10a5a282a580bc8fa">cam.nc.nc.Creator</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1rez2_1_1Creator_afa41df643a5e5b36c339765d70fa19e8_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="abe171ac0eb1fb68dc8ac0c973f8807e9" name="abe171ac0eb1fb68dc8ac0c973f8807e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe171ac0eb1fb68dc8ac0c973f8807e9">&#9670;&#160;</a></span>rapid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.rapid </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x</em><span class="paramdefsep"> = </span><span class="paramdefval">0.0000</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>y</em><span class="paramdefsep"> = </span><span class="paramdefval">0.0000</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>z</em><span class="paramdefsep"> = </span><span class="paramdefval">0.0000</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>a</em><span class="paramdefsep"> = </span><span class="paramdefval">0.0000</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>b</em><span class="paramdefsep"> = </span><span class="paramdefval">0.0000</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>c</em><span class="paramdefsep"> = </span><span class="paramdefval">0.0000</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>how</em><span class="paramdefsep"> = </span><span class="paramdefval">False</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Moves. </p>
+
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#ad5d01e340589c729f48fab397ccf137c">cam.nc.nc.Creator</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1rez2_1_1Creator_abe171ac0eb1fb68dc8ac0c973f8807e9_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1rez2_1_1Creator_abe171ac0eb1fb68dc8ac0c973f8807e9_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a8a7d8410ec979d6d2bf4164967d0a1a9" name="a8a7d8410ec979d6d2bf4164967d0a1a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a7d8410ec979d6d2bf4164967d0a1a9">&#9670;&#160;</a></span>rapid_home()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.rapid_home </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>y</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>z</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>a</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>b</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>c</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Rapid relative to home position</pre> 
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#aec3c94a9584f18d2f9923081a5bdda34">cam.nc.nc.Creator</a>.</p>
+
+</div>
+</div>
+<a id="a9bdac44f439a1de9bccfbefa02ed492c" name="a9bdac44f439a1de9bccfbefa02ed492c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bdac44f439a1de9bccfbefa02ed492c">&#9670;&#160;</a></span>rapid_unhome()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.rapid_unhome </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Return from rapid home</pre> 
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a65815539ed9b7607ae21229b15ee0fe2">cam.nc.nc.Creator</a>.</p>
+
+</div>
+</div>
+<a id="af4e12ba8323a7e5e6c2d6d2f6a00607d" name="af4e12ba8323a7e5e6c2d6d2f6a00607d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4e12ba8323a7e5e6c2d6d2f6a00607d">&#9670;&#160;</a></span>same_xyz()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.same_xyz </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>y</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>z</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1rez2_1_1Creator_af4e12ba8323a7e5e6c2d6d2f6a00607d_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="aa073ab6ca0a4335beed7d2478315c7f7" name="aa073ab6ca0a4335beed7d2478315c7f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa073ab6ca0a4335beed7d2478315c7f7">&#9670;&#160;</a></span>set_plane()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.set_plane </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>plane</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Set plane</pre> 
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a63ca0750cbc4e11abbbaf856479f6bd8">cam.nc.nc.Creator</a>.</p>
+
+</div>
+</div>
+<a id="ada1dae0bc21963507bc0929f157910cb" name="ada1dae0bc21963507bc0929f157910cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada1dae0bc21963507bc0929f157910cb">&#9670;&#160;</a></span>spindle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.spindle </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>s</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>clockwise</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Set the spindle speed</pre> 
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#aba0d5dbaa64e8d6c8c0f6e02d5b2bb42">cam.nc.nc.Creator</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1rez2_1_1Creator_ada1dae0bc21963507bc0929f157910cb_icgraph.svg" width="480" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ae2eb15694723a6802714b1deeb1d9caa" name="ae2eb15694723a6802714b1deeb1d9caa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2eb15694723a6802714b1deeb1d9caa">&#9670;&#160;</a></span>sub_begin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.sub_begin </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>id</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>name</em><span class="paramdefsep"> = </span><span class="paramdefval">''</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Subprograms. </p>
+
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a56a93e52f85de47ae50f099fd9fd9b28">cam.nc.nc.Creator</a>.</p>
+
+</div>
+</div>
+<a id="a1711ea477059d8addd10dc85c21dee40" name="a1711ea477059d8addd10dc85c21dee40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1711ea477059d8addd10dc85c21dee40">&#9670;&#160;</a></span>sub_call()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.sub_call </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>id</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Call a subprogram</pre> 
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#ab679b1e883a53eb07ae578fc4f3f0efc">cam.nc.nc.Creator</a>.</p>
+
+</div>
+</div>
+<a id="a07b2f5317134ee428cd27649870aeec7" name="a07b2f5317134ee428cd27649870aeec7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07b2f5317134ee428cd27649870aeec7">&#9670;&#160;</a></span>sub_end()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.sub_end </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Return from a subprogram</pre> 
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#ab4203d6942df1cc660ba9ba01ff44abe">cam.nc.nc.Creator</a>.</p>
+
+</div>
+</div>
+<a id="ac4756893638325384a66f675c703ad36" name="ac4756893638325384a66f675c703ad36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4756893638325384a66f675c703ad36">&#9670;&#160;</a></span>tap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.tap </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>y</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>z</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>zretract</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>depth</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>standoff</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>dwell_bottom</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>pitch</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>stoppos</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>spin_in</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>spin_out</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>tap_mode</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>direction</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Tapping routines</pre> 
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a0e6b1ba5ac8a76e36f68c1ef8b21435a">cam.nc.nc.Creator</a>.</p>
+
+</div>
+</div>
+<a id="a6402010a20ba9587dfd4e34d99e1ac32" name="a6402010a20ba9587dfd4e34d99e1ac32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6402010a20ba9587dfd4e34d99e1ac32">&#9670;&#160;</a></span>tool_change()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.tool_change </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>id</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tools. </p>
+
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a6fec89f9c286d6e852c9af389a46f491">cam.nc.nc.Creator</a>.</p>
+
+</div>
+</div>
+<a id="a233c3b7d3318f17628bfe75a3c0e4c62" name="a233c3b7d3318f17628bfe75a3c0e4c62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a233c3b7d3318f17628bfe75a3c0e4c62">&#9670;&#160;</a></span>tool_defn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.tool_defn </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>id</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>name</em><span class="paramdefsep"> = </span><span class="paramdefval">''</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>params</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Define a tool</pre> 
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a3ac1f6171550de627fdfde4c831bc25d">cam.nc.nc.Creator</a>.</p>
+
+</div>
+</div>
+<a id="af8074041ccc55a2f845fc7aa7e8b4fee" name="af8074041ccc55a2f845fc7aa7e8b4fee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8074041ccc55a2f845fc7aa7e8b4fee">&#9670;&#160;</a></span>variable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.variable </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>id</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Insert a variable</pre> 
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a2d02ebd696a2f2db466f1cf8863142d5">cam.nc.nc.Creator</a>.</p>
+
+</div>
+</div>
+<a id="a8c8ccc5a48039dda6e9c70e4f6d44a5e" name="a8c8ccc5a48039dda6e9c70e4f6d44a5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c8ccc5a48039dda6e9c70e4f6d44a5e">&#9670;&#160;</a></span>variable_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.variable_set </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>id</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Set a variable</pre> 
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a490ecd36ed3098409fcffee44dcd11f0">cam.nc.nc.Creator</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1rez2_1_1Creator_a8c8ccc5a48039dda6e9c70e4f6d44a5e_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="af574c17a6d767e6b83b75e9553fbbdc9" name="af574c17a6d767e6b83b75e9553fbbdc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af574c17a6d767e6b83b75e9553fbbdc9">&#9670;&#160;</a></span>workplane()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.workplane </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>id</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Set the workplane</pre> 
+<p>Reimplemented from <a class="el" href="classcam_1_1nc_1_1nc_1_1Creator.html#a21d03ba3d16ff8d84cd5546268aabab6">cam.nc.nc.Creator</a>.</p>
+
+</div>
+</div>
+<a id="a0e1b38d4f2704c617f43c45b38d064d4" name="a0e1b38d4f2704c617f43c45b38d064d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e1b38d4f2704c617f43c45b38d064d4">&#9670;&#160;</a></span>write_blocknum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.write_blocknum </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1rez2_1_1Creator_a0e1b38d4f2704c617f43c45b38d064d4_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a1da535bbf2de8923273e826a51e7c30e" name="a1da535bbf2de8923273e826a51e7c30e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1da535bbf2de8923273e826a51e7c30e">&#9670;&#160;</a></span>write_feedrate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.write_feedrate </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1rez2_1_1Creator_a1da535bbf2de8923273e826a51e7c30e_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="ae3681ea24c5f728b3befd5a29ebca47e" name="ae3681ea24c5f728b3befd5a29ebca47e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3681ea24c5f728b3befd5a29ebca47e">&#9670;&#160;</a></span>write_misc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.write_misc </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1rez2_1_1Creator_ae3681ea24c5f728b3befd5a29ebca47e_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a453a63b00ef5bfa3c5847aeef71b7440" name="a453a63b00ef5bfa3c5847aeef71b7440"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a453a63b00ef5bfa3c5847aeef71b7440">&#9670;&#160;</a></span>write_preps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.write_preps </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1rez2_1_1Creator_a453a63b00ef5bfa3c5847aeef71b7440_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="acfbc006caeac124462fc81a334fc414a" name="acfbc006caeac124462fc81a334fc414a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfbc006caeac124462fc81a334fc414a">&#9670;&#160;</a></span>write_spindle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.write_spindle </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1nc_1_1rez2_1_1Creator_acfbc006caeac124462fc81a334fc414a_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a336006692166a7610e897448e1719f88" name="a336006692166a7610e897448e1719f88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a336006692166a7610e897448e1719f88">&#9670;&#160;</a></span>a</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.a</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1ef983d34bb80c987337ee8a49cbbf15" name="a1ef983d34bb80c987337ee8a49cbbf15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ef983d34bb80c987337ee8a49cbbf15">&#9670;&#160;</a></span>b</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.b</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a209a5487d17b868f67e1134f1a6c82ad" name="a209a5487d17b868f67e1134f1a6c82ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a209a5487d17b868f67e1134f1a6c82ad">&#9670;&#160;</a></span>c</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.c</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a997ebcfcb5f589bee1b37a0b2934bf60" name="a997ebcfcb5f589bee1b37a0b2934bf60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a997ebcfcb5f589bee1b37a0b2934bf60">&#9670;&#160;</a></span>creator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.creator</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a504eeee6dea3d3c433d9f4258d9bb8ab" name="a504eeee6dea3d3c433d9f4258d9bb8ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a504eeee6dea3d3c433d9f4258d9bb8ab">&#9670;&#160;</a></span>f</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa5986c1621070be3cc329e7e42e66bb7" name="aa5986c1621070be3cc329e7e42e66bb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5986c1621070be3cc329e7e42e66bb7">&#9670;&#160;</a></span>fh</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.fh</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac1651a8fd4f7a5ce80a1c3fd0a52f072" name="ac1651a8fd4f7a5ce80a1c3fd0a52f072"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1651a8fd4f7a5ce80a1c3fd0a52f072">&#9670;&#160;</a></span>fhv</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.fhv</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac996522221ce3396050a3c68e6c4ad9f" name="ac996522221ce3396050a3c68e6c4ad9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac996522221ce3396050a3c68e6c4ad9f">&#9670;&#160;</a></span>fmt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.fmt</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afb38324055219c85066f9853563e18b8" name="afb38324055219c85066f9853563e18b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb38324055219c85066f9853563e18b8">&#9670;&#160;</a></span>fv</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.fv</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adcb8711bf1bbac539e4cab55872eaede" name="adcb8711bf1bbac539e4cab55872eaede"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcb8711bf1bbac539e4cab55872eaede">&#9670;&#160;</a></span>g</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.g</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8e953c59806a853b01f620c0246c50a8" name="a8e953c59806a853b01f620c0246c50a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e953c59806a853b01f620c0246c50a8">&#9670;&#160;</a></span>g_code</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.g_code</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae6e43e3eb896effccec7df1e7c32b971" name="ae6e43e3eb896effccec7df1e7c32b971"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6e43e3eb896effccec7df1e7c32b971">&#9670;&#160;</a></span>i</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.i</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa89d109ddbd1eac7224f36f6bdc9e48a" name="aa89d109ddbd1eac7224f36f6bdc9e48a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa89d109ddbd1eac7224f36f6bdc9e48a">&#9670;&#160;</a></span>j</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.j</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a42092a05d57c46d85aae424b4cc1656c" name="a42092a05d57c46d85aae424b4cc1656c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42092a05d57c46d85aae424b4cc1656c">&#9670;&#160;</a></span>k</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.k</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4e9bb80d483eec4d3be17a5e0a3a63b4" name="a4e9bb80d483eec4d3be17a5e0a3a63b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e9bb80d483eec4d3be17a5e0a3a63b4">&#9670;&#160;</a></span>m</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.m</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a68d42558f7ffecddec36abb0b1a893e7" name="a68d42558f7ffecddec36abb0b1a893e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68d42558f7ffecddec36abb0b1a893e7">&#9670;&#160;</a></span>n</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.n</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a82b42b5e34b021f8b2a7ed672f232362" name="a82b42b5e34b021f8b2a7ed672f232362"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82b42b5e34b021f8b2a7ed672f232362">&#9670;&#160;</a></span>r</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.r</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a458da8652e6c0efe5078567dffa2fc8f" name="a458da8652e6c0efe5078567dffa2fc8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a458da8652e6c0efe5078567dffa2fc8f">&#9670;&#160;</a></span>s</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.s</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af84ae3917d42b2e8093774d05da95cc4" name="af84ae3917d42b2e8093774d05da95cc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af84ae3917d42b2e8093774d05da95cc4">&#9670;&#160;</a></span>SPACE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.SPACE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2cf116b510718024c5e2074120ef4de6" name="a2cf116b510718024c5e2074120ef4de6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cf116b510718024c5e2074120ef4de6">&#9670;&#160;</a></span>t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a84088624737be8ac1ecc6f99c5084179" name="a84088624737be8ac1ecc6f99c5084179"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84088624737be8ac1ecc6f99c5084179">&#9670;&#160;</a></span>x</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.x</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa798b50193aafb95c09f73c1af6fdb34" name="aa798b50193aafb95c09f73c1af6fdb34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa798b50193aafb95c09f73c1af6fdb34">&#9670;&#160;</a></span>x1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.x1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab941ee0c671f47a9fa66d85352628027" name="ab941ee0c671f47a9fa66d85352628027"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab941ee0c671f47a9fa66d85352628027">&#9670;&#160;</a></span>x2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.x2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="add4ff0747beb346b74efcc046a60909d" name="add4ff0747beb346b74efcc046a60909d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add4ff0747beb346b74efcc046a60909d">&#9670;&#160;</a></span>y</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.y</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afc634fd368170725457f3398cbccf266" name="afc634fd368170725457f3398cbccf266"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc634fd368170725457f3398cbccf266">&#9670;&#160;</a></span>y1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.y1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa9693b2581ce1560539513e4c7bf2fd2" name="aa9693b2581ce1560539513e4c7bf2fd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9693b2581ce1560539513e4c7bf2fd2">&#9670;&#160;</a></span>y2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.y2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adb5bd1fe79c623050354dbb8fe27c0f4" name="adb5bd1fe79c623050354dbb8fe27c0f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb5bd1fe79c623050354dbb8fe27c0f4">&#9670;&#160;</a></span>z</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.nc.rez2.Creator.z</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/<a class="el" href="rez2_8py.html">rez2.py</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.10.0-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacecam.html">cam</a></li><li class="navelem"><a class="el" href="namespacecam_1_1nc.html">nc</a></li><li class="navelem"><a class="el" href="namespacecam_1_1nc_1_1rez2.html">rez2</a></li><li class="navelem"><a class="el" href="classcam_1_1nc_1_1rez2_1_1Creator.html">Creator</a></li>
+    <li class="footer">Generated by <a href="https://penify.dev/"><img class="footer" src="https://www.penify.dev/_next/static/media/snorkell-dark-logo.9fa414f5.svg" width="104" height="31" alt="doxygen"/></a> </li>
+  </ul>
+</div>
+</body>
+</html>

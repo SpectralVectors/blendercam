@@ -1,0 +1,311 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1async__op_1_1AsyncOperatorMixin" kind="class" language="Python" prot="public">
+    <compoundname>cam::async_op::AsyncOperatorMixin</compoundname>
+    <derivedcompoundref refid="classcam_1_1async__op_1_1AsyncTestOperator" prot="public" virt="non-virtual">cam.async_op.AsyncTestOperator</derivedcompoundref>
+    <derivedcompoundref refid="classcam_1_1ops_1_1CAMSimulate" prot="public" virt="non-virtual">cam.ops.CAMSimulate</derivedcompoundref>
+    <derivedcompoundref refid="classcam_1_1ops_1_1CAMSimulateChain" prot="public" virt="non-virtual">cam.ops.CAMSimulateChain</derivedcompoundref>
+    <derivedcompoundref refid="classcam_1_1ops_1_1CalculatePath" prot="public" virt="non-virtual">cam.ops.CalculatePath</derivedcompoundref>
+    <derivedcompoundref refid="classcam_1_1ops_1_1PathsChain" prot="public" virt="non-virtual">cam.ops.PathsChain</derivedcompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcam_1_1async__op_1_1AsyncOperatorMixin_1a315566a49d3d1a69d1b0635e86c45fbe" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.async_op.AsyncOperatorMixin::timer</definition>
+        <argsstring></argsstring>
+        <name>timer</name>
+        <qualifiedname>cam.async_op.AsyncOperatorMixin.timer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/async_op.py" line="28" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/async_op.py" bodystart="28" bodyend="-1"/>
+        <referencedby refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1acfd48e2950454c9895b578250e85185a" compoundref="async__op_8py" startline="88" endline="100">cam.async_op.AsyncOperatorMixin.execute</referencedby>
+        <referencedby refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a9628cbca8e69ec75b2337171a02bf428" compoundref="async__op_8py" startline="32" endline="59">cam.async_op.AsyncOperatorMixin.modal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1async__op_1_1AsyncOperatorMixin_1a01b572e82c26d1f5db10e3182e810ad7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.async_op.AsyncOperatorMixin::coroutine</definition>
+        <argsstring></argsstring>
+        <name>coroutine</name>
+        <qualifiedname>cam.async_op.AsyncOperatorMixin.coroutine</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/async_op.py" line="29" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/async_op.py" bodystart="29" bodyend="-1"/>
+        <referencedby refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a15a51cfd69d8e453e2e3d64386b1ebe3" compoundref="async__op_8py" startline="69" endline="87">cam.async_op.AsyncOperatorMixin.tick</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classcam_1_1async__op_1_1AsyncOperatorMixin_1a54532a564aaa17d7f30f58e5bf2710fe" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>cam.async_op.AsyncOperatorMixin::_is_cancelled</definition>
+        <argsstring></argsstring>
+        <name>_is_cancelled</name>
+        <qualifiedname>cam.async_op.AsyncOperatorMixin._is_cancelled</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/async_op.py" line="30" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/async_op.py" bodystart="30" bodyend="-1"/>
+        <referencedby refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a9628cbca8e69ec75b2337171a02bf428" compoundref="async__op_8py" startline="32" endline="59">cam.async_op.AsyncOperatorMixin.modal</referencedby>
+        <referencedby refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a15a51cfd69d8e453e2e3d64386b1ebe3" compoundref="async__op_8py" startline="69" endline="87">cam.async_op.AsyncOperatorMixin.tick</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcam_1_1async__op_1_1AsyncOperatorMixin_1aad1db56f32bf5f238f40b563c0912cc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.async_op.AsyncOperatorMixin.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>cam.async_op.AsyncOperatorMixin.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/async_op.py" line="27" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/async_op.py" bodystart="27" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1async__op_1_1AsyncOperatorMixin_1a9628cbca8e69ec75b2337171a02bf428" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.async_op.AsyncOperatorMixin.modal</definition>
+        <argsstring>(self, context, event)</argsstring>
+        <name>modal</name>
+        <qualifiedname>cam.async_op.AsyncOperatorMixin.modal</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <param>
+          <type>event</type>
+          <defname>event</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/async_op.py" line="32" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/async_op.py" bodystart="32" bodyend="59"/>
+        <references refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a54532a564aaa17d7f30f58e5bf2710fe" compoundref="async__op_8py" startline="30">cam.async_op.AsyncOperatorMixin._is_cancelled</references>
+        <references refid="classcam_1_1async__op_1_1AsyncTestOperator_1a35f3b3b28eeae31b84a9a2a70f0c70f0" compoundref="async__op_8py" startline="105">cam.async_op.AsyncTestOperator.bl_options</references>
+        <references refid="classcam_1_1autoupdate_1_1UpdateChecker_1a510e4533af84f2f4049d5f4184424034" compoundref="autoupdate_8py" startline="27">cam.autoupdate.UpdateChecker.bl_options</references>
+        <references refid="classcam_1_1autoupdate_1_1Updater_1a24b3ceef205d2e4ba85c95dc2e657725" compoundref="autoupdate_8py" startline="83">cam.autoupdate.Updater.bl_options</references>
+        <references refid="classcam_1_1basrelief_1_1DoBasRelief_1aabe1b86ff2e5df5249245af5d4c62481" compoundref="basrelief_8py" startline="1305">cam.basrelief.DoBasRelief.bl_options</references>
+        <references refid="classcam_1_1basrelief_1_1ProblemAreas_1a6606b82f153839c6cfd687793191c464" compoundref="basrelief_8py" startline="1334">cam.basrelief.ProblemAreas.bl_options</references>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurveHatch_1ad1dfd23ff0676102436489b34718cbcf" compoundref="curvecamcreate_8py" startline="40">cam.curvecamcreate.CamCurveHatch.bl_options</references>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurvePlate_1aa944936d5d4ef80f43b0368a28070578" compoundref="curvecamcreate_8py" startline="208">cam.curvecamcreate.CamCurvePlate.bl_options</references>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1aee0bbd9f3ed2ee8a8aa90c46e9c1c88b" compoundref="curvecamcreate_8py" startline="483">cam.curvecamcreate.CamCurveFlatCone.bl_options</references>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurveMortise_1a90cbcf8cf562039a3f072ee0c387fff5" compoundref="curvecamcreate_8py" startline="580">cam.curvecamcreate.CamCurveMortise.bl_options</references>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurveInterlock_1adb6880c56639b6a78baa3ff53caec923" compoundref="curvecamcreate_8py" startline="723">cam.curvecamcreate.CamCurveInterlock.bl_options</references>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurveDrawer_1adb4adeff5c6fae186f235bbb764eba2f" compoundref="curvecamcreate_8py" startline="843">cam.curvecamcreate.CamCurveDrawer.bl_options</references>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1ac055f852d01c921cacce81d3e96dcae2" compoundref="curvecamcreate_8py" startline="1057">cam.curvecamcreate.CamCurvePuzzle.bl_options</references>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurveGear_1af5ee6a62bbe5057e078140770873b694" compoundref="curvecamcreate_8py" startline="1452">cam.curvecamcreate.CamCurveGear.bl_options</references>
+        <references refid="classcam_1_1curvecamequation_1_1CamSineCurve_1a2b45c86c7ee6c639efcaf3657cb6df7a" compoundref="curvecamequation_8py" startline="26">cam.curvecamequation.CamSineCurve.bl_options</references>
+        <references refid="classcam_1_1curvecamequation_1_1CamLissajousCurve_1a658c43c827ea0fde4ebb557cc22b4c76" compoundref="curvecamequation_8py" startline="197">cam.curvecamequation.CamLissajousCurve.bl_options</references>
+        <references refid="classcam_1_1curvecamequation_1_1CamHypotrochoidCurve_1ae578505295a00d507fe1fa50bb07483c" compoundref="curvecamequation_8py" startline="345">cam.curvecamequation.CamHypotrochoidCurve.bl_options</references>
+        <references refid="classcam_1_1curvecamequation_1_1CamCustomCurve_1aefe3139ba1cc48b97063a5a071ef096e" compoundref="curvecamequation_8py" startline="445">cam.curvecamequation.CamCustomCurve.bl_options</references>
+        <references refid="classcam_1_1curvecamtools_1_1CamCurveBoolean_1aadf565236027c58e15b56e8930b43840" compoundref="curvecamtools_8py" startline="35">cam.curvecamtools.CamCurveBoolean.bl_options</references>
+        <references refid="classcam_1_1curvecamtools_1_1CamCurveConvexHull_1a4ec6431401723730ffe9be914f36dc71" compoundref="curvecamtools_8py" startline="67">cam.curvecamtools.CamCurveConvexHull.bl_options</references>
+        <references refid="classcam_1_1curvecamtools_1_1CamCurveIntarsion_1a56c4c73830b9440c4ad73f79bd23f02c" compoundref="curvecamtools_8py" startline="83">cam.curvecamtools.CamCurveIntarsion.bl_options</references>
+        <references refid="classcam_1_1curvecamtools_1_1CamCurveOvercuts_1a5fbfd3a62b1e405e64a0994600a6b710" compoundref="curvecamtools_8py" startline="207">cam.curvecamtools.CamCurveOvercuts.bl_options</references>
+        <references refid="classcam_1_1curvecamtools_1_1CamCurveOvercutsB_1aca08c0e28297a1096ffd5d129a376ee9" compoundref="curvecamtools_8py" startline="316">cam.curvecamtools.CamCurveOvercutsB.bl_options</references>
+        <references refid="classcam_1_1curvecamtools_1_1CamCurveRemoveDoubles_1abc88d3f6b1d907423bae12d5999f5c90" compoundref="curvecamtools_8py" startline="587">cam.curvecamtools.CamCurveRemoveDoubles.bl_options</references>
+        <references refid="classcam_1_1curvecamtools_1_1CamMeshGetPockets_1ab148aa646758c40ef7f972516ab5d79d" compoundref="curvecamtools_8py" startline="651">cam.curvecamtools.CamMeshGetPockets.bl_options</references>
+        <references refid="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1a556842b2b49fa0bc98ca9d9d6f39115a" compoundref="curvecamtools_8py" startline="762">cam.curvecamtools.CamOffsetSilhouete.bl_options</references>
+        <references refid="classcam_1_1ops_1_1PathsBackground_1a71bd3029fff8fc68c360a81a4879344f" compoundref="ops_8py" startline="104">cam.ops.PathsBackground.bl_options</references>
+        <references refid="classcam_1_1ops_1_1KillPathsBackground_1ac831a0941412a876d3d94f48ad661d86" compoundref="ops_8py" startline="139">cam.ops.KillPathsBackground.bl_options</references>
+        <references refid="classcam_1_1ops_1_1CalculatePath_1a24aa14c06dc49887a157732b7995c624" compoundref="ops_8py" startline="225">cam.ops.CalculatePath.bl_options</references>
+        <references refid="classcam_1_1ops_1_1PathsAll_1a1b3fb029d7ef327369305123804972cb" compoundref="ops_8py" startline="246">cam.ops.PathsAll.bl_options</references>
+        <references refid="classcam_1_1ops_1_1CamPackObjects_1aca8b3c158de559a15dd84b90116160c9" compoundref="ops_8py" startline="269">cam.ops.CamPackObjects.bl_options</references>
+        <references refid="classcam_1_1ops_1_1CamSliceObjects_1a8628bf7b64723c5080130dbf8cde542f" compoundref="ops_8py" startline="287">cam.ops.CamSliceObjects.bl_options</references>
+        <references refid="classcam_1_1ops_1_1PathsChain_1a1af5822eef23001adb83fd672def7f0a" compoundref="ops_8py" startline="313">cam.ops.PathsChain.bl_options</references>
+        <references refid="classcam_1_1ops_1_1PathExportChain_1a53ce9899a7668c5f42d0fd13fc049547" compoundref="ops_8py" startline="352">cam.ops.PathExportChain.bl_options</references>
+        <references refid="classcam_1_1ops_1_1PathExport_1ac4b93a03e7a07ecc53f37de8e9d807fa" compoundref="ops_8py" startline="380">cam.ops.PathExport.bl_options</references>
+        <references refid="classcam_1_1ops_1_1CAMSimulate_1a3fe0cac72f0a8d65e0cd4f3220fb70b5" compoundref="ops_8py" startline="401">cam.ops.CAMSimulate.bl_options</references>
+        <references refid="classcam_1_1ops_1_1CAMSimulateChain_1aabb92e9f272eb50652abdb85895e1120" compoundref="ops_8py" startline="436">cam.ops.CAMSimulateChain.bl_options</references>
+        <references refid="classcam_1_1ops_1_1CamChainAdd_1abf3474818dc0ac05a41e98c8e16329b0" compoundref="ops_8py" startline="480">cam.ops.CamChainAdd.bl_options</references>
+        <references refid="classcam_1_1ops_1_1CamChainRemove_1ad2b7ec082af616b2ff9275f85b1eb6f3" compoundref="ops_8py" startline="503">cam.ops.CamChainRemove.bl_options</references>
+        <references refid="classcam_1_1ops_1_1CamChainOperationAdd_1a1364ea91ce3c9a667093edce17d9a60f" compoundref="ops_8py" startline="521">cam.ops.CamChainOperationAdd.bl_options</references>
+        <references refid="classcam_1_1ops_1_1CamChainOperationUp_1a046f158e583f8b5057959a8b66429096" compoundref="ops_8py" startline="541">cam.ops.CamChainOperationUp.bl_options</references>
+        <references refid="classcam_1_1ops_1_1CamChainOperationDown_1a5eb7d788a26d67c3bb01417eb8f8393c" compoundref="ops_8py" startline="561">cam.ops.CamChainOperationDown.bl_options</references>
+        <references refid="classcam_1_1ops_1_1CamChainOperationRemove_1afc0d52896e8f18d693fe6d1e25d11600" compoundref="ops_8py" startline="581">cam.ops.CamChainOperationRemove.bl_options</references>
+        <references refid="classcam_1_1ops_1_1CamOperationAdd_1a87b89e253f1385f1c17f7fb65d23bd46" compoundref="ops_8py" startline="611">cam.ops.CamOperationAdd.bl_options</references>
+        <references refid="classcam_1_1ops_1_1CamOperationCopy_1a33fcfb805c3fd266bffe3fdb73e6ee5f" compoundref="ops_8py" startline="648">cam.ops.CamOperationCopy.bl_options</references>
+        <references refid="classcam_1_1ops_1_1CamOperationRemove_1a9d2c0ac78fb11ff3d4cefe073b691ed6" compoundref="ops_8py" startline="699">cam.ops.CamOperationRemove.bl_options</references>
+        <references refid="classcam_1_1ops_1_1CamOperationMove_1a15e168b638531fd88cbbf9d251de4be1" compoundref="ops_8py" startline="734">cam.ops.CamOperationMove.bl_options</references>
+        <references refid="classcam_1_1ops_1_1CamOrientationAdd_1ad8d29bc013d78c278b9e2c7a3d7d3fad" compoundref="ops_8py" startline="771">cam.ops.CamOrientationAdd.bl_options</references>
+        <references refid="classcam_1_1ops_1_1CamBridgesAdd_1a66689c604a32ba579b83babe74ba1408" compoundref="ops_8py" startline="798">cam.ops.CamBridgesAdd.bl_options</references>
+        <references refid="classcam_1_1ui_1_1CustomPanel_1aae2dc3c18a9caa6d4cc33e2c2d88a99d" compoundref="ui_8py" startline="89">cam.ui.CustomPanel.bl_options</references>
+        <references refid="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__PositionObject_1a86ceab96fb144408361e2e84d7f5d514" compoundref="material_8py" startline="101">cam.ui_panels.material.CAM_MATERIAL_PositionObject.bl_options</references>
+        <references refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a15a51cfd69d8e453e2e3d64386b1ebe3" compoundref="async__op_8py" startline="69" endline="87">cam.async_op.AsyncOperatorMixin.tick</references>
+        <references refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a315566a49d3d1a69d1b0635e86c45fbe" compoundref="async__op_8py" startline="28">cam.async_op.AsyncOperatorMixin.timer</references>
+        <referencedby refid="classcam_1_1nc_1_1format_1_1Address_1aa21f0ffeb829537d9103759276c01a4b" compoundref="format_8py" startline="78" endline="89">cam.nc.format.Address.write</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1format_1_1AddressPlusMinus_1aaacea4c7b677f0a602dbc9023ff365d2" compoundref="format_8py" startline="103" endline="114">cam.nc.format.AddressPlusMinus.write</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1async__op_1_1AsyncOperatorMixin_1a2216ff6bb0dfd132f4ec4cf79b7cba2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.async_op.AsyncOperatorMixin.show_progress</definition>
+        <argsstring>(self, context, text, n, value_type)</argsstring>
+        <name>show_progress</name>
+        <qualifiedname>cam.async_op.AsyncOperatorMixin.show_progress</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <param>
+          <type>text</type>
+          <defname>text</defname>
+        </param>
+        <param>
+          <type>n</type>
+          <defname>n</defname>
+        </param>
+        <param>
+          <type>value_type</type>
+          <defname>value_type</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/async_op.py" line="60" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/async_op.py" bodystart="60" bodyend="68"/>
+        <referencedby refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a15a51cfd69d8e453e2e3d64386b1ebe3" compoundref="async__op_8py" startline="69" endline="87">cam.async_op.AsyncOperatorMixin.tick</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1async__op_1_1AsyncOperatorMixin_1a15a51cfd69d8e453e2e3d64386b1ebe3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.async_op.AsyncOperatorMixin.tick</definition>
+        <argsstring>(self, context)</argsstring>
+        <name>tick</name>
+        <qualifiedname>cam.async_op.AsyncOperatorMixin.tick</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/async_op.py" line="69" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/async_op.py" bodystart="69" bodyend="87"/>
+        <references refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a54532a564aaa17d7f30f58e5bf2710fe" compoundref="async__op_8py" startline="30">cam.async_op.AsyncOperatorMixin._is_cancelled</references>
+        <references refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a01b572e82c26d1f5db10e3182e810ad7" compoundref="async__op_8py" startline="29">cam.async_op.AsyncOperatorMixin.coroutine</references>
+        <references refid="classcam_1_1async__op_1_1AsyncTestOperator_1a42606ca890a957aa7070a4bc6f25228b" compoundref="async__op_8py" startline="107" endline="112">cam.async_op.AsyncTestOperator.execute_async</references>
+        <references refid="classcam_1_1ops_1_1CalculatePath_1a13dfe2f8578383234e74e58e2f292e1b" compoundref="ops_8py" startline="236" endline="241">cam.ops.CalculatePath.execute_async</references>
+        <references refid="classcam_1_1ops_1_1PathsChain_1a6fc64e383ccf724b2325e18a82d53eae" compoundref="ops_8py" startline="321" endline="347">cam.ops.PathsChain.execute_async</references>
+        <references refid="classcam_1_1ops_1_1CAMSimulate_1a633151f17849d281fd52ce82c00356a7" compoundref="ops_8py" startline="409" endline="424">cam.ops.CAMSimulate.execute_async</references>
+        <references refid="classcam_1_1ops_1_1CAMSimulateChain_1a1e77c7ce21b3b7e3e38a12b6b62517e9" compoundref="ops_8py" startline="450" endline="469">cam.ops.CAMSimulateChain.execute_async</references>
+        <references refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a2216ff6bb0dfd132f4ec4cf79b7cba2b" compoundref="async__op_8py" startline="60" endline="68">cam.async_op.AsyncOperatorMixin.show_progress</references>
+        <referencedby refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1acfd48e2950454c9895b578250e85185a" compoundref="async__op_8py" startline="88" endline="100">cam.async_op.AsyncOperatorMixin.execute</referencedby>
+        <referencedby refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a9628cbca8e69ec75b2337171a02bf428" compoundref="async__op_8py" startline="32" endline="59">cam.async_op.AsyncOperatorMixin.modal</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1async__op_1_1AsyncOperatorMixin_1acfd48e2950454c9895b578250e85185a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.async_op.AsyncOperatorMixin.execute</definition>
+        <argsstring>(self, context)</argsstring>
+        <name>execute</name>
+        <qualifiedname>cam.async_op.AsyncOperatorMixin.execute</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/async_op.py" line="88" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/async_op.py" bodystart="88" bodyend="100"/>
+        <references refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a15a51cfd69d8e453e2e3d64386b1ebe3" compoundref="async__op_8py" startline="69" endline="87">cam.async_op.AsyncOperatorMixin.tick</references>
+        <references refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a315566a49d3d1a69d1b0635e86c45fbe" compoundref="async__op_8py" startline="28">cam.async_op.AsyncOperatorMixin.timer</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>cam.async_op.AsyncOperatorMixin</label>
+        <link refid="classcam_1_1async__op_1_1AsyncOperatorMixin"/>
+      </node>
+      <node id="2">
+        <label>cam.async_op.AsyncTestOperator</label>
+        <link refid="classcam_1_1async__op_1_1AsyncTestOperator"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>cam.ops.CAMSimulate</label>
+        <link refid="classcam_1_1ops_1_1CAMSimulate"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>cam.ops.CAMSimulateChain</label>
+        <link refid="classcam_1_1ops_1_1CAMSimulateChain"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>cam.ops.CalculatePath</label>
+        <link refid="classcam_1_1ops_1_1CalculatePath"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>cam.ops.PathsChain</label>
+        <link refid="classcam_1_1ops_1_1PathsChain"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>cam.async_op.AsyncOperatorMixin</label>
+        <link refid="classcam_1_1async__op_1_1AsyncOperatorMixin"/>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/async_op.py" line="25" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/async_op.py" bodystart="25" bodyend="100"/>
+    <listofallmembers>
+      <member refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1aad1db56f32bf5f238f40b563c0912cc9" prot="public" virt="non-virtual"><scope>cam::async_op::AsyncOperatorMixin</scope><name>__init__</name></member>
+      <member refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a54532a564aaa17d7f30f58e5bf2710fe" prot="protected" virt="non-virtual"><scope>cam::async_op::AsyncOperatorMixin</scope><name>_is_cancelled</name></member>
+      <member refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a01b572e82c26d1f5db10e3182e810ad7" prot="public" virt="non-virtual"><scope>cam::async_op::AsyncOperatorMixin</scope><name>coroutine</name></member>
+      <member refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1acfd48e2950454c9895b578250e85185a" prot="public" virt="non-virtual"><scope>cam::async_op::AsyncOperatorMixin</scope><name>execute</name></member>
+      <member refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a9628cbca8e69ec75b2337171a02bf428" prot="public" virt="non-virtual"><scope>cam::async_op::AsyncOperatorMixin</scope><name>modal</name></member>
+      <member refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a2216ff6bb0dfd132f4ec4cf79b7cba2b" prot="public" virt="non-virtual"><scope>cam::async_op::AsyncOperatorMixin</scope><name>show_progress</name></member>
+      <member refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a15a51cfd69d8e453e2e3d64386b1ebe3" prot="public" virt="non-virtual"><scope>cam::async_op::AsyncOperatorMixin</scope><name>tick</name></member>
+      <member refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a315566a49d3d1a69d1b0635e86c45fbe" prot="public" virt="non-virtual"><scope>cam::async_op::AsyncOperatorMixin</scope><name>timer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

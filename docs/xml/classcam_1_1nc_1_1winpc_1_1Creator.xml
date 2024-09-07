@@ -1,0 +1,548 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1nc_1_1winpc_1_1Creator" kind="class" language="Python" prot="public">
+    <compoundname>cam::nc::winpc::Creator</compoundname>
+    <basecompoundref refid="classcam_1_1nc_1_1iso__modal_1_1Creator" prot="public" virt="non-virtual">cam.nc.iso_modal.Creator</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcam_1_1nc_1_1winpc_1_1Creator_1ae19ffe6eb88cc7a19868d286ccef4e7e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.winpc.Creator::absolute_flag</definition>
+        <argsstring></argsstring>
+        <name>absolute_flag</name>
+        <qualifiedname>cam.nc.winpc.Creator.absolute_flag</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" line="13" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" bodystart="13" bodyend="-1"/>
+        <referencedby refid="classcam_1_1nc_1_1cad__nc__read_1_1Parser_1afa3060c7f228da7cab9df28f06eb251f" compoundref="cad__nc__read_8py" startline="121" endline="123">cam.nc.cad_nc_read.Parser.absolute</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a45c41543e061f4cdfbeabd5b45a42a7a" compoundref="heiden_8py" startline="238" endline="241">cam.nc.heiden.Creator.absolute</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1a9aa27edca4b9740fb914195f14bbb247" compoundref="iso_8py" startline="419" endline="422">cam.nc.iso.Creator.absolute</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a8693294ebb764f30b26802f9d58a888e" compoundref="lathe1_8py" startline="125" endline="128">cam.nc.lathe1.CreatorIso.absolute</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1nc__read_1_1Parser_1ac6508a88add299eca4dec80685e2aa1c" compoundref="nc__read_8py" startline="66" endline="68">cam.nc.nc_read.Parser.absolute</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1nclathe__read_1_1Parser_1a09fc6a35237313013c1246a36b3ab471" compoundref="nclathe__read_8py" startline="176" endline="178">cam.nc.nclathe_read.Parser.absolute</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1shopbot__mtc_1_1Creator_1a5cd57b47bc427d63d82dc88ba8a80ee9" compoundref="shopbot__mtc_8py" startline="101" endline="104">cam.nc.shopbot_mtc.Creator.absolute</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1nclathe__read_1_1Parser_1af831cf56257fb77f7e451e315631e4f5" compoundref="nclathe__read_8py" startline="133" endline="172">cam.nc.nclathe_read.Parser.add_arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1nclathe__read_1_1Parser_1a8e66fae75c57b080570f2893d2b8b4ba" compoundref="nclathe__read_8py" startline="89" endline="118">cam.nc.nclathe_read.Parser.add_line</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a78c90cc7cedad79ff356840b59527774" compoundref="heiden_8py" startline="535" endline="697">cam.nc.heiden.Creator.arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1aed90658ba02dc4e25c565f6e3a70670d" compoundref="iso_8py" startline="765" endline="939">cam.nc.iso.Creator.arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1abb9674871edcb35b7b6c7712b3381073" compoundref="lathe1_8py" startline="373" endline="431">cam.nc.lathe1.CreatorIso.arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a6a900c248df1059acd397cb17fc4b18c" compoundref="makerbotHBP_8py" startline="243" endline="295">cam.nc.makerbotHBP.CreatorMakerbotHBP.arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a983c9d1748987984ea5a74e7489b4664" compoundref="heiden_8py" startline="442" endline="483">cam.nc.heiden.Creator.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden530_1_1Creator_1a85c6b3c82eb4357cf5d08aad348f2805" compoundref="heiden530_8py" startline="163" endline="202">cam.nc.heiden530.Creator.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1ad072e258b3de2c4fa8b1033f28d67bbb" compoundref="iso_8py" startline="642" endline="709">cam.nc.iso.Creator.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a7278ca3bb84f4045368333fa059ab864" compoundref="lathe1_8py" startline="313" endline="359">cam.nc.lathe1.CreatorIso.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a1d9d3db267970ad8b006b6b0448d2612" compoundref="makerbotHBP_8py" startline="188" endline="229">cam.nc.makerbotHBP.CreatorMakerbotHBP.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1cad__nc__read_1_1Parser_1ac78b8b7e1e29b4529e5ea9fc27826bb5" compoundref="cad__nc__read_8py" startline="118" endline="120">cam.nc.cad_nc_read.Parser.incremental</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1centroid1_1_1Creator_1a405acebb6a464435d8d305b38945eb8c" compoundref="centroid1_8py" startline="56" endline="59">cam.nc.centroid1.Creator.incremental</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a0a18f771b23203322043703deddae5d8" compoundref="heiden_8py" startline="242" endline="245">cam.nc.heiden.Creator.incremental</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1a882c092d48477f2101362c0988d228e7" compoundref="iso_8py" startline="423" endline="426">cam.nc.iso.Creator.incremental</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1afb8eda52dbc738421b324d12969b57b8" compoundref="lathe1_8py" startline="129" endline="132">cam.nc.lathe1.CreatorIso.incremental</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1nc__read_1_1Parser_1a378c7032a0b9ac2c57e28c0e94d30355" compoundref="nc__read_8py" startline="63" endline="65">cam.nc.nc_read.Parser.incremental</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1nclathe__read_1_1Parser_1a24da4349bbefa64e9019dc05bd33df6f" compoundref="nclathe__read_8py" startline="173" endline="175">cam.nc.nclathe_read.Parser.incremental</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1shopbot__mtc_1_1Creator_1adeea6bf31a1eb12b907c17de54ca058f" compoundref="shopbot__mtc_8py" startline="105" endline="108">cam.nc.shopbot_mtc.Creator.incremental</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a2262faed4f078201d3fab4c023d3e1d2" compoundref="heiden_8py" startline="381" endline="441">cam.nc.heiden.Creator.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden530_1_1Creator_1ae0e91cfeea8854af12bf2494a799bc9a" compoundref="heiden530_8py" startline="127" endline="162">cam.nc.heiden530.Creator.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1a64bd7544d638558d278746433d3855d6" compoundref="iso_8py" startline="578" endline="641">cam.nc.iso.Creator.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a58e2089cb00422e3761f487ab0160e2b" compoundref="lathe1_8py" startline="248" endline="312">cam.nc.lathe1.CreatorIso.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1nc__read_1_1Parser_1aee97d02ca45ea183d03d02828f078a15" compoundref="nc__read_8py" startline="36" endline="62">cam.nc.nc_read.Parser.set_current_pos</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1nc_1_1winpc_1_1Creator_1a8be53baab35481b179dab31fee6ca28e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.winpc.Creator::prev_g91</definition>
+        <argsstring></argsstring>
+        <name>prev_g91</name>
+        <qualifiedname>cam.nc.winpc.Creator.prev_g91</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" line="14" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1nc_1_1winpc_1_1Creator_1ae7cdae1e93205482f62b7b548de56b56" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.winpc.Creator::useCrc</definition>
+        <argsstring></argsstring>
+        <name>useCrc</name>
+        <qualifiedname>cam.nc.winpc.Creator.useCrc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" line="15" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" bodystart="15" bodyend="-1"/>
+        <referencedby refid="classcam_1_1nc_1_1grbl_1_1Creator_1ae19e41eeb025b86b01fadb07e17cc764" compoundref="grbl_8py" startline="28" endline="36">cam.nc.grbl.Creator.program_begin</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1winpc_1_1Creator_1aca2b206132fccc31b615eb568e2fa355" compoundref="winpc_8py" startline="32" endline="40">cam.nc.winpc.Creator.program_begin</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1adfbd1001e69ba513f4bcbeb28c6569fa" compoundref="heiden_8py" startline="724" endline="726">cam.nc.heiden.Creator.use_CRC</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1af5dc2ec8d21683230d93bc4872823c00" compoundref="iso_8py" startline="970" endline="972">cam.nc.iso.Creator.use_CRC</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a0b30cc57e9b6a88609166e05128add2f" compoundref="lathe1_8py" startline="458" endline="460">cam.nc.lathe1.CreatorIso.use_CRC</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1nc_1_1winpc_1_1Creator_1a56aba84ad91a4ca7de2d5a2177566bb3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.winpc.Creator::start_of_line</definition>
+        <argsstring></argsstring>
+        <name>start_of_line</name>
+        <qualifiedname>cam.nc.winpc.Creator.start_of_line</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" line="16" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" bodystart="16" bodyend="-1"/>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1a79463d437baaaf23c828a2c9e62393f3" compoundref="iso_8py" startline="111" endline="117">cam.nc.iso.Creator.SPACE</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1abb81af5a0bdddfed387b71b68a51cc7a" compoundref="iso_8py" startline="210" endline="215">cam.nc.iso.Creator.write</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1nc_1_1winpc_1_1Creator_1ac175eaff9a0dadc81ece465e042e76e0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.nc.winpc.Creator::t</definition>
+        <argsstring></argsstring>
+        <name>t</name>
+        <qualifiedname>cam.nc.winpc.Creator.t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" line="54" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" bodystart="54" bodyend="-1"/>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a8efac61e9aa91a0c69e90e79c2e01465" compoundref="heiden_8py" startline="730" endline="740">cam.nc.heiden.Creator.start_CRC</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1a3e4b11f0c61e5d82b81802c1fe30ec7d" compoundref="iso_8py" startline="976" endline="985">cam.nc.iso.Creator.start_CRC</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a30a09a55fbe9c474dfa71534369714e6" compoundref="lathe1_8py" startline="461" endline="466">cam.nc.lathe1.CreatorIso.start_CRC</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a1e0d0a0333918e86dfaa5e03437bf452" compoundref="heiden_8py" startline="293" endline="297">cam.nc.heiden.Creator.tool_change</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden530_1_1Creator_1a1d09a200e101159ed97068ca958de3ec" compoundref="heiden530_8py" startline="116" endline="123">cam.nc.heiden530.Creator.tool_change</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1a3e61292523aa893f0187112023e51eff" compoundref="iso_8py" startline="472" endline="493">cam.nc.iso.Creator.tool_change</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ab029f691b34c12e7543805785ce78c49" compoundref="lathe1_8py" startline="170" endline="173">cam.nc.lathe1.CreatorIso.tool_change</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcam_1_1nc_1_1winpc_1_1Creator_1a35a2176ac3b75df1aa3bdf9a1bc49614" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.winpc.Creator.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>cam.nc.winpc.Creator.__init__</qualifiedname>
+        <reimplements refid="classcam_1_1nc_1_1iso__modal_1_1Creator_1ae0f5b38b73b27650b1af8b5085d3129c">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" line="11" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" bodystart="11" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1nc_1_1winpc_1_1Creator_1aae1cb93a5dd430719105fa03a054f654" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.winpc.Creator.SPACE_STR</definition>
+        <argsstring>(self)</argsstring>
+        <name>SPACE_STR</name>
+        <qualifiedname>cam.nc.winpc.Creator.SPACE_STR</qualifiedname>
+        <reimplements refid="classcam_1_1nc_1_1iso_1_1Creator_1aa481cf1e394988751640fd5ce5af991e">SPACE_STR</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>Codes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" line="18" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" bodystart="18" bodyend="19"/>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1a79463d437baaaf23c828a2c9e62393f3" compoundref="iso_8py" startline="111" endline="117">cam.nc.iso.Creator.SPACE</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1nc_1_1winpc_1_1Creator_1ac4abcb37279bb85454570b22a9f2edea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.winpc.Creator.TOOL</definition>
+        <argsstring>(self)</argsstring>
+        <name>TOOL</name>
+        <qualifiedname>cam.nc.winpc.Creator.TOOL</qualifiedname>
+        <reimplements refid="classcam_1_1nc_1_1iso_1_1Creator_1a3c0640ab2405f7cf975459dfa0ddfdfd">TOOL</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" line="20" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" bodystart="20" bodyend="22"/>
+        <references refid="classcam_1_1nc_1_1emc2_1_1Creator_1a47a9e4f5f35681f580765bba2f0f97a5" compoundref="emc2_8py" startline="10" endline="10">cam.nc.emc2.Creator.SPACE</references>
+        <references refid="classcam_1_1nc_1_1emc2b_1_1Creator_1abff5586e78bb91681bd41dafdea5a9e7" compoundref="emc2b_8py" startline="17" endline="23">cam.nc.emc2b.Creator.SPACE</references>
+        <references refid="classcam_1_1nc_1_1emc2tap_1_1CodesEMC2_1a6a0d71a1c6e9f8a80228dc220a0e57ca" compoundref="emc2tap_8py" startline="7" endline="7">cam.nc.emc2tap.CodesEMC2.SPACE</references>
+        <references refid="classcam_1_1nc_1_1heiden_1_1Creator_1a2c4277ffddaea0f92c906c6744f7a3bd" compoundref="heiden_8py" startline="77" endline="77">cam.nc.heiden.Creator.SPACE</references>
+        <references refid="classcam_1_1nc_1_1heiden530_1_1Creator_1aa64b19b0edc2ac1f2d568b09ca2aebcb" compoundref="heiden530_8py" startline="41" endline="41">cam.nc.heiden530.Creator.SPACE</references>
+        <references refid="classcam_1_1nc_1_1iso_1_1Creator_1a79463d437baaaf23c828a2c9e62393f3" compoundref="iso_8py" startline="111" endline="117">cam.nc.iso.Creator.SPACE</references>
+        <references refid="classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a497077e0e500cc8f419b8f3f61f008b4" compoundref="makerbot__codes_8py" startline="11" endline="11">cam.nc.makerbot_codes.Codes.SPACE</references>
+        <references refid="classcam_1_1nc_1_1rez2_1_1Creator_1af84ae3917d42b2e8093774d05da95cc4" compoundref="rez2_8py" startline="45">cam.nc.rez2.Creator.SPACE</references>
+        <references refid="classcam_1_1nc_1_1rez2__read_1_1Parser_1a33fa46dc5d735c8e70885ae3307abd87" compoundref="rez2__read_8py" startline="54">cam.nc.rez2_read.Parser.SPACE</references>
+        <references refid="classcam_1_1nc_1_1series1_1_1Creator_1a75918d23eef609baab85058fda3050d5" compoundref="series1_8py" startline="28" endline="30">cam.nc.series1.Creator.SPACE</references>
+        <references refid="classcam_1_1nc_1_1shopbot__mtc_1_1Creator_1a1512dbb5d0140eb216ed709a542261ac" compoundref="shopbot__mtc_8py" startline="50" endline="50">cam.nc.shopbot_mtc.Creator.SPACE</references>
+        <references refid="classcam_1_1nc_1_1tnc151_1_1Creator_1af5d9e50b2ff0e73cd7524e2145d55d76" compoundref="tnc151_8py" startline="28" endline="28">cam.nc.tnc151.Creator.SPACE</references>
+        <referencedby refid="classcam_1_1nc_1_1centroid1_1_1Creator_1a36d8a0c5d271ca1246fa521b42b5cf29" compoundref="centroid1_8py" startline="120" endline="133">cam.nc.centroid1.Creator.tool_change</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1gravos_1_1Creator_1aa5dd1702c8a30a208fa995e6bfc13d50" compoundref="gravos_8py" startline="38" endline="45">cam.nc.gravos.Creator.tool_change</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a1e0d0a0333918e86dfaa5e03437bf452" compoundref="heiden_8py" startline="293" endline="297">cam.nc.heiden.Creator.tool_change</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden530_1_1Creator_1a1d09a200e101159ed97068ca958de3ec" compoundref="heiden530_8py" startline="116" endline="123">cam.nc.heiden530.Creator.tool_change</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1hm50_1_1Creator_1a52a88e68142442ebc4581b840b5bab40" compoundref="hm50_8py" startline="12" endline="19">cam.nc.hm50.Creator.tool_change</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1a3e61292523aa893f0187112023e51eff" compoundref="iso_8py" startline="472" endline="493">cam.nc.iso.Creator.tool_change</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1mach3_1_1Creator_1a4d1de1048649d3d4c98467248b80bf69" compoundref="mach3_8py" startline="15" endline="20">cam.nc.mach3.Creator.tool_change</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1nc_1_1winpc_1_1Creator_1a620c5c36d79c5f0c9a2481cb26775a8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.winpc.Creator.write_spindle</definition>
+        <argsstring>(self)</argsstring>
+        <name>write_spindle</name>
+        <qualifiedname>cam.nc.winpc.Creator.write_spindle</qualifiedname>
+        <reimplements refid="classcam_1_1nc_1_1iso_1_1Creator_1a9abb7b482b40a3e96bf8034d31828b08">write_spindle</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>Internal. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" line="27" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" bodystart="27" bodyend="28"/>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a78c90cc7cedad79ff356840b59527774" compoundref="heiden_8py" startline="535" endline="697">cam.nc.heiden.Creator.arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1aed90658ba02dc4e25c565f6e3a70670d" compoundref="iso_8py" startline="765" endline="939">cam.nc.iso.Creator.arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1abb9674871edcb35b7b6c7712b3381073" compoundref="lathe1_8py" startline="373" endline="431">cam.nc.lathe1.CreatorIso.arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1makerbotHBP_1_1CreatorMakerbotHBP_1a6a900c248df1059acd397cb17fc4b18c" compoundref="makerbotHBP_8py" startline="243" endline="295">cam.nc.makerbotHBP.CreatorMakerbotHBP.arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1rez2_1_1Creator_1aec638a8489a120fef07a8bd6823476e4" compoundref="rez2_8py" startline="495" endline="544">cam.nc.rez2.Creator.drill</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a983c9d1748987984ea5a74e7489b4664" compoundref="heiden_8py" startline="442" endline="483">cam.nc.heiden.Creator.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden530_1_1Creator_1a85c6b3c82eb4357cf5d08aad348f2805" compoundref="heiden530_8py" startline="163" endline="202">cam.nc.heiden530.Creator.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1ad072e258b3de2c4fa8b1033f28d67bbb" compoundref="iso_8py" startline="642" endline="709">cam.nc.iso.Creator.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a7278ca3bb84f4045368333fa059ab864" compoundref="lathe1_8py" startline="313" endline="359">cam.nc.lathe1.CreatorIso.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a2262faed4f078201d3fab4c023d3e1d2" compoundref="heiden_8py" startline="381" endline="441">cam.nc.heiden.Creator.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden530_1_1Creator_1ae0e91cfeea8854af12bf2494a799bc9a" compoundref="heiden530_8py" startline="127" endline="162">cam.nc.heiden530.Creator.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1a64bd7544d638558d278746433d3855d6" compoundref="iso_8py" startline="578" endline="641">cam.nc.iso.Creator.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a58e2089cb00422e3761f487ab0160e2b" compoundref="lathe1_8py" startline="248" endline="312">cam.nc.lathe1.CreatorIso.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1emc2tap_1_1CreatorEMC2tap_1ae7c40089d2816698fbe6cfbc9a10a052" compoundref="emc2tap_8py" startline="25" endline="82">cam.nc.emc2tap.CreatorEMC2tap.tap</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a706db14683812bb3b86db958d7faa05a" compoundref="heiden_8py" startline="892" endline="947">cam.nc.heiden.Creator.tap</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1nc_1_1winpc_1_1Creator_1aca2b206132fccc31b615eb568e2fa355" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.winpc.Creator.program_begin</definition>
+        <argsstring>(self, id, comment)</argsstring>
+        <name>program_begin</name>
+        <qualifiedname>cam.nc.winpc.Creator.program_begin</qualifiedname>
+        <reimplements refid="classcam_1_1nc_1_1iso_1_1Creator_1adcc0019bc3a0dff0023e4d11b13b92c2">program_begin</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>id</type>
+          <defname>id</defname>
+        </param>
+        <param>
+          <type><ref refid="classcam_1_1nc_1_1winpc_1_1Creator_1a2516870c787e276bfa9061c5a80a5349" kindref="member">comment</ref></type>
+          <defname>comment</defname>
+        </param>
+        <briefdescription>
+<para>Programs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" line="32" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" bodystart="32" bodyend="40"/>
+        <references refid="classcam_1_1nc_1_1centroid1_1_1Creator_1aebe4bef004e66e416aa6520ef6bdda12" compoundref="centroid1_8py" startline="24">cam.nc.centroid1.Creator.useCrc</references>
+        <references refid="classcam_1_1nc_1_1emc2b_1_1Creator_1a838e91707e9a77b99df1f40c62714c81" compoundref="emc2b_8py" startline="39">cam.nc.emc2b.Creator.useCrc</references>
+        <references refid="classcam_1_1nc_1_1emc2b__crc_1_1Creator_1af3dc48becb09bfa9f8f9ad8ac71962ac" compoundref="emc2b__crc_8py" startline="19">cam.nc.emc2b_crc.Creator.useCrc</references>
+        <references refid="classcam_1_1nc_1_1grbl_1_1Creator_1a3780591eaa13470ce19793e219ec1bcd" compoundref="grbl_8py" startline="15">cam.nc.grbl.Creator.useCrc</references>
+        <references refid="classcam_1_1nc_1_1heiden_1_1Creator_1adee5bf819574ddf6c0e47cfee90d009f" compoundref="heiden_8py" startline="59">cam.nc.heiden.Creator.useCrc</references>
+        <references refid="classcam_1_1nc_1_1iso_1_1Creator_1aee138cf1150ca1c1e51a09312280c34b" compoundref="iso_8py" startline="48">cam.nc.iso.Creator.useCrc</references>
+        <references refid="classcam_1_1nc_1_1iso__crc_1_1Creator_1a6bf96059f2f35a034b1dad70f9b0d761" compoundref="iso__crc_8py" startline="19">cam.nc.iso_crc.Creator.useCrc</references>
+        <references refid="classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a2611a7403159dc0f5fb871b623020e79" compoundref="lathe1_8py" startline="47">cam.nc.lathe1.CreatorIso.useCrc</references>
+        <references refid="classcam_1_1nc_1_1winpc_1_1Creator_1ae7cdae1e93205482f62b7b548de56b56" compoundref="winpc_8py" startline="15">cam.nc.winpc.Creator.useCrc</references>
+        <references refid="classcam_1_1nc_1_1cad__nc__read_1_1Parser_1adcf2f47949df29f187f27fe985884633" compoundref="cad__nc__read_8py" startline="40" endline="42">cam.nc.cad_nc_read.Parser.write</references>
+        <references refid="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1aed6f93c98cb8c0e3f3e826e75b6d6f15" compoundref="hxml__writer_8py" startline="14" endline="16">cam.nc.hxml_writer.HxmlWriter.write</references>
+        <references refid="classcam_1_1nc_1_1iso_1_1Creator_1abb81af5a0bdddfed387b71b68a51cc7a" compoundref="iso_8py" startline="210" endline="215">cam.nc.iso.Creator.write</references>
+        <references refid="classcam_1_1nc_1_1nc_1_1Creator_1a80f2134add83bfaaf2870d075d36ed8a" compoundref="nc_8py" startline="44" endline="50">cam.nc.nc.Creator.write</references>
+        <references refid="classcam_1_1nc_1_1nclathe__read_1_1Parser_1ab5ea283b461b57e48c8d5b0ad0a45694" compoundref="nclathe__read_8py" startline="42" endline="44">cam.nc.nclathe_read.Parser.write</references>
+        <references refid="classcam_1_1nc_1_1recreator_1_1Redirector_1a79cc974683588db3ef959189e7552c0d" compoundref="recreator_8py" startline="28" endline="30">cam.nc.recreator.Redirector.write</references>
+        <references refid="classcam_1_1nc_1_1format_1_1Address_1aa21f0ffeb829537d9103759276c01a4b" compoundref="format_8py" startline="78" endline="89">cam.nc.format.Address.write</references>
+        <references refid="classcam_1_1nc_1_1format_1_1AddressPlusMinus_1aaacea4c7b677f0a602dbc9023ff365d2" compoundref="format_8py" startline="103" endline="114">cam.nc.format.AddressPlusMinus.write</references>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1nc_1_1winpc_1_1Creator_1aa2dc25a2906dcd979f8454c5630b5f4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.winpc.Creator.program_end</definition>
+        <argsstring>(self)</argsstring>
+        <name>program_end</name>
+        <qualifiedname>cam.nc.winpc.Creator.program_end</qualifiedname>
+        <reimplements refid="classcam_1_1nc_1_1iso_1_1Creator_1aeedc350647013e5f1543bbdcb32ebd27">program_end</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>End the program</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" line="41" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" bodystart="41" bodyend="44"/>
+        <references refid="classcam_1_1nc_1_1emc2b_1_1Creator_1a344b2457825605210b4ac5bc64e6feef" compoundref="emc2b_8py" startline="26" endline="31">cam.nc.emc2b.Creator.PROGRAM_END</references>
+        <references refid="classcam_1_1nc_1_1gravos_1_1Creator_1a0a1d217761d010554ae2091f78a3e757" compoundref="gravos_8py" startline="51" endline="52">cam.nc.gravos.Creator.PROGRAM_END</references>
+        <references refid="classcam_1_1nc_1_1grbl_1_1Creator_1aa670b5bb9caacd860ec8870396e5800a" compoundref="grbl_8py" startline="20" endline="20">cam.nc.grbl.Creator.PROGRAM_END</references>
+        <references refid="classcam_1_1nc_1_1iso_1_1Creator_1a8705709f8177dd54b9737977dc14cc85" compoundref="iso_8py" startline="128" endline="129">cam.nc.iso.Creator.PROGRAM_END</references>
+        <references refid="classcam_1_1nc_1_1lynx__otter__o_1_1Creator_1a60a92a384193fbf62feb8c1e4a924084" compoundref="lynx__otter__o_8py" startline="49" endline="51">cam.nc.lynx_otter_o.Creator.PROGRAM_END</references>
+        <references refid="classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a84aafa8d86e1a826e6ce2677d0d63727" compoundref="makerbot__codes_8py" startline="25" endline="26">cam.nc.makerbot_codes.Codes.PROGRAM_END</references>
+        <references refid="classcam_1_1nc_1_1emc2_1_1Creator_1a47a9e4f5f35681f580765bba2f0f97a5" compoundref="emc2_8py" startline="10" endline="10">cam.nc.emc2.Creator.SPACE</references>
+        <references refid="classcam_1_1nc_1_1emc2b_1_1Creator_1abff5586e78bb91681bd41dafdea5a9e7" compoundref="emc2b_8py" startline="17" endline="23">cam.nc.emc2b.Creator.SPACE</references>
+        <references refid="classcam_1_1nc_1_1emc2tap_1_1CodesEMC2_1a6a0d71a1c6e9f8a80228dc220a0e57ca" compoundref="emc2tap_8py" startline="7" endline="7">cam.nc.emc2tap.CodesEMC2.SPACE</references>
+        <references refid="classcam_1_1nc_1_1heiden_1_1Creator_1a2c4277ffddaea0f92c906c6744f7a3bd" compoundref="heiden_8py" startline="77" endline="77">cam.nc.heiden.Creator.SPACE</references>
+        <references refid="classcam_1_1nc_1_1heiden530_1_1Creator_1aa64b19b0edc2ac1f2d568b09ca2aebcb" compoundref="heiden530_8py" startline="41" endline="41">cam.nc.heiden530.Creator.SPACE</references>
+        <references refid="classcam_1_1nc_1_1iso_1_1Creator_1a79463d437baaaf23c828a2c9e62393f3" compoundref="iso_8py" startline="111" endline="117">cam.nc.iso.Creator.SPACE</references>
+        <references refid="classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a497077e0e500cc8f419b8f3f61f008b4" compoundref="makerbot__codes_8py" startline="11" endline="11">cam.nc.makerbot_codes.Codes.SPACE</references>
+        <references refid="classcam_1_1nc_1_1rez2_1_1Creator_1af84ae3917d42b2e8093774d05da95cc4" compoundref="rez2_8py" startline="45">cam.nc.rez2.Creator.SPACE</references>
+        <references refid="classcam_1_1nc_1_1rez2__read_1_1Parser_1a33fa46dc5d735c8e70885ae3307abd87" compoundref="rez2__read_8py" startline="54">cam.nc.rez2_read.Parser.SPACE</references>
+        <references refid="classcam_1_1nc_1_1series1_1_1Creator_1a75918d23eef609baab85058fda3050d5" compoundref="series1_8py" startline="28" endline="30">cam.nc.series1.Creator.SPACE</references>
+        <references refid="classcam_1_1nc_1_1shopbot__mtc_1_1Creator_1a1512dbb5d0140eb216ed709a542261ac" compoundref="shopbot__mtc_8py" startline="50" endline="50">cam.nc.shopbot_mtc.Creator.SPACE</references>
+        <references refid="classcam_1_1nc_1_1tnc151_1_1Creator_1af5d9e50b2ff0e73cd7524e2145d55d76" compoundref="tnc151_8py" startline="28" endline="28">cam.nc.tnc151.Creator.SPACE</references>
+        <references refid="classcam_1_1nc_1_1cad__nc__read_1_1Parser_1adcf2f47949df29f187f27fe985884633" compoundref="cad__nc__read_8py" startline="40" endline="42">cam.nc.cad_nc_read.Parser.write</references>
+        <references refid="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1aed6f93c98cb8c0e3f3e826e75b6d6f15" compoundref="hxml__writer_8py" startline="14" endline="16">cam.nc.hxml_writer.HxmlWriter.write</references>
+        <references refid="classcam_1_1nc_1_1iso_1_1Creator_1abb81af5a0bdddfed387b71b68a51cc7a" compoundref="iso_8py" startline="210" endline="215">cam.nc.iso.Creator.write</references>
+        <references refid="classcam_1_1nc_1_1nc_1_1Creator_1a80f2134add83bfaaf2870d075d36ed8a" compoundref="nc_8py" startline="44" endline="50">cam.nc.nc.Creator.write</references>
+        <references refid="classcam_1_1nc_1_1nclathe__read_1_1Parser_1ab5ea283b461b57e48c8d5b0ad0a45694" compoundref="nclathe__read_8py" startline="42" endline="44">cam.nc.nclathe_read.Parser.write</references>
+        <references refid="classcam_1_1nc_1_1recreator_1_1Redirector_1a79cc974683588db3ef959189e7552c0d" compoundref="recreator_8py" startline="28" endline="30">cam.nc.recreator.Redirector.write</references>
+        <references refid="classcam_1_1nc_1_1format_1_1Address_1aa21f0ffeb829537d9103759276c01a4b" compoundref="format_8py" startline="78" endline="89">cam.nc.format.Address.write</references>
+        <references refid="classcam_1_1nc_1_1format_1_1AddressPlusMinus_1aaacea4c7b677f0a602dbc9023ff365d2" compoundref="format_8py" startline="103" endline="114">cam.nc.format.AddressPlusMinus.write</references>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1nc_1_1winpc_1_1Creator_1a4f329a07a8ee02af17a7b57d602ab4b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.winpc.Creator.tool_defn</definition>
+        <argsstring>(self, id, name=&apos;&apos;, params=None)</argsstring>
+        <name>tool_defn</name>
+        <qualifiedname>cam.nc.winpc.Creator.tool_defn</qualifiedname>
+        <reimplements refid="classcam_1_1nc_1_1iso_1_1Creator_1a07bce834ac4fae7cf098546f698cc7ff">tool_defn</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>id</type>
+          <defname>id</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+          <defval>&apos;&apos;</defval>
+        </param>
+        <param>
+          <type>params</type>
+          <defname>params</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>Settings. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" line="48" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1nc_1_1winpc_1_1Creator_1a5dda631594dd74a6a573e54c2cffbd5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.winpc.Creator.tool_change</definition>
+        <argsstring>(self, id)</argsstring>
+        <name>tool_change</name>
+        <qualifiedname>cam.nc.winpc.Creator.tool_change</qualifiedname>
+        <reimplements refid="classcam_1_1nc_1_1iso_1_1Creator_1a3e61292523aa893f0187112023e51eff">tool_change</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>id</type>
+          <defname>id</defname>
+        </param>
+        <briefdescription>
+<para>Tools. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" line="52" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" bodystart="52" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1nc_1_1winpc_1_1Creator_1a2516870c787e276bfa9061c5a80a5349" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.winpc.Creator.comment</definition>
+        <argsstring>(self, text)</argsstring>
+        <name>comment</name>
+        <qualifiedname>cam.nc.winpc.Creator.comment</qualifiedname>
+        <reimplements refid="classcam_1_1nc_1_1iso_1_1Creator_1a618d52d9931049792ef89511ff43496c">comment</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>text</type>
+          <defname>text</defname>
+        </param>
+        <briefdescription>
+<para>Misc. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" line="56" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" bodystart="56" bodyend="60"/>
+        <references refid="classcam_1_1nc_1_1anilam__crusader__m_1_1Creator_1ac1dbbd3ea853a221bbea54ea6bf0bc38" compoundref="anilam__crusader__m_8py" startline="20" endline="21">cam.nc.anilam_crusader_m.Creator.COMMENT</references>
+        <references refid="classcam_1_1nc_1_1gravos_1_1Creator_1a6489943de2bbb60e108634000b1d4a65" compoundref="gravos_8py" startline="10" endline="10">cam.nc.gravos.Creator.COMMENT</references>
+        <references refid="classcam_1_1nc_1_1heiden_1_1Creator_1a752d676a8bc0b4afff9140d5ee13f964" compoundref="heiden_8py" startline="85" endline="85">cam.nc.heiden.Creator.COMMENT</references>
+        <references refid="classcam_1_1nc_1_1heiden530_1_1Creator_1af11bd4e534bb880f62ef102d461e20d7" compoundref="heiden530_8py" startline="45" endline="46">cam.nc.heiden530.Creator.COMMENT</references>
+        <references refid="classcam_1_1nc_1_1iso_1_1Creator_1a0181c37cf5c794505115dcb25bc0374d" compoundref="iso_8py" startline="123" endline="123">cam.nc.iso.Creator.COMMENT</references>
+        <references refid="classcam_1_1nc_1_1lynx__otter__o_1_1Creator_1a7542e359b98327e59f79a5a26857e3e9" compoundref="lynx__otter__o_8py" startline="11" endline="12">cam.nc.lynx_otter_o.Creator.COMMENT</references>
+        <references refid="classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a0b7d4923fea5d92064ba65e60074474e" compoundref="makerbot__codes_8py" startline="20" endline="20">cam.nc.makerbot_codes.Codes.COMMENT</references>
+        <references refid="classcam_1_1nc_1_1rez2_1_1Creator_1abf7c3fb7afa5b735b94668c73afae18e" compoundref="rez2_8py" startline="53" endline="54">cam.nc.rez2.Creator.COMMENT</references>
+        <references refid="classcam_1_1nc_1_1shopbot__mtc_1_1Creator_1a9b549b5b3d9803c1f1cceab22adfea86" compoundref="shopbot__mtc_8py" startline="51" endline="51">cam.nc.shopbot_mtc.Creator.COMMENT</references>
+        <references refid="classcam_1_1nc_1_1cad__nc__read_1_1Parser_1adcf2f47949df29f187f27fe985884633" compoundref="cad__nc__read_8py" startline="40" endline="42">cam.nc.cad_nc_read.Parser.write</references>
+        <references refid="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1aed6f93c98cb8c0e3f3e826e75b6d6f15" compoundref="hxml__writer_8py" startline="14" endline="16">cam.nc.hxml_writer.HxmlWriter.write</references>
+        <references refid="classcam_1_1nc_1_1iso_1_1Creator_1abb81af5a0bdddfed387b71b68a51cc7a" compoundref="iso_8py" startline="210" endline="215">cam.nc.iso.Creator.write</references>
+        <references refid="classcam_1_1nc_1_1nc_1_1Creator_1a80f2134add83bfaaf2870d075d36ed8a" compoundref="nc_8py" startline="44" endline="50">cam.nc.nc.Creator.write</references>
+        <references refid="classcam_1_1nc_1_1nclathe__read_1_1Parser_1ab5ea283b461b57e48c8d5b0ad0a45694" compoundref="nclathe__read_8py" startline="42" endline="44">cam.nc.nclathe_read.Parser.write</references>
+        <references refid="classcam_1_1nc_1_1recreator_1_1Redirector_1a79cc974683588db3ef959189e7552c0d" compoundref="recreator_8py" startline="28" endline="30">cam.nc.recreator.Redirector.write</references>
+        <references refid="classcam_1_1nc_1_1format_1_1Address_1aa21f0ffeb829537d9103759276c01a4b" compoundref="format_8py" startline="78" endline="89">cam.nc.format.Address.write</references>
+        <references refid="classcam_1_1nc_1_1format_1_1AddressPlusMinus_1aaacea4c7b677f0a602dbc9023ff365d2" compoundref="format_8py" startline="103" endline="114">cam.nc.format.AddressPlusMinus.write</references>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1ae8e86bcc6f05521bf4b639128e3241ee" compoundref="heiden_8py" startline="1052" endline="1082">cam.nc.heiden.Creator.probe_downward_point</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1a40689f45d25f7f726d11a172b608c0a4" compoundref="iso_8py" startline="1270" endline="1294">cam.nc.iso.Creator.probe_downward_point</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a921825a14a9068d234377d7ac3b7777f" compoundref="heiden_8py" startline="990" endline="1051">cam.nc.heiden.Creator.probe_single_point</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1adc5343ffd168991077858693d6a79fef" compoundref="iso_8py" startline="1221" endline="1269">cam.nc.iso.Creator.probe_single_point</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a1979595ccdc20dcf20f67751d328f25d" compoundref="heiden_8py" startline="1130" endline="1164">cam.nc.heiden.Creator.rapid_to_intersection</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1a60e5583b4ddafa8966b05d2baa28ea67" compoundref="iso_8py" startline="1341" endline="1367">cam.nc.iso.Creator.rapid_to_intersection</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a20686a35918df93542b7b5d4472d3d71" compoundref="heiden_8py" startline="1172" endline="1197">cam.nc.heiden.Creator.rapid_to_rotated_coordinate</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1affa9a90d01acd946672ba361abfbfffd" compoundref="iso_8py" startline="1375" endline="1392">cam.nc.iso.Creator.rapid_to_rotated_coordinate</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1emc2_1_1Creator_1a305cc96f9d28416e6ca475bc62150768" compoundref="emc2_8py" startline="64" endline="185">cam.nc.emc2.Creator.report_probe_results</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1emc2tap_1_1CreatorEMC2tap_1ae7c40089d2816698fbe6cfbc9a10a052" compoundref="emc2tap_8py" startline="25" endline="82">cam.nc.emc2tap.CreatorEMC2tap.tap</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1a3e61292523aa893f0187112023e51eff" compoundref="iso_8py" startline="472" endline="493">cam.nc.iso.Creator.tool_change</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1nc_1_1winpc_1_1Creator_1a35e54099e5ecfbda678d8f66bc281994" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.winpc.Creator.workplane</definition>
+        <argsstring>(self, id)</argsstring>
+        <name>workplane</name>
+        <qualifiedname>cam.nc.winpc.Creator.workplane</qualifiedname>
+        <reimplements refid="classcam_1_1nc_1_1iso_1_1Creator_1af689dfe2c7549ab5b062fb024d47b4ae">workplane</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>id</type>
+          <defname>id</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the workplane</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" line="61" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" bodystart="61" bodyend="69"/>
+        <references refid="classcam_1_1nc_1_1heiden_1_1Creator_1a52ead3fb6e7e1ab456414dbbf2a6e28f" compoundref="heiden_8py" startline="110" endline="110">cam.nc.heiden.Creator.WORKPLANE</references>
+        <references refid="classcam_1_1nc_1_1iso_1_1Creator_1ab80465085217d6580fc1aabbb0b879ea" compoundref="iso_8py" startline="151" endline="151">cam.nc.iso.Creator.WORKPLANE</references>
+        <references refid="classcam_1_1nc_1_1makerbot__codes_1_1Codes_1af9ee4781020d355397093563966747f2" compoundref="makerbot__codes_8py" startline="48" endline="48">cam.nc.makerbot_codes.Codes.WORKPLANE</references>
+        <references refid="classcam_1_1nc_1_1heiden_1_1Creator_1aa9e52f6cb2890fca0c43ee07acbbd905" compoundref="heiden_8py" startline="111" endline="112">cam.nc.heiden.Creator.WORKPLANE_BASE</references>
+        <references refid="classcam_1_1nc_1_1iso_1_1Creator_1a752fd783814bcdff2b247170902d7356" compoundref="iso_8py" startline="152" endline="153">cam.nc.iso.Creator.WORKPLANE_BASE</references>
+        <references refid="classcam_1_1nc_1_1makerbot__codes_1_1Codes_1aa55ea50066c308715e6915d6fc91a6e2" compoundref="makerbot__codes_8py" startline="49" endline="50">cam.nc.makerbot_codes.Codes.WORKPLANE_BASE</references>
+        <references refid="classcam_1_1nc_1_1cad__nc__read_1_1Parser_1adcf2f47949df29f187f27fe985884633" compoundref="cad__nc__read_8py" startline="40" endline="42">cam.nc.cad_nc_read.Parser.write</references>
+        <references refid="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1aed6f93c98cb8c0e3f3e826e75b6d6f15" compoundref="hxml__writer_8py" startline="14" endline="16">cam.nc.hxml_writer.HxmlWriter.write</references>
+        <references refid="classcam_1_1nc_1_1iso_1_1Creator_1abb81af5a0bdddfed387b71b68a51cc7a" compoundref="iso_8py" startline="210" endline="215">cam.nc.iso.Creator.write</references>
+        <references refid="classcam_1_1nc_1_1nc_1_1Creator_1a80f2134add83bfaaf2870d075d36ed8a" compoundref="nc_8py" startline="44" endline="50">cam.nc.nc.Creator.write</references>
+        <references refid="classcam_1_1nc_1_1nclathe__read_1_1Parser_1ab5ea283b461b57e48c8d5b0ad0a45694" compoundref="nclathe__read_8py" startline="42" endline="44">cam.nc.nclathe_read.Parser.write</references>
+        <references refid="classcam_1_1nc_1_1recreator_1_1Redirector_1a79cc974683588db3ef959189e7552c0d" compoundref="recreator_8py" startline="28" endline="30">cam.nc.recreator.Redirector.write</references>
+        <references refid="classcam_1_1nc_1_1format_1_1Address_1aa21f0ffeb829537d9103759276c01a4b" compoundref="format_8py" startline="78" endline="89">cam.nc.format.Address.write</references>
+        <references refid="classcam_1_1nc_1_1format_1_1AddressPlusMinus_1aaacea4c7b677f0a602dbc9023ff365d2" compoundref="format_8py" startline="103" endline="114">cam.nc.format.AddressPlusMinus.write</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>cam.nc.winpc.Creator</label>
+        <link refid="classcam_1_1nc_1_1winpc_1_1Creator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>cam.nc.iso.Creator</label>
+        <link refid="classcam_1_1nc_1_1iso_1_1Creator"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>cam.nc.iso_modal.Creator</label>
+        <link refid="classcam_1_1nc_1_1iso__modal_1_1Creator"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>cam.nc.nc.Creator</label>
+        <link refid="classcam_1_1nc_1_1nc_1_1Creator"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>cam.nc.winpc.Creator</label>
+        <link refid="classcam_1_1nc_1_1winpc_1_1Creator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>cam.nc.iso.Creator</label>
+        <link refid="classcam_1_1nc_1_1iso_1_1Creator"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>cam.nc.iso_modal.Creator</label>
+        <link refid="classcam_1_1nc_1_1iso__modal_1_1Creator"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>cam.nc.nc.Creator</label>
+        <link refid="classcam_1_1nc_1_1nc_1_1Creator"/>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" line="10" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/winpc.py" bodystart="10" bodyend="73"/>
+    <listofallmembers>
+      <member refid="classcam_1_1nc_1_1winpc_1_1Creator_1a35a2176ac3b75df1aa3bdf9a1bc49614" prot="public" virt="non-virtual"><scope>cam::nc::winpc::Creator</scope><name>__init__</name></member>
+      <member refid="classcam_1_1nc_1_1winpc_1_1Creator_1ae19ffe6eb88cc7a19868d286ccef4e7e" prot="public" virt="non-virtual"><scope>cam::nc::winpc::Creator</scope><name>absolute_flag</name></member>
+      <member refid="classcam_1_1nc_1_1winpc_1_1Creator_1a2516870c787e276bfa9061c5a80a5349" prot="public" virt="non-virtual"><scope>cam::nc::winpc::Creator</scope><name>comment</name></member>
+      <member refid="classcam_1_1nc_1_1winpc_1_1Creator_1a8be53baab35481b179dab31fee6ca28e" prot="public" virt="non-virtual"><scope>cam::nc::winpc::Creator</scope><name>prev_g91</name></member>
+      <member refid="classcam_1_1nc_1_1winpc_1_1Creator_1aca2b206132fccc31b615eb568e2fa355" prot="public" virt="non-virtual"><scope>cam::nc::winpc::Creator</scope><name>program_begin</name></member>
+      <member refid="classcam_1_1nc_1_1winpc_1_1Creator_1aa2dc25a2906dcd979f8454c5630b5f4d" prot="public" virt="non-virtual"><scope>cam::nc::winpc::Creator</scope><name>program_end</name></member>
+      <member refid="classcam_1_1nc_1_1winpc_1_1Creator_1aae1cb93a5dd430719105fa03a054f654" prot="public" virt="non-virtual"><scope>cam::nc::winpc::Creator</scope><name>SPACE_STR</name></member>
+      <member refid="classcam_1_1nc_1_1winpc_1_1Creator_1a56aba84ad91a4ca7de2d5a2177566bb3" prot="public" virt="non-virtual"><scope>cam::nc::winpc::Creator</scope><name>start_of_line</name></member>
+      <member refid="classcam_1_1nc_1_1winpc_1_1Creator_1ac175eaff9a0dadc81ece465e042e76e0" prot="public" virt="non-virtual"><scope>cam::nc::winpc::Creator</scope><name>t</name></member>
+      <member refid="classcam_1_1nc_1_1winpc_1_1Creator_1ac4abcb37279bb85454570b22a9f2edea" prot="public" virt="non-virtual"><scope>cam::nc::winpc::Creator</scope><name>TOOL</name></member>
+      <member refid="classcam_1_1nc_1_1winpc_1_1Creator_1a5dda631594dd74a6a573e54c2cffbd5e" prot="public" virt="non-virtual"><scope>cam::nc::winpc::Creator</scope><name>tool_change</name></member>
+      <member refid="classcam_1_1nc_1_1winpc_1_1Creator_1a4f329a07a8ee02af17a7b57d602ab4b6" prot="public" virt="non-virtual"><scope>cam::nc::winpc::Creator</scope><name>tool_defn</name></member>
+      <member refid="classcam_1_1nc_1_1winpc_1_1Creator_1ae7cdae1e93205482f62b7b548de56b56" prot="public" virt="non-virtual"><scope>cam::nc::winpc::Creator</scope><name>useCrc</name></member>
+      <member refid="classcam_1_1nc_1_1winpc_1_1Creator_1a35e54099e5ecfbda678d8f66bc281994" prot="public" virt="non-virtual"><scope>cam::nc::winpc::Creator</scope><name>workplane</name></member>
+      <member refid="classcam_1_1nc_1_1winpc_1_1Creator_1a620c5c36d79c5f0c9a2481cb26775a8b" prot="public" virt="non-virtual"><scope>cam::nc::winpc::Creator</scope><name>write_spindle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot" xml:lang="en-US">
+<title>cam.nc.printbot3d.CreatorPrintbot Class Reference</title>
+<indexterm><primary>cam.nc.printbot3d.CreatorPrintbot</primary></indexterm>
+Inheritance diagram for cam.nc.printbot3d.CreatorPrintbot:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.nc.printbot3d.CreatorPrintbot:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1aa0471049119710771ea47952890dec72">__init__</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1afee08ec5c9dd42d8943b858851fbcb11">tool_defn</link> (self, id, name=&apos;&apos;, params=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1a0635e25ce6585a10cefea8985d6f1e17">write_blocknum</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1af9e1990b7ed926dd97e6bf4f9e892a54">set_plane</link> (self, plane)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1abe6a50723d1cfaac87784556f5ed5939">workplane</link> (self, id)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1a8c0e8f2c86a383bf51b9013d5ab863bb">extruder_on</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1aa1d6f530da232632131796c34e0279f1">extruder_off</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1ad8959d99f932a67a51efbc379bf67b04">set_extruder_flowrate</link> (self, flowrate)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1a52f668ab9b8239c5a11a434ca54f1f8e">extruder_temp</link> (self, temp)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1a2693cb3edfbba763873076bec9a22523">rapid</link> (x=None, y=None, z=None, a=None, b=None, c=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1a04e21de1737e83fb17e6d47892907715">feed</link> (self, x=None, y=None, z=None, a=None, b=None, c=None)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1a5fcb796978df3a5579b0133929042434">creator</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1aa0471049119710771ea47952890dec72"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>cam.nc.printbot3d.CreatorPrintbot</secondary></indexterm>
+<indexterm><primary>cam.nc.printbot3d.CreatorPrintbot</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>cam.nc.printbot3d.CreatorPrintbot.__init__ ( self)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1aa1d6f530da232632131796c34e0279f1"/><section>
+    <title>extruder_off()</title>
+<indexterm><primary>extruder_off</primary><secondary>cam.nc.printbot3d.CreatorPrintbot</secondary></indexterm>
+<indexterm><primary>cam.nc.printbot3d.CreatorPrintbot</primary><secondary>extruder_off</secondary></indexterm>
+<para><computeroutput>cam.nc.printbot3d.CreatorPrintbot.extruder_off ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_aa1d6f530da232632131796c34e0279f1_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1a8c0e8f2c86a383bf51b9013d5ab863bb"/><section>
+    <title>extruder_on()</title>
+<indexterm><primary>extruder_on</primary><secondary>cam.nc.printbot3d.CreatorPrintbot</secondary></indexterm>
+<indexterm><primary>cam.nc.printbot3d.CreatorPrintbot</primary><secondary>extruder_on</secondary></indexterm>
+<para><computeroutput>cam.nc.printbot3d.CreatorPrintbot.extruder_on ( self)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1a52f668ab9b8239c5a11a434ca54f1f8e"/><section>
+    <title>extruder_temp()</title>
+<indexterm><primary>extruder_temp</primary><secondary>cam.nc.printbot3d.CreatorPrintbot</secondary></indexterm>
+<indexterm><primary>cam.nc.printbot3d.CreatorPrintbot</primary><secondary>extruder_temp</secondary></indexterm>
+<para><computeroutput>cam.nc.printbot3d.CreatorPrintbot.extruder_temp ( self,  temp)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_a52f668ab9b8239c5a11a434ca54f1f8e_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1a04e21de1737e83fb17e6d47892907715"/><section>
+    <title>feed()</title>
+<indexterm><primary>feed</primary><secondary>cam.nc.printbot3d.CreatorPrintbot</secondary></indexterm>
+<indexterm><primary>cam.nc.printbot3d.CreatorPrintbot</primary><secondary>feed</secondary></indexterm>
+<para><computeroutput>cam.nc.printbot3d.CreatorPrintbot.feed ( self,  x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+,  a = <computeroutput>None</computeroutput>
+,  b = <computeroutput>None</computeroutput>
+,  c = <computeroutput>None</computeroutput>
+)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_a04e21de1737e83fb17e6d47892907715_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1a2693cb3edfbba763873076bec9a22523"/><section>
+    <title>rapid()</title>
+<indexterm><primary>rapid</primary><secondary>cam.nc.printbot3d.CreatorPrintbot</secondary></indexterm>
+<indexterm><primary>cam.nc.printbot3d.CreatorPrintbot</primary><secondary>rapid</secondary></indexterm>
+<para><computeroutput>cam.nc.printbot3d.CreatorPrintbot.rapid ( x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+,  a = <computeroutput>None</computeroutput>
+,  b = <computeroutput>None</computeroutput>
+,  c = <computeroutput>None</computeroutput>
+)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_a2693cb3edfbba763873076bec9a22523_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1ad8959d99f932a67a51efbc379bf67b04"/><section>
+    <title>set_extruder_flowrate()</title>
+<indexterm><primary>set_extruder_flowrate</primary><secondary>cam.nc.printbot3d.CreatorPrintbot</secondary></indexterm>
+<indexterm><primary>cam.nc.printbot3d.CreatorPrintbot</primary><secondary>set_extruder_flowrate</secondary></indexterm>
+<para><computeroutput>cam.nc.printbot3d.CreatorPrintbot.set_extruder_flowrate ( self,  flowrate)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_ad8959d99f932a67a51efbc379bf67b04_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1af9e1990b7ed926dd97e6bf4f9e892a54"/><section>
+    <title>set_plane()</title>
+<indexterm><primary>set_plane</primary><secondary>cam.nc.printbot3d.CreatorPrintbot</secondary></indexterm>
+<indexterm><primary>cam.nc.printbot3d.CreatorPrintbot</primary><secondary>set_plane</secondary></indexterm>
+<para><computeroutput>cam.nc.printbot3d.CreatorPrintbot.set_plane ( self,  plane)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1afee08ec5c9dd42d8943b858851fbcb11"/><section>
+    <title>tool_defn()</title>
+<indexterm><primary>tool_defn</primary><secondary>cam.nc.printbot3d.CreatorPrintbot</secondary></indexterm>
+<indexterm><primary>cam.nc.printbot3d.CreatorPrintbot</primary><secondary>tool_defn</secondary></indexterm>
+<para><computeroutput>cam.nc.printbot3d.CreatorPrintbot.tool_defn ( self,  id,  name = <computeroutput>&apos;&apos;</computeroutput>
+,  params = <computeroutput>None</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1abe6a50723d1cfaac87784556f5ed5939"/><section>
+    <title>workplane()</title>
+<indexterm><primary>workplane</primary><secondary>cam.nc.printbot3d.CreatorPrintbot</secondary></indexterm>
+<indexterm><primary>cam.nc.printbot3d.CreatorPrintbot</primary><secondary>workplane</secondary></indexterm>
+<para><computeroutput>cam.nc.printbot3d.CreatorPrintbot.workplane ( self,  id)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1a0635e25ce6585a10cefea8985d6f1e17"/><section>
+    <title>write_blocknum()</title>
+<indexterm><primary>write_blocknum</primary><secondary>cam.nc.printbot3d.CreatorPrintbot</secondary></indexterm>
+<indexterm><primary>cam.nc.printbot3d.CreatorPrintbot</primary><secondary>write_blocknum</secondary></indexterm>
+<para><computeroutput>cam.nc.printbot3d.CreatorPrintbot.write_blocknum ( self)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_a0635e25ce6585a10cefea8985d6f1e17_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1a5fcb796978df3a5579b0133929042434"/><section>
+    <title>creator</title>
+<indexterm><primary>creator</primary><secondary>cam.nc.printbot3d.CreatorPrintbot</secondary></indexterm>
+<indexterm><primary>cam.nc.printbot3d.CreatorPrintbot</primary><secondary>creator</secondary></indexterm>
+<para><computeroutput>cam.nc.printbot3d.CreatorPrintbot.creator<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/<link linkend="_printbot3d_8py">printbot3d.py</link></section>
+</section>

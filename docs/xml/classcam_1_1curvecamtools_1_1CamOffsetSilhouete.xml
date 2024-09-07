@@ -1,0 +1,386 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1curvecamtools_1_1CamOffsetSilhouete" kind="class" language="Python" prot="public">
+    <compoundname>cam::curvecamtools::CamOffsetSilhouete</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Operator</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1aab6834f1d6ea35d8917ad43c3bff1441" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.curvecamtools.CamOffsetSilhouete::bl_idname</definition>
+        <argsstring></argsstring>
+        <name>bl_idname</name>
+        <qualifiedname>cam.curvecamtools.CamOffsetSilhouete.bl_idname</qualifiedname>
+        <initializer>=  &quot;object.silhouete_offset&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="760" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="760" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1a4b4d8072c674845813dd7144b7436aff" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.curvecamtools.CamOffsetSilhouete::bl_label</definition>
+        <argsstring></argsstring>
+        <name>bl_label</name>
+        <qualifiedname>cam.curvecamtools.CamOffsetSilhouete.bl_label</qualifiedname>
+        <initializer>=  &quot;Silhouette Offset&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="761" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="761" bodyend="-1"/>
+        <referencedby refid="classcam_1_1preset__managers_1_1CAM__MACHINE__MT__presets_1af95f7812d2952b26a26809ab923dac09" compoundref="preset__managers_8py" startline="28" endline="38">cam.preset_managers.CAM_MACHINE_MT_presets.post_cb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1a556842b2b49fa0bc98ca9d9d6f39115a" prot="public" static="yes" mutable="no">
+        <type>dict</type>
+        <definition>dict cam.curvecamtools.CamOffsetSilhouete::bl_options</definition>
+        <argsstring></argsstring>
+        <name>bl_options</name>
+        <qualifiedname>cam.curvecamtools.CamOffsetSilhouete.bl_options</qualifiedname>
+        <initializer>=  {&apos;REGISTER&apos;, &apos;UNDO&apos;, &apos;PRESET&apos;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="762" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="762" bodyend="-1"/>
+        <referencedby refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a9628cbca8e69ec75b2337171a02bf428" compoundref="async__op_8py" startline="32" endline="59">cam.async_op.AsyncOperatorMixin.modal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1ac6a6b5730e85716b9b0b44fe261dd0c1" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamtools.CamOffsetSilhouete::offset</definition>
+        <argsstring></argsstring>
+        <name>offset</name>
+        <qualifiedname>cam.curvecamtools.CamOffsetSilhouete.offset</qualifiedname>
+        <initializer>(
+        name=&quot;Offset&quot;,
+        default=.003,
+        min=-100,
+        max=100,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="764" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="764" bodyend="-1"/>
+        <referencedby refid="classcam_1_1gcodeimportparser_1_1GcodeModel_1a51ce8c24cd510056704e5287c4fbf71a" compoundref="gcodeimportparser_8py" startline="242" endline="290">cam.gcodeimportparser.GcodeModel.do_G1</referencedby>
+        <referencedby refid="classcam_1_1gcodeimportparser_1_1GcodeModel_1a8825aa0c0c4b676428a0a7b547e18a38" compoundref="gcodeimportparser_8py" startline="291" endline="306">cam.gcodeimportparser.GcodeModel.do_G92</referencedby>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurveHatch_1ad75191027148391d9c4d0ee0b81dbdd2" compoundref="curvecamcreate_8py" startline="125" endline="203">cam.curvecamcreate.CamCurveHatch.execute</referencedby>
+        <referencedby refid="classcam_1_1curvecamequation_1_1CamSineCurve_1ae92603301f7aaaac9db2eb82ca861783" compoundref="curvecamequation_8py" startline="135" endline="192">cam.curvecamequation.CamSineCurve.execute</referencedby>
+        <referencedby refid="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1a3a8340d39d68a758d65b7603f76062b2" compoundref="curvecamtools_8py" startline="800" endline="834">cam.curvecamtools.CamOffsetSilhouete.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1a97ba50b93ad30b547f41e02f424ad38b" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamtools.CamOffsetSilhouete::mitrelimit</definition>
+        <argsstring></argsstring>
+        <name>mitrelimit</name>
+        <qualifiedname>cam.curvecamtools.CamOffsetSilhouete.mitrelimit</qualifiedname>
+        <initializer>(
+        name=&quot;Mitre Limit&quot;,
+        default=2,
+        min=0.00000001,
+        max=20,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="772" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="772" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1a3a8340d39d68a758d65b7603f76062b2" compoundref="curvecamtools_8py" startline="800" endline="834">cam.curvecamtools.CamOffsetSilhouete.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1aa444d6edd0648c4a31980a6077c7744e" prot="public" static="yes" mutable="no">
+        <type>EnumProperty</type>
+        <definition>EnumProperty cam.curvecamtools.CamOffsetSilhouete::style</definition>
+        <argsstring></argsstring>
+        <name>style</name>
+        <qualifiedname>cam.curvecamtools.CamOffsetSilhouete.style</qualifiedname>
+        <initializer>(
+        name=&quot;Type of Curve&quot;,
+        items=(
+            (&apos;1&apos;, &apos;Round&apos;, &apos;&apos;),
+            (&apos;2&apos;, &apos;Mitre&apos;, &apos;&apos;),
+            (&apos;3&apos;, &apos;Bevel&apos;, &apos;&apos;)
+        ),
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="780" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="780" bodyend="-1"/>
+        <referencedby refid="classcam_1_1gcodeimportparser_1_1Segment_1a03e689de0991a335580c4bf2726423e7" compoundref="gcodeimportparser_8py" startline="484" endline="488">cam.gcodeimportparser.Segment.__str__</referencedby>
+        <referencedby refid="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1a4dfcd205251305fae4df9fc87749e493" compoundref="curvecamtools_8py" startline="835" endline="841">cam.curvecamtools.CamOffsetSilhouete.draw</referencedby>
+        <referencedby refid="classcam_1_1curvecamtools_1_1CamCurveOvercutsB_1a4dfd3aeb9a26899f900625361349c9d0" compoundref="curvecamtools_8py" startline="369" endline="579">cam.curvecamtools.CamCurveOvercutsB.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1abbed91fdd4538fb77506569985aa97e1" prot="public" static="yes" mutable="no">
+        <type>BoolProperty</type>
+        <definition>BoolProperty cam.curvecamtools.CamOffsetSilhouete::opencurve</definition>
+        <argsstring></argsstring>
+        <name>opencurve</name>
+        <qualifiedname>cam.curvecamtools.CamOffsetSilhouete.opencurve</qualifiedname>
+        <initializer>(
+        name=&quot;Dialate Open Curve&quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="788" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="788" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurveMortise_1a4dd7097899b49fc06e5fc62da4843873" compoundref="curvecamcreate_8py" startline="656" endline="718">cam.curvecamcreate.CamCurveMortise.execute</referencedby>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurveInterlock_1a62934ca74ef0c61a4be85404fffdb94b" compoundref="curvecamcreate_8py" startline="785" endline="838">cam.curvecamcreate.CamCurveInterlock.execute</referencedby>
+        <referencedby refid="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1a3a8340d39d68a758d65b7603f76062b2" compoundref="curvecamtools_8py" startline="800" endline="834">cam.curvecamtools.CamOffsetSilhouete.execute</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1a02d46058465f8e99fa04cb64923d6ff3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamtools.CamOffsetSilhouete::offset</definition>
+        <argsstring></argsstring>
+        <name>offset</name>
+        <qualifiedname>cam.curvecamtools.CamOffsetSilhouete.offset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="832" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="832" bodyend="-1"/>
+        <referencedby refid="classcam_1_1gcodeimportparser_1_1GcodeModel_1a51ce8c24cd510056704e5287c4fbf71a" compoundref="gcodeimportparser_8py" startline="242" endline="290">cam.gcodeimportparser.GcodeModel.do_G1</referencedby>
+        <referencedby refid="classcam_1_1gcodeimportparser_1_1GcodeModel_1a8825aa0c0c4b676428a0a7b547e18a38" compoundref="gcodeimportparser_8py" startline="291" endline="306">cam.gcodeimportparser.GcodeModel.do_G92</referencedby>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurveHatch_1ad75191027148391d9c4d0ee0b81dbdd2" compoundref="curvecamcreate_8py" startline="125" endline="203">cam.curvecamcreate.CamCurveHatch.execute</referencedby>
+        <referencedby refid="classcam_1_1curvecamequation_1_1CamSineCurve_1ae92603301f7aaaac9db2eb82ca861783" compoundref="curvecamequation_8py" startline="135" endline="192">cam.curvecamequation.CamSineCurve.execute</referencedby>
+        <referencedby refid="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1a3a8340d39d68a758d65b7603f76062b2" compoundref="curvecamtools_8py" startline="800" endline="834">cam.curvecamtools.CamOffsetSilhouete.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1afe94eb505a170f678fc41c29a890632a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamtools.CamOffsetSilhouete::style</definition>
+        <argsstring></argsstring>
+        <name>style</name>
+        <qualifiedname>cam.curvecamtools.CamOffsetSilhouete.style</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="833" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="833" bodyend="-1"/>
+        <referencedby refid="classcam_1_1gcodeimportparser_1_1Segment_1a03e689de0991a335580c4bf2726423e7" compoundref="gcodeimportparser_8py" startline="484" endline="488">cam.gcodeimportparser.Segment.__str__</referencedby>
+        <referencedby refid="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1a4dfcd205251305fae4df9fc87749e493" compoundref="curvecamtools_8py" startline="835" endline="841">cam.curvecamtools.CamOffsetSilhouete.draw</referencedby>
+        <referencedby refid="classcam_1_1curvecamtools_1_1CamCurveOvercutsB_1a4dfd3aeb9a26899f900625361349c9d0" compoundref="curvecamtools_8py" startline="369" endline="579">cam.curvecamtools.CamCurveOvercutsB.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1a310fbfc1fe080bb4966cf603c8586613" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.curvecamtools.CamOffsetSilhouete::mitrelimit</definition>
+        <argsstring></argsstring>
+        <name>mitrelimit</name>
+        <qualifiedname>cam.curvecamtools.CamOffsetSilhouete.mitrelimit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="833" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="833" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1a3a8340d39d68a758d65b7603f76062b2" compoundref="curvecamtools_8py" startline="800" endline="834">cam.curvecamtools.CamOffsetSilhouete.execute</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1aab2a906cf3db744dd2b0fa385421b7e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.curvecamtools.CamOffsetSilhouete.poll</definition>
+        <argsstring>(cls, context)</argsstring>
+        <name>poll</name>
+        <qualifiedname>cam.curvecamtools.CamOffsetSilhouete.poll</qualifiedname>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="794" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="794" bodyend="798"/>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1a3a8340d39d68a758d65b7603f76062b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.curvecamtools.CamOffsetSilhouete.execute</definition>
+        <argsstring>(self, context)</argsstring>
+        <name>execute</name>
+        <qualifiedname>cam.curvecamtools.CamOffsetSilhouete.execute</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="800" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="800" bodyend="834"/>
+        <references refid="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1a97ba50b93ad30b547f41e02f424ad38b" compoundref="curvecamtools_8py" startline="772">cam.curvecamtools.CamOffsetSilhouete.mitrelimit</references>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurveHatch_1abe5c4da7b9b4fdd765a1b22895d54a65" compoundref="curvecamcreate_8py" startline="58">cam.curvecamcreate.CamCurveHatch.offset</references>
+        <references refid="classcam_1_1curvecamequation_1_1CamSineCurve_1a451f921ec6fd65a6dfa5b2cd5be3cfdd" compoundref="curvecamequation_8py" startline="81">cam.curvecamequation.CamSineCurve.offset</references>
+        <references refid="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1ac6a6b5730e85716b9b0b44fe261dd0c1" compoundref="curvecamtools_8py" startline="764">cam.curvecamtools.CamOffsetSilhouete.offset</references>
+        <references refid="classcam_1_1gcodeimportparser_1_1GcodeModel_1abe098ab5b00f9e2cadfebbf90b523247" compoundref="gcodeimportparser_8py" startline="228">cam.gcodeimportparser.GcodeModel.offset</references>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurveMortise_1a5cb99031d4ba69aecb96564b71371903" compoundref="curvecamcreate_8py" startline="635">cam.curvecamcreate.CamCurveMortise.opencurve</references>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurveInterlock_1ad7013a32c3dd7e6df9efc0f170617f07" compoundref="curvecamcreate_8py" startline="748">cam.curvecamcreate.CamCurveInterlock.opencurve</references>
+        <references refid="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1abbed91fdd4538fb77506569985aa97e1" compoundref="curvecamtools_8py" startline="788">cam.curvecamtools.CamOffsetSilhouete.opencurve</references>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1a4dfcd205251305fae4df9fc87749e493" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.curvecamtools.CamOffsetSilhouete.draw</definition>
+        <argsstring>(self, context)</argsstring>
+        <name>draw</name>
+        <qualifiedname>cam.curvecamtools.CamOffsetSilhouete.draw</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="835" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="835" bodyend="841"/>
+        <references refid="classcam_1_1curvecamtools_1_1CamCurveOvercutsB_1a75cc682947e5ce714679f4e1bd861af3" compoundref="curvecamtools_8py" startline="327">cam.curvecamtools.CamCurveOvercutsB.style</references>
+        <references refid="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1aa444d6edd0648c4a31980a6077c7744e" compoundref="curvecamtools_8py" startline="780">cam.curvecamtools.CamOffsetSilhouete.style</references>
+        <references refid="classcam_1_1gcodeimportparser_1_1Segment_1acdb993e150ef8302de24e4339587d01f" compoundref="gcodeimportparser_8py" startline="481">cam.gcodeimportparser.Segment.style</references>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1a2e495dce4a6ce4b0c7ceec81652593eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.curvecamtools.CamOffsetSilhouete.invoke</definition>
+        <argsstring>(self, context, event)</argsstring>
+        <name>invoke</name>
+        <qualifiedname>cam.curvecamtools.CamOffsetSilhouete.invoke</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <param>
+          <type>event</type>
+          <defname>event</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="842" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="842" bodyend="878"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Curve Offset Operation </verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.curvecamtools.CamOffsetSilhouete</label>
+        <link refid="classcam_1_1curvecamtools_1_1CamOffsetSilhouete"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7">
+        <label>BoolProperty</label>
+      </node>
+      <node id="6">
+        <label>EnumProperty</label>
+      </node>
+      <node id="5">
+        <label>FloatProperty</label>
+      </node>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.curvecamtools.CamOffsetSilhouete</label>
+        <link refid="classcam_1_1curvecamtools_1_1CamOffsetSilhouete"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+bl_idname</edgelabel>
+          <edgelabel>+bl_label</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+bl_options</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+mitrelimit</edgelabel>
+          <edgelabel>+offset</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>+style</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>+opencurve</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dict</label>
+      </node>
+      <node id="3">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" line="758" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamtools.py" bodystart="758" bodyend="878"/>
+    <listofallmembers>
+      <member refid="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1aab6834f1d6ea35d8917ad43c3bff1441" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamOffsetSilhouete</scope><name>bl_idname</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1a4b4d8072c674845813dd7144b7436aff" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamOffsetSilhouete</scope><name>bl_label</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1a556842b2b49fa0bc98ca9d9d6f39115a" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamOffsetSilhouete</scope><name>bl_options</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1a4dfcd205251305fae4df9fc87749e493" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamOffsetSilhouete</scope><name>draw</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1a3a8340d39d68a758d65b7603f76062b2" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamOffsetSilhouete</scope><name>execute</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1a2e495dce4a6ce4b0c7ceec81652593eb" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamOffsetSilhouete</scope><name>invoke</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1a97ba50b93ad30b547f41e02f424ad38b" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamOffsetSilhouete</scope><name>mitrelimit</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1a310fbfc1fe080bb4966cf603c8586613" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamOffsetSilhouete</scope><name>mitrelimit</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1ac6a6b5730e85716b9b0b44fe261dd0c1" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamOffsetSilhouete</scope><name>offset</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1a02d46058465f8e99fa04cb64923d6ff3" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamOffsetSilhouete</scope><name>offset</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1abbed91fdd4538fb77506569985aa97e1" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamOffsetSilhouete</scope><name>opencurve</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1aab2a906cf3db744dd2b0fa385421b7e7" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamOffsetSilhouete</scope><name>poll</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1aa444d6edd0648c4a31980a6077c7744e" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamOffsetSilhouete</scope><name>style</name></member>
+      <member refid="classcam_1_1curvecamtools_1_1CamOffsetSilhouete_1afe94eb505a170f678fc41c29a890632a" prot="public" virt="non-virtual"><scope>cam::curvecamtools::CamOffsetSilhouete</scope><name>style</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

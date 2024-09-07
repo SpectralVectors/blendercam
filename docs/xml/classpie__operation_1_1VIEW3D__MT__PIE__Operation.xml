@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classpie__operation_1_1VIEW3D__MT__PIE__Operation" kind="class" language="Python" prot="public">
+    <compoundname>pie_operation::VIEW3D_MT_PIE_Operation</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Menu</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classpie__operation_1_1VIEW3D__MT__PIE__Operation_1a096807f44ba5f0596d67c555ca13409f" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str pie_operation.VIEW3D_MT_PIE_Operation::bl_label</definition>
+        <argsstring></argsstring>
+        <name>bl_label</name>
+        <qualifiedname>pie_operation.VIEW3D_MT_PIE_Operation.bl_label</qualifiedname>
+        <initializer>=  &quot;∴    Active Operation    ∴&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/active_op/pie_operation.py" line="12" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/active_op/pie_operation.py" bodystart="12" bodyend="-1"/>
+        <referencedby refid="classcam_1_1preset__managers_1_1CAM__MACHINE__MT__presets_1af95f7812d2952b26a26809ab923dac09" compoundref="preset__managers_8py" startline="28" endline="38">cam.preset_managers.CAM_MACHINE_MT_presets.post_cb</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpie__operation_1_1VIEW3D__MT__PIE__Operation_1a8dfe96364554f0dfd29f439851417cfd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>pie_operation.VIEW3D_MT_PIE_Operation.draw</definition>
+        <argsstring>(self, context)</argsstring>
+        <name>draw</name>
+        <qualifiedname>pie_operation.VIEW3D_MT_PIE_Operation.draw</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/active_op/pie_operation.py" line="14" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/active_op/pie_operation.py" bodystart="14" bodyend="82"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Menu</label>
+      </node>
+      <node id="1">
+        <label>pie_operation.VIEW3D_MT_PIE_Operation</label>
+        <link refid="classpie__operation_1_1VIEW3D__MT__PIE__Operation"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Menu</label>
+      </node>
+      <node id="1">
+        <label>pie_operation.VIEW3D_MT_PIE_Operation</label>
+        <link refid="classpie__operation_1_1VIEW3D__MT__PIE__Operation"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+bl_label</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/active_op/pie_operation.py" line="10" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/pie_menu/active_op/pie_operation.py" bodystart="10" bodyend="82"/>
+    <listofallmembers>
+      <member refid="classpie__operation_1_1VIEW3D__MT__PIE__Operation_1a096807f44ba5f0596d67c555ca13409f" prot="public" virt="non-virtual"><scope>pie_operation::VIEW3D_MT_PIE_Operation</scope><name>bl_label</name></member>
+      <member refid="classpie__operation_1_1VIEW3D__MT__PIE__Operation_1a8dfe96364554f0dfd29f439851417cfd" prot="public" virt="non-virtual"><scope>pie_operation::VIEW3D_MT_PIE_Operation</scope><name>draw</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

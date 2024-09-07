@@ -1,0 +1,1618 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes" xml:lang="en-US">
+<title>cam.nc.makerbot_codes.Codes Class Reference</title>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary></indexterm>
+<para>
+
+<para><link linkend="_makerbot__codes_8py">makerbot_codes.py</link> </para>
+ 
+</para>
+Collaboration diagram for cam.nc.makerbot_codes.Codes:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a497077e0e500cc8f419b8f3f61f008b4">SPACE</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a06b7edd6dd5fa5856d501f25e01bc362">FORMAT_FEEDRATE</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1afc7b432c3ad49dc3b29f800109e56a62">FORMAT_IN</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a351a0dd880f2f1d34946b0206bc02077">FORMAT_MM</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1ad6226c59099e944c1681836f697f871f">FORMAT_ANG</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1ae980555080c1c2e305d037b43e56f68e">FORMAT_TIME</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1ad4644301a3a02f68d8129074675400d2">FORMAT_DWELL</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1ae47b3cf0c2cb47c66882055d656de521">BLOCK</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a0b7d4923fea5d92064ba65e60074474e">COMMENT</link> (self, comment)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a55b7873fe223a5265274842df1167604">VARIABLE</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a9c6db69ddf2182c0af0443cfc1ae61f0">VARIABLE_SET</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a2ef6bee01de125549a428833fd3bdc95">PROGRAM</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a84aafa8d86e1a826e6ce2677d0d63727">PROGRAM_END</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a4a5aac98aa6fe6908e2bc5ea989b9298">SUBPROG_CALL</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a604a36f406e8f9420e1c0f46a852eb13">SUBPROG_END</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a70e315ef48856297645b6debcbb55548">STOP_OPTIONAL</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a339effba69001baa0d6f1c7d82ad1214">STOP</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a606d80dcb9d15a6509a94edecdcafa22">IMPERIAL</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a48d1897aa3601bdb99ca74fda67b6c52">METRIC</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a314dcd2df274278e0a8477ea2bfb65e2">ABSOLUTE</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1ad05099ecbf36a95d1e9215fa06343083">INCREMENTAL</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a3e28b767e1a820438a01440206e9fb6d">SET_TEMPORARY_COORDINATE_SYSTEM</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1adf0e4de0e679428b138cd19b60aca8fc">REMOVE_TEMPORARY_COORDINATE_SYSTEM</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a759a3734dbd03221294b47bf757cad72">POLAR_ON</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a2b86939a1ef78cc4a6bb0cfb955d7376">POLAR_OFF</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a53c809dd39db31a4074e490ca9eaf824">PLANE_XY</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1ad4f88ed379ec35ba15330a572e670f3d">PLANE_XZ</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a0fedce9ceb928ffc86620d3c273d652c">PLANE_YZ</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1ad3e7ef50eabcb35110ee18b835785736">TOOL</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1ab22b9b33e6fcb75337e30bb8155e45a9">TOOL_DEFINITION</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1af9ee4781020d355397093563966747f2">WORKPLANE</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1aa55ea50066c308715e6915d6fc91a6e2">WORKPLANE_BASE</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a7b43e66a4f06c90ea11a032b857950d5">FEEDRATE</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a778bcba6e28aa838972d953afe798eb9">SPINDLE</link> (self, format, speed)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1aa44d414cfc2fa1c1e5a6b69616399b37">SPINDLE_CW</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1aa6f2eeec672be66886aee3a9e329205c">SPINDLE_CCW</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a9df651139692e059e028f129af21a5dd">COOLANT_OFF</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a8fce543d04c38ec1bcab7750b7bff72d">COOLANT_MIST</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a93e561bc6c58d982f13b40dba57babb4">COOLANT_FLOOD</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a138079d9303ad971219268bf2a89b142">GEAR_OFF</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a5345cca8f87bf24329f1c78494cf66de">GEAR</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1ae14614a7cee013a2cbdb8eba832cb64a">GEAR_BASE</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a815508af4a3c0c45b9c03dd2ce9f0f40">RAPID</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a5ac261f0e9add782797b3cdbc7d531ae">FEED</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1aef6476c951a248126f0e623e8f6f3128">ARC_CW</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1ae1a1fdca67cda6936aa0e07ac85763ec">ARC_CCW</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a1efc5e111136062a763b9ab9873bbafe">DWELL</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a007c1d90daedbe0baa85c975f6d221e6">DRILL</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a554b9566b5263535d088d589dc6dffca">DRILL_WITH_DWELL</link> (self, format, dwell)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1aa240f4de9b8b68ed11a2c67a624bb900">PECK_DRILL</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1aea1f2f5d966736fd066b8e492a57f5e9">PECK_DEPTH</link> (self, format, depth)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a9e6aaeacab386c604eb60cd7171fe845">RETRACT</link> (self, format, height)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a6ef00ea47fbb8cc91250ccab45a9047d">END_CANNED_CYCLE</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a2b10ac4ed70caaec1852ee295ac75cf5">X</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a42aa4047d1d3b9167abcf20ee2cdf33f">Y</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1ae1410b9e3435455e10403d0b26b0cf67">Z</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a9e0b1adc11273073430b304306796667">A</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a914f87d69a92cbc6865cc221b0b21c36">B</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a58f260177c05720983578bd950c7c56d">C</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a9ca54859cc966192553c6c5e7dc128f5">CENTRE_X</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a72107ee6d618fa1dd4615a86e6f6bd14">CENTRE_Y</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a7403d86e07e671ccac7c79840c2c7ba1">CENTRE_Z</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a3ac978ca8609e6d5df33a285fa612bfe">RADIUS</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a56a65aaa39338c37d13253c4daa353be">TIME</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a4283eb6c45aa049956527f9e7d3cb077">PROBE_TOWARDS_WITH_SIGNAL</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1ac747132b73161faa7e1a8dc3ebaf95be">PROBE_TOWARDS_WITHOUT_SIGNAL</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1af1d39e2caaa4ddd4c3be64de53632b49">PROBE_AWAY_WITH_SIGNAL</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1aa1f9a43224119e485c5a570489d2eb72">PROBE_AWAY_WITHOUT_SIGNAL</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a4eee078a4a7a1b1d7917873f26eda43d">MACHINE_COORDINATES</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a3e42ac075072592b0beaf868c2df9427">EXTRUDER_ON</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a03765d08761774d3269a81d9996806f2">EXTRUDER_OFF</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1aec304e95d3f10abbe545149d1f914fe3">EXTRUDER_TEMP</link> (self, degree_celsius)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1aad10e8f93f5010e2a10a96a6174b6ad7">EXTRUDER_TEMP_WAIT</link> (self, degree_celsius)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a8062b6da058d81f1465a4ee8c462fbd0">READ_EXTRUDER_TEMP</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a496f9b3b0704051ad48b2e7cdad7f075">EXTRUDER_SPEED_PWM</link> (self, speed_in_PWM)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1ae1a2b6bd36aa06827e77fdb55c5ff8fb">EXTRUDER_SPEED_RPM</link> (self, speed_in_RPM)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1ab365cad523971a220cc52726196c174a">STEPPERS_OFF</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a4f7c26ba52600b95938b4a35e25a9a7f">ALL_WAIT</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a0b22689672cd0c242b27ae0a766b654f">FAN_ON</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a3a702fffdcc4bebc3c318028317ddc91">FAN_OFF</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1acf7241f362283abe9d64093f1ff370b1">VALVE_OPEN</link> (self, delay)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a478a7146a451ead8e8af6250d099736b">VALVE_CLOSE</link> (self, delay)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a6fe721fd21e9831717de29e7c5659620">BUILD_BED_TEMP</link> (self, degree_celsius)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a3f662d07dd28fee7b273e7fa9768925c">BED_HOLDING_PRESSURE</link> (self, pressure)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a8a2e51c1c37fd8044388fc913d6e100c">CHAMBER_TEMP</link> (self, degree_celsius)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><link linkend="_makerbot__codes_8py">makerbot_codes.py</link> </para>
+
+
+
+<para>a lot like <link linkend="_iso__codes_8py">iso_codes.py</link> but with reprap/makerbot specific M codes.</para>
+
+<para>Brad Collette, 12th Sept 2010</para>
+
+<para>Many of these codes have nothing to do with reprap/additive machining but are left here in anticipation of future hybrid machines. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a9e0b1adc11273073430b304306796667"/><section>
+    <title>A()</title>
+<indexterm><primary>A</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>A</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.A ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a9e0b1adc11273073430b304306796667_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a9e0b1adc11273073430b304306796667_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a314dcd2df274278e0a8477ea2bfb65e2"/><section>
+    <title>ABSOLUTE()</title>
+<indexterm><primary>ABSOLUTE</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>ABSOLUTE</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.ABSOLUTE ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a314dcd2df274278e0a8477ea2bfb65e2_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a314dcd2df274278e0a8477ea2bfb65e2_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a4f7c26ba52600b95938b4a35e25a9a7f"/><section>
+    <title>ALL_WAIT()</title>
+<indexterm><primary>ALL_WAIT</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>ALL_WAIT</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.ALL_WAIT ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a4f7c26ba52600b95938b4a35e25a9a7f_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1ae1a1fdca67cda6936aa0e07ac85763ec"/><section>
+    <title>ARC_CCW()</title>
+<indexterm><primary>ARC_CCW</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>ARC_CCW</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.ARC_CCW ( self)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_ae1a1fdca67cda6936aa0e07ac85763ec_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1aef6476c951a248126f0e623e8f6f3128"/><section>
+    <title>ARC_CW()</title>
+<indexterm><primary>ARC_CW</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>ARC_CW</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.ARC_CW ( self)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_aef6476c951a248126f0e623e8f6f3128_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a914f87d69a92cbc6865cc221b0b21c36"/><section>
+    <title>B()</title>
+<indexterm><primary>B</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>B</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.B ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a914f87d69a92cbc6865cc221b0b21c36_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a914f87d69a92cbc6865cc221b0b21c36_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a3f662d07dd28fee7b273e7fa9768925c"/><section>
+    <title>BED_HOLDING_PRESSURE()</title>
+<indexterm><primary>BED_HOLDING_PRESSURE</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>BED_HOLDING_PRESSURE</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.BED_HOLDING_PRESSURE ( self,  pressure)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1ae47b3cf0c2cb47c66882055d656de521"/><section>
+    <title>BLOCK()</title>
+<indexterm><primary>BLOCK</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>BLOCK</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.BLOCK ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_ae47b3cf0c2cb47c66882055d656de521_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_ae47b3cf0c2cb47c66882055d656de521_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a6fe721fd21e9831717de29e7c5659620"/><section>
+    <title>BUILD_BED_TEMP()</title>
+<indexterm><primary>BUILD_BED_TEMP</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>BUILD_BED_TEMP</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.BUILD_BED_TEMP ( self,  degree_celsius)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a58f260177c05720983578bd950c7c56d"/><section>
+    <title>C()</title>
+<indexterm><primary>C</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>C</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.C ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a58f260177c05720983578bd950c7c56d_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a58f260177c05720983578bd950c7c56d_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a9ca54859cc966192553c6c5e7dc128f5"/><section>
+    <title>CENTRE_X()</title>
+<indexterm><primary>CENTRE_X</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>CENTRE_X</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.CENTRE_X ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a9ca54859cc966192553c6c5e7dc128f5_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a9ca54859cc966192553c6c5e7dc128f5_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a72107ee6d618fa1dd4615a86e6f6bd14"/><section>
+    <title>CENTRE_Y()</title>
+<indexterm><primary>CENTRE_Y</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>CENTRE_Y</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.CENTRE_Y ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a72107ee6d618fa1dd4615a86e6f6bd14_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a72107ee6d618fa1dd4615a86e6f6bd14_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a7403d86e07e671ccac7c79840c2c7ba1"/><section>
+    <title>CENTRE_Z()</title>
+<indexterm><primary>CENTRE_Z</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>CENTRE_Z</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.CENTRE_Z ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a7403d86e07e671ccac7c79840c2c7ba1_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a7403d86e07e671ccac7c79840c2c7ba1_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a8a2e51c1c37fd8044388fc913d6e100c"/><section>
+    <title>CHAMBER_TEMP()</title>
+<indexterm><primary>CHAMBER_TEMP</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>CHAMBER_TEMP</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.CHAMBER_TEMP ( self,  degree_celsius)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a0b7d4923fea5d92064ba65e60074474e"/><section>
+    <title>COMMENT()</title>
+<indexterm><primary>COMMENT</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>COMMENT</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.COMMENT ( self,  comment)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a0b7d4923fea5d92064ba65e60074474e_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a93e561bc6c58d982f13b40dba57babb4"/><section>
+    <title>COOLANT_FLOOD()</title>
+<indexterm><primary>COOLANT_FLOOD</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>COOLANT_FLOOD</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.COOLANT_FLOOD ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a93e561bc6c58d982f13b40dba57babb4_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a93e561bc6c58d982f13b40dba57babb4_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a8fce543d04c38ec1bcab7750b7bff72d"/><section>
+    <title>COOLANT_MIST()</title>
+<indexterm><primary>COOLANT_MIST</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>COOLANT_MIST</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.COOLANT_MIST ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a8fce543d04c38ec1bcab7750b7bff72d_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a8fce543d04c38ec1bcab7750b7bff72d_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a9df651139692e059e028f129af21a5dd"/><section>
+    <title>COOLANT_OFF()</title>
+<indexterm><primary>COOLANT_OFF</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>COOLANT_OFF</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.COOLANT_OFF ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a9df651139692e059e028f129af21a5dd_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a9df651139692e059e028f129af21a5dd_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a007c1d90daedbe0baa85c975f6d221e6"/><section>
+    <title>DRILL()</title>
+<indexterm><primary>DRILL</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>DRILL</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.DRILL ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a007c1d90daedbe0baa85c975f6d221e6_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a007c1d90daedbe0baa85c975f6d221e6_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a554b9566b5263535d088d589dc6dffca"/><section>
+    <title>DRILL_WITH_DWELL()</title>
+<indexterm><primary>DRILL_WITH_DWELL</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>DRILL_WITH_DWELL</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.DRILL_WITH_DWELL ( self,  format,  dwell)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a554b9566b5263535d088d589dc6dffca_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a554b9566b5263535d088d589dc6dffca_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a1efc5e111136062a763b9ab9873bbafe"/><section>
+    <title>DWELL()</title>
+<indexterm><primary>DWELL</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>DWELL</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.DWELL ( self)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a1efc5e111136062a763b9ab9873bbafe_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a6ef00ea47fbb8cc91250ccab45a9047d"/><section>
+    <title>END_CANNED_CYCLE()</title>
+<indexterm><primary>END_CANNED_CYCLE</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>END_CANNED_CYCLE</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.END_CANNED_CYCLE ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a6ef00ea47fbb8cc91250ccab45a9047d_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a6ef00ea47fbb8cc91250ccab45a9047d_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a03765d08761774d3269a81d9996806f2"/><section>
+    <title>EXTRUDER_OFF()</title>
+<indexterm><primary>EXTRUDER_OFF</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>EXTRUDER_OFF</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.EXTRUDER_OFF ( self)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a3e42ac075072592b0beaf868c2df9427"/><section>
+    <title>EXTRUDER_ON()</title>
+<indexterm><primary>EXTRUDER_ON</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>EXTRUDER_ON</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.EXTRUDER_ON ( self)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a496f9b3b0704051ad48b2e7cdad7f075"/><section>
+    <title>EXTRUDER_SPEED_PWM()</title>
+<indexterm><primary>EXTRUDER_SPEED_PWM</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>EXTRUDER_SPEED_PWM</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.EXTRUDER_SPEED_PWM ( self,  speed_in_PWM)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1ae1a2b6bd36aa06827e77fdb55c5ff8fb"/><section>
+    <title>EXTRUDER_SPEED_RPM()</title>
+<indexterm><primary>EXTRUDER_SPEED_RPM</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>EXTRUDER_SPEED_RPM</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.EXTRUDER_SPEED_RPM ( self,  speed_in_RPM)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1aec304e95d3f10abbe545149d1f914fe3"/><section>
+    <title>EXTRUDER_TEMP()</title>
+<indexterm><primary>EXTRUDER_TEMP</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>EXTRUDER_TEMP</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.EXTRUDER_TEMP ( self,  degree_celsius)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1aad10e8f93f5010e2a10a96a6174b6ad7"/><section>
+    <title>EXTRUDER_TEMP_WAIT()</title>
+<indexterm><primary>EXTRUDER_TEMP_WAIT</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>EXTRUDER_TEMP_WAIT</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.EXTRUDER_TEMP_WAIT ( self,  degree_celsius)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a3a702fffdcc4bebc3c318028317ddc91"/><section>
+    <title>FAN_OFF()</title>
+<indexterm><primary>FAN_OFF</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>FAN_OFF</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.FAN_OFF ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a3a702fffdcc4bebc3c318028317ddc91_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a0b22689672cd0c242b27ae0a766b654f"/><section>
+    <title>FAN_ON()</title>
+<indexterm><primary>FAN_ON</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>FAN_ON</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.FAN_ON ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a0b22689672cd0c242b27ae0a766b654f_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a5ac261f0e9add782797b3cdbc7d531ae"/><section>
+    <title>FEED()</title>
+<indexterm><primary>FEED</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>FEED</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.FEED ( self)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a5ac261f0e9add782797b3cdbc7d531ae_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a7b43e66a4f06c90ea11a032b857950d5"/><section>
+    <title>FEEDRATE()</title>
+<indexterm><primary>FEEDRATE</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>FEEDRATE</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.FEEDRATE ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a7b43e66a4f06c90ea11a032b857950d5_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a7b43e66a4f06c90ea11a032b857950d5_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1ad6226c59099e944c1681836f697f871f"/><section>
+    <title>FORMAT_ANG()</title>
+<indexterm><primary>FORMAT_ANG</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>FORMAT_ANG</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.FORMAT_ANG ( self)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1ad4644301a3a02f68d8129074675400d2"/><section>
+    <title>FORMAT_DWELL()</title>
+<indexterm><primary>FORMAT_DWELL</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>FORMAT_DWELL</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.FORMAT_DWELL ( self)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_ad4644301a3a02f68d8129074675400d2_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a06b7edd6dd5fa5856d501f25e01bc362"/><section>
+    <title>FORMAT_FEEDRATE()</title>
+<indexterm><primary>FORMAT_FEEDRATE</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>FORMAT_FEEDRATE</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.FORMAT_FEEDRATE ( self)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1afc7b432c3ad49dc3b29f800109e56a62"/><section>
+    <title>FORMAT_IN()</title>
+<indexterm><primary>FORMAT_IN</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>FORMAT_IN</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.FORMAT_IN ( self)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a351a0dd880f2f1d34946b0206bc02077"/><section>
+    <title>FORMAT_MM()</title>
+<indexterm><primary>FORMAT_MM</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>FORMAT_MM</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.FORMAT_MM ( self)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1ae980555080c1c2e305d037b43e56f68e"/><section>
+    <title>FORMAT_TIME()</title>
+<indexterm><primary>FORMAT_TIME</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>FORMAT_TIME</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.FORMAT_TIME ( self)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_ae980555080c1c2e305d037b43e56f68e_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a5345cca8f87bf24329f1c78494cf66de"/><section>
+    <title>GEAR()</title>
+<indexterm><primary>GEAR</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>GEAR</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.GEAR ( self)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a5345cca8f87bf24329f1c78494cf66de_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1ae14614a7cee013a2cbdb8eba832cb64a"/><section>
+    <title>GEAR_BASE()</title>
+<indexterm><primary>GEAR_BASE</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>GEAR_BASE</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.GEAR_BASE ( self)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a138079d9303ad971219268bf2a89b142"/><section>
+    <title>GEAR_OFF()</title>
+<indexterm><primary>GEAR_OFF</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>GEAR_OFF</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.GEAR_OFF ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a138079d9303ad971219268bf2a89b142_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a138079d9303ad971219268bf2a89b142_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a606d80dcb9d15a6509a94edecdcafa22"/><section>
+    <title>IMPERIAL()</title>
+<indexterm><primary>IMPERIAL</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>IMPERIAL</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.IMPERIAL ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a606d80dcb9d15a6509a94edecdcafa22_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a606d80dcb9d15a6509a94edecdcafa22_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1ad05099ecbf36a95d1e9215fa06343083"/><section>
+    <title>INCREMENTAL()</title>
+<indexterm><primary>INCREMENTAL</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>INCREMENTAL</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.INCREMENTAL ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_ad05099ecbf36a95d1e9215fa06343083_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_ad05099ecbf36a95d1e9215fa06343083_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a4eee078a4a7a1b1d7917873f26eda43d"/><section>
+    <title>MACHINE_COORDINATES()</title>
+<indexterm><primary>MACHINE_COORDINATES</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>MACHINE_COORDINATES</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.MACHINE_COORDINATES ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a4eee078a4a7a1b1d7917873f26eda43d_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a4eee078a4a7a1b1d7917873f26eda43d_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a48d1897aa3601bdb99ca74fda67b6c52"/><section>
+    <title>METRIC()</title>
+<indexterm><primary>METRIC</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>METRIC</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.METRIC ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a48d1897aa3601bdb99ca74fda67b6c52_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a48d1897aa3601bdb99ca74fda67b6c52_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1aea1f2f5d966736fd066b8e492a57f5e9"/><section>
+    <title>PECK_DEPTH()</title>
+<indexterm><primary>PECK_DEPTH</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>PECK_DEPTH</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.PECK_DEPTH ( self,  format,  depth)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_aea1f2f5d966736fd066b8e492a57f5e9_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_aea1f2f5d966736fd066b8e492a57f5e9_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1aa240f4de9b8b68ed11a2c67a624bb900"/><section>
+    <title>PECK_DRILL()</title>
+<indexterm><primary>PECK_DRILL</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>PECK_DRILL</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.PECK_DRILL ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_aa240f4de9b8b68ed11a2c67a624bb900_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_aa240f4de9b8b68ed11a2c67a624bb900_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a53c809dd39db31a4074e490ca9eaf824"/><section>
+    <title>PLANE_XY()</title>
+<indexterm><primary>PLANE_XY</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>PLANE_XY</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.PLANE_XY ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a53c809dd39db31a4074e490ca9eaf824_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a53c809dd39db31a4074e490ca9eaf824_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1ad4f88ed379ec35ba15330a572e670f3d"/><section>
+    <title>PLANE_XZ()</title>
+<indexterm><primary>PLANE_XZ</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>PLANE_XZ</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.PLANE_XZ ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_ad4f88ed379ec35ba15330a572e670f3d_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_ad4f88ed379ec35ba15330a572e670f3d_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a0fedce9ceb928ffc86620d3c273d652c"/><section>
+    <title>PLANE_YZ()</title>
+<indexterm><primary>PLANE_YZ</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>PLANE_YZ</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.PLANE_YZ ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a0fedce9ceb928ffc86620d3c273d652c_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a0fedce9ceb928ffc86620d3c273d652c_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a2b86939a1ef78cc4a6bb0cfb955d7376"/><section>
+    <title>POLAR_OFF()</title>
+<indexterm><primary>POLAR_OFF</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>POLAR_OFF</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.POLAR_OFF ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a2b86939a1ef78cc4a6bb0cfb955d7376_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a2b86939a1ef78cc4a6bb0cfb955d7376_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a759a3734dbd03221294b47bf757cad72"/><section>
+    <title>POLAR_ON()</title>
+<indexterm><primary>POLAR_ON</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>POLAR_ON</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.POLAR_ON ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a759a3734dbd03221294b47bf757cad72_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a759a3734dbd03221294b47bf757cad72_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1af1d39e2caaa4ddd4c3be64de53632b49"/><section>
+    <title>PROBE_AWAY_WITH_SIGNAL()</title>
+<indexterm><primary>PROBE_AWAY_WITH_SIGNAL</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>PROBE_AWAY_WITH_SIGNAL</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.PROBE_AWAY_WITH_SIGNAL ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_af1d39e2caaa4ddd4c3be64de53632b49_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1aa1f9a43224119e485c5a570489d2eb72"/><section>
+    <title>PROBE_AWAY_WITHOUT_SIGNAL()</title>
+<indexterm><primary>PROBE_AWAY_WITHOUT_SIGNAL</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>PROBE_AWAY_WITHOUT_SIGNAL</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.PROBE_AWAY_WITHOUT_SIGNAL ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_aa1f9a43224119e485c5a570489d2eb72_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a4283eb6c45aa049956527f9e7d3cb077"/><section>
+    <title>PROBE_TOWARDS_WITH_SIGNAL()</title>
+<indexterm><primary>PROBE_TOWARDS_WITH_SIGNAL</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>PROBE_TOWARDS_WITH_SIGNAL</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.PROBE_TOWARDS_WITH_SIGNAL ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a4283eb6c45aa049956527f9e7d3cb077_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a4283eb6c45aa049956527f9e7d3cb077_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1ac747132b73161faa7e1a8dc3ebaf95be"/><section>
+    <title>PROBE_TOWARDS_WITHOUT_SIGNAL()</title>
+<indexterm><primary>PROBE_TOWARDS_WITHOUT_SIGNAL</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>PROBE_TOWARDS_WITHOUT_SIGNAL</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.PROBE_TOWARDS_WITHOUT_SIGNAL ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_ac747132b73161faa7e1a8dc3ebaf95be_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a2ef6bee01de125549a428833fd3bdc95"/><section>
+    <title>PROGRAM()</title>
+<indexterm><primary>PROGRAM</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>PROGRAM</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.PROGRAM ( self)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a2ef6bee01de125549a428833fd3bdc95_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a84aafa8d86e1a826e6ce2677d0d63727"/><section>
+    <title>PROGRAM_END()</title>
+<indexterm><primary>PROGRAM_END</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>PROGRAM_END</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.PROGRAM_END ( self)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a84aafa8d86e1a826e6ce2677d0d63727_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a3ac978ca8609e6d5df33a285fa612bfe"/><section>
+    <title>RADIUS()</title>
+<indexterm><primary>RADIUS</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>RADIUS</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.RADIUS ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a3ac978ca8609e6d5df33a285fa612bfe_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a3ac978ca8609e6d5df33a285fa612bfe_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a815508af4a3c0c45b9c03dd2ce9f0f40"/><section>
+    <title>RAPID()</title>
+<indexterm><primary>RAPID</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>RAPID</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.RAPID ( self)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a815508af4a3c0c45b9c03dd2ce9f0f40_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a8062b6da058d81f1465a4ee8c462fbd0"/><section>
+    <title>READ_EXTRUDER_TEMP()</title>
+<indexterm><primary>READ_EXTRUDER_TEMP</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>READ_EXTRUDER_TEMP</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.READ_EXTRUDER_TEMP ( self)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1adf0e4de0e679428b138cd19b60aca8fc"/><section>
+    <title>REMOVE_TEMPORARY_COORDINATE_SYSTEM()</title>
+<indexterm><primary>REMOVE_TEMPORARY_COORDINATE_SYSTEM</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>REMOVE_TEMPORARY_COORDINATE_SYSTEM</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.REMOVE_TEMPORARY_COORDINATE_SYSTEM ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_adf0e4de0e679428b138cd19b60aca8fc_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_adf0e4de0e679428b138cd19b60aca8fc_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a9e6aaeacab386c604eb60cd7171fe845"/><section>
+    <title>RETRACT()</title>
+<indexterm><primary>RETRACT</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>RETRACT</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.RETRACT ( self,  format,  height)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a9e6aaeacab386c604eb60cd7171fe845_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a3e28b767e1a820438a01440206e9fb6d"/><section>
+    <title>SET_TEMPORARY_COORDINATE_SYSTEM()</title>
+<indexterm><primary>SET_TEMPORARY_COORDINATE_SYSTEM</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>SET_TEMPORARY_COORDINATE_SYSTEM</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.SET_TEMPORARY_COORDINATE_SYSTEM ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a3e28b767e1a820438a01440206e9fb6d_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a3e28b767e1a820438a01440206e9fb6d_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a497077e0e500cc8f419b8f3f61f008b4"/><section>
+    <title>SPACE()</title>
+<indexterm><primary>SPACE</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>SPACE</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.SPACE ( self)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a778bcba6e28aa838972d953afe798eb9"/><section>
+    <title>SPINDLE()</title>
+<indexterm><primary>SPINDLE</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>SPINDLE</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.SPINDLE ( self,  format,  speed)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a778bcba6e28aa838972d953afe798eb9_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1aa6f2eeec672be66886aee3a9e329205c"/><section>
+    <title>SPINDLE_CCW()</title>
+<indexterm><primary>SPINDLE_CCW</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>SPINDLE_CCW</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.SPINDLE_CCW ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_aa6f2eeec672be66886aee3a9e329205c_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_aa6f2eeec672be66886aee3a9e329205c_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1aa44d414cfc2fa1c1e5a6b69616399b37"/><section>
+    <title>SPINDLE_CW()</title>
+<indexterm><primary>SPINDLE_CW</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>SPINDLE_CW</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.SPINDLE_CW ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_aa44d414cfc2fa1c1e5a6b69616399b37_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_aa44d414cfc2fa1c1e5a6b69616399b37_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1ab365cad523971a220cc52726196c174a"/><section>
+    <title>STEPPERS_OFF()</title>
+<indexterm><primary>STEPPERS_OFF</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>STEPPERS_OFF</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.STEPPERS_OFF ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_ab365cad523971a220cc52726196c174a_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a339effba69001baa0d6f1c7d82ad1214"/><section>
+    <title>STOP()</title>
+<indexterm><primary>STOP</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>STOP</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.STOP ( self)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a339effba69001baa0d6f1c7d82ad1214_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a70e315ef48856297645b6debcbb55548"/><section>
+    <title>STOP_OPTIONAL()</title>
+<indexterm><primary>STOP_OPTIONAL</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>STOP_OPTIONAL</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.STOP_OPTIONAL ( self)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a70e315ef48856297645b6debcbb55548_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a4a5aac98aa6fe6908e2bc5ea989b9298"/><section>
+    <title>SUBPROG_CALL()</title>
+<indexterm><primary>SUBPROG_CALL</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>SUBPROG_CALL</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.SUBPROG_CALL ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a4a5aac98aa6fe6908e2bc5ea989b9298_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a4a5aac98aa6fe6908e2bc5ea989b9298_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a604a36f406e8f9420e1c0f46a852eb13"/><section>
+    <title>SUBPROG_END()</title>
+<indexterm><primary>SUBPROG_END</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>SUBPROG_END</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.SUBPROG_END ( self)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a604a36f406e8f9420e1c0f46a852eb13_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a56a65aaa39338c37d13253c4daa353be"/><section>
+    <title>TIME()</title>
+<indexterm><primary>TIME</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>TIME</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.TIME ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a56a65aaa39338c37d13253c4daa353be_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a56a65aaa39338c37d13253c4daa353be_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1ad3e7ef50eabcb35110ee18b835785736"/><section>
+    <title>TOOL()</title>
+<indexterm><primary>TOOL</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>TOOL</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.TOOL ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_ad3e7ef50eabcb35110ee18b835785736_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_ad3e7ef50eabcb35110ee18b835785736_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1ab22b9b33e6fcb75337e30bb8155e45a9"/><section>
+    <title>TOOL_DEFINITION()</title>
+<indexterm><primary>TOOL_DEFINITION</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>TOOL_DEFINITION</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.TOOL_DEFINITION ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_ab22b9b33e6fcb75337e30bb8155e45a9_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_ab22b9b33e6fcb75337e30bb8155e45a9_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a478a7146a451ead8e8af6250d099736b"/><section>
+    <title>VALVE_CLOSE()</title>
+<indexterm><primary>VALVE_CLOSE</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>VALVE_CLOSE</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.VALVE_CLOSE ( self,  delay)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a478a7146a451ead8e8af6250d099736b_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1acf7241f362283abe9d64093f1ff370b1"/><section>
+    <title>VALVE_OPEN()</title>
+<indexterm><primary>VALVE_OPEN</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>VALVE_OPEN</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.VALVE_OPEN ( self,  delay)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_acf7241f362283abe9d64093f1ff370b1_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a55b7873fe223a5265274842df1167604"/><section>
+    <title>VARIABLE()</title>
+<indexterm><primary>VARIABLE</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>VARIABLE</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.VARIABLE ( self)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a55b7873fe223a5265274842df1167604_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a9c6db69ddf2182c0af0443cfc1ae61f0"/><section>
+    <title>VARIABLE_SET()</title>
+<indexterm><primary>VARIABLE_SET</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>VARIABLE_SET</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.VARIABLE_SET ( self)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a9c6db69ddf2182c0af0443cfc1ae61f0_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1af9ee4781020d355397093563966747f2"/><section>
+    <title>WORKPLANE()</title>
+<indexterm><primary>WORKPLANE</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>WORKPLANE</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.WORKPLANE ( self)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_af9ee4781020d355397093563966747f2_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1aa55ea50066c308715e6915d6fc91a6e2"/><section>
+    <title>WORKPLANE_BASE()</title>
+<indexterm><primary>WORKPLANE_BASE</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>WORKPLANE_BASE</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.WORKPLANE_BASE ( self)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_aa55ea50066c308715e6915d6fc91a6e2_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a2b10ac4ed70caaec1852ee295ac75cf5"/><section>
+    <title>X()</title>
+<indexterm><primary>X</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>X</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.X ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a2b10ac4ed70caaec1852ee295ac75cf5_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a2b10ac4ed70caaec1852ee295ac75cf5_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1a42aa4047d1d3b9167abcf20ee2cdf33f"/><section>
+    <title>Y()</title>
+<indexterm><primary>Y</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>Y</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.Y ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a42aa4047d1d3b9167abcf20ee2cdf33f_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_a42aa4047d1d3b9167abcf20ee2cdf33f_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1makerbot__codes_1_1Codes_1ae1410b9e3435455e10403d0b26b0cf67"/><section>
+    <title>Z()</title>
+<indexterm><primary>Z</primary><secondary>cam.nc.makerbot_codes.Codes</secondary></indexterm>
+<indexterm><primary>cam.nc.makerbot_codes.Codes</primary><secondary>Z</secondary></indexterm>
+<para><computeroutput>cam.nc.makerbot_codes.Codes.Z ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_ae1410b9e3435455e10403d0b26b0cf67_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1makerbot__codes_1_1Codes_ae1410b9e3435455e10403d0b26b0cf67_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/<link linkend="_makerbot__codes_8py">makerbot_codes.py</link></section>
+</section>

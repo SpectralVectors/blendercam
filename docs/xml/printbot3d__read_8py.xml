@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="printbot3d__read_8py" kind="file" language="Python">
+    <compoundname>printbot3d_read.py</compoundname>
+    <innerclass refid="classcam_1_1nc_1_1printbot3d__read_1_1Parser" prot="public">cam::nc::printbot3d_read::Parser</innerclass>
+    <innernamespace refid="namespacecam">cam</innernamespace>
+    <innernamespace refid="namespacecam_1_1nc">cam::nc</innernamespace>
+    <innernamespace refid="namespacecam_1_1nc_1_1printbot3d__read">cam::nc::printbot3d_read</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacecam_1_1nc_1_1printbot3d__read" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>iso_read<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>iso</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>sys</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">#<sp/>based<sp/>on<sp/>the<sp/>iso<sp/>reader</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="classcam_1_1nc_1_1printbot3d__read_1_1Parser" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classcam_1_1nc_1_1printbot3d__read_1_1Parser" kindref="compound">Parser</ref>(iso.Parser):</highlight></codeline>
+<codeline lineno="8" refid="classcam_1_1nc_1_1printbot3d__read_1_1Parser_1af930113951265adcfe25ad8c45dad464" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classcam_1_1nc_1_1printbot3d__read_1_1Parser_1af930113951265adcfe25ad8c45dad464" kindref="member">__init__</ref>(self,<sp/>writer):</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iso.Parser.__init__(self,<sp/>writer)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="classcam_1_1nc_1_1printbot3d__read_1_1Parser_1a528b334fd6cf8a66b6de18fec69654a8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classcam_1_1nc_1_1printbot3d__read_1_1Parser_1a528b334fd6cf8a66b6de18fec69654a8" kindref="member">ParseWord</ref>(self,<sp/>word):</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iso.Parser.ParseWord(self,<sp/>word)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(word<sp/>==<sp/></highlight><highlight class="stringliteral">&apos;M103&apos;</highlight><highlight class="normal">):</highlight></codeline>
+<codeline lineno="14" refid="classcam_1_1nc_1_1printbot3d__read_1_1Parser_1ab2f87bb18d00995fbc69a70123fab8cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classcam_1_1nc_1_1printbot3d__read_1_1Parser_1ab2f87bb18d00995fbc69a70123fab8cd" kindref="member">path_col</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;rapid&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classcam_1_1nc_1_1printbot3d__read_1_1Parser_1a4b45dbf07aef609717c9ba8736e01ba5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classcam_1_1nc_1_1printbot3d__read_1_1Parser_1a4b45dbf07aef609717c9ba8736e01ba5" kindref="member">col</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;rapid&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/>(word<sp/>==<sp/></highlight><highlight class="stringliteral">&apos;M101&apos;</highlight><highlight class="normal">):</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classcam_1_1nc_1_1printbot3d__read_1_1Parser_1ab2f87bb18d00995fbc69a70123fab8cd" kindref="member">path_col</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;feed&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classcam_1_1nc_1_1printbot3d__read_1_1Parser_1a4b45dbf07aef609717c9ba8736e01ba5" kindref="member">col</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;feed&quot;</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/printbot3d_read.py"/>
+  </compounddef>
+</doxygen>

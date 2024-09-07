@@ -1,0 +1,630 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel" kind="class" language="Python" prot="public">
+    <compoundname>cam::ui_panels::buttons_panel::CAMButtonsPanel</compoundname>
+    <derivedcompoundref refid="classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel" prot="public" virt="non-virtual">cam.ui_panels.area.CAM_AREA_Panel</derivedcompoundref>
+    <derivedcompoundref refid="classcam_1_1ui__panels_1_1chains_1_1CAM__CHAINS__Panel" prot="public" virt="non-virtual">cam.ui_panels.chains.CAM_CHAINS_Panel</derivedcompoundref>
+    <derivedcompoundref refid="classcam_1_1ui__panels_1_1cutter_1_1CAM__CUTTER__Panel" prot="public" virt="non-virtual">cam.ui_panels.cutter.CAM_CUTTER_Panel</derivedcompoundref>
+    <derivedcompoundref refid="classcam_1_1ui__panels_1_1feedrate_1_1CAM__FEEDRATE__Panel" prot="public" virt="non-virtual">cam.ui_panels.feedrate.CAM_FEEDRATE_Panel</derivedcompoundref>
+    <derivedcompoundref refid="classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel" prot="public" virt="non-virtual">cam.ui_panels.gcode.CAM_GCODE_Panel</derivedcompoundref>
+    <derivedcompoundref refid="classcam_1_1ui__panels_1_1info_1_1CAM__INFO__Panel" prot="public" virt="non-virtual">cam.ui_panels.info.CAM_INFO_Panel</derivedcompoundref>
+    <derivedcompoundref refid="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Panel" prot="public" virt="non-virtual">cam.ui_panels.interface.CAM_INTERFACE_Panel</derivedcompoundref>
+    <derivedcompoundref refid="classcam_1_1ui__panels_1_1machine_1_1CAM__MACHINE__Panel" prot="public" virt="non-virtual">cam.ui_panels.machine.CAM_MACHINE_Panel</derivedcompoundref>
+    <derivedcompoundref refid="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Panel" prot="public" virt="non-virtual">cam.ui_panels.material.CAM_MATERIAL_Panel</derivedcompoundref>
+    <derivedcompoundref refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Panel" prot="public" virt="non-virtual">cam.ui_panels.movement.CAM_MOVEMENT_Panel</derivedcompoundref>
+    <derivedcompoundref refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel" prot="public" virt="non-virtual">cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel</derivedcompoundref>
+    <derivedcompoundref refid="classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel" prot="public" virt="non-virtual">cam.ui_panels.operations.CAM_OPERATIONS_Panel</derivedcompoundref>
+    <derivedcompoundref refid="classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel" prot="public" virt="non-virtual">cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel</derivedcompoundref>
+    <derivedcompoundref refid="classcam_1_1ui__panels_1_1pack_1_1CAM__PACK__Panel" prot="public" virt="non-virtual">cam.ui_panels.pack.CAM_PACK_Panel</derivedcompoundref>
+    <derivedcompoundref refid="classcam_1_1ui__panels_1_1slice_1_1CAM__SLICE__Panel" prot="public" virt="non-virtual">cam.ui_panels.slice.CAM_SLICE_Panel</derivedcompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a875a6b4e703be8c259b1d750426c76ad" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.ui_panels.buttons_panel.CAMButtonsPanel::bl_space_type</definition>
+        <argsstring></argsstring>
+        <name>bl_space_type</name>
+        <qualifiedname>cam.ui_panels.buttons_panel.CAMButtonsPanel.bl_space_type</qualifiedname>
+        <initializer>=  &apos;PROPERTIES&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/buttons_panel.py" line="14" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/buttons_panel.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a9763fc8e0e8a24f2f6f4ab050829c6a2" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.ui_panels.buttons_panel.CAMButtonsPanel::bl_region_type</definition>
+        <argsstring></argsstring>
+        <name>bl_region_type</name>
+        <qualifiedname>cam.ui_panels.buttons_panel.CAMButtonsPanel.bl_region_type</qualifiedname>
+        <initializer>=  &apos;WINDOW&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/buttons_panel.py" line="15" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/buttons_panel.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a5da786aaf2c38c096f23a7f504866537" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.ui_panels.buttons_panel.CAMButtonsPanel::bl_context</definition>
+        <argsstring></argsstring>
+        <name>bl_context</name>
+        <qualifiedname>cam.ui_panels.buttons_panel.CAMButtonsPanel.bl_context</qualifiedname>
+        <initializer>=  &quot;render&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/buttons_panel.py" line="16" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/buttons_panel.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a7c1ca8db6e75af2657e5658f7e3d7219" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool cam.ui_panels.buttons_panel.CAMButtonsPanel::always_show_panel</definition>
+        <argsstring></argsstring>
+        <name>always_show_panel</name>
+        <qualifiedname>cam.ui_panels.buttons_panel.CAMButtonsPanel.always_show_panel</qualifiedname>
+        <initializer>=  False</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/buttons_panel.py" line="17" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/buttons_panel.py" bodystart="17" bodyend="-1"/>
+        <referencedby refid="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a03843f1fecc691952b696f4bc75a0156" compoundref="buttons__panel_8py" startline="23" endline="35">cam.ui_panels.buttons_panel.CAMButtonsPanel.poll</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a0864a41721ef5200ecbbf340a1f7d678" prot="public" static="yes" mutable="no">
+        <type>dict</type>
+        <definition>dict cam.ui_panels.buttons_panel.CAMButtonsPanel::COMPAT_ENGINES</definition>
+        <argsstring></argsstring>
+        <name>COMPAT_ENGINES</name>
+        <qualifiedname>cam.ui_panels.buttons_panel.CAMButtonsPanel.COMPAT_ENGINES</qualifiedname>
+        <initializer>=  {&apos;CNCCAM_RENDER&apos;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/buttons_panel.py" line="18" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/buttons_panel.py" bodystart="18" bodyend="-1"/>
+        <referencedby refid="classcam_1_1basrelief_1_1BASRELIEF__Panel_1a5691a061bfdef15dbb1574f67ce3f29d" compoundref="basrelief_8py" startline="1225" endline="1228">cam.basrelief.BASRELIEF_Panel.poll</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a03843f1fecc691952b696f4bc75a0156" compoundref="buttons__panel_8py" startline="23" endline="35">cam.ui_panels.buttons_panel.CAMButtonsPanel.poll</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a62a27293a2c27a52a2f779e92312c9b6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.ui_panels.buttons_panel.CAMButtonsPanel::op</definition>
+        <argsstring></argsstring>
+        <name>op</name>
+        <qualifiedname>cam.ui_panels.buttons_panel.CAMButtonsPanel.op</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/buttons_panel.py" line="50" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/buttons_panel.py" bodystart="50" bodyend="-1"/>
+        <referencedby refid="classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_1afbfc7e65c6e2651d65c1f8595a08a672" compoundref="area_8py" startline="87" endline="95">cam.ui_panels.area.CAM_AREA_Panel.draw_ambient</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel_1a783dfee1d3a0b5d71fb3d90200e9a58f" compoundref="op__properties_8py" startline="218" endline="228">cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel.draw_array</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Panel_1a0adea8656cf485cbf62c14a48cebbcd0" compoundref="material_8py" startline="152" endline="162">cam.ui_panels.material.CAM_MATERIAL_Panel.draw_axis_alignment</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1cutter_1_1CAM__CUTTER__Panel_1af9f2eb32c7411a790b5cf9374204d645" compoundref="cutter_8py" startline="53" endline="58">cam.ui_panels.cutter.CAM_CUTTER_Panel.draw_ball_radius</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel_1aa6e96261047a001156487e2f404393a6" compoundref="op__properties_8py" startline="201" endline="212">cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel.draw_bridges_options</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1cutter_1_1CAM__CUTTER__Panel_1abef4ba14261a71b25d994ce863d71304" compoundref="cutter_8py" startline="59" endline="64">cam.ui_panels.cutter.CAM_CUTTER_Panel.draw_bull_radius</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1a2cac88fc51b14921044bd982fae2203a" compoundref="operations_8py" startline="63" endline="76">cam.ui_panels.operations.CAM_OPERATIONS_Panel.draw_calculate_path</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel_1a439620d6783d601be657a23c8c3a3475" compoundref="op__properties_8py" startline="156" endline="162">cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel.draw_carve_options</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1cutter_1_1CAM__CUTTER__Panel_1a23a1790a0b6830902db33b7b23c5ac1c" compoundref="cutter_8py" startline="97" endline="107">cam.ui_panels.cutter.CAM_CUTTER_Panel.draw_custom</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Panel_1a7072245401fbfa2911302d37851513b6" compoundref="movement_8py" startline="240" endline="246">cam.ui_panels.movement.CAM_MOVEMENT_Panel.draw_cut_type</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel_1a88eaa520b297fcf1661e0b726e64e14e" compoundref="op__properties_8py" startline="129" endline="142">cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel.draw_cutout_options</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel_1adefd594c4c73f1f6f32ef8835ef35271" compoundref="op__properties_8py" startline="94" endline="98">cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel.draw_cutout_type</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1cutter_1_1CAM__CUTTER__Panel_1a5715c2d999c54abe47b14953b493033c" compoundref="cutter_8py" startline="119" endline="123">cam.ui_panels.cutter.CAM_CUTTER_Panel.draw_cutter_description</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1cutter_1_1CAM__CUTTER__Panel_1a6d450e9cca80d273e2f1e91a52243984" compoundref="cutter_8py" startline="108" endline="112">cam.ui_panels.cutter.CAM_CUTTER_Panel.draw_cutter_diameter</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel_1a9bef32fd7c6edb48e55bbea853d41f22" compoundref="op__properties_8py" startline="42" endline="55">cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel.draw_cutter_engagement</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1cutter_1_1CAM__CUTTER__Panel_1a9e19824938f88862901af3e56926cbd8" compoundref="cutter_8py" startline="113" endline="118">cam.ui_panels.cutter.CAM_CUTTER_Panel.draw_cutter_flutes</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1cutter_1_1CAM__CUTTER__Panel_1a00eeb5a5ebe5fc78ca3438b11d6fefd8" compoundref="cutter_8py" startline="71" endline="76">cam.ui_panels.cutter.CAM_CUTTER_Panel.draw_cutter_tip_angle</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1cutter_1_1CAM__CUTTER__Panel_1af26938e5edacc3f6865406b20aeb7584" compoundref="cutter_8py" startline="48" endline="52">cam.ui_panels.cutter.CAM_CUTTER_Panel.draw_cutter_type</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1cutter_1_1CAM__CUTTER__Panel_1a227b3e19b5d558b99409c76567386088" compoundref="cutter_8py" startline="65" endline="70">cam.ui_panels.cutter.CAM_CUTTER_Panel.draw_cylcone_diameter</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel_1a301265f9049cabb22471000535705c7e" compoundref="op__properties_8py" startline="189" endline="200">cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel.draw_default_options</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel_1ab32cc808a9d14b7da0661f9fec7a1be9" compoundref="op__properties_8py" startline="172" endline="178">cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel.draw_drill_options</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel_1a486634a9ac1d8a59253b7d7ce1bf30d1" compoundref="op__properties_8py" startline="78" endline="93">cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel.draw_enable_A_B_axis</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel_1ac7ddaea513f711c6dd68411d8a0c9c41" compoundref="gcode_8py" startline="40" endline="47">cam.ui_panels.gcode.CAM_GCODE_Panel.draw_enable_dust</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel_1a6343153f6c5842028c863f651b5740d6" compoundref="gcode_8py" startline="48" endline="55">cam.ui_panels.gcode.CAM_GCODE_Panel.draw_enable_hold</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel_1ac075b89a16853b0dc3bab7f566103284" compoundref="gcode_8py" startline="56" endline="63">cam.ui_panels.gcode.CAM_GCODE_Panel.draw_enable_mist</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1cutter_1_1CAM__CUTTER__Panel_1aa47966b74a35ae595db08e204ae21907" compoundref="cutter_8py" startline="124" endline="141">cam.ui_panels.cutter.CAM_CUTTER_Panel.draw_engagement</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Panel_1a340912e256404e190d15f10b83ca83c4" compoundref="material_8py" startline="131" endline="136">cam.ui_panels.material.CAM_MATERIAL_Panel.draw_estimate_from_image</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Panel_1a08b5a69206e7fdae8ecc766e501f4f24" compoundref="material_8py" startline="137" endline="150">cam.ui_panels.material.CAM_MATERIAL_Panel.draw_estimate_from_object</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1a575a4309a1c9f9764e9081a77190a8d4" compoundref="optimisation_8py" startline="122" endline="147">cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel.draw_exact_mode</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1a9d51da20ff311e42969e40b8823865dc" compoundref="operations_8py" startline="77" endline="85">cam.ui_panels.operations.CAM_OPERATIONS_Panel.draw_export_gcode</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_1a1a8049fa43f39b40f5716a3efc85d7f3" compoundref="area_8py" startline="38" endline="45">cam.ui_panels.area.CAM_AREA_Panel.draw_first_down</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Panel_1a3502dc66ea08955cb9fb487ddf2423c5" compoundref="movement_8py" startline="252" endline="259">cam.ui_panels.movement.CAM_MOVEMENT_Panel.draw_free_height</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Panel_1adcb6b55e911b4aa1fd5df72a3c3ccab8" compoundref="movement_8py" startline="275" endline="283">cam.ui_panels.movement.CAM_MOVEMENT_Panel.draw_helix_enter</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1ab5e95d9b1bc62010c4e5ca73b04bffc3" compoundref="optimisation_8py" startline="186" endline="190">cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel.draw_hide_all_others</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1cutter_1_1CAM__CUTTER__Panel_1a7510cdb6efde1ca3d33fd97d687806ed" compoundref="cutter_8py" startline="77" endline="85">cam.ui_panels.cutter.CAM_CUTTER_Panel.draw_laser</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel_1a3187f842df82c01aa030757f86d1eabd" compoundref="op__properties_8py" startline="109" endline="114">cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel.draw_lead_in_out</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_1ae5b5413182cd6772e7a4af7fbfca5ebf" compoundref="area_8py" startline="96" endline="103">cam.ui_panels.area.CAM_AREA_Panel.draw_limit_curve</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_1aa134833afdf6802c89373a1e9f5e6048" compoundref="area_8py" startline="46" endline="55">cam.ui_panels.area.CAM_AREA_Panel.draw_maxz</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel_1a99c52cec85f8a8ea676645c856096c25" compoundref="op__properties_8py" startline="163" endline="171">cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel.draw_medial_axis_options</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel_1a77b2c1fdf455572f3529d2b64d62eda9" compoundref="op__properties_8py" startline="124" endline="128">cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel.draw_merge</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_1ad9e466c7c4e2730e608ee8238988e2d4" compoundref="area_8py" startline="56" endline="86">cam.ui_panels.area.CAM_AREA_Panel.draw_minz</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1info_1_1CAM__INFO__Panel_1a7b7dc6ce7eb3b099842cd61167146e9d" compoundref="info_8py" startline="123" endline="131">cam.ui_panels.info.CAM_INFO_Panel.draw_op_chipload</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1a90da0199f0b862e5fa58def12d862cfc" compoundref="operations_8py" startline="97" endline="101">cam.ui_panels.operations.CAM_OPERATIONS_Panel.draw_op_filename</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1info_1_1CAM__INFO__Panel_1a85e155ef768b03e592836f76a7e840e8" compoundref="info_8py" startline="133" endline="150">cam.ui_panels.info.CAM_INFO_Panel.draw_op_money_cost</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1info_1_1CAM__INFO__Panel_1ac847d45e11dc361359b70036b59d921f" compoundref="info_8py" startline="107" endline="121">cam.ui_panels.info.CAM_INFO_Panel.draw_op_time</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1info_1_1CAM__INFO__Panel_1af08687f926e8cc67126d43e773979035" compoundref="info_8py" startline="99" endline="105">cam.ui_panels.info.CAM_INFO_Panel.draw_op_warnings</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1acc295337cbf9377edb78df8b6f993942" compoundref="operations_8py" startline="106" endline="133">cam.ui_panels.operations.CAM_OPERATIONS_Panel.draw_operation_source</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1aa1c76874b76a32c600f78d29cd50305b" compoundref="optimisation_8py" startline="114" endline="121">cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel.draw_optimize</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel_1a8637affd750bc1409f9a9cfae15ac502" compoundref="op__properties_8py" startline="115" endline="123">cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel.draw_outlines</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel_1af71ab5ab830cebec747e82519d15aef7" compoundref="gcode_8py" startline="33" endline="39">cam.ui_panels.gcode.CAM_GCODE_Panel.draw_output_trailer</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel_1a292e240c6371821d6c86b8496f099945" compoundref="op__properties_8py" startline="99" endline="103">cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel.draw_overshoot</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Panel_1a36669c7996e3f1010492131455a18d65" compoundref="movement_8py" startline="268" endline="274">cam.ui_panels.movement.CAM_MOVEMENT_Panel.draw_parallel_stepback</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1acde8e765f963d6225e59af781ee302cc" compoundref="optimisation_8py" startline="191" endline="195">cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel.draw_parent_path_to_object</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1cutter_1_1CAM__CUTTER__Panel_1a6e78a78bab696eabc0d01b50dc01dd3a" compoundref="cutter_8py" startline="86" endline="96">cam.ui_panels.cutter.CAM_CUTTER_Panel.draw_plasma</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1feedrate_1_1CAM__FEEDRATE__Panel_1ad80c003c52a7be9df070f74ac7d61942" compoundref="feedrate_8py" startline="41" endline="45">cam.ui_panels.feedrate.CAM_FEEDRATE_Panel.draw_plunge_angle</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1feedrate_1_1CAM__FEEDRATE__Panel_1a7c126b3df9814c9dbf72aa7b25a89a00" compoundref="feedrate_8py" startline="36" endline="40">cam.ui_panels.feedrate.CAM_FEEDRATE_Panel.draw_plunge_feedrate</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel_1a7f6fdd46f5f198cc7c6ee44033996820" compoundref="op__properties_8py" startline="179" endline="188">cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel.draw_pocket_options</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Panel_1a7c5c535648c44b7bc6512236e8bd0a7f" compoundref="movement_8py" startline="310" endline="317">cam.ui_panels.movement.CAM_MOVEMENT_Panel.draw_protect_vertical</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Panel_1a76db31726c77feb040e1e7a53ec54291" compoundref="movement_8py" startline="284" endline="293">cam.ui_panels.movement.CAM_MOVEMENT_Panel.draw_ramp</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Panel_1a3f9b5783d907fbd5c0e266b65a144338" compoundref="movement_8py" startline="294" endline="302">cam.ui_panels.movement.CAM_MOVEMENT_Panel.draw_retract_tangential</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1feedrate_1_1CAM__FEEDRATE__Panel_1affabd3a1bd804c7bf22246ca7f9f7df9" compoundref="feedrate_8py" startline="31" endline="35">cam.ui_panels.feedrate.CAM_FEEDRATE_Panel.draw_sim_feedrate</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1af8ea8f357590b9bb0ed6f392a8216f10" compoundref="optimisation_8py" startline="170" endline="179">cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel.draw_simplify_gcode</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1a9629ea6686782f916b4d617ad6121e10" compoundref="operations_8py" startline="86" endline="91">cam.ui_panels.operations.CAM_OPERATIONS_Panel.draw_simulate_op</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1a30579c18582052e2298f43a9f426f20a" compoundref="optimisation_8py" startline="163" endline="169">cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel.draw_simulation_detail</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel_1a5819c01f00bbfa7e9d7ae02d805aae33" compoundref="op__properties_8py" startline="213" endline="217">cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel.draw_skin</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Panel_1a04431bb431720ac5452d1d3504d8ed8a" compoundref="movement_8py" startline="247" endline="251">cam.ui_panels.movement.CAM_MOVEMENT_Panel.draw_spindle_rotation</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1feedrate_1_1CAM__FEEDRATE__Panel_1aebf52271dbfd3908cb9bc972bb8b3615" compoundref="feedrate_8py" startline="46" endline="50">cam.ui_panels.feedrate.CAM_FEEDRATE_Panel.draw_spindle_rpm</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel_1a2aacd17694371b734e499be8f1182cf4" compoundref="op__properties_8py" startline="104" endline="108">cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel.draw_startpoint</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Panel_1a3f60586a7ea0c1c314d44f3e8fafe1af" compoundref="movement_8py" startline="303" endline="309">cam.ui_panels.movement.CAM_MOVEMENT_Panel.draw_stay_low</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel_1a25a4625ec84f3df72748b35b70813220" compoundref="op__properties_8py" startline="61" endline="77">cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel.draw_strategy</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Panel_1aa5ceb736bda3ca2eece8558a1586371a" compoundref="movement_8py" startline="260" endline="267">cam.ui_panels.movement.CAM_MOVEMENT_Panel.draw_use_g64</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1aaf4f6a8659f5e9c5d4eaa1c4e1afd8d0" compoundref="optimisation_8py" startline="180" endline="185">cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel.draw_use_modifiers</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1a2151614ea12a845f3fb1a2314be6ab6b" compoundref="optimisation_8py" startline="148" endline="162">cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel.draw_use_opencamlib</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel_1afcbd9e6618efc0baa678d35d1badb1f6" compoundref="op__properties_8py" startline="143" endline="155">cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel.draw_waterline_options</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a3991296d0c3a293ee962391d01387868" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.ui_panels.buttons_panel.CAMButtonsPanel::use_experimental</definition>
+        <argsstring></argsstring>
+        <name>use_experimental</name>
+        <qualifiedname>cam.ui_panels.buttons_panel.CAMButtonsPanel.use_experimental</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/buttons_panel.py" line="52" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/buttons_panel.py" bodystart="52" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a03843f1fecc691952b696f4bc75a0156" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.ui_panels.buttons_panel.CAMButtonsPanel.poll</definition>
+        <argsstring>(cls, context)</argsstring>
+        <name>poll</name>
+        <qualifiedname>cam.ui_panels.buttons_panel.CAMButtonsPanel.poll</qualifiedname>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/buttons_panel.py" line="23" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/buttons_panel.py" bodystart="23" bodyend="35"/>
+        <references refid="classcam_1_1chain_1_1camChain_1ac9a1f7ebc806037119baafce4eb481c7" compoundref="chain_8py" startline="31">cam.chain.camChain.active_operation</references>
+        <references refid="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a9fe8584ab332e9830dfa800ee4582575" compoundref="buttons__panel_8py" startline="41" endline="48">cam.ui_panels.buttons_panel.CAMButtonsPanel.active_operation</references>
+        <references refid="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a7c1ca8db6e75af2657e5658f7e3d7219" compoundref="buttons__panel_8py" startline="17">cam.ui_panels.buttons_panel.CAMButtonsPanel.always_show_panel</references>
+        <references refid="classcam_1_1ui__panels_1_1chains_1_1CAM__CHAINS__Panel_1a4b2a3c8f688f83b004f5d03142ba39f0" compoundref="chains_8py" startline="46">cam.ui_panels.chains.CAM_CHAINS_Panel.always_show_panel</references>
+        <references refid="classcam_1_1ui__panels_1_1info_1_1CAM__INFO__Panel_1a3121d757ade20860de9a18761943f102" compoundref="info_8py" startline="63">cam.ui_panels.info.CAM_INFO_Panel.always_show_panel</references>
+        <references refid="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Panel_1af3991f62632953176ca2c957d53ae9a8" compoundref="interface_8py" startline="41">cam.ui_panels.interface.CAM_INTERFACE_Panel.always_show_panel</references>
+        <references refid="classcam_1_1ui__panels_1_1machine_1_1CAM__MACHINE__Panel_1a4259c7085bd818df9c493bc9025290bd" compoundref="machine_8py" startline="16">cam.ui_panels.machine.CAM_MACHINE_Panel.always_show_panel</references>
+        <references refid="classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1a7fa63b12d1265b69aba57124e34b35c6" compoundref="operations_8py" startline="25">cam.ui_panels.operations.CAM_OPERATIONS_Panel.always_show_panel</references>
+        <references refid="classcam_1_1basrelief_1_1BASRELIEF__Panel_1acfea5e9e41d713c355b08a2005bddab8" compoundref="basrelief_8py" startline="1220">cam.basrelief.BASRELIEF_Panel.COMPAT_ENGINES</references>
+        <references refid="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a0864a41721ef5200ecbbf340a1f7d678" compoundref="buttons__panel_8py" startline="18">cam.ui_panels.buttons_panel.CAMButtonsPanel.COMPAT_ENGINES</references>
+        <references refid="classcam_1_1ui__panels_1_1pack_1_1CAM__PACK__Panel_1afe435195fb162a070cf206cf2af7fb25" compoundref="ui__panels_2pack_8py" startline="18">cam.ui_panels.pack.CAM_PACK_Panel.COMPAT_ENGINES</references>
+        <references refid="classcam_1_1ui__panels_1_1slice_1_1CAM__SLICE__Panel_1a4bc989bf5765a5817c4501a2f0083262" compoundref="ui__panels_2slice_8py" startline="18">cam.ui_panels.slice.CAM_SLICE_Panel.COMPAT_ENGINES</references>
+        <references refid="classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_1afc2870818783dd5ad6a59429aea7b260" compoundref="area_8py" startline="17">cam.ui_panels.area.CAM_AREA_Panel.panel_interface_level</references>
+        <references refid="classcam_1_1ui__panels_1_1chains_1_1CAM__CHAINS__Panel_1a5b32a5d42e9470fff8faa637575777cb" compoundref="chains_8py" startline="45">cam.ui_panels.chains.CAM_CHAINS_Panel.panel_interface_level</references>
+        <references refid="classcam_1_1ui__panels_1_1cutter_1_1CAM__CUTTER__Panel_1a89ca2074a66a93f67fcc7740dc1300d7" compoundref="cutter_8py" startline="16">cam.ui_panels.cutter.CAM_CUTTER_Panel.panel_interface_level</references>
+        <references refid="classcam_1_1ui__panels_1_1feedrate_1_1CAM__FEEDRATE__Panel_1afaef48acdc278b97f30a5a4560f855b2" compoundref="feedrate_8py" startline="16">cam.ui_panels.feedrate.CAM_FEEDRATE_Panel.panel_interface_level</references>
+        <references refid="classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel_1aed4d97fe3fb3796d06d0c2c81dc785fc" compoundref="gcode_8py" startline="16">cam.ui_panels.gcode.CAM_GCODE_Panel.panel_interface_level</references>
+        <references refid="classcam_1_1ui__panels_1_1info_1_1CAM__INFO__Panel_1ac965095ffefc9a96e14f8a66c5ceee1b" compoundref="info_8py" startline="62">cam.ui_panels.info.CAM_INFO_Panel.panel_interface_level</references>
+        <references refid="classcam_1_1ui__panels_1_1machine_1_1CAM__MACHINE__Panel_1ae6708c8afceb31e71e86b83bccd88409" compoundref="machine_8py" startline="17">cam.ui_panels.machine.CAM_MACHINE_Panel.panel_interface_level</references>
+        <references refid="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Panel_1afb825d5692384df9bc44cbd78d146649" compoundref="material_8py" startline="123">cam.ui_panels.material.CAM_MATERIAL_Panel.panel_interface_level</references>
+        <references refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Panel_1afee7e5d747557c88b1226dcadf925c6f" compoundref="movement_8py" startline="225">cam.ui_panels.movement.CAM_MOVEMENT_Panel.panel_interface_level</references>
+        <references refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel_1aa32371ba745e40d55200238f1551b1e3" compoundref="op__properties_8py" startline="16">cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel.panel_interface_level</references>
+        <references refid="classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1abd383c0dd05859d2b8b9440c593596ad" compoundref="operations_8py" startline="26">cam.ui_panels.operations.CAM_OPERATIONS_Panel.panel_interface_level</references>
+        <references refid="classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1a061ccb00f38f0c3eeb6f09770932f198" compoundref="optimisation_8py" startline="112">cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel.panel_interface_level</references>
+        <references refid="classcam_1_1ui__panels_1_1pack_1_1CAM__PACK__Panel_1a27eb63e96d6a0ead22f392947dac29e9" compoundref="ui__panels_2pack_8py" startline="16">cam.ui_panels.pack.CAM_PACK_Panel.panel_interface_level</references>
+        <references refid="classcam_1_1ui__panels_1_1slice_1_1CAM__SLICE__Panel_1a9cbba0cac840b5b93da004962840cbb0" compoundref="ui__panels_2slice_8py" startline="16">cam.ui_panels.slice.CAM_SLICE_Panel.panel_interface_level</references>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1ae2df719a61472a3f8674e26fe501b1f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.ui_panels.buttons_panel.CAMButtonsPanel.active_operation_index</definition>
+        <argsstring>(cls)</argsstring>
+        <name>active_operation_index</name>
+        <qualifiedname>cam.ui_panels.buttons_panel.CAMButtonsPanel.active_operation_index</qualifiedname>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/buttons_panel.py" line="37" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/buttons_panel.py" bodystart="37" bodyend="39"/>
+        <referencedby refid="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a9fe8584ab332e9830dfa800ee4582575" compoundref="buttons__panel_8py" startline="41" endline="48">cam.ui_panels.buttons_panel.CAMButtonsPanel.active_operation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a9fe8584ab332e9830dfa800ee4582575" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.ui_panels.buttons_panel.CAMButtonsPanel.active_operation</definition>
+        <argsstring>(cls)</argsstring>
+        <name>active_operation</name>
+        <qualifiedname>cam.ui_panels.buttons_panel.CAMButtonsPanel.active_operation</qualifiedname>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/buttons_panel.py" line="41" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/buttons_panel.py" bodystart="41" bodyend="48"/>
+        <references refid="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1ae2df719a61472a3f8674e26fe501b1f7" compoundref="buttons__panel_8py" startline="37" endline="39">cam.ui_panels.buttons_panel.CAMButtonsPanel.active_operation_index</references>
+        <referencedby refid="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a03843f1fecc691952b696f4bc75a0156" compoundref="buttons__panel_8py" startline="23" endline="35">cam.ui_panels.buttons_panel.CAMButtonsPanel.poll</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1acbcf6bed1c104021565fc4a486d1101a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.ui_panels.buttons_panel.CAMButtonsPanel.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>cam.ui_panels.buttons_panel.CAMButtonsPanel.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/buttons_panel.py" line="49" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/buttons_panel.py" bodystart="49" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1aae624325882f33dd8820cdf27df16e4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.ui_panels.buttons_panel.CAMButtonsPanel.operations_count</definition>
+        <argsstring>(self)</argsstring>
+        <name>operations_count</name>
+        <qualifiedname>cam.ui_panels.buttons_panel.CAMButtonsPanel.operations_count</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/buttons_panel.py" line="54" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/buttons_panel.py" bodystart="54" bodyend="56"/>
+        <referencedby refid="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a3e5e2105cb372d0ad7ee959fa38e10e2" compoundref="buttons__panel_8py" startline="57" endline="59">cam.ui_panels.buttons_panel.CAMButtonsPanel.has_operations</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a3e5e2105cb372d0ad7ee959fa38e10e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.ui_panels.buttons_panel.CAMButtonsPanel.has_operations</definition>
+        <argsstring>(self)</argsstring>
+        <name>has_operations</name>
+        <qualifiedname>cam.ui_panels.buttons_panel.CAMButtonsPanel.has_operations</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/buttons_panel.py" line="57" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/buttons_panel.py" bodystart="57" bodyend="59"/>
+        <references refid="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1aae624325882f33dd8820cdf27df16e4e" compoundref="buttons__panel_8py" startline="54" endline="56">cam.ui_panels.buttons_panel.CAMButtonsPanel.operations_count</references>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a41c101f031fc5ecdb0097889cf452de0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.ui_panels.buttons_panel.CAMButtonsPanel.has_correct_level</definition>
+        <argsstring>(self)</argsstring>
+        <name>has_correct_level</name>
+        <qualifiedname>cam.ui_panels.buttons_panel.CAMButtonsPanel.has_correct_level</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/buttons_panel.py" line="60" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/buttons_panel.py" bodystart="60" bodyend="70"/>
+        <references refid="classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_1ada410a6ab5a4cda97a33636cd514c8bf" compoundref="area_8py" startline="105">cam.ui_panels.area.CAM_AREA_Panel.context</references>
+        <references refid="classcam_1_1ui__panels_1_1cutter_1_1CAM__CUTTER__Panel_1a31bf0ed2e73fdc29abc93ee361358062" compoundref="cutter_8py" startline="143">cam.ui_panels.cutter.CAM_CUTTER_Panel.context</references>
+        <references refid="classcam_1_1ui__panels_1_1feedrate_1_1CAM__FEEDRATE__Panel_1af7ea3c39477abb98277067638950a1a7" compoundref="feedrate_8py" startline="52">cam.ui_panels.feedrate.CAM_FEEDRATE_Panel.context</references>
+        <references refid="classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel_1abb45a3bb21c5415449183d072d665b86" compoundref="gcode_8py" startline="65">cam.ui_panels.gcode.CAM_GCODE_Panel.context</references>
+        <references refid="classcam_1_1ui__panels_1_1info_1_1CAM__INFO__Panel_1aae3fadda191ebfce61e3fd84edb2284f" compoundref="info_8py" startline="153">cam.ui_panels.info.CAM_INFO_Panel.context</references>
+        <references refid="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Panel_1a31b339ea41c92a6cfa95bb8ba47522eb" compoundref="interface_8py" startline="47">cam.ui_panels.interface.CAM_INTERFACE_Panel.context</references>
+        <references refid="classcam_1_1ui__panels_1_1machine_1_1CAM__MACHINE__Panel_1a559531bb037b54b7470389776a73118a" compoundref="machine_8py" startline="123">cam.ui_panels.machine.CAM_MACHINE_Panel.context</references>
+        <references refid="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Panel_1ae1cd1999cc1aac994ff997d4743c1092" compoundref="material_8py" startline="164">cam.ui_panels.material.CAM_MATERIAL_Panel.context</references>
+        <references refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Panel_1a5c12b437ced467769af0add281ad6ad0" compoundref="movement_8py" startline="319">cam.ui_panels.movement.CAM_MOVEMENT_Panel.context</references>
+        <references refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel_1a29c49c092513bd72e8072600cb39e12d" compoundref="op__properties_8py" startline="230">cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel.context</references>
+        <references refid="classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1a0b6245dcfcc11980601bf16f2a029ebc" compoundref="operations_8py" startline="135">cam.ui_panels.operations.CAM_OPERATIONS_Panel.context</references>
+        <references refid="classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1aaa7c9818d8ae45b9e01a4278c6ed6a45" compoundref="optimisation_8py" startline="197">cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel.context</references>
+        <references refid="classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_1ab9fd43f718be543c04828424917ca500" compoundref="area_8py" startline="19">cam.ui_panels.area.CAM_AREA_Panel.prop_level</references>
+        <references refid="classcam_1_1ui__panels_1_1cutter_1_1CAM__CUTTER__Panel_1a627659072e8bff69c5bb55784af27f7f" compoundref="cutter_8py" startline="18">cam.ui_panels.cutter.CAM_CUTTER_Panel.prop_level</references>
+        <references refid="classcam_1_1ui__panels_1_1feedrate_1_1CAM__FEEDRATE__Panel_1af4ed8fcf7c160d9adaf060a68a80b91b" compoundref="feedrate_8py" startline="18">cam.ui_panels.feedrate.CAM_FEEDRATE_Panel.prop_level</references>
+        <references refid="classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel_1a415d624d3c645e2383a59b6e9514838c" compoundref="gcode_8py" startline="18">cam.ui_panels.gcode.CAM_GCODE_Panel.prop_level</references>
+        <references refid="classcam_1_1ui__panels_1_1info_1_1CAM__INFO__Panel_1a6d8c52c223010981dab60be84d505931" compoundref="info_8py" startline="65">cam.ui_panels.info.CAM_INFO_Panel.prop_level</references>
+        <references refid="classcam_1_1ui__panels_1_1machine_1_1CAM__MACHINE__Panel_1a6ef9888bf89020dc398fb391e46fd37e" compoundref="machine_8py" startline="19">cam.ui_panels.machine.CAM_MACHINE_Panel.prop_level</references>
+        <references refid="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Panel_1a76d473a71f1d7d6e64d979c947de2abc" compoundref="material_8py" startline="125">cam.ui_panels.material.CAM_MATERIAL_Panel.prop_level</references>
+        <references refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Panel_1a2ccaa949381ef55c35b73ee2d9b33089" compoundref="movement_8py" startline="227">cam.ui_panels.movement.CAM_MOVEMENT_Panel.prop_level</references>
+        <references refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel_1a804949188544e97e80ba38ebb67797bb" compoundref="op__properties_8py" startline="18">cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel.prop_level</references>
+        <references refid="classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1ad809e89a1859824fddea4df1ce0d0f01" compoundref="operations_8py" startline="28">cam.ui_panels.operations.CAM_OPERATIONS_Panel.prop_level</references>
+        <referencedby refid="classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_1afbfc7e65c6e2651d65c1f8595a08a672" compoundref="area_8py" startline="87" endline="95">cam.ui_panels.area.CAM_AREA_Panel.draw_ambient</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel_1a783dfee1d3a0b5d71fb3d90200e9a58f" compoundref="op__properties_8py" startline="218" endline="228">cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel.draw_array</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Panel_1a0adea8656cf485cbf62c14a48cebbcd0" compoundref="material_8py" startline="152" endline="162">cam.ui_panels.material.CAM_MATERIAL_Panel.draw_axis_alignment</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1cutter_1_1CAM__CUTTER__Panel_1af9f2eb32c7411a790b5cf9374204d645" compoundref="cutter_8py" startline="53" endline="58">cam.ui_panels.cutter.CAM_CUTTER_Panel.draw_ball_radius</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1info_1_1CAM__INFO__Panel_1a98a4315bac34f3159ac0a8f0c74e5a9a" compoundref="info_8py" startline="75" endline="86">cam.ui_panels.info.CAM_INFO_Panel.draw_blendercam_version</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1machine_1_1CAM__MACHINE__Panel_1a28e6a130ac6b4be03e85ba909a9eac43" compoundref="machine_8py" startline="109" endline="116">cam.ui_panels.machine.CAM_MACHINE_Panel.draw_block_numbers</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel_1aa6e96261047a001156487e2f404393a6" compoundref="op__properties_8py" startline="201" endline="212">cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel.draw_bridges_options</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1cutter_1_1CAM__CUTTER__Panel_1abef4ba14261a71b25d994ce863d71304" compoundref="cutter_8py" startline="59" endline="64">cam.ui_panels.cutter.CAM_CUTTER_Panel.draw_bull_radius</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1a2cac88fc51b14921044bd982fae2203a" compoundref="operations_8py" startline="63" endline="76">cam.ui_panels.operations.CAM_OPERATIONS_Panel.draw_calculate_path</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel_1a439620d6783d601be657a23c8c3a3475" compoundref="op__properties_8py" startline="156" endline="162">cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel.draw_carve_options</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1machine_1_1CAM__MACHINE__Panel_1ad30ff0e12bab0514192357970f673018" compoundref="machine_8py" startline="104" endline="108">cam.ui_panels.machine.CAM_MACHINE_Panel.draw_collet_size</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1cutter_1_1CAM__CUTTER__Panel_1a23a1790a0b6830902db33b7b23c5ac1c" compoundref="cutter_8py" startline="97" endline="107">cam.ui_panels.cutter.CAM_CUTTER_Panel.draw_custom</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Panel_1a7072245401fbfa2911302d37851513b6" compoundref="movement_8py" startline="240" endline="246">cam.ui_panels.movement.CAM_MOVEMENT_Panel.draw_cut_type</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel_1a88eaa520b297fcf1661e0b726e64e14e" compoundref="op__properties_8py" startline="129" endline="142">cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel.draw_cutout_options</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel_1adefd594c4c73f1f6f32ef8835ef35271" compoundref="op__properties_8py" startline="94" endline="98">cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel.draw_cutout_type</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1cutter_1_1CAM__CUTTER__Panel_1a5715c2d999c54abe47b14953b493033c" compoundref="cutter_8py" startline="119" endline="123">cam.ui_panels.cutter.CAM_CUTTER_Panel.draw_cutter_description</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1cutter_1_1CAM__CUTTER__Panel_1a6d450e9cca80d273e2f1e91a52243984" compoundref="cutter_8py" startline="108" endline="112">cam.ui_panels.cutter.CAM_CUTTER_Panel.draw_cutter_diameter</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel_1a9bef32fd7c6edb48e55bbea853d41f22" compoundref="op__properties_8py" startline="42" endline="55">cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel.draw_cutter_engagement</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1cutter_1_1CAM__CUTTER__Panel_1a9e19824938f88862901af3e56926cbd8" compoundref="cutter_8py" startline="113" endline="118">cam.ui_panels.cutter.CAM_CUTTER_Panel.draw_cutter_flutes</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1cutter_1_1CAM__CUTTER__Panel_1acf04aaf07c00e437092bafc71f6e84a9" compoundref="cutter_8py" startline="43" endline="47">cam.ui_panels.cutter.CAM_CUTTER_Panel.draw_cutter_id</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1cutter_1_1CAM__CUTTER__Panel_1a04559e156b5c75c3b49b2d87c01c20e5" compoundref="cutter_8py" startline="35" endline="42">cam.ui_panels.cutter.CAM_CUTTER_Panel.draw_cutter_preset_menu</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1cutter_1_1CAM__CUTTER__Panel_1a00eeb5a5ebe5fc78ca3438b11d6fefd8" compoundref="cutter_8py" startline="71" endline="76">cam.ui_panels.cutter.CAM_CUTTER_Panel.draw_cutter_tip_angle</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1cutter_1_1CAM__CUTTER__Panel_1af26938e5edacc3f6865406b20aeb7584" compoundref="cutter_8py" startline="48" endline="52">cam.ui_panels.cutter.CAM_CUTTER_Panel.draw_cutter_type</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1cutter_1_1CAM__CUTTER__Panel_1a227b3e19b5d558b99409c76567386088" compoundref="cutter_8py" startline="65" endline="70">cam.ui_panels.cutter.CAM_CUTTER_Panel.draw_cylcone_diameter</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel_1a301265f9049cabb22471000535705c7e" compoundref="op__properties_8py" startline="189" endline="200">cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel.draw_default_options</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel_1ab32cc808a9d14b7da0661f9fec7a1be9" compoundref="op__properties_8py" startline="172" endline="178">cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel.draw_drill_options</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel_1a486634a9ac1d8a59253b7d7ce1bf30d1" compoundref="op__properties_8py" startline="78" endline="93">cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel.draw_enable_A_B_axis</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel_1ac7ddaea513f711c6dd68411d8a0c9c41" compoundref="gcode_8py" startline="40" endline="47">cam.ui_panels.gcode.CAM_GCODE_Panel.draw_enable_dust</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel_1a6343153f6c5842028c863f651b5740d6" compoundref="gcode_8py" startline="48" endline="55">cam.ui_panels.gcode.CAM_GCODE_Panel.draw_enable_hold</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel_1ac075b89a16853b0dc3bab7f566103284" compoundref="gcode_8py" startline="56" endline="63">cam.ui_panels.gcode.CAM_GCODE_Panel.draw_enable_mist</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1cutter_1_1CAM__CUTTER__Panel_1aa47966b74a35ae595db08e204ae21907" compoundref="cutter_8py" startline="124" endline="141">cam.ui_panels.cutter.CAM_CUTTER_Panel.draw_engagement</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Panel_1a340912e256404e190d15f10b83ca83c4" compoundref="material_8py" startline="131" endline="136">cam.ui_panels.material.CAM_MATERIAL_Panel.draw_estimate_from_image</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Panel_1a08b5a69206e7fdae8ecc766e501f4f24" compoundref="material_8py" startline="137" endline="150">cam.ui_panels.material.CAM_MATERIAL_Panel.draw_estimate_from_object</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1a575a4309a1c9f9764e9081a77190a8d4" compoundref="optimisation_8py" startline="122" endline="147">cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel.draw_exact_mode</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1a9d51da20ff311e42969e40b8823865dc" compoundref="operations_8py" startline="77" endline="85">cam.ui_panels.operations.CAM_OPERATIONS_Panel.draw_export_gcode</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1feedrate_1_1CAM__FEEDRATE__Panel_1af69672d062e20e27aea53b84ccf319a0" compoundref="feedrate_8py" startline="26" endline="30">cam.ui_panels.feedrate.CAM_FEEDRATE_Panel.draw_feedrate</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1machine_1_1CAM__MACHINE__Panel_1a0fb970372a46ebcb7c75bde8525cc2a8" compoundref="machine_8py" startline="74" endline="80">cam.ui_panels.machine.CAM_MACHINE_Panel.draw_feedrates</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_1a1a8049fa43f39b40f5716a3efc85d7f3" compoundref="area_8py" startline="38" endline="45">cam.ui_panels.area.CAM_AREA_Panel.draw_first_down</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Panel_1a3502dc66ea08955cb9fb487ddf2423c5" compoundref="movement_8py" startline="252" endline="259">cam.ui_panels.movement.CAM_MOVEMENT_Panel.draw_free_height</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Panel_1adcb6b55e911b4aa1fd5df72a3c3ccab8" compoundref="movement_8py" startline="275" endline="283">cam.ui_panels.movement.CAM_MOVEMENT_Panel.draw_helix_enter</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1ab5e95d9b1bc62010c4e5ca73b04bffc3" compoundref="optimisation_8py" startline="186" endline="190">cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel.draw_hide_all_others</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1machine_1_1CAM__MACHINE__Panel_1af7c24ce8c554a7e96da0bc2adc4f2876" compoundref="machine_8py" startline="117" endline="121">cam.ui_panels.machine.CAM_MACHINE_Panel.draw_hourly_rate</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1cutter_1_1CAM__CUTTER__Panel_1a7510cdb6efde1ca3d33fd97d687806ed" compoundref="cutter_8py" startline="77" endline="85">cam.ui_panels.cutter.CAM_CUTTER_Panel.draw_laser</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel_1a3187f842df82c01aa030757f86d1eabd" compoundref="op__properties_8py" startline="109" endline="114">cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel.draw_lead_in_out</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_1ae5b5413182cd6772e7a4af7fbfca5ebf" compoundref="area_8py" startline="96" endline="103">cam.ui_panels.area.CAM_AREA_Panel.draw_limit_curve</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel_1abed78d518c7adec9a23f9070209bf9d5" compoundref="op__properties_8py" startline="56" endline="60">cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel.draw_machine_axis</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_1aa134833afdf6802c89373a1e9f5e6048" compoundref="area_8py" startline="46" endline="55">cam.ui_panels.area.CAM_AREA_Panel.draw_maxz</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel_1a99c52cec85f8a8ea676645c856096c25" compoundref="op__properties_8py" startline="163" endline="171">cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel.draw_medial_axis_options</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel_1a77b2c1fdf455572f3529d2b64d62eda9" compoundref="op__properties_8py" startline="124" endline="128">cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel.draw_merge</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_1ad9e466c7c4e2730e608ee8238988e2d4" compoundref="area_8py" startline="56" endline="86">cam.ui_panels.area.CAM_AREA_Panel.draw_minz</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1info_1_1CAM__INFO__Panel_1a7b7dc6ce7eb3b099842cd61167146e9d" compoundref="info_8py" startline="123" endline="131">cam.ui_panels.info.CAM_INFO_Panel.draw_op_chipload</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1a90da0199f0b862e5fa58def12d862cfc" compoundref="operations_8py" startline="97" endline="101">cam.ui_panels.operations.CAM_OPERATIONS_Panel.draw_op_filename</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1info_1_1CAM__INFO__Panel_1a85e155ef768b03e592836f76a7e840e8" compoundref="info_8py" startline="133" endline="150">cam.ui_panels.info.CAM_INFO_Panel.draw_op_money_cost</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1ac335eea98d3c9cc7d06776f44a985a8e" compoundref="operations_8py" startline="92" endline="96">cam.ui_panels.operations.CAM_OPERATIONS_Panel.draw_op_name</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1info_1_1CAM__INFO__Panel_1ac847d45e11dc361359b70036b59d921f" compoundref="info_8py" startline="107" endline="121">cam.ui_panels.info.CAM_INFO_Panel.draw_op_time</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1info_1_1CAM__INFO__Panel_1af08687f926e8cc67126d43e773979035" compoundref="info_8py" startline="99" endline="105">cam.ui_panels.info.CAM_INFO_Panel.draw_op_warnings</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1info_1_1CAM__INFO__Panel_1a812ea5e3aa72cf15292f1307ae726913" compoundref="info_8py" startline="88" endline="97">cam.ui_panels.info.CAM_INFO_Panel.draw_opencamlib_version</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1acc295337cbf9377edb78df8b6f993942" compoundref="operations_8py" startline="106" endline="133">cam.ui_panels.operations.CAM_OPERATIONS_Panel.draw_operation_source</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1aa1c76874b76a32c600f78d29cd50305b" compoundref="optimisation_8py" startline="114" endline="121">cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel.draw_optimize</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel_1a8637affd750bc1409f9a9cfae15ac502" compoundref="op__properties_8py" startline="115" endline="123">cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel.draw_outlines</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel_1a8b011951e3a81341d63fa0d4f0454101" compoundref="gcode_8py" startline="26" endline="32">cam.ui_panels.gcode.CAM_GCODE_Panel.draw_output_header</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel_1af71ab5ab830cebec747e82519d15aef7" compoundref="gcode_8py" startline="33" endline="39">cam.ui_panels.gcode.CAM_GCODE_Panel.draw_output_trailer</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel_1a292e240c6371821d6c86b8496f099945" compoundref="op__properties_8py" startline="99" endline="103">cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel.draw_overshoot</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Panel_1a36669c7996e3f1010492131455a18d65" compoundref="movement_8py" startline="268" endline="274">cam.ui_panels.movement.CAM_MOVEMENT_Panel.draw_parallel_stepback</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1acde8e765f963d6225e59af781ee302cc" compoundref="optimisation_8py" startline="191" endline="195">cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel.draw_parent_path_to_object</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1cutter_1_1CAM__CUTTER__Panel_1a6e78a78bab696eabc0d01b50dc01dd3a" compoundref="cutter_8py" startline="86" endline="96">cam.ui_panels.cutter.CAM_CUTTER_Panel.draw_plasma</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1feedrate_1_1CAM__FEEDRATE__Panel_1ad80c003c52a7be9df070f74ac7d61942" compoundref="feedrate_8py" startline="41" endline="45">cam.ui_panels.feedrate.CAM_FEEDRATE_Panel.draw_plunge_angle</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1feedrate_1_1CAM__FEEDRATE__Panel_1a7c126b3df9814c9dbf72aa7b25a89a00" compoundref="feedrate_8py" startline="36" endline="40">cam.ui_panels.feedrate.CAM_FEEDRATE_Panel.draw_plunge_feedrate</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel_1a7f6fdd46f5f198cc7c6ee44033996820" compoundref="op__properties_8py" startline="179" endline="188">cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel.draw_pocket_options</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1machine_1_1CAM__MACHINE__Panel_1a0d9fe57ce9cf0db2c33c3d07b397abec" compoundref="machine_8py" startline="60" endline="68">cam.ui_panels.machine.CAM_MACHINE_Panel.draw_position_definitions</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1machine_1_1CAM__MACHINE__Panel_1a09a318851eb42d469968e755ff98e5cd" compoundref="machine_8py" startline="43" endline="47">cam.ui_panels.machine.CAM_MACHINE_Panel.draw_post_processor</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1machine_1_1CAM__MACHINE__Panel_1ad45316d8a7024107c5b4ac14d285c197" compoundref="machine_8py" startline="35" endline="42">cam.ui_panels.machine.CAM_MACHINE_Panel.draw_presets</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1a7dbb1ead4c39635eba23522b3a5e8575" compoundref="operations_8py" startline="55" endline="62">cam.ui_panels.operations.CAM_OPERATIONS_Panel.draw_presets</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Panel_1a7c5c535648c44b7bc6512236e8bd0a7f" compoundref="movement_8py" startline="310" endline="317">cam.ui_panels.movement.CAM_MOVEMENT_Panel.draw_protect_vertical</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Panel_1a76db31726c77feb040e1e7a53ec54291" compoundref="movement_8py" startline="284" endline="293">cam.ui_panels.movement.CAM_MOVEMENT_Panel.draw_ramp</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Panel_1a3f9b5783d907fbd5c0e266b65a144338" compoundref="movement_8py" startline="294" endline="302">cam.ui_panels.movement.CAM_MOVEMENT_Panel.draw_retract_tangential</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1feedrate_1_1CAM__FEEDRATE__Panel_1affabd3a1bd804c7bf22246ca7f9f7df9" compoundref="feedrate_8py" startline="31" endline="35">cam.ui_panels.feedrate.CAM_FEEDRATE_Panel.draw_sim_feedrate</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1af8ea8f357590b9bb0ed6f392a8216f10" compoundref="optimisation_8py" startline="170" endline="179">cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel.draw_simplify_gcode</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel_1a9629ea6686782f916b4d617ad6121e10" compoundref="operations_8py" startline="86" endline="91">cam.ui_panels.operations.CAM_OPERATIONS_Panel.draw_simulate_op</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1a30579c18582052e2298f43a9f426f20a" compoundref="optimisation_8py" startline="163" endline="169">cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel.draw_simulation_detail</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel_1a5819c01f00bbfa7e9d7ae02d805aae33" compoundref="op__properties_8py" startline="213" endline="217">cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel.draw_skin</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Panel_1a04431bb431720ac5452d1d3504d8ed8a" compoundref="movement_8py" startline="247" endline="251">cam.ui_panels.movement.CAM_MOVEMENT_Panel.draw_spindle_rotation</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1feedrate_1_1CAM__FEEDRATE__Panel_1aebf52271dbfd3908cb9bc972bb8b3615" compoundref="feedrate_8py" startline="46" endline="50">cam.ui_panels.feedrate.CAM_FEEDRATE_Panel.draw_spindle_rpm</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1machine_1_1CAM__MACHINE__Panel_1a7e2e2646497cd1105d06e2d8ef27bcc8" compoundref="machine_8py" startline="81" endline="89">cam.ui_panels.machine.CAM_MACHINE_Panel.draw_splindle_speeds</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1machine_1_1CAM__MACHINE__Panel_1aa65711cbf9025f4009c841c9a8407d9c" compoundref="machine_8py" startline="48" endline="54">cam.ui_panels.machine.CAM_MACHINE_Panel.draw_split_files</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel_1a2aacd17694371b734e499be8f1182cf4" compoundref="op__properties_8py" startline="104" endline="108">cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel.draw_startpoint</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Panel_1a3f60586a7ea0c1c314d44f3e8fafe1af" compoundref="movement_8py" startline="303" endline="309">cam.ui_panels.movement.CAM_MOVEMENT_Panel.draw_stay_low</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel_1a25a4625ec84f3df72748b35b70813220" compoundref="op__properties_8py" startline="61" endline="77">cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel.draw_strategy</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1machine_1_1CAM__MACHINE__Panel_1a01adf82848e40a0cc3599067f371a408" compoundref="machine_8py" startline="98" endline="103">cam.ui_panels.machine.CAM_MACHINE_Panel.draw_suplemental_axis</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1machine_1_1CAM__MACHINE__Panel_1ab05f47df2b2f39e0d9c989b83d35a2d9" compoundref="machine_8py" startline="55" endline="59">cam.ui_panels.machine.CAM_MACHINE_Panel.draw_system</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1machine_1_1CAM__MACHINE__Panel_1ac1247224b81d7d3ae8f0e76df79c185f" compoundref="machine_8py" startline="90" endline="97">cam.ui_panels.machine.CAM_MACHINE_Panel.draw_tool_options</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Panel_1aa5ceb736bda3ca2eece8558a1586371a" compoundref="movement_8py" startline="260" endline="267">cam.ui_panels.movement.CAM_MOVEMENT_Panel.draw_use_g64</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_1a97609194e155a1367d259fd9fc3b8007" compoundref="area_8py" startline="28" endline="37">cam.ui_panels.area.CAM_AREA_Panel.draw_use_layers</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1aaf4f6a8659f5e9c5d4eaa1c4e1afd8d0" compoundref="optimisation_8py" startline="180" endline="185">cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel.draw_use_modifiers</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel_1a2151614ea12a845f3fb1a2314be6ab6b" compoundref="optimisation_8py" startline="148" endline="162">cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel.draw_use_opencamlib</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel_1afcbd9e6618efc0baa678d35d1badb1f6" compoundref="op__properties_8py" startline="143" endline="155">cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel.draw_waterline_options</referencedby>
+        <referencedby refid="classcam_1_1ui__panels_1_1machine_1_1CAM__MACHINE__Panel_1a89df0ba173e7dec1f0d4373bd912ea89" compoundref="machine_8py" startline="69" endline="73">cam.ui_panels.machine.CAM_MACHINE_Panel.draw_working_area</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>cam.ui_panels.buttons_panel.CAMButtonsPanel</label>
+        <link refid="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel"/>
+      </node>
+      <node id="2">
+        <label>cam.ui_panels.area.CAM_AREA_Panel</label>
+        <link refid="classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>cam.ui_panels.chains.CAM_CHAINS_Panel</label>
+        <link refid="classcam_1_1ui__panels_1_1chains_1_1CAM__CHAINS__Panel"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>cam.ui_panels.cutter.CAM_CUTTER_Panel</label>
+        <link refid="classcam_1_1ui__panels_1_1cutter_1_1CAM__CUTTER__Panel"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>cam.ui_panels.feedrate.CAM_FEEDRATE_Panel</label>
+        <link refid="classcam_1_1ui__panels_1_1feedrate_1_1CAM__FEEDRATE__Panel"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>cam.ui_panels.gcode.CAM_GCODE_Panel</label>
+        <link refid="classcam_1_1ui__panels_1_1gcode_1_1CAM__GCODE__Panel"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>cam.ui_panels.info.CAM_INFO_Panel</label>
+        <link refid="classcam_1_1ui__panels_1_1info_1_1CAM__INFO__Panel"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>cam.ui_panels.interface.CAM_INTERFACE_Panel</label>
+        <link refid="classcam_1_1ui__panels_1_1interface_1_1CAM__INTERFACE__Panel"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>cam.ui_panels.machine.CAM_MACHINE_Panel</label>
+        <link refid="classcam_1_1ui__panels_1_1machine_1_1CAM__MACHINE__Panel"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>cam.ui_panels.material.CAM_MATERIAL_Panel</label>
+        <link refid="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Panel"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>cam.ui_panels.movement.CAM_MOVEMENT_Panel</label>
+        <link refid="classcam_1_1ui__panels_1_1movement_1_1CAM__MOVEMENT__Panel"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>cam.ui_panels.op_properties.CAM_OPERATION_PROPERTIES_Panel</label>
+        <link refid="classcam_1_1ui__panels_1_1op__properties_1_1CAM__OPERATION__PROPERTIES__Panel"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>cam.ui_panels.operations.CAM_OPERATIONS_Panel</label>
+        <link refid="classcam_1_1ui__panels_1_1operations_1_1CAM__OPERATIONS__Panel"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>cam.ui_panels.optimisation.CAM_OPTIMISATION_Panel</label>
+        <link refid="classcam_1_1ui__panels_1_1optimisation_1_1CAM__OPTIMISATION__Panel"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>cam.ui_panels.pack.CAM_PACK_Panel</label>
+        <link refid="classcam_1_1ui__panels_1_1pack_1_1CAM__PACK__Panel"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>cam.ui_panels.slice.CAM_SLICE_Panel</label>
+        <link refid="classcam_1_1ui__panels_1_1slice_1_1CAM__SLICE__Panel"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>bool</label>
+      </node>
+      <node id="1">
+        <label>cam.ui_panels.buttons_panel.CAMButtonsPanel</label>
+        <link refid="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>+bl_context</edgelabel>
+          <edgelabel>+bl_region_type</edgelabel>
+          <edgelabel>+bl_space_type</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+always_show_panel</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+COMPAT_ENGINES</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dict</label>
+      </node>
+      <node id="2">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/buttons_panel.py" line="13" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/buttons_panel.py" bodystart="13" bodyend="70"/>
+    <listofallmembers>
+      <member refid="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1acbcf6bed1c104021565fc4a486d1101a" prot="public" virt="non-virtual"><scope>cam::ui_panels::buttons_panel::CAMButtonsPanel</scope><name>__init__</name></member>
+      <member refid="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a9fe8584ab332e9830dfa800ee4582575" prot="public" virt="non-virtual"><scope>cam::ui_panels::buttons_panel::CAMButtonsPanel</scope><name>active_operation</name></member>
+      <member refid="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1ae2df719a61472a3f8674e26fe501b1f7" prot="public" virt="non-virtual"><scope>cam::ui_panels::buttons_panel::CAMButtonsPanel</scope><name>active_operation_index</name></member>
+      <member refid="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a7c1ca8db6e75af2657e5658f7e3d7219" prot="public" virt="non-virtual"><scope>cam::ui_panels::buttons_panel::CAMButtonsPanel</scope><name>always_show_panel</name></member>
+      <member refid="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a5da786aaf2c38c096f23a7f504866537" prot="public" virt="non-virtual"><scope>cam::ui_panels::buttons_panel::CAMButtonsPanel</scope><name>bl_context</name></member>
+      <member refid="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a9763fc8e0e8a24f2f6f4ab050829c6a2" prot="public" virt="non-virtual"><scope>cam::ui_panels::buttons_panel::CAMButtonsPanel</scope><name>bl_region_type</name></member>
+      <member refid="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a875a6b4e703be8c259b1d750426c76ad" prot="public" virt="non-virtual"><scope>cam::ui_panels::buttons_panel::CAMButtonsPanel</scope><name>bl_space_type</name></member>
+      <member refid="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a0864a41721ef5200ecbbf340a1f7d678" prot="public" virt="non-virtual"><scope>cam::ui_panels::buttons_panel::CAMButtonsPanel</scope><name>COMPAT_ENGINES</name></member>
+      <member refid="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a41c101f031fc5ecdb0097889cf452de0" prot="public" virt="non-virtual"><scope>cam::ui_panels::buttons_panel::CAMButtonsPanel</scope><name>has_correct_level</name></member>
+      <member refid="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a3e5e2105cb372d0ad7ee959fa38e10e2" prot="public" virt="non-virtual"><scope>cam::ui_panels::buttons_panel::CAMButtonsPanel</scope><name>has_operations</name></member>
+      <member refid="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a62a27293a2c27a52a2f779e92312c9b6" prot="public" virt="non-virtual"><scope>cam::ui_panels::buttons_panel::CAMButtonsPanel</scope><name>op</name></member>
+      <member refid="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1aae624325882f33dd8820cdf27df16e4e" prot="public" virt="non-virtual"><scope>cam::ui_panels::buttons_panel::CAMButtonsPanel</scope><name>operations_count</name></member>
+      <member refid="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a03843f1fecc691952b696f4bc75a0156" prot="public" virt="non-virtual"><scope>cam::ui_panels::buttons_panel::CAMButtonsPanel</scope><name>poll</name></member>
+      <member refid="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a3991296d0c3a293ee962391d01387868" prot="public" virt="non-virtual"><scope>cam::ui_panels::buttons_panel::CAMButtonsPanel</scope><name>use_experimental</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

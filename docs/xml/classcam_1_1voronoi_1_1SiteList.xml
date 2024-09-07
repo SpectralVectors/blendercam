@@ -1,0 +1,455 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1voronoi_1_1SiteList" kind="class" language="Python" prot="public">
+    <compoundname>cam::voronoi::SiteList</compoundname>
+    <basecompoundref refid="classobject" prot="public" virt="non-virtual">object</basecompoundref>
+    <innerclass refid="classcam_1_1voronoi_1_1SiteList_1_1Iterator" prot="public">cam::voronoi::SiteList::Iterator</innerclass>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="classcam_1_1voronoi_1_1SiteList_1aa829d49b84515c59a692076b87c1c574" prot="public" static="yes" readable="no" writable="no" gettable="no" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type></type>
+        <definition>cam.voronoi.SiteList::xmin</definition>
+        <argsstring></argsstring>
+        <name>xmin</name>
+        <qualifiedname>cam.voronoi.SiteList.xmin</qualifiedname>
+        <initializer>=  property(<ref refid="classcam_1_1voronoi_1_1SiteList_1a43c58ccaef1dab56ede94d1d46541cf4" kindref="member">_getxmin</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="906" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="906" bodyend="-1"/>
+        <referencedby refid="classcam_1_1voronoi_1_1EdgeList_1aaf9499fb416602dcb85cd6aef3c7733e" compoundref="voronoi_8py" startline="743" endline="782">cam.voronoi.EdgeList.leftbnd</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="classcam_1_1voronoi_1_1SiteList_1a7b927b44fd7c545e888183ec43045cfa" prot="public" static="yes" readable="no" writable="no" gettable="no" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type></type>
+        <definition>cam.voronoi.SiteList::ymin</definition>
+        <argsstring></argsstring>
+        <name>ymin</name>
+        <qualifiedname>cam.voronoi.SiteList.ymin</qualifiedname>
+        <initializer>=  property(<ref refid="classcam_1_1voronoi_1_1SiteList_1a4195b9726b7325ddca5817a84c80736a" kindref="member">_getymin</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="907" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="907" bodyend="-1"/>
+        <referencedby refid="classcam_1_1voronoi_1_1PriorityQueue_1af2c2effb4a6e93615875f33a137b7511" compoundref="voronoi_8py" startline="821" endline="830">cam.voronoi.PriorityQueue.getBucket</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="classcam_1_1voronoi_1_1SiteList_1a93a4ceaadac44d9f8effe070b187f88f" prot="public" static="yes" readable="no" writable="no" gettable="no" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type></type>
+        <definition>cam.voronoi.SiteList::xmax</definition>
+        <argsstring></argsstring>
+        <name>xmax</name>
+        <qualifiedname>cam.voronoi.SiteList.xmax</qualifiedname>
+        <initializer>=  property(<ref refid="classcam_1_1voronoi_1_1SiteList_1a2a9dfd732c666afb486e4ccf4e3c1778" kindref="member">_getxmax</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="908" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="908" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="classcam_1_1voronoi_1_1SiteList_1a50f4f7cdd58e2f6e04d234f1da021c27" prot="public" static="yes" readable="no" writable="no" gettable="no" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type></type>
+        <definition>cam.voronoi.SiteList::ymax</definition>
+        <argsstring></argsstring>
+        <name>ymax</name>
+        <qualifiedname>cam.voronoi.SiteList.ymax</qualifiedname>
+        <initializer>=  property(<ref refid="classcam_1_1voronoi_1_1SiteList_1a10fc46e789f8fe5e5c9689484497d973" kindref="member">_getymax</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="909" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="909" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="classcam_1_1voronoi_1_1SiteList_1ab1139d63b492e5ef7a1795c23111ed5b" prot="public" static="yes" readable="no" writable="no" gettable="no" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type></type>
+        <definition>cam.voronoi.SiteList::extent</definition>
+        <argsstring></argsstring>
+        <name>extent</name>
+        <qualifiedname>cam.voronoi.SiteList.extent</qualifiedname>
+        <initializer>=  property(<ref refid="classcam_1_1voronoi_1_1SiteList_1a5c35c9260899f1f89fbc2cad441dcf7d" kindref="member">_getextent</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="910" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="910" bodyend="-1"/>
+        <referencedby refid="classcam_1_1voronoi_1_1Context_1ac17a9b09895f8a8613139081b39451ba" compoundref="voronoi_8py" startline="181" endline="216">cam.voronoi.Context.clipLine</referencedby>
+        <referencedby refid="classcam_1_1voronoi_1_1Context_1af9e1b1eec54228f9b24dbbed097de21c" compoundref="voronoi_8py" startline="89" endline="119">cam.voronoi.Context.getClipEdges</referencedby>
+        <referencedby refid="classcam_1_1voronoi_1_1Context_1a1afb06e806717af0e0b7210657473827" compoundref="voronoi_8py" startline="120" endline="180">cam.voronoi.Context.getClipPolygons</referencedby>
+        <referencedby refid="classcam_1_1voronoi_1_1Context_1a3a0bfd004006ebf1497ca69e27b5da0b" compoundref="voronoi_8py" startline="217" endline="220">cam.voronoi.Context.inExtent</referencedby>
+        <referencedby refid="classcam_1_1voronoi_1_1Context_1ab864f15d0b8f4d57c6d3c91361326016" compoundref="voronoi_8py" startline="261" endline="270">cam.voronoi.Context.setClipBuffer</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcam_1_1voronoi_1_1SiteList_1a8e92ca3c6bd1c8c5f60263557c4dcee4" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>cam.voronoi.SiteList::__sites</definition>
+        <argsstring></argsstring>
+        <name>__sites</name>
+        <qualifiedname>cam.voronoi.SiteList.__sites</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="849" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="849" bodyend="-1"/>
+        <referencedby refid="classcam_1_1voronoi_1_1SiteList_1a0c950b9d02875d110bb17eba5632170d" compoundref="voronoi_8py" startline="885" endline="887">cam.voronoi.SiteList.__iter__</referencedby>
+        <referencedby refid="classcam_1_1voronoi_1_1SiteList_1abc908031e9c9c68f27b8b608e697f1ba" compoundref="voronoi_8py" startline="888" endline="890">cam.voronoi.SiteList.__len__</referencedby>
+        <referencedby refid="classcam_1_1voronoi_1_1SiteList_1a86722d67b25e5dd807a982316b298051" compoundref="voronoi_8py" startline="882" endline="884">cam.voronoi.SiteList.iterator</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1voronoi_1_1SiteList_1aa04ad1df24f6227d974d981193ba4cd7" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>cam.voronoi.SiteList::__sitenum</definition>
+        <argsstring></argsstring>
+        <name>__sitenum</name>
+        <qualifiedname>cam.voronoi.SiteList.__sitenum</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="850" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="850" bodyend="-1"/>
+        <referencedby refid="classcam_1_1voronoi_1_1SiteList_1a6744a08d7380785e4be986dcc154660d" compoundref="voronoi_8py" startline="862" endline="865">cam.voronoi.SiteList.setSiteNumber</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1voronoi_1_1SiteList_1a0a8cd3a4e984593f8ee4a4e3bc937fab" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>cam.voronoi.SiteList::__xmin</definition>
+        <argsstring></argsstring>
+        <name>__xmin</name>
+        <qualifiedname>cam.voronoi.SiteList.__xmin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="852" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="852" bodyend="-1"/>
+        <referencedby refid="classcam_1_1voronoi_1_1SiteList_1a43c58ccaef1dab56ede94d1d46541cf4" compoundref="voronoi_8py" startline="891" endline="893">cam.voronoi.SiteList._getxmin</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1voronoi_1_1SiteList_1a09dd24b233c89fd47d444e28462d6785" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>cam.voronoi.SiteList::__ymin</definition>
+        <argsstring></argsstring>
+        <name>__ymin</name>
+        <qualifiedname>cam.voronoi.SiteList.__ymin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="853" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="853" bodyend="-1"/>
+        <referencedby refid="classcam_1_1voronoi_1_1SiteList_1a4195b9726b7325ddca5817a84c80736a" compoundref="voronoi_8py" startline="894" endline="896">cam.voronoi.SiteList._getymin</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1voronoi_1_1SiteList_1a80a44f1aed8f9b7c1ce9b4bd283a5d2c" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>cam.voronoi.SiteList::__xmax</definition>
+        <argsstring></argsstring>
+        <name>__xmax</name>
+        <qualifiedname>cam.voronoi.SiteList.__xmax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="854" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="854" bodyend="-1"/>
+        <referencedby refid="classcam_1_1voronoi_1_1SiteList_1a2a9dfd732c666afb486e4ccf4e3c1778" compoundref="voronoi_8py" startline="897" endline="899">cam.voronoi.SiteList._getxmax</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1voronoi_1_1SiteList_1a00a25ffe5c7ee84ba5b803ca288b9e68" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>cam.voronoi.SiteList::__ymax</definition>
+        <argsstring></argsstring>
+        <name>__ymax</name>
+        <qualifiedname>cam.voronoi.SiteList.__ymax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="855" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="855" bodyend="-1"/>
+        <referencedby refid="classcam_1_1voronoi_1_1SiteList_1a10fc46e789f8fe5e5c9689484497d973" compoundref="voronoi_8py" startline="900" endline="902">cam.voronoi.SiteList._getymax</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1voronoi_1_1SiteList_1afcfb9c3af8ed52c3a8f12c1459a473d4" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>cam.voronoi.SiteList::__extent</definition>
+        <argsstring></argsstring>
+        <name>__extent</name>
+        <qualifiedname>cam.voronoi.SiteList.__extent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="856" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="856" bodyend="-1"/>
+        <referencedby refid="classcam_1_1voronoi_1_1SiteList_1a5c35c9260899f1f89fbc2cad441dcf7d" compoundref="voronoi_8py" startline="903" endline="905">cam.voronoi.SiteList._getextent</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcam_1_1voronoi_1_1SiteList_1a3d6440622adf555a43a3c918094c685a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.voronoi.SiteList.__init__</definition>
+        <argsstring>(self, pointList)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>cam.voronoi.SiteList.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>pointList</type>
+          <defname>pointList</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="848" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="848" bodyend="861"/>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1voronoi_1_1SiteList_1a6744a08d7380785e4be986dcc154660d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.voronoi.SiteList.setSiteNumber</definition>
+        <argsstring>(self, site)</argsstring>
+        <name>setSiteNumber</name>
+        <qualifiedname>cam.voronoi.SiteList.setSiteNumber</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>site</type>
+          <defname>site</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="862" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="862" bodyend="865"/>
+        <references refid="classcam_1_1voronoi_1_1SiteList_1aa04ad1df24f6227d974d981193ba4cd7" compoundref="voronoi_8py" startline="850">cam.voronoi.SiteList.__sitenum</references>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1voronoi_1_1SiteList_1a86722d67b25e5dd807a982316b298051" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.voronoi.SiteList.iterator</definition>
+        <argsstring>(self)</argsstring>
+        <name>iterator</name>
+        <qualifiedname>cam.voronoi.SiteList.iterator</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="882" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="882" bodyend="884"/>
+        <references refid="classcam_1_1voronoi_1_1SiteList_1a8e92ca3c6bd1c8c5f60263557c4dcee4" compoundref="voronoi_8py" startline="849">cam.voronoi.SiteList.__sites</references>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1voronoi_1_1SiteList_1a0c950b9d02875d110bb17eba5632170d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.voronoi.SiteList.__iter__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__iter__</name>
+        <qualifiedname>cam.voronoi.SiteList.__iter__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="885" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="885" bodyend="887"/>
+        <references refid="classcam_1_1voronoi_1_1SiteList_1a8e92ca3c6bd1c8c5f60263557c4dcee4" compoundref="voronoi_8py" startline="849">cam.voronoi.SiteList.__sites</references>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1voronoi_1_1SiteList_1abc908031e9c9c68f27b8b608e697f1ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.voronoi.SiteList.__len__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__len__</name>
+        <qualifiedname>cam.voronoi.SiteList.__len__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="888" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="888" bodyend="890"/>
+        <references refid="classcam_1_1voronoi_1_1SiteList_1a8e92ca3c6bd1c8c5f60263557c4dcee4" compoundref="voronoi_8py" startline="849">cam.voronoi.SiteList.__sites</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classcam_1_1voronoi_1_1SiteList_1a43c58ccaef1dab56ede94d1d46541cf4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.voronoi.SiteList._getxmin</definition>
+        <argsstring>(self)</argsstring>
+        <name>_getxmin</name>
+        <qualifiedname>cam.voronoi.SiteList._getxmin</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="891" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="891" bodyend="893"/>
+        <references refid="classcam_1_1voronoi_1_1SiteList_1a0a8cd3a4e984593f8ee4a4e3bc937fab" compoundref="voronoi_8py" startline="852">cam.voronoi.SiteList.__xmin</references>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1voronoi_1_1SiteList_1a4195b9726b7325ddca5817a84c80736a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.voronoi.SiteList._getymin</definition>
+        <argsstring>(self)</argsstring>
+        <name>_getymin</name>
+        <qualifiedname>cam.voronoi.SiteList._getymin</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="894" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="894" bodyend="896"/>
+        <references refid="classcam_1_1voronoi_1_1SiteList_1a09dd24b233c89fd47d444e28462d6785" compoundref="voronoi_8py" startline="853">cam.voronoi.SiteList.__ymin</references>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1voronoi_1_1SiteList_1a2a9dfd732c666afb486e4ccf4e3c1778" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.voronoi.SiteList._getxmax</definition>
+        <argsstring>(self)</argsstring>
+        <name>_getxmax</name>
+        <qualifiedname>cam.voronoi.SiteList._getxmax</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="897" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="897" bodyend="899"/>
+        <references refid="classcam_1_1voronoi_1_1SiteList_1a80a44f1aed8f9b7c1ce9b4bd283a5d2c" compoundref="voronoi_8py" startline="854">cam.voronoi.SiteList.__xmax</references>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1voronoi_1_1SiteList_1a10fc46e789f8fe5e5c9689484497d973" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.voronoi.SiteList._getymax</definition>
+        <argsstring>(self)</argsstring>
+        <name>_getymax</name>
+        <qualifiedname>cam.voronoi.SiteList._getymax</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="900" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="900" bodyend="902"/>
+        <references refid="classcam_1_1voronoi_1_1SiteList_1a00a25ffe5c7ee84ba5b803ca288b9e68" compoundref="voronoi_8py" startline="855">cam.voronoi.SiteList.__ymax</references>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1voronoi_1_1SiteList_1a5c35c9260899f1f89fbc2cad441dcf7d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.voronoi.SiteList._getextent</definition>
+        <argsstring>(self)</argsstring>
+        <name>_getextent</name>
+        <qualifiedname>cam.voronoi.SiteList._getextent</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="903" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="903" bodyend="905"/>
+        <references refid="classcam_1_1voronoi_1_1SiteList_1afcfb9c3af8ed52c3a8f12c1459a473d4" compoundref="voronoi_8py" startline="856">cam.voronoi.SiteList.__extent</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>cam.voronoi.SiteList</label>
+        <link refid="classcam_1_1voronoi_1_1SiteList"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>object</label>
+        <link refid="classobject"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>cam.voronoi.SiteList</label>
+        <link refid="classcam_1_1voronoi_1_1SiteList"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>object</label>
+        <link refid="classobject"/>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" line="847" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/voronoi.py" bodystart="847" bodyend="913"/>
+    <listofallmembers>
+      <member refid="classcam_1_1voronoi_1_1SiteList_1afcfb9c3af8ed52c3a8f12c1459a473d4" prot="private" virt="non-virtual"><scope>cam::voronoi::SiteList</scope><name>__extent</name></member>
+      <member refid="classcam_1_1voronoi_1_1SiteList_1a3d6440622adf555a43a3c918094c685a" prot="public" virt="non-virtual"><scope>cam::voronoi::SiteList</scope><name>__init__</name></member>
+      <member refid="classcam_1_1voronoi_1_1SiteList_1a0c950b9d02875d110bb17eba5632170d" prot="public" virt="non-virtual"><scope>cam::voronoi::SiteList</scope><name>__iter__</name></member>
+      <member refid="classcam_1_1voronoi_1_1SiteList_1abc908031e9c9c68f27b8b608e697f1ba" prot="public" virt="non-virtual"><scope>cam::voronoi::SiteList</scope><name>__len__</name></member>
+      <member refid="classcam_1_1voronoi_1_1SiteList_1aa04ad1df24f6227d974d981193ba4cd7" prot="private" virt="non-virtual"><scope>cam::voronoi::SiteList</scope><name>__sitenum</name></member>
+      <member refid="classcam_1_1voronoi_1_1SiteList_1a8e92ca3c6bd1c8c5f60263557c4dcee4" prot="private" virt="non-virtual"><scope>cam::voronoi::SiteList</scope><name>__sites</name></member>
+      <member refid="classcam_1_1voronoi_1_1SiteList_1a80a44f1aed8f9b7c1ce9b4bd283a5d2c" prot="private" virt="non-virtual"><scope>cam::voronoi::SiteList</scope><name>__xmax</name></member>
+      <member refid="classcam_1_1voronoi_1_1SiteList_1a0a8cd3a4e984593f8ee4a4e3bc937fab" prot="private" virt="non-virtual"><scope>cam::voronoi::SiteList</scope><name>__xmin</name></member>
+      <member refid="classcam_1_1voronoi_1_1SiteList_1a00a25ffe5c7ee84ba5b803ca288b9e68" prot="private" virt="non-virtual"><scope>cam::voronoi::SiteList</scope><name>__ymax</name></member>
+      <member refid="classcam_1_1voronoi_1_1SiteList_1a09dd24b233c89fd47d444e28462d6785" prot="private" virt="non-virtual"><scope>cam::voronoi::SiteList</scope><name>__ymin</name></member>
+      <member refid="classcam_1_1voronoi_1_1SiteList_1a5c35c9260899f1f89fbc2cad441dcf7d" prot="protected" virt="non-virtual"><scope>cam::voronoi::SiteList</scope><name>_getextent</name></member>
+      <member refid="classcam_1_1voronoi_1_1SiteList_1a2a9dfd732c666afb486e4ccf4e3c1778" prot="protected" virt="non-virtual"><scope>cam::voronoi::SiteList</scope><name>_getxmax</name></member>
+      <member refid="classcam_1_1voronoi_1_1SiteList_1a43c58ccaef1dab56ede94d1d46541cf4" prot="protected" virt="non-virtual"><scope>cam::voronoi::SiteList</scope><name>_getxmin</name></member>
+      <member refid="classcam_1_1voronoi_1_1SiteList_1a10fc46e789f8fe5e5c9689484497d973" prot="protected" virt="non-virtual"><scope>cam::voronoi::SiteList</scope><name>_getymax</name></member>
+      <member refid="classcam_1_1voronoi_1_1SiteList_1a4195b9726b7325ddca5817a84c80736a" prot="protected" virt="non-virtual"><scope>cam::voronoi::SiteList</scope><name>_getymin</name></member>
+      <member refid="classcam_1_1voronoi_1_1SiteList_1ab1139d63b492e5ef7a1795c23111ed5b" prot="public" virt="non-virtual"><scope>cam::voronoi::SiteList</scope><name>extent</name></member>
+      <member refid="classcam_1_1voronoi_1_1SiteList_1a86722d67b25e5dd807a982316b298051" prot="public" virt="non-virtual"><scope>cam::voronoi::SiteList</scope><name>iterator</name></member>
+      <member refid="classcam_1_1voronoi_1_1SiteList_1a6744a08d7380785e4be986dcc154660d" prot="public" virt="non-virtual"><scope>cam::voronoi::SiteList</scope><name>setSiteNumber</name></member>
+      <member refid="classcam_1_1voronoi_1_1SiteList_1a93a4ceaadac44d9f8effe070b187f88f" prot="public" virt="non-virtual"><scope>cam::voronoi::SiteList</scope><name>xmax</name></member>
+      <member refid="classcam_1_1voronoi_1_1SiteList_1aa829d49b84515c59a692076b87c1c574" prot="public" virt="non-virtual"><scope>cam::voronoi::SiteList</scope><name>xmin</name></member>
+      <member refid="classcam_1_1voronoi_1_1SiteList_1a50f4f7cdd58e2f6e04d234f1da021c27" prot="public" virt="non-virtual"><scope>cam::voronoi::SiteList</scope><name>ymax</name></member>
+      <member refid="classcam_1_1voronoi_1_1SiteList_1a7b927b44fd7c545e888183ec43045cfa" prot="public" virt="non-virtual"><scope>cam::voronoi::SiteList</scope><name>ymin</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

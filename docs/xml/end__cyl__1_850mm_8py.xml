@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="end__cyl__1_850mm_8py" kind="file" language="Python">
+    <compoundname>end_cyl_1.50mm.py</compoundname>
+    <innernamespace refid="namespaceend__cyl__1">end_cyl_1</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">import</highlight><highlight class="normal"><sp/>bpy</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">d<sp/>=<sp/>bpy.context.scene.cam_operations[bpy.context.scene.cam_active_operation]</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">d.cutter_type<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;END&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">d.cutter_diameter<sp/>=<sp/>0.0015</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">d.cutter_length<sp/>=<sp/>25.0</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">d.cutter_tip_angle<sp/>=<sp/>60.0</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/presets/cam_cutters/end_cyl_1.50mm.py"/>
+  </compounddef>
+</doxygen>

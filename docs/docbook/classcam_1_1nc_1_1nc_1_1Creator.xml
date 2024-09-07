@@ -1,0 +1,1333 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1nc_1_1nc_1_1Creator" xml:lang="en-US">
+<title>cam.nc.nc.Creator Class Reference</title>
+<indexterm><primary>cam.nc.nc.Creator</primary></indexterm>
+Inheritance diagram for cam.nc.nc.Creator:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nc_1_1Creator__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.nc.nc.Creator:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nc_1_1Creator__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a4ca2842ee7b52903f44ba0b295296e8d">__init__</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1ab3651c24840aa9b2a7a1bc828263eac9">file_open</link> (self, name)</para>
+
+<para>Internals. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a7bf39bc81f3b3714060d74f1339ae06c">file_close</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a80f2134add83bfaaf2870d075d36ed8a">write</link> (self, s)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a6b9b5f41f66c0a89ae69a7f21776025d">writem</link> (self, a)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a9a88c0cb630a1b3604d230f4c8b9b5ac">program_begin</link> (self, id, name=&apos;&apos;)</para>
+
+<para>Programs. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1aa4f10ffcf1ffb003aea0a8a008e65cd4">add_stock</link> (self, type_name, params)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a5e043392f919d7f10a5a282a580bc8fa">program_stop</link> (self, optional=False)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a6b23941ee5eaaed546121898ee5b09fa">program_end</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a7d841db837bad9de3466cfbd253ce875">flush_nc</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a56a93e52f85de47ae50f099fd9fd9b28">sub_begin</link> (self, id, name=&apos;&apos;)</para>
+
+<para>Subprograms. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1ab679b1e883a53eb07ae578fc4f3f0efc">sub_call</link> (self, id)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1ab4203d6942df1cc660ba9ba01ff44abe">sub_end</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1acfa51223614b1c8c231c99f8e6103af1">imperial</link> (self)</para>
+
+<para>Settings. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1ab7b52eb5d7170eafdc365d407a887e8b">metric</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a43e3de6305aa47bada9e421ff957ef18">absolute</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a263eb1faaf6a9ee93f8d78bca773f021">incremental</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1ae6d17212fd1159f967bbdbb4d69a03f1">polar</link> (self, on=True)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a63ca0750cbc4e11abbbaf856479f6bd8">set_plane</link> (self, plane)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a3b27c7c2c804ec3aa2a3e3e6bf3a638c">set_temporary_origin</link> (self, x=None, y=None, z=None, a=None, b=None, c=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1ad7d4b51ed47c3deaff7d7a4167ec9630">remove_temporary_origin</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a6fec89f9c286d6e852c9af389a46f491">tool_change</link> (self, id)</para>
+
+<para>Tools. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a3ac1f6171550de627fdfde4c831bc25d">tool_defn</link> (self, id, name=&apos;&apos;, params=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a755ac1c627b9d5373a00c71c02210590">offset_radius</link> (self, id, radius=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a673202842c64cc44b229f441ae62994f">offset_length</link> (self, id, length=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1abb1d0f892dfa22f1fa591e0f32132ddd">current_tool</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1ab99e5623dda8e62b2b94bd239d22e9b6">datum_shift</link> (self, x=None, y=None, z=None, a=None, b=None, c=None)</para>
+
+<para>Datums. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1acbee84ef2d71fe9ede19daa1022f1d92">datum_set</link> (self, x=None, y=None, z=None, a=None, b=None, c=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a21d03ba3d16ff8d84cd5546268aabab6">workplane</link> (self, id)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a25dc579a777162a8825f4a80cdb49dd7">clearanceplane</link> (self, z=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1aa444813a0c811ccdf5c131ef200f61ad">matrix</link> (self, a1=None, b1=None, c1=None, a2=None, b2=None, c2=None, a3=None, b3=None, c3=None)</para>
+
+<para>APT360 like Transformation Definitions These definitions were created while looking at Irvin Kraal&apos;s book on APT. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1aa2916aeb745eb7bab7335e02638045f6">translate</link> (self, x=None, y=None, z=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1adb91710cf1f26d4cf07f9da51e7798a5">rotate</link> (self, xyrot=None, yzrot=None, zxrot=None, angle=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a7277c1e666c6dda2b8a997f3518f3f3e">scale</link> (self, k=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a016998404be15eef6dc192118c572e4a">matrix_product</link> (self, matrix1=None, matrix2=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a183c1585f1851d4573dadc6645f3b473">mirror_plane</link> (self, plane1=None, plane2=None, plane3=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1aa777fc06dd6e476f08060e7cf4f88068">mirror_line</link> (self, line=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a09d15b7b72c2a18cae7dfb450f1da06e">feedrate</link> (self, f)</para>
+
+<para>Rates + Modes. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1ae66f328adc58521e5ab9db7cf54dc6ce">feedrate_hv</link> (self, fh, fv)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1aba0d5dbaa64e8d6c8c0f6e02d5b2bb42">spindle</link> (self, s, clockwise=True)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a59217559479a824dcf40a00da6d692ac">coolant</link> (self, mode=0)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a80e7b5c8fccc9bd3982c33a266d9fed0">gearrange</link> (self, gear=0)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1ad5d01e340589c729f48fab397ccf137c">rapid</link> (self, x=None, y=None, z=None, a=None, b=None, c=None)</para>
+
+<para>Moves. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a58c3bce534b047d5824cde16c2571c0f">feed</link> (self, x=None, y=None, z=None, a=None, b=None, c=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1ad43a5821c5d79340728de373b7fa2c19">arc_cw</link> (self, x=None, y=None, z=None, i=None, j=None, k=None, r=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a3edf67b50e4b3c8f327a084157363f9d">arc_ccw</link> (self, x=None, y=None, z=None, i=None, j=None, k=None, r=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a56b11f862045ee84c844133b646117c8">dwell</link> (self, t)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1aec3c94a9584f18d2f9923081a5bdda34">rapid_home</link> (self, x=None, y=None, z=None, a=None, b=None, c=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a65815539ed9b7607ae21229b15ee0fe2">rapid_unhome</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1adba071f67fa119dc47a3cbdbe5324cc4">set_machine_coordinates</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1af48057c7d845490d9cebf0c321858d87">use_CRC</link> (self)</para>
+
+<para>Cutter radius compensation. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a59688c01984638c50dfbf012bd1ee4e3">pattern</link> (self)</para>
+
+<para>Cycles. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a89cf133b4ed304132bab0e3e930a7d1e">pocket</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1acf980db0661f226477a3b1a39d345e7c">profile</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a4819416a7408129c220de90d72c91a6c">drill</link> (self, x=None, y=None, <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a56b11f862045ee84c844133b646117c8">dwell</link>=None, depthparams=None, retract_mode=None, spindle_mode=None, internal_coolant_on=None, rapid_to_clearance=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a0e6b1ba5ac8a76e36f68c1ef8b21435a">tap</link> (self, x=None, y=None, z=None, zretract=None, depth=None, standoff=None, dwell_bottom=None, pitch=None, stoppos=None, spin_in=None, spin_out=None, tap_mode=None, direction=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a167f093c98cb4777a2f495a94010cf64">bore</link> (self, x=None, y=None, z=None, zretract=None, depth=None, standoff=None, dwell_bottom=None, feed_in=None, feed_out=None, stoppos=None, shift_back=None, shift_right=None, backbore=False, stop=False)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1acec2552d357ba49de5adbcbaf3ad93a5">end_canned_cycle</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1ab3e7940549c2d69d003224aa3cd586d3">comment</link> (self, text)</para>
+
+<para>Misc. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1adf1d934a3cd91810b1148e119887500c">insert</link> (self, text)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1af2742a3c6e584e90c23d4abab5e44dcc">block_delete</link> (self, on=False)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a2d02ebd696a2f2db466f1cf8863142d5">variable</link> (self, id)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a490ecd36ed3098409fcffee44dcd11f0">variable_set</link> (self, id, value)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a5943f76b586cd2d530dc0d305ef457bd">probe_linear_centre_outside</link> (self, x1=None, y1=None, depth=None, x2=None, y2=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1ab2982bddb09ae7c6469a7b5e616566ab">probe_single_point</link> (self, point_along_edge_x=None, point_along_edge_y=None, depth=None, retracted_point_x=None, retracted_point_y=None, destination_point_x=None, destination_point_y=None, intersection_variable_x=None, intersection_variable_y=None, probe_offset_x_component=None, probe_offset_y_component=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a950f0b9dd784e5a706fb16bd4e356607">probe_downward_point</link> (self, x=None, y=None, depth=None, intersection_variable_z=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a7ff98c29e67d4bb1e4d428e7a19ae0c9">report_probe_results</link> (self, x1=None, y1=None, z1=None, x2=None, y2=None, z2=None, x3=None, y3=None, z3=None, x4=None, y4=None, z4=None, x5=None, y5=None, z5=None, x6=None, y6=None, z6=None, xml_file_name=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1ae826db09c1b7c0fe1099f66f09f5758a">open_log_file</link> (self, xml_file_name=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a17e6de5013fe131ff946bd3e86be52dc">log_coordinate</link> (self, x=None, y=None, z=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a8a41b57e7fbc95e765b4107d61f2b0fb">log_message</link> (self, message=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1ae221051f5d050fe72024893d869c9e95">close_log_file</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1af58b38bf65ddba3bcef0cae39aac4a09">rapid_to_midpoint</link> (self, x1=None, y1=None, z1=None, x2=None, y2=None, z2=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1ab141de97e87759d48b8227e5738d056c">rapid_to_intersection</link> (self, x1, y1, x2, y2, x3, y3, x4, y4, intersection_x, intersection_y, ua_numerator, ua_denominator, ua, ub_numerator, ub)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1af2f4b7454862bacf84d24d45d1702d1c">rapid_to_rotated_coordinate</link> (self, x1, y1, x2, y2, ref_x, ref_y, x_current, y_current, x_final, y_final)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a36ddaf371b5dcf5cc53a8c6ed6a4e926">set_path_control_mode</link> (self, mode, motion_blending_tolerance, naive_cam_tolerance)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1aec98966fe45ff7d2973002311f38b841">wipe</link> (self)</para>
+
+<para>NC code creator for additive machines like RepRap. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a227b7ab87099b672da953a0aad13eff6">extruder_on</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a1acc377f3f5c966fde33e8a22ae49dd2">extruder_off</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a55cd49b26a3b252e7c6f24fc6bd4fd25">set_extruder_flowrate</link> (self, flowrate)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a0911d697ca8205da25a327e638fd3620">extruder_temp</link> (self, temp)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a2f54ed36706db67ca412a8ff341526a3">fan_on</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a5b9d618bf11b2c17a1bc5f69944bd3b7">fan_off</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a52fa4c4b50e5f53df50ebee0319e9245">build_bed_temp</link> (self, temp)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1ab9f33126ca1fff2b36e6ca3f4ac81cef">chamber_temp</link> (self, temp)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a93388ba17e68b836b4eee5d907b7fb41">begin_ncblock</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a2a88ca7c016d69f6c5f8dd98f326868a">end_ncblock</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1ab7795ded7273e69a74d36614404fef0e">add_text</link> (self, s, col, cdata)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a7b9f520b607a80af987b068cbd1d1d31">file</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a6a4389cab170edcaa81bf475fa97d463">filename</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a4ca2842ee7b52903f44ba0b295296e8d"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.__init__ ( self)</computeroutput></para><para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1anilam__crusader__m_1_1Creator_1ad58c9117cbe6c498122d6b720ada321d">cam.nc.anilam_crusader_m.Creator</link>, <link linkend="_classcam_1_1nc_1_1centroid1_1_1Creator_1a8bad744291123dbdf7b1bf905bc1e5cf">cam.nc.centroid1.Creator</link>, <link linkend="_classcam_1_1nc_1_1emc2_1_1Creator_1a102ce1d4f49f9d4c6a025f374ad0d272">cam.nc.emc2.Creator</link>, <link linkend="_classcam_1_1nc_1_1emc2b_1_1Creator_1a0d7df6a809fa9ea10c75e8991f4ab3ff">cam.nc.emc2b.Creator</link>, <link linkend="_classcam_1_1nc_1_1emc2b__crc_1_1Creator_1a5fd57e97b1d861930e5cde0352bc8691">cam.nc.emc2b_crc.Creator</link>, <link linkend="_classcam_1_1nc_1_1fadal_1_1Creator_1abd474ad022fcced3cd4b6cbd0b5fc40d">cam.nc.fadal.Creator</link>, <link linkend="_classcam_1_1nc_1_1gravos_1_1Creator_1a007e4c259e572f578934414e3f791cf3">cam.nc.gravos.Creator</link>, <link linkend="_classcam_1_1nc_1_1grbl_1_1Creator_1aa5fa954c4a03c6ae728a468266be9116">cam.nc.grbl.Creator</link>, <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1a1d0ae35f565bdd7da3829cb2c2af86d8">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1heiden530_1_1Creator_1a833604fcc2c001376e6000ef4fcfe49c">cam.nc.heiden530.Creator</link>, <link linkend="_classcam_1_1nc_1_1hm50_1_1Creator_1ab1cb5692a658a8b65ace24e154f6cad8">cam.nc.hm50.Creator</link>, <link linkend="_classcam_1_1nc_1_1hpgl2d_1_1Creator_1afa3781d9d9ed65dcacf075a0cdc15612">cam.nc.hpgl2d.Creator</link>, <link linkend="_classcam_1_1nc_1_1hpgl2dv_1_1Creator_1a8ed7d723c5d4c4c7856f637ee7eabb57">cam.nc.hpgl2dv.Creator</link>, <link linkend="_classcam_1_1nc_1_1hpgl3d_1_1Creator_1ad9efc09d0d823ed318225d1715734b56">cam.nc.hpgl3d.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ae699a8c92e810d25017589a524e2abc3">cam.nc.iso.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso__crc_1_1Creator_1a4f9c7f8571c60f3d0966dfcc183ba3d0">cam.nc.iso_crc.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso__modal_1_1Creator_1ae0f5b38b73b27650b1af8b5085d3129c">cam.nc.iso_modal.Creator</link>, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a72da30431ea31318bcdaec3cc7b34ce5">cam.nc.lathe1.CreatorIso</link>, <link linkend="_classcam_1_1nc_1_1lynx__otter__o_1_1Creator_1ae480a59a1401ddc3c80b822a8ff8b05a">cam.nc.lynx_otter_o.Creator</link>, <link linkend="_classcam_1_1nc_1_1mach3_1_1Creator_1a6703ac38504a83418c98a07958ac6263">cam.nc.mach3.Creator</link>, <link linkend="_classcam_1_1nc_1_1rez2_1_1Creator_1a8cc5926e24e02ced7a5e5c10020d8887">cam.nc.rez2.Creator</link>, <link linkend="_classcam_1_1nc_1_1series1_1_1Creator_1a6568f40900875990f831bc4276b2c437">cam.nc.series1.Creator</link>, <link linkend="_classcam_1_1nc_1_1shopbot__mtc_1_1Creator_1af3b088534041e6b78267448aade2d26a">cam.nc.shopbot_mtc.Creator</link>, <link linkend="_classcam_1_1nc_1_1siegkx1_1_1Creator_1aceca2302d565544a2da12b2e6f175ea3">cam.nc.siegkx1.Creator</link>, <link linkend="_classcam_1_1nc_1_1tnc151_1_1Creator_1a71028bbf9670ac38bdbc57840dfe69ee">cam.nc.tnc151.Creator</link>, <link linkend="_classcam_1_1nc_1_1winpc_1_1Creator_1a35a2176ac3b75df1aa3bdf9a1bc49614">cam.nc.winpc.Creator</link>, <link linkend="_classcam_1_1nc_1_1attach_1_1Creator_1afd72f44fead537d59018472a906fe618">cam.nc.attach.Creator</link>, <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1ae0e77e971a6de49acb93c14b78d04606">cam.nc.recreator.Redirector</link>, and <link linkend="_classcam_1_1nc_1_1drag__knife_1_1Creator_1a91d9a99a4ae9ff3454d78b6aa94ad3bb">cam.nc.drag_knife.Creator</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a43e3de6305aa47bada9e421ff957ef18"/><section>
+    <title>absolute()</title>
+<indexterm><primary>absolute</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>absolute</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.absolute ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Set absolute coordinates</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1anilam__crusader__m_1_1Creator_1a7dec6f8f76252963411bea8d50879caa">cam.nc.anilam_crusader_m.Creator</link>, <link linkend="_classcam_1_1nc_1_1centroid1_1_1Creator_1a042a8baf40836cf1a16dd7afad445e04">cam.nc.centroid1.Creator</link>, <link linkend="_classcam_1_1nc_1_1emc2_1_1Creator_1a973e05ccfb3915a7caf91bf81e544834">cam.nc.emc2.Creator</link>, <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1a45c41543e061f4cdfbeabd5b45a42a7a">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1heiden530_1_1Creator_1aef6ce45e56618aff687e5d1fe8317fd1">cam.nc.heiden530.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a9aa27edca4b9740fb914195f14bbb247">cam.nc.iso.Creator</link>, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a8693294ebb764f30b26802f9d58a888e">cam.nc.lathe1.CreatorIso</link>, <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1a4e7ddfa7e4a42a7dd86b45941b77010d">cam.nc.recreator.Redirector</link>, <link linkend="_classcam_1_1nc_1_1rez2_1_1Creator_1aa810c5c40e0dff361b027aca9bc025f1">cam.nc.rez2.Creator</link>, and <link linkend="_classcam_1_1nc_1_1shopbot__mtc_1_1Creator_1a5cd57b47bc427d63d82dc88ba8a80ee9">cam.nc.shopbot_mtc.Creator</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nc_1_1Creator_a43e3de6305aa47bada9e421ff957ef18_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1aa4f10ffcf1ffb003aea0a8a008e65cd4"/><section>
+    <title>add_stock()</title>
+<indexterm><primary>add_stock</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>add_stock</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.add_stock ( self,  type_name,  params)</computeroutput></para><para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a8ca0f9ef01ac58c553701fc483bb7ea3">cam.nc.iso.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1ab7795ded7273e69a74d36614404fef0e"/><section>
+    <title>add_text()</title>
+<indexterm><primary>add_text</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>add_text</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.add_text ( self,  s,  col,  cdata)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nc_1_1Creator_ab7795ded7273e69a74d36614404fef0e_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a3edf67b50e4b3c8f327a084157363f9d"/><section>
+    <title>arc_ccw()</title>
+<indexterm><primary>arc_ccw</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>arc_ccw</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.arc_ccw ( self,  x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+,  i = <computeroutput>None</computeroutput>
+,  j = <computeroutput>None</computeroutput>
+,  k = <computeroutput>None</computeroutput>
+,  r = <computeroutput>None</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Counterclockwise arc move</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1a7c0262bb6935f21773e134b851cbff38">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1hpgl2d_1_1Creator_1ae869adedb7242daa7c1b42302c182896">cam.nc.hpgl2d.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a73623b6caaf8efee669803ee57ca97a9">cam.nc.iso.Creator</link>, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a9eae946df7fc34b9a46e33a00d891c3d">cam.nc.lathe1.CreatorIso</link>, <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1a50bb4fcb175a9c87e1cf45a79cd54ff1">cam.nc.recreator.Redirector</link>, and <link linkend="_classcam_1_1nc_1_1rez2_1_1Creator_1a7a7b089cf338846799311b5b1193a566">cam.nc.rez2.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1ad43a5821c5d79340728de373b7fa2c19"/><section>
+    <title>arc_cw()</title>
+<indexterm><primary>arc_cw</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>arc_cw</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.arc_cw ( self,  x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+,  i = <computeroutput>None</computeroutput>
+,  j = <computeroutput>None</computeroutput>
+,  k = <computeroutput>None</computeroutput>
+,  r = <computeroutput>None</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Clockwise arc move</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1afffaa9e4bad9251bb67ff287f47accda">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1hpgl2d_1_1Creator_1ae23fc4d361aa6de768d74b18324bae53">cam.nc.hpgl2d.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a334d38752a57cd7745f9361d583c68f6">cam.nc.iso.Creator</link>, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ae2f7d7587f9940cf9534e127f7234c4c">cam.nc.lathe1.CreatorIso</link>, <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1a54adbf876611896e0d8d530766a18964">cam.nc.recreator.Redirector</link>, and <link linkend="_classcam_1_1nc_1_1rez2_1_1Creator_1a96f30401310d0198de3d2d55da86510f">cam.nc.rez2.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a93388ba17e68b836b4eee5d907b7fb41"/><section>
+    <title>begin_ncblock()</title>
+<indexterm><primary>begin_ncblock</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>begin_ncblock</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.begin_ncblock ( self)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nc_1_1Creator_a93388ba17e68b836b4eee5d907b7fb41_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1af2742a3c6e584e90c23d4abab5e44dcc"/><section>
+    <title>block_delete()</title>
+<indexterm><primary>block_delete</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>block_delete</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.block_delete ( self,  on = <computeroutput>False</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>block to ignore if block delete switch is on</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1a4e456b272f5ec0b118adfb1279d3e6fd">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a5616abcbba58eb930bbc1c7c6cf87302">cam.nc.iso.Creator</link>, and <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a7d2a4c3552bd8d9ec186ed4a6a77547f">cam.nc.lathe1.CreatorIso</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a167f093c98cb4777a2f495a94010cf64"/><section>
+    <title>bore()</title>
+<indexterm><primary>bore</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>bore</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.bore ( self,  x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+,  zretract = <computeroutput>None</computeroutput>
+,  depth = <computeroutput>None</computeroutput>
+,  standoff = <computeroutput>None</computeroutput>
+,  dwell_bottom = <computeroutput>None</computeroutput>
+,  feed_in = <computeroutput>None</computeroutput>
+,  feed_out = <computeroutput>None</computeroutput>
+,  stoppos = <computeroutput>None</computeroutput>
+,  shift_back = <computeroutput>None</computeroutput>
+,  shift_right = <computeroutput>None</computeroutput>
+,  backbore = <computeroutput>False</computeroutput>
+,  stop = <computeroutput>False</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Boring routines</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1a9c13adc663e6b8f4692d33bae458d190">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1a6eac2c5e34a9ff6fc5755a9dbbdda2a1">cam.nc.recreator.Redirector</link>, and <link linkend="_classcam_1_1nc_1_1rez2_1_1Creator_1a73b2c0ace72a96fd9d7708b6192b8d2a">cam.nc.rez2.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a52fa4c4b50e5f53df50ebee0319e9245"/><section>
+    <title>build_bed_temp()</title>
+<indexterm><primary>build_bed_temp</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>build_bed_temp</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.build_bed_temp ( self,  temp)</computeroutput></para>
+<para><literallayout><computeroutput>Set the bed temp in celsius</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1ab9f33126ca1fff2b36e6ca3f4ac81cef"/><section>
+    <title>chamber_temp()</title>
+<indexterm><primary>chamber_temp</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>chamber_temp</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.chamber_temp ( self,  temp)</computeroutput></para>
+<para><literallayout><computeroutput>Set the chamber temp in celsius</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a25dc579a777162a8825f4a80cdb49dd7"/><section>
+    <title>clearanceplane()</title>
+<indexterm><primary>clearanceplane</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>clearanceplane</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.clearanceplane ( self,  z = <computeroutput>None</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>set clearance plane</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1centroid1_1_1Creator_1a58240b69a69fdea7d12018e303e0bc23">cam.nc.centroid1.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1ae221051f5d050fe72024893d869c9e95"/><section>
+    <title>close_log_file()</title>
+<indexterm><primary>close_log_file</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>close_log_file</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.close_log_file ( self)</computeroutput></para><para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1emc2_1_1Creator_1a05ee4abe3741879c0b3710de96a26f8e">cam.nc.emc2.Creator</link>, <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1a1639b73ebae686611b1cd239e432877b">cam.nc.heiden.Creator</link>, and <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a75f2b1ef12bb87e7ddd0cbc8ccbdd6c1">cam.nc.iso.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1ab3e7940549c2d69d003224aa3cd586d3"/><section>
+    <title>comment()</title>
+<indexterm><primary>comment</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>comment</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.comment ( self,  text)</computeroutput></para><para>
+
+<para>Misc. </para>
+</para>
+
+<para><literallayout><computeroutput>Insert a comment</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1anilam__crusader__m_1_1Creator_1ac21b467740faa1c7b456acafded3fce2">cam.nc.anilam_crusader_m.Creator</link>, <link linkend="_classcam_1_1nc_1_1centroid1_1_1Creator_1a60410284fdb2e913df1aac85a3a5d7de">cam.nc.centroid1.Creator</link>, <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1a7b02d0ea7ca16091245c04832652bc27">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1heiden530_1_1Creator_1a5819b6e60dba78e0ec27cc656957fd18">cam.nc.heiden530.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a618d52d9931049792ef89511ff43496c">cam.nc.iso.Creator</link>, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a9a38af13242cd8d3f9e2adf72cc89316">cam.nc.lathe1.CreatorIso</link>, <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1a9185d27e4b7b086f9254f1eeb44ba0c3">cam.nc.recreator.Redirector</link>, <link linkend="_classcam_1_1nc_1_1rez2_1_1Creator_1aeb078a15644fd38428fe437050b95d86">cam.nc.rez2.Creator</link>, <link linkend="_classcam_1_1nc_1_1shopbot__mtc_1_1Creator_1abaa6d15ed95bba6a1a5ee394e6f9e693">cam.nc.shopbot_mtc.Creator</link>, <link linkend="_classcam_1_1nc_1_1tnc151_1_1Creator_1aae9fd776c535cac9e6d71c1c25c91a00">cam.nc.tnc151.Creator</link>, and <link linkend="_classcam_1_1nc_1_1winpc_1_1Creator_1a2516870c787e276bfa9061c5a80a5349">cam.nc.winpc.Creator</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nc_1_1Creator_ab3e7940549c2d69d003224aa3cd586d3_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a59217559479a824dcf40a00da6d692ac"/><section>
+    <title>coolant()</title>
+<indexterm><primary>coolant</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>coolant</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.coolant ( self,  mode = <computeroutput>0</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Set the coolant mode</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1a7036356988aeecbeca61cf3dfc398e22">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a3e23cee17ea4e06b916e1472c938fad6">cam.nc.iso.Creator</link>, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ae8b8552c926c17ffa7170752cfca987a">cam.nc.lathe1.CreatorIso</link>, <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1a51e70d5dd4ba568cf557af9b00747b3f">cam.nc.recreator.Redirector</link>, and <link linkend="_classcam_1_1nc_1_1rez2_1_1Creator_1a2f26084e78a4feec06373aa225fe23ca">cam.nc.rez2.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1abb1d0f892dfa22f1fa591e0f32132ddd"/><section>
+    <title>current_tool()</title>
+<indexterm><primary>current_tool</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>current_tool</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.current_tool ( self)</computeroutput></para><para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1a19e7cf6fc1073818cc4b333b5ba59974">cam.nc.heiden.Creator</link>, and <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a46031cdb0ec680d36993ecfcd2f6161a">cam.nc.iso.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1acbee84ef2d71fe9ede19daa1022f1d92"/><section>
+    <title>datum_set()</title>
+<indexterm><primary>datum_set</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>datum_set</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.datum_set ( self,  x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+,  a = <computeroutput>None</computeroutput>
+,  b = <computeroutput>None</computeroutput>
+,  c = <computeroutput>None</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Set the datum</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1aae75bb6adb2755f6a520aab584276bd4">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a31fdea62a66bd99aa946e53737fe9162">cam.nc.iso.Creator</link>, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ae9c2ed7fab5d6ff2a01b7329c7450a7c">cam.nc.lathe1.CreatorIso</link>, <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1a19ef1dfea5ac20f2c8548d200e8b53ae">cam.nc.recreator.Redirector</link>, and <link linkend="_classcam_1_1nc_1_1rez2_1_1Creator_1a2a6470a77e72de49a15af36ff0548213">cam.nc.rez2.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1ab99e5623dda8e62b2b94bd239d22e9b6"/><section>
+    <title>datum_shift()</title>
+<indexterm><primary>datum_shift</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>datum_shift</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.datum_shift ( self,  x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+,  a = <computeroutput>None</computeroutput>
+,  b = <computeroutput>None</computeroutput>
+,  c = <computeroutput>None</computeroutput>
+)</computeroutput></para><para>
+
+<para>Datums. </para>
+</para>
+
+<para><literallayout><computeroutput>Shift the datum</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1a2bfab56e8d5dd36045477cee60088111">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1aecd7364c4166b92f243f6b89e8cede04">cam.nc.iso.Creator</link>, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a1f23fbf69f6a552d478d41d48535397b">cam.nc.lathe1.CreatorIso</link>, <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1aaadc783d8e3a83d8c98e7c164a08bca2">cam.nc.recreator.Redirector</link>, and <link linkend="_classcam_1_1nc_1_1rez2_1_1Creator_1a889fcf5e36af8919f5bf789ff6441240">cam.nc.rez2.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a4819416a7408129c220de90d72c91a6c"/><section>
+    <title>drill()</title>
+<indexterm><primary>drill</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>drill</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.drill ( self,  x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  dwell = <computeroutput>None</computeroutput>
+,  depthparams = <computeroutput>None</computeroutput>
+,  retract_mode = <computeroutput>None</computeroutput>
+,  spindle_mode = <computeroutput>None</computeroutput>
+,  internal_coolant_on = <computeroutput>None</computeroutput>
+,  rapid_to_clearance = <computeroutput>None</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Drilling routines</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1anilam__crusader__m_1_1Creator_1a2363d2318c6de72288466d622f37fb2d">cam.nc.anilam_crusader_m.Creator</link>, <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1ab1ba24f0b927edab5d70c6642ceacfc4">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a61f29267aaaddc3d5c8471f9bf714cb3">cam.nc.iso.Creator</link>, <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1abe18e24a91dccffa11a58d219d139fdc">cam.nc.recreator.Redirector</link>, and <link linkend="_classcam_1_1nc_1_1rez2_1_1Creator_1aec638a8489a120fef07a8bd6823476e4">cam.nc.rez2.Creator</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nc_1_1Creator_a4819416a7408129c220de90d72c91a6c_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a56b11f862045ee84c844133b646117c8"/><section>
+    <title>dwell()</title>
+<indexterm><primary>dwell</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>dwell</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.dwell ( self,  t)</computeroutput></para>
+<para><literallayout><computeroutput>Dwell</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1emc2b_1_1Creator_1a006e31e84b5530bf7b08d638f68ae029">cam.nc.emc2b.Creator</link>, <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1a0a26a4f1085a95ed80cf3cc1e7d8eb97">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a2043c0e5205bc5f240aa9c08c4eebc76">cam.nc.iso.Creator</link>, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ae6627d29a1149b516f139585a7200cd9">cam.nc.lathe1.CreatorIso</link>, <link linkend="_classcam_1_1nc_1_1lynx__otter__o_1_1Creator_1a9991577948fe0ed587d3a564f7690dc7">cam.nc.lynx_otter_o.Creator</link>, <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1a766d66ea29b582f943c0f11a40ef9f73">cam.nc.recreator.Redirector</link>, <link linkend="_classcam_1_1nc_1_1rez2_1_1Creator_1a5d5473b4b265357432b5f47f73241178">cam.nc.rez2.Creator</link>, and <link linkend="_classcam_1_1nc_1_1series1_1_1Creator_1a1b8ead58607240d74c16e7463301dfcc">cam.nc.series1.Creator</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nc_1_1Creator_a56b11f862045ee84c844133b646117c8_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1acec2552d357ba49de5adbcbaf3ad93a5"/><section>
+    <title>end_canned_cycle()</title>
+<indexterm><primary>end_canned_cycle</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>end_canned_cycle</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.end_canned_cycle ( self)</computeroutput></para><para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1centroid1_1_1Creator_1a55723d7e0c29bc58b08ae2b4ed9c966e">cam.nc.centroid1.Creator</link>, <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1abf3705aeb8eaf06ff33d552ffbc242c6">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a8efd5882a839fbf1414b0982cd1befd0">cam.nc.iso.Creator</link>, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a8accf939c903e6a847289d1fc081a8d0">cam.nc.lathe1.CreatorIso</link>, and <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1aebd5b662ba9e1860536b96166fbc666c">cam.nc.recreator.Redirector</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a2a88ca7c016d69f6c5f8dd98f326868a"/><section>
+    <title>end_ncblock()</title>
+<indexterm><primary>end_ncblock</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>end_ncblock</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.end_ncblock ( self)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nc_1_1Creator_a2a88ca7c016d69f6c5f8dd98f326868a_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a1acc377f3f5c966fde33e8a22ae49dd2"/><section>
+    <title>extruder_off()</title>
+<indexterm><primary>extruder_off</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>extruder_off</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.extruder_off ( self)</computeroutput></para>
+<para><literallayout><computeroutput>turn off the extruder</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a227b7ab87099b672da953a0aad13eff6"/><section>
+    <title>extruder_on()</title>
+<indexterm><primary>extruder_on</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>extruder_on</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.extruder_on ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Turn on the extruder</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a0911d697ca8205da25a327e638fd3620"/><section>
+    <title>extruder_temp()</title>
+<indexterm><primary>extruder_temp</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>extruder_temp</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.extruder_temp ( self,  temp)</computeroutput></para>
+<para><literallayout><computeroutput>Set the extruder temp in celsius</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a5b9d618bf11b2c17a1bc5f69944bd3b7"/><section>
+    <title>fan_off()</title>
+<indexterm><primary>fan_off</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>fan_off</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.fan_off ( self)</computeroutput></para>
+<para><literallayout><computeroutput>turn off the cooling fan</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a2f54ed36706db67ca412a8ff341526a3"/><section>
+    <title>fan_on()</title>
+<indexterm><primary>fan_on</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>fan_on</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.fan_on ( self)</computeroutput></para>
+<para><literallayout><computeroutput>turn on the cooling fan</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a58c3bce534b047d5824cde16c2571c0f"/><section>
+    <title>feed()</title>
+<indexterm><primary>feed</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>feed</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.feed ( self,  x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+,  a = <computeroutput>None</computeroutput>
+,  b = <computeroutput>None</computeroutput>
+,  c = <computeroutput>None</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Feed move</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1rez2_1_1Creator_1abcab495c1a952b7ca233f76836c53438">cam.nc.rez2.Creator</link>, <link linkend="_classcam_1_1nc_1_1attach_1_1Creator_1a27a17497f0889323fd31aab4f857e577">cam.nc.attach.Creator</link>, <link linkend="_classcam_1_1nc_1_1drag__knife_1_1Creator_1a0eb0ca2c035bd29dbe35b4767d733c4c">cam.nc.drag_knife.Creator</link>, <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1a983c9d1748987984ea5a74e7489b4664">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1heiden530_1_1Creator_1a85c6b3c82eb4357cf5d08aad348f2805">cam.nc.heiden530.Creator</link>, <link linkend="_classcam_1_1nc_1_1hpgl2d_1_1Creator_1aa06f2e78abd00f6c4c6525a43664fc3a">cam.nc.hpgl2d.Creator</link>, <link linkend="_classcam_1_1nc_1_1hpgl3d_1_1Creator_1a12b9a33fb5cfbdff48b640e61cbea77d">cam.nc.hpgl3d.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ad072e258b3de2c4fa8b1033f28d67bbb">cam.nc.iso.Creator</link>, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a7278ca3bb84f4045368333fa059ab864">cam.nc.lathe1.CreatorIso</link>, <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1a18a127cd30af49f796b825ded2771cf0">cam.nc.recreator.Redirector</link>, and <link linkend="_classcam_1_1nc_1_1shopbot__mtc_1_1Creator_1ac0e16a54513308eba0a390bb80518db7">cam.nc.shopbot_mtc.Creator</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nc_1_1Creator_a58c3bce534b047d5824cde16c2571c0f_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a09d15b7b72c2a18cae7dfb450f1da06e"/><section>
+    <title>feedrate()</title>
+<indexterm><primary>feedrate</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>feedrate</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.feedrate ( self,  f)</computeroutput></para><para>
+
+<para>Rates + Modes. </para>
+</para>
+
+<para><literallayout><computeroutput>Set the feedrate</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1ad6b1d24fbc92f1da74083f915b84a688">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a2d1c6d9f9626da93eca6552355107bf8">cam.nc.iso.Creator</link>, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1aa2766b882c26238c2c270e4c194b8958">cam.nc.lathe1.CreatorIso</link>, <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1a401e1e9896e9bf0e099c2ad0b7021681">cam.nc.recreator.Redirector</link>, <link linkend="_classcam_1_1nc_1_1rez2_1_1Creator_1a29e57b4b1a2deb4e38a854b092132535">cam.nc.rez2.Creator</link>, and <link linkend="_classcam_1_1nc_1_1shopbot__mtc_1_1Creator_1a4640c19ab51da1f9631903d39a23ee00">cam.nc.shopbot_mtc.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1ae66f328adc58521e5ab9db7cf54dc6ce"/><section>
+    <title>feedrate_hv()</title>
+<indexterm><primary>feedrate_hv</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>feedrate_hv</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.feedrate_hv ( self,  fh,  fv)</computeroutput></para>
+<para><literallayout><computeroutput>Set the horizontal and vertical feedrates</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1a51920707fca6b366913a3a1614765b9a">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a57c0823d547d228834bec6001ee1582a">cam.nc.iso.Creator</link>, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a4ac64a1829ad72844d4d9f3ffe3d0009">cam.nc.lathe1.CreatorIso</link>, <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1a2534fefd841d1868d0a8b60a2a6e3402">cam.nc.recreator.Redirector</link>, and <link linkend="_classcam_1_1nc_1_1rez2_1_1Creator_1af5251bdf37c79070ba1f0545fd39515b">cam.nc.rez2.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a7bf39bc81f3b3714060d74f1339ae06c"/><section>
+    <title>file_close()</title>
+<indexterm><primary>file_close</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>file_close</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.file_close ( self)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nc_1_1Creator_a7bf39bc81f3b3714060d74f1339ae06c_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1ab3651c24840aa9b2a7a1bc828263eac9"/><section>
+    <title>file_open()</title>
+<indexterm><primary>file_open</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>file_open</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.file_open ( self,  name)</computeroutput></para><para>
+
+<para>Internals. </para>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a7d841db837bad9de3466cfbd253ce875"/><section>
+    <title>flush_nc()</title>
+<indexterm><primary>flush_nc</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>flush_nc</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.flush_nc ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Flush all pending codes</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1a31f1b11e78788746ffb5163752b2d276">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a6b79af602eda054ccddc9bceaf92f4ab">cam.nc.iso.Creator</link>, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ad279609e88cfe7951f2aa22eedfdb8a1">cam.nc.lathe1.CreatorIso</link>, <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1a0bd0c725ba24a846283ac3441a7aa650">cam.nc.recreator.Redirector</link>, <link linkend="_classcam_1_1nc_1_1rez2_1_1Creator_1a8a2088c51507b018bd6a3572a948ce22">cam.nc.rez2.Creator</link>, and <link linkend="_classcam_1_1nc_1_1shopbot__mtc_1_1Creator_1a5d7b3b4129c3915e1294d4d699897034">cam.nc.shopbot_mtc.Creator</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nc_1_1Creator_a7d841db837bad9de3466cfbd253ce875_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a80e7b5c8fccc9bd3982c33a266d9fed0"/><section>
+    <title>gearrange()</title>
+<indexterm><primary>gearrange</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>gearrange</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.gearrange ( self,  gear = <computeroutput>0</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Set the gear range</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1adf50104e1d227a762a29624244061b16">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ae9be52dffec064b2051414859e10eaf3">cam.nc.iso.Creator</link>, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ae0c24215c442d382a002a8a60380f539">cam.nc.lathe1.CreatorIso</link>, <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1a1c43d6fd7e3db0a490efb95127eb8994">cam.nc.recreator.Redirector</link>, and <link linkend="_classcam_1_1nc_1_1rez2_1_1Creator_1a278fc106c0bdea687db46256d09ebbf4">cam.nc.rez2.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1acfa51223614b1c8c231c99f8e6103af1"/><section>
+    <title>imperial()</title>
+<indexterm><primary>imperial</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>imperial</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.imperial ( self)</computeroutput></para><para>
+
+<para>Settings. </para>
+</para>
+
+<para><literallayout><computeroutput>Set imperial units</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1anilam__crusader__m_1_1Creator_1ade0985eb2a1d204aae252d78712763df">cam.nc.anilam_crusader_m.Creator</link>, <link linkend="_classcam_1_1nc_1_1emc2_1_1Creator_1a2355245999a9f13472dadbaeff524676">cam.nc.emc2.Creator</link>, <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1a18bb11b58c955f218e0e134133b3f433">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1hpgl2d_1_1Creator_1a40ab5a819ebeb4999827f9b1e481c48a">cam.nc.hpgl2d.Creator</link>, <link linkend="_classcam_1_1nc_1_1hpgl2dv_1_1Creator_1a97348a94f0b2a1fb11e581a85899aaf5">cam.nc.hpgl2dv.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a7d08a644f2310071134f7cea7e8bb7b1">cam.nc.iso.Creator</link>, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ac55213dc253194762ec2b67608c2d57a">cam.nc.lathe1.CreatorIso</link>, <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1aac89af9940b239a0231eaf6d86be2c28">cam.nc.recreator.Redirector</link>, <link linkend="_classcam_1_1nc_1_1rez2_1_1Creator_1a551b8f3d479e88b2c5741d33cd9aadef">cam.nc.rez2.Creator</link>, <link linkend="_classcam_1_1nc_1_1shopbot__mtc_1_1Creator_1aec5eb02916759f45597463bdf009e29b">cam.nc.shopbot_mtc.Creator</link>, and <link linkend="_classcam_1_1nc_1_1tnc151_1_1Creator_1a5702d188eb856215a4095b81b3e5cf70">cam.nc.tnc151.Creator</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nc_1_1Creator_acfa51223614b1c8c231c99f8e6103af1_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a263eb1faaf6a9ee93f8d78bca773f021"/><section>
+    <title>incremental()</title>
+<indexterm><primary>incremental</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>incremental</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.incremental ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Set incremental coordinates</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1anilam__crusader__m_1_1Creator_1ac1417b6b709eb04da569a7daf61c48ff">cam.nc.anilam_crusader_m.Creator</link>, <link linkend="_classcam_1_1nc_1_1centroid1_1_1Creator_1a405acebb6a464435d8d305b38945eb8c">cam.nc.centroid1.Creator</link>, <link linkend="_classcam_1_1nc_1_1emc2_1_1Creator_1a3e3047b0afd25a1e6bdab879c6eb8c82">cam.nc.emc2.Creator</link>, <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1a0a18f771b23203322043703deddae5d8">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a882c092d48477f2101362c0988d228e7">cam.nc.iso.Creator</link>, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1afb8eda52dbc738421b324d12969b57b8">cam.nc.lathe1.CreatorIso</link>, <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1af7a39fe49913f723170f2e23c08797f1">cam.nc.recreator.Redirector</link>, <link linkend="_classcam_1_1nc_1_1rez2_1_1Creator_1a6d0b09adc6b38952e96c7c6c9604a126">cam.nc.rez2.Creator</link>, and <link linkend="_classcam_1_1nc_1_1shopbot__mtc_1_1Creator_1adeea6bf31a1eb12b907c17de54ca058f">cam.nc.shopbot_mtc.Creator</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nc_1_1Creator_a263eb1faaf6a9ee93f8d78bca773f021_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1adf1d934a3cd91810b1148e119887500c"/><section>
+    <title>insert()</title>
+<indexterm><primary>insert</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>insert</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.insert ( self,  text)</computeroutput></para>
+<para><literallayout><computeroutput>APT style INSERT statement</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1centroid1_1_1Creator_1a72c32dde83f60a3f24167e946a16a7db">cam.nc.centroid1.Creator</link>, <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1ad01b986e20257776bb914e7005f72b44">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ac18f5cf3a4b28ca5ad7d11935309b8a5">cam.nc.iso.Creator</link>, and <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a85d6358057eaee8502498d8d29743cf3">cam.nc.lathe1.CreatorIso</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a17e6de5013fe131ff946bd3e86be52dc"/><section>
+    <title>log_coordinate()</title>
+<indexterm><primary>log_coordinate</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>log_coordinate</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.log_coordinate ( self,  x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+)</computeroutput></para><para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1emc2_1_1Creator_1aed405da71c77d50e3f817331f8fd9072">cam.nc.emc2.Creator</link>, <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1a5d14523fe12b93f7858e80aafc56af01">cam.nc.heiden.Creator</link>, and <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a2521f46f9bab4b239603f30315539ecc">cam.nc.iso.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a8a41b57e7fbc95e765b4107d61f2b0fb"/><section>
+    <title>log_message()</title>
+<indexterm><primary>log_message</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>log_message</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.log_message ( self,  message = <computeroutput>None</computeroutput>
+)</computeroutput></para><para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1emc2_1_1Creator_1a9cea9ffc287b87d8d73f054c790474e5">cam.nc.emc2.Creator</link>, <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1a3010484de770e67a433a93cfa177439f">cam.nc.heiden.Creator</link>, and <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ae2d5838f0332ca215fad89ba5eb1e0ff">cam.nc.iso.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1aa444813a0c811ccdf5c131ef200f61ad"/><section>
+    <title>matrix()</title>
+<indexterm><primary>matrix</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>matrix</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.matrix ( self,  a1 = <computeroutput>None</computeroutput>
+,  b1 = <computeroutput>None</computeroutput>
+,  c1 = <computeroutput>None</computeroutput>
+,  a2 = <computeroutput>None</computeroutput>
+,  b2 = <computeroutput>None</computeroutput>
+,  c2 = <computeroutput>None</computeroutput>
+,  a3 = <computeroutput>None</computeroutput>
+,  b3 = <computeroutput>None</computeroutput>
+,  c3 = <computeroutput>None</computeroutput>
+)</computeroutput></para><para>
+
+<para>APT360 like Transformation Definitions These definitions were created while looking at Irvin Kraal&apos;s book on APT. </para>
+</para>
+
+<para><itemizedlist>
+<listitem>
+<para>Numerical Control Progamming in APT - page 211</para>
+</listitem></itemizedlist>
+</para>
+
+<para><literallayout><computeroutput>Create a matrix for transformations</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a016998404be15eef6dc192118c572e4a"/><section>
+    <title>matrix_product()</title>
+<indexterm><primary>matrix_product</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>matrix_product</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.matrix_product ( self,  matrix1 = <computeroutput>None</computeroutput>
+,  matrix2 = <computeroutput>None</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Create matrix that is the product of two other matrices</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1ab7b52eb5d7170eafdc365d407a887e8b"/><section>
+    <title>metric()</title>
+<indexterm><primary>metric</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>metric</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.metric ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Set metric units</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1anilam__crusader__m_1_1Creator_1a6977ae2a9c3b4e62d32a2368b0c9c546">cam.nc.anilam_crusader_m.Creator</link>, <link linkend="_classcam_1_1nc_1_1emc2_1_1Creator_1aeb992900b43f520ce6ccabd8e502c037">cam.nc.emc2.Creator</link>, <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1a37d07f0dab5720c05c1f6ef762c41823">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1heiden530_1_1Creator_1a6194d7c1d44e16e16e84943409bf84e6">cam.nc.heiden530.Creator</link>, <link linkend="_classcam_1_1nc_1_1hpgl2d_1_1Creator_1a6d672bbc24568f1f722707ba37cbb484">cam.nc.hpgl2d.Creator</link>, <link linkend="_classcam_1_1nc_1_1hpgl2dv_1_1Creator_1a90ae9c952ba36d7be3183010ec95662c">cam.nc.hpgl2dv.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a87e14f7ad8bcc131365d1f1f2fb6f42b">cam.nc.iso.Creator</link>, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1adeaa6c4fcc9c3056600a3dd2706daf18">cam.nc.lathe1.CreatorIso</link>, <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1aee410c17347683460063abcb66be2b02">cam.nc.recreator.Redirector</link>, <link linkend="_classcam_1_1nc_1_1rez2_1_1Creator_1a320aaac705cbf29ab9a6bdcb619c7567">cam.nc.rez2.Creator</link>, <link linkend="_classcam_1_1nc_1_1series1_1_1Creator_1ab8f324052723f07228eb6d73f36ea3d3">cam.nc.series1.Creator</link>, <link linkend="_classcam_1_1nc_1_1shopbot__mtc_1_1Creator_1a9d4552e062d6bd2dd49428902528f4e5">cam.nc.shopbot_mtc.Creator</link>, and <link linkend="_classcam_1_1nc_1_1tnc151_1_1Creator_1a04d4b9f6e10c2296dc6020f71da72c0e">cam.nc.tnc151.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1aa777fc06dd6e476f08060e7cf4f88068"/><section>
+    <title>mirror_line()</title>
+<indexterm><primary>mirror_line</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>mirror_line</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.mirror_line ( self,  line = <computeroutput>None</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Mirror about a line</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a183c1585f1851d4573dadc6645f3b473"/><section>
+    <title>mirror_plane()</title>
+<indexterm><primary>mirror_plane</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>mirror_plane</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.mirror_plane ( self,  plane1 = <computeroutput>None</computeroutput>
+,  plane2 = <computeroutput>None</computeroutput>
+,  plane3 = <computeroutput>None</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Mirror image about one or more coordinate planes</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a673202842c64cc44b229f441ae62994f"/><section>
+    <title>offset_length()</title>
+<indexterm><primary>offset_length</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>offset_length</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.offset_length ( self,  id,  length = <computeroutput>None</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Set tool length offsetting</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1a5611e63d180e437822595c57157a27a8">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a70c70366475b962ed64b04061d13869c">cam.nc.iso.Creator</link>, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1afbc112be2b2fba36815d7cbf200d00b7">cam.nc.lathe1.CreatorIso</link>, <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1a37cba4aeea5d14990d07d94bb58b2622">cam.nc.recreator.Redirector</link>, and <link linkend="_classcam_1_1nc_1_1rez2_1_1Creator_1ade4ab9d7b60a96fb6a7192bd4322196c">cam.nc.rez2.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a755ac1c627b9d5373a00c71c02210590"/><section>
+    <title>offset_radius()</title>
+<indexterm><primary>offset_radius</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>offset_radius</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.offset_radius ( self,  id,  radius = <computeroutput>None</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Set tool radius offsetting</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1aef19e78e2e7700eff18c20a5313899db">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a50a917795ddd96336bb650282075dd6b">cam.nc.iso.Creator</link>, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a4323efb912ed6fa6c215bc468b6069e3">cam.nc.lathe1.CreatorIso</link>, <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1a7f91e4c548bb938212f982646a8e3301">cam.nc.recreator.Redirector</link>, and <link linkend="_classcam_1_1nc_1_1rez2_1_1Creator_1a09e2236065281f5563b93511be9fc15e">cam.nc.rez2.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1ae826db09c1b7c0fe1099f66f09f5758a"/><section>
+    <title>open_log_file()</title>
+<indexterm><primary>open_log_file</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>open_log_file</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.open_log_file ( self,  xml_file_name = <computeroutput>None</computeroutput>
+)</computeroutput></para><para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1emc2_1_1Creator_1ab19dd81993d1b64a5cd5d6ba4fed0579">cam.nc.emc2.Creator</link>, <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1a8dc35d04bc2c7370a63a82f381b306ef">cam.nc.heiden.Creator</link>, and <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1af8151a0e2cdd9e85fc647036dbb3ed54">cam.nc.iso.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a59688c01984638c50dfbf012bd1ee4e3"/><section>
+    <title>pattern()</title>
+<indexterm><primary>pattern</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>pattern</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.pattern ( self)</computeroutput></para><para>
+
+<para>Cycles. </para>
+</para>
+
+<para><literallayout><computeroutput>Simple pattern eg. circle, rect</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1a9d47a0e0984b161df8d3a6783086a146">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a11a90ac0d54bed09ac3d29778d5d147d">cam.nc.iso.Creator</link>, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a20f06f8a86c04518d585e91ec3e4e392">cam.nc.lathe1.CreatorIso</link>, <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1a9cdbbc06bb50639dee360d267dcc1ff3">cam.nc.recreator.Redirector</link>, and <link linkend="_classcam_1_1nc_1_1rez2_1_1Creator_1a832faa0c3acbd4f55d9ca09a57cdaee6">cam.nc.rez2.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a89cf133b4ed304132bab0e3e930a7d1e"/><section>
+    <title>pocket()</title>
+<indexterm><primary>pocket</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>pocket</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.pocket ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Pocket routine</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1af9ed6c11d5093592188430ef33f22971">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1acf0c68572a3d821b6ef84604dd92a473">cam.nc.iso.Creator</link>, <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1ae4535fda7ec0d3d5de7c676a8288c5fa">cam.nc.recreator.Redirector</link>, and <link linkend="_classcam_1_1nc_1_1rez2_1_1Creator_1ab092d47ef20333829cb486b0ed9e926a">cam.nc.rez2.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1ae6d17212fd1159f967bbdbb4d69a03f1"/><section>
+    <title>polar()</title>
+<indexterm><primary>polar</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>polar</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.polar ( self,  on = <computeroutput>True</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Set polar coordinates</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1anilam__crusader__m_1_1Creator_1a4fc6100666add019cc30656ea2ea2085">cam.nc.anilam_crusader_m.Creator</link>, <link linkend="_classcam_1_1nc_1_1emc2_1_1Creator_1a722e5ed5c70739170c7ab76f123dd805">cam.nc.emc2.Creator</link>, <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1ac5ad033b4c6d8fd4ac1491750393a7ce">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a0a80136128b6466bdf30e894427d6bfb">cam.nc.iso.Creator</link>, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ad74fd3af0b22f51feebd958b6fae8113">cam.nc.lathe1.CreatorIso</link>, <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1a654e77fc529e703bd2388dddc6e567c2">cam.nc.recreator.Redirector</link>, and <link linkend="_classcam_1_1nc_1_1rez2_1_1Creator_1a6fda1e8f6c1a8f69df6fcedcd71296bf">cam.nc.rez2.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a950f0b9dd784e5a706fb16bd4e356607"/><section>
+    <title>probe_downward_point()</title>
+<indexterm><primary>probe_downward_point</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>probe_downward_point</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.probe_downward_point ( self,  x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  depth = <computeroutput>None</computeroutput>
+,  intersection_variable_z = <computeroutput>None</computeroutput>
+)</computeroutput></para><para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1ae8e86bcc6f05521bf4b639128e3241ee">cam.nc.heiden.Creator</link>, and <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a40689f45d25f7f726d11a172b608c0a4">cam.nc.iso.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a5943f76b586cd2d530dc0d305ef457bd"/><section>
+    <title>probe_linear_centre_outside()</title>
+<indexterm><primary>probe_linear_centre_outside</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>probe_linear_centre_outside</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.probe_linear_centre_outside ( self,  x1 = <computeroutput>None</computeroutput>
+,  y1 = <computeroutput>None</computeroutput>
+,  depth = <computeroutput>None</computeroutput>
+,  x2 = <computeroutput>None</computeroutput>
+,  y2 = <computeroutput>None</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1ab2982bddb09ae7c6469a7b5e616566ab"/><section>
+    <title>probe_single_point()</title>
+<indexterm><primary>probe_single_point</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>probe_single_point</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.probe_single_point ( self,  point_along_edge_x = <computeroutput>None</computeroutput>
+,  point_along_edge_y = <computeroutput>None</computeroutput>
+,  depth = <computeroutput>None</computeroutput>
+,  retracted_point_x = <computeroutput>None</computeroutput>
+,  retracted_point_y = <computeroutput>None</computeroutput>
+,  destination_point_x = <computeroutput>None</computeroutput>
+,  destination_point_y = <computeroutput>None</computeroutput>
+,  intersection_variable_x = <computeroutput>None</computeroutput>
+,  intersection_variable_y = <computeroutput>None</computeroutput>
+,  probe_offset_x_component = <computeroutput>None</computeroutput>
+,  probe_offset_y_component = <computeroutput>None</computeroutput>
+)</computeroutput></para><para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1a921825a14a9068d234377d7ac3b7777f">cam.nc.heiden.Creator</link>, and <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1adc5343ffd168991077858693d6a79fef">cam.nc.iso.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1acf980db0661f226477a3b1a39d345e7c"/><section>
+    <title>profile()</title>
+<indexterm><primary>profile</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>profile</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.profile ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Profile routine</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1a77dce129c99338bc62c1c359d8c4469b">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1ad9e7a9b3810c15895504c08d715415a9">cam.nc.iso.Creator</link>, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a0eb1bf3941c0211e05ef01dda8764501">cam.nc.lathe1.CreatorIso</link>, <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1a5d59db319fe917d938fccbf7ce07385a">cam.nc.recreator.Redirector</link>, and <link linkend="_classcam_1_1nc_1_1rez2_1_1Creator_1ae3a2e248f917068346b8ba5e0a80a739">cam.nc.rez2.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a9a88c0cb630a1b3604d230f4c8b9b5ac"/><section>
+    <title>program_begin()</title>
+<indexterm><primary>program_begin</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>program_begin</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.program_begin ( self,  id,  name = <computeroutput>&apos;&apos;</computeroutput>
+)</computeroutput></para><para>
+
+<para>Programs. </para>
+</para>
+
+<para><literallayout><computeroutput>Begin a program</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1anilam__crusader__m_1_1Creator_1a98cb21cefba2d824c366d9b47afa63bf">cam.nc.anilam_crusader_m.Creator</link>, <link linkend="_classcam_1_1nc_1_1emc2_1_1Creator_1a84d06cb4095e152f0b3826b8ba81f773">cam.nc.emc2.Creator</link>, <link linkend="_classcam_1_1nc_1_1emc2b_1_1Creator_1a635fe342002508e3b84ebfb84a1f8446">cam.nc.emc2b.Creator</link>, <link linkend="_classcam_1_1nc_1_1gantry__router_1_1Creator_1a483ab0e905d58e0ad3fdb2543792c16a">cam.nc.gantry_router.Creator</link>, <link linkend="_classcam_1_1nc_1_1gravos_1_1Creator_1a9d5b7480dcb2c2c6d8d05888147d1c2f">cam.nc.gravos.Creator</link>, <link linkend="_classcam_1_1nc_1_1grbl_1_1Creator_1ae19e41eeb025b86b01fadb07e17cc764">cam.nc.grbl.Creator</link>, <link linkend="_classcam_1_1nc_1_1hm50_1_1Creator_1a19293e986ee5ceb3483a39809a18e014">cam.nc.hm50.Creator</link>, <link linkend="_classcam_1_1nc_1_1mach3_1_1Creator_1a68c402a45299b8b8e57e4599f92fc21e">cam.nc.mach3.Creator</link>, <link linkend="_classcam_1_1nc_1_1winpc_1_1Creator_1aca2b206132fccc31b615eb568e2fa355">cam.nc.winpc.Creator</link>, <link linkend="_classcam_1_1nc_1_1centroid1_1_1Creator_1a4f82c4055a27d048745a445ccb1bb3ca">cam.nc.centroid1.Creator</link>, <link linkend="_classcam_1_1nc_1_1fadal_1_1Creator_1a6ee2a1bc664bff3ebe1a33a3f71d9f35">cam.nc.fadal.Creator</link>, <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1adc59b2cc0deb3f2994c38efee422574d">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1heiden530_1_1Creator_1a2df4df9ca7c46efe5ad3b0b0d984f2c1">cam.nc.heiden530.Creator</link>, <link linkend="_classcam_1_1nc_1_1hpgl2d_1_1Creator_1ac7cc09943b20c6319b78f570ce7e7577">cam.nc.hpgl2d.Creator</link>, <link linkend="_classcam_1_1nc_1_1hpgl3d_1_1Creator_1ac03769d740b965ef64af62ee5894ed0b">cam.nc.hpgl3d.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1adcc0019bc3a0dff0023e4d11b13b92c2">cam.nc.iso.Creator</link>, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a5f05abaa6adfd0666a7abaa494876504">cam.nc.lathe1.CreatorIso</link>, <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1a564620eb31917021f0a7e5674890594b">cam.nc.recreator.Redirector</link>, <link linkend="_classcam_1_1nc_1_1rez2_1_1Creator_1a3cbff573fe91777aa6a54387034ce50a">cam.nc.rez2.Creator</link>, <link linkend="_classcam_1_1nc_1_1shopbot__mtc_1_1Creator_1a6b74e380e0cc3a8916149b732e686961">cam.nc.shopbot_mtc.Creator</link>, and <link linkend="_classcam_1_1nc_1_1tnc151_1_1Creator_1a265569439cfae3585bb373d299ebfff0">cam.nc.tnc151.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a6b23941ee5eaaed546121898ee5b09fa"/><section>
+    <title>program_end()</title>
+<indexterm><primary>program_end</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>program_end</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.program_end ( self)</computeroutput></para>
+<para><literallayout><computeroutput>End the program</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1anilam__crusader__m_1_1Creator_1ace5e6b987b1331e97998b453e24fd71b">cam.nc.anilam_crusader_m.Creator</link>, <link linkend="_classcam_1_1nc_1_1centroid1_1_1Creator_1a7e314319ba5042e96f660b2a86fecb3e">cam.nc.centroid1.Creator</link>, <link linkend="_classcam_1_1nc_1_1fadal_1_1Creator_1a5a6e7eaa1a0ebbb61d8b293f36293217">cam.nc.fadal.Creator</link>, <link linkend="_classcam_1_1nc_1_1gravos_1_1Creator_1aa5c9d07ba35c18b89665281c518da6a3">cam.nc.gravos.Creator</link>, <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1a785c2f3caab773079ab5b78495d5d2e3">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1heiden530_1_1Creator_1aeddcab01d2dfad26eb8482b0f690fd39">cam.nc.heiden530.Creator</link>, <link linkend="_classcam_1_1nc_1_1hpgl2d_1_1Creator_1a54c06314d3103936cee6a528e9c6b18c">cam.nc.hpgl2d.Creator</link>, <link linkend="_classcam_1_1nc_1_1hpgl3d_1_1Creator_1af90230d1943137edd9ce035307d9deae">cam.nc.hpgl3d.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1aeedc350647013e5f1543bbdcb32ebd27">cam.nc.iso.Creator</link>, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1aca23f88a1fdd8c1ace71de40bdcaddec">cam.nc.lathe1.CreatorIso</link>, <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1a26933c3149ce1e50aa7583df3cb84db2">cam.nc.recreator.Redirector</link>, <link linkend="_classcam_1_1nc_1_1rez2_1_1Creator_1ac7bc928a67448af439aeba0659882006">cam.nc.rez2.Creator</link>, <link linkend="_classcam_1_1nc_1_1shopbot__mtc_1_1Creator_1a9a36261175b1fccf5a08c81e7853d1bc">cam.nc.shopbot_mtc.Creator</link>, and <link linkend="_classcam_1_1nc_1_1winpc_1_1Creator_1aa2dc25a2906dcd979f8454c5630b5f4d">cam.nc.winpc.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a5e043392f919d7f10a5a282a580bc8fa"/><section>
+    <title>program_stop()</title>
+<indexterm><primary>program_stop</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>program_stop</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.program_stop ( self,  optional = <computeroutput>False</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Stop the machine</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1centroid1_1_1Creator_1ad6a4499edb3630c4da194d28458d895a">cam.nc.centroid1.Creator</link>, <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1a9ff5ec0092767d4038917d4f3257a504">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1afcd2fb65cdc93069c93cada835219108">cam.nc.iso.Creator</link>, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1acec350c5ee0b2fd65f16fbbc81e2ba35">cam.nc.lathe1.CreatorIso</link>, <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1ac4eb098a704c851967f9f6e30c048354">cam.nc.recreator.Redirector</link>, and <link linkend="_classcam_1_1nc_1_1rez2_1_1Creator_1afa41df643a5e5b36c339765d70fa19e8">cam.nc.rez2.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1ad5d01e340589c729f48fab397ccf137c"/><section>
+    <title>rapid()</title>
+<indexterm><primary>rapid</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>rapid</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.rapid ( self,  x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+,  a = <computeroutput>None</computeroutput>
+,  b = <computeroutput>None</computeroutput>
+,  c = <computeroutput>None</computeroutput>
+)</computeroutput></para><para>
+
+<para>Moves. </para>
+</para>
+
+<para><literallayout><computeroutput>Rapid move</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1rez2_1_1Creator_1abe171ac0eb1fb68dc8ac0c973f8807e9">cam.nc.rez2.Creator</link>, <link linkend="_classcam_1_1nc_1_1attach_1_1Creator_1a8d277dd0be3e8d12c6159eb11d873efe">cam.nc.attach.Creator</link>, <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1a2262faed4f078201d3fab4c023d3e1d2">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1heiden530_1_1Creator_1ae0e91cfeea8854af12bf2494a799bc9a">cam.nc.heiden530.Creator</link>, <link linkend="_classcam_1_1nc_1_1hpgl2d_1_1Creator_1a3e7de678991f3987b766ec4d68232bfb">cam.nc.hpgl2d.Creator</link>, <link linkend="_classcam_1_1nc_1_1hpgl3d_1_1Creator_1ac4ee4e0cb11891159d4e59467650aa76">cam.nc.hpgl3d.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a64bd7544d638558d278746433d3855d6">cam.nc.iso.Creator</link>, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a58e2089cb00422e3761f487ab0160e2b">cam.nc.lathe1.CreatorIso</link>, <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1a39c4e5620d31507b68f2742067f52c08">cam.nc.recreator.Redirector</link>, and <link linkend="_classcam_1_1nc_1_1shopbot__mtc_1_1Creator_1abc1b932274b5805ed9a4e553bfd6855b">cam.nc.shopbot_mtc.Creator</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nc_1_1Creator_ad5d01e340589c729f48fab397ccf137c_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1aec3c94a9584f18d2f9923081a5bdda34"/><section>
+    <title>rapid_home()</title>
+<indexterm><primary>rapid_home</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>rapid_home</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.rapid_home ( self,  x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+,  a = <computeroutput>None</computeroutput>
+,  b = <computeroutput>None</computeroutput>
+,  c = <computeroutput>None</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Rapid relative to home position</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1centroid1_1_1Creator_1a5da8c44cfff500b5a794637d8972ef37">cam.nc.centroid1.Creator</link>, <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1a16c2a618bf9640f8e541ad5b39a288d5">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1aa6936d7d9fe1e3f40e7865025c68b407">cam.nc.iso.Creator</link>, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a73af01d20f55f169459e772fc8de6384">cam.nc.lathe1.CreatorIso</link>, <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1ae6b4409715249b148414609d5b693f9d">cam.nc.recreator.Redirector</link>, and <link linkend="_classcam_1_1nc_1_1rez2_1_1Creator_1a8a7d8410ec979d6d2bf4164967d0a1a9">cam.nc.rez2.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1ab141de97e87759d48b8227e5738d056c"/><section>
+    <title>rapid_to_intersection()</title>
+<indexterm><primary>rapid_to_intersection</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>rapid_to_intersection</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.rapid_to_intersection ( self,  x1,  y1,  x2,  y2,  x3,  y3,  x4,  y4,  intersection_x,  intersection_y,  ua_numerator,  ua_denominator,  ua,  ub_numerator,  ub)</computeroutput></para><para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1a1979595ccdc20dcf20f67751d328f25d">cam.nc.heiden.Creator</link>, and <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a60e5583b4ddafa8966b05d2baa28ea67">cam.nc.iso.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1af58b38bf65ddba3bcef0cae39aac4a09"/><section>
+    <title>rapid_to_midpoint()</title>
+<indexterm><primary>rapid_to_midpoint</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>rapid_to_midpoint</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.rapid_to_midpoint ( self,  x1 = <computeroutput>None</computeroutput>
+,  y1 = <computeroutput>None</computeroutput>
+,  z1 = <computeroutput>None</computeroutput>
+,  x2 = <computeroutput>None</computeroutput>
+,  y2 = <computeroutput>None</computeroutput>
+,  z2 = <computeroutput>None</computeroutput>
+)</computeroutput></para><para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1a9896f849d515e774aa4d44451ce45cc7">cam.nc.heiden.Creator</link>, and <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1afbb4d0ab68aa5fae6e3d9221fb871fbd">cam.nc.iso.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1af2f4b7454862bacf84d24d45d1702d1c"/><section>
+    <title>rapid_to_rotated_coordinate()</title>
+<indexterm><primary>rapid_to_rotated_coordinate</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>rapid_to_rotated_coordinate</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.rapid_to_rotated_coordinate ( self,  x1,  y1,  x2,  y2,  ref_x,  ref_y,  x_current,  y_current,  x_final,  y_final)</computeroutput></para><para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1a20686a35918df93542b7b5d4472d3d71">cam.nc.heiden.Creator</link>, and <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1affa9a90d01acd946672ba361abfbfffd">cam.nc.iso.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a65815539ed9b7607ae21229b15ee0fe2"/><section>
+    <title>rapid_unhome()</title>
+<indexterm><primary>rapid_unhome</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>rapid_unhome</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.rapid_unhome ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return from rapid home</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1a17b9b537ad3ba52c1d6c49f69d6d4764">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1aee113a4db079dc4140df97e02ba00482">cam.nc.iso.Creator</link>, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a04757fcb041e7fc74a63fe00d2bdb9b7">cam.nc.lathe1.CreatorIso</link>, <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1a332a00cc5552a846b098b7df2f27f732">cam.nc.recreator.Redirector</link>, and <link linkend="_classcam_1_1nc_1_1rez2_1_1Creator_1a9bdac44f439a1de9bccfbefa02ed492c">cam.nc.rez2.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1ad7d4b51ed47c3deaff7d7a4167ec9630"/><section>
+    <title>remove_temporary_origin()</title>
+<indexterm><primary>remove_temporary_origin</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>remove_temporary_origin</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.remove_temporary_origin ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Remote temporary origin G92.1</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1acb7a48b945818cfe2fa6c7ab246a76f2">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a0aaa76de84053c3392e607d84f0c247e">cam.nc.iso.Creator</link>, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1aeca18bca6c45c71088047cfff04ab78a">cam.nc.lathe1.CreatorIso</link>, and <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1aa024f5e008f3a07abf2af810e65fdcd2">cam.nc.recreator.Redirector</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a7ff98c29e67d4bb1e4d428e7a19ae0c9"/><section>
+    <title>report_probe_results()</title>
+<indexterm><primary>report_probe_results</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>report_probe_results</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.report_probe_results ( self,  x1 = <computeroutput>None</computeroutput>
+,  y1 = <computeroutput>None</computeroutput>
+,  z1 = <computeroutput>None</computeroutput>
+,  x2 = <computeroutput>None</computeroutput>
+,  y2 = <computeroutput>None</computeroutput>
+,  z2 = <computeroutput>None</computeroutput>
+,  x3 = <computeroutput>None</computeroutput>
+,  y3 = <computeroutput>None</computeroutput>
+,  z3 = <computeroutput>None</computeroutput>
+,  x4 = <computeroutput>None</computeroutput>
+,  y4 = <computeroutput>None</computeroutput>
+,  z4 = <computeroutput>None</computeroutput>
+,  x5 = <computeroutput>None</computeroutput>
+,  y5 = <computeroutput>None</computeroutput>
+,  z5 = <computeroutput>None</computeroutput>
+,  x6 = <computeroutput>None</computeroutput>
+,  y6 = <computeroutput>None</computeroutput>
+,  z6 = <computeroutput>None</computeroutput>
+,  xml_file_name = <computeroutput>None</computeroutput>
+)</computeroutput></para><para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1emc2_1_1Creator_1a305cc96f9d28416e6ca475bc62150768">cam.nc.emc2.Creator</link>, <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1ac0456043714d2f330616bc7cf31ca01b">cam.nc.heiden.Creator</link>, and <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1aa108edc88f18c8ab0f813841c4f84799">cam.nc.iso.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1adb91710cf1f26d4cf07f9da51e7798a5"/><section>
+    <title>rotate()</title>
+<indexterm><primary>rotate</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>rotate</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.rotate ( self,  xyrot = <computeroutput>None</computeroutput>
+,  yzrot = <computeroutput>None</computeroutput>
+,  zxrot = <computeroutput>None</computeroutput>
+,  angle = <computeroutput>None</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Rotate about a coordinate axis</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a7277c1e666c6dda2b8a997f3518f3f3e"/><section>
+    <title>scale()</title>
+<indexterm><primary>scale</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>scale</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.scale ( self,  k = <computeroutput>None</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Scale by factor k</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a55cd49b26a3b252e7c6f24fc6bd4fd25"/><section>
+    <title>set_extruder_flowrate()</title>
+<indexterm><primary>set_extruder_flowrate</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>set_extruder_flowrate</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.set_extruder_flowrate ( self,  flowrate)</computeroutput></para>
+<para><literallayout><computeroutput>Set the flowrate for the extruder</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1adba071f67fa119dc47a3cbdbe5324cc4"/><section>
+    <title>set_machine_coordinates()</title>
+<indexterm><primary>set_machine_coordinates</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>set_machine_coordinates</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.set_machine_coordinates ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Set machine coordinates</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1a6bd80834f98a73d755204cf6ee3275be">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1af99938ad4b445f8f57005450c2e56ffb">cam.nc.iso.Creator</link>, and <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a92899e62df37f46de63e24a9ecc5c700">cam.nc.lathe1.CreatorIso</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a36ddaf371b5dcf5cc53a8c6ed6a4e926"/><section>
+    <title>set_path_control_mode()</title>
+<indexterm><primary>set_path_control_mode</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>set_path_control_mode</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.set_path_control_mode ( self,  mode,  motion_blending_tolerance,  naive_cam_tolerance)</computeroutput></para><para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1afa7c2c45bd8a5e1d76a595a2e480fbdf">cam.nc.heiden.Creator</link>, and <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1aca64f819f417da4a222b1c317c9b5741">cam.nc.iso.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a63ca0750cbc4e11abbbaf856479f6bd8"/><section>
+    <title>set_plane()</title>
+<indexterm><primary>set_plane</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>set_plane</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.set_plane ( self,  plane)</computeroutput></para>
+<para><literallayout><computeroutput>Set plane</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1anilam__crusader__m_1_1Creator_1a82b4904cda35dc8e68da4e456a37eaf6">cam.nc.anilam_crusader_m.Creator</link>, <link linkend="_classcam_1_1nc_1_1emc2_1_1Creator_1a4781d919cc132cc1cc62fd5a9374b5df">cam.nc.emc2.Creator</link>, <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1ab5ea49e0893c276ff3c59180907039c0">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1heiden530_1_1Creator_1abe6045a408d11ec5bccc04a9644edcec">cam.nc.heiden530.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a94ebb21d1db6f13b80e1679559360ecf">cam.nc.iso.Creator</link>, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a1fe987af3eceb80f51bec4308a0ceae1">cam.nc.lathe1.CreatorIso</link>, <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1a9b22e3642dd1519a7f0e72e1b02a108d">cam.nc.recreator.Redirector</link>, <link linkend="_classcam_1_1nc_1_1rez2_1_1Creator_1aa073ab6ca0a4335beed7d2478315c7f7">cam.nc.rez2.Creator</link>, and <link linkend="_classcam_1_1nc_1_1shopbot__mtc_1_1Creator_1abf3bf40765eb8e229c16e2c221903cd3">cam.nc.shopbot_mtc.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a3b27c7c2c804ec3aa2a3e3e6bf3a638c"/><section>
+    <title>set_temporary_origin()</title>
+<indexterm><primary>set_temporary_origin</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>set_temporary_origin</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.set_temporary_origin ( self,  x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+,  a = <computeroutput>None</computeroutput>
+,  b = <computeroutput>None</computeroutput>
+,  c = <computeroutput>None</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Set temporary origin G92</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1aad05b9d4c706d59ddef5a6d432819ac2">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a2bf1c3e1741543db5645635f968a01e5">cam.nc.iso.Creator</link>, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a8705b7a922385862dea7c2ea6eb3c6d7">cam.nc.lathe1.CreatorIso</link>, and <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1aeda7d10b72fa66ed4a0776ef6912fd12">cam.nc.recreator.Redirector</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1aba0d5dbaa64e8d6c8c0f6e02d5b2bb42"/><section>
+    <title>spindle()</title>
+<indexterm><primary>spindle</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>spindle</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.spindle ( self,  s,  clockwise = <computeroutput>True</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Set the spindle speed</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1centroid1_1_1Creator_1a4e583319942b59dd95ab4adb5e5202a9">cam.nc.centroid1.Creator</link>, <link linkend="_classcam_1_1nc_1_1gantry__router_1_1Creator_1a1cdfe78b3c00a447cb258bb1ecd381b8">cam.nc.gantry_router.Creator</link>, <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1a6b71e184484ffe0dbfe8bf2ba5164992">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a5e2b864808c8b2ebc4907aaeca143440">cam.nc.iso.Creator</link>, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ad3811ae77734bb7c97a76393a0a8f5f1">cam.nc.lathe1.CreatorIso</link>, <link linkend="_classcam_1_1nc_1_1rez2_1_1Creator_1ada1dae0bc21963507bc0929f157910cb">cam.nc.rez2.Creator</link>, <link linkend="_classcam_1_1nc_1_1shopbot__mtc_1_1Creator_1a5e8dea8f7d1001d69a74190a7d8a3fb8">cam.nc.shopbot_mtc.Creator</link>, <link linkend="_classcam_1_1nc_1_1tnc151_1_1Creator_1ac55b75cd1280f953c4df804bd1183042">cam.nc.tnc151.Creator</link>, and <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1a2720b2043abfe196dbc0a8a22571cf49">cam.nc.recreator.Redirector</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nc_1_1Creator_aba0d5dbaa64e8d6c8c0f6e02d5b2bb42_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a56a93e52f85de47ae50f099fd9fd9b28"/><section>
+    <title>sub_begin()</title>
+<indexterm><primary>sub_begin</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>sub_begin</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.sub_begin ( self,  id,  name = <computeroutput>&apos;&apos;</computeroutput>
+)</computeroutput></para><para>
+
+<para>Subprograms. </para>
+</para>
+
+<para><literallayout><computeroutput>Begin a subprogram</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1af9361d3cd4fee6fe44aa8f086a56157c">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a931ff4f5a2606222a63ff1fc4c405442">cam.nc.lathe1.CreatorIso</link>, <link linkend="_classcam_1_1nc_1_1rez2_1_1Creator_1ae2eb15694723a6802714b1deeb1d9caa">cam.nc.rez2.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1abd77d254ccb46dea1553cf81faf74bd6">cam.nc.iso.Creator</link>, and <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1a94e6523c9d055e6c064c4d61ec4a15ed">cam.nc.recreator.Redirector</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1ab679b1e883a53eb07ae578fc4f3f0efc"/><section>
+    <title>sub_call()</title>
+<indexterm><primary>sub_call</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>sub_call</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.sub_call ( self,  id)</computeroutput></para>
+<para><literallayout><computeroutput>Call a subprogram</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1ade3b729fa27f508f2cc2209256991d28">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a189a88facff70a2033184ccd73309f65">cam.nc.iso.Creator</link>, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a268a709b01564fb619fef1c1aa7c7f2a">cam.nc.lathe1.CreatorIso</link>, <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1a4d0f3ca149ddb205e8c6abcb1b12ecb1">cam.nc.recreator.Redirector</link>, and <link linkend="_classcam_1_1nc_1_1rez2_1_1Creator_1a1711ea477059d8addd10dc85c21dee40">cam.nc.rez2.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1ab4203d6942df1cc660ba9ba01ff44abe"/><section>
+    <title>sub_end()</title>
+<indexterm><primary>sub_end</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>sub_end</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.sub_end ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return from a subprogram</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1aa2e0de80c4f26b122ec08a3d6d8452c7">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1aa52fa25396f5339439f91854a7cc2c62">cam.nc.iso.Creator</link>, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ade1b76aeb315bb486c3621a7c06135f1">cam.nc.lathe1.CreatorIso</link>, <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1a9c020224175be10985e252d9feab8f4d">cam.nc.recreator.Redirector</link>, and <link linkend="_classcam_1_1nc_1_1rez2_1_1Creator_1a07b2f5317134ee428cd27649870aeec7">cam.nc.rez2.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a0e6b1ba5ac8a76e36f68c1ef8b21435a"/><section>
+    <title>tap()</title>
+<indexterm><primary>tap</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>tap</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.tap ( self,  x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+,  zretract = <computeroutput>None</computeroutput>
+,  depth = <computeroutput>None</computeroutput>
+,  standoff = <computeroutput>None</computeroutput>
+,  dwell_bottom = <computeroutput>None</computeroutput>
+,  pitch = <computeroutput>None</computeroutput>
+,  stoppos = <computeroutput>None</computeroutput>
+,  spin_in = <computeroutput>None</computeroutput>
+,  spin_out = <computeroutput>None</computeroutput>
+,  tap_mode = <computeroutput>None</computeroutput>
+,  direction = <computeroutput>None</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Tapping routines</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1a706db14683812bb3b86db958d7faa05a">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1a45c10e625fb80347515fcbcb8b99f6f2">cam.nc.recreator.Redirector</link>, and <link linkend="_classcam_1_1nc_1_1rez2_1_1Creator_1ac4756893638325384a66f675c703ad36">cam.nc.rez2.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a6fec89f9c286d6e852c9af389a46f491"/><section>
+    <title>tool_change()</title>
+<indexterm><primary>tool_change</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>tool_change</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.tool_change ( self,  id)</computeroutput></para><para>
+
+<para>Tools. </para>
+</para>
+
+<para><literallayout><computeroutput>Change the tool</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1anilam__crusader__m_1_1Creator_1a39a1233152b22d2a8c3d4dbb53b52913">cam.nc.anilam_crusader_m.Creator</link>, <link linkend="_classcam_1_1nc_1_1centroid1_1_1Creator_1a36d8a0c5d271ca1246fa521b42b5cf29">cam.nc.centroid1.Creator</link>, <link linkend="_classcam_1_1nc_1_1gravos_1_1Creator_1aa5dd1702c8a30a208fa995e6bfc13d50">cam.nc.gravos.Creator</link>, <link linkend="_classcam_1_1nc_1_1grbl_1_1Creator_1a89c9e5eae13c3cf95250b8cbdc13059f">cam.nc.grbl.Creator</link>, <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1a1e0d0a0333918e86dfaa5e03437bf452">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1heiden530_1_1Creator_1a1d09a200e101159ed97068ca958de3ec">cam.nc.heiden530.Creator</link>, <link linkend="_classcam_1_1nc_1_1hm50_1_1Creator_1a52a88e68142442ebc4581b840b5bab40">cam.nc.hm50.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a3e61292523aa893f0187112023e51eff">cam.nc.iso.Creator</link>, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ab029f691b34c12e7543805785ce78c49">cam.nc.lathe1.CreatorIso</link>, <link linkend="_classcam_1_1nc_1_1lynx__otter__o_1_1Creator_1a77a6e24310f612797deecd47d8679766">cam.nc.lynx_otter_o.Creator</link>, <link linkend="_classcam_1_1nc_1_1mach3_1_1Creator_1a4d1de1048649d3d4c98467248b80bf69">cam.nc.mach3.Creator</link>, <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1abcbf2192525cad6520db6c456a997297">cam.nc.recreator.Redirector</link>, <link linkend="_classcam_1_1nc_1_1rez2_1_1Creator_1a6402010a20ba9587dfd4e34d99e1ac32">cam.nc.rez2.Creator</link>, <link linkend="_classcam_1_1nc_1_1shopbot__mtc_1_1Creator_1a088a86bc800b006cd8577ac07914bce5">cam.nc.shopbot_mtc.Creator</link>, <link linkend="_classcam_1_1nc_1_1tnc151_1_1Creator_1adc8e7f09d8223643b108d6b7cdb57921">cam.nc.tnc151.Creator</link>, and <link linkend="_classcam_1_1nc_1_1winpc_1_1Creator_1a5dda631594dd74a6a573e54c2cffbd5e">cam.nc.winpc.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a3ac1f6171550de627fdfde4c831bc25d"/><section>
+    <title>tool_defn()</title>
+<indexterm><primary>tool_defn</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>tool_defn</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.tool_defn ( self,  id,  name = <computeroutput>&apos;&apos;</computeroutput>
+,  params = <computeroutput>None</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Define a tool</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1anilam__crusader__m_1_1Creator_1a24c9dd318c81f6b88be3ce912a78b037">cam.nc.anilam_crusader_m.Creator</link>, <link linkend="_classcam_1_1nc_1_1centroid1_1_1Creator_1a5bcb8dd0e877ae037e73c99546baa441">cam.nc.centroid1.Creator</link>, <link linkend="_classcam_1_1nc_1_1emc2_1_1Creator_1ae0b4c58429ef47e032259b170ea4d0cb">cam.nc.emc2.Creator</link>, <link linkend="_classcam_1_1nc_1_1gantry__router_1_1Creator_1a6b495890d68a80d5b9745693887fb8ea">cam.nc.gantry_router.Creator</link>, <link linkend="_classcam_1_1nc_1_1grbl_1_1Creator_1a2db643eaf665a71732b22cd8b95e2528">cam.nc.grbl.Creator</link>, <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1a1dd5a3d640fc747ca8736d443701cc78">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a07bce834ac4fae7cf098546f698cc7ff">cam.nc.iso.Creator</link>, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a235effb0d28ba933cef439b63712583a">cam.nc.lathe1.CreatorIso</link>, <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1a2c9838d6f4db71fadab107207f1a28b3">cam.nc.recreator.Redirector</link>, <link linkend="_classcam_1_1nc_1_1rez2_1_1Creator_1a233c3b7d3318f17628bfe75a3c0e4c62">cam.nc.rez2.Creator</link>, <link linkend="_classcam_1_1nc_1_1series1_1_1Creator_1a2062ea86188ba7f772d00347703a9268">cam.nc.series1.Creator</link>, <link linkend="_classcam_1_1nc_1_1tnc151_1_1Creator_1a57eff9c6df359bd635acf261fe2419c1">cam.nc.tnc151.Creator</link>, and <link linkend="_classcam_1_1nc_1_1winpc_1_1Creator_1a4f329a07a8ee02af17a7b57d602ab4b6">cam.nc.winpc.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1aa2916aeb745eb7bab7335e02638045f6"/><section>
+    <title>translate()</title>
+<indexterm><primary>translate</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>translate</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.translate ( self,  x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Translate in x,y,z direction</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1a24f80d1e703cbf025ae4243e6c11e7f8">cam.nc.heiden.Creator</link>, and <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1aaacec2d1ed3f0ba378c22ec9c01d9010">cam.nc.iso.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1af48057c7d845490d9cebf0c321858d87"/><section>
+    <title>use_CRC()</title>
+<indexterm><primary>use_CRC</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>use_CRC</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.use_CRC ( self)</computeroutput></para><para>
+
+<para>Cutter radius compensation. </para>
+</para>
+
+<para><literallayout><computeroutput>CRC</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1adfbd1001e69ba513f4bcbeb28c6569fa">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1af5dc2ec8d21683230d93bc4872823c00">cam.nc.iso.Creator</link>, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a0b30cc57e9b6a88609166e05128add2f">cam.nc.lathe1.CreatorIso</link>, and <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1a18dc60e7a063e2cdeaf81890990f73cb">cam.nc.recreator.Redirector</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a2d02ebd696a2f2db466f1cf8863142d5"/><section>
+    <title>variable()</title>
+<indexterm><primary>variable</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>variable</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.variable ( self,  id)</computeroutput></para>
+<para><literallayout><computeroutput>Insert a variable</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1a1eb8b83f51d51d36caf6a3260150e832">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a4d1b044feff1f1bfac19907d85daebe0">cam.nc.iso.Creator</link>, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a56d8b388da6e65eabb5efe5369d729d9">cam.nc.lathe1.CreatorIso</link>, <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1a21f70f584c348c2cc14d1c5c4fd10f46">cam.nc.recreator.Redirector</link>, <link linkend="_classcam_1_1nc_1_1rez2_1_1Creator_1af8074041ccc55a2f845fc7aa7e8b4fee">cam.nc.rez2.Creator</link>, and <link linkend="_classcam_1_1nc_1_1shopbot__mtc_1_1Creator_1a82dfdc64f60aebd726b2c8a400591c53">cam.nc.shopbot_mtc.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a490ecd36ed3098409fcffee44dcd11f0"/><section>
+    <title>variable_set()</title>
+<indexterm><primary>variable_set</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>variable_set</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.variable_set ( self,  id,  value)</computeroutput></para>
+<para><literallayout><computeroutput>Set a variable</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1aeaa3480468f78b1be737304bd08671cf">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1a04092f294815f93711efb27477a1fb89">cam.nc.iso.Creator</link>, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a837b92435e023ae3d2f851ac1c7269de">cam.nc.lathe1.CreatorIso</link>, <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1af8b6badc603710c4bfcf0a5c99e84fb9">cam.nc.recreator.Redirector</link>, <link linkend="_classcam_1_1nc_1_1rez2_1_1Creator_1a8c8ccc5a48039dda6e9c70e4f6d44a5e">cam.nc.rez2.Creator</link>, and <link linkend="_classcam_1_1nc_1_1shopbot__mtc_1_1Creator_1a8e088691db975c5165bd3be0b5171e67">cam.nc.shopbot_mtc.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1aec98966fe45ff7d2973002311f38b841"/><section>
+    <title>wipe()</title>
+<indexterm><primary>wipe</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>wipe</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.wipe ( self)</computeroutput></para><para>
+
+<para>NC code creator for additive machines like RepRap. </para>
+</para>
+
+<para><literallayout><computeroutput>wipe routine</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a21d03ba3d16ff8d84cd5546268aabab6"/><section>
+    <title>workplane()</title>
+<indexterm><primary>workplane</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>workplane</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.workplane ( self,  id)</computeroutput></para>
+<para><literallayout><computeroutput>Set the workplane</computeroutput></literallayout> </para>
+<para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1anilam__crusader__m_1_1Creator_1a66554c71e120972ac1586f8468783061">cam.nc.anilam_crusader_m.Creator</link>, <link linkend="_classcam_1_1nc_1_1centroid1_1_1Creator_1a7fefda5c24dbf94920acc2044d7002fe">cam.nc.centroid1.Creator</link>, <link linkend="_classcam_1_1nc_1_1emc2_1_1Creator_1a8218700b9d0a8eaae13606f5834701b3">cam.nc.emc2.Creator</link>, <link linkend="_classcam_1_1nc_1_1grbl_1_1Creator_1ad5e21bb5814442ca39def38098aeb36f">cam.nc.grbl.Creator</link>, <link linkend="_classcam_1_1nc_1_1heiden_1_1Creator_1a0bb1dcc4220b7021b792bc336e4ab944">cam.nc.heiden.Creator</link>, <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1af689dfe2c7549ab5b062fb024d47b4ae">cam.nc.iso.Creator</link>, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a61bafbe933070f277bbe298b3f17752b">cam.nc.lathe1.CreatorIso</link>, <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1a937de250d3b12687d77600d0f7aab84f">cam.nc.recreator.Redirector</link>, <link linkend="_classcam_1_1nc_1_1rez2_1_1Creator_1af574c17a6d767e6b83b75e9553fbbdc9">cam.nc.rez2.Creator</link>, <link linkend="_classcam_1_1nc_1_1tnc151_1_1Creator_1a754558f702cb384fed75608b40992917">cam.nc.tnc151.Creator</link>, and <link linkend="_classcam_1_1nc_1_1winpc_1_1Creator_1a35e54099e5ecfbda678d8f66bc281994">cam.nc.winpc.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a80f2134add83bfaaf2870d075d36ed8a"/><section>
+    <title>write()</title>
+<indexterm><primary>write</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>write</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.write ( self,  s)</computeroutput></para><para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1iso_1_1Creator_1abb81af5a0bdddfed387b71b68a51cc7a">cam.nc.iso.Creator</link>, and <link linkend="_classcam_1_1nc_1_1recreator_1_1Redirector_1a79cc974683588db3ef959189e7552c0d">cam.nc.recreator.Redirector</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nc_1_1Creator_a80f2134add83bfaaf2870d075d36ed8a_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a6b9b5f41f66c0a89ae69a7f21776025d"/><section>
+    <title>writem()</title>
+<indexterm><primary>writem</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>writem</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.writem ( self,  a)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nc_1_1Creator_a6b9b5f41f66c0a89ae69a7f21776025d_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nc_1_1Creator_a6b9b5f41f66c0a89ae69a7f21776025d_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a7b9f520b607a80af987b068cbd1d1d31"/><section>
+    <title>file</title>
+<indexterm><primary>file</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>file</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.file</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1nc_1_1Creator_1a6a4389cab170edcaa81bf475fa97d463"/><section>
+    <title>filename</title>
+<indexterm><primary>filename</primary><secondary>cam.nc.nc.Creator</secondary></indexterm>
+<indexterm><primary>cam.nc.nc.Creator</primary><secondary>filename</secondary></indexterm>
+<para><computeroutput>cam.nc.nc.Creator.filename</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/<link linkend="_nc_8py">nc.py</link></section>
+</section>

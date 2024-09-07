@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Profile_01and_01Pocket_01operations" kind="page">
+    <compoundname>md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Profile_01and_01Pocket_01operations</compoundname>
+    <title>Profile and Pocket operations</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><orderedlist>
+<listitem><para>Convert model from CSG to mesh (in this example FreeCAD is used for conversion). Precision setting is very important for correct result.</para>
+</listitem></orderedlist>
+</para>
+<para><image type="html" name="images/tesselation.png" alt="Tesselation with Freecad" inline="yes"></image>
+</para>
+<para><image type="html" name="images/partFreecad.png" alt="Result with Freecad" inline="yes"></image>
+</para>
+<para><orderedlist>
+<listitem><para>Save mesh as PLY or STL.</para>
+</listitem><listitem><para>Import mesh to Blender.</para>
+</listitem></orderedlist>
+</para>
+<para><image type="html" name="images/importStl.png" alt="Import Stl" inline="yes"></image>
+</para>
+<para><orderedlist>
+<listitem><para>use and apply &apos;Egde Split&apos; modifier.</para>
+</listitem></orderedlist>
+</para>
+<para><image type="html" name="images/edgeSplit.png" alt="Edge split modifier" inline="yes"></image>
+</para>
+<para><orderedlist>
+<listitem><para>Enter Edit Mode and select surface (in Face Select mode) that will be a curve source, and &apos;Separate&apos; it. Use Select Linked (L shortcut) to select whole faces.</para>
+</listitem></orderedlist>
+</para>
+<para><image type="html" name="images/partObjSep.png" alt="Separate selection" inline="yes"></image>
+</para>
+<para><orderedlist>
+<listitem><para>Repeat with other curve sources.</para>
+</listitem></orderedlist>
+</para>
+<para><image type="html" name="images/partObjSep2.png" alt="Separate selection 2" inline="yes"></image>
+</para>
+<para><orderedlist>
+<listitem><para>Use &apos;Set Origin to Geometry&apos; on all separated surfaces.</para>
+</listitem></orderedlist>
+</para>
+<para><image type="html" name="images/partOrigGeo.png" alt="Separate selection 2" inline="yes"></image>
+</para>
+<para><orderedlist>
+<listitem><para>Exit Edit Mode and select separated surfaces. Convert them to curves using &apos;Convert to&apos; (Alt C).</para>
+</listitem></orderedlist>
+</para>
+<para><image type="html" name="images/partConvert.png" alt="Convert to curve" inline="yes"></image>
+</para>
+<para>or you can use &quot;Object silhouete&quot; from blendercam tool :</para>
+<para><image type="html" name="images/curvecampanel.png" alt="Cam Panel" inline="yes"></image>
+</para>
+<para><image type="html" name="images/partObjectSil.png" alt="Object silhouete" inline="yes"></image>
+</para>
+<para><orderedlist>
+<listitem><para>Edit curves to separate holes from external contour.</para>
+</listitem></orderedlist>
+</para>
+<para><image type="html" name="images/partSeparateHoles.png" alt="Object silhouete" inline="yes"></image>
+</para>
+<para><orderedlist>
+<listitem><para>Add Pocket and Profile operations :</para>
+</listitem></orderedlist>
+</para>
+<para><image type="html" name="images/partPocket1.png" alt="Pocket 1" inline="yes"></image>
+ <image type="html" name="images/partPocket2.png" alt="Pocket 2" inline="yes"></image>
+ <image type="html" name="images/partProfile1.png" alt="Profile 1" inline="yes"></image>
+ <image type="html" name="images/partProfile2.png" alt="Profile 2" inline="yes"></image>
+</para>
+<para>for pads/pockets (some curves need to be modified in &apos;Edit Mode&apos;):</para>
+<para>It&apos;s highly recommended to create roughing and finishing pass. For roughing pass add offset by altering cutter&apos;s diameter. For Profile operation, &apos;First Down&apos; and &apos;Ramp In&apos; options are recommended. &apos;First Down&apos; helps avoid non-cutting moves and &apos;Ramp In&apos; reduces cutter load by avoiding vertical plunge into material. For Pocket operation instead of &apos;Ramp In&apos; try using &apos;Helix enter&apos; option. </para>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/documentation/Profile and Pocket operations.md"/>
+  </compounddef>
+</doxygen>

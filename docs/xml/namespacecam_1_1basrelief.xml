@@ -1,0 +1,718 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacecam_1_1basrelief" kind="namespace" language="Python">
+    <compoundname>cam::basrelief</compoundname>
+    <innerclass refid="classcam_1_1basrelief_1_1BASRELIEF__Panel" prot="public">cam::basrelief::BASRELIEF_Panel</innerclass>
+    <innerclass refid="classcam_1_1basrelief_1_1BasReliefsettings" prot="public">cam::basrelief::BasReliefsettings</innerclass>
+    <innerclass refid="classcam_1_1basrelief_1_1DoBasRelief" prot="public">cam::basrelief::DoBasRelief</innerclass>
+    <innerclass refid="classcam_1_1basrelief_1_1ProblemAreas" prot="public">cam::basrelief::ProblemAreas</innerclass>
+    <innerclass refid="classcam_1_1basrelief_1_1ReliefError" prot="public">cam::basrelief::ReliefError</innerclass>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacecam_1_1basrelief_1ab0272ddc03e40911739051c6dcc54284" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float cam::basrelief.EPS</definition>
+        <argsstring></argsstring>
+        <name>EPS</name>
+        <qualifiedname>cam.basrelief.EPS</qualifiedname>
+        <initializer>=  1.0e-32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="40" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecam_1_1basrelief_1ac779b0b524d86ee2fb8119cffebad256" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cam::basrelief.PRECISION</definition>
+        <argsstring></argsstring>
+        <name>PRECISION</name>
+        <qualifiedname>cam.basrelief.PRECISION</qualifiedname>
+        <initializer>=  5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="41" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecam_1_1basrelief_1a7443029a28482631e23f3f081740ed55" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool cam::basrelief.NUMPYALG</definition>
+        <argsstring></argsstring>
+        <name>NUMPYALG</name>
+        <qualifiedname>cam.basrelief.NUMPYALG</qualifiedname>
+        <initializer>=  False</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="42" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="42" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacecam_1_1basrelief_1a479a5a367df382f5a4d97e5d27fbc319" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.basrelief.copy_compbuf_data</definition>
+        <argsstring>(inbuf, outbuf)</argsstring>
+        <name>copy_compbuf_data</name>
+        <qualifiedname>cam.basrelief.copy_compbuf_data</qualifiedname>
+        <param>
+          <type>inbuf</type>
+          <defname>inbuf</defname>
+        </param>
+        <param>
+          <type>outbuf</type>
+          <defname>outbuf</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="46" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="46" bodyend="49"/>
+        <referencedby refid="namespacecam_1_1basrelief_1a4cb6f56c1aa4d079ec817111a923c767" compoundref="basrelief_8py" startline="279" endline="419">cam.basrelief.solve_pde_multigrid</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1basrelief_1a9cee957b1946a898fae51b693337d1ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.basrelief.restrictbuf</definition>
+        <argsstring>(inbuf, outbuf)</argsstring>
+        <name>restrictbuf</name>
+        <qualifiedname>cam.basrelief.restrictbuf</qualifiedname>
+        <param>
+          <type>inbuf</type>
+          <defname>inbuf</defname>
+        </param>
+        <param>
+          <type>outbuf</type>
+          <defname>outbuf</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="50" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="50" bodyend="133"/>
+        <referencedby refid="namespacecam_1_1basrelief_1a4cb6f56c1aa4d079ec817111a923c767" compoundref="basrelief_8py" startline="279" endline="419">cam.basrelief.solve_pde_multigrid</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1basrelief_1a9a1b6e682169add543f604f19092d632" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.basrelief.prolongate</definition>
+        <argsstring>(inbuf, outbuf)</argsstring>
+        <name>prolongate</name>
+        <qualifiedname>cam.basrelief.prolongate</qualifiedname>
+        <param>
+          <type>inbuf</type>
+          <defname>inbuf</defname>
+        </param>
+        <param>
+          <type>outbuf</type>
+          <defname>outbuf</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="134" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="134" bodyend="216"/>
+        <referencedby refid="namespacecam_1_1basrelief_1a4cb6f56c1aa4d079ec817111a923c767" compoundref="basrelief_8py" startline="279" endline="419">cam.basrelief.solve_pde_multigrid</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1basrelief_1a84845c220768cd5f4d97ea7af9ca3b4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.basrelief.idx</definition>
+        <argsstring>(r, c, cols)</argsstring>
+        <name>idx</name>
+        <qualifiedname>cam.basrelief.idx</qualifiedname>
+        <param>
+          <type>r</type>
+          <defname>r</defname>
+        </param>
+        <param>
+          <type>c</type>
+          <defname>c</defname>
+        </param>
+        <param>
+          <type>cols</type>
+          <defname>cols</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="217" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="217" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1basrelief_1ad911a47b6767f0bf2783a9bcf0e548ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.basrelief.smooth</definition>
+        <argsstring>(U, F, linbcgiterations, planar)</argsstring>
+        <name>smooth</name>
+        <qualifiedname>cam.basrelief.smooth</qualifiedname>
+        <param>
+          <type>U</type>
+          <defname>U</defname>
+        </param>
+        <param>
+          <type>F</type>
+          <defname>F</defname>
+        </param>
+        <param>
+          <type>linbcgiterations</type>
+          <defname>linbcgiterations</defname>
+        </param>
+        <param>
+          <type>planar</type>
+          <defname>planar</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="223" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="223" bodyend="235"/>
+        <references refid="namespacecam_1_1basrelief_1a7369a80f45ef2d8d836e195fc67ee148" compoundref="basrelief_8py" startline="455" endline="549">cam.basrelief.linbcg</references>
+        <referencedby refid="namespacecam_1_1basrelief_1a4cb6f56c1aa4d079ec817111a923c767" compoundref="basrelief_8py" startline="279" endline="419">cam.basrelief.solve_pde_multigrid</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1basrelief_1aabd40958bb5e5febbc0e8a1fb76f2c54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.basrelief.calculate_defect</definition>
+        <argsstring>(D, U, F)</argsstring>
+        <name>calculate_defect</name>
+        <qualifiedname>cam.basrelief.calculate_defect</qualifiedname>
+        <param>
+          <type>D</type>
+          <defname>D</defname>
+        </param>
+        <param>
+          <type>U</type>
+          <defname>U</defname>
+        </param>
+        <param>
+          <type>F</type>
+          <defname>F</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="236" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="236" bodyend="271"/>
+        <referencedby refid="namespacecam_1_1basrelief_1a4cb6f56c1aa4d079ec817111a923c767" compoundref="basrelief_8py" startline="279" endline="419">cam.basrelief.solve_pde_multigrid</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1basrelief_1a9554e08aa23fcef890644aa887a681e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.basrelief.add_correction</definition>
+        <argsstring>(U, C)</argsstring>
+        <name>add_correction</name>
+        <qualifiedname>cam.basrelief.add_correction</qualifiedname>
+        <param>
+          <type>U</type>
+          <defname>U</defname>
+        </param>
+        <param>
+          <type>C</type>
+          <defname>C</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="272" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="272" bodyend="278"/>
+        <referencedby refid="namespacecam_1_1basrelief_1a4cb6f56c1aa4d079ec817111a923c767" compoundref="basrelief_8py" startline="279" endline="419">cam.basrelief.solve_pde_multigrid</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1basrelief_1a4cb6f56c1aa4d079ec817111a923c767" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.basrelief.solve_pde_multigrid</definition>
+        <argsstring>(F, U, vcycleiterations, linbcgiterations, smoothiterations, mins, levels, useplanar, planar)</argsstring>
+        <name>solve_pde_multigrid</name>
+        <qualifiedname>cam.basrelief.solve_pde_multigrid</qualifiedname>
+        <param>
+          <type>F</type>
+          <defname>F</defname>
+        </param>
+        <param>
+          <type>U</type>
+          <defname>U</defname>
+        </param>
+        <param>
+          <type>vcycleiterations</type>
+          <defname>vcycleiterations</defname>
+        </param>
+        <param>
+          <type>linbcgiterations</type>
+          <defname>linbcgiterations</defname>
+        </param>
+        <param>
+          <type>smoothiterations</type>
+          <defname>smoothiterations</defname>
+        </param>
+        <param>
+          <type>mins</type>
+          <defname>mins</defname>
+        </param>
+        <param>
+          <type>levels</type>
+          <defname>levels</defname>
+        </param>
+        <param>
+          <type>useplanar</type>
+          <defname>useplanar</defname>
+        </param>
+        <param>
+          <type>planar</type>
+          <defname>planar</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="279" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="279" bodyend="419"/>
+        <references refid="namespacecam_1_1basrelief_1a9554e08aa23fcef890644aa887a681e9" compoundref="basrelief_8py" startline="272" endline="278">cam.basrelief.add_correction</references>
+        <references refid="namespacecam_1_1basrelief_1aabd40958bb5e5febbc0e8a1fb76f2c54" compoundref="basrelief_8py" startline="236" endline="271">cam.basrelief.calculate_defect</references>
+        <references refid="namespacecam_1_1basrelief_1a479a5a367df382f5a4d97e5d27fbc319" compoundref="basrelief_8py" startline="46" endline="49">cam.basrelief.copy_compbuf_data</references>
+        <references refid="namespacecam_1_1basrelief_1a9a1b6e682169add543f604f19092d632" compoundref="basrelief_8py" startline="134" endline="216">cam.basrelief.prolongate</references>
+        <references refid="namespacecam_1_1basrelief_1a9cee957b1946a898fae51b693337d1ce" compoundref="basrelief_8py" startline="50" endline="133">cam.basrelief.restrictbuf</references>
+        <references refid="namespacecam_1_1basrelief_1ad911a47b6767f0bf2783a9bcf0e548ef" compoundref="basrelief_8py" startline="223" endline="235">cam.basrelief.smooth</references>
+        <referencedby refid="namespacecam_1_1basrelief_1aa0248196478d87431123a0e74908ab1c" compoundref="basrelief_8py" startline="843" endline="1000">cam.basrelief.relief</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1basrelief_1a822964708e515d6bdd72592d1b8e34a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.basrelief.asolve</definition>
+        <argsstring>(b, x)</argsstring>
+        <name>asolve</name>
+        <qualifiedname>cam.basrelief.asolve</qualifiedname>
+        <param>
+          <type>b</type>
+          <defname>b</defname>
+        </param>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="420" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="420" bodyend="423"/>
+        <referencedby refid="namespacecam_1_1basrelief_1a7369a80f45ef2d8d836e195fc67ee148" compoundref="basrelief_8py" startline="455" endline="549">cam.basrelief.linbcg</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1basrelief_1ac14b2661328ff1f3816c445ebfbca188" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.basrelief.atimes</definition>
+        <argsstring>(x, res)</argsstring>
+        <name>atimes</name>
+        <qualifiedname>cam.basrelief.atimes</qualifiedname>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+        </param>
+        <param>
+          <type>res</type>
+          <defname>res</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="424" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="424" bodyend="438"/>
+        <referencedby refid="namespacecam_1_1basrelief_1a7369a80f45ef2d8d836e195fc67ee148" compoundref="basrelief_8py" startline="455" endline="549">cam.basrelief.linbcg</referencedby>
+        <referencedby refid="namespacecam_1_1basrelief_1aec4302bf58eeb5e852d939da4758b1f9" compoundref="basrelief_8py" startline="757" endline="842">cam.basrelief.problemAreas</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1basrelief_1a6c50cb05df82a36b700aa844163dd7da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.basrelief.snrm</definition>
+        <argsstring>(n, sx, itol)</argsstring>
+        <name>snrm</name>
+        <qualifiedname>cam.basrelief.snrm</qualifiedname>
+        <param>
+          <type>n</type>
+          <defname>n</defname>
+        </param>
+        <param>
+          <type>sx</type>
+          <defname>sx</defname>
+        </param>
+        <param>
+          <type>itol</type>
+          <defname>itol</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="439" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="439" bodyend="454"/>
+        <referencedby refid="namespacecam_1_1basrelief_1a7369a80f45ef2d8d836e195fc67ee148" compoundref="basrelief_8py" startline="455" endline="549">cam.basrelief.linbcg</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1basrelief_1a7369a80f45ef2d8d836e195fc67ee148" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.basrelief.linbcg</definition>
+        <argsstring>(n, b, x, itol, tol, itmax, iter, err, rows, cols, planar)</argsstring>
+        <name>linbcg</name>
+        <qualifiedname>cam.basrelief.linbcg</qualifiedname>
+        <param>
+          <type>n</type>
+          <defname>n</defname>
+        </param>
+        <param>
+          <type>b</type>
+          <defname>b</defname>
+        </param>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+        </param>
+        <param>
+          <type>itol</type>
+          <defname>itol</defname>
+        </param>
+        <param>
+          <type>tol</type>
+          <defname>tol</defname>
+        </param>
+        <param>
+          <type>itmax</type>
+          <defname>itmax</defname>
+        </param>
+        <param>
+          <type>iter</type>
+          <defname>iter</defname>
+        </param>
+        <param>
+          <type>err</type>
+          <defname>err</defname>
+        </param>
+        <param>
+          <type>rows</type>
+          <defname>rows</defname>
+        </param>
+        <param>
+          <type>cols</type>
+          <defname>cols</defname>
+        </param>
+        <param>
+          <type>planar</type>
+          <defname>planar</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="455" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="455" bodyend="549"/>
+        <references refid="namespacecam_1_1basrelief_1a822964708e515d6bdd72592d1b8e34a6" compoundref="basrelief_8py" startline="420" endline="423">cam.basrelief.asolve</references>
+        <references refid="namespacecam_1_1basrelief_1ac14b2661328ff1f3816c445ebfbca188" compoundref="basrelief_8py" startline="424" endline="438">cam.basrelief.atimes</references>
+        <references refid="namespacecam_1_1basrelief_1a6c50cb05df82a36b700aa844163dd7da" compoundref="basrelief_8py" startline="439" endline="454">cam.basrelief.snrm</references>
+        <referencedby refid="namespacecam_1_1basrelief_1ad911a47b6767f0bf2783a9bcf0e548ef" compoundref="basrelief_8py" startline="223" endline="235">cam.basrelief.smooth</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1basrelief_1a8d2a86f24138ce2779205fdd81f1a4c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.basrelief.numpysave</definition>
+        <argsstring>(a, iname)</argsstring>
+        <name>numpysave</name>
+        <qualifiedname>cam.basrelief.numpysave</qualifiedname>
+        <param>
+          <type>a</type>
+          <defname>a</defname>
+        </param>
+        <param>
+          <type>iname</type>
+          <defname>iname</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="550" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="550" bodyend="563"/>
+        <references refid="namespacecam_1_1basrelief_1a89cc1c47da537f47ed2cc5c3461b7e00" compoundref="basrelief_8py" startline="564" endline="593">cam.basrelief.numpytoimage</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1basrelief_1a89cc1c47da537f47ed2cc5c3461b7e00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.basrelief.numpytoimage</definition>
+        <argsstring>(a, iname)</argsstring>
+        <name>numpytoimage</name>
+        <qualifiedname>cam.basrelief.numpytoimage</qualifiedname>
+        <param>
+          <type>a</type>
+          <defname>a</defname>
+        </param>
+        <param>
+          <type>iname</type>
+          <defname>iname</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="564" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="564" bodyend="593"/>
+        <referencedby refid="namespacecam_1_1basrelief_1a8d2a86f24138ce2779205fdd81f1a4c1" compoundref="basrelief_8py" startline="550" endline="563">cam.basrelief.numpysave</referencedby>
+        <referencedby refid="namespacecam_1_1basrelief_1aec4302bf58eeb5e852d939da4758b1f9" compoundref="basrelief_8py" startline="757" endline="842">cam.basrelief.problemAreas</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1basrelief_1a30e8d0f83e5e0e575e556a4ab0512c16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.basrelief.imagetonumpy</definition>
+        <argsstring>(i)</argsstring>
+        <name>imagetonumpy</name>
+        <qualifiedname>cam.basrelief.imagetonumpy</qualifiedname>
+        <param>
+          <type>i</type>
+          <defname>i</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="594" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="594" bodyend="619"/>
+        <referencedby refid="namespacecam_1_1basrelief_1aec4302bf58eeb5e852d939da4758b1f9" compoundref="basrelief_8py" startline="757" endline="842">cam.basrelief.problemAreas</referencedby>
+        <referencedby refid="namespacecam_1_1basrelief_1aa0248196478d87431123a0e74908ab1c" compoundref="basrelief_8py" startline="843" endline="1000">cam.basrelief.relief</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1basrelief_1a42f76d02a7449fbb2db6092b6dd7c708" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.basrelief.tonemap</definition>
+        <argsstring>(i, exponent)</argsstring>
+        <name>tonemap</name>
+        <qualifiedname>cam.basrelief.tonemap</qualifiedname>
+        <param>
+          <type>i</type>
+          <defname>i</defname>
+        </param>
+        <param>
+          <type>exponent</type>
+          <defname>exponent</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="620" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="620" bodyend="632"/>
+        <referencedby refid="namespacecam_1_1basrelief_1aec4302bf58eeb5e852d939da4758b1f9" compoundref="basrelief_8py" startline="757" endline="842">cam.basrelief.problemAreas</referencedby>
+        <referencedby refid="namespacecam_1_1basrelief_1aa0248196478d87431123a0e74908ab1c" compoundref="basrelief_8py" startline="843" endline="1000">cam.basrelief.relief</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1basrelief_1a81d6fa58c4adc2b85ee592515995c256" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.basrelief.vert</definition>
+        <argsstring>(column, row, z, XYscaling, Zscaling)</argsstring>
+        <name>vert</name>
+        <qualifiedname>cam.basrelief.vert</qualifiedname>
+        <param>
+          <type>column</type>
+          <defname>column</defname>
+        </param>
+        <param>
+          <type>row</type>
+          <defname>row</defname>
+        </param>
+        <param>
+          <type>z</type>
+          <defname>z</defname>
+        </param>
+        <param>
+          <type>XYscaling</type>
+          <defname>XYscaling</defname>
+        </param>
+        <param>
+          <type>Zscaling</type>
+          <defname>Zscaling</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim> Create a Single Vert </verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="633" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="633" bodyend="637"/>
+        <referencedby refid="namespacecam_1_1basrelief_1a226bc6d169e18fc244218469ede9b91b" compoundref="basrelief_8py" startline="638" endline="711">cam.basrelief.buildMesh</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1basrelief_1a226bc6d169e18fc244218469ede9b91b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.basrelief.buildMesh</definition>
+        <argsstring>(mesh_z, br)</argsstring>
+        <name>buildMesh</name>
+        <qualifiedname>cam.basrelief.buildMesh</qualifiedname>
+        <param>
+          <type>mesh_z</type>
+          <defname>mesh_z</defname>
+        </param>
+        <param>
+          <type>br</type>
+          <defname>br</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="638" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="638" bodyend="711"/>
+        <references refid="namespacecam_1_1basrelief_1a81d6fa58c4adc2b85ee592515995c256" compoundref="basrelief_8py" startline="633" endline="637">cam.basrelief.vert</references>
+        <referencedby refid="namespacecam_1_1basrelief_1aa0248196478d87431123a0e74908ab1c" compoundref="basrelief_8py" startline="843" endline="1000">cam.basrelief.relief</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1basrelief_1af116eedd1395f73209312d186e0a14d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.basrelief.renderScene</definition>
+        <argsstring>(width, height, bit_diameter, passes_per_radius, make_nodes, view_layer)</argsstring>
+        <name>renderScene</name>
+        <qualifiedname>cam.basrelief.renderScene</qualifiedname>
+        <param>
+          <type>width</type>
+          <defname>width</defname>
+        </param>
+        <param>
+          <type>height</type>
+          <defname>height</defname>
+        </param>
+        <param>
+          <type>bit_diameter</type>
+          <defname>bit_diameter</defname>
+        </param>
+        <param>
+          <type>passes_per_radius</type>
+          <defname>passes_per_radius</defname>
+        </param>
+        <param>
+          <type>make_nodes</type>
+          <defname>make_nodes</defname>
+        </param>
+        <param>
+          <type>view_layer</type>
+          <defname>view_layer</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="712" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="712" bodyend="756"/>
+        <referencedby refid="classcam_1_1basrelief_1_1DoBasRelief_1a8097cf99320b782af9c0d1d1968bfdd1" compoundref="basrelief_8py" startline="1309" endline="1329">cam.basrelief.DoBasRelief.execute</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1basrelief_1aec4302bf58eeb5e852d939da4758b1f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.basrelief.problemAreas</definition>
+        <argsstring>(br)</argsstring>
+        <name>problemAreas</name>
+        <qualifiedname>cam.basrelief.problemAreas</qualifiedname>
+        <param>
+          <type>br</type>
+          <defname>br</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="757" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="757" bodyend="842"/>
+        <references refid="namespacecam_1_1basrelief_1ac14b2661328ff1f3816c445ebfbca188" compoundref="basrelief_8py" startline="424" endline="438">cam.basrelief.atimes</references>
+        <references refid="namespacecam_1_1basrelief_1a30e8d0f83e5e0e575e556a4ab0512c16" compoundref="basrelief_8py" startline="594" endline="619">cam.basrelief.imagetonumpy</references>
+        <references refid="namespacecam_1_1basrelief_1a89cc1c47da537f47ed2cc5c3461b7e00" compoundref="basrelief_8py" startline="564" endline="593">cam.basrelief.numpytoimage</references>
+        <references refid="namespacecam_1_1basrelief_1a42f76d02a7449fbb2db6092b6dd7c708" compoundref="basrelief_8py" startline="620" endline="632">cam.basrelief.tonemap</references>
+        <referencedby refid="classcam_1_1basrelief_1_1ProblemAreas_1ab9ab126f3092f574365fe92a5553f85c" compoundref="basrelief_8py" startline="1342" endline="1348">cam.basrelief.ProblemAreas.execute</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1basrelief_1aa0248196478d87431123a0e74908ab1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.basrelief.relief</definition>
+        <argsstring>(br)</argsstring>
+        <name>relief</name>
+        <qualifiedname>cam.basrelief.relief</qualifiedname>
+        <param>
+          <type>br</type>
+          <defname>br</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="843" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="843" bodyend="1000"/>
+        <references refid="namespacecam_1_1basrelief_1a226bc6d169e18fc244218469ede9b91b" compoundref="basrelief_8py" startline="638" endline="711">cam.basrelief.buildMesh</references>
+        <references refid="namespacecam_1_1basrelief_1a30e8d0f83e5e0e575e556a4ab0512c16" compoundref="basrelief_8py" startline="594" endline="619">cam.basrelief.imagetonumpy</references>
+        <references refid="namespacecam_1_1basrelief_1a4cb6f56c1aa4d079ec817111a923c767" compoundref="basrelief_8py" startline="279" endline="419">cam.basrelief.solve_pde_multigrid</references>
+        <references refid="namespacecam_1_1basrelief_1a42f76d02a7449fbb2db6092b6dd7c708" compoundref="basrelief_8py" startline="620" endline="632">cam.basrelief.tonemap</references>
+        <referencedby refid="classcam_1_1basrelief_1_1DoBasRelief_1a8097cf99320b782af9c0d1d1968bfdd1" compoundref="basrelief_8py" startline="1309" endline="1329">cam.basrelief.DoBasRelief.execute</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1basrelief_1aaa9a591a131ef4eddea99e827ed9c4cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.basrelief.get_panels</definition>
+        <argsstring>()</argsstring>
+        <name>get_panels</name>
+        <qualifiedname>cam.basrelief.get_panels</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="1349" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="1349" bodyend="1357"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1basrelief_1a026b08c04bb7d54727fe19238719ae55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.basrelief.register</definition>
+        <argsstring>()</argsstring>
+        <name>register</name>
+        <qualifiedname>cam.basrelief.register</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="1358" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="1358" bodyend="1366"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1basrelief_1a517f356287ef040219859ad26bdd5627" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.basrelief.unregister</definition>
+        <argsstring>()</argsstring>
+        <name>unregister</name>
+        <qualifiedname>cam.basrelief.unregister</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="1367" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" bodystart="1367" bodyend="1372"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>BlenderCAM &apos;basrelief.py&apos;
+
+Module to allow the creation of reliefs from Images or View Layers.
+(https://en.wikipedia.org/wiki/Relief#Bas-relief_or_low_relief)
+</verbatim> </para>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

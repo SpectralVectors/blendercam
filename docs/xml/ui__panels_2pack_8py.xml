@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="ui__panels_2pack_8py" kind="file" language="Python">
+    <compoundname>pack.py</compoundname>
+    <innerclass refid="classcam_1_1ui__panels_1_1pack_1_1CAM__PACK__Panel" prot="public">cam::ui_panels::pack::CAM_PACK_Panel</innerclass>
+    <innernamespace refid="namespacecam">cam</innernamespace>
+    <innernamespace refid="namespacecam_1_1ui__panels">cam::ui_panels</innernamespace>
+    <innernamespace refid="namespacecam_1_1ui__panels_1_1pack">cam::ui_panels::pack</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacecam_1_1ui__panels_1_1pack" refkind="compound"><highlight class="stringliteral">&quot;&quot;&quot;BlenderCAM<sp/>&apos;pack.py&apos;</highlight></codeline>
+<codeline lineno="2"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="3"><highlight class="stringliteral">&apos;Pack<sp/>Curves<sp/>on<sp/>Sheet&apos;<sp/>panel<sp/>in<sp/>Properties<sp/>&gt;<sp/>Render</highlight></codeline>
+<codeline lineno="4"><highlight class="stringliteral">&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>bpy</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacebpy_1_1types" kindref="compound">bpy.types</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Panel</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.buttons_panel<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>CAMButtonsPanel</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="classcam_1_1ui__panels_1_1pack_1_1CAM__PACK__Panel" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classcam_1_1ui__panels_1_1pack_1_1CAM__PACK__Panel" kindref="compound">CAM_PACK_Panel</ref>(<ref refid="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel" kindref="compound">CAMButtonsPanel</ref>,<sp/>Panel):</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;CAM<sp/>Pack<sp/>Panel&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="classcam_1_1ui__panels_1_1pack_1_1CAM__PACK__Panel_1a859bb0d9ddef62bf11e6a1deef41e682" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>bl_label<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Pack<sp/>Curves<sp/>on<sp/>Sheet&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classcam_1_1ui__panels_1_1pack_1_1CAM__PACK__Panel_1a3917b29af05ad56e6c1ff317607c36e5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>bl_idname<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;WORLD_PT_CAM_PACK&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="classcam_1_1ui__panels_1_1pack_1_1CAM__PACK__Panel_1a27eb63e96d6a0ead22f392947dac29e9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>panel_interface_level<sp/>=<sp/>2</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="classcam_1_1ui__panels_1_1pack_1_1CAM__PACK__Panel_1afe435195fb162a070cf206cf2af7fb25" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>COMPAT_ENGINES<sp/>=<sp/>{</highlight><highlight class="stringliteral">&apos;CNCCAM_RENDER&apos;</highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classcam_1_1ui__panels_1_1pack_1_1CAM__PACK__Panel_1af264b3aa7fbd33a3f39c3f1a5ce1b4d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classcam_1_1ui__panels_1_1pack_1_1CAM__PACK__Panel_1af264b3aa7fbd33a3f39c3f1a5ce1b4d2" kindref="member">draw</ref>(self,<sp/>context):</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>layout<sp/>=<sp/>self.layout</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scene<sp/>=<sp/>bpy.context.scene</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>settings<sp/>=<sp/>scene.cam_pack</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>layout.label(text=</highlight><highlight class="stringliteral">&apos;Warning<sp/>-<sp/>Algorithm<sp/>Is<sp/>Slow.&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>layout.label(text=</highlight><highlight class="stringliteral">&apos;Only<sp/>for<sp/>Curves<sp/>Now.&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>layout.operator(</highlight><highlight class="stringliteral">&quot;object.cam_pack_objects&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>layout.prop(settings,<sp/></highlight><highlight class="stringliteral">&apos;sheet_fill_direction&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>layout.prop(settings,<sp/></highlight><highlight class="stringliteral">&apos;sheet_x&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>layout.prop(settings,<sp/></highlight><highlight class="stringliteral">&apos;sheet_y&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>layout.prop(settings,<sp/></highlight><highlight class="stringliteral">&apos;distance&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>layout.prop(settings,<sp/></highlight><highlight class="stringliteral">&apos;tolerance&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>layout.prop(settings,<sp/></highlight><highlight class="stringliteral">&apos;rotate&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>settings.rotate:</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>layout.prop(settings,<sp/></highlight><highlight class="stringliteral">&apos;rotate_angle&apos;</highlight><highlight class="normal">)</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/pack.py"/>
+  </compounddef>
+</doxygen>

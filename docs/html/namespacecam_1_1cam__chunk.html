@@ -1,0 +1,703 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>blendercam: cam.cam_chunk Namespace Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">blendercam
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part --><!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('namespacecam_1_1cam__chunk.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle"><div class="title">cam.cam_chunk Namespace Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1cam__chunk_1_1camPathChunk.html">camPathChunk</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1cam__chunk_1_1camPathChunkBuilder.html">camPathChunkBuilder</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:aae443f216453a876267923f185b8fea3" id="r_aae443f216453a876267923f185b8fea3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae443f216453a876267923f185b8fea3">Rotate_pbyp</a> (originp, p, ang)</td></tr>
+<tr class="separator:aae443f216453a876267923f185b8fea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ad480b2d187f750c8b12fa4c91c22e6" id="r_a9ad480b2d187f750c8b12fa4c91c22e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ad480b2d187f750c8b12fa4c91c22e6">_internalXyDistanceTo</a> (ourpoints, theirpoints, cutoff)</td></tr>
+<tr class="separator:a9ad480b2d187f750c8b12fa4c91c22e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45d40f21aa2c35b1e0b565c85333ed74" id="r_a45d40f21aa2c35b1e0b565c85333ed74"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45d40f21aa2c35b1e0b565c85333ed74">chunksCoherency</a> (chunks)</td></tr>
+<tr class="separator:a45d40f21aa2c35b1e0b565c85333ed74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acebd7e22b362088be2887cf1d12bbd88" id="r_acebd7e22b362088be2887cf1d12bbd88"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acebd7e22b362088be2887cf1d12bbd88">setChunksZ</a> (chunks, z)</td></tr>
+<tr class="separator:acebd7e22b362088be2887cf1d12bbd88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a510d5a93759ed88ba4ee598399333408" id="r_a510d5a93759ed88ba4ee598399333408"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a510d5a93759ed88ba4ee598399333408">_optimize_internal</a> (points, keep_points, e, protect_vertical, protect_vertical_limit)</td></tr>
+<tr class="separator:a510d5a93759ed88ba4ee598399333408"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcf54443e0975e21832bde727de88ac2" id="r_afcf54443e0975e21832bde727de88ac2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afcf54443e0975e21832bde727de88ac2">optimizeChunk</a> (chunk, operation)</td></tr>
+<tr class="separator:afcf54443e0975e21832bde727de88ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90399dafb2a5285d13498e733ea638ce" id="r_a90399dafb2a5285d13498e733ea638ce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90399dafb2a5285d13498e733ea638ce">limitChunks</a> (chunks, o, force=False)</td></tr>
+<tr class="separator:a90399dafb2a5285d13498e733ea638ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99ba11ed9b7a4ae787bc650d16fdafba" id="r_a99ba11ed9b7a4ae787bc650d16fdafba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99ba11ed9b7a4ae787bc650d16fdafba">parentChildPoly</a> (parents, children, o)</td></tr>
+<tr class="separator:a99ba11ed9b7a4ae787bc650d16fdafba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a218eb047597fabf4537005a14292a6d4" id="r_a218eb047597fabf4537005a14292a6d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a218eb047597fabf4537005a14292a6d4">parentChildDist</a> (parents, children, o, distance=None)</td></tr>
+<tr class="separator:a218eb047597fabf4537005a14292a6d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadd268ccef89d272fd5ad5d2d87eb69a" id="r_aadd268ccef89d272fd5ad5d2d87eb69a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aadd268ccef89d272fd5ad5d2d87eb69a">parentChild</a> (parents, children, o)</td></tr>
+<tr class="separator:aadd268ccef89d272fd5ad5d2d87eb69a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8dc0d6890bd1f95cceb91e7805688a4" id="r_af8dc0d6890bd1f95cceb91e7805688a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8dc0d6890bd1f95cceb91e7805688a4">chunksToShapely</a> (chunks)</td></tr>
+<tr class="separator:af8dc0d6890bd1f95cceb91e7805688a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bf2bc0e6461327556a19fe116dfbda0" id="r_a9bf2bc0e6461327556a19fe116dfbda0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9bf2bc0e6461327556a19fe116dfbda0">meshFromCurveToChunk</a> (<a class="el" href="classobject.html">object</a>)</td></tr>
+<tr class="separator:a9bf2bc0e6461327556a19fe116dfbda0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3e6072a206a9e8f2d864520447b8b87" id="r_ad3e6072a206a9e8f2d864520447b8b87"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3e6072a206a9e8f2d864520447b8b87">makeVisible</a> (o)</td></tr>
+<tr class="separator:ad3e6072a206a9e8f2d864520447b8b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56a5d2a90ff15ceb9963e1f471fdad03" id="r_a56a5d2a90ff15ceb9963e1f471fdad03"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56a5d2a90ff15ceb9963e1f471fdad03">restoreVisibility</a> (o, storage)</td></tr>
+<tr class="separator:a56a5d2a90ff15ceb9963e1f471fdad03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58fc3af169a4c899092e731bbceaed80" id="r_a58fc3af169a4c899092e731bbceaed80"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58fc3af169a4c899092e731bbceaed80">meshFromCurve</a> (o, use_modifiers=False)</td></tr>
+<tr class="separator:a58fc3af169a4c899092e731bbceaed80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2a9b4c221280b217dea624d99a312fa" id="r_ab2a9b4c221280b217dea624d99a312fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2a9b4c221280b217dea624d99a312fa">curveToChunks</a> (o, use_modifiers=False)</td></tr>
+<tr class="separator:ab2a9b4c221280b217dea624d99a312fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cc06d455ff3f17560db2450a67baa10" id="r_a0cc06d455ff3f17560db2450a67baa10"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0cc06d455ff3f17560db2450a67baa10">shapelyToChunks</a> (p, zlevel)</td></tr>
+<tr class="separator:a0cc06d455ff3f17560db2450a67baa10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a390ce4823666ce071f05f79f0fb69d95" id="r_a390ce4823666ce071f05f79f0fb69d95"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a390ce4823666ce071f05f79f0fb69d95">chunkToShapely</a> (chunk)</td></tr>
+<tr class="separator:a390ce4823666ce071f05f79f0fb69d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a33bfd7b634b7730791fc81fbe2d25d" id="r_a2a33bfd7b634b7730791fc81fbe2d25d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a33bfd7b634b7730791fc81fbe2d25d">chunksRefine</a> (chunks, o)</td></tr>
+<tr class="separator:a2a33bfd7b634b7730791fc81fbe2d25d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56ba7c9150f76d7fcfade92ac0a49938" id="r_a56ba7c9150f76d7fcfade92ac0a49938"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56ba7c9150f76d7fcfade92ac0a49938">chunksRefineThreshold</a> (chunks, distance, limitdistance)</td></tr>
+<tr class="separator:a56ba7c9150f76d7fcfade92ac0a49938"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><pre class="fragment">BlenderCAM 'chunk.py' © 2012 Vilem Novak
+ 
+Classes and Functions to build, store and optimize CAM path chunks.
+</pre> </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a9ad480b2d187f750c8b12fa4c91c22e6" name="a9ad480b2d187f750c8b12fa4c91c22e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ad480b2d187f750c8b12fa4c91c22e6">&#9670;&#160;</a></span>_internalXyDistanceTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.cam_chunk._internalXyDistanceTo </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>ourpoints</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>theirpoints</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>cutoff</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacecam_1_1cam__chunk_a9ad480b2d187f750c8b12fa4c91c22e6_icgraph.svg" width="515" height="115"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a510d5a93759ed88ba4ee598399333408" name="a510d5a93759ed88ba4ee598399333408"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a510d5a93759ed88ba4ee598399333408">&#9670;&#160;</a></span>_optimize_internal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.cam_chunk._optimize_internal </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>points</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>keep_points</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>e</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>protect_vertical</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>protect_vertical_limit</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacecam_1_1cam__chunk_a510d5a93759ed88ba4ee598399333408_icgraph.svg" width="486" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a45d40f21aa2c35b1e0b565c85333ed74" name="a45d40f21aa2c35b1e0b565c85333ed74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45d40f21aa2c35b1e0b565c85333ed74">&#9670;&#160;</a></span>chunksCoherency()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.cam_chunk.chunksCoherency </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>chunks</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2a33bfd7b634b7730791fc81fbe2d25d" name="a2a33bfd7b634b7730791fc81fbe2d25d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a33bfd7b634b7730791fc81fbe2d25d">&#9670;&#160;</a></span>chunksRefine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.cam_chunk.chunksRefine </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>chunks</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>o</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Add Extra Points in Between for Chunks</pre> 
+</div>
+</div>
+<a id="a56ba7c9150f76d7fcfade92ac0a49938" name="a56ba7c9150f76d7fcfade92ac0a49938"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56ba7c9150f76d7fcfade92ac0a49938">&#9670;&#160;</a></span>chunksRefineThreshold()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.cam_chunk.chunksRefineThreshold </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>chunks</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>distance</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>limitdistance</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Add Extra Points in Between for Chunks. for Medial Axis Strategy only!</pre> 
+</div>
+</div>
+<a id="af8dc0d6890bd1f95cceb91e7805688a4" name="af8dc0d6890bd1f95cceb91e7805688a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8dc0d6890bd1f95cceb91e7805688a4">&#9670;&#160;</a></span>chunksToShapely()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.cam_chunk.chunksToShapely </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>chunks</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a390ce4823666ce071f05f79f0fb69d95" name="a390ce4823666ce071f05f79f0fb69d95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a390ce4823666ce071f05f79f0fb69d95">&#9670;&#160;</a></span>chunkToShapely()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.cam_chunk.chunkToShapely </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>chunk</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab2a9b4c221280b217dea624d99a312fa" name="ab2a9b4c221280b217dea624d99a312fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2a9b4c221280b217dea624d99a312fa">&#9670;&#160;</a></span>curveToChunks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.cam_chunk.curveToChunks </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>o</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>use_modifiers</em><span class="paramdefsep"> = </span><span class="paramdefval">False</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacecam_1_1cam__chunk_ab2a9b4c221280b217dea624d99a312fa_cgraph.svg" width="528" height="102"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a90399dafb2a5285d13498e733ea638ce" name="a90399dafb2a5285d13498e733ea638ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90399dafb2a5285d13498e733ea638ce">&#9670;&#160;</a></span>limitChunks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.cam_chunk.limitChunks </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>chunks</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>o</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>force</em><span class="paramdefsep"> = </span><span class="paramdefval">False</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad3e6072a206a9e8f2d864520447b8b87" name="ad3e6072a206a9e8f2d864520447b8b87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3e6072a206a9e8f2d864520447b8b87">&#9670;&#160;</a></span>makeVisible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.cam_chunk.makeVisible </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>o</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a58fc3af169a4c899092e731bbceaed80" name="a58fc3af169a4c899092e731bbceaed80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58fc3af169a4c899092e731bbceaed80">&#9670;&#160;</a></span>meshFromCurve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.cam_chunk.meshFromCurve </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>o</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>use_modifiers</em><span class="paramdefsep"> = </span><span class="paramdefval">False</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacecam_1_1cam__chunk_a58fc3af169a4c899092e731bbceaed80_icgraph.svg" width="528" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a9bf2bc0e6461327556a19fe116dfbda0" name="a9bf2bc0e6461327556a19fe116dfbda0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bf2bc0e6461327556a19fe116dfbda0">&#9670;&#160;</a></span>meshFromCurveToChunk()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.cam_chunk.meshFromCurveToChunk </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>object</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacecam_1_1cam__chunk_a9bf2bc0e6461327556a19fe116dfbda0_icgraph.svg" width="528" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="afcf54443e0975e21832bde727de88ac2" name="afcf54443e0975e21832bde727de88ac2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcf54443e0975e21832bde727de88ac2">&#9670;&#160;</a></span>optimizeChunk()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.cam_chunk.optimizeChunk </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>chunk</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>operation</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacecam_1_1cam__chunk_afcf54443e0975e21832bde727de88ac2_cgraph.svg" width="486" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="aadd268ccef89d272fd5ad5d2d87eb69a" name="aadd268ccef89d272fd5ad5d2d87eb69a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadd268ccef89d272fd5ad5d2d87eb69a">&#9670;&#160;</a></span>parentChild()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.cam_chunk.parentChild </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>parents</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>children</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>o</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a218eb047597fabf4537005a14292a6d4" name="a218eb047597fabf4537005a14292a6d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a218eb047597fabf4537005a14292a6d4">&#9670;&#160;</a></span>parentChildDist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.cam_chunk.parentChildDist </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>parents</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>children</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>o</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>distance</em><span class="paramdefsep"> = </span><span class="paramdefval">None</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a99ba11ed9b7a4ae787bc650d16fdafba" name="a99ba11ed9b7a4ae787bc650d16fdafba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99ba11ed9b7a4ae787bc650d16fdafba">&#9670;&#160;</a></span>parentChildPoly()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.cam_chunk.parentChildPoly </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>parents</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>children</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>o</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a56a5d2a90ff15ceb9963e1f471fdad03" name="a56a5d2a90ff15ceb9963e1f471fdad03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56a5d2a90ff15ceb9963e1f471fdad03">&#9670;&#160;</a></span>restoreVisibility()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.cam_chunk.restoreVisibility </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>o</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>storage</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aae443f216453a876267923f185b8fea3" name="aae443f216453a876267923f185b8fea3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae443f216453a876267923f185b8fea3">&#9670;&#160;</a></span>Rotate_pbyp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.cam_chunk.Rotate_pbyp </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>originp</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>p</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>ang</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacecam_1_1cam__chunk_aae443f216453a876267923f185b8fea3_icgraph.svg" width="535" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="acebd7e22b362088be2887cf1d12bbd88" name="acebd7e22b362088be2887cf1d12bbd88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acebd7e22b362088be2887cf1d12bbd88">&#9670;&#160;</a></span>setChunksZ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.cam_chunk.setChunksZ </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>chunks</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>z</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0cc06d455ff3f17560db2450a67baa10" name="a0cc06d455ff3f17560db2450a67baa10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cc06d455ff3f17560db2450a67baa10">&#9670;&#160;</a></span>shapelyToChunks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.cam_chunk.shapelyToChunks </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>p</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>zlevel</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.10.0-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacecam.html">cam</a></li><li class="navelem"><a class="el" href="namespacecam_1_1cam__chunk.html">cam_chunk</a></li>
+    <li class="footer">Generated by <a href="https://penify.dev/"><img class="footer" src="https://www.penify.dev/_next/static/media/snorkell-dark-logo.9fa414f5.svg" width="104" height="31" alt="doxygen"/></a> </li>
+  </ul>
+</div>
+</body>
+</html>

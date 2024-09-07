@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="gantry__router_8py" kind="file" language="Python">
+    <compoundname>gantry_router.py</compoundname>
+    <innerclass refid="classcam_1_1nc_1_1gantry__router_1_1Creator" prot="public">cam::nc::gantry_router::Creator</innerclass>
+    <innernamespace refid="namespacecam">cam</innernamespace>
+    <innernamespace refid="namespacecam_1_1nc">cam::nc</innernamespace>
+    <innernamespace refid="namespacecam_1_1nc_1_1gantry__router">cam::nc::gantry_router</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacecam_1_1nc_1_1gantry__router" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>nc</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>emc2</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="classcam_1_1nc_1_1gantry__router_1_1Creator" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classcam_1_1nc_1_1gantry__router_1_1Creator" kindref="compound">Creator</ref>(<ref refid="classcam_1_1nc_1_1emc2_1_1Creator" kindref="compound">emc2.Creator</ref>):</highlight></codeline>
+<codeline lineno="6" refid="classcam_1_1nc_1_1gantry__router_1_1Creator_1a1e6788beb2cc7ea4ba415e89584282e6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classcam_1_1nc_1_1gantry__router_1_1Creator_1a1e6788beb2cc7ea4ba415e89584282e6" kindref="member">init</ref>(self):</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>emc2.Creator.init(self)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classcam_1_1nc_1_1gantry__router_1_1Creator_1a483ab0e905d58e0ad3fdb2543792c16a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classcam_1_1nc_1_1gantry__router_1_1Creator_1a483ab0e905d58e0ad3fdb2543792c16a" kindref="member">program_begin</ref>(self,<sp/>id,<sp/>comment):</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classcam_1_1nc_1_1iso_1_1Creator_1abb81af5a0bdddfed387b71b68a51cc7a" kindref="member">write</ref><ref refid="classcam_1_1nc_1_1nc_1_1Creator_1a80f2134add83bfaaf2870d075d36ed8a" kindref="member">write</ref>((</highlight><highlight class="stringliteral">&apos;(&apos;</highlight><highlight class="normal"><sp/>+<sp/>comment<sp/>+<sp/></highlight><highlight class="stringliteral">&apos;)&apos;</highlight><highlight class="normal"><sp/>+<sp/></highlight><highlight class="stringliteral">&apos;\n&apos;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="classcam_1_1nc_1_1gantry__router_1_1Creator_1a6b495890d68a80d5b9745693887fb8ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classcam_1_1nc_1_1gantry__router_1_1Creator_1a6b495890d68a80d5b9745693887fb8ea" kindref="member">tool_defn</ref>(self,<sp/>id,<sp/>name=&apos;&apos;,<sp/>params=None):</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classcam_1_1nc_1_1gantry__router_1_1Creator_1a1cdfe78b3c00a447cb258bb1ecd381b8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classcam_1_1nc_1_1gantry__router_1_1Creator_1a1cdfe78b3c00a447cb258bb1ecd381b8" kindref="member">spindle</ref>(self,<sp/>s,<sp/>clockwise):</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="classcam_1_1nc_1_1gantry__router_1_1Creator_1ab174305fd04b0981f7e3509bd609f235" refkind="member"><highlight class="normal">nc.creator<sp/>=<sp/>Creator()</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/gantry_router.py"/>
+  </compounddef>
+</doxygen>

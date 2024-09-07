@@ -1,0 +1,305 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2README" xml:lang="en-US">
+<title>README</title>
+<indexterm><primary>README</primary></indexterm>
+
+<para></para>
+
+<para></para>
+
+<para><informaltable frame='bottom'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>
+</entry></row></tbody></tgroup></informaltable>
+</para>
+
+<para></para>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2README_1autotoc_md52">
+<title><title>An Open Source Solution for Artistic or Industrial CAM with Blender 3D</title></title>
+
+<para></para>
+
+<para><link xlink:href="https://riot.im/app/#/room/#blendercam:matrix.org"></link> <link xlink:href="http://webchat.freenode.net/?channels=%23blendercam"></link></para>
+
+<para><link xlink:href="https://github.com/vilemduha/blendercam"></link>  </para>
+
+<para> </para>
+
+<para><informaltable frame='bottom'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>
+</entry></row></tbody></tgroup></informaltable>
+</para>
+
+<para></para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2README_1autotoc_md53">
+<title><title>About • How to Use • Features • Post-Processors • Files • Contribute • License • Disclaimer</title></title>
+
+<para></para>
+
+<para><informaltable frame='bottom'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>
+</entry></row></tbody></tgroup></informaltable>
+</para>
+
+<para></para>
+
+<para><informaltable frame='bottom'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>
+</entry></row></tbody></tgroup></informaltable>
+</para>
+
+<para></para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2README_1autotoc_md54">
+<title><title>👁️ About</title></title>
+
+<para><link xlink:href="https://blendercam.com/"><emphasis role="bold">Blender CAM</emphasis></link> is an open source solution for artistic, personal, commercial or industrial CAM - Computer aided machining - a g-code generation tool.</para>
+
+<para>It has been used for many milling projects _(artistic, personal, commercial and industrial)_ since its creation in 2012, and is actively developed.</para>
+
+<para><blockquote>
+<para>&#8205;[!NOTE] <emphasis>If you are a developer who would like to help, check out the section on Contributing.</emphasis> </para>
+</blockquote></para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2README_1autotoc_md55">
+<title><title>👨‍🎓 How to Use (Wiki)</title></title>
+
+<para></para>
+
+<para>Blendercam works on Windows or Linux and MacOS.</para>
+
+<para><itemizedlist>
+<listitem>
+<para>BlenderCAM Installation</para>
+</listitem><listitem>
+<para>Getting Started</para>
+</listitem><listitem>
+<para><link linkend="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam-Panel-Descriptions">Panel Descriptions</link></para>
+</listitem><listitem>
+<para><link linkend="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2documentation_2Blendercam-Tools">Tools</link></para>
+</listitem><listitem>
+<para>Example of using Profile and Pocket operations</para>
+</listitem></itemizedlist>
+</para>
+
+<para>(The full <link xlink:href="https://blendercam.com/documentation/">documentation</link> can also be found on the website) </para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2README_1autotoc_md56">
+<title><title>👌 Features</title></title>
+
+<para><informaltable frame="all">
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<thead>
+      <row  class='markdownTableHead'>
+<entry>
+<para></para>
+</entry><entry align='center'>
+<para>Blender from 2.80 to 4.1    </para>
+</entry></row>
+</thead><tbody>
+      <row  class='markdownTableRowOdd'>
+<entry>
+<para>Several Milling Strategies for 2D and 3D   </para>
+</entry><entry align='center'>
+<para>✔️    </para>
+</entry></row>
+      <row  class='markdownTableRowEven'>
+<entry>
+<para>Cutter Types: Ball, Ballcone, Endmill Flat, V-Carve _(various angles)_, User Defined   </para>
+</entry><entry align='center'>
+<para>✔️    </para>
+</entry></row>
+      <row  class='markdownTableRowOdd'>
+<entry>
+<para>Work with 3D Data or Depth Images   </para>
+</entry><entry align='center'>
+<para>✔️    </para>
+</entry></row>
+      <row  class='markdownTableRowEven'>
+<entry>
+<para>Layers and Skin for Roughing   </para>
+</entry><entry align='center'>
+<para>✔️    </para>
+</entry></row>
+      <row  class='markdownTableRowOdd'>
+<entry>
+<para>Inverse Milling   </para>
+</entry><entry align='center'>
+<para>✔️    </para>
+</entry></row>
+      <row  class='markdownTableRowEven'>
+<entry>
+<para>Various Options for Ambient around Model   </para>
+</entry><entry align='center'>
+<para>✔️    </para>
+</entry></row>
+      <row  class='markdownTableRowOdd'>
+<entry>
+<para>Protection of Vertical Surfaces   </para>
+</entry><entry align='center'>
+<para>✔️    </para>
+</entry></row>
+      <row  class='markdownTableRowEven'>
+<entry>
+<para>Stay Low - Option for Movement   </para>
+</entry><entry align='center'>
+<para>✔️    </para>
+</entry></row>
+      <row  class='markdownTableRowOdd'>
+<entry>
+<para>Material Size Setup   </para>
+</entry><entry align='center'>
+<para>✔️    </para>
+</entry></row>
+      <row  class='markdownTableRowEven'>
+<entry>
+<para>Simulation of 3D Operations   </para>
+</entry><entry align='center'>
+<para>✔️    </para>
+</entry></row>
+      <row  class='markdownTableRowOdd'>
+<entry>
+<para>Arc Retract   </para>
+</entry><entry align='center'>
+<para>✔️    </para>
+</entry></row>
+      <row  class='markdownTableRowEven'>
+<entry>
+<para>Pack Curves and Slice Model   </para>
+</entry><entry align='center'>
+<para>✔️    </para>
+</entry></row>
+      <row  class='markdownTableRowOdd'>
+<entry>
+<para>Automatic Bridges for Cutout Operation   </para>
+</entry><entry align='center'>
+<para>✔️    </para>
+</entry></row>
+      <row  class='markdownTableRowEven'>
+<entry>
+<para>Chain Export and Simulation   </para>
+</entry><entry align='center'>
+<para>✔️   </para>
+</entry></row>
+    </tbody>
+    </tgroup>
+</informaltable>
+</para>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2README_1autotoc_md57">
+<title><title>Pending Features</title></title>
+
+<para><itemizedlist>
+<listitem>
+<para>Helix entry and ramp down are experimental.</para>
+</listitem><listitem>
+<para>4 and 5 axis milling are only manual</para>
+</listitem></itemizedlist>
+</para>
+</section>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2README_1autotoc_md58">
+<title><title>💻 Post-processors</title></title>
+
+<para><itemizedlist>
+<listitem>
+<para>GRBL</para>
+</listitem><listitem>
+<para>Iso</para>
+</listitem><listitem>
+<para>LinuxCNC - EMC2</para>
+</listitem><listitem>
+<para>Fadal</para>
+</listitem><listitem>
+<para>Heidenhain</para>
+</listitem><listitem>
+<para>Sieg KX1</para>
+</listitem><listitem>
+<para>Hafco HM-50</para>
+</listitem><listitem>
+<para>Centroïd M40</para>
+</listitem><listitem>
+<para>Anilam Crusader M</para>
+</listitem><listitem>
+<para>Gravos</para>
+</listitem><listitem>
+<para>WinPC-NC</para>
+</listitem><listitem>
+<para>ShopBot MTC</para>
+</listitem><listitem>
+<para>Lynx Otter o</para>
+</listitem><listitem>
+<para>...</para>
+</listitem></itemizedlist>
+</para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2README_1autotoc_md59">
+<title><title>📒 Files Organisation</title></title>
+
+<para><literallayout><computeroutput>.
+├──&#32;config&#32;-&#32;#&#32;&apos;startup&apos;&#32;and&#32;&apos;userpref&apos;&#32;blend&#32;files
+├──&#32;documentation&#32;-&#32;#&#32;How&#32;to&#32;Use&#32;(Wiki)&#32;-&#32;files
+├──&#32;Examples&#32;-&#32;#&#32;Bas&#32;Relief&#32;&amp;&#32;Intarsion&#32;operation&#32;demo&#32;files&#32;and&#32;images
+├──&#32;scripts
+│  &#32;└──&#32;addons
+│  &#32;&#32;  &#32;└──&#32;cam&#32;-&#32;#&#32;Main&#32;Addon&#32;Folder
+│  &#32;&#32;  &#32;&#32;  &#32;├──&#32;nc&#32;-&#32;#&#32;Post-Processors
+│  &#32;&#32;  &#32;&#32;  &#32;├──&#32;opencamlib&#32;-&#32;#&#32;OpenCAMLib&#32;functions
+│&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;  &#32;├──&#32;presets&#32;-&#32;#&#32;Quick&#32;access&#32;to&#32;pre-defined&#32;cutting&#32;tools,&#32;machines&#32;and&#32;operations
+│&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;  &#32;│&#32;&#32;&#32;├──&#32;cam_cutters
+│&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;  &#32;│&#32;&#32;&#32;├──&#32;cam_machines
+│&#32;&#32;&#32;&#32;&#32;&#32;&#32;  &#32;&#32;│&#32;&#32;&#32;└──&#32;cam_operations
+│&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;├──&#32;tests&#32;-&#32;#&#32;Developer&#32;Tests
+│&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;│&#32;&#32;&#32;└──&#32;test_data&#32;-&#32;#&#32;Test&#32;output
+│&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;└──&#32;ui_panels&#32;-&#32;#&#32;User&#32;Interface
+└──&#32;static&#32;-&#32;#&#32;Logo
+</computeroutput></literallayout></para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2README_1autotoc_md60">
+<title><title>🤝 Contribute</title></title>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2README_1autotoc_md61">
+<title><title>BlenderCAM is in active development.</title></title>
+
+<para>Originally created by <link xlink:href="https://github.com/vilemduha">Vilem Novak</link>, the addon is currently maintained by <link xlink:href="https://github.com/pppalain">Alain Pelletier</link> and a team of contributors.</para>
+
+<para>If you are a developer who would like to contribute to the project, please fork and open pull requests.</para>
+
+<para>If you wish to contribute to the addon, your code must be GPL or a more permissive license (e.g.: MIT, Public Domain).</para>
+
+<para><blockquote>
+<para>&#8205;[!TIP] <emphasis>If you need help or want to discuss about BlenderCAM you can join the <link xlink:href="https://riot.im/app/#/room/#blendercam:matrix.org">Chat Room #BlenderCAM:matrix.org on Matrix</link>.</emphasis> </para>
+</blockquote></para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2README_1autotoc_md62">
+<title><title>Contributors</title></title>
+
+<para><link xlink:href="https://github.com/pppalain/blendercam/graphs/contributors"> </link></para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2README_1autotoc_md63">
+<title><title>Additional Contributors &amp; Acknowledgements</title></title>
+
+<para>Hirutso Enni, Kurt Jensen, Dan Falck, Dan Heeks, Brad Collette, Michael Haberler, dhull, jonathanwin, Leemon Baird, Devon (Gorialis) R, Steven Fortune, Bill Simons, Carson Farmer, domlysz</para>
+</section>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2README_1autotoc_md64">
+<title><title>🪪 License</title></title>
+
+<para>BlenderCAM is licensed under GPLv3, <emphasis role="bold">UNLESS OTHERWISE INDICATED</emphasis>.</para>
+
+<para><blockquote>
+<para>&#8205;[!NOTE] <emphasis>Some files in this addon use code from other sources, see the file docstring a the top of each file for attribution and license information.</emphasis></para>
+
+<para><emphasis>Please ensure that you read and abide by the license terms given for each file.</emphasis> </para>
+</blockquote></para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2SpectralVectors_2blendercam_2README_1autotoc_md65">
+<title><title>🤕 DISCLAIMER</title></title>
+
+<para><blockquote>
+<para>&#8205;[!WARNING] </para>
+</blockquote>THE AUTHORS OF THIS SOFTWARE ACCEPT ABSOLUTELY NO LIABILITY FOR ANY HARM OR LOSS RESULTING FROM ITS USE. <blockquote>
+<para>&#8205; IT IS <emphasis>EXTREMELY</emphasis> UNWISE </para>
+</blockquote>TO RELY ON SOFTWARE ALONE FOR SAFETY. <blockquote>
+<para>&#8205; Any machinery capable of </para>
+</blockquote>harming persons must have provisions for completely removing power from all motors, etc, before persons enter any danger area. <blockquote>
+<para>&#8205; All </para>
+</blockquote>machinery must be designed to comply with local and national safety codes, and the authors of this software can not, and do not, take any responsibility for such compliance. </para>
+</section>
+</section>

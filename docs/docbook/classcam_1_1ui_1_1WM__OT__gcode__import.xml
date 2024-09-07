@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1ui_1_1WM__OT__gcode__import" xml:lang="en-US">
+<title>cam.ui.WM_OT_gcode_import Class Reference</title>
+<indexterm><primary>cam.ui.WM_OT_gcode_import</primary></indexterm>
+Inheritance diagram for cam.ui.WM_OT_gcode_import:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui_1_1WM__OT__gcode__import__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.ui.WM_OT_gcode_import:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui_1_1WM__OT__gcode__import__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1ui_1_1WM__OT__gcode__import_1a51c6ed7713414dbe7c188c4f7b4e50a1">execute</link> (self, context)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1ui_1_1WM__OT__gcode__import_1aaebdfdb23ee7e0d4f671c5166a000a43">filepath</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classcam_1_1ui_1_1WM__OT__gcode__import_1aefbe9ff56269d3cffff3c9d793781ae4">bl_idname</link> = &quot;wm.gcode_import&quot;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1ui_1_1WM__OT__gcode__import_1a26b82390aa9536ad52aee0acfcd508a7">bl_label</link> = &quot;Import G-code&quot;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1ui_1_1WM__OT__gcode__import_1a6571a84d7654bfe68047fa86027680bd">filename_ext</link> = &quot;.txt&quot;</para>
+</listitem>
+            <listitem><para>StringProperty <link linkend="_classcam_1_1ui_1_1WM__OT__gcode__import_1a8f963966988a1e96b0c4165a65dd08a8">filter_glob</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Import G-code, Travel Lines Don&apos;t Get Drawn</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1ui_1_1WM__OT__gcode__import_1a51c6ed7713414dbe7c188c4f7b4e50a1"/><section>
+    <title>execute()</title>
+<indexterm><primary>execute</primary><secondary>cam.ui.WM_OT_gcode_import</secondary></indexterm>
+<indexterm><primary>cam.ui.WM_OT_gcode_import</primary><secondary>execute</secondary></indexterm>
+<para><computeroutput>cam.ui.WM_OT_gcode_import.execute ( self,  context)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1ui_1_1WM__OT__gcode__import_1aefbe9ff56269d3cffff3c9d793781ae4"/><section>
+    <title>bl_idname</title>
+<indexterm><primary>bl_idname</primary><secondary>cam.ui.WM_OT_gcode_import</secondary></indexterm>
+<indexterm><primary>cam.ui.WM_OT_gcode_import</primary><secondary>bl_idname</secondary></indexterm>
+<para><computeroutput>str cam.ui.WM_OT_gcode_import.bl_idname = &quot;wm.gcode_import&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui_1_1WM__OT__gcode__import_1a26b82390aa9536ad52aee0acfcd508a7"/><section>
+    <title>bl_label</title>
+<indexterm><primary>bl_label</primary><secondary>cam.ui.WM_OT_gcode_import</secondary></indexterm>
+<indexterm><primary>cam.ui.WM_OT_gcode_import</primary><secondary>bl_label</secondary></indexterm>
+<para><computeroutput>str cam.ui.WM_OT_gcode_import.bl_label = &quot;Import G-code&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui_1_1WM__OT__gcode__import_1a6571a84d7654bfe68047fa86027680bd"/><section>
+    <title>filename_ext</title>
+<indexterm><primary>filename_ext</primary><secondary>cam.ui.WM_OT_gcode_import</secondary></indexterm>
+<indexterm><primary>cam.ui.WM_OT_gcode_import</primary><secondary>filename_ext</secondary></indexterm>
+<para><computeroutput>str cam.ui.WM_OT_gcode_import.filename_ext = &quot;.txt&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui_1_1WM__OT__gcode__import_1aaebdfdb23ee7e0d4f671c5166a000a43"/><section>
+    <title>filepath</title>
+<indexterm><primary>filepath</primary><secondary>cam.ui.WM_OT_gcode_import</secondary></indexterm>
+<indexterm><primary>cam.ui.WM_OT_gcode_import</primary><secondary>filepath</secondary></indexterm>
+<para><computeroutput>cam.ui.WM_OT_gcode_import.filepath</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui_1_1WM__OT__gcode__import_1a8f963966988a1e96b0c4165a65dd08a8"/><section>
+    <title>filter_glob</title>
+<indexterm><primary>filter_glob</primary><secondary>cam.ui.WM_OT_gcode_import</secondary></indexterm>
+<indexterm><primary>cam.ui.WM_OT_gcode_import</primary><secondary>filter_glob</secondary></indexterm>
+<para><computeroutput>StringProperty cam.ui.WM_OT_gcode_import.filter_glob<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="stringliteral">&quot;*.*&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;options={<emphasis role="stringliteral">&apos;HIDDEN&apos;</emphasis>},
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;maxlen=255,&#32;&#32;<emphasis role="comment">#&#32;Max&#32;internal&#32;buffer&#32;length,&#32;longer&#32;would&#32;be&#32;clamped.</emphasis>
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/<link linkend="_ui_8py">ui.py</link></section>
+</section>

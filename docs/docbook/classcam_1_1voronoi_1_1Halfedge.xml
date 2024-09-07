@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1voronoi_1_1Halfedge" xml:lang="en-US">
+<title>cam.voronoi.Halfedge Class Reference</title>
+<indexterm><primary>cam.voronoi.Halfedge</primary></indexterm>
+Inheritance diagram for cam.voronoi.Halfedge:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1voronoi_1_1Halfedge__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.voronoi.Halfedge:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1voronoi_1_1Halfedge__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Halfedge_1a12fe521794f5bfbc86cc3e7ce2d29d85">__init__</link> (self, <link linkend="_classcam_1_1voronoi_1_1Halfedge_1a5a730c39bbf9d902138c3f1f553b90a0">edge</link>=None, <link linkend="_classcam_1_1voronoi_1_1Halfedge_1aa1e77659190baa93500e6468e2105942">pm</link>=<link linkend="_classcam_1_1voronoi_1_1Edge_1a3e460388b76a80cf7bbb520ce8302070">Edge.LE</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Halfedge_1aa74d2a0dc0d24b7722575332af79490f">dump</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Halfedge_1aed8567afcb976e5cf38494bae5532c5e">__lt__</link> (self, other)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Halfedge_1a15b13993a56eda6e0d77fabd54201c74">__eq__</link> (self, other)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Halfedge_1a84014acbb0025aa57c71ae6d4cbc06ab">leftreg</link> (self, default)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Halfedge_1a7ca51c17ade1862d100680b402921820">rightreg</link> (self, default)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Halfedge_1a63c7faa5cec28ffeb785063c4c622c9b">isPointRightOf</link> (self, pt)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Halfedge_1a806605e1bda51f333ea77f8a4936602e">intersect</link> (self, other)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Halfedge_1aa2076743edba840be3b1b6af32d6f060">left</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Halfedge_1a06da6b96fca9fd6377ad53866bc99ebc">right</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Halfedge_1ae3c5cff1ec0a684a9317b49434dc48f5">qnext</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Halfedge_1a5a730c39bbf9d902138c3f1f553b90a0">edge</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Halfedge_1aa1e77659190baa93500e6468e2105942">pm</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Halfedge_1a294e4f083139ead4a03834108faca326">vertex</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Halfedge_1a2ccab109c0453617763186fb14327a90">ystar</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classcam_1_1voronoi_1_1Halfedge_1a12fe521794f5bfbc86cc3e7ce2d29d85"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>cam.voronoi.Halfedge</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Halfedge</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Halfedge.__init__ ( self,  edge = <computeroutput>None</computeroutput>
+,  pm = <computeroutput><link linkend="_classcam_1_1voronoi_1_1Edge_1a3e460388b76a80cf7bbb520ce8302070">Edge.LE</link></computeroutput>
+)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1voronoi_1_1Halfedge_1a15b13993a56eda6e0d77fabd54201c74"/><section>
+    <title>__eq__()</title>
+<indexterm><primary>__eq__</primary><secondary>cam.voronoi.Halfedge</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Halfedge</primary><secondary>__eq__</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Halfedge.__eq__ ( self,  other)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1Halfedge_1aed8567afcb976e5cf38494bae5532c5e"/><section>
+    <title>__lt__()</title>
+<indexterm><primary>__lt__</primary><secondary>cam.voronoi.Halfedge</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Halfedge</primary><secondary>__lt__</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Halfedge.__lt__ ( self,  other)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1Halfedge_1aa74d2a0dc0d24b7722575332af79490f"/><section>
+    <title>dump()</title>
+<indexterm><primary>dump</primary><secondary>cam.voronoi.Halfedge</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Halfedge</primary><secondary>dump</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Halfedge.dump ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1voronoi_1_1Halfedge_aa74d2a0dc0d24b7722575332af79490f_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1voronoi_1_1Halfedge_aa74d2a0dc0d24b7722575332af79490f_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1voronoi_1_1Halfedge_1a806605e1bda51f333ea77f8a4936602e"/><section>
+    <title>intersect()</title>
+<indexterm><primary>intersect</primary><secondary>cam.voronoi.Halfedge</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Halfedge</primary><secondary>intersect</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Halfedge.intersect ( self,  other)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1voronoi_1_1Halfedge_a806605e1bda51f333ea77f8a4936602e_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1voronoi_1_1Halfedge_1a63c7faa5cec28ffeb785063c4c622c9b"/><section>
+    <title>isPointRightOf()</title>
+<indexterm><primary>isPointRightOf</primary><secondary>cam.voronoi.Halfedge</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Halfedge</primary><secondary>isPointRightOf</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Halfedge.isPointRightOf ( self,  pt)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1Halfedge_1a84014acbb0025aa57c71ae6d4cbc06ab"/><section>
+    <title>leftreg()</title>
+<indexterm><primary>leftreg</primary><secondary>cam.voronoi.Halfedge</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Halfedge</primary><secondary>leftreg</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Halfedge.leftreg ( self,  default)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1Halfedge_1a7ca51c17ade1862d100680b402921820"/><section>
+    <title>rightreg()</title>
+<indexterm><primary>rightreg</primary><secondary>cam.voronoi.Halfedge</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Halfedge</primary><secondary>rightreg</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Halfedge.rightreg ( self,  default)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1voronoi_1_1Halfedge_1a5a730c39bbf9d902138c3f1f553b90a0"/><section>
+    <title>edge</title>
+<indexterm><primary>edge</primary><secondary>cam.voronoi.Halfedge</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Halfedge</primary><secondary>edge</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Halfedge.edge</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1Halfedge_1aa2076743edba840be3b1b6af32d6f060"/><section>
+    <title>left</title>
+<indexterm><primary>left</primary><secondary>cam.voronoi.Halfedge</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Halfedge</primary><secondary>left</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Halfedge.left</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1Halfedge_1aa1e77659190baa93500e6468e2105942"/><section>
+    <title>pm</title>
+<indexterm><primary>pm</primary><secondary>cam.voronoi.Halfedge</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Halfedge</primary><secondary>pm</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Halfedge.pm</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1Halfedge_1ae3c5cff1ec0a684a9317b49434dc48f5"/><section>
+    <title>qnext</title>
+<indexterm><primary>qnext</primary><secondary>cam.voronoi.Halfedge</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Halfedge</primary><secondary>qnext</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Halfedge.qnext</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1Halfedge_1a06da6b96fca9fd6377ad53866bc99ebc"/><section>
+    <title>right</title>
+<indexterm><primary>right</primary><secondary>cam.voronoi.Halfedge</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Halfedge</primary><secondary>right</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Halfedge.right</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1Halfedge_1a294e4f083139ead4a03834108faca326"/><section>
+    <title>vertex</title>
+<indexterm><primary>vertex</primary><secondary>cam.voronoi.Halfedge</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Halfedge</primary><secondary>vertex</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Halfedge.vertex</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1Halfedge_1a2ccab109c0453617763186fb14327a90"/><section>
+    <title>ystar</title>
+<indexterm><primary>ystar</primary><secondary>cam.voronoi.Halfedge</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Halfedge</primary><secondary>ystar</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Halfedge.ystar</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/<link linkend="_voronoi_8py">voronoi.py</link></section>
+</section>

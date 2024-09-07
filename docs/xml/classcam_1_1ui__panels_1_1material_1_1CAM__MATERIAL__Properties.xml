@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Properties" kind="class" language="Python" prot="public">
+    <compoundname>cam::ui_panels::material::CAM_MATERIAL_Properties</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PropertyGroup</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Properties_1a070f52d8cac685866a9af11b812bdfaa" prot="public" static="yes" mutable="no">
+        <type>BoolProperty</type>
+        <definition>BoolProperty cam.ui_panels.material.CAM_MATERIAL_Properties::estimate_from_model</definition>
+        <argsstring></argsstring>
+        <name>estimate_from_model</name>
+        <qualifiedname>cam.ui_panels.material.CAM_MATERIAL_Properties.estimate_from_model</qualifiedname>
+        <initializer>(
+        name=&quot;Estimate Cut Area from Model&quot;,
+        description=&quot;Estimate cut area based on model geometry&quot;,
+        default=True,
+        update=update_material,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/material.py" line="29" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/material.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Properties_1ab76e9064199c5838e6e2212a481d7495" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.ui_panels.material.CAM_MATERIAL_Properties::radius_around_model</definition>
+        <argsstring></argsstring>
+        <name>radius_around_model</name>
+        <qualifiedname>cam.ui_panels.material.CAM_MATERIAL_Properties.radius_around_model</qualifiedname>
+        <initializer>(
+        name=&apos;Radius Around Model&apos;,
+        description=&quot;Increase cut area around the model on X and &quot;
+        &quot;Y by this amount&quot;,
+        default=0.0,
+        unit=&apos;LENGTH&apos;,
+        precision=PRECISION,
+        update=update_material,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/material.py" line="36" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/material.py" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Properties_1a551e14da2df6ea96407cb92b357a8e79" prot="public" static="yes" mutable="no">
+        <type>BoolProperty</type>
+        <definition>BoolProperty cam.ui_panels.material.CAM_MATERIAL_Properties::center_x</definition>
+        <argsstring></argsstring>
+        <name>center_x</name>
+        <qualifiedname>cam.ui_panels.material.CAM_MATERIAL_Properties.center_x</qualifiedname>
+        <initializer>(
+        name=&quot;Center on X Axis&quot;,
+        description=&quot;Position model centered on X&quot;,
+        default=False,
+        update=update_material,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/material.py" line="46" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/material.py" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Properties_1ab4f7ec62f0359993604babc47882fefd" prot="public" static="yes" mutable="no">
+        <type>BoolProperty</type>
+        <definition>BoolProperty cam.ui_panels.material.CAM_MATERIAL_Properties::center_y</definition>
+        <argsstring></argsstring>
+        <name>center_y</name>
+        <qualifiedname>cam.ui_panels.material.CAM_MATERIAL_Properties.center_y</qualifiedname>
+        <initializer>(
+        name=&quot;Center on Y Axis&quot;,
+        description=&quot;Position model centered on Y&quot;,
+        default=False,
+        update=update_material,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/material.py" line="53" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/material.py" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Properties_1aa0f3cef0d02038f10805edc39744b6bf" prot="public" static="yes" mutable="no">
+        <type>EnumProperty</type>
+        <definition>EnumProperty cam.ui_panels.material.CAM_MATERIAL_Properties::z_position</definition>
+        <argsstring></argsstring>
+        <name>z_position</name>
+        <qualifiedname>cam.ui_panels.material.CAM_MATERIAL_Properties.z_position</qualifiedname>
+        <initializer>(
+        name=&quot;Z Placement&quot;,
+        items=(
+            (&apos;ABOVE&apos;, &apos;Above&apos;, &apos;Place <ref refid="classobject" kindref="compound">object</ref> vertically above the XY plane&apos;),
+            (&apos;BELOW&apos;, &apos;Below&apos;, &apos;Place <ref refid="classobject" kindref="compound">object</ref> vertically below the XY plane&apos;),
+            (&apos;CENTERED&apos;, &apos;Centered&apos;,
+             &apos;Place <ref refid="classobject" kindref="compound">object</ref> vertically centered on the XY plane&apos;)
+        ),
+        description=&quot;Position below Zero&quot;,
+        default=&apos;BELOW&apos;,
+        update=update_material,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/material.py" line="60" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/material.py" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Properties_1a670ddaa701ec2757dc355ec890dfdea7" prot="public" static="yes" mutable="no">
+        <type>FloatVectorProperty</type>
+        <definition>FloatVectorProperty cam.ui_panels.material.CAM_MATERIAL_Properties::origin</definition>
+        <argsstring></argsstring>
+        <name>origin</name>
+        <qualifiedname>cam.ui_panels.material.CAM_MATERIAL_Properties.origin</qualifiedname>
+        <initializer>(
+        name=&apos;Material Origin&apos;,
+        default=(0, 0, 0),
+        unit=&apos;LENGTH&apos;,
+        precision=PRECISION,
+        subtype=&quot;XYZ&quot;,
+        update=update_material,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/material.py" line="74" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/material.py" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Properties_1a571ccae43bf403e449705ffc3623a32e" prot="public" static="yes" mutable="no">
+        <type>FloatVectorProperty</type>
+        <definition>FloatVectorProperty cam.ui_panels.material.CAM_MATERIAL_Properties::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <qualifiedname>cam.ui_panels.material.CAM_MATERIAL_Properties.size</qualifiedname>
+        <initializer>(
+        name=&apos;Material Size&apos;,
+        default=(0.200, 0.200, 0.100),
+        min=0,
+        unit=&apos;LENGTH&apos;,
+        precision=PRECISION,
+        subtype=&quot;XYZ&quot;,
+        update=update_material,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/material.py" line="84" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/material.py" bodystart="84" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PropertyGroup</label>
+      </node>
+      <node id="1">
+        <label>cam.ui_panels.material.CAM_MATERIAL_Properties</label>
+        <link refid="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Properties"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>BoolProperty</label>
+      </node>
+      <node id="5">
+        <label>EnumProperty</label>
+      </node>
+      <node id="4">
+        <label>FloatProperty</label>
+      </node>
+      <node id="6">
+        <label>FloatVectorProperty</label>
+      </node>
+      <node id="2">
+        <label>PropertyGroup</label>
+      </node>
+      <node id="1">
+        <label>cam.ui_panels.material.CAM_MATERIAL_Properties</label>
+        <link refid="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Properties"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+center_x</edgelabel>
+          <edgelabel>+center_y</edgelabel>
+          <edgelabel>+estimate_from_model</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+radius_around_model</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+z_position</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>+origin</edgelabel>
+          <edgelabel>+size</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/material.py" line="27" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/material.py" bodystart="27" bodyend="96"/>
+    <listofallmembers>
+      <member refid="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Properties_1a551e14da2df6ea96407cb92b357a8e79" prot="public" virt="non-virtual"><scope>cam::ui_panels::material::CAM_MATERIAL_Properties</scope><name>center_x</name></member>
+      <member refid="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Properties_1ab4f7ec62f0359993604babc47882fefd" prot="public" virt="non-virtual"><scope>cam::ui_panels::material::CAM_MATERIAL_Properties</scope><name>center_y</name></member>
+      <member refid="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Properties_1a070f52d8cac685866a9af11b812bdfaa" prot="public" virt="non-virtual"><scope>cam::ui_panels::material::CAM_MATERIAL_Properties</scope><name>estimate_from_model</name></member>
+      <member refid="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Properties_1a670ddaa701ec2757dc355ec890dfdea7" prot="public" virt="non-virtual"><scope>cam::ui_panels::material::CAM_MATERIAL_Properties</scope><name>origin</name></member>
+      <member refid="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Properties_1ab76e9064199c5838e6e2212a481d7495" prot="public" virt="non-virtual"><scope>cam::ui_panels::material::CAM_MATERIAL_Properties</scope><name>radius_around_model</name></member>
+      <member refid="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Properties_1a571ccae43bf403e449705ffc3623a32e" prot="public" virt="non-virtual"><scope>cam::ui_panels::material::CAM_MATERIAL_Properties</scope><name>size</name></member>
+      <member refid="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Properties_1aa0f3cef0d02038f10805edc39744b6bf" prot="public" virt="non-virtual"><scope>cam::ui_panels::material::CAM_MATERIAL_Properties</scope><name>z_position</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

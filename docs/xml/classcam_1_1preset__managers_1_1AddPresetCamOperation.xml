@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1preset__managers_1_1AddPresetCamOperation" kind="class" language="Python" prot="public">
+    <compoundname>cam::preset_managers::AddPresetCamOperation</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">AddPresetBase</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">Operator</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1preset__managers_1_1AddPresetCamOperation_1a6066f3df5b776d5032f3e4fed6a10922" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.preset_managers.AddPresetCamOperation::bl_idname</definition>
+        <argsstring></argsstring>
+        <name>bl_idname</name>
+        <qualifiedname>cam.preset_managers.AddPresetCamOperation.bl_idname</qualifiedname>
+        <initializer>=  &quot;render.cam_preset_operation_add&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preset_managers.py" line="71" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preset_managers.py" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1preset__managers_1_1AddPresetCamOperation_1ac176486e1fbe07dad2265d4f9f944cc3" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.preset_managers.AddPresetCamOperation::bl_label</definition>
+        <argsstring></argsstring>
+        <name>bl_label</name>
+        <qualifiedname>cam.preset_managers.AddPresetCamOperation.bl_label</qualifiedname>
+        <initializer>=  &quot;Add Operation Preset&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preset_managers.py" line="72" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preset_managers.py" bodystart="72" bodyend="-1"/>
+        <referencedby refid="classcam_1_1preset__managers_1_1CAM__MACHINE__MT__presets_1af95f7812d2952b26a26809ab923dac09" compoundref="preset__managers_8py" startline="28" endline="38">cam.preset_managers.CAM_MACHINE_MT_presets.post_cb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1preset__managers_1_1AddPresetCamOperation_1a4d93b37ff923625bcaebb986b9ffab3a" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.preset_managers.AddPresetCamOperation::preset_menu</definition>
+        <argsstring></argsstring>
+        <name>preset_menu</name>
+        <qualifiedname>cam.preset_managers.AddPresetCamOperation.preset_menu</qualifiedname>
+        <initializer>=  &quot;CAM_OPERATION_MT_presets&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preset_managers.py" line="73" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preset_managers.py" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1preset__managers_1_1AddPresetCamOperation_1ab67d60a91b10228d459b0c3bec4bd823" prot="public" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list cam.preset_managers.AddPresetCamOperation::preset_defines</definition>
+        <argsstring></argsstring>
+        <name>preset_defines</name>
+        <qualifiedname>cam.preset_managers.AddPresetCamOperation.preset_defines</qualifiedname>
+        <initializer>=  [
+        &apos;from pathlib import Path&apos;,
+        &apos;bpy.ops.scene.cam_operation_add()&apos;,
+        &apos;scene = bpy.context.scene&apos;,
+        &apos;o = scene.cam_operations[scene.cam_active_operation]&apos;,
+        &quot;o.name = f&apos;OP_{o.object_name}_{scene.cam_active_operation + 1}_{Path(__file__).stem}&apos;&quot;,
+    ]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preset_managers.py" line="75" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preset_managers.py" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1preset__managers_1_1AddPresetCamOperation_1af58db1dfce679316710dbc2ef07cbc70" prot="public" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list cam.preset_managers.AddPresetCamOperation::preset_values</definition>
+        <argsstring></argsstring>
+        <name>preset_values</name>
+        <qualifiedname>cam.preset_managers.AddPresetCamOperation.preset_values</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preset_managers.py" line="83" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preset_managers.py" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1preset__managers_1_1AddPresetCamOperation_1a482e1eacc3fc56ce9e704c352dcf37fc" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.preset_managers.AddPresetCamOperation::preset_subdir</definition>
+        <argsstring></argsstring>
+        <name>preset_subdir</name>
+        <qualifiedname>cam.preset_managers.AddPresetCamOperation.preset_subdir</qualifiedname>
+        <initializer>=  &quot;cam_operations&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preset_managers.py" line="183" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preset_managers.py" bodystart="183" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Add an Operation Preset</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AddPresetBase</label>
+      </node>
+      <node id="3">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.preset_managers.AddPresetCamOperation</label>
+        <link refid="classcam_1_1preset__managers_1_1AddPresetCamOperation"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>AddPresetBase</label>
+      </node>
+      <node id="3">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.preset_managers.AddPresetCamOperation</label>
+        <link refid="classcam_1_1preset__managers_1_1AddPresetCamOperation"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+bl_idname</edgelabel>
+          <edgelabel>+bl_label</edgelabel>
+          <edgelabel>+preset_menu</edgelabel>
+          <edgelabel>+preset_subdir</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+preset_defines</edgelabel>
+          <edgelabel>+preset_values</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>list</label>
+      </node>
+      <node id="4">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preset_managers.py" line="69" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preset_managers.py" bodystart="69" bodyend="185"/>
+    <listofallmembers>
+      <member refid="classcam_1_1preset__managers_1_1AddPresetCamOperation_1a6066f3df5b776d5032f3e4fed6a10922" prot="public" virt="non-virtual"><scope>cam::preset_managers::AddPresetCamOperation</scope><name>bl_idname</name></member>
+      <member refid="classcam_1_1preset__managers_1_1AddPresetCamOperation_1ac176486e1fbe07dad2265d4f9f944cc3" prot="public" virt="non-virtual"><scope>cam::preset_managers::AddPresetCamOperation</scope><name>bl_label</name></member>
+      <member refid="classcam_1_1preset__managers_1_1AddPresetCamOperation_1ab67d60a91b10228d459b0c3bec4bd823" prot="public" virt="non-virtual"><scope>cam::preset_managers::AddPresetCamOperation</scope><name>preset_defines</name></member>
+      <member refid="classcam_1_1preset__managers_1_1AddPresetCamOperation_1a4d93b37ff923625bcaebb986b9ffab3a" prot="public" virt="non-virtual"><scope>cam::preset_managers::AddPresetCamOperation</scope><name>preset_menu</name></member>
+      <member refid="classcam_1_1preset__managers_1_1AddPresetCamOperation_1a482e1eacc3fc56ce9e704c352dcf37fc" prot="public" virt="non-virtual"><scope>cam::preset_managers::AddPresetCamOperation</scope><name>preset_subdir</name></member>
+      <member refid="classcam_1_1preset__managers_1_1AddPresetCamOperation_1af58db1dfce679316710dbc2ef07cbc70" prot="public" virt="non-virtual"><scope>cam::preset_managers::AddPresetCamOperation</scope><name>preset_values</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1voronoi_1_1Edge" xml:lang="en-US">
+<title>cam.voronoi.Edge Class Reference</title>
+<indexterm><primary>cam.voronoi.Edge</primary></indexterm>
+Inheritance diagram for cam.voronoi.Edge:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1voronoi_1_1Edge__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.voronoi.Edge:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1voronoi_1_1Edge__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Edge_1a495e5812e2e3162abdeacd7c8a59e3d4">__init__</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Edge_1a187545924179ca70e04edb9adc82995c">dump</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Edge_1a92098b23bdd500a882f8d7784dcce0e4">setEndpoint</link> (self, lrFlag, site)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Edge_1ae74629efa5cc77be12c0739a4a758640">bisect</link> (s1, s2)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Edge_1a5b93e5081073c732d3481ce14728f1b9">a</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Edge_1a6b18b30dbdf47d1b0cdf6b4eaa923e30">b</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Edge_1aa0dabe9556c13ac45220e442151bfeb2">c</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Edge_1a2ea1eee2854f1e2a15a02eff8b730b1b">ep</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Edge_1a2cb7e08ba19fae6602040f46dc03e9a1">reg</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1Edge_1a8db33174e78d021baca1637fff78c4ff">edgenum</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_classcam_1_1voronoi_1_1Edge_1a3e460388b76a80cf7bbb520ce8302070">LE</link> = 0</para>
+</listitem>
+            <listitem><para>int <link linkend="_classcam_1_1voronoi_1_1Edge_1af714ba076df73eb740933093257e6a14">RE</link> = 1</para>
+</listitem>
+            <listitem><para>int <link linkend="_classcam_1_1voronoi_1_1Edge_1a1699e396e1237c7746c5b17dceb19304">EDGE_NUM</link> = 0</para>
+</listitem>
+            <listitem><para>dict <link linkend="_classcam_1_1voronoi_1_1Edge_1a0be3933a4b7cf73143f06b06da1ca27f">DELETED</link> = {}</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classcam_1_1voronoi_1_1Edge_1a495e5812e2e3162abdeacd7c8a59e3d4"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>cam.voronoi.Edge</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Edge</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Edge.__init__ ( self)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1voronoi_1_1Edge_1ae74629efa5cc77be12c0739a4a758640"/><section>
+    <title>bisect()</title>
+<indexterm><primary>bisect</primary><secondary>cam.voronoi.Edge</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Edge</primary><secondary>bisect</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Edge.bisect ( s1,  s2)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1Edge_1a187545924179ca70e04edb9adc82995c"/><section>
+    <title>dump()</title>
+<indexterm><primary>dump</primary><secondary>cam.voronoi.Edge</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Edge</primary><secondary>dump</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Edge.dump ( self)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1Edge_1a92098b23bdd500a882f8d7784dcce0e4"/><section>
+    <title>setEndpoint()</title>
+<indexterm><primary>setEndpoint</primary><secondary>cam.voronoi.Edge</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Edge</primary><secondary>setEndpoint</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Edge.setEndpoint ( self,  lrFlag,  site)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1voronoi_1_1Edge_1a5b93e5081073c732d3481ce14728f1b9"/><section>
+    <title>a</title>
+<indexterm><primary>a</primary><secondary>cam.voronoi.Edge</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Edge</primary><secondary>a</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Edge.a</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1Edge_1a6b18b30dbdf47d1b0cdf6b4eaa923e30"/><section>
+    <title>b</title>
+<indexterm><primary>b</primary><secondary>cam.voronoi.Edge</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Edge</primary><secondary>b</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Edge.b</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1Edge_1aa0dabe9556c13ac45220e442151bfeb2"/><section>
+    <title>c</title>
+<indexterm><primary>c</primary><secondary>cam.voronoi.Edge</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Edge</primary><secondary>c</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Edge.c</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1Edge_1a0be3933a4b7cf73143f06b06da1ca27f"/><section>
+    <title>DELETED</title>
+<indexterm><primary>DELETED</primary><secondary>cam.voronoi.Edge</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Edge</primary><secondary>DELETED</secondary></indexterm>
+<para><computeroutput>dict cam.voronoi.Edge.DELETED = {}<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1Edge_1a1699e396e1237c7746c5b17dceb19304"/><section>
+    <title>EDGE_NUM</title>
+<indexterm><primary>EDGE_NUM</primary><secondary>cam.voronoi.Edge</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Edge</primary><secondary>EDGE_NUM</secondary></indexterm>
+<para><computeroutput>int cam.voronoi.Edge.EDGE_NUM = 0<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1Edge_1a8db33174e78d021baca1637fff78c4ff"/><section>
+    <title>edgenum</title>
+<indexterm><primary>edgenum</primary><secondary>cam.voronoi.Edge</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Edge</primary><secondary>edgenum</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Edge.edgenum</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1Edge_1a2ea1eee2854f1e2a15a02eff8b730b1b"/><section>
+    <title>ep</title>
+<indexterm><primary>ep</primary><secondary>cam.voronoi.Edge</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Edge</primary><secondary>ep</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Edge.ep</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1Edge_1a3e460388b76a80cf7bbb520ce8302070"/><section>
+    <title>LE</title>
+<indexterm><primary>LE</primary><secondary>cam.voronoi.Edge</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Edge</primary><secondary>LE</secondary></indexterm>
+<para><computeroutput>int cam.voronoi.Edge.LE = 0<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1Edge_1af714ba076df73eb740933093257e6a14"/><section>
+    <title>RE</title>
+<indexterm><primary>RE</primary><secondary>cam.voronoi.Edge</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Edge</primary><secondary>RE</secondary></indexterm>
+<para><computeroutput>int cam.voronoi.Edge.RE = 1<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1Edge_1a2cb7e08ba19fae6602040f46dc03e9a1"/><section>
+    <title>reg</title>
+<indexterm><primary>reg</primary><secondary>cam.voronoi.Edge</secondary></indexterm>
+<indexterm><primary>cam.voronoi.Edge</primary><secondary>reg</secondary></indexterm>
+<para><computeroutput>cam.voronoi.Edge.reg</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/<link linkend="_voronoi_8py">voronoi.py</link></section>
+</section>

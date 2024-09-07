@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1nc_1_1num__reader_1_1NumReader" xml:lang="en-US">
+<title>cam.nc.num_reader.NumReader Class Reference</title>
+<indexterm><primary>cam.nc.num_reader.NumReader</primary></indexterm>
+Inheritance diagram for cam.nc.num_reader.NumReader:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1num__reader_1_1NumReader__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.nc.num_reader.NumReader:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1num__reader_1_1NumReader__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1num__reader_1_1NumReader_1a718c14f9d3e5513596d99df025211d9b">__init__</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1num__reader_1_1NumReader_1aa6859eeefd5788834891f727ae66d342">get_number</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1num__reader_1_1NumReader_1abe0336cd15995dde1a46134b56f1c2b2">add_word</link> (self, color)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1num__reader_1_1NumReader_1ae908a2956d1e0cfd474a47540bee9759">Parse</link> (self, name, oname=None)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1num__reader_1_1NumReader_1ae433b63cb3d6ad388945853b487710d2">line_length</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1num__reader_1_1NumReader_1ab2d4301e748a3ae276a70a1b405d9dd5">line_index</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1num__reader_1_1NumReader_1aef74e3b02beaff006b39dffdbcd5e514">parse_word</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classcam_1_1nc_1_1num__reader_1_1NumReader_1a718c14f9d3e5513596d99df025211d9b"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>cam.nc.num_reader.NumReader</secondary></indexterm>
+<indexterm><primary>cam.nc.num_reader.NumReader</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>cam.nc.num_reader.NumReader.__init__ ( self)</computeroutput></para><para>
+Reimplemented in <link linkend="_classcam_1_1nc_1_1hpgl2d__read_1_1Parser_1a69906a080b1c0ef2cb200d5f1e069e9f">cam.nc.hpgl2d_read.Parser</link>, and <link linkend="_classcam_1_1nc_1_1hpgl3d__read_1_1Parser_1a5bb761ae37730841999e025ed9e0cb6b">cam.nc.hpgl3d_read.Parser</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1nc_1_1num__reader_1_1NumReader_1abe0336cd15995dde1a46134b56f1c2b2"/><section>
+    <title>add_word()</title>
+<indexterm><primary>add_word</primary><secondary>cam.nc.num_reader.NumReader</secondary></indexterm>
+<indexterm><primary>cam.nc.num_reader.NumReader</primary><secondary>add_word</secondary></indexterm>
+<para><computeroutput>cam.nc.num_reader.NumReader.add_word ( self,  color)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1num__reader_1_1NumReader_abe0336cd15995dde1a46134b56f1c2b2_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1num__reader_1_1NumReader_1aa6859eeefd5788834891f727ae66d342"/><section>
+    <title>get_number()</title>
+<indexterm><primary>get_number</primary><secondary>cam.nc.num_reader.NumReader</secondary></indexterm>
+<indexterm><primary>cam.nc.num_reader.NumReader</primary><secondary>get_number</secondary></indexterm>
+<para><computeroutput>cam.nc.num_reader.NumReader.get_number ( self)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1num__reader_1_1NumReader_aa6859eeefd5788834891f727ae66d342_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1num__reader_1_1NumReader_1ae908a2956d1e0cfd474a47540bee9759"/><section>
+    <title>Parse()</title>
+<indexterm><primary>Parse</primary><secondary>cam.nc.num_reader.NumReader</secondary></indexterm>
+<indexterm><primary>cam.nc.num_reader.NumReader</primary><secondary>Parse</secondary></indexterm>
+<para><computeroutput>cam.nc.num_reader.NumReader.Parse ( self,  name,  oname = <computeroutput>None</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1num__reader_1_1NumReader_ae908a2956d1e0cfd474a47540bee9759_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1nc_1_1num__reader_1_1NumReader_1ab2d4301e748a3ae276a70a1b405d9dd5"/><section>
+    <title>line_index</title>
+<indexterm><primary>line_index</primary><secondary>cam.nc.num_reader.NumReader</secondary></indexterm>
+<indexterm><primary>cam.nc.num_reader.NumReader</primary><secondary>line_index</secondary></indexterm>
+<para><computeroutput>cam.nc.num_reader.NumReader.line_index</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1num__reader_1_1NumReader_1ae433b63cb3d6ad388945853b487710d2"/><section>
+    <title>line_length</title>
+<indexterm><primary>line_length</primary><secondary>cam.nc.num_reader.NumReader</secondary></indexterm>
+<indexterm><primary>cam.nc.num_reader.NumReader</primary><secondary>line_length</secondary></indexterm>
+<para><computeroutput>cam.nc.num_reader.NumReader.line_length</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1num__reader_1_1NumReader_1aef74e3b02beaff006b39dffdbcd5e514"/><section>
+    <title>parse_word</title>
+<indexterm><primary>parse_word</primary><secondary>cam.nc.num_reader.NumReader</secondary></indexterm>
+<indexterm><primary>cam.nc.num_reader.NumReader</primary><secondary>parse_word</secondary></indexterm>
+<para><computeroutput>cam.nc.num_reader.NumReader.parse_word</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/<link linkend="_num__reader_8py">num_reader.py</link></section>
+</section>

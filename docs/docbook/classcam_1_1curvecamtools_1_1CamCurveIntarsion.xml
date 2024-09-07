@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1curvecamtools_1_1CamCurveIntarsion" xml:lang="en-US">
+<title>cam.curvecamtools.CamCurveIntarsion Class Reference</title>
+<indexterm><primary>cam.curvecamtools.CamCurveIntarsion</primary></indexterm>
+Inheritance diagram for cam.curvecamtools.CamCurveIntarsion:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1curvecamtools_1_1CamCurveIntarsion__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.curvecamtools.CamCurveIntarsion:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1curvecamtools_1_1CamCurveIntarsion__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1curvecamtools_1_1CamCurveIntarsion_1af77e2818b63ac1e1b04d77b5e68362c3">poll</link> (cls, context)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1curvecamtools_1_1CamCurveIntarsion_1af4934bdf7ccb17b0c1652455ccef9e06">execute</link> (self, context)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1curvecamtools_1_1CamCurveIntarsion_1a617f628b8a58cf3fb7034644d2e0a225">invoke</link> (self, context, event)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1curvecamtools_1_1CamCurveIntarsion_1aa87887432c6169ccf9187c78eeeb184f">perimeter_cut</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1curvecamtools_1_1CamCurveIntarsion_1af5b72d25b44cdebf4b696390c9751df9">backlight</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classcam_1_1curvecamtools_1_1CamCurveIntarsion_1ab8e5a138d2b5ad107b9c458359eda2ce">bl_idname</link> = &quot;object.curve_intarsion&quot;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1curvecamtools_1_1CamCurveIntarsion_1ab16bd8dc303c1d07487f9dc7ac2f0ce8">bl_label</link> = &quot;Intarsion&quot;</para>
+</listitem>
+            <listitem><para>dict <link linkend="_classcam_1_1curvecamtools_1_1CamCurveIntarsion_1a56c4c73830b9440c4ad73f79bd23f02c">bl_options</link> = {&apos;REGISTER&apos;, &apos;UNDO&apos;, &apos;PRESET&apos;}</para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamtools_1_1CamCurveIntarsion_1a62971e1fbed6d70a4f0dd1c78e9fa817">diameter</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamtools_1_1CamCurveIntarsion_1af978e32455072cd598222f347c4633fb">tolerance</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamtools_1_1CamCurveIntarsion_1a09b6422e24ebdccd39cf5701ea1e58e0">backlight</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamtools_1_1CamCurveIntarsion_1a6f7b93d49b258a8a20d14cef090af0be">perimeter_cut</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamtools_1_1CamCurveIntarsion_1a60e700426d873e210022ec940a188788">base_thickness</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamtools_1_1CamCurveIntarsion_1a4b78f6b6ff80fd9554ae8fce9d0bf621">intarsion_thickness</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1curvecamtools_1_1CamCurveIntarsion_1ad76cf0cbce0e23d5bc2ce60f5bad7ffc">backlight_depth_from_top</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Makes Curve Cuttable Both Inside and Outside, for Intarsion and Joints</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamCurveIntarsion_1af4934bdf7ccb17b0c1652455ccef9e06"/><section>
+    <title>execute()</title>
+<indexterm><primary>execute</primary><secondary>cam.curvecamtools.CamCurveIntarsion</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamCurveIntarsion</primary><secondary>execute</secondary></indexterm>
+<para><computeroutput>cam.curvecamtools.CamCurveIntarsion.execute ( self,  context)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamCurveIntarsion_1a617f628b8a58cf3fb7034644d2e0a225"/><section>
+    <title>invoke()</title>
+<indexterm><primary>invoke</primary><secondary>cam.curvecamtools.CamCurveIntarsion</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamCurveIntarsion</primary><secondary>invoke</secondary></indexterm>
+<para><computeroutput>cam.curvecamtools.CamCurveIntarsion.invoke ( self,  context,  event)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamCurveIntarsion_1af77e2818b63ac1e1b04d77b5e68362c3"/><section>
+    <title>poll()</title>
+<indexterm><primary>poll</primary><secondary>cam.curvecamtools.CamCurveIntarsion</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamCurveIntarsion</primary><secondary>poll</secondary></indexterm>
+<para><computeroutput>cam.curvecamtools.CamCurveIntarsion.poll ( cls,  context)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamCurveIntarsion_1a09b6422e24ebdccd39cf5701ea1e58e0"/><section>
+    <title>backlight<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>backlight</primary><secondary>cam.curvecamtools.CamCurveIntarsion</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamCurveIntarsion</primary><secondary>backlight</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamtools.CamCurveIntarsion.backlight<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Backlight&#32;Seat&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.000,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=0.010,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=4,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamCurveIntarsion_1af5b72d25b44cdebf4b696390c9751df9"/><section>
+    <title>backlight<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>backlight</primary><secondary>cam.curvecamtools.CamCurveIntarsion</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamCurveIntarsion</primary><secondary>backlight</secondary></indexterm>
+<para><computeroutput>cam.curvecamtools.CamCurveIntarsion.backlight</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamCurveIntarsion_1ad76cf0cbce0e23d5bc2ce60f5bad7ffc"/><section>
+    <title>backlight_depth_from_top</title>
+<indexterm><primary>backlight_depth_from_top</primary><secondary>cam.curvecamtools.CamCurveIntarsion</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamCurveIntarsion</primary><secondary>backlight_depth_from_top</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamtools.CamCurveIntarsion.backlight_depth_from_top<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Backlight&#32;Well&#32;Depth&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.000,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=0.100,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=4,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamCurveIntarsion_1a60e700426d873e210022ec940a188788"/><section>
+    <title>base_thickness</title>
+<indexterm><primary>base_thickness</primary><secondary>cam.curvecamtools.CamCurveIntarsion</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamCurveIntarsion</primary><secondary>base_thickness</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamtools.CamCurveIntarsion.base_thickness<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Base&#32;Material&#32;Thickness&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.000,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=0.100,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=4,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamCurveIntarsion_1ab8e5a138d2b5ad107b9c458359eda2ce"/><section>
+    <title>bl_idname</title>
+<indexterm><primary>bl_idname</primary><secondary>cam.curvecamtools.CamCurveIntarsion</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamCurveIntarsion</primary><secondary>bl_idname</secondary></indexterm>
+<para><computeroutput>str cam.curvecamtools.CamCurveIntarsion.bl_idname = &quot;object.curve_intarsion&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamCurveIntarsion_1ab16bd8dc303c1d07487f9dc7ac2f0ce8"/><section>
+    <title>bl_label</title>
+<indexterm><primary>bl_label</primary><secondary>cam.curvecamtools.CamCurveIntarsion</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamCurveIntarsion</primary><secondary>bl_label</secondary></indexterm>
+<para><computeroutput>str cam.curvecamtools.CamCurveIntarsion.bl_label = &quot;Intarsion&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamCurveIntarsion_1a56c4c73830b9440c4ad73f79bd23f02c"/><section>
+    <title>bl_options</title>
+<indexterm><primary>bl_options</primary><secondary>cam.curvecamtools.CamCurveIntarsion</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamCurveIntarsion</primary><secondary>bl_options</secondary></indexterm>
+<para><computeroutput>dict cam.curvecamtools.CamCurveIntarsion.bl_options = {&apos;REGISTER&apos;, &apos;UNDO&apos;, &apos;PRESET&apos;}<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamCurveIntarsion_1a62971e1fbed6d70a4f0dd1c78e9fa817"/><section>
+    <title>diameter</title>
+<indexterm><primary>diameter</primary><secondary>cam.curvecamtools.CamCurveIntarsion</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamCurveIntarsion</primary><secondary>diameter</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamtools.CamCurveIntarsion.diameter<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Cutter&#32;Diameter&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=.001,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=0.025,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=4,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamCurveIntarsion_1a4b78f6b6ff80fd9554ae8fce9d0bf621"/><section>
+    <title>intarsion_thickness</title>
+<indexterm><primary>intarsion_thickness</primary><secondary>cam.curvecamtools.CamCurveIntarsion</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamCurveIntarsion</primary><secondary>intarsion_thickness</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamtools.CamCurveIntarsion.intarsion_thickness<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Intarsion&#32;Material&#32;Thickness&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.000,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=0.100,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=4,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamCurveIntarsion_1a6f7b93d49b258a8a20d14cef090af0be"/><section>
+    <title>perimeter_cut<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>perimeter_cut</primary><secondary>cam.curvecamtools.CamCurveIntarsion</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamCurveIntarsion</primary><secondary>perimeter_cut</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamtools.CamCurveIntarsion.perimeter_cut<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Perimeter&#32;Cut&#32;Offset&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.000,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=0.100,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=4,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamCurveIntarsion_1aa87887432c6169ccf9187c78eeeb184f"/><section>
+    <title>perimeter_cut<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>perimeter_cut</primary><secondary>cam.curvecamtools.CamCurveIntarsion</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamCurveIntarsion</primary><secondary>perimeter_cut</secondary></indexterm>
+<para><computeroutput>cam.curvecamtools.CamCurveIntarsion.perimeter_cut</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1curvecamtools_1_1CamCurveIntarsion_1af978e32455072cd598222f347c4633fb"/><section>
+    <title>tolerance</title>
+<indexterm><primary>tolerance</primary><secondary>cam.curvecamtools.CamCurveIntarsion</secondary></indexterm>
+<indexterm><primary>cam.curvecamtools.CamCurveIntarsion</primary><secondary>tolerance</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.curvecamtools.CamCurveIntarsion.tolerance<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Cutout&#32;Tolerance&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=.0001,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=0.005,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=4,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/<link linkend="_curvecamtools_8py">curvecamtools.py</link></section>
+</section>

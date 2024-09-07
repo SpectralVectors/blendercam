@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_basrelief_8py" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py File Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/basrelief.py</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classcam_1_1basrelief_1_1BasReliefsettings">cam.basrelief.BasReliefsettings</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classcam_1_1basrelief_1_1BASRELIEF__Panel">cam.basrelief.BASRELIEF_Panel</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classcam_1_1basrelief_1_1ReliefError">cam.basrelief.ReliefError</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classcam_1_1basrelief_1_1DoBasRelief">cam.basrelief.DoBasRelief</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classcam_1_1basrelief_1_1ProblemAreas">cam.basrelief.ProblemAreas</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacecam">cam</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacecam_1_1basrelief">cam.basrelief</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1a479a5a367df382f5a4d97e5d27fbc319">cam.basrelief.copy_compbuf_data</link> (inbuf, outbuf)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1a9cee957b1946a898fae51b693337d1ce">cam.basrelief.restrictbuf</link> (inbuf, outbuf)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1a9a1b6e682169add543f604f19092d632">cam.basrelief.prolongate</link> (inbuf, outbuf)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1a84845c220768cd5f4d97ea7af9ca3b4c">cam.basrelief.idx</link> (r, c, cols)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1ad911a47b6767f0bf2783a9bcf0e548ef">cam.basrelief.smooth</link> (U, F, linbcgiterations, planar)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1aabd40958bb5e5febbc0e8a1fb76f2c54">cam.basrelief.calculate_defect</link> (D, U, F)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1a9554e08aa23fcef890644aa887a681e9">cam.basrelief.add_correction</link> (U, C)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1a4cb6f56c1aa4d079ec817111a923c767">cam.basrelief.solve_pde_multigrid</link> (F, U, vcycleiterations, linbcgiterations, smoothiterations, mins, levels, useplanar, planar)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1a822964708e515d6bdd72592d1b8e34a6">cam.basrelief.asolve</link> (b, x)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1ac14b2661328ff1f3816c445ebfbca188">cam.basrelief.atimes</link> (x, res)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1a6c50cb05df82a36b700aa844163dd7da">cam.basrelief.snrm</link> (n, sx, itol)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1a7369a80f45ef2d8d836e195fc67ee148">cam.basrelief.linbcg</link> (n, b, x, itol, tol, itmax, iter, err, rows, cols, planar)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1a8d2a86f24138ce2779205fdd81f1a4c1">cam.basrelief.numpysave</link> (a, iname)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1a89cc1c47da537f47ed2cc5c3461b7e00">cam.basrelief.numpytoimage</link> (a, iname)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1a30e8d0f83e5e0e575e556a4ab0512c16">cam.basrelief.imagetonumpy</link> (i)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1a42f76d02a7449fbb2db6092b6dd7c708">cam.basrelief.tonemap</link> (i, exponent)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1a81d6fa58c4adc2b85ee592515995c256">cam.basrelief.vert</link> (column, row, z, XYscaling, Zscaling)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1a226bc6d169e18fc244218469ede9b91b">cam.basrelief.buildMesh</link> (mesh_z, br)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1af116eedd1395f73209312d186e0a14d2">cam.basrelief.renderScene</link> (width, height, bit_diameter, passes_per_radius, make_nodes, view_layer)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1aec4302bf58eeb5e852d939da4758b1f9">cam.basrelief.problemAreas</link> (br)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1aa0248196478d87431123a0e74908ab1c">cam.basrelief.relief</link> (br)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1aaa9a591a131ef4eddea99e827ed9c4cf">cam.basrelief.get_panels</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1a026b08c04bb7d54727fe19238719ae55">cam.basrelief.register</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1basrelief_1a517f356287ef040219859ad26bdd5627">cam.basrelief.unregister</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>float <link linkend="_namespacecam_1_1basrelief_1ab0272ddc03e40911739051c6dcc54284">cam.basrelief.EPS</link> = 1.0e-32</para>
+</listitem>
+            <listitem><para>int <link linkend="_namespacecam_1_1basrelief_1ac779b0b524d86ee2fb8119cffebad256">cam.basrelief.PRECISION</link> = 5</para>
+</listitem>
+            <listitem><para>bool <link linkend="_namespacecam_1_1basrelief_1a7443029a28482631e23f3f081740ed55">cam.basrelief.NUMPYALG</link> = False</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

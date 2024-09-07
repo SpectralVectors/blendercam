@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacecam_1_1parametric" kind="namespace" language="Python">
+    <compoundname>cam::parametric</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacecam_1_1parametric_1a02742565c1f1faf491c0d3d677dd33b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.parametric.derive_bezier_handles</definition>
+        <argsstring>(a, b, c, d, tb, tc)</argsstring>
+        <name>derive_bezier_handles</name>
+        <qualifiedname>cam.parametric.derive_bezier_handles</qualifiedname>
+        <param>
+          <type>a</type>
+          <defname>a</defname>
+        </param>
+        <param>
+          <type>b</type>
+          <defname>b</defname>
+        </param>
+        <param>
+          <type>c</type>
+          <defname>c</defname>
+        </param>
+        <param>
+          <type>d</type>
+          <defname>d</defname>
+        </param>
+        <param>
+          <type>tb</type>
+          <defname>tb</defname>
+        </param>
+        <param>
+          <type>tc</type>
+          <defname>tc</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Derives bezier handles by using the start and end of the curve with 2 intermediate
+points to use for interpolation.
+
+:param a:
+    The start point.
+:param b:
+    The first mid-point, located at `tb` on the bezier segment, where 0 &lt; `tb` &lt; 1.
+:param c:
+    The second mid-point, located at `tc` on the bezier segment, where 0 &lt; `tc` &lt; 1.
+:param d:
+    The end point.
+:param tb:
+    The position of the first point in the bezier segment.
+:param tc:
+    The position of the second point in the bezier segment.
+:return:
+    A tuple of the two intermediate handles, that is, the right handle of the start point
+    and the left handle of the end point.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/parametric.py" line="39" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/parametric.py" bodystart="39" bodyend="81"/>
+        <referencedby refid="namespacecam_1_1parametric_1a1b0e9636a5e2114b9a4685200d2bbbae" compoundref="parametric_8py" startline="90" endline="184">cam.parametric.create_parametric_curve</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1parametric_1a1b0e9636a5e2114b9a4685200d2bbbae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.parametric.create_parametric_curve</definition>
+        <argsstring>(function, *args, float min=0.0, float max=1.0, bool use_cubic=True, int iterations=8, int resolution_u=10, **kwargs)</argsstring>
+        <name>create_parametric_curve</name>
+        <qualifiedname>cam.parametric.create_parametric_curve</qualifiedname>
+        <param>
+          <type>function</type>
+          <defname>function</defname>
+        </param>
+        <param>
+          <type>*</type>
+          <declname>args</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>min</declname>
+          <defval>0.0</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>max</declname>
+          <defval>1.0</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>use_cubic</declname>
+          <defval>True</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iterations</declname>
+          <defval>8</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>resolution_u</declname>
+          <defval>10</defval>
+        </param>
+        <param>
+          <type>**</type>
+          <declname>kwargs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Creates a Blender bezier curve object from a parametric function.
+This &quot;plots&quot; the function in 3D space from `min &lt;= t &lt;= max`.
+
+:param function:
+    The function to plot as a Blender curve.
+
+    This function should take in a float value of `t` and return a 3-item tuple or list
+    of the X, Y and Z coordinates at that point:
+    `function(t) -&gt; (x, y, z)`
+
+    `t` is plotted according to `min &lt;= t &lt;= max`, but if `use_cubic` is enabled, this function
+    needs to be able to take values less than `min` and greater than `max`.
+:param *args:
+    Additional positional arguments to be passed to the plotting function.
+    These are not required.
+:param use_cubic:
+    Whether or not to calculate the cubic bezier handles as to create smoother splines.
+    Turning this off reduces calculation time and memory usage, but produces more jagged
+    splines with sharp edges.
+:param iterations:
+    The &apos;subdivisions&apos; of the parametric to plot.
+    Setting this higher produces more accurate curves but increases calculation time and
+    memory usage.
+:param resolution_u:
+    The preview surface resolution in the U direction of the bezier curve.
+    Setting this to a higher value produces smoother curves in rendering, and increases the
+    number of vertices the curve will get if converted into a mesh (e.g. for edge looping)
+:param **kwargs:
+    Additional keyword arguments to be passed to the plotting function.
+    These are not required.
+:return:
+    The new Blender object.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/parametric.py" line="82" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/parametric.py" bodystart="90" bodyend="184"/>
+        <references refid="namespacecam_1_1parametric_1a02742565c1f1faf491c0d3d677dd33b6" compoundref="parametric_8py" startline="39" endline="81">cam.parametric.derive_bezier_handles</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacecam_1_1parametric_1a4da15b36d0d2946dca1fa698a15e8259" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.parametric.make_edge_loops</definition>
+        <argsstring>(*objects)</argsstring>
+        <name>make_edge_loops</name>
+        <qualifiedname>cam.parametric.make_edge_loops</qualifiedname>
+        <param>
+          <type>*</type>
+          <declname>objects</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Turns a set of Curve objects into meshes, creates vertex groups,
+and merges them into a set of edge loops.
+
+:param *objects:
+    Positional arguments for each object to be converted and merged.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/parametric.py" line="185" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/parametric.py" bodystart="185" bodyend="244"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>BlenderCAM &apos;parametric.py&apos; © 2019 Devon (Gorialis) R
+
+MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+
+Summary:
+Create a Blender curve from a 3D parametric function.
+This allows for a 3D plot to be made of the function, which can be converted into a mesh.
+
+I have documented the inner workings here, but if you&apos;re not interested and just want to
+suit this to your own function, scroll down to the bottom and edit the `f(t)` function and
+the iteration count to your liking.
+
+This code has been checked to work on Blender 2.92.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/parametric.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

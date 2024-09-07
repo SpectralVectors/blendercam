@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacecam_1_1strategy" xml:lang="en-US">
+<title>cam.strategy Namespace Reference</title>
+<indexterm><primary>cam.strategy</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacecam_1_1strategy_1af4098f3be74754c5cd0a8247e82bca36">cutout</link> (o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1strategy_1a98de0a0c8017ea29b51639fe6b0670c0">curve</link> (o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1strategy_1a5b0c05c387944f0a806fc3c1b10826dc">proj_curve</link> (s, o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1strategy_1a09828c822f6ca8cbb2c7e59f8a4e5376">pocket</link> (o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1strategy_1abe383cc860f7d293fd56ba25823948e3">drill</link> (o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1strategy_1a54bfd855163cdd3ebb8b5f378196e19d">medial_axis</link> (o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1strategy_1af05502deb88ecda90e32059e42b321fb">getLayers</link> (operation, startdepth, enddepth)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1strategy_1aca3f0f6ecc85cb369be195cb1d36a913">chunksToMesh</link> (chunks, o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1strategy_1a972d6afd961809855c279418b33d68b9">checkminz</link> (o)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_namespacecam_1_1strategy_1a0ac97fea9a9361727964436ee3f126d0">SHAPELY</link> = True</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>BlenderCAM &apos;strategy.py&apos; © 2012 Vilem Novak
+
+Strategy functionality of BlenderCAM - e.g. Cutout, Parallel, Spiral, Waterline
+The functions here are called with operators defined in &apos;ops.py&apos;
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespacecam_1_1strategy_1a972d6afd961809855c279418b33d68b9"/><section>
+    <title>checkminz()</title>
+<indexterm><primary>checkminz</primary><secondary>cam.strategy</secondary></indexterm>
+<indexterm><primary>cam.strategy</primary><secondary>checkminz</secondary></indexterm>
+<para><computeroutput>cam.strategy.checkminz ( o)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1strategy_a972d6afd961809855c279418b33d68b9_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1strategy_1aca3f0f6ecc85cb369be195cb1d36a913"/><section>
+    <title>chunksToMesh()</title>
+<indexterm><primary>chunksToMesh</primary><secondary>cam.strategy</secondary></indexterm>
+<indexterm><primary>cam.strategy</primary><secondary>chunksToMesh</secondary></indexterm>
+<para><computeroutput>cam.strategy.chunksToMesh ( chunks,  o)</computeroutput></para>
+<para><literallayout><computeroutput>Convert Sampled Chunks to Path, Optimization of Paths</computeroutput></literallayout> </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1strategy_aca3f0f6ecc85cb369be195cb1d36a913_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1strategy_1a98de0a0c8017ea29b51639fe6b0670c0"/><section>
+    <title>curve()</title>
+<indexterm><primary>curve</primary><secondary>cam.strategy</secondary></indexterm>
+<indexterm><primary>cam.strategy</primary><secondary>curve</secondary></indexterm>
+<para><computeroutput>cam.strategy.curve ( o)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1strategy_a98de0a0c8017ea29b51639fe6b0670c0_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1strategy_1af4098f3be74754c5cd0a8247e82bca36"/><section>
+    <title>cutout()</title>
+<indexterm><primary>cutout</primary><secondary>cam.strategy</secondary></indexterm>
+<indexterm><primary>cam.strategy</primary><secondary>cutout</secondary></indexterm>
+<para><computeroutput>cam.strategy.cutout ( o)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1strategy_af4098f3be74754c5cd0a8247e82bca36_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1strategy_1abe383cc860f7d293fd56ba25823948e3"/><section>
+    <title>drill()</title>
+<indexterm><primary>drill</primary><secondary>cam.strategy</secondary></indexterm>
+<indexterm><primary>cam.strategy</primary><secondary>drill</secondary></indexterm>
+<para><computeroutput>cam.strategy.drill ( o)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1strategy_abe383cc860f7d293fd56ba25823948e3_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1strategy_1af05502deb88ecda90e32059e42b321fb"/><section>
+    <title>getLayers()</title>
+<indexterm><primary>getLayers</primary><secondary>cam.strategy</secondary></indexterm>
+<indexterm><primary>cam.strategy</primary><secondary>getLayers</secondary></indexterm>
+<para><computeroutput>cam.strategy.getLayers ( operation,  startdepth,  enddepth)</computeroutput></para>
+<para><literallayout><computeroutput>Returns a List of Layers Bounded by Startdepth and Enddepth
+   Uses Operation.stepdown to Determine Number of Layers.
+</computeroutput></literallayout> </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1strategy_af05502deb88ecda90e32059e42b321fb_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1strategy_1a54bfd855163cdd3ebb8b5f378196e19d"/><section>
+    <title>medial_axis()</title>
+<indexterm><primary>medial_axis</primary><secondary>cam.strategy</secondary></indexterm>
+<indexterm><primary>cam.strategy</primary><secondary>medial_axis</secondary></indexterm>
+<para><computeroutput>cam.strategy.medial_axis ( o)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1strategy_a54bfd855163cdd3ebb8b5f378196e19d_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1strategy_1a09828c822f6ca8cbb2c7e59f8a4e5376"/><section>
+    <title>pocket()</title>
+<indexterm><primary>pocket</primary><secondary>cam.strategy</secondary></indexterm>
+<indexterm><primary>cam.strategy</primary><secondary>pocket</secondary></indexterm>
+<para><computeroutput>cam.strategy.pocket ( o)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1strategy_a09828c822f6ca8cbb2c7e59f8a4e5376_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1strategy_1a5b0c05c387944f0a806fc3c1b10826dc"/><section>
+    <title>proj_curve()</title>
+<indexterm><primary>proj_curve</primary><secondary>cam.strategy</secondary></indexterm>
+<indexterm><primary>cam.strategy</primary><secondary>proj_curve</secondary></indexterm>
+<para><computeroutput>cam.strategy.proj_curve ( s,  o)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1strategy_a5b0c05c387944f0a806fc3c1b10826dc_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespacecam_1_1strategy_1a0ac97fea9a9361727964436ee3f126d0"/><section>
+    <title>SHAPELY</title>
+<indexterm><primary>SHAPELY</primary><secondary>cam.strategy</secondary></indexterm>
+<indexterm><primary>cam.strategy</primary><secondary>SHAPELY</secondary></indexterm>
+<para><computeroutput>bool cam.strategy.SHAPELY = True</computeroutput></para></section>
+</section>
+</section>

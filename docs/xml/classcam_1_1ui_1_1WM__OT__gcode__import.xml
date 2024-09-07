@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1ui_1_1WM__OT__gcode__import" kind="class" language="Python" prot="public">
+    <compoundname>cam::ui::WM_OT_gcode_import</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Operator</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">ImportHelper</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1ui_1_1WM__OT__gcode__import_1aefbe9ff56269d3cffff3c9d793781ae4" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.ui.WM_OT_gcode_import::bl_idname</definition>
+        <argsstring></argsstring>
+        <name>bl_idname</name>
+        <qualifiedname>cam.ui.WM_OT_gcode_import.bl_idname</qualifiedname>
+        <initializer>=  &quot;wm.gcode_import&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui.py" line="120" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui.py" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui_1_1WM__OT__gcode__import_1a26b82390aa9536ad52aee0acfcd508a7" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.ui.WM_OT_gcode_import::bl_label</definition>
+        <argsstring></argsstring>
+        <name>bl_label</name>
+        <qualifiedname>cam.ui.WM_OT_gcode_import.bl_label</qualifiedname>
+        <initializer>=  &quot;Import G-code&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui.py" line="121" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui.py" bodystart="121" bodyend="-1"/>
+        <referencedby refid="classcam_1_1preset__managers_1_1CAM__MACHINE__MT__presets_1af95f7812d2952b26a26809ab923dac09" compoundref="preset__managers_8py" startline="28" endline="38">cam.preset_managers.CAM_MACHINE_MT_presets.post_cb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui_1_1WM__OT__gcode__import_1a6571a84d7654bfe68047fa86027680bd" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.ui.WM_OT_gcode_import::filename_ext</definition>
+        <argsstring></argsstring>
+        <name>filename_ext</name>
+        <qualifiedname>cam.ui.WM_OT_gcode_import.filename_ext</qualifiedname>
+        <initializer>=  &quot;.txt&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui.py" line="124" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui.py" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ui_1_1WM__OT__gcode__import_1a8f963966988a1e96b0c4165a65dd08a8" prot="public" static="yes" mutable="no">
+        <type>StringProperty</type>
+        <definition>StringProperty cam.ui.WM_OT_gcode_import::filter_glob</definition>
+        <argsstring></argsstring>
+        <name>filter_glob</name>
+        <qualifiedname>cam.ui.WM_OT_gcode_import.filter_glob</qualifiedname>
+        <initializer>(
+        default=&quot;*.*&quot;,
+        options={&apos;HIDDEN&apos;},
+        maxlen=255,  # Max internal buffer length, longer would be clamped.
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui.py" line="126" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui.py" bodystart="126" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcam_1_1ui_1_1WM__OT__gcode__import_1aaebdfdb23ee7e0d4f671c5166a000a43" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.ui.WM_OT_gcode_import::filepath</definition>
+        <argsstring></argsstring>
+        <name>filepath</name>
+        <qualifiedname>cam.ui.WM_OT_gcode_import.filepath</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui.py" line="133" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui.py" bodystart="133" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcam_1_1ui_1_1WM__OT__gcode__import_1a51c6ed7713414dbe7c188c4f7b4e50a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.ui.WM_OT_gcode_import.execute</definition>
+        <argsstring>(self, context)</argsstring>
+        <name>execute</name>
+        <qualifiedname>cam.ui.WM_OT_gcode_import.execute</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui.py" line="132" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui.py" bodystart="132" bodyend="136"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Import G-code, Travel Lines Don&apos;t Get Drawn</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="3">
+        <label>ImportHelper</label>
+      </node>
+      <node id="1">
+        <label>cam.ui.WM_OT_gcode_import</label>
+        <link refid="classcam_1_1ui_1_1WM__OT__gcode__import"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>StringProperty</label>
+      </node>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="3">
+        <label>ImportHelper</label>
+      </node>
+      <node id="1">
+        <label>cam.ui.WM_OT_gcode_import</label>
+        <link refid="classcam_1_1ui_1_1WM__OT__gcode__import"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+bl_idname</edgelabel>
+          <edgelabel>+bl_label</edgelabel>
+          <edgelabel>+filename_ext</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+filter_glob</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui.py" line="118" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui.py" bodystart="118" bodyend="136"/>
+    <listofallmembers>
+      <member refid="classcam_1_1ui_1_1WM__OT__gcode__import_1aefbe9ff56269d3cffff3c9d793781ae4" prot="public" virt="non-virtual"><scope>cam::ui::WM_OT_gcode_import</scope><name>bl_idname</name></member>
+      <member refid="classcam_1_1ui_1_1WM__OT__gcode__import_1a26b82390aa9536ad52aee0acfcd508a7" prot="public" virt="non-virtual"><scope>cam::ui::WM_OT_gcode_import</scope><name>bl_label</name></member>
+      <member refid="classcam_1_1ui_1_1WM__OT__gcode__import_1a51c6ed7713414dbe7c188c4f7b4e50a1" prot="public" virt="non-virtual"><scope>cam::ui::WM_OT_gcode_import</scope><name>execute</name></member>
+      <member refid="classcam_1_1ui_1_1WM__OT__gcode__import_1a6571a84d7654bfe68047fa86027680bd" prot="public" virt="non-virtual"><scope>cam::ui::WM_OT_gcode_import</scope><name>filename_ext</name></member>
+      <member refid="classcam_1_1ui_1_1WM__OT__gcode__import_1aaebdfdb23ee7e0d4f671c5166a000a43" prot="public" virt="non-virtual"><scope>cam::ui::WM_OT_gcode_import</scope><name>filepath</name></member>
+      <member refid="classcam_1_1ui_1_1WM__OT__gcode__import_1a8f963966988a1e96b0c4165a65dd08a8" prot="public" virt="non-virtual"><scope>cam::ui::WM_OT_gcode_import</scope><name>filter_glob</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

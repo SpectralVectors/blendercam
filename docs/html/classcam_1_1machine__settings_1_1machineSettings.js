@@ -1,0 +1,28 @@
+var classcam_1_1machine__settings_1_1machineSettings =
+[
+    [ "axis4", "classcam_1_1machine__settings_1_1machineSettings.html#a36c2e7607ed2ce3b4f03ab23faf8d6ed", null ],
+    [ "axis5", "classcam_1_1machine__settings_1_1machineSettings.html#aad65a9d10d1784e5c12af16a5dded36f", null ],
+    [ "block_number_increment", "classcam_1_1machine__settings_1_1machineSettings.html#ad131f77de75465a5826fe69e6cc61475", null ],
+    [ "collet_size", "classcam_1_1machine__settings_1_1machineSettings.html#addc35c984c12b0e35b1ddf4ee95298b8", null ],
+    [ "ending_position", "classcam_1_1machine__settings_1_1machineSettings.html#abe27dd61be9fe185c4c31ecb40de25ab", null ],
+    [ "eval_splitting", "classcam_1_1machine__settings_1_1machineSettings.html#ad2f99a9a3cae53b8d80dde4fef9a9a79", null ],
+    [ "feedrate_default", "classcam_1_1machine__settings_1_1machineSettings.html#aaf801db64cb8324b1b79070b870e78ca", null ],
+    [ "feedrate_max", "classcam_1_1machine__settings_1_1machineSettings.html#aadc26d9e1fa640a8b1b4e95ff0717aa1", null ],
+    [ "feedrate_min", "classcam_1_1machine__settings_1_1machineSettings.html#a63cc6d9ee81e1d8c8270fa8d9d6da926", null ],
+    [ "hourly_rate", "classcam_1_1machine__settings_1_1machineSettings.html#a7c8b0b6a273202e3dcd589febacd0041", null ],
+    [ "mtc_position", "classcam_1_1machine__settings_1_1machineSettings.html#a9448ada8d15d3be465db263e03e82d7f", null ],
+    [ "output_block_numbers", "classcam_1_1machine__settings_1_1machineSettings.html#a97a7a04d12baa8de7bb5326ccb22f8fc", null ],
+    [ "output_g43_on_tool_change", "classcam_1_1machine__settings_1_1machineSettings.html#ab20976d823d4c76faa1c7c4aec364133", null ],
+    [ "output_tool_change", "classcam_1_1machine__settings_1_1machineSettings.html#a7e6faf78f4d1eb00b598bc0b87591a5c", null ],
+    [ "output_tool_definitions", "classcam_1_1machine__settings_1_1machineSettings.html#a6fc2d3c06e832fdfdcdc3485e16df84d", null ],
+    [ "post_processor", "classcam_1_1machine__settings_1_1machineSettings.html#aae381b3109f1c01eda6e92b5741ab077", null ],
+    [ "spindle_default", "classcam_1_1machine__settings_1_1machineSettings.html#a230eef6552613b9175b6d7918ff54e64", null ],
+    [ "spindle_max", "classcam_1_1machine__settings_1_1machineSettings.html#a2adc72481d7b9863cb2352fbb83f02a4", null ],
+    [ "spindle_min", "classcam_1_1machine__settings_1_1machineSettings.html#af71adb57e51de1a87fceb49686f8dead", null ],
+    [ "spindle_start_time", "classcam_1_1machine__settings_1_1machineSettings.html#a48bb92ab2c2017d1a6b0af0d095eea06", null ],
+    [ "split_limit", "classcam_1_1machine__settings_1_1machineSettings.html#a9e1c5dd3d3c2e9675697e6fd14f07045", null ],
+    [ "start_block_number", "classcam_1_1machine__settings_1_1machineSettings.html#af1c2ca84237a0945e29bf96af773c3c5", null ],
+    [ "starting_position", "classcam_1_1machine__settings_1_1machineSettings.html#aacd374d5752cb5db59688a81dc0822f2", null ],
+    [ "use_position_definitions", "classcam_1_1machine__settings_1_1machineSettings.html#a6fd14ff1d66acf3b0c4dd7cd021e55ed", null ],
+    [ "working_area", "classcam_1_1machine__settings_1_1machineSettings.html#afb6e969a9ec5bfd29a8c62a489228156", null ]
+];

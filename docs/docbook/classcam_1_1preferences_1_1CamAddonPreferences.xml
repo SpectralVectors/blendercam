@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1preferences_1_1CamAddonPreferences" xml:lang="en-US">
+<title>cam.preferences.CamAddonPreferences Class Reference</title>
+<indexterm><primary>cam.preferences.CamAddonPreferences</primary></indexterm>
+Inheritance diagram for cam.preferences.CamAddonPreferences:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1preferences_1_1CamAddonPreferences__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.preferences.CamAddonPreferences:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1preferences_1_1CamAddonPreferences__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1preferences_1_1CamAddonPreferences_1abb7df7d3f24ffdc38e070271ac54a800">draw</link> (self, context)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1preferences_1_1CamAddonPreferences_1ac1ea58fb04891aa45e9f33f7bd4d0158">bl_idname</link> = __package__</para>
+</listitem>
+            <listitem><para>BoolProperty <link linkend="_classcam_1_1preferences_1_1CamAddonPreferences_1a1b6bbc7852af1850d18ce91ca35a3d76">op_preset_update</link></para>
+</listitem>
+            <listitem><para>BoolProperty <link linkend="_classcam_1_1preferences_1_1CamAddonPreferences_1ace4aa38a2b592482500f958862bab6ad">experimental</link></para>
+</listitem>
+            <listitem><para>StringProperty <link linkend="_classcam_1_1preferences_1_1CamAddonPreferences_1a43d758ebc47cf17e7cbe706bb41b307d">update_source</link></para>
+</listitem>
+            <listitem><para>IntProperty <link linkend="_classcam_1_1preferences_1_1CamAddonPreferences_1a35b937154b3186631b0e76daff097e9a">last_update_check</link></para>
+</listitem>
+            <listitem><para>StringProperty <link linkend="_classcam_1_1preferences_1_1CamAddonPreferences_1a8e39301938c0278caac753e48b6bbbc0">last_commit_hash</link></para>
+</listitem>
+            <listitem><para>BoolProperty <link linkend="_classcam_1_1preferences_1_1CamAddonPreferences_1ae44f9012032a9335c1bc6b89a2d1642f">just_updated</link></para>
+</listitem>
+            <listitem><para>StringProperty <link linkend="_classcam_1_1preferences_1_1CamAddonPreferences_1acb3ab0cee053c604aa0323b56e1d4220">new_version_available</link></para>
+</listitem>
+            <listitem><para>EnumProperty <link linkend="_classcam_1_1preferences_1_1CamAddonPreferences_1a6a98bab8ac5e536e3e0717443d2a75f5">default_interface_level</link></para>
+</listitem>
+            <listitem><para>StringProperty <link linkend="_classcam_1_1preferences_1_1CamAddonPreferences_1ace97db4c7b0a98538f4ee17481325714">default_machine_preset</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1preferences_1_1CamAddonPreferences_1abb7df7d3f24ffdc38e070271ac54a800"/><section>
+    <title>draw()</title>
+<indexterm><primary>draw</primary><secondary>cam.preferences.CamAddonPreferences</secondary></indexterm>
+<indexterm><primary>cam.preferences.CamAddonPreferences</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput>cam.preferences.CamAddonPreferences.draw ( self,  context)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1preferences_1_1CamAddonPreferences_1ac1ea58fb04891aa45e9f33f7bd4d0158"/><section>
+    <title>bl_idname</title>
+<indexterm><primary>bl_idname</primary><secondary>cam.preferences.CamAddonPreferences</secondary></indexterm>
+<indexterm><primary>cam.preferences.CamAddonPreferences</primary><secondary>bl_idname</secondary></indexterm>
+<para><computeroutput>cam.preferences.CamAddonPreferences.bl_idname = __package__<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1preferences_1_1CamAddonPreferences_1a6a98bab8ac5e536e3e0717443d2a75f5"/><section>
+    <title>default_interface_level</title>
+<indexterm><primary>default_interface_level</primary><secondary>cam.preferences.CamAddonPreferences</secondary></indexterm>
+<indexterm><primary>cam.preferences.CamAddonPreferences</primary><secondary>default_interface_level</secondary></indexterm>
+<para><computeroutput>EnumProperty cam.preferences.CamAddonPreferences.default_interface_level<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Interface&#32;Level&#32;in&#32;New&#32;File&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;Choose&#32;visible&#32;options&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;items=[
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&quot;0&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;Basic&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;Only&#32;show&#32;Essential&#32;Options&quot;</emphasis>),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&quot;1&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;Advanced&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;Show&#32;Advanced&#32;Options&quot;</emphasis>),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&quot;2&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;Complete&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;Show&#32;All&#32;Options&quot;</emphasis>),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&quot;3&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;Experimental&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;Show&#32;Experimental&#32;Options&quot;</emphasis>),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;],
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="stringliteral">&quot;3&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1preferences_1_1CamAddonPreferences_1ace97db4c7b0a98538f4ee17481325714"/><section>
+    <title>default_machine_preset</title>
+<indexterm><primary>default_machine_preset</primary><secondary>cam.preferences.CamAddonPreferences</secondary></indexterm>
+<indexterm><primary>cam.preferences.CamAddonPreferences</primary><secondary>default_machine_preset</secondary></indexterm>
+<para><computeroutput>StringProperty cam.preferences.CamAddonPreferences.default_machine_preset<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Machine&#32;Preset&#32;in&#32;New&#32;File&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;So&#32;that&#32;machine&#32;preset&#32;choice&#32;persists&#32;between&#32;files&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="stringliteral">&quot;&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1preferences_1_1CamAddonPreferences_1ace4aa38a2b592482500f958862bab6ad"/><section>
+    <title>experimental</title>
+<indexterm><primary>experimental</primary><secondary>cam.preferences.CamAddonPreferences</secondary></indexterm>
+<indexterm><primary>cam.preferences.CamAddonPreferences</primary><secondary>experimental</secondary></indexterm>
+<para><computeroutput>BoolProperty cam.preferences.CamAddonPreferences.experimental<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Show&#32;Experimental&#32;Features&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="keyword">False</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1preferences_1_1CamAddonPreferences_1ae44f9012032a9335c1bc6b89a2d1642f"/><section>
+    <title>just_updated</title>
+<indexterm><primary>just_updated</primary><secondary>cam.preferences.CamAddonPreferences</secondary></indexterm>
+<indexterm><primary>cam.preferences.CamAddonPreferences</primary><secondary>just_updated</secondary></indexterm>
+<para><computeroutput>BoolProperty cam.preferences.CamAddonPreferences.just_updated<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Set&#32;to&#32;True&#32;on&#32;Update&#32;or&#32;Initial&#32;Install&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="keyword">True</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1preferences_1_1CamAddonPreferences_1a8e39301938c0278caac753e48b6bbbc0"/><section>
+    <title>last_commit_hash</title>
+<indexterm><primary>last_commit_hash</primary><secondary>cam.preferences.CamAddonPreferences</secondary></indexterm>
+<indexterm><primary>cam.preferences.CamAddonPreferences</primary><secondary>last_commit_hash</secondary></indexterm>
+<para><computeroutput>StringProperty cam.preferences.CamAddonPreferences.last_commit_hash<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Hash&#32;of&#32;Last&#32;Commit&#32;from&#32;Updater&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="stringliteral">&quot;&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1preferences_1_1CamAddonPreferences_1a35b937154b3186631b0e76daff097e9a"/><section>
+    <title>last_update_check</title>
+<indexterm><primary>last_update_check</primary><secondary>cam.preferences.CamAddonPreferences</secondary></indexterm>
+<indexterm><primary>cam.preferences.CamAddonPreferences</primary><secondary>last_update_check</secondary></indexterm>
+<para><computeroutput>IntProperty cam.preferences.CamAddonPreferences.last_update_check<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Last&#32;Update&#32;Time&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1preferences_1_1CamAddonPreferences_1acb3ab0cee053c604aa0323b56e1d4220"/><section>
+    <title>new_version_available</title>
+<indexterm><primary>new_version_available</primary><secondary>cam.preferences.CamAddonPreferences</secondary></indexterm>
+<indexterm><primary>cam.preferences.CamAddonPreferences</primary><secondary>new_version_available</secondary></indexterm>
+<para><computeroutput>StringProperty cam.preferences.CamAddonPreferences.new_version_available<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Set&#32;to&#32;New&#32;Version&#32;Name&#32;if&#32;One&#32;Is&#32;Found&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="stringliteral">&quot;&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1preferences_1_1CamAddonPreferences_1a1b6bbc7852af1850d18ce91ca35a3d76"/><section>
+    <title>op_preset_update</title>
+<indexterm><primary>op_preset_update</primary><secondary>cam.preferences.CamAddonPreferences</secondary></indexterm>
+<indexterm><primary>cam.preferences.CamAddonPreferences</primary><secondary>op_preset_update</secondary></indexterm>
+<para><computeroutput>BoolProperty cam.preferences.CamAddonPreferences.op_preset_update<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Have&#32;the&#32;Operation&#32;Presets&#32;Been&#32;Updated&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="keyword">False</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1preferences_1_1CamAddonPreferences_1a43d758ebc47cf17e7cbe706bb41b307d"/><section>
+    <title>update_source</title>
+<indexterm><primary>update_source</primary><secondary>cam.preferences.CamAddonPreferences</secondary></indexterm>
+<indexterm><primary>cam.preferences.CamAddonPreferences</primary><secondary>update_source</secondary></indexterm>
+<para><computeroutput>StringProperty cam.preferences.CamAddonPreferences.update_source<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Source&#32;of&#32;Updates&#32;for&#32;the&#32;Addon&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;This&#32;can&#32;be&#32;either&#32;a&#32;github&#32;repo&#32;link&#32;in&#32;which&#32;case&#32;&quot;</emphasis>
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;it&#32;will&#32;download&#32;the&#32;latest&#32;release&#32;on&#32;there,&#32;&quot;</emphasis>
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;or&#32;an&#32;api&#32;link&#32;like&#32;&quot;</emphasis>
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;https://api.github.com/repos/&lt;author&gt;/blendercam/commits&quot;</emphasis>
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;&#32;to&#32;get&#32;from&#32;a&#32;github&#32;repository&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="stringliteral">&quot;https://github.com/pppalain/blendercam&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/<link linkend="_preferences_8py">preferences.py</link></section>
+</section>

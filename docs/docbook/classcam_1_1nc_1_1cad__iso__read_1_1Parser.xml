@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1nc_1_1cad__iso__read_1_1Parser" xml:lang="en-US">
+<title>cam.nc.cad_iso_read.Parser Class Reference</title>
+<indexterm><primary>cam.nc.cad_iso_read.Parser</primary></indexterm>
+Inheritance diagram for cam.nc.cad_iso_read.Parser:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1cad__iso__read_1_1Parser__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.nc.cad_iso_read.Parser:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1cad__iso__read_1_1Parser__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1a662e924c8f1ca3bf170466a6dd4aedfe">__init__</link> (self, writer)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1aa85a1d83f865ba5de107d8e24edfa3c6">ParseWord</link> (self, word)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1abf885d019794a8bef1b69f446c8851e1">Parse</link> (self, name, oname=None)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1a30c92dc6e07300af6d85d08398eecaaf">pattern_main</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1a56bd25e5dc8ec819e7b1dc9184d776ff">col</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1afd31d0836112cf49be00ab44b7b7b7dc">a</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1abd363b8bb0909a613f225ab8431200a1">move</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1a93a62b7a93505c0e9bfdeafbd3b0f3c4">b</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1a72db2550c8473351c48e1637be98e8cd">c</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1a44d6b2bb35fe1a817c0d43268cb744f9">f</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1aee21701bb3dfb6764a21e3a59a70df9b">path_col</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1aaa165664afc0ed012928f2629f34a42d">arc</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1a38ed716ec9b8e4bd350671aa11bf8859">no_move</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1a1bdf4286c03d89dc23bad8cd7d860b01">drill</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1aee4fb157b66873a51e3a5366c7d597d8">i</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1a09b54161518edfbfe657d27aee90fa55">j</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1ab335c09bdd1a00e6af89a3223451158c">k</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1a7cf8290dcb05ea70477852e693316cb4">p</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1aade1f5cd294c0c09150055ac83f36a6c">q</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1aceb57a5c8b783e4b1fe3c18bb2653593">r</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1a4aa7fe50abd069e6cdac10b168a5538b">s</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1a42132cf94b53f923ba05d9aaead741dc">x</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1a39e8ca9d10ba410ae442562a6776b422">y</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1ac9544d7e9af9cd6e33bb3456c7f6ba63">z</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1a957cb60461006a50945d76e348d80c92">cdata</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1a662e924c8f1ca3bf170466a6dd4aedfe"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>cam.nc.cad_iso_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.cad_iso_read.Parser</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>cam.nc.cad_iso_read.Parser.__init__ ( self,  writer)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1abf885d019794a8bef1b69f446c8851e1"/><section>
+    <title>Parse()</title>
+<indexterm><primary>Parse</primary><secondary>cam.nc.cad_iso_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.cad_iso_read.Parser</primary><secondary>Parse</secondary></indexterm>
+<para><computeroutput>cam.nc.cad_iso_read.Parser.Parse ( self,  name,  oname = <computeroutput>None</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1cad__iso__read_1_1Parser_abf885d019794a8bef1b69f446c8851e1_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1aa85a1d83f865ba5de107d8e24edfa3c6"/><section>
+    <title>ParseWord()</title>
+<indexterm><primary>ParseWord</primary><secondary>cam.nc.cad_iso_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.cad_iso_read.Parser</primary><secondary>ParseWord</secondary></indexterm>
+<para><computeroutput>cam.nc.cad_iso_read.Parser.ParseWord ( self,  word)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1cad__iso__read_1_1Parser_aa85a1d83f865ba5de107d8e24edfa3c6_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1afd31d0836112cf49be00ab44b7b7b7dc"/><section>
+    <title>a</title>
+<indexterm><primary>a</primary><secondary>cam.nc.cad_iso_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.cad_iso_read.Parser</primary><secondary>a</secondary></indexterm>
+<para><computeroutput>cam.nc.cad_iso_read.Parser.a</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1aaa165664afc0ed012928f2629f34a42d"/><section>
+    <title>arc</title>
+<indexterm><primary>arc</primary><secondary>cam.nc.cad_iso_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.cad_iso_read.Parser</primary><secondary>arc</secondary></indexterm>
+<para><computeroutput>cam.nc.cad_iso_read.Parser.arc</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1a93a62b7a93505c0e9bfdeafbd3b0f3c4"/><section>
+    <title>b</title>
+<indexterm><primary>b</primary><secondary>cam.nc.cad_iso_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.cad_iso_read.Parser</primary><secondary>b</secondary></indexterm>
+<para><computeroutput>cam.nc.cad_iso_read.Parser.b</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1a72db2550c8473351c48e1637be98e8cd"/><section>
+    <title>c</title>
+<indexterm><primary>c</primary><secondary>cam.nc.cad_iso_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.cad_iso_read.Parser</primary><secondary>c</secondary></indexterm>
+<para><computeroutput>cam.nc.cad_iso_read.Parser.c</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1a957cb60461006a50945d76e348d80c92"/><section>
+    <title>cdata</title>
+<indexterm><primary>cdata</primary><secondary>cam.nc.cad_iso_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.cad_iso_read.Parser</primary><secondary>cdata</secondary></indexterm>
+<para><computeroutput>cam.nc.cad_iso_read.Parser.cdata</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1a56bd25e5dc8ec819e7b1dc9184d776ff"/><section>
+    <title>col</title>
+<indexterm><primary>col</primary><secondary>cam.nc.cad_iso_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.cad_iso_read.Parser</primary><secondary>col</secondary></indexterm>
+<para><computeroutput>cam.nc.cad_iso_read.Parser.col</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1a1bdf4286c03d89dc23bad8cd7d860b01"/><section>
+    <title>drill</title>
+<indexterm><primary>drill</primary><secondary>cam.nc.cad_iso_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.cad_iso_read.Parser</primary><secondary>drill</secondary></indexterm>
+<para><computeroutput>cam.nc.cad_iso_read.Parser.drill</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1a44d6b2bb35fe1a817c0d43268cb744f9"/><section>
+    <title>f</title>
+<indexterm><primary>f</primary><secondary>cam.nc.cad_iso_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.cad_iso_read.Parser</primary><secondary>f</secondary></indexterm>
+<para><computeroutput>cam.nc.cad_iso_read.Parser.f</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1aee4fb157b66873a51e3a5366c7d597d8"/><section>
+    <title>i</title>
+<indexterm><primary>i</primary><secondary>cam.nc.cad_iso_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.cad_iso_read.Parser</primary><secondary>i</secondary></indexterm>
+<para><computeroutput>cam.nc.cad_iso_read.Parser.i</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1a09b54161518edfbfe657d27aee90fa55"/><section>
+    <title>j</title>
+<indexterm><primary>j</primary><secondary>cam.nc.cad_iso_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.cad_iso_read.Parser</primary><secondary>j</secondary></indexterm>
+<para><computeroutput>cam.nc.cad_iso_read.Parser.j</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1ab335c09bdd1a00e6af89a3223451158c"/><section>
+    <title>k</title>
+<indexterm><primary>k</primary><secondary>cam.nc.cad_iso_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.cad_iso_read.Parser</primary><secondary>k</secondary></indexterm>
+<para><computeroutput>cam.nc.cad_iso_read.Parser.k</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1abd363b8bb0909a613f225ab8431200a1"/><section>
+    <title>move</title>
+<indexterm><primary>move</primary><secondary>cam.nc.cad_iso_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.cad_iso_read.Parser</primary><secondary>move</secondary></indexterm>
+<para><computeroutput>cam.nc.cad_iso_read.Parser.move</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1a38ed716ec9b8e4bd350671aa11bf8859"/><section>
+    <title>no_move</title>
+<indexterm><primary>no_move</primary><secondary>cam.nc.cad_iso_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.cad_iso_read.Parser</primary><secondary>no_move</secondary></indexterm>
+<para><computeroutput>cam.nc.cad_iso_read.Parser.no_move</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1a7cf8290dcb05ea70477852e693316cb4"/><section>
+    <title>p</title>
+<indexterm><primary>p</primary><secondary>cam.nc.cad_iso_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.cad_iso_read.Parser</primary><secondary>p</secondary></indexterm>
+<para><computeroutput>cam.nc.cad_iso_read.Parser.p</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1aee21701bb3dfb6764a21e3a59a70df9b"/><section>
+    <title>path_col</title>
+<indexterm><primary>path_col</primary><secondary>cam.nc.cad_iso_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.cad_iso_read.Parser</primary><secondary>path_col</secondary></indexterm>
+<para><computeroutput>cam.nc.cad_iso_read.Parser.path_col</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1a30c92dc6e07300af6d85d08398eecaaf"/><section>
+    <title>pattern_main</title>
+<indexterm><primary>pattern_main</primary><secondary>cam.nc.cad_iso_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.cad_iso_read.Parser</primary><secondary>pattern_main</secondary></indexterm>
+<para><computeroutput>cam.nc.cad_iso_read.Parser.pattern_main</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1aade1f5cd294c0c09150055ac83f36a6c"/><section>
+    <title>q</title>
+<indexterm><primary>q</primary><secondary>cam.nc.cad_iso_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.cad_iso_read.Parser</primary><secondary>q</secondary></indexterm>
+<para><computeroutput>cam.nc.cad_iso_read.Parser.q</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1aceb57a5c8b783e4b1fe3c18bb2653593"/><section>
+    <title>r</title>
+<indexterm><primary>r</primary><secondary>cam.nc.cad_iso_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.cad_iso_read.Parser</primary><secondary>r</secondary></indexterm>
+<para><computeroutput>cam.nc.cad_iso_read.Parser.r</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1a4aa7fe50abd069e6cdac10b168a5538b"/><section>
+    <title>s</title>
+<indexterm><primary>s</primary><secondary>cam.nc.cad_iso_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.cad_iso_read.Parser</primary><secondary>s</secondary></indexterm>
+<para><computeroutput>cam.nc.cad_iso_read.Parser.s</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1a42132cf94b53f923ba05d9aaead741dc"/><section>
+    <title>x</title>
+<indexterm><primary>x</primary><secondary>cam.nc.cad_iso_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.cad_iso_read.Parser</primary><secondary>x</secondary></indexterm>
+<para><computeroutput>cam.nc.cad_iso_read.Parser.x</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1a39e8ca9d10ba410ae442562a6776b422"/><section>
+    <title>y</title>
+<indexterm><primary>y</primary><secondary>cam.nc.cad_iso_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.cad_iso_read.Parser</primary><secondary>y</secondary></indexterm>
+<para><computeroutput>cam.nc.cad_iso_read.Parser.y</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1cad__iso__read_1_1Parser_1ac9544d7e9af9cd6e33bb3456c7f6ba63"/><section>
+    <title>z</title>
+<indexterm><primary>z</primary><secondary>cam.nc.cad_iso_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.cad_iso_read.Parser</primary><secondary>z</secondary></indexterm>
+<para><computeroutput>cam.nc.cad_iso_read.Parser.z</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/<link linkend="_cad__iso__read_8py">cad_iso_read.py</link></section>
+</section>

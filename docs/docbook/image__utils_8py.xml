@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_image__utils_8py" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/image_utils.py File Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/image_utils.py</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacecam">cam</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacecam_1_1image__utils">cam.image_utils</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1ac949d3bf4f6d486454139b4a1eb2f037">cam.image_utils.numpysave</link> (a, iname)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1aa267f5232e4c05ff142965ace7d9a89d">cam.image_utils.getCircle</link> (r, z)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1a0c350a24695b04011277b9aa5f19b44e">cam.image_utils.getCircleBinary</link> (r)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1a1d3e768e16c295ee3c70e41b51ab02da">cam.image_utils.numpytoimage</link> (a, iname)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1a83a961a5085b3b57963924a9f59b923a">cam.image_utils.imagetonumpy</link> (i)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1ab74d8272c536f70d61aa970a50fc9c34">cam.image_utils._offset_inner_loop</link> (y1, y2, cutterArrayNan, cwidth, sourceArray, width, height, comparearea)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1ae6c47694c2782315bff99d20fe756011">cam.image_utils.offsetArea</link> (o, samples)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1a7b8608f02f22f66d27f3dd0d422c0245">cam.image_utils.dilateAr</link> (ar, cycles)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1aaf4d42d8658edea8592459b5203b26d9">cam.image_utils.getOffsetImageCavities</link> (o, i)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1a85ad59a3920b6d9e68f695a8a450eba6">cam.image_utils.imageEdgeSearch_online</link> (o, ar, zimage)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1adbdfc8e165ed1de02722d825e64d9fcb">cam.image_utils.crazyPath</link> (o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1a3fcf50f37c06c58f8fb4e62b24e5ed16">cam.image_utils.buildStroke</link> (start, end, cutterArray)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1a2ac7ed9abec509b765d68e57864f70c6">cam.image_utils.testStroke</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1a456aab598ae9d0bbe6e1ab7677dc3f79">cam.image_utils.applyStroke</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1a699ed8d000c775ca6d9010bec5fe407e">cam.image_utils.testStrokeBinary</link> (img, stroke)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1af547241b4be016a996f378c3d9968e33">cam.image_utils.crazyStrokeImage</link> (o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1a78986f83a04d586f840ea5189833c83b">cam.image_utils.crazyStrokeImageBinary</link> (o, ar, avoidar)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1acd50c3e23214c9a027cffa5218a37c0c">cam.image_utils.imageToChunks</link> (o, image, with_border=False)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1a6f44ee3d0a162dd6fa1ba678aa1b64a9">cam.image_utils.imageToShapely</link> (o, i, with_border=False)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1a952222cdf7c1c31a56b31bca16c43638">cam.image_utils.getSampleImage</link> (s, sarray, minz)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1ac8299eb9bb62632ebee26b436f90640e">cam.image_utils.getResolution</link> (o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1aae9ef3677359b9c13dedb04ef10e4e2d">cam.image_utils._backup_render_settings</link> (pairs)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1acf7406c3a07566907a69d5828cc1ff8f">cam.image_utils._restore_render_settings</link> (pairs, properties)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1abe2238ab650e158ad3371d6535b7e120">cam.image_utils.renderSampleImage</link> (o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1a6a8c0ddae6ef977288acacb120e6c787">cam.image_utils.prepareArea</link> (o)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1image__utils_1a3cf6dd7479cf84857f12a5ee07bdeacd">cam.image_utils.getCutterArray</link> (operation, pixsize)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

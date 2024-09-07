@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Panel" xml:lang="en-US">
+<title>cam.ui_panels.material.CAM_MATERIAL_Panel Class Reference</title>
+<indexterm><primary>cam.ui_panels.material.CAM_MATERIAL_Panel</primary></indexterm>
+Inheritance diagram for cam.ui_panels.material.CAM_MATERIAL_Panel:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Panel__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.ui_panels.material.CAM_MATERIAL_Panel:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Panel__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Panel_1a340912e256404e190d15f10b83ca83c4">draw_estimate_from_image</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Panel_1a08b5a69206e7fdae8ecc766e501f4f24">draw_estimate_from_object</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Panel_1a0adea8656cf485cbf62c14a48cebbcd0">draw_axis_alignment</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Panel_1aea7c8d9b6f584d2bf8a294cfa268dd85">draw</link> (self, <link linkend="_classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Panel_1ae1cd1999cc1aac994ff997d4743c1092">context</link>)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel">cam.ui_panels.buttons_panel.CAMButtonsPanel</link>        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a03843f1fecc691952b696f4bc75a0156">poll</link> (cls, context)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1ae2df719a61472a3f8674e26fe501b1f7">active_operation_index</link> (cls)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a9fe8584ab332e9830dfa800ee4582575">active_operation</link> (cls)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1acbcf6bed1c104021565fc4a486d1101a">__init__</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1aae624325882f33dd8820cdf27df16e4e">operations_count</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a3e5e2105cb372d0ad7ee959fa38e10e2">has_operations</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a41c101f031fc5ecdb0097889cf452de0">has_correct_level</link> (self)</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Panel_1ae1cd1999cc1aac994ff997d4743c1092">context</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Attributes inherited from <link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel">cam.ui_panels.buttons_panel.CAMButtonsPanel</link>        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a62a27293a2c27a52a2f779e92312c9b6">op</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a3991296d0c3a293ee962391d01387868">use_experimental</link></para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Panel_1acd53fb2f2f22d6bcd55426e57b0fbe4a">bl_label</link> = &quot;CAM Material Size and Position&quot;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Panel_1a659bd90ac8172b6daede839ddd5e0469">bl_idname</link> = &quot;WORLD_PT_CAM_MATERIAL&quot;</para>
+</listitem>
+            <listitem><para>int <link linkend="_classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Panel_1afb825d5692384df9bc44cbd78d146649">panel_interface_level</link> = 0</para>
+</listitem>
+            <listitem><para>dict <link linkend="_classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Panel_1a76d473a71f1d7d6e64d979c947de2abc">prop_level</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Static Public Attributes inherited from <link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel">cam.ui_panels.buttons_panel.CAMButtonsPanel</link>        <itemizedlist>
+            <listitem><para>str <link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a875a6b4e703be8c259b1d750426c76ad">bl_space_type</link> = &apos;PROPERTIES&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a9763fc8e0e8a24f2f6f4ab050829c6a2">bl_region_type</link> = &apos;WINDOW&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a5da786aaf2c38c096f23a7f504866537">bl_context</link> = &quot;render&quot;</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a7c1ca8db6e75af2657e5658f7e3d7219">always_show_panel</link> = False</para>
+</listitem>
+            <listitem><para>dict <link linkend="_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel_1a0864a41721ef5200ecbbf340a1f7d678">COMPAT_ENGINES</link> = {&apos;CNCCAM_RENDER&apos;}</para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Panel_1aea7c8d9b6f584d2bf8a294cfa268dd85"/><section>
+    <title>draw()</title>
+<indexterm><primary>draw</primary><secondary>cam.ui_panels.material.CAM_MATERIAL_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.material.CAM_MATERIAL_Panel</primary><secondary>draw</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.material.CAM_MATERIAL_Panel.draw ( self,  context)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Panel_1a0adea8656cf485cbf62c14a48cebbcd0"/><section>
+    <title>draw_axis_alignment()</title>
+<indexterm><primary>draw_axis_alignment</primary><secondary>cam.ui_panels.material.CAM_MATERIAL_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.material.CAM_MATERIAL_Panel</primary><secondary>draw_axis_alignment</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.material.CAM_MATERIAL_Panel.draw_axis_alignment ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Panel_a0adea8656cf485cbf62c14a48cebbcd0_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Panel_1a340912e256404e190d15f10b83ca83c4"/><section>
+    <title>draw_estimate_from_image()</title>
+<indexterm><primary>draw_estimate_from_image</primary><secondary>cam.ui_panels.material.CAM_MATERIAL_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.material.CAM_MATERIAL_Panel</primary><secondary>draw_estimate_from_image</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.material.CAM_MATERIAL_Panel.draw_estimate_from_image ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Panel_a340912e256404e190d15f10b83ca83c4_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Panel_1a08b5a69206e7fdae8ecc766e501f4f24"/><section>
+    <title>draw_estimate_from_object()</title>
+<indexterm><primary>draw_estimate_from_object</primary><secondary>cam.ui_panels.material.CAM_MATERIAL_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.material.CAM_MATERIAL_Panel</primary><secondary>draw_estimate_from_object</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.material.CAM_MATERIAL_Panel.draw_estimate_from_object ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Panel_a08b5a69206e7fdae8ecc766e501f4f24_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Panel_1a659bd90ac8172b6daede839ddd5e0469"/><section>
+    <title>bl_idname</title>
+<indexterm><primary>bl_idname</primary><secondary>cam.ui_panels.material.CAM_MATERIAL_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.material.CAM_MATERIAL_Panel</primary><secondary>bl_idname</secondary></indexterm>
+<para><computeroutput>str cam.ui_panels.material.CAM_MATERIAL_Panel.bl_idname = &quot;WORLD_PT_CAM_MATERIAL&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Panel_1acd53fb2f2f22d6bcd55426e57b0fbe4a"/><section>
+    <title>bl_label</title>
+<indexterm><primary>bl_label</primary><secondary>cam.ui_panels.material.CAM_MATERIAL_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.material.CAM_MATERIAL_Panel</primary><secondary>bl_label</secondary></indexterm>
+<para><computeroutput>str cam.ui_panels.material.CAM_MATERIAL_Panel.bl_label = &quot;CAM Material Size and Position&quot;<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Panel_1ae1cd1999cc1aac994ff997d4743c1092"/><section>
+    <title>context</title>
+<indexterm><primary>context</primary><secondary>cam.ui_panels.material.CAM_MATERIAL_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.material.CAM_MATERIAL_Panel</primary><secondary>context</secondary></indexterm>
+<para><computeroutput>cam.ui_panels.material.CAM_MATERIAL_Panel.context</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Panel_1afb825d5692384df9bc44cbd78d146649"/><section>
+    <title>panel_interface_level</title>
+<indexterm><primary>panel_interface_level</primary><secondary>cam.ui_panels.material.CAM_MATERIAL_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.material.CAM_MATERIAL_Panel</primary><secondary>panel_interface_level</secondary></indexterm>
+<para><computeroutput>int cam.ui_panels.material.CAM_MATERIAL_Panel.panel_interface_level = 0<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1material_1_1CAM__MATERIAL__Panel_1a76d473a71f1d7d6e64d979c947de2abc"/><section>
+    <title>prop_level</title>
+<indexterm><primary>prop_level</primary><secondary>cam.ui_panels.material.CAM_MATERIAL_Panel</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.material.CAM_MATERIAL_Panel</primary><secondary>prop_level</secondary></indexterm>
+<para><computeroutput>dict cam.ui_panels.material.CAM_MATERIAL_Panel.prop_level<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">=&#32;&#32;{
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;draw_estimate_from_image&apos;</emphasis>:&#32;0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;draw_estimate_from_object&apos;</emphasis>:&#32;1,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;draw_axis_alignment&apos;</emphasis>:&#32;0
+&#32;&#32;&#32;&#32;}
+</programlisting></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/<link linkend="_material_8py">material.py</link></section>
+</section>

@@ -1,0 +1,292 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1preferences_1_1CamAddonPreferences" kind="class" language="Python" prot="public">
+    <compoundname>cam::preferences::CamAddonPreferences</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">AddonPreferences</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1preferences_1_1CamAddonPreferences_1ac1ea58fb04891aa45e9f33f7bd4d0158" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>cam.preferences.CamAddonPreferences::bl_idname</definition>
+        <argsstring></argsstring>
+        <name>bl_idname</name>
+        <qualifiedname>cam.preferences.CamAddonPreferences.bl_idname</qualifiedname>
+        <initializer>=  __package__</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preferences.py" line="20" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preferences.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1preferences_1_1CamAddonPreferences_1a1b6bbc7852af1850d18ce91ca35a3d76" prot="public" static="yes" mutable="no">
+        <type>BoolProperty</type>
+        <definition>BoolProperty cam.preferences.CamAddonPreferences::op_preset_update</definition>
+        <argsstring></argsstring>
+        <name>op_preset_update</name>
+        <qualifiedname>cam.preferences.CamAddonPreferences.op_preset_update</qualifiedname>
+        <initializer>(
+        name=&quot;Have the Operation Presets Been Updated&quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preferences.py" line="22" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preferences.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1preferences_1_1CamAddonPreferences_1ace4aa38a2b592482500f958862bab6ad" prot="public" static="yes" mutable="no">
+        <type>BoolProperty</type>
+        <definition>BoolProperty cam.preferences.CamAddonPreferences::experimental</definition>
+        <argsstring></argsstring>
+        <name>experimental</name>
+        <qualifiedname>cam.preferences.CamAddonPreferences.experimental</qualifiedname>
+        <initializer>(
+        name=&quot;Show Experimental Features&quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preferences.py" line="27" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preferences.py" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1preferences_1_1CamAddonPreferences_1a43d758ebc47cf17e7cbe706bb41b307d" prot="public" static="yes" mutable="no">
+        <type>StringProperty</type>
+        <definition>StringProperty cam.preferences.CamAddonPreferences::update_source</definition>
+        <argsstring></argsstring>
+        <name>update_source</name>
+        <qualifiedname>cam.preferences.CamAddonPreferences.update_source</qualifiedname>
+        <initializer>(
+        name=&quot;Source of Updates for the Addon&quot;,
+        description=&quot;This can be either a github repo link in which case &quot;
+        &quot;it will download the latest release on there, &quot;
+        &quot;or an api link like &quot;
+        &quot;https://api.github.com/repos/&lt;author&gt;/blendercam/commits&quot;
+        &quot; to get from a github repository&quot;,
+        default=&quot;https://github.com/pppalain/blendercam&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preferences.py" line="32" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preferences.py" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1preferences_1_1CamAddonPreferences_1a35b937154b3186631b0e76daff097e9a" prot="public" static="yes" mutable="no">
+        <type>IntProperty</type>
+        <definition>IntProperty cam.preferences.CamAddonPreferences::last_update_check</definition>
+        <argsstring></argsstring>
+        <name>last_update_check</name>
+        <qualifiedname>cam.preferences.CamAddonPreferences.last_update_check</qualifiedname>
+        <initializer>(
+        name=&quot;Last Update Time&quot;,
+        default=0,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preferences.py" line="42" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preferences.py" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1preferences_1_1CamAddonPreferences_1a8e39301938c0278caac753e48b6bbbc0" prot="public" static="yes" mutable="no">
+        <type>StringProperty</type>
+        <definition>StringProperty cam.preferences.CamAddonPreferences::last_commit_hash</definition>
+        <argsstring></argsstring>
+        <name>last_commit_hash</name>
+        <qualifiedname>cam.preferences.CamAddonPreferences.last_commit_hash</qualifiedname>
+        <initializer>(
+        name=&quot;Hash of Last Commit from Updater&quot;,
+        default=&quot;&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preferences.py" line="47" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preferences.py" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1preferences_1_1CamAddonPreferences_1ae44f9012032a9335c1bc6b89a2d1642f" prot="public" static="yes" mutable="no">
+        <type>BoolProperty</type>
+        <definition>BoolProperty cam.preferences.CamAddonPreferences::just_updated</definition>
+        <argsstring></argsstring>
+        <name>just_updated</name>
+        <qualifiedname>cam.preferences.CamAddonPreferences.just_updated</qualifiedname>
+        <initializer>(
+        name=&quot;Set to True on Update or Initial Install&quot;,
+        default=True,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preferences.py" line="52" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preferences.py" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1preferences_1_1CamAddonPreferences_1acb3ab0cee053c604aa0323b56e1d4220" prot="public" static="yes" mutable="no">
+        <type>StringProperty</type>
+        <definition>StringProperty cam.preferences.CamAddonPreferences::new_version_available</definition>
+        <argsstring></argsstring>
+        <name>new_version_available</name>
+        <qualifiedname>cam.preferences.CamAddonPreferences.new_version_available</qualifiedname>
+        <initializer>(
+        name=&quot;Set to New Version Name if One Is Found&quot;,
+        default=&quot;&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preferences.py" line="57" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preferences.py" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1preferences_1_1CamAddonPreferences_1a6a98bab8ac5e536e3e0717443d2a75f5" prot="public" static="yes" mutable="no">
+        <type>EnumProperty</type>
+        <definition>EnumProperty cam.preferences.CamAddonPreferences::default_interface_level</definition>
+        <argsstring></argsstring>
+        <name>default_interface_level</name>
+        <qualifiedname>cam.preferences.CamAddonPreferences.default_interface_level</qualifiedname>
+        <initializer>(
+        name=&quot;Interface Level in New File&quot;,
+        description=&quot;Choose visible options&quot;,
+        items=[
+            (&quot;0&quot;, &quot;Basic&quot;, &quot;Only show Essential Options&quot;),
+            (&quot;1&quot;, &quot;Advanced&quot;, &quot;Show Advanced Options&quot;),
+            (&quot;2&quot;, &quot;Complete&quot;, &quot;Show All Options&quot;),
+            (&quot;3&quot;, &quot;Experimental&quot;, &quot;Show Experimental Options&quot;),
+        ],
+        default=&quot;3&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preferences.py" line="62" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preferences.py" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1preferences_1_1CamAddonPreferences_1ace97db4c7b0a98538f4ee17481325714" prot="public" static="yes" mutable="no">
+        <type>StringProperty</type>
+        <definition>StringProperty cam.preferences.CamAddonPreferences::default_machine_preset</definition>
+        <argsstring></argsstring>
+        <name>default_machine_preset</name>
+        <qualifiedname>cam.preferences.CamAddonPreferences.default_machine_preset</qualifiedname>
+        <initializer>(
+        name=&quot;Machine Preset in New File&quot;,
+        description=&quot;So that machine preset choice persists between files&quot;,
+        default=&quot;&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preferences.py" line="74" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preferences.py" bodystart="74" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcam_1_1preferences_1_1CamAddonPreferences_1abb7df7d3f24ffdc38e070271ac54a800" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.preferences.CamAddonPreferences.draw</definition>
+        <argsstring>(self, context)</argsstring>
+        <name>draw</name>
+        <qualifiedname>cam.preferences.CamAddonPreferences.draw</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preferences.py" line="80" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preferences.py" bodystart="80" bodyend="115"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AddonPreferences</label>
+      </node>
+      <node id="1">
+        <label>cam.preferences.CamAddonPreferences</label>
+        <link refid="classcam_1_1preferences_1_1CamAddonPreferences"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>BoolProperty</label>
+      </node>
+      <node id="6">
+        <label>EnumProperty</label>
+      </node>
+      <node id="5">
+        <label>IntProperty</label>
+      </node>
+      <node id="4">
+        <label>StringProperty</label>
+      </node>
+      <node id="2">
+        <label>AddonPreferences</label>
+      </node>
+      <node id="1">
+        <label>cam.preferences.CamAddonPreferences</label>
+        <link refid="classcam_1_1preferences_1_1CamAddonPreferences"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+experimental</edgelabel>
+          <edgelabel>+just_updated</edgelabel>
+          <edgelabel>+op_preset_update</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+default_machine_preset</edgelabel>
+          <edgelabel>+last_commit_hash</edgelabel>
+          <edgelabel>+new_version_available</edgelabel>
+          <edgelabel>+update_source</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+last_update_check</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>+default_interface_level</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preferences.py" line="17" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/preferences.py" bodystart="17" bodyend="115"/>
+    <listofallmembers>
+      <member refid="classcam_1_1preferences_1_1CamAddonPreferences_1ac1ea58fb04891aa45e9f33f7bd4d0158" prot="public" virt="non-virtual"><scope>cam::preferences::CamAddonPreferences</scope><name>bl_idname</name></member>
+      <member refid="classcam_1_1preferences_1_1CamAddonPreferences_1a6a98bab8ac5e536e3e0717443d2a75f5" prot="public" virt="non-virtual"><scope>cam::preferences::CamAddonPreferences</scope><name>default_interface_level</name></member>
+      <member refid="classcam_1_1preferences_1_1CamAddonPreferences_1ace97db4c7b0a98538f4ee17481325714" prot="public" virt="non-virtual"><scope>cam::preferences::CamAddonPreferences</scope><name>default_machine_preset</name></member>
+      <member refid="classcam_1_1preferences_1_1CamAddonPreferences_1abb7df7d3f24ffdc38e070271ac54a800" prot="public" virt="non-virtual"><scope>cam::preferences::CamAddonPreferences</scope><name>draw</name></member>
+      <member refid="classcam_1_1preferences_1_1CamAddonPreferences_1ace4aa38a2b592482500f958862bab6ad" prot="public" virt="non-virtual"><scope>cam::preferences::CamAddonPreferences</scope><name>experimental</name></member>
+      <member refid="classcam_1_1preferences_1_1CamAddonPreferences_1ae44f9012032a9335c1bc6b89a2d1642f" prot="public" virt="non-virtual"><scope>cam::preferences::CamAddonPreferences</scope><name>just_updated</name></member>
+      <member refid="classcam_1_1preferences_1_1CamAddonPreferences_1a8e39301938c0278caac753e48b6bbbc0" prot="public" virt="non-virtual"><scope>cam::preferences::CamAddonPreferences</scope><name>last_commit_hash</name></member>
+      <member refid="classcam_1_1preferences_1_1CamAddonPreferences_1a35b937154b3186631b0e76daff097e9a" prot="public" virt="non-virtual"><scope>cam::preferences::CamAddonPreferences</scope><name>last_update_check</name></member>
+      <member refid="classcam_1_1preferences_1_1CamAddonPreferences_1acb3ab0cee053c604aa0323b56e1d4220" prot="public" virt="non-virtual"><scope>cam::preferences::CamAddonPreferences</scope><name>new_version_available</name></member>
+      <member refid="classcam_1_1preferences_1_1CamAddonPreferences_1a1b6bbc7852af1850d18ce91ca35a3d76" prot="public" virt="non-virtual"><scope>cam::preferences::CamAddonPreferences</scope><name>op_preset_update</name></member>
+      <member refid="classcam_1_1preferences_1_1CamAddonPreferences_1a43d758ebc47cf17e7cbe706bb41b307d" prot="public" virt="non-virtual"><scope>cam::preferences::CamAddonPreferences</scope><name>update_source</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

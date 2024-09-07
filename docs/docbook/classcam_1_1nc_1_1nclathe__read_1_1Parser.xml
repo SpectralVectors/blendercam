@@ -1,0 +1,496 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1nc_1_1nclathe__read_1_1Parser" xml:lang="en-US">
+<title>cam.nc.nclathe_read.Parser Class Reference</title>
+<indexterm><primary>cam.nc.nclathe_read.Parser</primary></indexterm>
+<para>
+
+<para><link linkend="_nc__read_8py">nc_read.py</link> </para>
+ 
+</para>
+Collaboration diagram for cam.nc.nclathe_read.Parser:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nclathe__read_1_1Parser__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1ac001a587e4d07cf40673beb8af4ea21b">__init__</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1a926ee43bcd9086f2e654f7693b16a248">files_open</link> (self, name, oname=None)</para>
+
+<para>Internals. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1ad52a01638c6a6554e7129a75b2185e05">files_close</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1ac02b49722711d004ae445e3243bd0575">readline</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1ab5ea283b461b57e48c8d5b0ad0a45694">write</link> (self, s)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1a0790ecc5971df0039cc134af64236b45">begin_ncblock</link> (self)</para>
+
+<para>Xml. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1afb071d7659ccf9787780f4c72b05b7e6">end_ncblock</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1a7463a4e4f789700b8b418776001daf30">add_text</link> (self, s, col=None, cdata=False)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1a399b6c5953dedca1aaf21ecb3e64d17e">set_mode</link> (self, units=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1aa02859fa39229c323b28abe5a4fd06a2">set_tool</link> (self, number=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1a33c385668a944d4b5013c8cae753fda9">begin_path</link> (self, col=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1a92a9288e10124488c6b458a347afa9b7">end_path</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1a8e66fae75c57b080570f2893d2b8b4ba">add_line</link> (self, x=None, y=None, z=None, a=None, b=None, c=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1a5c7031130f1cb6a9133aab8104dd519c">add_lathe_increment_line</link> (self, u=None, w=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1af831cf56257fb77f7e451e315631e4f5">add_arc</link> (self, x=None, y=None, z=None, i=None, j=None, k=None, r=None, d=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1a24da4349bbefa64e9019dc05bd33df6f">incremental</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1a09fc6a35237313013c1246a36b3ab471">absolute</link> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1ae87176be89baadf38d5f696b11d51939">currentx</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1adc3ae12a2689558cbe8012c2b3cf3baf">currenty</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1a897bc2df0eb048c39c2400f2e592950a">currentz</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1a1fb12b6cdb07d47a4dfc93aba3c94bf6">absolute_flag</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1a95e6cf22e6f848678f38fef891834fa8">file_in</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1a196a44cff966dc63201ec5bdf3d901f1">file_out</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1a1be7396a09b47da73eff8acda68893df">line</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><link linkend="_nc__read_8py">nc_read.py</link> </para>
+
+
+
+<para>Base class for NC code parsing</para>
+
+<para>Hirutso Enni, 2009-01-13 </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1ac001a587e4d07cf40673beb8af4ea21b"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>cam.nc.nclathe_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.nclathe_read.Parser</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>cam.nc.nclathe_read.Parser.__init__ ( self)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1a09fc6a35237313013c1246a36b3ab471"/><section>
+    <title>absolute()</title>
+<indexterm><primary>absolute</primary><secondary>cam.nc.nclathe_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.nclathe_read.Parser</primary><secondary>absolute</secondary></indexterm>
+<para><computeroutput>cam.nc.nclathe_read.Parser.absolute ( self)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nclathe__read_1_1Parser_a09fc6a35237313013c1246a36b3ab471_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1af831cf56257fb77f7e451e315631e4f5"/><section>
+    <title>add_arc()</title>
+<indexterm><primary>add_arc</primary><secondary>cam.nc.nclathe_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.nclathe_read.Parser</primary><secondary>add_arc</secondary></indexterm>
+<para><computeroutput>cam.nc.nclathe_read.Parser.add_arc ( self,  x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+,  i = <computeroutput>None</computeroutput>
+,  j = <computeroutput>None</computeroutput>
+,  k = <computeroutput>None</computeroutput>
+,  r = <computeroutput>None</computeroutput>
+,  d = <computeroutput>None</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nclathe__read_1_1Parser_af831cf56257fb77f7e451e315631e4f5_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nclathe__read_1_1Parser_af831cf56257fb77f7e451e315631e4f5_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1a5c7031130f1cb6a9133aab8104dd519c"/><section>
+    <title>add_lathe_increment_line()</title>
+<indexterm><primary>add_lathe_increment_line</primary><secondary>cam.nc.nclathe_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.nclathe_read.Parser</primary><secondary>add_lathe_increment_line</secondary></indexterm>
+<para><computeroutput>cam.nc.nclathe_read.Parser.add_lathe_increment_line ( self,  u = <computeroutput>None</computeroutput>
+,  w = <computeroutput>None</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nclathe__read_1_1Parser_a5c7031130f1cb6a9133aab8104dd519c_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nclathe__read_1_1Parser_a5c7031130f1cb6a9133aab8104dd519c_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1a8e66fae75c57b080570f2893d2b8b4ba"/><section>
+    <title>add_line()</title>
+<indexterm><primary>add_line</primary><secondary>cam.nc.nclathe_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.nclathe_read.Parser</primary><secondary>add_line</secondary></indexterm>
+<para><computeroutput>cam.nc.nclathe_read.Parser.add_line ( self,  x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+,  a = <computeroutput>None</computeroutput>
+,  b = <computeroutput>None</computeroutput>
+,  c = <computeroutput>None</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nclathe__read_1_1Parser_a8e66fae75c57b080570f2893d2b8b4ba_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nclathe__read_1_1Parser_a8e66fae75c57b080570f2893d2b8b4ba_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1a7463a4e4f789700b8b418776001daf30"/><section>
+    <title>add_text()</title>
+<indexterm><primary>add_text</primary><secondary>cam.nc.nclathe_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.nclathe_read.Parser</primary><secondary>add_text</secondary></indexterm>
+<para><computeroutput>cam.nc.nclathe_read.Parser.add_text ( self,  s,  col = <computeroutput>None</computeroutput>
+,  cdata = <computeroutput>False</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nclathe__read_1_1Parser_a7463a4e4f789700b8b418776001daf30_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nclathe__read_1_1Parser_a7463a4e4f789700b8b418776001daf30_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1a0790ecc5971df0039cc134af64236b45"/><section>
+    <title>begin_ncblock()</title>
+<indexterm><primary>begin_ncblock</primary><secondary>cam.nc.nclathe_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.nclathe_read.Parser</primary><secondary>begin_ncblock</secondary></indexterm>
+<para><computeroutput>cam.nc.nclathe_read.Parser.begin_ncblock ( self)</computeroutput></para><para>
+
+<para>Xml. </para>
+</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nclathe__read_1_1Parser_a0790ecc5971df0039cc134af64236b45_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nclathe__read_1_1Parser_a0790ecc5971df0039cc134af64236b45_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1a33c385668a944d4b5013c8cae753fda9"/><section>
+    <title>begin_path()</title>
+<indexterm><primary>begin_path</primary><secondary>cam.nc.nclathe_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.nclathe_read.Parser</primary><secondary>begin_path</secondary></indexterm>
+<para><computeroutput>cam.nc.nclathe_read.Parser.begin_path ( self,  col = <computeroutput>None</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nclathe__read_1_1Parser_a33c385668a944d4b5013c8cae753fda9_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nclathe__read_1_1Parser_a33c385668a944d4b5013c8cae753fda9_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1afb071d7659ccf9787780f4c72b05b7e6"/><section>
+    <title>end_ncblock()</title>
+<indexterm><primary>end_ncblock</primary><secondary>cam.nc.nclathe_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.nclathe_read.Parser</primary><secondary>end_ncblock</secondary></indexterm>
+<para><computeroutput>cam.nc.nclathe_read.Parser.end_ncblock ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nclathe__read_1_1Parser_afb071d7659ccf9787780f4c72b05b7e6_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nclathe__read_1_1Parser_afb071d7659ccf9787780f4c72b05b7e6_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1a92a9288e10124488c6b458a347afa9b7"/><section>
+    <title>end_path()</title>
+<indexterm><primary>end_path</primary><secondary>cam.nc.nclathe_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.nclathe_read.Parser</primary><secondary>end_path</secondary></indexterm>
+<para><computeroutput>cam.nc.nclathe_read.Parser.end_path ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nclathe__read_1_1Parser_a92a9288e10124488c6b458a347afa9b7_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nclathe__read_1_1Parser_a92a9288e10124488c6b458a347afa9b7_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1ad52a01638c6a6554e7129a75b2185e05"/><section>
+    <title>files_close()</title>
+<indexterm><primary>files_close</primary><secondary>cam.nc.nclathe_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.nclathe_read.Parser</primary><secondary>files_close</secondary></indexterm>
+<para><computeroutput>cam.nc.nclathe_read.Parser.files_close ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nclathe__read_1_1Parser_ad52a01638c6a6554e7129a75b2185e05_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nclathe__read_1_1Parser_ad52a01638c6a6554e7129a75b2185e05_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1a926ee43bcd9086f2e654f7693b16a248"/><section>
+    <title>files_open()</title>
+<indexterm><primary>files_open</primary><secondary>cam.nc.nclathe_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.nclathe_read.Parser</primary><secondary>files_open</secondary></indexterm>
+<para><computeroutput>cam.nc.nclathe_read.Parser.files_open ( self,  name,  oname = <computeroutput>None</computeroutput>
+)</computeroutput></para><para>
+
+<para>Internals. </para>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nclathe__read_1_1Parser_a926ee43bcd9086f2e654f7693b16a248_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1a24da4349bbefa64e9019dc05bd33df6f"/><section>
+    <title>incremental()</title>
+<indexterm><primary>incremental</primary><secondary>cam.nc.nclathe_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.nclathe_read.Parser</primary><secondary>incremental</secondary></indexterm>
+<para><computeroutput>cam.nc.nclathe_read.Parser.incremental ( self)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nclathe__read_1_1Parser_a24da4349bbefa64e9019dc05bd33df6f_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1ac02b49722711d004ae445e3243bd0575"/><section>
+    <title>readline()</title>
+<indexterm><primary>readline</primary><secondary>cam.nc.nclathe_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.nclathe_read.Parser</primary><secondary>readline</secondary></indexterm>
+<para><computeroutput>cam.nc.nclathe_read.Parser.readline ( self)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nclathe__read_1_1Parser_ac02b49722711d004ae445e3243bd0575_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1a399b6c5953dedca1aaf21ecb3e64d17e"/><section>
+    <title>set_mode()</title>
+<indexterm><primary>set_mode</primary><secondary>cam.nc.nclathe_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.nclathe_read.Parser</primary><secondary>set_mode</secondary></indexterm>
+<para><computeroutput>cam.nc.nclathe_read.Parser.set_mode ( self,  units = <computeroutput>None</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nclathe__read_1_1Parser_a399b6c5953dedca1aaf21ecb3e64d17e_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nclathe__read_1_1Parser_a399b6c5953dedca1aaf21ecb3e64d17e_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1aa02859fa39229c323b28abe5a4fd06a2"/><section>
+    <title>set_tool()</title>
+<indexterm><primary>set_tool</primary><secondary>cam.nc.nclathe_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.nclathe_read.Parser</primary><secondary>set_tool</secondary></indexterm>
+<para><computeroutput>cam.nc.nclathe_read.Parser.set_tool ( self,  number = <computeroutput>None</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nclathe__read_1_1Parser_aa02859fa39229c323b28abe5a4fd06a2_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nclathe__read_1_1Parser_aa02859fa39229c323b28abe5a4fd06a2_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1ab5ea283b461b57e48c8d5b0ad0a45694"/><section>
+    <title>write()</title>
+<indexterm><primary>write</primary><secondary>cam.nc.nclathe_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.nclathe_read.Parser</primary><secondary>write</secondary></indexterm>
+<para><computeroutput>cam.nc.nclathe_read.Parser.write ( self,  s)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1nclathe__read_1_1Parser_ab5ea283b461b57e48c8d5b0ad0a45694_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1a1fb12b6cdb07d47a4dfc93aba3c94bf6"/><section>
+    <title>absolute_flag</title>
+<indexterm><primary>absolute_flag</primary><secondary>cam.nc.nclathe_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.nclathe_read.Parser</primary><secondary>absolute_flag</secondary></indexterm>
+<para><computeroutput>cam.nc.nclathe_read.Parser.absolute_flag</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1ae87176be89baadf38d5f696b11d51939"/><section>
+    <title>currentx</title>
+<indexterm><primary>currentx</primary><secondary>cam.nc.nclathe_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.nclathe_read.Parser</primary><secondary>currentx</secondary></indexterm>
+<para><computeroutput>cam.nc.nclathe_read.Parser.currentx</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1adc3ae12a2689558cbe8012c2b3cf3baf"/><section>
+    <title>currenty</title>
+<indexterm><primary>currenty</primary><secondary>cam.nc.nclathe_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.nclathe_read.Parser</primary><secondary>currenty</secondary></indexterm>
+<para><computeroutput>cam.nc.nclathe_read.Parser.currenty</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1a897bc2df0eb048c39c2400f2e592950a"/><section>
+    <title>currentz</title>
+<indexterm><primary>currentz</primary><secondary>cam.nc.nclathe_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.nclathe_read.Parser</primary><secondary>currentz</secondary></indexterm>
+<para><computeroutput>cam.nc.nclathe_read.Parser.currentz</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1a95e6cf22e6f848678f38fef891834fa8"/><section>
+    <title>file_in</title>
+<indexterm><primary>file_in</primary><secondary>cam.nc.nclathe_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.nclathe_read.Parser</primary><secondary>file_in</secondary></indexterm>
+<para><computeroutput>cam.nc.nclathe_read.Parser.file_in</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1a196a44cff966dc63201ec5bdf3d901f1"/><section>
+    <title>file_out</title>
+<indexterm><primary>file_out</primary><secondary>cam.nc.nclathe_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.nclathe_read.Parser</primary><secondary>file_out</secondary></indexterm>
+<para><computeroutput>cam.nc.nclathe_read.Parser.file_out</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1nclathe__read_1_1Parser_1a1be7396a09b47da73eff8acda68893df"/><section>
+    <title>line</title>
+<indexterm><primary>line</primary><secondary>cam.nc.nclathe_read.Parser</secondary></indexterm>
+<indexterm><primary>cam.nc.nclathe_read.Parser</primary><secondary>line</secondary></indexterm>
+<para><computeroutput>cam.nc.nclathe_read.Parser.line</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/<link linkend="_nclathe__read_8py">nclathe_read.py</link></section>
+</section>

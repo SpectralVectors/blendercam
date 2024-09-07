@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1ops_1_1CamOperationMove" kind="class" language="Python" prot="public">
+    <compoundname>cam::ops::CamOperationMove</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Operator</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1ops_1_1CamOperationMove_1a8fe6be663126540809688734c10e9d6f" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.ops.CamOperationMove::bl_idname</definition>
+        <argsstring></argsstring>
+        <name>bl_idname</name>
+        <qualifiedname>cam.ops.CamOperationMove.bl_idname</qualifiedname>
+        <initializer>=  &quot;scene.cam_operation_move&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="732" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="732" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ops_1_1CamOperationMove_1a7aa71afbd7e3fd8b1ce22f4807d510b6" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.ops.CamOperationMove::bl_label</definition>
+        <argsstring></argsstring>
+        <name>bl_label</name>
+        <qualifiedname>cam.ops.CamOperationMove.bl_label</qualifiedname>
+        <initializer>=  &quot;Move CAM Operation in List&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="733" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="733" bodyend="-1"/>
+        <referencedby refid="classcam_1_1preset__managers_1_1CAM__MACHINE__MT__presets_1af95f7812d2952b26a26809ab923dac09" compoundref="preset__managers_8py" startline="28" endline="38">cam.preset_managers.CAM_MACHINE_MT_presets.post_cb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ops_1_1CamOperationMove_1a15e168b638531fd88cbbf9d251de4be1" prot="public" static="yes" mutable="no">
+        <type>dict</type>
+        <definition>dict cam.ops.CamOperationMove::bl_options</definition>
+        <argsstring></argsstring>
+        <name>bl_options</name>
+        <qualifiedname>cam.ops.CamOperationMove.bl_options</qualifiedname>
+        <initializer>=  {&apos;REGISTER&apos;, &apos;UNDO&apos;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="734" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="734" bodyend="-1"/>
+        <referencedby refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a9628cbca8e69ec75b2337171a02bf428" compoundref="async__op_8py" startline="32" endline="59">cam.async_op.AsyncOperatorMixin.modal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1ops_1_1CamOperationMove_1af37af83f8e88c25696ba29fb8b35abd5" prot="public" static="yes" mutable="no">
+        <type>EnumProperty</type>
+        <definition>EnumProperty cam.ops.CamOperationMove::direction</definition>
+        <argsstring></argsstring>
+        <name>direction</name>
+        <qualifiedname>cam.ops.CamOperationMove.direction</qualifiedname>
+        <initializer>(
+        name=&apos;Direction&apos;,
+        items=(
+            (&apos;UP&apos;, &apos;Up&apos;, &apos;&apos;),
+            (&apos;DOWN&apos;, &apos;Down&apos;, &apos;&apos;)
+        ),
+        description=&apos;Direction&apos;,
+        default=&apos;DOWN&apos;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="736" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="736" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcam_1_1ops_1_1CamOperationMove_1a3a53f1038028bebcb370bcdf109e5135" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.ops.CamOperationMove::direction</definition>
+        <argsstring></argsstring>
+        <name>direction</name>
+        <qualifiedname>cam.ops.CamOperationMove.direction</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="754" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="754" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcam_1_1ops_1_1CamOperationMove_1ab1b0864a1f23ad480ba6cad5c83f47c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.ops.CamOperationMove.poll</definition>
+        <argsstring>(cls, context)</argsstring>
+        <name>poll</name>
+        <qualifiedname>cam.ops.CamOperationMove.poll</qualifiedname>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="747" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="747" bodyend="749"/>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1ops_1_1CamOperationMove_1a7d8c248ef5644c42ae1339fb94cea58b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.ops.CamOperationMove.execute</definition>
+        <argsstring>(self, context)</argsstring>
+        <name>execute</name>
+        <qualifiedname>cam.ops.CamOperationMove.execute</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="750" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="750" bodyend="766"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Move CAM Operation</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.ops.CamOperationMove</label>
+        <link refid="classcam_1_1ops_1_1CamOperationMove"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>EnumProperty</label>
+      </node>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.ops.CamOperationMove</label>
+        <link refid="classcam_1_1ops_1_1CamOperationMove"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+bl_idname</edgelabel>
+          <edgelabel>+bl_label</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+bl_options</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+direction</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dict</label>
+      </node>
+      <node id="3">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" line="730" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ops.py" bodystart="730" bodyend="766"/>
+    <listofallmembers>
+      <member refid="classcam_1_1ops_1_1CamOperationMove_1a8fe6be663126540809688734c10e9d6f" prot="public" virt="non-virtual"><scope>cam::ops::CamOperationMove</scope><name>bl_idname</name></member>
+      <member refid="classcam_1_1ops_1_1CamOperationMove_1a7aa71afbd7e3fd8b1ce22f4807d510b6" prot="public" virt="non-virtual"><scope>cam::ops::CamOperationMove</scope><name>bl_label</name></member>
+      <member refid="classcam_1_1ops_1_1CamOperationMove_1a15e168b638531fd88cbbf9d251de4be1" prot="public" virt="non-virtual"><scope>cam::ops::CamOperationMove</scope><name>bl_options</name></member>
+      <member refid="classcam_1_1ops_1_1CamOperationMove_1af37af83f8e88c25696ba29fb8b35abd5" prot="public" virt="non-virtual"><scope>cam::ops::CamOperationMove</scope><name>direction</name></member>
+      <member refid="classcam_1_1ops_1_1CamOperationMove_1a3a53f1038028bebcb370bcdf109e5135" prot="public" virt="non-virtual"><scope>cam::ops::CamOperationMove</scope><name>direction</name></member>
+      <member refid="classcam_1_1ops_1_1CamOperationMove_1a7d8c248ef5644c42ae1339fb94cea58b" prot="public" virt="non-virtual"><scope>cam::ops::CamOperationMove</scope><name>execute</name></member>
+      <member refid="classcam_1_1ops_1_1CamOperationMove_1ab1b0864a1f23ad480ba6cad5c83f47c3" prot="public" virt="non-virtual"><scope>cam::ops::CamOperationMove</scope><name>poll</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1engine_1_1CNCCAM__ENGINE" kind="class" language="Python" prot="public">
+    <compoundname>cam::engine::CNCCAM_ENGINE</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">RenderEngine</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1engine_1_1CNCCAM__ENGINE_1a7de22b3261f6b4b76b54519c568f0e10" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.engine.CNCCAM_ENGINE::bl_idname</definition>
+        <argsstring></argsstring>
+        <name>bl_idname</name>
+        <qualifiedname>cam.engine.CNCCAM_ENGINE.bl_idname</qualifiedname>
+        <initializer>=  &quot;CNCCAM_RENDER&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/engine.py" line="32" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/engine.py" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1engine_1_1CNCCAM__ENGINE_1ab406f5031a02c1fdc39eb3cd9c250ef3" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.engine.CNCCAM_ENGINE::bl_label</definition>
+        <argsstring></argsstring>
+        <name>bl_label</name>
+        <qualifiedname>cam.engine.CNCCAM_ENGINE.bl_label</qualifiedname>
+        <initializer>=  &quot;CNC CAM&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/engine.py" line="33" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/engine.py" bodystart="33" bodyend="-1"/>
+        <referencedby refid="classcam_1_1preset__managers_1_1CAM__MACHINE__MT__presets_1af95f7812d2952b26a26809ab923dac09" compoundref="preset__managers_8py" startline="28" endline="38">cam.preset_managers.CAM_MACHINE_MT_presets.post_cb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1engine_1_1CNCCAM__ENGINE_1ac4ea9fe72e7bcfc731e7a1ae9a7ae834" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool cam.engine.CNCCAM_ENGINE::bl_use_eevee_viewport</definition>
+        <argsstring></argsstring>
+        <name>bl_use_eevee_viewport</name>
+        <qualifiedname>cam.engine.CNCCAM_ENGINE.bl_use_eevee_viewport</qualifiedname>
+        <initializer>=  True</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/engine.py" line="34" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/engine.py" bodystart="34" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>RenderEngine</label>
+      </node>
+      <node id="1">
+        <label>cam.engine.CNCCAM_ENGINE</label>
+        <link refid="classcam_1_1engine_1_1CNCCAM__ENGINE"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>bool</label>
+      </node>
+      <node id="2">
+        <label>RenderEngine</label>
+      </node>
+      <node id="1">
+        <label>cam.engine.CNCCAM_ENGINE</label>
+        <link refid="classcam_1_1engine_1_1CNCCAM__ENGINE"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+bl_idname</edgelabel>
+          <edgelabel>+bl_label</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+bl_use_eevee_viewport</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/engine.py" line="31" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/engine.py" bodystart="31" bodyend="36"/>
+    <listofallmembers>
+      <member refid="classcam_1_1engine_1_1CNCCAM__ENGINE_1a7de22b3261f6b4b76b54519c568f0e10" prot="public" virt="non-virtual"><scope>cam::engine::CNCCAM_ENGINE</scope><name>bl_idname</name></member>
+      <member refid="classcam_1_1engine_1_1CNCCAM__ENGINE_1ab406f5031a02c1fdc39eb3cd9c250ef3" prot="public" virt="non-virtual"><scope>cam::engine::CNCCAM_ENGINE</scope><name>bl_label</name></member>
+      <member refid="classcam_1_1engine_1_1CNCCAM__ENGINE_1ac4ea9fe72e7bcfc731e7a1ae9a7ae834" prot="public" virt="non-virtual"><scope>cam::engine::CNCCAM_ENGINE</scope><name>bl_use_eevee_viewport</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

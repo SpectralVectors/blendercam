@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacecam_1_1gcodeimportparser" xml:lang="en-US">
+<title>cam.gcodeimportparser Namespace Reference</title>
+<indexterm><primary>cam.gcodeimportparser</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classcam_1_1gcodeimportparser_1_1GcodeModel">GcodeModel</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classcam_1_1gcodeimportparser_1_1GcodeParser">GcodeParser</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classcam_1_1gcodeimportparser_1_1Layer">Layer</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classcam_1_1gcodeimportparser_1_1Segment">Segment</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacecam_1_1gcodeimportparser_1aa6ef446acab03d0b240ce4ba37a739c3">import_gcode</link> (context, filepath)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1gcodeimportparser_1a0079f2bbd765282c819b15b22a8dbfba">segments_to_meshdata</link> (segments)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1gcodeimportparser_1a78824264a84e441ecc7438b7f004ac36">obj_from_pydata</link> (name, verts, edges=None, close=True, collection_name=None)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacecam_1_1gcodeimportparser_1af2f94876c6227b47d87730d7ca322909">suppress</link></para>
+</listitem>
+            <listitem><para>str <link linkend="_namespacecam_1_1gcodeimportparser_1aac325098144266bd0a85ea3cd1d417c5">path</link> = &quot;test.gcode&quot;</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1gcodeimportparser_1a2496a51392df934f6ca93c535ac22ece">parser</link> = <link linkend="_classcam_1_1gcodeimportparser_1_1GcodeParser">GcodeParser</link>()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacecam_1_1gcodeimportparser_1a005ba48098fc309c42cc78c99def7a4f">model</link> = parser.parseFile(<link linkend="_namespacecam_1_1gcodeimportparser_1aac325098144266bd0a85ea3cd1d417c5">path</link>)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>BlenderCAM &apos;gcodeimportparser.py&apos;
+
+Code modified from YAGV (Yet Another G-code Viewer) - https://github.com/jonathanwin/yagv
+No license terms found in YAGV repo, will assume GNU release
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespacecam_1_1gcodeimportparser_1aa6ef446acab03d0b240ce4ba37a739c3"/><section>
+    <title>import_gcode()</title>
+<indexterm><primary>import_gcode</primary><secondary>cam.gcodeimportparser</secondary></indexterm>
+<indexterm><primary>cam.gcodeimportparser</primary><secondary>import_gcode</secondary></indexterm>
+<para><computeroutput>cam.gcodeimportparser.import_gcode ( context,  filepath)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1gcodeimportparser_1a78824264a84e441ecc7438b7f004ac36"/><section>
+    <title>obj_from_pydata()</title>
+<indexterm><primary>obj_from_pydata</primary><secondary>cam.gcodeimportparser</secondary></indexterm>
+<indexterm><primary>cam.gcodeimportparser</primary><secondary>obj_from_pydata</secondary></indexterm>
+<para><computeroutput>cam.gcodeimportparser.obj_from_pydata ( name,  verts,  edges = <computeroutput>None</computeroutput>
+,  close = <computeroutput>True</computeroutput>
+,  collection_name = <computeroutput>None</computeroutput>
+)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1gcodeimportparser_a78824264a84e441ecc7438b7f004ac36_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacecam_1_1gcodeimportparser_1a0079f2bbd765282c819b15b22a8dbfba"/><section>
+    <title>segments_to_meshdata()</title>
+<indexterm><primary>segments_to_meshdata</primary><secondary>cam.gcodeimportparser</secondary></indexterm>
+<indexterm><primary>cam.gcodeimportparser</primary><secondary>segments_to_meshdata</secondary></indexterm>
+<para><computeroutput>cam.gcodeimportparser.segments_to_meshdata ( segments)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacecam_1_1gcodeimportparser_a0079f2bbd765282c819b15b22a8dbfba_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespacecam_1_1gcodeimportparser_1a005ba48098fc309c42cc78c99def7a4f"/><section>
+    <title>model</title>
+<indexterm><primary>model</primary><secondary>cam.gcodeimportparser</secondary></indexterm>
+<indexterm><primary>cam.gcodeimportparser</primary><secondary>model</secondary></indexterm>
+<para><computeroutput>cam.gcodeimportparser.model = parser.parseFile(<link linkend="_namespacecam_1_1gcodeimportparser_1aac325098144266bd0a85ea3cd1d417c5">path</link>)</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1gcodeimportparser_1a2496a51392df934f6ca93c535ac22ece"/><section>
+    <title>parser</title>
+<indexterm><primary>parser</primary><secondary>cam.gcodeimportparser</secondary></indexterm>
+<indexterm><primary>cam.gcodeimportparser</primary><secondary>parser</secondary></indexterm>
+<para><computeroutput>cam.gcodeimportparser.parser = <link linkend="_classcam_1_1gcodeimportparser_1_1GcodeParser">GcodeParser</link>()</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1gcodeimportparser_1aac325098144266bd0a85ea3cd1d417c5"/><section>
+    <title>path</title>
+<indexterm><primary>path</primary><secondary>cam.gcodeimportparser</secondary></indexterm>
+<indexterm><primary>cam.gcodeimportparser</primary><secondary>path</secondary></indexterm>
+<para><computeroutput>str cam.gcodeimportparser.path = &quot;test.gcode&quot;</computeroutput></para></section>
+<anchor xml:id="_namespacecam_1_1gcodeimportparser_1af2f94876c6227b47d87730d7ca322909"/><section>
+    <title>suppress</title>
+<indexterm><primary>suppress</primary><secondary>cam.gcodeimportparser</secondary></indexterm>
+<indexterm><primary>cam.gcodeimportparser</primary><secondary>suppress</secondary></indexterm>
+<para><computeroutput>cam.gcodeimportparser.suppress</computeroutput></para></section>
+</section>
+</section>

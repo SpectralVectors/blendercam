@@ -1,0 +1,571 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>blendercam: cam.curvecamtools.CamCurveIntarsion Class Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">blendercam
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part --><!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('classcam_1_1curvecamtools_1_1CamCurveIntarsion.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="classcam_1_1curvecamtools_1_1CamCurveIntarsion-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">cam.curvecamtools.CamCurveIntarsion Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Inheritance diagram for cam.curvecamtools.CamCurveIntarsion:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1curvecamtools_1_1CamCurveIntarsion__inherit__graph.svg" width="226" height="464"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Collaboration diagram for cam.curvecamtools.CamCurveIntarsion:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1curvecamtools_1_1CamCurveIntarsion__coll__graph.svg" width="487" height="362"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:af77e2818b63ac1e1b04d77b5e68362c3" id="r_af77e2818b63ac1e1b04d77b5e68362c3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af77e2818b63ac1e1b04d77b5e68362c3">poll</a> (cls, context)</td></tr>
+<tr class="separator:af77e2818b63ac1e1b04d77b5e68362c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4934bdf7ccb17b0c1652455ccef9e06" id="r_af4934bdf7ccb17b0c1652455ccef9e06"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af4934bdf7ccb17b0c1652455ccef9e06">execute</a> (self, context)</td></tr>
+<tr class="separator:af4934bdf7ccb17b0c1652455ccef9e06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a617f628b8a58cf3fb7034644d2e0a225" id="r_a617f628b8a58cf3fb7034644d2e0a225"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a617f628b8a58cf3fb7034644d2e0a225">invoke</a> (self, context, event)</td></tr>
+<tr class="separator:a617f628b8a58cf3fb7034644d2e0a225"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:aa87887432c6169ccf9187c78eeeb184f" id="r_aa87887432c6169ccf9187c78eeeb184f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa87887432c6169ccf9187c78eeeb184f">perimeter_cut</a></td></tr>
+<tr class="separator:aa87887432c6169ccf9187c78eeeb184f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5b72d25b44cdebf4b696390c9751df9" id="r_af5b72d25b44cdebf4b696390c9751df9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5b72d25b44cdebf4b696390c9751df9">backlight</a></td></tr>
+<tr class="separator:af5b72d25b44cdebf4b696390c9751df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:ab8e5a138d2b5ad107b9c458359eda2ce" id="r_ab8e5a138d2b5ad107b9c458359eda2ce"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab8e5a138d2b5ad107b9c458359eda2ce">bl_idname</a> = &quot;object.curve_intarsion&quot;</td></tr>
+<tr class="separator:ab8e5a138d2b5ad107b9c458359eda2ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab16bd8dc303c1d07487f9dc7ac2f0ce8" id="r_ab16bd8dc303c1d07487f9dc7ac2f0ce8"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab16bd8dc303c1d07487f9dc7ac2f0ce8">bl_label</a> = &quot;Intarsion&quot;</td></tr>
+<tr class="separator:ab16bd8dc303c1d07487f9dc7ac2f0ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56c4c73830b9440c4ad73f79bd23f02c" id="r_a56c4c73830b9440c4ad73f79bd23f02c"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56c4c73830b9440c4ad73f79bd23f02c">bl_options</a> = {'REGISTER', 'UNDO', 'PRESET'}</td></tr>
+<tr class="separator:a56c4c73830b9440c4ad73f79bd23f02c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62971e1fbed6d70a4f0dd1c78e9fa817" id="r_a62971e1fbed6d70a4f0dd1c78e9fa817"><td class="memItemLeft" align="right" valign="top">FloatProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62971e1fbed6d70a4f0dd1c78e9fa817">diameter</a></td></tr>
+<tr class="separator:a62971e1fbed6d70a4f0dd1c78e9fa817"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af978e32455072cd598222f347c4633fb" id="r_af978e32455072cd598222f347c4633fb"><td class="memItemLeft" align="right" valign="top">FloatProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af978e32455072cd598222f347c4633fb">tolerance</a></td></tr>
+<tr class="separator:af978e32455072cd598222f347c4633fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09b6422e24ebdccd39cf5701ea1e58e0" id="r_a09b6422e24ebdccd39cf5701ea1e58e0"><td class="memItemLeft" align="right" valign="top">FloatProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09b6422e24ebdccd39cf5701ea1e58e0">backlight</a></td></tr>
+<tr class="separator:a09b6422e24ebdccd39cf5701ea1e58e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f7b93d49b258a8a20d14cef090af0be" id="r_a6f7b93d49b258a8a20d14cef090af0be"><td class="memItemLeft" align="right" valign="top">FloatProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f7b93d49b258a8a20d14cef090af0be">perimeter_cut</a></td></tr>
+<tr class="separator:a6f7b93d49b258a8a20d14cef090af0be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60e700426d873e210022ec940a188788" id="r_a60e700426d873e210022ec940a188788"><td class="memItemLeft" align="right" valign="top">FloatProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60e700426d873e210022ec940a188788">base_thickness</a></td></tr>
+<tr class="separator:a60e700426d873e210022ec940a188788"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b78f6b6ff80fd9554ae8fce9d0bf621" id="r_a4b78f6b6ff80fd9554ae8fce9d0bf621"><td class="memItemLeft" align="right" valign="top">FloatProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b78f6b6ff80fd9554ae8fce9d0bf621">intarsion_thickness</a></td></tr>
+<tr class="separator:a4b78f6b6ff80fd9554ae8fce9d0bf621"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad76cf0cbce0e23d5bc2ce60f5bad7ffc" id="r_ad76cf0cbce0e23d5bc2ce60f5bad7ffc"><td class="memItemLeft" align="right" valign="top">FloatProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad76cf0cbce0e23d5bc2ce60f5bad7ffc">backlight_depth_from_top</a></td></tr>
+<tr class="separator:ad76cf0cbce0e23d5bc2ce60f5bad7ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><pre class="fragment">Makes Curve Cuttable Both Inside and Outside, for Intarsion and Joints</pre> </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="af4934bdf7ccb17b0c1652455ccef9e06" name="af4934bdf7ccb17b0c1652455ccef9e06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4934bdf7ccb17b0c1652455ccef9e06">&#9670;&#160;</a></span>execute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.curvecamtools.CamCurveIntarsion.execute </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>context</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a617f628b8a58cf3fb7034644d2e0a225" name="a617f628b8a58cf3fb7034644d2e0a225"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a617f628b8a58cf3fb7034644d2e0a225">&#9670;&#160;</a></span>invoke()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.curvecamtools.CamCurveIntarsion.invoke </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>context</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>event</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af77e2818b63ac1e1b04d77b5e68362c3" name="af77e2818b63ac1e1b04d77b5e68362c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af77e2818b63ac1e1b04d77b5e68362c3">&#9670;&#160;</a></span>poll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.curvecamtools.CamCurveIntarsion.poll </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>cls</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>context</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a09b6422e24ebdccd39cf5701ea1e58e0" name="a09b6422e24ebdccd39cf5701ea1e58e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09b6422e24ebdccd39cf5701ea1e58e0">&#9670;&#160;</a></span>backlight <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FloatProperty cam.curvecamtools.CamCurveIntarsion.backlight</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Backlight Seat&quot;</span>,</div>
+<div class="line">        default=0.000,</div>
+<div class="line">        min=0,</div>
+<div class="line">        max=0.010,</div>
+<div class="line">        precision=4,</div>
+<div class="line">        unit=<span class="stringliteral">&quot;LENGTH&quot;</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af5b72d25b44cdebf4b696390c9751df9" name="af5b72d25b44cdebf4b696390c9751df9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5b72d25b44cdebf4b696390c9751df9">&#9670;&#160;</a></span>backlight <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.curvecamtools.CamCurveIntarsion.backlight</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad76cf0cbce0e23d5bc2ce60f5bad7ffc" name="ad76cf0cbce0e23d5bc2ce60f5bad7ffc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad76cf0cbce0e23d5bc2ce60f5bad7ffc">&#9670;&#160;</a></span>backlight_depth_from_top</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FloatProperty cam.curvecamtools.CamCurveIntarsion.backlight_depth_from_top</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Backlight Well Depth&quot;</span>,</div>
+<div class="line">        default=0.000,</div>
+<div class="line">        min=0,</div>
+<div class="line">        max=0.100,</div>
+<div class="line">        precision=4,</div>
+<div class="line">        unit=<span class="stringliteral">&quot;LENGTH&quot;</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a60e700426d873e210022ec940a188788" name="a60e700426d873e210022ec940a188788"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60e700426d873e210022ec940a188788">&#9670;&#160;</a></span>base_thickness</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FloatProperty cam.curvecamtools.CamCurveIntarsion.base_thickness</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Base Material Thickness&quot;</span>,</div>
+<div class="line">        default=0.000,</div>
+<div class="line">        min=0,</div>
+<div class="line">        max=0.100,</div>
+<div class="line">        precision=4,</div>
+<div class="line">        unit=<span class="stringliteral">&quot;LENGTH&quot;</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab8e5a138d2b5ad107b9c458359eda2ce" name="ab8e5a138d2b5ad107b9c458359eda2ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8e5a138d2b5ad107b9c458359eda2ce">&#9670;&#160;</a></span>bl_idname</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">str cam.curvecamtools.CamCurveIntarsion.bl_idname = &quot;object.curve_intarsion&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab16bd8dc303c1d07487f9dc7ac2f0ce8" name="ab16bd8dc303c1d07487f9dc7ac2f0ce8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab16bd8dc303c1d07487f9dc7ac2f0ce8">&#9670;&#160;</a></span>bl_label</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">str cam.curvecamtools.CamCurveIntarsion.bl_label = &quot;Intarsion&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a56c4c73830b9440c4ad73f79bd23f02c" name="a56c4c73830b9440c4ad73f79bd23f02c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56c4c73830b9440c4ad73f79bd23f02c">&#9670;&#160;</a></span>bl_options</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">dict cam.curvecamtools.CamCurveIntarsion.bl_options = {'REGISTER', 'UNDO', 'PRESET'}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a62971e1fbed6d70a4f0dd1c78e9fa817" name="a62971e1fbed6d70a4f0dd1c78e9fa817"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62971e1fbed6d70a4f0dd1c78e9fa817">&#9670;&#160;</a></span>diameter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FloatProperty cam.curvecamtools.CamCurveIntarsion.diameter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Cutter Diameter&quot;</span>,</div>
+<div class="line">        default=.001,</div>
+<div class="line">        min=0,</div>
+<div class="line">        max=0.025,</div>
+<div class="line">        precision=4,</div>
+<div class="line">        unit=<span class="stringliteral">&quot;LENGTH&quot;</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4b78f6b6ff80fd9554ae8fce9d0bf621" name="a4b78f6b6ff80fd9554ae8fce9d0bf621"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b78f6b6ff80fd9554ae8fce9d0bf621">&#9670;&#160;</a></span>intarsion_thickness</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FloatProperty cam.curvecamtools.CamCurveIntarsion.intarsion_thickness</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Intarsion Material Thickness&quot;</span>,</div>
+<div class="line">        default=0.000,</div>
+<div class="line">        min=0,</div>
+<div class="line">        max=0.100,</div>
+<div class="line">        precision=4,</div>
+<div class="line">        unit=<span class="stringliteral">&quot;LENGTH&quot;</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6f7b93d49b258a8a20d14cef090af0be" name="a6f7b93d49b258a8a20d14cef090af0be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f7b93d49b258a8a20d14cef090af0be">&#9670;&#160;</a></span>perimeter_cut <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FloatProperty cam.curvecamtools.CamCurveIntarsion.perimeter_cut</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Perimeter Cut Offset&quot;</span>,</div>
+<div class="line">        default=0.000,</div>
+<div class="line">        min=0,</div>
+<div class="line">        max=0.100,</div>
+<div class="line">        precision=4,</div>
+<div class="line">        unit=<span class="stringliteral">&quot;LENGTH&quot;</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa87887432c6169ccf9187c78eeeb184f" name="aa87887432c6169ccf9187c78eeeb184f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa87887432c6169ccf9187c78eeeb184f">&#9670;&#160;</a></span>perimeter_cut <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.curvecamtools.CamCurveIntarsion.perimeter_cut</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af978e32455072cd598222f347c4633fb" name="af978e32455072cd598222f347c4633fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af978e32455072cd598222f347c4633fb">&#9670;&#160;</a></span>tolerance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FloatProperty cam.curvecamtools.CamCurveIntarsion.tolerance</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">(</div>
+<div class="line">        name=<span class="stringliteral">&quot;Cutout Tolerance&quot;</span>,</div>
+<div class="line">        default=.0001,</div>
+<div class="line">        min=0,</div>
+<div class="line">        max=0.005,</div>
+<div class="line">        precision=4,</div>
+<div class="line">        unit=<span class="stringliteral">&quot;LENGTH&quot;</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/<a class="el" href="curvecamtools_8py.html">curvecamtools.py</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.10.0-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacecam.html">cam</a></li><li class="navelem"><a class="el" href="namespacecam_1_1curvecamtools.html">curvecamtools</a></li><li class="navelem"><a class="el" href="classcam_1_1curvecamtools_1_1CamCurveIntarsion.html">CamCurveIntarsion</a></li>
+    <li class="footer">Generated by <a href="https://penify.dev/"><img class="footer" src="https://www.penify.dev/_next/static/media/snorkell-dark-logo.9fa414f5.svg" width="104" height="31" alt="doxygen"/></a> </li>
+  </ul>
+</div>
+</body>
+</html>

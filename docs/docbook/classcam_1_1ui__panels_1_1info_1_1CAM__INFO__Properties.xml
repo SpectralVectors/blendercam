@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1ui__panels_1_1info_1_1CAM__INFO__Properties" xml:lang="en-US">
+<title>cam.ui_panels.info.CAM_INFO_Properties Class Reference</title>
+<indexterm><primary>cam.ui_panels.info.CAM_INFO_Properties</primary></indexterm>
+Inheritance diagram for cam.ui_panels.info.CAM_INFO_Properties:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1info_1_1CAM__INFO__Properties__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.ui_panels.info.CAM_INFO_Properties:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1ui__panels_1_1info_1_1CAM__INFO__Properties__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>StringProperty <link linkend="_classcam_1_1ui__panels_1_1info_1_1CAM__INFO__Properties_1a7cb22ffb531b0c4fe719b5c547db715e">warnings</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1ui__panels_1_1info_1_1CAM__INFO__Properties_1a5f862844dea04cf41b3fd960560a2525">chipload</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1ui__panels_1_1info_1_1CAM__INFO__Properties_1ac4e59879260a5738fa39bd399aa200e0">duration</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1ui__panels_1_1info_1_1CAM__INFO__Properties_1a5f862844dea04cf41b3fd960560a2525"/><section>
+    <title>chipload</title>
+<indexterm><primary>chipload</primary><secondary>cam.ui_panels.info.CAM_INFO_Properties</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.info.CAM_INFO_Properties</primary><secondary>chipload</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.ui_panels.info.CAM_INFO_Properties.chipload<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Chipload&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;Calculated&#32;chipload&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.0,&#32;unit=<emphasis role="stringliteral">&apos;LENGTH&apos;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=CHIPLOAD_PRECISION,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1info_1_1CAM__INFO__Properties_1ac4e59879260a5738fa39bd399aa200e0"/><section>
+    <title>duration</title>
+<indexterm><primary>duration</primary><secondary>cam.ui_panels.info.CAM_INFO_Properties</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.info.CAM_INFO_Properties</primary><secondary>duration</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.ui_panels.info.CAM_INFO_Properties.duration<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Estimated&#32;Time&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.01,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0.0000,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=MAX_OPERATION_TIME,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=PRECISION,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;TIME&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1ui__panels_1_1info_1_1CAM__INFO__Properties_1a7cb22ffb531b0c4fe719b5c547db715e"/><section>
+    <title>warnings</title>
+<indexterm><primary>warnings</primary><secondary>cam.ui_panels.info.CAM_INFO_Properties</secondary></indexterm>
+<indexterm><primary>cam.ui_panels.info.CAM_INFO_Properties</primary><secondary>warnings</secondary></indexterm>
+<para><computeroutput>StringProperty cam.ui_panels.info.CAM_INFO_Properties.warnings<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&apos;Warnings&apos;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&apos;Warnings&apos;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="stringliteral">&apos;&apos;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;update=update_operation,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/<link linkend="_info_8py">info.py</link></section>
+</section>

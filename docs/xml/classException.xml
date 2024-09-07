@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classException" kind="class" language="Python" prot="public">
+    <compoundname>Exception</compoundname>
+    <derivedcompoundref refid="classcam_1_1async__op_1_1AsyncCancelledException" prot="public" virt="non-virtual">cam.async_op.AsyncCancelledException</derivedcompoundref>
+    <derivedcompoundref refid="classcam_1_1basrelief_1_1ReliefError" prot="public" virt="non-virtual">cam.basrelief.ReliefError</derivedcompoundref>
+    <derivedcompoundref refid="classcam_1_1exception_1_1CamException" prot="public" virt="non-virtual">cam.exception.CamException</derivedcompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Exception</label>
+        <link refid="classException"/>
+      </node>
+      <node id="2">
+        <label>cam.async_op.AsyncCancelledException</label>
+        <link refid="classcam_1_1async__op_1_1AsyncCancelledException"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>cam.basrelief.ReliefError</label>
+        <link refid="classcam_1_1basrelief_1_1ReliefError"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>cam.exception.CamException</label>
+        <link refid="classcam_1_1exception_1_1CamException"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Exception</label>
+        <link refid="classException"/>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/async_op.py" line="21" column="1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

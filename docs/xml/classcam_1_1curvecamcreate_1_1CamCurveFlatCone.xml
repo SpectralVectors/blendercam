@@ -1,0 +1,321 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1curvecamcreate_1_1CamCurveFlatCone" kind="class" language="Python" prot="public">
+    <compoundname>cam::curvecamcreate::CamCurveFlatCone</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Operator</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a938ee3fa461ba3522fb87a187cee65d4" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.curvecamcreate.CamCurveFlatCone::bl_idname</definition>
+        <argsstring></argsstring>
+        <name>bl_idname</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveFlatCone.bl_idname</qualifiedname>
+        <initializer>=  &quot;object.curve_flat_cone&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="481" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="481" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a86a9914c156e93736859690fdaceb757" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str cam.curvecamcreate.CamCurveFlatCone::bl_label</definition>
+        <argsstring></argsstring>
+        <name>bl_label</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveFlatCone.bl_label</qualifiedname>
+        <initializer>=  &quot;Cone Flat Calculator&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="482" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="482" bodyend="-1"/>
+        <referencedby refid="classcam_1_1preset__managers_1_1CAM__MACHINE__MT__presets_1af95f7812d2952b26a26809ab923dac09" compoundref="preset__managers_8py" startline="28" endline="38">cam.preset_managers.CAM_MACHINE_MT_presets.post_cb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1aee0bbd9f3ed2ee8a8aa90c46e9c1c88b" prot="public" static="yes" mutable="no">
+        <type>dict</type>
+        <definition>dict cam.curvecamcreate.CamCurveFlatCone::bl_options</definition>
+        <argsstring></argsstring>
+        <name>bl_options</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveFlatCone.bl_options</qualifiedname>
+        <initializer>=  {&apos;REGISTER&apos;, &apos;UNDO&apos;, &apos;PRESET&apos;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="483" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="483" bodyend="-1"/>
+        <referencedby refid="classcam_1_1async__op_1_1AsyncOperatorMixin_1a9628cbca8e69ec75b2337171a02bf428" compoundref="async__op_8py" startline="32" endline="59">cam.async_op.AsyncOperatorMixin.modal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a25d5560917a5c0d7f656a60e650aa252" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamcreate.CamCurveFlatCone::small_d</definition>
+        <argsstring></argsstring>
+        <name>small_d</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveFlatCone.small_d</qualifiedname>
+        <initializer>(
+        name=&quot;Small Diameter&quot;,
+        default=.025,
+        min=0,
+        max=0.1,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="485" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="485" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a2eb1a5bb02a5de31a972abef45e2fbbd" compoundref="curvecamcreate_8py" startline="538" endline="575">cam.curvecamcreate.CamCurveFlatCone.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a639c65b9ad2766e166eec22973a9d64e" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamcreate.CamCurveFlatCone::large_d</definition>
+        <argsstring></argsstring>
+        <name>large_d</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveFlatCone.large_d</qualifiedname>
+        <initializer>(
+        name=&quot;Large Diameter&quot;,
+        default=0.3048,
+        min=0,
+        max=3.0,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="493" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="493" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a2eb1a5bb02a5de31a972abef45e2fbbd" compoundref="curvecamcreate_8py" startline="538" endline="575">cam.curvecamcreate.CamCurveFlatCone.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a99bda9f760bcd7020d624c5e2a4f994f" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamcreate.CamCurveFlatCone::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveFlatCone.height</qualifiedname>
+        <initializer>(
+        name=&quot;Height of Cone&quot;,
+        default=0.457,
+        min=0,
+        max=3.0,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="501" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="501" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurvePlate_1a590d325266ef3b9e108fba68a45bd58a" compoundref="curvecamcreate_8py" startline="306" endline="478">cam.curvecamcreate.CamCurvePlate.execute</referencedby>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a2eb1a5bb02a5de31a972abef45e2fbbd" compoundref="curvecamcreate_8py" startline="538" endline="575">cam.curvecamcreate.CamCurveFlatCone.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1acfbd8ebd4bd20947bbcf94b5ba08e603" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamcreate.CamCurveFlatCone::tab</definition>
+        <argsstring></argsstring>
+        <name>tab</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveFlatCone.tab</qualifiedname>
+        <initializer>(
+        name=&quot;Tab Witdh&quot;,
+        default=0.01,
+        min=0,
+        max=0.100,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="509" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="509" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a2eb1a5bb02a5de31a972abef45e2fbbd" compoundref="curvecamcreate_8py" startline="538" endline="575">cam.curvecamcreate.CamCurveFlatCone.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a6841e5796198d0302ee26e840858e2f2" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamcreate.CamCurveFlatCone::intake</definition>
+        <argsstring></argsstring>
+        <name>intake</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveFlatCone.intake</qualifiedname>
+        <initializer>(
+        name=&quot;Intake Diameter&quot;,
+        default=0,
+        min=0,
+        max=0.200,
+        precision=4,
+        unit=&quot;LENGTH&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="517" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="517" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a2eb1a5bb02a5de31a972abef45e2fbbd" compoundref="curvecamcreate_8py" startline="538" endline="575">cam.curvecamcreate.CamCurveFlatCone.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a94ca874640e2c79133cd56e7525e16c4" prot="public" static="yes" mutable="no">
+        <type>FloatProperty</type>
+        <definition>FloatProperty cam.curvecamcreate.CamCurveFlatCone::intake_skew</definition>
+        <argsstring></argsstring>
+        <name>intake_skew</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveFlatCone.intake_skew</qualifiedname>
+        <initializer>(
+        name=&quot;Intake Skew&quot;,
+        default=1,
+        min=0.1,
+        max=4,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="525" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="525" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a2eb1a5bb02a5de31a972abef45e2fbbd" compoundref="curvecamcreate_8py" startline="538" endline="575">cam.curvecamcreate.CamCurveFlatCone.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a90b4405b60fe0125db38e6cc98403a44" prot="public" static="yes" mutable="no">
+        <type>IntProperty</type>
+        <definition>IntProperty cam.curvecamcreate.CamCurveFlatCone::resolution</definition>
+        <argsstring></argsstring>
+        <name>resolution</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveFlatCone.resolution</qualifiedname>
+        <initializer>(
+        name=&quot;Resolution&quot;,
+        default=12,
+        min=5,
+        max=200,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="531" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="531" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a2eb1a5bb02a5de31a972abef45e2fbbd" compoundref="curvecamcreate_8py" startline="538" endline="575">cam.curvecamcreate.CamCurveFlatCone.execute</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a2eb1a5bb02a5de31a972abef45e2fbbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.curvecamcreate.CamCurveFlatCone.execute</definition>
+        <argsstring>(self, context)</argsstring>
+        <name>execute</name>
+        <qualifiedname>cam.curvecamcreate.CamCurveFlatCone.execute</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="538" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="538" bodyend="575"/>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurveHatch_1a73957900ab6a46e363da7b248d9d3d8e" compoundref="curvecamcreate_8py" startline="66">cam.curvecamcreate.CamCurveHatch.height</references>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurvePlate_1a28fd2ac40f29ff9e6c550b8316637b40" compoundref="curvecamcreate_8py" startline="226">cam.curvecamcreate.CamCurvePlate.height</references>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a99bda9f760bcd7020d624c5e2a4f994f" compoundref="curvecamcreate_8py" startline="501">cam.curvecamcreate.CamCurveFlatCone.height</references>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurveDrawer_1a604f8da4849575fea36ab8f593a1a24e" compoundref="curvecamcreate_8py" startline="861">cam.curvecamcreate.CamCurveDrawer.height</references>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurvePuzzle_1a51fc996f0212d2623f5992a24e54a946" compoundref="curvecamcreate_8py" startline="1095">cam.curvecamcreate.CamCurvePuzzle.height</references>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a6841e5796198d0302ee26e840858e2f2" compoundref="curvecamcreate_8py" startline="517">cam.curvecamcreate.CamCurveFlatCone.intake</references>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a94ca874640e2c79133cd56e7525e16c4" compoundref="curvecamcreate_8py" startline="525">cam.curvecamcreate.CamCurveFlatCone.intake_skew</references>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a639c65b9ad2766e166eec22973a9d64e" compoundref="curvecamcreate_8py" startline="493">cam.curvecamcreate.CamCurveFlatCone.large_d</references>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurvePlate_1aa471092f8164629f4b4507fca8eb57f0" compoundref="curvecamcreate_8py" startline="272">cam.curvecamcreate.CamCurvePlate.resolution</references>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a90b4405b60fe0125db38e6cc98403a44" compoundref="curvecamcreate_8py" startline="531">cam.curvecamcreate.CamCurveFlatCone.resolution</references>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a25d5560917a5c0d7f656a60e650aa252" compoundref="curvecamcreate_8py" startline="485">cam.curvecamcreate.CamCurveFlatCone.small_d</references>
+        <references refid="classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1acfbd8ebd4bd20947bbcf94b5ba08e603" compoundref="curvecamcreate_8py" startline="509">cam.curvecamcreate.CamCurveFlatCone.tab</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Perform Generates Rounded Plate with Mounting Holes</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.curvecamcreate.CamCurveFlatCone</label>
+        <link refid="classcam_1_1curvecamcreate_1_1CamCurveFlatCone"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>FloatProperty</label>
+      </node>
+      <node id="6">
+        <label>IntProperty</label>
+      </node>
+      <node id="2">
+        <label>Operator</label>
+      </node>
+      <node id="1">
+        <label>cam.curvecamcreate.CamCurveFlatCone</label>
+        <link refid="classcam_1_1curvecamcreate_1_1CamCurveFlatCone"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+bl_idname</edgelabel>
+          <edgelabel>+bl_label</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+bl_options</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+height</edgelabel>
+          <edgelabel>+intake</edgelabel>
+          <edgelabel>+intake_skew</edgelabel>
+          <edgelabel>+large_d</edgelabel>
+          <edgelabel>+small_d</edgelabel>
+          <edgelabel>+tab</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>+resolution</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dict</label>
+      </node>
+      <node id="3">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" line="479" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/curvecamcreate.py" bodystart="479" bodyend="575"/>
+    <listofallmembers>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a938ee3fa461ba3522fb87a187cee65d4" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveFlatCone</scope><name>bl_idname</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a86a9914c156e93736859690fdaceb757" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveFlatCone</scope><name>bl_label</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1aee0bbd9f3ed2ee8a8aa90c46e9c1c88b" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveFlatCone</scope><name>bl_options</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a2eb1a5bb02a5de31a972abef45e2fbbd" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveFlatCone</scope><name>execute</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a99bda9f760bcd7020d624c5e2a4f994f" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveFlatCone</scope><name>height</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a6841e5796198d0302ee26e840858e2f2" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveFlatCone</scope><name>intake</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a94ca874640e2c79133cd56e7525e16c4" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveFlatCone</scope><name>intake_skew</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a639c65b9ad2766e166eec22973a9d64e" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveFlatCone</scope><name>large_d</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a90b4405b60fe0125db38e6cc98403a44" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveFlatCone</scope><name>resolution</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1a25d5560917a5c0d7f656a60e650aa252" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveFlatCone</scope><name>small_d</name></member>
+      <member refid="classcam_1_1curvecamcreate_1_1CamCurveFlatCone_1acfbd8ebd4bd20947bbcf94b5ba08e603" prot="public" virt="non-virtual"><scope>cam::curvecamcreate::CamCurveFlatCone</scope><name>tab</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

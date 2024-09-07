@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1nc_1_1gantry__router_1_1Creator" kind="class" language="Python" prot="public">
+    <compoundname>cam::nc::gantry_router::Creator</compoundname>
+    <basecompoundref refid="classcam_1_1nc_1_1emc2_1_1Creator" prot="public" virt="non-virtual">cam.nc.emc2.Creator</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcam_1_1nc_1_1gantry__router_1_1Creator_1ab174305fd04b0981f7e3509bd609f235" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>cam.nc.gantry_router.Creator::creator</definition>
+        <argsstring></argsstring>
+        <name>creator</name>
+        <qualifiedname>cam.nc.gantry_router.Creator.creator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/gantry_router.py" line="19" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/gantry_router.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcam_1_1nc_1_1gantry__router_1_1Creator_1a1e6788beb2cc7ea4ba415e89584282e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.gantry_router.Creator.init</definition>
+        <argsstring>(self)</argsstring>
+        <name>init</name>
+        <qualifiedname>cam.nc.gantry_router.Creator.init</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/gantry_router.py" line="6" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/gantry_router.py" bodystart="6" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1nc_1_1gantry__router_1_1Creator_1a483ab0e905d58e0ad3fdb2543792c16a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.gantry_router.Creator.program_begin</definition>
+        <argsstring>(self, id, comment)</argsstring>
+        <name>program_begin</name>
+        <qualifiedname>cam.nc.gantry_router.Creator.program_begin</qualifiedname>
+        <reimplements refid="classcam_1_1nc_1_1emc2_1_1Creator_1a84d06cb4095e152f0b3826b8ba81f773">program_begin</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>id</type>
+          <defname>id</defname>
+        </param>
+        <param>
+          <type><ref refid="classcam_1_1nc_1_1iso_1_1Creator_1a618d52d9931049792ef89511ff43496c" kindref="member">comment</ref></type>
+          <defname>name</defname>
+        </param>
+        <briefdescription>
+<para>Programs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/gantry_router.py" line="9" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/gantry_router.py" bodystart="9" bodyend="11"/>
+        <references refid="classcam_1_1nc_1_1cad__nc__read_1_1Parser_1adcf2f47949df29f187f27fe985884633" compoundref="cad__nc__read_8py" startline="40" endline="42">cam.nc.cad_nc_read.Parser.write</references>
+        <references refid="classcam_1_1nc_1_1hxml__writer_1_1HxmlWriter_1aed6f93c98cb8c0e3f3e826e75b6d6f15" compoundref="hxml__writer_8py" startline="14" endline="16">cam.nc.hxml_writer.HxmlWriter.write</references>
+        <references refid="classcam_1_1nc_1_1iso_1_1Creator_1abb81af5a0bdddfed387b71b68a51cc7a" compoundref="iso_8py" startline="210" endline="215">cam.nc.iso.Creator.write</references>
+        <references refid="classcam_1_1nc_1_1nc_1_1Creator_1a80f2134add83bfaaf2870d075d36ed8a" compoundref="nc_8py" startline="44" endline="50">cam.nc.nc.Creator.write</references>
+        <references refid="classcam_1_1nc_1_1nclathe__read_1_1Parser_1ab5ea283b461b57e48c8d5b0ad0a45694" compoundref="nclathe__read_8py" startline="42" endline="44">cam.nc.nclathe_read.Parser.write</references>
+        <references refid="classcam_1_1nc_1_1recreator_1_1Redirector_1a79cc974683588db3ef959189e7552c0d" compoundref="recreator_8py" startline="28" endline="30">cam.nc.recreator.Redirector.write</references>
+        <references refid="classcam_1_1nc_1_1format_1_1Address_1aa21f0ffeb829537d9103759276c01a4b" compoundref="format_8py" startline="78" endline="89">cam.nc.format.Address.write</references>
+        <references refid="classcam_1_1nc_1_1format_1_1AddressPlusMinus_1aaacea4c7b677f0a602dbc9023ff365d2" compoundref="format_8py" startline="103" endline="114">cam.nc.format.AddressPlusMinus.write</references>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1nc_1_1gantry__router_1_1Creator_1a6b495890d68a80d5b9745693887fb8ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.gantry_router.Creator.tool_defn</definition>
+        <argsstring>(self, id, name=&apos;&apos;, params=None)</argsstring>
+        <name>tool_defn</name>
+        <qualifiedname>cam.nc.gantry_router.Creator.tool_defn</qualifiedname>
+        <reimplements refid="classcam_1_1nc_1_1emc2_1_1Creator_1ae0b4c58429ef47e032259b170ea4d0cb">tool_defn</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>id</type>
+          <defname>id</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+          <defval>&apos;&apos;</defval>
+        </param>
+        <param>
+          <type>params</type>
+          <defname>params</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Define a tool</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/gantry_router.py" line="12" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/gantry_router.py" bodystart="12" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1nc_1_1gantry__router_1_1Creator_1a1cdfe78b3c00a447cb258bb1ecd381b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.nc.gantry_router.Creator.spindle</definition>
+        <argsstring>(self, s, clockwise)</argsstring>
+        <name>spindle</name>
+        <qualifiedname>cam.nc.gantry_router.Creator.spindle</qualifiedname>
+        <reimplements refid="classcam_1_1nc_1_1iso_1_1Creator_1a5e2b864808c8b2ebc4907aaeca143440">spindle</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classcam_1_1nc_1_1iso_1_1Creator_1a1fe2037055766f7134f9ac278450e4af" kindref="member">s</ref></type>
+          <defname>s</defname>
+        </param>
+        <param>
+          <type>clockwise</type>
+          <defname>clockwise</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the spindle speed</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/gantry_router.py" line="15" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/gantry_router.py" bodystart="15" bodyend="18"/>
+        <referencedby refid="classcam_1_1nc_1_1printbot3d_1_1CreatorPrintbot_1ad8959d99f932a67a51efbc379bf67b04" compoundref="printbot3d_8py" startline="38" endline="41">cam.nc.printbot3d.CreatorPrintbot.set_extruder_flowrate</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>cam.nc.gantry_router.Creator</label>
+        <link refid="classcam_1_1nc_1_1gantry__router_1_1Creator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>cam.nc.emc2.Creator</label>
+        <link refid="classcam_1_1nc_1_1emc2_1_1Creator"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>cam.nc.iso.Creator</label>
+        <link refid="classcam_1_1nc_1_1iso_1_1Creator"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>cam.nc.nc.Creator</label>
+        <link refid="classcam_1_1nc_1_1nc_1_1Creator"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>cam.nc.gantry_router.Creator</label>
+        <link refid="classcam_1_1nc_1_1gantry__router_1_1Creator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>cam.nc.emc2.Creator</label>
+        <link refid="classcam_1_1nc_1_1emc2_1_1Creator"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>cam.nc.iso.Creator</label>
+        <link refid="classcam_1_1nc_1_1iso_1_1Creator"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>cam.nc.nc.Creator</label>
+        <link refid="classcam_1_1nc_1_1nc_1_1Creator"/>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/gantry_router.py" line="5" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/gantry_router.py" bodystart="5" bodyend="20"/>
+    <listofallmembers>
+      <member refid="classcam_1_1nc_1_1gantry__router_1_1Creator_1ab174305fd04b0981f7e3509bd609f235" prot="public" virt="non-virtual"><scope>cam::nc::gantry_router::Creator</scope><name>creator</name></member>
+      <member refid="classcam_1_1nc_1_1gantry__router_1_1Creator_1a1e6788beb2cc7ea4ba415e89584282e6" prot="public" virt="non-virtual"><scope>cam::nc::gantry_router::Creator</scope><name>init</name></member>
+      <member refid="classcam_1_1nc_1_1gantry__router_1_1Creator_1a483ab0e905d58e0ad3fdb2543792c16a" prot="public" virt="non-virtual"><scope>cam::nc::gantry_router::Creator</scope><name>program_begin</name></member>
+      <member refid="classcam_1_1nc_1_1gantry__router_1_1Creator_1a1cdfe78b3c00a447cb258bb1ecd381b8" prot="public" virt="non-virtual"><scope>cam::nc::gantry_router::Creator</scope><name>spindle</name></member>
+      <member refid="classcam_1_1nc_1_1gantry__router_1_1Creator_1a6b495890d68a80d5b9745693887fb8ea" prot="public" virt="non-virtual"><scope>cam::nc::gantry_router::Creator</scope><name>tool_defn</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

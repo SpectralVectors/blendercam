@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classcam_1_1gcodeimportparser_1_1Layer" kind="class" language="Python" prot="public">
+    <compoundname>cam::gcodeimportparser::Layer</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcam_1_1gcodeimportparser_1_1Layer_1a45d4abaca085e5b1ca4b94f0b93160aa" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.gcodeimportparser.Layer::Z</definition>
+        <argsstring></argsstring>
+        <name>Z</name>
+        <qualifiedname>cam.gcodeimportparser.Layer.Z</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" line="491" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" bodystart="491" bodyend="-1"/>
+        <referencedby refid="classcam_1_1gcodeimportparser_1_1Layer_1a129d8c9548364499a6eccc1e9890329c" compoundref="gcodeimportparser_8py" startline="496" endline="499">cam.gcodeimportparser.Layer.__str__</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a78c90cc7cedad79ff356840b59527774" compoundref="heiden_8py" startline="535" endline="697">cam.nc.heiden.Creator.arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1aed90658ba02dc4e25c565f6e3a70670d" compoundref="iso_8py" startline="765" endline="939">cam.nc.iso.Creator.arc</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a983c9d1748987984ea5a74e7489b4664" compoundref="heiden_8py" startline="442" endline="483">cam.nc.heiden.Creator.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden530_1_1Creator_1a85c6b3c82eb4357cf5d08aad348f2805" compoundref="heiden530_8py" startline="163" endline="202">cam.nc.heiden530.Creator.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1ad072e258b3de2c4fa8b1033f28d67bbb" compoundref="iso_8py" startline="642" endline="709">cam.nc.iso.Creator.feed</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a2262faed4f078201d3fab4c023d3e1d2" compoundref="heiden_8py" startline="381" endline="441">cam.nc.heiden.Creator.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden530_1_1Creator_1ae0e91cfeea8854af12bf2494a799bc9a" compoundref="heiden530_8py" startline="127" endline="162">cam.nc.heiden530.Creator.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1iso_1_1Creator_1a64bd7544d638558d278746433d3855d6" compoundref="iso_8py" startline="578" endline="641">cam.nc.iso.Creator.rapid</referencedby>
+        <referencedby refid="classcam_1_1nc_1_1heiden_1_1Creator_1a706db14683812bb3b86db958d7faa05a" compoundref="heiden_8py" startline="892" endline="947">cam.nc.heiden.Creator.tap</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1gcodeimportparser_1_1Layer_1a94401e719268af526ee1a25c0a557c92" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.gcodeimportparser.Layer::segments</definition>
+        <argsstring></argsstring>
+        <name>segments</name>
+        <qualifiedname>cam.gcodeimportparser.Layer.segments</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" line="492" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" bodystart="492" bodyend="-1"/>
+        <referencedby refid="classcam_1_1gcodeimportparser_1_1Layer_1a129d8c9548364499a6eccc1e9890329c" compoundref="gcodeimportparser_8py" startline="496" endline="499">cam.gcodeimportparser.Layer.__str__</referencedby>
+        <referencedby refid="classcam_1_1gcodeimportparser_1_1GcodeModel_1a15abc664be18cdcb366911614accb8d1" compoundref="gcodeimportparser_8py" startline="325" endline="327">cam.gcodeimportparser.GcodeModel.addSegment</referencedby>
+        <referencedby refid="classcam_1_1gcodeimportparser_1_1GcodeModel_1a11948d99dd78e3b93db9caea5c42d808" compoundref="gcodeimportparser_8py" startline="334" endline="394">cam.gcodeimportparser.GcodeModel.classifySegments</referencedby>
+        <referencedby refid="classcam_1_1gcodeimportparser_1_1GcodeModel_1ab3b35fbaaa6dac1438210fb3e595633c" compoundref="gcodeimportparser_8py" startline="459" endline="472">cam.gcodeimportparser.GcodeModel.draw</referencedby>
+        <referencedby refid="classcam_1_1gcodeimportparser_1_1GcodeModel_1a598a5c57e9516d9f6c97f082cd4934db" compoundref="gcodeimportparser_8py" startline="395" endline="457">cam.gcodeimportparser.GcodeModel.subdivide</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1gcodeimportparser_1_1Layer_1a29275fbe625bc73d51a7a5207e8d2a02" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.gcodeimportparser.Layer::distance</definition>
+        <argsstring></argsstring>
+        <name>distance</name>
+        <qualifiedname>cam.gcodeimportparser.Layer.distance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" line="493" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" bodystart="493" bodyend="-1"/>
+        <referencedby refid="classcam_1_1curvecamcreate_1_1CamCurveHatch_1ad75191027148391d9c4d0ee0b81dbdd2" compoundref="curvecamcreate_8py" startline="125" endline="203">cam.curvecamcreate.CamCurveHatch.execute</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcam_1_1gcodeimportparser_1_1Layer_1a128e44750c222cf2a0200fdbf6fbd9e2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cam.gcodeimportparser.Layer::extrudate</definition>
+        <argsstring></argsstring>
+        <name>extrudate</name>
+        <qualifiedname>cam.gcodeimportparser.Layer.extrudate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" line="494" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" bodystart="494" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcam_1_1gcodeimportparser_1_1Layer_1a7f7e58d5d8559af6bb7ea7091d226aef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.gcodeimportparser.Layer.__init__</definition>
+        <argsstring>(self, Z)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>cam.gcodeimportparser.Layer.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classcam_1_1gcodeimportparser_1_1Layer_1a45d4abaca085e5b1ca4b94f0b93160aa" kindref="member">Z</ref></type>
+          <defname>Z</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" line="490" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" bodystart="490" bodyend="495"/>
+      </memberdef>
+      <memberdef kind="function" id="classcam_1_1gcodeimportparser_1_1Layer_1a129d8c9548364499a6eccc1e9890329c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cam.gcodeimportparser.Layer.__str__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__str__</name>
+        <qualifiedname>cam.gcodeimportparser.Layer.__str__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" line="496" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" bodystart="496" bodyend="499"/>
+        <references refid="classcam_1_1gcodeimportparser_1_1GcodeModel_1aa72471c5bb5d8309023c6b82dc34d284" compoundref="gcodeimportparser_8py" startline="239">cam.gcodeimportparser.GcodeModel.segments</references>
+        <references refid="classcam_1_1gcodeimportparser_1_1Layer_1a94401e719268af526ee1a25c0a557c92" compoundref="gcodeimportparser_8py" startline="492">cam.gcodeimportparser.Layer.segments</references>
+        <references refid="classcam_1_1gcodeimportparser_1_1Layer_1a45d4abaca085e5b1ca4b94f0b93160aa" compoundref="gcodeimportparser_8py" startline="491">cam.gcodeimportparser.Layer.Z</references>
+        <references refid="classcam_1_1nc_1_1heiden_1_1Creator_1ad60d92ac6a5e119edd2642859d25d950" compoundref="heiden_8py" startline="138" endline="138">cam.nc.heiden.Creator.Z</references>
+        <references refid="classcam_1_1nc_1_1heiden530_1_1Creator_1a769879dea4288ac40b77cace1c5b02dc" compoundref="heiden530_8py" startline="65" endline="66">cam.nc.heiden530.Creator.Z</references>
+        <references refid="classcam_1_1nc_1_1iso_1_1Creator_1a72ab233121c914e6aed3b3176810bdf6" compoundref="iso_8py" startline="185" endline="185">cam.nc.iso.Creator.Z</references>
+        <references refid="classcam_1_1nc_1_1makerbot__codes_1_1Codes_1ae1410b9e3435455e10403d0b26b0cf67" compoundref="makerbot__codes_8py" startline="76" endline="76">cam.nc.makerbot_codes.Codes.Z</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>cam.gcodeimportparser.Layer</label>
+        <link refid="classcam_1_1gcodeimportparser_1_1Layer"/>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" line="489" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/gcodeimportparser.py" bodystart="489" bodyend="499"/>
+    <listofallmembers>
+      <member refid="classcam_1_1gcodeimportparser_1_1Layer_1a7f7e58d5d8559af6bb7ea7091d226aef" prot="public" virt="non-virtual"><scope>cam::gcodeimportparser::Layer</scope><name>__init__</name></member>
+      <member refid="classcam_1_1gcodeimportparser_1_1Layer_1a129d8c9548364499a6eccc1e9890329c" prot="public" virt="non-virtual"><scope>cam::gcodeimportparser::Layer</scope><name>__str__</name></member>
+      <member refid="classcam_1_1gcodeimportparser_1_1Layer_1a29275fbe625bc73d51a7a5207e8d2a02" prot="public" virt="non-virtual"><scope>cam::gcodeimportparser::Layer</scope><name>distance</name></member>
+      <member refid="classcam_1_1gcodeimportparser_1_1Layer_1a128e44750c222cf2a0200fdbf6fbd9e2" prot="public" virt="non-virtual"><scope>cam::gcodeimportparser::Layer</scope><name>extrudate</name></member>
+      <member refid="classcam_1_1gcodeimportparser_1_1Layer_1a94401e719268af526ee1a25c0a557c92" prot="public" virt="non-virtual"><scope>cam::gcodeimportparser::Layer</scope><name>segments</name></member>
+      <member refid="classcam_1_1gcodeimportparser_1_1Layer_1a45d4abaca085e5b1ca4b94f0b93160aa" prot="public" virt="non-virtual"><scope>cam::gcodeimportparser::Layer</scope><name>Z</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

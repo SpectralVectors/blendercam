@@ -1,0 +1,399 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1machine__settings_1_1machineSettings" xml:lang="en-US">
+<title>cam.machine_settings.machineSettings Class Reference</title>
+<indexterm><primary>cam.machine_settings.machineSettings</primary></indexterm>
+Inheritance diagram for cam.machine_settings.machineSettings:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1machine__settings_1_1machineSettings__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.machine_settings.machineSettings:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1machine__settings_1_1machineSettings__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>EnumProperty <link linkend="_classcam_1_1machine__settings_1_1machineSettings_1aae381b3109f1c01eda6e92b5741ab077">post_processor</link></para>
+</listitem>
+            <listitem><para>BoolProperty <link linkend="_classcam_1_1machine__settings_1_1machineSettings_1a6fd14ff1d66acf3b0c4dd7cd021e55ed">use_position_definitions</link></para>
+</listitem>
+            <listitem><para>FloatVectorProperty <link linkend="_classcam_1_1machine__settings_1_1machineSettings_1aacd374d5752cb5db59688a81dc0822f2">starting_position</link></para>
+</listitem>
+            <listitem><para>FloatVectorProperty <link linkend="_classcam_1_1machine__settings_1_1machineSettings_1a9448ada8d15d3be465db263e03e82d7f">mtc_position</link></para>
+</listitem>
+            <listitem><para>FloatVectorProperty <link linkend="_classcam_1_1machine__settings_1_1machineSettings_1abe27dd61be9fe185c4c31ecb40de25ab">ending_position</link></para>
+</listitem>
+            <listitem><para>FloatVectorProperty <link linkend="_classcam_1_1machine__settings_1_1machineSettings_1afb6e969a9ec5bfd29a8c62a489228156">working_area</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1machine__settings_1_1machineSettings_1a63cc6d9ee81e1d8c8270fa8d9d6da926">feedrate_min</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1machine__settings_1_1machineSettings_1aadc26d9e1fa640a8b1b4e95ff0717aa1">feedrate_max</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1machine__settings_1_1machineSettings_1aaf801db64cb8324b1b79070b870e78ca">feedrate_default</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1machine__settings_1_1machineSettings_1a7c8b0b6a273202e3dcd589febacd0041">hourly_rate</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1machine__settings_1_1machineSettings_1af71adb57e51de1a87fceb49686f8dead">spindle_min</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1machine__settings_1_1machineSettings_1a2adc72481d7b9863cb2352fbb83f02a4">spindle_max</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1machine__settings_1_1machineSettings_1a230eef6552613b9175b6d7918ff54e64">spindle_default</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1machine__settings_1_1machineSettings_1a48bb92ab2c2017d1a6b0af0d095eea06">spindle_start_time</link></para>
+</listitem>
+            <listitem><para>BoolProperty <link linkend="_classcam_1_1machine__settings_1_1machineSettings_1a36c2e7607ed2ce3b4f03ab23faf8d6ed">axis4</link></para>
+</listitem>
+            <listitem><para>BoolProperty <link linkend="_classcam_1_1machine__settings_1_1machineSettings_1aad65a9d10d1784e5c12af16a5dded36f">axis5</link></para>
+</listitem>
+            <listitem><para>BoolProperty <link linkend="_classcam_1_1machine__settings_1_1machineSettings_1ad2f99a9a3cae53b8d80dde4fef9a9a79">eval_splitting</link></para>
+</listitem>
+            <listitem><para>IntProperty <link linkend="_classcam_1_1machine__settings_1_1machineSettings_1a9e1c5dd3d3c2e9675697e6fd14f07045">split_limit</link></para>
+</listitem>
+            <listitem><para>FloatProperty <link linkend="_classcam_1_1machine__settings_1_1machineSettings_1addc35c984c12b0e35b1ddf4ee95298b8">collet_size</link></para>
+</listitem>
+            <listitem><para>BoolProperty <link linkend="_classcam_1_1machine__settings_1_1machineSettings_1a97a7a04d12baa8de7bb5326ccb22f8fc">output_block_numbers</link></para>
+</listitem>
+            <listitem><para>IntProperty <link linkend="_classcam_1_1machine__settings_1_1machineSettings_1af1c2ca84237a0945e29bf96af773c3c5">start_block_number</link></para>
+</listitem>
+            <listitem><para>IntProperty <link linkend="_classcam_1_1machine__settings_1_1machineSettings_1ad131f77de75465a5826fe69e6cc61475">block_number_increment</link></para>
+</listitem>
+            <listitem><para>BoolProperty <link linkend="_classcam_1_1machine__settings_1_1machineSettings_1a6fc2d3c06e832fdfdcdc3485e16df84d">output_tool_definitions</link></para>
+</listitem>
+            <listitem><para>BoolProperty <link linkend="_classcam_1_1machine__settings_1_1machineSettings_1a7e6faf78f4d1eb00b598bc0b87591a5c">output_tool_change</link></para>
+</listitem>
+            <listitem><para>BoolProperty <link linkend="_classcam_1_1machine__settings_1_1machineSettings_1ab20976d823d4c76faa1c7c4aec364133">output_g43_on_tool_change</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>stores all data for machines</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1machine__settings_1_1machineSettings_1a36c2e7607ed2ce3b4f03ab23faf8d6ed"/><section>
+    <title>axis4</title>
+<indexterm><primary>axis4</primary><secondary>cam.machine_settings.machineSettings</secondary></indexterm>
+<indexterm><primary>cam.machine_settings.machineSettings</primary><secondary>axis4</secondary></indexterm>
+<para><computeroutput>BoolProperty cam.machine_settings.machineSettings.axis4<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;#4th&#32;Axis&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;Machine&#32;has&#32;4th&#32;axis&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1machine__settings_1_1machineSettings_1aad65a9d10d1784e5c12af16a5dded36f"/><section>
+    <title>axis5</title>
+<indexterm><primary>axis5</primary><secondary>cam.machine_settings.machineSettings</secondary></indexterm>
+<indexterm><primary>cam.machine_settings.machineSettings</primary><secondary>axis5</secondary></indexterm>
+<para><computeroutput>BoolProperty cam.machine_settings.machineSettings.axis5<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;#5th&#32;Axis&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;Machine&#32;has&#32;5th&#32;axis&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1machine__settings_1_1machineSettings_1ad131f77de75465a5826fe69e6cc61475"/><section>
+    <title>block_number_increment</title>
+<indexterm><primary>block_number_increment</primary><secondary>cam.machine_settings.machineSettings</secondary></indexterm>
+<indexterm><primary>cam.machine_settings.machineSettings</primary><secondary>block_number_increment</secondary></indexterm>
+<para><computeroutput>IntProperty cam.machine_settings.machineSettings.block_number_increment<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Block&#32;Number&#32;Increment&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;How&#32;much&#32;the&#32;block&#32;number&#32;should&#32;&quot;</emphasis>
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;increment&#32;for&#32;the&#32;next&#32;line&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=10,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1machine__settings_1_1machineSettings_1addc35c984c12b0e35b1ddf4ee95298b8"/><section>
+    <title>collet_size</title>
+<indexterm><primary>collet_size</primary><secondary>cam.machine_settings.machineSettings</secondary></indexterm>
+<indexterm><primary>cam.machine_settings.machineSettings</primary><secondary>collet_size</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.machine_settings.machineSettings.collet_size<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;#Collet&#32;Size&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;Collet&#32;size&#32;for&#32;collision&#32;detection&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=33,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0.00001,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=320000,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=constants.PRECISION,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&quot;LENGTH&quot;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1machine__settings_1_1machineSettings_1abe27dd61be9fe185c4c31ecb40de25ab"/><section>
+    <title>ending_position</title>
+<indexterm><primary>ending_position</primary><secondary>cam.machine_settings.machineSettings</secondary></indexterm>
+<indexterm><primary>cam.machine_settings.machineSettings</primary><secondary>ending_position</secondary></indexterm>
+<para><computeroutput>FloatVectorProperty cam.machine_settings.machineSettings.ending_position<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&apos;End&#32;Position&apos;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=(0,&#32;0,&#32;0),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&apos;LENGTH&apos;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=constants.PRECISION,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;subtype=<emphasis role="stringliteral">&quot;XYZ&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;update=updateMachine,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1machine__settings_1_1machineSettings_1ad2f99a9a3cae53b8d80dde4fef9a9a79"/><section>
+    <title>eval_splitting</title>
+<indexterm><primary>eval_splitting</primary><secondary>cam.machine_settings.machineSettings</secondary></indexterm>
+<indexterm><primary>cam.machine_settings.machineSettings</primary><secondary>eval_splitting</secondary></indexterm>
+<para><computeroutput>BoolProperty cam.machine_settings.machineSettings.eval_splitting<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Split&#32;Files&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;Split&#32;gcode&#32;file&#32;with&#32;large&#32;number&#32;of&#32;operations&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="keyword">True</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1machine__settings_1_1machineSettings_1aaf801db64cb8324b1b79070b870e78ca"/><section>
+    <title>feedrate_default</title>
+<indexterm><primary>feedrate_default</primary><secondary>cam.machine_settings.machineSettings</secondary></indexterm>
+<indexterm><primary>cam.machine_settings.machineSettings</primary><secondary>feedrate_default</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.machine_settings.machineSettings.feedrate_default<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Feedrate&#32;Default&#32;/min&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=1.5,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0.00001,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=320000,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=constants.PRECISION,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&apos;LENGTH&apos;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1machine__settings_1_1machineSettings_1aadc26d9e1fa640a8b1b4e95ff0717aa1"/><section>
+    <title>feedrate_max</title>
+<indexterm><primary>feedrate_max</primary><secondary>cam.machine_settings.machineSettings</secondary></indexterm>
+<indexterm><primary>cam.machine_settings.machineSettings</primary><secondary>feedrate_max</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.machine_settings.machineSettings.feedrate_max<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Feedrate&#32;Maximum&#32;/min&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=2,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0.00001,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=320000,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=constants.PRECISION,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&apos;LENGTH&apos;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1machine__settings_1_1machineSettings_1a63cc6d9ee81e1d8c8270fa8d9d6da926"/><section>
+    <title>feedrate_min</title>
+<indexterm><primary>feedrate_min</primary><secondary>cam.machine_settings.machineSettings</secondary></indexterm>
+<indexterm><primary>cam.machine_settings.machineSettings</primary><secondary>feedrate_min</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.machine_settings.machineSettings.feedrate_min<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Feedrate&#32;Minimum&#32;/min&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0.0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0.00001,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=320000,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=constants.PRECISION,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&apos;LENGTH&apos;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1machine__settings_1_1machineSettings_1a7c8b0b6a273202e3dcd589febacd0041"/><section>
+    <title>hourly_rate</title>
+<indexterm><primary>hourly_rate</primary><secondary>cam.machine_settings.machineSettings</secondary></indexterm>
+<indexterm><primary>cam.machine_settings.machineSettings</primary><secondary>hourly_rate</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.machine_settings.machineSettings.hourly_rate<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Price&#32;per&#32;Hour&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=100,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0.005,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=2,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1machine__settings_1_1machineSettings_1a9448ada8d15d3be465db263e03e82d7f"/><section>
+    <title>mtc_position</title>
+<indexterm><primary>mtc_position</primary><secondary>cam.machine_settings.machineSettings</secondary></indexterm>
+<indexterm><primary>cam.machine_settings.machineSettings</primary><secondary>mtc_position</secondary></indexterm>
+<para><computeroutput>FloatVectorProperty cam.machine_settings.machineSettings.mtc_position<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&apos;MTC&#32;Position&apos;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=(0,&#32;0,&#32;0),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&apos;LENGTH&apos;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=constants.PRECISION,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;subtype=<emphasis role="stringliteral">&quot;XYZ&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;update=updateMachine,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1machine__settings_1_1machineSettings_1a97a7a04d12baa8de7bb5326ccb22f8fc"/><section>
+    <title>output_block_numbers</title>
+<indexterm><primary>output_block_numbers</primary><secondary>cam.machine_settings.machineSettings</secondary></indexterm>
+<indexterm><primary>cam.machine_settings.machineSettings</primary><secondary>output_block_numbers</secondary></indexterm>
+<para><computeroutput>BoolProperty cam.machine_settings.machineSettings.output_block_numbers<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Output&#32;Block&#32;Numbers&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;Output&#32;block&#32;numbers&#32;ie&#32;N10&#32;at&#32;start&#32;of&#32;line&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="keyword">False</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1machine__settings_1_1machineSettings_1ab20976d823d4c76faa1c7c4aec364133"/><section>
+    <title>output_g43_on_tool_change</title>
+<indexterm><primary>output_g43_on_tool_change</primary><secondary>cam.machine_settings.machineSettings</secondary></indexterm>
+<indexterm><primary>cam.machine_settings.machineSettings</primary><secondary>output_g43_on_tool_change</secondary></indexterm>
+<para><computeroutput>BoolProperty cam.machine_settings.machineSettings.output_g43_on_tool_change<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Output&#32;G43&#32;on&#32;Tool&#32;Change&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;Output&#32;G43&#32;on&#32;tool&#32;change&#32;line&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="keyword">False</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1machine__settings_1_1machineSettings_1a7e6faf78f4d1eb00b598bc0b87591a5c"/><section>
+    <title>output_tool_change</title>
+<indexterm><primary>output_tool_change</primary><secondary>cam.machine_settings.machineSettings</secondary></indexterm>
+<indexterm><primary>cam.machine_settings.machineSettings</primary><secondary>output_tool_change</secondary></indexterm>
+<para><computeroutput>BoolProperty cam.machine_settings.machineSettings.output_tool_change<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Output&#32;Tool&#32;Change&#32;Commands&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;Output&#32;tool&#32;change&#32;commands&#32;ie:&#32;Tn&#32;M06&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="keyword">True</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1machine__settings_1_1machineSettings_1a6fc2d3c06e832fdfdcdc3485e16df84d"/><section>
+    <title>output_tool_definitions</title>
+<indexterm><primary>output_tool_definitions</primary><secondary>cam.machine_settings.machineSettings</secondary></indexterm>
+<indexterm><primary>cam.machine_settings.machineSettings</primary><secondary>output_tool_definitions</secondary></indexterm>
+<para><computeroutput>BoolProperty cam.machine_settings.machineSettings.output_tool_definitions<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Output&#32;Tool&#32;Definitions&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;Output&#32;tool&#32;definitions&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="keyword">True</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1machine__settings_1_1machineSettings_1aae381b3109f1c01eda6e92b5741ab077"/><section>
+    <title>post_processor</title>
+<indexterm><primary>post_processor</primary><secondary>cam.machine_settings.machineSettings</secondary></indexterm>
+<indexterm><primary>cam.machine_settings.machineSettings</primary><secondary>post_processor</secondary></indexterm>
+<para><computeroutput>EnumProperty cam.machine_settings.machineSettings.post_processor<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&apos;Post&#32;Processor&apos;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;items=(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&apos;ISO&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Iso&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Exports&#32;standardized&#32;gcode&#32;ISO&#32;6983&#32;(RS-274)&apos;</emphasis>),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&apos;MACH3&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Mach3&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Default&#32;mach3&apos;</emphasis>),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&apos;EMC&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;LinuxCNC&#32;-&#32;EMC2&apos;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;Linux&#32;based&#32;CNC&#32;control&#32;software&#32;-&#32;formally&#32;EMC2&apos;</emphasis>),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&apos;FADAL&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Fadal&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Fadal&#32;VMC&apos;</emphasis>),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&apos;GRBL&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;grbl&apos;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;Optimized&#32;gcode&#32;for&#32;grbl&#32;firmware&#32;on&#32;Arduino&#32;with&#32;cnc&#32;shield&apos;</emphasis>),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&apos;HEIDENHAIN&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Heidenhain&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Heidenhain&apos;</emphasis>),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&apos;HEIDENHAIN530&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Heidenhain530&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Heidenhain530&apos;</emphasis>),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&apos;TNC151&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Heidenhain&#32;TNC151&apos;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;Post&#32;Processor&#32;for&#32;the&#32;Heidenhain&#32;TNC151&#32;machine&apos;</emphasis>),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&apos;SIEGKX1&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Sieg&#32;KX1&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Sieg&#32;KX1&apos;</emphasis>),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&apos;HM50&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Hafco&#32;HM-50&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Hafco&#32;HM-50&apos;</emphasis>),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&apos;CENTROID&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Centroid&#32;M40&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Centroid&#32;M40&apos;</emphasis>),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&apos;ANILAM&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Anilam&#32;Crusader&#32;M&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Anilam&#32;Crusader&#32;M&apos;</emphasis>),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&apos;GRAVOS&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Gravos&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Gravos&apos;</emphasis>),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&apos;WIN-PC&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;WinPC-NC&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;German&#32;CNC&#32;by&#32;Burkhard&#32;Lewetz&apos;</emphasis>),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&apos;SHOPBOT&#32;MTC&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;ShopBot&#32;MTC&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;ShopBot&#32;MTC&apos;</emphasis>),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="stringliteral">&apos;LYNX_OTTER_O&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Lynx&#32;Otter&#32;o&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;Lynx&#32;Otter&#32;o&apos;</emphasis>)
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&apos;Post&#32;Processor&apos;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="stringliteral">&apos;MACH3&apos;</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1machine__settings_1_1machineSettings_1a230eef6552613b9175b6d7918ff54e64"/><section>
+    <title>spindle_default</title>
+<indexterm><primary>spindle_default</primary><secondary>cam.machine_settings.machineSettings</secondary></indexterm>
+<indexterm><primary>cam.machine_settings.machineSettings</primary><secondary>spindle_default</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.machine_settings.machineSettings.spindle_default<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Spindle&#32;Speed&#32;Default&#32;RPM&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=15000,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0.00001,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=320000,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=1,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1machine__settings_1_1machineSettings_1a2adc72481d7b9863cb2352fbb83f02a4"/><section>
+    <title>spindle_max</title>
+<indexterm><primary>spindle_max</primary><secondary>cam.machine_settings.machineSettings</secondary></indexterm>
+<indexterm><primary>cam.machine_settings.machineSettings</primary><secondary>spindle_max</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.machine_settings.machineSettings.spindle_max<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Spindle&#32;Speed&#32;Maximum&#32;RPM&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=30000,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0.00001,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=320000,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=1,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1machine__settings_1_1machineSettings_1af71adb57e51de1a87fceb49686f8dead"/><section>
+    <title>spindle_min</title>
+<indexterm><primary>spindle_min</primary><secondary>cam.machine_settings.machineSettings</secondary></indexterm>
+<indexterm><primary>cam.machine_settings.machineSettings</primary><secondary>spindle_min</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.machine_settings.machineSettings.spindle_min<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Spindle&#32;Speed&#32;Minimum&#32;RPM&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=5000,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0.00001,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=320000,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=1,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1machine__settings_1_1machineSettings_1a48bb92ab2c2017d1a6b0af0d095eea06"/><section>
+    <title>spindle_start_time</title>
+<indexterm><primary>spindle_start_time</primary><secondary>cam.machine_settings.machineSettings</secondary></indexterm>
+<indexterm><primary>cam.machine_settings.machineSettings</primary><secondary>spindle_start_time</secondary></indexterm>
+<para><computeroutput>FloatProperty cam.machine_settings.machineSettings.spindle_start_time<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Spindle&#32;Start&#32;Delay&#32;Seconds&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&apos;Wait&#32;for&#32;the&#32;spindle&#32;to&#32;start&#32;spinning&#32;before&#32;starting&#32;&apos;</emphasis>
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;the&#32;feeds&#32;,&#32;in&#32;seconds&apos;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=0,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=0.0000,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=320000,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=1,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1machine__settings_1_1machineSettings_1a9e1c5dd3d3c2e9675697e6fd14f07045"/><section>
+    <title>split_limit</title>
+<indexterm><primary>split_limit</primary><secondary>cam.machine_settings.machineSettings</secondary></indexterm>
+<indexterm><primary>cam.machine_settings.machineSettings</primary><secondary>split_limit</secondary></indexterm>
+<para><computeroutput>IntProperty cam.machine_settings.machineSettings.split_limit<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Operations&#32;per&#32;File&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;Split&#32;files&#32;with&#32;larger&#32;number&#32;of&#32;operations&#32;than&#32;this&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min=1000,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max=20000000,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=800000,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1machine__settings_1_1machineSettings_1af1c2ca84237a0945e29bf96af773c3c5"/><section>
+    <title>start_block_number</title>
+<indexterm><primary>start_block_number</primary><secondary>cam.machine_settings.machineSettings</secondary></indexterm>
+<indexterm><primary>cam.machine_settings.machineSettings</primary><secondary>start_block_number</secondary></indexterm>
+<para><computeroutput>IntProperty cam.machine_settings.machineSettings.start_block_number<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Start&#32;Block&#32;Number&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;The&#32;starting&#32;block&#32;number&#32;ie&#32;10&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=10,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1machine__settings_1_1machineSettings_1aacd374d5752cb5db59688a81dc0822f2"/><section>
+    <title>starting_position</title>
+<indexterm><primary>starting_position</primary><secondary>cam.machine_settings.machineSettings</secondary></indexterm>
+<indexterm><primary>cam.machine_settings.machineSettings</primary><secondary>starting_position</secondary></indexterm>
+<para><computeroutput>FloatVectorProperty cam.machine_settings.machineSettings.starting_position<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&apos;Start&#32;Position&apos;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=(0,&#32;0,&#32;0),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&apos;LENGTH&apos;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=constants.PRECISION,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;subtype=<emphasis role="stringliteral">&quot;XYZ&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;update=updateMachine,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1machine__settings_1_1machineSettings_1a6fd14ff1d66acf3b0c4dd7cd021e55ed"/><section>
+    <title>use_position_definitions</title>
+<indexterm><primary>use_position_definitions</primary><secondary>cam.machine_settings.machineSettings</secondary></indexterm>
+<indexterm><primary>cam.machine_settings.machineSettings</primary><secondary>use_position_definitions</secondary></indexterm>
+<para><computeroutput>BoolProperty cam.machine_settings.machineSettings.use_position_definitions<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&quot;Use&#32;Position&#32;Definitions&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;Define&#32;own&#32;positions&#32;for&#32;op&#32;start,&#32;&quot;</emphasis>
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;toolchange,&#32;ending&#32;position&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=<emphasis role="keyword">False</emphasis>,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<anchor xml:id="_classcam_1_1machine__settings_1_1machineSettings_1afb6e969a9ec5bfd29a8c62a489228156"/><section>
+    <title>working_area</title>
+<indexterm><primary>working_area</primary><secondary>cam.machine_settings.machineSettings</secondary></indexterm>
+<indexterm><primary>cam.machine_settings.machineSettings</primary><secondary>working_area</secondary></indexterm>
+<para><computeroutput>FloatVectorProperty cam.machine_settings.machineSettings.working_area<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">(
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=<emphasis role="stringliteral">&apos;Work&#32;Area&apos;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;default=(0.500,&#32;0.500,&#32;0.100),
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;unit=<emphasis role="stringliteral">&apos;LENGTH&apos;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;precision=constants.PRECISION,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;subtype=<emphasis role="stringliteral">&quot;XYZ&quot;</emphasis>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;update=updateMachine,
+&#32;&#32;&#32;&#32;)
+</programlisting></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/<link linkend="_machine__settings_8py">machine_settings.py</link></section>
+</section>

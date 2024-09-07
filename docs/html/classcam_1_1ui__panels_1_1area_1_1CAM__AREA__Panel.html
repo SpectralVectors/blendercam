@@ -1,0 +1,507 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>blendercam: cam.ui_panels.area.CAM_AREA_Panel Class Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">blendercam
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part --><!-- Generated by Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">cam.ui_panels.area.CAM_AREA_Panel Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Inheritance diagram for cam.ui_panels.area.CAM_AREA_Panel:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Collaboration diagram for cam.ui_panels.area.CAM_AREA_Panel:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a97609194e155a1367d259fd9fc3b8007" id="r_a97609194e155a1367d259fd9fc3b8007"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a97609194e155a1367d259fd9fc3b8007">draw_use_layers</a> (self)</td></tr>
+<tr class="separator:a97609194e155a1367d259fd9fc3b8007"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a8049fa43f39b40f5716a3efc85d7f3" id="r_a1a8049fa43f39b40f5716a3efc85d7f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a8049fa43f39b40f5716a3efc85d7f3">draw_first_down</a> (self, col)</td></tr>
+<tr class="separator:a1a8049fa43f39b40f5716a3efc85d7f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa134833afdf6802c89373a1e9f5e6048" id="r_aa134833afdf6802c89373a1e9f5e6048"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa134833afdf6802c89373a1e9f5e6048">draw_maxz</a> (self)</td></tr>
+<tr class="separator:aa134833afdf6802c89373a1e9f5e6048"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9e466c7c4e2730e608ee8238988e2d4" id="r_ad9e466c7c4e2730e608ee8238988e2d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad9e466c7c4e2730e608ee8238988e2d4">draw_minz</a> (self)</td></tr>
+<tr class="separator:ad9e466c7c4e2730e608ee8238988e2d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbfc7e65c6e2651d65c1f8595a08a672" id="r_afbfc7e65c6e2651d65c1f8595a08a672"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afbfc7e65c6e2651d65c1f8595a08a672">draw_ambient</a> (self)</td></tr>
+<tr class="separator:afbfc7e65c6e2651d65c1f8595a08a672"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5b5413182cd6772e7a4af7fbfca5ebf" id="r_ae5b5413182cd6772e7a4af7fbfca5ebf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5b5413182cd6772e7a4af7fbfca5ebf">draw_limit_curve</a> (self)</td></tr>
+<tr class="separator:ae5b5413182cd6772e7a4af7fbfca5ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdc54a0936c0ee333f38597bfeb86ab1" id="r_abdc54a0936c0ee333f38597bfeb86ab1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abdc54a0936c0ee333f38597bfeb86ab1">draw</a> (self, <a class="el" href="#ada410a6ab5a4cda97a33636cd514c8bf">context</a>)</td></tr>
+<tr class="separator:abdc54a0936c0ee333f38597bfeb86ab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel.html">cam.ui_panels.buttons_panel.CAMButtonsPanel</a></td></tr>
+<tr class="memitem:a03843f1fecc691952b696f4bc75a0156 inherit pub_methods_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel" id="r_a03843f1fecc691952b696f4bc75a0156"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel.html#a03843f1fecc691952b696f4bc75a0156">poll</a> (cls, context)</td></tr>
+<tr class="separator:a03843f1fecc691952b696f4bc75a0156 inherit pub_methods_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2df719a61472a3f8674e26fe501b1f7 inherit pub_methods_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel" id="r_ae2df719a61472a3f8674e26fe501b1f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel.html#ae2df719a61472a3f8674e26fe501b1f7">active_operation_index</a> (cls)</td></tr>
+<tr class="separator:ae2df719a61472a3f8674e26fe501b1f7 inherit pub_methods_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fe8584ab332e9830dfa800ee4582575 inherit pub_methods_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel" id="r_a9fe8584ab332e9830dfa800ee4582575"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel.html#a9fe8584ab332e9830dfa800ee4582575">active_operation</a> (cls)</td></tr>
+<tr class="separator:a9fe8584ab332e9830dfa800ee4582575 inherit pub_methods_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbcf6bed1c104021565fc4a486d1101a inherit pub_methods_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel" id="r_acbcf6bed1c104021565fc4a486d1101a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel.html#acbcf6bed1c104021565fc4a486d1101a">__init__</a> (self)</td></tr>
+<tr class="separator:acbcf6bed1c104021565fc4a486d1101a inherit pub_methods_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae624325882f33dd8820cdf27df16e4e inherit pub_methods_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel" id="r_aae624325882f33dd8820cdf27df16e4e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel.html#aae624325882f33dd8820cdf27df16e4e">operations_count</a> (self)</td></tr>
+<tr class="separator:aae624325882f33dd8820cdf27df16e4e inherit pub_methods_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e5e2105cb372d0ad7ee959fa38e10e2 inherit pub_methods_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel" id="r_a3e5e2105cb372d0ad7ee959fa38e10e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel.html#a3e5e2105cb372d0ad7ee959fa38e10e2">has_operations</a> (self)</td></tr>
+<tr class="separator:a3e5e2105cb372d0ad7ee959fa38e10e2 inherit pub_methods_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41c101f031fc5ecdb0097889cf452de0 inherit pub_methods_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel" id="r_a41c101f031fc5ecdb0097889cf452de0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel.html#a41c101f031fc5ecdb0097889cf452de0">has_correct_level</a> (self)</td></tr>
+<tr class="separator:a41c101f031fc5ecdb0097889cf452de0 inherit pub_methods_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a814fbebf4774df64327b21c62cf5d5af" id="r_a814fbebf4774df64327b21c62cf5d5af"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a814fbebf4774df64327b21c62cf5d5af">op</a></td></tr>
+<tr class="separator:a814fbebf4774df64327b21c62cf5d5af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada410a6ab5a4cda97a33636cd514c8bf" id="r_ada410a6ab5a4cda97a33636cd514c8bf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada410a6ab5a4cda97a33636cd514c8bf">context</a></td></tr>
+<tr class="separator:ada410a6ab5a4cda97a33636cd514c8bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel.html">cam.ui_panels.buttons_panel.CAMButtonsPanel</a></td></tr>
+<tr class="memitem:a62a27293a2c27a52a2f779e92312c9b6 inherit pub_attribs_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel" id="r_a62a27293a2c27a52a2f779e92312c9b6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel.html#a62a27293a2c27a52a2f779e92312c9b6">op</a></td></tr>
+<tr class="separator:a62a27293a2c27a52a2f779e92312c9b6 inherit pub_attribs_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3991296d0c3a293ee962391d01387868 inherit pub_attribs_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel" id="r_a3991296d0c3a293ee962391d01387868"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel.html#a3991296d0c3a293ee962391d01387868">use_experimental</a></td></tr>
+<tr class="separator:a3991296d0c3a293ee962391d01387868 inherit pub_attribs_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:aaf69f67ad7c83f284c350d6477761188" id="r_aaf69f67ad7c83f284c350d6477761188"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf69f67ad7c83f284c350d6477761188">bl_label</a> = &quot;CAM Operation Area&quot;</td></tr>
+<tr class="separator:aaf69f67ad7c83f284c350d6477761188"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d4ccd5915a348d6048795d8563079fe" id="r_a4d4ccd5915a348d6048795d8563079fe"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d4ccd5915a348d6048795d8563079fe">bl_idname</a> = &quot;WORLD_PT_CAM_OPERATION_AREA&quot;</td></tr>
+<tr class="separator:a4d4ccd5915a348d6048795d8563079fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc2870818783dd5ad6a59429aea7b260" id="r_afc2870818783dd5ad6a59429aea7b260"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc2870818783dd5ad6a59429aea7b260">panel_interface_level</a> = 0</td></tr>
+<tr class="separator:afc2870818783dd5ad6a59429aea7b260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9fd43f718be543c04828424917ca500" id="r_ab9fd43f718be543c04828424917ca500"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9fd43f718be543c04828424917ca500">prop_level</a></td></tr>
+<tr class="separator:ab9fd43f718be543c04828424917ca500"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_attribs_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_attribs_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel.html">cam.ui_panels.buttons_panel.CAMButtonsPanel</a></td></tr>
+<tr class="memitem:a875a6b4e703be8c259b1d750426c76ad inherit pub_static_attribs_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel" id="r_a875a6b4e703be8c259b1d750426c76ad"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel.html#a875a6b4e703be8c259b1d750426c76ad">bl_space_type</a> = 'PROPERTIES'</td></tr>
+<tr class="separator:a875a6b4e703be8c259b1d750426c76ad inherit pub_static_attribs_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9763fc8e0e8a24f2f6f4ab050829c6a2 inherit pub_static_attribs_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel" id="r_a9763fc8e0e8a24f2f6f4ab050829c6a2"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel.html#a9763fc8e0e8a24f2f6f4ab050829c6a2">bl_region_type</a> = 'WINDOW'</td></tr>
+<tr class="separator:a9763fc8e0e8a24f2f6f4ab050829c6a2 inherit pub_static_attribs_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5da786aaf2c38c096f23a7f504866537 inherit pub_static_attribs_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel" id="r_a5da786aaf2c38c096f23a7f504866537"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel.html#a5da786aaf2c38c096f23a7f504866537">bl_context</a> = &quot;render&quot;</td></tr>
+<tr class="separator:a5da786aaf2c38c096f23a7f504866537 inherit pub_static_attribs_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c1ca8db6e75af2657e5658f7e3d7219 inherit pub_static_attribs_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel" id="r_a7c1ca8db6e75af2657e5658f7e3d7219"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel.html#a7c1ca8db6e75af2657e5658f7e3d7219">always_show_panel</a> = False</td></tr>
+<tr class="separator:a7c1ca8db6e75af2657e5658f7e3d7219 inherit pub_static_attribs_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0864a41721ef5200ecbbf340a1f7d678 inherit pub_static_attribs_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel" id="r_a0864a41721ef5200ecbbf340a1f7d678"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel.html#a0864a41721ef5200ecbbf340a1f7d678">COMPAT_ENGINES</a> = {'CNCCAM_RENDER'}</td></tr>
+<tr class="separator:a0864a41721ef5200ecbbf340a1f7d678 inherit pub_static_attribs_classcam_1_1ui__panels_1_1buttons__panel_1_1CAMButtonsPanel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><pre class="fragment">CAM Operation Area Panel</pre> </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="abdc54a0936c0ee333f38597bfeb86ab1" name="abdc54a0936c0ee333f38597bfeb86ab1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdc54a0936c0ee333f38597bfeb86ab1">&#9670;&#160;</a></span>draw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.ui_panels.area.CAM_AREA_Panel.draw </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>context</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afbfc7e65c6e2651d65c1f8595a08a672" name="afbfc7e65c6e2651d65c1f8595a08a672"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbfc7e65c6e2651d65c1f8595a08a672">&#9670;&#160;</a></span>draw_ambient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.ui_panels.area.CAM_AREA_Panel.draw_ambient </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_afbfc7e65c6e2651d65c1f8595a08a672_cgraph.svg" width="472" height="66"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a1a8049fa43f39b40f5716a3efc85d7f3" name="a1a8049fa43f39b40f5716a3efc85d7f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a8049fa43f39b40f5716a3efc85d7f3">&#9670;&#160;</a></span>draw_first_down()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.ui_panels.area.CAM_AREA_Panel.draw_first_down </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>col</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_a1a8049fa43f39b40f5716a3efc85d7f3_cgraph.svg" width="486" height="66"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ae5b5413182cd6772e7a4af7fbfca5ebf" name="ae5b5413182cd6772e7a4af7fbfca5ebf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5b5413182cd6772e7a4af7fbfca5ebf">&#9670;&#160;</a></span>draw_limit_curve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.ui_panels.area.CAM_AREA_Panel.draw_limit_curve </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_ae5b5413182cd6772e7a4af7fbfca5ebf_cgraph.svg" width="492" height="66"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="aa134833afdf6802c89373a1e9f5e6048" name="aa134833afdf6802c89373a1e9f5e6048"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa134833afdf6802c89373a1e9f5e6048">&#9670;&#160;</a></span>draw_maxz()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.ui_panels.area.CAM_AREA_Panel.draw_maxz </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_aa134833afdf6802c89373a1e9f5e6048_cgraph.svg" width="455" height="66"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ad9e466c7c4e2730e608ee8238988e2d4" name="ad9e466c7c4e2730e608ee8238988e2d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9e466c7c4e2730e608ee8238988e2d4">&#9670;&#160;</a></span>draw_minz()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.ui_panels.area.CAM_AREA_Panel.draw_minz </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_ad9e466c7c4e2730e608ee8238988e2d4_cgraph.svg" width="452" height="66"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a97609194e155a1367d259fd9fc3b8007" name="a97609194e155a1367d259fd9fc3b8007"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97609194e155a1367d259fd9fc3b8007">&#9670;&#160;</a></span>draw_use_layers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.ui_panels.area.CAM_AREA_Panel.draw_use_layers </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel_a97609194e155a1367d259fd9fc3b8007_cgraph.svg" width="488" height="66"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a4d4ccd5915a348d6048795d8563079fe" name="a4d4ccd5915a348d6048795d8563079fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d4ccd5915a348d6048795d8563079fe">&#9670;&#160;</a></span>bl_idname</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">str cam.ui_panels.area.CAM_AREA_Panel.bl_idname = &quot;WORLD_PT_CAM_OPERATION_AREA&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaf69f67ad7c83f284c350d6477761188" name="aaf69f67ad7c83f284c350d6477761188"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf69f67ad7c83f284c350d6477761188">&#9670;&#160;</a></span>bl_label</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">str cam.ui_panels.area.CAM_AREA_Panel.bl_label = &quot;CAM Operation Area&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ada410a6ab5a4cda97a33636cd514c8bf" name="ada410a6ab5a4cda97a33636cd514c8bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada410a6ab5a4cda97a33636cd514c8bf">&#9670;&#160;</a></span>context</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.ui_panels.area.CAM_AREA_Panel.context</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a814fbebf4774df64327b21c62cf5d5af" name="a814fbebf4774df64327b21c62cf5d5af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a814fbebf4774df64327b21c62cf5d5af">&#9670;&#160;</a></span>op</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cam.ui_panels.area.CAM_AREA_Panel.op</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afc2870818783dd5ad6a59429aea7b260" name="afc2870818783dd5ad6a59429aea7b260"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc2870818783dd5ad6a59429aea7b260">&#9670;&#160;</a></span>panel_interface_level</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int cam.ui_panels.area.CAM_AREA_Panel.panel_interface_level = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab9fd43f718be543c04828424917ca500" name="ab9fd43f718be543c04828424917ca500"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9fd43f718be543c04828424917ca500">&#9670;&#160;</a></span>prop_level</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">dict cam.ui_panels.area.CAM_AREA_Panel.prop_level</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=  {</div>
+<div class="line">        <span class="stringliteral">&#39;draw_use_layers&#39;</span>: 0,</div>
+<div class="line">        <span class="stringliteral">&#39;draw_maxz&#39;</span>: 1,</div>
+<div class="line">        <span class="stringliteral">&#39;draw_minz&#39;</span>: 1,</div>
+<div class="line">        <span class="stringliteral">&#39;draw_ambient&#39;</span>: 1,</div>
+<div class="line">        <span class="stringliteral">&#39;draw_limit_curve&#39;</span>: 1,</div>
+<div class="line">        <span class="stringliteral">&#39;draw_first_down&#39;</span>: 1,</div>
+<div class="line">    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/ui_panels/<a class="el" href="area_8py.html">area.py</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.10.0-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacecam.html">cam</a></li><li class="navelem"><a class="el" href="namespacecam_1_1ui__panels.html">ui_panels</a></li><li class="navelem"><a class="el" href="namespacecam_1_1ui__panels_1_1area.html">area</a></li><li class="navelem"><a class="el" href="classcam_1_1ui__panels_1_1area_1_1CAM__AREA__Panel.html">CAM_AREA_Panel</a></li>
+    <li class="footer">Generated by <a href="https://penify.dev/"><img class="footer" src="https://www.penify.dev/_next/static/media/snorkell-dark-logo.9fa414f5.svg" width="104" height="31" alt="doxygen"/></a> </li>
+  </ul>
+</div>
+</body>
+</html>

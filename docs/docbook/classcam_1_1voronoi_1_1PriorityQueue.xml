@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1voronoi_1_1PriorityQueue" xml:lang="en-US">
+<title>cam.voronoi.PriorityQueue Class Reference</title>
+<indexterm><primary>cam.voronoi.PriorityQueue</primary></indexterm>
+Inheritance diagram for cam.voronoi.PriorityQueue:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1voronoi_1_1PriorityQueue__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.voronoi.PriorityQueue:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1voronoi_1_1PriorityQueue__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1PriorityQueue_1a400b68c79b53a33d02cfb16998716bed">__init__</link> (self, <link linkend="_classcam_1_1voronoi_1_1PriorityQueue_1a3e1343b610d2bbbd6a7a383a290132ef">ymin</link>, ymax, nsites)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1PriorityQueue_1a463ff2f03e47c5ec46cc37213ca84365">__len__</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1PriorityQueue_1a8c055e209bd650be554efbf1bf89e8d7">isEmpty</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1PriorityQueue_1a857ebc5af54336e935d69fd5568382ea">insert</link> (self, he, site, offset)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1PriorityQueue_1af6527c4d041251aea54fd2d17a4a771c">delete</link> (self, he)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1PriorityQueue_1af2c2effb4a6e93615875f33a137b7511">getBucket</link> (self, he)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1PriorityQueue_1ac9eae4ab1d0eaa605475dd74e585d497">getMinPt</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1PriorityQueue_1ae9633dad8a8489cd449ecfc313971165">popMinHalfedge</link> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1PriorityQueue_1a3e1343b610d2bbbd6a7a383a290132ef">ymin</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1PriorityQueue_1a24048414dfc405085ef407756b8b6fd8">deltay</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1PriorityQueue_1a51ded7053f3c5f2ee7de7f2b96bb20d1">hashsize</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1PriorityQueue_1a551e508cdcddaa53975c71b2de64eab2">count</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1PriorityQueue_1ace00680989b596205f4d728e0d5642ba">minidx</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1PriorityQueue_1a90a56d343f473dda5671383a70970207">hash</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classcam_1_1voronoi_1_1PriorityQueue_1a400b68c79b53a33d02cfb16998716bed"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>cam.voronoi.PriorityQueue</secondary></indexterm>
+<indexterm><primary>cam.voronoi.PriorityQueue</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>cam.voronoi.PriorityQueue.__init__ ( self,  ymin,  ymax,  nsites)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1voronoi_1_1PriorityQueue_1a463ff2f03e47c5ec46cc37213ca84365"/><section>
+    <title>__len__()</title>
+<indexterm><primary>__len__</primary><secondary>cam.voronoi.PriorityQueue</secondary></indexterm>
+<indexterm><primary>cam.voronoi.PriorityQueue</primary><secondary>__len__</secondary></indexterm>
+<para><computeroutput>cam.voronoi.PriorityQueue.__len__ ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1voronoi_1_1PriorityQueue_a463ff2f03e47c5ec46cc37213ca84365_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1voronoi_1_1PriorityQueue_1af6527c4d041251aea54fd2d17a4a771c"/><section>
+    <title>delete()</title>
+<indexterm><primary>delete</primary><secondary>cam.voronoi.PriorityQueue</secondary></indexterm>
+<indexterm><primary>cam.voronoi.PriorityQueue</primary><secondary>delete</secondary></indexterm>
+<para><computeroutput>cam.voronoi.PriorityQueue.delete ( self,  he)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1voronoi_1_1PriorityQueue_af6527c4d041251aea54fd2d17a4a771c_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1voronoi_1_1PriorityQueue_1af2c2effb4a6e93615875f33a137b7511"/><section>
+    <title>getBucket()</title>
+<indexterm><primary>getBucket</primary><secondary>cam.voronoi.PriorityQueue</secondary></indexterm>
+<indexterm><primary>cam.voronoi.PriorityQueue</primary><secondary>getBucket</secondary></indexterm>
+<para><computeroutput>cam.voronoi.PriorityQueue.getBucket ( self,  he)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1voronoi_1_1PriorityQueue_af2c2effb4a6e93615875f33a137b7511_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1voronoi_1_1PriorityQueue_1ac9eae4ab1d0eaa605475dd74e585d497"/><section>
+    <title>getMinPt()</title>
+<indexterm><primary>getMinPt</primary><secondary>cam.voronoi.PriorityQueue</secondary></indexterm>
+<indexterm><primary>cam.voronoi.PriorityQueue</primary><secondary>getMinPt</secondary></indexterm>
+<para><computeroutput>cam.voronoi.PriorityQueue.getMinPt ( self)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1PriorityQueue_1a857ebc5af54336e935d69fd5568382ea"/><section>
+    <title>insert()</title>
+<indexterm><primary>insert</primary><secondary>cam.voronoi.PriorityQueue</secondary></indexterm>
+<indexterm><primary>cam.voronoi.PriorityQueue</primary><secondary>insert</secondary></indexterm>
+<para><computeroutput>cam.voronoi.PriorityQueue.insert ( self,  he,  site,  offset)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1voronoi_1_1PriorityQueue_a857ebc5af54336e935d69fd5568382ea_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1voronoi_1_1PriorityQueue_1a8c055e209bd650be554efbf1bf89e8d7"/><section>
+    <title>isEmpty()</title>
+<indexterm><primary>isEmpty</primary><secondary>cam.voronoi.PriorityQueue</secondary></indexterm>
+<indexterm><primary>cam.voronoi.PriorityQueue</primary><secondary>isEmpty</secondary></indexterm>
+<para><computeroutput>cam.voronoi.PriorityQueue.isEmpty ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1voronoi_1_1PriorityQueue_a8c055e209bd650be554efbf1bf89e8d7_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1voronoi_1_1PriorityQueue_1ae9633dad8a8489cd449ecfc313971165"/><section>
+    <title>popMinHalfedge()</title>
+<indexterm><primary>popMinHalfedge</primary><secondary>cam.voronoi.PriorityQueue</secondary></indexterm>
+<indexterm><primary>cam.voronoi.PriorityQueue</primary><secondary>popMinHalfedge</secondary></indexterm>
+<para><computeroutput>cam.voronoi.PriorityQueue.popMinHalfedge ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1voronoi_1_1PriorityQueue_ae9633dad8a8489cd449ecfc313971165_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1voronoi_1_1PriorityQueue_1a551e508cdcddaa53975c71b2de64eab2"/><section>
+    <title>count</title>
+<indexterm><primary>count</primary><secondary>cam.voronoi.PriorityQueue</secondary></indexterm>
+<indexterm><primary>cam.voronoi.PriorityQueue</primary><secondary>count</secondary></indexterm>
+<para><computeroutput>cam.voronoi.PriorityQueue.count</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1PriorityQueue_1a24048414dfc405085ef407756b8b6fd8"/><section>
+    <title>deltay</title>
+<indexterm><primary>deltay</primary><secondary>cam.voronoi.PriorityQueue</secondary></indexterm>
+<indexterm><primary>cam.voronoi.PriorityQueue</primary><secondary>deltay</secondary></indexterm>
+<para><computeroutput>cam.voronoi.PriorityQueue.deltay</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1PriorityQueue_1a90a56d343f473dda5671383a70970207"/><section>
+    <title>hash</title>
+<indexterm><primary>hash</primary><secondary>cam.voronoi.PriorityQueue</secondary></indexterm>
+<indexterm><primary>cam.voronoi.PriorityQueue</primary><secondary>hash</secondary></indexterm>
+<para><computeroutput>cam.voronoi.PriorityQueue.hash</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1PriorityQueue_1a51ded7053f3c5f2ee7de7f2b96bb20d1"/><section>
+    <title>hashsize</title>
+<indexterm><primary>hashsize</primary><secondary>cam.voronoi.PriorityQueue</secondary></indexterm>
+<indexterm><primary>cam.voronoi.PriorityQueue</primary><secondary>hashsize</secondary></indexterm>
+<para><computeroutput>cam.voronoi.PriorityQueue.hashsize</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1PriorityQueue_1ace00680989b596205f4d728e0d5642ba"/><section>
+    <title>minidx</title>
+<indexterm><primary>minidx</primary><secondary>cam.voronoi.PriorityQueue</secondary></indexterm>
+<indexterm><primary>cam.voronoi.PriorityQueue</primary><secondary>minidx</secondary></indexterm>
+<para><computeroutput>cam.voronoi.PriorityQueue.minidx</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1PriorityQueue_1a3e1343b610d2bbbd6a7a383a290132ef"/><section>
+    <title>ymin</title>
+<indexterm><primary>ymin</primary><secondary>cam.voronoi.PriorityQueue</secondary></indexterm>
+<indexterm><primary>cam.voronoi.PriorityQueue</primary><secondary>ymin</secondary></indexterm>
+<para><computeroutput>cam.voronoi.PriorityQueue.ymin</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/<link linkend="_voronoi_8py">voronoi.py</link></section>
+</section>

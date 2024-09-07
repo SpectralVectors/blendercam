@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1voronoi_1_1EdgeList" xml:lang="en-US">
+<title>cam.voronoi.EdgeList Class Reference</title>
+<indexterm><primary>cam.voronoi.EdgeList</primary></indexterm>
+Inheritance diagram for cam.voronoi.EdgeList:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1voronoi_1_1EdgeList__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.voronoi.EdgeList:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1voronoi_1_1EdgeList__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1EdgeList_1a853f77af48ea98c2475ab8a9fe3ac764">__init__</link> (self, <link linkend="_classcam_1_1voronoi_1_1EdgeList_1a8fe454dd59008f4e1d2c36ff82547a25">xmin</link>, xmax, nsites)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1EdgeList_1abaadc788b568245ed173d6ce27152ce0">insert</link> (self, left, he)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1EdgeList_1a12794bc21a5f7f6f943437f5287ba180">delete</link> (self, he)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1EdgeList_1a0a7d44b327829d667431e4de43349ed1">gethash</link> (self, b)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1EdgeList_1aaf9499fb416602dcb85cd6aef3c7733e">leftbnd</link> (self, pt)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1EdgeList_1a34f2f20a085239606f72aa115afbb1cf">hashsize</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1EdgeList_1a8fe454dd59008f4e1d2c36ff82547a25">xmin</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1EdgeList_1ab30474747f50ea25a402d8c4e7e6d4c4">deltax</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1EdgeList_1a7b8c8191dfcce1f2492e236f4c12c43c">hash</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1EdgeList_1ae88200a32e0c52e27cc5ea1366c9bcfb">leftend</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1voronoi_1_1EdgeList_1a809610de91383bb20e5e5b51080f2d11">rightend</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classcam_1_1voronoi_1_1EdgeList_1a853f77af48ea98c2475ab8a9fe3ac764"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>cam.voronoi.EdgeList</secondary></indexterm>
+<indexterm><primary>cam.voronoi.EdgeList</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>cam.voronoi.EdgeList.__init__ ( self,  xmin,  xmax,  nsites)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1voronoi_1_1EdgeList_1a12794bc21a5f7f6f943437f5287ba180"/><section>
+    <title>delete()</title>
+<indexterm><primary>delete</primary><secondary>cam.voronoi.EdgeList</secondary></indexterm>
+<indexterm><primary>cam.voronoi.EdgeList</primary><secondary>delete</secondary></indexterm>
+<para><computeroutput>cam.voronoi.EdgeList.delete ( self,  he)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1EdgeList_1a0a7d44b327829d667431e4de43349ed1"/><section>
+    <title>gethash()</title>
+<indexterm><primary>gethash</primary><secondary>cam.voronoi.EdgeList</secondary></indexterm>
+<indexterm><primary>cam.voronoi.EdgeList</primary><secondary>gethash</secondary></indexterm>
+<para><computeroutput>cam.voronoi.EdgeList.gethash ( self,  b)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1voronoi_1_1EdgeList_a0a7d44b327829d667431e4de43349ed1_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1voronoi_1_1EdgeList_1abaadc788b568245ed173d6ce27152ce0"/><section>
+    <title>insert()</title>
+<indexterm><primary>insert</primary><secondary>cam.voronoi.EdgeList</secondary></indexterm>
+<indexterm><primary>cam.voronoi.EdgeList</primary><secondary>insert</secondary></indexterm>
+<para><computeroutput>cam.voronoi.EdgeList.insert ( self,  left,  he)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1EdgeList_1aaf9499fb416602dcb85cd6aef3c7733e"/><section>
+    <title>leftbnd()</title>
+<indexterm><primary>leftbnd</primary><secondary>cam.voronoi.EdgeList</secondary></indexterm>
+<indexterm><primary>cam.voronoi.EdgeList</primary><secondary>leftbnd</secondary></indexterm>
+<para><computeroutput>cam.voronoi.EdgeList.leftbnd ( self,  pt)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1voronoi_1_1EdgeList_aaf9499fb416602dcb85cd6aef3c7733e_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1voronoi_1_1EdgeList_1ab30474747f50ea25a402d8c4e7e6d4c4"/><section>
+    <title>deltax</title>
+<indexterm><primary>deltax</primary><secondary>cam.voronoi.EdgeList</secondary></indexterm>
+<indexterm><primary>cam.voronoi.EdgeList</primary><secondary>deltax</secondary></indexterm>
+<para><computeroutput>cam.voronoi.EdgeList.deltax</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1EdgeList_1a7b8c8191dfcce1f2492e236f4c12c43c"/><section>
+    <title>hash</title>
+<indexterm><primary>hash</primary><secondary>cam.voronoi.EdgeList</secondary></indexterm>
+<indexterm><primary>cam.voronoi.EdgeList</primary><secondary>hash</secondary></indexterm>
+<para><computeroutput>cam.voronoi.EdgeList.hash</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1EdgeList_1a34f2f20a085239606f72aa115afbb1cf"/><section>
+    <title>hashsize</title>
+<indexterm><primary>hashsize</primary><secondary>cam.voronoi.EdgeList</secondary></indexterm>
+<indexterm><primary>cam.voronoi.EdgeList</primary><secondary>hashsize</secondary></indexterm>
+<para><computeroutput>cam.voronoi.EdgeList.hashsize</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1EdgeList_1ae88200a32e0c52e27cc5ea1366c9bcfb"/><section>
+    <title>leftend</title>
+<indexterm><primary>leftend</primary><secondary>cam.voronoi.EdgeList</secondary></indexterm>
+<indexterm><primary>cam.voronoi.EdgeList</primary><secondary>leftend</secondary></indexterm>
+<para><computeroutput>cam.voronoi.EdgeList.leftend</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1EdgeList_1a809610de91383bb20e5e5b51080f2d11"/><section>
+    <title>rightend</title>
+<indexterm><primary>rightend</primary><secondary>cam.voronoi.EdgeList</secondary></indexterm>
+<indexterm><primary>cam.voronoi.EdgeList</primary><secondary>rightend</secondary></indexterm>
+<para><computeroutput>cam.voronoi.EdgeList.rightend</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1voronoi_1_1EdgeList_1a8fe454dd59008f4e1d2c36ff82547a25"/><section>
+    <title>xmin</title>
+<indexterm><primary>xmin</primary><secondary>cam.voronoi.EdgeList</secondary></indexterm>
+<indexterm><primary>cam.voronoi.EdgeList</primary><secondary>xmin</secondary></indexterm>
+<para><computeroutput>cam.voronoi.EdgeList.xmin</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/<link linkend="_voronoi_8py">voronoi.py</link></section>
+</section>

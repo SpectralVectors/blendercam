@@ -1,0 +1,1402 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso" xml:lang="en-US">
+<title>cam.nc.lathe1.CreatorIso Class Reference</title>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary></indexterm>
+Inheritance diagram for cam.nc.lathe1.CreatorIso:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1lathe1_1_1CreatorIso__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for cam.nc.lathe1.CreatorIso:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1lathe1_1_1CreatorIso__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a72da30431ea31318bcdaec3cc7b34ce5">__init__</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a9a21f6b80f6042cc4d442d33bbcf2c70">write_feedrate</link> (self)</para>
+
+<para>Internals. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a342db89c1c4dfcd239a53dab2d5df7fa">write_preps</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a7929bffd4d2c533f9616e5c997629ee6">write_misc</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a9ed784383379608ea9337c078f9409fb">write_spindle</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a5f05abaa6adfd0666a7abaa494876504">program_begin</link> (self, id, name=&apos;&apos;)</para>
+
+<para>Programs. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1acec350c5ee0b2fd65f16fbbc81e2ba35">program_stop</link> (self, optional=False)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1aca23f88a1fdd8c1ace71de40bdcaddec">program_end</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ad279609e88cfe7951f2aa22eedfdb8a1">flush_nc</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a931ff4f5a2606222a63ff1fc4c405442">sub_begin</link> (self, id, name=&apos;&apos;)</para>
+
+<para>Subprograms. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a268a709b01564fb619fef1c1aa7c7f2a">sub_call</link> (self, id)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ade1b76aeb315bb486c3621a7c06135f1">sub_end</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ac55213dc253194762ec2b67608c2d57a">imperial</link> (self)</para>
+
+<para>Settings. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1adeaa6c4fcc9c3056600a3dd2706daf18">metric</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a8693294ebb764f30b26802f9d58a888e">absolute</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1afb8eda52dbc738421b324d12969b57b8">incremental</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ad74fd3af0b22f51feebd958b6fae8113">polar</link> (self, on=True)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a1fe987af3eceb80f51bec4308a0ceae1">set_plane</link> (self, plane)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a8705b7a922385862dea7c2ea6eb3c6d7">set_temporary_origin</link> (self, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a1dfe6b5743fbdc4ce70f612213f886da">x</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a231102ecb91e458aabbac059aa3b28ca">y</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a22751cccc058e42abe6abb10e9b36f94">z</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a40f2fcb455194e2cec1e049a1eb7c1b9">a</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a28a84d2d20e1e5bc409782bc7813f65b">b</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1aa2c5937ce15bbfe2b9dcfe0aa36a6e9b">c</link>=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1aeca18bca6c45c71088047cfff04ab78a">remove_temporary_origin</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ab029f691b34c12e7543805785ce78c49">tool_change</link> (self, id)</para>
+
+<para>Tools. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a235effb0d28ba933cef439b63712583a">tool_defn</link> (self, id, name=&apos;&apos;, params=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a4323efb912ed6fa6c215bc468b6069e3">offset_radius</link> (self, id, radius=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1afbc112be2b2fba36815d7cbf200d00b7">offset_length</link> (self, id, length=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a1f23fbf69f6a552d478d41d48535397b">datum_shift</link> (self, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a1dfe6b5743fbdc4ce70f612213f886da">x</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a231102ecb91e458aabbac059aa3b28ca">y</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a22751cccc058e42abe6abb10e9b36f94">z</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a40f2fcb455194e2cec1e049a1eb7c1b9">a</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a28a84d2d20e1e5bc409782bc7813f65b">b</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1aa2c5937ce15bbfe2b9dcfe0aa36a6e9b">c</link>=None)</para>
+
+<para>Datums. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ae9c2ed7fab5d6ff2a01b7329c7450a7c">datum_set</link> (self, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a1dfe6b5743fbdc4ce70f612213f886da">x</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a231102ecb91e458aabbac059aa3b28ca">y</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a22751cccc058e42abe6abb10e9b36f94">z</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a40f2fcb455194e2cec1e049a1eb7c1b9">a</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a28a84d2d20e1e5bc409782bc7813f65b">b</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1aa2c5937ce15bbfe2b9dcfe0aa36a6e9b">c</link>=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a61bafbe933070f277bbe298b3f17752b">workplane</link> (self, id)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1aa2766b882c26238c2c270e4c194b8958">feedrate</link> (self, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a9481b7207b2f6cc57b5b2555a198f314">f</link>)</para>
+
+<para>Rates + Modes. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a4ac64a1829ad72844d4d9f3ffe3d0009">feedrate_hv</link> (self, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1af6cd5cd2a6f0d88a0a298f9554b0345c">fh</link>, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a7d0f7e7ff4b0d39d84f1b7c6224c8fb6">fv</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1aa405230025a73414084634b6c3f18647">calc_feedrate_hv</link> (self, h, v)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ad3811ae77734bb7c97a76393a0a8f5f1">spindle</link> (self, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a953856c486df16f3650bd962bd00ce2b">s</link>, clockwise)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ae8b8552c926c17ffa7170752cfca987a">coolant</link> (self, mode=0)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ae0c24215c442d382a002a8a60380f539">gearrange</link> (self, gear=0)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a58e2089cb00422e3761f487ab0160e2b">rapid</link> (self, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a1dfe6b5743fbdc4ce70f612213f886da">x</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a231102ecb91e458aabbac059aa3b28ca">y</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a22751cccc058e42abe6abb10e9b36f94">z</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a40f2fcb455194e2cec1e049a1eb7c1b9">a</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a28a84d2d20e1e5bc409782bc7813f65b">b</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1aa2c5937ce15bbfe2b9dcfe0aa36a6e9b">c</link>=None)</para>
+
+<para>Moves. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a7278ca3bb84f4045368333fa059ab864">feed</link> (self, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a1dfe6b5743fbdc4ce70f612213f886da">x</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a231102ecb91e458aabbac059aa3b28ca">y</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a22751cccc058e42abe6abb10e9b36f94">z</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a40f2fcb455194e2cec1e049a1eb7c1b9">a</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a28a84d2d20e1e5bc409782bc7813f65b">b</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1aa2c5937ce15bbfe2b9dcfe0aa36a6e9b">c</link>=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a34e522ee6fc4c09812344aa528c9cefb">same_xyz</link> (self, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a1dfe6b5743fbdc4ce70f612213f886da">x</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a231102ecb91e458aabbac059aa3b28ca">y</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a22751cccc058e42abe6abb10e9b36f94">z</link>=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1abb9674871edcb35b7b6c7712b3381073">arc</link> (self, cw, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a1dfe6b5743fbdc4ce70f612213f886da">x</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a231102ecb91e458aabbac059aa3b28ca">y</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a22751cccc058e42abe6abb10e9b36f94">z</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ae2ebd27be89e6f43cf7a2aed2ca60c9a">i</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ad4d2e98da5b3a88d334b56885a9079da">j</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ae3c7632acc25eb75aa779ca0e14a842d">k</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1abad0b6036ff224891c734b22d6d176b5">r</link>=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ae2f7d7587f9940cf9534e127f7234c4c">arc_cw</link> (self, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a1dfe6b5743fbdc4ce70f612213f886da">x</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a231102ecb91e458aabbac059aa3b28ca">y</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a22751cccc058e42abe6abb10e9b36f94">z</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ae2ebd27be89e6f43cf7a2aed2ca60c9a">i</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ad4d2e98da5b3a88d334b56885a9079da">j</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ae3c7632acc25eb75aa779ca0e14a842d">k</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1abad0b6036ff224891c734b22d6d176b5">r</link>=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a9eae946df7fc34b9a46e33a00d891c3d">arc_ccw</link> (self, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a1dfe6b5743fbdc4ce70f612213f886da">x</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a231102ecb91e458aabbac059aa3b28ca">y</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a22751cccc058e42abe6abb10e9b36f94">z</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ae2ebd27be89e6f43cf7a2aed2ca60c9a">i</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ad4d2e98da5b3a88d334b56885a9079da">j</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ae3c7632acc25eb75aa779ca0e14a842d">k</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1abad0b6036ff224891c734b22d6d176b5">r</link>=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ae6627d29a1149b516f139585a7200cd9">dwell</link> (self, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ac86ebda0c32fcf902b975b89691e9b7d">t</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a73af01d20f55f169459e772fc8de6384">rapid_home</link> (self, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a1dfe6b5743fbdc4ce70f612213f886da">x</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a231102ecb91e458aabbac059aa3b28ca">y</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a22751cccc058e42abe6abb10e9b36f94">z</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a40f2fcb455194e2cec1e049a1eb7c1b9">a</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a28a84d2d20e1e5bc409782bc7813f65b">b</link>=None, <link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1aa2c5937ce15bbfe2b9dcfe0aa36a6e9b">c</link>=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a04757fcb041e7fc74a63fe00d2bdb9b7">rapid_unhome</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a92899e62df37f46de63e24a9ecc5c700">set_machine_coordinates</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a0b30cc57e9b6a88609166e05128add2f">use_CRC</link> (self)</para>
+
+<para>CRC. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a30a09a55fbe9c474dfa71534369714e6">start_CRC</link> (self, left=True, radius=0.0)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a98d73dc39a085f20c761632071e32708">end_CRC</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a20f06f8a86c04518d585e91ec3e4e392">pattern</link> (self)</para>
+
+<para>Cycles. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a0eb1bf3941c0211e05ef01dda8764501">profile</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a8accf939c903e6a847289d1fc081a8d0">end_canned_cycle</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a9a38af13242cd8d3f9e2adf72cc89316">comment</link> (self, text)</para>
+
+<para>Misc. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a85d6358057eaee8502498d8d29743cf3">insert</link> (self, text)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a7d2a4c3552bd8d9ec186ed4a6a77547f">block_delete</link> (self, on=False)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a56d8b388da6e65eabb5efe5369d729d9">variable</link> (self, id)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a837b92435e023ae3d2f851ac1c7269de">variable_set</link> (self, id, value)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator">cam.nc.nc.Creator</link>        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1ab3651c24840aa9b2a7a1bc828263eac9">file_open</link> (self, name)</para>
+
+<para>Internals. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a7bf39bc81f3b3714060d74f1339ae06c">file_close</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a80f2134add83bfaaf2870d075d36ed8a">write</link> (self, s)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a6b9b5f41f66c0a89ae69a7f21776025d">writem</link> (self, a)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1aa4f10ffcf1ffb003aea0a8a008e65cd4">add_stock</link> (self, type_name, params)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1abb1d0f892dfa22f1fa591e0f32132ddd">current_tool</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a25dc579a777162a8825f4a80cdb49dd7">clearanceplane</link> (self, z=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1aa444813a0c811ccdf5c131ef200f61ad">matrix</link> (self, a1=None, b1=None, c1=None, a2=None, b2=None, c2=None, a3=None, b3=None, c3=None)</para>
+
+<para>APT360 like Transformation Definitions These definitions were created while looking at Irvin Kraal&apos;s book on APT. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1aa2916aeb745eb7bab7335e02638045f6">translate</link> (self, x=None, y=None, z=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1adb91710cf1f26d4cf07f9da51e7798a5">rotate</link> (self, xyrot=None, yzrot=None, zxrot=None, angle=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a7277c1e666c6dda2b8a997f3518f3f3e">scale</link> (self, k=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a016998404be15eef6dc192118c572e4a">matrix_product</link> (self, matrix1=None, matrix2=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a183c1585f1851d4573dadc6645f3b473">mirror_plane</link> (self, plane1=None, plane2=None, plane3=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1aa777fc06dd6e476f08060e7cf4f88068">mirror_line</link> (self, line=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a89cf133b4ed304132bab0e3e930a7d1e">pocket</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a4819416a7408129c220de90d72c91a6c">drill</link> (self, x=None, y=None, <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a56b11f862045ee84c844133b646117c8">dwell</link>=None, depthparams=None, retract_mode=None, spindle_mode=None, internal_coolant_on=None, rapid_to_clearance=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a0e6b1ba5ac8a76e36f68c1ef8b21435a">tap</link> (self, x=None, y=None, z=None, zretract=None, depth=None, standoff=None, dwell_bottom=None, pitch=None, stoppos=None, spin_in=None, spin_out=None, tap_mode=None, direction=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a167f093c98cb4777a2f495a94010cf64">bore</link> (self, x=None, y=None, z=None, zretract=None, depth=None, standoff=None, dwell_bottom=None, feed_in=None, feed_out=None, stoppos=None, shift_back=None, shift_right=None, backbore=False, stop=False)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a5943f76b586cd2d530dc0d305ef457bd">probe_linear_centre_outside</link> (self, x1=None, y1=None, depth=None, x2=None, y2=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1ab2982bddb09ae7c6469a7b5e616566ab">probe_single_point</link> (self, point_along_edge_x=None, point_along_edge_y=None, depth=None, retracted_point_x=None, retracted_point_y=None, destination_point_x=None, destination_point_y=None, intersection_variable_x=None, intersection_variable_y=None, probe_offset_x_component=None, probe_offset_y_component=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a950f0b9dd784e5a706fb16bd4e356607">probe_downward_point</link> (self, x=None, y=None, depth=None, intersection_variable_z=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a7ff98c29e67d4bb1e4d428e7a19ae0c9">report_probe_results</link> (self, x1=None, y1=None, z1=None, x2=None, y2=None, z2=None, x3=None, y3=None, z3=None, x4=None, y4=None, z4=None, x5=None, y5=None, z5=None, x6=None, y6=None, z6=None, xml_file_name=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1ae826db09c1b7c0fe1099f66f09f5758a">open_log_file</link> (self, xml_file_name=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a17e6de5013fe131ff946bd3e86be52dc">log_coordinate</link> (self, x=None, y=None, z=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a8a41b57e7fbc95e765b4107d61f2b0fb">log_message</link> (self, message=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1ae221051f5d050fe72024893d869c9e95">close_log_file</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1af58b38bf65ddba3bcef0cae39aac4a09">rapid_to_midpoint</link> (self, x1=None, y1=None, z1=None, x2=None, y2=None, z2=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1ab141de97e87759d48b8227e5738d056c">rapid_to_intersection</link> (self, x1, y1, x2, y2, x3, y3, x4, y4, intersection_x, intersection_y, ua_numerator, ua_denominator, ua, ub_numerator, ub)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1af2f4b7454862bacf84d24d45d1702d1c">rapid_to_rotated_coordinate</link> (self, x1, y1, x2, y2, ref_x, ref_y, x_current, y_current, x_final, y_final)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a36ddaf371b5dcf5cc53a8c6ed6a4e926">set_path_control_mode</link> (self, mode, motion_blending_tolerance, naive_cam_tolerance)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1aec98966fe45ff7d2973002311f38b841">wipe</link> (self)</para>
+
+<para>NC code creator for additive machines like RepRap. </para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a227b7ab87099b672da953a0aad13eff6">extruder_on</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a1acc377f3f5c966fde33e8a22ae49dd2">extruder_off</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a55cd49b26a3b252e7c6f24fc6bd4fd25">set_extruder_flowrate</link> (self, flowrate)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a0911d697ca8205da25a327e638fd3620">extruder_temp</link> (self, temp)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a2f54ed36706db67ca412a8ff341526a3">fan_on</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a5b9d618bf11b2c17a1bc5f69944bd3b7">fan_off</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a52fa4c4b50e5f53df50ebee0319e9245">build_bed_temp</link> (self, temp)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1ab9f33126ca1fff2b36e6ca3f4ac81cef">chamber_temp</link> (self, temp)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a93388ba17e68b836b4eee5d907b7fb41">begin_ncblock</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a2a88ca7c016d69f6c5f8dd98f326868a">end_ncblock</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1ab7795ded7273e69a74d36614404fef0e">add_text</link> (self, s, col, cdata)</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a40f2fcb455194e2cec1e049a1eb7c1b9">a</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a28a84d2d20e1e5bc409782bc7813f65b">b</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1aa2c5937ce15bbfe2b9dcfe0aa36a6e9b">c</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a9481b7207b2f6cc57b5b2555a198f314">f</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1af6cd5cd2a6f0d88a0a298f9554b0345c">fh</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a7d0f7e7ff4b0d39d84f1b7c6224c8fb6">fv</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1afef96997d591944a2723bd85984f55ad">fhv</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a8c40f3963be379409cace3606753cfad">g</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ae2ebd27be89e6f43cf7a2aed2ca60c9a">i</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ad4d2e98da5b3a88d334b56885a9079da">j</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ae3c7632acc25eb75aa779ca0e14a842d">k</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a88730af197579b5dda2518b1b566a1d8">m</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a05cb29b0004ce9b35c15fd3847bc0c8a">n</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1abad0b6036ff224891c734b22d6d176b5">r</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a953856c486df16f3650bd962bd00ce2b">s</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ac86ebda0c32fcf902b975b89691e9b7d">t</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a1dfe6b5743fbdc4ce70f612213f886da">x</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a231102ecb91e458aabbac059aa3b28ca">y</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a22751cccc058e42abe6abb10e9b36f94">z</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1adaed95c10d41c9116e91481ba908e637">f_modal</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a7dc91f0bc86c0925e68abd61b3cb288c">g0123_modal</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a35c84bd57dfc0603342435b2174110be">drill_modal</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a2ebcd17da3d056b36e52e1cc199cff12">prev_f</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1aab51bda9de0516122845b37d18e4f850">prev_g0123</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a6b28c9e654e1c54fc1d2a75f63e53733">prev_drill</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a5eda6219c8df2bdab283962af865d8db">prev_retract</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a66874620cc19adbe54ed94e168439c0d">prev_z</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a2611a7403159dc0f5fb871b623020e79">useCrc</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a36f9dfc35d9d88a1af2198375f75b04c">gCRC</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ab2088a95e563d9ba50fc4ad4f83174d4">fmt</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a273148769236b6b1d918e3f250cbcf54">absolute_flag</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a5dfe71ba6b6abf6d9e9bcd165720326f">ffmt</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Attributes inherited from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator">cam.nc.nc.Creator</link>        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a7b9f520b607a80af987b068cbd1d1d31">file</link></para>
+</listitem>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a6a4389cab170edcaa81bf475fa97d463">filename</link></para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a5fdbe9a78f4761269127dee38c1a72bf">creator</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a72da30431ea31318bcdaec3cc7b34ce5"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.__init__ ( self)</computeroutput></para><para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a4ca2842ee7b52903f44ba0b295296e8d">cam.nc.nc.Creator</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a8693294ebb764f30b26802f9d58a888e"/><section>
+    <title>absolute()</title>
+<indexterm><primary>absolute</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>absolute</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.absolute ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Set absolute coordinates</computeroutput></literallayout> </para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a43e3de6305aa47bada9e421ff957ef18">cam.nc.nc.Creator</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1lathe1_1_1CreatorIso_a8693294ebb764f30b26802f9d58a888e_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1abb9674871edcb35b7b6c7712b3381073"/><section>
+    <title>arc()</title>
+<indexterm><primary>arc</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>arc</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.arc ( self,  cw,  x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+,  i = <computeroutput>None</computeroutput>
+,  j = <computeroutput>None</computeroutput>
+,  k = <computeroutput>None</computeroutput>
+,  r = <computeroutput>None</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1lathe1_1_1CreatorIso_abb9674871edcb35b7b6c7712b3381073_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1lathe1_1_1CreatorIso_abb9674871edcb35b7b6c7712b3381073_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a9eae946df7fc34b9a46e33a00d891c3d"/><section>
+    <title>arc_ccw()</title>
+<indexterm><primary>arc_ccw</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>arc_ccw</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.arc_ccw ( self,  x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+,  i = <computeroutput>None</computeroutput>
+,  j = <computeroutput>None</computeroutput>
+,  k = <computeroutput>None</computeroutput>
+,  r = <computeroutput>None</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Counterclockwise arc move</computeroutput></literallayout> </para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a3edf67b50e4b3c8f327a084157363f9d">cam.nc.nc.Creator</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1lathe1_1_1CreatorIso_a9eae946df7fc34b9a46e33a00d891c3d_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ae2f7d7587f9940cf9534e127f7234c4c"/><section>
+    <title>arc_cw()</title>
+<indexterm><primary>arc_cw</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>arc_cw</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.arc_cw ( self,  x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+,  i = <computeroutput>None</computeroutput>
+,  j = <computeroutput>None</computeroutput>
+,  k = <computeroutput>None</computeroutput>
+,  r = <computeroutput>None</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Clockwise arc move</computeroutput></literallayout> </para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1ad43a5821c5d79340728de373b7fa2c19">cam.nc.nc.Creator</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1lathe1_1_1CreatorIso_ae2f7d7587f9940cf9534e127f7234c4c_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a7d2a4c3552bd8d9ec186ed4a6a77547f"/><section>
+    <title>block_delete()</title>
+<indexterm><primary>block_delete</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>block_delete</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.block_delete ( self,  on = <computeroutput>False</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>block to ignore if block delete switch is on</computeroutput></literallayout> </para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1af2742a3c6e584e90c23d4abab5e44dcc">cam.nc.nc.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1aa405230025a73414084634b6c3f18647"/><section>
+    <title>calc_feedrate_hv()</title>
+<indexterm><primary>calc_feedrate_hv</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>calc_feedrate_hv</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.calc_feedrate_hv ( self,  h,  v)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1lathe1_1_1CreatorIso_aa405230025a73414084634b6c3f18647_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a9a38af13242cd8d3f9e2adf72cc89316"/><section>
+    <title>comment()</title>
+<indexterm><primary>comment</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>comment</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.comment ( self,  text)</computeroutput></para><para>
+
+<para>Misc. </para>
+</para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1ab3e7940549c2d69d003224aa3cd586d3">cam.nc.nc.Creator</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1lathe1_1_1CreatorIso_a9a38af13242cd8d3f9e2adf72cc89316_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1lathe1_1_1CreatorIso_a9a38af13242cd8d3f9e2adf72cc89316_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ae8b8552c926c17ffa7170752cfca987a"/><section>
+    <title>coolant()</title>
+<indexterm><primary>coolant</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>coolant</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.coolant ( self,  mode = <computeroutput>0</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Set the coolant mode</computeroutput></literallayout> </para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a59217559479a824dcf40a00da6d692ac">cam.nc.nc.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ae9c2ed7fab5d6ff2a01b7329c7450a7c"/><section>
+    <title>datum_set()</title>
+<indexterm><primary>datum_set</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>datum_set</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.datum_set ( self,  x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+,  a = <computeroutput>None</computeroutput>
+,  b = <computeroutput>None</computeroutput>
+,  c = <computeroutput>None</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Set the datum</computeroutput></literallayout> </para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1acbee84ef2d71fe9ede19daa1022f1d92">cam.nc.nc.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a1f23fbf69f6a552d478d41d48535397b"/><section>
+    <title>datum_shift()</title>
+<indexterm><primary>datum_shift</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>datum_shift</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.datum_shift ( self,  x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+,  a = <computeroutput>None</computeroutput>
+,  b = <computeroutput>None</computeroutput>
+,  c = <computeroutput>None</computeroutput>
+)</computeroutput></para><para>
+
+<para>Datums. </para>
+</para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1ab99e5623dda8e62b2b94bd239d22e9b6">cam.nc.nc.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ae6627d29a1149b516f139585a7200cd9"/><section>
+    <title>dwell()</title>
+<indexterm><primary>dwell</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>dwell</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.dwell ( self,  t)</computeroutput></para>
+<para><literallayout><computeroutput>Dwell</computeroutput></literallayout> </para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a56b11f862045ee84c844133b646117c8">cam.nc.nc.Creator</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1lathe1_1_1CreatorIso_ae6627d29a1149b516f139585a7200cd9_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1lathe1_1_1CreatorIso_ae6627d29a1149b516f139585a7200cd9_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a8accf939c903e6a847289d1fc081a8d0"/><section>
+    <title>end_canned_cycle()</title>
+<indexterm><primary>end_canned_cycle</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>end_canned_cycle</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.end_canned_cycle ( self)</computeroutput></para><para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1acec2552d357ba49de5adbcbaf3ad93a5">cam.nc.nc.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a98d73dc39a085f20c761632071e32708"/><section>
+    <title>end_CRC()</title>
+<indexterm><primary>end_CRC</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>end_CRC</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.end_CRC ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1lathe1_1_1CreatorIso_a98d73dc39a085f20c761632071e32708_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a7278ca3bb84f4045368333fa059ab864"/><section>
+    <title>feed()</title>
+<indexterm><primary>feed</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>feed</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.feed ( self,  x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+,  a = <computeroutput>None</computeroutput>
+,  b = <computeroutput>None</computeroutput>
+,  c = <computeroutput>None</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Feed move</computeroutput></literallayout> </para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a58c3bce534b047d5824cde16c2571c0f">cam.nc.nc.Creator</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1lathe1_1_1CreatorIso_a7278ca3bb84f4045368333fa059ab864_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1lathe1_1_1CreatorIso_a7278ca3bb84f4045368333fa059ab864_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1aa2766b882c26238c2c270e4c194b8958"/><section>
+    <title>feedrate()</title>
+<indexterm><primary>feedrate</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>feedrate</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.feedrate ( self,  f)</computeroutput></para><para>
+
+<para>Rates + Modes. </para>
+</para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a09d15b7b72c2a18cae7dfb450f1da06e">cam.nc.nc.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a4ac64a1829ad72844d4d9f3ffe3d0009"/><section>
+    <title>feedrate_hv()</title>
+<indexterm><primary>feedrate_hv</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>feedrate_hv</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.feedrate_hv ( self,  fh,  fv)</computeroutput></para>
+<para><literallayout><computeroutput>Set the horizontal and vertical feedrates</computeroutput></literallayout> </para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1ae66f328adc58521e5ab9db7cf54dc6ce">cam.nc.nc.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ad279609e88cfe7951f2aa22eedfdb8a1"/><section>
+    <title>flush_nc()</title>
+<indexterm><primary>flush_nc</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>flush_nc</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.flush_nc ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Flush all pending codes</computeroutput></literallayout> </para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a7d841db837bad9de3466cfbd253ce875">cam.nc.nc.Creator</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1lathe1_1_1CreatorIso_ad279609e88cfe7951f2aa22eedfdb8a1_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1lathe1_1_1CreatorIso_ad279609e88cfe7951f2aa22eedfdb8a1_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ae0c24215c442d382a002a8a60380f539"/><section>
+    <title>gearrange()</title>
+<indexterm><primary>gearrange</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>gearrange</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.gearrange ( self,  gear = <computeroutput>0</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Set the gear range</computeroutput></literallayout> </para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a80e7b5c8fccc9bd3982c33a266d9fed0">cam.nc.nc.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ac55213dc253194762ec2b67608c2d57a"/><section>
+    <title>imperial()</title>
+<indexterm><primary>imperial</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>imperial</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.imperial ( self)</computeroutput></para><para>
+
+<para>Settings. </para>
+</para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1acfa51223614b1c8c231c99f8e6103af1">cam.nc.nc.Creator</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1lathe1_1_1CreatorIso_ac55213dc253194762ec2b67608c2d57a_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1afb8eda52dbc738421b324d12969b57b8"/><section>
+    <title>incremental()</title>
+<indexterm><primary>incremental</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>incremental</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.incremental ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Set incremental coordinates</computeroutput></literallayout> </para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a263eb1faaf6a9ee93f8d78bca773f021">cam.nc.nc.Creator</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1lathe1_1_1CreatorIso_afb8eda52dbc738421b324d12969b57b8_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a85d6358057eaee8502498d8d29743cf3"/><section>
+    <title>insert()</title>
+<indexterm><primary>insert</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>insert</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.insert ( self,  text)</computeroutput></para>
+<para><literallayout><computeroutput>APT style INSERT statement</computeroutput></literallayout> </para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1adf1d934a3cd91810b1148e119887500c">cam.nc.nc.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1adeaa6c4fcc9c3056600a3dd2706daf18"/><section>
+    <title>metric()</title>
+<indexterm><primary>metric</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>metric</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.metric ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Set metric units</computeroutput></literallayout> </para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1ab7b52eb5d7170eafdc365d407a887e8b">cam.nc.nc.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1afbc112be2b2fba36815d7cbf200d00b7"/><section>
+    <title>offset_length()</title>
+<indexterm><primary>offset_length</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>offset_length</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.offset_length ( self,  id,  length = <computeroutput>None</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Set tool length offsetting</computeroutput></literallayout> </para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a673202842c64cc44b229f441ae62994f">cam.nc.nc.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a4323efb912ed6fa6c215bc468b6069e3"/><section>
+    <title>offset_radius()</title>
+<indexterm><primary>offset_radius</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>offset_radius</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.offset_radius ( self,  id,  radius = <computeroutput>None</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Set tool radius offsetting</computeroutput></literallayout> </para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a755ac1c627b9d5373a00c71c02210590">cam.nc.nc.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a20f06f8a86c04518d585e91ec3e4e392"/><section>
+    <title>pattern()</title>
+<indexterm><primary>pattern</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>pattern</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.pattern ( self)</computeroutput></para><para>
+
+<para>Cycles. </para>
+</para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a59688c01984638c50dfbf012bd1ee4e3">cam.nc.nc.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ad74fd3af0b22f51feebd958b6fae8113"/><section>
+    <title>polar()</title>
+<indexterm><primary>polar</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>polar</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.polar ( self,  on = <computeroutput>True</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Set polar coordinates</computeroutput></literallayout> </para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1ae6d17212fd1159f967bbdbb4d69a03f1">cam.nc.nc.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a0eb1bf3941c0211e05ef01dda8764501"/><section>
+    <title>profile()</title>
+<indexterm><primary>profile</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>profile</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.profile ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Profile routine</computeroutput></literallayout> </para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1acf980db0661f226477a3b1a39d345e7c">cam.nc.nc.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a5f05abaa6adfd0666a7abaa494876504"/><section>
+    <title>program_begin()</title>
+<indexterm><primary>program_begin</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>program_begin</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.program_begin ( self,  id,  name = <computeroutput>&apos;&apos;</computeroutput>
+)</computeroutput></para><para>
+
+<para>Programs. </para>
+</para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a9a88c0cb630a1b3604d230f4c8b9b5ac">cam.nc.nc.Creator</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1lathe1_1_1CreatorIso_a5f05abaa6adfd0666a7abaa494876504_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1aca23f88a1fdd8c1ace71de40bdcaddec"/><section>
+    <title>program_end()</title>
+<indexterm><primary>program_end</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>program_end</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.program_end ( self)</computeroutput></para>
+<para><literallayout><computeroutput>End the program</computeroutput></literallayout> </para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a6b23941ee5eaaed546121898ee5b09fa">cam.nc.nc.Creator</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1lathe1_1_1CreatorIso_aca23f88a1fdd8c1ace71de40bdcaddec_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1acec350c5ee0b2fd65f16fbbc81e2ba35"/><section>
+    <title>program_stop()</title>
+<indexterm><primary>program_stop</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>program_stop</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.program_stop ( self,  optional = <computeroutput>False</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Stop the machine</computeroutput></literallayout> </para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a5e043392f919d7f10a5a282a580bc8fa">cam.nc.nc.Creator</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1lathe1_1_1CreatorIso_acec350c5ee0b2fd65f16fbbc81e2ba35_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a58e2089cb00422e3761f487ab0160e2b"/><section>
+    <title>rapid()</title>
+<indexterm><primary>rapid</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>rapid</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.rapid ( self,  x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+,  a = <computeroutput>None</computeroutput>
+,  b = <computeroutput>None</computeroutput>
+,  c = <computeroutput>None</computeroutput>
+)</computeroutput></para><para>
+
+<para>Moves. </para>
+</para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1ad5d01e340589c729f48fab397ccf137c">cam.nc.nc.Creator</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1lathe1_1_1CreatorIso_a58e2089cb00422e3761f487ab0160e2b_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1lathe1_1_1CreatorIso_a58e2089cb00422e3761f487ab0160e2b_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a73af01d20f55f169459e772fc8de6384"/><section>
+    <title>rapid_home()</title>
+<indexterm><primary>rapid_home</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>rapid_home</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.rapid_home ( self,  x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+,  a = <computeroutput>None</computeroutput>
+,  b = <computeroutput>None</computeroutput>
+,  c = <computeroutput>None</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Rapid relative to home position</computeroutput></literallayout> </para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1aec3c94a9584f18d2f9923081a5bdda34">cam.nc.nc.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a04757fcb041e7fc74a63fe00d2bdb9b7"/><section>
+    <title>rapid_unhome()</title>
+<indexterm><primary>rapid_unhome</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>rapid_unhome</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.rapid_unhome ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return from rapid home</computeroutput></literallayout> </para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a65815539ed9b7607ae21229b15ee0fe2">cam.nc.nc.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1aeca18bca6c45c71088047cfff04ab78a"/><section>
+    <title>remove_temporary_origin()</title>
+<indexterm><primary>remove_temporary_origin</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>remove_temporary_origin</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.remove_temporary_origin ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Remote temporary origin G92.1</computeroutput></literallayout> </para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1ad7d4b51ed47c3deaff7d7a4167ec9630">cam.nc.nc.Creator</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1lathe1_1_1CreatorIso_aeca18bca6c45c71088047cfff04ab78a_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a34e522ee6fc4c09812344aa528c9cefb"/><section>
+    <title>same_xyz()</title>
+<indexterm><primary>same_xyz</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>same_xyz</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.same_xyz ( self,  x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1lathe1_1_1CreatorIso_a34e522ee6fc4c09812344aa528c9cefb_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a92899e62df37f46de63e24a9ecc5c700"/><section>
+    <title>set_machine_coordinates()</title>
+<indexterm><primary>set_machine_coordinates</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>set_machine_coordinates</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.set_machine_coordinates ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Set machine coordinates</computeroutput></literallayout> </para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1adba071f67fa119dc47a3cbdbe5324cc4">cam.nc.nc.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a1fe987af3eceb80f51bec4308a0ceae1"/><section>
+    <title>set_plane()</title>
+<indexterm><primary>set_plane</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>set_plane</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.set_plane ( self,  plane)</computeroutput></para>
+<para><literallayout><computeroutput>Set plane</computeroutput></literallayout> </para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a63ca0750cbc4e11abbbaf856479f6bd8">cam.nc.nc.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a8705b7a922385862dea7c2ea6eb3c6d7"/><section>
+    <title>set_temporary_origin()</title>
+<indexterm><primary>set_temporary_origin</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>set_temporary_origin</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.set_temporary_origin ( self,  x = <computeroutput>None</computeroutput>
+,  y = <computeroutput>None</computeroutput>
+,  z = <computeroutput>None</computeroutput>
+,  a = <computeroutput>None</computeroutput>
+,  b = <computeroutput>None</computeroutput>
+,  c = <computeroutput>None</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Set temporary origin G92</computeroutput></literallayout> </para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a3b27c7c2c804ec3aa2a3e3e6bf3a638c">cam.nc.nc.Creator</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1lathe1_1_1CreatorIso_a8705b7a922385862dea7c2ea6eb3c6d7_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ad3811ae77734bb7c97a76393a0a8f5f1"/><section>
+    <title>spindle()</title>
+<indexterm><primary>spindle</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>spindle</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.spindle ( self,  s,  clockwise)</computeroutput></para>
+<para><literallayout><computeroutput>Set the spindle speed</computeroutput></literallayout> </para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1aba0d5dbaa64e8d6c8c0f6e02d5b2bb42">cam.nc.nc.Creator</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1lathe1_1_1CreatorIso_ad3811ae77734bb7c97a76393a0a8f5f1_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a30a09a55fbe9c474dfa71534369714e6"/><section>
+    <title>start_CRC()</title>
+<indexterm><primary>start_CRC</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>start_CRC</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.start_CRC ( self,  left = <computeroutput>True</computeroutput>
+,  radius = <computeroutput>0.0</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a931ff4f5a2606222a63ff1fc4c405442"/><section>
+    <title>sub_begin()</title>
+<indexterm><primary>sub_begin</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>sub_begin</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.sub_begin ( self,  id,  name = <computeroutput>&apos;&apos;</computeroutput>
+)</computeroutput></para><para>
+
+<para>Subprograms. </para>
+</para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a56a93e52f85de47ae50f099fd9fd9b28">cam.nc.nc.Creator</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1lathe1_1_1CreatorIso_a931ff4f5a2606222a63ff1fc4c405442_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a268a709b01564fb619fef1c1aa7c7f2a"/><section>
+    <title>sub_call()</title>
+<indexterm><primary>sub_call</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>sub_call</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.sub_call ( self,  id)</computeroutput></para>
+<para><literallayout><computeroutput>Call a subprogram</computeroutput></literallayout> </para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1ab679b1e883a53eb07ae578fc4f3f0efc">cam.nc.nc.Creator</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1lathe1_1_1CreatorIso_a268a709b01564fb619fef1c1aa7c7f2a_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ade1b76aeb315bb486c3621a7c06135f1"/><section>
+    <title>sub_end()</title>
+<indexterm><primary>sub_end</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>sub_end</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.sub_end ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Return from a subprogram</computeroutput></literallayout> </para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1ab4203d6942df1cc660ba9ba01ff44abe">cam.nc.nc.Creator</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1lathe1_1_1CreatorIso_ade1b76aeb315bb486c3621a7c06135f1_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ab029f691b34c12e7543805785ce78c49"/><section>
+    <title>tool_change()</title>
+<indexterm><primary>tool_change</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>tool_change</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.tool_change ( self,  id)</computeroutput></para><para>
+
+<para>Tools. </para>
+</para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a6fec89f9c286d6e852c9af389a46f491">cam.nc.nc.Creator</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1lathe1_1_1CreatorIso_ab029f691b34c12e7543805785ce78c49_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a235effb0d28ba933cef439b63712583a"/><section>
+    <title>tool_defn()</title>
+<indexterm><primary>tool_defn</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>tool_defn</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.tool_defn ( self,  id,  name = <computeroutput>&apos;&apos;</computeroutput>
+,  params = <computeroutput>None</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Define a tool</computeroutput></literallayout> </para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a3ac1f6171550de627fdfde4c831bc25d">cam.nc.nc.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a0b30cc57e9b6a88609166e05128add2f"/><section>
+    <title>use_CRC()</title>
+<indexterm><primary>use_CRC</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>use_CRC</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.use_CRC ( self)</computeroutput></para><para>
+
+<para>CRC. </para>
+</para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1af48057c7d845490d9cebf0c321858d87">cam.nc.nc.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a56d8b388da6e65eabb5efe5369d729d9"/><section>
+    <title>variable()</title>
+<indexterm><primary>variable</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>variable</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.variable ( self,  id)</computeroutput></para>
+<para><literallayout><computeroutput>Insert a variable</computeroutput></literallayout> </para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a2d02ebd696a2f2db466f1cf8863142d5">cam.nc.nc.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a837b92435e023ae3d2f851ac1c7269de"/><section>
+    <title>variable_set()</title>
+<indexterm><primary>variable_set</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>variable_set</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.variable_set ( self,  id,  value)</computeroutput></para>
+<para><literallayout><computeroutput>Set a variable</computeroutput></literallayout> </para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a490ecd36ed3098409fcffee44dcd11f0">cam.nc.nc.Creator</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1lathe1_1_1CreatorIso_a837b92435e023ae3d2f851ac1c7269de_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a61bafbe933070f277bbe298b3f17752b"/><section>
+    <title>workplane()</title>
+<indexterm><primary>workplane</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>workplane</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.workplane ( self,  id)</computeroutput></para>
+<para><literallayout><computeroutput>Set the workplane</computeroutput></literallayout> </para>
+<para>
+Reimplemented from <link linkend="_classcam_1_1nc_1_1nc_1_1Creator_1a21d03ba3d16ff8d84cd5546268aabab6">cam.nc.nc.Creator</link>.</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a9a21f6b80f6042cc4d442d33bbcf2c70"/><section>
+    <title>write_feedrate()</title>
+<indexterm><primary>write_feedrate</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>write_feedrate</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.write_feedrate ( self)</computeroutput></para><para>
+
+<para>Internals. </para>
+</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1lathe1_1_1CreatorIso_a9a21f6b80f6042cc4d442d33bbcf2c70_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1lathe1_1_1CreatorIso_a9a21f6b80f6042cc4d442d33bbcf2c70_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a7929bffd4d2c533f9616e5c997629ee6"/><section>
+    <title>write_misc()</title>
+<indexterm><primary>write_misc</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>write_misc</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.write_misc ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1lathe1_1_1CreatorIso_a7929bffd4d2c533f9616e5c997629ee6_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1lathe1_1_1CreatorIso_a7929bffd4d2c533f9616e5c997629ee6_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a342db89c1c4dfcd239a53dab2d5df7fa"/><section>
+    <title>write_preps()</title>
+<indexterm><primary>write_preps</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>write_preps</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.write_preps ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1lathe1_1_1CreatorIso_a342db89c1c4dfcd239a53dab2d5df7fa_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1lathe1_1_1CreatorIso_a342db89c1c4dfcd239a53dab2d5df7fa_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a9ed784383379608ea9337c078f9409fb"/><section>
+    <title>write_spindle()</title>
+<indexterm><primary>write_spindle</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>write_spindle</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.write_spindle ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1lathe1_1_1CreatorIso_a9ed784383379608ea9337c078f9409fb_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classcam_1_1nc_1_1lathe1_1_1CreatorIso_a9ed784383379608ea9337c078f9409fb_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a40f2fcb455194e2cec1e049a1eb7c1b9"/><section>
+    <title>a</title>
+<indexterm><primary>a</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>a</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.a</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a273148769236b6b1d918e3f250cbcf54"/><section>
+    <title>absolute_flag</title>
+<indexterm><primary>absolute_flag</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>absolute_flag</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.absolute_flag</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a28a84d2d20e1e5bc409782bc7813f65b"/><section>
+    <title>b</title>
+<indexterm><primary>b</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>b</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.b</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1aa2c5937ce15bbfe2b9dcfe0aa36a6e9b"/><section>
+    <title>c</title>
+<indexterm><primary>c</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>c</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.c</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a5fdbe9a78f4761269127dee38c1a72bf"/><section>
+    <title>creator</title>
+<indexterm><primary>creator</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>creator</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.creator<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a35c84bd57dfc0603342435b2174110be"/><section>
+    <title>drill_modal</title>
+<indexterm><primary>drill_modal</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>drill_modal</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.drill_modal</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a9481b7207b2f6cc57b5b2555a198f314"/><section>
+    <title>f</title>
+<indexterm><primary>f</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>f</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.f</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1adaed95c10d41c9116e91481ba908e637"/><section>
+    <title>f_modal</title>
+<indexterm><primary>f_modal</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>f_modal</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.f_modal</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a5dfe71ba6b6abf6d9e9bcd165720326f"/><section>
+    <title>ffmt</title>
+<indexterm><primary>ffmt</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>ffmt</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.ffmt</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1af6cd5cd2a6f0d88a0a298f9554b0345c"/><section>
+    <title>fh</title>
+<indexterm><primary>fh</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>fh</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.fh</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1afef96997d591944a2723bd85984f55ad"/><section>
+    <title>fhv</title>
+<indexterm><primary>fhv</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>fhv</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.fhv</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ab2088a95e563d9ba50fc4ad4f83174d4"/><section>
+    <title>fmt</title>
+<indexterm><primary>fmt</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>fmt</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.fmt</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a7d0f7e7ff4b0d39d84f1b7c6224c8fb6"/><section>
+    <title>fv</title>
+<indexterm><primary>fv</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>fv</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.fv</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a8c40f3963be379409cace3606753cfad"/><section>
+    <title>g</title>
+<indexterm><primary>g</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>g</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.g</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a7dc91f0bc86c0925e68abd61b3cb288c"/><section>
+    <title>g0123_modal</title>
+<indexterm><primary>g0123_modal</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>g0123_modal</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.g0123_modal</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a36f9dfc35d9d88a1af2198375f75b04c"/><section>
+    <title>gCRC</title>
+<indexterm><primary>gCRC</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>gCRC</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.gCRC</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ae2ebd27be89e6f43cf7a2aed2ca60c9a"/><section>
+    <title>i</title>
+<indexterm><primary>i</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>i</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.i</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ad4d2e98da5b3a88d334b56885a9079da"/><section>
+    <title>j</title>
+<indexterm><primary>j</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>j</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.j</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ae3c7632acc25eb75aa779ca0e14a842d"/><section>
+    <title>k</title>
+<indexterm><primary>k</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>k</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.k</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a88730af197579b5dda2518b1b566a1d8"/><section>
+    <title>m</title>
+<indexterm><primary>m</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>m</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.m</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a05cb29b0004ce9b35c15fd3847bc0c8a"/><section>
+    <title>n</title>
+<indexterm><primary>n</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>n</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.n</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a6b28c9e654e1c54fc1d2a75f63e53733"/><section>
+    <title>prev_drill</title>
+<indexterm><primary>prev_drill</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>prev_drill</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.prev_drill</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a2ebcd17da3d056b36e52e1cc199cff12"/><section>
+    <title>prev_f</title>
+<indexterm><primary>prev_f</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>prev_f</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.prev_f</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1aab51bda9de0516122845b37d18e4f850"/><section>
+    <title>prev_g0123</title>
+<indexterm><primary>prev_g0123</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>prev_g0123</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.prev_g0123</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a5eda6219c8df2bdab283962af865d8db"/><section>
+    <title>prev_retract</title>
+<indexterm><primary>prev_retract</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>prev_retract</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.prev_retract</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a66874620cc19adbe54ed94e168439c0d"/><section>
+    <title>prev_z</title>
+<indexterm><primary>prev_z</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>prev_z</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.prev_z</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1abad0b6036ff224891c734b22d6d176b5"/><section>
+    <title>r</title>
+<indexterm><primary>r</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>r</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.r</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a953856c486df16f3650bd962bd00ce2b"/><section>
+    <title>s</title>
+<indexterm><primary>s</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>s</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.s</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1ac86ebda0c32fcf902b975b89691e9b7d"/><section>
+    <title>t</title>
+<indexterm><primary>t</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>t</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.t</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a2611a7403159dc0f5fb871b623020e79"/><section>
+    <title>useCrc</title>
+<indexterm><primary>useCrc</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>useCrc</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.useCrc</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a1dfe6b5743fbdc4ce70f612213f886da"/><section>
+    <title>x</title>
+<indexterm><primary>x</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>x</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.x</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a231102ecb91e458aabbac059aa3b28ca"/><section>
+    <title>y</title>
+<indexterm><primary>y</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>y</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.y</computeroutput></para></section>
+<anchor xml:id="_classcam_1_1nc_1_1lathe1_1_1CreatorIso_1a22751cccc058e42abe6abb10e9b36f94"/><section>
+    <title>z</title>
+<indexterm><primary>z</primary><secondary>cam.nc.lathe1.CreatorIso</secondary></indexterm>
+<indexterm><primary>cam.nc.lathe1.CreatorIso</primary><secondary>z</secondary></indexterm>
+<para><computeroutput>cam.nc.lathe1.CreatorIso.z</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/SpectralVectors/blendercam/scripts/addons/cam/nc/<link linkend="_lathe1_8py">lathe1.py</link></section>
+</section>
