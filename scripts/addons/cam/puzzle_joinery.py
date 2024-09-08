@@ -35,8 +35,8 @@ def finger(diameter, stem=2):
 
     Args:
         diameter (float): The diameter of the tool for joint creation.
-        stem (float?): The amount of radius the stem or neck of the joint will have. Defaults
-            to 2.
+        stem (float?): The amount of radius the stem or neck of the joint will have.
+            Defaults to 2.
 
     Returns:
         None: This function does not return any value.
@@ -107,8 +107,8 @@ def fingers(diameter, inside, amount=1, stem=1):
         diameter (float): The diameter of the tool used for joint creation.
         inside (float): The tolerance in the joint receptacle.
         amount (int?): The number of fingers to create. Defaults to 1.
-        stem (float?): The amount of radius the stem or neck of the joint will have. Defaults
-            to 1.
+        stem (float?): The amount of radius the stem or neck of the joint will have.
+            Defaults to 1.
     """
 
     # diameter = diameter of the tool for joint creation
@@ -197,8 +197,8 @@ def twistm(name, length, diameter, tolerance, twist, tneck, tthick, angle, twist
         tneck (float): The neck thickness for the twist lock.
         tthick (float): The thickness of the twist lock.
         angle (float): The angle at which to rotate the twist lock.
-        twist_keep (bool?): A flag indicating whether to keep the twist lock duplicate. Defaults to
-            False.
+        twist_keep (bool?): A flag indicating whether to keep the twist lock duplicate.
+            Defaults to False.
         x (float?): The x-coordinate for positioning. Defaults to 0.
         y (float?): The y-coordinate for positioning. Defaults to 0.
 
@@ -326,7 +326,9 @@ def arc(radius, thick, angle, diameter, tolerance, amount=0, stem=1, twist=False
     angle, and other parameters. It handles the generation of fingers for
     the joint and applies twisting features if specified. The function also
     manages the orientation and positioning of the generated arc in a 3D
-    space.
+    space. The angle must not be zero; if it is, it will be set to a small
+    value to avoid errors. The function modifies the 3D scene directly and
+    does not return a value.
 
     Args:
         radius (float): The radius of the curve.
@@ -703,7 +705,9 @@ def t(length, thick, diameter, tolerance, amount=0, stem=1, twist=False, tneck=0
     on the provided parameters. It handles different combinations of shapes
     and orientations based on the specified gender and corner options. The
     function utilizes several helper functions to perform operations such as
-    moving, duplicating, and uniting shapes to form the final model.
+    moving, duplicating, and uniting shapes to form the final model. The
+    resulting model is modified directly in the 3D environment without
+    returning any value.
 
     Args:
         length (float): The length of the model.
@@ -968,7 +972,7 @@ def open_curve(line, thick, diameter, tolerance, amount=0, stem=1, twist=False, 
     optionally add twist lock connectors along the curve. The function also
     handles the creation of the joint based on the provided parameters,
     ensuring that the resulting geometry meets the specified design
-    requirements.
+    requirements. The geometry is modified directly in the Blender context.
 
     Args:
         line (LineString): A shapely LineString representing the path of the curve.
