@@ -80,8 +80,7 @@ def pointonline(a, b, c, tolerence):
 
     Returns:
         bool: True if the angle between vectors b and c is within the specified
-            tolerance,
-            False otherwise.
+            tolerance, False otherwise.
     """
 
     b = b - a  # convert to vector by subtracting origin
@@ -656,11 +655,11 @@ def getChangeData(o):
     """Check if object properties have changed to determine if image updates
     are needed.
 
-    This function inspects the properties of objects specified by the input
-    parameter to see if any changes have occurred. It concatenates the
-    location, rotation, and dimensions of the relevant objects into a single
-    string, which can be used to determine if an image update is necessary
-    based on changes in the object's state.
+    This function inspects the properties of the input object to see if any
+    changes have occurred. It concatenates the location, rotation, and
+    dimensions of the relevant objects into a single string. This string can
+    be used to determine if an image update is necessary based on changes in
+    the object's state.
 
     Args:
         o (object): An object containing properties that specify the geometry source
