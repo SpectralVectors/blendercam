@@ -506,7 +506,7 @@ class GcodeModel:
         style (travel, retract, restore, or extrude) based on the movement of
         the coordinates and the state of the extruder. It organizes the segments
         into layers, which are used for later rendering. The classification is
-        based on changes in the Z-coordinate and the extruder's position.  The
+        based on changes in the Z-coordinate and the extruder's position. The
         function initializes the coordinates and iterates through each segment,
         checking for movements in the X, Y, and Z directions. It identifies when
         a new layer begins based on changes in the Z-coordinate and the
@@ -587,8 +587,7 @@ class GcodeModel:
 
         Args:
             subd_threshold (float): The distance threshold for subdividing segments.
-                Segments with a distance greater than this value
-                will be subdivided.
+                Segments with a distance greater than this value will be subdivided.
 
         Returns:
             None: The method modifies the instance's segments attribute in place.
