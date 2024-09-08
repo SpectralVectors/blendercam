@@ -108,8 +108,7 @@ def positionObject(operation):
 
     Args:
         operation (OperationType): An object containing parameters for positioning,
-            including object_name, use_modifiers, and material
-            settings.
+            including object_name, use_modifiers, and material settings.
     """
 
     ob = bpy.data.objects[operation.object_name]
@@ -449,8 +448,7 @@ def getBoundsMultiple(operations):
 
     Args:
         operations (list): A list of operation objects, each containing
-            'min' and 'max' attributes with 'x', 'y',
-            and 'z' coordinates.
+            'min' and 'max' attributes with 'x', 'y', and 'z' coordinates.
 
     Returns:
         tuple: A tuple containing the minimum and maximum bounds in the
@@ -1134,7 +1132,9 @@ def silhoueteOffset(context, offset, style=1, mitrelimit=1.0):
     creates an offset silhouette based on the specified parameters. It first
     retrieves the silhouette of the object and then applies a buffer
     operation to create the offset shape. The resulting shape is then
-    converted back into a curve object in the Blender scene.
+    converted back into a curve object in the Blender scene. This operation
+    allows for the creation of visually distinct shapes based on existing
+    curves or fonts, which can be useful for various modeling tasks.
 
     Args:
         context (bpy.context): The current Blender context.
@@ -1143,7 +1143,7 @@ def silhoueteOffset(context, offset, style=1, mitrelimit=1.0):
         mitrelimit (float?): The mitre limit for the offset. Defaults to 1.0.
 
     Returns:
-        dict: A dictionary indicating the operation is finished.
+        dict: A dictionary indicating that the operation is finished.
     """
 
     bpy.context.scene.cursor.location = (0, 0, 0)
@@ -1166,13 +1166,13 @@ def silhoueteOffset(context, offset, style=1, mitrelimit=1.0):
 def polygonBoolean(context, boolean_type):
     """Perform a boolean operation on selected polygons.
 
-    This function takes the active object and applies a specified boolean
-    operation (UNION, DIFFERENCE, or INTERSECT) with respect to other
-    selected objects in the Blender context. It first converts the polygons
-    of the active object and the selected objects into a Shapely
-    MultiPolygon. Depending on the boolean type specified, it performs the
-    corresponding boolean operation and then converts the result back into a
-    Blender curve.
+    This function takes the active object in the Blender context and applies
+    a specified boolean operation (UNION, DIFFERENCE, or INTERSECT) with
+    respect to other selected objects. It first converts the polygons of the
+    active object and the selected objects into a Shapely MultiPolygon.
+    Depending on the boolean type specified, it performs the corresponding
+    boolean operation and then converts the result back into a Blender
+    curve.
 
     Args:
         context (bpy.context): The Blender context containing scene and object data.
@@ -1218,12 +1218,12 @@ def polygonBoolean(context, boolean_type):
 def polygonConvexHull(context):
     """Generate the convex hull of a polygon from the given context.
 
-    This function duplicates the current object, joins it, and converts it
-    into a 3D mesh. It then extracts the X and Y coordinates of the vertices
-    to create a MultiPoint data structure using Shapely. Finally, it
-    computes the convex hull of these points and converts the result back
-    into a curve named 'ConvexHull'. Temporary objects created during this
-    process are deleted to maintain a clean workspace.
+    This function duplicates the current object in the Blender environment,
+    joins it, and converts it into a 3D mesh. It extracts the X and Y
+    coordinates of the vertices to create a MultiPoint data structure using
+    Shapely. The convex hull of these points is then computed and converted
+    back into a curve named 'ConvexHull'. Temporary objects created during
+    this process are deleted to maintain a clean workspace.
 
     Args:
         context: The context in which the operation is performed, typically
@@ -1326,13 +1326,13 @@ async def connectChunksLow(chunks, o):
     """Connects chunks that are close to each other without lifting, sampling
     them 'low'.
 
-    This function processes a list of chunks and connects those that are
-    within a specified distance based on the provided options. It takes into
-    account various strategies for connecting the chunks, including 'CARVE',
+    This function processes a list of chunk objects and connects those that
+    are within a specified distance based on the provided options. It
+    considers various strategies for connecting the chunks, such as 'CARVE',
     'PENCIL', and 'MEDIAL_AXIS', and adjusts the merging distance
-    accordingly. The function also handles specific movement settings, such
-    as whether to stay low or to merge distances, and may resample chunks if
-    certain optimization conditions are met.
+    accordingly. The function also handles specific movement settings,
+    including whether to stay low or to merge distances, and may resample
+    chunks if certain optimization conditions are met.
 
     Args:
         chunks (list): A list of chunk objects to be connected.
@@ -1397,10 +1397,11 @@ async def connectChunksLow(chunks, o):
 def getClosest(o, pos, chunks):
     """Find the closest chunk to a given position.
 
-    This function iterates through a list of chunks and determines which
-    chunk is closest to the specified position. It checks if each chunk's
-    children are sorted before calculating the distance. The chunk with the
-    minimum distance to the given position is returned.
+    This function iterates through a list of chunk objects and determines
+    which chunk is closest to the specified position. It first checks if
+    each chunk's children are sorted before calculating the distance. The
+    chunk with the minimum distance to the given position is returned. If no
+    valid chunk is found, the function returns None.
 
     Args:
         o: An object representing the origin point.
@@ -1598,7 +1599,8 @@ def dictRemove(dict, val):
     This function takes a dictionary and a key (val) as input. It iterates
     through the list of values associated with the given key and removes the
     key from each of those values' lists. Finally, it removes the key itself
-    from the dictionary.
+    from the dictionary. This is useful for maintaining the integrity of
+    relationships in a dictionary where keys may reference each other.
 
     Args:
         dict (dict): A dictionary where the key is associated with a list of values.
@@ -1642,22 +1644,21 @@ def addLoop(parentloop, start, end):
 def cutloops(csource, parentloop, loops):
     """Cut loops from a source code segment.
 
-    This function takes a source code segment and a parent loop defined by
-    its start and end indices, along with a list of nested loops. It creates
-    a copy of the source code segment and removes the specified nested loops
-    from it. The modified segment is then appended to the provided list of
-    loops. The function also recursively processes any nested loops found
-    within the parent loop.
+    This function processes a given source code segment to remove specified
+    nested loops defined by their start and end indices. It creates a copy
+    of the source code segment corresponding to the parent loop and removes
+    the nested loops from this copy. The modified segment is then appended
+    to the provided list of loops. Additionally, the function recursively
+    processes any nested loops found within the parent loop, ensuring that
+    all specified loops are removed from the final output.
 
     Args:
         csource (str): The source code from which loops will be cut.
         parentloop (tuple): A tuple containing the start index, end index, and a list of nested
-            loops.
-            The list of nested loops should contain tuples with start and end
+            loops. The list of nested loops should contain tuples with start and end
             indices for each loop.
         loops (list): A list that will be populated with the modified source code segments
-            after
-            removing the specified loops.
+            after removing the specified loops.
 
     Returns:
         None: This function modifies the `loops` list in place and does not return a
@@ -1687,7 +1688,7 @@ def getOperationSilhouete(operation):
     silhouette extraction.
 
     Args:
-        operation (Operation): An object containing the necessary data
+        operation (Operation): An object containing the necessary data.
 
     Returns:
         Silhouette: The computed silhouette for the operation.
@@ -1842,8 +1843,8 @@ def getAmbient(o):
     also intersect the ambient shape with the limit polygon.
 
     Args:
-        o (object): An object containing properties that define the ambient behavior,
-            cutter restrictions, and limit curve.
+        o (object): An object containing properties that define the ambient
+            behavior, cutter restrictions, and limit curve.
 
     Returns:
         None: The function updates the ambient property of the object in place.
@@ -1884,7 +1885,7 @@ def getObjectOutline(radius, o, Offset):
     adjusted based on the `radius` parameter, and the operation can be
     offset based on the `Offset` flag. The function also considers whether
     the polygons should be merged or not, depending on the properties of the
-    object `o`.
+    object `o`. The resulting outline is returned as a MultiPolygon.
 
     Args:
         radius (float): The radius for the buffer operation.
@@ -1947,6 +1948,12 @@ def addOrientationObject(o):
 
     Args:
         o (object): An object containing properties such as name,
+            machine_axes, and rotary_axis_1 that define the orientation
+            settings for the milling operation.
+
+    Returns:
+        None: This function does not return a value, but modifies the Blender
+            scene by adding or updating an orientation object.
     """
     name = o.name + ' orientation'
     s = bpy.context.scene
@@ -2039,7 +2046,7 @@ def addMachineAreaObject():
     represent a machine area. The function ensures that the scene's unit
     settings are set to metric before creating the object and restores the
     original unit settings afterward. It also configures the display
-    properties of the object for better visibility in the scene.  The
+    properties of the object for better visibility in the scene. The
     function operates within Blender's context and utilizes various Blender
     operations to create and modify the mesh. It also handles the selection
     state of the active object.
@@ -2100,7 +2107,7 @@ def addMaterialAreaObject():
     material area. The dimensions and location of the object are set based
     on the current camera operation's bounds. The function also applies
     transformations to ensure the object's location and dimensions are
-    correctly set.  The created or retrieved object is configured to be non-
+    correctly set. The created or retrieved object is configured to be non-
     renderable and non-selectable in the viewport, while still being
     selectable for operations. This is useful for visualizing the working
     area of the camera without affecting the render output.  Raises:
@@ -2187,7 +2194,7 @@ def unique(L):
     along the Z-axis.
 
     Args:
-        L (list): A list of lists, where each inner list represents a point
+        L (list): A list of lists, where each inner list represents a point.
 
     Returns:
         tuple: A tuple containing two integers:
@@ -2293,6 +2300,8 @@ def cleanupIndexed(operation):
 
     Args:
         operation (OperationType): An object containing the necessary data
+            for updating orientations, paths, and relationships of objects
+            in the scene.
     """
 
     s = bpy.context.scene
@@ -2316,13 +2325,12 @@ def cleanupIndexed(operation):
 
 def rotTo2axes(e, axescombination):
     """Converts an Orientation Object Rotation to Rotation Defined by 2
-    Rotational Axes on the Machine.
-
-    This function takes an orientation object and a specified axes
-    combination, and computes the angles of rotation around two axes based
-    on the provided orientation. It supports different axes combinations for
-    indexed machining. The function utilizes vector mathematics to determine
-    the angles of rotation and returns them as a tuple.
+    Rotational Axes on the Machine.  This function takes an orientation
+    object and a specified axes combination, and computes the angles of
+    rotation around two axes based on the provided orientation. It supports
+    different axes combinations for indexed machining. The function utilizes
+    vector mathematics to determine the angles of rotation and returns them
+    as a tuple.
 
     Args:
         e (OrientationObject): The orientation object representing the rotation.
@@ -2393,7 +2401,7 @@ def reload_paths(o):
     current scene.
 
     Args:
-        o (Object): The object for which the camera path is being
+        o (Object): The object for which the camera path is being reloaded.
     """
 
     oname = "cam_path_" + o.name
@@ -2517,6 +2525,7 @@ def updateOperation(self, context):
 
     Args:
         context (bpy.types.Context): The context containing the current scene and
+            relevant data for updating camera operations.
     """
 
     scene = context.scene
@@ -2607,6 +2616,10 @@ def operationValid(self, context):
 
     Args:
         context (Context): The context containing the scene and camera operations.
+
+    Returns:
+        None: This method does not return a value but modifies the operation's
+        validity status and warnings directly.
     """
 
     scene = context.scene
@@ -2677,7 +2690,7 @@ def updateChipload(self, context):
     cylindrical end mills by combining two formulas. The first formula
     provides the nominal chipload based on standard recommendations, while
     the second formula adjusts for the cutter diameter and distance between
-    paths.  The current implementation may not yield consistent results, and
+    paths. The current implementation may not yield consistent results, and
     there are concerns regarding the correctness of the units used in the
     calculations. Further review and refinement of this function may be
     necessary to improve accuracy and reliability.
@@ -2714,7 +2727,9 @@ def updateOffsetImage(self, context):
 
     This method updates the chip load and marks the offset image tag for re-
     rendering. It sets the `changed` attribute to True and indicates that
-    the offset image tag needs to be updated.
+    the offset image tag needs to be updated. This is typically used in
+    scenarios where the image representation needs to reflect changes in the
+    underlying data or configuration.
 
     Args:
         context: The context in which the update is performed.
@@ -2856,7 +2871,8 @@ def updateRotation(o, context):
     properties of the provided object 'o'. It checks which rotations are
     enabled and applies the corresponding rotation values to the active
     object in the scene. The rotation can be aligned either along the X or Y
-    axis, depending on the configuration of 'o'.
+    axis, depending on the configuration of 'o'. This is particularly useful
+    for dynamically adjusting object orientations in a 3D environment.
 
     Args:
         o (object): An object containing rotation settings and flags.
@@ -3007,8 +3023,7 @@ def update_opencamlib(self, context):
 
     Args:
         context: The context in which the operation is being performed, typically
-            provided by
-            Blender's internal API.
+            provided by Blender's internal API.
     """
 
     # from . import updateOpencamlib
@@ -3049,8 +3064,7 @@ def check_operations_on_load(context):
 
     Args:
         context: The context in which the function is executed, typically containing
-            information about
-            the current Blender environment.
+            information about the current Blender environment.
     """
 
     addons = bpy.context.preferences.addons
@@ -3105,7 +3119,9 @@ def check_operations_on_load(context):
 
             This function checks if the destination file exists. If it does not, the
             function copies the source file to the destination using a high-level
-            file operation that preserves metadata.
+            file operation that preserves metadata. This is useful for ensuring that
+            files are only copied when necessary, preventing overwriting of existing
+            files.
 
             Args:
                 src (str): The path to the source file to be copied.
@@ -3137,12 +3153,13 @@ def check_operations_on_load(context):
 def Add_Pocket(self, maxdepth, sname, new_cutter_diameter):
     """Add a pocket operation for the medial axis and profile cut.
 
-    This function first deselects all objects in the scene and then checks
-    for any existing medial pocket objects, deleting them if found. It
-    verifies whether a medial pocket operation already exists in the camera
-    operations. If it does not exist, it creates a new pocket operation with
-    the specified parameters. The function also modifies the selected
-    object's silhouette offset based on the new cutter diameter.
+    This function manages the creation of a pocket operation within a 3D
+    scene. It begins by deselecting all objects and removing any existing
+    medial pocket objects. The function then checks if a medial pocket
+    operation is already present in the camera operations. If not, it
+    creates a new pocket operation with the specified parameters.
+    Additionally, it adjusts the silhouette offset of the selected object
+    based on the provided cutter diameter.
 
     Args:
         maxdepth (float): The maximum depth of the pocket to be created.
