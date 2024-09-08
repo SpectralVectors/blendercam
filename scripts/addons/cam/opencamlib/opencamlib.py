@@ -65,6 +65,10 @@ def chunkPointSamplesFromOCL(chunks, samples):
             and a method `setZ()`.
         samples (list): A list of sample objects from which z-values are
             extracted.
+
+    Returns:
+        None: This function modifies the chunks in place and does not return
+            any value.
     """
     s_index = 0
     for ch in chunks:
@@ -88,11 +92,13 @@ def chunkPointSamplesFromOCL(chunks, samples):
 def chunkPointsResampleFromOCL(chunks, samples):
     """Resample the Z values of points in chunks based on provided samples.
 
-    This function iterates through a list of chunks and resamples the Z
-    values of the points in each chunk using the corresponding samples. It
+    This function iterates through a list of chunk objects and resamples the
+    Z values of the points in each chunk using the corresponding samples. It
     first counts the number of points in each chunk, then extracts the Z
     values from the samples, scales them by a predefined constant
-    (OCL_SCALE), and sets the resampled Z values back to the chunk.
+    (OCL_SCALE), and sets the resampled Z values back to the chunk. This
+    process ensures that the Z values are appropriately adjusted based on
+    the provided sample data.
 
     Args:
         chunks (list): A list of chunk objects, each containing points that need
