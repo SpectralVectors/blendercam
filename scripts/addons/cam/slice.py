@@ -20,13 +20,14 @@ from . import (
 def slicing2d(ob, height):
     """Slice a 3D object at a specified height and convert it to a curve.
 
-    This function applies transformations to the given object, switches to
-    edit mode, selects all vertices, and performs a bisect operation to
-    slice the object at the specified height. After slicing, it resets the
-    object's location and applies transformations again before converting
-    the object to a curve. If the conversion fails (for instance, if the
-    mesh was empty), the function deletes the mesh and returns False.
-    Otherwise, it returns True.
+    This function applies transformations to the provided Blender object,
+    switches to edit mode, selects all vertices, and performs a bisect
+    operation to slice the object at the specified height. After the slicing
+    operation, it resets the object's location and applies transformations
+    again before attempting to convert the object to a curve. If the
+    conversion fails (for example, if the mesh was empty), the function
+    deletes the mesh and returns False. If the conversion is successful, it
+    returns True.
 
     Args:
         ob (bpy.types.Object): The Blender object to be sliced and converted.
@@ -59,12 +60,12 @@ def slicing2d(ob, height):
 def slicing3d(ob, start, end):
     """Slice a 3D object along specified planes.
 
-    This function applies transformations to a given object and slices it in
-    the Z-axis between two specified values, `start` and `end`. It first
-    ensures that the object is in edit mode and selects all vertices before
-    performing the slicing operations using the `bisect` method. After
-    slicing, it resets the object's location and applies the transformations
-    to maintain the changes.
+    This function applies transformations to a given 3D object and slices it
+    along the Z-axis between two specified values, `start` and `end`. It
+    first ensures that the object is in edit mode and selects all vertices
+    before performing the slicing operations using the `bisect` method.
+    After slicing, it resets the object's location and applies the
+    transformations to maintain the changes.
 
     Args:
         ob (Object): The 3D object to be sliced.
