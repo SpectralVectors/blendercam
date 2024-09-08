@@ -97,7 +97,7 @@ def shapelyToMultipolygon(anydata):
     MultiPolygon.
 
     Args:
-        anydata (shapely.geometry.base.BaseGeometry): A Shapely geometry object
+        anydata (shapely.geometry.base.BaseGeometry): A Shapely geometry object.
 
     Returns:
         shapely.geometry.MultiPolygon: A MultiPolygon representation of the input
@@ -128,11 +128,11 @@ def shapelyToCoords(anydata):
     coordinates of the geometries.
 
     Args:
-        anydata (shapely.geometry.base.BaseGeometry): A Shapely geometry object
+        anydata (shapely.geometry.base.BaseGeometry): A Shapely geometry object.
 
     Returns:
         list: A list of coordinates extracted from the input geometry.
-        The structure of the list depends on the geometry type.
+            The structure of the list depends on the geometry type.
     """
 
     p = anydata
@@ -191,7 +191,8 @@ def shapelyToCurve(name, p, z):
     object in Blender. It extracts the coordinates from the Shapely geometry
     and creates a new curve object with the specified name. The curve is
     created in the 3D space at the given z-coordinate, with a default weight
-    for the points.
+    for the points. The resulting curve can be manipulated within Blender's
+    environment, allowing for further editing and rendering.
 
     Args:
         name (str): The name of the curve object to be created.
