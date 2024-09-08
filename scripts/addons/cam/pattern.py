@@ -31,14 +31,12 @@ from .simple import progress
 
 def getPathPatternParallel(o, angle):
     """Generate path chunks for parallel movement based on object dimensions
-    and angle.
-
-    This function calculates a series of path chunks for a given object,
-    taking into account its dimensions and the specified angle. It utilizes
-    both a traditional method and an alternative algorithm (currently
-    disabled) to generate these paths. The paths are constructed by
-    iterating over calculated vectors and applying transformations based on
-    the object's properties. The resulting path chunks can be used for
+    and angle.  This function calculates a series of path chunks for a given
+    object, taking into account its dimensions and the specified angle. It
+    utilizes both a traditional method and an alternative algorithm
+    (currently disabled) to generate these paths. The paths are constructed
+    by iterating over calculated vectors and applying transformations based
+    on the object's properties. The resulting path chunks can be used for
     various movement types, including conventional and climb movements.
 
     Args:
