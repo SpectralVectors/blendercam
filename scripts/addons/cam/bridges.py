@@ -124,15 +124,22 @@ def getBridgesPoly(o):
     """Generate and prepare bridge polygons from a Blender object.
 
     This function checks if the provided object has an attribute for bridge
-    polygons. If not, it retrieves the bridge collection, selects all curve
-    objects within that collection, duplicates them, and joins them into a
-    single object. The resulting shape is then converted to a Shapely
-    geometry. The function buffers the resulting polygon to account for the
-    cutter diameter and prepares the boundary and polygon for further
+    polygons. If the attribute is not present, it retrieves the bridge
+    collection associated with the object, selects all curve objects within
+    that collection, duplicates them, and joins them into a single object.
+    The resulting shape is then converted to a Shapely geometry. The
+    function buffers the resulting polygon to account for the cutter
+    diameter and prepares both the boundary and polygon for further
     processing.
 
     Args:
         o (object): An object containing properties related to bridge
+            polygons, including the bridge collection name and
+            cutter diameter.
+
+    Returns:
+        None: This function modifies the input object in place by adding
+            attributes for the bridge polygons and their boundaries.
     """
 
     if not hasattr(o, 'bridgespolyorig'):
@@ -162,13 +169,13 @@ def getBridgesPoly(o):
 def useBridges(ch, o):
     """Add bridges to chunks using a collection of bridge objects.
 
-    This function takes a collection of bridge objects and uses the curves
-    within it to create bridges over the specified chunks. It calculates the
-    necessary points for the bridges based on the height and geometry of the
-    chunks and the bridge objects. The function also handles intersections
-    with the bridge polygon and adjusts the points accordingly. Finally, it
-    generates a mesh for the bridges and converts it into a curve object in
-    Blender.
+    This function takes a collection of bridge objects and utilizes the
+    curves within it to create bridges over the specified chunks. It
+    calculates the necessary points for the bridges based on the height and
+    geometry of the chunks and the bridge objects. The function also manages
+    intersections with the bridge polygon and adjusts the points
+    accordingly. Finally, it generates a mesh for the bridges and converts
+    it into a curve object in Blender.
 
     Args:
         ch (Chunk): The chunk object to which bridges will be added.
@@ -341,7 +348,7 @@ def auto_cut_bridge(o):
     collections in a 3D environment.
 
     Args:
-        o (object): An object that contains the attribute
+        o (object): An object that contains the attribute 'bridges_collection_name'.
 
     Returns:
         None: This function does not return any value.
