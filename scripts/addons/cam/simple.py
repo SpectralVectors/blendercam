@@ -206,9 +206,11 @@ def dist2d(v1, v2):
     """Calculate the distance between two points in 2D space.
 
     This function computes the Euclidean distance between two points
-    represented by their coordinates in a 2D plane. It uses the Pythagorean
-    theorem to calculate the distance based on the differences in the x and
-    y coordinates of the points.
+    represented by their coordinates in a 2D plane. It utilizes the
+    Pythagorean theorem to determine the distance based on the differences
+    in the x and y coordinates of the points. The result is a floating-point
+    number that represents the straight-line distance between the two
+    points.
 
     Args:
         v1 (tuple): A tuple representing the coordinates of the first point (x1, y1).
@@ -281,11 +283,11 @@ def addToGroup(ob, groupname):
 def compare(v1, v2, vmiddle, e):
     """Comparison for optimization of paths.
 
-    This function compares two vectors and checks if the distance between a
-    calculated vector and a reference vector is less than a specified
-    threshold. It normalizes the vector difference and scales it by the
-    length of another vector to determine if the resulting vector is within
-    the specified epsilon value.
+    This function compares two vectors to determine if the distance between
+    a calculated vector and a reference vector is less than a specified
+    threshold. It normalizes the difference between the two input vectors
+    and scales it by the length of a middle vector to assess whether the
+    resulting vector's length is within the specified epsilon value.
 
     Args:
         v1 (Vector): The first vector for comparison.
@@ -465,12 +467,14 @@ def select_multiple(name):
 
 # join multiple objects starting with 'name' renaming final object as 'name'
 def join_multiple(name):
-    """Join multiple objects and rename the final object.
+    """Join multiple selected objects and rename the final object.
 
-    This function selects multiple objects in the Blender context, joins
-    them into a single object, and renames the resulting object to the
-    specified name. It is assumed that the objects to be joined are already
-    selected in the Blender interface.
+    This function operates within the Blender environment to join multiple
+    selected objects into a single object. After the joining operation, the
+    resulting object is renamed to the specified name provided as an
+    argument. It is important that the objects intended for joining are
+    already selected in the Blender interface prior to calling this
+    function.
 
     Args:
         name (str): The new name for the joined object.
@@ -487,8 +491,9 @@ def remove_multiple(name):
     This function deselects all objects in the current Blender scene and
     then iterates through all objects. If an object's name starts with the
     specified prefix, it selects that object and deletes it from the scene.
-    This is useful for operations that require removing multiple objects
-    with a common naming convention.
+    This is particularly useful for operations that require removing
+    multiple objects that share a common naming convention, allowing for
+    efficient cleanup of the scene.
 
     Args:
         name (str): The prefix of the object names to be removed.
@@ -506,7 +511,7 @@ def deselect():
 
     This function utilizes the Blender Python API to deselect all objects in
     the current scene. It is useful for clearing selections before
-    performing other operations on objects.  Raises:     None
+    performing other operations on objects.
     """
     bpy.ops.object.select_all(action='DESELECT')
 
@@ -653,7 +658,9 @@ def mirrorx():
     This function utilizes Blender's operator to mirror the currently active
     object in the 3D view along the x-axis. It sets the orientation to
     global and applies the transformation based on the specified orientation
-    matrix and constraint axis.
+    matrix and constraint axis. This operation is particularly useful for
+    creating symmetrical models or correcting the orientation of objects in
+    a 3D scene.
     """
     bpy.ops.transform.mirror(orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)),
                              orient_matrix_type='GLOBAL', constraint_axis=(True, False, False))
@@ -678,9 +685,10 @@ def move(x=0.0, y=0.0):
     """Move the active object in the 3D space by applying a translation.
 
     This function translates the active object in Blender's 3D view by the
-    specified x and y values. It uses Blender's built-in operations to
-    perform the translation and then applies the transformation to the
-    object's location.
+    specified x and y values. It utilizes Blender's built-in operations to
+    perform the translation and subsequently applies the transformation to
+    the object's location. This allows for precise control over the object's
+    position in the 3D environment.
 
     Args:
         x (float?): The distance to move the object along the x-axis. Defaults to 0.0.
@@ -732,7 +740,8 @@ def add_overcut(diametre, overcut=True):
 
     Args:
         diametre (float): The diameter to be used for the overcut.
-        overcut (bool): A flag indicating whether to apply the overcut. Defaults to True.
+        overcut (bool): A flag indicating whether to apply the overcut.
+            Defaults to True.
     """
     if overcut:
         name = bpy.context.active_object.name
@@ -758,8 +767,8 @@ def add_bound_rectangle(xmin, ymin, xmax, ymax, name='bounds_rectangle'):
         ymin (float): The minimum y-coordinate of the rectangle.
         xmax (float): The maximum x-coordinate of the rectangle.
         ymax (float): The maximum y-coordinate of the rectangle.
-        name (str?): The name of the resulting rectangle object. Defaults to
-            'bounds_rectangle'.
+        name (str?): The name of the resulting rectangle object.
+            Defaults to 'bounds_rectangle'.
     """
     # xmin = minimum corner x value
     # ymin = minimum corner y value
