@@ -37,6 +37,10 @@ def createSimulationObject(name, operations, i):
         name (str): The name of the simulation object to be created.
         operations (list): A list of operation objects that contain bounding box information.
         i: The image to be used as a texture for the simulation object.
+
+    Returns:
+        None: This function does not return a value but modifies the Blender scene
+            directly.
     """
     oname = 'csim_' + name
 
