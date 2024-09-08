@@ -24,7 +24,8 @@ def progress_async(text, n=None, value_type='%'):
     Args:
         text (str): A message indicating the current progress.
         n (optional): An optional numeric value representing the progress.
-        value_type (str?): A string indicating the type of value being reported (default is '%').
+        value_type (str?): A string indicating the type of value being
+            reported (default is '%').
 
     Raises:
         Exception: If an exception is thrown during the operation.
@@ -48,18 +49,21 @@ class AsyncOperatorMixin:
     def modal(self, context, event):
         """Handle modal operations for a Blender event.
 
-        This function processes events in a modal operator. It checks for
-        specific event types, such as TIMER and ESC, and performs actions
-        accordingly. If the event type is TIMER, it attempts to execute a tick
-        function, managing the timer and status text in the Blender workspace.
-        If an exception occurs during the tick execution, it handles the error
-        gracefully by removing the timer and reporting the error. The function
-        also allows for cancellation of the operation when the ESC key is
-        pressed.
+        This function processes events in a modal operator within Blender. It
+        checks for specific event types, such as TIMER and ESC, to perform
+        corresponding actions. When the event type is TIMER, it attempts to
+        execute a tick function, managing the timer and updating the status text
+        in the Blender workspace. If an exception occurs during the tick
+        execution, the function handles the error gracefully by removing the
+        timer and reporting the error. Additionally, it allows for the
+        cancellation of the operation when the ESC key is pressed.
 
         Args:
             context (bpy.context): The current Blender context.
             event (bpy.types.Event): The event being processed.
+
+        Returns:
+            dict: A dictionary indicating the modal state, which can be one of
         """
 
         if bpy.app.background:
@@ -119,7 +123,7 @@ class AsyncOperatorMixin:
     def tick(self, context):
         """Execute a tick of the coroutine and handle its progress.
 
-        This method checks if the coroutine is initialized; if not, it
+        This method checks if the coroutine is initialized; if it is not, it
         initializes it by calling `execute_async` with the provided context. It
         then attempts to send a signal to the coroutine to either continue its
         execution or handle cancellation. If the coroutine is cancelled, it
@@ -130,12 +134,13 @@ class AsyncOperatorMixin:
             context: The context in which the coroutine is executed.
 
         Returns:
-            bool: True if the tick was processed successfully, False if the coroutine has
-                completed.
+            bool: True if the tick was processed successfully, False if the
+                coroutine has completed.
 
         Raises:
             StopIteration: If the coroutine has completed its execution.
-            Exception: If an unexpected error occurs during the execution of the tick.
+            Exception: If an unexpected error occurs during the execution
+                of the tick.
         """
 
         if self.coroutine == None:
