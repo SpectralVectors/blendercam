@@ -405,7 +405,7 @@ async def pocket(o):
     movements.
 
     Args:
-        o (object): An object containing parameters for the pocketing
+        o (object): An object containing parameters for the pocketing operation.
 
     Returns:
         None: The function modifies the scene and generates geometry
@@ -1173,14 +1173,16 @@ def checkminz(o):
 
     This function evaluates the 'minz_from' attribute of the input object
     'o'. If 'minz_from' is set to 'MATERIAL', it returns the value of
-    'min.z'. Otherwise, it returns the value of 'minz'.
+    'min.z'. Otherwise, it returns the value of 'minz'. This allows for
+    flexibility in determining the minimum value based on the context
+    provided by the object's attributes.
 
     Args:
         o (object): An object that has attributes 'minz_from', 'min', and 'minz'.
 
     Returns:
         The minimum value, which can be either 'o.min.z' or 'o.minz' depending
-            on the condition.
+        on the condition.
     """
     if o.minz_from == 'MATERIAL':
         return o.min.z
