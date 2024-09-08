@@ -36,14 +36,18 @@ def getCutterBullet(o):
     type and parameters. It supports various cutter types including 'END',
     'BALLNOSE', 'VCARVE', 'CYLCONE', 'BALLCONE', and 'CUSTOM'. The function
     also applies rigid body physics to the created cutter for realistic
-    simulation in Blender.
+    simulation in Blender. The cutter's properties, such as diameter and tip
+    angle, are derived from the input object, allowing for flexible and
+    customizable cutter creation.
 
     Args:
-        o (object): An object containing properties such as cutter_type, cutter_diameter,
-            cutter_tip_angle, ball_radius, and cutter_object_name.
+        o (object): An object containing properties such as cutter_type,
+            cutter_diameter, cutter_tip_angle, ball_radius, and
+            cutter_object_name.
 
     Returns:
-        bpy.types.Object: The created cutter object with rigid body properties applied.
+        bpy.types.Object: The created cutter object with rigid body properties
+            applied.
     """
 
     s = bpy.context.scene
@@ -247,6 +251,9 @@ def prepareBulletCollision(o):
 
     Args:
         o (Object): An object containing properties and settings for
+
+    Returns:
+        None: This function does not return a value.
     """
     progress('Preparing Collisions')
 
@@ -413,8 +420,7 @@ def getSampleBulletNAxis(cutter, startpoint, endpoint, rotation, cutter_compensa
 
     Returns:
         Vector or None: The adjusted position of the cutter if a collision is
-            detected;
-            otherwise, returns None.
+            detected; otherwise, returns None.
     """
     cutterVec = Vector((0, 0, 1)) * cutter_compensation
     # cutter compensation vector - cutter physics object has center in the middle, while cam needs the tip position.
