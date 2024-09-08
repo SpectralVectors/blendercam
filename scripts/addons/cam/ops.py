@@ -187,17 +187,17 @@ class KillPathsBackground(Operator):
         """Execute the camera operation in the given context.
 
         This method retrieves the active camera operation from the scene and
-        checks if there are any ongoing processes related to camera path
-        calculations. If such processes exist and match the current operation,
-        they are terminated. The method then marks the operation as not
-        computing and returns a status indicating that the execution has
-        finished.
+        checks for any ongoing processes related to camera path calculations. If
+        such processes exist and match the current operation, they are
+        terminated. The method then marks the operation as not computing and
+        returns a status indicating that the execution has finished.
 
         Args:
             context: The context in which the operation is executed.
 
         Returns:
-            dict: A dictionary with a status key indicating the result of the execution.
+            dict: A dictionary with a status key indicating the result of
+            the execution.
         """
 
         s = bpy.context.scene
@@ -311,8 +311,8 @@ class CalculatePath(Operator, AsyncOperatorMixin):
     def poll(cls, context):
         """Check if the current camera operation is valid.
 
-        This method checks the active camera operation in the given context and
-        determines if it is valid. It retrieves the active operation from the
+        This method checks the active camera operation in the provided context
+        and determines its validity. It retrieves the active operation from the
         scene's camera operations and validates it using the `isValid` function.
         If the operation is valid, it returns True; otherwise, it returns False.
 
@@ -392,7 +392,7 @@ class PathsAll(Operator):
         the available camera operations defined in the Blender scene.
 
         Args:
-            context (bpy.context): The context in which the drawing occurs,
+            context (bpy.context): The context in which the drawing occurs.
         """
 
         layout = self.layout
@@ -412,7 +412,8 @@ class CamPackObjects(Operator):
         This function sets the Blender object mode to 'OBJECT', retrieves the
         currently selected objects, and calls the `packCurves` function from the
         `pack` module. It is typically used to finalize operations on selected
-        objects in Blender.
+        objects in Blender. This ensures that any modifications or operations
+        performed on the objects are completed before proceeding further.
 
         Args:
             context: The context in which the operation is executed.
@@ -522,10 +523,11 @@ class PathsChain(Operator, AsyncOperatorMixin):
 
         Args:
             context (bpy.context): The Blender context containing scene and
+                camera chain information.
 
         Returns:
             dict: A dictionary indicating the result of the operation,
-            typically {'FINISHED'}.
+                typically {'FINISHED'}.
         """
 
         s = context.scene
@@ -701,7 +703,9 @@ class CAMSimulate(Operator, AsyncOperatorMixin):
         This method creates a layout element in the user interface that allows
         users to search and select a specific camera operation from a list of
         available operations defined in the current scene. It utilizes the
-        Blender Python API to integrate with the UI.
+        Blender Python API to integrate with the UI, ensuring that users can
+        easily navigate through the available camera operations and make their
+        selections efficiently.
 
         Args:
             context: The context in which the drawing occurs, typically
@@ -789,7 +793,8 @@ class CAMSimulateChain(Operator, AsyncOperatorMixin):
         This function creates a user interface element that allows the user to
         search and select a specific camera operation from a list of available
         operations in the current scene. It utilizes the Blender Python API to
-        create a property search layout.
+        create a property search layout, enhancing user interaction by providing
+        a searchable dropdown of camera operations.
 
         Args:
             context: The context in which the drawing occurs, typically containing
@@ -854,7 +859,8 @@ class CamChainRemove(Operator):
 
         This function removes the currently active camera chain from the scene
         and decrements the active camera chain index if it is greater than zero.
-        It modifies the Blender context to reflect these changes.
+        It modifies the Blender context to reflect these changes, ensuring that
+        the scene accurately represents the current state of camera chains.
 
         Args:
             context: The context in which the function is executed.
@@ -1001,8 +1007,8 @@ class CamChainOperationRemove(Operator):
             context: The context in which the operation is executed.
 
         Returns:
-            dict: A dictionary indicating the execution status, typically
-                containing {'FINISHED'} upon successful completion.
+            dict: A dictionary indicating the execution status, typically containing
+                {'FINISHED'} upon successful completion.
         """
 
         s = bpy.context.scene
@@ -1020,7 +1026,8 @@ def fixUnits():
     This function configures the unit settings for the current Blender
     scene. It sets the rotation system to degrees and the scale length to
     1.0, ensuring that the units are appropriately configured for use within
-    BlenderCAM.
+    BlenderCAM. This is essential for accurate measurements and operations
+    when working with models and simulations in BlenderCAM.
     """
     s = bpy.context.scene
 
@@ -1095,11 +1102,12 @@ class CamOperationCopy(Operator):
 
         This method handles the execution of camera operations within the
         Blender scene. It first checks if there are any camera operations
-        available. If not, it returns a cancellation status. If there are
-        operations, it copies the active operation, increments the active
-        operation index, and updates the name and filename of the new operation.
-        The function also ensures that the new operation's name is unique by
-        appending a copy suffix or incrementing a numeric suffix.
+        available. If no operations are available, it returns a cancellation
+        status. If there are operations, it copies the active operation,
+        increments the active operation index, and updates the name and filename
+        of the new operation. The function ensures that the new operation's name
+        is unique by either appending a copy suffix or incrementing a numeric
+        suffix.
 
         Args:
             context: The context in which the operation is executed.
