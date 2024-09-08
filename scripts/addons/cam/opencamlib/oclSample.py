@@ -42,7 +42,7 @@ def get_oclSTL(operation):
     it raises an exception.
 
     Args:
-        operation (Operation): An object containing a collection of objects
+        operation (Operation): An object containing a collection of objects.
 
     Returns:
         ocl.STLSurf: An oclSTL object containing the triangles derived from
