@@ -66,13 +66,13 @@ def addTestMesh(loc):
 def deleteFirstVert(ob):
     """Delete the first vertex of a given object.
 
-    This function activates the specified object, enters edit mode,
-    deselects all vertices, selects the first vertex, and then deletes it.
-    The function ensures that the object is properly updated after the
-    deletion.
+    This function activates the specified Blender object and enters edit
+    mode. It deselects all vertices, selects the first vertex, and then
+    deletes it. The function ensures that the object is properly updated
+    after the deletion process is completed.
 
     Args:
-        ob (bpy.types.Object): The Blender object from which the first
+        ob (bpy.types.Object): The Blender object from which the first vertex
     """
     activate(ob)
     bpy.ops.object.editmode_toggle()
