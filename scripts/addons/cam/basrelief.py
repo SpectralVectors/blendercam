@@ -261,7 +261,8 @@ def smooth(U, F, linbcgiterations, planar):
     the filter F. It utilizes the linear Biconjugate Gradient method for the
     smoothing process. The number of iterations for the linear BCG method is
     specified by linbcgiterations, and the planar parameter indicates
-    whether the operation is to be performed in a planar manner.
+    whether the operation is to be performed in a planar manner. The input
+    matrix U is modified in place.
 
     Args:
         U (numpy.ndarray): The input matrix to be smoothed.
@@ -292,7 +293,9 @@ def calculate_defect(D, U, F):
     input field `F` with the values in the grid `U`. The defect is
     calculated using finite difference approximations, taking into account
     the neighboring values in the grid. The results are stored in the output
-    array `D`, which is modified in place.
+    array `D`, which is modified in place. The function handles the
+    interior, sides, and corners of the grid separately to ensure accurate
+    defect calculations.
 
     Args:
         D (ndarray): A 2D array where the defect values will be stored.
@@ -376,8 +379,8 @@ def solve_pde_multigrid(F, U, vcycleiterations, linbcgiterations, smoothiteratio
 
     Note:
         The function assumes that the input arrays F and U have compatible
-        shapes
-        and that the planar array is appropriately defined for the problem
+        shapes and that the planar array is appropriately defined for the
+        problem
         context.
     """
 
@@ -532,7 +535,9 @@ def atimes(x, res):
     and stores the result in the `res` array. The Laplacian is calculated
     using finite difference methods, which involve summing the values of
     neighboring elements and applying specific boundary conditions for the
-    edges and corners of the array.
+    edges and corners of the array. The resulting array provides information
+    about the curvature of the input array, which can be useful in various
+    applications such as image processing and numerical simulations.
 
     Args:
         x (numpy.ndarray): A 2D array representing the input values.
@@ -792,20 +797,17 @@ def imagetonumpy(i):
     """Convert an image to a NumPy array.
 
     This function takes an image object and converts its pixel data into a
-    NumPy array. It first retrieves the pixel data from the image, then
-    reshapes and rearranges it to match the image's dimensions. The
-    resulting array is structured such that the height and width of the
-    image are preserved, and the color channels are appropriately ordered.
+    NumPy array. It retrieves the pixel data from the image, reshapes and
+    rearranges it to match the image's dimensions. The resulting array
+    preserves the height and width of the image, while appropriately
+    ordering the color channels. This function is optimized for performance
+    by directly accessing pixel data, avoiding slower methods.
 
     Args:
         i (Image): An image object that contains pixel data.
 
     Returns:
         numpy.ndarray: A 2D NumPy array representing the pixel data of the image.
-
-    Note:
-        The function optimizes performance by directly accessing pixel data
-        instead of using slower methods.
     """
 
     t = time.time()
@@ -837,10 +839,10 @@ def tonemap(i, exponent):
     """Apply tone mapping to an image array.
 
     This function performs tone mapping on the input image array by first
-    filtering out values that are excessively high, which may indicate that
-    the depth buffer was not written correctly. It then normalizes the
-    values between the minimum and maximum heights, and finally applies an
-    exponentiation to adjust the brightness of the image.
+    filtering out excessively high values, which may indicate that the depth
+    buffer was not written correctly. It then normalizes the values between
+    the minimum and maximum heights, and finally applies an exponentiation
+    to adjust the brightness of the image.
 
     Args:
         i (numpy.ndarray): A numpy array representing the image data.
@@ -977,11 +979,11 @@ def buildMesh(mesh_z, br):
 def renderScene(width, height, bit_diameter, passes_per_radius, make_nodes, view_layer):
     """Render a scene using Blender's Cycles engine.
 
-    This function switches the rendering engine to Cycles, sets up the
-    necessary nodes for depth rendering if specified, and configures the
-    render resolution based on the provided parameters. It ensures that the
-    scene is in object mode before rendering and restores the original
-    rendering engine after the process is complete.
+    This function switches the rendering engine to Cycles and sets up the
+    necessary nodes for depth rendering if specified. It configures the
+    render resolution based on the provided parameters and ensures that the
+    scene is in object mode before rendering. After the rendering process,
+    it restores the original rendering engine.
 
     Args:
         width (int): The width of the render in pixels.
@@ -1056,7 +1058,8 @@ def problemAreas(br):
             - use_image_source (bool): Flag to determine if a specific image source
             should be used.
             - source_image_name (str): Name of the source image if
-            `use_image_source` is True.
+            `use_image_source`
+            is True.
             - silhouette_threshold (float): Threshold for silhouette detection.
             - recover_silhouettes (bool): Flag to indicate if silhouettes should be
             recovered.
@@ -1069,7 +1072,8 @@ def problemAreas(br):
             - use_planar (bool): Flag to indicate if planar processing should be
             used.
             - gradient_scaling_mask_use (bool): Flag to indicate if a gradient
-            scaling mask should be used.
+            scaling
+            mask should be used.
             - gradient_scaling_mask_name (str): Name of the gradient scaling mask
             image.
             - depth_exponent (float): Exponent for depth adjustment.
@@ -1078,7 +1082,7 @@ def problemAreas(br):
 
     Returns:
         None: The function does not return a value but processes the image data and
-            saves the result.
+        saves the result.
     """
 
     t = time.time()
@@ -1721,6 +1725,7 @@ class DoBasRelief(bpy.types.Operator):
 
         Returns:
             dict: A dictionary indicating the result of the operation, either
+                {'FINISHED'} if successful or {'CANCELLED'} if an error occurred.
         """
 
         s = bpy.context.scene
@@ -1767,10 +1772,11 @@ class ProblemAreas(bpy.types.Operator):
 
         Args:
             context (bpy.context): The current Blender context, which provides access
+                to the scene and its settings.
 
         Returns:
             dict: A dictionary with a status key indicating the operation result,
-            specifically {'FINISHED'}.
+                specifically {'FINISHED'}.
         """
 
         s = bpy.context.scene
