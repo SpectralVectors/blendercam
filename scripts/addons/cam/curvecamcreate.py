@@ -148,11 +148,11 @@ class CamCurveHatch(Operator):
         or curves and can create contours based on additional settings.
 
         Args:
-            context (bpy.context): The Blender context containing the active object
+            context (bpy.context): The Blender context containing the active object.
 
         Returns:
             dict: A dictionary indicating the completion status of the operation,
-            typically {'FINISHED'}.
+                typically {'FINISHED'}.
         """
 
         simple.remove_multiple("crosshatch")
@@ -350,12 +350,12 @@ class CamCurvePlate(Operator):
     def execute(self, context):
         """Execute the creation of a plate based on specified parameters.
 
-        This function generates a plate shape in Blender based on the defined
+        This function generates a plate shape in Blender using defined
         attributes such as width, height, radius, and plate type. It supports
-        different plate types including rounded, oval, cove, and bevel. The
-        function also handles the creation of holes in the plate if specified.
+        various plate types including rounded, oval, cove, and bevel. The
+        function also manages the creation of holes in the plate if specified.
         It utilizes Blender's curve operations to create the geometry and
-        applies various transformations to achieve the desired shape.
+        applies transformations to achieve the desired shape.
 
         Args:
             context (bpy.context): The Blender context in which the operation is performed.
@@ -608,8 +608,7 @@ class CamCurveFlatCone(Operator):
 
         Args:
             context: The context in which the operation is executed, typically containing
-                information about the current
-                scene and active objects in Blender.
+                information about the current scene and active objects in Blender.
 
         Returns:
             dict: A dictionary indicating the completion status of the operation,
@@ -1426,7 +1425,9 @@ class CamCurvePuzzle(Operator):
         interface. It dynamically adjusts the layout based on the selected
         interlock type, allowing users to input relevant parameters such as
         dimensions, tolerances, and other characteristics specific to the chosen
-        interlock type.
+        interlock type. The method utilizes the provided context to render the
+        appropriate user interface elements based on the selected interlock
+        type.
 
         Args:
             context: The context in which the layout is being drawn, typically
@@ -1506,7 +1507,9 @@ class CamCurvePuzzle(Operator):
         different joinery operations based on the specified interlock type.
         Supported interlock types include 'FINGER', 'JOINT', 'BAR', 'ARC',
         'CURVEBARCURVE', 'CURVEBAR', 'MULTIANGLE', 'T', 'CURVET', 'CORNER',
-        'TILE', and 'OPENCURVE'.
+        'TILE', and 'OPENCURVE'. The function also handles various parameters
+        related to the joinery process, such as dimensions, tolerances, and
+        twisting options.
 
         Args:
             context (Context): The context containing selected objects and the active object.
@@ -1761,12 +1764,14 @@ class CamCurveGear(Operator):
     def execute(self, context):
         """Execute the gear generation process based on the specified gear type.
 
-        This method checks the type of gear to be generated (either 'PINION' or
-        'RACK') and calls the appropriate function from the `involute_gear`
-        module to create the gear or rack with the specified parameters. The
-        parameters include tooth spacing, number of teeth, hole diameter,
-        pressure angle, clearance, backlash, rim size, hub diameter, and spoke
-        amount for pinion gears, and additional parameters for rack gears.
+        This method determines the type of gear to be generated, which can
+        either be a 'PINION' or a 'RACK'. Depending on the gear type, it calls
+        the appropriate function from the `involute_gear` module to create the
+        gear or rack using specified parameters. For pinion gears, parameters
+        include tooth spacing, number of teeth, hole diameter, pressure angle,
+        clearance, backlash, rim size, hub diameter, and spoke amount. For rack
+        gears, additional parameters such as height and tooth per hole are also
+        utilized.
 
         Args:
             context: The context in which the execution is taking place.
