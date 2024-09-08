@@ -225,7 +225,8 @@ def _offset_inner_loop(y1, y2, cutterArrayNan, cwidth, sourceArray, width, heigh
     2D array, calculating the maximum value from a source array combined
     with a cutter array for each position in the defined area. The results
     are stored in the comparearea array, which is updated with the maximum
-    values found.
+    values found. This operation is performed in parallel for improved
+    performance.
 
     Args:
         y1 (int): The starting index for the row iteration.
@@ -389,8 +390,7 @@ def imageEdgeSearch_online(o, ar, zimage):
 
     Args:
         o (object): An object containing parameters such as min, max coordinates, cutter
-            diameter,
-            border width, and optimisation settings.
+            diameter, border width, and optimisation settings.
         ar (numpy.ndarray): A 2D array representing the image where edge detection is to be
             performed.
         zimage (numpy.ndarray): A 2D array representing the z-coordinates corresponding to the image.
@@ -534,8 +534,8 @@ async def crazyPath(o):
     implementation.
 
     Args:
-        o (object): An object containing properties such as max, min, optimisation, and
-            borderwidth.
+        o (object): An object containing properties such as max, min,
+            optimisation, and borderwidth.
 
     Returns:
         None: This function does not return a value.
@@ -1294,9 +1294,10 @@ def imageToShapely(o, i, with_border=False):
     """Convert an image to Shapely polygons.
 
     This function takes an image and converts it into a series of Shapely
-    polygon objects. It first processes the image into chunks and then
-    transforms those chunks into polygon geometries. The `with_border`
-    parameter allows for the inclusion of borders in the resulting polygons.
+    polygon objects. It processes the image into chunks and transforms those
+    chunks into polygon geometries. The `with_border` parameter allows for
+    the inclusion of borders in the resulting polygons, providing
+    flexibility in how the shapes are generated based on the input image.
 
     Args:
         o: The input image to be processed.
@@ -1365,7 +1366,9 @@ def getResolution(o):
     determining the width and height of the object, adjusting for pixel size
     and border width. The resolution is calculated by dividing the
     dimensions by the pixel size and adding twice the border width to each
-    dimension.
+    dimension. This is useful for understanding how an object's dimensions
+    translate into resolution, which can be important for rendering or
+    display purposes.
 
     Args:
         o (object): An object with attributes `max`, `min`, `optimisation`,
@@ -1460,7 +1463,7 @@ def renderSampleImage(o):
     during the rendering process.
 
     Args:
-        o (object): An object containing various properties and settings
+        o (object): An object containing various properties and settings.
 
     Returns:
         numpy.ndarray: The generated or loaded Z-buffer image as a NumPy array.
