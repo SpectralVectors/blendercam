@@ -1,0 +1,794 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Overview &#8212; Fabex 1.0.38 documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/documentation_options.js?v=e842dffb"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'overview';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Style Guide" href="styleguide.html" />
+    <link rel="prev" title="Welcome to BlenderCAM’s API Documentation!" href="index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo_blendercam.png" class="logo__image only-light" alt="Fabex 1.0.38 documentation - Home"/>
+    <img src="_static/logo_blendercam.png" class="logo__image only-dark pst-js-only" alt="Fabex 1.0.38 documentation - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/pppalain/blendercam" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://riot.im/app/#/room/#blendercam:matrix.org" title="Matrix" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-solid fa-comments fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Matrix</span></a>
+        </li>
+</ul></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="styleguide.html">Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="testing.html">Test Suite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workflows.html">Workflows &amp; Actions</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="autoapi/index.html">API Reference</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="autoapi/cam/index.html">cam</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/cam/bas_relief/index.html">cam.bas_relief</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/cam/bridges/index.html">cam.bridges</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/cam/cam_chunk/index.html">cam.cam_chunk</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/cam/collision/index.html">cam.collision</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/cam/constants/index.html">cam.constants</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/cam/engine/index.html">cam.engine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/cam/exception/index.html">cam.exception</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/cam/gcode_import_parser/index.html">cam.gcode_import_parser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/cam/gcode_path/index.html">cam.gcode_path</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/cam/involute_gear/index.html">cam.involute_gear</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/cam/joinery/index.html">cam.joinery</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="autoapi/cam/operators/index.html">cam.operators</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/cam/operators/async_op/index.html">cam.operators.async_op</a></li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/cam/operators/curve_cam_create/index.html">cam.operators.curve_cam_create</a></li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/cam/operators/curve_cam_equation/index.html">cam.operators.curve_cam_equation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/cam/operators/curve_cam_tools/index.html">cam.operators.curve_cam_tools</a></li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/cam/operators/gcode_import_op/index.html">cam.operators.gcode_import_op</a></li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/cam/operators/ops/index.html">cam.operators.ops</a></li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/cam/operators/position_object/index.html">cam.operators.position_object</a></li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/cam/operators/preset_ops/index.html">cam.operators.preset_ops</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/cam/pack/index.html">cam.pack</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/cam/parametric/index.html">cam.parametric</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/cam/pattern/index.html">cam.pattern</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/cam/preferences/index.html">cam.preferences</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="autoapi/cam/properties/index.html">cam.properties</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/cam/properties/bas_relief_props/index.html">cam.properties.bas_relief_props</a></li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/cam/properties/chain_props/index.html">cam.properties.chain_props</a></li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/cam/properties/info_props/index.html">cam.properties.info_props</a></li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/cam/properties/machine_props/index.html">cam.properties.machine_props</a></li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/cam/properties/material_props/index.html">cam.properties.material_props</a></li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/cam/properties/movement_props/index.html">cam.properties.movement_props</a></li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/cam/properties/operation_props/index.html">cam.properties.operation_props</a></li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/cam/properties/optimisation_props/index.html">cam.properties.optimisation_props</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/cam/puzzle_joinery/index.html">cam.puzzle_joinery</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/cam/simulation/index.html">cam.simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/cam/slice/index.html">cam.slice</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/cam/strategy/index.html">cam.strategy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/cam/testing/index.html">cam.testing</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="autoapi/cam/utilities/index.html">cam.utilities</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/cam/utilities/addon_utils/index.html">cam.utilities.addon_utils</a></li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/cam/utilities/async_utils/index.html">cam.utilities.async_utils</a></li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/cam/utilities/bounds_utils/index.html">cam.utilities.bounds_utils</a></li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/cam/utilities/chunk_utils/index.html">cam.utilities.chunk_utils</a></li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/cam/utilities/compare_utils/index.html">cam.utilities.compare_utils</a></li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/cam/utilities/dict_utils/index.html">cam.utilities.dict_utils</a></li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/cam/utilities/geom_utils/index.html">cam.utilities.geom_utils</a></li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/cam/utilities/image_utils/index.html">cam.utilities.image_utils</a></li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/cam/utilities/index_utils/index.html">cam.utilities.index_utils</a></li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/cam/utilities/loop_utils/index.html">cam.utilities.loop_utils</a></li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/cam/utilities/machine_utils/index.html">cam.utilities.machine_utils</a></li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/cam/utilities/material_utils/index.html">cam.utilities.material_utils</a></li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/cam/utilities/numba_utils/index.html">cam.utilities.numba_utils</a></li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/cam/utilities/ocl_utils/index.html">cam.utilities.ocl_utils</a></li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/cam/utilities/operation_utils/index.html">cam.utilities.operation_utils</a></li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/cam/utilities/orient_utils/index.html">cam.utilities.orient_utils</a></li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/cam/utilities/shapely_utils/index.html">cam.utilities.shapely_utils</a></li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/cam/utilities/simple_utils/index.html">cam.utilities.simple_utils</a></li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/cam/utilities/strategy_utils/index.html">cam.utilities.strategy_utils</a></li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/cam/utilities/version_utils/index.html">cam.utilities.version_utils</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/cam/version/index.html">cam.version</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autoapi/cam/voronoi/index.html">cam.voronoi</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/overview.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Overview</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#core-functions">Core Functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-functions">Extra Functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reference-files">Reference Files</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#user-interface">User Interface</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dependencies">Dependencies</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#complete-addon-layout">Complete Addon Layout</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="overview">
+<h1>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h1>
+<p>BlenderCAM’s code can be broken down into categories:</p>
+<ol class="arabic simple">
+<li><p>Core Functions</p></li>
+<li><p>Extra Functions</p></li>
+<li><p>Reference Files</p></li>
+<li><p>User Interface</p></li>
+<li><p>Dependencies</p></li>
+</ol>
+<section id="core-functions">
+<h2>Core Functions<a class="headerlink" href="#core-functions" title="Link to this heading">#</a></h2>
+<p>The core function of the BlenderCAM addon is to take whatever object is in the viewport and generate toolpaths along that object according to a milling strategy set by the user.
+These operations can be exported alone, or combined into chains to be exported and run together.</p>
+</section>
+<section id="extra-functions">
+<h2>Extra Functions<a class="headerlink" href="#extra-functions" title="Link to this heading">#</a></h2>
+<p>Beyond simply creating toolpaths for existing objects, BlenderCAM can also create the objects (curves) and edit them through a number of operations.</p>
+<p>There are modules dedicated to creating reliefs, joinery, puzzle joinery and gears.</p>
+<p>There is also a simulation module to allow a preview of what the final product will look like, as well as an asynchronous module that allows progress reports on calculations.</p>
+</section>
+<section id="reference-files">
+<h2>Reference Files<a class="headerlink" href="#reference-files" title="Link to this heading">#</a></h2>
+<p>Presets for machines, tools, operations and preprocessors comprise the majority of the files in the addon.</p>
+</section>
+<section id="user-interface">
+<h2>User Interface<a class="headerlink" href="#user-interface" title="Link to this heading">#</a></h2>
+<p>Files related to Blender’s UI - all the panels, buttons etc that you can click on in the addon, as well as menus, pie menus, popup dialogs etc.</p>
+</section>
+<section id="dependencies">
+<h2>Dependencies<a class="headerlink" href="#dependencies" title="Link to this heading">#</a></h2>
+<p>Python wheels - executable binaries packed in for all supported systems.</p>
+<section id="complete-addon-layout">
+<h3>Complete Addon Layout<a class="headerlink" href="#complete-addon-layout" title="Link to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>cam/
+├── nc/
+│   ├── LICENSE
+│   ├── __init__.py
+│   ├── anilam_crusader_m.py
+│   ├── anilam_crusader_m_read.py
+│   ├── attach.py
+│   ├── cad_iso_read.py
+│   ├── cad_nc_read.py
+│   ├── cad_read.py
+│   ├── centroid1.py
+│   ├── centroid1_read.py
+│   ├── drag_knife.py
+│   ├── emc2.py
+│   ├── emc2_read.py
+│   ├── emc2b.py
+│   ├── emc2b_crc.py
+│   ├── emc2b_crc_read.py
+│   ├── emc2b_read.py
+│   ├── emc2tap.py
+│   ├── emc2tap_read.py
+│   ├── fadal.py
+│   ├── format.py
+│   ├── gantry_router.py
+│   ├── gantry_router_read.py
+│   ├── gravos.py
+│   ├── grbl.py
+│   ├── heiden.py
+│   ├── heiden530.py
+│   ├── heiden_read.py
+│   ├── hm50.py
+│   ├── hm50_read.py
+│   ├── hpgl2d.py
+│   ├── hpgl2d_read.py
+│   ├── hpgl2dv.py
+│   ├── hpgl2dv_read.py
+│   ├── hpgl3d.py
+│   ├── hpgl3d_read.py
+│   ├── hxml_writer.py
+│   ├── iso.py
+│   ├── iso_codes.py
+│   ├── iso_crc.py
+│   ├── iso_crc_read.py
+│   ├── iso_modal.py
+│   ├── iso_modal_read.py
+│   ├── iso_read.py
+│   ├── lathe1.py
+│   ├── lathe1_read.py
+│   ├── lynx_otter_o.py
+│   ├── mach3.py
+│   ├── mach3_read.py
+│   ├── machines.txt
+│   ├── makerbotHBP.py
+│   ├── makerbotHBP_read.py
+│   ├── makerbot_codes.py
+│   ├── nc.py
+│   ├── nc_read.py
+│   ├── nclathe_read.py
+│   ├── num_reader.py
+│   ├── printbot3d.py
+│   ├── printbot3d_read.py
+│   ├── recreator.py
+│   ├── rez2.py
+│   ├── rez2_read.py
+│   ├── series1.py
+│   ├── series1_read.py
+│   ├── shopbot_mtc.py
+│   ├── siegkx1.py
+│   ├── siegkx1_read.py
+│   ├── tnc151.py
+│   ├── tnc151_read.py
+│   └── winpc.py
+├── opencamlib/
+│   ├── __init__.py
+│   ├── oclSample.py
+│   ├── opencamlib.py
+│   └── opencamlib_readme.txt
+├── pie_menu/
+│   ├── active_op/
+│   │   ├── pie_area.py
+│   │   ├── pie_cutter.py
+│   │   ├── pie_feedrate.py
+│   │   ├── pie_gcode.py
+│   │   ├── pie_movement.py
+│   │   ├── pie_operation.py
+│   │   └── pie_setup.py
+│   ├── pie_cam.py
+│   ├── pie_chains.py
+│   ├── pie_curvecreators.py
+│   ├── pie_curvetools.py
+│   ├── pie_info.py
+│   ├── pie_machine.py
+│   ├── pie_material.py
+│   └── pie_pack_slice_relief.py
+├── presets/
+│   ├── cam_cutters/
+│   │   ├── BALLCONE_1.00mm.py
+│   │   ├── ball_1.00mm.py
+│   │   ├── ball_1.50mm.py
+│   │   ├── ball_10.00mm.py
+│   │   ├── ball_12.00mm.py
+│   │   ├── ball_16.00mm.py
+│   │   ├── ball_2.00mm.py
+│   │   ├── ball_2.50mm.py
+│   │   ├── ball_20.00mm.py
+│   │   ├── ball_3.00mm.py
+│   │   ├── ball_3.50mm.py
+│   │   ├── ball_4.00mm.py
+│   │   ├── ball_5.00mm.py
+│   │   ├── ball_6.00mm.py
+│   │   ├── ball_7.00mm.py
+│   │   ├── ball_8.00mm.py
+│   │   ├── end_cyl_1.00mm.py
+│   │   ├── end_cyl_1.50mm.py
+│   │   ├── end_cyl_10.00mm.py
+│   │   ├── end_cyl_12.00mm.py
+│   │   ├── end_cyl_16.00mm.py
+│   │   ├── end_cyl_2.00mm.py
+│   │   ├── end_cyl_2.50mm.py
+│   │   ├── end_cyl_20.00mm.py
+│   │   ├── end_cyl_3.00mm.py
+│   │   ├── end_cyl_3.50mm.py
+│   │   ├── end_cyl_4.00mm.py
+│   │   ├── end_cyl_5.00mm.py
+│   │   ├── end_cyl_6.00mm.py
+│   │   ├── end_cyl_7.00mm.py
+│   │   ├── end_cyl_8.00mm.py
+│   │   ├── v-carve_3mm_45deg.py
+│   │   ├── v-carve_3mm_60deg.py
+│   │   ├── v-carve_6mm_45deg.py
+│   │   └── v-carve_6mm_60deg.py
+│   ├── cam_machines/
+│   │   ├── emc_test_2.py
+│   │   └── kk1000s.py
+│   └── cam_operations/
+│       ├── Fin_Ball_3,0_Block_All.py
+│       ├── Fin_Ball_3,0_Block_Around.py
+│       ├── Fin_Ball_3,0_Circles_All_EXPERIMENTAL.py
+│       ├── Fin_Ball_3,0_Circles_Around_EXPERIMENTAL.py
+│       ├── Fin_Ball_3,0_Cross_All.py
+│       ├── Fin_Ball_3,0_Cross_Around.py
+│       ├── Fin_Ball_3,0_Cutout.py
+│       ├── Fin_Ball_3,0_Outline_Fill_EXPERIMENTAL.py
+│       ├── Fin_Ball_3,0_Parallel_All.py
+│       ├── Fin_Ball_3,0_Parallel_Around.py
+│       ├── Fin_Ball_3,0_Pencil_EXPERIMENTAL.py
+│       ├── Fin_Ball_3,0_Pocket_EXPERIMENTAL.py
+│       ├── Fin_Ball_3,0_Spiral_All.py
+│       ├── Fin_Ball_3,0_Spiral_Around.py
+│       ├── Finishing_3mm_ballnose.py
+│       ├── Rou_Ball_3,0_Block_All.py
+│       ├── Rou_Ball_3,0_Block_Around.py
+│       ├── Rou_Ball_3,0_Circles_All_EXPERIMENTAL.py
+│       ├── Rou_Ball_3,0_Circles_Around_EXPERIMENTAL.py
+│       ├── Rou_Ball_3,0_Cross_All.py
+│       ├── Rou_Ball_3,0_Cross_Around.py
+│       ├── Rou_Ball_3,0_Cutout.py
+│       ├── Rou_Ball_3,0_Outline_Fill_EXPERIMENTAL.py
+│       ├── Rou_Ball_3,0_Parallel_All.py
+│       ├── Rou_Ball_3,0_Parallel_Around.py
+│       ├── Rou_Ball_3,0_Pencil_EXPERIMENTAL.py
+│       ├── Rou_Ball_3,0_Pocket_EXPERIMENTAL.py
+│       ├── Rou_Ball_3,0_Spiral_All.py
+│       └── Rou_Ball_3,0_Spiral_Around.py
+├── tests/
+│   ├── test_data
+│   ├── TESTING_PROCEDURE
+│   ├── gcode_generator.py
+│   ├── install_addon.py
+│   └── test_suite.py
+└── ui_panels/
+    ├── __init__.py
+    ├── area.py
+    ├── buttons_panel.py
+    ├── chains.py
+    ├── cutter.py
+    ├── feedrate.py
+    ├── gcode.py
+    ├── info.py
+    ├── interface.py
+    ├── machine.py
+    ├── material.py
+    ├── movement.py
+    ├── op_properties.py
+    ├── operations.py
+    ├── optimisation.py
+    ├── pack.py
+    └── slice.py
+LICENSE
+__init__.py
+async_op.py
+autoupdate.py
+backgroundop_.py
+basrelief.py
+bridges.py
+cam_chunk.py
+cam_operation.py
+chain.py
+collision.py
+constants.py
+curvecamcreate.py
+curvecamequation.py
+curvecamtools.py
+engine.py
+exception.py
+gcodeimportparser.py
+gcodepath.py
+image_utils.py
+involute_gear.py
+joinery.py
+machine_settings.py
+numba_wrapper.py
+ops.py
+pack.py
+parametric.py
+pattern.py
+polygon_utils_cam.py
+preferences.py
+preset_managers.py
+puzzle_joinery.py
+simple.py
+simulation.py
+slice.py
+strategy.py
+testing.py
+ui.py
+utils.py
+version.py
+voronoi.py
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Welcome to BlenderCAM’s API Documentation!</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="styleguide.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Style Guide</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#core-functions">Core Functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-functions">Extra Functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reference-files">Reference Files</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#user-interface">User Interface</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dependencies">Dependencies</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#complete-addon-layout">Complete Addon Layout</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Vilem Novak, Alain Pelletier & Contributors
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
