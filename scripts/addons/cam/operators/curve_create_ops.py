@@ -309,7 +309,7 @@ class CamCurvePlate(Operator):
     hole_hamount: IntProperty(
         name="Hole Horiz Amount",
         default=1,
-        min=0.0001,
+        min=0,
         max=50,
     )
     resolution: IntProperty(
@@ -1422,7 +1422,7 @@ class CamCurvePuzzle(Operator):
     finger_amount: IntProperty(
         name="Finger Amount",
         default=1,
-        min=0.0001,
+        min=0,
         max=100,
     )
     stem_size: IntProperty(
@@ -1964,7 +1964,7 @@ class CamCurveGear(Operator):
     spoke_amount: IntProperty(
         name="Amount of Spokes",
         default=4,
-        min=0.0001,
+        min=0,
     )
 
     hole_diameter: FloatProperty(
