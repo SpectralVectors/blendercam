@@ -812,7 +812,11 @@ class CamOffsetSilhouete(Operator):
 
     @classmethod
     def poll(cls, context):
-        return context.active_object.type in ["CURVE", "FONT", "MESH"] and context.mode == "OBJECT"
+        return (
+            context.active_object is not None
+            and context.active_object.type in ["CURVE", "FONT", "MESH"]
+            and context.mode == "OBJECT"
+        )
 
     def is_straight(self, geom):
         assert geom.geom_type == "LineString", geom.geom_type

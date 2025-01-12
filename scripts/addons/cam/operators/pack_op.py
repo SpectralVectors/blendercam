@@ -103,7 +103,7 @@ class CamPackObjects(Operator):
 
     @classmethod
     def poll(cls, context):
-        return context.active_object.type == "CURVE"
+        return context.active_object is not None and context.active_object.type == "CURVE"
 
     def invoke(self, context, event):
         wm = context.window_manager

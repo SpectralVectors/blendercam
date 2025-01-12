@@ -1603,7 +1603,7 @@ class CamCurvePuzzle(Operator):
     interlock_amount: IntProperty(
         name="Interlock Amount on Curve",
         default=2,
-        min=0.0001,
+        min=0,
         max=200,
     )
     overcut: BoolProperty(
