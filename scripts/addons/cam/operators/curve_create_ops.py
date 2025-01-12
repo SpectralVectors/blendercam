@@ -300,7 +300,7 @@ class CamCurvePlate(Operator):
     )
     hole_hdist: FloatProperty(
         name="Hole Horiz Distance",
-        default=0,
+        default=0.001,
         min=0.0001,
         max=3.0,
         precision=4,
@@ -685,7 +685,7 @@ class CamCurveFlatCone(Operator):
     )
     intake: FloatProperty(
         name="Intake Diameter",
-        default=0,
+        default=0.001,
         min=0.0001,
         max=0.200,
         precision=4,
@@ -812,7 +812,7 @@ class CamCurveMortise(Operator):
     finger_tolerance: FloatProperty(
         name="Finger Play Room",
         default=0.000045,
-        min=0.0001,
+        min=0.00001,
         max=0.003,
         precision=4,
         unit="LENGTH",
@@ -848,7 +848,7 @@ class CamCurveMortise(Operator):
     )
     adaptive: FloatProperty(
         name="Adaptive Angle Threshold",
-        default=0.0,
+        default=0.001,
         min=0.0001,
         max=2,
         step=100,
@@ -993,7 +993,7 @@ class CamCurveInterlock(Operator):
     finger_tolerance: FloatProperty(
         name="Finger Play Room",
         default=0.000045,
-        min=0.0001,
+        min=0.00001,
         max=0.003,
         precision=4,
         unit="LENGTH",
@@ -1027,7 +1027,7 @@ class CamCurveInterlock(Operator):
     )
     tangent_angle: FloatProperty(
         name="Tangent Deviation",
-        default=0.0,
+        default=0.001,
         min=0.0001,
         max=2,
         step=100,
@@ -1036,7 +1036,7 @@ class CamCurveInterlock(Operator):
     )
     fixed_angle: FloatProperty(
         name="Fixed Angle",
-        default=0.0,
+        default=0.001,
         min=0.0001,
         max=2,
         step=100,
@@ -1174,14 +1174,14 @@ class CamCurveDrawer(Operator):
     finger_tolerance: FloatProperty(
         name="Finger Play Room",
         default=0.000045,
-        min=0.0001,
+        min=0.00001,
         max=0.003,
         precision=4,
         unit="LENGTH",
     )
     finger_inset: FloatProperty(
         name="Finger Inset",
-        default=0.0,
+        default=0.001,
         min=0.0001,
         max=0.01,
         precision=4,
@@ -1414,7 +1414,7 @@ class CamCurvePuzzle(Operator):
     finger_tolerance: FloatProperty(
         name="Finger Play Room",
         default=0.00005,
-        min=0.0001,
+        min=0.00001,
         max=0.003,
         precision=4,
         unit="LENGTH",
@@ -2003,7 +2003,7 @@ class CamCurveGear(Operator):
     )
     clearance: FloatProperty(
         name="Clearance",
-        default=0.00,
+        default=0.001,
         min=0.0001,
         max=0.1,
         precision=4,
@@ -2011,8 +2011,8 @@ class CamCurveGear(Operator):
     )
     backlash: FloatProperty(
         name="Backlash",
-        default=0.0,
-        min=0.0,
+        default=0.001,
+        min=0.0001,
         max=0.1,
         precision=4,
         unit="LENGTH",
