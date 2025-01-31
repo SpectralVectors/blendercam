@@ -439,10 +439,11 @@ def unit_value_to_string(x, precision=5):
     Returns:
         str: The string representation of the value in the appropriate units.
     """
+    scale = bpy.context.scene.unit_settings.scale_length
     if bpy.context.scene.unit_settings.system == "METRIC":
-        return str(round(x * 1000, precision)) + " mm "
+        return str(round(x * 1000 * scale, precision)) + " mm "
     elif bpy.context.scene.unit_settings.system == "IMPERIAL":
-        return str(round(x * 1000 / 25.4, precision)) + "'' "
+        return str(round(x * 1000 / 25.4 * scale, precision)) + "'' "
     else:
         return str(x)
 
