@@ -846,7 +846,6 @@ def mesh_from_curve_to_chunk(object):
             if len(chunk.points) > 2 and (
                 not (dk.isdisjoint([(vi, lastvi)])) or not (dk.isdisjoint([(lastvi, vi)]))
             ):
-
                 chunk.closed = True
                 chunk.points.append((mesh.vertices[lastvi].co + object.location).to_tuple())
                 # add first point to end#originally the z was mesh.vertices[lastvi].co.z+z
