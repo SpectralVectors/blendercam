@@ -69,19 +69,22 @@ It has been used for many milling projects _(artistic, personal, commercial and 
 > _For previous versions of **Blender**, check the **Github Releases** page._
 
 ## 💻 Post-processors
+* [Anilam Crusader M](https://faculty.etsu.edu/hemphill/entc3710/ani-mill/index.htm)
+* [Biesse Cix](https://biesse.com/ww/en/software/)
+* [Centroïd M40](https://www.centroidcnc.com/)
+* [Fadal](https://fadal.com/)
+* [Gravos](https://www.gravos.cz/)
 * [Grbl](https://github.com/gnea/grbl/wiki)
+* [Hafco HM-50](https://www.machineryhouse.com.au/m160d)
+* [Heidenhain](https://www.heidenhain.com/)
 * [ISO](https://www.iso.org/obp/ui/#iso:std:iso:4343:ed-2:v1:en)
 * [LinuxCNC - EMC2](https://linuxcnc.org/)
-* [Fadal](https://fadal.com/)
-* [Heidenhain](https://www.heidenhain.com/)
-* [Sieg KX1](https://www.sieg.co.za/)
-* Hafco HM-50
-* [Centroïd M40](https://www.centroidcnc.com/)
-* Anilam Crusader M
-* [Gravos](https://www.gravos.cz/)
-* [WinPC-NC](https://www.lewetz.de/de/)
-* [ShopBot MTC](https://shopbottools.com/)
 * [Lynx Otter o](https://lynx-poland.com/)
+* [RealTime CNC](https://realtimecnc.com/)
+* [ShopBot MTC](https://shopbottools.com/)
+* [Sieg KX1](https://www.sieg.co.za/)
+* [WinPC-NC](https://www.lewetz.de/de/)
+* User Custom - write your own post-processor based on the ISO template
 * and more...
 
 
@@ -92,6 +95,7 @@ docs/ - # User, Developer and API docs
 └── _static/ - # Images for docs and README
 fabex/ - # Main Addon Folder
 ├── assets/ - # Fabex Asset Library
+├── gcode/ - # Functions for importing and exporting Gcode files
 ├── joinery/ - # Functions for creating joints, e.g. mortise, interlock etc.
 ├── logs/ - # Log files for errors and normal usage
 ├── operators/ - # Blender Operators
@@ -101,6 +105,9 @@ fabex/ - # Main Addon Folder
 │   ├── cam_machines/
 │   └── cam_operations/
 ├── properties/ - # Blender PropertyGroups to store Machine, Operation, Cutter data
+├── strategies/ - # Milling Strategies in their own module for easy expansion
+├── tests/ - # Developer Tests
+    └── test_data/ - # Test output
 ├── ui/ - # Blender User Interface
 │   ├── icons/ - # .png files for custom icons
 │   ├── menus/ - # viewport menu and sub-menus
@@ -108,8 +115,6 @@ fabex/ - # Main Addon Folder
 │   └── pie_menu/ - # complete Pie Menu system
 ├── utilities/ - # Low level helper functions
 └── wheels/ - # Python Dependencies (as binary wheels)
-tests/ - # Developer Tests
-└── test_data/ - # Test output
 ```
 
 ## 🤝 Contribute
